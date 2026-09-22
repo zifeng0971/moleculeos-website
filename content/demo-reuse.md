@@ -2,6 +2,19 @@
 
 ## Agent
 
+### 2026-09-21 Mocha component upgrade
+
+来源：`tubingqing-oss/Mocha-Component-Upgrade-Testing`，提交
+`1d40f28ee8874009c98936da550019d24c93d9f9`。复用范围仅为欢迎态卡片与
+消息气泡的展示契约，并改造成外部 props 驱动；Next.js 适配入口位于
+`components/hero/AgentDemo.tsx`，主体位于 `components/hero/mocha-upgrade/`。
+旧实现保存在 `components/hero/legacy/AgentDemo.tsx`。
+
+未搬入对方仓库的 React 19/Vite 启动层、HEWL 示例数据、全局 CSS、外部链接或
+播放编排。本站继续使用 React 18、Next 14、现有 `demo/tasks.config.js`、双语
+消息、压缩播放状态与 `AgentStructure`，无新增依赖、API、WebSocket、持久化或
+遥测。检查时源仓库未提供 LICENSE 文件，因此只记录来源，不推断许可证。
+
 来源：MoleculesOS / Mocha V3，提交 `1814a755abacc13f35a78d785defcf7d09a0c473`。
 
 核验文件：`web/src/features/tool/components/display-content.tsx`。`AgentTaskList.tsx` 改编其中 TodoContent 的完成／执行中／待处理图标与 props 驱动列表渲染。修改：仅保留三种状态，替换为官网样式、语义化有序列表与本地任务脚本，未引入服务调用、store、搜索渲染或远程图片。

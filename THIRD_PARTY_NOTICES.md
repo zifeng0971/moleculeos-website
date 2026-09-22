@@ -28,3 +28,15 @@ by this project.
 
 Mol* remains the existing npm dependency; its package license and notices remain
 in its distribution. No structure-prediction application source was copied.
+
+## Mocha Component Upgrade Testing
+
+The isolated welcome surface and chat-bubble contract under
+`components/hero/mocha-upgrade/` are adapted from
+`tubingqing-oss/Mocha-Component-Upgrade-Testing`, commit
+`1d40f28ee8874009c98936da550019d24c93d9f9`.
+
+The inspected source repository did not include a license file. No license is
+therefore inferred. The copied presentation code is kept small and its
+provenance is recorded pending confirmation from the source owner. HEWL data,
+global styles, external URLs and application orchestration were not copied.
