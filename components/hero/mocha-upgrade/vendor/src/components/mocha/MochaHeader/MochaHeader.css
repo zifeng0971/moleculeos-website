@@ -1,0 +1,58 @@
+.mocha-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 675px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.mocha-header-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.mocha-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.mocha-header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mocha-header-title {
+  font-family: var(--mocha-font-pingfang);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.mocha-header-session {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.mocha-header-session-id {
+  font-family: var(--mocha-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--ct-text-h3);
+  white-space: nowrap;
+}

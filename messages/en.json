@@ -685,7 +685,8 @@
     "empty": "No tasks yet",
     "intro": "I'm Mocha, your AI assistant from MoleculeMind.",
     "welcomeTitle": "What can I do for you?",
-    "samples": "Try these tasks"
+    "samples": "Try these tasks",
+    "disclaimer": "AI-generated research aid. Experimental validation advised."
   },
   "mmetricsDemo": {
     "loading": "Loading structure",

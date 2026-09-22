@@ -1,0 +1,33 @@
+.mocha-upgrade-root {
+  --ct-text-h1: #f9f9f9;
+  --ct-text-h2: #c7c7ce;
+  --ct-text-h3: #8b8b95;
+  --ct-text-brand: #6f69c7;
+  --ct-brand-default: #6f69c7;
+  --ct-content-primary: #f9f9f9;
+  --ct-icon-h1: #f9f9f9;
+  --ct-bg-h1: #1f1f26;
+  --ct-bg-h2: #31313b;
+  --ct-bg-h2-30: rgba(49, 49, 59, 0.3);
+  --ct-line-h1: #31313b;
+  --ct-line-h2: #44444f;
+  --ct-brand-actived: #9a98dc;
+  --ct-white-85: rgba(255, 255, 255, 0.85);
+  --ct-white-10: rgba(255, 255, 255, 0.1);
+  --ct-white-05: rgba(255, 255, 255, 0.05);
+  --ct-composer-bg: #31313b;
+  --ct-timestamp: #818c98;
+  --ct-hit: #8e8bd5;
+  --mocha-font: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', sans-serif;
+  --mocha-font-pingfang: 'PingFang SC', -apple-system, 'Noto Sans SC', sans-serif;
+  --mocha-font-source-han: 'Source Han Sans SC', 'PingFang SC', -apple-system, sans-serif;
+  color-scheme: dark;
+  font-family: var(--mocha-font);
+  color: var(--ct-text-h1);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mocha-upgrade-root :where(h1, h2, h3, h4, p, ul, ol, dl, dd, pre) { margin: 0; }
+.mocha-upgrade-root :where(button, textarea) { font: inherit; }

@@ -1,0 +1,239 @@
+.mocha-panel {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  width: 699px;
+  height: calc(100svh - (var(--mocha-viewport-inset, 16px) * 2));
+  max-height: calc(100svh - (var(--mocha-viewport-inset, 16px) * 2));
+  padding: 12px;
+  overflow: hidden;
+  font-family: var(--mocha-font);
+  color: var(--ct-text-h1);
+}
+
+.mocha-panel-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 675px;
+  min-height: 0;
+  flex: 1 1 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow-anchor: none;
+  scrollbar-width: none;
+}
+
+.mocha-panel-body::-webkit-scrollbar {
+  display: none;
+}
+
+.mocha-panel-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 675px;
+  overflow-anchor: none;
+}
+
+.mocha-feed-spacer {
+  width: 100%;
+  flex-shrink: 0;
+  pointer-events: none;
+  overflow-anchor: none;
+}
+
+.mocha-panel-todos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 675px;
+  flex-shrink: 0;
+}
+
+.mocha-panel-todos-with-meta {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mocha-todos-worked {
+  margin: 0;
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-timestamp);
+  white-space: nowrap;
+}
+
+.mocha-user-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  width: 675px;
+  flex-shrink: 0;
+  overflow-anchor: none;
+}
+
+.mocha-timestamp {
+  font-family: var(--mocha-font-pingfang);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--ct-timestamp);
+}
+
+.mocha-timestamp-user {
+  text-align: right;
+}
+
+.mocha-thread {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 675px;
+  min-height: 0;
+  overflow-anchor: none;
+}
+
+.mocha-thread-qa {
+  gap: 12px;
+}
+
+.mocha-thread-qa > .qa-card,
+.mocha-thread-qa > .mocha-qa-reveal {
+  margin-top: -8px;
+}
+
+.mocha-absorb {
+  display: flex;
+  align-items: center;
+  width: 675px;
+  min-height: 36px;
+  padding: 8px 10px;
+  flex-shrink: 0;
+}
+
+.mocha-task-list {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 675px;
+  padding: 8px;
+  border: 1px solid var(--ct-line-h2);
+  border-radius: 8px;
+  flex-shrink: 0;
+  overflow-anchor: none;
+}
+
+.mocha-todos-row {
+  display: flex;
+  justify-content: flex-end;
+  width: 675px;
+  flex-shrink: 0;
+}
+
+.mocha-result-anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.mocha-result-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  animation: mocha-result-open 360ms cubic-bezier(0.33, 1, 0.36, 1) forwards;
+}
+
+.mocha-result-reveal-table {
+  animation-duration: 720ms;
+}
+
+.mocha-result-reveal-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.mocha-result-table-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mocha-result-in {
+  animation: mocha-result-fade 320ms ease-out both;
+}
+
+@keyframes mocha-result-open {
+  from {
+    grid-template-rows: 0fr;
+  }
+
+  to {
+    grid-template-rows: 1fr;
+  }
+}
+
+@keyframes mocha-result-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mocha-qa-reveal {
+  display: grid;
+  grid-template-rows: 0fr;
+  width: 600px;
+  pointer-events: none;
+  animation: mocha-result-open 360ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.mocha-qa-reveal-inner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.mocha-qa-reveal .qa-card {
+  opacity: 0;
+  animation: mocha-result-fade 360ms cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mocha-result-reveal,
+  .mocha-result-in,
+  .mocha-qa-reveal,
+  .mocha-qa-reveal .qa-card {
+    animation: none;
+  }
+
+  .mocha-result-reveal,
+  .mocha-qa-reveal {
+    grid-template-rows: 1fr;
+  }
+}
+
+.mocha-disclaimer {
+  width: 675px;
+  height: 16px;
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h3);
+  text-align: center;
+  flex-shrink: 0;
+}

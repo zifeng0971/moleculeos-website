@@ -1,0 +1,214 @@
+.result-table-frame {
+  box-sizing: border-box;
+  width: 675px;
+  padding: 10px 12px 12px;
+  background: var(--ct-bg-h2);
+  border: 1px solid var(--ct-line-h2);
+  border-radius: 8px;
+}
+
+.result-table-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 24px;
+  margin-bottom: 6px;
+}
+
+.result-table-title {
+  margin: 0;
+  font-family: var(--mocha-font-pingfang);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--ct-text-h1);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.result-table-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.result-table-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.result-table {
+  width: 100%;
+}
+
+.result-table-header,
+.result-table-row {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1.2fr) minmax(64px, 0.85fr) minmax(0, 1.05fr) minmax(0, 1.05fr) minmax(0, 0.8fr) minmax(0, 0.8fr) minmax(0, 1fr);
+  align-items: center;
+  width: 100%;
+  min-height: 28px;
+}
+
+.result-table-header {
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--ct-white-10);
+}
+
+.result-table-row-alt {
+  background: var(--ct-white-05);
+  border-radius: 6px;
+}
+
+.result-table-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.4;
+}
+
+.result-table-hcell,
+.result-table-cell {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  padding: 4px 8px;
+  overflow: hidden;
+}
+
+.result-table-hcell {
+  font-family: var(--mocha-font-pingfang);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--ct-text-h3);
+  white-space: nowrap;
+}
+
+.result-table-hhit {
+  color: var(--ct-hit);
+}
+
+.result-table-cell {
+  font-family: var(--mocha-font-pingfang);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--ct-text-h2);
+  white-space: nowrap;
+}
+
+.result-table-cell-id {
+  color: var(--ct-text-h1);
+  font-weight: 500;
+}
+
+.result-table-id {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.result-table-id-selected {
+  color: var(--ct-brand-actived);
+}
+
+.result-table-num {
+  justify-content: flex-end;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-table-hcell-id,
+.result-table-cell-id {
+  padding-left: 4px;
+}
+
+.result-table-hcell-hit,
+.result-table-cell-hit {
+  min-width: 64px;
+}
+
+.result-table-hcell-reference,
+.result-table-hcell-ref,
+.result-table-cell-ref {
+  justify-content: flex-end;
+  padding-right: 4px;
+}
+
+.result-table-link {
+  color: var(--ct-brand-actived);
+  text-decoration: underline;
+  text-decoration-color: rgba(154, 152, 220, 0.45);
+  text-underline-offset: 2px;
+}
+
+.result-table-frame-reveal .result-table-toolbar,
+.result-table-frame-reveal .result-table-header,
+.result-table-frame-reveal .result-table-row {
+  animation: result-table-in 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.result-table-frame-reveal .result-table-header {
+  animation-delay: 80ms;
+}
+
+.result-table-frame-reveal .result-table-row:nth-child(1) {
+  animation-delay: 160ms;
+}
+
+.result-table-frame-reveal .result-table-row:nth-child(2) {
+  animation-delay: 230ms;
+}
+
+.result-table-frame-reveal .result-table-row:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.result-table-frame-reveal .result-table-row:nth-child(4) {
+  animation-delay: 370ms;
+}
+
+.result-table-frame-reveal .result-table-row:nth-child(5) {
+  animation-delay: 440ms;
+}
+
+@keyframes result-table-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .result-table-frame-reveal .result-table-toolbar,
+  .result-table-frame-reveal .result-table-header,
+  .result-table-frame-reveal .result-table-row {
+    animation: none;
+  }
+}

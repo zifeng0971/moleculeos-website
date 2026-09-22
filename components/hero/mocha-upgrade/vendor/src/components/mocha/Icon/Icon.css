@@ -1,0 +1,11 @@
+.mocha-icon {
+  display: block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mocha-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

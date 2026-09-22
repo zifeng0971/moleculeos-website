@@ -1,0 +1,37 @@
+.message-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 17px;
+  margin-top: 8px;
+}
+
+.message-meta-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.message-meta-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: var(--ct-text-h3, #818c98);
+}
+
+.message-meta-action:hover {
+  opacity: 0.8;
+}
+
+.message-meta-action:focus-visible {
+  outline: 1px solid var(--ct-brand-default, #6c8cff);
+  outline-offset: 2px;
+  border-radius: 2px;
+}

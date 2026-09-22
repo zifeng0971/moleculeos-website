@@ -1,0 +1,136 @@
+.report-viewer-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.report-viewer-legend-intro,
+.report-viewer-legend-footnote {
+  margin: 0;
+  font-family: var(--mocha-font-source-han);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--ct-white-85);
+}
+
+.report-viewer-legend-footnote {
+  color: var(--ct-text-h1);
+}
+
+.report-viewer-legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.report-viewer-legend-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.report-viewer-legend-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.report-viewer-legend-title {
+  margin: 0;
+  flex: 0 1 auto;
+  max-width: 58%;
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--ct-text-h1);
+}
+
+.report-viewer-legend-rule {
+  flex: 1 1 auto;
+  min-width: 16px;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--ct-line-h2) 0,
+    var(--ct-line-h2) 3px,
+    transparent 3px,
+    transparent 7px
+  );
+}
+
+.report-viewer-legend-detail {
+  margin: 0;
+  padding-right: 36px;
+  font-family: var(--mocha-font-source-han);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--ct-text-h3);
+}
+
+.report-viewer-chip {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid var(--ct-line-h2);
+  border-radius: 999px;
+  background: var(--ct-bg-h2);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.report-viewer-chip:hover {
+  border-color: color-mix(in srgb, var(--chip-tone) 45%, var(--ct-line-h2));
+  background: color-mix(in srgb, var(--chip-tone) 12%, var(--ct-bg-h2));
+}
+
+.report-viewer-chip-selected {
+  border-color: color-mix(in srgb, var(--chip-tone) 70%, transparent);
+  background: color-mix(in srgb, var(--chip-tone) 18%, var(--ct-bg-h2));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--chip-tone) 35%, transparent);
+}
+
+.report-viewer-chip:focus-visible {
+  outline: 1px solid var(--ct-brand-actived);
+  outline-offset: 2px;
+}
+
+.report-viewer-chip-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--chip-tone);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--chip-tone) 25%, transparent);
+  flex-shrink: 0;
+}
+
+.report-viewer-chip-orange {
+  --chip-tone: #e09a5a;
+}
+
+.report-viewer-chip-blue {
+  --chip-tone: #6aa8e8;
+}
+
+.report-viewer-chip-green {
+  --chip-tone: #16a085;
+}
+
+.report-viewer-chip-purple {
+  --chip-tone: #8e44ad;
+}
+
+.report-viewer-chip-focus {
+  --chip-tone: var(--ct-hit);
+}

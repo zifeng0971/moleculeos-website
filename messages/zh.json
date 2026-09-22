@@ -681,7 +681,8 @@
     "empty": "暂无任务",
     "intro": "我是 Mocha，来自分子之心的 AI 助手。",
     "welcomeTitle": "有什么可以帮你？",
-    "samples": "从这些任务开始"
+    "samples": "从这些任务开始",
+    "disclaimer": "AI 生成的科研辅助信息，建议进行实验验证。"
   },
   "mmetricsDemo": {
     "loading": "正在加载结构",

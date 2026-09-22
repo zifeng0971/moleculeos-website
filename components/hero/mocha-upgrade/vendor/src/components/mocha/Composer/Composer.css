@@ -1,0 +1,225 @@
+.composer-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 675px;
+  flex-shrink: 0;
+}
+
+.composer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 675px;
+  height: 120px;
+  min-height: 0;
+  max-height: 250px;
+  padding: 10px 12px;
+  background: var(--ct-composer-bg);
+  border: 1px solid var(--ct-line-h2);
+  /* Match conversation single-line capsule (44px tall → 22px radius). */
+  border-radius: 22px;
+  flex-shrink: 0;
+}
+
+/* Short prompts (e.g. shortcut "3") hug content — no tall blank band. */
+.composer-idle-filled {
+  height: auto;
+}
+
+/* Empty idle: field grows so the placeholder stays easy to click. */
+.composer-idle-empty .composer-input {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+/* One line: [+] [text................] [send] */
+.composer-compact {
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 8px;
+  height: 44px;
+  min-height: 44px;
+  max-height: 250px;
+  padding: 8px 12px;
+}
+
+/* Two+ lines: text on top, [+] …… [send] on bottom */
+.composer-compact-multiline {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.composer-input {
+  display: block;
+  flex: 0 0 auto;
+  min-height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
+  background: transparent;
+  font-family: var(--mocha-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--ct-text-h1);
+}
+
+.composer-compact .composer-input {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+}
+
+.composer-compact-multiline .composer-input {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.composer-input::placeholder {
+  color: var(--ct-text-h3);
+}
+
+.composer-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.composer-toolbar {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.composer-compact-multiline .composer-toolbar {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.composer-upload {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 20px;
+  background: var(--ct-white-10);
+  font-family: var(--mocha-font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--ct-white-85);
+  white-space: nowrap;
+  cursor: default;
+}
+
+.composer-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.14);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.composer-add:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.composer-add:focus-visible {
+  outline: 1px solid var(--ct-brand-actived);
+  outline-offset: 2px;
+}
+
+.composer-stop,
+.composer-resume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  background: var(--ct-text-brand);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.composer-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 20px;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+
+.composer-send-disabled {
+  background: var(--ct-white-10);
+  cursor: default;
+}
+
+.composer-send-ready {
+  background: var(--ct-text-brand);
+  cursor: pointer;
+}
+
+.composer-compact .composer-send,
+.composer-compact .composer-stop,
+.composer-compact .composer-resume {
+  align-self: flex-end;
+}
+
+.composer-compact .composer-stop,
+.composer-compact .composer-resume {
+  width: 28px;
+  height: 28px;
+}
+
+.composer-resume {
+  padding-left: 2px;
+}
+
+.composer-hint {
+  margin: 0;
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h3);
+}
+
+.composer-stop-icon {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--ct-icon-h1);
+}

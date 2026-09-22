@@ -23,3 +23,109 @@
   .mocha-upgrade-starter-description { font-size:11px; }
 }
 @media (prefers-reduced-motion:reduce) { .mocha-upgrade-starter { transition:none; } }
+
+/* Vendored Mocha panel integration. The selectors are intentionally scoped so
+   the source component cannot change the marketing page typography or tokens. */
+.mocha-upgrade-root .mocha-upgrade-workspace { background:#1f1f26; }
+.mocha-upgrade-root .mocha-upgrade-panel-shell {
+  position:relative;
+  display:flex;
+  justify-content:center;
+  flex:1 1 auto;
+  min-width:0;
+  min-height:0;
+  overflow:hidden;
+  background:#1f1f26;
+}
+.mocha-upgrade-root .mocha-panel {
+  width:min(43.6875rem,100%);
+  height:100%;
+  max-height:none;
+  padding:.75rem;
+  align-items:stretch;
+  background:#1f1f26;
+}
+.mocha-upgrade-root .mocha-header,
+.mocha-upgrade-root .mocha-panel-body,
+.mocha-upgrade-root .mocha-panel-feed,
+.mocha-upgrade-root .mocha-panel-todos,
+.mocha-upgrade-root .mocha-user-block,
+.mocha-upgrade-root .mocha-thread,
+.mocha-upgrade-root .mocha-absorb,
+.mocha-upgrade-root .mocha-task-list,
+.mocha-upgrade-root .mocha-todos-row,
+.mocha-upgrade-root .mocha-disclaimer { width:100%; }
+.mocha-upgrade-root .mocha-panel-body { flex:1 1 0; }
+.mocha-upgrade-root .composer-wrap { width:100%; }
+.mocha-upgrade-root .composer { width:100%; max-width:none; }
+.mocha-upgrade-root .mocha-idle { width:100%; }
+.mocha-upgrade-root .mocha-idle-greeting { transform:none; }
+.mocha-upgrade-root .mocha-idle-banner-text { font-size:1rem; letter-spacing:.02em; }
+.mocha-upgrade-root .mocha-idle-prompt { font-size:1.45rem; letter-spacing:.01em; }
+.mocha-upgrade-root .mocha-idle-grid { max-width:34rem; }
+.mocha-upgrade-root .mocha-idle-starter { min-height:5rem; }
+.mocha-upgrade-root .mocha-header-session { display:none; }
+.mocha-upgrade-root .task-row,
+.mocha-upgrade-root .thinking-step,
+.mocha-upgrade-root .todos-unfold,
+.mocha-upgrade-root .todos-fold,
+.mocha-upgrade-root .qa-card { max-width:100%; }
+.mocha-upgrade-root .mocha-inline-structure {
+  height:28rem;
+  margin-top:.75rem;
+  overflow:hidden;
+  border:1px solid var(--ct-line-h2);
+  border-radius:.5rem;
+  background:#1e1e1e;
+}
+.mocha-upgrade-root .mocha-inline-structure .agent-structure { height:100%; }
+.mocha-upgrade-root .agent-mutation-panel {
+  margin-top:.75rem;
+  border:1px solid var(--ct-line-h2);
+  border-radius:.5rem;
+  overflow:hidden;
+  background:#292929;
+}
+.mocha-upgrade-root .mocha-local-messages {
+  position:absolute;
+  right:1rem;
+  bottom:4.75rem;
+  z-index:5;
+  width:min(32rem,calc(100% - 2rem));
+  max-height:11rem;
+  overflow:auto;
+  padding:.75rem;
+  border:1px solid var(--ct-line-h2);
+  border-radius:.5rem;
+  background:rgba(31,31,38,.97);
+  box-shadow:0 .75rem 2rem rgba(0,0,0,.3);
+}
+.mocha-upgrade-root .mocha-local-messages > div + div { margin-top:.6rem; }
+.mocha-upgrade-root .mocha-local-messages strong { display:block; font-size:.75rem; color:var(--ct-text-h3); }
+.mocha-upgrade-root .mocha-local-messages p { margin-top:.2rem; color:var(--ct-text-h2); font-size:.8125rem; line-height:1.5; }
+.mocha-upgrade-root .mocha-local-messages a { display:inline-block; margin-top:.25rem; color:var(--ct-brand-actived); font-size:.75rem; }
+
+@media (max-width:1023px) {
+  .mocha-upgrade-root .mocha-panel { width:100%; }
+  .mocha-upgrade-root .mocha-inline-structure { height:24rem; }
+}
+
+@media (max-width:767px) {
+  .mocha-upgrade-root .mocha-panel { padding:.625rem; }
+  .mocha-upgrade-root .mocha-idle { gap:1rem; justify-content:center; }
+  .mocha-upgrade-root .mocha-idle-intro { gap:1rem; }
+  .mocha-upgrade-root .mocha-idle-grid { gap:.5rem; }
+  .mocha-upgrade-root .mocha-idle-starter { min-height:4.5rem; padding:.625rem; }
+  .mocha-upgrade-root .mocha-idle-starter-desc { padding-left:0; }
+  .mocha-upgrade-root .mocha-inline-structure { height:21rem; }
+}
+
+@media (max-width:420px) {
+  .mocha-upgrade-root .mocha-panel { padding:.5rem; gap:.5rem; }
+  .mocha-upgrade-root .mocha-idle-banner-text { font-size:.875rem; }
+  .mocha-upgrade-root .mocha-idle-prompt { font-size:1.15rem; }
+  .mocha-upgrade-root .mocha-idle-starter-title { font-size:.75rem; }
+  .mocha-upgrade-root .mocha-idle-starter-desc { font-size:.6875rem; line-height:1.35; }
+  .mocha-upgrade-root .mocha-task-list { padding:.375rem; }
+  .mocha-upgrade-root .mocha-inline-structure { height:18rem; }
+}

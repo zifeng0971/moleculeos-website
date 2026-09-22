@@ -1,0 +1,50 @@
+.report-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 675px;
+}
+
+.report-h1 {
+  margin: 24px 0 0;
+  font-family: var(--mocha-font);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--ct-text-h1);
+  letter-spacing: 0.02em;
+}
+
+.report-h2 {
+  margin: 0;
+  padding-top: 4px;
+  font-family: var(--mocha-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--ct-text-h1);
+}
+
+.report-p {
+  margin: 0;
+  font-family: var(--mocha-font-source-han);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--ct-white-85);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.report-rule {
+  width: 100%;
+  height: 1px;
+  background: var(--ct-line-h1);
+  flex-shrink: 0;
+}
+
+.report-mark {
+  color: var(--ct-text-h1);
+  font-weight: 700;
+}

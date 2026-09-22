@@ -1,0 +1,36 @@
+.working-pulse {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.working-pulse-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--ct-brand-actived);
+  animation: working-pulse-breathe 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .working-pulse-dot {
+    animation: none;
+    opacity: 0.85;
+  }
+}
+
+@keyframes working-pulse-breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,52 @@
+.absorb-pulse {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.absorb-pulse-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    90deg,
+    var(--ct-brand-default) 0%,
+    var(--ct-brand-actived) 42%,
+    #e8d9ff 50%,
+    var(--ct-brand-actived) 58%,
+    var(--ct-brand-default) 100%
+  );
+  background-size: 220% 100%;
+  background-position: 100% 0;
+  animation: absorb-pulse-flash 1s ease-in-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .absorb-pulse-dot {
+    animation: none;
+    background-image: none;
+    background: var(--ct-brand-actived);
+    opacity: 0.85;
+  }
+}
+
+@keyframes absorb-pulse-flash {
+  from {
+    background-position: 100% 0;
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    background-position: -100% 0;
+    opacity: 0.55;
+    transform: scale(0.95);
+  }
+}

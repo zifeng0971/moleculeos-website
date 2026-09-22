@@ -1,125 +1,207 @@
 'use client';
-import { useEffect, useRef, useState, type FormEvent } from 'react';
+
 import dynamic from 'next/dynamic';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Bot, CheckCircle2, Circle, Dna, FileText, GitBranch, LoaderCircle, Network, Plus, Send, Sparkles } from 'lucide-react';
-import { AGENT_PROJECTS, AGENT_TASKS, DEMO_STEP_INTERVAL, agentStageAt } from '@/lib/agent-demo';
-import { advanceRuns, appendLocalReply, createChatRun, createRun, ensurePresetRun, runStatus, type AgentConversation, type AgentRun } from '@/lib/agent-playback';
+import { CheckCircle2, Circle, FileText, LoaderCircle, Plus } from 'lucide-react';
+import { AGENT_PROJECTS, AGENT_TASKS } from '@/lib/agent-demo';
 import { SITE_CONFIG } from '@/lib/site-config';
-import { AgentWorkflowStep } from '../AgentWorkflowStep';
-import { AgentUserInput } from '../AgentUserInput';
-import { MochaIdle } from './MochaIdle';
-import { ChatBubble } from './ChatBubble';
+import { MutationPanel } from '../MutationPanel';
 import structureData from '@/content/antibody-affinity-structure.json';
+import { buildMochaFlow, type MochaFlowConfig } from './flow-adapter';
+import { MochaPanel } from './vendor/src/pages/MochaPanel/MochaPanel';
+import type { UnfoldStep } from './vendor/src/data/mochaFlow';
+import './vendor-tokens.css';
 import '../agent-demo.css';
 import './mocha-upgrade.css';
 import '../product-surface.css';
 
-function StructureLoading() { const t = useTranslations('agentDemo.structure'); return <div className="agent-structure-cover" role="status">{t('loading')}</div>; }
-const Structure = dynamic(() => import('../AgentStructure'), { ssr: false, loading: StructureLoading });
+function StructureLoading() {
+  const t = useTranslations('agentDemo.structure');
+  return <div className="agent-structure-cover" role="status">{t('loading')}</div>;
+}
+
+const AgentStructure = dynamic(() => import('../AgentStructure'), { ssr: false, loading: StructureLoading });
+
+type RunState = {
+  id: number;
+  taskId: string;
+  ordinal: number;
+  stepIndex: number;
+  paused: boolean;
+  complete: boolean;
+  messages: Array<{ role: 'user' | 'assistant'; content: string }>;
+};
+
 const EMPTY_SELECTION: string[] = [];
 
 // Pure front-end product walkthrough. It has no service, session or telemetry client.
 export function MochaWorkbench() {
   const t = useTranslations('agentDemo');
-  const [runs, setRuns] = useState<AgentRun[]>([]);
-  const [conversations, setConversations] = useState<AgentConversation>({});
-  const [draft, setDraft] = useState('');
+  const [runs, setRuns] = useState<RunState[]>([]);
   const [activeId, setActiveId] = useState<number | null>(null);
-  const [reduced, setReduced] = useState(true);
+  const [draft, setDraft] = useState('');
   const [visible, setVisible] = useState(false);
   const [foreground, setForeground] = useState(true);
-  const [pane, setPane] = useState<'flow'|'structure'>('flow');
-  const [viewerMounted, setViewerMounted] = useState(false);
+  const [reduced, setReduced] = useState(false);
+  const [thinkingStep, setThinkingStep] = useState<UnfoldStep | null>(null);
   const [selections, setSelections] = useState<Record<number, string[]>>({});
   const [focus, setFocus] = useState<{ residue: string; serial: number } | null>(null);
-  const serial = useRef(0);
   const frame = useRef<HTMLDivElement>(null);
-  const transcript = useRef<HTMLDivElement>(null);
-  const active = runs.find(run => run.id === activeId);
-  const task = AGENT_TASKS.find(item => item.id === active?.taskId);
-  const stage = agentStageAt(active?.elapsed ?? 0, task?.steps.length ?? 0);
-  const hasStructure = !!active && !!task && runStatus(active) === 'complete' && task.steps.some(step => step.type === 'result' && (step.structure || step.structureHighlight));
-  const hasRunning = runs.some(run => runStatus(run) === 'playing');
-  const selected = active ? selections[active.id] ?? EMPTY_SELECTION : EMPTY_SELECTION;
-  const presetRun = runs.find(run => run.id === 0);
-  const icons = [Dna, GitBranch, Network, Sparkles];
-  const taskTitle = (taskId: string) => taskId === 'affinity' ? 'Antibody Affinity Optimization' : t(AGENT_TASKS.find(item => item.id === taskId)?.titleKey ?? 'chatTitle');
+  const serial = useRef(0);
 
-  function selectResidue(label: string) {
-    if (!active) return;
-    setSelections(value => { const current = value[active.id] ?? []; return { ...value, [active.id]: current.includes(label) ? current.filter(item => item !== label) : [...current, label] }; });
-    setFocus({ residue: label, serial: Date.now() });
-    setPane('structure');
-  }
-  useEffect(() => { setFocus(null); }, [activeId]);
-  useEffect(() => { setPane(hasStructure ? 'structure' : 'flow'); if (hasStructure) setViewerMounted(true); }, [activeId, hasStructure]);
-  useEffect(() => {
-    if (!active || !hasStructure || active.taskId !== 'affinity') return;
-    setSelections(value => value[active.id]?.length ? value : { ...value, [active.id]: structureData.highlighted });
-  }, [active, hasStructure]);
+  const titleFor = (taskId: string) => taskId === 'affinity'
+    ? 'Antibody Affinity Optimization'
+    : t(AGENT_TASKS.find((item) => item.id === taskId)?.titleKey ?? 'chatTitle');
+
+  const flows = useMemo(() => Object.fromEntries(AGENT_TASKS.map((task) => [
+    task.id,
+    buildMochaFlow(task, task.id === 'affinity' ? 'Antibody Affinity Optimization' : t(task.titleKey)),
+  ])) as Record<string, MochaFlowConfig>, [t]);
+
+  const active = runs.find((run) => run.id === activeId) ?? null;
+  const activeFlow = active ? flows[active.taskId] : null;
+  const activeStep = active && activeFlow ? activeFlow.steps[Math.min(active.stepIndex, activeFlow.steps.length - 1)] : undefined;
+  const activePlaying = Boolean(active && !active.complete && !active.paused && visible && foreground && !reduced);
+  const selected = active ? selections[active.id] ?? EMPTY_SELECTION : EMPTY_SELECTION;
+  const presetRun = runs.find((run) => run.id === 0);
+
   useEffect(() => {
     const media = matchMedia('(prefers-reduced-motion: reduce)');
-    const update = () => setReduced(media.matches);
-    update(); media.addEventListener('change', update);
+    const syncMotion = () => setReduced(media.matches);
+    syncMotion();
+    media.addEventListener('change', syncMotion);
     const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0.15 });
-    observer.observe(frame.current!);
-    const visibility = () => setForeground(!document.hidden);
-    visibility(); document.addEventListener('visibilitychange', visibility);
-    return () => { observer.disconnect(); media.removeEventListener('change', update); document.removeEventListener('visibilitychange', visibility); };
+    if (frame.current) observer.observe(frame.current);
+    const syncVisibility = () => setForeground(!document.hidden);
+    syncVisibility();
+    document.addEventListener('visibilitychange', syncVisibility);
+    return () => {
+      observer.disconnect();
+      media.removeEventListener('change', syncMotion);
+      document.removeEventListener('visibilitychange', syncVisibility);
+    };
   }, []);
-  useEffect(() => {
-    if (!visible || !foreground || !hasRunning) return;
-    const clock = setInterval(() => setRuns(value => advanceRuns(value, DEMO_STEP_INTERVAL)), DEMO_STEP_INTERVAL);
-    return () => clearInterval(clock);
-  }, [visible, foreground, hasRunning]);
-  useEffect(() => { transcript.current?.scrollTo({ top: transcript.current.scrollHeight, behavior: reduced ? 'auto' : 'smooth' }); }, [stage, activeId, reduced, conversations]);
 
-  function start(taskId: string) {
-    const chosen = AGENT_TASKS.find(item => item.id === taskId);
-    if (!chosen) return;
-    if (taskId === AGENT_PROJECTS[0].taskId) {
-      setRuns(value => ensurePresetRun(value, taskId, false, chosen.steps.length));
-      setActiveId(0);
+  useEffect(() => {
+    if (!visible || !foreground || reduced) return;
+    const timer = window.setInterval(() => {
+      setRuns((current) => current.map((run) => {
+        if (run.id === activeId || run.paused || run.complete) return run;
+        const flow = flows[run.taskId];
+        const next = run.stepIndex + 1;
+        return next >= flow.steps.length ? { ...run, complete: true } : { ...run, stepIndex: next };
+      }));
+    }, 3200);
+    return () => window.clearInterval(timer);
+  }, [activeId, flows, foreground, reduced, visible]);
+
+  useEffect(() => {
+    if (!active || active.taskId !== 'affinity' || !active.complete) return;
+    setSelections((current) => current[active.id]?.length ? current : { ...current, [active.id]: structureData.highlighted });
+  }, [active]);
+
+  function openTask(taskId: string) {
+    const flow = flows[taskId];
+    if (!flow) return;
+    const existing = taskId === AGENT_PROJECTS[0].taskId ? runs.find((run) => run.id === 0) : undefined;
+    if (existing) {
+      setActiveId(existing.id);
       return;
     }
-    const id = ++serial.current;
-    setRuns(value => [...value, createRun(value, id, taskId, false, chosen.steps.length)]);
+    const id = taskId === AGENT_PROJECTS[0].taskId ? 0 : ++serial.current;
+    const ordinal = runs.filter((run) => run.taskId === taskId).length + 1;
+    setRuns((current) => [{ id, taskId, ordinal, stepIndex: 0, paused: reduced, complete: false, messages: [] }, ...current]);
     setActiveId(id);
   }
-  function sendMessage(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault(); const message = draft.trim(); if (!message) return;
-    if (activeId === null) {
+
+  function advanceActive() {
+    if (!active || !activeFlow) return;
+    setRuns((current) => current.map((run) => {
+      if (run.id !== active.id) return run;
+      const next = run.stepIndex + 1;
+      return next >= activeFlow.steps.length ? { ...run, complete: true, paused: false } : { ...run, stepIndex: next };
+    }));
+  }
+
+  function submit() {
+    const content = draft.trim();
+    if (active && active.paused && !content) {
+      if (reduced) {
+        advanceActive();
+        return;
+      }
+      setRuns((current) => current.map((run) => run.id === active.id ? { ...run, paused: false } : run));
+      return;
+    }
+    if (!content) return;
+    const reply = t('localReply');
+    if (!active) {
       const id = ++serial.current;
-      setRuns(value => [...value, createChatRun(value, id)]);
-      setConversations(value => appendLocalReply(value, id, message, t('localReply')));
+      setRuns((current) => [{ id, taskId: 'humanization', ordinal: 1, stepIndex: flows.humanization.steps.length - 1, paused: false, complete: true, messages: [{ role: 'user', content }, { role: 'assistant', content: reply }] }, ...current]);
       setActiveId(id);
-    } else setConversations(value => appendLocalReply(value, activeId, message, t('localReply')));
+    } else {
+      setRuns((current) => current.map((run) => run.id === active.id ? { ...run, messages: [...run.messages, { role: 'user', content }, { role: 'assistant', content: reply }] } : run));
+    }
     setDraft('');
   }
 
-  const starters = AGENT_TASKS.map((item, index) => ({ id: item.id, title: t(item.titleKey), description: t(item.subtitleKey), icon: icons[index] }));
+  function selectResidue(label: string) {
+    if (!active) return;
+    setSelections((current) => {
+      const values = current[active.id] ?? [];
+      return { ...current, [active.id]: values.includes(label) ? values.filter((item) => item !== label) : [...values, label] };
+    });
+    setFocus({ residue: label, serial: Date.now() });
+  }
 
-  return <div className="agent-demo-slot"><div ref={frame} className={`agent-demo agent-demo-live agent-multitask mocha-upgrade ${active ? 'agent-has-task' : ''} ${hasStructure ? 'agent-has-structure' : ''}`} aria-label={t('label')}>
-    <div className="agent-demo-top"><span className="agent-brand">MOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{task ? taskTitle(task.id) : 'Mocha'}</span></div>
-    <div className="agent-workspace">
-      <aside className="agent-run-sidebar" aria-label={t('tasksLabel')}><div className="agent-sidebar-heading"><span>{t('tasksLabel')}</span><button type="button" className="agent-new-task" onClick={() => setActiveId(null)}><Plus size={14}/>{t('newTask')}</button></div>
-        <div className="agent-run-list">{AGENT_PROJECTS.map(project => <button type="button" className="agent-run agent-preset-project" aria-pressed={activeId === 0} key={project.title} onClick={() => start(project.taskId)}>{presetRun ? runStatus(presetRun) === 'complete' ? <CheckCircle2 size={15}/> : runStatus(presetRun) === 'paused' ? <Circle size={15}/> : <LoaderCircle size={15} className="agent-running-icon"/> : <FileText size={15}/>}<span><strong>{project.title}</strong>{presetRun && <small>{t(runStatus(presetRun))}</small>}</span></button>)}
-          {runs.filter(run => run.id !== 0).map(run => { const status = runStatus(run); const runTask = AGENT_TASKS.find(item => item.id === run.taskId); return <button type="button" key={run.id} className="agent-run" aria-pressed={activeId === run.id} onClick={() => setActiveId(run.id)}>{status === 'complete' ? <CheckCircle2 size={15}/> : status === 'paused' ? <Circle size={15}/> : <LoaderCircle size={15} className="agent-running-icon"/>}<span><strong>{runTask ? taskTitle(runTask.id) : t('chatTitle')} · {run.ordinal}</strong><small>{run.taskId === 'chat' ? t('chatStatus') : t(status)}</small></span></button>; })}
-        </div>
-      </aside>
-      {hasStructure && <div className="agent-pane-tabs"><button aria-pressed={pane === 'flow'} onClick={() => setPane('flow')}>Mocha</button><button aria-pressed={pane === 'structure'} onClick={() => setPane('structure')}>{t('structure.structure')}</button></div>}
-      <div className={`agent-structure-pane ${!hasStructure ? 'agent-pane-absent' : ''} ${pane !== 'structure' ? 'agent-pane-mobile-hidden' : ''}`}>{viewerMounted && <Structure taskId={task ? activeId : null} prepared={hasStructure} selected={selected} onSelect={selectResidue} focus={focus} running={visible && foreground && hasStructure}/>}</div>
-      <main className={`agent-main-pane ${hasStructure && pane !== 'flow' ? 'agent-pane-mobile-hidden' : ''}`}>
-        {active && <div className="agent-panel-heading"><Bot size={18}/><span>Mocha</span><button type="button" onClick={() => setActiveId(null)}>{t('newTask')}</button></div>}
-        {!active ? <MochaIdle intro={t('intro')} title={t('welcomeTitle')} samplesLabel={t('samples')} starters={starters} onSelect={start}/> : <>
-          <div className="agent-session-heading"><h2 className="agent-view-title">{task ? taskTitle(task.id) : t('chatTitle')}{active.id === 0 ? '' : ` · ${active.ordinal}`}</h2><span role="status">{task ? t(runStatus(active)) : t('chatStatus')}</span></div>
-          <div className="agent-transcript" ref={transcript}>{task && <><AgentUserInput task={task}/><div className="agent-speaker agent-beat"><Sparkles size={14}/>Assistant</div><div className="agent-assistant-body">{task.steps.slice(0, stage).map((step, index) => <AgentWorkflowStep key={`${active.id}-${index}`} step={step} onSelect={selectResidue}/>)}</div>{runStatus(active) === 'complete' && <div className="agent-workflow-end"><CheckCircle2 size={17}/><span>Workflow complete</span><button type="button" onClick={() => setActiveId(null)}>{t('newTask')}</button></div>}</>}
-            {(conversations[active.id] ?? []).map((message, index) => message.role === 'user' ? <div className="agent-message agent-message-user" key={index}><small>{t('you')}</small><ChatBubble variant="user">{message.content}</ChatBubble></div> : <div className="agent-message agent-message-assistant" key={index}><div className="agent-speaker"><Sparkles size={14}/>Mocha</div><ChatBubble variant="assistant">{message.content}</ChatBubble><a href={SITE_CONFIG.platformUrl} target="_blank" rel="noopener noreferrer">{t('openPlatform')} ↗</a></div>)}
+  const idleItems = AGENT_TASKS.map((task) => ({ id: task.id, title: t(task.titleKey), description: t(task.subtitleKey) }));
+  const renderSlot = (kind: 'structure' | 'mutationTable') => {
+    if (kind === 'mutationTable') return <MutationPanel onSelect={selectResidue} />;
+    if (!active) return null;
+    return <div className="mocha-inline-structure"><AgentStructure taskId={active.id} prepared selected={selected} onSelect={selectResidue} focus={focus} running={visible && foreground}/></div>;
+  };
+
+  return <div className="agent-demo-slot">
+    <div ref={frame} className={`agent-demo agent-demo-live agent-multitask mocha-upgrade mocha-upgrade-root ${active ? 'agent-has-task' : ''}`} aria-label={t('label')}>
+      <div className="agent-demo-top"><span className="agent-brand">MOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{active ? titleFor(active.taskId) : 'Mocha'}</span></div>
+      <div className="agent-workspace mocha-upgrade-workspace">
+        <aside className="agent-run-sidebar" aria-label={t('tasksLabel')}>
+          <div className="agent-sidebar-heading"><span>{t('tasksLabel')}</span><button type="button" className="agent-new-task" onClick={() => setActiveId(null)}><Plus size={14}/>{t('newTask')}</button></div>
+          <div className="agent-run-list">
+            {AGENT_PROJECTS.map((project) => <button type="button" className="agent-run agent-preset-project" aria-pressed={activeId === 0} key={project.title} onClick={() => openTask(project.taskId)}>
+              {presetRun ? presetRun.complete ? <CheckCircle2 size={15}/> : presetRun.paused ? <Circle size={15}/> : <LoaderCircle size={15} className="agent-running-icon"/> : <FileText size={15}/>}<span><strong>{project.title}</strong>{presetRun && <small>{t(presetRun.complete ? 'complete' : presetRun.paused ? 'paused' : 'playing')}</small>}</span>
+            </button>)}
+            {runs.filter((run) => run.id !== 0).map((run) => <button type="button" className="agent-run" aria-pressed={activeId === run.id} key={run.id} onClick={() => setActiveId(run.id)}>
+              {run.complete ? <CheckCircle2 size={15}/> : run.paused ? <Circle size={15}/> : <LoaderCircle size={15} className="agent-running-icon"/>}<span><strong>{titleFor(run.taskId)}{run.ordinal > 1 ? ` · ${run.ordinal}` : ''}</strong><small>{t(run.complete ? 'complete' : run.paused ? 'paused' : 'playing')}</small></span>
+            </button>)}
           </div>
-        </>}
-        <form className="agent-demo-input" onSubmit={sendMessage}><div className="agent-composer-body">{hasStructure && <span className="agent-context-chip">complex</span>}<textarea value={draft} onChange={event => setDraft(event.target.value)} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} maxLength={2000} rows={2} aria-label={t('inputPlaceholder')} placeholder={t('inputPlaceholder')}/></div><button type="submit" disabled={!draft.trim()} aria-label={t('send')}><Send size={17}/></button></form>
-      </main>
+        </aside>
+        <main className="mocha-upgrade-panel-shell">
+          <MochaPanel
+            header={{ title: 'Mocha' }}
+            idle={!active}
+            playing={Boolean(active && !active.complete)}
+            paused={Boolean(active && (active.paused || reduced))}
+            step={activeStep}
+            flowSteps={activeFlow?.steps ?? []}
+            paceScale={activeFlow?.paceScale ?? 0.25}
+            draft={draft}
+            onDraftChange={setDraft}
+            onSubmit={submit}
+            onPause={() => active && setRuns((current) => current.map((run) => run.id === active.id ? { ...run, paused: true } : run))}
+            selectedThinkingStep={thinkingStep}
+            onThinkingStepSelect={setThinkingStep}
+            onFrameComplete={activePlaying ? advanceActive : undefined}
+            idleContent={{ banner: t('intro'), prompt: t('welcomeTitle'), sectionLabel: t('samples'), items: idleItems }}
+            onIdleSelect={openTask}
+            composerPlaceholder={t('inputPlaceholder')}
+            disclaimerText={t('disclaimer')}
+            renderReportSlot={renderSlot}
+          />
+          {active?.messages.length ? <div className="mocha-local-messages" aria-live="polite">{active.messages.map((message, index) => <div key={index} data-role={message.role}><strong>{message.role === 'user' ? t('you') : 'Mocha'}</strong><p>{message.content}</p>{message.role === 'assistant' && <a href={SITE_CONFIG.platformUrl} target="_blank" rel="noopener noreferrer">{t('openPlatform')} ↗</a>}</div>)}</div> : null}
+        </main>
+      </div>
     </div>
-  </div></div>;
+  </div>;
 }

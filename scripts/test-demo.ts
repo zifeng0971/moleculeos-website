@@ -63,4 +63,14 @@ for (const path of ['components/hero/AgentDemo.tsx','components/hero/AgentWorkfl
   assert.doesNotMatch(source, /\bfetch\s*\(|new WebSocket|axios\.|localStorage|sessionStorage|projectId|work ID|session ID|\/app\/src\/|\/workspace\/|feishu|wiki/i);
 }
 assert.doesNotMatch(readFileSync('components/hero/AgentStructure.tsx', 'utf8'), /\bfetch\s*\(|new WebSocket|axios\.|localStorage|sessionStorage/);
-console.log('Demo: six step types, task playback, static assets and request guards passed.');
+const upgradedWorkbench = readFileSync('components/hero/mocha-upgrade/MochaWorkbench.tsx', 'utf8');
+const upgradedPanel = readFileSync('components/hero/mocha-upgrade/vendor/src/pages/MochaPanel/MochaPanel.tsx', 'utf8');
+const flowAdapter = readFileSync('components/hero/mocha-upgrade/flow-adapter.ts', 'utf8');
+assert.match(upgradedWorkbench, /<MochaPanel/);
+assert.doesNotMatch(upgradedWorkbench, /AgentWorkflowStep/);
+assert.match(upgradedPanel, /renderReportSlot/);
+assert.match(flowAdapter, /type: 'structure'/);
+for (const source of [upgradedWorkbench, upgradedPanel, flowAdapter]) {
+  assert.doesNotMatch(source, /mocha-component-upgrade-testing-sandy|\bfetch\s*\(|new WebSocket|axios\.|localStorage|sessionStorage/);
+}
+console.log('Demo: six step types, task playback, upgraded panel slots, static assets and request guards passed.');

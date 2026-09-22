@@ -1,0 +1,126 @@
+.step-detail-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.step-detail-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.step-detail-label {
+  font-family: var(--mocha-font);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--ct-text-h3);
+}
+
+.step-detail-readout {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: var(--ct-bg-h2-30);
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h2);
+}
+
+.step-detail-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--ct-bg-h2-30);
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h2);
+  text-align: left;
+  cursor: pointer;
+}
+
+.step-detail-toggle-on {
+  border-color: rgba(154, 152, 220, 0.55);
+  background: rgba(111, 105, 199, 0.14);
+  color: var(--ct-brand-actived);
+}
+
+.step-detail-toggle-mark {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--ct-text-h3);
+  flex-shrink: 0;
+}
+
+.step-detail-toggle-on .step-detail-toggle-mark {
+  border-color: var(--ct-brand-actived);
+  background: var(--ct-brand-actived);
+}
+
+.step-detail-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.step-detail-choice,
+.step-detail-button {
+  margin: 0;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--ct-bg-h2-30);
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h2);
+  cursor: pointer;
+}
+
+.step-detail-choice-selected {
+  border-color: rgba(154, 152, 220, 0.55);
+  background: rgba(111, 105, 199, 0.14);
+  color: var(--ct-brand-actived);
+}
+
+.step-detail-button {
+  align-self: flex-start;
+  background: var(--ct-brand-default);
+  color: var(--ct-text-h1);
+}
+
+.step-detail-slider-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-detail-slider-value {
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--ct-text-h2);
+}
+
+.step-detail-slider {
+  width: 100%;
+  margin: 0;
+  accent-color: var(--ct-brand-default);
+}

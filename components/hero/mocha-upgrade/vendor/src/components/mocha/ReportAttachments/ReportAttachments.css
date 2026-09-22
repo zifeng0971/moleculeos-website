@@ -1,0 +1,95 @@
+.report-attachments {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.report-attachment {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 32px;
+  padding: 0 8px 0 10px;
+  background: var(--ct-bg-h2);
+  border: 1px solid var(--ct-line-h2);
+  border-radius: 8px;
+}
+
+.report-attachment-importable {
+  background: color-mix(in srgb, var(--ct-brand-default) 12%, var(--ct-bg-h2));
+  border-color: color-mix(in srgb, var(--ct-brand-actived) 40%, var(--ct-line-h2));
+}
+
+.report-attachment-importable .report-attachment-name {
+  color: var(--ct-text-h1);
+  font-weight: 600;
+}
+
+.report-attachment-importable .report-attachment-icon {
+  opacity: 0.95;
+}
+
+.report-attachment-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  opacity: 0.75;
+}
+
+.report-attachment-name {
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+  font-family: var(--mocha-font);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--ct-text-h1);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.report-attachment-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.report-attachment-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.report-attachment-action:hover {
+  background: var(--ct-white-05);
+}
+
+.report-attachment-action:focus-visible {
+  outline: 1px solid var(--ct-brand-actived);
+  outline-offset: 1px;
+}
+
+.report-attachment-action img {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
