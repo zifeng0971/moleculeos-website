@@ -1,0 +1,147 @@
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-1-mmfold"><a id="heading_81"></a>1. <strong>MMFold</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview"><a id="heading_82"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>MMFold is an advanced deep learning model that accurately predicts 3D protein structures using Multiple Sequence Alignments (MSAs) as key inputs. By leveraging evolutionary information to identify structural motifs and residue interactions, it significantly enhances research efficiency in computational biology and structural bioinformatics.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users\"><a id=\"heading_83\"></a><strong>Target Users</strong></h5><ul><li><strong>Biological Researchers:</strong> To assist experimental design and complement experimental observations with predicted structural data.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases\"><a id=\"heading_84\"></a><strong>Use Cases</strong></h5><ul><li><strong>Protein Structure Prediction:</strong> Predict 3D structures from amino acid sequences to help elucidate function and biological mechanisms.</li><li><strong>Cross-Species Structural Comparison:</strong> Compare predicted structures across different species to study evolutionary relationships and analyze structural conservation among homologs.</li><li><strong>Industrial Enzyme Design:</strong> Provide structural insights to guide mutation design and optimize catalytic activity for biomanufacturing or pharmaceutical development.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-input\"><a id=\"heading_85\"></a><strong>Input</strong></h5><ul><li><strong>Input file (required): </strong>FASTA file containing protein sequences (different chains on the same line separated by a colon :).</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs\"><a id=\"heading_86\"></a><strong>Outputs</strong></h5><ul><li>3D protein structure in PDB format.</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps"><a id="heading_87"></a><strong>Steps</strong></h4>
+
+-   Launch the model calculation and complete the required inputs as prompted.
+
+<ManualImage src={"/manual-assets/en/video/video-52-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   View results: Open the task results panel and import the models into the MOS project. This tool generates three candidate PDB structures.
+
+<ManualVideo src={"/manual-assets/en/video/video-53.webm"} poster={"/manual-assets/en/video/video-53-poster.webp"} webm={"/manual-assets/en/video/video-53.webm"} mp4={"/manual-assets/en/video/video-53.mp4"} external={false} reference={"image76.gif"} />
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-2-protein-redesign"><a id="heading_88"></a>2. <strong>Protein Redesign</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-2"><a id="heading_89"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Redesigns amino acid sequences based on fixed protein backbone structures.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-2\"><a id=\"heading_90\"></a><strong>Target Users</strong></h5><ul><li><strong>Synthetic Biologists:</strong> Design and optimize the stability and catalytic activity of substrate-specific enzymes.</li><li><strong>Drug Discovery Researchers:</strong> Design protein therapeutics such as antibodies.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-2\"><a id=\"heading_91\"></a><strong>Use Cases</strong></h5><ul><li>Redesign full sequences based on a target protein structure.</li><li>Keep specific sequence regions fixed while redesigning the remaining positions.</li><li>Optimize and design sequences for enzymes targeting specific substrates.</li><li>Design binder sequences based on protein structures bound to therapeutic targets.</li><li>Design biosensors.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs\"><a id=\"heading_92\"></a><strong>Inputs</strong></h5><ul><li><strong>Input File (Required):</strong> Protein structure file in CIF or PDB format (can contain multiple chains and small molecules).</li><li><strong>Design Residues (Optional):</strong> Specific residues to redesign (e.g., \"A1 A4 B2 B3\").</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-2\"><a id=\"heading_93\"></a><strong>Outputs</strong></h5><ul><li>Protein sequences: redesign.fasta</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-2"><a id="heading_94"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-3-protein-binder-design"><a id="heading_95"></a>3. <strong>Protein Binder Design</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-3"><a id="heading_96"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Designs target-specific binder proteins (backbone structures alone or including sequence).</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-3\"><a id=\"heading_97\"></a><strong>Target Users</strong></h5><ul><li><strong>Synthetic Biologists:</strong> Design enzyme inhibitors or stabilizers.</li><li><strong>Drug Discovery Researchers:</strong> Design mini-protein therapeutics, masking peptides, etc.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-3\"><a id=\"heading_98\"></a><strong>Use Cases</strong></h5><ul><li>Inhibit enzyme activity by binding to active or allosteric sites.</li><li>Stabilize protein folding or prevent aggregation during expression.</li><li>Target disease-associated proteins as antibody alternatives (e.g., viral or oncology targets).</li><li>Deliver drugs or nanoparticles to specific tissues via targeted binding.</li><li>Mimic or block natural ligands to modulate receptor signaling pathways.</li><li>Target immune receptors to regulate immune responses.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-2\"><a id=\"heading_99\"></a><strong>Inputs</strong></h5><ul><li><strong>\"Input Structure\" (Required): </strong>File containing the target protein structure (can contain multiple chains).</li><li><strong>\"Target Binding\" (Required): </strong>Target protein residues in the intended binding region (e.g., \"A5 A8-20\" specifies residue 5 and residues 8 through 20 on Chain A).</li><li><strong>\"Binder Size Min\" (Required): </strong>Minimum length of the designed binder peptide (e.g., 15).</li><li><strong>\"Binder Size Max\" (Required): </strong>Maximum length of the designed binder peptide (e.g., 30).</li><li><strong>\"Align Binder\" (Optional): </strong>When enabled, MOS predicts the target-binder complex and aligns it against the original target chain.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-3\"><a id=\"heading_100\"></a><strong>Outputs</strong></h5><ul><li>Designed binder structure containing heavy-atom 3D coordinates and virtual amino acid annotations: output.cif</li><li>If mosapp_compare_binder==1, the complex structure of the target protein and binder peptide containing valid sequences: aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-3"><a id="heading_101"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-4-sequence-fitness-mutation-effect"><a id="heading_102"></a>4. <strong>Sequence Fitness Mutation Effect</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-4"><a id="heading_103"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Predicts protein structure, function, and evolutionary relationships to comprehensively evaluate all potential and viable single-point mutations across a protein sequence.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-4\"><a id=\"heading_104\"></a><strong>Target Users</strong></h5><ul><li><strong>Protein Engineers:</strong> Design and optimize protein or enzyme functions.</li><li><strong>Drug Developers:</strong> Assess the impact of mutations on therapeutic target proteins.</li><li><strong>Basic Biology Researchers:</strong> Study protein evolution and sequence-function relationships.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-4\"><a id=\"heading_105\"></a><strong>Use Cases</strong></h5><ol><li><strong>Protein Engineering Optimization:</strong></li></ol><ul><li>Predict the impact of key residue substitutions on stability and function.</li><li>Screen optimal mutation combinations to enhance protein performance.</li></ul><ol><li><strong>Drug Development:</strong></li></ol><ul><li>Predict drug-resistance mutations in target proteins.</li><li>Evaluate stabilizing mutations for therapeutic protein products.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-3\"><a id=\"heading_106\"></a><strong>Inputs</strong></h5><ul><li><strong>Input (Required):</strong> Protein sequence composed of the 20 standard amino acids.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-4\"><a id=\"heading_107\"></a><strong>Outputs</strong></h5><ul><li><strong>Output:</strong> CSV file containing fitness scores for every possible single-point substitution.</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-4"><a id="heading_108"></a><strong>Steps</strong></h4>
+
+-   Launch the model calculation and complete the required inputs as prompted.
+
+<ManualImage src={"/manual-assets/en/video/video-54-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   View results: Open the task results panel and click "Display Score Heatmap" to view the scoring matrix (higher scores indicate better performance).
+
+<ManualVideo src={"/manual-assets/en/video/video-55.webm"} poster={"/manual-assets/en/video/video-55-poster.webp"} webm={"/manual-assets/en/video/video-55.webm"} mp4={"/manual-assets/en/video/video-55.mp4"} external={false} reference={"image78.gif"} />
+
+Online previewing and direct CSV downloads are supported.
+
+<ManualImage src={"/manual-assets/en/video/video-56-poster.webp"} width={2040} height={1016} alt={""} />
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-5-evolutionary-mutation-effect"><a id="heading_109"></a>5. <strong>Evolutionary Mutation Effect</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-5"><a id="heading_110"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Uses a Multiple Sequence Alignment (MSA) fitness model to evaluate all potential mutations across a protein sequence, calculating mutation scores to identify viable substitutions. It assesses the impact of specific amino acid changes, optimizes protein engineering workflows, and uncovers sequence variability and evolutionary constraints.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-5\"><a id=\"heading_111\"></a><strong>Target Users</strong></h5><ul><li><strong>Enzyme Designers:</strong> Use mutation scores to optimize enzymes for higher catalytic activity, specificity, and stability in industrial or biomedical applications.</li><li><strong>Biologics Designers:</strong> Optimize antibodies, fusion proteins, and other biologics by identifying mutations that improve binding affinity, reduce immunogenicity, or improve pharmacokinetics.</li><li><strong>Protein Researchers:</strong> Systematically evaluate mutations to accelerate sequence-structure-function investigations for de novo design or experimental hypothesis validation.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-5\"><a id=\"heading_112\"></a><strong>Use Cases</strong></h5><ul><li><strong>Mutation Scoring and Analysis:</strong> Scores all possible substitutions across a protein sequence. By substituting each amino acid position with all alternate amino acids, the MSA-based model calculates log-probability differences to help identify promising candidate mutations.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-4\"><a id=\"heading_113\"></a><strong>Inputs</strong></h5><ul><li><strong>Input (Required):</strong> Protein sequence composed of the 20 standard amino acids.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-5\"><a id=\"heading_114\"></a><strong>Outputs</strong></h5><ul><li><strong>Output:</strong> CSV file containing fitness scores for every possible mutation.</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-5"><a id="heading_115"></a><strong>Steps</strong></h4>
+
+-   Launch the model calculation and complete the required inputs as prompted.
+
+<ManualImage src={"/manual-assets/en/video/video-57-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   View results: Open the task results panel to download the CSV result file directly.
+
+<ManualImage src={"/manual-assets/en/video/video-58-poster.webp"} width={2040} height={1016} alt={""} />
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-6-structural-stability-mutation-effect"><a id="heading_116"></a>6. <strong>Structural Stability Mutation Effect</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-6"><a id="heading_117"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Evaluates all possible mutations in a 3D protein structure using a structural fitness model, calculating mutation scores and identifying favorable amino acid substitutions.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-6\"><a id=\"heading_118\"></a><strong>Target Users</strong></h5><ul><li><strong>Enzyme Designers:</strong> Optimize catalytic activity, specificity, and stability for industrial or biomedical applications.</li><li><strong>Protein Drug Designers:</strong> Enhance affinity, lower immunogenicity, or improve pharmacokinetic properties for antibodies and fusion proteins.</li><li><strong>Protein Researchers:</strong> Accelerate exploration of sequence-structure-function relationships through systematic mutation evaluation.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-6\"><a id=\"heading_119\"></a><strong>Use Cases</strong></h5><ul><li><strong>Mutation Scoring and Analysis:</strong> Scores all possible mutations in a protein structure. By replacing each amino acid in the structure with alternate residues, the model predicts the log-likelihood of each substitution to highlight potentially beneficial variants.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-5\"><a id=\"heading_120\"></a><strong>Inputs</strong></h5><ul><li><strong>Input File (Required):</strong> Protein structure file in CIF or PDB format (with or without bound ligands).</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-6\"><a id=\"heading_121\"></a><strong>Outputs</strong></h5><ul><li>Scoring results: scores.csv</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+Output example:
+
+<ManualTable html={"<table><tbody><tr><td><p>Plain Text<br>chain, mutation, score<br>A,M1A,-0.898826003074646<br>A,M1C,-3.9786081314086914<br>...</p></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-6"><a id="heading_122"></a><strong>Steps</strong></h4>
+
+-   Launch the model calculation and complete the required inputs as prompted.
+
+<ManualImage src={"/manual-assets/en/video/video-59-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   View results: Open the task results panel and click "Display Score Heatmap" to view the scoring matrix (higher scores indicate better performance).
+
+<ManualImage src={"/manual-assets/en/video/video-60-poster.webp"} width={1952} height={1062} alt={""} />
+
+Online previewing and direct CSV downloads are supported.
+
+<ManualImage src={"/manual-assets/en/video/video-61-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-7-protein-ligand-affinity-evaluation"><a id="heading_123"></a>7. <strong>Protein-Ligand Affinity Evaluation</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-7"><a id="heading_124"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Uses statistical physics to estimate and calibrate pairwise atomic interaction forces, predicting protein-ligand binding affinity.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-7\"><a id=\"heading_125\"></a><strong>Target Users</strong></h5><ul><li>Enzyme or small-molecule designers who need to evaluate protein-ligand binding affinities.</li></ul><h6 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-7\"><a id=\"heading_126\"></a><strong>Use Cases</strong></h6><ol><li><strong>Binding Affinity Prediction:</strong> Predicts binding affinity incorporating van der Waals forces, hydrogen bonding, hydrophobic effects, and metal-coordination energies.</li><li><strong>Conformation Selection:</strong> Evaluates ligand binding poses, as the scoring function is sensitive to steric clashes on the protein surface.</li></ol><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-6\"><a id=\"heading_127\"></a><strong>Inputs</strong></h5><ol><li>Protein file (required): .pdb</li><li>Ligand file (required): .sdf</li></ol><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-7\"><a id=\"heading_128\"></a><strong>Outputs</strong></h5><ul><li>CSV file containing affinity scores.</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-example-files"><a id="heading_129"></a><strong>Example files</strong></h4>
+
+<strong>\[5xh3\_clean.pdb\]</strong>
+
+<strong>\[5xh3\_B\_856.sdf\]</strong>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-7"><a id="heading_130"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-8-geometric-pocket-detection"><a id="heading_131"></a>8. <strong>Geometric Pocket Detection</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-8"><a id="heading_132"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Identifies the top-N binding pockets in a protein structure and performs ligand docking.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-8\"><a id=\"heading_133\"></a><strong>Target Users</strong></h5><ul><li><strong>Drug Designers:</strong> Prioritize and evaluate ligand docking conformations to optimize lead compounds.</li><li><strong>Structural Biologists:</strong> Analyze and predict small-molecule binding sites.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-8\"><a id=\"heading_134\"></a><strong>Use Cases</strong></h5><ul><li>Identify shallow and deep binding pockets on protein structures.</li><li>Dock ligands into multiple potential binding sites.</li><li>Compare docking poses and scores of different ligands against the same protein.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-7\"><a id=\"heading_135\"></a><strong>Inputs</strong></h5><ul><li><strong>Protein Structure (Required):</strong> PDB or CIF file</li><li><strong>Ligand (Required):</strong> SMILES string</li><li><strong>Top-N Pockets (Required):</strong> Number of candidate pockets to use for docking</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-8\"><a id=\"heading_136\"></a><strong>Outputs:</strong></h5><ul><li>Pockets</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-example-file"><a id="heading_137"></a><strong>Example file</strong></h4>
+
+<strong>\[5xh3.pdb\]</strong>
+
+<ManualTable html={"<table><tbody><tr><td><p>Plain Text<br>SMILES<br>C1=CC(=CC=C1C(=O)OCCO)C(=O)OCCO</p></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-8"><a id="heading_138"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-9-antibody-humanization-modelling"><a id="heading_139"></a>9. <strong>Antibody Humanization Modelling</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-9"><a id="heading_140"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Computational antibody humanization pipeline.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-9\"><a id=\"heading_141\"></a><strong>Target Users</strong></h5><ul><li><strong>Drug Discovery Researchers:</strong> Designing therapeutic antibody candidates.</li><li><strong>Antibody Researchers:</strong> Transitioning from animal to human antibody.</li></ul><h6 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-9\"><a id=\"heading_142\"></a><strong>Use Cases</strong></h6><ul><li>Designing humanized antibody variants.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-8\"><a id=\"heading_143\"></a><strong>Inputs</strong></h5><ul><li><strong>Antibody Heavy Chain Sequence (Required):</strong> Sequence of the heavy chain variable region.</li><li><strong>Antibody Light Chain Sequence (Required):</strong> Sequence of the light chain variable region.</li><li><strong>Design Count (Optional):</strong> Number of humanized antibody candidates to generate.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-9\"><a id=\"heading_144\"></a><strong>Outputs</strong></h5><ul><li>Humanized antibody sequences: result.fasta (heavy and light chains separated by a colon :).</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-9"><a id="heading_145"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.
+
+<h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-10-binding-affinity-mutation-scoring"><a id="heading_146"></a>10. <strong>Binding Affinity Mutation Scoring</strong></h3>
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-10"><a id="heading_147"></a><strong>Overview</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>Performs single-point mutation scanning on designated chains of a protein complex structure and calculates changes in binding free energy (ΔΔG) to evaluate the impact of mutations on binding affinity.</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-10\"><a id=\"heading_148\"></a><strong>Target Users</strong></h5><ul><li><strong>Drug Discovery Researchers:</strong> Optimize target binding affinity for antibodies and therapeutic proteins.</li><li><strong>Synthetic Biologists:</strong> Design high-affinity protein interaction systems.</li><li><strong>Bioengineers:</strong> Engineer protein interfaces to enhance specificity or stability.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-10\"><a id=\"heading_149\"></a><strong>Use Cases</strong></h5><ul><li>Scan antibody complementarity-determining regions (CDRs) to identify affinity-enhancing variants.</li><li>Design protein-protein interaction interfaces to improve binding specificity or stability.</li><li>Evaluate the impact of pathogenic mutations on complex assembly.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-9\"><a id=\"heading_150\"></a><strong>Inputs</strong></h5><ul><li><strong>Input File (Required):</strong> PDB file of the protein complex containing both interacting chains.</li><li><strong>Chain ID (Required):</strong> Identifier of the chain to undergo mutation scanning (e.g., Chain A).</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-10\"><a id=\"heading_151\"></a><strong>Outputs</strong></h5><ul><li>Mutation scan results file (CSV format) containing each mutation site, substitution type, and corresponding ΔΔGvalue (in kcal/mol). Lower ΔΔG indicates improved binding affinity after mutation (negative values indicate enhanced binding; positive values indicate weakened binding).</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-10"><a id="heading_152"></a><strong>Steps</strong></h4>
+
+Launch the model computation via Mocha.

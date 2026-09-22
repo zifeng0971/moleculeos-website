@@ -1,0 +1,209 @@
+{
+  "_demo": true,
+  "_note": "演示数据,上线前必须替换",
+  "_meta": {
+    "source": "MOS 平台当前已打开的 Chrome 页面可见内容（用户授权只读采集）",
+    "isReal": true,
+    "note": "字段名为推测，前端提供真实接口返回后需对齐。替换时只需保证本文件结构不变，组件无需修改。",
+    "todo": "完整互作网络拓扑、MutXstruct/MutXseq 说明仍待确认。UniProt Feature 已按当前页面可见标签更新；仅代表页面预置展示数据，不构成独立科学验证。"
+  },
+  "protein": {
+    "id": "5xh3",
+    "chains": [
+      {
+        "id": "A",
+        "type": "protein"
+      },
+      {
+        "id": "B",
+        "type": "ligand"
+      }
+    ],
+    "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALGQVASLNGTSSSPIYGKVDTARMGVMGWAMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+  },
+  "description": {
+    "tags": [
+      {
+        "label": "Enzyme",
+        "type": "category"
+      },
+      {
+        "label": "confidence: high",
+        "type": "confidence"
+      }
+    ],
+    "text": "This structure represents a mutant (R103G/S131A) of poly(ethylene terephthalate) hydrolase (PETase) from the bacterium Ideonella sakaiensis. PETase is a key enzyme involved in the biodegradation of PET plastic, converting it into mono(2-hydroxyethyl) terephthalate (MHET). The structural characterization of this mutant provides insights into the catalytic mechanism and engineering strategies for improved plastic degradation.",
+    "reasoning": "The protein is explicitly identified as poly(ethylene terephthalate) hydrolase (PETase), a member of the AB hydrolase superfamily with well-documented catalytic activity in degrading PET plastic."
+  },
+  "homologs": {
+    "method": "Searched by enzyme sequence similarity",
+    "items": [
+      {
+        "id": "5XFZ",
+        "type": "Crystal",
+        "identity": 100
+      },
+      {
+        "id": "5XH3",
+        "type": "Crystal",
+        "identity": 100
+      },
+      {
+        "id": "6EQD",
+        "type": "Crystal",
+        "identity": 99.2
+      },
+      {
+        "id": "A0A0K8P6T7",
+        "type": null,
+        "identity": 99.2
+      },
+      {
+        "id": "E9LVH8",
+        "type": null,
+        "identity": 51.3
+      }
+    ]
+  },
+  "annotations": {
+    "bindingPocket": {
+      "count": 16,
+      "source": "uniprot",
+      "residues": [
+        "A:TYR58",
+        "A:MET132",
+        "A:TRP156",
+        "A:SER32",
+        "A:GLY57",
+        "A:THR59",
+        "A:ALA60",
+        "A:ALA100",
+        "A:GLY103",
+        "A:GLN104",
+        "A:SER107",
+        "A:TRP130",
+        "A:ALA131",
+        "A:ILE179",
+        "A:ALA180",
+        "A:HIS208"
+      ]
+    },
+    "activeSites": {
+      "count": 6,
+      "source": "uniprot",
+      "residues": [
+        "A:ALA131",
+        "A:ASP177",
+        "A:HIS208",
+        "A:TYR58",
+        "A:MET132",
+        "A:TRP156"
+      ]
+    },
+    "uniprotFeature": {
+      "count": 17,
+      "source": "uniprot",
+      "residues": [
+        "A:TYR58",
+        "A:SER64",
+        "A:GLN90",
+        "A:SER92",
+        "A:TRP130",
+        "A:ALA131",
+        "A:MET132",
+        "A:TRP156",
+        "A:ASP157",
+        "A:CYS174",
+        "A:ASP177",
+        "A:SER185",
+        "A:HIS208",
+        "A:SER209",
+        "A:CYS210",
+        "A:ASN212",
+        "A:ARG251"
+      ]
+    }
+  },
+  "interactions": {
+    "legend": [
+      {
+        "type": "pi-pi",
+        "label": "π-π Stack",
+        "color": "#D98A3F",
+        "style": "dashed"
+      },
+      {
+        "type": "hbond",
+        "label": "H-Bond",
+        "color": "#4DBBA8",
+        "style": "dashed"
+      },
+      {
+        "type": "vdw",
+        "label": "VdW Contact",
+        "color": "#8A8A8A",
+        "style": "solid"
+      }
+    ],
+    "atomTypes": [
+      {
+        "type": "aromatic",
+        "label": "Aromatic",
+        "color": "#4DBBA8"
+      },
+      {
+        "type": "sulfur",
+        "label": "Sulfur",
+        "color": "#F2C343"
+      },
+      {
+        "type": "basic",
+        "label": "Basic",
+        "color": "#5B8DEF"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "TRP130",
+        "label": "TRP",
+        "sub": "A:130",
+        "kind": "residue"
+      },
+      {
+        "id": "TYR58",
+        "label": "TYR",
+        "sub": "A:58",
+        "kind": "residue"
+      }
+    ],
+    "edges": [
+      {
+        "from": "TYR58",
+        "to": "ligand_C7",
+        "type": "pi-pi"
+      },
+      {
+        "from": "TRP130",
+        "to": "ligand_C3",
+        "type": "vdw"
+      }
+    ],
+    "_todo": "完整的互作网络拓扑需从接口返回获取，当前为示意"
+  },
+  "mutationScoring": {
+    "files": [
+      {
+        "name": "MutXevo.csv",
+        "desc": "根据进化保守性和同源序列信息评估突变"
+      },
+      {
+        "name": "MutXstruct.csv",
+        "desc": "内容待补充"
+      },
+      {
+        "name": "MutXseq.csv",
+        "desc": "内容待补充"
+      }
+    ]
+  }
+}

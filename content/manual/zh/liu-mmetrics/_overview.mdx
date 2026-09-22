@@ -1,0 +1,141 @@
+MMetrics是蛋白高价值数据，可以帮助用户理解和分析蛋白数据。
+
+<h3 id="liu-mmetrics-overview-chu-fa-mmetrics"><a id="heading_80"></a><strong>触发MMetrics</strong></h3>
+
+当项目中有蛋白被载入时，MMetrics就会开始计算
+
+这些蛋白可能来源于：
+
+-   用户本地上传：现支持pdb，cif格式的蛋白文件，
+-   通过MOS计算（mmfold、DeNovo）生成的结构
+-   通过pdb id加载到项目中的结构
+
+现在支持的蛋白类型：
+
+-   酶+小分子复合物
+-   抗体+抗原复合物
+
+<h3 id="liu-mmetrics-overview-description"><a id="heading_81"></a><strong>Description</strong></h3>
+
+MMetrics的数据首先由一段蛋白的概述开始，汇总了当前蛋白的基本信息帮助用户快速了解，主要包含了以下基本信息：
+
+-   蛋白类型及判断置信度；
+-   蛋白名称、来源、功能和关键结构特征；
+-   系统判断蛋白类型的依据；
+-   各条链及其分子类型。
+
+<ManualImage src={"/manual-assets/zh/img/image-022.webp"} width={2878} height={1524} alt={""} />
+
+<h3 id="liu-mmetrics-overview-tong-yuan-dan-bai"><a id="heading_82"></a><strong>同源蛋白</strong></h3>
+
+其次MMetrics会对蛋白进行同源蛋白检索 ，并且按照匹配可信度排序展示前五个结果。
+
+每个同源蛋白包含信息：
+
+-   蛋白的pdb id名
+-   如果是crystal结构将在id后标注出来
+-   序列一致性 id%
+-   每个同源蛋白的reference，可以直接点击跳转
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_homologous.mov"} />
+
+<h3 id="liu-mmetrics-overview-annotations"><a id="heading_83"></a><strong>Annotations</strong></h3>
+
+Annotations 用于展示蛋白结构中具有特定功能的氨基酸残基和区域：
+
+-   如目标蛋白为酶，会对其binding pocket，active site进行标注。
+-   如目标蛋白为抗体，会标注抗体表位数据，抗体cdr区域，轻/重链。
+
+当用户点击区域名字，在左侧分屏里的3D蛋白结构中的对应区域会被高亮显示
+
+可以同时选择多个区域进行显示，点击“clear”则可以清空现在所选的所有区域
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_sections.mov"} />
+
+当用户点击单个残基，将只有该残基在3D蛋白结构里被标注
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_mutation.mov"} />
+
+当蛋白为抗体抗原复合物时， 用户可以点击选择不同的抗体编号方案，共五种包括：IMGT、Kabat、EU、AHo、ANARCI。
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_antibody.MP4"} />
+
+<h3 id="liu-mmetrics-overview-interaction-network"><a id="heading_84"></a><strong>Interaction network</strong></h3>
+
+MMetric可以使用表格或2D两种形式展示，可以点击右侧的“Table”/“2D”切换展示方式
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_interaction.mov"} />
+
+<h5 id="liu-mmetrics-overview-mei-xiao-fen-zi"><a id="heading_85"></a><strong>酶+小分子：</strong></h5>
+
+当蛋白为酶+小分子复合物，interaction network的2D展示将以小分子复合物为中心，周围显示参与相互作用的氨基酸及其链和位置。
+
+不同颜色的虚线代表不同作用类型
+
+氨基酸节点颜色表示其化学性质，如芳香族、含硫或碱性残基；
+
+点击具体互作虚线可以显示小分子和蛋白之间的距离
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D.mov"} />
+
+同一个酶上的氨基酸可能和小分子有多处互作，也可以直接点击氨基酸查看与其相关的所有互作
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D_2.mov"} />
+
+Table视图：
+
+Table 视图以表格形式列出配体与周围残基之间的具体相互作用，主要信息如下：
+
+Type：相互作用类型。
+
+Ligand atom：参与相互作用的配体原子编号
+
+Residue：与配体作用的残基
+
+Dist (Å)：配体原子与残基之间的作用距离，单位为埃（Å）
+
+顶部标签：显示各类相互作用的数量
+
+<ManualImage src={"/manual-assets/zh/img/image-023.webp"} width={2878} height={1556} alt={""} />
+
+该视图便于用户准确定位参与配体结合的原子和残基，并查看相应的作用类型与距离。
+
+点击表格上的一条互作，会在3D蛋白视图中对应显示。
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_table.mov"} />
+
+<h5 id="liu-mmetrics-overview-kang-ti-kang-yuan"><a id="heading_86"></a><strong>抗体+抗原</strong></h5>
+
+当蛋白为抗体抗原复合物时，interaction network的2D视图展示抗体和抗原单链之间的互作。
+
+同样不同颜色的虚线代表不同作用类型，不同颜色代表不同氨基酸节点，详见图例。
+
+同时连线中间标注着残基之间的互作距离，单位为埃（Å）。
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_2D.MOV"} />
+
+Table 视图逐条列出相互作用类型、抗体侧残基、抗原侧残基及两者之间的距离。
+
+残基通常按照“链 ID：氨基酸名称及位置”显示，例如 H:TYR58 表示 H 链第58位酪氨酸。
+
+同样点击表格上的一条互作，会在3D蛋白视图中对应显示。
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_table.mov"} />
+
+<h3 id="liu-mmetrics-overview-tu-bian-da-fen"><a id="heading_87"></a><strong>突变打分</strong></h3>
+
+Mutation Scoring 提供不同维度的突变评分结果，帮助用户筛选潜在的候选突变。结果分为三个文件：
+
+-   <strong>MutXseq.csv</strong>：基于蛋白序列特征评估不同突变；
+-   <strong>MutXstruct.csv</strong>：结合三维结构及残基周围环境评估突变；
+-   <strong>MutXevo.csv</strong>：根据进化保守性和同源序列信息评估突变。
+
+每条记录包含：
+
+-   <strong>Chain</strong>：突变所在的蛋白链；
+-   <strong>Mutation</strong>：具体突变
+-   <strong>Score</strong>：该突变在对应评价维度下的计算得分
+
+点击 “View<strong>”</strong> 可在线预览结果，点击 “Download ”可下载完整 CSV 文件，用于进一步筛选和分析。三个维度的评分可结合使用，为后续突变推荐提供综合参考。
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_mutation scoring_1.mov"} />

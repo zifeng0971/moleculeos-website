@@ -1,0 +1,842 @@
+[
+  {
+    "chain": "B",
+    "position": 61,
+    "wildType": "A",
+    "mutation": "F",
+    "key": "B:61F",
+    "tier": "STRONG",
+    "rank": 1,
+    "bindingAffinity": {
+      "score": -1.9239504,
+      "percentile": 0.998157894736842
+    },
+    "structuralFitness": {
+      "score": 0.4117461442947387,
+      "percentile": 0.9657894736842104
+    },
+    "sequenceFitness": {
+      "score": 0.1740407943725586,
+      "percentile": 0.9328947368421052
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 13.9,
+      "paratopeDistance": 7.2
+    },
+    "plddt": 97,
+    "rationale": "Bulky aromatic packs the Tyr45/Tyr57/Trp60/Phe65 cluster at the CDR-H2 base, rigidifying the loop that frames the paratope."
+  },
+  {
+    "chain": "C",
+    "position": 91,
+    "wildType": "A",
+    "mutation": "N",
+    "key": "C:91N",
+    "tier": "STRONG",
+    "rank": 2,
+    "bindingAffinity": {
+      "score": -1.8357506,
+      "percentile": 0.9976315789473684
+    },
+    "structuralFitness": {
+      "score": -2.2008235454559326,
+      "percentile": 0.7594736842105263
+    },
+    "sequenceFitness": {
+      "score": -0.6002974510192871,
+      "percentile": 0.8926315789473684
+    },
+    "context": {
+      "region": "CDR-L3",
+      "antigenDistance": 6.2,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 97.8,
+    "rationale": "Polar side chain in the CDR-L3 core retunes the CDR-L3/VH-CDR3 packing that positions the light-chain paratope."
+  },
+  {
+    "chain": "B",
+    "position": 61,
+    "wildType": "A",
+    "mutation": "M",
+    "key": "B:61M",
+    "tier": "STRONG",
+    "rank": 3,
+    "bindingAffinity": {
+      "score": -1.4211354,
+      "percentile": 0.9936842105263158
+    },
+    "structuralFitness": {
+      "score": -1.1144170761108398,
+      "percentile": 0.8713157894736843
+    },
+    "sequenceFitness": {
+      "score": 0.4963583946228027,
+      "percentile": 0.9502631578947368
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 13.9,
+      "paratopeDistance": 7.2
+    },
+    "plddt": 97,
+    "rationale": "Methionine fills the same sub-CDR-H2 cavity as Phe but with a flexible thioether, a mechanistically independent way to tighten that packing."
+  },
+  {
+    "chain": "C",
+    "position": 91,
+    "wildType": "A",
+    "mutation": "D",
+    "key": "C:91D",
+    "tier": "STRONG",
+    "rank": 4,
+    "bindingAffinity": {
+      "score": -1.3652164,
+      "percentile": 0.993421052631579
+    },
+    "structuralFitness": {
+      "score": -1.99642014503479,
+      "percentile": 0.785
+    },
+    "sequenceFitness": {
+      "score": 1.2277963161468506,
+      "percentile": 0.9702631578947368
+    },
+    "context": {
+      "region": "CDR-L3",
+      "antigenDistance": 6.2,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 97.8,
+    "rationale": "Acid at the same buried junction, adding charge next to VH Tyr102/Tyr103."
+  },
+  {
+    "chain": "B",
+    "position": 31,
+    "wildType": "A",
+    "mutation": "S",
+    "key": "B:31S",
+    "tier": "STRONG",
+    "rank": 5,
+    "bindingAffinity": {
+      "score": -1.2195113,
+      "percentile": 0.9907894736842106
+    },
+    "structuralFitness": {
+      "score": -1.369983196258545,
+      "percentile": 0.8486842105263158
+    },
+    "sequenceFitness": {
+      "score": 0.5337526798248291,
+      "percentile": 0.951842105263158
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 6.2,
+      "paratopeDistance": 3
+    },
+    "plddt": 96.8,
+    "rationale": "Small polar side chain reshapes the CDR-H1 tip at the paratope rim without contacting the antigen."
+  },
+  {
+    "chain": "C",
+    "position": 71,
+    "wildType": "F",
+    "mutation": "Y",
+    "key": "C:71Y",
+    "tier": "STRONG",
+    "rank": 6,
+    "bindingAffinity": {
+      "score": -1.0590012,
+      "percentile": 0.9873684210526316
+    },
+    "structuralFitness": {
+      "score": -0.8856966495513916,
+      "percentile": 0.8871052631578947
+    },
+    "sequenceFitness": {
+      "score": -2.2676424980163574,
+      "percentile": 0.7563157894736842
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 9.5,
+      "paratopeDistance": 3.3
+    },
+    "plddt": 98,
+    "rationale": "Conservative aromatic swap in a buried framework site 3.3 A from the paratope."
+  },
+  {
+    "chain": "B",
+    "position": 30,
+    "wildType": "N",
+    "mutation": "Y",
+    "key": "B:30Y",
+    "tier": "STRONG",
+    "rank": 7,
+    "bindingAffinity": {
+      "score": -1.0328398,
+      "percentile": 0.9860526315789474
+    },
+    "structuralFitness": {
+      "score": 0.8287835121154785,
+      "percentile": 0.9755263157894736
+    },
+    "sequenceFitness": {
+      "score": 3.852793455123901,
+      "percentile": 0.9939473684210526
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 7.5,
+      "paratopeDistance": 2.8
+    },
+    "plddt": 96,
+    "rationale": "Aromatic substitution adjacent to Phe25 and the CDR-H3 Arg93/Asp94 pair extends the paratope aromatic network toward the antigen."
+  },
+  {
+    "chain": "C",
+    "position": 34,
+    "wildType": "A",
+    "mutation": "D",
+    "key": "C:34D",
+    "tier": "STRONG",
+    "rank": 8,
+    "bindingAffinity": {
+      "score": -0.9728891,
+      "percentile": 0.9836842105263158
+    },
+    "structuralFitness": {
+      "score": -1.3159856796264648,
+      "percentile": 0.8542105263157894
+    },
+    "sequenceFitness": {
+      "score": -0.4520661830902099,
+      "percentile": 0.9021052631578949
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 11.1,
+      "paratopeDistance": 5.1
+    },
+    "plddt": 98.2,
+    "rationale": "Acid at the CDR-L1 base within the Tyr35/Tyr36/Tyr49/Tyr87 cluster, positioned to add electrostatic steering toward the heavy-chain paratope."
+  },
+  {
+    "chain": "B",
+    "position": 59,
+    "wildType": "N",
+    "mutation": "D",
+    "key": "B:59D",
+    "tier": "RECOMMEND",
+    "rank": 9,
+    "bindingAffinity": {
+      "score": -0.8942537,
+      "percentile": 0.9810526315789474
+    },
+    "structuralFitness": {
+      "score": -1.6716065406799316,
+      "percentile": 0.8173684210526316
+    },
+    "sequenceFitness": {
+      "score": 2.184238910675049,
+      "percentile": 0.985
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 7.7,
+      "paratopeDistance": 3
+    },
+    "plddt": 97,
+    "rationale": "Acidic side chain bridging the heavy framework and light-chain Asn96/Asp98 cluster across the VH-VL interface."
+  },
+  {
+    "chain": "C",
+    "position": 91,
+    "wildType": "A",
+    "mutation": "E",
+    "key": "C:91E",
+    "tier": "RECOMMEND",
+    "rank": 10,
+    "bindingAffinity": {
+      "score": -0.8684655,
+      "percentile": 0.98
+    },
+    "structuralFitness": {
+      "score": -1.9896011352539065,
+      "percentile": 0.7855263157894737
+    },
+    "sequenceFitness": {
+      "score": 0.7872514724731445,
+      "percentile": 0.9613157894736842
+    },
+    "context": {
+      "region": "CDR-L3",
+      "antigenDistance": 6.2,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 97.8,
+    "rationale": "Longer acid at the CDR-L3 core, a second charge-based route to the same junction."
+  },
+  {
+    "chain": "B",
+    "position": 48,
+    "wildType": "I",
+    "mutation": "Y",
+    "key": "B:48Y",
+    "tier": "RECOMMEND",
+    "rank": 11,
+    "bindingAffinity": {
+      "score": -0.7910049,
+      "percentile": 0.9755263157894736
+    },
+    "structuralFitness": {
+      "score": -2.0758347511291504,
+      "percentile": 0.7755263157894737
+    },
+    "sequenceFitness": {
+      "score": 3.183236598968506,
+      "percentile": 0.9913157894736844
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 7.1,
+      "paratopeDistance": 2.9
+    },
+    "plddt": 98,
+    "rationale": "Vernier-zone tyrosine under CDR-H2 can add an aromatic contact and lock the loop conformation."
+  },
+  {
+    "chain": "C",
+    "position": 32,
+    "wildType": "G",
+    "mutation": "Y",
+    "key": "C:32Y",
+    "tier": "RECOMMEND",
+    "rank": 12,
+    "bindingAffinity": {
+      "score": -0.674994,
+      "percentile": 0.9678947368421053
+    },
+    "structuralFitness": {
+      "score": 0.9871671199798584,
+      "percentile": 0.978421052631579
+    },
+    "sequenceFitness": {
+      "score": 1.37248957157135,
+      "percentile": 0.973157894736842
+    },
+    "context": {
+      "region": "CDR-L1",
+      "antigenDistance": 6.5,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 96.9,
+    "rationale": "Bulky aromatic at the CDR-L1 apex next to contact residue Tyr30, adding stacking surface at the light-chain paratope edge."
+  },
+  {
+    "chain": "C",
+    "position": 103,
+    "wildType": "G",
+    "mutation": "D",
+    "key": "C:103D",
+    "tier": "RECOMMEND",
+    "rank": 13,
+    "bindingAffinity": {
+      "score": -0.64323467,
+      "percentile": 0.9647368421052632
+    },
+    "structuralFitness": {
+      "score": -0.2368836402893066,
+      "percentile": 0.9336842105263158
+    },
+    "sequenceFitness": {
+      "score": -2.1935348510742188,
+      "percentile": 0.763421052631579
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 15.7,
+      "paratopeDistance": 9.6
+    },
+    "plddt": 97,
+    "rationale": "Acid on framework 4 near the Cys88-Tyr87 stem, a peripheral electrostatic handle."
+  },
+  {
+    "chain": "B",
+    "position": 67,
+    "wildType": "I",
+    "mutation": "L",
+    "key": "B:67L",
+    "tier": "RECOMMEND",
+    "rank": 14,
+    "bindingAffinity": {
+      "score": -0.61281174,
+      "percentile": 0.9626315789473684
+    },
+    "structuralFitness": {
+      "score": -0.1281266212463379,
+      "percentile": 0.9397368421052632
+    },
+    "sequenceFitness": {
+      "score": -1.161808729171753,
+      "percentile": 0.8526315789473684
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 12.5,
+      "paratopeDistance": 4.7
+    },
+    "plddt": 97.7,
+    "rationale": "Conservative isosteric swap in the buried core beneath CDR-H2, altering packing without changing chemistry."
+  },
+  {
+    "chain": "B",
+    "position": 69,
+    "wildType": "K",
+    "mutation": "R",
+    "key": "B:69R",
+    "tier": "RECOMMEND",
+    "rank": 15,
+    "bindingAffinity": {
+      "score": -0.5810594,
+      "percentile": 0.9589473684210528
+    },
+    "structuralFitness": {
+      "score": 2.021834373474121,
+      "percentile": 0.9905263157894736
+    },
+    "sequenceFitness": {
+      "score": -0.6598547101020813,
+      "percentile": 0.8873684210526316
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 6.5,
+      "paratopeDistance": 3.2
+    },
+    "plddt": 96.2,
+    "rationale": "Conservative basic substitution near Asp75 at the CDR-H2 base, preserving charge while changing side-chain reach."
+  },
+  {
+    "chain": "B",
+    "position": 29,
+    "wildType": "S",
+    "mutation": "D",
+    "key": "B:29D",
+    "tier": "RECOMMEND",
+    "rank": 16,
+    "bindingAffinity": {
+      "score": -0.5732456,
+      "percentile": 0.9571052631578948
+    },
+    "structuralFitness": {
+      "score": 2.3300793170928955,
+      "percentile": 0.9936842105263158
+    },
+    "sequenceFitness": {
+      "score": -1.1501500606536863,
+      "percentile": 0.8536842105263158
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 5.5,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 93,
+    "rationale": "Charge introduced at the CDR-H1 rim 1.3 A from the paratope, positioned to steer electrostatics toward the antigen surface."
+  },
+  {
+    "chain": "B",
+    "position": 31,
+    "wildType": "A",
+    "mutation": "G",
+    "key": "B:31G",
+    "tier": "RECOMMEND",
+    "rank": 17,
+    "bindingAffinity": {
+      "score": -0.55691344,
+      "percentile": 0.9552631578947368
+    },
+    "structuralFitness": {
+      "score": -1.7052314281463623,
+      "percentile": 0.8134210526315789
+    },
+    "sequenceFitness": {
+      "score": 0.6981909275054932,
+      "percentile": 0.9578947368421052
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 6.2,
+      "paratopeDistance": 3
+    },
+    "plddt": 96.8,
+    "rationale": "Removing the side chain adds CDR-H1 tip flexibility, letting the loop relax into a tighter fit."
+  },
+  {
+    "chain": "B",
+    "position": 104,
+    "wildType": "F",
+    "mutation": "W",
+    "key": "B:104W",
+    "tier": "RECOMMEND",
+    "rank": 18,
+    "bindingAffinity": {
+      "score": -0.5304485,
+      "percentile": 0.9539473684210528
+    },
+    "structuralFitness": {
+      "score": -1.4338877201080322,
+      "percentile": 0.8436842105263158
+    },
+    "sequenceFitness": {
+      "score": -1.862617373466492,
+      "percentile": 0.7907894736842105
+    },
+    "context": {
+      "region": "CDR-H3",
+      "antigenDistance": 8.1,
+      "paratopeDistance": 3.8
+    },
+    "plddt": 97.5,
+    "rationale": "Tryptophan replaces phenylalanine at the CDR-H3 tip, extending the aromatic edge nearest the antigen."
+  },
+  {
+    "chain": "B",
+    "position": 62,
+    "wildType": "K",
+    "mutation": "R",
+    "key": "B:62R",
+    "tier": "RECOMMEND",
+    "rank": 19,
+    "bindingAffinity": {
+      "score": -0.5075287,
+      "percentile": 0.9507894736842104
+    },
+    "structuralFitness": {
+      "score": -1.6481544971466064,
+      "percentile": 0.8197368421052632
+    },
+    "sequenceFitness": {
+      "score": -1.6275800466537476,
+      "percentile": 0.8155263157894737
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 7.6,
+      "paratopeDistance": 2.4
+    },
+    "plddt": 96.6,
+    "rationale": "Charge-preserving Lys-to-Arg swap that lengthens the side chain toward the light chain and can tighten the VH-VL electrostatic fit."
+  },
+  {
+    "chain": "C",
+    "position": 34,
+    "wildType": "A",
+    "mutation": "S",
+    "key": "C:34S",
+    "tier": "RECOMMEND",
+    "rank": 20,
+    "bindingAffinity": {
+      "score": -0.4981942,
+      "percentile": 0.9471052631578948
+    },
+    "structuralFitness": {
+      "score": 2.270713329315185,
+      "percentile": 0.993157894736842
+    },
+    "sequenceFitness": {
+      "score": 1.584320306777954,
+      "percentile": 0.978421052631579
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 11.1,
+      "paratopeDistance": 5.1
+    },
+    "plddt": 98.2,
+    "rationale": "Small polar side chain at the same position, a low-risk way to loosen the CDR-L1 base packing."
+  },
+  {
+    "chain": "C",
+    "position": 34,
+    "wildType": "A",
+    "mutation": "T",
+    "key": "C:34T",
+    "tier": "RECOMMEND",
+    "rank": 21,
+    "bindingAffinity": {
+      "score": -0.4384102,
+      "percentile": 0.9371052631578948
+    },
+    "structuralFitness": {
+      "score": -1.8281710147857664,
+      "percentile": 0.7997368421052632
+    },
+    "sequenceFitness": {
+      "score": -0.8232533931732178,
+      "percentile": 0.8736842105263158
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 11.1,
+      "paratopeDistance": 5.1
+    },
+    "plddt": 98.2,
+    "rationale": "Threonine provides a hydrogen-bond-capable side chain at the CDR-L1 base without added charge."
+  },
+  {
+    "chain": "B",
+    "position": 29,
+    "wildType": "S",
+    "mutation": "N",
+    "key": "B:29N",
+    "tier": "RECOMMEND",
+    "rank": 22,
+    "bindingAffinity": {
+      "score": -0.43462285,
+      "percentile": 0.9363157894736842
+    },
+    "structuralFitness": {
+      "score": -0.05717134475708,
+      "percentile": 0.9439473684210526
+    },
+    "sequenceFitness": {
+      "score": -1.5316162109375,
+      "percentile": 0.8239473684210527
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 5.5,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 93,
+    "rationale": "Polar amide at the same rim position, a charge-neutral alternative to Asp."
+  },
+  {
+    "chain": "B",
+    "position": 30,
+    "wildType": "N",
+    "mutation": "F",
+    "key": "B:30F",
+    "tier": "RECOMMEND",
+    "rank": 23,
+    "bindingAffinity": {
+      "score": -0.4334875,
+      "percentile": 0.9360526315789474
+    },
+    "structuralFitness": {
+      "score": -0.0561437606811523,
+      "percentile": 0.9442105263157896
+    },
+    "sequenceFitness": {
+      "score": -0.2550687789916992,
+      "percentile": 0.9128947368421052
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 7.5,
+      "paratopeDistance": 2.8
+    },
+    "plddt": 96,
+    "rationale": "Phenylalanine gives the same added aromatic contact with less bulk than tyrosine."
+  },
+  {
+    "chain": "B",
+    "position": 95,
+    "wildType": "G",
+    "mutation": "S",
+    "key": "B:95S",
+    "tier": "RECOMMEND",
+    "rank": 24,
+    "bindingAffinity": {
+      "score": -0.3846203,
+      "percentile": 0.925
+    },
+    "structuralFitness": {
+      "score": 2.1019749641418457,
+      "percentile": 0.9913157894736844
+    },
+    "sequenceFitness": {
+      "score": 1.0613791942596436,
+      "percentile": 0.9660526315789474
+    },
+    "context": {
+      "region": "CDR-H3",
+      "antigenDistance": 6.5,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 94.3,
+    "rationale": "Polar substitution in the middle of CDR-H3 near Tyr97/Asp98/Tyr103, reshaping the loop that dominates heavy-chain contact."
+  },
+  {
+    "chain": "B",
+    "position": 58,
+    "wildType": "A",
+    "mutation": "S",
+    "key": "B:58S",
+    "tier": "RECOMMEND",
+    "rank": 25,
+    "bindingAffinity": {
+      "score": -0.381509,
+      "percentile": 0.9236842105263158
+    },
+    "structuralFitness": {
+      "score": 0.1002893447875976,
+      "percentile": 0.953157894736842
+    },
+    "sequenceFitness": {
+      "score": 1.693024516105652,
+      "percentile": 0.9810526315789474
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 10.1,
+      "paratopeDistance": 4.5
+    },
+    "plddt": 97.2,
+    "rationale": "Polar substitution at the CDR-H2 base, sitting 4.5 A from the paratope edge."
+  },
+  {
+    "chain": "C",
+    "position": 56,
+    "wildType": "S",
+    "mutation": "D",
+    "key": "C:56D",
+    "tier": "RECOMMEND",
+    "rank": 26,
+    "bindingAffinity": {
+      "score": -0.35918638,
+      "percentile": 0.9192105263157896
+    },
+    "structuralFitness": {
+      "score": -0.6196446418762207,
+      "percentile": 0.9076315789473683
+    },
+    "sequenceFitness": {
+      "score": -1.6443307399749756,
+      "percentile": 0.8126315789473684
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 15.6,
+      "paratopeDistance": 10.9
+    },
+    "plddt": 93.8,
+    "rationale": "Acid on the framework just outside the paratope, adding a long-range electrostatic handle to the light-chain Fv face."
+  },
+  {
+    "chain": "B",
+    "position": 30,
+    "wildType": "N",
+    "mutation": "L",
+    "key": "B:30L",
+    "tier": "RECOMMEND",
+    "rank": 27,
+    "bindingAffinity": {
+      "score": -0.33902082,
+      "percentile": 0.9113157894736842
+    },
+    "structuralFitness": {
+      "score": -1.99796199798584,
+      "percentile": 0.7844736842105263
+    },
+    "sequenceFitness": {
+      "score": -1.7113370895385742,
+      "percentile": 0.8044736842105263
+    },
+    "context": {
+      "region": "CDR-H1",
+      "antigenDistance": 7.5,
+      "paratopeDistance": 2.8
+    },
+    "plddt": 96,
+    "rationale": "Hydrophobic substitution at the CDR-H1/paratope junction, a steric rather than aromatic route to better shape complementarity."
+  },
+  {
+    "chain": "C",
+    "position": 70,
+    "wildType": "Q",
+    "mutation": "D",
+    "key": "C:70D",
+    "tier": "RECOMMEND",
+    "rank": 28,
+    "bindingAffinity": {
+      "score": -0.3117412,
+      "percentile": 0.905
+    },
+    "structuralFitness": {
+      "score": -1.4507827758789062,
+      "percentile": 0.8415789473684211
+    },
+    "sequenceFitness": {
+      "score": 3.748870849609375,
+      "percentile": 0.9936842105263158
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 11.6,
+      "paratopeDistance": 3.2
+    },
+    "plddt": 97.4,
+    "rationale": "Charge introduced at the buried framework position beneath CDR-L1, near the Cys23/Tyr36 region."
+  },
+  {
+    "chain": "B",
+    "position": 71,
+    "wildType": "S",
+    "mutation": "D",
+    "key": "B:71D",
+    "tier": "RECOMMEND",
+    "rank": 29,
+    "bindingAffinity": {
+      "score": -0.30772087,
+      "percentile": 0.9034210526315788
+    },
+    "structuralFitness": {
+      "score": -0.188223123550415,
+      "percentile": 0.9373684210526316
+    },
+    "sequenceFitness": {
+      "score": -1.4960135221481323,
+      "percentile": 0.8268421052631579
+    },
+    "context": {
+      "region": "FW",
+      "antigenDistance": 11.1,
+      "paratopeDistance": 6.2
+    },
+    "plddt": 92.1,
+    "rationale": "Acid introduced at the base of CDR-H2, adding an electrostatic handle to the loop that carries part of the paratope."
+  },
+  {
+    "chain": "C",
+    "position": 89,
+    "wildType": "Q",
+    "mutation": "R",
+    "key": "C:89R",
+    "tier": "RECOMMEND",
+    "rank": 30,
+    "bindingAffinity": {
+      "score": -0.3019584,
+      "percentile": 0.9021052631578949
+    },
+    "structuralFitness": {
+      "score": -0.5234754085540771,
+      "percentile": 0.9184210526315788
+    },
+    "sequenceFitness": {
+      "score": -2.1756398677825928,
+      "percentile": 0.7660526315789473
+    },
+    "context": {
+      "region": "CDR-L3",
+      "antigenDistance": 9.4,
+      "paratopeDistance": 1.3
+    },
+    "plddt": 98.2,
+    "rationale": "Basic residue at the first CDR-L3 position, packing against VH Phe104/Tyr102/Tyr103 at the VH-VL junction."
+  }
+]

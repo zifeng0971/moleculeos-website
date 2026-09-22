@@ -1,0 +1,129 @@
+MMetrics provides high-value protein data to help users understand and analyze protein structures.
+
+<h3 id="6-mmetrics-overview-triggering-mmetrics"><a id="heading_71"></a><strong>Triggering MMetrics</strong></h3>
+
+When a protein is loaded into a project, MMetrics automatically starts calculations. Proteins can originate from:
+
+-   Local uploads (supports .pdb and .cif formats)
+-   Structures generated via MOS calculations (such as MMFold or DeNovo)
+-   Structures loaded into the project via PDB ID
+
+Currently supported protein types:
+
+-   Enzyme + small molecule complexes
+-   Antibody + antigen complexes
+
+<h3 id="6-mmetrics-overview-description"><a id="heading_72"></a><strong>Description</strong></h3>
+
+MMetrics starts with an overview summarizing basic information to give you a quick profile of the protein, including:
+
+-   Protein type and classification confidence
+-   Protein name, source, function, and key structural features
+-   Basis for the classification
+-   Chains and their respective molecule types
+
+<ManualImage src={"/manual-assets/en/img/image-022.webp"} width={2878} height={1524} alt={""} />
+
+<h3 id="6-mmetrics-overview-homologous-proteins"><a id="heading_73"></a><strong>Homologous Proteins</strong></h3>
+
+MMetrics searches for homologous proteins and displays the top five results ranked by match confidence. Information for each homolog includes:
+
+-   PDB ID
+-   Crystal structure label (if applicable)
+-   Sequence identity (% ID)
+-   Reference link (clickable for direct navigation)
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_homologous.mov"} />
+
+<h3 id="6-mmetrics-overview-annotations"><a id="heading_74"></a><strong>Annotations</strong></h3>
+
+"Annotations" displays residues and regions with specific functional roles:
+
+-   For enzymes, it annotates the binding pocket and active site.
+-   For antibodies, it annotates epitope data, CDR regions, and light/heavy chains.
+
+Clicking a region name highlights the corresponding area in the 3D structure viewer on the left. Multiple regions can be selected at once; click "clear" to reset all active selections.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_sections.mov"} />
+
+Clicking a single residue highlights only that specific position in the 3D viewer.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_mutation.mov"} />
+
+For antibody-antigen complexes, you can select from five antibody numbering schemes: IMGT, Kabat, EU, AHo, and ANARCI.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_antibody.MP4"} />
+
+<h3 id="6-mmetrics-overview-interaction-network"><a id="heading_75"></a><strong>Interaction network</strong></h3>
+
+MMetrics can display interactions in either a table or a 2D diagram. Click "Table" or "2D" on the right to switch views.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_interaction.mov"} />
+
+<h5 id="6-mmetrics-overview-enzyme-small-molecule"><a id="heading_76"></a><strong>Enzyme + Small Molecule:</strong></h5>
+
+In the 2D view, the small molecule is placed at the center, surrounded by interacting residues with their chain IDs and positions.
+
+Dashed lines of different colors represent different interaction types.
+
+Amino acid node colors indicate chemical properties (such as aromatic, sulfur-containing, or basic residues).
+
+Click an interaction dashed line to display the distance between the small molecule and the protein.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D.mov"} />
+
+An amino acid may have multiple interactions with the small molecule; click the residue directly to view all of its associated interactions.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D_2.mov"} />
+
+Table View:
+
+The Table view lists specific interactions between the ligand and surrounding residues:
+
+-   <strong>Type:</strong> Interaction type
+-   <strong>Ligand atom:</strong> Atom number of the interacting ligand atom
+-   <strong>Residue:</strong> Residue interacting with the ligand
+-   <strong>Dist (Å):</strong> Interaction distance between the ligand atom and residue in Angstroms (Å)
+-   <strong>Top tags:</strong> Display the count of each interaction type
+
+<ManualImage src={"/manual-assets/en/img/image-023.webp"} width={2878} height={1556} alt={""} />
+
+This view makes it easy to locate specific interacting atoms and residues and inspect their interaction types and distances.
+
+Clicking an interaction row highlights the pair in the 3D viewer.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_table.mov"} />
+
+<h5 id="6-mmetrics-overview-antibody-antigen"><a id="heading_77"></a><strong>Antibody + Antigen:</strong></h5>
+
+For antibody-antigen complexes, the 2D view displays interactions between individual antibody and antigen chains.
+
+Dashed lines represent interaction types, node colors represent amino acid classes (see legend), and labels along the lines indicate interaction distances in Angstroms (Å).
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_2D.MOV"} />
+
+The Table view lists interaction types, antibody residues, antigen residues, and distances row by row.
+
+Residues are shown in the format "Chain ID: Residue Name and Position" (for example, "H:TYR58" represents tyrosine at position 58 on the heavy chain).
+
+Clicking an interaction row in the table highlights the corresponding sites in the 3D viewer.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_table.mov"} />
+
+<h3 id="6-mmetrics-overview-mutation-scoring"><a id="heading_78"></a><strong>Mutation Scoring</strong></h3>
+
+Mutation Scoring provides multi-dimensional evaluations across three CSV output files to assist with candidate screening:
+
+-   <strong>MutXseq.csv:</strong> Evaluates mutations based on sequence-level features.
+-   <strong>MutXstruct.csv:</strong> Evaluates mutations based on 3D structure and the local microenvironment.
+-   <strong>MutXevo.csv:</strong> Evaluates mutations based on evolutionary conservation and homologous sequence alignments.
+
+Each record includes:
+
+-   <strong>Chain:</strong> Protein chain containing the mutation
+-   <strong>Mutation:</strong> Specific substitution
+-   <strong>Score:</strong> Calculated score for the mutation in that dimension
+
+Click "View" to preview results online, or click "Download" to export the full CSV file. You can combine scores across all three dimensions for a comprehensive evaluation when selecting mutations.
+
+<ManualMissingVideo src={""} external={false} reference={"MMetrics_mutation scoring_1.mov"} />

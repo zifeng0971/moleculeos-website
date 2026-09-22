@@ -1,0 +1,33 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import ffmpeg from 'ffmpeg-static';
+import sharp from 'sharp';
+import { ManualMediaProcessor } from './manual-media';
+async function main(){
+  const root=await fs.mkdtemp(path.join(os.tmpdir(),'mos-media-test-'));
+  const fixture=path.join(root,'animated.gif');
+  const generated=spawnSync(ffmpeg!,['-v','error','-f','lavfi','-i','testsrc=size=256x128:rate=6','-t','3','-y',fixture],{encoding:'utf8'});
+  assert.equal(generated.status,0,generated.stderr);
+  const buffer=await fs.readFile(fixture);const warnings:string[]=[];
+  const processor=new ManualMediaProcessor(root,'zh',warnings);await processor.init();
+  const video=await processor.convert(buffer,'animated.gif','video-1');
+  assert.equal(video.type,'video');assert(video.frames!>1&&video.duration!>0);assert(video.webm&&video.mp4&&video.poster);
+  assert.equal(video.src,video.webm);assert(video.original?.includes('/zh/gif-original/'));
+  assert.equal(video.originalWidth,256);assert.equal(video.convertedWidth,256);assert.equal(video.convertedHeight,128);
+  assert((await fs.readFile(path.join(root,'public',video.original!))).equals(buffer),'Original GIF backup must be byte-identical');
+  const file=path.join(root,'public',video.webm);const time=(await fs.stat(file)).mtimeMs;
+  const repeated=new ManualMediaProcessor(root,'zh',warnings);await repeated.init();await repeated.convert(buffer,'animated.gif','video-1');
+  assert.equal(repeated.totals.cached,1);assert.equal((await fs.stat(file)).mtimeMs,time);
+  const english=new ManualMediaProcessor(root,'en',warnings);await english.init();const copy=await english.convert(buffer,'animated.gif','video-1');
+  assert(copy.src.includes('/en/'));assert.equal(english.totals.cached,0);
+  const still=await sharp({create:{width:32,height:16,channels:3,background:'#141220'}}).gif().toBuffer();
+  const image=await processor.convert(still,'still.gif','video-2');assert.equal(image.type,'image');assert.equal(image.frames,1);assert(!image.webm&&!image.mp4);
+  const changed=await repeated.convert(still,'animated.gif','video-1');assert.notEqual(changed.md5,video.md5);assert.equal(changed.type,'image');assert.equal(changed.frames,1);
+  const wide=await sharp({create:{width:1801,height:901,channels:3,background:'#141220'}}).gif().toBuffer();
+  const resized=await processor.convert(wide,'wide.gif','video-3');assert.equal(resized.originalWidth,1801);assert.equal(resized.convertedWidth,1600);
+  console.log('Media tests passed: frame classification, dual formats, poster, metadata, MD5 cache, independent languages.');
+}
+main().catch(error=>{console.error(error);process.exitCode=1;});

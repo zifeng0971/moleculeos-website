@@ -1,0 +1,49 @@
+<h3 id="5-mocha-overview-starting-a-conversation"><a id="heading_65"></a><strong>Starting a Conversation</strong></h3>
+
+Projects open in "agent mode on" by default. Mocha is an AI assistant in MOS that executes tasks by calling appropriate models based on your requests in the chat interface below.
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_start conversation.mov"} />
+
+For example, in an antibody design task, Mocha can propose affinity-enhancing mutations based on input antibody and antigen sequences.
+
+You can test Mocha's antibody optimization workflow with the following sample input:
+
+<strong>Prompt:</strong> Please predict the structure from the given input sequence, and recommend a list of 30 mutations that may improve antibody affinity while avoiding positions that already interact with the antigen.
+
+<ManualTable html={"<table><tbody><tr><td><p>Python<br>&gt;antigen<br>NFRAPPVIPNVPFLWAWNAPSEFCLGKFDEPLDMSLFSFIGSPRINATGQGVTIFYVDRLGYYPYIDSITGVTVNGGIPQKISLQDHLDKAKKDITFYMPVDNLGMAVIDWEEWRPTWARNWKPKDVYKNRSIELVQQQNVQLSLTEATEKAKQEFEKAGKDFLVETIKLGKLLRPNHLWGYYLFPDCYNHHYKKPGYNGSCFNVEIKRNDDLSWLWNESTALYPSIYLNTQQSPVAATLYVRNRVREAIRVSKIPDAKSPLPVFAYTRIVFTDQVLKFLSQDELVYTFGETVALGASGIVIWGTLSIMRSMKSCLLLDNYMETILNPYIINVTLAAKMCSQVLCQEQGVCIRKNWNSSDYLHLNPDNFAIQLEKGGKFTVRGKPTLEDLEQFSEKFYCSCYSTLS<br>&gt;heavy chain<br>SVEESGGRLVTPGGSLTLTCTVSGFSLSSNAISWVRQAPGKGLEYIGIISTSGSTYYANWAKGRFTISKTSTTVDLKMTSLTTEDTATYFCARDGAYDDFAYYFDLWGQGTLVTVSS<br>&gt;light chain<br>ALVMTQTPSSVSAAVGGTVTINCQASQNIYSGLAWYQQKLGQPPKLLIYKASTLASGVPSRFKGSGSGTQFTLTISGVQCDDAATYYCQLAYSSTNVDNAFGGGTEVVVK</p></td></tr></tbody></table>"} assets={[]} />
+
+The complete process of using Mocha to run this task is shown in the following video:
+
+<ManualMissingVideo src={""} external={false} reference={"0708MOS首发介绍_xuxin.mp4"} />
+
+<h3 id="5-mocha-overview-task-decomposition"><a id="heading_66"></a><strong>Task Decomposition</strong></h3>
+
+Based on your prompt, Mocha breaks the task into sequential steps and identifies the required model for each step.
+
+<ManualImage src={"/manual-assets/en/img/image-021.webp"} width={2878} height={1526} alt={""} />
+
+<h3 id="5-mocha-overview-task"><a id="heading_67"></a><strong>Task</strong></h3>
+
+Click the "Task" button in the upper right to view the task list, execution status, and runtimes.
+
+Click an individual task to view its detailed execution log.
+
+<ManualMissingVideo src={""} external={false} reference={"Mocha_task.mov"} />
+
+<h3 id="5-mocha-overview-result-output"><a id="heading_68"></a><strong>Result Output</strong></h3>
+
+Once all tasks are complete, Mocha outputs an analysis report that typically includes:
+
+-   <strong>Structure prediction:</strong> Displays molecular composition, sequence length, predicted structure, and quality metrics.
+-   <strong>Structure and functional analysis:</strong> Details key regions, binding interfaces, interactions, and critical residues.
+-   <strong>Candidate mutation recommendations:</strong> Lists suggested mutations, positions, scores, and rationales.
+-   <strong>Summary:</strong> Summarizes key findings and provides recommendations for downstream screening or validation.
+-   <strong>Result files:</strong> Generates reports, data tables, and structural coordinate files for online viewing or download.
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_results.mov"} />
+
+<h3 id="5-mocha-overview-workspace"><a id="heading_69"></a><strong>Workspace</strong></h3>
+
+All generated output files can be accessed by clicking the folder-shaped "Workspace" button in the upper right of the chat window.
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_workspace.mov"} />

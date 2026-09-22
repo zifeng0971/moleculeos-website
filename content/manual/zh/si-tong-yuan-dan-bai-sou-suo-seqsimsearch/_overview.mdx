@@ -1,0 +1,81 @@
+在进行蛋白设计/优化任务时，同源蛋白可以给到设计者有价值的信息参考，例如保守点位、功能性等。MOS打通了外部数据库，在用户输入目标序列/链，并设定筛选范围后，即可按照匹配程度，呈现同源蛋白列表。
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-yi-mu-biao-xu-lie-zuo-wei-sou-suo-dui-xiang"><a id="heading_65"></a><strong>以目标序列作为搜索对象</strong></h3>
+
+在底部工具栏中，点击SeqSim Search，在唤起的功能面板内，选择“Search by Sequence”，在输入框内输入目标序列，点击“Search”即可创建一条搜索任务，等待任务完成通知即可
+
+<ManualImage src={"/manual-assets/zh/video/video-47-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-yi-mu-biao-lian-zuo-wei-sou-suo-dui-xiang"><a id="heading_66"></a><strong>以目标链作为搜索对象</strong></h3>
+
+在唤起的功能面板内，选择“Search by My Protein”，选择目标蛋白，以及对应的链，点击“Blast”，即可创建一条搜索任务，等待任务完成通知即可
+
+<ManualImage src={"/manual-assets/zh/video/video-48-poster.webp"} width={1956} height={1060} alt={""} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-cha-kan-jie-guo"><a id="heading_67"></a><strong>查看结果</strong></h3>
+
+任务成功后，右上角可收到完成通知，点开顶部导航的消息通知按钮，即可看到本任务。点击“Visualizing Data”，即可将结果加载到项目中，右侧拉出同源蛋白列表。
+
+同源蛋白列表展示了蛋白ID（取自于PDB/Uniprot ID/NCBI），Hit及匹配分值，E-value，Bit，%ID，Reference等纬度的数据。
+
+<ManualImage src={"/manual-assets/zh/video/video-49-poster.webp"} width={1952} height={1062} alt={""} />
+
+展开任一条数据，即可看到输入序列与Hit的序列对比情况。
+
+<ManualVideo src={"/manual-assets/zh/video/video-50.webm"} poster={"/manual-assets/zh/video/video-50-poster.webp"} webm={"/manual-assets/zh/video/video-50.webm"} mp4={"/manual-assets/zh/video/video-50.mp4"} external={false} reference={"image70.gif"} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-she-ding-shai-xuan-tiao-jian"><a id="heading_68"></a><strong>设定筛选条件</strong></h3>
+
+当初步推荐的同源蛋白过多时，用户可通过Filter工具，筛选出所需要的结果。
+
+<ManualImage src={"/manual-assets/zh/video/video-51-poster.webp"} width={1952} height={1062} alt={""} />
+
+点击Reset并确认，即可重置筛选条件。
+
+<ManualImage src={"/manual-assets/zh/video/video-52-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-xia-zai-shu-ju"><a id="heading_69"></a><strong>下载数据</strong></h3>
+
+MOS支持将同源蛋白信息以fasta的文件格式下载到本地
+
+-   <strong>全量下载</strong>
+
+点击后可下载列表中所有的蛋白文件到本地
+
+<ManualImage src={"/manual-assets/zh/video/video-53-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   <strong>仅下载所勾选的同源蛋白</strong>
+
+先勾选目标蛋白，唤起右上角下载功能后，即可下载选中的蛋白信息
+
+<ManualImage src={"/manual-assets/zh/video/video-54-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   <strong>单Hit下载</strong>
+
+同时也支持下载单条Hit的信息。
+
+<ManualVideo src={"/manual-assets/zh/video/video-50.webm"} poster={"/manual-assets/zh/video/video-50-poster.webp"} webm={"/manual-assets/zh/video/video-50.webm"} mp4={"/manual-assets/zh/video/video-50.mp4"} external={false} reference={"image70.gif"} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-fang-wen-tong-yuan-dan-bai-yuan-wang-zhan"><a id="heading_70"></a><strong>访问同源蛋白源网站</strong></h3>
+
+点击任意一蛋白数据行的“Reference”超链接，即可访问该蛋白所在数据库的源网址，用户从而可以获得更多的信息
+
+<ManualVideo src={"/manual-assets/zh/video/video-55.webm"} poster={"/manual-assets/zh/video/video-55-poster.webp"} webm={"/manual-assets/zh/video/video-55.webm"} mp4={"/manual-assets/zh/video/video-55.mp4"} external={false} reference={"image75.gif"} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-msa-duo-xu-lie-dui-bi"><a id="heading_71"></a><strong>MSA多序列对比</strong></h3>
+
+除了展开单条数据行，来对比输入与Hit的序列之外，MOS还提供了多序列对比功能。
+
+在同源蛋白列表页勾选多个目标蛋白，点击下方Align，即可完成多序列对比
+
+<ManualVideo src={"/manual-assets/zh/video/video-56.webm"} poster={"/manual-assets/zh/video/video-56-poster.webp"} webm={"/manual-assets/zh/video/video-56.webm"} mp4={"/manual-assets/zh/video/video-56.mp4"} external={false} reference={"image76.gif"} />
+
+<h3 id="si-tong-yuan-dan-bai-sou-suo-seqsimsearch-overview-zhi-biao-shuo-ming"><a id="heading_72"></a><strong>指标说明</strong></h3>
+
+-   ID: 命中序列的ID标识
+-   Hit: 数据库中的主题序列（在参考文献中注明）
+-   Score: （原始得分）比对质量指标，根据查询序列和命中序列之间的匹配、错配和空位罚分计算得出。用于比较同一搜索中的结果
+-   E-value: 表示在数据库中偶然出现的比对数量（例如，E值为1意味着你会期望在该数据库中出现一次这样的随机匹配；而E值为1e-50则表示极高的置信度）
+-   Bit score: 是“Score”的标准化版本。用于比较不同搜索结果之间的差异
+-   % ID: 在比对区域中完全匹配的氨基酸的百分比，包括空缺
+-   Reference: 命中序列所在的数据库

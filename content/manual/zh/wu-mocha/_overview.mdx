@@ -1,0 +1,47 @@
+<h3 id="wu-mocha-overview-kai-qi-dui-hua"><a id="heading_74"></a><strong>开启对话</strong></h3>
+
+项目的开始页面默认为agent mode on，人工智能助手Mocha是MOS推出的重磅功能，可以通过下方的对话框对Mocha发起任务，Mocha会按照用户的需求调用模型来完成任务。
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_start conversation.mov"} />
+
+以抗体设计任务为例子，Mocha可以根据用户输入的抗体序列，抗原序列，设计提升结合亲和力的突变点位。
+
+可以使用以下输入内容体验Mocha的抗体优化功能：
+
+<ManualTable html={"<table><tbody><tr><td><p>Please predict the structure from the given input sequence, and recommend a list of 30 mutations that may improve antibody affinity while avoiding positions that already interact with the antigen.</p><p>&gt;antigen</p><p>NFRAPPVIPNVPFLWAWNAPSEFCLGKFDEPLDMSLFSFIGSPRINATGQGVTIFYVDRLGYYPYIDSITGVTVNGGIPQKISLQDHLDKAKKDITFYMPVDNLGMAVIDWEEWRPTWARNWKPKDVYKNRSIELVQQQNVQLSLTEATEKAKQEFEKAGKDFLVETIKLGKLLRPNHLWGYYLFPDCYNHHYKKPGYNGSCFNVEIKRNDDLSWLWNESTALYPSIYLNTQQSPVAATLYVRNRVREAIRVSKIPDAKSPLPVFAYTRIVFTDQVLKFLSQDELVYTFGETVALGASGIVIWGTLSIMRSMKSCLLLDNYMETILNPYIINVTLAAKMCSQVLCQEQGVCIRKNWNSSDYLHLNPDNFAIQLEKGGKFTVRGKPTLEDLEQFSEKFYCSCYSTLS</p><p>&gt;heavy chain</p><p>SVEESGGRLVTPGGSLTLTCTVSGFSLSSNAISWVRQAPGKGLEYIGIISTSGSTYYANWAKGRFTISKTSTTVDLKMTSLTTEDTATYFCARDGAYDDFAYYFDLWGQGTLVTVSS</p><p>&gt;light chain</p><p>ALVMTQTPSSVSAAVGGTVTINCQASQNIYSGLAWYQQKLGQPPKLLIYKASTLASGVPSRFKGSGSGTQFTLTISGVQCDDAATYYCQLAYSSTNVDNAFGGGTEVVVK</p></td></tr></tbody></table>"} assets={[]} />
+
+完整使用Mocha完成的过程如下视频：
+
+<ManualMissingVideo src={""} external={false} reference={"0708MOS首发介绍_xuxin.mp4"} />
+
+<h3 id="wu-mocha-overview-chai-jie-ren-wu"><a id="heading_75"></a><strong>拆解任务</strong></h3>
+
+根据用户输入的内容，Mocha会将任务拆解成多个步骤，以及分析每个步骤需要使用到的模型。
+
+<ManualImage src={"/manual-assets/zh/img/image-021.webp"} width={2878} height={1526} alt={""} />
+
+<h3 id="wu-mocha-overview-task"><a id="heading_76"></a><strong>Task</strong></h3>
+
+点击页面右上方的“Task”按钮可以查看任务列表，任务的运行状态和时长。
+
+点击单个任务可以查看该任务的具体信息
+
+<ManualMissingVideo src={""} external={false} reference={"Mocha_task.mov"} />
+
+<h3 id="wu-mocha-overview-jie-guo-shu-chu"><a id="heading_77"></a><strong>结果输出</strong></h3>
+
+在完成所有任务后，Mocha会输出针对本次任务的结果分析，通常包括：
+
+-   <strong>结构预测</strong>：展示分子组成、序列长度、预测结构及相关质量指标；
+-   <strong>结构与功能分析</strong>：展示关键区域、结合界面、相互作用及重要残基；
+-   <strong>候选突变推荐</strong>：列出推荐突变及其位置、评分和推荐理由；
+-   <strong>结果总结</strong>：提炼主要发现，并提供后续筛选或验证建议；
+-   <strong>结果文件</strong>：提供报告、数据表和结构文件等内容，供用户在线查看或下载。
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_results.mov"} />
+
+<h3 id="wu-mocha-overview-workspace"><a id="heading_78"></a><strong>Workspace</strong></h3>
+
+所有输出的结果文件都可以点击话框的右上角的文件夹形状的workspace按钮后找到
+
+<ManualMissingVideo src={""} external={false} reference={"mocha_workspace.mov"} />

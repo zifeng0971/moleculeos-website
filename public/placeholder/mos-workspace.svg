@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960">
+  <rect width="1440" height="960" fill="#f6f8fb"/><rect width="220" height="960" fill="#eef2f7"/><rect x="34" y="42" width="150" height="24" rx="5" fill="#1b3a6b" opacity=".88"/>
+  <g fill="#cbd5e1"><rect x="34" y="120" width="120" height="14" rx="4"/><rect x="34" y="168" width="145" height="14" rx="4"/><rect x="34" y="216" width="100" height="14" rx="4"/><rect x="34" y="264" width="132" height="14" rx="4"/></g>
+  <rect x="270" y="54" width="300" height="28" rx="6" fill="#dbe3ed"/><rect x="270" y="120" width="1110" height="310" rx="12" fill="white" stroke="#d6dee8"/>
+  <path d="M380 330c90-110 150-100 220-10s130 82 200-25 140-104 235-8 156 56 250-46" fill="none" stroke="#1b3a6b" stroke-width="8" opacity=".8"/>
+  <g fill="#4f8f84"><circle cx="380" cy="330" r="10"/><circle cx="600" cy="320" r="10"/><circle cx="800" cy="295" r="10"/><circle cx="1035" cy="287" r="10"/><circle cx="1285" cy="241" r="10"/></g>
+  <rect x="270" y="470" width="710" height="430" rx="12" fill="white" stroke="#d6dee8"/><rect x="1010" y="470" width="370" height="430" rx="12" fill="white" stroke="#d6dee8"/>
+  <g fill="#e6ebf2"><rect x="310" y="515" width="220" height="18" rx="4"/><rect x="310" y="565" width="620" height="56" rx="8"/><rect x="310" y="642" width="620" height="56" rx="8"/><rect x="310" y="719" width="620" height="56" rx="8"/><rect x="310" y="796" width="620" height="56" rx="8"/></g>
+  <circle cx="1195" cy="660" r="112" fill="none" stroke="#1b3a6b" stroke-width="18" opacity=".18"/><path d="M1195 548a112 112 0 0 1 95 171" fill="none" stroke="#4f8f84" stroke-width="18" stroke-linecap="round"/>
+  <text x="720" y="935" text-anchor="middle" font-family="Arial" font-size="18" fill="#64748b">PLACEHOLDER · REPLACE WITH APPROVED MOS PRODUCT SCREENSHOT</text>
+</svg>

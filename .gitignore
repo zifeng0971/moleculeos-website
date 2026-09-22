@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+output
+.playwright-cli
+tsconfig.tsbuildinfo
+.DS_Store
+*.log
+.env*
+!.env.example
+app/dev/manual-assets/page.tsx
+public/manual-assets/**/gif-original/
+content/manual/.media-cache/

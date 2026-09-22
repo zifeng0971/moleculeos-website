@@ -1,0 +1,79 @@
+During protein design and optimization, homologous proteins provide valuable reference data, such as conserved sites and functional characteristics. MOS connects directly to external databases. Once you input a target sequence or chain and set filtering parameters, it returns a ranked list of homologs based on similarity.
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-search-by-target-sequence"><a id="heading_56"></a><strong>Search by target sequence</strong></h3>
+
+On the bottom toolbar, click "SeqSim Search". In the panel, select "Search by Sequence", enter the query sequence, and click "Search" to create a task. You will be notified once it completes.
+
+<ManualImage src={"/manual-assets/en/video/video-42-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-search-by-target-chain"><a id="heading_57"></a><strong>Search by target chain</strong></h3>
+
+In the panel, select "Search by My Protein", choose the target protein and its chain, and click "Blast" to create a task. You will be notified once it completes.
+
+<ManualImage src={"/manual-assets/en/video/video-43-poster.webp"} width={1956} height={1060} alt={""} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-view-results"><a id="heading_58"></a><strong>View results</strong></h3>
+
+When the task finishes, open the notification in the top navigation bar and click "Visualizing Data" to load the results into your project.
+
+The homolog list will open on the right panel. The list displays: Protein ID (from PDB, UniProt, or NCBI), Hit and match score, E-value, Bit score, %ID, and Reference.
+
+<ManualImage src={"/manual-assets/en/video/video-44-poster.webp"} width={1952} height={1062} alt={""} />
+
+Expand any row to view the pairwise sequence alignment between the query and the hit.
+
+<ManualVideo src={"/manual-assets/en/video/video-45.webm"} poster={"/manual-assets/en/video/video-45-poster.webp"} webm={"/manual-assets/en/video/video-45.webm"} mp4={"/manual-assets/en/video/video-45.mp4"} external={false} reference={"image65.gif"} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-set-filter-criteria"><a id="heading_59"></a><strong>Set filter criteria</strong></h3>
+
+When there are too many results, use the "Filter" tool to narrow them down.
+
+<ManualImage src={"/manual-assets/en/video/video-46-poster.webp"} width={1952} height={1062} alt={""} />
+
+Click "Reset" and confirm to clear filters.
+
+<ManualImage src={"/manual-assets/en/video/video-47-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-download-data"><a id="heading_60"></a><strong>Download data</strong></h3>
+
+MOS supports exporting homolog data locally in FASTA format:
+
+-   <strong>Download all</strong>
+
+Exports all protein sequences in the list.
+
+<ManualImage src={"/manual-assets/en/video/video-48-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   <strong>Download selected</strong>
+
+Check the target proteins and use the download icon in the upper right.
+
+<ManualImage src={"/manual-assets/en/video/video-49-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   <strong>Download single hit</strong>
+
+Directly download an individual hit entry.
+
+<ManualVideo src={"/manual-assets/en/video/video-45.webm"} poster={"/manual-assets/en/video/video-45-poster.webp"} webm={"/manual-assets/en/video/video-45.webm"} mp4={"/manual-assets/en/video/video-45.mp4"} external={false} reference={"image65.gif"} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-visit-source-database"><a id="heading_61"></a><strong>Visit source database</strong></h3>
+
+Click the "Reference" hyperlink on any entry to open the corresponding source database page.
+
+<ManualVideo src={"/manual-assets/en/video/video-50.webm"} poster={"/manual-assets/en/video/video-50-poster.webp"} webm={"/manual-assets/en/video/video-50.webm"} mp4={"/manual-assets/en/video/video-50.mp4"} external={false} reference={"image70.gif"} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-multiple-sequence-alignment-msa"><a id="heading_62"></a><strong>Multiple Sequence Alignment (MSA)</strong></h3>
+
+Select multiple proteins from the list and click "Align" below to run a multiple sequence alignment.
+
+<ManualVideo src={"/manual-assets/en/video/video-51.webm"} poster={"/manual-assets/en/video/video-51-poster.webp"} webm={"/manual-assets/en/video/video-51.webm"} mp4={"/manual-assets/en/video/video-51.mp4"} external={false} reference={"image71.gif"} />
+
+<h3 id="4-homologous-protein-search-seqsimsearch-overview-metric-definitions"><a id="heading_63"></a><strong>Metric Definitions</strong></h3>
+
+-   <strong>ID:</strong> Identifier of the matched sequence.
+-   <strong>Hit:</strong> Subject sequence in the database (specified under Reference).
+-   <strong>Score:</strong> Raw alignment score calculated from matches, mismatches, and gap penalties; used to compare results within the same search.
+-   <strong>E-value:</strong> Expect value representing the number of chance alignments expected in the database (e.g., an E-value of 1 indicates a likely random match, whereas 1e-50 indicates high confidence).
+-   <strong>Bit score:</strong> Normalized score derived from the raw score; allows comparison across different searches.
+-   <strong>% ID:</strong> Percentage of identical amino acids across the aligned region, including gaps.
+-   <strong>Reference:</strong> Source database containing the hit sequence.

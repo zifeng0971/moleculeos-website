@@ -1,0 +1,554 @@
+{
+  "redirects": [
+    {
+      "source": "/docs",
+      "destination": "/help",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/",
+      "destination": "/help",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual",
+      "destination": "/help/manual",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/",
+      "destination": "/help/manual",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/getting-started",
+      "destination": "/help/getting-started",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/getting-started/",
+      "destination": "/help/getting-started",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/faq",
+      "destination": "/help/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/faq/",
+      "destination": "/help/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/changelog",
+      "destination": "/help/changelog",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/changelog/",
+      "destination": "/help/changelog",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/api",
+      "destination": "/help/api",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/api/",
+      "destination": "/help/api",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs",
+      "destination": "/en/help",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/",
+      "destination": "/en/help",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual",
+      "destination": "/en/help/manual",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/",
+      "destination": "/en/help/manual",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/getting-started",
+      "destination": "/en/help/getting-started",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/getting-started/",
+      "destination": "/en/help/getting-started",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/faq",
+      "destination": "/en/help/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/faq/",
+      "destination": "/en/help/faq",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/changelog",
+      "destination": "/en/help/changelog",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/changelog/",
+      "destination": "/en/help/changelog",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/api",
+      "destination": "/en/help/api",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/api/",
+      "destination": "/en/help/api",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/structure-prediction",
+      "destination": "/platform#structure-prediction",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/structure-prediction/",
+      "destination": "/platform#structure-prediction",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/affinity-optimization",
+      "destination": "/platform#affinity-optimization",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/affinity-optimization/",
+      "destination": "/platform#affinity-optimization",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/stability-engineering",
+      "destination": "/platform#stability-engineering",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/stability-engineering/",
+      "destination": "/platform#stability-engineering",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/de-novo-design",
+      "destination": "/platform#de-novo-design",
+      "statusCode": 301
+    },
+    {
+      "source": "/platform/de-novo-design/",
+      "destination": "/platform#de-novo-design",
+      "statusCode": 301
+    },
+    {
+      "source": "/models/mmfold",
+      "destination": "/platform#mmfold",
+      "statusCode": 301
+    },
+    {
+      "source": "/models/mmfold/",
+      "destination": "/platform#mmfold",
+      "statusCode": 301
+    },
+    {
+      "source": "/models/mmdesign",
+      "destination": "/platform#mmdesign",
+      "statusCode": 301
+    },
+    {
+      "source": "/models/mmdesign/",
+      "destination": "/platform#mmdesign",
+      "statusCode": 301
+    },
+    {
+      "source": "/models",
+      "destination": "/platform#models",
+      "statusCode": 301
+    },
+    {
+      "source": "/models/",
+      "destination": "/platform#models",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/structure-prediction",
+      "destination": "/en/platform#structure-prediction",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/structure-prediction/",
+      "destination": "/en/platform#structure-prediction",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/affinity-optimization",
+      "destination": "/en/platform#affinity-optimization",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/affinity-optimization/",
+      "destination": "/en/platform#affinity-optimization",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/stability-engineering",
+      "destination": "/en/platform#stability-engineering",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/stability-engineering/",
+      "destination": "/en/platform#stability-engineering",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/de-novo-design",
+      "destination": "/en/platform#de-novo-design",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/platform/de-novo-design/",
+      "destination": "/en/platform#de-novo-design",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models/mmfold",
+      "destination": "/en/platform#mmfold",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models/mmfold/",
+      "destination": "/en/platform#mmfold",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models/mmdesign",
+      "destination": "/en/platform#mmdesign",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models/mmdesign/",
+      "destination": "/en/platform#mmdesign",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models",
+      "destination": "/en/platform#models",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/models/",
+      "destination": "/en/platform#models",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/1-zhu-ce-yu-deng-lu",
+      "destination": "/help/manual#yi-kuai-su-ru-men-1-zhu-ce-yu-deng-lu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/1-zhu-ce-yu-deng-lu/",
+      "destination": "/help/manual#yi-kuai-su-ru-men-1-zhu-ce-yu-deng-lu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/2-mos-zhu-jie-mian",
+      "destination": "/help/manual#yi-kuai-su-ru-men-2-mos-zhu-jie-mian",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/2-mos-zhu-jie-mian/",
+      "destination": "/help/manual#yi-kuai-su-ru-men-2-mos-zhu-jie-mian",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/3-chang-shi-kuai-su-fa-qi-ji-suan",
+      "destination": "/help/manual#yi-kuai-su-ru-men-3-chang-shi-kuai-su-fa-qi-ji-suan",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/yi-kuai-su-ru-men/3-chang-shi-kuai-su-fa-qi-ji-suan/",
+      "destination": "/help/manual#yi-kuai-su-ru-men-3-chang-shi-kuai-su-fa-qi-ji-suan",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/1-xiang-mu-guan-li",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-1-xiang-mu-guan-li",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/1-xiang-mu-guan-li/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-1-xiang-mu-guan-li",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/2-dan-bai-guan-li",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-2-dan-bai-guan-li",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/2-dan-bai-guan-li/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-2-dan-bai-guan-li",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/3-xu-lie-qu",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-3-xu-lie-qu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/3-xu-lie-qu/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-3-xu-lie-qu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/4-jie-gou-qu",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-4-jie-gou-qu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/4-jie-gou-qu/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-4-jie-gou-qu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/5-ji-chu-gong-ju-lan-basic-tool",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-5-ji-chu-gong-ju-lan-basic-tool",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/5-ji-chu-gong-ju-lan-basic-tool/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-5-ji-chu-gong-ju-lan-basic-tool",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/6-di-bu-xuan-fu-gong-ju-lan-floating-toolbar",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-6-di-bu-xuan-fu-gong-ju-lan-floating-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/er-ji-chu-gong-neng-jie-shao/6-di-bu-xuan-fu-gong-ju-lan-floating-toolbar/",
+      "destination": "/help/manual#er-ji-chu-gong-neng-jie-shao-6-di-bu-xuan-fu-gong-ju-lan-floating-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call/gong-neng-jie-shao",
+      "destination": "/help/manual#qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call/gong-neng-jie-shao/",
+      "destination": "/help/manual#qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call/ru-he-cha-zhao-mo-xing-ren-wu",
+      "destination": "/help/manual#qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-ru-he-cha-zhao-mo-xing-ren-wu",
+      "statusCode": 301
+    },
+    {
+      "source": "/docs/manual/qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call/ru-he-cha-zhao-mo-xing-ren-wu/",
+      "destination": "/help/manual#qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-ru-he-cha-zhao-mo-xing-ren-wu",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/1-quick-start",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-1-quick-start",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/1-quick-start/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-1-quick-start",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/2-core-features",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-2-core-features",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/2-core-features/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-2-core-features",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/3-non-covalent-interactions",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-3-non-covalent-interactions",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/3-non-covalent-interactions/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-3-non-covalent-interactions",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/4-homology-protein-search-seqsimsearch",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-4-homology-protein-search-seqsimsearch",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/4-homology-protein-search-seqsimsearch/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-4-homology-protein-search-seqsimsearch",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/5-mocha",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-5-mocha",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/5-mocha/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-5-mocha",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/6-mmetrics",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-6-mmetrics",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/6-mmetrics/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-6-mmetrics",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/7-model-catalog-and-protein-computation-function-call",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-7-model-catalog-and-protein-computation-function-call",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/moleculeos-table-of-contents/7-model-catalog-and-protein-computation-function-call/",
+      "destination": "/en/help/manual#moleculeos-table-of-contents-7-model-catalog-and-protein-computation-function-call",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-1-registration-and-login",
+      "destination": "/en/help/manual#1-quick-start-1-1-registration-and-login",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-1-registration-and-login/",
+      "destination": "/en/help/manual#1-quick-start-1-1-registration-and-login",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-2-mos-main-interface",
+      "destination": "/en/help/manual#1-quick-start-1-2-mos-main-interface",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-2-mos-main-interface/",
+      "destination": "/en/help/manual#1-quick-start-1-2-mos-main-interface",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-3-running-quick-computations",
+      "destination": "/en/help/manual#1-quick-start-1-3-running-quick-computations",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/1-quick-start/1-3-running-quick-computations/",
+      "destination": "/en/help/manual#1-quick-start-1-3-running-quick-computations",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-1-project-management",
+      "destination": "/en/help/manual#2-core-platform-features-2-1-project-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-1-project-management/",
+      "destination": "/en/help/manual#2-core-platform-features-2-1-project-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-2-protein-management",
+      "destination": "/en/help/manual#2-core-platform-features-2-2-protein-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-2-protein-management/",
+      "destination": "/en/help/manual#2-core-platform-features-2-2-protein-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-3-sequence-viewer",
+      "destination": "/en/help/manual#2-core-platform-features-2-3-sequence-viewer",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-3-sequence-viewer/",
+      "destination": "/en/help/manual#2-core-platform-features-2-3-sequence-viewer",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-4-structure-viewer",
+      "destination": "/en/help/manual#2-core-platform-features-2-4-structure-viewer",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-4-structure-viewer/",
+      "destination": "/en/help/manual#2-core-platform-features-2-4-structure-viewer",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-5-basic-toolbar",
+      "destination": "/en/help/manual#2-core-platform-features-2-5-basic-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-5-basic-toolbar/",
+      "destination": "/en/help/manual#2-core-platform-features-2-5-basic-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-6-floating-toolbar",
+      "destination": "/en/help/manual#2-core-platform-features-2-6-floating-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/2-core-platform-features/2-6-floating-toolbar/",
+      "destination": "/en/help/manual#2-core-platform-features-2-6-floating-toolbar",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/7-model-catalog-and-protein-computation-function-call/function-introduction",
+      "destination": "/en/help/manual#7-model-catalog-and-protein-computation-function-call-function-introduction",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/7-model-catalog-and-protein-computation-function-call/function-introduction/",
+      "destination": "/en/help/manual#7-model-catalog-and-protein-computation-function-call-function-introduction",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/7-model-catalog-and-protein-computation-function-call/how-to-find-and-launch-model-tasks",
+      "destination": "/en/help/manual#7-model-catalog-and-protein-computation-function-call-how-to-find-and-launch-model-tasks",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/docs/manual/7-model-catalog-and-protein-computation-function-call/how-to-find-and-launch-model-tasks/",
+      "destination": "/en/help/manual#7-model-catalog-and-protein-computation-function-call-how-to-find-and-launch-model-tasks",
+      "statusCode": 301
+    }
+  ]
+}

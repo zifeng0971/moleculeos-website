@@ -1,0 +1,734 @@
+{
+  "manualUI": {
+    "pause": "暂停视频",
+    "seek": "播放进度",
+    "missingVideo": "开发提示：此视频未随手册导出，请补充源文件。",
+    "docs": "帮助中心",
+    "manual": "用户手册",
+    "community": "社区",
+    "search": "搜索文档…",
+    "searchHint": "输入关键词，搜索手册标题与正文。",
+    "searchError": "搜索索引加载失败，请刷新后重试。",
+    "loading": "正在加载搜索索引…",
+    "noResults": "没有找到相关内容",
+    "close": "关闭",
+    "zoom": "放大查看图片",
+    "play": "播放视频",
+    "externalVideo": "在来源网站播放",
+    "videoFallback": "浏览器暂不支持此视频格式。",
+    "copy": "复制",
+    "copied": "已复制",
+    "breadcrumb": "面包屑",
+    "pagination": "手册页面导航",
+    "previous": "上一页",
+    "next": "下一页",
+    "pages": "共 {count} 个章节，连续滚动阅读。",
+    "searchPlaceholder": "如「结构对齐」「Credit」",
+    "mochaHelp": "没有找到相关内容？可以在 MOS 平台内向 Mocha 提问 →",
+    "onThisPage": "本页目录",
+    "switchLanguage": "切换语言",
+    "chapters": "章节目录",
+    "missingTranslation": "该页面暂无对应语言版本，已返回该语言的手册首页。",
+    "openManual": "阅读用户手册 →",
+    "quickStartDescription": "了解平台入口，并按手册完成首次操作。",
+    "faqDescription": "查看定价、任务与数据管理的常见问题。",
+    "manualDescription": "完整操作说明、界面截图与视频，按章节查阅。"
+  },
+  "nav": {
+    "platform": "平台",
+    "models": "模型",
+    "validation": "验证与案例",
+    "pricing": "定价",
+    "docs": "帮助中心",
+    "community": "社区",
+    "start": "开始工作",
+    "contact": "预约沟通",
+    "menu": "打开菜单",
+    "close": "关闭菜单",
+    "byTask": "按任务",
+    "structurePrediction": "结构预测",
+    "affinityOptimization": "亲和力优化",
+    "stabilityEngineering": "稳定性改造",
+    "deNovoDesign": "从头设计",
+    "antibody": "抗体",
+    "peptide": "多肽",
+    "enzyme": "酶",
+    "miniProtein": "小蛋白",
+    "language": "EN",
+    "modelSystem": "模型体系",
+    "neworigin": "NewOrigin（达尔文）",
+    "mmfold": "MMFold",
+    "mmdesign": "MMDesign"
+  },
+  "footer": {
+    "tagline": "让蛋白质设计从反复试错，走向可计算、可解释、可验证。",
+    "product": "产品",
+    "resources": "资源",
+    "company": "公司",
+    "legal": "法务",
+    "models": "模型",
+    "validation": "验证与案例",
+    "pricing": "定价",
+    "platform": "平台能力",
+    "blog": "Blog",
+    "research": "研究",
+    "whitepaper": "白皮书",
+    "manual": "用户手册",
+    "about": "关于我们",
+    "careers": "加入我们",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "security": "数据安全",
+    "filing": "备案号：{{TODO: 待业务方确认}}",
+    "forum": "用户论坛",
+    "webinar": "月度 Webinar",
+    "academic": "学术合作计划",
+    "developedBefore": "MoleculeOS 由 ",
+    "developedAfter": "研发",
+    "developer": "分子之心（MoleculeMind）"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "MOLECULEOS · 生物可编程时代的研发操作系统",
+      "title": "生命科学研发的\n操作系统",
+      "description": "从药物设计到酶设计，MOS 把蛋白设计所需的模型、算力与数据整合进一个平台，为科研与产业团队提供完整的蛋白设计解决方案。",
+      "imageAlt": "MoleculeOS 蛋白质设计工作台静态界面占位图"
+    },
+    "trust": {
+      "label": "与领先的生物研发团队共同推进真实项目",
+      "targets": "真实临床靶点",
+      "successCondition": "在 12 个靶点上，每个靶点仅测试不超过 50 个候选分子的低通量条件下，靶点成功率超过 90%",
+      "validated": "完成湿实验验证的项目",
+      "todo": "{{TODO: 待业务方确认}}"
+    },
+    "tasks": {
+      "eyebrow": "从研发任务出发",
+      "selectorDescription": "选一个你手上正在卡住的问题。",
+      "mediaMissing": "演示素材待补充",
+      "title": "它能帮我完成什么？",
+      "description": "不是展示一组模型，而是从你手上的实验目标出发，给出下一轮可执行的候选方案。",
+      "situation": "你的处境",
+      "approach": "MOS 的做法",
+      "outcome": "你拿到什么",
+      "learn": "查看能力",
+      "items": [
+        {
+          "title": "从序列出发，快速判断结构与复合物状态",
+          "situation": "缺少可靠结构，实验构建与位点判断难以展开。",
+          "approach": "提交序列或已有结构，完成单体与复合物结构预测，并标出关键区域。",
+          "outcome": "可检查的结构结果、置信度提示与后续设计起点。",
+          "slug": "structure-prediction"
+        },
+        {
+          "title": "提高候选分子的结合表现",
+          "situation": "先导分子已有活性，但亲和力提升进入高成本试错。",
+          "approach": "围绕结合界面提出定向突变组合，并对候选进行统一排序与解释。",
+          "outcome": "优先送实验的候选清单、关键位点与设计依据。",
+          "slug": "affinity-optimization"
+        },
+        {
+          "title": "改善表达、稳定性与可开发性",
+          "situation": "活性分子在表达、热稳定或聚集方面无法满足开发要求。",
+          "approach": "在保留功能区域的前提下，探索更稳健的序列空间。",
+          "outcome": "兼顾功能约束的改造方案与风险提示。",
+          "slug": "stability-engineering"
+        },
+        {
+          "title": "为新靶点从头生成结合分子",
+          "situation": "缺少可用先导，需要从目标界面开始建立候选。",
+          "approach": "基于靶点结构与设计约束生成、筛选并解释新序列。",
+          "outcome": "多样化候选、排序依据与可直接导出的实验序列。",
+          "slug": "de-novo-design"
+        }
+      ]
+    },
+    "agentDemo": {
+      "label": "Agent 工作流演示占位框",
+      "placeholder": "Agent 工作流演示 · 内容开发中",
+      "inputPlaceholder": "向 Mocha 描述你的研发目标"
+    },
+    "results": {
+      "eyebrow": "可解释的结果",
+      "title": "{{TODO: 待确认}}",
+      "description": "{{TODO: 待确认}}",
+      "link": "前往 MOS 体验完整功能"
+    },
+    "models": {
+      "eyebrow": "模型体系",
+      "title": "从统一表征到任务模型，再到科学计算",
+      "description": "MOS 以 NewOrigin 为统一表征底座，连接任务模型与科学计算方法。",
+      "foundation": "基座模型",
+      "foundationDescription": "多模态蛋白质基础大模型，融合序列、结构、功能、进化四类信息，是 MOS 全部能力的统一表征底座",
+      "taskModels": "任务模型",
+      "scienceLayer": "科学计算层",
+      "scienceDescription": "融合分子动力学、量子化学等方法，覆盖从静态结构到动态设计",
+      "descriptionLabel": "模型定位",
+      "limitation": "已知局限",
+      "viewAll": "查看全部模型",
+      "items": [
+        {
+          "name": "MMFold",
+          "description": "全原子大分子复合物结构预测模型",
+          "limitation": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "name": "MMDesign",
+          "description": "生成式设计模型，面向纳米抗体、酶与功能蛋白",
+          "limitation": "{{TODO: 待业务方确认}}"
+        }
+      ],
+      "band": [
+        {
+          "name": "NewOrigin（达尔文）",
+          "description": "统一表征底座",
+          "anchor": "neworigin"
+        },
+        {
+          "name": "MMFold",
+          "description": "全原子复合物结构预测",
+          "anchor": "mmfold"
+        },
+        {
+          "name": "MMDesign",
+          "description": "生成式蛋白质设计",
+          "anchor": "mmdesign"
+        }
+      ],
+      "viewSystem": "查看完整模型体系"
+    },
+    "validation": {
+      "eyebrow": "验证与证据",
+      "title": "用湿实验结果校准每一次设计",
+      "description": "我们只呈现经过确认的项目事实。以下具体数值与案例名称将在业务审核后补充。",
+      "successCondition": "在 12 个靶点上，每个靶点仅测试不超过 50 个候选分子的低通量条件下，靶点成功率超过 90%",
+      "metric2": "完成湿实验验证的项目",
+      "metric3": "设计到验证周期",
+      "todo": "{{TODO: 待业务方确认}}",
+      "background": "背景",
+      "challenge": "难点",
+      "strategy": "设计策略",
+      "result": "湿实验结果",
+      "details": "查看案例详情",
+      "cases": [
+        {
+          "title": "抗体亲和力优化",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "酶稳定性改造",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "复合物结构预测",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "从头设计",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "功能蛋白设计",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "蛋白质稳定性改造",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        }
+      ],
+      "projectType": "项目类型",
+      "molecule": "分子类型",
+      "duration": "周期",
+      "gridTitle": "项目事实，比承诺更有说服力"
+    },
+    "flywheel": {
+      "eyebrow": "数据飞轮",
+      "title": "每一次实验，都让下一次设计更准确",
+      "description": "设计、实验与学习形成可追溯的闭环；在明确的数据边界内持续提升项目决策质量。",
+      "design": "AI 精准设计",
+      "experiment": "小样本湿实验验证",
+      "evolve": "模型持续进化",
+      "designLines": [
+        "AI 精准设计"
+      ],
+      "experimentLines": [
+        "小样本湿实验",
+        "验证"
+      ],
+      "evolveLines": [
+        "模型持续进化"
+      ]
+    },
+    "access": {
+      "eyebrow": "接入方式",
+      "title": "匹配不同规模与安全要求",
+      "learn": "了解更多",
+      "items": [
+        {
+          "title": "Web 平台",
+          "description": "适合希望快速启动标准蛋白质设计任务的研发团队。",
+          "compactDescription": "快速启动标准研发任务"
+        },
+        {
+          "title": "API",
+          "description": "适合将模型能力接入现有研发流程与数据管线。",
+          "compactDescription": "接入现有研发流程"
+        },
+        {
+          "title": "私有化部署",
+          "description": "适合对数据隔离、合规和内部算力有严格要求的组织。",
+          "compactDescription": "满足数据隔离与内部算力要求"
+        },
+        {
+          "title": "联合研发",
+          "description": "适合复杂新靶点、长周期验证或定制方法开发项目。",
+          "compactDescription": "面向复杂或定制研发项目"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "数据安全与 IP",
+      "title": "你的数据与设计成果，始终由你掌控",
+      "description": "安全不是附加功能，而是企业研发协作的默认前提。",
+      "items": [
+        {
+          "title": "序列数据不用于模型训练",
+          "description": "未经明确授权，客户上传的序列、结构和实验数据不会进入通用模型训练。",
+          "compactDescription": "未经授权不进入通用模型训练"
+        },
+        {
+          "title": "设计产出 IP 完全归客户",
+          "description": "平台生成并交付的项目设计成果，其知识产权归属客户。",
+          "compactDescription": "项目设计成果归客户所有"
+        },
+        {
+          "title": "加密与隔离机制",
+          "description": "数据传输、存储与项目访问均按企业安全边界进行隔离。",
+          "compactDescription": "传输、存储与项目访问按边界隔离"
+        }
+      ],
+      "whitepaper": "查看安全白皮书"
+    },
+    "community": {
+      "eyebrow": "社区与资源",
+      "title": "与真实问题保持连接",
+      "items": [
+        {
+          "title": "用户论坛",
+          "description": "与同行交流设计方法、实验路径与平台使用经验。",
+          "link": "进入论坛"
+        },
+        {
+          "title": "月度 Webinar",
+          "description": "围绕蛋白质设计任务与真实项目方法展开深度分享。",
+          "link": "查看日程"
+        },
+        {
+          "title": "学术合作计划",
+          "description": "支持前沿课题以更低门槛使用模型能力并开展验证。",
+          "link": "了解计划"
+        }
+      ]
+    },
+    "final": {
+      "title": "把下一个蛋白质研发问题，交给一个更可验证的起点",
+      "description": "从明确目标开始，用更少的候选进入下一轮实验。"
+    },
+    "position": {
+      "label": "首页区块定位",
+      "labels": [
+        "首页",
+        "可解释的结果",
+        "它能帮我完成什么",
+        "模型体系",
+        "验证与案例",
+        "信任与证据",
+        "开始工作"
+      ]
+    }
+  },
+  "common": {
+    "start": "开始工作",
+    "contact": "预约沟通",
+    "learnMore": "了解更多",
+    "back": "返回",
+    "todo": "{{TODO: 待业务方确认}}",
+    "redirect": "页面已迁移，正在跳转。",
+    "continue": "前往新页面"
+  },
+  "modelsPage": {
+    "eyebrow": "MODELS",
+    "title": "面向真实蛋白质研发任务的模型体系",
+    "description": "以 NewOrigin（达尔文）为统一表征底座，连接 MMFold、MMDesign 与科学计算方法。",
+    "detailTitle": "模型详情",
+    "how": "模型定位",
+    "limits": "已知局限与使用边界",
+    "cta": "在平台中使用该模型"
+  },
+  "pricingPage": {
+    "eyebrow": "PRICING",
+    "title": "按研发阶段选择适合的使用方式",
+    "description": "按研发阶段选择使用方式，并了解各类任务的算力消耗。",
+    "plans": [
+      {
+        "name": "学术版",
+        "audience": "适合高校课题组与非商业研究",
+        "price": "{{TODO: 待业务方确认}}",
+        "features": [
+          "标准模型任务额度",
+          "学术项目使用许可",
+          "社区支持"
+        ]
+      },
+      {
+        "name": "专业版",
+        "audience": "适合生物科技团队与独立项目组",
+        "price": "{{TODO: 待业务方确认}}",
+        "features": [
+          "更高任务并发与额度",
+          "完整结果导出",
+          "项目级协作"
+        ]
+      },
+      {
+        "name": "企业版",
+        "audience": "适合药企与规模化研发组织",
+        "price": "{{TODO: 待业务方确认}}",
+        "features": [
+          "企业安全与权限管理",
+          "API 或私有化选项",
+          "专属项目支持"
+        ]
+      }
+    ],
+    "choose": "预约沟通",
+    "credits": "算力消耗说明",
+    "creditDescription": "实际消耗与序列长度、候选数量和任务复杂度有关。",
+    "task": "任务类型",
+    "consumption": "Credit 消耗",
+    "duration": "预计耗时",
+    "rows": [
+      [
+        "结构预测",
+        "{{TODO: 待业务方确认}}",
+        "{{TODO: 待业务方确认}}"
+      ],
+      [
+        "亲和力优化",
+        "{{TODO: 待业务方确认}}",
+        "{{TODO: 待业务方确认}}"
+      ],
+      [
+        "稳定性改造",
+        "{{TODO: 待业务方确认}}",
+        "{{TODO: 待业务方确认}}"
+      ],
+      [
+        "从头设计",
+        "{{TODO: 待业务方确认}}",
+        "{{TODO: 待业务方确认}}"
+      ]
+    ],
+    "moreQuestions": "更多问题请查看文档"
+  },
+  "validationPage": {
+    "eyebrow": "VALIDATION",
+    "title": "真实实验结果，是评估设计价值的最终标准",
+    "description": "案例只呈现可核验的项目背景、设计策略与湿实验结果；未确认数据均保留明确占位。",
+    "all": "全部案例",
+    "detail": "案例详情",
+    "summary": "项目摘要",
+    "design": "设计与验证路径",
+    "result": "实验结果",
+    "disclaimer": "具体客户名称、靶点信息与实验数据将在取得授权并完成审核后发布。"
+  },
+  "contactPage": {
+    "eyebrow": "CONTACT",
+    "title": "告诉我们，你正在解决什么研发问题",
+    "description": "提交信息后，团队将根据任务类型安排后续沟通。当前版本仅为前端表单，不会实际发送。",
+    "name": "姓名",
+    "organization": "机构",
+    "email": "工作邮箱",
+    "type": "需求类型",
+    "message": "留言",
+    "select": "请选择",
+    "options": [
+      "结构预测",
+      "亲和力优化",
+      "稳定性改造",
+      "从头设计",
+      "API / 私有化部署",
+      "联合研发",
+      "其他"
+    ],
+    "submit": "提交需求",
+    "privacy": "提交即表示你同意我们仅为本次沟通处理上述信息。"
+  },
+  "platformPage": {
+    "eyebrow": "PLATFORM · 研发任务",
+    "applicable": "适用分子",
+    "applicableNote": "适用范围",
+    "scenarios": "典型场景",
+    "inputsOutputs": "输入与输出",
+    "inputs": "你需要提供什么",
+    "outputs": "你会得到什么",
+    "models": "调用的模型",
+    "modelsDescription": "模型支撑关系",
+    "viewModels": "查看模型体系",
+    "validation": "相关验证案例",
+    "viewValidation": "查看验证与案例",
+    "ctaTitle": "准备开始这个研发任务？",
+    "todo": "{{TODO: 待业务方确认}}",
+    "tasks": {
+      "structure-prediction": {
+        "title": "结构预测",
+        "description": "{{TODO: 待业务方确认}}"
+      },
+      "affinity-optimization": {
+        "title": "亲和力优化",
+        "description": "{{TODO: 待业务方确认}}"
+      },
+      "stability-engineering": {
+        "title": "稳定性改造",
+        "description": "{{TODO: 待业务方确认}}"
+      },
+      "de-novo-design": {
+        "title": "从头设计",
+        "description": "{{TODO: 待业务方确认}}"
+      }
+    },
+    "overview": "平台总览",
+    "title": "从研发任务到模型体系，一条完整链路",
+    "description": "按任务了解 MOS，再查看统一表征底座、任务模型与科学计算方法。",
+    "modelsTitle": "模型体系",
+    "compute": "科学计算方法层",
+    "sidebar": "本页导航",
+    "modelInput": "输入",
+    "modelOutput": "输出",
+    "modelMolecules": "适用分子类型",
+    "benchmark": "Benchmark 指标"
+  },
+  "placeholderPage": {
+    "docs": {
+      "eyebrow": "DOCS",
+      "title": "从第一个任务开始使用 MoleculeOS",
+      "description": "帮助中心将提供任务配置、结果解读、API 与数据安全说明。完整内容正在整理。"
+    },
+    "community": {
+      "eyebrow": "COMMUNITY",
+      "title": "连接蛋白质设计的研究者与实践者",
+      "description": "用户论坛、月度 Webinar 与学术合作计划将在这里持续更新。"
+    },
+    "coming": "内容正在准备中",
+    "browse": "返回首页"
+  },
+  "docsPage": {
+    "eyebrow": "DOCS",
+    "title": "从第一个研发任务开始",
+    "description": "快速上手、用户手册与常见问题。",
+    "quickStart": "快速上手",
+    "quickDescription": "选择研发任务，了解所需输入，再前往 MOS 开始工作。",
+    "manual": "用户手册",
+    "manualPlaceholder": "用户手册后续接入，当前仅预留栏目。",
+    "faq": "常见问题",
+    "faqs": [
+      [
+        "Credit 如何计算？",
+        "Credit 按任务类型、输入规模与候选数量综合计算，正式规则待业务方确认。"
+      ],
+      [
+        "可以先试用再选择计划吗？",
+        "试用政策与可用模型范围待业务方确认。"
+      ],
+      [
+        "是否支持发票与年度合同？",
+        "企业采购与合同流程可在预约沟通后由团队提供说明。"
+      ],
+      [
+        "私有化部署如何定价？",
+        "私有化部署需结合算力环境、安全要求与服务范围单独评估。"
+      ]
+    ]
+  },
+  "agentDemo": {
+    "stepDone": "步骤已完成",
+    "stepRunning": "步骤执行中",
+    "stepPending": "步骤待执行",
+    "label": "Mocha 工作区",
+    "expand": "放大工作区",
+    "collapse": "收起工作区",
+    "workspaceView": "工作区视图",
+    "inspectStructure": "检查结构与选区",
+    "structure": {
+      "label": "2BDN 可交互结构",
+      "preview": "2BDN 原始结构坐标静态预览",
+      "antigen": "抗原",
+      "light": "轻链",
+      "heavy": "重链",
+      "preparing": "正在准备结构视图",
+      "load": "打开 3D 结构",
+      "loading": "正在加载结构",
+      "error": "3D 结构暂不可用，可查看静态预览",
+      "retry": "重试加载",
+      "structure": "结构",
+      "sequence": "序列",
+      "zoomIn": "放大结构",
+      "zoomOut": "缩小结构",
+      "reset": "复位视角",
+      "representation": "切换结构表示",
+      "interactions": "显示结构互作",
+      "measure": "测量原子距离",
+      "clear": "清除距离测量",
+      "measureHint": "选择两个原子测量距离",
+      "secondAtom": "请选择第二个原子",
+      "drag": "拖动旋转 · 滚轮缩放"
+    },
+    "tasksLabel": "任务",
+    "you": "你",
+    "thinking": "将目标拆解为可检查的任务步骤。",
+    "inputPlaceholder": "向 Mocha 描述你的研发目标",
+    "send": "发送消息",
+    "chatTitle": "新对话",
+    "chatStatus": "对话",
+    "localReply": "如需让 Mocha 分析你的具体问题，请前往 MOS 平台体验完整能力。",
+    "openPlatform": "前往 MOS",
+    "resultNote": "已整理完成，可从任务列表查看。",
+    "pause": "暂停任务",
+    "resume": "继续任务",
+    "replay": "重新执行",
+    "next": "下一步",
+    "playing": "执行中",
+    "paused": "已暂停",
+    "complete": "已完成",
+    "progress": "任务进度",
+    "phases": {
+      "0": "输入意图",
+      "1": "任务拆解",
+      "2": "逐步执行",
+      "3": "逐步执行",
+      "4": "整理结果",
+      "5": "结果产出"
+    },
+    "tasks": {
+      "humanization": {
+        "title": "人源化",
+        "short": "查看设计准备流程",
+        "prompt": "我想对一条抗体开展人源化设计，先整理需要核对的区域和设计条件。",
+        "plan0": "核对输入与任务条件",
+        "plan1": "整理待检查的序列区域",
+        "plan2": "生成设计准备清单",
+        "result": "人源化设计准备清单"
+      },
+      "affinity": {
+        "title": "亲和力",
+        "short": "查看候选评估流程",
+        "prompt": "我想改善抗体亲和力，先梳理复合物中需要检查的区域和候选评估步骤。",
+        "plan0": "核对复合物与研发目标",
+        "plan1": "整理待检查的互作区域",
+        "plan2": "生成候选评估清单",
+        "result": "候选评估准备清单"
+      },
+      "homology": {
+        "title": "序列同源性",
+        "short": "查看参考整理流程",
+        "prompt": "帮我为这条序列整理同源性检索流程，并列出需要核对的参考信息。",
+        "plan0": "核对序列与检索范围",
+        "plan1": "准备检索条件",
+        "plan2": "整理参考核对清单",
+        "result": "同源性检索准备清单"
+      },
+      "epitope": {
+        "title": "表位分析",
+        "short": "查看界面检查流程",
+        "prompt": "我想检查抗原抗体的结合界面，先整理需要查看的链与残基区域。",
+        "plan0": "核对输入结构与链信息",
+        "plan1": "准备界面检查步骤",
+        "plan2": "整理残基核对清单",
+        "result": "结合界面检查清单"
+      }
+    },
+    "newTask": "新建任务",
+    "empty": "暂无任务",
+    "intro": "我是 Mocha，来自分子之心的 AI 助手。",
+    "welcomeTitle": "有什么可以帮你？",
+    "samples": "从这些任务开始"
+  },
+  "mmetricsDemo": {
+    "loading": "正在加载结构",
+    "label": "MMetrics 结构交互演示",
+    "preview": "5xh3 首帧截图占位",
+    "enter": "进入交互演示",
+    "mobile": "点击加载本地结构 · 拖动旋转",
+    "local": "本地结构展示 · 注释为预置数据，互作由结构计算，非实验验证",
+    "close": "关闭",
+    "notice": "前往 MOS 体验完整功能",
+    "mochaInput": "向 Mocha 描述你的研发目标",
+    "mocha0": "前往 MOS 查看结构预测功能。",
+    "mocha1": "前往 MOS 查看序列设计功能。",
+    "mocha2": "前往 MOS 查看突变评估功能。",
+    "mocha3": "前往 MOS 查看蛋白配体评估功能。",
+    "more": "展开完整分析",
+    "viewer": "5xh3 结构交互：拖动旋转，滚轮缩放",
+    "error": "WebGL 初始化失败，请启用浏览器硬件加速或重试。",
+    "retry": "重试",
+    "chunkError": "交互组件未能加载。静态预览仍可查看，请重新加载页面。",
+    "zoomIn": "放大",
+    "zoomOut": "缩小",
+    "reset": "聚焦复位",
+    "representation": "切换表示",
+    "interactions": "非共价键互作",
+    "measure": "选择两个原子测距",
+    "firstAtom": "已选第一个原子，请选择第二个。",
+    "clear": "清除测距",
+    "overlays": "显示或隐藏状态浮层",
+    "align": "前往 MOS 体验结构对齐",
+    "ready": "拖动旋转 · 滚轮缩放",
+    "selected": "残基已选中",
+    "missing": "原始结构未找到此注释，需确认平台残基编号。",
+    "schematic": "示意"
+  },
+  "helpPage": {
+    "title": "帮助中心",
+    "changelog": "更新日志",
+    "api": "API 文档",
+    "soon": "即将上线",
+    "todo": "{{TODO: 待确认}}"
+  },
+  "communityPage": {
+    "owned": "自有阵地",
+    "forum": "用户论坛",
+    "feishu": "飞书交流群",
+    "social": "社交平台",
+    "todo": "{{TODO: 待确认}}"
+  }
+}

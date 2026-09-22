@@ -1,0 +1,86 @@
+/* Product-only tokens: deliberately independent of the marketing theme. */
+.agent-demo-live,.mm-demo {
+  --product-bg:#1e1e1e; --product-chrome:#252525; --product-card:#292929;
+  --product-message:#303030; --product-line:#383838; --product-success:#7cb65b;
+  --glass-border:var(--product-line); --text-primary:#e5e5e5; --text-secondary:#aaa;
+  --text-tertiary:#888; --accent:#8970ee; --accent-text:#a38af7;
+  background:var(--product-bg); color:var(--text-primary);
+  font-family:Arial,'Noto Sans SC',sans-serif; font-size:14px; line-height:1.6; letter-spacing:0;
+}
+.agent-demo-live p,.mm-demo p { max-width:none; }
+.agent-demo-live .agent-demo-top,.agent-demo-live .agent-run-sidebar { background:var(--product-chrome); }
+.agent-demo-live .agent-run[aria-pressed=true] { background:#383453; border-color:transparent; }
+.agent-demo-live .agent-panel-heading { height:46px; background:var(--product-bg); }
+.agent-demo-live .agent-panel-heading span { padding:2px 10px; background:var(--product-message); border-radius:6px; }
+.agent-demo-live .agent-welcome { padding:20px; }
+.agent-demo-live .agent-samples { max-width:504px; gap:14px; }
+.agent-demo-live .agent-sample { padding:10px 12px; min-height:76px; border:0; border-radius:8px; background:var(--product-card); }
+.agent-demo-live .agent-sample small { margin-top:3px; line-height:1.4; }
+.agent-demo-live .agent-intro { color:#bcbcbc; }
+.agent-demo-live .agent-session-heading { padding:12px 16px; border-bottom-color:#50414e; }
+.agent-demo-live .agent-transcript { font-size:14px; line-height:1.6; scrollbar-color:#484848 transparent; }
+.agent-demo-live .agent-message-user { margin-left:14%; margin-bottom:26px; }
+.agent-demo-live .agent-message p { border:0; border-radius:16px; background:var(--product-message); padding:12px; }
+.agent-demo-live .agent-speaker { color:#bbb; font-size:12px; font-weight:400; }
+.agent-assistant-body:not(:empty) { padding:12px; background:var(--product-message); border-radius:0 0 16px 16px; }
+.agent-demo-live .agent-thinking { margin:0 0 10px; padding:7px 10px; color:#aaa; background:transparent; border:1px dashed #4a4a4a; }
+.agent-demo-live .agent-tool-record { margin-top:10px; border:1px solid var(--product-line); border-radius:6px; background:var(--product-card); }
+.agent-demo-live .agent-tool { padding:7px 6px; border:0; background:transparent; }
+.agent-demo-live .agent-tool-record>p { margin:0 10px 10px; padding:10px; border:1px solid #454545; border-radius:6px; background:var(--product-message); }
+.agent-demo-live .agent-tool code { font:600 12px/1.6 ui-monospace,monospace; color:#d974ae; }
+.agent-demo-live .agent-result { background:var(--product-card); border:1px solid #454545; border-left:3px solid var(--product-success); border-radius:6px; }
+.agent-demo-live .agent-result>svg { color:var(--product-success); }
+.agent-demo-live .agent-result p { font-size:12px; }
+.agent-demo-live .agent-result button { color:#ddd; border-color:#505050; }
+.agent-demo-live .agent-demo-input { position:relative; max-width:600px; background:var(--product-card); border:1px solid var(--product-line); border-radius:10px; padding:12px; }
+.agent-composer-body { flex:1; min-width:0; align-self:stretch; }
+.agent-context-chip { display:inline-block; border:1px solid #484848; background:#333; color:#ccc; padding:1px 8px; border-radius:4px; font-size:12px; }
+.agent-demo-live .agent-demo-input textarea { font-size:13px; color:#ddd; line-height:1.6; }
+.agent-demo-live .agent-demo-input button { background:#444; }
+.agent-demo-live .agent-demo-input button:not(:disabled):hover { background:#6554b7; }
+.agent-demo-live .agent-structure>header { padding:12px 16px 8px; background:var(--product-bg); }
+.agent-demo-live .agent-viewer-tools,.mm-demo .mm-toolbar { background:#080808; border:0; border-radius:4px; box-shadow:none; gap:3px; padding:4px; }
+.agent-demo-live .agent-viewer-tools button,.mm-demo .mm-toolbar button { color:#ddd; }
+.agent-sequence-strip { flex:0 0 auto; min-width:0; padding:6px 16px 10px; border-bottom:1px solid var(--product-line); background:var(--product-bg); }
+.agent-sequence-chains { display:flex; gap:6px; margin-bottom:4px; }
+.agent-sequence-chains button { border-radius:3px; padding:0 7px; background:#333; font-size:11px; }
+.agent-sequence-chains button[aria-pressed=true] { color:#bc712e; background:#fff3da; }
+.agent-sequence-residues { display:flex; overflow:auto; scrollbar-width:thin; gap:2px; }
+.agent-sequence-residues button { flex:0 0 14px; font:12px/1.4 ui-monospace,monospace; text-align:left; }
+.agent-sequence-residues small { display:block; color:#ce872f; font-size:10px; height:16px; }
+.agent-sequence-residues button[aria-pressed=true] { background:#554b77; color:white; }
+.mm-demo .mm-structure,.mm-demo .mm-panel { background:var(--product-bg); }
+.mm-demo .mm-tabs { align-items:center; gap:8px; height:46px; padding:6px 12px; }
+.mm-demo .mm-tabs button { display:flex; align-items:center; gap:7px; border:0; padding:3px 10px; border-radius:6px; }
+.mm-demo .mm-tabs button[aria-selected=true] { background:var(--product-message); color:#eee; border:0; font-weight:600; }
+.mm-demo .mm-panel-scroll { padding:14px 12px; font-size:14px; line-height:1.6; }
+.mm-demo .mm-panel-scroll .mm-section-label { font-size:12px; letter-spacing:.035em; margin-bottom:8px; color:#b4b4b4; }
+.mm-description-card { background:var(--product-card); border:1px solid var(--product-line); border-radius:8px; padding:12px; }
+.mm-demo .mm-reasoning { border-top:1px dashed #444; padding-top:12px; font-size:12px; }
+.mm-demo .mm-reasoning>span { display:inline; margin-right:6px; }
+.mm-demo .mm-tags { margin-bottom:10px; }
+.mm-demo .mm-tags:last-child { margin-bottom:0; }
+.mm-demo .mm-tags span { background:#1e1e1e; border:1px solid #3b3b3b; padding:0 6px; border-radius:4px; font-size:11px; color:#ccc; }
+.mm-description-card>.mm-tags:first-child span { color:#61a5f6; background:#293b4c; border:0; border-radius:20px; padding:3px 8px; font-weight:600; }
+.mm-description-card>.mm-tags:first-child .mm-confidence { color:#8bbf65; background:#303e29; }
+.mm-demo .mm-homolog { background:var(--product-card); border:1px solid var(--product-line); border-radius:8px; padding:8px 12px; margin:8px 0; font-size:12px; }
+.mm-demo .mm-homolog code { font-weight:600; }
+.mm-demo .mm-homolog small { font-size:10px; color:#8fc8bc; border-color:#3d6c66; background:#293d39; }
+.mm-demo .mm-homolog a { color:#a090ee; font-size:12px; }
+.mm-demo .mm-annotation { background:var(--product-card); border:1px solid var(--product-line); border-radius:8px; padding:12px; margin:10px 0; }
+.mm-demo .mm-annotation>strong { font-weight:600; }
+.mm-demo .mm-chips { gap:4px; margin-top:6px; }
+.mm-demo .mm-chips button { background:#202020; border-color:#3c3c3c; border-radius:4px; padding:2px 5px; font-size:11px; }
+.mm-demo .mm-sequence { background:var(--product-bg); padding:14px 16px 10px; }
+.mm-demo .mm-sequence-name { font:600 14px/1.6 Arial,sans-serif; padding-bottom:6px; border-bottom:1px solid #333; }
+.mm-demo .mm-sequence-scroll small { color:#ce872f; }
+.mm-demo .mm-sequence-scroll button { color:#ddd; }
+.mm-demo .mm-panel-scroll section+section { border-top:0; padding-top:0; margin-top:22px; }
+@media (max-width:767px) {
+  .agent-demo-live .agent-welcome { padding:12px; }
+  .agent-demo-live .agent-samples { gap:8px; }
+  .agent-demo-live .agent-sample { padding:10px 8px; }
+  .agent-demo-live .agent-viewer-tools button,.mm-demo .mm-toolbar button { width:44px; height:44px; }
+  .agent-sequence-chains button,.agent-sequence-residues button { min-width:44px; min-height:44px; }
+  .mm-demo .mm-chips button { min-width:44px; min-height:44px; }
+}

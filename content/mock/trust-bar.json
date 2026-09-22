@@ -1,0 +1,21 @@
+{
+  "_demo": true,
+  "items": [
+    {
+      "value": "12",
+      "label": "真实临床靶点",
+      "isReal": true
+    },
+    {
+      "value": "90%+",
+      "label": "低通量条件下靶点成功率",
+      "isReal": true
+    },
+    {
+      "value": "37",
+      "label": "完成湿实验验证的项目",
+      "isReal": false
+    }
+  ],
+  "_note": "演示数据,上线前必须替换"
+}

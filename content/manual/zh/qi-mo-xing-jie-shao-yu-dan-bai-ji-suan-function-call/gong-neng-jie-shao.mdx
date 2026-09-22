@@ -1,0 +1,147 @@
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-1-mmfold"><a id="heading_90"></a>1. <strong>MMFold</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie"><a id="heading_91"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>MMFold 是一种先进的深度学习模型，通过利用多序列比对（MSA） 作为关键输入，精准预测蛋白质的三维结构。它借助进化信息识别结构基序和残基相互作用，显著推动了计算生物学和结构生物信息学科研效率</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu\"><a id=\"heading_92\"></a><strong>目标用户</strong></h5><ul><li><strong>生物科研人员</strong>: 需要结构预测数据辅助实验设计，补充实验观测结果</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing\"><a id=\"heading_93\"></a><strong>使用场景</strong></h5><ul><li>蛋白质结构预测：根据氨基酸序列预测蛋白质的3D结构，帮助解析其功能和生物学作用</li><li>跨物种结构比较：通过比对不同物种的预测结构，研究进化关系，分析同源蛋白的结构保守性</li><li>工业酶设计：提供结构信息指导突变设计，优化酶催化活性，应用于生物制造或医药开发</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru\"><a id=\"heading_94\"></a><strong>输入</strong></h5><ul><li>FASTA 文件（包含蛋白质序列，不同的链在同一行中用\":\"分隔）</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu\"><a id=\"heading_95\"></a><strong>输出</strong></h5><ul><li>PDB 格式蛋白质 3D 结构</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou"><a id="heading_96"></a><strong>操作步骤</strong></h4>
+
+-   发起模型运算，按照提示输入
+
+<ManualImage src={"/manual-assets/zh/video/video-57-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   查看结果，打开任务结果面板，将结果依次导入MOS项目中。本功能将产生三个PDB结构
+
+<ManualVideo src={"/manual-assets/zh/video/video-58.webm"} poster={"/manual-assets/zh/video/video-58-poster.webp"} webm={"/manual-assets/zh/video/video-58.webm"} mp4={"/manual-assets/zh/video/video-58.mp4"} external={false} reference={"image81.gif"} />
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-2-protein-redesign"><a id="heading_97"></a>2. <strong>Protein Redesign</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-2"><a id="heading_98"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>基于蛋白结构重新设计蛋白序列</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-2\"><a id=\"heading_99\"></a><strong>目标用户</strong></h5><ul><li>合成生物学家：设计、改造底物特异的酶的稳定性和活性</li><li>药物研发人员：设计抗体等蛋白药物</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-2\"><a id=\"heading_100\"></a><strong>使用场景</strong></h5><ul><li>基于蛋白结构，重新设计所有序列</li><li>固定蛋白的部分序列，重新设计其余部分的序列</li><li>针对结合特定底物的酶，优化、设计序列</li><li>基于结合药物靶点的蛋白结构，设计结合蛋白的序列</li><li>设计生物传感器</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-2\"><a id=\"heading_101\"></a><strong>输入</strong></h5><ul><li>输入文件（必要）：蛋白结构的cif或pdb文件，可以包含多条链，可以包含小分子</li><li>设计残基（可选）：需要重新设计的残基，如A1 A4 B2 B3</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-2\"><a id=\"heading_102\"></a><strong>输出</strong></h5><ul><li>蛋白序列：redesign.fasta</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-2"><a id="heading_103"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起模型计算
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-3-protein-binder-design"><a id="heading_104"></a>3. <strong>Protein Binder Design</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-3"><a id="heading_105"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>基于靶点，设计 binder 蛋白（主链结构，或者包括蛋白序列）</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-3\"><a id=\"heading_106\"></a><strong>目标用户</strong></h5><ul><li>合成生物学家：设计结合酶的抑制剂或者稳定剂</li><li>药物研发人员：设计小蛋白药物、遮蔽肽等</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-3\"><a id=\"heading_107\"></a><strong>使用场景</strong></h5><ul><li>通过结合酶的活性位点或变构位点来抑制酶活性</li><li>稳定酶的折叠结构，或在表达过程中防止其聚集</li><li>靶向疾病相关蛋白，作为抗体的替代方案（如病毒或癌症蛋白）</li><li>通过特异性结合将药物或纳米粒子递送至特定组织</li><li>模拟或阻断天然配体以调节受体信号传导</li><li>靶向免疫受体，调节免疫反应</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-3\"><a id=\"heading_108\"></a><strong>输入</strong></h5><ul><li>\"Input Structure\"（必填）：包含目标蛋白质结构的文件，可以包含多个链。</li><li>\"Target Binding\"（必填）：希望结合区域的目标蛋白质残基，例如 \"A5 A8-20\" 表示 A 链的第 5 位残基以及第 8 到第 20 位的残基</li><li>\"Binder Size Min\"（必填）：设计的结合肽的最小长度，例如 15。</li><li>\"Binder Size Max\"（必填）：设计的结合肽的最大长度，例如 30。</li><li>\"Align Binder\"（可选）：启用后，MOS 将预测目标-结合肽复合物，并将其与原始目标蛋白链进行比对</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-3\"><a id=\"heading_109\"></a><strong>输出</strong></h5><ul><li>设计出的结合肽结构，包含重原子的三维坐标以及虚拟氨基酸信息：output.cif</li><li>如果 mosapp_compare_binder==1， 目标蛋白与结合肽的复合物结构，包含有效的结合肽序列：aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-3"><a id="heading_110"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起模型计算
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-4-sequence-fitness-mutation-effect"><a id="heading_111"></a>4. <strong>Sequence Fitness Mutation Effect</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-4"><a id="heading_112"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>本模块能够高效预测蛋白质结构、功能和进化关系，并全面评估蛋白质序列的所有潜在且合适的突变</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-4\"><a id=\"heading_113\"></a><strong>目标用户</strong></h5><ul><li>蛋白质工程研究人员：用于设计和优化蛋白质或酶功能</li><li>药物开发人员：评估药物靶点蛋白的突变影响</li><li>基础生物学研究者：研究蛋白质进化与功能关系</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-4\"><a id=\"heading_114\"></a><strong>使用场景</strong></h5><ol><li>蛋白质工程优化：</li></ol><ul><li>预测关键氨基酸突变对蛋白质稳定性和功能的影响</li><li>筛选最优突变组合以提高蛋白质性能</li></ul><ol><li>药物开发应用：</li></ol><ul><li>预测药物靶点蛋白的耐药性突变</li><li>评估治疗性蛋白质药物的稳定性突变</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-4\"><a id=\"heading_115\"></a><strong>输入</strong></h5><ul><li>输入（必要）：由20种标准氨基酸构成的蛋白质序列</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-4\"><a id=\"heading_116\"></a><strong>输出：</strong></h5><ul><li>输出：包含每种可能突变评分的CSV文件</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-4"><a id="heading_117"></a><strong>操作步骤</strong></h4>
+
+-   发起模型运算，按照提示输入
+
+<ManualImage src={"/manual-assets/zh/video/video-59-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   查看结果，打开任务结果面板，点击 Display Score Heatmap，即可看到打分文件。分数越高，表示结果越好。
+
+<ManualVideo src={"/manual-assets/zh/video/video-60.webm"} poster={"/manual-assets/zh/video/video-60-poster.webp"} webm={"/manual-assets/zh/video/video-60.webm"} mp4={"/manual-assets/zh/video/video-60.mp4"} external={false} reference={"image83.gif"} />
+
+也支持预览，以及直接将结果CSV文件下载到本地
+
+<ManualImage src={"/manual-assets/zh/video/video-61-poster.webp"} width={2040} height={1016} alt={""} />
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-5-evolutionary-mutation-effect"><a id="heading_118"></a>5. <strong>Evolutionary Mutation Effect</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-5"><a id="heading_119"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>本模块使用多序列比对（MSA）适应性模型评估蛋白质序列的所有潜在突变，计算突变分数并识别可能的氨基酸替换。 评估特定氨基酸变化的影响，优化蛋白质工程任务，并理解序列变异性或进化限制</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-5\"><a id=\"heading_120\"></a><strong>目标用户</strong></h5><ul><li><strong>酶设计师</strong>：利用突变评分优化酶，以提高其在工业或生物医学应用中的催化活性、特异性和稳定性</li><li><strong>蛋白质药物设计师</strong>：通过识别改进结合亲和力、降低免疫原性或增强药代动力学的突变，优化抗体、融合蛋白及其他生物制剂</li><li><strong>蛋白质研究人员</strong>：系统评估突变，加速对序列-结构-功能关系的探索，用于设计新型蛋白或验证实验假设</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-5\"><a id=\"heading_121\"></a><strong>使用场景</strong></h5><p><strong>突变评分与分析</strong> ：本模块提供了一种简便的方法，用于对蛋白质序列的所有可能突变进行评分。通过将蛋白质序列中的每个氨基酸替换为其他氨基酸，本模块利用基于MSA的模型预测，计算突变的对数概率差异。结果可帮助用户识别潜在突变</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-5\"><a id=\"heading_122\"></a><strong>输入</strong></h5><ul><li>输入（必要）：由20种标准氨基酸构成的蛋白质序列</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-5\"><a id=\"heading_123\"></a><strong>输出：</strong></h5><ul><li>输出：包含每种可能突变评分的CSV文件</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-5"><a id="heading_124"></a><strong>操作步骤</strong></h4>
+
+-   发起模型运算，按照提示输入
+
+<ManualImage src={"/manual-assets/zh/video/video-62-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   查看结果，打开任务结果面板，支持将CSV结果文件直接下载到本地
+
+<ManualImage src={"/manual-assets/zh/video/video-63-poster.webp"} width={2040} height={1016} alt={""} />
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-6-structural-stability-mutation-effect"><a id="heading_125"></a>6. <strong>Structural Stability Mutation Effect</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-6"><a id="heading_126"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>该模块利用结构适应度模型评估蛋白结构中所有可能的突变，计算突变得分，并识别可能的氨基酸突变</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-target-user\"><a id=\"heading_127\"></a><strong>目标用户 Target User</strong></h5><ul><li><strong>酶设计人员</strong>：通过突变打分优化酶的催化活性、特异性和稳定性，适用于工业或生物医学场景</li><li><strong>蛋白药物设计人员</strong>：提升抗体、融合蛋白等生物药物的亲和力、降低免疫原性，或改善药代动力学特性</li><li><strong>蛋白研究人员</strong>：通过系统性地评估突变，加速序列-结构-功能关系的探索，用于蛋白设计或实验假设验证</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-scenario\"><a id=\"heading_128\"></a><strong>使用场景 Scenario</strong></h5><p><strong>突变打分与分析：</strong>该模块可对蛋白结构中的所有可能突变进行打分。通过将结构中的每个氨基酸替换为其他氨基酸，模块基于结构适应度模型预测突变的对数似然，帮助用户识别潜在的有利突变</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-6\"><a id=\"heading_129\"></a><strong>输入</strong></h5><ul><li>输入文件（必需）：蛋白结构文件，cif格式或pdb格式（可含或不含配体）</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-6\"><a id=\"heading_130\"></a><strong>输出</strong></h5><ul><li>打分结果：scores.csv</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+输出示例
+
+<ManualTable html={"<table><tbody><tr><td><p>Plain Text<br>chain, mutation, score<br>A,M1A,-0.898826003074646<br>A,M1C,-3.9786081314086914<br>...</p></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-6"><a id="heading_131"></a><strong>操作步骤</strong></h4>
+
+-   发起模型运算，按照提示输入
+
+<ManualImage src={"/manual-assets/zh/video/video-64-poster.webp"} width={1952} height={1062} alt={""} />
+
+-   查看结果，打开任务结果面板，点击 Display Score Heatmap，即可看到打分文件。分数越高，表示结果越好。
+
+<ManualImage src={"/manual-assets/zh/video/video-65-poster.webp"} width={1952} height={1062} alt={""} />
+
+也支持预览，以及直接将结果CSV文件下载到本地
+
+<ManualImage src={"/manual-assets/zh/video/video-66-poster.webp"} width={1952} height={1062} alt={""} />
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-7-protein-ligand-affinity-evaluation"><a id="heading_132"></a>7. <strong>Protein-Ligand Affinity Evaluation</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-7"><a id="heading_133"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>蛋白质-配体亲和力评分使用统计物理学来估算和调整每对原子的相互作用力，以预测蛋白质-配体的亲和力</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-6\"><a id=\"heading_134\"></a><strong>目标用户</strong></h5><p>需要评估蛋白质-配体结合亲和力的酶或小分子设计者</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-6\"><a id=\"heading_135\"></a><strong>使用场景</strong></h5><ol><li><strong>结合亲和力预测</strong></li></ol><p>包括范德瓦尔斯力、氢键、疏水性和金属能量的蛋白质-配体结合亲和力预测</p><ol><li><strong>蛋白质-配体结合构象选择</strong></li></ol><p>由于该模型评分对蛋白质表面的碰撞非常敏感，因此可用于评估配体结合姿势</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-7\"><a id=\"heading_136\"></a><strong>输入</strong></h5><ol><li>蛋白质 Protein: .pdb</li><li>配体 Ligand: .sdf</li></ol><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-7\"><a id=\"heading_137\"></a><strong>输出</strong></h5><p>包含亲和力分数的CSV文件</p></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-li-wen-jian"><a id="heading_138"></a><strong>示例文件</strong></h4>
+
+<strong>\[5xh3\_clean.pdb\]</strong>
+
+<strong>\[5xh3\_B\_856.sdf\]</strong>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-7"><a id="heading_139"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-8-geometric-pocket-detection"><a id="heading_140"></a>8. <strong>Geometric Pocket Detection</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-8"><a id="heading_141"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>该工作流程识别蛋白质结构中的前N个结合口袋并进行配体对接</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-7\"><a id=\"heading_142\"></a><strong>目标用户</strong></h5><ul><li><strong>药物设计师</strong>：优先评估配体对接构象以优化先导化合物</li><li><strong>结构生物学家</strong>：分析并预测小分子的结合位点</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-7\"><a id=\"heading_143\"></a><strong>使用场景</strong></h5><ul><li>识别蛋白质结构中的深浅结合口袋</li><li>将配体对接至多个潜在结合位点</li><li>比较不同配体在同一蛋白上的对接结果</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-8\"><a id=\"heading_144\"></a><strong>输入：</strong></h5><ul><li>蛋白质结构（必需）：PDB 或 CIF 文件</li><li>配体（必需）：SMILES</li><li>前N个口袋（必需）：用于对接的口袋数量</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-li-wen-jian-2"><a id="heading_145"></a><strong>示例文件</strong></h4>
+
+<strong>\[5xh3.pdb\]</strong>
+
+<ManualTable html={"<table><tbody><tr><td><p>Plain Text<br>SMILES<br>C1=CC(=CC=C1C(=O)OCCO)C(=O)OCCO</p></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-8"><a id="heading_146"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-9-antibody-humanization-modelling"><a id="heading_147"></a>9. <strong>Antibody Humanization Modelling</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-9"><a id="heading_148"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>抗体人源化模型</p><p><strong>目标用户</strong></p><ul><li>药物研发人员：设计抗体药物</li></ul><p><strong>使用场景</strong></p><ul><li>设计人源化抗体</li></ul><p><strong>输入</strong></p><ul><li>抗体重链序列（必要）：抗体重链的序列</li><li>抗体轻链序列（必要）：抗体轻链的序列</li><li>设计数量（可选）：需要设计的人源化抗体数量</li></ul><p><strong>输出</strong></p><ul><li>人源化抗体序列：result.fasta，重链和轻链之间用冒号分隔</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-9"><a id="heading_149"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起
+
+<h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-10-binding-affinity-mutation-scoring"><a id="heading_150"></a>10. <strong>Binding Affinity Mutation Scoring</strong></h3>
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-10"><a id="heading_151"></a><strong>简介</strong></h4>
+
+<ManualTable html={"<table><tbody><tr><td><p>基于蛋白质复合物结构，对指定链进行单点突变扫描并计算结合自由能变化（ΔΔG），评估突变对亲和力的影响</p><p><strong>目标用户</strong></p><ul><li>药物研发人员：优化抗体、蛋白药物与靶点的亲和力</li><li>合成生物学家：设计高亲和力的蛋白相互作用体系</li><li>生物工程师：改造蛋白相互作用界面以增强特异性或稳定性</li></ul><p><strong>使用场景</strong></p><ul><li>扫描抗体互补决定区（CDR）突变，筛选亲和力增强的变体</li><li>设计蛋白-蛋白相互作用界面，增强结合特异性或稳定性</li><li>评估致病性突变对蛋白复合物结合的影响</li></ul><p><strong>输入</strong></p><ul><li>输入文件（必要）：蛋白质复合物结构的PDB文件，包含相互作用的两个蛋白链</li><li>链ID（必要）：待突变扫描的链标识（如链A）</li></ul><p><strong>输出</strong></p><ul><li>突变扫描结果文件（CSV格式）：包含每个突变位点、突变类型及对应的ΔΔG值（单位：kcal/mol）。ΔΔG越低表示突变后亲和力越好（负值表示增强，正值表示减弱）</li></ul></td></tr></tbody></table>"} assets={[]} />
+
+<h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-10"><a id="heading_152"></a><strong>操作步骤</strong></h4>
+
+通过Mocha发起

@@ -1,0 +1,935 @@
+{
+  "manualUI": {
+    "pause": "Pause video",
+    "seek": "Playback progress",
+    "missingVideo": "Development notice: this video was not exported. Please supply its source file.",
+    "docs": "Help Center",
+    "manual": "User manual",
+    "community": "Community",
+    "search": "Search documentation…",
+    "searchHint": "Search manual titles and content by keyword.",
+    "searchError": "Search index could not load. Please refresh and try again.",
+    "loading": "Loading search index…",
+    "noResults": "No matching results",
+    "close": "Close",
+    "zoom": "Enlarge image",
+    "play": "Play video",
+    "externalVideo": "Play on the source website",
+    "videoFallback": "Your browser does not support this video format.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "breadcrumb": "Breadcrumb",
+    "pagination": "Manual page navigation",
+    "previous": "Previous",
+    "next": "Next",
+    "pages": "{count} chapters. Read continuously.",
+    "searchPlaceholder": "e.g. alignment, Credit",
+    "mochaHelp": "Nothing found? Ask Mocha in the MOS platform →",
+    "onThisPage": "On this page",
+    "switchLanguage": "Switch language",
+    "chapters": "Chapters",
+    "missingTranslation": "No corresponding page is available in this language. You have been taken to its manual home.",
+    "openManual": "Read the user manual →",
+    "quickStartDescription": "Find the platform entry and follow the manual for your first steps.",
+    "faqDescription": "Answers about pricing, tasks, and data management.",
+    "manualDescription": "Complete instructions, screenshots, and videos organized by chapter."
+  },
+  "nav": {
+    "platform": "Platform",
+    "models": "Models",
+    "validation": "Validation",
+    "pricing": "Pricing",
+    "docs": "Help Center",
+    "community": "Community",
+    "start": "Start Building",
+    "contact": "Talk to Us",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "byTask": "By task",
+    "structurePrediction": "Structure Prediction",
+    "affinityOptimization": "Affinity Optimization",
+    "stabilityEngineering": "Stability Engineering",
+    "deNovoDesign": "De Novo Design",
+    "antibody": "Antibody",
+    "peptide": "Peptide",
+    "enzyme": "Enzyme",
+    "miniProtein": "Mini-protein",
+    "language": "中文",
+    "modelSystem": "Model system",
+    "neworigin": "NewOrigin (Darwin)",
+    "mmfold": "MMFold",
+    "mmdesign": "MMDesign"
+  },
+  "footer": {
+    "tagline": "Move protein design from repeated trial and error to a computable, interpretable, and testable process.",
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "legal": "Legal",
+    "models": "Models",
+    "validation": "Validation",
+    "pricing": "Pricing",
+    "platform": "Platform",
+    "blog": "Blog",
+    "research": "Research",
+    "whitepaper": "Whitepaper",
+    "manual": "User manual",
+    "about": "About",
+    "careers": "Careers",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "security": "Data Security",
+    "filing": "Registration: {{TODO: pending confirmation}}",
+    "forum": "User forum",
+    "webinar": "Monthly Webinar",
+    "academic": "Academic collaboration",
+    "developedBefore": "MoleculeOS is developed by ",
+    "developedAfter": "",
+    "developer": "MoleculeMind"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "MOLECULEOS · The R&D Operating System for Programmable Biology",
+      "title": "The Operating System for Life Science R&D",
+      "description": "From drug design to enzyme design, MOS brings the models, compute, and data behind protein design into one platform — a complete protein design solution for research and industry teams.",
+      "imageAlt": "Static placeholder of the MoleculeOS protein design workspace"
+    },
+    "trust": {
+      "label": "Advancing real programs with leading bioresearch teams",
+      "targets": "Clinical targets",
+      "successCondition": "Across 12 targets, with no more than 50 candidates tested per target under low-throughput conditions, the target success rate exceeded 90%",
+      "validated": "Wet-lab validated programs",
+      "todo": "{{TODO: pending confirmation}}"
+    },
+    "tasks": {
+      "eyebrow": "START WITH THE R&D TASK",
+      "selectorDescription": "Choose the problem holding your research back.",
+      "mediaMissing": "Demo media coming soon",
+      "title": "What can MOS help me get done?",
+      "description": "Start from the experimental goal in front of you—not from a catalog of algorithms.",
+      "situation": "Your situation",
+      "approach": "What MOS does",
+      "outcome": "What you get",
+      "learn": "Explore capability",
+      "items": [
+        {
+          "title": "Move from sequence to a usable structural hypothesis",
+          "situation": "A reliable structure is missing, blocking construct and site decisions.",
+          "approach": "Submit a sequence or existing structure to predict monomers and complexes with key regions highlighted.",
+          "outcome": "Reviewable structures, confidence cues, and a starting point for design.",
+          "slug": "structure-prediction"
+        },
+        {
+          "title": "Improve the binding performance of a lead",
+          "situation": "A lead is active, but affinity improvement has become expensive trial and error.",
+          "approach": "Generate focused mutation sets around the interface and rank them with consistent criteria.",
+          "outcome": "A prioritized candidate list, key sites, and design rationale.",
+          "slug": "affinity-optimization"
+        },
+        {
+          "title": "Improve expression, stability, and developability",
+          "situation": "An active molecule falls short on expression, thermal stability, or aggregation.",
+          "approach": "Explore more robust sequences while preserving functional regions.",
+          "outcome": "Constraint-aware designs with explicit risk cues.",
+          "slug": "stability-engineering"
+        },
+        {
+          "title": "Generate binders for a new target",
+          "situation": "No usable lead exists and candidates must begin at the target interface.",
+          "approach": "Generate, screen, and interpret new sequences from the target structure and constraints.",
+          "outcome": "Diverse candidates, ranking rationale, and export-ready sequences.",
+          "slug": "de-novo-design"
+        }
+      ]
+    },
+    "agentDemo": {
+      "label": "Agent workflow demonstration placeholder",
+      "placeholder": "Agent workflow demo · Coming soon",
+      "inputPlaceholder": "Describe your R&D goal to Mocha"
+    },
+    "results": {
+      "eyebrow": "Inspectable results",
+      "title": "{{TODO: 待确认}}",
+      "description": "{{TODO: 待确认}}",
+      "link": "Explore the full experience in MOS"
+    },
+    "models": {
+      "eyebrow": "MODEL SYSTEM",
+      "title": "From shared representation to task models and scientific computing",
+      "description": "MOS uses NewOrigin as a unified representation foundation connecting task models with scientific computing methods.",
+      "foundation": "Foundation model",
+      "foundationDescription": "A multimodal protein foundation model combining sequence, structure, function, and evolution as the unified representation layer for all MOS capabilities",
+      "taskModels": "Task models",
+      "scienceLayer": "Scientific computing layer",
+      "scienceDescription": "Integrates methods including molecular dynamics and quantum chemistry, spanning static structure through dynamic design",
+      "descriptionLabel": "Model role",
+      "limitation": "Known limitation",
+      "viewAll": "View all models",
+      "items": [
+        {
+          "name": "MMFold",
+          "description": "An all-atom macromolecular complex structure prediction model",
+          "limitation": "{{TODO: pending confirmation}}"
+        },
+        {
+          "name": "MMDesign",
+          "description": "A generative design model for nanobodies, enzymes, and functional proteins",
+          "limitation": "{{TODO: pending confirmation}}"
+        }
+      ],
+      "band": [
+        {
+          "name": "NewOrigin (Darwin)",
+          "description": "Foundation",
+          "anchor": "neworigin"
+        },
+        {
+          "name": "MMFold",
+          "description": "Structure model",
+          "anchor": "mmfold"
+        },
+        {
+          "name": "MMDesign",
+          "description": "Design model",
+          "anchor": "mmdesign"
+        }
+      ],
+      "viewSystem": "Explore the model system"
+    },
+    "validation": {
+      "eyebrow": "VALIDATION & EVIDENCE",
+      "title": "Calibrate every design with wet-lab results",
+      "description": "We publish only confirmed program facts. Values and case identities remain placeholders until review.",
+      "successCondition": "Across 12 targets, with no more than 50 candidates tested per target under low-throughput conditions, the target success rate exceeded 90%",
+      "metric2": "Wet-lab validated programs",
+      "metric3": "Design-to-test cycle",
+      "todo": "{{TODO: pending confirmation}}",
+      "background": "Background",
+      "challenge": "Challenge",
+      "strategy": "Design strategy",
+      "result": "Wet-lab result",
+      "details": "View case details",
+      "cases": [
+        {
+          "title": "Antibody affinity optimization",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "Enzyme stability engineering",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "Complex structure prediction",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "De novo design",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "Functional protein design",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        },
+        {
+          "title": "Protein stability engineering",
+          "background": "{{TODO: 待业务方确认}}",
+          "challenge": "{{TODO: 待业务方确认}}",
+          "strategy": "{{TODO: 待业务方确认}}",
+          "result": "{{TODO: 待业务方确认}}",
+          "molecule": "{{TODO: 待业务方确认}}",
+          "duration": "{{TODO: 待业务方确认}}"
+        }
+      ],
+      "projectType": "Project type",
+      "molecule": "Molecule",
+      "duration": "Duration",
+      "gridTitle": "Project facts, not promises"
+    },
+    "flywheel": {
+      "eyebrow": "DATA FLYWHEEL",
+      "title": "Every experiment improves the next design",
+      "description": "Design, experiment, and learning form a traceable loop within explicit data boundaries.",
+      "design": "Precise AI design",
+      "experiment": "Small-sample wet-lab validation",
+      "evolve": "Continuous model improvement",
+      "designLines": [
+        "Precise AI",
+        "design"
+      ],
+      "experimentLines": [
+        "Small-sample",
+        "wet-lab",
+        "validation"
+      ],
+      "evolveLines": [
+        "Continuous",
+        "model",
+        "improvement"
+      ]
+    },
+    "access": {
+      "eyebrow": "WAYS TO WORK",
+      "title": "Fit your scale and security requirements",
+      "learn": "Learn more",
+      "items": [
+        {
+          "title": "Web platform",
+          "description": "For teams starting standard protein design tasks quickly.",
+          "compactDescription": "Start standard research tasks"
+        },
+        {
+          "title": "API",
+          "description": "For integrating model capabilities into existing R&D pipelines.",
+          "compactDescription": "Integrate existing R&D workflows"
+        },
+        {
+          "title": "Private deployment",
+          "description": "For organizations with strict isolation and compliance needs.",
+          "compactDescription": "Support isolation and internal compute"
+        },
+        {
+          "title": "Joint research",
+          "description": "For complex new targets, long validation cycles, or custom methods.",
+          "compactDescription": "For complex or custom programs"
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "DATA SECURITY & IP",
+      "title": "Your data and design outputs remain under your control",
+      "description": "Security is the default for enterprise R&D collaboration.",
+      "items": [
+        {
+          "title": "Sequence data is not used for training",
+          "description": "Customer sequences, structures, and experiments are not used for general training without explicit authorization.",
+          "compactDescription": "No general training without authorization"
+        },
+        {
+          "title": "Customer owns design IP",
+          "description": "The customer owns the project design outputs generated and delivered through the platform.",
+          "compactDescription": "Project design outputs belong to clients"
+        },
+        {
+          "title": "Encryption and isolation",
+          "description": "Data transfer, storage, and project access follow enterprise security boundaries.",
+          "compactDescription": "Isolation across transfer, storage, and access"
+        }
+      ],
+      "whitepaper": "View security whitepaper"
+    },
+    "community": {
+      "eyebrow": "COMMUNITY & RESOURCES",
+      "title": "Stay connected to real research questions",
+      "items": [
+        {
+          "title": "User forum",
+          "description": "Exchange design methods, experimental paths, and platform practices.",
+          "link": "Enter forum"
+        },
+        {
+          "title": "Monthly webinar",
+          "description": "Deep dives into protein design tasks and real program methods.",
+          "link": "View schedule"
+        },
+        {
+          "title": "Academic program",
+          "description": "Help frontier research access model capabilities and validation pathways.",
+          "link": "Learn more"
+        }
+      ]
+    },
+    "final": {
+      "title": "Give your next protein R&D question a more testable starting point",
+      "description": "Start with a clear objective and take fewer, better candidates into the lab."
+    },
+    "position": {
+      "label": "Homepage sections",
+      "labels": [
+        "Overview",
+        "Inspectable results",
+        "Capabilities",
+        "Models",
+        "Validation",
+        "Trust",
+        "Start Building"
+      ]
+    }
+  },
+  "common": {
+    "start": "Start Building",
+    "contact": "Talk to Us",
+    "learnMore": "Learn more",
+    "back": "Back",
+    "todo": "{{TODO: pending confirmation}}",
+    "redirect": "This page has moved. Redirecting.",
+    "continue": "Continue to the new page"
+  },
+  "modelsPage": {
+    "eyebrow": "MODELS",
+    "title": "A model system built for real protein R&D",
+    "description": "NewOrigin provides the unified representation foundation connecting MMFold, MMDesign, and scientific computing methods.",
+    "detailTitle": "Model details",
+    "how": "Model role",
+    "limits": "Known limits and usage boundaries",
+    "cta": "Use this model in the platform"
+  },
+  "pricingPage": {
+    "eyebrow": "PRICING",
+    "title": "Choose a plan for your stage of R&D",
+    "description": "Choose a plan for your research stage and review task credit consumption.",
+    "plans": [
+      {
+        "name": "Academic",
+        "audience": "For university labs and non-commercial research",
+        "price": "{{TODO: pending confirmation}}",
+        "features": [
+          "Standard model task allowance",
+          "Academic-use license",
+          "Community support"
+        ]
+      },
+      {
+        "name": "Professional",
+        "audience": "For biotech teams and focused programs",
+        "price": "{{TODO: pending confirmation}}",
+        "features": [
+          "Higher concurrency and allowance",
+          "Full result export",
+          "Project collaboration"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "audience": "For pharma and scaled R&D organizations",
+        "price": "{{TODO: pending confirmation}}",
+        "features": [
+          "Enterprise security and access",
+          "API or private deployment",
+          "Dedicated program support"
+        ]
+      }
+    ],
+    "choose": "Talk to Us",
+    "credits": "Compute usage",
+    "creditDescription": "Actual use depends on sequence length, candidate count, and task complexity.",
+    "task": "Task type",
+    "consumption": "Credit use",
+    "duration": "Estimated time",
+    "rows": [
+      [
+        "Structure prediction",
+        "{{TODO: pending confirmation}}",
+        "{{TODO: pending confirmation}}"
+      ],
+      [
+        "Affinity optimization",
+        "{{TODO: pending confirmation}}",
+        "{{TODO: pending confirmation}}"
+      ],
+      [
+        "Stability engineering",
+        "{{TODO: pending confirmation}}",
+        "{{TODO: pending confirmation}}"
+      ],
+      [
+        "De novo design",
+        "{{TODO: pending confirmation}}",
+        "{{TODO: pending confirmation}}"
+      ]
+    ],
+    "moreQuestions": "For more questions, see the docs"
+  },
+  "validationPage": {
+    "eyebrow": "VALIDATION",
+    "title": "Real experiments are the final measure of design value",
+    "description": "Cases present only verifiable context, strategy, and wet-lab results.",
+    "all": "All cases",
+    "detail": "Case details",
+    "summary": "Program summary",
+    "design": "Design and validation path",
+    "result": "Experimental result",
+    "disclaimer": "Customer names, targets, and data will be published only after authorization and review."
+  },
+  "contactPage": {
+    "eyebrow": "CONTACT",
+    "title": "Tell us about the R&D problem you are solving",
+    "description": "Our team will route your request by task type. This preview form does not send data yet.",
+    "name": "Name",
+    "organization": "Organization",
+    "email": "Work email",
+    "type": "Request type",
+    "message": "Message",
+    "select": "Select one",
+    "options": [
+      "Structure prediction",
+      "Affinity optimization",
+      "Stability engineering",
+      "De novo design",
+      "API / private deployment",
+      "Joint research",
+      "Other"
+    ],
+    "submit": "Submit request",
+    "privacy": "By submitting, you agree that we may process this information for this conversation."
+  },
+  "platformPage": {
+    "eyebrow": "PLATFORM · R&D TASK",
+    "applicable": "Applicable molecules",
+    "applicableNote": "Applicability",
+    "scenarios": "Typical scenarios",
+    "inputsOutputs": "Inputs and outputs",
+    "inputs": "What you provide",
+    "outputs": "What you receive",
+    "models": "Models used",
+    "modelsDescription": "Model support",
+    "viewModels": "View model system",
+    "validation": "Related validation cases",
+    "viewValidation": "View validation",
+    "ctaTitle": "Ready to start this R&D task?",
+    "todo": "{{TODO: pending confirmation}}",
+    "tasks": {
+      "structure-prediction": {
+        "title": "Structure Prediction",
+        "description": "{{TODO: pending confirmation}}"
+      },
+      "affinity-optimization": {
+        "title": "Affinity Optimization",
+        "description": "{{TODO: pending confirmation}}"
+      },
+      "stability-engineering": {
+        "title": "Stability Engineering",
+        "description": "{{TODO: pending confirmation}}"
+      },
+      "de-novo-design": {
+        "title": "De Novo Design",
+        "description": "{{TODO: pending confirmation}}"
+      }
+    },
+    "overview": "Platform overview",
+    "title": "Research tasks and models, in one connected platform",
+    "description": "Explore MOS by task, then review its foundation, task models, and scientific computing layer.",
+    "modelsTitle": "Model system",
+    "compute": "Scientific computing",
+    "sidebar": "On this page",
+    "modelInput": "Input",
+    "modelOutput": "Output",
+    "modelMolecules": "Applicable molecules",
+    "benchmark": "Benchmark"
+  },
+  "placeholderPage": {
+    "docs": {
+      "eyebrow": "DOCS",
+      "title": "Start your first MoleculeOS task",
+      "description": "The help center will cover task setup, result interpretation, API usage, and data security."
+    },
+    "community": {
+      "eyebrow": "COMMUNITY",
+      "title": "Connect protein design researchers and practitioners",
+      "description": "The user forum, monthly webinar, and academic program will be updated here."
+    },
+    "coming": "Content in progress",
+    "browse": "Back to home"
+  },
+  "docsPage": {
+    "eyebrow": "DOCS",
+    "title": "Start with your first research task",
+    "description": "Quick start, user manual, and frequently asked questions.",
+    "quickStart": "Quick start",
+    "quickDescription": "Choose a research task, review the inputs, then start in MOS.",
+    "manual": "User manual",
+    "manualPlaceholder": "User manual integration is planned; this section is a placeholder.",
+    "faq": "Frequently asked questions",
+    "faqs": [
+      [
+        "How are credits calculated?",
+        "Credits depend on task type, input size, and candidate count. Final rules are pending confirmation."
+      ],
+      [
+        "Can I trial before choosing a plan?",
+        "Trial policy and model access are pending confirmation."
+      ],
+      [
+        "Do you support annual contracts?",
+        "Our team can explain enterprise procurement and contracting during a consultation."
+      ],
+      [
+        "How is private deployment priced?",
+        "Private deployment is scoped around infrastructure, security, and service requirements."
+      ]
+    ]
+  },
+  "agentDemo": {
+    "stepDone": "Step completed",
+    "stepRunning": "Step in progress",
+    "stepPending": "Step pending",
+    "label": "Mocha workspace",
+    "expand": "Expand workspace",
+    "collapse": "Collapse workspace",
+    "workspaceView": "Workspace view",
+    "inspectStructure": "Inspect structure and selection",
+    "structure": {
+      "label": "Interactive 2BDN structure",
+      "preview": "Static preview of original 2BDN coordinates",
+      "antigen": "Antigen",
+      "light": "Light chain",
+      "heavy": "Heavy chain",
+      "preparing": "Preparing structure view",
+      "load": "Open 3D structure",
+      "loading": "Loading structure",
+      "error": "3D is unavailable; the static preview remains available",
+      "retry": "Retry loading",
+      "structure": "Structure",
+      "sequence": "Sequence",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "reset": "Reset camera",
+      "representation": "Change representation",
+      "interactions": "Show structural interactions",
+      "measure": "Measure atom distance",
+      "clear": "Clear distance measurements",
+      "measureHint": "Pick two atoms to measure distance",
+      "secondAtom": "Pick the second atom",
+      "drag": "Drag to rotate · Scroll to zoom"
+    },
+    "tasksLabel": "Tasks",
+    "you": "You",
+    "thinking": "Break the goal into reviewable task steps.",
+    "inputPlaceholder": "Describe your R&D goal to Mocha",
+    "send": "Send message",
+    "chatTitle": "New conversation",
+    "chatStatus": "Conversation",
+    "localReply": "To have Mocha analyze your specific question, continue in the MOS platform for the full experience.",
+    "openPlatform": "Open MOS",
+    "resultNote": "Ready to review from your task list.",
+    "pause": "Pause task",
+    "resume": "Continue task",
+    "replay": "Run again",
+    "next": "Next step",
+    "playing": "Running",
+    "paused": "Paused",
+    "complete": "Completed",
+    "progress": "Task progress",
+    "phases": {
+      "0": "Intent",
+      "1": "Task planning",
+      "2": "Step-by-step execution",
+      "3": "Step-by-step execution",
+      "4": "Organize results",
+      "5": "Results"
+    },
+    "tasks": {
+      "humanization": {
+        "title": "Humanization",
+        "short": "Design preparation",
+        "prompt": "I want to prepare an antibody humanization project. Organize the regions and design conditions to review first.",
+        "plan0": "Review inputs and task conditions",
+        "plan1": "Organize sequence regions for review",
+        "plan2": "Prepare a design checklist",
+        "result": "Humanization preparation checklist"
+      },
+      "affinity": {
+        "title": "Binding Affinity",
+        "short": "Candidate review",
+        "prompt": "I want to improve antibody affinity. Organize the complex regions to inspect and the candidate review steps first.",
+        "plan0": "Review the complex and R&D goal",
+        "plan1": "Organize interaction regions for review",
+        "plan2": "Prepare a candidate review checklist",
+        "result": "Candidate review checklist"
+      },
+      "homology": {
+        "title": "Sequence Homology",
+        "short": "Reference organization",
+        "prompt": "Prepare a homology search workflow for this sequence and list the reference information to check.",
+        "plan0": "Review sequence and search scope",
+        "plan1": "Prepare search conditions",
+        "plan2": "Organize reference checks",
+        "result": "Homology search preparation checklist"
+      },
+      "epitope": {
+        "title": "Epitope Analysis",
+        "short": "Interface inspection",
+        "prompt": "I want to inspect an antigen–antibody interface. Organize the chains and residue regions to review.",
+        "plan0": "Review structure inputs and chains",
+        "plan1": "Prepare interface inspection steps",
+        "plan2": "Organize residue checks",
+        "result": "Interface inspection checklist"
+      }
+    },
+    "newTask": "New task",
+    "empty": "No tasks yet",
+    "intro": "I'm Mocha, your AI assistant from MoleculeMind.",
+    "welcomeTitle": "What can I do for you?",
+    "samples": "Try these tasks"
+  },
+  "mmetricsDemo": {
+    "loading": "Loading structure",
+    "label": "MMetrics structural demo",
+    "preview": "5xh3 preview placeholder",
+    "enter": "Enter interactive demo",
+    "mobile": "Load local structure · Drag to rotate",
+    "local": "Local structure · Preset annotations; computed interactions, not experimental validation",
+    "close": "Close",
+    "notice": "Explore the complete functionality in MOS",
+    "mochaInput": "Describe your R&D goal to Mocha",
+    "mocha0": "Explore structure prediction in MOS.",
+    "mocha1": "Explore sequence redesign in MOS.",
+    "mocha2": "Explore mutation evaluation in MOS.",
+    "mocha3": "Explore protein–ligand evaluation in MOS.",
+    "more": "Show full analysis",
+    "viewer": "5xh3 interactive structure: drag to rotate, scroll to zoom",
+    "error": "Unable to initialize WebGL. Please enable hardware acceleration or retry.",
+    "retry": "Retry",
+    "chunkError": "The interactive component could not load. The preview is available; reload to retry.",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "reset": "Reset focus",
+    "representation": "Change representation",
+    "interactions": "Non-covalent interactions",
+    "measure": "Select two atoms to measure distance",
+    "firstAtom": "First atom selected. Select a second atom.",
+    "clear": "Clear measurements",
+    "overlays": "Toggle status overlay",
+    "align": "Explore structure alignment in MOS",
+    "ready": "Drag to rotate · scroll to zoom",
+    "selected": "Residue selected",
+    "missing": "Annotation not found in this original structure; platform numbering needs confirmation.",
+    "schematic": "Schematic"
+  },
+  "helpPage": {
+    "title": "Help Center",
+    "changelog": "Changelog",
+    "api": "API Documentation",
+    "soon": "Coming soon",
+    "todo": "{{TODO: 待确认}}"
+  },
+  "communityPage": {
+    "owned": "Community spaces",
+    "forum": "User forum",
+    "feishu": "Feishu group",
+    "social": "Social channels",
+    "todo": "{{TODO: 待确认}}"
+  },
+  "mockContent": {
+    "trust": {
+      "_demo": true,
+      "items": [
+        {
+          "value": "12",
+          "label": "Clinical targets",
+          "isReal": true
+        },
+        {
+          "value": "90%+",
+          "label": "Target success under low-throughput conditions",
+          "isReal": true
+        },
+        {
+          "value": "37",
+          "label": "Wet-lab-validated projects",
+          "isReal": false
+        }
+      ],
+      "_note": "演示数据,上线前必须替换"
+    },
+    "capabilities": {
+      "_demo": true,
+      "tasks": [
+        {
+          "id": "affinity",
+          "title": "Improve candidate binding",
+          "brief": "A lead exists, but affinity has stalled",
+          "situation": "Your lead is active, but further affinity gains have become expensive trial and error: structure limits mutable regions, and the combination space is too large to exhaust.",
+          "approach": "Identify key binding-interface residues, generate a small set of informative mutation combinations, and provide consistent ranking and explanations.",
+          "outcome": "An experiment-ready candidate list, showing what changed in each candidate and why.",
+          "media": "/demo/capability-affinity.webm",
+          "mediaTodo": "替换为亲和力优化的真实操作录屏"
+        },
+        {
+          "id": "stability",
+          "title": "Improve expression, stability and developability",
+          "brief": "Activity is good; manufacturing is not",
+          "situation": "Activity meets your target, but low expression, poor thermal stability or aggregation blocks process and formulation development.",
+          "approach": "Explore more robust sequences while preserving functional regions, and assess the impact of changes on activity.",
+          "outcome": "Modification proposals that respect functional constraints, with risk warnings to avoid trading activity for stability.",
+          "media": "/demo/capability-stability.webm",
+          "mediaTodo": "替换为稳定性改造的真实操作录屏"
+        },
+        {
+          "id": "denovo",
+          "title": "Generate binders for a new target",
+          "brief": "There is no lead yet",
+          "situation": "The target is new, with no known binder to improve. Candidates must start from structural interface features; conventional routes rely on phage display or chance.",
+          "approach": "Generate new sequences from target structures and design constraints, then screen and provide explainable rankings.",
+          "outcome": "A diverse set of candidate sequences ready for synthesis and validation.",
+          "media": "/demo/capability-denovo.webm",
+          "mediaTodo": "替换为从头设计的真实操作录屏"
+        },
+        {
+          "id": "structure",
+          "title": "Assess structures and complexes from sequences",
+          "brief": "Without a reliable structure, work is blocked",
+          "situation": "Without a reliable structure, experiment design and residue decisions lack a foundation. Co-crystal work is slow, and homologous templates are not close enough.",
+          "approach": "Submit sequences or existing structures, predict monomers and complexes, and highlight key regions.",
+          "outcome": "Inspectable structures with confidence indicators, providing a starting point for subsequent design.",
+          "media": "/demo/capability-structure.webm",
+          "mediaTodo": "替换为结构预测的真实操作录屏"
+        }
+      ],
+      "_note": "演示数据,上线前必须替换"
+    },
+    "validation": {
+      "_demo": true,
+      "headline": {
+        "text": "Across 12 targets, with no more than 50 candidates tested per target under low-throughput conditions, target success exceeded 90%.",
+        "isReal": true
+      },
+      "cases": [
+        {
+          "category": "Antibody affinity optimization",
+          "result": "Lead antibody affinity improved 23-fold, with specificity unchanged",
+          "difficulty": "CDR structure constrains mutable regions; over 10⁶ combinations require more than 4 rounds of conventional saturation-mutagenesis screening",
+          "molecule": "IgG monoclonal antibody",
+          "cycle": "6 weeks"
+        },
+        {
+          "category": "Enzyme stability engineering",
+          "result": "Industrial enzyme Tm increased by 11.4°C; residual activity at 60°C rose from 31% to 86%",
+          "difficulty": "Thermal stability must improve without sacrificing catalytic efficiency; the two often trade off",
+          "molecule": "Hydrolase",
+          "cycle": "8 weeks"
+        },
+        {
+          "category": "Complex structure prediction",
+          "result": "Antibody–antigen interface DockQ reached 0.78; 14 of 16 key contact residues matched",
+          "difficulty": "No co-crystal structure was available; homologous templates shared less than 40% sequence identity",
+          "molecule": "Antibody–antigen complex",
+          "cycle": "3 days"
+        },
+        {
+          "category": "De novo design",
+          "result": "48 candidates for a new target yielded 5 wet-lab binding signals; the best KD was 42 nM",
+          "difficulty": "No known binders or usable leads; candidates must start from interface features",
+          "molecule": "Small-protein binder",
+          "cycle": "10 weeks"
+        },
+        {
+          "category": "Functional protein design",
+          "result": "Nanobody aggregation propensity decreased by 62%, with neutralizing activity retained",
+          "difficulty": "A hydrophobic patch near the CDR makes binding sensitive to modification",
+          "molecule": "VHH nanobody",
+          "cycle": "7 weeks"
+        },
+        {
+          "category": "Protein stability engineering",
+          "result": "Therapeutic protein degradation slowed 3.8-fold in accelerated testing at 40°C",
+          "difficulty": "Expression-host compatibility and formulation conditions must both be considered; single mutations offer limited benefit",
+          "molecule": "Recombinant therapeutic protein",
+          "cycle": "9 weeks"
+        }
+      ],
+      "_note": "演示数据,上线前必须替换"
+    },
+    "models": {
+      "_demo": true,
+      "models": [
+        {
+          "name": "NewOrigin (Darwin)",
+          "limitation": "Representation quality decreases for orphan proteins without homologous information; cross-species transfer needs calibration with experimental data."
+        },
+        {
+          "name": "MMFold",
+          "limitation": "Confidence is lower for highly flexible and disordered regions; conformations dependent on cofactors or specific pH require consideration of experimental conditions."
+        },
+        {
+          "name": "MMDesign",
+          "limitation": "Expression and developability of generated sequences require staged experimental validation; de novo designs longer than 200 amino acids have substantially lower success rates."
+        }
+      ],
+      "_note": "演示数据,上线前必须替换"
+    },
+    "pricing": {
+      "_demo": true,
+      "plans": [
+        {
+          "name": "Academic",
+          "price": "Free",
+          "note": "Institutional email verification required; non-commercial use only"
+        },
+        {
+          "name": "Professional",
+          "price": "From ¥2,800 / month",
+          "note": "Includes 5,000 credits; additional usage billed separately"
+        },
+        {
+          "name": "Enterprise",
+          "price": "Contact sales",
+          "note": "Private deployment / platform licensing / joint R&D"
+        }
+      ],
+      "creditTable": [
+        {
+          "task": "Monomer structure prediction",
+          "credit": "20 / task",
+          "time": "About 3 minutes"
+        },
+        {
+          "task": "Complex structure prediction",
+          "credit": "80 / task",
+          "time": "About 12 minutes"
+        },
+        {
+          "task": "Affinity optimization (50 candidates)",
+          "credit": "450 / batch",
+          "time": "About 2 hours"
+        },
+        {
+          "task": "Stability engineering (50 candidates)",
+          "credit": "380 / batch",
+          "time": "About 1.5 hours"
+        },
+        {
+          "task": "De novo design (100 candidates)",
+          "credit": "1,200 / batch",
+          "time": "About 6 hours"
+        },
+        {
+          "task": "Homolog search",
+          "credit": "5 / task",
+          "time": "About 30 seconds"
+        }
+      ],
+      "_note": "演示数据,上线前必须替换"
+    },
+    "footer": {
+      "_demo": true,
+      "icp": "京ICP备2023XXXXXX号-1",
+      "_note": "演示数据,上线前必须替换"
+    }
+  }
+}
