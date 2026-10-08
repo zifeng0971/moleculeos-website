@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import type { Locale } from '@/lib/site-config';
 import { CTAButton } from '@/components/ui/cta-button';
 import { AgentDemo } from '@/components/hero/AgentDemo';
-import { MoleculeField } from '@/components/motion/molecule-field';
+import { ProteinField } from '@/components/motion/protein-field';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -32,7 +32,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
 
   return (
     <section ref={sectionRef} className="hero-section relative overflow-hidden" data-nav-section="platform">
-      <MoleculeField className="hero-canvas" />
+      <ProteinField className="hero-canvas" />
       <div className="hero-vignette" aria-hidden="true" />
       <div className="hero-composition site-container relative">
         <motion.div className="hero-copy" initial="hidden" animate="show" style={reduceMotion ? undefined : { y: copyY, opacity: copyOpacity }}
@@ -57,7 +57,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
           transition={{ duration: reduceMotion ? 0.15 : 1.4, delay: reduceMotion ? 0 : 0.55, ease }}>
           <div className="hero-demo-halo" aria-hidden="true" />
           <motion.div className="hero-demo-tilt" style={reduceMotion ? undefined : { rotateX, scale, y }}>
-            <div className="device-frame"><AgentDemo /></div>
+            <div className="demo-edge"><AgentDemo /></div>
           </motion.div>
         </motion.div>
       </div>

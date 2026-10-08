@@ -8,8 +8,7 @@ import { Reveal } from '@/components/motion/reveal';
 export function FinalCTASection({ locale }: { locale: Locale }) {
   const t = useTranslations('home.final');
   return <section className="final-cta" data-nav-section="platform">
-    <div className="final-orb" aria-hidden="true" />
-    <div className="final-ring" aria-hidden="true" />
+    <div className="final-atmosphere" aria-hidden="true"><div className="final-orb" /><div className="final-ring" /></div>
     <div className="site-container relative flex flex-col items-center">
       <Reveal><h2 className="section-title">{t('title')}</h2></Reveal>
       <Reveal delay={0.1}><p className="section-copy mx-auto">{t('description')}</p></Reveal>
