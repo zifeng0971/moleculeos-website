@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-// Fixed page-wide light: drifting aurora, a fading grid, and a pointer-tracked grid spotlight.
+// Fixed page-wide light: drifting aurora plus a soft pointer-tracked glow.
 export function AmbientBackground() {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -27,8 +27,7 @@ export function AmbientBackground() {
     <div className="ambient-aurora ambient-aurora-a" />
     <div className="ambient-aurora ambient-aurora-b" />
     <div className="ambient-aurora ambient-aurora-c" />
-    <div className="ambient-grid" />
-    <div className="ambient-grid-spot" />
+    <div className="ambient-glow-spot" />
     <div className="ambient-noise" />
   </div>;
 }

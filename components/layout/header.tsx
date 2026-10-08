@@ -26,6 +26,7 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
   const [scrolled, setScrolled] = useState(false);
   const [hoverKey, setHoverKey] = useState<string | null>(null);
   const [platformOpen, setPlatformOpen] = useState(false);
+  const [menuHover, setMenuHover] = useState<string | null>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const otherLocaleHref = languageHref ?? localizeHref(pathname.replace(/^\/en(?=\/|$)/, '') || '/', locale === 'en' ? 'zh' : 'en');
   const activeKey = routeKey(pathname);
@@ -92,23 +93,27 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
             <nav className="hidden h-full items-center gap-1 lg:flex" aria-label="Primary navigation">
               <div className="relative flex h-full items-center" onMouseEnter={openPlatformMenu} onMouseLeave={schedulePlatformClose} onFocusCapture={openPlatformMenu} onBlurCapture={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) schedulePlatformClose(); }}>
                 {navLink(SITE_CONFIG.nav[0])}
-                <ChevronDown className={cn('-ml-2 size-3.5 text-muted-foreground transition-transform duration-200', platformOpen && 'rotate-180 text-white')} aria-hidden="true" />
+                <ChevronDown className={cn('-ml-2 size-3.5 text-muted-foreground transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]', platformOpen && 'rotate-180 text-white')} aria-hidden="true" />
                 <AnimatePresence>
                   {platformOpen && (
                     <motion.div
                       role="menu"
-                      className="dropdown-panel absolute left-0 top-full z-[70] mt-3 w-max min-w-80 max-w-[32.5rem] p-5"
-                      initial={{ opacity: 0, y: -8, scale: 0.98 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: -8, scale: 0.98 }}
-                      transition={{ duration: 0.18, ease: [0.16, 1, 0.3, 1] }}
+                      className="dropdown-panel absolute left-0 top-full z-[70] mt-3 w-max min-w-80 max-w-[32.5rem] p-4"
+                      style={{ transformOrigin: '24px top' }}
+                      initial={{ opacity: 0, y: -10, scale: 0.96, filter: 'blur(6px)' }}
+                      animate={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)', transition: { type: 'spring', stiffness: 420, damping: 34, mass: 0.8, opacity: { duration: 0.2 }, filter: { duration: 0.25 } } }}
+                      exit={{ opacity: 0, y: -6, scale: 0.98, filter: 'blur(4px)', transition: { duration: 0.16, ease: [0.4, 0, 1, 1] } }}
+                      onMouseLeave={() => setMenuHover(null)}
                     >
-                      <div className="grid grid-cols-2 gap-5">
-                        {[{ label: 'byTask', items: SITE_CONFIG.platformMenu.tasks }, { label: 'modelSystem', items: SITE_CONFIG.platformMenu.models }].map((group) => <div key={group.label}>
-                          <p className="mb-2 px-3.5 text-[11px] font-bold uppercase tracking-[0.08em] text-[var(--text-tertiary)]">{t(group.label)}</p>
-                          <ul className="space-y-1">{group.items.map(([key, slug]) => <li key={slug}>
-                            <Link role="menuitem" onClick={() => {setPlatformOpen(false); setHoverKey(null);}} className="group/menu relative flex min-h-11 items-center rounded-[0.625rem] px-3.5 py-2.5 pl-5 text-sm font-medium text-foreground transition-colors duration-200 before:absolute before:left-2 before:h-4 before:w-0.5 before:scale-y-0 before:rounded-full before:bg-accent before:transition-transform hover:bg-white/[0.07] hover:text-white hover:before:scale-y-100 focus-visible:bg-white/[0.07] focus-visible:before:scale-y-100" href={localizeHref('/platform#' + slug, locale)}>{t(key)}</Link>
-                          </li>)}</ul>
+                      <div className="grid grid-cols-2 gap-4">
+                        {[{ label: 'byTask', items: SITE_CONFIG.platformMenu.tasks }, { label: 'modelSystem', items: SITE_CONFIG.platformMenu.models }].map((group, column) => <div key={group.label}>
+                          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: 0.04 + column * 0.04 } }} className="mb-2 px-3.5 text-[11px] font-semibold uppercase tracking-[0.1em] text-[var(--text-tertiary)]">{t(group.label)}</motion.p>
+                          <ul className="space-y-0.5">{group.items.map(([key, slug], row) => <motion.li key={slug} initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0, transition: { delay: 0.05 + row * 0.035 + column * 0.03, duration: 0.3, ease: [0.16, 1, 0.3, 1] } }}>
+                            <Link role="menuitem" onMouseEnter={() => setMenuHover(slug)} onFocus={() => setMenuHover(slug)} onClick={() => {setPlatformOpen(false); setHoverKey(null);}} className="relative isolate flex min-h-11 items-center rounded-[0.75rem] px-3.5 py-2.5 text-sm font-medium text-[rgba(255,255,255,0.78)] transition-colors duration-200 hover:text-white focus-visible:text-white" href={localizeHref('/platform#' + slug, locale)}>
+                              {menuHover === slug && <motion.span layoutId="platform-menu-hover" className="absolute inset-0 -z-10 rounded-[0.75rem] bg-white/[0.08] shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]" transition={{ type: 'spring', stiffness: 520, damping: 40 }} />}
+                              {t(key)}
+                            </Link>
+                          </motion.li>)}</ul>
                         </div>)}
                       </div>
                     </motion.div>
