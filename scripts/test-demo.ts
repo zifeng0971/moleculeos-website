@@ -3,6 +3,8 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { AGENT_PROJECTS, AGENT_TASKS, DEMO_STEP_INTERVAL, agentStageAt } from '../lib/agent-demo';
 import { advanceRuns, appendLocalReply, createChatRun, createRun, ensurePresetRun, runStatus, updateRun, type AgentRun } from '../lib/agent-playback';
+import { DEMO_PHASES, DEMO_RESULT_ROWS, DEMO_TOTAL_MS, PRESET_PROMPT, phaseAt } from '../components/hero/mocha-upgrade/demoScript';
+import { DEMO_SEQUENCES } from '../components/hero/mocha-upgrade/demoSequences';
 
 const structure = JSON.parse(readFileSync('content/antibody-affinity-structure.json', 'utf8'));
 const panel = JSON.parse(readFileSync('public/demo/antibody-affinity/panel.json', 'utf8'));
@@ -11,6 +13,18 @@ assert.deepEqual(structure.chains.map((chain: { auth: string; role: string }) =>
 assert.equal(structure.highlighted.length, 21);
 assert.equal(panel.length, 30);
 assert.equal(panel.filter((row: {tier:string}) => row.tier === 'STRONG').length, 8);
+assert.deepEqual(DEMO_SEQUENCES.map(item => [item.chain, item.sequence.length]), [['A', 406], ['C', 117], ['B', 110]]);
+assert.equal(DEMO_TOTAL_MS, 8200);
+assert.equal(phaseAt(-1).phase, 'ready');
+assert.equal(phaseAt(DEMO_TOTAL_MS).phase, 'complete');
+assert.equal(DEMO_PHASES.length, 6);
+assert.match(PRESET_PROMPT, /Avoid positions already in direct contact with the antigen\./);
+assert.equal(DEMO_RESULT_ROWS.length, 5);
+assert.deepEqual(DEMO_RESULT_ROWS.map(row => row.rank), [1, 2, 3, 4, 5]);
+assert.ok(DEMO_RESULT_ROWS.every(row => row.confidence === '—'));
+const workbenchCif = readFileSync('public/demo/antibody-affinity/workbench.cif', 'utf8');
+assert.match(workbenchCif, /_atom_site\.auth_asym_id/);
+assert.ok(JSON.parse(readFileSync('content/mocha-workbench-contacts.json', 'utf8')).length > 0);
 
 assert.equal(AGENT_TASKS.length, 4);
 assert.equal(AGENT_PROJECTS.length, 1);
@@ -73,4 +87,21 @@ assert.match(flowAdapter, /type: 'structure'/);
 for (const source of [upgradedWorkbench, upgradedPanel, flowAdapter]) {
   assert.doesNotMatch(source, /mocha-component-upgrade-testing-sandy|\bfetch\s*\(|new WebSocket|axios\.|localStorage|sessionStorage/);
 }
+for (const path of ['components/hero/mocha-upgrade/MochaCaseWorkbench.tsx', 'components/hero/mocha-upgrade/MochaStructurePane.tsx', 'components/hero/mocha-upgrade/demoScript.ts']) {
+  assert.doesNotMatch(readFileSync(path, 'utf8'), /mocha-component-upgrade-testing-sandy|new WebSocket|axios\.|localStorage|sessionStorage/);
+}
+const activeWorkbench = readFileSync('components/hero/mocha-upgrade/MochaCaseWorkbench.tsx', 'utf8');
+const activeFlow = readFileSync('components/hero/mocha-upgrade/MochaCaseFlow.tsx', 'utf8');
+assert.match(activeWorkbench, /<MochaIdle/);
+assert.match(activeWorkbench, /<MochaCaseFlow/);
+assert.match(activeWorkbench, /setActiveId\(null\)/);
+assert.match(activeWorkbench, /DEMO_TASKS\.map/);
+assert.match(activeWorkbench, /origin: 'preset'/);
+assert.match(activeWorkbench, /structureReady: true/);
+assert.match(activeWorkbench, /origin: 'created'/);
+assert.match(activeWorkbench, /structureReady: false/);
+assert.match(activeWorkbench, /phaseAt\(elapsed\)\.index >= 5/);
+assert.doesNotMatch(activeWorkbench, /AgentWorkflowStep|disclaimer|准备就绪/);
+for (const component of ['ChatBubble', 'TaskRow', 'ReportBody']) assert.match(activeFlow, new RegExp(`<${component}`));
+assert.doesNotMatch(activeFlow, /AgentWorkflowStep|disclaimer/);
 console.log('Demo: six step types, task playback, upgraded panel slots, static assets and request guards passed.');

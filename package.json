@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx scripts/dev-manual-route.ts dev && next dev",
-    "build": "tsx scripts/prepare-agent-structure.ts && tsx scripts/validate-antibody-affinity.ts && tsx scripts/dev-manual-route.ts build && tsx scripts/build-manual-search.ts && tsx scripts/sync-manual-redirects.ts && tsx scripts/build-site.ts",
+    "build": "tsx scripts/prepare-agent-structure.ts && tsx scripts/validate-antibody-affinity.ts && tsx scripts/prepare-mocha-structure.ts && tsx scripts/dev-manual-route.ts build && tsx scripts/build-manual-search.ts && tsx scripts/sync-manual-redirects.ts && tsx scripts/build-site.ts",
     "ingest:manual": "tsx scripts/ingest-manual.ts && tsx scripts/sync-manual-redirects.ts",
     "test:manual": "tsx scripts/test-manual-ingest.ts && tsx scripts/test-manual-media.ts",
     "verify:manual": "tsx scripts/verify-manual-export.ts",

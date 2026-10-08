@@ -3,7 +3,8 @@ import { DefaultPluginSpec } from 'molstar/lib/mol-plugin/spec';
 import { Color } from 'molstar/lib/mol-util/color';
 import { Vec3, Vec4 } from 'molstar/lib/mol-math/linear-algebra';
 import { Loci } from 'molstar/lib/mol-model/loci';
-import { StructureElement } from 'molstar/lib/mol-model/structure';
+import { StructureElement, StructureSelection } from 'molstar/lib/mol-model/structure';
+import { Script } from 'molstar/lib/mol-script/script';
 import { ElementSymbolColors } from 'molstar/lib/mol-theme/color/element-symbol';
 import { residueLoci } from './molstar-selection';
 import { CameraHelperParams } from 'molstar/lib/mol-canvas3d/helper/camera-helper';
@@ -69,6 +70,7 @@ export async function createViewer(canvas: HTMLCanvasElement, container: HTMLDiv
     let measuring = false;
     let firstAtom: StructureElement.Loci | undefined;
     let interactionsRef: string | undefined;
+    let residueSticksRef: string | undefined;
     let measurements: { center: Vec3; distance: string }[] = [], lastLabels = '';
     const redrawLabels = () => { const labels = measurements.map(item => { const projected = plugin.canvas3d!.camera.project(Vec4(), item.center); return { x: projected[0] * container.clientWidth / canvas.width, y: (canvas.height - projected[1]) * container.clientHeight / canvas.height, distance: item.distance }; }); const signature = JSON.stringify(labels); if (signature !== lastLabels) { lastLabels = signature; labelsChanged(labels); } };
     const draw = plugin.canvas3d!.didDraw.subscribe(redrawLabels);
@@ -100,8 +102,40 @@ export async function createViewer(canvas: HTMLCanvasElement, container: HTMLDiv
     return {
       hasResidue(label: string) { return !!valid(label); },
       highlight(label: string | null) { const manager = plugin.managers.interactivity.lociHighlights; manager.clearHighlights(); if (label) { const loci = valid(label); if (loci) manager.highlightOnly({ loci }); } },
+      highlightChain(chain: string | null) {
+        const manager = plugin.managers.interactivity.lociHighlights;
+        manager.clearHighlights();
+        if (!chain) return;
+        const loci = StructureSelection.toLociWithSourceUnits(Script.getStructureSelection(MS.struct.generator.atomGroups({ 'chain-test': MS.core.rel.eq([MS.struct.atomProperty.macromolecular.auth_asym_id(), chain]) }), data));
+        if (!StructureElement.Loci.isEmpty(loci)) manager.highlightOnly({ loci });
+      },
       select(labels: string[]) { const manager = plugin.managers.interactivity.lociSelects; manager.deselectAll(); labels.forEach(label => { const loci = valid(label); if (loci) manager.select({ loci }); }); },
       focus(label: string) { const loci = valid(label); if (loci) { plugin.managers.camera.focusLoci(loci, { durationMs: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300 }); message('selected'); } else message('missing'); },
+      focusRegion(labels: string[]) {
+        const spheres = labels.map(label => valid(label)).filter((loci): loci is StructureElement.Loci => !!loci).map(loci => Loci.getBoundingSphere(loci)).filter((sphere): sphere is NonNullable<typeof sphere> => !!sphere);
+        if (!spheres.length) return;
+        const center = Vec3.create(0, 0, 0);
+        spheres.forEach(sphere => Vec3.add(center, center, sphere.center));
+        Vec3.scale(center, center, 1 / spheres.length);
+        const radius = Math.max(10, ...spheres.map(sphere => Vec3.distance(center, sphere.center) + sphere.radius));
+        plugin.canvas3d!.camera.setState(plugin.canvas3d!.camera.getFocus(center, radius + 6), matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 500);
+      },
+      showResidueSticks(labels: readonly string[]) { return enqueue(async () => {
+        if (residueSticksRef) { await plugin.state.data.build().delete(residueSticksRef).commit(); residueSticksRef = undefined; }
+        if (!labels.length) return;
+        const expressions = labels.map(label => {
+          const match = /^([^:]+):(\d+)$/.exec(label);
+          return match && MS.core.logic.and([
+            MS.core.rel.eq([MS.struct.atomProperty.macromolecular.auth_asym_id(), match[1]]),
+            MS.core.rel.eq([MS.struct.atomProperty.macromolecular.auth_seq_id(), Number(match[2])]),
+          ]);
+        }).filter((expr): expr is NonNullable<typeof expr> => !!expr);
+        if (!expressions.length) return;
+        const component = await plugin.builders.structure.tryCreateComponentFromExpression(structure, MS.struct.generator.atomGroups({ 'residue-test': MS.core.logic.or(expressions) }), 'Candidate sites');
+        if (!component) return;
+        residueSticksRef = component.ref;
+        await plugin.builders.structure.representation.addRepresentation(component, { type: 'ball-and-stick', color: 'uniform', colorParams: { value: Color(0x94ea55) } });
+      }); },
       spin(enabled: boolean) { plugin.canvas3d?.setProps({ trackball: { animate: enabled ? { name: 'spin', params: { speed: 0.3 } } : { name: 'off', params: {} } } }); },
       snapshot() { return plugin.canvas3d!.camera.getSnapshot(); },
       active(enabled: boolean) { if (enabled) plugin.canvas3d?.resume(); else plugin.canvas3d?.pause(true); },
