@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 import { CTAButton } from '@/components/ui/cta-button';
 import { GlassPanel } from '@/components/ui/glass-panel';
 import { Logo } from './logo';
+import { MobileCTABar } from './mobile-cta-bar';
 
 function routeKey(pathname: string) {
   const path = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
@@ -39,6 +40,15 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
   useEffect(() => () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
   }, []);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') setOpen(false); };
+    const root = document.documentElement, previous = root.style.overflow;
+    root.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKey);
+    return () => { root.style.overflow = previous; window.removeEventListener('keydown', onKey); };
+  }, [open]);
 
   const openPlatformMenu = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -115,24 +125,24 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
               {open ? <X className="size-5" /> : <Menu className="size-5" />}
             </button>
           </div>
+          <AnimatePresence initial={false}>
           {open && (
-            <nav className="site-container max-h-[calc(100svh-4rem)] overflow-y-auto border-t border-border py-4 pb-24 lg:hidden" aria-label="Mobile navigation">
+            <motion.nav initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }} className="site-container max-h-[calc(100svh-4rem)] overflow-y-auto border-t border-border py-4 pb-24 lg:hidden" aria-label="Mobile navigation">
               <ul className="space-y-1">
-                {SITE_CONFIG.nav.map((item) => {
+                {SITE_CONFIG.nav.map((item, index) => {
                   const active = activeKey === item.key;
-                  return <li key={item.key}><Link onClick={() => setOpen(false)} className={cn('flex min-h-12 items-center rounded-md border-l-2 border-transparent px-3 font-medium text-muted-foreground', active && 'border-accent bg-white/[0.05] text-white')} href={localizeHref(item.href, locale)}>{t(item.key)}</Link></li>;
+                  return <motion.li key={item.key} initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 + index * 0.04, duration: 0.35 }}><Link onClick={() => setOpen(false)} className={cn('flex min-h-12 items-center rounded-md border-l-2 border-transparent px-3 font-medium text-muted-foreground', active && 'border-accent bg-white/[0.05] text-white')} href={localizeHref(item.href, locale)}>{t(item.key)}</Link></motion.li>;
                 })}
               </ul>
               <div className="mt-4 flex items-center gap-2 border-t border-border pt-4">
                 <Link href={otherLocaleHref} className="flex min-h-11 items-center rounded-md border border-border px-4 text-sm font-medium">{t('language')}</Link>
               </div>
-            </nav>
+            </motion.nav>
           )}
+          </AnimatePresence>
         </GlassPanel>
       </header>
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-[rgba(10,9,16,0.78)] p-3 backdrop-blur-[24px] lg:hidden">
-        <CTAButton locale={locale} className="w-full" />
-      </div>
+      <MobileCTABar locale={locale} />
     </>
   );
 }

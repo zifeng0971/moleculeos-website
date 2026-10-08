@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Reveal, staggerDelay } from '@/components/motion/reveal';
 import { InteractiveCard } from '@/components/ui/InteractiveCard';
@@ -24,6 +25,7 @@ export function ValidationSection({ locale, page = false }: { locale: Locale; pa
             <h3 className="mt-5 text-[22px] font-bold leading-[1.3] tracking-[-0.01em]">{item.result}</h3>
             <p className="mt-4 line-clamp-2 text-sm text-muted-foreground">{t('challenge')}：{item.challenge}</p>
             <div className="mt-4 border-t border-border pt-4 text-xs text-muted-foreground"><span>{t('molecule')}：{item.molecule}</span><span className="mx-2">·</span><span>{t('duration')}：{item.duration}</span></div>
+            <span className="case-card-more">{t('details')}<ArrowRight size={14} aria-hidden="true"/></span>
           </InteractiveCard>
         </Reveal>)}
       </div>

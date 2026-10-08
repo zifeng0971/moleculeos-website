@@ -7,7 +7,7 @@ import { SITE_CONFIG, localizeHref, type Locale } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from './button';
 
-export function CTAButton({ kind = 'primary', locale, inverse = false, className }: { kind?: 'primary' | 'secondary'; locale: Locale; inverse?: boolean; className?: string }) {
+export function CTAButton({ kind = 'primary', locale, inverse = false, className, tabIndex }: { kind?: 'primary' | 'secondary'; locale: Locale; inverse?: boolean; className?: string; tabIndex?: number }) {
   const t = useTranslations('common');
   const isPrimary = kind === 'primary';
   const href = isPrimary ? SITE_CONFIG.platformUrl : localizeHref('/contact', locale);
@@ -16,6 +16,7 @@ export function CTAButton({ kind = 'primary', locale, inverse = false, className
       href={href}
       target={isPrimary ? '_blank' : undefined}
       rel={isPrimary ? 'noreferrer' : undefined}
+      tabIndex={tabIndex}
       className={cn(buttonVariants({ variant: inverse && isPrimary ? 'inverse' : isPrimary ? 'primary' : 'secondary', size: 'lg' }), 'group gap-2', className)}
     >
       {isPrimary ? t('start') : t('contact')}

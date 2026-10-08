@@ -11,7 +11,7 @@ import { Reveal } from '@/components/motion/reveal';
 function CapabilityMedia({ task, available, missing }: { task: CapabilityTask; available: boolean; missing: string }) {
   const [failed, setFailed] = useState(false);
   return <div className="capability-media">
-    {!available || failed ? <div className="capability-media-empty"><p>{task.title}</p><small>{missing}</small></div> : /\.(webp|png|jpe?g|gif|svg)$/i.test(task.media) ?
+    {!available || failed ? <div className="capability-media-empty"><span className="capability-media-glyph" aria-hidden="true">{task.title.slice(0, 1)}</span><p>{task.title}</p><small>{missing}</small></div> : /\.(webp|png|jpe?g|gif|svg)$/i.test(task.media) ?
       <Image src={task.media} alt={task.title} fill sizes="(min-width:1024px) 840px, 100vw" className="object-contain" onError={() => setFailed(true)}/> :
       <video src={task.media} controls playsInline preload="metadata" aria-label={task.title} onError={() => setFailed(true)}/>}
   </div>;
@@ -25,6 +25,7 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
   const [manual, setManual] = useState(false);
   const [visible, setVisible] = useState(false);
   const [desktop, setDesktop] = useState(false);
+  const [hovering, setHovering] = useState(false);
   const root = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
   useEffect(() => {
@@ -45,7 +46,7 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
     return () => observer.disconnect();
   }, []);
   // Autoplay is driven by the visible progress bar so the bar and the tab change never drift apart.
-  const autoplay = !manual && !reduce && visible;
+  const autoplay = !manual && !reduce && visible && !hovering;
   const advance = () => setSelected(index => (index + 1) % tasks.length);
   const choose = (index: number) => { setManual(true); setSelected(index); };
   const keyboard = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
@@ -62,7 +63,7 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
   return <section ref={root} className="home-section-pad py-24" data-nav-section="platform">
     <div className="site-container">
       <Reveal><SectionHeading eyebrow={t('eyebrow')} title={t('title')} description={t('selectorDescription')}/></Reveal>
-      <div className="capability-selector mt-12">
+      <div className="capability-selector mt-12" onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
         <div className="capability-tabs" role="tablist" aria-label={t('title')} aria-orientation={desktop ? 'vertical' : 'horizontal'}>
           {tasks.map((item, i) => <button id={`capability-tab-${item.id}`} title={item.title} role="tab" aria-selected={selected === i} aria-controls={`capability-panel-${item.id}`} tabIndex={selected === i ? 0 : -1} key={item.id} className="capability-tab" onClick={() => choose(i)} onKeyDown={event => keyboard(event, i)}>
             {selected === i && <motion.span className="capability-selected-indicator" layoutId="capability-selected-indicator" transition={reduce ? { duration: 0.15 } : { type: 'spring', stiffness: 380, damping: 34 }} aria-hidden="true"/>}
