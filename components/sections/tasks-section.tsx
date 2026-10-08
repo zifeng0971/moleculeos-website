@@ -44,11 +44,9 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
     if (root.current) observer.observe(root.current);
     return () => observer.disconnect();
   }, []);
-  useEffect(() => {
-    if (manual || reduce || !visible) return;
-    const timer = setInterval(() => { if (!document.hidden) setSelected(index => (index + 1) % tasks.length); }, 6000);
-    return () => clearInterval(timer);
-  }, [manual, reduce, visible, tasks.length]);
+  // Autoplay is driven by the visible progress bar so the bar and the tab change never drift apart.
+  const autoplay = !manual && !reduce && visible;
+  const advance = () => setSelected(index => (index + 1) % tasks.length);
   const choose = (index: number) => { setManual(true); setSelected(index); };
   const keyboard = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
     let next = index;
@@ -61,18 +59,19 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
     root.current?.querySelector<HTMLButtonElement>(`#capability-tab-${tasks[next].id}`)?.focus();
   };
   const task = tasks[selected];
-  return <section ref={root} className="py-24" data-nav-section="platform">
+  return <section ref={root} className="home-section-pad py-24" data-nav-section="platform">
     <div className="site-container">
       <Reveal><SectionHeading eyebrow={t('eyebrow')} title={t('title')} description={t('selectorDescription')}/></Reveal>
       <div className="capability-selector mt-12">
         <div className="capability-tabs" role="tablist" aria-label={t('title')} aria-orientation={desktop ? 'vertical' : 'horizontal'}>
           {tasks.map((item, i) => <button id={`capability-tab-${item.id}`} title={item.title} role="tab" aria-selected={selected === i} aria-controls={`capability-panel-${item.id}`} tabIndex={selected === i ? 0 : -1} key={item.id} className="capability-tab" onClick={() => choose(i)} onKeyDown={event => keyboard(event, i)}>
-            {selected === i && <motion.span className="capability-selected-indicator" layoutId="capability-selected-indicator" transition={{ duration: reduce ? 0.15 : 0.24 }} aria-hidden="true"/>}
+            {selected === i && <motion.span className="capability-selected-indicator" layoutId="capability-selected-indicator" transition={reduce ? { duration: 0.15 } : { type: 'spring', stiffness: 380, damping: 34 }} aria-hidden="true"/>}
             <strong>{item.title}</strong>{selected === i && <small>{item.brief}</small>}
+            {selected === i && autoplay && <span className="capability-progress" aria-hidden="true"><motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 6, ease: 'linear' }} onAnimationComplete={advance}/></span>}
           </button>)}
         </div>
         <AnimatePresence mode="wait" initial={false}>
-          <motion.div key={task.id} role="tabpanel" id={`capability-panel-${task.id}`} aria-labelledby={`capability-tab-${task.id}`} className="min-w-0" initial={{opacity:0,y:reduce?0:8}} animate={{opacity:1,y:0}} exit={{opacity:0}} transition={{duration:reduce?0.15:0.2}}>
+          <motion.div key={task.id} role="tabpanel" id={`capability-panel-${task.id}`} aria-labelledby={`capability-tab-${task.id}`} className="min-w-0" initial={{opacity:0,y:reduce?0:16,filter:reduce?'none':'blur(8px)'}} animate={{opacity:1,y:0,filter:'blur(0px)'}} exit={{opacity:0,y:reduce?0:-8,filter:reduce?'none':'blur(6px)'}} transition={{duration:reduce?0.15:0.45,ease:[0.16,1,0.3,1]}}>
             <CapabilityMedia key={task.media} task={task} available={availableMedia.includes(task.media)} missing={t('mediaMissing')}/>
             <dl className="capability-copy mt-6">{(['situation','approach','outcome'] as const).map(key => <div key={key}><dt>{t(key)}</dt><dd>{task[key]}</dd></div>)}</dl>
           </motion.div>

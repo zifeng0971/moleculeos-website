@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './visual.css';
 
 export const metadata: Metadata = {
   title: { default: 'MoleculeOS — 生命科学研发的操作系统', template: '%s | MoleculeOS' },

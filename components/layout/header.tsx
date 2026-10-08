@@ -30,7 +30,7 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
   const activeKey = routeKey(pathname);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 80);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -76,7 +76,7 @@ export function Header({ locale, languageHref }: { locale: Locale; languageHref?
   return (
     <>
       <header className="sticky top-0 z-50 bg-transparent px-0 transition-all duration-300 lg:px-3 lg:pt-3">
-        <GlassPanel className={cn('mx-auto max-w-[1240px] rounded-none border-x-0 transition-all duration-300 lg:rounded-[1.25rem] lg:border-x', scrolled ? 'bg-[rgba(10,9,16,0.58)] backdrop-blur-[40px]' : 'border-transparent bg-transparent shadow-none backdrop-blur-none')}>
+        <GlassPanel data-scrolled={scrolled} className={cn('site-header-panel mx-auto max-w-[1240px] rounded-none border-x-0 transition-all duration-300 lg:rounded-[1.25rem] lg:border-x', scrolled ? 'bg-[rgba(10,9,16,0.58)] backdrop-blur-[40px]' : 'border-transparent bg-transparent shadow-none backdrop-blur-none')}>
           <div className="site-container flex h-16 items-center justify-between gap-5 xl:h-[4.5rem]">
             <Logo locale={locale} />
             <nav className="hidden h-full items-center gap-1 lg:flex" aria-label="Primary navigation">
