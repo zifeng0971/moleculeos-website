@@ -11,3 +11,4 @@ tsconfig.tsbuildinfo
 app/dev/manual-assets/page.tsx
 public/manual-assets/**/gif-original/
 content/manual/.media-cache/
+preview-package
