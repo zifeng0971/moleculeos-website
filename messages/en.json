@@ -333,10 +333,8 @@
         "improvement"
       ],
       "round": "Round {n}",
-      "threshold": "Wet-lab success bar",
-      "candidate": "Designed candidate",
-      "hit": "Validated hit",
-      "illustrative": "Illustrative"
+      "illustrative": "Illustrative",
+      "precision": "Design precision"
     },
     "access": {
       "eyebrow": "WAYS TO WORK",

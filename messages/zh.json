@@ -329,10 +329,8 @@
         "模型持续进化"
       ],
       "round": "第 {n} 轮",
-      "threshold": "湿实验达标线",
-      "candidate": "设计候选",
-      "hit": "实验命中",
-      "illustrative": "示意"
+      "illustrative": "示意",
+      "precision": "设计精度"
     },
     "access": {
       "eyebrow": "接入方式",
