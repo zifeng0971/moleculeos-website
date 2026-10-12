@@ -323,3 +323,5 @@ a:focus-visible, button:focus-visible { outline: 2px solid rgba(168,139,255,.9);
 .phrase { display: inline-block; }
 .results-stack { display: grid; gap: 48px; }
 .results-stack .results-viewer { max-width: 1180px; width: 100%; margin-inline: auto; }
+.final-field { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 1; -webkit-mask-image: radial-gradient(ellipse 75% 70% at 50% 50%, #000 20%, transparent 80%); mask-image: radial-gradient(ellipse 75% 70% at 50% 50%, #000 20%, transparent 80%); }
+.final-copy { z-index: 1; }

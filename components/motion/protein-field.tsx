@@ -20,7 +20,7 @@ type Reader = { row: number; col: number; length: number; start: number };
  * Residues brighten and take their chemistry colour around the pointer, occasionally "mutating",
  * while sequencing read-heads sweep across random rows. Pauses off-screen; static under reduced motion.
  */
-export function ProteinField({ className }: { className?: string }) {
+export function ProteinField({ className, calmSelector = '.hero-copy' }: { className?: string; calmSelector?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -42,7 +42,7 @@ export function ProteinField({ className }: { className?: string }) {
     // Calm zone over the hero copy: highlights dim there so the headline and CTAs stay legible.
     const calm = { x: 0, y: 0, rx: 1, ry: 1 };
     const measureCalm = () => {
-      const copy = canvas.parentElement?.querySelector<HTMLElement>('.hero-copy');
+      const copy = canvas.parentElement?.querySelector<HTMLElement>(calmSelector);
       const host = canvas.getBoundingClientRect();
       if (!copy) { calm.rx = calm.ry = 1; calm.x = calm.y = -9999; return; }
       const rect = copy.getBoundingClientRect();
@@ -183,6 +183,6 @@ export function ProteinField({ className }: { className?: string }) {
       cancelAnimationFrame(frame); resizeObserver.disconnect(); intersection.disconnect();
       window.removeEventListener('pointermove', onPointer); document.removeEventListener('visibilitychange', onVisibility);
     };
-  }, []);
+  }, [calmSelector]);
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />;
 }
