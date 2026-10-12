@@ -195,7 +195,22 @@
           "anchor": "mmdesign"
         }
       ],
-      "viewSystem": "Explore the model system"
+      "viewSystem": "Explore the model system",
+      "modalities": [
+        "Sequence",
+        "Structure",
+        "Function",
+        "Evolution"
+      ],
+      "scienceMethods": [
+        "Molecular dynamics",
+        "Quantum chemistry"
+      ],
+      "layerLabels": [
+        "Layer 1",
+        "Layer 2",
+        "Layer 3"
+      ]
     },
     "validation": {
       "eyebrow": "VALIDATION & EVIDENCE",
@@ -372,11 +387,13 @@
       "label": "Homepage sections",
       "labels": [
         "Overview",
-        "Inspectable results",
+        "Evidence",
         "Capabilities",
+        "Inspectable results",
         "Models",
+        "Data flywheel",
         "Validation",
-        "Trust",
+        "Enterprise",
         "Start Building"
       ]
     }

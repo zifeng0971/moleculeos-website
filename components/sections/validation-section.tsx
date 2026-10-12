@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Reveal, staggerDelay } from '@/components/motion/reveal';
 import { InteractiveCard } from '@/components/ui/InteractiveCard';
 import { localizeHref, type Locale } from '@/lib/site-config';
+import { Phrases } from '@/components/ui/phrase-title';
 
 export type ValidationCase = { title: string; background: string; challenge: string; strategy: string; result: string; molecule: string; duration: string };
 
@@ -14,9 +15,9 @@ export function ValidationSection({ locale, page = false }: { locale: Locale; pa
   const Heading = page ? 'h1' : 'h2';
   return <section className="home-section-pad py-24" data-nav-section="validation">
     <div className="site-container">
-      <Reveal className="text-center"><p className="eyebrow eyebrow-solid">{t('eyebrow')}</p><Heading className="section-title mx-auto max-w-[20ch]">{t('gridTitle')}</Heading>
-        {/* Never separate the verified result from its low-throughput conditions. */}
-        <p className="mx-auto mt-6 max-w-[40ch] text-[clamp(18px,1.6vw,22px)] font-medium leading-[1.6] text-[rgba(255,255,255,0.72)]">{t('successCondition')}</p>
+      <Reveal className="text-center"><p className="eyebrow eyebrow-solid">{t('eyebrow')}</p><Heading className="section-title mx-auto max-w-[20ch]"><Phrases text={t('gridTitle')} /></Heading>
+        {/* Never separate the verified result from its low-throughput conditions. On the homepage the evidence band carries both. */}
+        {page && <p className="mx-auto mt-6 max-w-[40ch] text-[clamp(18px,1.6vw,22px)] font-medium leading-[1.6] text-[rgba(255,255,255,0.72)]">{t('successCondition')}</p>}
       </Reveal>
       <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-case-grid>
         {cases.map((item, i) => <Reveal key={item.title} delay={staggerDelay(i, cases.length)} className="h-full">
