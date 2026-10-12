@@ -141,7 +141,32 @@
           "outcome": "多样化候选、排序依据与可直接导出的实验序列。",
           "slug": "de-novo-design"
         }
-      ]
+      ],
+      "visual": {
+        "illustrative": "示意",
+        "confidence": "预测置信度",
+        "veryHigh": "很高",
+        "high": "较高",
+        "low": "偏低",
+        "veryLow": "很低",
+        "candidates": "候选突变排序",
+        "interface": "结合界面",
+        "antigen": "抗原",
+        "light": "轻链",
+        "heavy": "重链",
+        "flexibility": "残基柔性",
+        "rigid": "刚性",
+        "flexible": "柔性",
+        "stabilizing": "稳定化位点",
+        "melting": "热变性曲线",
+        "before": "改造前",
+        "after": "改造后",
+        "generating": "正在生成结合分子",
+        "denoise": "去噪步数",
+        "target": "靶点",
+        "binder": "设计分子",
+        "folding": "正在预测结构"
+      }
     },
     "agentDemo": {
       "label": "Agent 工作流演示占位框",
@@ -302,7 +327,12 @@
       ],
       "evolveLines": [
         "模型持续进化"
-      ]
+      ],
+      "round": "第 {n} 轮",
+      "threshold": "湿实验达标线",
+      "candidate": "设计候选",
+      "hit": "实验命中",
+      "illustrative": "示意"
     },
     "access": {
       "eyebrow": "接入方式",
@@ -318,11 +348,6 @@
           "title": "API",
           "description": "适合将模型能力接入现有研发流程与数据管线。",
           "compactDescription": "接入现有研发流程"
-        },
-        {
-          "title": "私有化部署",
-          "description": "适合对数据隔离、合规和内部算力有严格要求的组织。",
-          "compactDescription": "满足数据隔离与内部算力要求"
         },
         {
           "title": "联合研发",
@@ -383,13 +408,13 @@
       "label": "首页区块定位",
       "labels": [
         "首页",
-        "实证",
-        "能力",
         "可解释的结果",
+        "能力",
         "模型体系",
         "数据飞轮",
         "验证与案例",
         "企业级",
+        "实证",
         "开始工作"
       ]
     }

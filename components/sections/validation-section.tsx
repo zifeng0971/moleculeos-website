@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Reveal, staggerDelay } from '@/components/motion/reveal';
 import { InteractiveCard } from '@/components/ui/InteractiveCard';
@@ -19,14 +19,13 @@ export function ValidationSection({ locale, page = false }: { locale: Locale; pa
         {/* Never separate the verified result from its low-throughput conditions. On the homepage the evidence band carries both. */}
         {page && <p className="mx-auto mt-6 max-w-[40ch] text-[clamp(18px,1.6vw,22px)] font-medium leading-[1.6] text-[rgba(255,255,255,0.72)]">{t('successCondition')}</p>}
       </Reveal>
-      <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3" data-case-grid>
+      <div className="case-grid mt-12" data-case-grid>
         {cases.map((item, i) => <Reveal key={item.title} delay={staggerDelay(i, cases.length)} className="h-full">
-          <InteractiveCard as="a" href={localizeHref(`/validation/case-${i + 1}`, locale)} className="flex h-full flex-col p-6 md:p-8">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-[#B6A6FF]">{item.title}</p>
-            <h3 className="mt-5 text-[22px] font-bold leading-[1.3] tracking-[-0.01em]">{item.result}</h3>
-            <p className="mt-4 line-clamp-2 text-sm text-muted-foreground">{t('challenge')}：{item.challenge}</p>
-            <div className="mt-4 border-t border-border pt-4 text-xs text-muted-foreground"><span>{t('molecule')}：{item.molecule}</span><span className="mx-2">·</span><span>{t('duration')}：{item.duration}</span></div>
-            <span className="case-card-more">{t('details')}<ArrowRight size={14} aria-hidden="true"/></span>
+          <InteractiveCard as="a" href={localizeHref(`/validation/case-${i + 1}`, locale)} tiltMax={3} className="case-card h-full">
+            <span className="case-card-badge" aria-label={t('details')}><ArrowUpRight size={14} aria-hidden="true"/></span>
+            <p className="case-card-kicker">{item.title}</p>
+            <h3>{item.result}</h3>
+            <p className="case-card-meta"><span>{item.molecule}</span><span aria-hidden="true">·</span><span>{item.duration}</span></p>
           </InteractiveCard>
         </Reveal>)}
       </div>

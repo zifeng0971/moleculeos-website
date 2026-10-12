@@ -141,7 +141,32 @@
           "outcome": "Diverse candidates, ranking rationale, and export-ready sequences.",
           "slug": "de-novo-design"
         }
-      ]
+      ],
+      "visual": {
+        "illustrative": "Illustrative",
+        "confidence": "Predicted confidence",
+        "veryHigh": "Very high",
+        "high": "Confident",
+        "low": "Low",
+        "veryLow": "Very low",
+        "candidates": "Ranked candidate mutations",
+        "interface": "Binding interface",
+        "antigen": "Antigen",
+        "light": "Light chain",
+        "heavy": "Heavy chain",
+        "flexibility": "Residue flexibility",
+        "rigid": "Rigid",
+        "flexible": "Flexible",
+        "stabilizing": "Stabilising sites",
+        "melting": "Melting curve",
+        "before": "Before",
+        "after": "After",
+        "generating": "Generating a binder",
+        "denoise": "Denoising step",
+        "target": "Target",
+        "binder": "Designed binder",
+        "folding": "Predicting structure"
+      }
     },
     "agentDemo": {
       "label": "Agent workflow demonstration placeholder",
@@ -306,7 +331,12 @@
         "Continuous",
         "model",
         "improvement"
-      ]
+      ],
+      "round": "Round {n}",
+      "threshold": "Wet-lab success bar",
+      "candidate": "Designed candidate",
+      "hit": "Validated hit",
+      "illustrative": "Illustrative"
     },
     "access": {
       "eyebrow": "WAYS TO WORK",
@@ -322,11 +352,6 @@
           "title": "API",
           "description": "For integrating model capabilities into existing R&D pipelines.",
           "compactDescription": "Integrate existing R&D workflows"
-        },
-        {
-          "title": "Private deployment",
-          "description": "For organizations with strict isolation and compliance needs.",
-          "compactDescription": "Support isolation and internal compute"
         },
         {
           "title": "Joint research",
@@ -387,13 +412,13 @@
       "label": "Homepage sections",
       "labels": [
         "Overview",
-        "Evidence",
-        "Capabilities",
         "Inspectable results",
+        "Capabilities",
         "Models",
         "Data flywheel",
         "Validation",
         "Enterprise",
+        "Evidence",
         "Start Building"
       ]
     }

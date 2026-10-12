@@ -7,12 +7,12 @@ import type { Locale } from '@/lib/site-config';
 import { mockContent, type CapabilityTask } from '@/lib/mock-content';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { Reveal } from '@/components/motion/reveal';
-import { TaskVisual } from '@/components/motion/task-visuals';
+import { TaskVisual, type TaskVisualLabels } from '@/components/motion/task-visuals';
 
-function CapabilityMedia({ task, available }: { task: CapabilityTask; available: boolean }) {
+function CapabilityMedia({ task, available, labels }: { task: CapabilityTask; available: boolean; labels: TaskVisualLabels }) {
   const [failed, setFailed] = useState(false);
   return <div className="capability-media">
-    {!available || failed ? <div className="capability-media-visual"><TaskVisual id={task.id}/><span className="capability-media-caption">{task.brief}</span></div> : /\.(webp|png|jpe?g|gif|svg)$/i.test(task.media) ?
+    {!available || failed ? <TaskVisual id={task.id} labels={labels}/> : /\.(webp|png|jpe?g|gif|svg)$/i.test(task.media) ?
       <Image src={task.media} alt={task.title} fill sizes="(min-width:1024px) 840px, 100vw" className="object-contain" onError={() => setFailed(true)}/> :
       <video src={task.media} controls playsInline preload="metadata" aria-label={task.title} onError={() => setFailed(true)}/>}
   </div>;
@@ -74,7 +74,7 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
         </div>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={task.id} role="tabpanel" id={`capability-panel-${task.id}`} aria-labelledby={`capability-tab-${task.id}`} className="min-w-0" initial={{opacity:0,y:reduce?0:16,filter:reduce?'none':'blur(8px)'}} animate={{opacity:1,y:0,filter:'blur(0px)'}} exit={{opacity:0,y:reduce?0:-8,filter:reduce?'none':'blur(6px)'}} transition={{duration:reduce?0.15:0.45,ease:[0.16,1,0.3,1]}}>
-            <CapabilityMedia key={task.media} task={task} available={availableMedia.includes(task.media)}/>
+            <CapabilityMedia key={task.media} task={task} available={availableMedia.includes(task.media)} labels={t.raw('visual') as TaskVisualLabels}/>
             <dl className="capability-copy mt-6">{(['situation','approach','outcome'] as const).map(key => <div key={key}><dt>{t(key)}</dt><dd>{task[key]}</dd></div>)}</dl>
           </motion.div>
         </AnimatePresence>

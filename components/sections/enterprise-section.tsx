@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Building2, Code2, DatabaseZap, FileKey2, Handshake, LockKeyhole, Monitor } from 'lucide-react';
+import { ArrowRight, Code2, DatabaseZap, FileKey2, Handshake, LockKeyhole, Monitor } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Reveal, staggerDelay } from '@/components/motion/reveal';
 import { InteractiveCard } from '@/components/ui/InteractiveCard';
@@ -9,7 +9,7 @@ import { localizeHref, type Locale } from '@/lib/site-config';
 import { Phrases } from '@/components/ui/phrase-title';
 
 const securityIcons = [DatabaseZap, FileKey2, LockKeyhole];
-const accessIcons = [Monitor, Code2, Building2, Handshake];
+const accessIcons = [Monitor, Code2, Handshake];
 type Item = { title: string; description: string; compactDescription: string };
 
 /** Enterprise readiness: data/IP pledges as a bento, then the four ways to work with MOS. */

@@ -1,53 +1,96 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
+import { useInView, useReducedMotion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Reveal } from '@/components/motion/reveal';
 import { Phrases } from '@/components/ui/phrase-title';
 
-const CYCLE = 6; // seconds for one lap of the loop
-// Racetrack: top run carries design → experiment → evolve, bottom run returns the data to design.
-const TRACK = 'M120 70 H980 A110 110 0 0 1 980 290 H120 A110 110 0 0 1 120 70 Z';
-const TRACK_LENGTH = 860 * 2 + Math.PI * 110 * 2;
-const NODES = [{ x: 260, key: 'design' }, { x: 550, key: 'experiment' }, { x: 840, key: 'evolve' }] as const;
+const ROUNDS = 4, PER_ROUND = 16, STAGES = ['design', 'experiment', 'evolve'] as const;
+const STEP_MS = 1500;
+// Chart geometry (SVG units). Value 0–1 maps bottom→top; the success bar sits at 0.62.
+const X0 = 70, X1 = 560, Y0 = 300, Y1 = 40, BAR = 0.62;
+const colX = (r: number) => X0 + 60 + r * ((X1 - X0 - 90) / (ROUNDS - 1));
+const toY = (v: number) => Y0 - v * (Y0 - Y1);
 
-/** Data flywheel: a comet laps the loop and lights each stage as it passes. Pure SVG/CSS, no JS timers. */
+function seeded(seed: number) { return () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }; }
+// Each round's candidates: the distribution rises and tightens as the model learns from the previous round.
+const DOTS = (() => {
+  const rand = seeded(7);
+  return Array.from({ length: ROUNDS }, (_, r) => {
+    const centre = 0.36 + r * 0.13, spread = 0.2 - r * 0.035;
+    return Array.from({ length: PER_ROUND }, (_, j) => {
+      const g = (rand() + rand() + rand() - 1.5) / 1.5;
+      const v = Math.min(0.97, Math.max(0.05, centre + g * spread * 1.6));
+      return { x: colX(r) + ((j % 4) - 1.5) * 13 + (rand() - 0.5) * 6, y: toY(v), hit: v >= BAR };
+    });
+  });
+})();
+const CENTROIDS = DOTS.map((round, r) => ({ x: colX(r), y: round.reduce((sum, d) => sum + d.y, 0) / round.length }));
+
+/** Data flywheel as convergence over rounds: design → test → learn, with each round landing more hits. */
 export function FlywheelSection() {
   const t = useTranslations('home.flywheel');
+  const reduce = useReducedMotion();
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInView(ref, { amount: 0.4 });
+  const total = ROUNDS * STAGES.length;
+  const [step, setStep] = useState(total - 1);
+  const started = useRef(false);
+  useEffect(() => {
+    if (reduce || !inView) return;
+    if (!started.current) { started.current = true; setStep(0); }
+    // Run through all rounds, rest on the final state, then start again.
+    const timer = setInterval(() => setStep(s => (s >= total + 2 ? 0 : s + 1)), STEP_MS);
+    return () => clearInterval(timer);
+  }, [inView, reduce, total]);
+  const shown = Math.min(step, total - 1);
+  const round = Math.floor(shown / STAGES.length), stage = shown % STAGES.length;
+  const visibleRound = (r: number) => r <= round;
+  const tested = (r: number) => r < round || (r === round && stage >= 1);
+  const learned = (r: number) => r < round || (r === round && stage >= 2);
+
   return <section className="flywheel home-section-pad" data-nav-section="models">
-    <div className="site-container">
-      <Reveal className="text-center">
-        <p className="eyebrow eyebrow-solid">{t('eyebrow')}</p>
-        <h2 className="section-title mx-auto"><Phrases text={t('title')} /></h2>
-        <p className="section-copy mx-auto">{t('description')}</p>
-      </Reveal>
-      <Reveal delay={0.15} className="flywheel-stage">
-        <svg viewBox="0 0 1100 360" className="flywheel-svg" role="img" aria-label={`${t('design')} → ${t('experiment')} → ${t('evolve')} → ${t('design')}`}>
-          <defs>
-            <linearGradient id="fw-track" x1="0" x2="1"><stop stopColor="#7C5CFF" /><stop offset=".5" stopColor="#E07BC8" /><stop offset="1" stopColor="#5AC8FA" /></linearGradient>
-            <radialGradient id="fw-comet"><stop stopColor="#fff" /><stop offset=".35" stopColor="#C9B8FF" /><stop offset="1" stopColor="#7C5CFF" stopOpacity="0" /></radialGradient>
-          </defs>
-          <path d={TRACK} fill="none" stroke="rgba(255,255,255,.07)" strokeWidth="2" />
-          <path d={TRACK} fill="none" stroke="url(#fw-track)" strokeWidth="2" strokeLinecap="round" className="flywheel-flow" strokeDasharray={`90 ${TRACK_LENGTH}`} style={{ ['--len' as string]: `${TRACK_LENGTH}px` }} />
-          {/* Comet with a fading tail: each trailing dot starts a little later on the same path. */}
-          {Array.from({ length: 7 }, (_, k) => <circle key={k} className="flywheel-comet" r={k === 0 ? 12 : 6 - k * 0.7} fill={k === 0 ? 'url(#fw-comet)' : '#B6A6FF'} opacity={k === 0 ? 1 : 0.5 - k * 0.06}>
-            <animateMotion dur={`${CYCLE}s`} repeatCount="indefinite" begin={`${-(CYCLE - k * 0.045)}s`} path={TRACK} />
-          </circle>)}
-          {NODES.map((node, i) => {
-            const at = (node.x - 120) / TRACK_LENGTH * CYCLE;
-            return <g key={node.key} className="flywheel-node" style={{ animationDelay: `${at - 0.15}s` }}>
-              <circle cx={node.x} cy="70" r="34" className="flywheel-node-halo" />
-              <circle cx={node.x} cy="70" r="26" className="flywheel-node-core" />
-              <text x={node.x} y="76" textAnchor="middle" className="flywheel-node-index">0{i + 1}</text>
-              <text x={node.x} y="140" textAnchor="middle" className="flywheel-node-label">{t(node.key)}</text>
-            </g>;
-          })}
-          <g className="flywheel-return">
-            <text x="550" y="296" textAnchor="middle">NewOrigin</text>
-          </g>
-        </svg>
-        <ol className="flywheel-steps">
-          {NODES.map((node, i) => <li key={node.key} style={{ animationDelay: `${i * (CYCLE / 3)}s` }}><span>0{i + 1}</span>{t(node.key)}</li>)}
+    <div className="site-container flywheel-grid">
+      <div>
+        <Reveal>
+          <p className="eyebrow eyebrow-solid">{t('eyebrow')}</p>
+          <h2 className="section-title"><Phrases text={t('title')} /></h2>
+          <p className="section-copy">{t('description')}</p>
+        </Reveal>
+        <ol className="flywheel-stages">
+          {STAGES.map((key, i) => <li key={key} data-active={stage === i || undefined}>
+            <span className="flywheel-stage-index">0{i + 1}</span>
+            <span>{t(key)}</span>
+            {stage === i && <span className="flywheel-stage-round">{t('round', { n: round + 1 })}</span>}
+          </li>)}
         </ol>
+      </div>
+      <Reveal delay={0.1}>
+        <div ref={ref} className="flywheel-chart">
+          <span className="flywheel-chart-tag">{t('illustrative')}</span>
+          <svg viewBox="0 0 600 350" role="img" aria-label={t('title')}>
+            <defs>
+              <linearGradient id="fw-zone" x1="0" y1="0" x2="0" y2="1"><stop stopColor="#7EE0C3" stopOpacity=".07" /><stop offset="1" stopColor="#7EE0C3" stopOpacity="0" /></linearGradient>
+              <linearGradient id="fw-trend" x1="0" x2="1"><stop stopColor="#7C5CFF" /><stop offset="1" stopColor="#7EE0C3" /></linearGradient>
+              <marker id="fw-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#B6A6FF" /></marker>
+            </defs>
+            <rect x={X0} y={Y1} width={X1 - X0} height={toY(BAR) - Y1} fill="url(#fw-zone)" />
+            <line x1={X0} x2={X1} y1={toY(BAR)} y2={toY(BAR)} className="fw-bar" />
+            <text x={X0} y={toY(BAR) - 8} className="fw-bar-label">{t('threshold')}</text>
+            {/* Learning arcs carry each round's results into the next design. */}
+            {CENTROIDS.slice(0, -1).map((c, r) => {
+              const next = CENTROIDS[r + 1], mid = (c.x + next.x) / 2;
+              return <path key={r} d={`M${c.x + 24} ${Y1 - 6} Q ${mid} ${Y1 - 36} ${next.x - 24} ${Y1 - 6}`} className="fw-learn" data-on={learned(r) || undefined} markerEnd="url(#fw-arrow)" />;
+            })}
+            <polyline points={CENTROIDS.filter((_, r) => tested(r)).map(c => `${c.x},${c.y}`).join(' ')} className="fw-trend" />
+            {DOTS.map((dots, r) => <g key={r} className="fw-round" data-on={visibleRound(r) || undefined} data-tested={tested(r) || undefined}>
+              {dots.map((d, j) => <circle key={j} cx={d.x} cy={d.y} r="5" className={d.hit ? 'fw-dot fw-dot-hit' : 'fw-dot'} style={{ transitionDelay: `${j * 18}ms` }} />)}
+              <text x={colX(r)} y={Y0 + 34} textAnchor="middle" className="fw-round-label" data-current={r === round || undefined}>{t('round', { n: r + 1 })}</text>
+            </g>)}
+          </svg>
+          <div className="flywheel-legend"><span><i className="fw-legend-dot" />{t('candidate')}</span><span><i className="fw-legend-dot fw-legend-hit" />{t('hit')}</span></div>
+        </div>
       </Reveal>
     </div>
   </section>;
