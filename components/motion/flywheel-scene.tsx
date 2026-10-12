@@ -12,7 +12,7 @@ const NODES = [
   { key: 'experiment', angle: (270 / 360) * TAU, color: [0.94, 0.55, 0.82] },
   { key: 'evolve', angle: (30 / 360) * TAU, color: [0.43, 0.83, 1.0] },
 ] as const;
-const LAPS_TO_CONVERGE = 4;
+const LAPS_TO_CONVERGE = 3;
 
 const VERTEX = /* glsl */ `
 uniform float uRot, uPrecision, uHead, uTime, uSize, uPixelRatio;
@@ -174,11 +174,11 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
       const draw = (now: number) => {
         const dt = Math.min(0.05, (now - last) / 1000); last = now;
         if (!reduce) {
-          const target = laps >= LAPS_TO_CONVERGE + 3 ? 0 : Math.min(1, laps / LAPS_TO_CONVERGE);
-          precision += (target - precision) * Math.min(1, dt * (target < precision ? 0.9 : 1.1));
-          const omega = 0.16 + precision * 0.36, headOmega = 1.7 + precision * 0.9;
+          const target = laps >= LAPS_TO_CONVERGE + 2 ? 0 : Math.min(1, laps / LAPS_TO_CONVERGE);
+          precision += (target - precision) * Math.min(1, dt * (target < precision ? 1.8 : 2.6));
+          const omega = 0.3 + precision * 0.5, headOmega = 2.9 + precision * 1.6;
           rot += omega * dt; head += headOmega * dt; travelled += headOmega * dt;
-          if (travelled >= TAU) { travelled -= TAU; laps = laps >= LAPS_TO_CONVERGE + 3 ? 0 : laps + 1; }
+          if (travelled >= TAU) { travelled -= TAU; laps = laps >= LAPS_TO_CONVERGE + 2 ? 0 : laps + 1; }
           eased.x += (pointer.x - eased.x) * 0.05; eased.y += (pointer.y - eased.y) * 0.05;
           camera.position.x = eased.x * 0.7;
           camera.lookAt(0, focusY + eased.y * 0.15, 0);
