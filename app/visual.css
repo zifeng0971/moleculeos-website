@@ -239,15 +239,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid rgba(168,139,255,.9);
 @media (max-width: 1023px) { .model-stack-steps li { opacity: 1; cursor: default; } }
 
 /* ---------- Data flywheel: WebGL particle wheel ---------- */
-.flywheel-scene { position: relative; margin-top: 24px; height: clamp(440px, 50vw, 660px); border-radius: 32px; overflow: hidden;
-  background: radial-gradient(ellipse 55% 45% at 50% 55%, rgba(124,92,255,.16), transparent 70%), radial-gradient(ellipse 80% 60% at 50% 100%, rgba(90,200,250,.06), transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 60%, transparent 100%); mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, #000 60%, transparent 100%); }
+.flywheel-scene { position: relative; margin-top: 24px; height: clamp(440px, 50vw, 660px); overflow: hidden;
+  /* closest-side keeps every glow fully faded inside the box, so no edge or seam shows against the page. */
+  background: radial-gradient(closest-side at 50% 50%, rgba(124,92,255,.13), transparent); }
 .flywheel-canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; display: block; }
 .flywheel-tag { position: absolute; top: 22px; right: 28px; z-index: 2; padding: 3px 10px; border-radius: 999px; font-size: 11.5px; color: rgba(255,255,255,.5); border: 1px solid rgba(255,255,255,.1); }
 .flywheel-core, .flywheel-node { position: absolute; left: 0; top: 0; z-index: 1; pointer-events: none; will-change: transform; }
-.flywheel-core { --pulse: 0; display: grid; place-items: center; width: 112px; height: 112px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,calc(.16 + var(--pulse) * .3)) 0%, rgba(168,139,255,calc(.28 + var(--pulse) * .35)) 32%, rgba(124,92,255,0) 70%); }
-.flywheel-core span { font: 600 12px/1 ui-monospace, 'SF Mono', monospace; letter-spacing: .18em; color: #fff; text-shadow: 0 0 12px rgba(168,139,255,.9); }
+.flywheel-core { padding: 4px 12px; border-radius: 999px; background: rgba(14,13,22,.55); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.flywheel-core span { font: 600 11px/1 ui-monospace, 'SF Mono', monospace; letter-spacing: .18em; color: rgba(255,255,255,.85); }
 .flywheel-node { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 8px; border-radius: 999px; white-space: nowrap; font-size: 14px; font-weight: 600; color: rgba(255,255,255,.62);
   background: rgba(14,13,22,.66); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: color .5s, border-color .5s, box-shadow .5s, background .5s; }
 .flywheel-node[data-tone="design"] { --tone: #A88BFF; }
@@ -267,7 +266,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid rgba(168,139,255,.9);
   .flywheel-scene { height: 420px; border-radius: 24px; }
   .flywheel-node { font-size: 12px; padding: 6px 11px 6px 6px; gap: 7px; }
   .flywheel-node-index { width: 22px; height: 22px; font-size: 10px; }
-  .flywheel-core { width: 84px; height: 84px; }
   .flywheel-hud { bottom: 16px; gap: 10px; padding: 8px 14px; font-size: 12px; }
   .flywheel-hud-bar { width: 80px; }
 }
