@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Eye, EyeOff, Focus, Network, Ruler, Share2, ZoomIn, ZoomOut } from 'lucide-react';
 import { createViewer, type ViewerController, type MeasurementLabel } from '../molstar-controller';
 import contacts from '@/content/mocha-workbench-contacts.json';
+import { afterHeroEntrance } from '@/lib/after-hero-entrance';
 import { DEMO_CANDIDATE_RESIDUES, type DemoPhase } from './demoScript';
 
 const STRUCTURE = '/demo/antibody-affinity/workbench.cif';
@@ -42,17 +43,21 @@ export function MochaStructurePane({ title, phase, phaseProgress, running, hover
     let controller: ViewerController | null = null;
     setReady(false);
     setFailed(false);
-    void createViewer(canvasRef.current!, viewportRef.current!, () => {}, setStatus, setLabels, abort.signal, undefined, {
-      src: STRUCTURE,
-      label: 'Antibody–Antigen Complex · Fab',
-      chains: CHAINS.map(chain => ({ auth: chain.auth, color: chain.color })),
-    }).then(instance => {
-      if (abort.signal.aborted) { instance.dispose(); return; }
-      controller = instance;
-      viewerRef.current = instance;
-      setReady(true);
-    }).catch(() => { if (!abort.signal.aborted) setFailed(true); });
+    // The preview image covers the pane until Mol* is ready, so starting after the hero entrance looks the same.
+    const cancelStart = afterHeroEntrance(() => {
+      void createViewer(canvasRef.current!, viewportRef.current!, () => {}, setStatus, setLabels, abort.signal, undefined, {
+        src: STRUCTURE,
+        label: 'Antibody–Antigen Complex · Fab',
+        chains: CHAINS.map(chain => ({ auth: chain.auth, color: chain.color })),
+      }).then(instance => {
+        if (abort.signal.aborted) { instance.dispose(); return; }
+        controller = instance;
+        viewerRef.current = instance;
+        setReady(true);
+      }).catch(() => { if (!abort.signal.aborted) setFailed(true); });
+    });
     return () => {
+      cancelStart();
       abort.abort();
       controller?.dispose();
       viewerRef.current = null;

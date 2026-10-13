@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { afterHeroEntrance } from '@/lib/after-hero-entrance';
 
 export type FlywheelLabels = { design: string; experiment: string; evolve: string; round: (n: number) => string; precision: string; illustrative: string };
 
@@ -143,7 +144,8 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
     if (!el) return;
     let disposed = false;
     let cleanup = () => {};
-    (async () => {
+    // The wheel sits far below the fold: build it after the hero entrance so load stays smooth.
+    const cancelStart = afterHeroEntrance(() => void (async () => {
       const THREE = await import('three');
       if (disposed) return;
       let renderer: InstanceType<typeof THREE.WebGLRenderer>;
@@ -229,7 +231,7 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
       const dustMaterial = new THREE.PointsMaterial({ color: 0x9d8cff, size: 0.018, transparent: true, opacity: 0.35, depthWrite: false });
       scene.add(new THREE.Points(dustGeometry, dustMaterial));
 
-      let w = 0, h = 0, focusY = -0.25;
+      let w = 0, h = 0;
       const resize = () => {
         w = el.clientWidth; h = el.clientHeight;
         const dpr = Math.min(devicePixelRatio || 1, 2);
@@ -243,8 +245,7 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
         if (portrait) camera.position.set(0, distance * 0.72, distance * 0.7);
         else camera.position.set(0, distance * 0.42, distance);
         // Portrait: aim below the wheel so it sits in the upper part, leaving room for the legend.
-        focusY = portrait ? -1.9 : -0.25;
-        camera.lookAt(0, focusY, 0);
+        camera.lookAt(0, portrait ? -1.9 : -0.25, 0);
         camera.updateProjectionMatrix();
         uniforms.uPixelRatio.value = dpr;
         uniforms.uSize.value = Math.max(16, h * 0.046) * (distance / 7.1);
@@ -261,7 +262,6 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
       let rot = 0, head = NODES[0].angle, laps = 0, travelled = 0, precision = reduce ? 1 : 0, last = performance.now();
       let frame = 0, visible = true, lastStage = 0, lastRound = 1;
       const passedAt = [-1e9, -1e9, -1e9];
-      const pointer = { x: 0, y: 0 }, eased = { x: 0, y: 0 };
       const draw = (now: number) => {
         const dt = Math.min(0.05, (now - last) / 1000); last = now;
         if (!reduce) {
@@ -270,9 +270,6 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
           const omega = 0.3 + precision * 0.5, headOmega = 2.9 + precision * 1.6;
           rot += omega * dt; head += headOmega * dt; travelled += headOmega * dt;
           if (travelled >= TAU) { travelled -= TAU; laps = laps >= LAPS_TO_CONVERGE + 2 ? 0 : laps + 1; }
-          eased.x += (pointer.x - eased.x) * 0.05; eased.y += (pointer.y - eased.y) * 0.05;
-          camera.position.x = eased.x * 0.7;
-          camera.lookAt(0, focusY + eased.y * 0.15, 0);
         }
         uniforms.uRot.value = rot; uniforms.uHead.value = head % TAU; uniforms.uPrecision.value = precision; uniforms.uTime.value = now / 1000;
         // Highlight the stage nearest the packet. Passing "evolve" feeds the core; passing "design" draws from it.
@@ -294,32 +291,29 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
         if (r !== lastRound) { lastRound = r; setRound(r); }
         if (barRef.current) barRef.current.style.transform = `scaleX(${precision.toFixed(3)})`;
         renderer.render(scene, camera);
+      };
+      // The camera is fixed, so labels only move when the canvas resizes.
+      const placeLabels = () => {
         NODES.forEach((node, i) => place(nodeRefs.current[i], Math.cos(node.angle) * RADIUS * 1.3, Math.sin(node.angle) < -0.5 ? 0.32 : 0, Math.sin(node.angle) * RADIUS * 1.3));
         place(coreRef.current, 0, -0.72, 0);
       };
       const loop = (now: number) => { frame = 0; if (!visible || document.hidden) return; draw(now); frame = requestAnimationFrame(loop); };
       const kick = () => { if (!reduce && !frame && visible) { last = performance.now(); frame = requestAnimationFrame(loop); } };
-      draw(performance.now()); kick();
-      const ro = new ResizeObserver(() => { resize(); draw(performance.now()); });
+      draw(performance.now()); placeLabels(); kick();
+      const ro = new ResizeObserver(() => { resize(); draw(performance.now()); placeLabels(); });
       ro.observe(el);
       const io = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; kick(); });
       io.observe(el);
-      const onPointer = (event: PointerEvent) => {
-        const rect = el.getBoundingClientRect();
-        pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
-        pointer.y = ((event.clientY - rect.top) / rect.height) * 2 - 1;
-      };
-      if (!reduce) window.addEventListener('pointermove', onPointer, { passive: true });
       document.addEventListener('visibilitychange', kick);
       cleanup = () => {
         cancelAnimationFrame(frame); ro.disconnect(); io.disconnect();
-        window.removeEventListener('pointermove', onPointer); document.removeEventListener('visibilitychange', kick);
+        document.removeEventListener('visibilitychange', kick);
         geometry.dispose(); material.dispose(); dustGeometry.dispose(); dustMaterial.dispose();
         coreGeometry.dispose(); coreMaterial.dispose(); flowGeometry.dispose(); flowMaterial.dispose();
         renderer.dispose(); renderer.domElement.remove();
       };
-    })();
-    return () => { disposed = true; cleanup(); };
+    })());
+    return () => { disposed = true; cancelStart(); cleanup(); };
   }, []);
 
   const names = [labels.design, labels.experiment, labels.evolve];

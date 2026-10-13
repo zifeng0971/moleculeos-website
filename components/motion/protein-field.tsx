@@ -33,6 +33,8 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
     let letters: string[] = [], original: string[] = [], baseAlpha: Float32Array = new Float32Array(0), heat: Float32Array = new Float32Array(0);
     let mutatedUntil: Float64Array = new Float64Array(0);
     let base: HTMLCanvasElement | null = null;
+    // The static grid is painted once as the canvas's CSS background; each frame then only draws the lit residues.
+    let baseUrl = '', baseReady = false, baseToken = 0;
     // Glyph atlas: one row per colour (grey + 4 classes), one column per residue.
     let atlas: HTMLCanvasElement | null = null;
     let frame = 0, visible = true, lastPointer = -Infinity;
@@ -84,6 +86,12 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
       }
       buildAtlas();
       measureCalm();
+      baseReady = false; base = null;
+      const token = ++baseToken;
+      if (worker) {
+        worker.postMessage({ token, width: canvas.width, height: canvas.height, dpr, cols, letters: letters.join(''), alpha: baseAlpha, alphabet: ALPHABET, font: FONT, cellW: CELL_W, cellH: CELL_H });
+        return;
+      }
       base = document.createElement('canvas');
       base.width = canvas.width; base.height = canvas.height;
       const b = base.getContext('2d')!;
@@ -92,11 +100,30 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
         b.globalAlpha = baseAlpha[i];
         b.drawImage(atlas!, idx * CELL_W * dpr, 0, CELL_W * dpr, CELL_H * dpr, (i % cols) * CELL_W * dpr, Math.floor(i / cols) * CELL_H * dpr, CELL_W * dpr, CELL_H * dpr);
       }
+      base.toBlob(blob => { if (blob) showBase(token, blob); });
     };
+    const showBase = (token: number, blob: Blob) => {
+      if (token !== baseToken) return;
+      if (baseUrl) URL.revokeObjectURL(baseUrl);
+      baseUrl = URL.createObjectURL(blob);
+      canvas.style.backgroundImage = `url(${baseUrl})`;
+      canvas.style.backgroundSize = '100% 100%';
+      baseReady = true; base = null;
+      draw(performance.now());
+    };
+    // Paint the static grid in a worker when OffscreenCanvas is available; otherwise fall back to the main thread.
+    let worker: Worker | null = null;
+    if (typeof OffscreenCanvas !== 'undefined') {
+      try {
+        worker = new Worker(new URL('./protein-field.worker.ts', import.meta.url));
+        worker.onmessage = (event: MessageEvent<{ token: number; blob: Blob }>) => showBase(event.data.token, event.data.blob);
+        worker.onerror = () => { worker?.terminate(); worker = null; layout(); draw(performance.now()); };
+      } catch { worker = null; }
+    }
 
     const draw = (now: number) => {
       ctx.clearRect(0, 0, width, height);
-      if (base) { ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(base, 0, 0); ctx.restore(); }
+      if (base && !baseReady) { ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(base, 0, 0); ctx.restore(); }
       if (reduce) return;
 
       // Without a recent pointer, a spotlight drifts on its own (touch devices, or pointer elsewhere).
@@ -181,6 +208,7 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
       cancelAnimationFrame(frame); resizeObserver.disconnect(); intersection.disconnect();
+      baseToken++; worker?.terminate(); if (baseUrl) URL.revokeObjectURL(baseUrl);
       window.removeEventListener('pointermove', onPointer); document.removeEventListener('visibilitychange', onVisibility);
     };
   }, [calmSelector]);
