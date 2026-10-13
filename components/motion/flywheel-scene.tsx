@@ -14,7 +14,16 @@ const NODES = [
 ] as const;
 const LAPS_TO_CONVERGE = 3;
 
+// Fade particles out before they reach the canvas edge, so nothing is ever clipped into a hard line.
+// Done in the shader rather than with a CSS mask, which Chrome can drop while an ancestor animates a filter.
+const EDGE_FADE = /* glsl */ `
+float edgeFade(vec4 clip) {
+  vec2 ndc = abs(clip.xy / clip.w);
+  return smoothstep(1.0, 0.68, ndc.y) * smoothstep(1.0, 0.8, ndc.x);
+}`;
+
 const VERTEX = /* glsl */ `
+${EDGE_FADE}
 uniform float uRot, uPrecision, uHead, uTime, uSize, uPixelRatio;
 attribute float aAngle, aSize;
 attribute vec3 aNoise;
@@ -44,7 +53,7 @@ void main() {
   // Depth cue: the far side of the wheel recedes.
   float depth = smoothstep(-10.5, -5.5, mv.z);
   vColor = sectorColor(wa) * (0.62 + (0.85 - 0.4 * uPrecision) * head);
-  vAlpha = clamp((mix(0.3, 0.72, uPrecision) * (0.45 + 0.55 * aSize) + head * 0.5) * mix(0.4, 1.0, depth), 0.0, 1.0);
+  vAlpha = clamp((mix(0.3, 0.72, uPrecision) * (0.45 + 0.55 * aSize) + head * 0.5) * mix(0.4, 1.0, depth), 0.0, 1.0) * edgeFade(gl_Position);
   gl_PointSize = aSize * (0.9 + head * 1.05) * uSize * uPixelRatio / -mv.z;
 }`;
 
@@ -59,6 +68,7 @@ void main() {
 
 // NewOrigin core: a slowly turning particle sphere that grows denser and brighter as precision rises.
 const CORE_VERTEX = /* glsl */ `
+${EDGE_FADE}
 uniform float uTime, uPrecision, uPulse, uSize, uPixelRatio;
 attribute float aSize;
 varying float vAlpha;
@@ -71,13 +81,14 @@ void main() {
   gl_Position = projectionMatrix * mv;
   float rim = 1.0 - abs(normalize(p).z);
   vColor = mix(vec3(0.75, 0.66, 1.0), vec3(1.0), 0.3 + 0.55 * uPulse);
-  vAlpha = (0.38 + 0.5 * uPrecision + 0.6 * uPulse) * (0.55 + 0.45 * rim);
+  vAlpha = (0.38 + 0.5 * uPrecision + 0.6 * uPulse) * (0.55 + 0.45 * rim) * edgeFade(gl_Position);
   gl_PointSize = aSize * (1.0 + uPulse * 0.6) * uSize * uPixelRatio / -mv.z;
 }`;
 
 // Flows: particles travel along an arc. Flow 0 carries experimental results from "evolve" into the core;
 // flow 1 carries the updated model from the core out to "design".
 const FLOW_VERTEX = /* glsl */ `
+${EDGE_FADE}
 uniform float uTime, uIn, uOut, uSize, uPixelRatio;
 uniform vec3 uFrom, uTo;
 attribute float aFlow, aT;
@@ -96,7 +107,7 @@ void main() {
   float strength = incoming ? uIn : uOut;
   vec3 core = vec3(0.85, 0.8, 1.0);
   vColor = incoming ? mix(vec3(0.43, 0.83, 1.0), core, t) : mix(core, vec3(0.66, 0.55, 1.0), t);
-  vAlpha = strength * sin(3.14159 * t);
+  vAlpha = strength * sin(3.14159 * t) * edgeFade(gl_Position);
   gl_PointSize = (1.1 + aJitter.z * 0.9) * uSize * uPixelRatio / -mv.z;
 }`;
 

@@ -15,7 +15,7 @@ export function FlywheelSection() {
         <h2 className="section-title mx-auto"><Phrases text={t('title')} /></h2>
         <p className="section-copy mx-auto">{t('description')}</p>
       </Reveal>
-      <Reveal delay={0.1}>
+      <Reveal delay={0.1} blur={false}>
         <FlywheelScene labels={{ design: t('design'), experiment: t('experiment'), evolve: t('evolve'), round: n => t('round', { n }), precision: t('precision'), illustrative: t('illustrative') }} />
       </Reveal>
       <ol className="sr-only">{(['design', 'experiment', 'evolve'] as const).map(key => <li key={key}>{t(key)}</li>)}</ol>
