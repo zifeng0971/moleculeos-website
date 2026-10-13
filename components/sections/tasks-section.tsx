@@ -75,7 +75,6 @@ export function TasksSection({ locale, availableMedia = [] }: { locale: Locale; 
         <AnimatePresence mode="wait" initial={false}>
           <motion.div key={task.id} role="tabpanel" id={`capability-panel-${task.id}`} aria-labelledby={`capability-tab-${task.id}`} className="min-w-0" initial={{opacity:0,y:reduce?0:16,filter:reduce?'none':'blur(8px)'}} animate={{opacity:1,y:0,filter:'blur(0px)'}} exit={{opacity:0,y:reduce?0:-8,filter:reduce?'none':'blur(6px)'}} transition={{duration:reduce?0.15:0.45,ease:[0.16,1,0.3,1]}}>
             <CapabilityMedia key={task.media} task={task} available={availableMedia.includes(task.media)} labels={t.raw('visual') as TaskVisualLabels}/>
-            <dl className="capability-copy mt-6">{(['situation','approach','outcome'] as const).map(key => <div key={key}><dt>{t(key)}</dt><dd>{task[key]}</dd></div>)}</dl>
           </motion.div>
         </AnimatePresence>
       </div>

@@ -386,9 +386,6 @@ dialog::backdrop { background: rgba(0,0,0,.72); }
 .capability-media-empty { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; }
 .capability-media-empty p { max-width: 32ch; font-size: 18px; font-weight: 600; color: var(--text-primary); }
 .capability-media-empty small { color: var(--text-tertiary); font-size: 13px; }
-.capability-copy { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 24px; }
-.capability-copy dt { font-size: 12px; color: var(--text-tertiary); }
-.capability-copy dd { margin-top: 12px; font-size: 15px; line-height: 1.85; color: var(--text-secondary); }
 @media (max-width: 1023px) {
   .capability-selector { grid-template-columns: minmax(0,1fr); gap: 24px; }
   .capability-tabs { flex-direction: row; overflow-x: auto; padding: 4px 2px; scrollbar-width: none; }
@@ -396,7 +393,6 @@ dialog::backdrop { background: rgba(0,0,0,.72); }
   .capability-tab { flex: 0 0 210px; }
 }
 @media (max-width: 767px) {
-  .capability-copy { grid-template-columns: minmax(0,1fr); gap: 24px; }
   .capability-tab { flex-basis: 190px; }
   .capability-media-empty p { font-size: 15px; }
 }
