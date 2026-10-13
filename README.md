@@ -2,6 +2,8 @@
 
 MoleculeOS 产品官网，使用 Next.js 14 App Router、TypeScript、Tailwind CSS、next-intl 与 Framer Motion 构建。站点默认中文，英文页面位于 `/en`，支持静态导出。
 
+> 协作开发请先阅读 [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)（环境、目录、样式约定、分支与提交流程）。
+
 ## 本地启动
 
 ```bash

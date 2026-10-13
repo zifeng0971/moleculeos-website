@@ -12,3 +12,7 @@ app/dev/manual-assets/page.tsx
 public/manual-assets/**/gif-original/
 content/manual/.media-cache/
 preview-package
+
+# Local-only: raw screen recordings (share via cloud drive) and personal tool config
+manual-videos/
+.claude/
