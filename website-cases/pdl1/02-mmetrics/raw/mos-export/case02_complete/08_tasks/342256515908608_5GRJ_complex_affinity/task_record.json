@@ -1,0 +1,24 @@
+{
+  "task_id": "342256515908608",
+  "name": "5GRJ_complex_affinity",
+  "type": "Binding Affinity Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:20Z",
+  "duration": "1.5min",
+  "payload": {
+    "input_structure": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+    "chain_ids": "A,B,C"
+  },
+  "chain": "A,B,C",
+  "purpose": "ddG mutation scan across the VH/VL - PD-L1 interface",
+  "raw_dir": "binding_affinity_mutation_effect_342256515908608",
+  "raw_files": [
+    "affinity_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "affinity_scores.csv",
+      "bytes": 445350
+    }
+  ]
+}

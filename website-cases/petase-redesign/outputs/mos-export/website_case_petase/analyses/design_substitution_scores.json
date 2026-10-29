@@ -1,0 +1,56 @@
+[
+ {
+  "auth_res": 130,
+  "construct_pos": 137,
+  "unp_res": 159,
+  "substitution": "W130H",
+  "seq_score": -1.554,
+  "evo_score": -8.576,
+  "struct_score": 2.53
+ },
+ {
+  "auth_res": 156,
+  "construct_pos": 163,
+  "unp_res": 185,
+  "substitution": "W156Y",
+  "seq_score": -0.612,
+  "evo_score": -4.32,
+  "struct_score": 0.975
+ },
+ {
+  "auth_res": 157,
+  "construct_pos": 164,
+  "unp_res": 186,
+  "substitution": "D157H",
+  "seq_score": -0.113,
+  "evo_score": -0.668,
+  "struct_score": 3.942
+ },
+ {
+  "auth_res": 157,
+  "construct_pos": 164,
+  "unp_res": 186,
+  "substitution": "D157Y",
+  "seq_score": -0.661,
+  "evo_score": -4.896,
+  "struct_score": -0.079
+ },
+ {
+  "auth_res": 179,
+  "construct_pos": 186,
+  "unp_res": 208,
+  "substitution": "I179V",
+  "seq_score": 0.937,
+  "evo_score": -1.672,
+  "struct_score": -0.421
+ },
+ {
+  "auth_res": 209,
+  "construct_pos": 216,
+  "unp_res": 238,
+  "substitution": "S209G",
+  "seq_score": -0.646,
+  "evo_score": -6.943,
+  "struct_score": 0.666
+ }
+]

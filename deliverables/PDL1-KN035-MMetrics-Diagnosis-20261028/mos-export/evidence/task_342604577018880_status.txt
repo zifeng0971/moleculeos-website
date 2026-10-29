@@ -1,0 +1,18 @@
+CheckMOSTask(342604577018880) — re-read 2026-10-28T08:44:5xZ
+
+[SUCCEED] mmetrics-analysis-342604299285504
+Type:     MOSTask
+Task ID:  342604577018880
+Started:  2026-10-21 02:21:36
+Duration: 3s
+
+Input parameters: see task_342604577018880_payload.json (verbatim, identical to the copy
+captured on 2026-10-21). It contains exactly two keys:
+  input_structure  = user_objects/123/330665428816896/342604293768192_MMFold_1.cif
+  autocomp_results = result_data.objects[], seven objects produced by task 342604299285504
+
+Output: 1 file, record.json
+
+Note: no chain list, no query sequence, no homology database/threshold parameter is present
+in the payload. Everything the MMetrics task could know about sequences comes from the seven
+autocompute objects.

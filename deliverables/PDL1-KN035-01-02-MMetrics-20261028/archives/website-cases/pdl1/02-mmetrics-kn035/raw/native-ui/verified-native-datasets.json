@@ -1,0 +1,48 @@
+{
+  "MutXevo.csv": {
+    "rows": 4920,
+    "columns": [
+      "chain",
+      "mutation",
+      "score"
+    ],
+    "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+    "source_kind": "native_UI_download",
+    "every_row_WT_and_numbering_verified": true
+  },
+  "MutXstruct.csv": {
+    "rows": 4920,
+    "columns": [
+      "chain",
+      "mutation",
+      "score"
+    ],
+    "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+    "source_kind": "native_UI_download",
+    "every_row_WT_and_numbering_verified": true
+  },
+  "MutXseq.csv": {
+    "rows": 4920,
+    "columns": [
+      "chain",
+      "mutation",
+      "score"
+    ],
+    "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+    "source_kind": "native_UI_download",
+    "every_row_WT_and_numbering_verified": true
+  },
+  "MutXaff.csv": {
+    "rows": 4674,
+    "columns": [
+      "",
+      "mutstr",
+      "ddG_pred",
+      "score_ddg",
+      "rank"
+    ],
+    "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+    "source_kind": "native_UI_download",
+    "every_row_WT_and_numbering_verified": true
+  }
+}

@@ -1,0 +1,499 @@
+[
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:GLY102",
+    "residue_b": "C:ASN46",
+    "distance_A": 2.28
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:SER54",
+    "residue_b": "C:TYR39",
+    "distance_A": 2.29
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:THR106",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.65
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:GLY55",
+    "residue_b": "C:SER100",
+    "distance_A": 2.73
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:GLU41",
+    "distance_A": 2.75
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.8
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:THR105",
+    "residue_b": "C:ASP44",
+    "distance_A": 3.03
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:ARG96",
+    "distance_A": 3.15
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "H-Bond",
+    "residue_a": "A:SER31",
+    "residue_b": "C:GLN49",
+    "distance_A": 3.29
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "π-π Stack",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:TYR39",
+    "distance_A": 5.16
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "π-π Stack",
+    "residue_a": "A:PHE59",
+    "residue_b": "C:TYR106",
+    "distance_A": 5.55
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:THR106",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.65
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:GLY55",
+    "residue_b": "C:SER100",
+    "distance_A": 2.73
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:GLU41",
+    "distance_A": 2.75
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.8
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:THR105",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.94
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:THR103",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.99
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:GLY102",
+    "residue_b": "C:ASN46",
+    "distance_A": 3.02
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:ARG96",
+    "distance_A": 3.15
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:GLU41",
+    "distance_A": 3.18
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:SER54",
+    "residue_b": "C:TYR39",
+    "distance_A": 3.2
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:PRO53",
+    "residue_b": "C:TYR39",
+    "distance_A": 3.21
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:MET98",
+    "distance_A": 3.29
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:SER31",
+    "residue_b": "C:GLN49",
+    "distance_A": 3.29
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:GLY102",
+    "residue_b": "C:LYS45",
+    "distance_A": 3.3
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:GLY102",
+    "residue_b": "C:VAL59",
+    "distance_A": 3.33
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:GLU43",
+    "distance_A": 3.35
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:PHE59",
+    "residue_b": "C:TYR106",
+    "distance_A": 3.36
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:LYS45",
+    "distance_A": 3.37
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:LEU101",
+    "residue_b": "C:VAL59",
+    "distance_A": 3.44
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:SER54",
+    "residue_b": "C:ILE37",
+    "distance_A": 3.57
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:THR28",
+    "residue_b": "C:LYS58",
+    "distance_A": 3.62
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:SER31",
+    "residue_b": "C:ASP56",
+    "distance_A": 3.67
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:SER31",
+    "residue_b": "C:LYS58",
+    "distance_A": 3.67
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:PRO53",
+    "residue_b": "C:GLN49",
+    "distance_A": 3.68
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL104",
+    "residue_b": "C:ASN46",
+    "distance_A": 3.7
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:ILE57",
+    "residue_b": "C:MET98",
+    "distance_A": 3.8
+  },
+  {
+    "chain_pair": "A:C",
+    "type": "VdW Contact",
+    "residue_a": "A:TYR52",
+    "residue_b": "C:TYR39",
+    "distance_A": 3.86
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "H-Bond",
+    "residue_a": "A:VAL107",
+    "residue_b": "B:TYR38",
+    "distance_A": 2.45
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "H-Bond",
+    "residue_a": "A:GLN39",
+    "residue_b": "B:TYR89",
+    "distance_A": 3.26
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "π-Cation",
+    "residue_a": "A:LYS100",
+    "residue_b": "B:TYR51",
+    "distance_A": 4.18
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "π-π Stack",
+    "residue_a": "A:TRP110",
+    "residue_b": "B:TYR38",
+    "distance_A": 5.62
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "π-π Stack",
+    "residue_a": "A:TRP110",
+    "residue_b": "B:PHE101",
+    "distance_A": 6.32
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:THR106",
+    "residue_b": "B:ARG99",
+    "distance_A": 2.8
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:LEU45",
+    "residue_b": "B:PHE101",
+    "distance_A": 3.03
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL107",
+    "residue_b": "B:LEU48",
+    "distance_A": 3.08
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:TRP110",
+    "residue_b": "B:PRO46",
+    "distance_A": 3.13
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:THR105",
+    "residue_b": "B:ARG99",
+    "distance_A": 3.15
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:VAL107",
+    "residue_b": "B:TYR38",
+    "distance_A": 3.17
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:GLN39",
+    "residue_b": "B:TYR89",
+    "distance_A": 3.26
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:TRP47",
+    "residue_b": "B:THR98",
+    "distance_A": 3.31
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:THR106",
+    "residue_b": "B:TYR38",
+    "distance_A": 3.41
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:THR105",
+    "residue_b": "B:TYR93",
+    "distance_A": 3.46
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:GLN112",
+    "residue_b": "B:ALA45",
+    "distance_A": 3.49
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:LYS100",
+    "residue_b": "B:TYR51",
+    "distance_A": 3.5
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:ASP108",
+    "residue_b": "B:LEU48",
+    "distance_A": 3.58
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:LEU45",
+    "residue_b": "B:TYR89",
+    "distance_A": 3.59
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:TRP110",
+    "residue_b": "B:TYR38",
+    "distance_A": 3.68
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:THR105",
+    "residue_b": "B:THR98",
+    "distance_A": 3.81
+  },
+  {
+    "chain_pair": "A:B",
+    "type": "VdW Contact",
+    "residue_a": "A:TYR95",
+    "residue_b": "B:PRO46",
+    "distance_A": 3.84
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "H-Bond",
+    "residue_a": "B:ARG99",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.73
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "H-Bond",
+    "residue_a": "B:TYR34",
+    "residue_b": "C:GLU43",
+    "distance_A": 2.77
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:ARG99",
+    "residue_b": "C:ASP44",
+    "distance_A": 2.73
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR34",
+    "residue_b": "C:GLU43",
+    "distance_A": 2.77
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR93",
+    "residue_b": "C:ASP44",
+    "distance_A": 3.1
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR93",
+    "residue_b": "C:GLU43",
+    "distance_A": 3.16
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR34",
+    "residue_b": "C:LYS45",
+    "distance_A": 3.26
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR32",
+    "residue_b": "C:GLU43",
+    "distance_A": 3.35
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR34",
+    "residue_b": "C:ASP44",
+    "distance_A": 3.4
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:SER97",
+    "residue_b": "C:ARG96",
+    "distance_A": 3.45
+  },
+  {
+    "chain_pair": "B:C",
+    "type": "VdW Contact",
+    "residue_a": "B:TYR34",
+    "residue_b": "C:MET42",
+    "distance_A": 3.63
+  }
+]

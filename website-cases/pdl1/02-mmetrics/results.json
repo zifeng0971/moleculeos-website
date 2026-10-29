@@ -1,0 +1,2129 @@
+{
+  "case_id": "02",
+  "status": "native_mmetrics_collected_with_documented_scope_limits",
+  "observed_utc": "2026-10-20T07:00:48.238348+00:00",
+  "native_mmetrics_ui_status": "Loaded native sections, all ten native CSVs downloaded and inspected; screenshots, DOM, SVG, pagination and selection states captured.",
+  "native_autocompute_task_id": "342256189539328",
+  "explicit_task_count": 11,
+  "explicit_tasks_succeeded": 11,
+  "tasks": [
+    {
+      "task_id": "342256475304960",
+      "name": "5GRJ_PDL1_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "3s",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER",
+        "max_seq": 500
+      },
+      "chain": "C",
+      "purpose": "homologs of PD-L1 chain C (221 aa ectodomain construct)",
+      "raw_dir": "sequence_homology_search_342256475304960",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 8478245
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 501679
+        }
+      ]
+    },
+    {
+      "task_id": "342256475644928",
+      "name": "5GRJ_VH_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "6s",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS",
+        "max_seq": 500
+      },
+      "chain": "A",
+      "purpose": "homologs of avelumab VH",
+      "raw_dir": "sequence_homology_search_342256475644928",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 1925682
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 139129
+        }
+      ]
+    },
+    {
+      "task_id": "342256477762560",
+      "name": "5GRJ_VL_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "9s",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL",
+        "max_seq": 500
+      },
+      "chain": "B",
+      "purpose": "homologs of avelumab VL",
+      "raw_dir": "sequence_homology_search_342256477762560",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 1662385
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 129567
+        }
+      ]
+    },
+    {
+      "task_id": "342256486130688",
+      "name": "5GRJ_VH_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:12Z",
+      "duration": "3s",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS"
+      },
+      "chain": "A",
+      "purpose": "deep sequence-model mutation scan, VH",
+      "raw_dir": "sequence_fitness_mutation_effect_342256486130688",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 61352
+        }
+      ]
+    },
+    {
+      "task_id": "342256488231936",
+      "name": "5GRJ_VL_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:13Z",
+      "duration": "5s",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+      },
+      "chain": "B",
+      "purpose": "deep sequence-model mutation scan, VL",
+      "raw_dir": "sequence_fitness_mutation_effect_342256488231936",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 56246
+        }
+      ]
+    },
+    {
+      "task_id": "342256491451392",
+      "name": "5GRJ_PDL1_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:14Z",
+      "duration": "11s",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+      },
+      "chain": "C",
+      "purpose": "deep sequence-model mutation scan, PD-L1",
+      "raw_dir": "sequence_fitness_mutation_effect_342256491451392",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 115347
+        }
+      ]
+    },
+    {
+      "task_id": "342256499057664",
+      "name": "5GRJ_VH_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:16Z",
+      "duration": "1.4min",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS"
+      },
+      "chain": "A",
+      "purpose": "MSA conservation/covariance scan, VH",
+      "raw_dir": "evolutionary_mutation_effect_342256499057664",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 49042
+        }
+      ]
+    },
+    {
+      "task_id": "342256501269504",
+      "name": "5GRJ_VL_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:16Z",
+      "duration": "2.0min",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+      },
+      "chain": "B",
+      "purpose": "MSA conservation/covariance scan, VL",
+      "raw_dir": "evolutionary_mutation_effect_342256501269504",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 44676
+        }
+      ]
+    },
+    {
+      "task_id": "342256504251392",
+      "name": "5GRJ_PDL1_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:17Z",
+      "duration": "3.4min",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+      },
+      "chain": "C",
+      "purpose": "MSA conservation/covariance scan, PD-L1",
+      "raw_dir": "evolutionary_mutation_effect_342256504251392",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 90591
+        }
+      ]
+    },
+    {
+      "task_id": "342256515642368",
+      "name": "5GRJ_complex_structstab",
+      "type": "Structural Stability Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:20Z",
+      "duration": "5s",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif"
+      },
+      "chain": "A,B,C",
+      "purpose": "reverse-folding mutation scan on the whole 3-chain complex",
+      "raw_dir": "structural_stability_mutation_effect_342256515642368",
+      "raw_files": [
+        "struct_fitness_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "struct_fitness_scores.csv",
+          "bytes": 227598
+        }
+      ]
+    },
+    {
+      "task_id": "342256515908608",
+      "name": "5GRJ_complex_affinity",
+      "type": "Binding Affinity Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:20Z",
+      "duration": "1.5min",
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+        "chain_ids": "A,B,C"
+      },
+      "chain": "A,B,C",
+      "purpose": "ddG mutation scan across the VH/VL - PD-L1 interface",
+      "raw_dir": "binding_affinity_mutation_effect_342256515908608",
+      "raw_files": [
+        "affinity_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "affinity_scores.csv",
+          "bytes": 445350
+        }
+      ]
+    },
+    {
+      "task_id": "342256189539328",
+      "name": "autocompute-5GRJ",
+      "type": "MOSTask",
+      "status": "running",
+      "submitted_utc": "2026-10-20T02:44:00Z",
+      "duration_reported": "2.1min (unchanged across checks)",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+        "structure_pathFileId": "342256182768640",
+        "structure_pathFilename": "5GRJ.cif"
+      },
+      "chain": "A,B,C",
+      "purpose": "platform-side MMetrics autocompute job created automatically by the structure import",
+      "raw_dir": null,
+      "raw_files": [],
+      "note": "Still RUNNING at the final snapshot; no output files exist and no MMetrics result object was registered. Preserved as INCOMPLETE — not treated as a delivered module.",
+      "raw_files_copied": []
+    }
+  ],
+  "construct": "Avelumab VH/VL variable fragments plus PD-L1 ectodomain. No antibody constant/Fc domains are present in 5GRJ input sequences.",
+  "chains": [
+    {
+      "mos_chain": "A",
+      "original_auth_chain": "H",
+      "role": "VH",
+      "entity_sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS",
+      "entity_length": 120,
+      "modeled_residue_count": 118,
+      "modeled_label_min": 1,
+      "modeled_label_max": 118,
+      "unmodeled_label_positions": [
+        119,
+        120
+      ]
+    },
+    {
+      "mos_chain": "B",
+      "original_auth_chain": "L",
+      "role": "VL",
+      "entity_sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL",
+      "entity_length": 110,
+      "modeled_residue_count": 108,
+      "modeled_label_min": 2,
+      "modeled_label_max": 109,
+      "unmodeled_label_positions": [
+        1,
+        110
+      ]
+    },
+    {
+      "mos_chain": "C",
+      "original_auth_chain": "A",
+      "role": "PD-L1",
+      "entity_sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER",
+      "entity_length": 221,
+      "modeled_residue_count": 213,
+      "modeled_label_min": 1,
+      "modeled_label_max": 216,
+      "unmodeled_label_positions": [
+        168,
+        169,
+        170,
+        217,
+        218,
+        219,
+        220,
+        221
+      ]
+    }
+  ],
+  "module_status": [
+    {
+      "module": "Overview (chain identity)",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "MOS sanitized object + RCSB CIF metadata + UniProt Q9NZQ7 (built-in, deterministic)",
+      "status": "complete",
+      "provenance": [
+        "experimental",
+        "database"
+      ],
+      "artifacts": [
+        "01_overview/overview_chain_identity.json",
+        "01_overview/overview_chains.csv",
+        "01_overview/chainC_Q9NZQ7_mapping.json",
+        "01_overview/*.fasta"
+      ],
+      "key_facts": {
+        "chains": [
+          {
+            "mos": "A",
+            "author": "H",
+            "entity": 1,
+            "role": "avelumab VH",
+            "length": 120,
+            "modelled": 118
+          },
+          {
+            "mos": "B",
+            "author": "L",
+            "entity": 2,
+            "role": "avelumab VL (lambda)",
+            "length": 110,
+            "modelled": 108
+          },
+          {
+            "mos": "C",
+            "author": "A",
+            "entity": 3,
+            "role": "PD-L1 ectodomain",
+            "length": 221,
+            "modelled": 213,
+            "uniprot": "Q9NZQ7",
+            "uniprot_span_modelled": [
+              18,
+              230
+            ]
+          }
+        ],
+        "resolution_A": 3.206,
+        "method": "X-ray diffraction"
+      }
+    },
+    {
+      "module": "Description / annotation text (MMetrics 'Generating description')",
+      "mmetrics_ui": "unavailable (job still running)",
+      "delivered_by": "not produced - substituted with structured overview + interaction narrative",
+      "status": "not_available",
+      "provenance": [],
+      "artifacts": []
+    },
+    {
+      "module": "Top homologs + similarity",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "3 x MOS Sequence Homology Search",
+      "status": "complete",
+      "provenance": [
+        "mos_prediction"
+      ],
+      "tasks": [
+        "342256475304960",
+        "342256475644928",
+        "342256477762560"
+      ],
+      "artifacts": [
+        "02_homologs/PD-L1_homologs.csv",
+        "02_homologs/VH_homologs.csv",
+        "02_homologs/VL_homologs.csv",
+        "02_homologs/homology_summary.json"
+      ],
+      "key_facts": {
+        "PD-L1": {
+          "unique_hits": 500,
+          "identical_entries": 42,
+          "closest_ortholog": "mouse PD-L1 6SRU_A at 77.8% identity",
+          "closest_paralog": "PD-L2 Q9BQ51 at 42.8% identity",
+          "top": [
+            {
+              "hit": "pdb|5JDR|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 2.10835e-167,
+              "bit_score": 463.766
+            },
+            {
+              "hit": "pdb|3BIK|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.66052e-167,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "sp|Q9NZQ7.1|",
+              "description": "RecName: Full=Programmed cell death 1 ligand 1; Short=PD-L1; Short=PDCD1 ligand 1; Short=Programmed death ligand 1; Short=hPD-L1; AltName: Full=B7 homolog 1; Sh",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.59174e-166,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "pdb|35TL|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.59174e-166,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "pdb|5GRJ|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 2.1771e-167,
+              "bit_score": 462.996
+            }
+          ]
+        },
+        "VH": {
+          "unique_hits": 500,
+          "top": [
+            {
+              "hit": "pdb|4NKI|H",
+              "description": "Chain H, Fab light chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 120,
+              "e_value": 7.92149e-85,
+              "bit_score": 249.98
+            },
+            {
+              "hit": "pdb|5GRJ|H",
+              "description": "Chain H, avelumab H chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 120,
+              "e_value": 1.37605e-84,
+              "bit_score": 245.358
+            },
+            {
+              "hit": "pdb|4OGX|H",
+              "description": "Chain H, DX-2930 HEAVY CHAIN [Homo sapiens]",
+              "identity_percent": 86.1,
+              "alignment_length": 122,
+              "e_value": 5.09116e-69,
+              "bit_score": 209.92
+            },
+            {
+              "hit": "pdb|7LSB|B",
+              "description": "Chain B, B1 Fab heavy chain [Homo sapiens]",
+              "identity_percent": 87.5,
+              "alignment_length": 120,
+              "e_value": 1.01021e-68,
+              "bit_score": 208.764
+            },
+            {
+              "hit": "pdb|6SS5|HHH",
+              "description": "Chain HHH, Fab C0020187 heavy chain (IgG1) [Homo sapiens]",
+              "identity_percent": 84.2,
+              "alignment_length": 120,
+              "e_value": 1.68441e-67,
+              "bit_score": 206.068
+            }
+          ]
+        },
+        "VL": {
+          "unique_hits": 500,
+          "top": [
+            {
+              "hit": "pdb|7K90|L",
+              "description": "Chain L, C144 Fab Light Chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 1.72755e-74,
+              "bit_score": 223.016
+            },
+            {
+              "hit": "pdb|4NKI|L",
+              "description": "Chain L, Fab heavy chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 2.67672e-74,
+              "bit_score": 222.246
+            },
+            {
+              "hit": "pdb|5GRJ|L",
+              "description": "Chain L, avelumab L chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 2.35123e-75,
+              "bit_score": 221.09
+            },
+            {
+              "hit": "pdb|8DCE|H",
+              "description": "Chain H, C144 scFv [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 7.57282e-73,
+              "bit_score": 220.705
+            },
+            {
+              "hit": "pdb|7L2D|L",
+              "description": "Chain L, 1-87 light chain [Homo sapiens]",
+              "identity_percent": 98.2,
+              "alignment_length": 110,
+              "e_value": 2.90062e-72,
+              "bit_score": 217.238
+            }
+          ]
+        }
+      }
+    },
+    {
+      "module": "VH/VL + IMGT/CDR annotation",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local ANARCI (IMGT scheme) on entity sequences - built-in analysis, not a MOS model",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "03_antibody_annotation/imgt_annotation.json",
+        "03_antibody_annotation/imgt_residue_mapping.csv",
+        "03_antibody_annotation/imgt_cdr_summary.csv"
+      ],
+      "key_facts": {
+        "VH_cdr": {
+          "CDR1-IMGT": "GFTFSSYI",
+          "CDR2-IMGT": "IYPSGGIT",
+          "CDR3-IMGT": "ARIKLGTVTTVDY"
+        },
+        "VL_cdr": {
+          "CDR1-IMGT": "SSDVGGYNY",
+          "CDR2-IMGT": "DVS",
+          "CDR3-IMGT": "SSYTSSSTRV"
+        },
+        "VH_cdr_mos_span": {
+          "CDR1-IMGT": [
+            26,
+            33
+          ],
+          "CDR2-IMGT": [
+            51,
+            58
+          ],
+          "CDR3-IMGT": [
+            97,
+            109
+          ]
+        },
+        "VL_cdr_mos_span": {
+          "CDR1-IMGT": [
+            26,
+            34
+          ],
+          "CDR2-IMGT": [
+            52,
+            54
+          ],
+          "CDR3-IMGT": [
+            91,
+            100
+          ]
+        },
+        "vh_chain_type_hmm_best": {
+          "id": "alpaca_H",
+          "evalue": 6.6e-65,
+          "bitscore": 208.3,
+          "query_start": 0,
+          "query_end": 120
+        },
+        "vl_chain_type_hmm_best": {
+          "id": "human_L",
+          "evalue": 3.7e-53,
+          "bitscore": 170.2,
+          "query_start": 0,
+          "query_end": 110
+        },
+        "caveat": "ANARCI's best HMM hit for the VH is 'alpaca_H' because the avelumab VH3-23 framework with a short CDR-H3 resembles a VHH; the molecule is a conventional human Fab heavy chain. Germline gene assignment was not resolved locally (no IMGT germline database in the sandbox)."
+      }
+    },
+    {
+      "module": "Sequence liability / risk sites",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local motif scan (regex panel) on entity sequences - built-in analysis",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "04_liabilities/liability_sites.json",
+        "04_liabilities/liability_sites.csv"
+      ],
+      "key_facts": {
+        "hits": 22,
+        "no_n_glycosylation_sequon_in_Fv": true
+      }
+    },
+    {
+      "module": "Antigen-antibody interactions",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "InteractionNet (contacts) + PPInterface (burial) via interaction-analysis skill - built-in",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "05_interactions/epitope_paratope.json",
+        "05_interactions/epitope_paratope.csv",
+        "05_interactions/interface_summary.md",
+        "05_interactions/contacts/",
+        "05_interactions/if_VH_PDL1/",
+        "05_interactions/if_VL_PDL1/",
+        "05_interactions/interaction_report.jsonl"
+      ],
+      "key_facts": {
+        "epitope_residues": 45,
+        "epitope_igv_residues": 37,
+        "paratope_residues": 56,
+        "bsa_total_A2": 2950.4,
+        "hbonds_total": 14,
+        "interfaces": {
+          "A:C": {
+            "hv_side": "VH",
+            "n_pdl1_residues": 40,
+            "n_ab_residues": 44,
+            "bsa_pdl1_A2": 1125.9,
+            "bsa_ab_A2": 1167.1,
+            "bsa_total_A2": 2293.0,
+            "n_hbonds": 12
+          },
+          "B:C": {
+            "hv_side": "VL",
+            "n_pdl1_residues": 13,
+            "n_ab_residues": 12,
+            "bsa_pdl1_A2": 333.2,
+            "bsa_ab_A2": 324.2,
+            "bsa_total_A2": 657.4,
+            "n_hbonds": 2
+          }
+        }
+      }
+    },
+    {
+      "module": "Mutation scores",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "5 MOS scoring tasks (sequence fitness x3, evolutionary x3, structural stability x1 complex, binding affinity x1 complex)",
+      "status": "complete",
+      "provenance": [
+        "mos_prediction"
+      ],
+      "tasks": [
+        "342256486130688",
+        "342256488231936",
+        "342256491451392",
+        "342256499057664",
+        "342256501269504",
+        "342256504251392",
+        "342256515642368",
+        "342256515908608"
+      ],
+      "artifacts": [
+        "06_mutations/all_scores_long.csv",
+        "06_mutations/per_axis_position_summary.csv",
+        "06_mutations/raw_task_outputs/"
+      ],
+      "key_facts": {
+        "seqfit": 9020,
+        "evolve": 9020,
+        "struct": 8780,
+        "affinity": 8341
+      }
+    },
+    {
+      "module": "Recommended mutations",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local synthesis of the 5 MOS scoring axes + local interface/IMGT/liability context",
+      "status": "complete",
+      "provenance": [
+        "derived"
+      ],
+      "artifacts": [
+        "06_mutations/recommended_mutations.csv",
+        "06_mutations/liability_mitigation_candidates.csv",
+        "06_mutations/mutation_analysis.json"
+      ],
+      "key_facts": {
+        "n_recommended_rows": 56,
+        "n_liability_mitigation_candidates": 24
+      }
+    }
+  ],
+  "score_matrix": {
+    "total_rows_including_WT": 9020,
+    "WT_self_substitution_rows": 451,
+    "nonself_substitutions": 8569,
+    "positions": 451,
+    "raw_rows_by_task": {
+      "342256486130688": 2400,
+      "342256488231936": 2200,
+      "342256491451392": 4420,
+      "342256499057664": 2400,
+      "342256501269504": 2200,
+      "342256504251392": 4420,
+      "342256515642368": 8780,
+      "342256515908608": 8341
+    },
+    "available_values": {
+      "seqfit": 9020,
+      "evolve": 9020,
+      "struct": 8780,
+      "affinity_ddG": 8341
+    },
+    "audit": "Every WT residue checked against deposited entity sequence; every populated merged score checked against its raw task CSV."
+  },
+  "cdr_regions": [
+    {
+      "chain": "A",
+      "role": "VH",
+      "element": "CDR1-IMGT",
+      "sequence_or_length": "GFTFSSYI",
+      "imgt_positions": "27-38",
+      "mos_start": "26",
+      "mos_end": "33",
+      "length": "8"
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "element": "CDR2-IMGT",
+      "sequence_or_length": "IYPSGGIT",
+      "imgt_positions": "56-65",
+      "mos_start": "51",
+      "mos_end": "58",
+      "length": "8"
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "element": "CDR3-IMGT",
+      "sequence_or_length": "ARIKLGTVTTVDY",
+      "imgt_positions": "105-117",
+      "mos_start": "97",
+      "mos_end": "109",
+      "length": "13"
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "element": "CDR1-IMGT",
+      "sequence_or_length": "SSDVGGYNY",
+      "imgt_positions": "27-38",
+      "mos_start": "26",
+      "mos_end": "34",
+      "length": "9"
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "element": "CDR2-IMGT",
+      "sequence_or_length": "DVS",
+      "imgt_positions": "56-65",
+      "mos_start": "52",
+      "mos_end": "54",
+      "length": "3"
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "element": "CDR3-IMGT",
+      "sequence_or_length": "SSYTSSSTRV",
+      "imgt_positions": "105-117",
+      "mos_start": "91",
+      "mos_end": "100",
+      "length": "10"
+    }
+  ],
+  "homologs": {
+    "PD-L1": {
+      "unique_hits": 500,
+      "top5": [
+        {
+          "hit_id": "pdb|5JDR|A",
+          "hit_db": "pdb",
+          "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+          "hit_len": 237,
+          "alignment_length": 221,
+          "identical_residues": 221,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 221,
+          "gaps": 0,
+          "e_value": 2.10835e-167,
+          "bit_score": 463.766,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 221,
+          "web_link": "https://www.rcsb.org/structure/5JDR"
+        },
+        {
+          "hit_id": "pdb|3BIK|A",
+          "hit_db": "pdb",
+          "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+          "hit_len": 222,
+          "alignment_length": 221,
+          "identical_residues": 221,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 221,
+          "gaps": 0,
+          "e_value": 1.66052e-167,
+          "bit_score": 463.381,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 221,
+          "web_link": "https://www.rcsb.org/structure/3BIK"
+        },
+        {
+          "hit_id": "sp|Q9NZQ7.1|",
+          "hit_db": "sp",
+          "description": "RecName: Full=Programmed cell death 1 ligand 1; Short=PD-L1; Short=PDCD1 ligand 1; Short=Programmed death ligand 1; Short=hPD-L1; AltName: Full=B7 homolog 1; Sh",
+          "hit_len": 290,
+          "alignment_length": 221,
+          "identical_residues": 221,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 221,
+          "gaps": 0,
+          "e_value": 1.59174e-166,
+          "bit_score": 463.381,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 221,
+          "web_link": "https://www.uniprot.org/uniprotkb/Q9NZQ7/entry"
+        },
+        {
+          "hit_id": "pdb|35TL|A",
+          "hit_db": "pdb",
+          "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+          "hit_len": 290,
+          "alignment_length": 221,
+          "identical_residues": 221,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 221,
+          "gaps": 0,
+          "e_value": 1.59174e-166,
+          "bit_score": 463.381,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 221,
+          "web_link": "https://www.rcsb.org/structure/35TL"
+        },
+        {
+          "hit_id": "pdb|5GRJ|A",
+          "hit_db": "pdb",
+          "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+          "hit_len": 221,
+          "alignment_length": 221,
+          "identical_residues": 221,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 221,
+          "gaps": 0,
+          "e_value": 2.1771e-167,
+          "bit_score": 462.996,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 221,
+          "web_link": "https://www.rcsb.org/structure/5GRJ"
+        }
+      ]
+    },
+    "VH": {
+      "unique_hits": 500,
+      "top5": [
+        {
+          "hit_id": "pdb|4NKI|H",
+          "hit_db": "pdb",
+          "description": "Chain H, Fab light chain [Homo sapiens]",
+          "hit_len": 232,
+          "alignment_length": 120,
+          "identical_residues": 120,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 120,
+          "gaps": 0,
+          "e_value": 7.92149e-85,
+          "bit_score": 249.98,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 120,
+          "web_link": "https://www.rcsb.org/structure/4NKI"
+        },
+        {
+          "hit_id": "pdb|5GRJ|H",
+          "hit_db": "pdb",
+          "description": "Chain H, avelumab H chain [Homo sapiens]",
+          "hit_len": 120,
+          "alignment_length": 120,
+          "identical_residues": 120,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 120,
+          "gaps": 0,
+          "e_value": 1.37605e-84,
+          "bit_score": 245.358,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 120,
+          "web_link": "https://www.rcsb.org/structure/5GRJ"
+        },
+        {
+          "hit_id": "pdb|4OGX|H",
+          "hit_db": "pdb",
+          "description": "Chain H, DX-2930 HEAVY CHAIN [Homo sapiens]",
+          "hit_len": 225,
+          "alignment_length": 122,
+          "identical_residues": 105,
+          "identity_percent_derived": 86.1,
+          "identity_percent_reported": 0.860655737704918,
+          "positives": 108,
+          "gaps": 2,
+          "e_value": 5.09116e-69,
+          "bit_score": 209.92,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 120,
+          "web_link": "https://www.rcsb.org/structure/4OGX"
+        },
+        {
+          "hit_id": "pdb|7LSB|B",
+          "hit_db": "pdb",
+          "description": "Chain B, B1 Fab heavy chain [Homo sapiens]",
+          "hit_len": 218,
+          "alignment_length": 120,
+          "identical_residues": 105,
+          "identity_percent_derived": 87.5,
+          "identity_percent_reported": 0.875,
+          "positives": 107,
+          "gaps": 5,
+          "e_value": 1.01021e-68,
+          "bit_score": 208.764,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 120,
+          "web_link": "https://www.rcsb.org/structure/7LSB"
+        },
+        {
+          "hit_id": "pdb|6SS5|HHH",
+          "hit_db": "pdb",
+          "description": "Chain HHH, Fab C0020187 heavy chain (IgG1) [Homo sapiens]",
+          "hit_len": 233,
+          "alignment_length": 120,
+          "identical_residues": 101,
+          "identity_percent_derived": 84.2,
+          "identity_percent_reported": 0.8416666666666667,
+          "positives": 108,
+          "gaps": 0,
+          "e_value": 1.68441e-67,
+          "bit_score": 206.068,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 120,
+          "web_link": "https://www.rcsb.org/structure/6SS5"
+        }
+      ]
+    },
+    "VL": {
+      "unique_hits": 500,
+      "top5": [
+        {
+          "hit_id": "pdb|7K90|L",
+          "hit_db": "pdb",
+          "description": "Chain L, C144 Fab Light Chain [Homo sapiens]",
+          "hit_len": 216,
+          "alignment_length": 110,
+          "identical_residues": 110,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 110,
+          "gaps": 0,
+          "e_value": 1.72755e-74,
+          "bit_score": 223.016,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 110,
+          "web_link": "https://www.rcsb.org/structure/7K90"
+        },
+        {
+          "hit_id": "pdb|4NKI|L",
+          "hit_db": "pdb",
+          "description": "Chain L, Fab heavy chain [Homo sapiens]",
+          "hit_len": 216,
+          "alignment_length": 110,
+          "identical_residues": 110,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 110,
+          "gaps": 0,
+          "e_value": 2.67672e-74,
+          "bit_score": 222.246,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 110,
+          "web_link": "https://www.rcsb.org/structure/4NKI"
+        },
+        {
+          "hit_id": "pdb|5GRJ|L",
+          "hit_db": "pdb",
+          "description": "Chain L, avelumab L chain [Homo sapiens]",
+          "hit_len": 110,
+          "alignment_length": 110,
+          "identical_residues": 110,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 110,
+          "gaps": 0,
+          "e_value": 2.35123e-75,
+          "bit_score": 221.09,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 110,
+          "web_link": "https://www.rcsb.org/structure/5GRJ"
+        },
+        {
+          "hit_id": "pdb|8DCE|H",
+          "hit_db": "pdb",
+          "description": "Chain H, C144 scFv [Homo sapiens]",
+          "hit_len": 276,
+          "alignment_length": 110,
+          "identical_residues": 110,
+          "identity_percent_derived": 100.0,
+          "identity_percent_reported": 1.0,
+          "positives": 110,
+          "gaps": 0,
+          "e_value": 7.57282e-73,
+          "bit_score": 220.705,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 110,
+          "web_link": "https://www.rcsb.org/structure/8DCE"
+        },
+        {
+          "hit_id": "pdb|7L2D|L",
+          "hit_db": "pdb",
+          "description": "Chain L, 1-87 light chain [Homo sapiens]",
+          "hit_len": 215,
+          "alignment_length": 110,
+          "identical_residues": 108,
+          "identity_percent_derived": 98.2,
+          "identity_percent_reported": 0.9818181818181818,
+          "positives": 108,
+          "gaps": 0,
+          "e_value": 2.90062e-72,
+          "bit_score": 217.238,
+          "query_coverage_percent": 100.0,
+          "query_from": 1,
+          "query_to": 110,
+          "web_link": "https://www.rcsb.org/structure/7L2D"
+        }
+      ]
+    }
+  },
+  "interfaces": {
+    "A:C": {
+      "hv_side": "VH",
+      "n_pdl1_residues": 40,
+      "n_ab_residues": 44,
+      "bsa_pdl1_A2": 1125.9,
+      "bsa_ab_A2": 1167.1,
+      "bsa_total_A2": 2293.0,
+      "hbonds": [
+        {
+          "donor_chain": "C",
+          "donor_res": "GLN",
+          "donor_resnum": "49",
+          "donor_atom": "NE2",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "31",
+          "acceptor_atom": "O",
+          "distance": "3.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ARG",
+          "donor_resnum": "96",
+          "donor_atom": "NH2",
+          "acceptor_chain": "A",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "52",
+          "acceptor_atom": "OH",
+          "distance": "3.100"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "TYR",
+          "donor_resnum": "39",
+          "donor_atom": "OH",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "54",
+          "acceptor_atom": "O",
+          "distance": "2.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "SER",
+          "donor_resnum": "100",
+          "donor_atom": "OG",
+          "acceptor_chain": "A",
+          "acceptor_res": "GLY",
+          "acceptor_resnum": "55",
+          "acceptor_atom": "O",
+          "distance": "2.700"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASN",
+          "donor_resnum": "46",
+          "donor_atom": "N",
+          "acceptor_chain": "A",
+          "acceptor_res": "GLY",
+          "acceptor_resnum": "102",
+          "acceptor_atom": "O",
+          "distance": "2.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "GLU",
+          "donor_resnum": "41",
+          "donor_atom": "OE2",
+          "acceptor_chain": "A",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "52",
+          "acceptor_atom": "OH",
+          "distance": "2.800"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "TYR",
+          "donor_resnum": "39",
+          "donor_atom": "OH",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "54",
+          "acceptor_atom": "N",
+          "distance": "3.200"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "O",
+          "acceptor_chain": "A",
+          "acceptor_res": "VAL",
+          "acceptor_resnum": "104",
+          "acceptor_atom": "N",
+          "distance": "2.800"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "OD1",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "105",
+          "acceptor_atom": "N",
+          "distance": "3.000"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "OD2",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "106",
+          "acceptor_atom": "OG1",
+          "distance": "2.600"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "86",
+          "donor_atom": "OD2",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "114",
+          "acceptor_atom": "OG1",
+          "distance": "3.900"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "128",
+          "donor_atom": "OD1",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "58",
+          "acceptor_atom": "OG1",
+          "distance": "3.600"
+        }
+      ],
+      "n_hbonds": 12
+    },
+    "B:C": {
+      "hv_side": "VL",
+      "n_pdl1_residues": 13,
+      "n_ab_residues": 12,
+      "bsa_pdl1_A2": 333.2,
+      "bsa_ab_A2": 324.2,
+      "bsa_total_A2": 657.4,
+      "hbonds": [
+        {
+          "donor_chain": "C",
+          "donor_res": "ARG",
+          "donor_resnum": "108",
+          "donor_atom": "NH2",
+          "acceptor_chain": "B",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "95",
+          "acceptor_atom": "O",
+          "distance": "3.700"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "GLU",
+          "donor_resnum": "43",
+          "donor_atom": "OE1",
+          "acceptor_chain": "B",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "34",
+          "acceptor_atom": "OH",
+          "distance": "2.800"
+        }
+      ],
+      "n_hbonds": 2
+    }
+  },
+  "source_kind": {
+    "structure": "experimental 5GRJ",
+    "scores": "MOS tasks",
+    "homologs": "MOS search outputs",
+    "CDR_IMGT": "Mocha built-in ANARCI",
+    "geometry_and_risks": "Mocha built-in deterministic structural and motif analyses",
+    "native_MMetrics_modules": "Native UI and ten native output CSVs collected; see native_mmetrics section. Earlier explicit analyses retained separately."
+  },
+  "canonical_paths": {
+    "structure": "02-mmetrics/raw/mos-export/case02_complete/00_structure/5GRJ_mos_sanitized.cif",
+    "annotation": "02-mmetrics/raw/mos-export/case02_complete/03_antibody_annotation/imgt_residue_mapping.csv",
+    "mutations": "02-mmetrics/raw/mos-export/case02_complete/06_mutations/all_scores_long.csv",
+    "recommended_mutations": "02-mmetrics/raw/mos-export/case02_complete/06_mutations/recommended_mutations.csv",
+    "risks": "02-mmetrics/raw/mos-export/case02_complete/04_liabilities/liability_sites.json",
+    "numbering_map": "02-mmetrics/raw/verified-residue-numbering.json",
+    "highlight_data": "02-mmetrics/raw/verified-epitope-paratope.json"
+  },
+  "audit_notes": [
+    "9020 matrix rows include 451 WT-to-WT rows; 8569 are nonself substitutions.",
+    "Original source target has modeled entity positions 1-167 and 171-216. Missing entity positions 168-170 and 217-221 must not be collapsed when highlighting this MOS object.",
+    "Original auth PD-L1 numbering is label_seq_id + 17 (e.g. C44 maps to auth A61). The raw overview contains a contradictory +18 note and incorrect modeled-span lists; use this verified atom-site map.",
+    "Original VL modeled positions are 2-109, not 2-108.",
+    "Raw narrative calls 2293 square A burial on PD-L1; that figure sums both sides of the VH–PD-L1 pair. Use explicit per-side numbers or their mean.",
+    "ANARCI best-hit species is an HMM classification signal and is not the actual origin of the therapeutic antibody.",
+    "Recommended mutations and composite scores are computational heuristics, not experimentally validated improvements."
+  ],
+  "prior_native_observation": {
+    "status": "analysis_delivered_native_mmetrics_incomplete",
+    "observed_utc": "2026-10-20T02:55:12.396608+00:00",
+    "native_mmetrics_ui_status": "Generating description / Analyzing structure / Model Computing; no native output retrieved"
+  },
+  "native_mmetrics": {
+    "collected_utc": "2026-10-20T07:00:48.238348+00:00",
+    "status": "native_MMetrics_available_UI_and_exports_collected",
+    "project_id": "342256011498496",
+    "project_url": "https://mos.moleculemind.com/?projectId=342256011498496",
+    "object_sequence_view_id": "342256189350912",
+    "prior_autocompute_task_id": "342256189539328",
+    "autocompute_final_task_status": "Not exposed in current project Task List; completion is evidenced by loaded native UI and ten downloaded outputs, not an invented Succeed task status.",
+    "source": "native MMetrics UI and its Download controls, observed through Chrome",
+    "description_confidence": "high (categorical description confidence, not pLDDT or model accuracy)",
+    "native_sections": [
+      "Description",
+      "Homologs",
+      "Annotations",
+      "Interaction Network",
+      "Mutation Scoring",
+      "Antibody Design"
+    ],
+    "homologs_empty_text": "No significant homologs found.",
+    "annotations_counts": {
+      "Paratope": 43,
+      "Epitope": 38,
+      "Domain_ranges": 3,
+      "PTM": 4,
+      "UniProt_Feature": 1
+    },
+    "native_files": {
+      "AbAn_heavy.csv": {
+        "rows": 118,
+        "columns": [
+          "aa_index",
+          "aa",
+          "pos_imgt",
+          "region_imgt",
+          "pos_kabat",
+          "region_kabat",
+          "pos_chothia",
+          "region_chothia"
+        ],
+        "sha256": "78185eb7c868b648dbf31d3e50fc1ef235220d9b932a32f61c25e7b11e5c1825"
+      },
+      "AbAn_light.csv": {
+        "rows": 108,
+        "columns": [
+          "aa_index",
+          "aa",
+          "pos_imgt",
+          "region_imgt",
+          "pos_kabat",
+          "region_kabat",
+          "pos_chothia",
+          "region_chothia"
+        ],
+        "sha256": "279868206c1fbcca06131a6449a6d5f7cc28f126e93c0966454ae5d2d9378c64"
+      },
+      "AbScN_heavy..csv": {
+        "rows": 118,
+        "columns": [
+          "aa_index",
+          "aa",
+          "humanness_VH2_score",
+          "sequence_humanness_VH2_score",
+          "humanness_VHH2_score",
+          "sequence_humanness_VHH2_score"
+        ],
+        "sha256": "b17ccd3a3ef8f5492e666a9789fb7f19645e4c8321df4a9d76b870b789f5009b",
+        "sequence_humanness_scores": {
+          "sequence_humanness_VH2_score": 0.83598256,
+          "sequence_humanness_VHH2_score": 0.7340711
+        }
+      },
+      "AbScN_light.csv": {
+        "rows": 108,
+        "columns": [
+          "aa_index",
+          "aa",
+          "humanness_VL2_score",
+          "sequence_humanness_VL2_score"
+        ],
+        "sha256": "d7005e9d5b1ec14c95bd2295efa068f1d5a1432a36c613f724de246efde0186c",
+        "sequence_humanness_scores": {
+          "sequence_humanness_VL2_score": 0.94844085
+        }
+      },
+      "MutXaff.csv": {
+        "rows": 4294,
+        "columns": [
+          "",
+          "mutstr",
+          "ddG_pred",
+          "score_ddg",
+          "rank"
+        ],
+        "sha256": "2552e5f97be179463f6e19ede9dfd81eba81cee3b1f5ed92ae069d698936b0ca",
+        "rows_by_chain": {
+          "A": 2242,
+          "B": 2052
+        },
+        "WT_self_rows": 0,
+        "best_10": [
+          {
+            "": "1404",
+            "mutstr": "KA100W",
+            "ddG_pred": "-1.8933268",
+            "score_ddg": "1.8933268",
+            "rank": "0.0002328830926874709"
+          },
+          {
+            "": "3627",
+            "mutstr": "VA104W",
+            "ddG_pred": "-1.8783138",
+            "score_ddg": "1.8783138",
+            "rank": "0.0004657661853749418"
+          },
+          {
+            "": "131",
+            "mutstr": "AA97W",
+            "ddG_pred": "-1.8519895",
+            "score_ddg": "1.8519895",
+            "rank": "0.0006986492780624127"
+          },
+          {
+            "": "3210",
+            "mutstr": "TA103Y",
+            "ddG_pred": "-1.8091879",
+            "score_ddg": "1.8091879",
+            "rank": "0.0009315323707498836"
+          },
+          {
+            "": "3209",
+            "mutstr": "TA103W",
+            "ddG_pred": "-1.7523711",
+            "score_ddg": "1.7523711",
+            "rank": "0.0011644154634373545"
+          },
+          {
+            "": "1234",
+            "mutstr": "IA33Y",
+            "ddG_pred": "-1.726793",
+            "score_ddg": "1.726793",
+            "rank": "0.0013972985561248254"
+          },
+          {
+            "": "3228",
+            "mutstr": "TA105W",
+            "ddG_pred": "-1.6836243",
+            "score_ddg": "1.6836243",
+            "rank": "0.0016301816488122963"
+          },
+          {
+            "": "1405",
+            "mutstr": "KA100Y",
+            "ddG_pred": "-1.6822176",
+            "score_ddg": "1.6822176",
+            "rank": "0.0018630647414997672"
+          },
+          {
+            "": "114",
+            "mutstr": "AA97C",
+            "ddG_pred": "-1.5063347",
+            "score_ddg": "1.5063347",
+            "rank": "0.002095947834187238"
+          },
+          {
+            "": "3628",
+            "mutstr": "VA104Y",
+            "ddG_pred": "-1.4892778",
+            "score_ddg": "1.4892778",
+            "rank": "0.002328830926874709"
+          }
+        ],
+        "interpretation": "Binder VH/VL only; 226 modeled residues x 19 nonself; ddG_pred lower more favorable, score_ddg=-ddG_pred. rank retained as raw column, not interpreted as probability."
+      },
+      "MutXevo.csv": {
+        "rows": 8780,
+        "columns": [
+          "chain",
+          "mutation",
+          "score"
+        ],
+        "sha256": "e5431f52761fa919e0e24a2d57ea52facdfd06dd538b979f20aae00451ea508f",
+        "WT_self_rows": 439,
+        "nonself_rows": 8341,
+        "positions": 439,
+        "rows_by_chain": {
+          "C": 4260,
+          "A": 2360,
+          "B": 2160
+        },
+        "WT_numbering_audit": "all match verified modeled 5GRJ label positions"
+      },
+      "MutXseq.csv": {
+        "rows": 8780,
+        "columns": [
+          "chain",
+          "mutation",
+          "score"
+        ],
+        "sha256": "3af8de472b8ef129614f496a8763499b72b687982e87e79d9a18675cdfb406da",
+        "WT_self_rows": 439,
+        "nonself_rows": 8341,
+        "positions": 439,
+        "rows_by_chain": {
+          "A": 2360,
+          "B": 2160,
+          "C": 4260
+        },
+        "WT_numbering_audit": "all match verified modeled 5GRJ label positions"
+      },
+      "MutXstruct.csv": {
+        "rows": 8780,
+        "columns": [
+          "chain",
+          "mutation",
+          "score"
+        ],
+        "sha256": "b9c731a92809b419f3ce04df1d4f9f4511ed15e3acbf56091270bf38aacbcd0f",
+        "WT_self_rows": 439,
+        "nonself_rows": 8341,
+        "positions": 439,
+        "rows_by_chain": {
+          "A": 2360,
+          "B": 2160,
+          "C": 4260
+        },
+        "WT_numbering_audit": "all match verified modeled 5GRJ label positions"
+      },
+      "ParaDt_heavy.csv": {
+        "rows": 118,
+        "columns": [
+          "aa_index",
+          "aa",
+          "pos_imgt",
+          "region_imgt",
+          "paragraph_score"
+        ],
+        "sha256": "863344a32632d3af26be32023b4afc477474f0d1d05fb1c70c890159040c170e"
+      },
+      "ParaDt_light.csv": {
+        "rows": 108,
+        "columns": [
+          "aa_index",
+          "aa",
+          "pos_imgt",
+          "region_imgt",
+          "paragraph_score"
+        ],
+        "sha256": "5640b92ee85f6fbf2fbbbe488a119be507784ccb8bc7791b11004f8e979876b9"
+      }
+    },
+    "native_CDR_regions": {
+      "heavy": {
+        "imgt": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "numbering": [
+              "H27",
+              "H28",
+              "H29",
+              "H30",
+              "H35",
+              "H36",
+              "H37",
+              "H38"
+            ],
+            "sequence": "GFTFSSYI"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58
+            ],
+            "numbering": [
+              "H56",
+              "H57",
+              "H58",
+              "H59",
+              "H62",
+              "H63",
+              "H64",
+              "H65"
+            ],
+            "sequence": "IYPSGGIT"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              97,
+              98,
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109
+            ],
+            "numbering": [
+              "H105",
+              "H106",
+              "H107",
+              "H108",
+              "H109",
+              "H110",
+              "H111",
+              "H112",
+              "H113",
+              "H114",
+              "H115",
+              "H116",
+              "H117"
+            ],
+            "sequence": "ARIKLGTVTTVDY"
+          }
+        ],
+        "kabat": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              31,
+              32,
+              33,
+              34,
+              35
+            ],
+            "numbering": [
+              "H31",
+              "H32",
+              "H33",
+              "H34",
+              "H35"
+            ],
+            "sequence": "SYIMM"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              50,
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66
+            ],
+            "numbering": [
+              "H50",
+              "H51",
+              "H52",
+              "H52A",
+              "H53",
+              "H54",
+              "H55",
+              "H56",
+              "H57",
+              "H58",
+              "H59",
+              "H60",
+              "H61",
+              "H62",
+              "H63",
+              "H64",
+              "H65"
+            ],
+            "sequence": "SIYPSGGITFYADTVKG"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109
+            ],
+            "numbering": [
+              "H95",
+              "H96",
+              "H97",
+              "H98",
+              "H99",
+              "H100",
+              "H100A",
+              "H100B",
+              "H100C",
+              "H101",
+              "H102"
+            ],
+            "sequence": "IKLGTVTTVDY"
+          }
+        ],
+        "chothia": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32
+            ],
+            "numbering": [
+              "H26",
+              "H27",
+              "H28",
+              "H29",
+              "H30",
+              "H31",
+              "H32"
+            ],
+            "sequence": "GFTFSSY"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              52,
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "numbering": [
+              "H52",
+              "H52A",
+              "H53",
+              "H54",
+              "H55",
+              "H56"
+            ],
+            "sequence": "YPSGGI"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              99,
+              100,
+              101,
+              102,
+              103,
+              104,
+              105,
+              106,
+              107,
+              108,
+              109
+            ],
+            "numbering": [
+              "H95",
+              "H96",
+              "H97",
+              "H98",
+              "H99",
+              "H100",
+              "H100A",
+              "H100B",
+              "H100C",
+              "H101",
+              "H102"
+            ],
+            "sequence": "IKLGTVTTVDY"
+          }
+        ]
+      },
+      "light": {
+        "imgt": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33
+            ],
+            "numbering": [
+              "L27",
+              "L28",
+              "L29",
+              "L30",
+              "L31",
+              "L35",
+              "L36",
+              "L37",
+              "L38"
+            ],
+            "sequence": "SSDVGGYNY"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              51,
+              52,
+              53
+            ],
+            "numbering": [
+              "L56",
+              "L57",
+              "L65"
+            ],
+            "sequence": "DVS"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99
+            ],
+            "numbering": [
+              "L105",
+              "L106",
+              "L107",
+              "L108",
+              "L109",
+              "L113",
+              "L114",
+              "L115",
+              "L116",
+              "L117"
+            ],
+            "sequence": "SSYTSSSTRV"
+          }
+        ],
+        "kabat": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ],
+            "numbering": [
+              "L24",
+              "L25",
+              "L26",
+              "L27",
+              "L27A",
+              "L27B",
+              "L27C",
+              "L28",
+              "L29",
+              "L30",
+              "L31",
+              "L32",
+              "L33",
+              "L34"
+            ],
+            "sequence": "TGTSSDVGGYNYVS"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "numbering": [
+              "L50",
+              "L51",
+              "L52",
+              "L53",
+              "L54",
+              "L55",
+              "L56"
+            ],
+            "sequence": "DVSNRPS"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99
+            ],
+            "numbering": [
+              "L89",
+              "L90",
+              "L91",
+              "L92",
+              "L93",
+              "L94",
+              "L95",
+              "L95A",
+              "L96",
+              "L97"
+            ],
+            "sequence": "SSYTSSSTRV"
+          }
+        ],
+        "chothia": [
+          {
+            "region": "CDR1",
+            "csv_indices": [
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35
+            ],
+            "numbering": [
+              "L24",
+              "L25",
+              "L26",
+              "L27",
+              "L28",
+              "L29",
+              "L30",
+              "L30A",
+              "L30B",
+              "L30C",
+              "L31",
+              "L32",
+              "L33",
+              "L34"
+            ],
+            "sequence": "TGTSSDVGGYNYVS"
+          },
+          {
+            "region": "CDR2",
+            "csv_indices": [
+              51,
+              52,
+              53,
+              54,
+              55,
+              56,
+              57
+            ],
+            "numbering": [
+              "L50",
+              "L51",
+              "L52",
+              "L53",
+              "L54",
+              "L55",
+              "L56"
+            ],
+            "sequence": "DVSNRPS"
+          },
+          {
+            "region": "CDR3",
+            "csv_indices": [
+              90,
+              91,
+              92,
+              93,
+              94,
+              95,
+              96,
+              97,
+              98,
+              99
+            ],
+            "numbering": [
+              "L89",
+              "L90",
+              "L91",
+              "L92",
+              "L93",
+              "L94",
+              "L95",
+              "L95A",
+              "L96",
+              "L97"
+            ],
+            "sequence": "SSYTSSSTRV"
+          }
+        ]
+      }
+    },
+    "interaction_counts": {
+      "A:C": 38,
+      "A:B": 22,
+      "B:C": 11
+    },
+    "interaction_type_counts_by_pair": {
+      "A:C": {
+        "H-Bond": 9,
+        "π-π Stack": 2,
+        "VdW Contact": 27
+      },
+      "A:B": {
+        "H-Bond": 2,
+        "π-Cation": 1,
+        "π-π Stack": 2,
+        "VdW Contact": 17
+      },
+      "B:C": {
+        "H-Bond": 2,
+        "VdW Contact": 9
+      }
+    },
+    "numbering_notes": [
+      "Main native matrices use modeled label positions, preserving B2-109 and the C168-170 coordinate gap.",
+      "Antibody CSV aa_index is compact: heavy 1-118 matches A1-118; light 1-108 matches B2-109. It is not identical to native structure numbering for VL.",
+      "Main visible sequence includes full entity sequences (A120/B110/C221), but native matrices only cover coordinate-bearing A118/B108/C213.",
+      "UniProt Feature C:ARG221 tooltip describes C→S; original label C221 is R and has no coordinates. Preserve observed UI for reproduction but do not promote this tooltip as a verified residue-specific scientific claim."
+    ],
+    "scope_limits": [
+      "No standalone Risk Sites or Recommended Mutations native section or dedicated export was present after the whole panel was explored. Earlier independent risk/recommendation files remain supplemental.",
+      "Native Homologs empty result is preserved separately from successful explicit homolog searches.",
+      "Paratope annotation and ParaDt prediction are native outputs; do not equate model prediction with experimental epitope validation.",
+      "Native scores are distinct from earlier explicit full-entity runs; do not merge score values or row counts."
+    ],
+    "paths": {
+      "full_export_json": "02-mmetrics/raw/native-ui/native-datasets.json",
+      "numbering": "02-mmetrics/raw/native-ui/verified-antibody-csv-numbering.json",
+      "annotations": "02-mmetrics/raw/native-ui/annotations.json",
+      "interactions": "02-mmetrics/raw/native-ui/interactions.json",
+      "panel": "02-mmetrics/raw/native-ui/panel-dom.json",
+      "layout": "02-mmetrics/raw/native-ui/layout-and-typography.json"
+    }
+  }
+}

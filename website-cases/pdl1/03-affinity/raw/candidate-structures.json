@@ -1,0 +1,513 @@
+{
+  "status": "both_succeeded",
+  "method": "Two sequence-only MMFold jobs; five samples each; every coordinate residue verified against the exact submitted mutant sequences; best sample selected by ranking_score.",
+  "variants": [
+    {
+      "variant": "Q18Y",
+      "original_author_position": 13,
+      "task_id": "342259574002688",
+      "status": "succeeded",
+      "antigen_sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+      "binder_sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+      "best_sample": 1,
+      "best_structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246519899289_model_sample_1.cif",
+      "best_confidence": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_1.json",
+      "best_iptm": 0.821414589881897,
+      "best_global_plddt": 87.94413757324219,
+      "samples": [
+        {
+          "sample": 1,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246519899289_model_sample_1.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_1.json",
+          "plddt": 87.94413757324219,
+          "ptm": 0.8108291625976562,
+          "iptm": 0.821414589881897,
+          "chain_ptm": [
+            0.797391951084137,
+            0.87617427110672
+          ],
+          "chain_iptm": [
+            0.821414589881897,
+            0.821414589881897
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.821414589881897
+            ],
+            [
+              0.821414589881897,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8876091837882996,
+            0.8655028343200684
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8794413805007935
+            ],
+            [
+              0.8794413805007935,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.8192974925041199,
+          "mutant_residue_CA_b_factor": 96.28,
+          "structure_sha256": "40d06fd9e529160f6fc3ce109efa83e738f65f973e32e72114f7805e588ff2ec"
+        },
+        {
+          "sample": 2,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520009403_model_sample_2.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_2.json",
+          "plddt": 87.93145751953125,
+          "ptm": 0.8091196417808533,
+          "iptm": 0.8201618790626526,
+          "chain_ptm": [
+            0.7946944832801819,
+            0.878140926361084
+          ],
+          "chain_iptm": [
+            0.8201618790626526,
+            0.8201618790626526
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.8201618790626526
+            ],
+            [
+              0.8201618790626526,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8872933983802795,
+            0.8656983971595764
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8793145418167114
+            ],
+            [
+              0.8793145418167114,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.8179534673690796,
+          "mutant_residue_CA_b_factor": 96.25,
+          "structure_sha256": "aaf526f56be58f5ef6acbacdf3ae3ab8b4c0039b1cb6d7ad1c5ac5d41d295782"
+        },
+        {
+          "sample": 3,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520233187_model_sample_3.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_3.json",
+          "plddt": 87.91755676269531,
+          "ptm": 0.8092062473297119,
+          "iptm": 0.8184607625007629,
+          "chain_ptm": [
+            0.796328604221344,
+            0.8784611225128174
+          ],
+          "chain_iptm": [
+            0.8184607625007629,
+            0.8184607625007629
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.8184607625007629
+            ],
+            [
+              0.8184607625007629,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8871768116950989,
+            0.8655211925506592
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8791755437850952
+            ],
+            [
+              0.8791755437850952,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.8166099190711975,
+          "mutant_residue_CA_b_factor": 96.23,
+          "structure_sha256": "c9468e8741a3541aa72d4577cdce85a7b3713a9e860eb853160bdc2cf13961ec"
+        },
+        {
+          "sample": 4,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520338048_model_sample_4.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_4.json",
+          "plddt": 87.92984771728516,
+          "ptm": 0.8093056082725525,
+          "iptm": 0.8181858658790588,
+          "chain_ptm": [
+            0.7962658405303955,
+            0.8755359053611755
+          ],
+          "chain_iptm": [
+            0.8181858658790588,
+            0.8181858658790588
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.8181858658790588
+            ],
+            [
+              0.8181858658790588,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8874289989471436,
+            0.865423321723938
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8792984485626221
+            ],
+            [
+              0.8792984485626221,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.8164098262786865,
+          "mutant_residue_CA_b_factor": 96.24,
+          "structure_sha256": "fe42b054aff8b987758f1826698a628529549d9d3e0ac9567a7409b3d4f12164"
+        },
+        {
+          "sample": 5,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520113773_model_sample_5.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_5.json",
+          "plddt": 87.8953628540039,
+          "ptm": 0.8075908422470093,
+          "iptm": 0.8163885474205017,
+          "chain_ptm": [
+            0.7948981523513794,
+            0.8776650428771973
+          ],
+          "chain_iptm": [
+            0.8163885474205017,
+            0.8163885474205017
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.8163885474205017
+            ],
+            [
+              0.8163885474205017,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8869498372077942,
+            0.8653078079223633
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8789536356925964
+            ],
+            [
+              0.8789536356925964,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.8146290183067322,
+          "mutant_residue_CA_b_factor": 96.2,
+          "structure_sha256": "93659db34551daa9ae285908719e526fab2bb8a2acc4ceec9dad96786022d02b"
+        }
+      ],
+      "payload": {
+        "name": "PDL1_DBL1_03_Q18Y_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B13 Q18Y (author QB13Y), entity/MOS position 18, 124 aa"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "variant": "V17I",
+      "original_author_position": 12,
+      "task_id": "342259585696768",
+      "status": "succeeded",
+      "antigen_sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+      "binder_sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+      "best_sample": 1,
+      "best_structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520081974_model_sample_1.cif",
+      "best_confidence": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_1.json",
+      "best_iptm": 0.776024580001831,
+      "best_global_plddt": 87.17306518554688,
+      "samples": [
+        {
+          "sample": 1,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520081974_model_sample_1.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_1.json",
+          "plddt": 87.17306518554688,
+          "ptm": 0.8171707391738892,
+          "iptm": 0.776024580001831,
+          "chain_ptm": [
+            0.8319292068481445,
+            0.8675724864006042
+          ],
+          "chain_iptm": [
+            0.776024580001831,
+            0.776024580001831
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.776024580001831
+            ],
+            [
+              0.776024580001831,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8851877450942993,
+            0.8487182855606079
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.871730625629425
+            ],
+            [
+              0.871730625629425,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.7842538356781006,
+          "mutant_residue_CA_b_factor": 93.8,
+          "structure_sha256": "a190202684fc1422ef0e00c14b3109aa15f5f30855a947c46d7bc5079bbd62a0"
+        },
+        {
+          "sample": 2,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520193986_model_sample_2.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_2.json",
+          "plddt": 87.1742935180664,
+          "ptm": 0.8176165223121643,
+          "iptm": 0.7756140232086182,
+          "chain_ptm": [
+            0.8317345976829529,
+            0.8668950796127319
+          ],
+          "chain_iptm": [
+            0.7756140232086182,
+            0.7756140232086182
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.7756140232086182
+            ],
+            [
+              0.7756140232086182,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8854389786720276,
+            0.8483225107192993
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8717429637908936
+            ],
+            [
+              0.8717429637908936,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.7840145230293274,
+          "mutant_residue_CA_b_factor": 93.77,
+          "structure_sha256": "2f2e2dd8e76e0bba0a1f5bec74af1cd25e9dd47b04a645a5cb7e863156a72690"
+        },
+        {
+          "sample": 3,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520421979_model_sample_3.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_3.json",
+          "plddt": 87.14888763427734,
+          "ptm": 0.816347062587738,
+          "iptm": 0.775378942489624,
+          "chain_ptm": [
+            0.8311319351196289,
+            0.8666509985923767
+          ],
+          "chain_iptm": [
+            0.775378942489624,
+            0.775378942489624
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.775378942489624
+            ],
+            [
+              0.775378942489624,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8850725293159485,
+            0.8482603430747986
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8714888691902161
+            ],
+            [
+              0.8714888691902161,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.7835725545883179,
+          "mutant_residue_CA_b_factor": 93.73,
+          "structure_sha256": "4e93fc8dff985126967b3206b24e9cfea36959243b25c2259025c1923da4acf1"
+        },
+        {
+          "sample": 4,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520539642_model_sample_4.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_4.json",
+          "plddt": 87.15618896484375,
+          "ptm": 0.8166832327842712,
+          "iptm": 0.7732416987419128,
+          "chain_ptm": [
+            0.8314047455787659,
+            0.8663478493690491
+          ],
+          "chain_iptm": [
+            0.7732416987419128,
+            0.7732416987419128
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.7732416987419128
+            ],
+            [
+              0.7732416987419128,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8853320479393005,
+            0.8480144739151001
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8715618848800659
+            ],
+            [
+              0.8715618848800659,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.7819300293922424,
+          "mutant_residue_CA_b_factor": 93.81,
+          "structure_sha256": "51ce67ac7176dc30a3a96ff9d32b45173c478cbc1ef3bad64f2807d645b8517c"
+        },
+        {
+          "sample": 5,
+          "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520307120_model_sample_5.cif",
+          "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_5.json",
+          "plddt": 87.0993881225586,
+          "ptm": 0.8152196407318115,
+          "iptm": 0.7730579972267151,
+          "chain_ptm": [
+            0.829669177532196,
+            0.8679108619689941
+          ],
+          "chain_iptm": [
+            0.7730579972267151,
+            0.7730579972267151
+          ],
+          "chain_pair_iptm": [
+            [
+              0.0,
+              0.7730579972267151
+            ],
+            [
+              0.7730579972267151,
+              0.0
+            ]
+          ],
+          "chain_plddt": [
+            0.8844442963600159,
+            0.847993016242981
+          ],
+          "chain_pair_plddt": [
+            [
+              0.0,
+              0.8709938526153564
+            ],
+            [
+              0.8709938526153564,
+              0.0
+            ]
+          ],
+          "ranking_score": 0.7814903259277344,
+          "mutant_residue_CA_b_factor": 93.64,
+          "structure_sha256": "665d69d12331493739c6e82f673fa152c65700060ad362655a710c876b78b65d"
+        }
+      ],
+      "payload": {
+        "name": "PDL1_DBL1_03_V17I_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B12 V17I (author VB12I), entity/MOS position 17, 124 aa"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Structure confidence is separate from affinity ddG and does not establish improved affinity.",
+    "No absolute binding energy, experimental Kd, MD relaxation or joint-mutation evaluation was performed.",
+    "Do not compare predicted variant pLDDT against the experimental baseline, which has crystallographic B factors rather than pLDDT."
+  ]
+}

@@ -1,162 +1,926 @@
 [
   {
-    "language": "zh",
-    "filename": "mocha_start conversation.mov",
-    "groupSlug": "wu-mocha"
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
   },
   {
     "language": "zh",
-    "filename": "0708MOS首发介绍_xuxin.mp4",
-    "groupSlug": "wu-mocha"
+    "filename": "image12.gif"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
   },
   {
     "language": "zh",
-    "filename": "Mocha_task.mov",
-    "groupSlug": "wu-mocha"
+    "filename": "image16.gif"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
   },
   {
     "language": "zh",
-    "filename": "mocha_results.mov",
-    "groupSlug": "wu-mocha"
+    "filename": "image19.gif"
   },
   {
     "language": "zh",
-    "filename": "mocha_workspace.mov",
-    "groupSlug": "wu-mocha"
+    "filename": "image20.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_homologous.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image21.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_annotation_sections.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image22.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_annotation_mutation.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image23.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_annotation_antibody.MP4",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image24.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_interaction.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image25.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_smallmolecule2D.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image26.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_smallmolecule2D_2.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image27.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_table.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image28.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_intereaction_antibody_2D.MOV",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image29.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_intereaction_antibody_table.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image30.gif"
   },
   {
     "language": "zh",
-    "filename": "MMetrics_mutation scoring_1.mov",
-    "groupSlug": "liu-mmetrics"
+    "filename": "image31.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image32.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image33.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image34.gif"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh",
+    "filename": "image38.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image39.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image40.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image41.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image42.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image43.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image44.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image45.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image46.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image47.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image48.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image49.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image50.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image51.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image52.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image53.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image54.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image55.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image56.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image57.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image58.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image59.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image60.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image61.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image62.gif"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh",
+    "filename": "image64.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image65.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image66.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image67.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image68.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image69.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image70.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image71.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image72.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image73.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image74.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image75.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image76.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "mocha_start conversation.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "0708MOS首发介绍_xuxin.mp4"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh",
+    "filename": "Mocha_task.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "mocha_results.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "mocha_workspace.mov"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_homologous.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_annotation_sections.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_annotation_mutation.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_annotation_antibody.MP4"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_interaction.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_smallmolecule2D.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_smallmolecule2D_2.mov"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_table.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_intereaction_antibody_2D.MOV"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_intereaction_antibody_table.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "MMetrics_mutation scoring_1.mov"
+  },
+  {
+    "language": "zh",
+    "filename": "image80.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image81.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image82.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image83.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image84.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image85.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image86.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image87.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image88.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image89.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image90.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image91.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image92.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "image93.gif"
+  },
+  {
+    "language": "zh",
+    "filename": "7-2-protein-redesign-take2.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-2-redesign-results.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-3-binder-design.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-3-binder-output.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-4-sequence-fitness-input.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-4-sequence-fitness-csv.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-4-sequence-fitness-results.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-5-evolutionary-success.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-6-structural-stability-input.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-6-stability-results.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-7-protein-ligand-affinity.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-8-pocket-detection-and-docking.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-9-antibody-humanization.mp4"
+  },
+  {
+    "language": "zh",
+    "filename": "7-10-binding-affinity-clean-results.mp4"
+  },
+  {
+    "language": "zh"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
   },
   {
     "language": "en",
-    "filename": "mocha_start conversation.mov",
-    "groupSlug": "5-mocha"
+    "filename": "image12.gif"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
   },
   {
     "language": "en",
-    "filename": "0708MOS首发介绍_xuxin.mp4",
-    "groupSlug": "5-mocha"
+    "filename": "image16.gif"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
   },
   {
     "language": "en",
-    "filename": "Mocha_task.mov",
-    "groupSlug": "5-mocha"
+    "filename": "image19.gif"
   },
   {
     "language": "en",
-    "filename": "mocha_results.mov",
-    "groupSlug": "5-mocha"
+    "filename": "image20.gif"
   },
   {
     "language": "en",
-    "filename": "mocha_workspace.mov",
-    "groupSlug": "5-mocha"
+    "filename": "image21.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_homologous.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image22.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_annotation_sections.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image23.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_annotation_mutation.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image24.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_annotation_antibody.MP4",
-    "groupSlug": "6-mmetrics"
+    "filename": "image25.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_interaction.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image26.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_smallmolecule2D.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image27.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_smallmolecule2D_2.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image28.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_table.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image29.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_intereaction_antibody_2D.MOV",
-    "groupSlug": "6-mmetrics"
+    "filename": "image30.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_intereaction_antibody_table.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image31.gif"
   },
   {
     "language": "en",
-    "filename": "MMetrics_mutation scoring_1.mov",
-    "groupSlug": "6-mmetrics"
+    "filename": "image32.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image33.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image34.gif"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en",
+    "filename": "image38.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image39.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image40.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image41.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image42.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image43.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image44.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image45.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image46.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image47.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image48.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image49.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image50.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image51.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image52.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image53.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image54.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image55.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image56.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image57.gif"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en",
+    "filename": "image59.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image60.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image61.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image62.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image63.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image64.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image65.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image66.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image67.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image68.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image69.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image70.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image71.gif"
+  },
+  {
+    "language": "en",
+    "filename": "mocha_start conversation.mov"
+  },
+  {
+    "language": "en",
+    "filename": "0708MOS首发介绍_xuxin.mp4"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en",
+    "filename": "Mocha_task.mov"
+  },
+  {
+    "language": "en",
+    "filename": "mocha_results.mov"
+  },
+  {
+    "language": "en",
+    "filename": "mocha_workspace.mov"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_homologous.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_annotation_sections.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_annotation_mutation.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_annotation_antibody.MP4"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_interaction.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_smallmolecule2D.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_smallmolecule2D_2.mov"
+  },
+  {
+    "language": "en"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_table.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_intereaction_antibody_2D.MOV"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_intereaction_antibody_table.mov"
+  },
+  {
+    "language": "en",
+    "filename": "MMetrics_mutation scoring_1.mov"
+  },
+  {
+    "language": "en",
+    "filename": "image75.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image76.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image77.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image78.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image79.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image80.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image81.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image82.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image83.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image84.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image85.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image86.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image87.gif"
+  },
+  {
+    "language": "en",
+    "filename": "image88.gif"
+  },
+  {
+    "language": "en",
+    "filename": "7-2-protein-redesign-take2.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-2-redesign-results.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-3-binder-design.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-3-binder-output.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-4-sequence-fitness-input.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-4-sequence-fitness-csv.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-4-sequence-fitness-results.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-5-evolutionary-success.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-6-structural-stability-input.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-6-stability-results.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-7-protein-ligand-affinity.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-8-pocket-detection-and-docking.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-9-antibody-humanization.mp4"
+  },
+  {
+    "language": "en",
+    "filename": "7-10-binding-affinity-clean-results.mp4"
+  },
+  {
+    "language": "en"
   }
 ]

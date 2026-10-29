@@ -1,0 +1,60 @@
+# Targeted grep in the two sanctioned skill trees (Mocha custom skills)
+
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/library.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/fetch.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/cli.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/align.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/ranges.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/output.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/constants.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence_library/mutations.py:3:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/interaction-analysis/SKILL.md:48:Outputs JSONL entities (protein/DNA/RNA/ligand), chain pairs with contact counts, and antibody CDR annotations. The `header` includes `title` and `ligand_names` when available in the CIF.
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:110:                    "annotations": entity.get("annotations", []),
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:225:    # CDR boundaries come from annotations (Position dicts with auth_seq_id +
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:238:            annotations = chain_data.get("annotations", [])
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:240:            # Domain annotations
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:246:                for a in annotations
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:250:            # CDR annotations  (feature = "cdr_imgt" / "cdr_kabat" / ...)
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:252:            cdr_annotations = [a for a in annotations if a.get("feature", "").startswith("cdr_")]
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/generate_report.py:262:            for ann in cdr_annotations:
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:92:    annotations: list[Annotation] = field(default_factory=list)
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:106:        if self.annotations:
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:107:            result["annotations"] = [a.to_dict() for a in self.annotations]
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:360:            return _extract_antibody_annotations(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:371:            return _extract_antibody_annotations(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:385:def _extract_antibody_annotations(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:394:    """Extract antibody domain and CDR annotations."""
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:395:    annotations = []
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:426:        annotations.append(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:440:        # CDR annotations
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:463:            annotations.append(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:477:    # Linker annotations for multi-domain
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:496:                annotations.append(
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:539:    return {"protein_type": protein_type, "fragment": fragment, "annotations": annotations}
+/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/parse_structure.py:815:                entity_info.annotations = ab_result.get("annotations", [])
+/app/src/mocha/agents/custom_skills/_shared/sanitize.py:19:from __future__ import annotations
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/SKILL.md:19:[Rule] Prefer MOS and pre-built analysis scripts for homology search, structure prediction, and mutation scoring; use Biopython for file-format plumbing and local parsing.
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/SKILL.md:62:Write outputs to the working directory. Use FASTA for plain sequences, GenBank when annotations must survive, mmCIF/PDB for structures, and TSV/CSV for tables.
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/references/sequence_io.md:24:record.annotations        # GenBank-style annotations dict
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/references/sequence_io.md:26:record.letter_annotations # per-residue annotations such as FASTQ quality
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/references/sequence_io.md:36:SeqIO.convert("annotations.gb", "genbank", "annotations.fasta", "fasta")
+/app/src/mocha/agents/custom_skills/biopython-for-mocha/references/sequence_io.md:59:    if sum(rec.letter_annotations["phred_quality"]) / len(rec) >= 30
+/app/src/mocha/agents/custom_skills/extract-ligand-sdf/SKILL.md:23:# SMILES mode — for predicted/docked structures without reliable CCD annotations
+
+## files in sequence-toolkit skill
+total 36
+drwxrwxrwx  4 root root  4096 Oct 15 03:52 .
+drwxrwxrwx 11 root root  4096 Oct 15 03:52 ..
+-rw-rw-rw-  1 root root 13928 Oct 15 03:52 SKILL.md
+drwxrwxrwx  2 root root  4096 Oct 15 03:52 sequence_library
+-rw-rw-rw-  1 root root   186 Oct 15 03:52 sequence_toolkit.py
+drwxrwxrwx  2 root root  4096 Oct 15 03:52 test
+
+## files in search-protein-target skill
+total 32
+drwxrwxrwx  5 root root 4096 Oct 15 03:52 .
+drwxrwxrwx 11 root root 4096 Oct 15 03:52 ..
+-rw-rw-rw-  1 root root 8891 Oct 15 03:52 SKILL.md
+drwxrwxrwx  2 root root 4096 Oct 15 03:52 internal
+drwxrwxrwx  2 root root 4096 Oct 15 03:52 scripts
+drwxrwxrwx  2 root root 4096 Oct 15 03:52 test

@@ -1,0 +1,64 @@
+{
+  "source": "GetMOSTaskSchema('Sequence Homology Search'), read-only, captured 2026-10-28T08:44:5xZ; task was not started",
+  "type": "object",
+  "title": "Input",
+  "properties": {
+    "local": {
+      "type": "boolean",
+      "title": "Local",
+      "default": true,
+      "description": "Local search flag"
+    },
+    "max_seq": {
+      "type": "integer",
+      "title": "Max Seq",
+      "default": 500,
+      "description": "Maximum number of hits to return. Higher values capture more distant homologs but increase search time."
+    },
+    "chain_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Chain Id",
+      "default": null,
+      "description": "Chain ID to extract from pdb_path. Required when pdb_path is provided."
+    },
+    "pdb_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Pdb Path",
+      "default": null,
+      "description": "PDB or mmCIF structure file. The sequence of chain_id will be extracted and used as query. Must be provided with chain_id."
+    },
+    "sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Sequence",
+      "default": null,
+      "description": "Input sequence. Provide either this OR pdb_path+chain_id, not both. Prioritize the sequence over pdb_path+chain_id."
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework \u2014 see gateway.source.ApiSource.resolve_output_dest()."
+    }
+  }
+}

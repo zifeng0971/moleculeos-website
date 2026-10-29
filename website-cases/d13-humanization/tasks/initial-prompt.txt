@@ -1,0 +1,8 @@
+执行官网真实案例 A：D1.3 抗体人源化。请在本项目实际执行计算并完整导出，不要仅写计划。所有文件放 /workspace/website_case_d13/，保留 inputs/、native_tasks/、analyses/、structures/、logs/。不要发送消息或报告给任何管理员/外部人员，不要编造任务或模型结果。
+1. 从 RCSB 下载原始 1FDL.pdb/.cif 和1BVL.pdb/.cif、FASTA/metadata，导入1FDL原生MOS视图供MMetrics自动分析。确认1FDL原始auth L=鼠D1.3轻链，H=重链，Y=鸡溶菌酶；label A/B/C对应关系以文件核对。
+2. 用实际可用ANARCI/抗体注释提取准确VH/VL可变区序列（不要把常数区输入人源化），保存IMGT/Kabat/Chothia逐残基编号、CDR/FR划分、原始auth/label与工作编号映射。分析与抗原界面：关键残基、氢键/接触类型与距离，保存机器可读表。
+3. 必须通过MOS注册模型 Antibody Humanization Modelling 发起10组候选（design count=10），保留完整精确输入payload、真实task ID、状态、时间、输出路径和全部原始文件。若输出仅序列，继续通过注册MMFold为全部10组VH:VL候选预测Fv结构；不要用原始结构或拼接坐标冒充新预测。保存所有FASTA、PDB/CIF和confidence JSON。
+4. 用原生/内置Superimpose比较每个候选Fv与1FDL亲本Fv：保存配对残基、FR和6个CDR的序列变化、同一拟合下CA RMSD/每区位移，必要时另算局部拟合但明确方法与匹配原子数。全部候选均记录，选择2-3个代表，不预设赢家或臆造亲和力。
+5. 1BVL是实验HuLys D1.3人源化Fv参考，含两对Fv，先核对链角色和生物学配对；它不是本次候选的ground-truth序列。选2-3个候选独立与其中一对实验Fv比较FR/CDR序列与结构；记录参考差异、拟合方法和CA数。可用原生人源化评分时记录亲本和候选模型值与来源；无支持则说明。
+6. 请分阶段提交真实任务，不要因长任务阻塞其他独立准备。首先启动人源化后回复task ID，然后继续完成所有10组Fv与比较。保留失败/重试。最后打包完整 /workspace/website_case_d13.zip，含结构化results.json、task-ledger.json（每个payload/ID/status/output）、输入/全部原始输出/全部候选/编号/分析/对话执行日志，并提供MOS Workspace可下载路径。用SelectProtein/SelectResidues/Superimpose在MOS导入参考和代表候选供截图。
+这是计算案例：模型分数、公开实验结构和额外统计分析分别标注，禁止声称实测免疫原性降低、亲和力保持或实验验证成功。

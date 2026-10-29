@@ -1,0 +1,23 @@
+{
+  "task_id": "342256515642368",
+  "name": "5GRJ_complex_structstab",
+  "type": "Structural Stability Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:20Z",
+  "duration": "5s",
+  "payload": {
+    "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif"
+  },
+  "chain": "A,B,C",
+  "purpose": "reverse-folding mutation scan on the whole 3-chain complex",
+  "raw_dir": "structural_stability_mutation_effect_342256515642368",
+  "raw_files": [
+    "struct_fitness_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "struct_fitness_scores.csv",
+      "bytes": 227598
+    }
+  ]
+}

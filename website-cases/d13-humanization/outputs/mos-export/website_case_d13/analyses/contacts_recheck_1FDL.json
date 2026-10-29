@@ -1,0 +1,1181 @@
+{
+ "contacts_4.0": {
+  "n_atom_pairs": 92,
+  "n_fab_residues": 15,
+  "fab_residues": [
+   "A32",
+   "A49",
+   "A50",
+   "A53",
+   "A91",
+   "A92",
+   "A93",
+   "B100",
+   "B101",
+   "B102",
+   "B31",
+   "B32",
+   "B52",
+   "B53",
+   "B54"
+  ]
+ },
+ "pairs_4.0": [
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CG",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.34
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CD1",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.47
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CD2",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.31
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CE1",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.57
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CE2",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.38
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "CZ",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.49
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 124,
+   "ag_resname": "ILE",
+   "ag_atom": "CD1",
+   "distance": 3.97
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 49,
+   "fab_resname": "TYR",
+   "fab_atom": "CE1",
+   "ag_res": 19,
+   "ag_resname": "ASN",
+   "ag_atom": "OD1",
+   "distance": 3.89
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 49,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "CA",
+   "distance": 3.91
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "CB",
+   "ag_res": 19,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 4.0
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "CD2",
+   "ag_res": 19,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.74
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "CE2",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD2",
+   "distance": 3.86
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "CZ",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD2",
+   "distance": 3.63
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "CG",
+   "distance": 3.65
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD1",
+   "distance": 3.68
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD2",
+   "distance": 2.86
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 53,
+   "fab_resname": "THR",
+   "fab_atom": "OG1",
+   "ag_res": 19,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.07
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "C",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.96
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "O",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CD",
+   "distance": 3.8
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "O",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "OE1",
+   "distance": 3.68
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "O",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.07
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CA",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.77
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CD2",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.99
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CE3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CD",
+   "distance": 3.48
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CE3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "OE1",
+   "distance": 3.78
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CE3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.0
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ2",
+   "ag_res": 125,
+   "ag_resname": "ARG",
+   "ag_atom": "CG",
+   "distance": 3.64
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CG",
+   "distance": 3.88
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CD",
+   "distance": 3.57
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.38
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 124,
+   "ag_resname": "ILE",
+   "ag_atom": "CD1",
+   "distance": 3.86
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CH2",
+   "ag_res": 124,
+   "ag_resname": "ILE",
+   "ag_atom": "CD1",
+   "distance": 3.86
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 92,
+   "fab_resname": "TRP",
+   "fab_atom": "CH2",
+   "ag_res": 125,
+   "ag_resname": "ARG",
+   "ag_atom": "CG",
+   "distance": 3.54
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 93,
+   "fab_resname": "SER",
+   "fab_atom": "N",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "OE1",
+   "distance": 3.2
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 31,
+   "fab_resname": "GLY",
+   "fab_atom": "C",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "CA",
+   "distance": 3.91
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 31,
+   "fab_resname": "GLY",
+   "fab_atom": "O",
+   "ag_res": 116,
+   "ag_resname": "LYS",
+   "ag_atom": "CG",
+   "distance": 3.73
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 31,
+   "fab_resname": "GLY",
+   "fab_atom": "O",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "N",
+   "distance": 3.73
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 31,
+   "fab_resname": "GLY",
+   "fab_atom": "O",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "CA",
+   "distance": 3.66
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 32,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 116,
+   "ag_resname": "LYS",
+   "ag_atom": "CE",
+   "distance": 3.88
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "C",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.91
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CB",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.85
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CE3",
+   "ag_res": 118,
+   "ag_resname": "THR",
+   "ag_atom": "C",
+   "distance": 3.92
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CE3",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "N",
+   "distance": 3.8
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "N",
+   "distance": 3.96
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CA",
+   "distance": 3.69
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CZ3",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CB",
+   "distance": 3.95
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CH2",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CB",
+   "distance": 3.83
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CH2",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CG",
+   "distance": 3.88
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 52,
+   "fab_resname": "TRP",
+   "fab_atom": "CH2",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "OD1",
+   "distance": 3.66
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 53,
+   "fab_resname": "GLY",
+   "fab_atom": "N",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "C",
+   "distance": 3.89
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 53,
+   "fab_resname": "GLY",
+   "fab_atom": "N",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 2.87
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 53,
+   "fab_resname": "GLY",
+   "fab_atom": "CA",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.24
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 53,
+   "fab_resname": "GLY",
+   "fab_atom": "C",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.68
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 54,
+   "fab_resname": "ASP",
+   "fab_atom": "N",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.2
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 54,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 118,
+   "ag_resname": "THR",
+   "ag_atom": "CB",
+   "distance": 3.83
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 54,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 118,
+   "ag_resname": "THR",
+   "ag_atom": "CG2",
+   "distance": 3.56
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "CG",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "N",
+   "distance": 3.76
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "CG",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "CB",
+   "distance": 3.89
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "CG",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 3.16
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "CG",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.55
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.46
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 23,
+   "ag_resname": "TYR",
+   "ag_atom": "CA",
+   "distance": 3.81
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 23,
+   "ag_resname": "TYR",
+   "ag_atom": "C",
+   "distance": 3.73
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "N",
+   "distance": 2.82
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "CA",
+   "distance": 3.62
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "CB",
+   "distance": 3.25
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 2.96
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.63
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "N",
+   "distance": 3.99
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "CB",
+   "distance": 3.74
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 2.63
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "CG",
+   "distance": 3.97
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 2.97
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 3.76
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CE1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 3.92
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CE1",
+   "ag_res": 120,
+   "ag_resname": "VAL",
+   "ag_atom": "CG2",
+   "distance": 3.91
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CE1",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CB",
+   "distance": 3.93
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CE2",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CB",
+   "distance": 3.95
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CZ",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "N",
+   "distance": 3.81
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "CZ",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CB",
+   "distance": 3.5
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CA",
+   "distance": 3.36
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "C",
+   "distance": 3.35
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "CG",
+   "distance": 3.94
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "OD1",
+   "distance": 2.97
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 120,
+   "ag_resname": "VAL",
+   "ag_atom": "N",
+   "distance": 3.25
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 120,
+   "ag_resname": "VAL",
+   "ag_atom": "C",
+   "distance": 3.92
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "N",
+   "distance": 2.99
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CA",
+   "distance": 3.78
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "CB",
+   "distance": 3.36
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 102,
+   "fab_resname": "ARG",
+   "fab_atom": "CZ",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.79
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 102,
+   "fab_resname": "ARG",
+   "fab_atom": "NH1",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.43
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 102,
+   "fab_resname": "ARG",
+   "fab_atom": "NH2",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.2
+  }
+ ],
+ "contacts_4.5": {
+  "n_atom_pairs": 202,
+  "n_fab_residues": 17,
+  "fab_residues": [
+   "A32",
+   "A49",
+   "A50",
+   "A53",
+   "A91",
+   "A92",
+   "A93",
+   "B100",
+   "B101",
+   "B102",
+   "B30",
+   "B31",
+   "B32",
+   "B52",
+   "B53",
+   "B54",
+   "B99"
+  ]
+ },
+ "polar_4.0": [
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD1",
+   "distance": 3.68
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 50,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 18,
+   "ag_resname": "ASP",
+   "ag_atom": "OD2",
+   "distance": 2.86
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 53,
+   "fab_resname": "THR",
+   "fab_atom": "OG1",
+   "ag_res": 19,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.07
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "O",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "OE1",
+   "distance": 3.68
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 91,
+   "fab_resname": "PHE",
+   "fab_atom": "O",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "NE2",
+   "distance": 3.07
+  },
+  {
+   "fab_chain": "A",
+   "fab_res": 93,
+   "fab_resname": "SER",
+   "fab_atom": "N",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "OE1",
+   "distance": 3.2
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 31,
+   "fab_resname": "GLY",
+   "fab_atom": "O",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "N",
+   "distance": 3.73
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 53,
+   "fab_resname": "GLY",
+   "fab_atom": "N",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 2.87
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 54,
+   "fab_resname": "ASP",
+   "fab_atom": "N",
+   "ag_res": 117,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.2
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.46
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "N",
+   "distance": 2.82
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 2.96
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD1",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 3.63
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "N",
+   "distance": 3.99
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 24,
+   "ag_resname": "SER",
+   "ag_atom": "OG",
+   "distance": 2.63
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 100,
+   "fab_resname": "ASP",
+   "fab_atom": "OD2",
+   "ag_res": 27,
+   "ag_resname": "ASN",
+   "ag_atom": "ND2",
+   "distance": 2.97
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 119,
+   "ag_resname": "ASP",
+   "ag_atom": "OD1",
+   "distance": 2.97
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 120,
+   "ag_resname": "VAL",
+   "ag_atom": "N",
+   "distance": 3.25
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 101,
+   "fab_resname": "TYR",
+   "fab_atom": "OH",
+   "ag_res": 121,
+   "ag_resname": "GLN",
+   "ag_atom": "N",
+   "distance": 2.99
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 102,
+   "fab_resname": "ARG",
+   "fab_atom": "NH1",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.43
+  },
+  {
+   "fab_chain": "B",
+   "fab_res": 102,
+   "fab_resname": "ARG",
+   "fab_atom": "NH2",
+   "ag_res": 22,
+   "ag_resname": "GLY",
+   "ag_atom": "O",
+   "distance": 3.2
+  }
+ ],
+ "charge_pairs_4.0": []
+}

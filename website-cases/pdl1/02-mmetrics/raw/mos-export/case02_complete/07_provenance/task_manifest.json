@@ -1,0 +1,175 @@
+{
+  "generated_utc": "2026-10-20T02:52:21Z",
+  "pdb": "5GRJ",
+  "mos_object": {
+    "object_id": "342256182768640",
+    "work_id": "342256189350912",
+    "tos_key": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+    "name": "5GRJ.cif"
+  },
+  "tasks": [
+    {
+      "task_id": "342256189539328",
+      "name": "autocompute-5GRJ",
+      "type": "MOSTask (platform autocompute / MMetrics backend)",
+      "status": "running",
+      "purpose": "auto-triggered by structure import; no outputs retrievable",
+      "outputs": []
+    },
+    {
+      "task_id": "342256475304960",
+      "name": "5GRJ_PDL1_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "purpose": "homologs of PD-L1 chain C",
+      "outputs": [
+        {
+          "file": "sequence_homology_search_342256475304960/similarity_results.json",
+          "bytes": 8478245
+        },
+        {
+          "file": "sequence_homology_search_342256475304960/all_sequences.fasta",
+          "bytes": 501679
+        }
+      ]
+    },
+    {
+      "task_id": "342256475644928",
+      "name": "5GRJ_VH_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "purpose": "homologs of avelumab VH",
+      "outputs": [
+        {
+          "file": "sequence_homology_search_342256475644928/similarity_results.json",
+          "bytes": 1925682
+        },
+        {
+          "file": "sequence_homology_search_342256475644928/all_sequences.fasta",
+          "bytes": 139129
+        }
+      ]
+    },
+    {
+      "task_id": "342256477762560",
+      "name": "5GRJ_VL_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "purpose": "homologs of avelumab VL",
+      "outputs": [
+        {
+          "file": "sequence_homology_search_342256477762560/similarity_results.json",
+          "bytes": 1662385
+        },
+        {
+          "file": "sequence_homology_search_342256477762560/all_sequences.fasta",
+          "bytes": 129567
+        }
+      ]
+    },
+    {
+      "task_id": "342256486130688",
+      "name": "5GRJ_VH_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "purpose": "VH deep sequence-model mutation scan",
+      "outputs": [
+        {
+          "file": "sequence_fitness_mutation_effect_342256486130688/sequence_scores.csv",
+          "bytes": 61352
+        }
+      ]
+    },
+    {
+      "task_id": "342256488231936",
+      "name": "5GRJ_VL_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "purpose": "VL deep sequence-model mutation scan",
+      "outputs": [
+        {
+          "file": "sequence_fitness_mutation_effect_342256488231936/sequence_scores.csv",
+          "bytes": 56246
+        }
+      ]
+    },
+    {
+      "task_id": "342256491451392",
+      "name": "5GRJ_PDL1_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "purpose": "PD-L1 deep sequence-model mutation scan",
+      "outputs": [
+        {
+          "file": "sequence_fitness_mutation_effect_342256491451392/sequence_scores.csv",
+          "bytes": 115347
+        }
+      ]
+    },
+    {
+      "task_id": "342256499057664",
+      "name": "5GRJ_VH_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "purpose": "VH MSA conservation/covariance scan",
+      "outputs": [
+        {
+          "file": "evolutionary_mutation_effect_342256499057664/evolutionary_scores.csv",
+          "bytes": 49042
+        }
+      ]
+    },
+    {
+      "task_id": "342256501269504",
+      "name": "5GRJ_VL_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "purpose": "VL MSA conservation/covariance scan",
+      "outputs": [
+        {
+          "file": "evolutionary_mutation_effect_342256501269504/evolutionary_scores.csv",
+          "bytes": 44676
+        }
+      ]
+    },
+    {
+      "task_id": "342256504251392",
+      "name": "5GRJ_PDL1_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "purpose": "PD-L1 MSA conservation/covariance scan",
+      "outputs": [
+        {
+          "file": "evolutionary_mutation_effect_342256504251392/evolutionary_scores.csv",
+          "bytes": 90591
+        }
+      ]
+    },
+    {
+      "task_id": "342256515642368",
+      "name": "5GRJ_complex_structstab",
+      "type": "Structural Stability Mutation Effect",
+      "status": "succeeded",
+      "purpose": "reverse-folding scan on the 3-chain complex",
+      "outputs": [
+        {
+          "file": "structural_stability_mutation_effect_342256515642368/struct_fitness_scores.csv",
+          "bytes": 227598
+        }
+      ]
+    },
+    {
+      "task_id": "342256515908608",
+      "name": "5GRJ_complex_affinity",
+      "type": "Binding Affinity Mutation Effect",
+      "status": "succeeded",
+      "purpose": "ddG scan on the VH/VL/PD-L1 complex",
+      "outputs": [
+        {
+          "file": "binding_affinity_mutation_effect_342256515908608/affinity_scores.csv",
+          "bytes": 445350
+        }
+      ]
+    }
+  ]
+}

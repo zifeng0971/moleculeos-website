@@ -1,0 +1,42 @@
+[
+  {
+    "source": "/Users/zifengye/Downloads/hbond (1).tsv",
+    "destination": "contacts-hbond.tsv",
+    "sha256": "545667a41c49119577b1e3fadcacb77730bb1936c1321796bfabe783e8cf2101"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/hbond (2).tsv",
+    "destination": "interface-hbond.tsv",
+    "sha256": "85686d03697cd26d81af94dc1a090c393310c1290dd8d64bfd7bb5b3a24c70c0"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/ionic.tsv",
+    "destination": "contacts-ionic.tsv",
+    "sha256": "3ba3613fa1394adf0fe48194a9070b4e1795812b7cc73ad9c2f16a160d4178bf"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/pistack.tsv",
+    "destination": "contacts-pistack.tsv",
+    "sha256": "bc80ec37af90969e4de97b08c75f9aa5c2c97b45fbe01e98e7e49f5cd1e02cf5"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/residues.tsv",
+    "destination": "contacts-residues.tsv",
+    "sha256": "1b82d283bd7129eaa6bb910ca4cb2a3f88fbb97aa60596ac1d0349d632c924d1"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/residues (1).tsv",
+    "destination": "interface-residues.tsv",
+    "sha256": "5cef6acf12866974725ed9c6da927a8af8559e4248ba3758928d4d83cc50af9f"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/summary.md",
+    "destination": "contacts-summary.md",
+    "sha256": "b58fdcecf00e7c646f32bc80b5a77cfd9d03d7191ac29d2899d0075b4972df45"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/summary (1).md",
+    "destination": "interface-summary.md",
+    "sha256": "3794ecf6d5c82b80a560885218107280d4545ba1ac09c1a185f75f41c17b9b0e"
+  }
+]

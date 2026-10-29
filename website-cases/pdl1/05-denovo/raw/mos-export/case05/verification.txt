@@ -1,0 +1,16 @@
+[PASS] 5GRJ contains exactly 3 polymer chains (H, L, A) :: ['H', 'L', 'A']
+[PASS] Target file contains one chain only :: ['A']
+[PASS] Target chain is A
+[PASS] All 213 modeled PD-L1 residues retained :: 213 residues, auth 18-233
+[PASS] Author numbering preserved 18-233 with 185-187 absent :: first=18 last=233 n=213
+[PASS] No non-polymer / glycan / ligand residues :: []
+[PASS] Auth I54 is isoleucine :: ILE
+[PASS] Auth Y56 is tyrosine :: TYR
+[PASS] Auth R113 is arginine :: ARG
+[PASS] Auth E58/V68/Y123 identities :: GLU/VAL/TYR
+[PASS] MOS-layout file has one chain :: A
+[PASS] MOS-layout residue numbering contiguous 1-213 :: 1-213
+[PASS] Sanitized 37/39/96 = ILE/TYR/ARG :: ILE/TYR/ARG
+[PASS] Sanitized 41/51/106 = GLU/VAL/TYR :: GLU/VAL/TYR
+[PASS] Mapping file: auth->sanitized :: I54->37 Y56->39 R113->96 E58->41 V68->51 Y123->106
+[PASS] Mapping covers all 213 residues :: 213

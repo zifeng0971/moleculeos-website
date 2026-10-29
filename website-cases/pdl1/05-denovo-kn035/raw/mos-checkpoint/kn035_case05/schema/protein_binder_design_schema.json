@@ -1,0 +1,50 @@
+{
+  "task_name": "Protein Binder Design",
+  "schema_retrieved_from": "GetMOSTaskSchema('Protein Binder Design')",
+  "schema_retrieved_at_utc": "2026-10-21T02:24:57Z",
+  "type": "object",
+  "title": "UdfInputData",
+  "required": ["input_structure", "contigs"],
+  "properties": {
+    "contigs": {
+      "type": "string",
+      "title": "Contigs",
+      "description": "String controlling which residues are fixed and which are hallucinated. Segments within a chain group are separated by '/'; independent chain groups are separated by a space. A chain-prefixed segment (e.g. 'A20-50') keeps those residues fixed from the input structure. A bare numeric range (e.g. '30-50') instructs the model to hallucinate a new chain of 30 to 50 residues. '/0' appended to a fixed segment marks a chain break with no additional hallucinated residues on that chain. Binder design example: 'A18-132/0 10-40' - fix chain A residues 18-132, then design a new binder of 10-40 residues. Multi-receptor example: 'A1-100/0 B1-80/0 50-100' - fix chains A and B, then design a binder of 50-100 residues. Inpainting example: 'A1-4/1-1/A6-7/13-13/A21-200' - fix A1-4, hallucinate 1 residue (replacing A5), fix A6-7, hallucinate 13 residues (replacing A8-20), fix A21-200. Chain IDs and residue indexes must exactly match the input structure."
+    },
+    "hotspot_res": {
+      "anyOf": [{"type": "string"}, {"type": "null"}],
+      "title": "Hotspot Res",
+      "default": null,
+      "description": "Optional. Residues on the fixed receptor that the designed binder should contact. Use chain-prefixed identifiers, e.g. 'A55-57, B10'. Ranges and single residues may be separated by commas or whitespace. Leave empty or null for unconditional backbone generation."
+    },
+    "random_seed": {
+      "anyOf": [{"type": "integer"}, {"type": "null"}],
+      "title": "Random Seed",
+      "default": null,
+      "description": "Optional. Integer seed for reproducible generation. Leave unset for a random seed."
+    },
+    "compare_binder": {
+      "anyOf": [{"type": "integer"}, {"type": "null"}],
+      "title": "Compare Binder",
+      "default": null,
+      "description": "Optional. Set to 1 to run sequence design and structure prediction after backbone generation, returning an aligned comparison structure. Set to 0 (default) to return only the backbone."
+    },
+    "diffusion_steps": {
+      "anyOf": [{"type": "integer"}, {"type": "null"}],
+      "title": "Diffusion Steps",
+      "default": null,
+      "description": "Optional. Number of diffusion steps. Default is 50; specify only when you want to override it."
+    },
+    "input_structure": {
+      "type": "string",
+      "title": "Input Structure",
+      "description": "TOS URI or local path to the input protein structure in PDB/mmCIF format."
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework - see gateway.source.ApiSource.resolve_output_dest()."
+    }
+  }
+}

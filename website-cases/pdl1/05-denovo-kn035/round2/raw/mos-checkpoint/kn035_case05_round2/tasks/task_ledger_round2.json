@@ -1,0 +1,106 @@
+{
+  "round": "round2",
+  "created_utc": "2026-10-21T02:46:41Z",
+  "authorisation": "user explicitly authorised 3 further de novo runs",
+  "input": {
+    "object_id": "342605515027456",
+    "work_id": "342605519696896",
+    "tos_key": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+    "local_path": "/workspace/protein_data/protein_342605519696896/MMFold_1_chain_A.cif",
+    "sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+    "sha256_matches_user_supplied": true,
+    "chains_verified": [
+      {
+        "chain": "A",
+        "n_residues": 118,
+        "first": 1,
+        "last": 118
+      }
+    ],
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "sequence_len": 118,
+    "note": "reused the SAME existing project object; no re-prediction, no re-import, no modification"
+  },
+  "payload_common": {
+    "contigs": "A1-118/0 60-100",
+    "hotspot_res": "A45,A40,A97,A107,A105,A38",
+    "compare_binder": 1,
+    "diffusion_steps": "not set -> platform default 50",
+    "provenance": "copied programmatically from round1 payload_seed111.json, only random_seed changed"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "task_name": "kn035_c05_round2_seed444",
+      "task_id": "342610714428416",
+      "seed": 444,
+      "payload_file": "payloads/payload_seed444.json",
+      "submitted_utc": "2026-10-21T02:46:41Z",
+      "status_at_submit": "submitted"
+    },
+    {
+      "run": 2,
+      "task_name": "kn035_c05_round2_seed555",
+      "task_id": "342610715788288",
+      "seed": 555,
+      "payload_file": "payloads/payload_seed555.json",
+      "submitted_utc": "2026-10-21T02:46:41Z",
+      "status_at_submit": "submitted",
+      "status": "succeed",
+      "duration": "3.6min",
+      "downloaded_to": "downloads/protein_binder_design_342610715788288",
+      "archived_to": "outputs/seed555",
+      "binder_length": 72,
+      "output_files": [
+        {
+          "name": "179255100600182_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "cb660606777a284904b426399fe9e9f3b68d43c324cf20a199e0d4f8327cdf03"
+        },
+        {
+          "name": "179255100689123_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "3c1a5120a33d095a4b70457220f714a3b13092e4fb6a4e37b172fdd2f3a11e93"
+        }
+      ],
+      "confidence_metrics": "missing"
+    },
+    {
+      "run": 3,
+      "task_name": "kn035_c05_round2_seed666",
+      "task_id": "342610718331904",
+      "seed": 666,
+      "payload_file": "payloads/payload_seed666.json",
+      "submitted_utc": "2026-10-21T02:46:41Z",
+      "status_at_submit": "submitted"
+    }
+  ],
+  "constraints": [
+    "no existing binder redesign used",
+    "main structure NOT re-predicted",
+    "round1 tasks/files/projects untouched"
+  ],
+  "chain_roles": {
+    "output_chain_B": "PD-L1 target, identity to main structure chain A 1-118",
+    "output_chain_A": "de novo binder, no counterpart in MMFold_1, intentionally unmapped"
+  },
+  "snapshots": [
+    {
+      "utc": "2026-10-21T02:52:27Z",
+      "source": "CheckMOSTask 342610715788288",
+      "states": {
+        "342610714428416": "running",
+        "342610715788288": "succeed",
+        "342610718331904": "pending"
+      },
+      "waits_observed_s": [
+        44,
+        45,
+        45,
+        45,
+        40
+      ],
+      "note": "platform ListMOSTasks durations were cached between refreshes; CheckMOSTask used for authoritative status"
+    }
+  ]
+}

@@ -1,0 +1,902 @@
+{
+  "mmfold": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 781730,
+    "content_bbox": [
+      340,
+      176,
+      861,
+      575
+    ],
+    "independent_source_and_projection_checks": [
+      {
+        "source": "5JDS",
+        "atom_id": "806",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "5JDS",
+        "atom_id": "271",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "5JDS",
+        "atom_id": "1311",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "5JDS",
+        "atom_id": "5",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "5JDS",
+        "atom_id": "260",
+        "chain": "A",
+        "projection_error_px": 0.0
+      }
+    ]
+  },
+  "mmdesign": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 814017,
+    "content_bbox": [
+      236,
+      186,
+      965,
+      575
+    ],
+    "independent_source_and_projection_checks": [
+      {
+        "source": "design",
+        "atom_id": "727",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "244",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1183",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "4",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "233",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      }
+    ]
+  },
+  "moleculeos": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "transparent_pixels": 745057,
+    "content_bbox": [
+      103,
+      182,
+      1098,
+      603
+    ],
+    "independent_source_and_projection_checks": [
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3231",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3081",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3374",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3007",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "3078",
+        "chain": "D",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2035",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1817",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2241",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1709",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "1812",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2701",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2552",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2843",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2479",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "design",
+        "atom_id": "2549",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "4519",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "1547",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "7234",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "23",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "1485",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "4519",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "1547",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "7234",
+        "chain": "C",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "23",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "1HZH",
+        "atom_id": "1485",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "4ZQK",
+        "atom_id": "702",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "4ZQK",
+        "atom_id": "236",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "4ZQK",
+        "atom_id": "1144",
+        "chain": "B",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "4ZQK",
+        "atom_id": "4",
+        "chain": "A",
+        "projection_error_px": 0.0
+      },
+      {
+        "source": "4ZQK",
+        "atom_id": "225",
+        "chain": "A",
+        "projection_error_px": 0.0
+      }
+    ]
+  }
+}

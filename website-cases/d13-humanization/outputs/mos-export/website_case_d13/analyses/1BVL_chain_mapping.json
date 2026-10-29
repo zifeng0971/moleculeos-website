@@ -1,0 +1,60 @@
+{
+ "mapping": [
+  {
+   "mos_label": "A",
+   "auth_chain_by_mapping": "A",
+   "auth_chain_by_coordinates": "A",
+   "max_delta_CA_A": 0.0,
+   "role": "VH",
+   "n_ca": 116,
+   "consistent": true
+  },
+  {
+   "mos_label": "B",
+   "auth_chain_by_mapping": "C",
+   "auth_chain_by_coordinates": "C",
+   "max_delta_CA_A": 0.0,
+   "role": "VH",
+   "n_ca": 116,
+   "consistent": true
+  },
+  {
+   "mos_label": "C",
+   "auth_chain_by_mapping": "B",
+   "auth_chain_by_coordinates": "B",
+   "max_delta_CA_A": 0.0,
+   "role": "VL",
+   "n_ca": 108,
+   "consistent": true
+  },
+  {
+   "mos_label": "D",
+   "auth_chain_by_mapping": "D",
+   "auth_chain_by_coordinates": "D",
+   "max_delta_CA_A": 0.0,
+   "role": "VL",
+   "n_ca": 108,
+   "consistent": true
+  }
+ ],
+ "biological_pairs": {
+  "Fv1": {
+   "auth_heavy": "A",
+   "auth_light": "B",
+   "mos_heavy": "A",
+   "mos_light": "C"
+  },
+  "Fv2": {
+   "auth_heavy": "C",
+   "auth_light": "D",
+   "mos_heavy": "B",
+   "mos_light": "D"
+  }
+ },
+ "evidence": [
+  "sanitize_structure.py .mapping chains A<-A, B<-C, C<-B, D<-D",
+  "identical CA coordinates (max |dCA| = 0.000 A) between each MOS label chain and exactly one author chain",
+  "RCSB _pdbx_struct_assembly_gen.asym_id_list = ['A,B','C,D'] (assembly 1 = author A+B, assembly 2 = author C+D)",
+  "entity _entity_poly.pdbx_strand_id = ['A,C','B,D'] -> A,C share the 117-aa VH entity, B,D share the 108-aa VL entity"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "origin": "MOS native page Download controls via Chrome Computer Use",
+  "captured_utc": "2026-10-20T08:49:55.686256+00:00",
+  "files": [
+    {
+      "file": "outputs/native-affinity-page/PLSc.csv",
+      "download_name": "PLSc.csv",
+      "bytes": 153,
+      "sha256": "23be5c5796112a15e4a611d6c0df3c783953cfa703b53e1983fe146497ac8f8f",
+      "data_rows": 1,
+      "header": [
+        "pair_name",
+        "score",
+        "vdw",
+        "hbond",
+        "metal",
+        "hydrophobic"
+      ]
+    }
+  ]
+}

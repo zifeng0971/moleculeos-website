@@ -1,0 +1,26 @@
+{
+  "n_rows": 2560,
+  "models_present": [
+    "stability",
+    "seq_fitness",
+    "evolutionary"
+  ],
+  "stability": {
+    "wt_is_position_max": 68,
+    "wt_is_position_min": 0,
+    "wt_score_exactly_zero": 128,
+    "n_positions": 128
+  },
+  "seq_fitness": {
+    "wt_is_position_max": 72,
+    "wt_is_position_min": 0,
+    "wt_score_exactly_zero": 128,
+    "n_positions": 128
+  },
+  "evolutionary": {
+    "wt_is_position_max": 87,
+    "wt_is_position_min": 2,
+    "wt_score_exactly_zero": 128,
+    "n_positions": 128
+  }
+}

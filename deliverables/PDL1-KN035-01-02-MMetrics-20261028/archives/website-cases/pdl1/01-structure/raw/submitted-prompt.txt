@@ -1,0 +1,5 @@
+Run MMFold complex structure prediction for human PD-L1 and KN035 VHH, two separate protein chains, 1:1 stoichiometry. Use these exact sequences derived from PDB 5JDS with cloning/His tags removed. Save predicted PDB/mmCIF and confidence outputs (pLDDT, pTM, ipTM, PAE if provided), give MOS task ID and status. Do not use the experimental PDB as a predicted result.
+>PDL1
+MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE
+>KN035
+QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS

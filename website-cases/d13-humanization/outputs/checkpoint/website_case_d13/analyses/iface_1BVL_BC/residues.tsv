@@ -1,0 +1,5 @@
+chain	res_type	res_num	in_interface	on_surface	has_hbond	has_salt_bridge	asa	bsa	delta_g
+C	VAL	15	Y	N	N	N	74.83	18.57	0.300
+B	ASP	100	Y	N	N	N	96.63	18.06	-0.230
+C	ILE	106	Y	N	N	N	70.38	4.35	0.070
+B	ARG	102	Y	N	N	N	119.38	3.64	-0.100

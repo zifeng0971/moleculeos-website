@@ -1,0 +1,926 @@
+- text: MOS
+- generic: BETA
+- generic: nn
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: 7XYQ_PDL1_DBL1_03_clean
+- img "caret-down":
+- generic: 7XYQ_PDL1_DBL1_03_clean
+- img "caret-down":
+- generic: 5GRJ
+- generic: Amino Acid Group
+- generic: Top-5 DBL1_03 affinity candidates
+- button:
+- generic: 7XYQ_PDL1_DBL1_03_clean
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "Y"
+- generic: "11"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: I
+- generic: "21"
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: L
+- generic: "31"
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: E
+- generic: "41"
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: V
+- generic: "51"
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: H
+- generic: "61"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: L
+- generic: "71"
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: A
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: D
+- generic: "91"
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "Y"
+- generic: "101"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: V
+- generic: "111"
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "N"
+- generic: "121"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: T
+- generic: "131"
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: E
+- generic: "141"
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: T
+- generic: "151"
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: K
+- generic: "161"
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: E
+- generic: "171"
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: R
+- generic: "181"
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "Y"
+- generic: "191"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: E
+- generic: "201"
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: G
+- generic: G
+- generic: E
+- generic: T
+- generic: G
+- generic: S
+- generic: S
+- generic: I
+- generic: E
+- generic: S
+- generic: "11"
+- generic: M
+- generic: K
+- generic: A
+- generic: S
+- generic: M
+- generic: I
+- generic: V
+- generic: Q
+- generic: Q
+- generic: I
+- generic: "21"
+- generic: L
+- generic: C
+- generic: Q
+- generic: L
+- generic: E
+- generic: T
+- generic: G
+- generic: I
+- generic: D
+- generic: Q
+- generic: "31"
+- generic: Q
+- generic: K
+- generic: A
+- generic: "N"
+- generic: D
+- generic: V
+- generic: I
+- generic: E
+- generic: G
+- generic: "N"
+- generic: "41"
+- generic: I
+- generic: D
+- generic: V
+- generic: E
+- generic: D
+- generic: K
+- generic: K
+- generic: V
+- generic: Q
+- generic: L
+- generic: "51"
+- generic: "Y"
+- generic: C
+- generic: E
+- generic: C
+- generic: I
+- generic: L
+- generic: K
+- generic: Q
+- generic: F
+- generic: H
+- generic: "61"
+- generic: I
+- generic: L
+- generic: D
+- generic: K
+- generic: "N"
+- generic: "N"
+- generic: V
+- generic: F
+- generic: K
+- generic: P
+- generic: "71"
+- generic: Q
+- generic: G
+- generic: I
+- generic: K
+- generic: A
+- generic: V
+- generic: M
+- generic: E
+- generic: L
+- generic: L
+- generic: "81"
+- generic: I
+- generic: D
+- generic: E
+- generic: "N"
+- generic: S
+- generic: V
+- generic: K
+- generic: Q
+- generic: L
+- generic: V
+- generic: "91"
+- generic: S
+- generic: D
+- generic: C
+- generic: S
+- generic: T
+- generic: I
+- generic: S
+- generic: E
+- generic: E
+- generic: "N"
+- generic: "101"
+- generic: P
+- generic: H
+- generic: L
+- generic: K
+- generic: A
+- generic: S
+- generic: K
+- generic: L
+- generic: M
+- generic: Q
+- generic: "111"
+- generic: C
+- generic: I
+- generic: S
+- generic: K
+- generic: "Y"
+- generic: K
+- generic: T
+- generic: W
+- generic: K
+- generic: S
+- generic: "121"
+- generic: F
+- generic: D
+- generic: F
+- generic: L
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 41d29f05-6
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- paragraph: I’ll start by inspecting the case inputs and the available MOS task schemas.
+- generic: ListAvailableMOSTasks
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Let me get the schema for Binding Affinity Mutation Effect.
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Binding Affinity Mutation Effect": (Binding Affinity Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls /app/src/mocha/agents/custom_skills/search-prot…": (ls /app/src/mocha/agents/custom_skills/search-prot…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now let me fetch 7XYQ. Let me use fetch_struct.py.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && mkdir -p case03/structs && python…": (cd /workspace && mkdir -p case03/structs && python…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now inspect 7XYQ composition.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python /app/src/mocha/agen…": (cd /workspace/case03 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python /app/src/mocha/agen…": (cd /workspace/case03 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: 7XYQ = PD-L1 (chain A, 203 res) + DBL1_03 designed binder (chain B, 124 res). Ch…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && grep -c \"^ATOM\" structs/7X…": (cd /workspace/case03 && grep -c "^ATOM" structs/7X…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The awk substring failed (CIF format is not fixed-column like PDB). Let me use g…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python -c \" import gemmi s…": (cd /workspace/case03 && python -c " import gemmi s…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The mapping says source chains: sanitized chain A ← auth chain A entity 1; B ← a…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python -c \" import gemmi s…": (cd /workspace/case03 && python -c " import gemmi s…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Good: 7XYQ = human/marmoset PD-L1? Wait A0A2I2ZMM7 is Gorgo (gorilla). Hmm, DB n…"
+- generic: ▸
+- generic: GetMOSQuota
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python /app/src/mocha/agen…": (cd /workspace/case03 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "5JDS: chain A = VHH (KN035 nanobody), chain B = PD-L1 IgV domain (115 res). Good…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sed -n 1,90p /app/src/mocha/agents/custom_skills/s…": (sed -n 1,90p /app/src/mocha/agents/custom_skills/s…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now let's prepare structures and register the sequences. Let me write the cleani…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' import ge…": (cd /workspace/case03 && python - <<'EOF' import ge…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' import ge…": (cd /workspace/case03 && python - <<'EOF' import ge…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Files still large (anisotropic B, etc.). Fine.
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "local_file": (local_file)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now verify the sanitized MOS object chain layout still A/B with correct numberin…
+- generic: ▸
+- generic: GetMOSObject
+- generic "342254388737024": (342254388737024)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'EOF' import gemmi p='…": (cd /workspace && python - <<'EOF' import gemmi p='…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Clean 2-chain structure, preserved numbering. Now launch the affinity mutation t…
+- generic: ▸
+- generic: StartMOSTask
+- generic "Binding Affinity Mutation Effect": (Binding Affinity Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Task launched: 342254431249408."
+- generic: ▸
+- img "unordered-list":
+- generic: Todo List
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sed -n 1,60p /app/src/mocha/agents/custom_skills/i…": (sed -n 1,60p /app/src/mocha/agents/custom_skills/i…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sed -n 60,150p /app/src/mocha/agents/custom_skills…": (sed -n 60,150p /app/src/mocha/agents/custom_skills…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && mkdir -p contacts iface &&…": (cd /workspace/case03 && mkdir -p contacts iface &&…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && echo \"=== CONTACTS SUMMARY…": (cd /workspace/case03 && echo "=== CONTACTS SUMMARY…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Interface: BSA ~1140 Å² (binder) / 1059 Å² (PD-L1), 34/38 interface residues, 12…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Interesting: there are pre-existing tasks from an earlier session: PDL1_KN035_VH…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python /app/src/mocha/agen…": (cd /workspace/case03 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now check the affinity task status once.
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254431249408": (342254431249408)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Task is pending — waiting. The instruction from the user: \"Launch necessary MOS …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python /app/src/mocha/agen…": (cd /workspace/case03 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: 7XYQ_A has 4 unmodeled residues at positions 202-205 (SKRE), i.e. positions 202-…
+- generic: ▸
+- img "code":
+- generic: Shell
+- 'generic "cd /workspace/case03 && mkdir -p deliverables/{inp…"': "(cd /workspace/case03 && mkdir -p deliverables/{inp…)"
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' lib='/wor…": (cd /workspace/case03 && python - <<'EOF' lib='/wor…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now check the task status again — one snapshot after some productive work.
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still pending. Per workflow, I should end my turn and report. But the deliverabl…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' import cs…": (cd /workspace/case03 && python - <<'EOF' import cs…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254431249408": (342254431249408)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now running. Good sign — it accepted the non-antibody complex (compatibility con…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case03/scripts/build_results.py": (/workspace/case03/scripts/build_results.py)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "mkdir -p /workspace/case03/scripts && echo ok": (mkdir -p /workspace/case03/scripts && echo ok)
+- img "check-circle":
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case03/scripts/build_results.py": (/workspace/case03/scripts/build_results.py)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254431249408": (342254431249408)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still running. I'll end the turn as designed, giving the user the launched task,…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sleep 240; echo waited": (sleep 240; echo waited)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254431249408": (342254431249408)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: It succeeded with a non-antibody designed binder — compatibility confirmed. Now …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/binding_affinity_mutation_…": (cd /workspace/downloads/binding_affinity_mutation_…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "6213 mutations. mutstr format: \"AA103C\" — hmm. Chain letter + resname + resnum +…"
+- generic: ▸
+- generic: AnalyzeAffinityScores
+- generic "342254431249408": (342254431249408)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/binding_affinity_mutation_…": (cd /workspace/downloads/binding_affinity_mutation_…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "My parsing of chain from mutstr[0] was wrong: mutstr[0] is the WT residue letter…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' import js…": (cd /workspace/case03 && python - <<'EOF' import js…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed: chain A author = MOS + 18 (UniProt 19-225); chain B author = MOS - 5 …"
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case03/scripts/analyze_affinity.py": (/workspace/case03/scripts/analyze_affinity.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python scripts/analyze_aff…": (cd /workspace/case03 && python scripts/analyze_aff…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now, candidates: Q13Y (author) at interface but BSA only 6.7 Å² — marginal. V12I…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python - <<'EOF' import cs…": (cd /workspace/case03 && python - <<'EOF' import cs…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Note: the \"G0F\" mapping — author 0, MOS 5. And \"E-2F\" author -2. Negative author…"
+- generic: ▸
+- img "edit":
+- generic: Edit
+- generic "/workspace/case03/scripts/analyze_affinity.py": (/workspace/case03/scripts/analyze_affinity.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && python scripts/analyze_aff…": (cd /workspace/case03 && python scripts/analyze_aff…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now write a README with file index + task params + interpretation, and verify al…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case03/deliverables/README.md": (/workspace/case03/deliverables/README.md)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && find deliverables -type f …": (cd /workspace/case03 && find deliverables -type f …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "All deliverables exist. Now visualize in the 3D viewer: highlight candidate resi…"
+- generic: ▸
+- generic: SelectResidues
+- generic "342254394876928": (342254394876928)
+- img "close-circle":
+- generic: ▸
+- generic: ManageAnnotation
+- generic "create": (create)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The imported structure was registered but maybe not loaded into viewer. Work ID …
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "342254388737024": (342254388737024)
+- img "close-circle":
+- generic: ▸
+- generic: SelectResidues
+- generic "342254395483136": (342254395483136)
+- img "check-circle":
+- generic: ▸
+- generic: 5 residues in Chain B
+- generic: "Selected 5 residues: B:17,18,19,30,55"
+- button "Replay selection":
+  - img "reload":
+- button "Add annotation":
+  - img "edit":
+- generic: ManageAnnotation
+- generic "create": (create)
+- img "check-circle":
+- generic: ▸
+- generic: 5 residues in Chain B
+- generic: "Binder chain B positions with the most stabilizing predicted single substitutions (ddG_pred, kcal/mol): Q13Y (-2.45), I50F (-1.80), V12I (-1.65), Q14Y (-1.59), Q25Y (-1.37). Author numbering in the label; viewer residues are MOS numbering."
+- img "unordered-list":
+- generic: Todo List
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Done. Now compose the report with:"
+- generic: ▸
+- paragraph: The affinity scan ran on 7XYQ itself — no antibody/VHH substitution was needed.
+- heading "Compatibility finding" [level=2]
+- paragraph:
+  - text: The
+  - code: Binding Affinity Mutation Effect
+  - text: schema exposes only
+  - code: input_structure
+  - text: +
+  - code: chain_ids
+  - text: ; it carries no immunoglobulin restriction. I submitted the real 7XYQ assembly and it completed normally on the non-immunoglobulin designed binder, so the KN035 (5JDS) / avelumab (5GRJ) fallback was not used (5JDS was fetched only as contingency and is excluded from results).
+- heading "Task launched and completed" [level=2]
+- list:
+  - text: ID
+  - strong: "342254431249408"
+  - text: ","
+  - code: Binding Affinity Mutation Effect
+  - text: ", name"
+  - code: PDL1_DBL1_03_affinity_scan
+  - text: ", status succeed, 1.2 min"
+  - text: "Payload:"
+  - code: "{\"input_structure\": \"tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif\", \"chain_ids\": \"A,B\", \"custom_output_path\": \"\"}"
+  - listitem: Input was 7XYQ with deposited chains C (one modelled arginine) and D (water) stripped, leaving PD-L1 (chain A, 203 of 207 residues modelled) and DBL1_03 (chain B, 124 residues). MOS object 342254388737024.
+  - listitem: "Numbering: chain A MOS 1–207 = UniProt 19–225; chain B MOS 1–124 = PDB author −4…119."
+- heading "Baseline" [level=2]
+- paragraph: "The model’s scale is relative, with wild type at ddG = 0 — it returns mutation effects only, not an absolute ΔG, so no Kd is claimed. The structural baseline I measured on 7XYQ: PD-L1↔DBL1_03 buries 1059 Å² on the antigen side and 1140 Å² on the binder side across 38 + 34 interface residues, fastened by 12 hydrogen bonds and 5 salt bridges. Of 6213 substitutions scored (all 327 modelled positions), 903 weaken binding on the binder chain."
+- heading "Top single-mutation binder candidates (model output, chain B)" [level=2]
+- paragraph: Negative ddG_pred = stronger predicted binding; author numbering first, MOS numbering in brackets.
+- table:
+  - rowgroup:
+    - row "# Substitution ddG_pred (kcal/mol) model rank location":
+      - columnheader "#"
+      - columnheader "Substitution"
+      - columnheader "ddG_pred (kcal/mol)"
+      - columnheader "model rank"
+      - columnheader "location"
+  - rowgroup:
+    - row "1 Gln13→Tyr [Q18Y] −2.45 0.0002 interface edge, 6.7 Å² buried":
+      - cell "1"
+      - cell "Gln13→Tyr [Q18Y]"
+      - cell "−2.45"
+      - cell "0.0002"
+      - cell "interface edge, 6.7 Å² buried"
+    - row "2 Ile50→Phe [I55F] −1.80 0.0008 binder core, non-interface":
+      - cell "2"
+      - cell "Ile50→Phe [I55F]"
+      - cell "−1.80"
+      - cell "0.0008"
+      - cell "binder core, non-interface"
+    - row "3 Val12→Ile [V17I] −1.65 0.0011 interface, 78.6 Å² buried":
+      - cell "3"
+      - cell "Val12→Ile [V17I]"
+      - cell "−1.65"
+      - cell "0.0011"
+      - cell "interface, 78.6 Å² buried"
+    - row "4 Gln14→Tyr [Q19Y] −1.59 0.0018 binder core, non-interface":
+      - cell "4"
+      - cell "Gln14→Tyr [Q19Y]"
+      - cell "−1.59"
+      - cell "0.0018"
+      - cell "binder core, non-interface"
+    - row "5 Gln25→Tyr [Q30Y] −1.37 0.0029 binder core, non-interface":
+      - cell "5"
+      - cell "Gln25→Tyr [Q30Y]"
+      - cell "−1.37"
+      - cell "0.0029"
+      - cell "binder core, non-interface"
+- paragraph: "Val12→Ile is the most defensible direct-contact candidate: it sits in the largest buried patch of the binder paratope. The two aromatic substitutions at Gln13/Gln14 and the Phe at Ile50 are the model’s strongest signals but act from packing positions, so the model cannot separate true contact energy from lost/gained packing — treat them as hypotheses requiring structure re-modelling. An interface-restricted alternative shortlist (Q13Y, V12I, G0F, S9Y, E−2F) is included in the results file. The PD-L1 antigen sequence is unchanged in every candidate. The five residues are highlighted in the 3D viewer."
+- heading "Deliverables" [level=2]
+- paragraph:
+  - code: /workspace/case03/deliverables/
+- list:
+  - code: results.json
+  - text: — structured summary, semantics, coverage, candidates, caveats
+  - code: tables/mutation_scores_all.csv
+  - text: — all 6213 substitutions, both chains, MOS + author numbering
+  - code: tables/binder_candidates_ranked.csv
+  - text: — binder chain only, sorted by ddG (2356 rows)
+  - code: tables/7XYQ_interface_residues.csv
+  - text: — per-residue BSA, H-bond, salt bridge
+  - code: sequences/original_7XYQ_PDL1_DBL1_03.fasta
+  - text: — parental antigen + binder
+  - code: sequences/optimized_7XYQ_PDL1_DBL1_03_candidates.fasta
+  - text: — WT, 5 single mutants, unchanged antigen
+  - code: raw/affinity_scores.csv
+  - text: — unmodified model output
+  - code: inputs/7XYQ_PDL1_DBL1_03_clean.pdb
+  - text: ","
+  - code: inputs/7XYQ_PDL1_DBL1_03_MOSsanitized.cif
+  - text: ","
+  - code: structures/7XYQ_original_sanitized.cif
+  - code: README.md
+  - text: — file index and method notes
+- paragraph: "One limitation worth stating plainly: these are single-model predictions on one crystal conformation, unvalidated, and the five candidates are mutually exclusive — ddG values are not additive and no combinations were scored."
+- generic: 09:42
+- generic: 7XYQ_PDL1_...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

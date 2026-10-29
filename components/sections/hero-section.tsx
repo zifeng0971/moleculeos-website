@@ -4,9 +4,9 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion
 import { useTranslations } from 'next-intl';
 import { useRef, type CSSProperties } from 'react';
 import type { Locale } from '@/lib/site-config';
-import { CTAButton } from '@/components/ui/cta-button';
 import { AgentDemo } from '@/components/hero/AgentDemo';
 import { ProteinField } from '@/components/motion/protein-field';
+import { Flow, Phrases } from '@/components/ui/phrase-title';
 
 const delay = (seconds: number) => ({ '--enter-delay': `${seconds.toFixed(2)}s` }) as CSSProperties;
 
@@ -33,20 +33,16 @@ export function HeroSection({ locale }: { locale: Locale }) {
       <div className="hero-composition site-container relative">
         {/* Entrance runs in CSS so the headline paints before hydration; motion only drives the scroll fade. */}
         <motion.div className="hero-copy" style={reduceMotion ? undefined : { y: copyY, opacity: copyOpacity }}>
-          <p className="hero-pill hero-enter" style={delay(0.1)}><span className="hero-pill-dot" aria-hidden="true" />{t('eyebrow')}</p>
-          <h1 className="hero-title text-balance [hyphens:none]" aria-label={titleParts.join(locale === 'en' ? ' ' : '')}>
+          <p className="hero-pill hero-enter" style={delay(0.1)}>{t('eyebrow')}</p>
+          <h1 className="hero-title text-balance [hyphens:none]" data-locale={locale} aria-label={titleParts.join(locale === 'en' ? ' ' : '')}>
             {titleParts.map((part, index) => (
               <span key={part} aria-hidden="true" style={delay(0.22 + index * 0.12)}
                 className={`hero-title-line hero-enter ${index === titleParts.length - 1 ? 'hero-title-line-b' : 'hero-title-line-a'}`}>
-                {part}
+                <Phrases text={part} />
               </span>
             ))}
           </h1>
-          <p className="hero-description hero-enter" style={delay(0.46)}>{t('description')}</p>
-          <div className="hero-actions hero-enter flex flex-col gap-3 sm:flex-row" style={delay(0.58)}>
-            <CTAButton locale={locale} />
-            <CTAButton locale={locale} kind="secondary" />
-          </div>
+          <p className="hero-description hero-enter" style={delay(0.46)}><Flow text={t('description')} /></p>
         </motion.div>
         <div ref={demoRef} className="hero-demo-column hero-demo-stage hero-enter min-w-0" style={delay(0.7)}>
           <div className="hero-demo-halo" aria-hidden="true" />

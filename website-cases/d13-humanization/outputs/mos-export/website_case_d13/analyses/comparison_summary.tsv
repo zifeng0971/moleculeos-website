@@ -1,0 +1,11 @@
+1BVL_Fv1_authorAB_FR_fit_ca_rmsd	1BVL_Fv1_authorAB_global_ca_rmsd	1BVL_Fv1_authorAB_n_seq_diff	1BVL_Fv2_authorCD_FR_fit_ca_rmsd	1BVL_Fv2_authorCD_global_ca_rmsd	1BVL_Fv2_authorCD_n_seq_diff	candidate	n_models	parent_FR_fit_ca_rmsd	parent_H3_local_rmsd	parent_L3_local_rmsd	parent_global_ca_rmsd	parent_global_n	parent_n_seq_diff
+0.645	0.754	24	0.655	0.641	24	humanization_1	5	0.392	0.202	0.54	0.399	223	36
+0.623	0.732	24	0.661	0.654	24	humanization_10	5	0.403	0.215	0.495	0.405	223	38
+0.617	0.714	21	0.673	0.65	21	humanization_2	5	0.427	0.226	0.551	0.435	223	35
+0.661	0.804	27	0.679	0.677	27	humanization_3	5	0.377	0.196	0.512	0.393	223	36
+0.691	0.791	23	0.667	0.659	23	humanization_4	5	0.394	0.231	0.5	0.399	223	38
+0.664	0.771	23	0.649	0.64	23	humanization_5	5	0.416	0.209	0.551	0.425	223	35
+0.629	0.729	27	0.617	0.609	27	humanization_6	5	0.405	0.215	0.503	0.41	223	36
+0.641	0.722	27	0.713	0.684	27	humanization_7	5	0.451	0.188	0.581	0.45	222	40
+0.597	0.67	25	0.644	0.62	25	humanization_8	5	0.437	0.241	0.571	0.448	223	40
+0.58	0.637	23	0.655	0.674	23	humanization_9	5	0.449	0.219	0.54	0.503	223	36

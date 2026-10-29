@@ -1,0 +1,18 @@
+MMetrics原生Homologs跨案例只读比较（2026-10-28）
+
+1. 空Homologs并非仅KN035一个案例。
+- KN035原生任务342604577018880：homology/uniprot/pdb均为空，model_tasks.results为空。
+- PETase WT原生任务342337536795648、5XH3原生任务342338457240576：同样homology/uniprot/pdb与model_tasks.results为空；它们是单链蛋白，不存在抗原/抗体链选择问题。
+- 旧5GRJ原生UI与D13/1FDL原生UI均明确Homologs空。D13其他注释包含抗原Lysozyme及UniProt功能，说明“注释一概完全失效”也不是普适解释。
+
+2. 旧5GRJ确有PD-L1独立检索成功，但不是原生MMetrics。
+独立Sequence Homology Search任务342256475304960，输入C链PD-L1 221aa，max_seq500，原始JSON642比对/500唯一hit。数据库226条pdb与416条sp。该221aa与当前A链118aa不是同一构建体，最长相同连续片段为115aa（当前A2起，旧序列1起）。因此可作为“历史PD-L1搜索能力存在”证据，不能当作当前118aa已搜索的证据，也不能填充原生Homologs。
+
+3. 有一个带阳性Homologs的旧导出记录，但不是干净对照。
+content/mmetrics-4ht1.record.json有3条homology、1条UniProt、1条PDB和9条model_tasks.results。其原始任务ID为空，仅保留302620...结果对象ID及旧completed_at；无法确定与2026-10运行的实现/配置一致。
+更关键的是该记录内部entity对应不一致：protein_metadata entity1=VH/A120aa，entity3=抗原TWEAK/C154aa；homology三条和UniProt却都写entity_id1，同时比对序列长度154aa。不能把这份文件视为实体映射完全正确的阳性对照。可将其作为“实体关联/排序值得核查”的线索，不能认定它就是当前根因。
+
+4. 能支持的排查方向。
+当前KN035只归档了B链BLAST，优先核对A链是否调度；但单链PETase也出现相同空字段，故还应检查自动产物到MMetrics的读取/汇总接口是否在这些运行中缺失或变更。空model_tasks.results与空同源注释共同出现是相关线索，不是因果证明。没有后台实现代码/日志、PETase原始BLAST、旧4HT1完整payload，就不能进一步定因。
+
+机器可读证据与完整源路径、哈希、计数见comparison.json。

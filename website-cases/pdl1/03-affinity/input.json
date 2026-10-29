@@ -1,0 +1,104 @@
+{
+  "case_id": "03",
+  "target": "Human PD-L1",
+  "binder": "DBL1_03",
+  "reference_pdb_id": "7XYQ",
+  "project_id": "342242986152960",
+  "project_url": "https://mos.moleculemind.com/?projectId=342242986152960",
+  "source_files": [
+    "sources/7XYQ.pdb",
+    "sources/7XYQ.cif",
+    "sources/7XYQ.fasta"
+  ],
+  "parameters_status": "verified from MOS task details and exported task parameters",
+  "mos_task_id": "342254431249408",
+  "exact_task_parameters": {
+    "task_id": "342254431249408",
+    "task_type": "Binding Affinity Mutation Effect",
+    "task_name": "PDL1_DBL1_03_affinity_scan",
+    "task_description": "Binding affinity mutation scan on human PD-L1 (chain A) + designed binder DBL1_03 (chain B) from PDB 7XYQ, to rank single-mutation binder variants for stronger binding.",
+    "status_at_packaging": "succeed",
+    "reported_duration": "1.2 min",
+    "submitted_payload_exact": {
+      "input_structure": "user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+      "chain_ids": "A,B",
+      "custom_output_path": ""
+    },
+    "resolved_payload_as_executed": {
+      "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+      "chain_ids": "A,B",
+      "custom_output_path": ""
+    },
+    "schema_required_fields": [
+      "input_structure",
+      "chain_ids"
+    ],
+    "mos_object": {
+      "object_id": "342254388737024",
+      "work_id": "342254395483136",
+      "tos_key": "user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+      "label": "7XYQ_PDL1_DBL1_03_clean.cif"
+    },
+    "upstream_source": {
+      "pdb_id": "7XYQ",
+      "source": "RCSB, sanitized to MOS layout, hetero/water/1-residue chains removed before upload"
+    },
+    "compatibility_note": "Task schema imposes no antibody/VHH restriction; run on the non-immunoglobulin designed binder completed successfully, so the KN035 (5JDS) / avelumab (5GRJ) fallback was not required.",
+    "result_files": [
+      "raw/affinity_scores.csv"
+    ]
+  },
+  "exact_mos_input_structure": "03-affinity/raw/mos-export/case03_complete/inputs/7XYQ_PDL1_DBL1_03_MOSsanitized.cif",
+  "variant_structure_tasks": [
+    {
+      "variant": "Q18Y",
+      "task_id": "342259574002688",
+      "payload": {
+        "name": "PDL1_DBL1_03_Q18Y_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B13 Q18Y (author QB13Y), entity/MOS position 18, 124 aa"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "variant": "V17I",
+      "task_id": "342259585696768",
+      "payload": {
+        "name": "PDL1_DBL1_03_V17I_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B12 V17I (author VB12I), entity/MOS position 17, 124 aa"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

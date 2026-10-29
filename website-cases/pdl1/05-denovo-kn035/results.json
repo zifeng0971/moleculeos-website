@@ -1,0 +1,509 @@
+{
+  "case_id": "05-kn035",
+  "status": "completed_with_confidence_and_sequence_quality_limits",
+  "tasks": [
+    {
+      "run": 1,
+      "task_id": "342606137910272",
+      "task_name": "kn035_c05_denovo_seed111",
+      "payload_file": "payloads/payload_seed111.json",
+      "random_seed": 111,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z",
+      "status": "succeed",
+      "duration": "3.7min",
+      "downloaded_to": "downloads/protein_binder_design_342606137910272",
+      "archived_to": "outputs/seed111",
+      "output_files": [
+        {
+          "name": "179254989623579_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "d465d788a706f8983a801a5c51cc8b7aa6cbee99140c50092e42f669d8d93998"
+        },
+        {
+          "name": "179254989703386_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "b1199c034dfaf990d38a252e921bf166743c2b8e9b98f74f2de94cf91fb607c0"
+        }
+      ],
+      "binder_length": 73,
+      "confidence_metrics": "missing"
+    },
+    {
+      "run": 2,
+      "task_id": "342606139298816",
+      "task_name": "kn035_c05_denovo_seed222",
+      "payload_file": "payloads/payload_seed222.json",
+      "random_seed": 222,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z",
+      "status": "succeed",
+      "duration": "6.7min",
+      "downloaded_to": "downloads/protein_binder_design_342606139298816",
+      "archived_to": "outputs/seed222",
+      "output_files": [
+        {
+          "name": "179255007456107_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "74fb11af1b5ea5abc4b178800b239c865a2a75f46c76be1d563685980a657ffa"
+        },
+        {
+          "name": "179255007523220_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "65b15adfba3b900f6cf7d85dabd0a703ee81ecf583048fff2aed1b0c8cec4044"
+        }
+      ],
+      "binder_length": 66,
+      "confidence_metrics": "missing"
+    },
+    {
+      "run": 3,
+      "task_id": "342606141764608",
+      "task_name": "kn035_c05_denovo_seed333",
+      "payload_file": "payloads/payload_seed333.json",
+      "random_seed": 333,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z",
+      "status": "succeed",
+      "duration": "9.7min",
+      "downloaded_to": "downloads/protein_binder_design_342606141764608",
+      "archived_to": "outputs/seed333",
+      "output_files": [
+        {
+          "name": "179255025746668_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "1080e97805c165bbfb7737577687596142ea539badc41e1a31246db0c18d9338"
+        },
+        {
+          "name": "179255025818568_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "e108ade19af03ac9e08178b55df27f12976355c757daee476512a2b8321886ba"
+        }
+      ],
+      "binder_length": 95,
+      "confidence_metrics": "missing"
+    }
+  ],
+  "candidates": [
+    {
+      "seed": 333,
+      "task_id": "342606141764608",
+      "status": "succeeded_output_collected",
+      "source_kind": "MOS_de_novo_backbone_then_sequence_design_and_complex_prediction",
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed333/179255025818568_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed333/179255025746668_output.cif",
+      "aligned_to_MMfold1_structure": "05-denovo-kn035/raw/local/seed333_target_A_aligned.cif",
+      "output_chain_mapping": {
+        "target_output_chain": "B",
+        "target_master_chain": "A",
+        "new_binder_output_chain": "A",
+        "new_binder_master_correspondence": null
+      },
+      "binder_length": 95,
+      "designed_sequence": "SALDARVAELAAIMAEVAKLAARALALLRAGPASAAEADAAEAELRALLDRHLEKAREMGENEVALIEALRAQVLGRLAAERAALAAAAAAAAAA",
+      "virtual_backbone_sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "designed_sequence_A_fraction": 0.4,
+      "FASTA_source": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed333/sequences.fasta",
+      "input_target_sequence_unchanged_and_all_118_residues_retained": true,
+      "target_CA_RMSD_to_MMfold1_A": 0.36571923642403514,
+      "target_alignment_CA_count": 118,
+      "hotspot_distances": [
+        {
+          "chain": "A",
+          "label_seq_id": 38,
+          "aa": "I",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 38,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.446230888366699
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 40,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 40,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.9027762413024902
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 45,
+          "aa": "D",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 45,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.394925117492676
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 97,
+          "aa": "R",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 97,
+          "minimum_heavy_atom_distance_to_new_binder_A": 2.6025869846343994
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 105,
+          "aa": "A",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 105,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.1250619888305664
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 107,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 107,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.467763900756836
+        }
+      ],
+      "hotspots_engaged_within_4_5_A": 6,
+      "local_interface_metrics": {
+        "contact_cutoff_A": 4.5,
+        "buried_surface_area_A2": 895.0238315684492,
+        "buried_surface_area_definition": "(SASA_target_isolated + SASA_binder_isolated - SASA_complex)/2",
+        "total_buried_SASA_A2": 1790.0476631368983,
+        "SASA_method": "Biopython ShrakeRupley probe 1.4 A, 960 points per atom",
+        "target_contact_label_seq_ids": [
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          40,
+          42,
+          44,
+          45,
+          47,
+          50,
+          52,
+          53,
+          60,
+          97,
+          99,
+          101,
+          103,
+          104,
+          105,
+          106,
+          107,
+          109
+        ],
+        "native_epitope_count": 19,
+        "native_epitope_intersection_label_seq_ids": [
+          38,
+          40,
+          42,
+          45,
+          47,
+          50,
+          52,
+          53,
+          60,
+          97,
+          99,
+          101,
+          103,
+          104,
+          105,
+          106,
+          107,
+          109
+        ],
+        "native_epitope_overlap_fraction": 0.9473684210526315,
+        "native_epitope_Jaccard": 0.72,
+        "geometric_WT_4_5_A_overlap_fraction": 0.9444444444444444,
+        "geometric_WT_4_5_A_Jaccard": 0.68,
+        "note": "Native annotation uses its own structure annotation rule; same-threshold 4.5 A WT comparison is provided separately."
+      },
+      "confidence": {
+        "ipTM": null,
+        "pLDDT": null,
+        "PAE": null,
+        "platform_interface_score": null,
+        "status": "No confidence summary files/explicit confidence labels supplied; raw CIF atom_site B values retained separately."
+      },
+      "ranking_basis": "local footprint overlap, hotspot engagement, BSA; no affinity or validated binding ranking",
+      "experimental": false,
+      "local_geometry_rank": 1
+    },
+    {
+      "seed": 222,
+      "task_id": "342606139298816",
+      "status": "succeeded_output_collected",
+      "source_kind": "MOS_de_novo_backbone_then_sequence_design_and_complex_prediction",
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed222/179255007523220_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed222/179255007456107_output.cif",
+      "aligned_to_MMfold1_structure": "05-denovo-kn035/raw/local/seed222_target_A_aligned.cif",
+      "output_chain_mapping": {
+        "target_output_chain": "B",
+        "target_master_chain": "A",
+        "new_binder_output_chain": "A",
+        "new_binder_master_correspondence": null
+      },
+      "binder_length": 66,
+      "designed_sequence": "AAEERAAAEAKAAAIRAEVEAARAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "virtual_backbone_sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "designed_sequence_A_fraction": 0.8181818181818182,
+      "FASTA_source": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed222/sequences.fasta",
+      "input_target_sequence_unchanged_and_all_118_residues_retained": true,
+      "target_CA_RMSD_to_MMfold1_A": 0.3832323632286929,
+      "target_alignment_CA_count": 118,
+      "hotspot_distances": [
+        {
+          "chain": "A",
+          "label_seq_id": 38,
+          "aa": "I",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 38,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.6369221210479736
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 40,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 40,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.269425630569458
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 45,
+          "aa": "D",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 45,
+          "minimum_heavy_atom_distance_to_new_binder_A": 6.561068058013916
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 97,
+          "aa": "R",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 97,
+          "minimum_heavy_atom_distance_to_new_binder_A": 7.696236610412598
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 105,
+          "aa": "A",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 105,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.7149171829223633
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 107,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 107,
+          "minimum_heavy_atom_distance_to_new_binder_A": 2.4375598430633545
+        }
+      ],
+      "hotspots_engaged_within_4_5_A": 4,
+      "local_interface_metrics": {
+        "contact_cutoff_A": 4.5,
+        "buried_surface_area_A2": 571.5888574746104,
+        "buried_surface_area_definition": "(SASA_target_isolated + SASA_binder_isolated - SASA_complex)/2",
+        "total_buried_SASA_A2": 1143.177714949221,
+        "SASA_method": "Biopython ShrakeRupley probe 1.4 A, 960 points per atom",
+        "target_contact_label_seq_ids": [
+          38,
+          40,
+          42,
+          47,
+          50,
+          52,
+          57,
+          59,
+          60,
+          99,
+          101,
+          105,
+          106,
+          107
+        ],
+        "native_epitope_count": 19,
+        "native_epitope_intersection_label_seq_ids": [
+          38,
+          40,
+          42,
+          47,
+          50,
+          52,
+          57,
+          60,
+          99,
+          101,
+          105,
+          106,
+          107
+        ],
+        "native_epitope_overlap_fraction": 0.6842105263157895,
+        "native_epitope_Jaccard": 0.65,
+        "geometric_WT_4_5_A_overlap_fraction": 0.6666666666666666,
+        "geometric_WT_4_5_A_Jaccard": 0.6,
+        "note": "Native annotation uses its own structure annotation rule; same-threshold 4.5 A WT comparison is provided separately."
+      },
+      "confidence": {
+        "ipTM": null,
+        "pLDDT": null,
+        "PAE": null,
+        "platform_interface_score": null,
+        "status": "No confidence summary files/explicit confidence labels supplied; raw CIF atom_site B values retained separately."
+      },
+      "ranking_basis": "local footprint overlap, hotspot engagement, BSA; no affinity or validated binding ranking",
+      "experimental": false,
+      "local_geometry_rank": 2
+    },
+    {
+      "seed": 111,
+      "task_id": "342606137910272",
+      "status": "succeeded_output_collected",
+      "source_kind": "MOS_de_novo_backbone_then_sequence_design_and_complex_prediction",
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed111/179254989703386_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed111/179254989623579_output.cif",
+      "aligned_to_MMfold1_structure": "05-denovo-kn035/raw/local/seed111_target_A_aligned.cif",
+      "output_chain_mapping": {
+        "target_output_chain": "B",
+        "target_master_chain": "A",
+        "new_binder_output_chain": "A",
+        "new_binder_master_correspondence": null
+      },
+      "binder_length": 73,
+      "designed_sequence": "AAAAAAAAAAAAAAAEAAAAAAAAAAAEAEAAALRAEEEKREAELRKLQEKKNEEKRLARIAAWKAAAAAAAL",
+      "virtual_backbone_sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "designed_sequence_A_fraction": 0.5753424657534246,
+      "FASTA_source": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed111/sequences.fasta",
+      "input_target_sequence_unchanged_and_all_118_residues_retained": true,
+      "target_CA_RMSD_to_MMfold1_A": 0.4882818927562648,
+      "target_alignment_CA_count": 118,
+      "hotspot_distances": [
+        {
+          "chain": "A",
+          "label_seq_id": 38,
+          "aa": "I",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 38,
+          "minimum_heavy_atom_distance_to_new_binder_A": 1.2413359880447388
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 40,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 40,
+          "minimum_heavy_atom_distance_to_new_binder_A": 3.4615726470947266
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 45,
+          "aa": "D",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 45,
+          "minimum_heavy_atom_distance_to_new_binder_A": 6.259592533111572
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 97,
+          "aa": "R",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 97,
+          "minimum_heavy_atom_distance_to_new_binder_A": 1.8762009143829346
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 105,
+          "aa": "A",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 105,
+          "minimum_heavy_atom_distance_to_new_binder_A": 4.367419719696045
+        },
+        {
+          "chain": "A",
+          "label_seq_id": 107,
+          "aa": "Y",
+          "target_output_chain": "B",
+          "target_output_label_seq_id": 107,
+          "minimum_heavy_atom_distance_to_new_binder_A": 1.5193581581115723
+        }
+      ],
+      "hotspots_engaged_within_4_5_A": 5,
+      "local_interface_metrics": {
+        "contact_cutoff_A": 4.5,
+        "buried_surface_area_A2": 602.8528592077764,
+        "buried_surface_area_definition": "(SASA_target_isolated + SASA_binder_isolated - SASA_complex)/2",
+        "total_buried_SASA_A2": 1205.7057184155528,
+        "SASA_method": "Biopython ShrakeRupley probe 1.4 A, 960 points per atom",
+        "target_contact_label_seq_ids": [
+          36,
+          37,
+          38,
+          40,
+          42,
+          44,
+          50,
+          52,
+          53,
+          97,
+          99,
+          101,
+          102,
+          105,
+          106,
+          107,
+          109
+        ],
+        "native_epitope_count": 19,
+        "native_epitope_intersection_label_seq_ids": [
+          38,
+          40,
+          42,
+          50,
+          52,
+          53,
+          97,
+          99,
+          101,
+          105,
+          106,
+          107,
+          109
+        ],
+        "native_epitope_overlap_fraction": 0.6842105263157895,
+        "native_epitope_Jaccard": 0.5652173913043478,
+        "geometric_WT_4_5_A_overlap_fraction": 0.7222222222222222,
+        "geometric_WT_4_5_A_Jaccard": 0.5909090909090909,
+        "note": "Native annotation uses its own structure annotation rule; same-threshold 4.5 A WT comparison is provided separately."
+      },
+      "confidence": {
+        "ipTM": null,
+        "pLDDT": null,
+        "PAE": null,
+        "platform_interface_score": null,
+        "status": "No confidence summary files/explicit confidence labels supplied; raw CIF atom_site B values retained separately."
+      },
+      "ranking_basis": "local footprint overlap, hotspot engagement, BSA; no affinity or validated binding ranking",
+      "experimental": false,
+      "local_geometry_rank": 3
+    }
+  ],
+  "available_design_count": 3,
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "native_epitope_source": "02-mmetrics-kn035/residues-on-mmfold1.json",
+  "hotspot_selection": "raw/hotspot-selection.json",
+  "input_source_hash_and_extraction_coordinates_verified_locally": true,
+  "output_target_mapping": "raw/residue-numbering-map.json",
+  "limitations": [
+    "These are newly generated backbones from a target-only input, not redesigned KN035 sequences.",
+    "Scores/rankings here are local geometry, not measured binding or experimental design success.",
+    "Platform output consists of backbone and aligned designed-complex CIFs, not confidence summary JSON; ipTM/PAE are unavailable.",
+    "Designed sequences have strong alanine bias; actual sequence composition is reported and candidates should not be presented as experimentally validated or mature leads.",
+    "New binder residues have no MMFold_1 residue counterpart; only target contacts/hotspots map back to master chain A.",
+    "MOS-side report did not possess master complex; local verification here closes the target extraction and C-alpha alignment evidence gap."
+  ],
+  "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+  "time_zone": "Asia/Jakarta",
+  "residue_highlights": "residues-on-mmfold1.json",
+  "numbering_contract": "MMFold_1 label_asym_id + label_seq_id; never compact antibody/UniProt/IMGT identifiers"
+}

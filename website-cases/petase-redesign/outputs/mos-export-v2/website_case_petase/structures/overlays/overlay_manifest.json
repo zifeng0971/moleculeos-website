@@ -1,0 +1,71 @@
+[
+ {
+  "file_cif": "structures/overlays/overlay_WT_chainA_seq_4_chainB.cif",
+  "file_pdb": "structures/overlays/overlay_WT_chainA_seq_4_chainB.pdb",
+  "candidate": "seq_4",
+  "substitutions_AUTH": "W130H W156Y D157H S209G",
+  "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+  "chain_B": "MMFold prediction for candidate seq_4 (task payload name PETase_design_seq_4), model_sample_1, rigid-body superposed onto chain A",
+  "chain_B_source_file": "native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+  "matched_CA": 261,
+  "superpose_RMSD_A": 0.249,
+  "max_CA_dev_after_superpose_A": 1.122,
+  "contains_ligand": false,
+  "not_an_experimental_complex": true,
+  "mos": {
+   "object_id": "342340955022336",
+   "work_id": "342340966765568",
+   "tos_key": "user_objects/123/330665428816896/sanitized/179248493397396_overlay_WT_chainA_seq_4_chainB.cif"
+  },
+  "chain_labeling": {
+   "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+   "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+  }
+ },
+ {
+  "file_cif": "structures/overlays/overlay_WT_chainA_seq_2_chainB.cif",
+  "file_pdb": "structures/overlays/overlay_WT_chainA_seq_2_chainB.pdb",
+  "candidate": "seq_2",
+  "substitutions_AUTH": "W130H W156Y D157Y S209G",
+  "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+  "chain_B": "MMFold prediction for candidate seq_2 (task payload name PETase_design_seq_2), model_sample_1, rigid-body superposed onto chain A",
+  "chain_B_source_file": "native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif",
+  "matched_CA": 261,
+  "superpose_RMSD_A": 0.288,
+  "max_CA_dev_after_superpose_A": 1.002,
+  "contains_ligand": false,
+  "not_an_experimental_complex": true,
+  "mos": {
+   "object_id": "342340958577664",
+   "work_id": "342340974621696",
+   "tos_key": "user_objects/123/330665428816896/sanitized/179248493477927_overlay_WT_chainA_seq_2_chainB.cif"
+  },
+  "chain_labeling": {
+   "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+   "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+  }
+ },
+ {
+  "file_cif": "structures/overlays/overlay_WT_chainA_seq_1_chainB.cif",
+  "file_pdb": "structures/overlays/overlay_WT_chainA_seq_1_chainB.pdb",
+  "candidate": "seq_1",
+  "substitutions_AUTH": "W130H W156Y D157H I179V S209G",
+  "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+  "chain_B": "MMFold prediction for candidate seq_1 (task payload name PETase_design_seq_1), model_sample_1, rigid-body superposed onto chain A",
+  "chain_B_source_file": "native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif",
+  "matched_CA": 261,
+  "superpose_RMSD_A": 0.291,
+  "max_CA_dev_after_superpose_A": 1.043,
+  "contains_ligand": false,
+  "not_an_experimental_complex": true,
+  "mos": {
+   "object_id": "342340999898112",
+   "work_id": "342341006595072",
+   "tos_key": "user_objects/123/330665428816896/sanitized/179248494492003_overlay_WT_chainA_seq_1_chainB.cif"
+  },
+  "chain_labeling": {
+   "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+   "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+  }
+ }
+]

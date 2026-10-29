@@ -7,7 +7,7 @@ MMetrics是蛋白高价值数据，可以帮助用户理解和分析蛋白数据
 这些蛋白可能来源于：
 
 -   用户本地上传：现支持pdb，cif格式的蛋白文件，
--   通过MOS计算（mmfold、DeNovo）生成的结构
+-   通过MoleculeOS计算（mmfold、DeNovo）生成的结构
 -   通过pdb id加载到项目中的结构
 
 现在支持的蛋白类型：
@@ -37,7 +37,7 @@ MMetrics的数据首先由一段蛋白的概述开始，汇总了当前蛋白的
 -   序列一致性 id%
 -   每个同源蛋白的reference，可以直接点击跳转
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_homologous.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-06.mp4"} mp4={"/manual-assets/shared/original-manual/original-06.mp4"} poster={"/manual-assets/shared/original-manual/original-06-poster.webp"} caption={"查看同源蛋白：检查匹配结果、序列一致性和 Reference。"} />
 
 <h3 id="liu-mmetrics-overview-annotations"><a id="heading_83"></a><strong>Annotations</strong></h3>
 
@@ -50,21 +50,21 @@ Annotations 用于展示蛋白结构中具有特定功能的氨基酸残基和�
 
 可以同时选择多个区域进行显示，点击“clear”则可以清空现在所选的所有区域
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_sections.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-07.mp4"} mp4={"/manual-assets/shared/original-manual/original-07.mp4"} poster={"/manual-assets/shared/original-manual/original-07-poster.webp"} caption={"区域注释：点选功能区域，在三维结构中高亮；Clear 清除选区。"} />
 
 当用户点击单个残基，将只有该残基在3D蛋白结构里被标注
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_mutation.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-08.mp4"} mp4={"/manual-assets/shared/original-manual/original-08.mp4"} poster={"/manual-assets/shared/original-manual/original-08-poster.webp"} caption={"单残基注释：点选残基，在结构中定位对应位置。"} />
 
-当蛋白为抗体抗原复合物时， 用户可以点击选择不同的抗体编号方案，共五种包括：IMGT、Kabat、EU、AHo、ANARCI。
+当蛋白为抗体抗原复合物时， 用户可以点击选择不同的抗体编号方案，共四种包括：IMGT、Kabat、EU、AHo。
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_antibody.MP4"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-09.mp4"} mp4={"/manual-assets/shared/original-manual/original-09.mp4"} poster={"/manual-assets/shared/original-manual/original-09-poster.webp"} caption={"抗体编号：切换编号方案，核对 CDR 与链的标注。"} />
 
 <h3 id="liu-mmetrics-overview-interaction-network"><a id="heading_84"></a><strong>Interaction network</strong></h3>
 
 MMetric可以使用表格或2D两种形式展示，可以点击右侧的“Table”/“2D”切换展示方式
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_interaction.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-10.mp4"} mp4={"/manual-assets/shared/original-manual/original-10.mp4"} poster={"/manual-assets/shared/original-manual/original-10-poster.webp"} caption={"互作网络：在 Table 与 2D 视图间切换。"} />
 
 <h5 id="liu-mmetrics-overview-mei-xiao-fen-zi"><a id="heading_85"></a><strong>酶+小分子：</strong></h5>
 
@@ -76,11 +76,11 @@ MMetric可以使用表格或2D两种形式展示，可以点击右侧的“Table
 
 点击具体互作虚线可以显示小分子和蛋白之间的距离
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-11.mp4"} mp4={"/manual-assets/shared/original-manual/original-11.mp4"} poster={"/manual-assets/shared/original-manual/original-11-poster.webp"} caption={"小分子二维互作：点选连线查看作用类型及距离。"} />
 
 同一个酶上的氨基酸可能和小分子有多处互作，也可以直接点击氨基酸查看与其相关的所有互作
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D_2.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-12.mp4"} mp4={"/manual-assets/shared/original-manual/original-12.mp4"} poster={"/manual-assets/shared/original-manual/original-12-poster.webp"} caption={"小分子残基互作：点选氨基酸查看相关互作。"} />
 
 Table视图：
 
@@ -102,7 +102,7 @@ Dist (Å)：配体原子与残基之间的作用距离，单位为埃（Å）
 
 点击表格上的一条互作，会在3D蛋白视图中对应显示。
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_table.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-13.mp4"} mp4={"/manual-assets/shared/original-manual/original-13.mp4"} poster={"/manual-assets/shared/original-manual/original-13-poster.webp"} caption={"互作表格：点选一条互作，在三维结构中定位原子与残基。"} />
 
 <h5 id="liu-mmetrics-overview-kang-ti-kang-yuan"><a id="heading_86"></a><strong>抗体+抗原</strong></h5>
 
@@ -112,7 +112,7 @@ Dist (Å)：配体原子与残基之间的作用距离，单位为埃（Å）
 
 同时连线中间标注着残基之间的互作距离，单位为埃（Å）。
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_2D.MOV"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-14.mp4"} mp4={"/manual-assets/shared/original-manual/original-14.mp4"} poster={"/manual-assets/shared/original-manual/original-14-poster.webp"} caption={"抗体–抗原二维互作：查看界面残基及互作距离。"} />
 
 Table 视图逐条列出相互作用类型、抗体侧残基、抗原侧残基及两者之间的距离。
 
@@ -120,7 +120,7 @@ Table 视图逐条列出相互作用类型、抗体侧残基、抗原侧残基�
 
 同样点击表格上的一条互作，会在3D蛋白视图中对应显示。
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_table.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-15.mp4"} mp4={"/manual-assets/shared/original-manual/original-15.mp4"} poster={"/manual-assets/shared/original-manual/original-15-poster.webp"} caption={"抗体–抗原互作表：核对链、残基、互作类型与距离。"} />
 
 <h3 id="liu-mmetrics-overview-tu-bian-da-fen"><a id="heading_87"></a><strong>突变打分</strong></h3>
 
@@ -138,4 +138,4 @@ Mutation Scoring 提供不同维度的突变评分结果，帮助用户筛选潜
 
 点击 “View<strong>”</strong> 可在线预览结果，点击 “Download ”可下载完整 CSV 文件，用于进一步筛选和分析。三个维度的评分可结合使用，为后续突变推荐提供综合参考。
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_mutation scoring_1.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-16.mp4"} mp4={"/manual-assets/shared/original-manual/original-16.mp4"} poster={"/manual-assets/shared/original-manual/original-16-poster.webp"} caption={"突变打分：通过 View 预览、Download 下载各维度 CSV 结果。"} />

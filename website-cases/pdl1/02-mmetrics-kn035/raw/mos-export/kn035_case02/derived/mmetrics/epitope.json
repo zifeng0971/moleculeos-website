@@ -1,0 +1,59 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_path": "annotations.features[annotation_type=epitope]",
+  "chain": "A",
+  "entity_id": 1,
+  "residue_numbers_sequential": [
+    38,
+    40,
+    42,
+    45,
+    47,
+    50,
+    52,
+    53,
+    57,
+    60,
+    97,
+    99,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109
+  ],
+  "n_residues": 19,
+  "evidence": "Epitope on antigen chains A (bound by VHH chain B)",
+  "raw": [
+    {
+      "entity_id": 1,
+      "type": "region",
+      "annotation_type": "epitope",
+      "annotation_source": "structure",
+      "loc": [
+        38,
+        40,
+        42,
+        45,
+        47,
+        50,
+        52,
+        53,
+        57,
+        60,
+        97,
+        99,
+        101,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109
+      ],
+      "evidence": "Epitope on antigen chains A (bound by VHH chain B)"
+    }
+  ]
+}

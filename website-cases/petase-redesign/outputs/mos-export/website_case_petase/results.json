@@ -1,0 +1,452 @@
+{
+ "case": "PETase rational engineering around the experimental HEMT site",
+ "structures": {
+  "5XH3": {
+   "resolution_A": 1.3,
+   "protein_chain": "A (author 1-261)",
+   "engineered": {
+    "AUTH103": "R->G (UNP R132G, packing fix)",
+    "AUTH131": "S->A (UNP S160A, nucleophile knock-out)"
+   },
+   "ligand": {
+    "ccd": "856",
+    "name": "O4-(2-hydroxyethyl) O1-methyl benzene-1,4-dicarboxylate",
+    "abbreviation": "HEMT",
+    "formula": "C11 H12 O5",
+    "heavy_atoms": 16,
+    "smiles": "COC(=O)c1ccc(C(=O)OCCO)cc1",
+    "label_chain": "B",
+    "auth_chain": "A",
+    "auth_resnum": 301
+   }
+  },
+  "5XG0": {
+   "resolution_A": 1.58,
+   "chains": "A, B, C (author -6..261, GAGAGAM tag then mature 1-261)",
+   "ligand": null
+  },
+  "numbering": {
+   "UNP_equals_AUTH_plus": 29,
+   "CONSTRUCT_equals_AUTH_plus": 7,
+   "catalytic_triad_UNP": [
+    160,
+    206,
+    237
+   ],
+   "catalytic_triad_AUTH": [
+    131,
+    177,
+    208
+   ],
+   "oxyanion_hole_backbone_N_UNP": [
+    87,
+    161
+   ],
+   "disulfides_UNP": [
+    [
+     203,
+     239
+    ],
+    [
+     273,
+     289
+    ]
+   ]
+  }
+ },
+ "ligand_site": {
+  "contact_cutoff_A": 4.0,
+  "n_pocket_residues": 9,
+  "n_atom_contact_pairs": 69,
+  "pocket_residues_AUTH": [
+   57,
+   58,
+   60,
+   130,
+   131,
+   132,
+   156,
+   179,
+   208
+  ],
+  "ligand_buried_fraction": 0.787,
+  "ligand_buried_SASA_A2": 328.4,
+  "polar_contacts": [
+   "Y58 O -- ligand O14 (terminal_hydroxyl_O) 2.616 A",
+   "Y58 N -- ligand O10 (carbonyl_O) 2.896 A",
+   "Y58 N -- ligand O14 (terminal_hydroxyl_O) 3.352 A",
+   "M132 N -- ligand O10 (carbonyl_O) 2.932 A",
+   "W156 NE1 -- ligand O02 (methoxy_O) 3.203 A",
+   "H208 NE2 -- ligand O11 (hydroxyethyl_ester_O) 2.865 A"
+  ],
+  "pi_stack": [
+   "TRP156 ring centroid 4.98 A"
+  ],
+  "source": "analyses/ligand_pocket_analysis.py (gemmi/RDKit/freesasa) + interaction-analysis calc_contacts.py"
+ },
+ "superposition_5XG0_chainC_vs_5XH3_chainA": {
+  "matched_CA": 261,
+  "global_CA_RMSD_A": 0.256,
+  "pocket_CA_RMSD_A": 0.39,
+  "catalytic_CA_RMSD_A": 0.193,
+  "max_CA_dev_A": 1.005,
+  "max_CA_dev_auth": 164,
+  "WT_Ser131_OG_to_ligand_C09_A": 2.513,
+  "WT_geometry": {
+   "catalytic_Ser131_OG__His208_NE2_A": 2.909,
+   "catalytic_His208_ND1__Asp177_OD1_A": 3.037,
+   "catalytic_His208_ND1__Asp177_OD2_A": 2.652,
+   "oxyanion_Tyr58_N__Ser131_OG_A": 5.595,
+   "oxyanion_Met132_N__Ser131_OG_A": 3.357,
+   "disulfide_Cys174_SG__Cys210_SG_A": 2.056,
+   "disulfide_Cys244_SG__Cys260_SG_A": 2.052
+  },
+  "method": "gemmi superposition, Mocha built-in (no MOS Superimpose task available)",
+  "source": "analyses/superpose_5xg0_5xh3_residue_map.csv"
+ },
+ "affinity_manual_example": {
+  "native_reference_task": "338706466620416",
+  "this_run_task": "342337422410752",
+  "native_score": -4.310292,
+  "this_run_score": -4.310292,
+  "components": {
+   "vdw": -2.4951997,
+   "hbond": -0.5505939,
+   "metal": 0.0,
+   "hydrophobic": -1.2644981
+  },
+  "reproduced": true,
+  "meaning": "positive control that the registered task reproduces the manual example; NOT an engineering readout"
+ },
+ "wt_scans": {
+  "inputs": "5XG0 chain C construct, 268 aa (GAGAGAM tag + mature 1-261), identical sequence in all three tasks",
+  "tasks": {
+   "seq": "342337264870400",
+   "evo": "342337268093952",
+   "struct": "342337277858816"
+  },
+  "rows_per_file": 5360,
+  "positions": 268,
+  "substitutions_per_position": 20,
+  "interpretation": "score 0 = WT itself; positive = model prefers the substitution"
+ },
+ "design_template": {
+  "file": "structures/5XG0_WT_HEMT_model.cif",
+  "is_experimental": false,
+  "derivation": "5XH3 backbone and side chains (HEMT-bound conformation) + AUTH103 and AUTH131 reverted to WT using superposed 5XG0 rotamers + experimental HEMT pose",
+  "superpose_rmsd_A": 0.256,
+  "Ser131_OG_min_dist_to_ligand_A": 2.513,
+  "clashes_under_2.2A": []
+ },
+ "redesign": {
+  "task_id": "342338944422912",
+  "n_designs_requested": 10,
+  "n_designs_returned": 10,
+  "opened_positions_AUTH": [
+   130,
+   156,
+   157,
+   179,
+   209
+  ],
+  "out_of_scope_substitutions": 0,
+  "designs": {
+   "seq_1": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "I179V",
+    "S209G"
+   ],
+   "seq_2": [
+    "W130H",
+    "W156Y",
+    "D157Y",
+    "S209G"
+   ],
+   "seq_3": [
+    "W130H",
+    "W156Y",
+    "D157Y",
+    "S209G"
+   ],
+   "seq_4": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "S209G"
+   ],
+   "seq_5": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "S209G"
+   ],
+   "seq_6": [
+    "W130H",
+    "W156Y",
+    "D157Y",
+    "S209G"
+   ],
+   "seq_7": [
+    "W130H",
+    "W156Y",
+    "D157Y",
+    "I179V",
+    "S209G"
+   ],
+   "seq_8": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "S209G"
+   ],
+   "seq_9": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "S209G"
+   ],
+   "seq_10": [
+    "W130H",
+    "W156Y",
+    "D157H",
+    "S209G"
+   ]
+  },
+  "probabilities_available": false,
+  "wt_single_substitution_scores": [
+   {
+    "auth_res": 130,
+    "construct_pos": 137,
+    "unp_res": 159,
+    "substitution": "W130H",
+    "seq_score": -1.554,
+    "evo_score": -8.576,
+    "struct_score": 2.53
+   },
+   {
+    "auth_res": 156,
+    "construct_pos": 163,
+    "unp_res": 185,
+    "substitution": "W156Y",
+    "seq_score": -0.612,
+    "evo_score": -4.32,
+    "struct_score": 0.975
+   },
+   {
+    "auth_res": 157,
+    "construct_pos": 164,
+    "unp_res": 186,
+    "substitution": "D157H",
+    "seq_score": -0.113,
+    "evo_score": -0.668,
+    "struct_score": 3.942
+   },
+   {
+    "auth_res": 157,
+    "construct_pos": 164,
+    "unp_res": 186,
+    "substitution": "D157Y",
+    "seq_score": -0.661,
+    "evo_score": -4.896,
+    "struct_score": -0.079
+   },
+   {
+    "auth_res": 179,
+    "construct_pos": 186,
+    "unp_res": 208,
+    "substitution": "I179V",
+    "seq_score": 0.937,
+    "evo_score": -1.672,
+    "struct_score": -0.421
+   },
+   {
+    "auth_res": 209,
+    "construct_pos": 216,
+    "unp_res": 238,
+    "substitution": "S209G",
+    "seq_score": -0.646,
+    "evo_score": -6.943,
+    "struct_score": 0.666
+   }
+  ],
+  "caveat": "single-mutant scores only; not additive; the design trades sequence/evolutionary plausibility for ligand fit"
+ },
+ "candidate_models": {
+  "seq_1": {
+   "label": "seq_1",
+   "model_file": "../native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif",
+   "matched_CA": 261,
+   "global_CA_RMSD_vs_5XG0_A": 0.291,
+   "pocket_CA_RMSD_vs_5XG0_A": 0.351,
+   "designed_site_CA_RMSD_vs_5XG0_A": 0.396,
+   "max_CA_displacement_A": 1.043,
+   "max_CA_displacement_auth": 158,
+   "catalytic_geometry_model_A": {
+    "Ser131_OG__His208_NE2": 3.021,
+    "His208_ND1__Asp177_OD2": 2.665,
+    "Cys174_SG__Cys210_SG": 2.053,
+    "Cys244_SG__Cys260_SG": 2.053
+   },
+   "ligand_frame_superpose_RMSD_A": 0.24,
+   "designed_residue_HEMT_contacts": [
+    {
+     "auth_res": 130,
+     "model_resname": "H",
+     "min_dist_to_HEMT_A": 3.61,
+     "protein_atom": "CE1",
+     "ligand_atom": "C12"
+    },
+    {
+     "auth_res": 156,
+     "model_resname": "Y",
+     "min_dist_to_HEMT_A": 2.2,
+     "protein_atom": "CE1",
+     "ligand_atom": "O02"
+    },
+    {
+     "auth_res": 157,
+     "model_resname": "H",
+     "min_dist_to_HEMT_A": 5.84,
+     "protein_atom": "N",
+     "ligand_atom": "C06"
+    },
+    {
+     "auth_res": 179,
+     "model_resname": "V",
+     "min_dist_to_HEMT_A": 3.82,
+     "protein_atom": "CG2",
+     "ligand_atom": "C15"
+    },
+    {
+     "auth_res": 209,
+     "model_resname": "G",
+     "min_dist_to_HEMT_A": 7.45,
+     "protein_atom": "N",
+     "ligand_atom": "C12"
+    }
+   ],
+   "clashes_under_2.2A": [
+    156
+   ]
+  },
+  "seq_2": {
+   "label": "seq_2",
+   "model_file": "../native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif",
+   "matched_CA": 261,
+   "global_CA_RMSD_vs_5XG0_A": 0.288,
+   "pocket_CA_RMSD_vs_5XG0_A": 0.262,
+   "designed_site_CA_RMSD_vs_5XG0_A": 0.259,
+   "max_CA_displacement_A": 1.002,
+   "max_CA_displacement_auth": 29,
+   "catalytic_geometry_model_A": {
+    "Ser131_OG__His208_NE2": 2.989,
+    "His208_ND1__Asp177_OD2": 2.636,
+    "Cys174_SG__Cys210_SG": 2.036,
+    "Cys244_SG__Cys260_SG": 2.081
+   },
+   "ligand_frame_superpose_RMSD_A": 0.255,
+   "designed_residue_HEMT_contacts": [
+    {
+     "auth_res": 130,
+     "model_resname": "H",
+     "min_dist_to_HEMT_A": 3.63,
+     "protein_atom": "CE1",
+     "ligand_atom": "C12"
+    },
+    {
+     "auth_res": 156,
+     "model_resname": "Y",
+     "min_dist_to_HEMT_A": 1.67,
+     "protein_atom": "CE1",
+     "ligand_atom": "O02"
+    },
+    {
+     "auth_res": 157,
+     "model_resname": "Y",
+     "min_dist_to_HEMT_A": 5.56,
+     "protein_atom": "N",
+     "ligand_atom": "C06"
+    },
+    {
+     "auth_res": 179,
+     "model_resname": "I",
+     "min_dist_to_HEMT_A": 3.87,
+     "protein_atom": "CG2",
+     "ligand_atom": "C15"
+    },
+    {
+     "auth_res": 209,
+     "model_resname": "G",
+     "min_dist_to_HEMT_A": 7.48,
+     "protein_atom": "N",
+     "ligand_atom": "C12"
+    }
+   ],
+   "clashes_under_2.2A": [
+    156
+   ]
+  },
+  "seq_4": {
+   "label": "seq_4",
+   "model_file": "../native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+   "matched_CA": 261,
+   "global_CA_RMSD_vs_5XG0_A": 0.249,
+   "pocket_CA_RMSD_vs_5XG0_A": 0.288,
+   "designed_site_CA_RMSD_vs_5XG0_A": 0.37,
+   "max_CA_displacement_A": 1.122,
+   "max_CA_displacement_auth": 29,
+   "catalytic_geometry_model_A": {
+    "Ser131_OG__His208_NE2": 2.9,
+    "His208_ND1__Asp177_OD2": 2.754,
+    "Cys174_SG__Cys210_SG": 2.091,
+    "Cys244_SG__Cys260_SG": 2.031
+   },
+   "ligand_frame_superpose_RMSD_A": 0.214,
+   "designed_residue_HEMT_contacts": [
+    {
+     "auth_res": 130,
+     "model_resname": "H",
+     "min_dist_to_HEMT_A": 3.63,
+     "protein_atom": "CE1",
+     "ligand_atom": "C12"
+    },
+    {
+     "auth_res": 156,
+     "model_resname": "Y",
+     "min_dist_to_HEMT_A": 2.59,
+     "protein_atom": "CE1",
+     "ligand_atom": "O02"
+    },
+    {
+     "auth_res": 157,
+     "model_resname": "H",
+     "min_dist_to_HEMT_A": 5.89,
+     "protein_atom": "N",
+     "ligand_atom": "C06"
+    },
+    {
+     "auth_res": 179,
+     "model_resname": "I",
+     "min_dist_to_HEMT_A": 3.82,
+     "protein_atom": "CG2",
+     "ligand_atom": "C15"
+    },
+    {
+     "auth_res": 209,
+     "model_resname": "G",
+     "min_dist_to_HEMT_A": 7.4,
+     "protein_atom": "N",
+     "ligand_atom": "C12"
+    }
+   ],
+   "clashes_under_2.2A": []
+  }
+ },
+ "claims_not_made": [
+  "no predicted binding affinity improvement for any design",
+  "no predicted enzymatic activity, kcat, Tm or PET-degradation rate for any design",
+  "no claim that 5XH3 represents wild-type PETase"
+ ]
+}

@@ -1,0 +1,284 @@
+{
+  "observed_utc": "2026-10-21T02:57:34.588562+00:00",
+  "project_url": "https://mos.moleculemind.com/?projectId=342605363971072",
+  "round1_preserved_byte_for_byte": true,
+  "round1_files_verified_unchanged": 122,
+  "control": "Same target object/hash, hotspot set, length range, sequence generation and complex prediction; only seeds differ.",
+  "score_definitions": {
+    "contacts": "Minimum inter-residue heavy atom distance <=4.5 A",
+    "BSA": "(sum isolated chain SASA - complex SASA)/2; Biopython ShrakeRupley probe1.4A,960 points",
+    "target_alignment": "All 118 PD-L1 C-alpha atoms fitted to master MMFold_1 chain A",
+    "sequence_composition": "Ala fraction, distinct amino acids, Shannon entropy, longest identical-residue run; descriptors only, not validated developability scores"
+  },
+  "round1_summary": {
+    "best_epitope_contact_count": 18,
+    "lowest_Ala_fraction": 0.4,
+    "highest_hotspot_contact_count": 6
+  },
+  "round2_summary": {
+    "best_epitope_contact_count": 17,
+    "lowest_Ala_fraction": 0.3258426966292135,
+    "highest_hotspot_contact_count": 6
+  },
+  "rows": [
+    {
+      "round": 1,
+      "seed": 111,
+      "task_id": "342606137910272",
+      "binder_length": 73,
+      "designed_sequence": "AAAAAAAAAAAAAAAEAAAAAAAAAAAEAEAAALRAEEEKREAELRKLQEKKNEEKRLARIAAWKAAAAAAAL",
+      "Ala_fraction": 0.5753424657534246,
+      "unique_amino_acid_count": 9,
+      "sequence_entropy_bits_per_residue": 2.0355761271688015,
+      "maximum_identical_residue_run": 15,
+      "target_CA_RMSD_A": 0.4882818927562648,
+      "BSA_A2": 602.8528592077764,
+      "epitope_contact_count_4_5_A": 13,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.6842105263157895,
+      "native_epitope_Jaccard": 0.5652173913043478,
+      "hotspots_contacted_4_5_A": 5,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 1.2413359880447388,
+      "maximum_hotspot_distance_A": 6.259592533111572,
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed111/179254989703386_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed111/179254989623579_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    },
+    {
+      "round": 1,
+      "seed": 222,
+      "task_id": "342606139298816",
+      "binder_length": 66,
+      "designed_sequence": "AAEERAAAEAKAAAIRAEVEAARAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "Ala_fraction": 0.8181818181818182,
+      "unique_amino_acid_count": 6,
+      "sequence_entropy_bits_per_residue": 1.0288094583990943,
+      "maximum_identical_residue_run": 39,
+      "target_CA_RMSD_A": 0.3832323632286929,
+      "BSA_A2": 571.5888574746104,
+      "epitope_contact_count_4_5_A": 13,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.6842105263157895,
+      "native_epitope_Jaccard": 0.65,
+      "hotspots_contacted_4_5_A": 4,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 2.4375598430633545,
+      "maximum_hotspot_distance_A": 7.696236610412598,
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed222/179255007523220_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed222/179255007456107_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    },
+    {
+      "round": 1,
+      "seed": 333,
+      "task_id": "342606141764608",
+      "binder_length": 95,
+      "designed_sequence": "SALDARVAELAAIMAEVAKLAARALALLRAGPASAAEADAAEAELRALLDRHLEKAREMGENEVALIEALRAQVLGRLAAERAALAAAAAAAAAA",
+      "Ala_fraction": 0.4,
+      "unique_amino_acid_count": 15,
+      "sequence_entropy_bits_per_residue": 2.884408742359347,
+      "maximum_identical_residue_run": 10,
+      "target_CA_RMSD_A": 0.36571923642403514,
+      "BSA_A2": 895.0238315684492,
+      "epitope_contact_count_4_5_A": 18,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.9473684210526315,
+      "native_epitope_Jaccard": 0.72,
+      "hotspots_contacted_4_5_A": 6,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 2.6025869846343994,
+      "maximum_hotspot_distance_A": 3.9027762413024902,
+      "structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed333/179255025818568_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/raw/mos-export/kn035_case05/outputs/seed333/179255025746668_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    },
+    {
+      "round": 2,
+      "seed": 444,
+      "task_id": "342610714428416",
+      "binder_length": 79,
+      "designed_sequence": "AAELAEIEEQIAAIAERIAELEAEAAALRARLERDTDLAPEERARLEARVAALEQSAAILAKSREALEAKLAALKAAAE",
+      "Ala_fraction": 0.34177215189873417,
+      "unique_amino_acid_count": 12,
+      "sequence_entropy_bits_per_residue": 2.79998026286034,
+      "maximum_identical_residue_run": 3,
+      "target_CA_RMSD_A": 0.40922616534898126,
+      "BSA_A2": 769.11137215505,
+      "epitope_contact_count_4_5_A": 14,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.7368421052631579,
+      "native_epitope_Jaccard": 0.6086956521739131,
+      "hotspots_contacted_4_5_A": 6,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 3.0046708583831787,
+      "maximum_hotspot_distance_A": 4.1451826095581055,
+      "structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed444/179255118633262_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed444/179255118555511_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    },
+    {
+      "round": 2,
+      "seed": 555,
+      "task_id": "342610715788288",
+      "binder_length": 72,
+      "designed_sequence": "MMNEEEAEEMAAKAREYAALLAAGAPVAELEAEARRLREEAKKADESKAAFLESLARGLEERAAALRAAAAA",
+      "Ala_fraction": 0.3472222222222222,
+      "unique_amino_acid_count": 14,
+      "sequence_entropy_bits_per_residue": 2.904562006510887,
+      "maximum_identical_residue_run": 5,
+      "target_CA_RMSD_A": 0.45510455692380003,
+      "BSA_A2": 916.2822180560943,
+      "epitope_contact_count_4_5_A": 17,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.8947368421052632,
+      "native_epitope_Jaccard": 0.7727272727272727,
+      "hotspots_contacted_4_5_A": 6,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 2.6289453506469727,
+      "maximum_hotspot_distance_A": 3.5275681018829346,
+      "structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed555/179255100689123_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed555/179255100600182_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    },
+    {
+      "round": 2,
+      "seed": 666,
+      "task_id": "342610718331904",
+      "binder_length": 89,
+      "designed_sequence": "AAEGAARAAALRRQAAEAAAAEQRQVEVGAEKFLRIAAGELSDEESIEIYDKYEDSLPDIRAVLAADAAKLAAFDAAVARIEALKAARK",
+      "Ala_fraction": 0.3258426966292135,
+      "unique_amino_acid_count": 14,
+      "sequence_entropy_bits_per_residue": 3.24449298627197,
+      "maximum_identical_residue_run": 4,
+      "target_CA_RMSD_A": 0.4537977239395448,
+      "BSA_A2": 640.2141254858843,
+      "epitope_contact_count_4_5_A": 13,
+      "epitope_total": 19,
+      "native_epitope_overlap_fraction": 0.6842105263157895,
+      "native_epitope_Jaccard": 0.6190476190476191,
+      "hotspots_contacted_4_5_A": 5,
+      "hotspot_count": 6,
+      "minimum_hotspot_distance_A": 2.2052454948425293,
+      "maximum_hotspot_distance_A": 5.068996429443359,
+      "structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed666/179255136586359_aligned.cif",
+      "backbone_structure": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/outputs/seed666/179255136680417_output.cif",
+      "iptm": null,
+      "PAE": null,
+      "source_kind": "MOS_de_novo_output_plus_identical_local_analysis",
+      "experimental_validation": false
+    }
+  ],
+  "pairwise_duplicates": [
+    {
+      "seed_a": 111,
+      "seed_b": 222,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 111,
+      "seed_b": 333,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 111,
+      "seed_b": 444,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 111,
+      "seed_b": 555,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 111,
+      "seed_b": 666,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 222,
+      "seed_b": 333,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 222,
+      "seed_b": 444,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 222,
+      "seed_b": 555,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 222,
+      "seed_b": 666,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 333,
+      "seed_b": 444,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 333,
+      "seed_b": 555,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 333,
+      "seed_b": 666,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 444,
+      "seed_b": 555,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 444,
+      "seed_b": 666,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    },
+    {
+      "seed_a": 555,
+      "seed_b": 666,
+      "sequences_identical": false,
+      "structures_byte_identical": false
+    }
+  ],
+  "limitations": [
+    "No measured binding. Local geometry and sequence descriptors cannot establish affinity, expression or folding stability.",
+    "Confidence summaries remain unavailable if not emitted by MOS; no invented scores.",
+    "Both rounds and all three new runs are retained even if quality does not improve."
+  ]
+}

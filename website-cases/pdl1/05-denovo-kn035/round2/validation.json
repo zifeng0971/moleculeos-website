@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "round1_preserved_byte_for_byte": true,
+  "round1_file_count": 122,
+  "all_three_payloads_differ_only_in_seed": true,
+  "round2_designs": 3,
+  "full_target_sequences_and_mapping_verified": true,
+  "input_master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "new_binder_sequences_identical_to_any_round1": false,
+  "raw_inputs_and_outputs_retained": true
+}

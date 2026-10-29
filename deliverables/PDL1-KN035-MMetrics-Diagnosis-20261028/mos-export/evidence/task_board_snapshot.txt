@@ -1,0 +1,47 @@
+Task board snapshot — ListMOSTasks(limit=50), captured 2026-10-28T08:44:50Z
+Source: read-only MOS tool. Times are shown exactly as the platform returned them.
+
+Found 6 task(s).
+
+[SUCCEED] kn035-ParaDt-independent
+   Type:     Paratope Identification
+   Task ID:  342606100722688
+   Started:  2026-10-21 02:27:48
+   Duration: 25s
+
+[SUCCEED] kn035-AbScN-nativeness-independent
+   Type:     Antibody Nativeness Evaluation
+   Task ID:  342606097245184
+   Started:  2026-10-21 02:27:47
+   Duration: 3s
+
+[SUCCEED] kn035-AbAn-independent
+   Type:     Antibody Region Annotation
+   Task ID:  342606092895232
+   Started:  2026-10-21 02:27:46
+   Duration: 20s
+
+[SUCCEED] kn035-AbScN-language-independent
+   Type:     Antibody Language Scoring
+   Task ID:  342606094599168
+   Started:  2026-10-21 02:27:46
+   Duration: 3s
+
+[SUCCEED] mmetrics-analysis-342604299285504
+   Type:     MOSTask
+   Task ID:  342604577018880
+   Started:  2026-10-21 02:21:36
+   Duration: 3s
+
+[SUCCEED] autocompute-MMFold_1
+   Type:     MOSTask
+   Task ID:  342604299285504
+   Started:  2026-10-21 02:20:28
+   Duration: 1.1min
+
+--- observations ---
+* No task in the project has status failed, skipped, queued or running.
+* No task other than the two "MOSTask" entries touches this structure.
+* No task exists whose input is chain A / PD-L1 or a sequence-similarity query of the antigen.
+* The four kn035-* tasks are the independent antibody tasks launched later and are unrelated to the native pipeline.
+* The task list is the only board view available; sub-model calls inside autocompute (mos-blast, mos-score-esm, mos-score-ligandmpnn, mos-score-msat, mos-diffaffinity) are not separate MOS tasks and never appear here.

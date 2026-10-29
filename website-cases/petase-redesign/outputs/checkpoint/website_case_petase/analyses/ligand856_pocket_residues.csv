@@ -1,0 +1,10 @@
+auth_res,unp_res,resname,min_dist_A,n_atom_contacts,interaction_classes,ligand_atoms_touched
+57,86,G,3.33,6,hydrophobic,"C12,O10,O14"
+58,87,Y,2.616,12,hydrophobic+polar,"C09,C12,C13,O10,O11,O14"
+60,89,A,3.762,1,vdw,O14
+130,159,W,3.21,10,hydrophobic,"C12,C13,O14"
+131,160,A,3.01,5,hydrophobic,"C09,C12,O10,O11"
+132,161,M,2.932,7,hydrophobic+polar,"C07,C08,C09,O10"
+156,185,W,3.203,12,hydrophobic+pi+polar,"C01,C06,C07,O02"
+179,208,I,3.598,7,hydrophobic,"C03,C05,C08,C15,C16,O02,O11"
+208,237,H,2.781,9,hydrophobic+polar,"C09,C12,C13,O11"

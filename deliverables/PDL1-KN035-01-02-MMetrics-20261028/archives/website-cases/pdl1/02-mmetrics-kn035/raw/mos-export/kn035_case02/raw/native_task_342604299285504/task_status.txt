@@ -1,0 +1,9 @@
+CheckMOSTask(342604299285504) -> SUCCEED
+Name:      autocompute-MMFold_1
+Type:      MOSTask
+Task ID:   342604299285504
+Started:   2026-10-21 02:20:28
+Duration:  1.1min
+Downloaded 7 file(s): all_sequences.fasta, similarity_results.json, sequence_scores.csv,
+struct_fitness_scores.csv, affinity_scores.csv, evolutionary_scores.csv, sequence_info.fasta
+(re-read live with CheckMOSTask and DownloadTaskResults; status SUCCEED both times)

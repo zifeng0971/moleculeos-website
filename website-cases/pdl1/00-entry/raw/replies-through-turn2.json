@@ -1,0 +1,30 @@
+[
+  {
+    "html": "<p>I’ll start by checking available MOS structure-prediction tasks and setting up the sequences in the sequence library.</p>\n",
+    "text": "I’ll start by checking available MOS structure-prediction tasks and setting up the sequences in the sequence library."
+  },
+  {
+    "html": "<p>Sequences in hand. I’ll store them in the sequence library and validate chain A against the canonical PD-L1 reference before launching prediction.</p>\n",
+    "text": "Sequences in hand. I’ll store them in the sequence library and validate chain A against the canonical PD-L1 reference before launching prediction."
+  },
+  {
+    "html": "<p>Chain A checks out: it is the PD-L1 IgV domain (UniProt 19–134) plus an N-terminal “MA” tag and a two-residue C-terminal change (PY→LE). Now let me get the MMFold schema.</p>\n",
+    "text": "Chain A checks out: it is the PD-L1 IgV domain (UniProt 19–134) plus an N-terminal “MA” tag and a two-residue C-terminal change (PY→LE). Now let me get the MMFold schema."
+  },
+  {
+    "html": "<p>Launching the complex prediction.</p>\n",
+    "text": "Launching the complex prediction."
+  },
+  {
+    "html": "<p>The complex prediction is running on MMFold (task <code>PDL1_KN035_complex</code>, ID 342948473701376).</p>\n<p><strong>What went into the prediction</strong></p>\n<ul>\n<li><strong>Chain A</strong> — human PD-L1 IgV domain. Verified against UniProt Q9NZQ7: identical to residues 19–134, with an N-terminal “MA” cloning tag and a C-terminal PY→LE change in the flexible tail. 118 residues, the domain that carries the PD-1/antibody binding face.</li>\n<li><strong>Chain B</strong> — KN035 (envafolimab) VHH, 128 residues, single immunoglobulin domain with the hallmark long CDR3.</li>\n<li>1:1 stoichiometry, no ligands, default sampling seeds.</li>\n</ul>\n<p><strong>Reference point for cross-checking the prediction</strong></p>\n<p>The experimental structure of exactly this complex exists — PDB 5JDS (Zhang et al., <em>Cell Discovery</em> 2017, 1.7 Å) — so the predicted interface can be validated rather than taken on trust. That crystal structure shows KN035 docking onto the front β-sheet of PD-L1 (C, C′, F, G strands), engaging almost exclusively through CDR3 plus a minor CDR1 contribution, and it buries five PD-L1 hotspot residues that are also shared with the PD-1 site: <strong>Ile54, Tyr56, Glu58, Gln66, Arg113</strong> (UniProt numbering). I will map the predicted interface onto that set and report agreement or divergence.</p>\n<p>I’ll pick this up when the prediction lands: download the model, compute the interface (contacts, buried surface area, salt bridges/H-bonds), and report the epitope on PD-L1 and the paratope on KN035 — with chain-A residue numbers converted back to standard PD-L1 numbering so they are directly comparable to the literature. Let me know when you’d like me to continue.</p>\n",
+    "text": "The complex prediction is running on MMFold (task PDL1_KN035_complex, ID 342948473701376).\n\nWhat went into the prediction\n\nChain A — human PD-L1 IgV domain. Verified against UniProt Q9NZQ7: identical to residues 19–134, with an N-terminal “MA” cloning tag and a C-terminal PY→LE change in the flexible tail. 118 residues, the domain that carries the PD-1/antibody binding face.\nChain B — KN035 (envafolimab) VHH, 128 residues, single immunoglobulin domain with the hallmark long CDR3.\n1:1 stoichiometry, no ligands, default sampling seeds.\n\nReference point for cross-checking the prediction\n\nThe experimental structure of exactly this complex exists — PDB 5JDS (Zhang et al., Cell Discovery 2017, 1.7 Å) — so the predicted interface can be validated rather than taken on trust. That crystal structure shows KN035 docking onto the front β-sheet of PD-L1 (C, C′, F, G strands), engaging almost exclusively through CDR3 plus a minor CDR1 contribution, and it buries five PD-L1 hotspot residues that are also shared with the PD-1 site: Ile54, Tyr56, Glu58, Gln66, Arg113 (UniProt numbering). I will map the predicted interface onto that set and report agreement or divergence.\n\nI’ll pick this up when the prediction lands: download the model, compute the interface (contacts, buried surface area, salt bridges/H-bonds), and report the epitope on PD-L1 and the paratope on KN035 — with chain-A residue numbers converted back to standard PD-L1 numbering so they are directly comparable to the literature. Let me know when you’d like me to continue."
+  },
+  {
+    "html": "<p>Still running (1.4 min in). While it finishes, I’ll prepare the interface-analysis tooling so the analysis can start the moment the model lands.</p>\n",
+    "text": "Still running (1.4 min in). While it finishes, I’ll prepare the interface-analysis tooling so the analysis can start the moment the model lands."
+  },
+  {
+    "html": "<p>The analysis toolchain is ready (InteractionNet and PPInterface both resolve), and the prediction is still in progress (1.4 min elapsed). MMFold has no auto-download step — once the model is ready I’ll pull the output files, register the complex in MOS, then run contact/interface analysis (buried surface area, H-bonds, salt bridges) on the A:B pair and map chain-A positions back to standard PD-L1 numbering.</p>\n<p>I’ll stop here rather than poll — send “continue” again and I’ll check the task.</p>\n",
+    "text": "The analysis toolchain is ready (InteractionNet and PPInterface both resolve), and the prediction is still in progress (1.4 min elapsed). MMFold has no auto-download step — once the model is ready I’ll pull the output files, register the complex in MOS, then run contact/interface analysis (buried surface area, H-bonds, salt bridges) on the A:B pair and map chain-A positions back to standard PD-L1 numbering.\n\nI’ll stop here rather than poll — send “continue” again and I’ll check the task."
+  }
+]

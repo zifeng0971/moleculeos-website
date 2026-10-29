@@ -8,10 +8,12 @@ export type FlywheelLabels = { design: string; experiment: string; evolve: strin
 const TAU = Math.PI * 2;
 const RADIUS = 2.4;
 // Stage positions on the wheel (radians, world XZ plane); the data packet travels design → experiment → evolve.
+// Semantic hues (lib/palette.ts): AI design is the design module (sage), the wet lab sits outside MOS (neutral white),
+// and the model update belongs to MoleculeOS itself (apricot).
 const NODES = [
-  { key: 'design', angle: (150 / 360) * TAU, color: [0.66, 0.55, 1.0] },
-  { key: 'experiment', angle: (270 / 360) * TAU, color: [0.94, 0.55, 0.82] },
-  { key: 'evolve', angle: (30 / 360) * TAU, color: [0.43, 0.83, 1.0] },
+  { key: 'design', angle: (150 / 360) * TAU, color: [0.64, 0.87, 0.75] },
+  { key: 'experiment', angle: (270 / 360) * TAU, color: [0.88, 0.88, 0.9] },
+  { key: 'evolve', angle: (30 / 360) * TAU, color: [0.96, 0.7, 0.58] },
 ] as const;
 const LAPS_TO_CONVERGE = 3;
 
@@ -33,7 +35,7 @@ varying float vAlpha;
 const float TAU = 6.28318530718;
 const float PI = 3.14159265359;
 vec3 sectorColor(float a) {
-  vec3 cDesign = vec3(0.66, 0.55, 1.0), cExperiment = vec3(0.94, 0.55, 0.82), cEvolve = vec3(0.43, 0.83, 1.0);
+  vec3 cDesign = vec3(0.64, 0.87, 0.75), cExperiment = vec3(0.88, 0.88, 0.9), cEvolve = vec3(0.96, 0.7, 0.58);
   float t = mod(a - radians(150.0), TAU) / (TAU / 3.0);
   if (t < 1.0) return mix(cDesign, cExperiment, smoothstep(0.0, 1.0, t));
   if (t < 2.0) return mix(cExperiment, cEvolve, smoothstep(0.0, 1.0, t - 1.0));
@@ -67,7 +69,7 @@ void main() {
   gl_FragColor = vec4(vColor, pow(1.0 - d * 2.0, 1.7) * vAlpha);
 }`;
 
-// NewOrigin core: a slowly turning particle sphere that grows denser and brighter as precision rises.
+// MoleculeOS core: a slowly turning particle sphere that grows denser and brighter as precision rises.
 const CORE_VERTEX = /* glsl */ `
 ${EDGE_FADE}
 uniform float uTime, uPrecision, uPulse, uSize, uPixelRatio;
@@ -81,7 +83,7 @@ void main() {
   vec4 mv = modelViewMatrix * vec4(p, 1.0);
   gl_Position = projectionMatrix * mv;
   float rim = 1.0 - abs(normalize(p).z);
-  vColor = mix(vec3(0.75, 0.66, 1.0), vec3(1.0), 0.3 + 0.55 * uPulse);
+  vColor = mix(vec3(0.93, 0.92, 0.9), vec3(1.0), 0.3 + 0.55 * uPulse);
   vAlpha = (0.38 + 0.5 * uPrecision + 0.6 * uPulse) * (0.55 + 0.45 * rim) * edgeFade(gl_Position);
   gl_PointSize = aSize * (1.0 + uPulse * 0.6) * uSize * uPixelRatio / -mv.z;
 }`;
@@ -106,8 +108,8 @@ void main() {
   vec4 mv = modelViewMatrix * vec4(p, 1.0);
   gl_Position = projectionMatrix * mv;
   float strength = incoming ? uIn : uOut;
-  vec3 core = vec3(0.85, 0.8, 1.0);
-  vColor = incoming ? mix(vec3(0.43, 0.83, 1.0), core, t) : mix(core, vec3(0.66, 0.55, 1.0), t);
+  vec3 core = vec3(0.93, 0.9, 0.96);
+  vColor = incoming ? mix(vec3(0.96, 0.7, 0.58), core, t) : mix(core, vec3(0.64, 0.87, 0.75), t);
   vAlpha = strength * sin(3.14159 * t) * edgeFade(gl_Position);
   gl_PointSize = (1.1 + aJitter.z * 0.9) * uSize * uPixelRatio / -mv.z;
 }`;
@@ -189,7 +191,7 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
 
       const nodePoint = (i: number) => new THREE.Vector3(Math.cos(NODES[i].angle) * RADIUS, 0, Math.sin(NODES[i].angle) * RADIUS);
 
-      // NewOrigin core: Fibonacci-sphere particles.
+      // MoleculeOS core: Fibonacci-sphere particles.
       const coreCount = small ? 700 : 1400;
       const corePositions = new Float32Array(coreCount * 3), coreSizes = new Float32Array(coreCount);
       for (let i = 0; i < coreCount; i++) {
@@ -228,7 +230,7 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
       for (let i = 0; i < dustCount; i++) { dust[i * 3] = (rand() - 0.5) * 14; dust[i * 3 + 1] = (rand() - 0.5) * 6; dust[i * 3 + 2] = (rand() - 0.5) * 10; }
       const dustGeometry = new THREE.BufferGeometry();
       dustGeometry.setAttribute('position', new THREE.BufferAttribute(dust, 3));
-      const dustMaterial = new THREE.PointsMaterial({ color: 0x9d8cff, size: 0.018, transparent: true, opacity: 0.35, depthWrite: false });
+      const dustMaterial = new THREE.PointsMaterial({ color: 0xd2d2d7, size: 0.018, transparent: true, opacity: 0.35, depthWrite: false });
       scene.add(new THREE.Points(dustGeometry, dustMaterial));
 
       let w = 0, h = 0;
@@ -319,7 +321,7 @@ export function FlywheelScene({ labels }: { labels: FlywheelLabels }) {
   const names = [labels.design, labels.experiment, labels.evolve];
   return <div ref={host} className="flywheel-scene" data-failed={failed || undefined}>
     <span className="flywheel-tag">{labels.illustrative}</span>
-    <div ref={coreRef} className="flywheel-core" aria-hidden="true"><span>NewOrigin</span></div>
+    <div ref={coreRef} className="flywheel-core" aria-hidden="true"><span>MoleculeOS</span></div>
     {names.map((name, i) => <div key={name} ref={el => { nodeRefs.current[i] = el; }} className="flywheel-node" data-active={active === i || undefined} data-tone={NODES[i].key}>
       <span className="flywheel-node-index">0{i + 1}</span>{name}
     </div>)}

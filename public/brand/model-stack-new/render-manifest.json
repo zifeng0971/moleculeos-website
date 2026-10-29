@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "supersample": 2,
+    "grain": 1.5,
+    "ink": 0.83
+  },
+  "palette": {
+    "blue": "#93C9EC",
+    "cream": "#E8D9BD",
+    "sage": "#A3DDBF",
+    "quietblue": "#8D9CA7",
+    "orange": "#F4B393",
+    "warmgray": "#817D7C",
+    "membrane": "#C9BFB1"
+  },
+  "sources": {
+    "5JDS": {
+      "path": "public/brand/model-stack-new/sources/5JDS.cif",
+      "sha256": "e3a5d004be09a985d049521179227b97834376a8fc56f48adf1d916f7521f324"
+    },
+    "design": {
+      "path": "public/demo/pdl1-denovo.cif",
+      "sha256": "7f34230d64d71311695e493205f7de9e1da753938cfe9587892516b78980a1a9"
+    },
+    "4ZQK": {
+      "path": "public/demo/4zqk.cif",
+      "sha256": "f5012ba58d76099ba77ce992562e7df4afead12632678548d4d4f00c268b485f"
+    },
+    "1HZH": {
+      "path": "public/brand/model-stack-new/sources/1HZH.cif",
+      "sha256": "5793921cc7dcc2317e1892edcbf32b2a8e11a7bef81d2eb25d94c6165f0b01ab"
+    }
+  }
+}

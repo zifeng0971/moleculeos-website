@@ -1,0 +1,190 @@
+{
+  "disclaimer": "This comparison is provided for orientation only. paragraph_heavy.csv is an INDEPENDENT Paratope Identification task, not the native MMetrics paratope and not a replacement for it.",
+  "native_paratope": {
+    "source": "raw record.json annotations.features[annotation_type=paratope]",
+    "n": 18,
+    "residues": [
+      27,
+      29,
+      30,
+      32,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      108,
+      109,
+      111,
+      113,
+      114,
+      115,
+      116
+    ]
+  },
+  "independent_paradt": {
+    "source": "tasks/paradt_342606100722688/paragraph_heavy.csv",
+    "n_residues_with_score_gt_0": 49,
+    "score_range": [
+      0.0,
+      0.9171581268310547
+    ],
+    "top18": {
+      "residues": [
+        50,
+        55,
+        57,
+        59,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        108,
+        109,
+        111,
+        112,
+        114,
+        115,
+        116
+      ],
+      "overlap_with_native": 12
+    },
+    "top24": {
+      "residues": [
+        29,
+        50,
+        52,
+        54,
+        55,
+        57,
+        59,
+        60,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        114,
+        115,
+        116
+      ],
+      "overlap_with_native": 13
+    },
+    "top_residues": [
+      {
+        "label_seq_id": 103,
+        "aa": "D",
+        "score": 0.9172
+      },
+      {
+        "label_seq_id": 101,
+        "aa": "F",
+        "score": 0.9038
+      },
+      {
+        "label_seq_id": 102,
+        "aa": "E",
+        "score": 0.9016
+      },
+      {
+        "label_seq_id": 104,
+        "aa": "P",
+        "score": 0.8853
+      },
+      {
+        "label_seq_id": 105,
+        "aa": "T",
+        "score": 0.8255
+      },
+      {
+        "label_seq_id": 115,
+        "aa": "F",
+        "score": 0.7912
+      },
+      {
+        "label_seq_id": 108,
+        "aa": "L",
+        "score": 0.7806
+      },
+      {
+        "label_seq_id": 55,
+        "aa": "S",
+        "score": 0.7443
+      },
+      {
+        "label_seq_id": 57,
+        "aa": "S",
+        "score": 0.7212
+      },
+      {
+        "label_seq_id": 114,
+        "aa": "A",
+        "score": 0.6982
+      },
+      {
+        "label_seq_id": 116,
+        "aa": "Q",
+        "score": 0.648
+      },
+      {
+        "label_seq_id": 106,
+        "aa": "C",
+        "score": 0.6404
+      },
+      {
+        "label_seq_id": 100,
+        "aa": "S",
+        "score": 0.6101
+      },
+      {
+        "label_seq_id": 59,
+        "aa": "Y",
+        "score": 0.6074
+      },
+      {
+        "label_seq_id": 109,
+        "aa": "V",
+        "score": 0.6033
+      },
+      {
+        "label_seq_id": 50,
+        "aa": "K",
+        "score": 0.5919
+      },
+      {
+        "label_seq_id": 111,
+        "aa": "S",
+        "score": 0.5915
+      },
+      {
+        "label_seq_id": 112,
+        "aa": "S",
+        "score": 0.5899
+      },
+      {
+        "label_seq_id": 29,
+        "aa": "S",
+        "score": 0.5734
+      },
+      {
+        "label_seq_id": 107,
+        "aa": "T",
+        "score": 0.5582
+      }
+    ]
+  },
+  "note": "Both lists concentrate on CDR3; the independent model additionally scores several framework/CDR2 positions and misses the N-terminal CDR1 residues that the native structure-based paratope calls."
+}

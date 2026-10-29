@@ -1,0 +1,93 @@
+{
+  "purpose": "Independent local read-only lineage audit for current case01->case02 homolog diagnostic package",
+  "files": [
+    {
+      "path": "01-structure/raw/MMFold_1.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "contains_mos_mapping_loop": true
+    },
+    {
+      "path": "02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.original.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "contains_mos_mapping_loop": true
+    },
+    {
+      "path": "02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.sanitized.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "contains_mos_mapping_loop": true
+    }
+  ],
+  "all_three_files_byte_identical": true,
+  "chain_sequences": [
+    {
+      "chain": "A",
+      "role": "PD-L1 antigen",
+      "length": 118,
+      "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "01_input_equals_01_cif": true,
+      "01_input_equals_02_record": true,
+      "sequence_sha256": "9e9b8a49fd40bdf218b1f38d708f0694a6580875eadf9e0f49a526a332f2161c"
+    },
+    {
+      "chain": "B",
+      "role": "KN035 VHH binder",
+      "length": 128,
+      "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "01_input_equals_01_cif": true,
+      "01_input_equals_02_record": true,
+      "sequence_sha256": "78562fe1c94793da753d06dd29ea7bd80824d795e1b06f6537e5c83b62e9bfa3"
+    }
+  ],
+  "autocompute_sequence_info": {
+    "source": "02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_info.fasta",
+    "records": {
+      "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "light_sequence": "None"
+    },
+    "heavy_sequence_equals_chain_B": true,
+    "light_sequence_value_is_literal_None": true
+  },
+  "blast_query_identity": {
+    "source": "02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/similarity_results.json",
+    "alignment_rows": 503,
+    "unique_query_sequences": 1,
+    "all_queries_equal_B": true,
+    "any_query_equals_A": false
+  },
+  "01_task_parameter_evidence": {
+    "complete_original_task_payload_json_found_in_01_archive": false,
+    "input_json_is_case_metadata_not_verbatim_StartMOSTask_request": true,
+    "observed_task_details_file": "01-structure/raw/task-details-succeeded.txt",
+    "receipt_file": "01-structure/raw/mocha-launch-receipt.txt",
+    "receipt_lines": [
+      676,
+      679
+    ],
+    "receipt_claims": {
+      "dialect": "mmfold",
+      "version": 1,
+      "seeds": "default seeds; exact numeric seed not archived",
+      "templates": "no templates supplied",
+      "sampling_note": "single sampling run; actual delivered outputs contain five samples"
+    },
+    "exact_numeric_seed": null,
+    "backend_mmfold_model_build": null
+  },
+  "provenance_caveat": {
+    "source": "02-mmetrics-kn035/raw/mos-export/kn035_case02/provenance.json:20",
+    "original_note": "MOS added a _mos_mapping loop (246 rows)",
+    "audit_finding": "All three archived CIFs, including the case01 master before case02 import, already contain _mos_mapping and are byte identical. The archived wording cannot demonstrate that case02 import added this loop. No observed byte change occurred at the01->02 transfer. Preserve original note but do not infer a case02 rewrite."
+  },
+  "missing_backend_information": [
+    "Native per-chain BLAST task command and logs",
+    "Evidence that chain A PD-L1 was ever scheduled/searched for the antigen Homologs panel",
+    "BLAST database file/version/checksum and runtime version",
+    "MMetrics parser/aggregation/filtering code/build and event trace",
+    "Exact project creation / import request time unless separately archived",
+    "Full raw original case01 StartMOSTask JSON and numeric random seed"
+  ],
+  "scope_recommendation": "Include full01-structure and02-mmetrics-kn035 directories byte-preserved; include 5JDS sequence/reference sources and shared handoff manifests as supporting context, label legacy02-mmetrics (5GRJ) and00-entry as outside this01->02 lineage. Do not present separate antibody supplement tasks as MMetrics homolog search."
+}

@@ -1,0 +1,27 @@
+{
+  "requested": [
+    "AbAn heavy CSV",
+    "AbScN heavy CSV",
+    "ParaDt heavy CSV",
+    "compact numbering mapping for each"
+  ],
+  "native_status": "NOT PRESENT AS CSV",
+  "explanation": "The native MMetrics analysis (task 342604577018880) returned a single record.json. That record contains antibody-derived results only as folded annotation objects: CDR ranges for IMGT/Kabat/Chothia (derived from antibody numbering) and a structure-derived paratope list. No standalone AbAn / AbScN / ParaDt tables, and no per-residue numbering file in IMGT/Kabat/Chothia numbering, were emitted or stored by the task.",
+  "what_does_exist_natively": {
+    "aban_equivalent": {
+      "file": "derived/mmetrics/cdr_annotations.json",
+      "content": "CDR1/2/3 ranges in IMGT, Kabat and Chothia schemes, expressed in sequential chain-B numbering"
+    },
+    "paradt_equivalent": {
+      "file": "derived/mmetrics/paratope.json",
+      "content": "18-residue paratope on chain B"
+    },
+    "abscn_equivalent": null
+  },
+  "independent_tasks_run": [],
+  "independent_task_note": "No Antibody Region Annotation / Antibody Nativeness / Paratope Identification task was launched for this case. Nothing in this package substitutes for those outputs.",
+  "observations": [
+    "The CDR ranges in record.json are sequential residue numbers, not scheme-specific numbering positions; no IMGT/Kabat/Chothia position column exists in the native output."
+  ],
+  "compact_numbering_available_for": "Only the native diffaffinity MutX table: derived/mutx/affinity_compact_numbering.csv"
+}

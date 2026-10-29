@@ -3,9 +3,9 @@ export const SITE_CONFIG = {
   platformUrl: 'https://mos.moleculemind.com/',
   companyUrl: 'https://moleculemind.com/',
   nav: [
-    { key: 'platform', href: '/platform' },
     { key: 'validation', href: '/validation' },
     { key: 'pricing', href: '/pricing' },
+    { key: 'platform', href: '/platform' },
     { key: 'docs', href: '/help' },
     { key: 'community', href: '/community' },
   ],
@@ -16,13 +16,16 @@ export const SITE_CONFIG = {
       ['stabilityEngineering', 'stability-engineering'],
       ['deNovoDesign', 'de-novo-design'],
     ],
-    models: [['neworigin', 'neworigin'], ['mmfold', 'mmfold'], ['mmdesign', 'mmdesign']],
+    models: [['mmfold', 'mmfold'], ['mmdesign', 'mmdesign'], ['moleculeos', 'models']],
   },
   footer: {
-    product: [['models', '/platform#models'], ['validation', '/validation'], ['pricing', '/pricing'], ['platform', '/platform']],
-    resources: [['manual', '/help/manual'], ['blog', '/community'], ['research', '/validation'], ['whitepaper', '/help'], ['forum', '/community#forum'], ['webinar', '/community#webinar'], ['academic', '/community#academic']],
-    company: [['about', 'https://moleculemind.com/'], ['careers', '/community'], ['contact', '/contact']],
-    legal: [['privacy', '/help'], ['terms', '/help'], ['security', '/help']],
+    product: [['platformModels', '/platform'], ['pricing', '/pricing']],
+    resources: [['manual', '/help/manual'], ['blog', '/community'], ['academic', '/community#academic']],
+    company: [['about', 'https://moleculemind.com/'], ['careers', 'https://moleculemind.com/about-us/careers'], ['contact', '/contact']],
+    legal: [
+      ['privacy', 'https://mos.moleculemind.com/legal/privacy?audience=enterprise&lang={lang}'],
+      ['terms', 'https://mos.moleculemind.com/legal/terms?audience=enterprise&lang={lang}'],
+    ],
   },
 } as const;
 

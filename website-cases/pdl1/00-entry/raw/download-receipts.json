@@ -1,0 +1,72 @@
+[
+  {
+    "file": "179263337235057_model_sample_3.cif",
+    "download_path": "/Users/zifengye/Downloads/179263337235057_model_sample_3.cif",
+    "bytes": 154131,
+    "sha256": "52a1b34871406f9b4c40421deded7ae8fa195c161821092b0241bca671c312d6",
+    "mtime_utc": "2026-10-22T01:43:34.573065+00:00"
+  },
+  {
+    "file": "179263337332420_model_sample_1.cif",
+    "download_path": "/Users/zifengye/Downloads/179263337332420_model_sample_1.cif",
+    "bytes": 154131,
+    "sha256": "185d1ccfceb318e97c32214e2c27bebd1eb84053b5398c61e4022f29f0a7d0c0",
+    "mtime_utc": "2026-10-22T01:44:47.070025+00:00"
+  },
+  {
+    "file": "179263337433230_model_sample_2.cif",
+    "download_path": "/Users/zifengye/Downloads/179263337433230_model_sample_2.cif",
+    "bytes": 154131,
+    "sha256": "d33951161f43c91b8bab731a57c510e677e106b72a2b5b410a79eb1b53aba5b0",
+    "mtime_utc": "2026-10-22T01:44:47.843432+00:00"
+  },
+  {
+    "file": "179263337528124_model_sample_4.cif",
+    "download_path": "/Users/zifengye/Downloads/179263337528124_model_sample_4.cif",
+    "bytes": 154131,
+    "sha256": "230bdf0d87543b00e40c3ba97b8dd8f6042794d28b1e4084ab0a26ea7e1f14de",
+    "mtime_utc": "2026-10-22T01:44:48.620861+00:00"
+  },
+  {
+    "file": "179263337625246_model_sample_5.cif",
+    "download_path": "/Users/zifengye/Downloads/179263337625246_model_sample_5.cif",
+    "bytes": 154131,
+    "sha256": "11d80589805c48a45c3b8ce08258105b220d53a41e9996d2fe37d62d0c09ead6",
+    "mtime_utc": "2026-10-22T01:44:49.433892+00:00"
+  },
+  {
+    "file": "summary_confidences_sample_1.json",
+    "download_path": "/Users/zifengye/Downloads/summary_confidences_sample_1 (2).json",
+    "bytes": 760,
+    "sha256": "86d787d05f1c8d5bddbbac5888c65a0fb72e23ba41832b55469f8995299fef7b",
+    "mtime_utc": "2026-10-22T01:44:50.100803+00:00"
+  },
+  {
+    "file": "summary_confidences_sample_2.json",
+    "download_path": "/Users/zifengye/Downloads/summary_confidences_sample_2 (1).json",
+    "bytes": 768,
+    "sha256": "b60251d955abfc9ba25a8cdf85fbd9db188d75e2906a7368d54abb26fd2eea96",
+    "mtime_utc": "2026-10-22T01:44:50.840388+00:00"
+  },
+  {
+    "file": "summary_confidences_sample_3.json",
+    "download_path": "/Users/zifengye/Downloads/summary_confidences_sample_3 (1).json",
+    "bytes": 763,
+    "sha256": "5e4973b88537d4a1177aba5b4dba6b6edb2b3e44fd3d794922c4c2b75ccff099",
+    "mtime_utc": "2026-10-22T01:44:51.581286+00:00"
+  },
+  {
+    "file": "summary_confidences_sample_4.json",
+    "download_path": "/Users/zifengye/Downloads/summary_confidences_sample_4 (1).json",
+    "bytes": 754,
+    "sha256": "195abb0e4685d919114ce46835590210bf7e77c02dcf2abf9b6923f9b2edfad6",
+    "mtime_utc": "2026-10-22T01:44:52.306384+00:00"
+  },
+  {
+    "file": "summary_confidences_sample_5.json",
+    "download_path": "/Users/zifengye/Downloads/summary_confidences_sample_5 (2).json",
+    "bytes": 766,
+    "sha256": "b10aa2aa620ae1ea0fe764705b94d86ee5bd10c67a6b133d70ed1089069cbf76",
+    "mtime_utc": "2026-10-22T01:44:53.110837+00:00"
+  }
+]

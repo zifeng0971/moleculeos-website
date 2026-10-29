@@ -1,0 +1,20 @@
+{
+ "task_id": "342337765340160",
+ "check_mosttask_response": {
+  "status": "PENDING",
+  "task_name": "autocompute-5XH3_HEMT_complex",
+  "type": "MOSTask",
+  "task_id": "342337765340160",
+  "started": "2026-10-20 08:15:56",
+  "duration": "0s",
+  "platform_note": "Task is waiting (not queued)."
+ },
+ "payload_exact": {
+  "structure_path": "user_objects/123/330665428816896/sanitized/179248415413957_5XH3_HEMT_complex.cif",
+  "structure_pathFileId": "342337760510976",
+  "structure_pathFilename": "5XH3_HEMT_complex.cif"
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [],
+ "note": "second duplicate auto-triggered job for the same object; also PENDING"
+}

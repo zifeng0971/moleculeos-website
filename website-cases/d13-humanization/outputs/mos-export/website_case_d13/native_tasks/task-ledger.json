@@ -1,0 +1,589 @@
+{
+ "tasks": [
+  {
+   "task_id": "342335722341376",
+   "task_type": "Antibody Humanization",
+   "name": "D13_humanization_10designs",
+   "launched_utc": "2026-10-20T08:07:40.612278Z",
+   "status": "SUCCEED",
+   "payload": {
+    "num_designs": 10,
+    "vh_sequence": "QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS",
+    "vl_sequence": "DIQMTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK"
+   },
+   "sequence_source": "1FDL auth chains: B/H heavy (V-domain 1-116), A/L light (V-domain 1-107), ANARCI IMGT domain boundaries",
+   "output_dir": "/workspace/website_case_d13/native_tasks/humanization/",
+   "status_checked_utc": "2026-10-20T08:20Z",
+   "duration": "3.9min",
+   "output_files": [
+    "179248388743747_model_sample_1.cif",
+    "179248388855103_model_sample_2.cif",
+    "179248388963120_model_sample_3.cif",
+    "179248389069855_model_sample_4.cif",
+    "179248389176291_model_sample_5.cif",
+    "abnativ_batch_heavy_details.csv",
+    "abnativ_batch_light_details.csv",
+    "abnativ_batch_summary.csv",
+    "biophi_humanization_results.json",
+    "final_ranked_summary.csv",
+    "result.fasta",
+    "summary_confidences_sample_1.json",
+    "summary_confidences_sample_2.json",
+    "summary_confidences_sample_3.json",
+    "summary_confidences_sample_4.json",
+    "summary_confidences_sample_5.json"
+   ],
+   "n_candidates_returned": 10,
+   "note": "Returned 10 humanized VH/VL sequence pairs + 5 model_sample CIF/confidence files (only 5 of 10 modelled by the task itself)."
+  },
+  {
+   "task_id": "342336939402240",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_1_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.797322Z",
+   "payload": {
+    "name": "D13_hum_humanization_1_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCSVSGFSLTGYGVNWIRQAPGKGLEWLGMIWGDGNTDYNSALKSRLTISRDTSKSQVFLKLNSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDRVTISCRASGNIHNYLAWYQQKPGKAPRLLVYYTTTLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_1.json",
+   "candidate": "humanization_1",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_1/",
+   "duration": "1.9min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_1/179248406572616_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_1/179248406669282_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_1/179248406755643_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_1/179248406843457_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_1/179248406933319_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_1/manifest.json",
+    "native_tasks/mmfold/humanization_1/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_1/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_1/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_1/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_1/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_1/manifest.json"
+  },
+  {
+   "task_id": "342336943940608",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_2_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.799242Z",
+   "payload": {
+    "name": "D13_hum_humanization_2_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCTVSGFSLTGYGVNWIRQPPGKGLEWLGMIWGDGNTDYNSALKSRLTISRDTSKSQVFLRLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQMTQSPSSLSASVGDRVTISCRASGNIHNYLAWYQQKPGKAPNLLVYYTTTLADGVPSRFSGSGSGTEFTLTISSLQPEDFAVYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_2.json",
+   "candidate": "humanization_2",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_2/",
+   "duration": "5.1min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_2/179248425678642_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_2/179248425773487_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_2/179248425867073_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_2/179248425960655_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_2/179248426056312_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_2/manifest.json",
+    "native_tasks/mmfold/humanization_2/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_2/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_2/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_2/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_2/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_2/manifest.json"
+  },
+  {
+   "task_id": "342336948163584",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_3_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.800952Z",
+   "payload": {
+    "name": "D13_hum_humanization_3_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCTVSGFSLTGYGVNWIRQAPGKGLEWLAMIWGDGNTDYNSALKSRLTISRDTSKNQVFLKMNSLRAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGRAPNLLVYYTTTLADGVPSRFSGSGSGTDFTLTISGLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_3.json",
+   "candidate": "humanization_3",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_3/",
+   "duration": "5.0min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_3/179248425366261_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_3/179248425441616_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_3/179248425511183_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_3/179248425579484_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_3/179248425649150_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_3/manifest.json",
+    "native_tasks/mmfold/humanization_3/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_3/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_3/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_3/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_3/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_3/manifest.json"
+  },
+  {
+   "task_id": "342336952607744",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_4_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.802316Z",
+   "payload": {
+    "name": "D13_hum_humanization_4_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCSVSGFSLTGYGVNWIRQAPGKGLEWIAMIWGDGNTDYNSALKSRLTISLDTSKSQVFLKLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPNLLVYYTTTLADGVPSRFSGSGSGTHFTLTISSLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_4.json",
+   "candidate": "humanization_4",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_4/",
+   "duration": "5.0min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_4/179248425384081_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_4/179248425501566_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_4/179248425613355_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_4/179248425725603_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_4/179248425875436_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_4/manifest.json",
+    "native_tasks/mmfold/humanization_4/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_4/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_4/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_4/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_4/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_4/manifest.json"
+  },
+  {
+   "task_id": "342336956908544",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_5_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.804174Z",
+   "payload": {
+    "name": "D13_hum_humanization_5_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCTVSGFSLTGYGVNWIRQPPGKGLEWLGMIWGDGNTDYNSALKSRLTISEDTSKSQVSLKLNSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQMTQSPSSLSARVGDRVTITCRASGNIHNYLAWYQQKPGKPPRLLVYYTTTLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQHFWSTPRTFGPGTKVDIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_5.json",
+   "candidate": "humanization_5",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_5/",
+   "duration": "5.1min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_5/179248426044477_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_5/179248426160100_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_5/179248426271167_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_5/179248426381610_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_5/179248426496125_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_5/manifest.json",
+    "native_tasks/mmfold/humanization_5/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_5/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_5/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_5/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_5/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_5/manifest.json"
+  },
+  {
+   "task_id": "342336968610816",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_6_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.805503Z",
+   "payload": {
+    "name": "D13_hum_humanization_6_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCTVSGFSLTGYGVNWIRQAPGKGLEWLGMIWGDGNTDYNSALKSRLTISRDRSKSQVFLKTNSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGRAPDLLVYYTTTLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQHFWSTPRTFGPGTKVDIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_6.json",
+   "candidate": "humanization_6",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_6/",
+   "duration": "5.0min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_6/179248425800390_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_6/179248425876641_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_6/179248425949123_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_6/179248426021883_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_6/179248426090212_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_6/manifest.json",
+    "native_tasks/mmfold/humanization_6/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_6/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_6/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_6/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_6/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_6/manifest.json"
+  },
+  {
+   "task_id": "342336973136896",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_7_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.806680Z",
+   "payload": {
+    "name": "D13_hum_humanization_7_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCSVSGFSLTGYGVNWIRQAPGKGLEWIGMIWGDGNTDYNSALKSRVTISVDTSKSQVFLKMNSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGRPPRLLVYYTTTLADGVPSRFSGSGSGTDFTLTISSLQPEDLATYYCQHFWSTPRTFGPGTKVIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_7.json",
+   "candidate": "humanization_7",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_7/",
+   "duration": "3.8min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_7/179248418385282_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_7/179248418485494_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_7/179248418587617_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_7/179248418684907_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_7/179248418791745_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_7/manifest.json",
+    "native_tasks/mmfold/humanization_7/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_7/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_7/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_7/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_7/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_7/manifest.json"
+  },
+  {
+   "task_id": "342336977507328",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_8_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.807941Z",
+   "payload": {
+    "name": "D13_hum_humanization_8_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCAVSGFSLTGYGVNWIRQAPGKGLEWVGMIWGDGNTDYNSALKSRLTISVDTSKSQVFLKLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DVQLTQSPSSLSASVGDRVTISCRASGNIHNYLAWYQQKPGRAPKLLVYYTTTLADGVPSRFSGSGSGTEFTLTISSLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_8.json",
+   "candidate": "humanization_8",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_8/",
+   "duration": "4.8min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_8/179248425168799_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_8/179248425262640_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_8/179248425357094_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_8/179248425452271_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_8/manifest.json",
+    "native_tasks/mmfold/humanization_8/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_8/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_8/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_8/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_8/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_8/manifest.json"
+  },
+  {
+   "task_id": "342336981885952",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_9_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.809454Z",
+   "payload": {
+    "name": "D13_hum_humanization_9_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCTVSGFSLTGYGVNWIRQAPGKGLEWLGMIWGDGNTDYNSALKSRLTISIDTSKSQFFLKLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKPPNLLVYYTTTLADGVPSRFSGSGSGTEFTLTISSLQSEDFATYYCQHFWSTPRTFGPGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_9.json",
+   "candidate": "humanization_9",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_9/",
+   "duration": "2.8min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_9/179248413076797_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_9/179248413168359_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_9/179248413263937_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_9/179248413359523_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_9/179248413451046_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_9/manifest.json",
+    "native_tasks/mmfold/humanization_9/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_9/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_9/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_9/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_9/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_9/manifest.json"
+  },
+  {
+   "task_id": "342336986252288",
+   "task_type": "MMFold",
+   "name": "D13_hum_humanization_10_Fv",
+   "status": "SUCCEED",
+   "launched_utc": "2026-10-20T08:12:50.810799Z",
+   "payload": {
+    "name": "D13_hum_humanization_10_Fv",
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "QVQLQESGPGLVKPSETLSLTCSVSGFSLTGYGVNWIRQPPGKGLEWLGMIWGDGNTDYNSALKSRVTISSDTSKSQVFLTLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+       "description": "D1.3 humanization candidate heavy chain (VH)"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "DIQLTQSPSSLSASVGDTVTISCRASGNIHNYLAWYQQKPGQPPNLLVYYTTTLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+       "description": "D1.3 humanization candidate light chain (VL)"
+      }
+     }
+    ],
+    "dialect": "mmfold",
+    "version": 1
+   },
+   "payload_file": "native_tasks/mmfold_payloads/humanization_10.json",
+   "candidate": "humanization_10",
+   "sequence_source": "native_tasks/humanization/result.fasta",
+   "output_dir": "native_tasks/mmfold/humanization_10/",
+   "duration": "1.4min",
+   "output_files": [
+    "native_tasks/mmfold/humanization_10/179248404238407_model_sample_3.cif",
+    "native_tasks/mmfold/humanization_10/179248404347389_model_sample_4.cif",
+    "native_tasks/mmfold/humanization_10/179248404456366_model_sample_5.cif",
+    "native_tasks/mmfold/humanization_10/179248404567931_model_sample_1.cif",
+    "native_tasks/mmfold/humanization_10/179248404674961_model_sample_2.cif",
+    "native_tasks/mmfold/humanization_10/manifest.json",
+    "native_tasks/mmfold/humanization_10/summary_confidences_sample_1.json",
+    "native_tasks/mmfold/humanization_10/summary_confidences_sample_2.json",
+    "native_tasks/mmfold/humanization_10/summary_confidences_sample_3.json",
+    "native_tasks/mmfold/humanization_10/summary_confidences_sample_4.json",
+    "native_tasks/mmfold/humanization_10/summary_confidences_sample_5.json"
+   ],
+   "manifest": "native_tasks/mmfold/humanization_10/manifest.json"
+  }
+ ],
+ "native_autocompute_tasks": [
+  {
+   "task_id": "342335703909376",
+   "type": "MOSTask (native auto-compute / MMetrics)",
+   "name": "autocompute-1FDL",
+   "triggered_by": "ImportStructure(1FDL)",
+   "started": "2026-10-20T08:07:33Z",
+   "status_at_last_check": "RUNNING",
+   "last_checked_utc": "2026-10-20T08:23:08Z",
+   "outputs_retrievable": false,
+   "raw_response_file": "logs/autocompute_1FDL_last_check.json",
+   "note": "Native MOS analysis did NOT complete within this session window. No MMetrics output was used or claimed anywhere in this case."
+  },
+  {
+   "task_id": "342337097712640",
+   "type": "MOSTask (native auto-compute / MMetrics)",
+   "name": "autocompute-1BVL",
+   "triggered_by": "ImportStructure(1BVL)",
+   "started": "2026-10-20T08:13:13Z",
+   "status_at_last_check": "RUNNING",
+   "outputs_retrievable": false
+  },
+  {
+   "task_id": "342337098777600",
+   "type": "MOSTask (native auto-compute / MMetrics)",
+   "name": "autocompute-1BVL",
+   "triggered_by": "ImportStructure(1BVL)",
+   "started": "2026-10-20T08:13:13Z",
+   "status_at_last_check": "PENDING",
+   "outputs_retrievable": false
+  }
+ ],
+ "status_history": [
+  {
+   "observed_utc": "2026-10-20T08:07:33Z",
+   "event": "ImportStructure(1FDL) -> autocompute-1FDL 342335703909376 PENDING"
+  },
+  {
+   "observed_utc": "2026-10-20T08:07:40Z",
+   "event": "StartMOSTask Antibody Humanization 342335722341376 submitted"
+  },
+  {
+   "observed_utc": "2026-10-20T08:11:30Z",
+   "event": "humanization 342335722341376 SUCCEED (3.9min), 10 designs; 5 sample models of humanization_9 only"
+  },
+  {
+   "observed_utc": "2026-10-20T08:12:34Z",
+   "event": "10 MMFold tasks submitted (342336939402240 ... 342336986252288): all PENDING"
+  },
+  {
+   "observed_utc": "2026-10-20T08:13:00Z",
+   "event": "snapshot: humanization_10 SUCCEED; 1,2,3,4,5 RUNNING; 6,7,8,9 PENDING"
+  },
+  {
+   "observed_utc": "2026-10-20T08:14:00Z",
+   "event": "snapshot: humanization_1, humanization_10 SUCCEED"
+  },
+  {
+   "observed_utc": "2026-10-20T08:16:00Z",
+   "event": "snapshot: 1,7,9,10 SUCCEED; 2,3,4,5,6,8 RUNNING"
+  },
+  {
+   "observed_utc": "2026-10-20T08:18:00Z",
+   "event": "snapshot: all 10 MMFold SUCCEED (no failures, no retries)"
+  },
+  {
+   "observed_utc": "2026-10-20T08:23:08Z",
+   "event": "autocompute-1FDL still RUNNING; no outputs retrievable"
+  }
+ ],
+ "failures_and_retries": {
+  "mmfold_failures": 0,
+  "mmfold_retries": 0,
+  "humanization_failures": 0,
+  "notes": [
+   "Local analysis bug fixed during the run: ANARCI insertion-code parsing (merged '31B' style positions) and an SASA reference-state error were caught by cross-checking against totals and corrected; the final numbers are from the corrected scripts.",
+   "fv_compare was optimised with an ANARCI result cache; no result values changed."
+  ]
+ }
+}

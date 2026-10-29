@@ -1,0 +1,1445 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: 5GRJ
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: E
+- generic: V
+- generic: Q
+- generic: L
+- generic: L
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: F
+- generic: T
+- generic: F
+- generic: S
+- generic: "31"
+- generic: S
+- generic: "Y"
+- generic: I
+- generic: M
+- generic: M
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: V
+- generic: S
+- generic: S
+- generic: "51"
+- generic: I
+- generic: "Y"
+- generic: P
+- generic: S
+- generic: G
+- generic: G
+- generic: I
+- generic: T
+- generic: F
+- generic: "Y"
+- generic: "61"
+- generic: A
+- generic: D
+- generic: T
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: R
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: "N"
+- generic: T
+- generic: L
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: R
+- generic: A
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: I
+- generic: K
+- generic: "101"
+- generic: L
+- generic: G
+- generic: T
+- generic: V
+- generic: T
+- generic: T
+- generic: V
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: "111"
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: Q
+- generic: S
+- generic: A
+- generic: L
+- generic: T
+- generic: Q
+- generic: P
+- generic: A
+- generic: S
+- generic: V
+- generic: "11"
+- generic: S
+- generic: G
+- generic: S
+- generic: P
+- generic: G
+- generic: Q
+- generic: S
+- generic: I
+- generic: T
+- generic: I
+- generic: "21"
+- generic: S
+- generic: C
+- generic: T
+- generic: G
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: V
+- generic: G
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: "N"
+- generic: "Y"
+- generic: V
+- generic: S
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: "41"
+- generic: H
+- generic: P
+- generic: G
+- generic: K
+- generic: A
+- generic: P
+- generic: K
+- generic: L
+- generic: M
+- generic: I
+- generic: "51"
+- generic: "Y"
+- generic: D
+- generic: V
+- generic: S
+- generic: "N"
+- generic: R
+- generic: P
+- generic: S
+- generic: G
+- generic: V
+- generic: "61"
+- generic: S
+- generic: "N"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: K
+- generic: S
+- generic: G
+- generic: "71"
+- generic: "N"
+- generic: T
+- generic: A
+- generic: S
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: G
+- generic: L
+- generic: "81"
+- generic: Q
+- generic: A
+- generic: E
+- generic: D
+- generic: E
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: "91"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: T
+- generic: R
+- generic: V
+- generic: "101"
+- generic: F
+- generic: G
+- generic: T
+- generic: G
+- generic: T
+- generic: K
+- generic: V
+- generic: T
+- generic: V
+- generic: L
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: "171"
+- generic: E
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: "181"
+- generic: R
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "191"
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: "201"
+- generic: E
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: "211"
+- generic: E
+- generic: L
+- generic: P
+- generic: L
+- generic: A
+- generic: H
+- generic: P
+- generic: P
+- generic: "N"
+- generic: E
+- generic: R
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Description
+- generic: Antigen–Antibody
+- generic: "confidence: high"
+- generic: This complex shows an antibody fragment (VH and VL chains) bound to human Programmed cell death 1 ligand 1 (PD-L1), an immunoglobulin superfamily protein and BTN/MOG family member. PD-L1 is an immune checkpoint ligand for the inhibitory receptor PD-1 that helps modulate T-cell activation and immune tolerance. The structure captures the antigen-binding interface between the antibody variable domains and PD-L1, a biologically relevant antigen-antibody recognition event.
+- generic: ReasoningThe structure contains two antibody fragment chains annotated as VH and VL, and a third protein chain matching Programmed cell death 1 ligand 1 (PD-L1). The suggested valid protein-protein contacts show the VH/VL pair binding the PD-L1 antigen chain, which is the defining arrangement of an antigen-antibody complex. No non-solvent small-molecule ligand evidence is provided, so the ligand interaction flag remains false.
+- generic: Chain A
+- text: · protein · VH
+- generic: Chain B
+- text: · protein · VL
+- generic: Chain C
+- text: · protein
+- generic: Homologs
+- generic: Searched by antigen sequence similarity
+- generic: No significant homologs found.
+- generic: Annotations
+- button "Paratope 43 residues · structure A:GLU6 A:SER7 A:GLY9 A:LEU11 A:ALA24 A:PHE27 A:THR28 A:SER30 A:SER31 A:ILE33 A:PRO41 A:TYR52 A:PRO53 A:SER54 A:GLY55 A:GLY56 A:ILE57 A:THR58 A:PHE59 A:SER75 A:LYS76 A:ASN77 A:LEU101 A:GLY102 A:THR103 A:VAL104 A:THR105 A:THR106 A:GLN112 A:GLY113 A:THR114 A:LEU115 A:THR117 B:TYR32 B:TYR34 B:GLY43 B:LYS44 B:ASP52 B:TYR93 B:SER95 B:SER96 B:SER97 B:ARG99":
+  - generic: Paratope
+  - generic: 43 residues · structure
+  - button "A:GLU6"
+  - button "A:SER7"
+  - button "A:GLY9"
+  - button "A:LEU11"
+  - button "A:ALA24"
+  - button "A:PHE27"
+  - button "A:THR28"
+  - button "A:SER30"
+  - button "A:SER31"
+  - button "A:ILE33"
+  - button "A:PRO41"
+  - button "A:TYR52"
+  - button "A:PRO53"
+  - button "A:SER54"
+  - button "A:GLY55"
+  - button "A:GLY56"
+  - button "A:ILE57"
+  - button "A:THR58"
+  - button "A:PHE59"
+  - button "A:SER75"
+  - button "A:LYS76"
+  - button "A:ASN77"
+  - button "A:LEU101"
+  - button "A:GLY102"
+  - button "A:THR103"
+  - button "A:VAL104"
+  - button "A:THR105"
+  - button "A:THR106"
+  - button "A:GLN112"
+  - button "A:GLY113"
+  - button "A:THR114"
+  - button "A:LEU115"
+  - button "A:THR117"
+  - button "B:TYR32"
+  - button "B:TYR34"
+  - button "B:GLY43"
+  - button "B:LYS44"
+  - button "B:ASP52"
+  - button "B:TYR93"
+  - button "B:SER95"
+  - button "B:SER96"
+  - button "B:SER97"
+  - button "B:ARG99"
+- button "Epitope 38 residues · structure C:TYR15 C:GLY16 C:SER17 C:ASN18 C:ILE37 C:TYR39 C:GLU41 C:GLU43 C:ASP44 C:LYS45 C:ASN46 C:GLN49 C:HIS52 C:ASP56 C:LYS58 C:VAL59 C:GLN60 C:HIS61 C:ARG65 C:GLN66 C:THR85 C:ASP86 C:LYS88 C:ARG96 C:MET98 C:ILE99 C:SER100 C:ALA104 C:TYR106 C:LYS119 C:ASN121 C:ASP128 C:PRO129 C:VAL130 C:GLN139 C:MET42 C:GLN83 C:ARG108":
+  - generic: Epitope
+  - generic: 38 residues · structure
+  - button "C:TYR15"
+  - button "C:GLY16"
+  - button "C:SER17"
+  - button "C:ASN18"
+  - button "C:ILE37"
+  - button "C:TYR39"
+  - button "C:GLU41"
+  - button "C:GLU43"
+  - button "C:ASP44"
+  - button "C:LYS45"
+  - button "C:ASN46"
+  - button "C:GLN49"
+  - button "C:HIS52"
+  - button "C:ASP56"
+  - button "C:LYS58"
+  - button "C:VAL59"
+  - button "C:GLN60"
+  - button "C:HIS61"
+  - button "C:ARG65"
+  - button "C:GLN66"
+  - button "C:THR85"
+  - button "C:ASP86"
+  - button "C:LYS88"
+  - button "C:ARG96"
+  - button "C:MET98"
+  - button "C:ILE99"
+  - button "C:SER100"
+  - button "C:ALA104"
+  - button "C:TYR106"
+  - button "C:LYS119"
+  - button "C:ASN121"
+  - button "C:ASP128"
+  - button "C:PRO129"
+  - button "C:VAL130"
+  - button "C:GLN139"
+  - button "C:MET42"
+  - button "C:GLN83"
+  - button "C:ARG108"
+- button "Domain 3 residues · uniprot C:2-221 C:2-110 C:116-208":
+  - generic: Domain
+  - generic: 3 residues · uniprot
+  - button "C:2-221"
+  - button "C:2-110"
+  - button "C:116-208"
+- button "PTM 4 residues · uniprot C:ASN18 C:ASN175 C:ASN183 C:ASN202":
+  - generic: PTM
+  - generic: 4 residues · uniprot
+  - button "C:ASN18"
+  - button "C:ASN175"
+  - button "C:ASN183"
+  - button "C:ASN202"
+- button "UniProt Feature 1 residue · uniprot C:ARG221":
+  - generic: UniProt Feature
+  - generic: 1 residue · uniprot
+  - button "C:ARG221"
+- generic: Interaction Network
+- button "Table"
+- button "2D"
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain C
+  - generic: 2.28Å
+  - generic: 2.29Å
+  - generic: 2.75Å
+  - generic: 3.29Å
+  - generic: 2.80Å
+  - generic: 3.15Å
+  - generic: 2.73Å
+  - generic: 3.03Å
+  - generic: 2.65Å
+  - generic: 3.62Å
+  - generic: 3.29Å
+  - generic: 3.67Å
+  - generic: 3.67Å
+  - generic: 3.86Å
+  - generic: 2.75Å
+  - generic: 3.15Å
+  - generic: 3.29Å
+  - generic: 3.21Å
+  - generic: 3.68Å
+  - generic: 3.57Å
+  - generic: 3.20Å
+  - generic: 2.73Å
+  - generic: 3.80Å
+  - generic: 3.36Å
+  - generic: 3.44Å
+  - generic: 3.30Å
+  - generic: 3.02Å
+  - generic: 3.33Å
+  - generic: 2.99Å
+  - generic: 3.18Å
+  - generic: 3.35Å
+  - generic: 2.80Å
+  - generic: 3.37Å
+  - generic: 3.70Å
+  - generic: 2.94Å
+  - generic: 2.65Å
+  - generic: 5.16Å
+  - generic: 5.55Å
+  - generic: GLY
+  - generic: A102
+  - generic: SER
+  - generic: A54
+  - generic: TYR
+  - generic: A52
+  - generic: SER
+  - generic: A31
+  - generic: VAL
+  - generic: A104
+  - generic: GLY
+  - generic: A55
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: THR
+  - generic: A28
+  - generic: PRO
+  - generic: A53
+  - generic: ILE
+  - generic: A57
+  - generic: PHE
+  - generic: A59
+  - generic: LEU
+  - generic: A101
+  - generic: THR
+  - generic: A103
+  - generic: ASN
+  - generic: C46
+  - generic: TYR
+  - generic: C39
+  - generic: GLU
+  - generic: C41
+  - generic: GLN
+  - generic: C49
+  - generic: ASP
+  - generic: C44
+  - generic: ARG
+  - generic: C96
+  - generic: SER
+  - generic: C100
+  - generic: LYS
+  - generic: C58
+  - generic: ASP
+  - generic: C56
+  - generic: MET
+  - generic: C98
+  - generic: ILE
+  - generic: C37
+  - generic: TYR
+  - generic: C106
+  - generic: VAL
+  - generic: C59
+  - generic: LYS
+  - generic: C45
+  - generic: GLU
+  - generic: C43
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain B
+  - generic: 3.26Å
+  - generic: 2.45Å
+  - generic: 3.26Å
+  - generic: 3.59Å
+  - generic: 3.03Å
+  - generic: 3.31Å
+  - generic: 3.84Å
+  - generic: 3.50Å
+  - generic: 3.46Å
+  - generic: 3.81Å
+  - generic: 3.15Å
+  - generic: 3.41Å
+  - generic: 2.80Å
+  - generic: 3.17Å
+  - generic: 3.08Å
+  - generic: 3.58Å
+  - generic: 3.68Å
+  - generic: 3.13Å
+  - generic: 3.49Å
+  - generic: 6.32Å
+  - generic: 5.62Å
+  - generic: 4.18Å
+  - generic: GLN
+  - generic: A39
+  - generic: VAL
+  - generic: A107
+  - generic: LEU
+  - generic: A45
+  - generic: TRP
+  - generic: A47
+  - generic: TYR
+  - generic: A95
+  - generic: LYS
+  - generic: A100
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: ASP
+  - generic: A108
+  - generic: TRP
+  - generic: A110
+  - generic: GLN
+  - generic: A112
+  - generic: TYR
+  - generic: B89
+  - generic: TYR
+  - generic: B38
+  - generic: PHE
+  - generic: B101
+  - generic: THR
+  - generic: B98
+  - generic: PRO
+  - generic: B46
+  - generic: TYR
+  - generic: B51
+  - generic: TYR
+  - generic: B93
+  - generic: ARG
+  - generic: B99
+  - generic: LEU
+  - generic: B48
+  - generic: ALA
+  - generic: B45
+- img "protein-protein interaction plot":
+  - generic: Chain B
+  - generic: Chain C
+  - generic: 2.77Å
+  - generic: 2.73Å
+  - generic: 3.35Å
+  - generic: 3.63Å
+  - generic: 2.77Å
+  - generic: 3.40Å
+  - generic: 3.26Å
+  - generic: 3.16Å
+  - generic: 3.10Å
+  - generic: 3.45Å
+  - generic: 2.73Å
+  - generic: TYR
+  - generic: B34
+  - generic: ARG
+  - generic: B99
+  - generic: TYR
+  - generic: B32
+  - generic: TYR
+  - generic: B93
+  - generic: SER
+  - generic: B97
+  - generic: GLU
+  - generic: C43
+  - generic: ASP
+  - generic: C44
+  - generic: MET
+  - generic: C42
+  - generic: LYS
+  - generic: C45
+  - generic: ARG
+  - generic: C96
+- generic: H-Bond
+- generic: VdW Contact
+- generic: π-π Stack
+- generic: π-Cation
+- generic: Aliphatic
+- generic: Polar
+- generic: Aromatic
+- generic: Acidic
+- generic: Basic
+- generic: Sulfur
+- generic: Mutation Scoring
+- generic: CSV
+- generic: MutXevo.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXstruct.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXseq.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXaff.csv
+- generic: View
+- generic: Download
+- generic: Antibody Design
+- generic: CSV
+- generic: AbScN_heavy..csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbScN_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_light.csv
+- generic: View
+- generic: Download
+- separator "调整 Mocha 与文件面板宽度"
+- complementary "File viewer":
+  - generic "AbScN_light.csv"
+  - button "Open file in new window":
+    - img "export":
+  - button "Close file panel":
+    - img "close":
+  - table:
+    - rowgroup:
+      - row "aa_index aa humanness_VL2_score sequence_humanness_VL2_score":
+        - columnheader "aa_index":
+          - generic: aa_index
+        - columnheader "aa":
+          - generic: aa
+        - columnheader "humanness_VL2_score":
+          - generic: humanness_VL2_score
+        - columnheader "sequence_humanness_VL2_score":
+          - generic: sequence_humanness_VL2_score
+  - table:
+    - rowgroup:
+      - row "1 S 0.9998378753662109 0.94844085":
+        - cell "1"
+        - cell "S"
+        - cell "0.9998378753662109"
+        - cell "0.94844085"
+      - row "2 A 0.9992868304252625 0.94844085":
+        - cell "2"
+        - cell "A"
+        - cell "0.9992868304252625"
+        - cell "0.94844085"
+      - row "3 L 0.9997223019599915 0.94844085":
+        - cell "3"
+        - cell "L"
+        - cell "0.9997223019599915"
+        - cell "0.94844085"
+      - row "4 T 0.9995836615562439 0.94844085":
+        - cell "4"
+        - cell "T"
+        - cell "0.9995836615562439"
+        - cell "0.94844085"
+      - row "5 Q 0.9996800422668457 0.94844085":
+        - cell "5"
+        - cell "Q"
+        - cell "0.9996800422668457"
+        - cell "0.94844085"
+      - row "6 P 0.9999048113822937 0.94844085":
+        - cell "6"
+        - cell "P"
+        - cell "0.9999048113822937"
+        - cell "0.94844085"
+      - row "7 A 0.9997362494468689 0.94844085":
+        - cell "7"
+        - cell "A"
+        - cell "0.9997362494468689"
+        - cell "0.94844085"
+      - row "8 S 0.9997135996818542 0.94844085":
+        - cell "8"
+        - cell "S"
+        - cell "0.9997135996818542"
+        - cell "0.94844085"
+      - row "9 V 0.9996046423912048 0.94844085":
+        - cell "9"
+        - cell "V"
+        - cell "0.9996046423912048"
+        - cell "0.94844085"
+      - row "10 S 0.9996909499168396 0.94844085":
+        - cell "10"
+        - cell "S"
+        - cell "0.9996909499168396"
+        - cell "0.94844085"
+      - row "11 G 0.9998270273208618 0.94844085":
+        - cell "11"
+        - cell "G"
+        - cell "0.9998270273208618"
+        - cell "0.94844085"
+      - row "12 S 0.9997695088386536 0.94844085":
+        - cell "12"
+        - cell "S"
+        - cell "0.9997695088386536"
+        - cell "0.94844085"
+      - row "13 P 0.9998812079429626 0.94844085":
+        - cell "13"
+        - cell "P"
+        - cell "0.9998812079429626"
+        - cell "0.94844085"
+      - row "14 G 0.999829113483429 0.94844085":
+        - cell "14"
+        - cell "G"
+        - cell "0.999829113483429"
+        - cell "0.94844085"
+      - row "15 Q 0.9997655749320984 0.94844085":
+        - cell "15"
+        - cell "Q"
+        - cell "0.9997655749320984"
+        - cell "0.94844085"
+      - row "16 S 0.999686062335968 0.94844085":
+        - cell "16"
+        - cell "S"
+        - cell "0.999686062335968"
+        - cell "0.94844085"
+      - row "17 I 0.9997006058692932 0.94844085":
+        - cell "17"
+        - cell "I"
+        - cell "0.9997006058692932"
+        - cell "0.94844085"
+      - row "18 T 0.9997542500495911 0.94844085":
+        - cell "18"
+        - cell "T"
+        - cell "0.9997542500495911"
+        - cell "0.94844085"
+      - row "19 I 0.9995846152305603 0.94844085":
+        - cell "19"
+        - cell "I"
+        - cell "0.9995846152305603"
+        - cell "0.94844085"
+      - row "20 S 0.9998343586921692 0.94844085":
+        - cell "20"
+        - cell "S"
+        - cell "0.9998343586921692"
+        - cell "0.94844085"
+      - row "21 C 0.9999995231628418 0.94844085":
+        - cell "21"
+        - cell "C"
+        - cell "0.9999995231628418"
+        - cell "0.94844085"
+      - row "22 T 0.9998591542243958 0.94844085":
+        - cell "22"
+        - cell "T"
+        - cell "0.9998591542243958"
+        - cell "0.94844085"
+      - row "23 G 0.9998312592506409 0.94844085":
+        - cell "23"
+        - cell "G"
+        - cell "0.9998312592506409"
+        - cell "0.94844085"
+      - row "24 T 0.9999231100082397 0.94844085":
+        - cell "24"
+        - cell "T"
+        - cell "0.9999231100082397"
+        - cell "0.94844085"
+      - row "25 S 0.9997106194496155 0.94844085":
+        - cell "25"
+        - cell "S"
+        - cell "0.9997106194496155"
+        - cell "0.94844085"
+      - row "26 S 0.9997218251228333 0.94844085":
+        - cell "26"
+        - cell "S"
+        - cell "0.9997218251228333"
+        - cell "0.94844085"
+      - row "27 D 0.9998012781143188 0.94844085":
+        - cell "27"
+        - cell "D"
+        - cell "0.9998012781143188"
+        - cell "0.94844085"
+      - row "28 V 0.99997878074646 0.94844085":
+        - cell "28"
+        - cell "V"
+        - cell "0.99997878074646"
+        - cell "0.94844085"
+      - row "29 G 0.999734103679657 0.94844085":
+        - cell "29"
+        - cell "G"
+        - cell "0.999734103679657"
+        - cell "0.94844085"
+      - row "30 G 0.9999032020568848 0.94844085":
+        - cell "30"
+        - cell "G"
+        - cell "0.9999032020568848"
+        - cell "0.94844085"
+      - row "31 Y 0.999859094619751 0.94844085":
+        - cell "31"
+        - cell "Y"
+        - cell "0.999859094619751"
+        - cell "0.94844085"
+      - row "32 N 0.9999377131462097 0.94844085":
+        - cell "32"
+        - cell "N"
+        - cell "0.9999377131462097"
+        - cell "0.94844085"
+      - row "33 Y 0.9999574422836304 0.94844085":
+        - cell "33"
+        - cell "Y"
+        - cell "0.9999574422836304"
+        - cell "0.94844085"
+      - row "34 V 0.9998470544815063 0.94844085":
+        - cell "34"
+        - cell "V"
+        - cell "0.9998470544815063"
+        - cell "0.94844085"
+      - row "35 S 0.9997901320457458 0.94844085":
+        - cell "35"
+        - cell "S"
+        - cell "0.9997901320457458"
+        - cell "0.94844085"
+      - row "36 W 0.999902069568634 0.94844085":
+        - cell "36"
+        - cell "W"
+        - cell "0.999902069568634"
+        - cell "0.94844085"
+      - row "37 Y 0.9998190402984619 0.94844085":
+        - cell "37"
+        - cell "Y"
+        - cell "0.9998190402984619"
+        - cell "0.94844085"
+      - row "38 Q 0.9998500943183899 0.94844085":
+        - cell "38"
+        - cell "Q"
+        - cell "0.9998500943183899"
+        - cell "0.94844085"
+      - row "39 Q 0.9999035596847534 0.94844085":
+        - cell "39"
+        - cell "Q"
+        - cell "0.9999035596847534"
+        - cell "0.94844085"
+      - row "40 H 0.9999622702598572 0.94844085":
+        - cell "40"
+        - cell "H"
+        - cell "0.9999622702598572"
+        - cell "0.94844085"
+      - row "41 P 0.9999082684516907 0.94844085":
+        - cell "41"
+        - cell "P"
+        - cell "0.9999082684516907"
+        - cell "0.94844085"
+      - row "42 G 0.9997426271438599 0.94844085":
+        - cell "42"
+        - cell "G"
+        - cell "0.9997426271438599"
+        - cell "0.94844085"
+      - row "43 K 0.9997653961181641 0.94844085":
+        - cell "43"
+        - cell "K"
+        - cell "0.9997653961181641"
+        - cell "0.94844085"
+      - row "44 A 0.9998245239257812 0.94844085":
+        - cell "44"
+        - cell "A"
+        - cell "0.9998245239257812"
+        - cell "0.94844085"
+      - row "45 P 0.9998813271522522 0.94844085":
+        - cell "45"
+        - cell "P"
+        - cell "0.9998813271522522"
+        - cell "0.94844085"
+      - row "46 K 0.999823808670044 0.94844085":
+        - cell "46"
+        - cell "K"
+        - cell "0.999823808670044"
+        - cell "0.94844085"
+      - row "47 L 0.9998318552970886 0.94844085":
+        - cell "47"
+        - cell "L"
+        - cell "0.9998318552970886"
+        - cell "0.94844085"
+      - row "48 M 0.9999625086784363 0.94844085":
+        - cell "48"
+        - cell "M"
+        - cell "0.9999625086784363"
+        - cell "0.94844085"
+      - row "49 I 0.9998371005058289 0.94844085":
+        - cell "49"
+        - cell "I"
+        - cell "0.9998371005058289"
+        - cell "0.94844085"
+      - row "50 Y 0.9995619058609009 0.94844085":
+        - cell "50"
+        - cell "Y"
+        - cell "0.9995619058609009"
+        - cell "0.94844085"
+      - row "51 D 0.9997279644012451 0.94844085":
+        - cell "51"
+        - cell "D"
+        - cell "0.9997279644012451"
+        - cell "0.94844085"
+      - row "52 V 0.999674379825592 0.94844085":
+        - cell "52"
+        - cell "V"
+        - cell "0.999674379825592"
+        - cell "0.94844085"
+      - row "53 S 0.999916672706604 0.94844085":
+        - cell "53"
+        - cell "S"
+        - cell "0.999916672706604"
+        - cell "0.94844085"
+      - row "54 N 0.9996232986450195 0.94844085":
+        - cell "54"
+        - cell "N"
+        - cell "0.9996232986450195"
+        - cell "0.94844085"
+      - row "55 R 0.9998891949653625 0.94844085":
+        - cell "55"
+        - cell "R"
+        - cell "0.9998891949653625"
+        - cell "0.94844085"
+      - row "56 P 0.9998920559883118 0.94844085":
+        - cell "56"
+        - cell "P"
+        - cell "0.9998920559883118"
+        - cell "0.94844085"
+      - row "57 S 0.999793529510498 0.94844085":
+        - cell "57"
+        - cell "S"
+        - cell "0.999793529510498"
+        - cell "0.94844085"
+      - row "58 G 0.9998463988304138 0.94844085":
+        - cell "58"
+        - cell "G"
+        - cell "0.9998463988304138"
+        - cell "0.94844085"
+      - row "59 V 0.9997462630271912 0.94844085":
+        - cell "59"
+        - cell "V"
+        - cell "0.9997462630271912"
+        - cell "0.94844085"
+      - row "60 S 0.9998407959938049 0.94844085":
+        - cell "60"
+        - cell "S"
+        - cell "0.9998407959938049"
+        - cell "0.94844085"
+      - row "61 N 0.9995770454406738 0.94844085":
+        - cell "61"
+        - cell "N"
+        - cell "0.9995770454406738"
+        - cell "0.94844085"
+      - row "62 R 0.9998977184295654 0.94844085":
+        - cell "62"
+        - cell "R"
+        - cell "0.9998977184295654"
+        - cell "0.94844085"
+      - row "63 F 0.9997078776359558 0.94844085":
+        - cell "63"
+        - cell "F"
+        - cell "0.9997078776359558"
+        - cell "0.94844085"
+      - row "64 S 0.9999331831932068 0.94844085":
+        - cell "64"
+        - cell "S"
+        - cell "0.9999331831932068"
+        - cell "0.94844085"
+      - row "65 G 0.9998220801353455 0.94844085":
+        - cell "65"
+        - cell "G"
+        - cell "0.9998220801353455"
+        - cell "0.94844085"
+      - row "66 S 0.9998883605003357 0.94844085":
+        - cell "66"
+        - cell "S"
+        - cell "0.9998883605003357"
+        - cell "0.94844085"
+      - row "67 K 0.9999343156814575 0.94844085":
+        - cell "67"
+        - cell "K"
+        - cell "0.9999343156814575"
+        - cell "0.94844085"
+      - row "68 S 0.9998651146888733 0.94844085":
+        - cell "68"
+        - cell "S"
+        - cell "0.9998651146888733"
+        - cell "0.94844085"
+      - row "69 G 0.9997579455375671 0.94844085":
+        - cell "69"
+        - cell "G"
+        - cell "0.9997579455375671"
+        - cell "0.94844085"
+      - row "70 N 0.9997791647911072 0.94844085":
+        - cell "70"
+        - cell "N"
+        - cell "0.9997791647911072"
+        - cell "0.94844085"
+      - row "71 T 0.9998553991317749 0.94844085":
+        - cell "71"
+        - cell "T"
+        - cell "0.9998553991317749"
+        - cell "0.94844085"
+      - row "72 A 0.9998903870582581 0.94844085":
+        - cell "72"
+        - cell "A"
+        - cell "0.9998903870582581"
+        - cell "0.94844085"
+      - row "73 S 0.9997997283935547 0.94844085":
+        - cell "73"
+        - cell "S"
+        - cell "0.9997997283935547"
+        - cell "0.94844085"
+      - row "74 L 0.9998399019241333 0.94844085":
+        - cell "74"
+        - cell "L"
+        - cell "0.9998399019241333"
+        - cell "0.94844085"
+      - row "75 T 0.9996798038482666 0.94844085":
+        - cell "75"
+        - cell "T"
+        - cell "0.9996798038482666"
+        - cell "0.94844085"
+      - row "76 I 0.9998190402984619 0.94844085":
+        - cell "76"
+        - cell "I"
+        - cell "0.9998190402984619"
+        - cell "0.94844085"
+      - row "77 S 0.9998517036437988 0.94844085":
+        - cell "77"
+        - cell "S"
+        - cell "0.9998517036437988"
+        - cell "0.94844085"
+      - row "78 G 0.9994899034500122 0.94844085":
+        - cell "78"
+        - cell "G"
+        - cell "0.9994899034500122"
+        - cell "0.94844085"
+      - row "79 L 0.9995881915092468 0.94844085":
+        - cell "79"
+        - cell "L"
+        - cell "0.9995881915092468"
+        - cell "0.94844085"
+      - row "80 Q 0.9996939897537231 0.94844085":
+        - cell "80"
+        - cell "Q"
+        - cell "0.9996939897537231"
+        - cell "0.94844085"
+      - row "81 A 0.9999216794967651 0.94844085":
+        - cell "81"
+        - cell "A"
+        - cell "0.9999216794967651"
+        - cell "0.94844085"
+      - row "82 E 0.9994636178016663 0.94844085":
+        - cell "82"
+        - cell "E"
+        - cell "0.9994636178016663"
+        - cell "0.94844085"
+      - row "83 D 0.9997969269752502 0.94844085":
+        - cell "83"
+        - cell "D"
+        - cell "0.9997969269752502"
+        - cell "0.94844085"
+      - row "84 E 0.9995235800743103 0.94844085":
+        - cell "84"
+        - cell "E"
+        - cell "0.9995235800743103"
+        - cell "0.94844085"
+      - row "85 A 0.9995279312133789 0.94844085":
+        - cell "85"
+        - cell "A"
+        - cell "0.9995279312133789"
+        - cell "0.94844085"
+      - row "86 D 0.9996157884597778 0.94844085":
+        - cell "86"
+        - cell "D"
+        - cell "0.9996157884597778"
+        - cell "0.94844085"
+      - row "87 Y 0.9995019435882568 0.94844085":
+        - cell "87"
+        - cell "Y"
+        - cell "0.9995019435882568"
+        - cell "0.94844085"
+      - row "88 Y 0.999601423740387 0.94844085":
+        - cell "88"
+        - cell "Y"
+        - cell "0.999601423740387"
+        - cell "0.94844085"
+      - row "89 C 0.9999988079071045 0.94844085":
+        - cell "89"
+        - cell "C"
+        - cell "0.9999988079071045"
+        - cell "0.94844085"
+      - row "90 S 0.9998669028282166 0.94844085":
+        - cell "90"
+        - cell "S"
+        - cell "0.9998669028282166"
+        - cell "0.94844085"
+      - row "91 S 0.9998008608818054 0.94844085":
+        - cell "91"
+        - cell "S"
+        - cell "0.9998008608818054"
+        - cell "0.94844085"
+      - row "92 Y 0.9998695850372314 0.94844085":
+        - cell "92"
+        - cell "Y"
+        - cell "0.9998695850372314"
+        - cell "0.94844085"
+      - row "93 T 0.9999346733093262 0.94844085":
+        - cell "93"
+        - cell "T"
+        - cell "0.9999346733093262"
+        - cell "0.94844085"
+      - row "94 S 0.9999586343765259 0.94844085":
+        - cell "94"
+        - cell "S"
+        - cell "0.9999586343765259"
+        - cell "0.94844085"
+      - row "95 S 0.9999632239341736 0.94844085":
+        - cell "95"
+        - cell "S"
+        - cell "0.9999632239341736"
+        - cell "0.94844085"
+      - row "96 S 0.9998465776443481 0.94844085":
+        - cell "96"
+        - cell "S"
+        - cell "0.9998465776443481"
+        - cell "0.94844085"
+      - row "97 T 0.999466061592102 0.94844085":
+        - cell "97"
+        - cell "T"
+        - cell "0.999466061592102"
+        - cell "0.94844085"
+      - row "98 R 0.9989837408065796 0.94844085":
+        - cell "98"
+        - cell "R"
+        - cell "0.9989837408065796"
+        - cell "0.94844085"
+      - row "99 V 0.9990910291671753 0.94844085":
+        - cell "99"
+        - cell "V"
+        - cell "0.9990910291671753"
+        - cell "0.94844085"
+      - row "100 F 0.9996649026870728 0.94844085":
+        - cell "100"
+        - cell "F"
+        - cell "0.9996649026870728"
+        - cell "0.94844085"
+  - list:
+    - listitem: 108 rows
+    - listitem "Previous Page":
+      - button "left" [disabled]:
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "2":
+      - generic: "2"
+    - listitem "Next Page":
+      - button "right":
+        - img "right":
+    - generic "Page Size":
+      - combobox "Page Size"
+      - generic "100 / page"

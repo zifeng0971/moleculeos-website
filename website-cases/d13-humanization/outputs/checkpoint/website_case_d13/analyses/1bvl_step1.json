@@ -1,0 +1,203 @@
+{
+  "structure_file": "/workspace/website_case_d13/structures/1BVL_sanitized.cif",
+  "total_entities": 2,
+  "entities": [
+    {
+      "entity_id": 1,
+      "chains": [
+        "A",
+        "B"
+      ],
+      "molecule_type": "protein",
+      "residues": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSS",
+      "length": 116,
+      "protein_type": "antibody (VHH)",
+      "annotations": [
+        {
+          "type": "region",
+          "feature": "vh_domain",
+          "note": "VH domain (H chain)",
+          "beg": {
+            "auth_seq_id": 1,
+            "auth_icode": "",
+            "label_seq_id": 1
+          },
+          "end": {
+            "auth_seq_id": 116,
+            "auth_icode": "",
+            "label_seq_id": 116
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR1: GFSLTGYG",
+          "beg": {
+            "auth_seq_id": 26,
+            "auth_icode": "",
+            "label_seq_id": 26
+          },
+          "end": {
+            "auth_seq_id": 33,
+            "auth_icode": "",
+            "label_seq_id": 33
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR2: IWGDGNT",
+          "beg": {
+            "auth_seq_id": 51,
+            "auth_icode": "",
+            "label_seq_id": 51
+          },
+          "end": {
+            "auth_seq_id": 57,
+            "auth_icode": "",
+            "label_seq_id": 57
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR3: ARERDYRLDY",
+          "beg": {
+            "auth_seq_id": 96,
+            "auth_icode": "",
+            "label_seq_id": 96
+          },
+          "end": {
+            "auth_seq_id": 105,
+            "auth_icode": "",
+            "label_seq_id": 105
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": 2,
+      "chains": [
+        "C",
+        "D"
+      ],
+      "molecule_type": "protein",
+      "residues": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIKR",
+      "length": 108,
+      "protein_type": "antibody (VL)",
+      "annotations": [
+        {
+          "type": "region",
+          "feature": "vl_domain",
+          "note": "VL domain (K chain)",
+          "beg": {
+            "auth_seq_id": 1,
+            "auth_icode": "",
+            "label_seq_id": 1
+          },
+          "end": {
+            "auth_seq_id": 107,
+            "auth_icode": "",
+            "label_seq_id": 107
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VL-CDR1: GNIHNY",
+          "beg": {
+            "auth_seq_id": 27,
+            "auth_icode": "",
+            "label_seq_id": 27
+          },
+          "end": {
+            "auth_seq_id": 32,
+            "auth_icode": "",
+            "label_seq_id": 32
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VL-CDR2: YTT",
+          "beg": {
+            "auth_seq_id": 50,
+            "auth_icode": "",
+            "label_seq_id": 50
+          },
+          "end": {
+            "auth_seq_id": 52,
+            "auth_icode": "",
+            "label_seq_id": 52
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VL-CDR3: QHFWSTPRT",
+          "beg": {
+            "auth_seq_id": 89,
+            "auth_icode": "",
+            "label_seq_id": 89
+          },
+          "end": {
+            "auth_seq_id": 97,
+            "auth_icode": "",
+            "label_seq_id": 97
+          }
+        }
+      ]
+    }
+  ],
+  "chain_pairs": [
+    {
+      "chain1": "A",
+      "chain2": "C",
+      "contact_type": "protein-protein",
+      "num_contacts": 48
+    },
+    {
+      "chain1": "C",
+      "chain2": "B",
+      "contact_type": "protein-protein",
+      "num_contacts": 1
+    },
+    {
+      "chain1": "C",
+      "chain2": "D",
+      "contact_type": "protein-protein",
+      "num_contacts": 29
+    },
+    {
+      "chain1": "B",
+      "chain2": "D",
+      "contact_type": "protein-protein",
+      "num_contacts": 50
+    }
+  ],
+  "metadata": {
+    "title": "HUMANIZED ANTI-LYSOZYME FV",
+    "ligand_names": {
+      "ALA": "ALANINE",
+      "ARG": "ARGININE",
+      "ASN": "ASPARAGINE",
+      "ASP": "ASPARTIC ACID",
+      "CYS": "CYSTEINE",
+      "GLN": "GLUTAMINE",
+      "GLU": "GLUTAMIC ACID",
+      "GLY": "GLYCINE",
+      "HIS": "HISTIDINE",
+      "ILE": "ISOLEUCINE",
+      "LEU": "LEUCINE",
+      "LYS": "LYSINE",
+      "MET": "METHIONINE",
+      "PHE": "PHENYLALANINE",
+      "PRO": "PROLINE",
+      "SER": "SERINE",
+      "THR": "THREONINE",
+      "TRP": "TRYPTOPHAN",
+      "TYR": "TYROSINE",
+      "VAL": "VALINE"
+    }
+  }
+}

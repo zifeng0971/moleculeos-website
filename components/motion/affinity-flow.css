@@ -1,0 +1,49 @@
+/* Step 03: experimental complex coordinates with the existing MOS mutation predictions. The molecule owns the frame. */
+.capability-media:has(.af) { min-height: 35rem; background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(240,139,208,.11), rgba(124,92,255,.12) 55%, transparent 78%), #0a0a10; }
+.af { position: absolute; inset: 0; color: #e9e7ef; font: 400 12px/1.5 Arial, 'Noto Sans SC', sans-serif; letter-spacing: 0; overflow: hidden; }
+.af-view { position: absolute; inset: 0; }
+.af-view canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.af-fx { pointer-events: none; }
+.af button { cursor: pointer; }
+.af button:focus-visible, .af-list:focus-visible { outline: 2px solid #ffcd5a; outline-offset: 2px; }
+
+/* Stage progress: a quiet vertical trail, top-left. */
+.af-steps { position: absolute; z-index: 2; top: 16px; left: 16px; display: grid; gap: 7px; padding: 0; margin: 0; list-style: none; pointer-events: none; }
+.af-steps li { display: flex; align-items: center; gap: 8px; color: #6f6a7b; font-size: 11px; transition: color .4s; }
+.af-steps i { display: grid; place-items: center; width: 16px; height: 16px; border: 1px solid #4a4455; border-radius: 50%; font: 500 9px/1 ui-monospace, monospace; font-style: normal; transition: all .4s; }
+.af-steps [data-active] { color: #f6c5e6; }
+.af-steps [data-active] i { border-color: #f08bd0; background: #f08bd024; }
+.af-steps [data-done] { color: #aaa4b8; }
+.af-steps [data-done] i { border-color: #7df3c4; background: #7df3c41f; color: #7df3c4; }
+.af-legend { position: absolute; z-index: 2; left: 16px; bottom: 14px; display: flex; flex-direction: column; gap: 2px; max-width: 40%; pointer-events: none; font-size: 10.5px; }
+.af-hint { position: absolute; z-index: 2; left: 16px; bottom: 94px; max-width: 40%; margin: 0; color: #a99bb3; font-size: 10.5px; opacity: 0; transition: opacity .6s; pointer-events: none; }
+.af-hint[data-on] { opacity: 1; }
+
+/* Result card: the same glass treatment as step 01's readout, in its own corner. */
+.af-panel { position: absolute; z-index: 3; right: 14px; bottom: 14px; display: grid; gap: 9px; width: min(300px, calc(100% - 28px)); padding: 12px; border: 1px solid #3a3a46; border-radius: 12px; background: rgba(31,31,38,.92); backdrop-filter: blur(8px); box-shadow: 0 24px 60px -24px rgba(0,0,0,.7); opacity: 0; transform: translateY(10px); visibility: hidden; transition: opacity .6s, transform .6s, visibility 0s .6s; }
+.af-panel[data-on] { opacity: 1; transform: none; visibility: visible; transition: opacity .6s, transform .6s; }
+.af-panel > strong { display: flex; align-items: center; gap: 6px; font-size: 12.5px; white-space: nowrap; min-width: 0; }
+.af-panel > strong svg { color: #7ddc95; }
+.af-panel > strong code { margin-left: auto; color: #9b9ba3; font: 500 10px ui-monospace, 'SF Mono', monospace; }
+.af-panel dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 0; }
+.af-panel dl > div { min-width: 0; display: flex; flex-direction: column; padding: 6px 8px; border-radius: 6px; background: #31313b; }
+.af-panel dd { margin: 0; font: 700 15px/1.2 ui-monospace, 'SF Mono', monospace; color: #fff; }
+.af-panel dt { order: 1; color: #8f8f98; font-size: 9.5px; line-height: 1.25; overflow-wrap: anywhere; }
+.af-panel h4 { display: flex; gap: 8px; white-space: nowrap; justify-content: space-between; margin: 2px 0 -3px; font-size: 11px; font-weight: 600; }
+.af-panel h4 span { color: #c0b0c9; font-weight: 400; font-size: 10px; }
+.af-list { height: 132px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #5a4a66 transparent; }
+.af-list button { width: 100%; height: 2.75rem; flex: none; display: flex; align-items: center; gap: 8px; padding: 0 6px; border: 0; border-radius: 6px; color: #e9e3ef; background: transparent; text-align: left; }
+.af-list button:hover, .af-list button[aria-pressed=true] { background: #f08bd017; }
+.af-list button small { width: 14px; color: #8f869a; font: 400 9.5px ui-monospace, monospace; }
+.af-list button b { flex: none; width: 38px; font: 600 11px ui-monospace, monospace; }
+.af-list button code { width: 34px; text-align: right; color: #ffcd5a; font-size: 11px; }
+.af-score { flex: 1; height: 3px; border-radius: 3px; background: #ffffff0d; overflow: hidden; }
+.af-score i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #8970ee, #f08bd0); }
+.af-panel > small { color: #8f8f98; font-size: 10px; line-height: 1.35; }
+
+/* Opening prompt: the analysis chrome stays hidden until the complex has formed. */
+.af-steps, .af-legend { transition: opacity .6s; }
+.af[data-lead] :is(.af-steps, .af-legend, .af-hint) { opacity: 0; }
+@media (max-width: 1023px) { .capability-media:has(.af) { aspect-ratio: auto; height: 560px; } }
+@media (max-width: 640px) { .af-steps { flex-direction: row; display: flex; gap: 10px; } .af-steps span { display: none; } .af-steps [data-active] span { display: inline; } .af-legend { bottom: auto; top: 44px; } .af-hint { display: none; } }
+@media (prefers-reduced-motion: reduce) { .af-panel, .af-steps, .af-legend { transition: none; } }

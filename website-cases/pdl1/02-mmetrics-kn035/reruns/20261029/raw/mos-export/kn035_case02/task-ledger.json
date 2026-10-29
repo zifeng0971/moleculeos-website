@@ -1,0 +1,121 @@
+{
+  "schema": "kn035_case02/task-ledger/v1",
+  "registered_object": {
+    "object_id": "345488780645376",
+    "work_id": "345488784675840",
+    "tos_key": "user_objects/123/330665428816896/345488780645376_MMFold_1.cif",
+    "name": "MMFold_1.cif"
+  },
+  "tasks": [
+    {
+      "order": 1,
+      "task_id": "345488784917504",
+      "name": "autocompute-MMFold_1",
+      "type": "MOSTask",
+      "origin": "automatic (platform auto-compute, not user-launched)",
+      "started": "2026-10-29 05:57:28",
+      "duration": "1.1min",
+      "status": "SUCCEED",
+      "payload_file": "payload/autocompute_345488784917504.payload.json",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/345488780645376_MMFold_1.cif",
+        "structure_pathFileId": "345488780645376",
+        "structure_pathFilename": "MMFold_1.cif"
+      },
+      "outputs_dir": "raw/autocompute_345488784917504/",
+      "outputs": [
+        {
+          "file": "affinity_scores.csv",
+          "bytes": 248333,
+          "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+          "model": "mos-diffaffinity (per payload of the child task)"
+        },
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 99890,
+          "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+          "model": "not stated in any payload"
+        },
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 126395,
+          "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+          "model": "not stated in any payload"
+        },
+        {
+          "file": "struct_fitness_scores.csv",
+          "bytes": 126608,
+          "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+          "model": "not stated in any payload"
+        },
+        {
+          "file": "similarity_results.json",
+          "bytes": 1882222,
+          "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+          "model": "mos-blast (per payload of the child task)"
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 98182,
+          "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+          "model": "mos-blast (per payload of the child task)"
+        },
+        {
+          "file": "sequence_info.fasta",
+          "bytes": 166,
+          "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+          "model": "not stated"
+        }
+      ],
+      "notes": [
+        "Downloaded 7 files; all preserved verbatim, unedited.",
+        "sequence_info.fasta labels chain B as heavy_sequence and chain light_sequence as 'None' - this is the native chain-role call for a heavy-chain-only VHH.",
+        "filename mismatch: the child task payload references diffaffinity_scores.csv / msat_scores.csv / blast_results.json / esm_scores.csv / proteinmpnn_scores.csv, while this task delivered affinity_scores.csv / evolutionary_scores.csv / similarity_results.json / sequence_scores.csv / struct_fitness_scores.csv. The producer-side filename mapping is NOT evidenced in any returned artifact, so it is recorded as unresolved rather than guessed."
+      ]
+    },
+    {
+      "order": 2,
+      "task_id": "345489060729856",
+      "name": "mmetrics-analysis-345488784917504",
+      "type": "MOSTask",
+      "origin": "automatic (spawned by 345488784917504)",
+      "parent_task_id": "345488784917504",
+      "started": "2026-10-29 05:58:35",
+      "duration": "26s",
+      "status": "SUCCEED",
+      "payload_file": "payload/mmetrics_345489060729856.payload.json",
+      "outputs_dir": "raw/mmetrics_345489060729856/",
+      "outputs": [
+        {
+          "file": "record.json",
+          "bytes": 24397,
+          "sha256": "5f9240b89d8bdd4dbce27c7c6104eb4027d705d3463c87e5e9d4846a82c42748",
+          "content": "single MMetrics record (mmetrics_id d8d4e831-5b7a-41bc-868a-93dc27bc3cd5)"
+        }
+      ],
+      "delivered_sections": {
+        "protein_metadata.entities": "2 entities: A=PD-L1 118aa, B=VHH 128aa (antibody_fragment=VHH)",
+        "classification": "class=antigen-antibody, confidence=high, plus reasoning (389 chars) and description (447 chars) text",
+        "annotations.homology": "3 hits, all pdb (5JDS_B identity 1.0; 4DKA_A 0.7209; 4DK3_A 0.7209)",
+        "annotations.uniprot": "EMPTY ARRAY - preserved as produced, not filled in from elsewhere",
+        "annotations.pdb": "3 entries (5JDS 1.7A, 4DKA 1.97A, 4DK3 2.76A)",
+        "annotations.features": "11 entries: 9 CDR regions (IMGT/Kabat/Chothia, chain B), 1 paratope (18 residues, chain B), 1 epitope (19 residues, chain A)",
+        "interactions.2d_plot_data": "1 protein-protein interaction A:B, 44 contacts, 16 interface residues on A / 17 on B, metrics block (hbond 9, vdw 33, ionic 1, pipistack 1)"
+      },
+      "requested_but_not_produced": {
+        "Homologs (standalone section)": "not a separate section; annotations.homology has 3 hits and annotations.uniprot is empty - both preserved verbatim",
+        "Domain annotation": "ABSENT - no domain feature in the record",
+        "PTM annotation": "ABSENT - no PTM feature in the record",
+        "UniProt annotation": "EMPTY ARRAY in the record",
+        "Interaction Network": "only the 2D interaction plot data block exists; no network/graph file",
+        "MutX CSVs (all)": "ABSENT - model_tasks.results = []",
+        "AbAn / AbScN / ParaDt heavy CSV": "ABSENT - no such file returned by any task",
+        "compact numbering map for those CSVs": "NOT PRODUCIBLE - the CSVs do not exist"
+      },
+      "status_statement": "The MMetrics task itself finished (SUCCEED). What is 'incomplete' is its content coverage: the model_tasks section is empty, so the per-mutation MutX/AbAn/AbScN/ParaDt outputs were never generated. They are recorded here as not produced. They were NOT substituted with the auto-compute fitness CSVs, which come from a different task and different models."
+    }
+  ],
+  "independent_tasks": [],
+  "independent_tasks_note": "The platform task list for this project contains exactly these 2 tasks. Nothing else was launched, resumed, or modified.",
+  "waiting_policy": "Both tasks were already SUCCEED at first inspection of the child; no waiting or polling was required."
+}

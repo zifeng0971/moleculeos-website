@@ -1,0 +1,32 @@
+{
+  "object_name": "MMFold_1_chain_B.cif",
+  "object_id": "342605177943040",
+  "work_id": "342605181223936",
+  "tos_key": "user_objects/123/330665428816896/342605177943040_MMFold_1_chain_B.cif",
+  "local_path": "/workspace/protein_data/protein_342605181223936/MMFold_1_chain_B.cif",
+  "sha256_chainB": "49a0e1a6eb3da121c7eb6fbcf7bdef1d72f943c7d3a81bd786366e11792f2a24",
+  "sha256_chainB_recomputed": "49a0e1a6eb3da121c7eb6fbcf7bdef1d72f943c7d3a81bd786366e11792f2a24",
+  "parent_structure": "MMFold_1.cif (sha256 d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317) — user-supplied hash, parent file NOT present in this project; not independently verified here",
+  "chain": "B",
+  "entity_id": 2,
+  "entity_type": "polypeptide(L)",
+  "length": 128,
+  "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "numbering": {
+    "label_seq": "1-128 continuous",
+    "auth_seq": "1-128 continuous",
+    "label_equals_auth": true,
+    "mos_numbering": "1-128 (identical)"
+  },
+  "atom_record_checks": {
+    "n_atom_lines": 965,
+    "n_residues_with_atoms": 128,
+    "missing_CA": [],
+    "altloc": "none",
+    "occupancy": "all 1.0",
+    "chain_breaks_CA_gt_4.5A": [],
+    "only_chain": "B",
+    "hetero_or_water": "none"
+  },
+  "derivation": "chain-B slice of MMFold_1.cif; only atom_site/entity/entity_poly/entity_poly_seq/struct_asym entries retained; coordinates, label_seq_id and auth_seq_id unchanged"
+}

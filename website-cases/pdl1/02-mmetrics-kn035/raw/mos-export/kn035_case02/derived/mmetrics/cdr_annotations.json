@@ -1,0 +1,178 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_path": "annotations.features[annotation_type=cdr]",
+  "note": "Ranges are sequential chain-B residue numbers as emitted by the pipeline (not IMGT/Kabat/Chothia position numbers).",
+  "n_entries": 9,
+  "by_scheme": {
+    "IMGT": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 26,
+        "end": 33
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 51,
+        "end": 58
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 97,
+        "end": 117
+      }
+    ],
+    "Kabat": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 31,
+        "end": 35
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 50,
+        "end": 66
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 99,
+        "end": 117
+      }
+    ],
+    "Chothia": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 26,
+        "end": 32
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 52,
+        "end": 57
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 99,
+        "end": 117
+      }
+    ]
+  },
+  "raw": [
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          26,
+          33
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          51,
+          58
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          97,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          31,
+          35
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          50,
+          66
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          99,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          26,
+          32
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          52,
+          57
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          99,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    }
+  ]
+}

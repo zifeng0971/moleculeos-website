@@ -1,0 +1,52 @@
+{
+  "case_id": "D1.3",
+  "canonical_metrics": "analysis/verified-results.json",
+  "raw_export": "outputs/mos-export/website_case_d13",
+  "sources": [
+    "source/1BVL-verified-metadata.json",
+    "source/1BVL.cif",
+    "source/1BVL.fasta",
+    "source/1BVL.metadata.json",
+    "source/1BVL.pdb",
+    "source/1FDL-verified-metadata.json",
+    "source/1FDL.cif",
+    "source/1FDL.fasta",
+    "source/1FDL.metadata.json",
+    "source/1FDL.pdb",
+    "source/sources.json"
+  ],
+  "screenshots": [
+    "screenshots/1FDL-native-structure.jpg",
+    "screenshots/function-list-superimpose-search.jpg",
+    "screenshots/mmetrics-initial-loading.jpg",
+    "screenshots/mocha-final-results.jpg",
+    "screenshots/mocha-humanization-and-folds-running.jpg",
+    "screenshots/native-1FDL-mmetrics-antigen-interface.jpg",
+    "screenshots/native-1FDL-mmetrics-final-state.jpg",
+    "screenshots/native-1FDL-mmetrics-interactions.jpg",
+    "screenshots/native-humanization-task-details.jpg",
+    "screenshots/native-humanization-task-succeeded.jpg",
+    "screenshots/native-tasks-succeeded-page1.jpg",
+    "screenshots/representative-humanization-2-overlay.jpg",
+    "screenshots/representative-humanization-3-overlay.jpg",
+    "screenshots/representative-humanization-9-overlay.jpg"
+  ],
+  "source_categories": {
+    "experimental": "source/ RCSB coordinates and sequences",
+    "MOS_native": "outputs/ task results and outputs/native-* UI downloads",
+    "additional_statistics": "analysis/ and raw-export analyses/; coordinate/sequence statistics, not native experimental measurements"
+  },
+  "native_UI_status": "tasks/native-ui-status.json",
+  "representatives": [
+    "humanization_3",
+    "humanization_2",
+    "humanization_9"
+  ],
+  "title": "D1.3 抗体人源化",
+  "plots": [
+    "analysis/candidate-comparison.png",
+    "analysis/candidate-comparison.svg"
+  ],
+  "summary": "summary.md",
+  "candidates_table": "analysis/candidate-summary.csv"
+}

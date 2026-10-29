@@ -1,0 +1,444 @@
+{
+  "generated_utc": "2026-10-20T02:52:21Z",
+  "system": "human PD-L1 (Q9NZQ7) + avelumab Fab, PDB 5GRJ",
+  "mmetrics_panel": {
+    "checked_how": [
+      "ListMOSObjects (object metadata)",
+      "ListMOSTasks / CheckMOSTask (UI backend job)",
+      "GetMOSObject (download of the only registered object)"
+    ],
+    "object_metadata_fields_returned": [
+      "name",
+      "object_id",
+      "work_id",
+      "tos_key"
+    ],
+    "mmetrics_result_objects_found": 0,
+    "autocompute_job": {
+      "task_id": "342256189539328",
+      "name": "autocompute-5GRJ",
+      "type": "MOSTask",
+      "status_at_inspection": "running",
+      "job_input": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif"
+      },
+      "outputs_retrievable": false,
+      "final_snapshot_utc": "2026-10-20T02:52:23Z",
+      "status_at_final_snapshot": "running",
+      "duration_reported": "2.1min (unchanged across checks)"
+    },
+    "verdict": "The MMetrics panel backend job (autocompute-5GRJ) was created by the structure import and was still RUNNING with no retrievable artifacts at inspection time; no MMetrics result object (description, metrics, homologs, antibody annotation, interaction summary) exists in the project. MMetrics UI modules are therefore reported as UNAVAILABLE, not completed.",
+    "ui_states_observed_in_prompt": [
+      "Generating description",
+      "Analyzing structure",
+      "Model Computing"
+    ]
+  },
+  "modules": [
+    {
+      "module": "Overview (chain identity)",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "MOS sanitized object + RCSB CIF metadata + UniProt Q9NZQ7 (built-in, deterministic)",
+      "status": "complete",
+      "provenance": [
+        "experimental",
+        "database"
+      ],
+      "artifacts": [
+        "01_overview/overview_chain_identity.json",
+        "01_overview/overview_chains.csv",
+        "01_overview/chainC_Q9NZQ7_mapping.json",
+        "01_overview/*.fasta"
+      ],
+      "key_facts": {
+        "chains": [
+          {
+            "mos": "A",
+            "author": "H",
+            "entity": 1,
+            "role": "avelumab VH",
+            "length": 120,
+            "modelled": 118
+          },
+          {
+            "mos": "B",
+            "author": "L",
+            "entity": 2,
+            "role": "avelumab VL (lambda)",
+            "length": 110,
+            "modelled": 108
+          },
+          {
+            "mos": "C",
+            "author": "A",
+            "entity": 3,
+            "role": "PD-L1 ectodomain",
+            "length": 221,
+            "modelled": 213,
+            "uniprot": "Q9NZQ7",
+            "uniprot_span_modelled": [
+              18,
+              230
+            ]
+          }
+        ],
+        "resolution_A": 3.206,
+        "method": "X-ray diffraction"
+      }
+    },
+    {
+      "module": "Description / annotation text (MMetrics 'Generating description')",
+      "mmetrics_ui": "unavailable (job still running)",
+      "delivered_by": "not produced - substituted with structured overview + interaction narrative",
+      "status": "not_available",
+      "provenance": [],
+      "artifacts": []
+    },
+    {
+      "module": "Top homologs + similarity",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "3 x MOS Sequence Homology Search",
+      "status": "complete",
+      "provenance": [
+        "mos_prediction"
+      ],
+      "tasks": [
+        "342256475304960",
+        "342256475644928",
+        "342256477762560"
+      ],
+      "artifacts": [
+        "02_homologs/PD-L1_homologs.csv",
+        "02_homologs/VH_homologs.csv",
+        "02_homologs/VL_homologs.csv",
+        "02_homologs/homology_summary.json"
+      ],
+      "key_facts": {
+        "PD-L1": {
+          "unique_hits": 500,
+          "identical_entries": 42,
+          "closest_ortholog": "mouse PD-L1 6SRU_A at 77.8% identity",
+          "closest_paralog": "PD-L2 Q9BQ51 at 42.8% identity",
+          "top": [
+            {
+              "hit": "pdb|5JDR|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 2.10835e-167,
+              "bit_score": 463.766
+            },
+            {
+              "hit": "pdb|3BIK|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.66052e-167,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "sp|Q9NZQ7.1|",
+              "description": "RecName: Full=Programmed cell death 1 ligand 1; Short=PD-L1; Short=PDCD1 ligand 1; Short=Programmed death ligand 1; Short=hPD-L1; AltName: Full=B7 homolog 1; Sh",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.59174e-166,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "pdb|35TL|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 1.59174e-166,
+              "bit_score": 463.381
+            },
+            {
+              "hit": "pdb|5GRJ|A",
+              "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 221,
+              "e_value": 2.1771e-167,
+              "bit_score": 462.996
+            }
+          ]
+        },
+        "VH": {
+          "unique_hits": 500,
+          "top": [
+            {
+              "hit": "pdb|4NKI|H",
+              "description": "Chain H, Fab light chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 120,
+              "e_value": 7.92149e-85,
+              "bit_score": 249.98
+            },
+            {
+              "hit": "pdb|5GRJ|H",
+              "description": "Chain H, avelumab H chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 120,
+              "e_value": 1.37605e-84,
+              "bit_score": 245.358
+            },
+            {
+              "hit": "pdb|4OGX|H",
+              "description": "Chain H, DX-2930 HEAVY CHAIN [Homo sapiens]",
+              "identity_percent": 86.1,
+              "alignment_length": 122,
+              "e_value": 5.09116e-69,
+              "bit_score": 209.92
+            },
+            {
+              "hit": "pdb|7LSB|B",
+              "description": "Chain B, B1 Fab heavy chain [Homo sapiens]",
+              "identity_percent": 87.5,
+              "alignment_length": 120,
+              "e_value": 1.01021e-68,
+              "bit_score": 208.764
+            },
+            {
+              "hit": "pdb|6SS5|HHH",
+              "description": "Chain HHH, Fab C0020187 heavy chain (IgG1) [Homo sapiens]",
+              "identity_percent": 84.2,
+              "alignment_length": 120,
+              "e_value": 1.68441e-67,
+              "bit_score": 206.068
+            }
+          ]
+        },
+        "VL": {
+          "unique_hits": 500,
+          "top": [
+            {
+              "hit": "pdb|7K90|L",
+              "description": "Chain L, C144 Fab Light Chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 1.72755e-74,
+              "bit_score": 223.016
+            },
+            {
+              "hit": "pdb|4NKI|L",
+              "description": "Chain L, Fab heavy chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 2.67672e-74,
+              "bit_score": 222.246
+            },
+            {
+              "hit": "pdb|5GRJ|L",
+              "description": "Chain L, avelumab L chain [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 2.35123e-75,
+              "bit_score": 221.09
+            },
+            {
+              "hit": "pdb|8DCE|H",
+              "description": "Chain H, C144 scFv [Homo sapiens]",
+              "identity_percent": 100.0,
+              "alignment_length": 110,
+              "e_value": 7.57282e-73,
+              "bit_score": 220.705
+            },
+            {
+              "hit": "pdb|7L2D|L",
+              "description": "Chain L, 1-87 light chain [Homo sapiens]",
+              "identity_percent": 98.2,
+              "alignment_length": 110,
+              "e_value": 2.90062e-72,
+              "bit_score": 217.238
+            }
+          ]
+        }
+      }
+    },
+    {
+      "module": "VH/VL + IMGT/CDR annotation",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local ANARCI (IMGT scheme) on entity sequences - built-in analysis, not a MOS model",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "03_antibody_annotation/imgt_annotation.json",
+        "03_antibody_annotation/imgt_residue_mapping.csv",
+        "03_antibody_annotation/imgt_cdr_summary.csv"
+      ],
+      "key_facts": {
+        "VH_cdr": {
+          "CDR1-IMGT": "GFTFSSYI",
+          "CDR2-IMGT": "IYPSGGIT",
+          "CDR3-IMGT": "ARIKLGTVTTVDY"
+        },
+        "VL_cdr": {
+          "CDR1-IMGT": "SSDVGGYNY",
+          "CDR2-IMGT": "DVS",
+          "CDR3-IMGT": "SSYTSSSTRV"
+        },
+        "VH_cdr_mos_span": {
+          "CDR1-IMGT": [
+            26,
+            33
+          ],
+          "CDR2-IMGT": [
+            51,
+            58
+          ],
+          "CDR3-IMGT": [
+            97,
+            109
+          ]
+        },
+        "VL_cdr_mos_span": {
+          "CDR1-IMGT": [
+            26,
+            34
+          ],
+          "CDR2-IMGT": [
+            52,
+            54
+          ],
+          "CDR3-IMGT": [
+            91,
+            100
+          ]
+        },
+        "vh_chain_type_hmm_best": {
+          "id": "alpaca_H",
+          "evalue": 6.6e-65,
+          "bitscore": 208.3,
+          "query_start": 0,
+          "query_end": 120
+        },
+        "vl_chain_type_hmm_best": {
+          "id": "human_L",
+          "evalue": 3.7e-53,
+          "bitscore": 170.2,
+          "query_start": 0,
+          "query_end": 110
+        },
+        "caveat": "ANARCI's best HMM hit for the VH is 'alpaca_H' because the avelumab VH3-23 framework with a short CDR-H3 resembles a VHH; the molecule is a conventional human Fab heavy chain. Germline gene assignment was not resolved locally (no IMGT germline database in the sandbox)."
+      }
+    },
+    {
+      "module": "Sequence liability / risk sites",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local motif scan (regex panel) on entity sequences - built-in analysis",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "04_liabilities/liability_sites.json",
+        "04_liabilities/liability_sites.csv"
+      ],
+      "key_facts": {
+        "hits": 22,
+        "no_n_glycosylation_sequon_in_Fv": true
+      }
+    },
+    {
+      "module": "Antigen-antibody interactions",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "InteractionNet (contacts) + PPInterface (burial) via interaction-analysis skill - built-in",
+      "status": "complete",
+      "provenance": [
+        "builtin_analysis"
+      ],
+      "artifacts": [
+        "05_interactions/epitope_paratope.json",
+        "05_interactions/epitope_paratope.csv",
+        "05_interactions/interface_summary.md",
+        "05_interactions/contacts/",
+        "05_interactions/if_VH_PDL1/",
+        "05_interactions/if_VL_PDL1/",
+        "05_interactions/interaction_report.jsonl"
+      ],
+      "key_facts": {
+        "epitope_residues": 45,
+        "epitope_igv_residues": 37,
+        "paratope_residues": 56,
+        "bsa_total_A2": 2950.4,
+        "hbonds_total": 14,
+        "interfaces": {
+          "A:C": {
+            "hv_side": "VH",
+            "n_pdl1_residues": 40,
+            "n_ab_residues": 44,
+            "bsa_pdl1_A2": 1125.9,
+            "bsa_ab_A2": 1167.1,
+            "bsa_total_A2": 2293.0,
+            "n_hbonds": 12
+          },
+          "B:C": {
+            "hv_side": "VL",
+            "n_pdl1_residues": 13,
+            "n_ab_residues": 12,
+            "bsa_pdl1_A2": 333.2,
+            "bsa_ab_A2": 324.2,
+            "bsa_total_A2": 657.4,
+            "n_hbonds": 2
+          }
+        }
+      }
+    },
+    {
+      "module": "Mutation scores",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "5 MOS scoring tasks (sequence fitness x3, evolutionary x3, structural stability x1 complex, binding affinity x1 complex)",
+      "status": "complete",
+      "provenance": [
+        "mos_prediction"
+      ],
+      "tasks": [
+        "342256486130688",
+        "342256488231936",
+        "342256491451392",
+        "342256499057664",
+        "342256501269504",
+        "342256504251392",
+        "342256515642368",
+        "342256515908608"
+      ],
+      "artifacts": [
+        "06_mutations/all_scores_long.csv",
+        "06_mutations/per_axis_position_summary.csv",
+        "06_mutations/raw_task_outputs/"
+      ],
+      "key_facts": {
+        "seqfit": 9020,
+        "evolve": 9020,
+        "struct": 8780,
+        "affinity": 8341
+      }
+    },
+    {
+      "module": "Recommended mutations",
+      "mmetrics_ui": "unavailable",
+      "delivered_by": "local synthesis of the 5 MOS scoring axes + local interface/IMGT/liability context",
+      "status": "complete",
+      "provenance": [
+        "derived"
+      ],
+      "artifacts": [
+        "06_mutations/recommended_mutations.csv",
+        "06_mutations/liability_mitigation_candidates.csv",
+        "06_mutations/mutation_analysis.json"
+      ],
+      "key_facts": {
+        "n_recommended_rows": 56,
+        "n_liability_mitigation_candidates": 24
+      }
+    }
+  ],
+  "provenance_legend": {
+    "experimental": "coordinates/metadata from RCSB PDB 5GRJ (measured structure)",
+    "database": "UniProt/PDB records fetched this session",
+    "mos_prediction": "outputs of MOS compute tasks launched in this project",
+    "builtin_analysis": "deterministic local tools (ANARCI, InteractionNet, PPInterface, regex motif scan)",
+    "derived": "combination of MOS predictions with structural context, produced here"
+  }
+}

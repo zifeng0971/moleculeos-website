@@ -1,0 +1,272 @@
+{
+ "wt": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS",
+ "designs": {
+  "seq_1": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     179,
+     "I",
+     "V"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_2": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "Y"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_3": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "Y"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_4": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_5": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_6": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "Y"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_7": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "Y"
+    ],
+    [
+     179,
+     "I",
+     "V"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_8": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_9": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  },
+  "seq_10": {
+   "diff": [
+    [
+     130,
+     "W",
+     "H"
+    ],
+    [
+     156,
+     "W",
+     "Y"
+    ],
+    [
+     157,
+     "D",
+     "H"
+    ],
+    [
+     209,
+     "S",
+     "G"
+    ]
+   ],
+   "out_of_scope": []
+  }
+ },
+ "allowed_positions": [
+  130,
+  156,
+  157,
+  179,
+  209
+ ]
+}

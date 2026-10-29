@@ -1,0 +1,7 @@
+{
+  "name": "moleculeos-collab",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-01",
+  "durable_objects": { "bindings": [{ "name": "COLLAB", "class_name": "Room" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Room"] }]
+}

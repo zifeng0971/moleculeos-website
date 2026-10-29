@@ -1,5 +1,6 @@
 node_modules
 .next
+.next-*
 out
 output
 .playwright-cli
@@ -16,3 +17,11 @@ preview-package
 # Local-only: raw screen recordings (share via cloud drive) and personal tool config
 manual-videos/
 .claude/
+
+# Collab worker local secrets
+collab-worker/.dev.vars
+collab-worker/.wrangler/
+
+collab-worker/.edit-password
+
+collab-worker/.edit-passwords

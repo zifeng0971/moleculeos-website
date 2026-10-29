@@ -1,0 +1,36 @@
+{
+  "task_id": "342254431249408",
+  "task_type": "Binding Affinity Mutation Effect",
+  "task_name": "PDL1_DBL1_03_affinity_scan",
+  "task_description": "Binding affinity mutation scan on human PD-L1 (chain A) + designed binder DBL1_03 (chain B) from PDB 7XYQ, to rank single-mutation binder variants for stronger binding.",
+  "status_at_packaging": "succeed",
+  "reported_duration": "1.2 min",
+  "submitted_payload_exact": {
+    "input_structure": "user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+    "chain_ids": "A,B",
+    "custom_output_path": ""
+  },
+  "resolved_payload_as_executed": {
+    "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+    "chain_ids": "A,B",
+    "custom_output_path": ""
+  },
+  "schema_required_fields": [
+    "input_structure",
+    "chain_ids"
+  ],
+  "mos_object": {
+    "object_id": "342254388737024",
+    "work_id": "342254395483136",
+    "tos_key": "user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+    "label": "7XYQ_PDL1_DBL1_03_clean.cif"
+  },
+  "upstream_source": {
+    "pdb_id": "7XYQ",
+    "source": "RCSB, sanitized to MOS layout, hetero/water/1-residue chains removed before upload"
+  },
+  "compatibility_note": "Task schema imposes no antibody/VHH restriction; run on the non-immunoglobulin designed binder completed successfully, so the KN035 (5JDS) / avelumab (5GRJ) fallback was not required.",
+  "result_files": [
+    "raw/affinity_scores.csv"
+  ]
+}

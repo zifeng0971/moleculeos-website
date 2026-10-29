@@ -1,0 +1,460 @@
+{
+  "source_kind": "local_geometry",
+  "cutoff_A": 4.5,
+  "epitope": [
+    38,
+    40,
+    42,
+    45,
+    50,
+    52,
+    53,
+    57,
+    60,
+    97,
+    99,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109
+  ],
+  "paratope": [
+    29,
+    30,
+    32,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    108,
+    109,
+    111,
+    113,
+    114,
+    115,
+    116
+  ],
+  "pairs": [
+    {
+      "chain_1": "A",
+      "residue_1": 38,
+      "aa_1": "I",
+      "chain_2": "B",
+      "residue_2": 105,
+      "aa_2": "T",
+      "minimum_heavy_atom_distance_A": 3.887836217880249
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 38,
+      "aa_1": "I",
+      "chain_2": "B",
+      "residue_2": 108,
+      "aa_2": "L",
+      "minimum_heavy_atom_distance_A": 3.491497039794922
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 38,
+      "aa_1": "I",
+      "chain_2": "B",
+      "residue_2": 109,
+      "aa_2": "V",
+      "minimum_heavy_atom_distance_A": 4.167301177978516
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 100,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.8266236782073975
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 101,
+      "aa_2": "F",
+      "minimum_heavy_atom_distance_A": 3.7320613861083984
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 102,
+      "aa_2": "E",
+      "minimum_heavy_atom_distance_A": 3.1443653106689453
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 105,
+      "aa_2": "T",
+      "minimum_heavy_atom_distance_A": 3.297994375228882
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 42,
+      "aa_1": "E",
+      "chain_2": "B",
+      "residue_2": 99,
+      "aa_2": "D",
+      "minimum_heavy_atom_distance_A": 4.295783519744873
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 42,
+      "aa_1": "E",
+      "chain_2": "B",
+      "residue_2": 100,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 2.371582269668579
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 42,
+      "aa_1": "E",
+      "chain_2": "B",
+      "residue_2": 116,
+      "aa_2": "Q",
+      "minimum_heavy_atom_distance_A": 3.9417924880981445
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 29,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.1690614223480225
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 30,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 2.601844310760498
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 32,
+      "aa_2": "R",
+      "minimum_heavy_atom_distance_A": 3.0794546604156494
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 100,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.700087308883667
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "aa_1": "Q",
+      "chain_2": "B",
+      "residue_2": 102,
+      "aa_2": "E",
+      "minimum_heavy_atom_distance_A": 3.4782700538635254
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "aa_1": "Q",
+      "chain_2": "B",
+      "residue_2": 103,
+      "aa_2": "D",
+      "minimum_heavy_atom_distance_A": 3.2504537105560303
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "aa_1": "Q",
+      "chain_2": "B",
+      "residue_2": 104,
+      "aa_2": "P",
+      "minimum_heavy_atom_distance_A": 3.320281505584717
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "aa_1": "Q",
+      "chain_2": "B",
+      "residue_2": 105,
+      "aa_2": "T",
+      "minimum_heavy_atom_distance_A": 2.6937777996063232
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 52,
+      "aa_1": "V",
+      "chain_2": "B",
+      "residue_2": 104,
+      "aa_2": "P",
+      "minimum_heavy_atom_distance_A": 4.180876731872559
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 52,
+      "aa_1": "V",
+      "chain_2": "B",
+      "residue_2": 105,
+      "aa_2": "T",
+      "minimum_heavy_atom_distance_A": 4.097535133361816
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 52,
+      "aa_1": "V",
+      "chain_2": "B",
+      "residue_2": 108,
+      "aa_2": "L",
+      "minimum_heavy_atom_distance_A": 3.2851014137268066
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 53,
+      "aa_1": "H",
+      "chain_2": "B",
+      "residue_2": 108,
+      "aa_2": "L",
+      "minimum_heavy_atom_distance_A": 3.908015012741089
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 57,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 104,
+      "aa_2": "P",
+      "minimum_heavy_atom_distance_A": 3.6145427227020264
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 60,
+      "aa_1": "V",
+      "chain_2": "B",
+      "residue_2": 102,
+      "aa_2": "E",
+      "minimum_heavy_atom_distance_A": 3.82753586769104
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 60,
+      "aa_1": "V",
+      "chain_2": "B",
+      "residue_2": 103,
+      "aa_2": "D",
+      "minimum_heavy_atom_distance_A": 4.214044094085693
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 99,
+      "aa_2": "D",
+      "minimum_heavy_atom_distance_A": 2.363135576248169
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 100,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.6536693572998047
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 101,
+      "aa_2": "F",
+      "minimum_heavy_atom_distance_A": 3.5396854877471924
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 114,
+      "aa_2": "A",
+      "minimum_heavy_atom_distance_A": 3.6240763664245605
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 116,
+      "aa_2": "Q",
+      "minimum_heavy_atom_distance_A": 3.009229898452759
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "aa_1": "M",
+      "chain_2": "B",
+      "residue_2": 101,
+      "aa_2": "F",
+      "minimum_heavy_atom_distance_A": 3.7303760051727295
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "aa_1": "M",
+      "chain_2": "B",
+      "residue_2": 105,
+      "aa_2": "T",
+      "minimum_heavy_atom_distance_A": 3.8153276443481445
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "aa_1": "M",
+      "chain_2": "B",
+      "residue_2": 109,
+      "aa_2": "V",
+      "minimum_heavy_atom_distance_A": 3.4654908180236816
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "aa_1": "M",
+      "chain_2": "B",
+      "residue_2": 114,
+      "aa_2": "A",
+      "minimum_heavy_atom_distance_A": 3.7093493938446045
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 101,
+      "aa_1": "S",
+      "chain_2": "B",
+      "residue_2": 109,
+      "aa_2": "V",
+      "minimum_heavy_atom_distance_A": 4.278552532196045
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 103,
+      "aa_1": "G",
+      "chain_2": "B",
+      "residue_2": 111,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.2139313220977783
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 104,
+      "aa_1": "G",
+      "chain_2": "B",
+      "residue_2": 111,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.603912591934204
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 105,
+      "aa_1": "A",
+      "chain_2": "B",
+      "residue_2": 111,
+      "aa_2": "S",
+      "minimum_heavy_atom_distance_A": 3.600330352783203
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 105,
+      "aa_1": "A",
+      "chain_2": "B",
+      "residue_2": 113,
+      "aa_2": "G",
+      "minimum_heavy_atom_distance_A": 3.2504122257232666
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 105,
+      "aa_1": "A",
+      "chain_2": "B",
+      "residue_2": 114,
+      "aa_2": "A",
+      "minimum_heavy_atom_distance_A": 3.704153299331665
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 106,
+      "aa_1": "D",
+      "chain_2": "B",
+      "residue_2": 113,
+      "aa_2": "G",
+      "minimum_heavy_atom_distance_A": 3.4380764961242676
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 113,
+      "aa_2": "G",
+      "minimum_heavy_atom_distance_A": 3.434580087661743
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 114,
+      "aa_2": "A",
+      "minimum_heavy_atom_distance_A": 3.816771984100342
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 115,
+      "aa_2": "F",
+      "minimum_heavy_atom_distance_A": 3.710258722305298
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "aa_1": "Y",
+      "chain_2": "B",
+      "residue_2": 116,
+      "aa_2": "Q",
+      "minimum_heavy_atom_distance_A": 3.4969418048858643
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 109,
+      "aa_1": "R",
+      "chain_2": "B",
+      "residue_2": 116,
+      "aa_2": "Q",
+      "minimum_heavy_atom_distance_A": 2.523820400238037
+    }
+  ],
+  "note": "Geometric contacts of the predicted model; not native MMetrics annotations or experimental epitope."
+}

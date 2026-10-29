@@ -1,0 +1,26 @@
+﻿case,event,raw_time,timezone_evidence,asia_jakarta_if_supported_by_archive,note,source
+01,MMFold 创建（UI）,2026-10-20 9:34:18,原始 UI 未标时区,未擅自换算,Task List Creation Time,archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt
+01,MMFold 更新为成功时的更新时间（UI）,2026-10-20 9:36:23,原始 UI 未标时区,未擅自换算,Task List Update Time；不等同精确 worker finish,archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt
+02,autocompute-MMFold_1 开始,2026-10-21 02:20:28,原status无时区；旧ledger归一化=2026-10-21T02:20:28Z,2026-10-21T09:20:28+07:00（按旧档UTC声明）,duration=1.1min；未独立确认后台时区,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json
+02,mmetrics-analysis-342604299285504 开始,2026-10-21 02:21:36,原status无时区；旧ledger归一化=2026-10-21T02:21:36Z,2026-10-21T09:21:36+07:00（按旧档UTC声明）,duration=3s；未独立确认后台时区,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json
+02,前置输出对象 createTime,1792549294,Unix 秒（UTC）,2026-10-21T09:21:34+07:00,7个输入对象均记录此 createTime,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json
+02,原生 Homologs 面板采集,2026-10-21T02:23:00.211Z,captured_at 显式 Z/UTC,2026-10-21T09:23:00.211+07:00,这是采集时间，不是任务运行时间,archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json
+02 补充,kn035-AbAn-independent,2026-10-21 02:27:46,原status无时区；旧manifest归一化=2026-10-21T02:27:46Z,2026-10-21T09:27:46+07:00（按旧档UTC声明）,task=342606092895232；duration=20s,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json
+02 补充,kn035-AbScN-language-independent,2026-10-21 02:27:46,原status无时区；旧manifest归一化=2026-10-21T02:27:46Z,2026-10-21T09:27:46+07:00（按旧档UTC声明）,task=342606094599168；duration=3s,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json
+02 补充,kn035-AbScN-nativeness-independent,2026-10-21 02:27:47,原status无时区；旧manifest归一化=2026-10-21T02:27:47Z,2026-10-21T09:27:47+07:00（按旧档UTC声明）,task=342606097245184；duration=3s,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json
+02 补充,kn035-ParaDt-independent,2026-10-21 02:27:48,原status无时区；旧manifest归一化=2026-10-21T02:27:48Z,2026-10-21T09:27:48+07:00（按旧档UTC声明）,task=342606100722688；duration=25s,archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json
+02 操作观察,提交创建案例 02 项目,2026-10-21T02:19:28.859Z,原始会话事件显式UTC,2026-10-21T09:19:28.859+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,提交创建案例 02 项目,2026-10-21T02:19:29.625Z,原始会话事件显式UTC,2026-10-21T09:19:29.625+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,查看新项目导入入口,2026-10-21T02:19:37.698Z,原始会话事件显式UTC,2026-10-21T09:19:37.698+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,向案例 02 上传唯一主结构,2026-10-21T02:19:59.116Z,原始会话事件显式UTC,2026-10-21T09:19:59.116+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,指定主结构的绝对路径,2026-10-21T02:20:20.494Z,原始会话事件显式UTC,2026-10-21T09:20:20.494+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,完成主结构导入,2026-10-21T02:20:26.350Z,原始会话事件显式UTC,2026-10-21T09:20:26.350+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,核验导入后的链、序列及 MMetrics 状态,2026-10-21T02:20:40.995Z,原始会话事件显式UTC,2026-10-21T09:20:40.995+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,打开并记录 KN035 原生 MMetrics 面板,2026-10-21T02:20:49.331Z,原始会话事件显式UTC,2026-10-21T09:20:49.331+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,打开并记录 KN035 原生 MMetrics 面板,2026-10-21T02:20:50.196Z,原始会话事件显式UTC,2026-10-21T09:20:50.196+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,提交案例 02 的原始结果导出与编号核验请求,2026-10-21T02:21:45.731Z,原始会话事件显式UTC,2026-10-21T09:21:45.731+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,提交案例 02 的原始结果导出与编号核验请求,2026-10-21T02:21:46.245Z,原始会话事件显式UTC,2026-10-21T09:21:46.245+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,下载原生完整亲和力评分 CSV,2026-10-21T02:25:32.259Z,原始会话事件显式UTC,2026-10-21T09:25:32.259+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,下载原生归档并补齐独立抗体分析，保留来源区分,2026-10-21T02:27:26.513Z,原始会话事件显式UTC,2026-10-21T09:27:26.513+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,保存原生面板首屏并开始重叠采集,2026-10-21T02:29:13.454Z,原始会话事件显式UTC,2026-10-21T09:29:13.454+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json
+02 操作观察,完成面板逐屏截图及对应的真实滚动记录,2026-10-21T02:29:20.763Z,原始会话事件显式UTC,2026-10-21T09:29:20.763+07:00,动作/观察时刻；不是后台生命周期,diagnostics/timeline-audit/session_observation_excerpts.json

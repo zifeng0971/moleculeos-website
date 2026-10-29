@@ -1,0 +1,13 @@
+donor_chain	donor_res	donor_resnum	donor_atom	acceptor_chain	acceptor_res	acceptor_resnum	acceptor_atom	distance
+C	GLN	49	NE2	A	SER	31	O	3.300
+C	ARG	96	NH2	A	TYR	52	OH	3.100
+C	TYR	39	OH	A	SER	54	O	2.300
+C	SER	100	OG	A	GLY	55	O	2.700
+C	ASN	46	N	A	GLY	102	O	2.300
+C	GLU	41	OE2	A	TYR	52	OH	2.800
+C	TYR	39	OH	A	SER	54	N	3.200
+C	ASP	44	O	A	VAL	104	N	2.800
+C	ASP	44	OD1	A	THR	105	N	3.000
+C	ASP	44	OD2	A	THR	106	OG1	2.600
+C	ASP	86	OD2	A	THR	114	OG1	3.900
+C	ASP	128	OD1	A	THR	58	OG1	3.600

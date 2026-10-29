@@ -1,0 +1,38 @@
+[
+  {
+    "source": "/Users/zifengye/Downloads/hbond (3).tsv",
+    "destination": "raw/agent-analysis/crystal-hbond.tsv",
+    "sha256": "6f5f1bb96a32469685f6fc242071106a219d9e10abb82a4310346950bda53264",
+    "mtime_utc": "2026-10-22T03:08:53.100649+00:00"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/ionic (1).tsv",
+    "destination": "raw/agent-analysis/crystal-ionic.tsv",
+    "sha256": "360061348f769574981e6ebd50ffe364431085e9b0ba1065fb0c499918d5ce89",
+    "mtime_utc": "2026-10-22T03:08:53.846243+00:00"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/pistack (1).tsv",
+    "destination": "raw/agent-analysis/crystal-pistack.tsv",
+    "sha256": "63199273c03fa3cdf2cd4d463f338ec1155c5dcf3ea01e2fe15595f21f62b788",
+    "mtime_utc": "2026-10-22T03:08:54.616075+00:00"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/residues (2).tsv",
+    "destination": "raw/agent-analysis/crystal-residues.tsv",
+    "sha256": "dd215619878dd667ffeac123476f35fca34fe9323701c37fba55d7eff015a74c",
+    "mtime_utc": "2026-10-22T03:08:55.356491+00:00"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/summary (2).md",
+    "destination": "raw/agent-analysis/crystal-summary.md",
+    "sha256": "885f365936d99c69c3e981ef07ca094ff72c88ba1da66309355cb870dc8e0082",
+    "mtime_utc": "2026-10-22T03:08:56.126743+00:00"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/salt_bridge.tsv",
+    "destination": "raw/agent-analysis/interface-salt_bridge.tsv",
+    "sha256": "d71c0f057fb6ccc8bd6b6191aeceba02e06b848d1e4ebdb1b12f049a3b5a1af2",
+    "mtime_utc": "2026-10-22T03:08:36.419592+00:00"
+  }
+]

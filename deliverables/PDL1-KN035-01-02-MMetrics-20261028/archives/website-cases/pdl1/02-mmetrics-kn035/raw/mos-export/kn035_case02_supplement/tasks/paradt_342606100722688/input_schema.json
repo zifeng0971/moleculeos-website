@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "title": "Input",
+  "required": [
+    "pdb_path"
+  ],
+  "properties": {
+    "pdb_path": {
+      "type": "string",
+      "title": "Pdb Path",
+      "description": "Structure path for the antibody, in PDB (.pdb) or mmCIF (.cif/.mmcif) format"
+    },
+    "heavy_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Heavy Sequence",
+      "default": null,
+      "description": "Heavy sequence"
+    },
+    "light_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Light Sequence",
+      "default": null,
+      "description": "Light sequence"
+    },
+    "is_pdb_numbered": {
+      "type": "boolean",
+      "title": "Is Pdb Numbered",
+      "default": false,
+      "description": "Is the PDB file already IMGT numbered?"
+    },
+    "pdb_heavy_chain": {
+      "type": "string",
+      "title": "Pdb Heavy Chain",
+      "default": "H",
+      "description": "PDB chain identifier of the heavy chain"
+    },
+    "pdb_light_chain": {
+      "type": "string",
+      "title": "Pdb Light Chain",
+      "default": "L",
+      "description": "PDB chain identifier of the light chain"
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework."
+    }
+  }
+}

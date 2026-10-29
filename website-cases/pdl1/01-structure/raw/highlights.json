@@ -1,0 +1,45 @@
+{
+  "model": "MMFold_1.cif",
+  "target_chain": "A",
+  "binder_chain": "B",
+  "target_hotspots": [
+    {
+      "prediction_seq_id": 38,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 54,
+      "residue": "I",
+      "min_distance_to_binder_A": 3.491497039794922
+    },
+    {
+      "prediction_seq_id": 40,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 56,
+      "residue": "Y",
+      "min_distance_to_binder_A": 3.1443653106689453
+    },
+    {
+      "prediction_seq_id": 97,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 113,
+      "residue": "R",
+      "min_distance_to_binder_A": 2.363135576248169
+    }
+  ],
+  "binder_cdr_ranges_domain_numbering": {
+    "CDR1": [
+      26,
+      33
+    ],
+    "CDR2": [
+      51,
+      58
+    ],
+    "CDR3": [
+      97,
+      117
+    ]
+  },
+  "cdr_source": "ANARCI assignment from independently executed KN035 case04; identical 128-aa VHH sequence",
+  "interface_pairs": "01-structure/raw/model-1-derived-contacts.json",
+  "note": "Use prediction indices on predicted structure; use original auth numbering only on source PDB."
+}

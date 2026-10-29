@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0.0",
+  "case": "kn035_case02",
+  "generated_utc": "2026-10-21T02:26:12+00:00",
+  "scope": "Single structure only: the imported MMFold_1.cif (object 342604293768192 / work 342604299084800). No other project, task or structure is included.",
+  "structure": {
+    "display_name": "MMFold_1.cif",
+    "data_block": "342254287430656_model_sample_1",
+    "object_id": "342604293768192",
+    "work_id": "342604299084800",
+    "tos_key": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+    "origin": "MMFold prediction output uploaded/imported by the user as MMFold_1.cif; no structure prediction was re-run in this case",
+    "local_original_path": "/workspace/protein_data/protein_342604299084800/MMFold_1.cif",
+    "bytes": 154131,
+    "sha256_original": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "md5_original": "f23c4635e90ee725b53386f11019f25e",
+    "sha256_mos_object_copy": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "md5_mos_object_copy": "f23c4635e90ee725b53386f11019f25e",
+    "sanitization_byte_identical": true,
+    "sanitization_note": "The object returned by GetMOSObject(342604293768192) is byte-for-byte the file that was imported. MOS added a _mos_mapping loop (246 rows) but did not alter any coordinate, chain label, residue name or residue number relative to the imported file.",
+    "coordinates": {
+      "n_atoms": 1912,
+      "n_hetatm": 0,
+      "n_residues": 246,
+      "n_models": 1
+    },
+    "chains": [
+      {
+        "chain_id": "A",
+        "auth_chain_id": "A",
+        "entity_id": 1,
+        "entity_type": "polypeptide(L)",
+        "length": 118,
+        "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+        "sequence_sha256": "9e9b8a49fd40bdf218b1f38d708f0694a6580875eadf9e0f49a526a332f2161c",
+        "assigned_role": "human PD-L1 antigen (light-chain-free complex partner)"
+      },
+      {
+        "chain_id": "B",
+        "auth_chain_id": "B",
+        "entity_id": 2,
+        "entity_type": "polypeptide(L)",
+        "length": 128,
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "sequence_sha256": "78562fe1c94793da753d06dd29ea7bd80824d795e1b06f6537e5c83b62e9bfa3",
+        "assigned_role": "KN035 VHH (single-domain antibody heavy chain; no light chain present)"
+      }
+    ],
+    "numbering": "label_seq_id == auth_seq_id == _mos_mapping.mapped_seqidx == MMFold_1 numbering, 1..N per chain, no insertion codes, no gaps; see numbering-map.json"
+  },
+  "lineage": [
+    {
+      "step": 1,
+      "event": "structure import / registration",
+      "object_id": "342604293768192",
+      "work_id": "342604299084800",
+      "tos_key": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+      "input_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "registered_copy_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+    },
+    {
+      "step": 2,
+      "event": "native automatic pre-analysis (autocompute)",
+      "task_id": "342604299285504",
+      "task_name": "autocompute-MMFold_1",
+      "status": "succeed",
+      "started": "2026-10-21T02:20:28Z",
+      "duration": "1.1min",
+      "input": "structure_path = same TOS key as step 1",
+      "produced_objects": [
+        "mos-blast/all_sequences.fasta",
+        "mos-blast/blast_results.json",
+        "mos-score-esm/esm_scores.csv",
+        "mos-score-ligandmpnn/proteinmpnn_scores.csv",
+        "mos-diffaffinity/diffaffinity_scores.csv",
+        "mos-score-msat/msat_scores.csv",
+        "sequence_info.fasta"
+      ]
+    },
+    {
+      "step": 3,
+      "event": "native automatic MMetrics analysis",
+      "task_id": "342604577018880",
+      "task_name": "mmetrics-analysis-342604299285504",
+      "status": "succeed",
+      "started": "2026-10-21T02:21:36Z",
+      "duration": "3s",
+      "input": "input_structure = same TOS key as step 1; autocomp_results = the seven objects from step 2",
+      "output": "record.json",
+      "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6"
+    }
+  ],
+  "inputs_used": [
+    "Imported structure MMFold_1.cif (sha256 d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317)",
+    "Native autocompute outputs of task 342604299285504",
+    "Native MMetrics output record.json of task 342604577018880",
+    "UniProt Q9NZQ7 canonical sequence (external check of chain A identity only)"
+  ],
+  "inputs_explicitly_not_used": [
+    {
+      "item": "PDB 5GRJ",
+      "reason": "excluded by case instruction"
+    },
+    {
+      "item": "PDB 7XYQ",
+      "reason": "excluded by case instruction"
+    },
+    {
+      "item": "PDB 5JDS",
+      "reason": "excluded by case instruction; it appears only as the top sequence hit inside the native mos-blast output and was not downloaded, superimposed or used as a reference structure"
+    },
+    {
+      "item": "structure re-prediction",
+      "reason": "excluded by case instruction; no MMFold or other folding run was launched"
+    }
+  ],
+  "separation_policy": {
+    "native_automatic": "Anything produced by task 342604299285504 or 342604577018880 without any action of this session beyond reading and downloading it.",
+    "independent_tasks": "None. No MOS task was launched in this session for this case.",
+    "local_analysis": "Numbering verification, heavy-atom contact recalculation and the UniProt sequence check. These are in derived/verification/ and never merged into the native outputs."
+  },
+  "native_raw_files": {
+    "structure_original": "raw/structure/MMFold_1.original.cif",
+    "structure_mos_object": "raw/structure/MMFold_1.sanitized.cif",
+    "autocompute": "raw/native_task_342604299285504/ (7 downloaded files + task_status.txt + task_payload.json + object_manifest.json + original_objects/)",
+    "mmetrics": "raw/native_task_342604577018880/ (record.json + task_status.txt + task_payload.json)"
+  },
+  "payload_verbatim_note": "task_payload.json files hold the full StartMOSTask payloads of both native tasks. Values are verbatim from CheckMOSTask output; JSON key order was normalised when re-serialised.",
+  "delivery": {
+    "directory": "/workspace/kn035_case02",
+    "zip": "/workspace/kn035_case02.zip"
+  },
+  "file_inventory": [
+    {
+      "path": "README.md",
+      "bytes": 5763,
+      "sha256": "8e43ced69cd4954a5a0493bc54e31e6f02ee442acff9417fa3f6d132ff53b558"
+    },
+    {
+      "path": "numbering-map.json",
+      "bytes": 126503,
+      "sha256": "79a38e2bf65d91bd5881801c8d600160fc1da914c52a38364a3c67a783f2343c"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 14706,
+      "sha256": "9d7c27263dff07ac869c898b7ec9ed0392e8e9c007ec899acf521107fad23359"
+    },
+    {
+      "path": "task-ledger.json",
+      "bytes": 14144,
+      "sha256": "b871350ed88f5bdf62ad29c5d8bba290f7195d4bdc0eb75866543b76dcfaddf5"
+    },
+    {
+      "path": "derived/antibody/aban_abscn_paradt_status.json",
+      "bytes": 1564,
+      "sha256": "9bd7b4898c5aa15ec311485cab7c5bc72cc3fea28fdfecd32f57975fb8d6e727"
+    },
+    {
+      "path": "derived/mmetrics/cdr_annotations.json",
+      "bytes": 3346,
+      "sha256": "e432721ea78921dc4171925e3b12da40a64f663dc161d757bb10304915b0979d"
+    },
+    {
+      "path": "derived/mmetrics/description.json",
+      "bytes": 2404,
+      "sha256": "b2c85dc9231bba7a1dd2ba68152a1064dc7305e7f19aff87d770c72b8c383764"
+    },
+    {
+      "path": "derived/mmetrics/domain.json",
+      "bytes": 272,
+      "sha256": "32a0e64b17f0788e9ed77ced05f428b9d8cfab82fd4ed7a33f91d96fabe6c7e1"
+    },
+    {
+      "path": "derived/mmetrics/epitope.json",
+      "bytes": 931,
+      "sha256": "f6c23125cf26b982b110509d2491d7fd05bde7714d34afdfa7718906dd3fc1cf"
+    },
+    {
+      "path": "derived/mmetrics/features_all.json",
+      "bytes": 3203,
+      "sha256": "d7036c0c103ffd0802635a3025bff15a8c76a3cc779b8f1536ef4cd7f5d2a94c"
+    },
+    {
+      "path": "derived/mmetrics/homologs.json",
+      "bytes": 172,
+      "sha256": "6ee5b51277f6bfdec91be7be5bc36afee75f4247489e41f028dfa9f95587bb6e"
+    },
+    {
+      "path": "derived/mmetrics/interaction_network.json",
+      "bytes": 14470,
+      "sha256": "16c331621cbb440ab200a0d24750662dbebf4f2d9ca2647d5d8687af82f6070f"
+    },
+    {
+      "path": "derived/mmetrics/paratope.json",
+      "bytes": 921,
+      "sha256": "f095959805f91d65d1d31635e22529d9a0914e519936c706464ea81d7c2ec74e"
+    },
+    {
+      "path": "derived/mmetrics/pdb.json",
+      "bytes": 167,
+      "sha256": "e9642a0c6ad6bdf91e1ae206cacc2bf7686e529974d26db670ec25a41e947743"
+    },
+    {
+      "path": "derived/mmetrics/ptm.json",
+      "bytes": 272,
+      "sha256": "ce46f3e61abfb7d01323f241f2c28850482a542fe27aaef16eef853442c4f2ab"
+    },
+    {
+      "path": "derived/mmetrics/uniprot.json",
+      "bytes": 171,
+      "sha256": "ffc5fcdb259275809c289749daeafc0b12f49f7e5d8b10822d1d468c7a85a933"
+    },
+    {
+      "path": "derived/mutx/affinity_compact_numbering.csv",
+      "bytes": 297388,
+      "sha256": "cf7e7d389031f375ec2a2641e01f2bac532a2c3a591b2f9ab438e2a1bfc926d9"
+    },
+    {
+      "path": "derived/mutx/mutx_manifest.json",
+      "bytes": 4205,
+      "sha256": "20d3202b31f4d6eb66904b0aac2f517cd8322aea9283fae2d2eff7df2443067f"
+    },
+    {
+      "path": "derived/verification/contact_crosscheck.json",
+      "bytes": 1507,
+      "sha256": "9e3360aa3cba1a392a429a11c0939e7ef98d61d6ace671e93d0de69b3f6ee82c"
+    },
+    {
+      "path": "derived/verification/local_contact_pairs.json",
+      "bytes": 8993,
+      "sha256": "5abe83655fe6322ac44ae329bcc8e60508f8e5d7d5d719a83a0c970b6773549e"
+    },
+    {
+      "path": "derived/verification/numbering_checks.json",
+      "bytes": 537,
+      "sha256": "54893cbeb6e5ee1a0a08b04d56a85ea8ac5be8edd5c9109a3bdd489f78185c03"
+    },
+    {
+      "path": "derived/verification/sequence_identity.json",
+      "bytes": 2977,
+      "sha256": "867337b9c07f2cf45f449685e1b64ba7e4e9a5ed7f8d36a3873375c611d62417"
+    },
+    {
+      "path": "raw/native_task_342604299285504/affinity_scores.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799"
+    },
+    {
+      "path": "raw/native_task_342604299285504/all_sequences.fasta",
+      "bytes": 98182,
+      "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+    },
+    {
+      "path": "raw/native_task_342604299285504/evolutionary_scores.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad"
+    },
+    {
+      "path": "raw/native_task_342604299285504/object_manifest.json",
+      "bytes": 4742,
+      "sha256": "aa1062c003358f5aa07694cf11c4f3b70b3758d777b81d424ac0929f04787259"
+    },
+    {
+      "path": "raw/native_task_342604299285504/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+    },
+    {
+      "path": "raw/native_task_342604299285504/sequence_scores.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7"
+    },
+    {
+      "path": "raw/native_task_342604299285504/similarity_results.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+    },
+    {
+      "path": "raw/native_task_342604299285504/struct_fitness_scores.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+    },
+    {
+      "path": "raw/native_task_342604299285504/task_payload.json",
+      "bytes": 176,
+      "sha256": "e3a1b5ca1d1b3707ec69d092105cf60e75a7a98fd09b3c6bfcd199d3ab17661c"
+    },
+    {
+      "path": "raw/native_task_342604299285504/task_status.txt",
+      "bytes": 434,
+      "sha256": "fbc86c4b63a958044fe01c43a8547bac35b65a26813fba758c58ee0c919e0e78"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-blast@all_sequences.fasta",
+      "bytes": 98182,
+      "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-diffaffinity@diffaffinity_scores.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-score-esm@esm_scores.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-score-ligandmpnn@proteinmpnn_scores.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/mos-score-msat@msat_scores.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad"
+    },
+    {
+      "path": "raw/native_task_342604299285504/original_objects/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+    },
+    {
+      "path": "raw/native_task_342604577018880/record.json",
+      "bytes": 20632,
+      "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91"
+    },
+    {
+      "path": "raw/native_task_342604577018880/task_payload.json",
+      "bytes": 2041,
+      "sha256": "68e824dfd6e5d403799ae83dc17933f54596d6fc452ca3887f7da4397807917b"
+    },
+    {
+      "path": "raw/native_task_342604577018880/task_status.txt",
+      "bytes": 295,
+      "sha256": "30807126f69d5d096ace9f5cfb10d9abe9b28c9784ba4432a09cf2d6cc03ade4"
+    },
+    {
+      "path": "raw/structure/MMFold_1.original.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+    },
+    {
+      "path": "raw/structure/MMFold_1.sanitized.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+    },
+    {
+      "path": "scripts/build_ledger.py",
+      "bytes": 9918,
+      "sha256": "b6e947a9eee2aa055aa2fb2e38fef83538c776c84aa2d4e50423acb50433d7c2"
+    },
+    {
+      "path": "scripts/build_numbering.py",
+      "bytes": 4938,
+      "sha256": "cdd03adc98a5a653533b1a9c77a239cfe2e09197ff3107d4cf69e0797fee3c12"
+    },
+    {
+      "path": "scripts/build_package.py",
+      "bytes": 10540,
+      "sha256": "3d130da3d5423060ebf62bd251221eea7a7a60b0afa75570c76d1a4a5ea88b9d"
+    },
+    {
+      "path": "scripts/build_provenance.py",
+      "bytes": 6585,
+      "sha256": "3f2048d6bd68a2d47b66a333fb6c835021466b11ab0f9d646182ebd7d06d58b9"
+    },
+    {
+      "path": "scripts/build_tasks.py",
+      "bytes": 7403,
+      "sha256": "e32c8f65c4c50a93375d86b6857288896096b54964b07f5556fe93a55c6d15ea"
+    },
+    {
+      "path": "scripts/build_verification.py",
+      "bytes": 6018,
+      "sha256": "8f1ff1d5d5e86c4a6f74c5690f322100533c06f3bf73115101c1ea6fe7a4668d"
+    },
+    {
+      "path": "scripts/verify_contacts.py",
+      "bytes": 2436,
+      "sha256": "0fe3c6139a3a60c8b7753d157ed5977590f91ac3c78c5005732f52da97c3e2de"
+    }
+  ]
+}

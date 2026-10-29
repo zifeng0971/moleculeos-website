@@ -1,0 +1,109 @@
+chain_label	res_num	region	imgt_position	bsa_A2	contact_types	hbond_detail	freesasa_dSASA_A2	interface_partner
+B	212	outside_V_domain		89.7	hbond	"[{""with"": [""C"", 44], ""role"": ""acceptor"", ""atom"": ""N"", ""partner_atom"": ""OD1"", ""dist"": 2.9}, {""with"": [""C"", 35], ""role"": ""acceptor"", ""atom"": ""NZ"", ""partner_atom"": ""O"", ""dist"": 2.7}]"	0.0	lysozyme
+C	97	antigen		86.5		[]	0.0	lysozyme
+B	101	CDR3	113	83.9	hbond,pi_stack	"[{""with"": [""C"", 121], ""role"": ""acceptor"", ""atom"": ""OH"", ""partner_atom"": ""N"", ""dist"": 3.0}, {""with"": [""C"", 120], ""role"": ""acceptor"", ""atom"": ""OH"", ""partner_atom"": ""N"", ""dist"": 3.3}, {""with"": [""C"", 119], ""role"": ""acceptor"", ""atom"": ""OH"", ""partner_atom"": ""OD1"", ""dist"": 3.0}]"	68.77	lysozyme
+B	65	FR3	74	83.4		[]	0.0	lysozyme
+B	217	outside_V_domain		77.2	hbond	"[{""with"": [""C"", 128], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""NE"", ""dist"": 3.7}]"	0.0	lysozyme
+A	212	outside_V_domain		75.3	hbond	"[{""with"": [""C"", 128], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""N"", ""dist"": 2.8}]"	0.0	lysozyme
+C	47	antigen		73.7	hbond	"[{""with"": [""B"", 215], ""role"": ""donor"", ""atom"": ""OG1"", ""partner_atom"": ""O"", ""dist"": 3.0}]"	0.0	lysozyme
+C	117	antigen		68.8	hbond,vdw	"[{""with"": [""B"", 53], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""N"", ""dist"": 2.9}, {""with"": [""B"", 54], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""N"", ""dist"": 3.2}]"	69.2	lysozyme
+B	214	outside_V_domain		63.9		[]	0.0	lysozyme
+A	123	outside_V_domain		63.2	salt_bridge	[]	0.0	lysozyme
+B	100	CDR3	109	62.2	hbond,vdw	"[{""with"": [""C"", 24], ""role"": ""acceptor"", ""atom"": ""OD1"", ""partner_atom"": ""N"", ""dist"": 2.8}, {""with"": [""C"", 24], ""role"": ""acceptor"", ""atom"": ""OD2"", ""partner_atom"": ""OG"", ""dist"": 2.6}, {""with"": [""C"", 27], ""role"": ""acceptor"", ""atom"": ""OD2"", ""partner_atom"": ""ND2"", ""dist"": 3.0}]"	62.61	lysozyme
+A	50	CDR2	56	61.1	hbond,vdw	"[{""with"": [""C"", 18], ""role"": ""acceptor"", ""atom"": ""OH"", ""partner_atom"": ""OD2"", ""dist"": 2.9}]"	61.77	lysozyme
+A	92	CDR3	108	60.3		[]	59.99	lysozyme
+A	214	outside_V_domain		59.2	hbond	"[{""with"": [""C"", 126], ""role"": ""acceptor"", ""atom"": ""N"", ""partner_atom"": ""O"", ""dist"": 3.1}]"	0.0	lysozyme
+C	21	antigen		58.8	hbond	"[{""with"": [""B"", 84], ""role"": ""acceptor"", ""atom"": ""NE"", ""partner_atom"": ""OG"", ""dist"": 3.5}]"	2.53	lysozyme
+A	213	outside_V_domain		58.5	hbond	"[{""with"": [""C"", 128], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""NH2"", ""dist"": 2.7}]"	0.0	lysozyme
+B	218	outside_V_domain		57.5		[]	0.0	lysozyme
+A	32	CDR1	38	57.5	pi_hbond,pi_stack	[]	50.04	lysozyme
+C	68	antigen		57.1	hbond	"[{""with"": [""A"", 126], ""role"": ""donor"", ""atom"": ""NH1"", ""partner_atom"": ""OG1"", ""dist"": 3.4}]"	0.0	lysozyme
+B	210	outside_V_domain		55.1	hbond	"[{""with"": [""C"", 37], ""role"": ""acceptor"", ""atom"": ""OD2"", ""partner_atom"": ""ND2"", ""dist"": 3.8}]"	0.0	lysozyme
+C	116	antigen		53.7		[]	55.95	lysozyme
+B	208	outside_V_domain		53.6	hbond	"[{""with"": [""C"", 39], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""ND2"", ""dist"": 3.0}]"	0.0	lysozyme
+C	125	antigen		52.1		[]	53.18	lysozyme
+C	45	antigen		51.2	hbond	"[{""with"": [""B"", 215], ""role"": ""donor"", ""atom"": ""NH2"", ""partner_atom"": ""O"", ""dist"": 3.3}]"	0.0	lysozyme
+C	77	antigen		50.5	hbond	"[{""with"": [""B"", 57], ""role"": ""acceptor"", ""atom"": ""OD1"", ""partner_atom"": ""OG1"", ""dist"": 3.6}, {""with"": [""B"", 57], ""role"": ""acceptor"", ""atom"": ""ND2"", ""partner_atom"": ""O"", ""dist"": 3.4}, {""with"": [""B"", 57], ""role"": ""acceptor"", ""atom"": ""ND2"", ""partner_atom"": ""OG1"", ""dist"": 3.5}]"	0.0	lysozyme
+B	52	CDR2	57	49.2	vdw	[]	49.03	lysozyme
+C	100	antigen		47.1	hbond	"[{""with"": [""B"", 84], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""OG"", ""dist"": 3.0}]"	0.0	lysozyme
+C	37	antigen		46.3	hbond	"[{""with"": [""B"", 210], ""role"": ""donor"", ""atom"": ""ND2"", ""partner_atom"": ""OD2"", ""dist"": 3.8}]"	0.0	lysozyme
+B	31	CDR1	36	42.1		[]	42.3	lysozyme
+B	83	FR3	92	41.1	hbond	"[{""with"": [""C"", 101], ""role"": ""donor"", ""atom"": ""ND2"", ""partner_atom"": ""OD2"", ""dist"": 3.6}]"	0.0	lysozyme
+C	118	antigen		39.8		[]	39.19	lysozyme
+C	39	antigen		39.5	hbond	"[{""with"": [""B"", 208], ""role"": ""donor"", ""atom"": ""ND2"", ""partner_atom"": ""O"", ""dist"": 3.0}]"	0.0	lysozyme
+C	128	antigen		39.4	hbond	"[{""with"": [""B"", 217], ""role"": ""donor"", ""atom"": ""NE"", ""partner_atom"": ""O"", ""dist"": 3.7}, {""with"": [""A"", 211], ""role"": ""donor"", ""atom"": ""NH1"", ""partner_atom"": ""O"", ""dist"": 2.7}, {""with"": [""A"", 212], ""role"": ""donor"", ""atom"": ""N"", ""partner_atom"": ""O"", ""dist"": 2.8}, {""with"": [""A"", 213], ""role"": ""donor"", ""atom"": ""NH2"", ""partner_atom"": ""O"", ""dist"": 2.7}]"	0.0	lysozyme
+B	84	FR3	93	38.9	hbond	"[{""with"": [""C"", 100], ""role"": ""donor"", ""atom"": ""OG"", ""partner_atom"": ""O"", ""dist"": 3.0}, {""with"": [""C"", 21], ""role"": ""donor"", ""atom"": ""OG"", ""partner_atom"": ""NE"", ""dist"": 3.5}]"	0.0	lysozyme
+B	211	outside_V_domain		35.6	hbond,salt_bridge	"[{""with"": [""C"", 43], ""role"": ""acceptor"", ""atom"": ""NZ"", ""partner_atom"": ""O"", ""dist"": 3.3}]"	0.0	lysozyme
+C	2	antigen		35.3		[]	0.0	lysozyme
+B	54	CDR2	59	34.6	hbond	"[{""with"": [""C"", 117], ""role"": ""acceptor"", ""atom"": ""N"", ""partner_atom"": ""O"", ""dist"": 3.2}]"	34.99	lysozyme
+C	101	antigen		34.2	hbond	"[{""with"": [""B"", 83], ""role"": ""acceptor"", ""atom"": ""OD2"", ""partner_atom"": ""ND2"", ""dist"": 3.6}]"	0.0	lysozyme
+A	122	outside_V_domain		34.1		[]	0.0	lysozyme
+A	93	CDR3	109	33.9	hbond,vdw	"[{""with"": [""C"", 121], ""role"": ""acceptor"", ""atom"": ""N"", ""partner_atom"": ""OE1"", ""dist"": 3.2}]"	35.3	lysozyme
+C	18	antigen		32.5	hbond,vdw	"[{""with"": [""A"", 50], ""role"": ""donor"", ""atom"": ""OD2"", ""partner_atom"": ""OH"", ""dist"": 2.9}]"	33.56	lysozyme
+C	6	antigen		30.8		[]	0.0	lysozyme
+C	75	antigen		29.8		[]	0.0	lysozyme
+B	102	CDR3	114	29.4	hbond,pi_cation,vdw	"[{""with"": [""C"", 22], ""role"": ""acceptor"", ""atom"": ""NH1"", ""partner_atom"": ""O"", ""dist"": 3.4}, {""with"": [""C"", 22], ""role"": ""acceptor"", ""atom"": ""NH2"", ""partner_atom"": ""O"", ""dist"": 3.2}]"	16.79	lysozyme
+B	68	FR3	77	28.9		[]	0.0	lysozyme
+A	49	FR2	55	28.8	pi_cation,vdw	[]	19.82	lysozyme
+B	99	CDR3	108	28.5		[]	29.73	lysozyme
+C	24	antigen		28.4	hbond,vdw	"[{""with"": [""B"", 100], ""role"": ""donor"", ""atom"": ""N"", ""partner_atom"": ""OD1"", ""dist"": 2.8}, {""with"": [""B"", 100], ""role"": ""donor"", ""atom"": ""OG"", ""partner_atom"": ""OD2"", ""dist"": 2.6}]"	52.73	lysozyme
+B	57	CDR2	65	28.2	hbond	"[{""with"": [""C"", 77], ""role"": ""donor"", ""atom"": ""OG1"", ""partner_atom"": ""OD1"", ""dist"": 3.6}, {""with"": [""C"", 77], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""ND2"", ""dist"": 3.4}, {""with"": [""C"", 77], ""role"": ""donor"", ""atom"": ""OG1"", ""partner_atom"": ""ND2"", ""dist"": 3.5}]"	0.0	lysozyme
+C	121	antigen		26.5	hbond,pi_hbond,vdw	"[{""with"": [""B"", 101], ""role"": ""donor"", ""atom"": ""N"", ""partner_atom"": ""OH"", ""dist"": 3.0}, {""with"": [""A"", 91], ""role"": ""donor"", ""atom"": ""NE2"", ""partner_atom"": ""O"", ""dist"": 3.1}, {""with"": [""A"", 93], ""role"": ""donor"", ""atom"": ""OE1"", ""partner_atom"": ""N"", ""dist"": 3.2}]"	97.96	lysozyme
+C	124	antigen		25.2		[]	25.72	lysozyme
+A	126	outside_V_domain		24.9	hbond	"[{""with"": [""C"", 68], ""role"": ""acceptor"", ""atom"": ""OG1"", ""partner_atom"": ""NH1"", ""dist"": 3.4}]"	0.0	lysozyme
+C	23	antigen		24.0		[]	24.01	lysozyme
+C	7	antigen		23.7		[]	0.0	lysozyme
+B	32	CDR1	37	23.6		[]	24.83	lysozyme
+C	22	antigen		22.9	hbond	"[{""with"": [""B"", 102], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""NH1"", ""dist"": 3.4}, {""with"": [""B"", 102], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""NH2"", ""dist"": 3.2}]"	51.35	lysozyme
+B	59	FR3	67	22.9	vdw	[]	0.0	lysozyme
+B	215	outside_V_domain		22.4	hbond	"[{""with"": [""C"", 45], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""NH2"", ""dist"": 3.3}, {""with"": [""C"", 47], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""OG1"", ""dist"": 3.0}]"	0.0	lysozyme
+A	211	outside_V_domain		22.2	hbond	"[{""with"": [""C"", 128], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""NH1"", ""dist"": 2.7}]"	0.0	lysozyme
+C	35	antigen		20.7	hbond	"[{""with"": [""B"", 212], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""NZ"", ""dist"": 2.7}]"	0.0	lysozyme
+C	5	antigen		20.4		[]	0.0	lysozyme
+C	43	antigen		19.3	hbond	"[{""with"": [""B"", 211], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""NZ"", ""dist"": 3.3}]"	0.0	lysozyme
+A	53	FR3	66	17.6	hbond,vdw	"[{""with"": [""C"", 19], ""role"": ""acceptor"", ""atom"": ""OG1"", ""partner_atom"": ""ND2"", ""dist"": 3.1}]"	17.0	lysozyme
+B	66	FR3	75	17.6		[]	0.0	lysozyme
+B	64	FR3	72	16.5		[]	0.0	lysozyme
+B	159	outside_V_domain		15.7		[]	0.0	lysozyme
+C	120	antigen		12.6	hbond	"[{""with"": [""B"", 101], ""role"": ""donor"", ""atom"": ""N"", ""partner_atom"": ""OH"", ""dist"": 3.3}]"	12.29	lysozyme
+B	81	FR3	90	11.2		[]	0.0	lysozyme
+B	53	CDR2	58	11.1	hbond,vdw	"[{""with"": [""C"", 117], ""role"": ""acceptor"", ""atom"": ""N"", ""partner_atom"": ""O"", ""dist"": 2.9}]"	10.76	lysozyme
+C	20	antigen		9.8		[]	0.0	lysozyme
+C	27	antigen		9.4	hbond	"[{""with"": [""B"", 100], ""role"": ""donor"", ""atom"": ""ND2"", ""partner_atom"": ""OD2"", ""dist"": 3.0}]"	9.13	lysozyme
+C	102	antigen		9.1		[]	0.0	lysozyme
+C	96	antigen		8.8		[]	0.0	lysozyme
+C	129	antigen		8.3		[]	0.0	lysozyme
+B	86	FR3	95	8.0		[]	0.0	lysozyme
+C	127	antigen		7.9		[]	0.0	lysozyme
+C	46	antigen		7.7		[]	0.0	lysozyme
+B	30	CDR1	35	7.5		[]	7.64	lysozyme
+B	216	outside_V_domain		7.3	vdw	[]	0.0	lysozyme
+B	67	FR3	76	6.9		[]	0.0	lysozyme
+B	17	FR1	18	6.6		[]	0.0	lysozyme
+C	126	antigen		6.3	hbond	"[{""with"": [""A"", 214], ""role"": ""donor"", ""atom"": ""O"", ""partner_atom"": ""N"", ""dist"": 3.1}]"	1.34	lysozyme
+A	91	CDR3	107	6.2	hbond,vdw	"[{""with"": [""C"", 121], ""role"": ""acceptor"", ""atom"": ""O"", ""partner_atom"": ""NE2"", ""dist"": 3.1}]"	2.78	lysozyme
+C	19	antigen		6.0	hbond,vdw	"[{""with"": [""A"", 53], ""role"": ""donor"", ""atom"": ""ND2"", ""partner_atom"": ""OG1"", ""dist"": 3.1}]"	69.9	lysozyme
+C	57	antigen		5.2		[]	0.0	lysozyme
+C	52	antigen		5.0		[]	0.0	lysozyme
+B	199	outside_V_domain		4.8		[]	0.0	lysozyme
+C	114	antigen		4.7		[]	0.0	lysozyme
+C	36	antigen		4.6		[]	0.0	lysozyme
+C	49	antigen		4.3		[]	0.0	lysozyme
+B	194	outside_V_domain		4.3		[]	0.0	lysozyme
+C	34	antigen		4.3		[]	0.0	lysozyme
+C	42	antigen		3.5		[]	0.0	lysozyme
+C	25	antigen		3.2		[]	3.07	lysozyme
+B	209	outside_V_domain		3.2		[]	0.0	lysozyme
+C	93	antigen		3.1		[]	0.0	lysozyme
+B	69	FR3	78	2.8		[]	0.0	lysozyme
+C	33	antigen		2.8		[]	0.0	lysozyme
+B	126	outside_V_domain		2.7		[]	0.0	lysozyme
+B	33	CDR1	38	2.0		[]	1.9	lysozyme
+C	44	antigen		1.5	hbond	"[{""with"": [""B"", 212], ""role"": ""donor"", ""atom"": ""OD1"", ""partner_atom"": ""N"", ""dist"": 2.9}]"	0.0	lysozyme
+A	190	outside_V_domain		1.5		[]	0.0	lysozyme
+C	26	antigen		1.2		[]	0.97	lysozyme
+B	58	FR3	66	0.6	vdw	[]	0.0	lysozyme
+B	56	CDR2	64	0.2		[]	0.0	lysozyme
+B	128	outside_V_domain		0.2		[]	0.0	lysozyme
+A	96	CDR3	116	0.1	salt_bridge,vdw	[]	0.0	lysozyme
+C	119	antigen		0.1	hbond,vdw	"[{""with"": [""B"", 101], ""role"": ""donor"", ""atom"": ""OD1"", ""partner_atom"": ""OH"", ""dist"": 3.0}]"	45.02	lysozyme

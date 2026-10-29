@@ -1,0 +1,1472 @@
+- text: MOS
+- generic: BETA
+- generic: D13-Humanization-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: aligned_1FDLFv_humanization_3_Fv
+- img "caret-down":
+- generic: aligned_1FDLFv_humanization_3_Fv
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_9
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_9
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_2
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_2
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_3
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_3
+- img "caret-down":
+- generic: 1BVL
+- img "caret-down":
+- generic: 1BVL
+- img "caret-down":
+- generic: 1FDL
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: superposed_1FDLparent_humanization_2
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: D
+- generic: I
+- generic: Q
+- generic: M
+- generic: T
+- generic: Q
+- generic: S
+- generic: P
+- generic: A
+- generic: S
+- generic: "11"
+- generic: L
+- generic: S
+- generic: A
+- generic: S
+- generic: V
+- generic: G
+- generic: E
+- generic: T
+- generic: V
+- generic: T
+- generic: "21"
+- generic: I
+- generic: T
+- generic: C
+- generic: R
+- generic: A
+- generic: S
+- generic: G
+- generic: "N"
+- generic: I
+- generic: H
+- generic: "31"
+- generic: "N"
+- generic: "Y"
+- generic: L
+- generic: A
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: K
+- generic: Q
+- generic: "41"
+- generic: G
+- generic: K
+- generic: S
+- generic: P
+- generic: Q
+- generic: L
+- generic: L
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: "51"
+- generic: T
+- generic: T
+- generic: T
+- generic: L
+- generic: A
+- generic: D
+- generic: G
+- generic: V
+- generic: P
+- generic: S
+- generic: "61"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: T
+- generic: Q
+- generic: "71"
+- generic: "Y"
+- generic: S
+- generic: L
+- generic: K
+- generic: I
+- generic: "N"
+- generic: S
+- generic: L
+- generic: Q
+- generic: P
+- generic: "81"
+- generic: E
+- generic: D
+- generic: F
+- generic: G
+- generic: S
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: Q
+- generic: H
+- generic: "91"
+- generic: F
+- generic: W
+- generic: S
+- generic: T
+- generic: P
+- generic: R
+- generic: T
+- generic: F
+- generic: G
+- generic: G
+- generic: "101"
+- generic: G
+- generic: T
+- generic: K
+- generic: L
+- generic: E
+- generic: I
+- generic: K
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: K
+- generic: E
+- generic: S
+- generic: G
+- generic: P
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: A
+- generic: P
+- generic: S
+- generic: Q
+- generic: S
+- generic: L
+- generic: S
+- generic: I
+- generic: "21"
+- generic: T
+- generic: C
+- generic: T
+- generic: V
+- generic: S
+- generic: G
+- generic: F
+- generic: S
+- generic: L
+- generic: T
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: G
+- generic: V
+- generic: "N"
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: P
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: L
+- generic: G
+- generic: M
+- generic: "51"
+- generic: I
+- generic: W
+- generic: G
+- generic: D
+- generic: G
+- generic: "N"
+- generic: T
+- generic: D
+- generic: "Y"
+- generic: "N"
+- generic: "61"
+- generic: S
+- generic: A
+- generic: L
+- generic: K
+- generic: S
+- generic: R
+- generic: L
+- generic: S
+- generic: I
+- generic: S
+- generic: "71"
+- generic: K
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: S
+- generic: Q
+- generic: V
+- generic: F
+- generic: L
+- generic: "81"
+- generic: K
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: H
+- generic: T
+- generic: D
+- generic: D
+- generic: T
+- generic: "91"
+- generic: A
+- generic: R
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: E
+- generic: R
+- generic: D
+- generic: "101"
+- generic: "Y"
+- generic: R
+- generic: L
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: "111"
+- generic: T
+- generic: L
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: Q
+- generic: E
+- generic: S
+- generic: G
+- generic: P
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: K
+- generic: P
+- generic: S
+- generic: E
+- generic: T
+- generic: L
+- generic: S
+- generic: L
+- generic: "21"
+- generic: T
+- generic: C
+- generic: T
+- generic: V
+- generic: S
+- generic: G
+- generic: F
+- generic: S
+- generic: L
+- generic: T
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: G
+- generic: V
+- generic: "N"
+- generic: W
+- generic: I
+- generic: R
+- generic: Q
+- generic: P
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: L
+- generic: G
+- generic: M
+- generic: "51"
+- generic: I
+- generic: W
+- generic: G
+- generic: D
+- generic: G
+- generic: "N"
+- generic: T
+- generic: D
+- generic: "Y"
+- generic: "N"
+- generic: "61"
+- generic: S
+- generic: A
+- generic: L
+- generic: K
+- generic: S
+- generic: R
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: "71"
+- generic: R
+- generic: D
+- generic: T
+- generic: S
+- generic: K
+- generic: S
+- generic: Q
+- generic: V
+- generic: F
+- generic: L
+- generic: "81"
+- generic: R
+- generic: L
+- generic: S
+- generic: S
+- generic: V
+- generic: T
+- generic: A
+- generic: A
+- generic: D
+- generic: T
+- generic: "91"
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: E
+- generic: R
+- generic: D
+- generic: "101"
+- generic: "Y"
+- generic: R
+- generic: L
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: "111"
+- generic: L
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "4:"
+- generic: D
+- generic: "1"
+- generic: D
+- generic: I
+- generic: Q
+- generic: M
+- generic: T
+- generic: Q
+- generic: S
+- generic: P
+- generic: S
+- generic: S
+- generic: "11"
+- generic: L
+- generic: S
+- generic: A
+- generic: S
+- generic: V
+- generic: G
+- generic: D
+- generic: R
+- generic: V
+- generic: T
+- generic: "21"
+- generic: I
+- generic: S
+- generic: C
+- generic: R
+- generic: A
+- generic: S
+- generic: G
+- generic: "N"
+- generic: I
+- generic: H
+- generic: "31"
+- generic: "N"
+- generic: "Y"
+- generic: L
+- generic: A
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: K
+- generic: P
+- generic: "41"
+- generic: G
+- generic: K
+- generic: A
+- generic: P
+- generic: "N"
+- generic: L
+- generic: L
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: "51"
+- generic: T
+- generic: T
+- generic: T
+- generic: L
+- generic: A
+- generic: D
+- generic: G
+- generic: V
+- generic: P
+- generic: S
+- generic: "61"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: T
+- generic: E
+- generic: "71"
+- generic: F
+- generic: T
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: S
+- generic: L
+- generic: Q
+- generic: P
+- generic: "81"
+- generic: E
+- generic: D
+- generic: F
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: Q
+- generic: H
+- generic: "91"
+- generic: F
+- generic: W
+- generic: S
+- generic: T
+- generic: P
+- generic: R
+- generic: T
+- generic: F
+- generic: G
+- generic: Q
+- generic: "101"
+- generic: G
+- generic: T
+- generic: K
+- generic: V
+- generic: E
+- generic: I
+- generic: K
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha" [active]:
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 94ceba94-b
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: Continue. Snapshot task status. Also start building a checkpoint ZIP.
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Progress: humanization_10 succeeded. Let me download it (DownloadTaskResults) in…"
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336986252288": (342336986252288)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: MMFold returns 5 samples + confidence JSONs, no FASTA? Let me check contents. Al…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/mmfold_342336986252288 && …": (cd /workspace/downloads/mmfold_342336986252288 && …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && mkdir -p native_…": (cd /workspace/website_case_d13 && mkdir -p native_…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "plddt None for best sample — because confs keys mismatch: files named \"summary_c…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && sed -i 's|s=os.p…": (cd /workspace/website_case_d13 && sed -i 's|s=os.p…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now create checkpoint ZIP while others run. Then poll again.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && rm -f website_case_d13_checkpoint…": (cd /workspace && rm -f website_case_d13_checkpoint…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'PY' import zipfile, o…": (cd /workspace && python - <<'PY' import zipfile, o…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: humanization_1 succeeded. Download it and ingest. Let me download and move.
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336939402240": (342336939402240)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && mkdir -p native_…": (cd /workspace/website_case_d13 && mkdir -p native_…)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: 重要校正：我刚才关于1BVL的A+C配对转述不正确，请忽略那一条。已在本地独立读取RCSB最新原始1BVL.pdb和.cif：PDB A/C各116个有坐标残基，序列开头QVQLQESGPGLVRPSQTLSLTCTVS，均为VH；B/D各108个，开头DIQMTQSPSSLSASVGDRVTITCRA，均为VL。CIF实体序列A/C=117aa，B/D=108aa；_pdbx_struct_assembly_gen.asym_id_list明确assembly1=A,B；assembly2=C,D。所以原始作者链的生物配对应为A+B、C+D。若MOS清洗后label链被重新排序（例如VH A/B、VL C/D），必须把这种工作编号与原始作者编号分别写清楚，并保存显式映射；不能把MOS标签配对描述成原始RCSB配对。请核对你实际使用的文件与映射，修正早期文字，原始记录保留。比较参考固定为原始1BVL作者A+B，或给出明确证明对应它的MOS工作链。
+- img "bulb":
+- generic: Thinking
+- generic: "The user corrected: original 1BVL author chains: A/C = VH (116 residues with coo…"
+- generic: ▸
+- paragraph: Understood — I’ll re-audit the 1BVL chain identity from the actual files and make author-vs-MOS-label mapping explicit. Let me verify against three independent sources.
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important: both my local sanitized copy and the MOS object have chains ordered A…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/0…": (cd /workspace/website_case_d13 && cat > analyses/0…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Sequence identity alone cannot resolve A vs C (identical) or B vs D (identical).…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat structures/1…": (cd /workspace/website_case_d13 && cat structures/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The mapping file confirms:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Definitive: coordinates are identical (0.000 Å) for label A↔auth A, label B↔auth…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now rebuild reference structures with explicit author-based naming and from the …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && rm -f structures…": (cd /workspace/website_case_d13 && rm -f structures…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now update the execution log with the correction, preserving the earlier text. L…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat >> logs/exec…": (cd /workspace/website_case_d13 && cat >> logs/exec…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: 3 succeeded (10, 9, 7, 1). Download 9 and 7 while others run.
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336981885952": (342336981885952)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336973136896": (342336973136896)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && for pair in \"hum…": (cd /workspace/website_case_d13 && for pair in "hum…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now while waiting, let me build the results.json builder and the report sc…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/0…": (cd /workspace/website_case_d13 && cat > analyses/0…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Working. All candidates have 0 CDR changes vs parent (framework-only humanizatio…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent calibration: the two sequence-identical copies of 1BVL Fv within the s…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All 10 MMFold tasks succeeded! Now download the remaining 6 (2,3,4,5,6,8).
+- generic: ▸
+- paragraph: All ten MMFold jobs succeeded. Downloading the remaining six outputs.
+- generic: DownloadTaskResults
+- generic "342336943940608": (342336943940608)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336948163584": (342336948163584)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336952607744": (342336952607744)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336956908544": (342336956908544)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336968610816": (342336968610816)
+- img "check-circle":
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342336977507328": (342336977507328)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && for pair in \"hum…": (cd /workspace/website_case_d13 && for pair in "hum…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python analyses/…": (cd /workspace/website_case_d13 && python analyses/…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The comparison for 10 candidates takes longer (ANARCI per chain per structure — …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && nohup python ana…": (cd /workspace/website_case_d13 && nohup python ana…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Hmm, log file missing — perhaps because nohup started in /workspace/website_case…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && ls -la logs/ && …": (cd /workspace/website_case_d13 && ls -la logs/ && …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: It did run and produced all 10 comparison JSONs (the earlier tail failed likely …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && tail -5 logs/com…": (cd /workspace/website_case_d13 && tail -5 logs/com…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All 10 comparisons done. Note small differences from previous run (0.415 vs 0.39…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now consistent: model = sample 1, global RMSD 0.415."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The 1BVL columns are in comparison_summary.tsv not candidate_metrics.tsv. Fine —…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "humanization_4: only VH CDR2 residue IMGT 58 (parent B53) moves 2.0 Å; the media…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Very informative: VH CDR2 position 58 is unstable across MMFold samples for huma…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && sed -i 's/na.occ…": (cd /workspace/website_case_d13 && sed -i 's/na.occ…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Files are nearly empty (162 bytes) — my structure construction failed to add ato…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "close-circle":
+- generic: ▸
+- generic: Steer
+- generic: 我在原生MMetrics 1FDL面板仍看到Generating description / Analyzing structure / Model Computing。请在完成比较后检查本项目autocompute-1FDL的真实task ID与状态，保存原始返回及可取得输出，明确原生分析是否完成；不要用内置interaction脚本冒充原生MMetrics。另请在MOS内导入2-3代表候选与已经对齐的1FDL Fv用于截图，保存导入object/work ID。若有原生Superimpose工具可调用请实际使用并保存参数；若没有，明确将Kabsch拟合列作Mocha额外结构统计，不能写成原生Superimpose已运行。完成全部结构比较后生成最终ZIP。
+- img "bulb":
+- generic: Thinking
+- generic: "Multiple tasks now:"
+- generic: ▸
+- paragraph: "Two corrections to make: my superposition builder was parsing CIF with the PDB parser, and I need to check the native MMetrics tasks properly. Starting with the task board."
+- generic: CheckMOSTask
+- generic "342335703909376": (342335703909376)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The autocompute-1FDL task is still RUNNING after ~30 min. Its raw input params s…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && sed -i 's/a.full…": (cd /workspace/website_case_d13 && sed -i 's/a.full…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Superposed complexes built: chains A/B = parent Fv (VL/VH), C/D = candidate (VL/…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The RMSD (sqrt of mean squared) matches the reported global CA RMSD (0.406, 0.50…
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_d13/structures/superposed_…": (/workspace/website_case_d13/structures/superposed_…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_d13/structures/superposed_…": (/workspace/website_case_d13/structures/superposed_…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_d13/structures/superposed_…": (/workspace/website_case_d13/structures/superposed_…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Imported. Note each import appears twice with two Work IDs (one probably the imp…
+- generic: ▸
+- generic: GetMOSObject
+- generic "342339292763136": (342339292763136)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "MOS sanitized copy: A = parent VL, B = parent VH, C = candidate VH, D = candidat…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Alignment preserved through MOS import (VH RMSD 0.363, VL 0.449 — consistent wit…
+- generic: ▸
+- generic: SelectResidues
+- generic "#1f77b4": (#1f77b4)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "\"No structure loaded\" — need to load it via... ImportStructure said imported and…"
+- generic: ▸
+- generic: SelectResidues
+- generic "#1f77b4": (#1f77b4)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Neither works. Perhaps the viewer only loads structures registered before, or th…
+- generic: ▸
+- img "zoom-in":
+- generic: Zoom to Region
+- generic "342339299021824": (342339299021824)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The viewer lost/didn't load the structure. Let me try ImportStructure with sourc…
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "342339292763136": (342339292763136)
+- img "close-circle":
+- generic: ▸
+- generic: SelectResidues
+- generic "#1f77b4": (#1f77b4)
+- img "check-circle":
+- generic: ▸
+- generic: 10 residues in Chain B
+- generic: "Selected 10 residues: B:96,97,98,99,100,101,102,103,104,105"
+- button "Replay selection":
+  - img "reload":
+- button "Add annotation":
+  - img "edit":
+- img "bulb":
+- generic: Thinking
+- generic: The viewer only operates on the currently loaded structure (1FDL). The superpose…
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_d13/structures/superposed_…": (/workspace/website_case_d13/structures/superposed_…)
+- img "check-circle":
+- generic: ▸
+- generic: SelectResidues
+- generic "#1f77b4": (#1f77b4)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still "No structure loaded" for the new import. The viewer apparently keeps only…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342335703909376": (342335703909376)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now write the consolidated results. Let me build:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "results.json built. Note: paratope_n came from comparison_summary.tsv — need to …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python -c \" impo…": (cd /workspace/website_case_d13 && python -c " impo…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && head -2 analyses…": (cd /workspace/website_case_d13 && head -2 analyses…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: comparison_summary.tsv (from 07) lacks paratope columns — those are in candidate…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now update the task ledger with final statuses, durations, output files, and add…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now write the report (report.md) — the main scientific narrative. Needs:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python -c \" impo…": (cd /workspace/website_case_d13 && python -c " impo…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: KeyError 'sequence' — because after json round-trip, vs_parent has "sequence" an…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent data. Now I need to write the final report. Key narrative points:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: 独立几何审校发现一个需要修正的关键问题：我直接在RCSB原始1FDL.pdb用Biopython逐残基检查全部非氢原子到auth Y溶菌酶，4.5Å阈值下，H可变区有10个接触残基（序列30,31,32,52,53,54,99,100,101,102），L可变区有7个（32,49,50,53,91,92,93）；H117-218和L108-214常数区均0个接触残基。所以先前“常数区接触溶菌酶约1690Å²晶体堆积”很可能是把Fab重-轻链常数域之间的埋藏面积混入了抗体-抗原界面，不能保留作结论。请以SASA(完整Fab两链作为整体)+SASA(Ag)-SASA(Fab+Ag)对照Fv+Ag，逐侧用同一复合物的原子面积求差，独立核查并更正results/report；保留早期误算日志并明确修订。这里没有对称晶体伙伴，不能凭未定义BSA将差值命名为crystal packing。
+- img "bulb":
+- generic: Thinking
+- generic: "The user is right. My earlier interpretation was wrong: PPInterface's full-compl…"
+- generic: ▸
+- paragraph: You’re right to flag this — let me verify from the coordinates and recompute with the correct reference states.
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed independently: exactly the 10 VH + 7 VL residues the user listed, zero…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The stated distances in `analyses/interface_1FDL/hbond.tsv` do not correspond to…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "No Fab atoms within 3.5 Å of those lysozyme atoms at all. So `analyses/interface…"
+- generic: ▸
+- paragraph: "Confirmed: zero constant-domain contacts (nearest is 33 Å), and the archived PPInterface H-bond table doesn’t reproduce against the coordinates at all. Recomputing the interface from scratch."
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python analyses/…": (cd /workspace/website_case_d13 && python analyses/…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The heredoc write failed because the whole command errored on validation before …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Decisive result: full Fab and V-domain-only give IDENTICAL BSA 1243.2 Å², per-si…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Contacts match the user's independent check exactly: VH 10 residues (30,31,32,52…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Zero polar contacts within 4.6 Å?! That means there are literally no N/O···N/O c…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Elements: gemmi.Element objects, and there are no hydrogens (fine). My filter `a…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still 0. So the element filter in the pairs list uses `p[\"fab_atom\"][0] in \"NO\"`…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Column misalignment in my tuple: I built `pairs=[(M[ii]+tuple(A_meta[jj])+(D,...…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now the contacts make biological sense and match known D1.3 biology:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "No formal salt bridges between Fab and lysozyme — makes sense: the interface is …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat > analyses/1…": (cd /workspace/website_case_d13 && cat > analyses/1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now the paratope table is coherent and biologically correct:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now append the correction to the execution log (preserving the earlier text), an…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && cat >> logs/exec…": (cd /workspace/website_case_d13 && cat >> logs/exec…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now write the main report.md. It should be a biologist-friendly narrative with a…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_d13/report.md": (/workspace/website_case_d13/report.md)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: I left "—" placeholders in the 1BVL table for FR fit values for candidates 4-10,…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python -c \" impo…": (cd /workspace/website_case_d13 && python -c " impo…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Table filled. Now:"
+- generic: ▸
+- generic: GetMOSObject
+- generic "342339294221312": (342339294221312)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSObject
+- generic "342339296826368": (342339296826368)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342335703909376": (342335703909376)
+- img "check-circle":
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_d13/README.txt": (/workspace/website_case_d13/README.txt)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now finalize:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Identical values — good, the paratope set is unchanged (18 residues).
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now final validation and zip:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'PY' import zipfile, o…": (cd /workspace && python - <<'PY' import zipfile, o…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both zips built (identical since checkpoint was made at the end — that's fine; I…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python -c \" impo…": (cd /workspace/website_case_d13 && python -c " impo…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: A49 is TYR, not PHE. My report says "VL Phe49 (FR2, 19.8 Å²...)" — wrong. Also A…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python -c \" impo…": (cd /workspace/website_case_d13 && python -c " impo…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Y124 is ILE, not Arg. In the report §3 epitope list I wrote "Gln121 98.0, Asn19 …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && python - <<'PY' …": (cd /workspace/website_case_d13 && python - <<'PY' …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'PY' import zipfile, o…": (cd /workspace && python - <<'PY' import zipfile, o…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_d13 && tail -20 logs/ex…": (cd /workspace/website_case_d13 && tail -20 logs/ex…)
+- img "check-circle":
+- generic: ▸
+- paragraph: All done. Final state below.
+- heading "Corrected interface — your audit was right on both counts" [level=2]
+- paragraph:
+  - text: I re-derived the 1FDL interface from the coordinates with explicit reference states (
+  - code: analyses/13_bsa_recheck.py
+  - text: ","
+  - code: analyses/14_contacts_recheck.py
+  - text: "):"
+- paragraph:
+  - strong: Contacts.
+  - text: "4.5 Å heavy-atom sweep reproduces your numbers exactly: 10 VH residues (30, 31, 32, 52, 53, 54, 99, 100, 101, 102), 7 VL (32, 49, 50, 53, 91, 92, 93), and"
+  - strong: zero constant-domain contacts
+  - text: — nearest approach 33.03 Å.
+- paragraph:
+  - strong: BSA.
+  - text: SASA(Fab A+B as one body) 19566.2 + SASA(lysozyme) 6502.6 − SASA(complex) 24825.6 =
+  - strong: 1243.2 Å²
+  - text: (VH 349.4, VL 246.8, lysozyme 647.1). Running the identical calculation with constant domains deleted gives
+  - strong: 1243.2 Å² and identical per-residue values
+  - text: — constant-domain contribution is exactly 0.0 Å². The “~1690 Å² crystal packing” figure is retracted; there is no symmetry-mate story to tell.
+- paragraph:
+  - strong: Why the earlier number was wrong.
+  - text: "I had merged the interaction-analysis skill’s PPInterface per-residue table. That table does not reproduce against the coordinates: its archived row “C39 ND2 → B208 O, 3.00 Å” is 79.5 Å apart in the model, and every archived H-bond partner was tens of Å from its stated partner. Those files are archived for audit only and are used for no conclusion. Both corrections are written into"
+  - code: logs/execution_log.md
+  - text: with the earlier text preserved, and
+  - code: results.json.parent_interface
+  - text: carries a
+  - code: superseded
+  - text: field.
+- paragraph: "Measured contacts now include VH Asp100 OD2–Ser24 OG 2.63 Å, VH Tyr101 OH–Asp119 OD1 2.97 Å and –Gln121 N 2.99 Å, VL Tyr50 OH–Asp18 OD2 2.86 Å, VL Thr53 OG1–Asn19 ND2 3.07 Å — 21 polar pairs, no formal salt bridges. Epitope: Gln121, Asn19, Gly117, Lys116, Arg125, Ser24, Gly22, Asp119."
+- heading "1BVL and the rest" [level=2]
+- paragraph:
+  - text: Biological pairs are author
+  - strong: A+B
+  - text: and
+  - strong: C+D
+  - text: ; MOS labels are A=VH(A), B=VH©, C=VL(B), D=VL(D), verified three ways including 0.000 Å CA coordinate identity. All comparisons are named by author chains and built from RCSB author chains directly.
+- paragraph:
+  - text: "All 10 MMFold jobs succeeded (no failures, no retries): pLDDT 94.0–96.8, ipTM 0.959–0.966. Candidates deviate from the parent Fv by 0.41–0.50 Å CA RMSD —"
+  - strong: less than the 0.816 Å separating the two identical copies of the humanized Fv inside 1BVL
+  - text: . All six CDRs are sequence-identical to the parent in every candidate (re-verified by ANARCI, not taken from the task report). Against 1BVL the candidates sit at 0.61–0.78 Å, inside the band defined by the experimental copies and the mouse parent (0.66–0.81 Å).
+- paragraph: "One honest flag: VH CDR2 position 58 moves 0.24–2.04 Å across samples for humanization_4 and 0.41–2.49 Å for humanization_9, versus 0.32–0.62 Å for humanization_2/3 — that loop is under-determined, not demonstrably displaced. No candidate is ranked on it."
+- paragraph: "Scores stay modest: OASis percentile 13–29, AbNatiV below the 0.8 native-like bar for all ten. Nothing here supports an immunogenicity or affinity claim."
+- heading "Provenance" [level=2]
+- paragraph:
+  - text: "Native MOS: humanization"
+  - code: "342335722341376"
+  - text: ", ten MMFold tasks (IDs in the ledger), viewer imports of three aligned complexes (object IDs"
+  - code: "342339292763136"
+  - text: ","
+  - code: "342339294221312"
+  - text: ","
+  - code: "342339296826368"
+  - text: ). No native Superimpose exists — no such task type in
+  - code: ListAvailableMOSTasks
+  - text: and no such tool in this session — so every RMSD is a documented Kabsch statistic, and the aligned coordinates were registered in MOS so they can be screenshot. MMetrics on 1FDL (
+  - code: "342335703909376"
+  - text: ) is
+  - strong: still RUNNING
+  - text: ; its parameters are saved, no output retrievable, none used.
+- paragraph:
+  - text: "Files:"
+  - code: /workspace/website_case_d13.zip
+  - text: and
+  - code: /workspace/website_case_d13_checkpoint.zip
+  - text: (255 files, 3.4 MB, integrity checked) — containing
+  - code: report.md
+  - text: ","
+  - code: results.json
+  - text: ","
+  - code: native_tasks/task-ledger.json
+  - text: ", all inputs, all raw task outputs (50 MMFold models + 50 confidence JSONs + the 5 original humanization_9 samples kept separate), numbering tables, analyses, and logs."
+- img "website_case_d13.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- generic: 15:27
+- generic: superposed...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised
+- tooltip "Reset"

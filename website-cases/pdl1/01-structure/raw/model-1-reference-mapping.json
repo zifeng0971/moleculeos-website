@@ -1,0 +1,1458 @@
+{
+  "A": [
+    {
+      "prediction_seq_id": 2,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 18,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 3,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 19,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 4,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 20,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 5,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 21,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 6,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 22,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 7,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 23,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 8,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 24,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 9,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 25,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 10,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 26,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 11,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 27,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 12,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 28,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 13,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 29,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 14,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 30,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 15,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 31,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 16,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 32,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 17,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 33,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 18,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 34,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 19,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 35,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 20,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 36,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 21,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 37,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 22,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 38,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 23,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 39,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 24,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 40,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 25,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 41,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 26,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 42,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 27,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 43,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 28,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 44,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 29,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 45,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 30,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 46,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 31,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 47,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 32,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 48,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 33,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 49,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 34,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 50,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 35,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 51,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 36,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 52,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 37,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 53,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 38,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 54,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 39,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 55,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 40,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 56,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 41,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 57,
+      "residue": "W"
+    },
+    {
+      "prediction_seq_id": 42,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 58,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 43,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 59,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 44,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 60,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 45,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 61,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 46,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 62,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 47,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 63,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 48,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 64,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 49,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 65,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 50,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 66,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 51,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 67,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 52,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 68,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 53,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 69,
+      "residue": "H"
+    },
+    {
+      "prediction_seq_id": 54,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 70,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 55,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 71,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 56,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 72,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 57,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 73,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 58,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 74,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 59,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 75,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 60,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 76,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 61,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 77,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 62,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 78,
+      "residue": "H"
+    },
+    {
+      "prediction_seq_id": 63,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 79,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 64,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 80,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 65,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 81,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 66,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 82,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 67,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 83,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 68,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 84,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 69,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 85,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 70,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 86,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 71,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 87,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 72,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 88,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 73,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 89,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 74,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 90,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 75,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 91,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 76,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 92,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 77,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 93,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 78,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 94,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 79,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 95,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 80,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 96,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 81,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 97,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 82,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 98,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 83,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 99,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 84,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 100,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 85,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 101,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 86,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 102,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 87,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 103,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 88,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 104,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 89,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 105,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 90,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 106,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 91,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 107,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 92,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 108,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 93,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 109,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 94,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 110,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 95,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 111,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 96,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 112,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 97,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 113,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 98,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 114,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 99,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 115,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 100,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 116,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 101,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 117,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 102,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 118,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 103,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 119,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 104,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 120,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 105,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 121,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 106,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 122,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 107,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 123,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 108,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 124,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 109,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 125,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 110,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 126,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 111,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 127,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 112,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 128,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 113,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 129,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 114,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 130,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 115,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 131,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 116,
+      "pdb_5jds_auth_chain": "A",
+      "pdb_5jds_auth_seq_id": 132,
+      "residue": "A"
+    }
+  ],
+  "B": [
+    {
+      "prediction_seq_id": 1,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 1,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 2,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 2,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 3,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 3,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 4,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 4,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 5,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 5,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 6,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 6,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 7,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 7,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 8,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 8,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 9,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 9,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 10,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 10,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 11,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 11,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 12,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 12,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 13,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 13,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 14,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 14,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 15,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 15,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 16,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 16,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 17,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 17,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 18,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 18,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 19,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 19,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 20,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 20,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 21,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 21,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 22,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 22,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 23,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 23,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 24,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 24,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 25,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 25,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 26,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 26,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 27,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 27,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 28,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 28,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 29,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 29,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 30,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 30,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 31,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 31,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 32,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 32,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 33,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 33,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 34,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 34,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 35,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 35,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 36,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 36,
+      "residue": "W"
+    },
+    {
+      "prediction_seq_id": 37,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 37,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 38,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 38,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 39,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 39,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 40,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 40,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 41,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 41,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 42,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 42,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 43,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 43,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 44,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 44,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 45,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 45,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 46,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 46,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 47,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 47,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 48,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 48,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 49,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 49,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 50,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 50,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 51,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 51,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 52,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 52,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 53,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 53,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 54,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 54,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 55,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 55,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 56,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 56,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 57,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 57,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 58,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 58,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 59,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 59,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 60,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 60,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 61,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 61,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 62,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 62,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 63,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 63,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 64,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 64,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 65,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 65,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 66,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 66,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 67,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 67,
+      "residue": "R"
+    },
+    {
+      "prediction_seq_id": 68,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 68,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 69,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 69,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 70,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 70,
+      "residue": "I"
+    },
+    {
+      "prediction_seq_id": 71,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 71,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 72,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 72,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 73,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 73,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 74,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 74,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 75,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 75,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 76,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 76,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 77,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 77,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 78,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 78,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 79,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 79,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 80,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 80,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 81,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 81,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 82,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 82,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 83,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 83,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 84,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 84,
+      "residue": "N"
+    },
+    {
+      "prediction_seq_id": 85,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 85,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 86,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 86,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 87,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 87,
+      "residue": "K"
+    },
+    {
+      "prediction_seq_id": 88,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 88,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 89,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 89,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 90,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 90,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 91,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 91,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 92,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 92,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 93,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 93,
+      "residue": "M"
+    },
+    {
+      "prediction_seq_id": 94,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 94,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 95,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 95,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 96,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 96,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 97,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 97,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 98,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 98,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 99,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 99,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 100,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 100,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 101,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 101,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 102,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 102,
+      "residue": "E"
+    },
+    {
+      "prediction_seq_id": 103,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 103,
+      "residue": "D"
+    },
+    {
+      "prediction_seq_id": 104,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 104,
+      "residue": "P"
+    },
+    {
+      "prediction_seq_id": 105,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 105,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 106,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 106,
+      "residue": "C"
+    },
+    {
+      "prediction_seq_id": 107,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 107,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 108,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 108,
+      "residue": "L"
+    },
+    {
+      "prediction_seq_id": 109,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 109,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 110,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 110,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 111,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 111,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 112,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 112,
+      "residue": "S"
+    },
+    {
+      "prediction_seq_id": 113,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 113,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 114,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 114,
+      "residue": "A"
+    },
+    {
+      "prediction_seq_id": 115,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 115,
+      "residue": "F"
+    },
+    {
+      "prediction_seq_id": 116,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 116,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 117,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 117,
+      "residue": "Y"
+    },
+    {
+      "prediction_seq_id": 118,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 118,
+      "residue": "W"
+    },
+    {
+      "prediction_seq_id": 119,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 119,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 120,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 120,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 121,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 121,
+      "residue": "G"
+    },
+    {
+      "prediction_seq_id": 122,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 122,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 123,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 123,
+      "residue": "Q"
+    },
+    {
+      "prediction_seq_id": 124,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 124,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 125,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 125,
+      "residue": "T"
+    },
+    {
+      "prediction_seq_id": 126,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 126,
+      "residue": "V"
+    },
+    {
+      "prediction_seq_id": 127,
+      "pdb_5jds_auth_chain": "B",
+      "pdb_5jds_auth_seq_id": 127,
+      "residue": "S"
+    }
+  ]
+}

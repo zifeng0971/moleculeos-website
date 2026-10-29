@@ -1,0 +1,683 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-00-Natural-Language-Entry-20261022
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: pdl1_kn035_model1
+- generic: Amino Acid Group
+- generic: PD-L1 epitope (KN035)
+- generic: KN035 paratope (CDR1 + CDR3)
+- generic: PD-L1 hotspots (I54/Y56/E58/Q66/R113)
+- button:
+- generic: pdl1_kn035_model1
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: M
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: "11"
+- generic: L
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: "21"
+- generic: T
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: "31"
+- generic: Q
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: "41"
+- generic: W
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: "51"
+- generic: F
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: "61"
+- generic: Q
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: "71"
+- generic: L
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: "81"
+- generic: A
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: "91"
+- generic: Q
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: "101"
+- generic: S
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: "111"
+- generic: T
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: L
+- generic: E
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: Q
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: K
+- generic: M
+- generic: S
+- generic: S
+- generic: "31"
+- generic: R
+- generic: R
+- generic: C
+- generic: M
+- generic: A
+- generic: W
+- generic: F
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: E
+- generic: R
+- generic: E
+- generic: R
+- generic: V
+- generic: A
+- generic: K
+- generic: "51"
+- generic: L
+- generic: L
+- generic: T
+- generic: T
+- generic: S
+- generic: G
+- generic: S
+- generic: T
+- generic: "Y"
+- generic: L
+- generic: "61"
+- generic: A
+- generic: D
+- generic: S
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: Q
+- generic: "N"
+- generic: "N"
+- generic: A
+- generic: K
+- generic: S
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: K
+- generic: P
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: M
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: A
+- generic: D
+- generic: S
+- generic: "101"
+- generic: F
+- generic: E
+- generic: D
+- generic: P
+- generic: T
+- generic: C
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: "111"
+- generic: S
+- generic: S
+- generic: G
+- generic: A
+- generic: F
+- generic: Q
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: "121"
+- generic: G
+- generic: T
+- generic: Q
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 17d092af-3
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- button "Worked for 7m 34s" [expanded]:
+  - generic: Worked for 7m 34s
+- button "Tool calls":
+  - generic: Tool calls
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The prediction finished. Fetching its outputs.
+- button "Tool calls":
+  - generic: Tool calls
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Sample 1 is the only converged model (ipTM 0.92, pTM 0.94, pLDDT 93.7; the other four sit at ipTM ~0.33, i.e. no interface agreement). I’ll use it.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Discovery confirms a single A:B protein–protein interface (50 contacts), and chain B is annotated as a VHH with CDR1 26–33, CDR2 51–58, CDR3 97–117. Now the quantitative interface analysis.
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Strong convergence with the experimental epitope. Let me pull the specific bonds and π-stacking.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: All five published hotspot residues are recovered. Registering the model in MOS so we can look at the interface.
+- button "3D Viewer":
+  - generic: 3D Viewer
+- button "Thinking":
+  - generic: Thinking
+- button "Tool calls":
+  - generic: Tool calls
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The prediction output carries MOS mapping metadata, so it can’t be re-imported directly. I’ll make a clean sanitized copy for the viewer.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "3D Viewer":
+  - generic: 3D Viewer
+- button "Thinking":
+  - generic: Thinking
+- button "3D Viewer":
+  - generic: 3D Viewer
+- button "Thinking":
+  - generic: Thinking
+- button "3D Viewer 4 items":
+  - generic: 3D Viewer
+  - generic: 4 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Let me cross-check the prediction directly against the experimental 5JDS complex rather than relying on the literature summary.
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The experimental interface came out much larger than the predicted one — I need to resolve that before making any claim. Checking whether it is a real difference or an artifact of how the crystal entry is assembled.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Sign error on my part — ΔASA = isolated − complex. Recomputing both.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The 5JDS entry contains two copies of the complex in its asymmetric unit, which polluted my comparison. Let me isolate a single contacting pair and recompute.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Something inconsistent between two SASA implementations on the crystal entry. Settling it with a fresh unsanitized download.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Found it — the sanitized 5JDS file was giving corrupted SASA values. The raw crystal entry gives a normal ~640 Å² buried per side. Recomputing the crystal interface from the raw coordinates.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: PPInterface was counting crystallographic waters. Computing the crystal ΔASA protein-only for a true like-for-like comparison.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Now the two datasets are methodologically identical. The prediction recovers 18 of 19 experimental epitope residues and 18 of 18 paratope residues. Let me get the crystal’s bond chemistry for comparison.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The hydrogen-bond network matches the crystal almost bond-for-bond. Let me finalize the viewer with distinct colors for each partner.
+- button "3D Viewer 3 items":
+  - generic: 3D Viewer
+  - generic: 3 items
+- button "File operations":
+  - generic: File operations
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The complex is predicted and the interface is defined. Here is what came out.
+- heading "The model" [level=2]
+- paragraph: MMFold produced five samples; only one converged on an assembled complex — interface ipTM 0.925, pTM 0.941, mean pLDDT 93.7. The other four scored ipTM ~0.33, meaning they docked the nanobody in four mutually inconsistent, low-confidence ways. Everything below is from that single converged model, which is now loaded in the viewer with the interface colored (orange, PD-L1; green, KN035) and the hotspot patch annotated.
+- paragraph:
+  - text: The two partners form one interface, burying
+  - strong: 1419 Å² total
+  - text: (699 Å² on PD-L1, 721 Å² on KN035) — a compact, antibody-typical paratope–epitope footprint, with 13 hydrogen bonds, one salt bridge, and one aromatic stacking contact.
+- heading "What KN035 grips on PD-L1" [level=2]
+- paragraph: "The nanobody lands on the front β-sheet of the PD-L1 IgV domain, and the footprint is built from three separate patches that its CDR3 spans. In standard PD-L1 numbering, the residues in contact are:"
+- paragraph:
+  - strong: Strand C and the C–C′ loop
+  - text: — Ile54, Tyr56, Glu58, Asp61, Asn63 — this is the heart of the epitope. Asp61 alone buries 104 Å², the single largest contribution on PD-L1, and it is pinned by three separate contacts to the nanobody (Ser29 OG, Ser30 OG, and the Arg32 backbone amide).
+- paragraph:
+  - strong: The C′–D region
+  - text: — Gln66, Val68, His69, Asp73, Val76 — a secondary anchor, with Gln66 donating two hydrogen bonds into the CDR3 backbone and accepting one.
+- paragraph:
+  - strong: The F–G edge
+  - text: — Arg113, Met115, Ser117, Gly119, Gly120, Ala121, Asp122, Tyr123, Arg125 — the C-terminal end of the footprint, where Arg113 and Arg125 make the electrostatic contacts (Arg113–Asp99 is the only true salt bridge, 2.4 Å; Arg125–Gln116, 2.4 Å).
+- paragraph:
+  - text: The single most important chemical feature is the
+  - strong: aromatic stacking of PD-L1 Tyr56 against KN035 Phe101
+  - text: (ring centroids 5.2 Å apart, tilted 83° — an edge-to-face arrangement). Tyr56 also hydrogen bonds to both the Glu102 backbone nitrogen and Ser100 hydroxyl, so it is engaged by stacking and by two polar contacts at once.
+- heading "How KN035 grips back" [level=2]
+- paragraph:
+  - text: "The paratope is overwhelmingly CDR3, exactly as expected for this nanobody:"
+  - strong: Asp99 through Tyr117
+  - text: (16 of the 21 interface residues). The N-terminal half of CDR3 — Asp99, Ser100, Phe101, Glu102, Asp103, Pro104, Thr105 — carries the polar and stacking contacts, while the C-terminal half (Leu108, Val109, Thr110, Ser111, Gly113, Ala114, Phe115, Gln116, Tyr117) contributes mostly hydrophobic burial. A minor CDR1 contribution comes from Lys27, Ser29, Ser30, and Arg32, with framework residue Glu44 at the CDR1 base also touching the interface. CDR2 makes no contact at all.
+- heading "Does the prediction hold up?" [level=2]
+- paragraph: "A crystal structure of this exact complex exists (PDB 5JDS, 1.7 Å), so I recomputed its interface with an identical protein-only protocol and compared directly:"
+- list:
+  - strong: "Epitope: 18 of 19 crystal residues reproduced."
+  - text: The model misses only Glu60 (a 9 Å² marginal contact) and adds Val76.
+  - strong: "Paratope: 18 of 18 crystal residues reproduced."
+  - text: The model adds Glu44, Thr110, Tyr117 as peripheral contacts.
+  - strong: The hydrogen-bond network is nearly bond-for-bond identical
+  - text: ": Asp61–Ser30, Glu58–Ser100, Gln66–Asp103, Arg113–Asp99, Arg113–Ser100, Arg125–Gln116, Tyr56–Glu102 all appear in both."
+  - text: All five published hotspot residues that KN035 depends on —
+  - strong: Ile54, Tyr56, Glu58, Gln66, Arg113
+  - text: — are present in the predicted interface with the correct chemistry.
+- paragraph:
+  - text: Two caveats worth stating plainly. First, the construct you supplied carries an N-terminal
+  - strong: MA tag
+  - text: ", and the artificial Met1 accounts for 42 Å² of the apparent interface, forming a spurious salt bridge to Glu44 of the nanobody; I excluded it from the epitope above, but it is a real artifact of the model, not PD-L1 biology. Second, this is a single converged prediction, and the peripheral contacts (Val76, Glu44, Thr110, Tyr117) are the parts most likely to differ in reality."
+- paragraph: The functional readout is that the epitope overlaps the PD-1 binding site — Ile54, Tyr56, Glu58, Gln66 and Arg113 are shared with PD-1 — which is why KN035 blocks the checkpoint interaction by direct steric competition rather than allostery.
+- paragraph:
+  - text: Full measurements are saved in
+  - code: /workspace/analysis/interface_results.md
+  - text: .
+- navigation "Conversation navigator":
+  - 'button "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"'
+  - button "continue"
+  - button "continue"
+- generic: pdl1_kn035...
+- button "Upload":
+- textbox "Ask me to do anything"
+- button "Send" [disabled]:
+- generic: AI-generated research aid. Experimental validation advised
+- dialog:
+  - button "Close":
+    - generic "Close":
+      - img "close":
+  - text: Task List
+  - button "reload":
+    - img "reload":
+  - table:
+    - rowgroup:
+      - row "name status filter type filter Creation Time Update Time actions":
+        - columnheader "name"
+        - columnheader "status filter":
+          - generic: status
+          - button "filter":
+            - img "filter":
+        - columnheader "type filter":
+          - generic: type
+          - button "filter":
+            - img "filter":
+        - columnheader "Creation Time":
+          - generic: Creation Time
+        - columnheader "Update Time":
+          - generic: Update Time
+        - columnheader "actions"
+    - rowgroup:
+      - row "PDL1_KN035_complex Succeed Structure Prediction with MMFold 2026-10-22 8:40:55 2026-10-22 8:42:57 profile delete":
+        - cell "PDL1_KN035_complex"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Structure Prediction with MMFold"
+        - cell "2026-10-22 8:40:55"
+        - cell "2026-10-22 8:42:57"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+  - list:
+    - listitem "Previous Page":
+      - button "left" [disabled]:
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "Next Page":
+      - button "right" [disabled]:
+        - img "right":
+- dialog:
+  - button "Close":
+    - generic "Close":
+      - img "close":
+  - generic: "Task ID:"
+  - text: "342948473701376"
+  - generic: "Task Name:"
+  - text: PDL1_KN035_complex
+  - generic: "Task Type:"
+  - text: Structure Prediction with MMFold
+  - generic: "Description:"
+  - text: Predict the complex structure of human PD-L1 IgV domain (chain A) bound to nanobody KN035 (chain B).
+  - generic: "Task Status:"
+  - text: Succeed
+  - button "up":
+    - img "up":
+  - text: Data Display
+  - generic: Output Data
+  - generic "MMFold_1.cif"
+  - button "download":
+    - img "download":
+  - generic "MMFold_2.cif"
+  - button "download":
+    - img "download":
+  - generic "MMFold_3.cif"
+  - button "download":
+    - img "download":
+  - generic "MMFold_4.cif"
+  - button "download":
+    - img "download":
+  - generic "MMFold_5.cif"
+  - button "download":
+    - img "download":
+  - generic "summary_confidences_sample_1.json"
+  - button "download":
+    - img "download":
+  - generic "summary_confidences_sample_2.json"
+  - button "download":
+    - img "download":
+  - generic "summary_confidences_sample_3.json"
+  - button "download":
+    - img "download":
+  - generic "summary_confidences_sample_4.json"
+  - button "download":
+    - img "download":
+  - generic "summary_confidences_sample_5.json"
+  - button "download":
+    - img "download":
+  - button "up":
+    - img "up":
+  - generic: Input Parameters
+  - generic: Protein
+  - generic: ×1
+  - generic: A
+  - generic "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+  - generic: length 118
+  - generic: Protein
+  - generic: ×1
+  - generic: B
+  - generic "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  - generic: length 128

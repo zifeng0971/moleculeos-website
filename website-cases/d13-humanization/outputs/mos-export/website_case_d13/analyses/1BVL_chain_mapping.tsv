@@ -1,0 +1,5 @@
+mos_label	auth_chain_by_mapping	auth_chain_by_coordinates	max_delta_CA_A	role	n_ca	consistent
+A	A	A	0.0	VH	116	True
+B	C	C	0.0	VH	116	True
+C	B	B	0.0	VL	108	True
+D	D	D	0.0	VL	108	True

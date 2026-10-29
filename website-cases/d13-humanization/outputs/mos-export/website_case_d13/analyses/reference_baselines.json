@@ -1,0 +1,961 @@
+{
+ "parent_vs_1BVL_authorAB": {
+  "label": "parent_vs_1BVL_authorAB",
+  "ref": "/workspace/website_case_d13/structures/parent_1FDL_Fv.pdb",
+  "mob": "/workspace/website_case_d13/structures/ref_1BVL_authAB.pdb",
+  "ref_chains": {
+   "A": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   },
+   "B": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   }
+  },
+  "mob_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.806
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.773,
+    "max_displacement": 1.786
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.829,
+    "max_displacement": 1.624
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.465,
+    "max_displacement": 1.484
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 1.42,
+    "max_displacement": 2.728
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.67,
+    "max_displacement": 2.12
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.699,
+    "max_displacement": 1.432
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.528,
+    "max_displacement": 1.237
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.729,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.486,
+     "displacement_after_FR_fit_mean": 1.017,
+     "displacement_after_FR_fit_max": 1.756
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.215,
+     "displacement_after_FR_fit_mean": 1.747,
+     "displacement_after_FR_fit_max": 2.773
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.308,
+     "displacement_after_FR_fit_mean": 0.557,
+     "displacement_after_FR_fit_max": 0.848
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.248,
+     "displacement_after_FR_fit_mean": 0.712,
+     "displacement_after_FR_fit_max": 0.909
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.167,
+     "displacement_after_FR_fit_mean": 0.761,
+     "displacement_after_FR_fit_max": 0.845
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.594,
+     "displacement_after_FR_fit_mean": 0.886,
+     "displacement_after_FR_fit_max": 1.451
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 42,
+   "substitutions": [
+    {
+     "role": "VH",
+     "imgt_position": "5",
+     "parent": "K",
+     "candidate": "Q",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "14",
+     "parent": "A",
+     "candidate": "R",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "18",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "21",
+     "parent": "I",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "48",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "53",
+     "parent": "L",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "76",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "77",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "78",
+     "parent": "I",
+     "candidate": "M",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "79",
+     "parent": "S",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "82",
+     "parent": "N",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "85",
+     "parent": "S",
+     "candidate": "N",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "87",
+     "parent": "V",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "88",
+     "parent": "F",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "90",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "91",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "94",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "95",
+     "parent": "H",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "96",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "97",
+     "parent": "D",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "101",
+     "parent": "R",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "122",
+     "parent": "T",
+     "candidate": "S",
+     "region": "FR4"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "123",
+     "parent": "T",
+     "candidate": "L",
+     "region": "FR4"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "9",
+     "parent": "A",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "17",
+     "parent": "E",
+     "candidate": "D",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "18",
+     "parent": "T",
+     "candidate": "R",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "46",
+     "parent": "Q",
+     "candidate": "P",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "49",
+     "parent": "S",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "51",
+     "parent": "Q",
+     "candidate": "K",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "54",
+     "parent": "V",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "86",
+     "parent": "Q",
+     "candidate": "D",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "88",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "89",
+     "parent": "L",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "90",
+     "parent": "K",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "99",
+     "parent": "F",
+     "candidate": "I",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "100",
+     "parent": "G",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "101",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "120",
+     "parent": "G",
+     "candidate": "Q",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    }
+   ]
+  }
+ },
+ "parent_vs_1BVL_authorCD": {
+  "label": "parent_vs_1BVL_authorCD",
+  "ref": "/workspace/website_case_d13/structures/parent_1FDL_Fv.pdb",
+  "mob": "/workspace/website_case_d13/structures/ref_1BVL_authCD.pdb",
+  "ref_chains": {
+   "A": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   },
+   "B": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   }
+  },
+  "mob_chains": {
+   "C": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "D": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.663
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.584,
+    "max_displacement": 1.263
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.526,
+    "max_displacement": 1.177
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.429,
+    "max_displacement": 1.135
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 0.596,
+    "max_displacement": 0.97
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.631,
+    "max_displacement": 2.335
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.456,
+    "max_displacement": 1.408
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.65,
+    "max_displacement": 2.314
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.678,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.552,
+     "displacement_after_FR_fit_mean": 0.679,
+     "displacement_after_FR_fit_max": 1.124
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.258,
+     "displacement_after_FR_fit_mean": 0.74,
+     "displacement_after_FR_fit_max": 0.945
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.245,
+     "displacement_after_FR_fit_mean": 0.402,
+     "displacement_after_FR_fit_max": 0.748
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.252,
+     "displacement_after_FR_fit_mean": 0.461,
+     "displacement_after_FR_fit_max": 0.687
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.039,
+     "displacement_after_FR_fit_mean": 0.424,
+     "displacement_after_FR_fit_max": 0.467
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.487,
+     "displacement_after_FR_fit_mean": 0.574,
+     "displacement_after_FR_fit_max": 1.515
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 42,
+   "substitutions": [
+    {
+     "role": "VH",
+     "imgt_position": "5",
+     "parent": "K",
+     "candidate": "Q",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "14",
+     "parent": "A",
+     "candidate": "R",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "18",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "21",
+     "parent": "I",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "48",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "53",
+     "parent": "L",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "76",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "77",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "78",
+     "parent": "I",
+     "candidate": "M",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "79",
+     "parent": "S",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "82",
+     "parent": "N",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "85",
+     "parent": "S",
+     "candidate": "N",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "87",
+     "parent": "V",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "88",
+     "parent": "F",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "90",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "91",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "94",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "95",
+     "parent": "H",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "96",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "97",
+     "parent": "D",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "101",
+     "parent": "R",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "122",
+     "parent": "T",
+     "candidate": "S",
+     "region": "FR4"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "123",
+     "parent": "T",
+     "candidate": "L",
+     "region": "FR4"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "9",
+     "parent": "A",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "17",
+     "parent": "E",
+     "candidate": "D",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "18",
+     "parent": "T",
+     "candidate": "R",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "46",
+     "parent": "Q",
+     "candidate": "P",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "49",
+     "parent": "S",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "51",
+     "parent": "Q",
+     "candidate": "K",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "54",
+     "parent": "V",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "86",
+     "parent": "Q",
+     "candidate": "D",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "88",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "89",
+     "parent": "L",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "90",
+     "parent": "K",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "99",
+     "parent": "F",
+     "candidate": "I",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "100",
+     "parent": "G",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "101",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "120",
+     "parent": "G",
+     "candidate": "Q",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    }
+   ]
+  }
+ },
+ "1BVL_authorAB_vs_authorCD": {
+  "label": "1BVL_authorAB_vs_authorCD",
+  "ref": "/workspace/website_case_d13/structures/ref_1BVL_authAB.pdb",
+  "mob": "/workspace/website_case_d13/structures/ref_1BVL_authCD.pdb",
+  "ref_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "mob_chains": {
+   "C": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "D": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.816
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.75,
+    "max_displacement": 1.392
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.73,
+    "max_displacement": 1.388
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.542,
+    "max_displacement": 1.523
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 1.263,
+    "max_displacement": 2.644
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.675,
+    "max_displacement": 2.056
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.57,
+    "max_displacement": 0.981
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.763,
+    "max_displacement": 2.973
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.782,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.567,
+     "displacement_after_FR_fit_mean": 0.776,
+     "displacement_after_FR_fit_max": 1.387
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.241,
+     "displacement_after_FR_fit_mean": 1.599,
+     "displacement_after_FR_fit_max": 2.688
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.298,
+     "displacement_after_FR_fit_mean": 0.533,
+     "displacement_after_FR_fit_max": 0.761
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.237,
+     "displacement_after_FR_fit_mean": 0.755,
+     "displacement_after_FR_fit_max": 1.065
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.135,
+     "displacement_after_FR_fit_mean": 0.558,
+     "displacement_after_FR_fit_max": 0.6
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.238,
+     "displacement_after_FR_fit_mean": 0.63,
+     "displacement_after_FR_fit_max": 1.026
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 0,
+   "substitutions": []
+  }
+ }
+}

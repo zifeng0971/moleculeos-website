@@ -1,0 +1,1011 @@
+[
+  {
+    "items": [
+      {
+        "label": "A:GLU6",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:SER7",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLY9",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:LEU11",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:ALA24",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:PHE27",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR28",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:SER30",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:SER31",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:ILE33",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:PRO41",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:TYR52",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:PRO53",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:SER54",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLY55",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLY56",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:ILE57",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR58",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:PHE59",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:SER75",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:LYS76",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:ASN77",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:LEU101",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLY102",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR103",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:VAL104",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR105",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR106",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLN112",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:GLY113",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR114",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:LEU115",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "A:THR117",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VH chain A (binds antigen chains C)"
+      },
+      {
+        "label": "B:TYR32",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:TYR34",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:GLY43",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:LYS44",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:ASP52",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:TYR93",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:SER95",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:SER96",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:SER97",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      },
+      {
+        "label": "B:ARG99",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Paratope of VL chain B (binds antigen chains C)"
+      }
+    ],
+    "text": "Paratope\n43 residues · structure\nA:GLU6\nA:SER7\nA:GLY9\nA:LEU11\nA:ALA24\nA:PHE27\nA:THR28\nA:SER30\nA:SER31\nA:ILE33\nA:PRO41\nA:TYR52\nA:PRO53\nA:SER54\nA:GLY55\nA:GLY56\nA:ILE57\nA:THR58\nA:PHE59\nA:SER75\nA:LYS76\nA:ASN77\nA:LEU101\nA:GLY102\nA:THR103\nA:VAL104\nA:THR105\nA:THR106\nA:GLN112\nA:GLY113\nA:THR114\nA:LEU115\nA:THR117\nB:TYR32\nB:TYR34\nB:GLY43\nB:LYS44\nB:ASP52\nB:TYR93\nB:SER95\nB:SER96\nB:SER97\nB:ARG99",
+    "title": "Toggle highlight in 3D viewer"
+  },
+  {
+    "items": [
+      {
+        "label": "C:TYR15",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLY16",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:SER17",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ASN18",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:ILE37",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:TYR39",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLU41",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:GLU43",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:ASP44",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:LYS45",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:ASN46",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLN49",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:HIS52",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ASP56",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:LYS58",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:VAL59",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLN60",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:HIS61",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ARG65",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLN66",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:THR85",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:ASP86",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:LYS88",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ARG96",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)\nEpitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:MET98",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ILE99",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:SER100",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ALA104",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:TYR106",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:LYS119",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ASN121",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:ASP128",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:PRO129",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:VAL130",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:GLN139",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VH chain A)"
+      },
+      {
+        "label": "C:MET42",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:GLN83",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VL chain B)"
+      },
+      {
+        "label": "C:ARG108",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "Epitope on antigen chains C (bound by VL chain B)"
+      }
+    ],
+    "text": "Epitope\n38 residues · structure\nC:TYR15\nC:GLY16\nC:SER17\nC:ASN18\nC:ILE37\nC:TYR39\nC:GLU41\nC:GLU43\nC:ASP44\nC:LYS45\nC:ASN46\nC:GLN49\nC:HIS52\nC:ASP56\nC:LYS58\nC:VAL59\nC:GLN60\nC:HIS61\nC:ARG65\nC:GLN66\nC:THR85\nC:ASP86\nC:LYS88\nC:ARG96\nC:MET98\nC:ILE99\nC:SER100\nC:ALA104\nC:TYR106\nC:LYS119\nC:ASN121\nC:ASP128\nC:PRO129\nC:VAL130\nC:GLN139\nC:MET42\nC:GLN83\nC:ARG108",
+    "title": "Toggle highlight in 3D viewer"
+  },
+  {
+    "items": [
+      {
+        "label": "C:2-221",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Topological domain: Extracellular"
+      },
+      {
+        "label": "C:2-110",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Domain: Ig-like V-type"
+      },
+      {
+        "label": "C:116-208",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Domain: Ig-like C2-type"
+      }
+    ],
+    "text": "Domain\n3 residues · uniprot\nC:2-221\nC:2-110\nC:116-208",
+    "title": "Toggle highlight in 3D viewer"
+  },
+  {
+    "items": [
+      {
+        "label": "C:ASN18",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Glycosylation: N-linked (GlcNAc...) asparagine"
+      },
+      {
+        "label": "C:ASN175",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Glycosylation: N-linked (GlcNAc...) asparagine"
+      },
+      {
+        "label": "C:ASN183",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Glycosylation: N-linked (GlcNAc...) asparagine"
+      },
+      {
+        "label": "C:ASN202",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Glycosylation: N-linked (GlcNAc...) asparagine"
+      }
+    ],
+    "text": "PTM\n4 residues · uniprot\nC:ASN18\nC:ASN175\nC:ASN183\nC:ASN202",
+    "title": "Toggle highlight in 3D viewer"
+  },
+  {
+    "items": [
+      {
+        "label": "C:ARG221",
+        "style": {
+          "background": "rgb(29, 29, 29)",
+          "border": "1px solid rgb(58, 58, 58)",
+          "borderRadius": "5px",
+          "color": "rgb(214, 214, 214)",
+          "font": "11px / 12.65px \"SF Mono\", ui-monospace, Menlo, monospace"
+        },
+        "title": "UniProt Q9NZQ7 Mutagenesis (C→S): Largely abrogates multimerization, in vitro."
+      }
+    ],
+    "text": "UniProt Feature\n1 residue · uniprot\nC:ARG221",
+    "title": "Toggle highlight in 3D viewer"
+  }
+]

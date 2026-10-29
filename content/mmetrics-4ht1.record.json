@@ -1,0 +1,1254 @@
+{
+ "schema_version": "1.0.0",
+ "mmetrics_id": "a3204e85-aaa1-4d0e-b75c-99d921884441",
+ "protein_metadata": {
+  "entities": [
+   {
+    "entity_id": 1,
+    "entity_type": "protein",
+    "chain_id": [
+     "A"
+    ],
+    "sequence": "QEQLVESGGGLVQPGGSLTLSCKASGFDFSTYYMSWVRQAPGKGLEWIGTVYVRQGTTYYASWLNGRFTISSDNAQNTVDLKMNSLTAADTATYFCAKGGYNYDDAFVIWGPGTLVTVSF",
+    "antibody_fragment": "VH"
+   },
+   {
+    "entity_id": 2,
+    "entity_type": "protein",
+    "chain_id": [
+     "B"
+    ],
+    "sequence": "AIEMTQTPFSVSAAVGGTVTINCQASQNIYSNLAWYQQKPGQPPKLLMYTASYLASGVPSRFKGSGSRTEYTLTISGVQCADAATYYCQTAYYNSRPDTVAFGGGTEVVVK",
+    "antibody_fragment": "VL"
+   },
+   {
+    "entity_id": 3,
+    "entity_type": "protein",
+    "chain_id": [
+     "C"
+    ],
+    "sequence": "MKGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH"
+   }
+  ]
+ },
+ "annotations": {
+  "homology": [
+   {
+    "entity_id": 1,
+    "hit_id": "pdb|4HT1|T",
+    "hit_name": "PDB_4HT1",
+    "hit_db": "pdb",
+    "query_sequence_aligned": "MKGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "hit_sequence_aligned": "MKGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "midline": "MKGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "identity_percentage": 1,
+    "coverage": 1,
+    "e_value": 1.40317e-111,
+    "bit_score": 316.235,
+    "alignment_length": 154,
+    "gaps": 0,
+    "positive": 154,
+    "query_from": 1,
+    "query_to": 154,
+    "hit_from": 1,
+    "hit_to": 154
+   },
+   {
+    "entity_id": 1,
+    "hit_id": "sp|O43508.1|",
+    "hit_name": "UniProt_O43508",
+    "hit_db": "sp",
+    "query_sequence_aligned": "KGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "hit_sequence_aligned": "KGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "midline": "KGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "identity_percentage": 1,
+    "coverage": 0.9935,
+    "e_value": 3.70683e-110,
+    "bit_score": 316.235,
+    "alignment_length": 153,
+    "gaps": 0,
+    "positive": 153,
+    "query_from": 2,
+    "query_to": 154,
+    "hit_from": 97,
+    "hit_to": 249
+   },
+   {
+    "entity_id": 1,
+    "hit_id": "sp|O54907.2|",
+    "hit_name": "UniProt_O54907",
+    "hit_db": "sp",
+    "query_sequence_aligned": "KGRKTRARRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEEARINSSSPLRYNRQIGEFIVTRAGLYYLYCQVHFDEGKAVYLKLDLLVDGVLALRCLEEFSATAASSLGPQLRLCQVSGLLALRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "hit_sequence_aligned": "KGRKARPRRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEETKINSSSPLRYDRQIGEFTVIRAGLYYLYCQVHFDEGKAVYLKLDLLVNGVLALRCLEEFSATAASSPGPQLRLCQVSGLLPLRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "midline": "KGRK R RRAIAAHYEVHPRPGQDGAQAGVDGTVSGWEE +INSSSPLRY+RQIGEF V RAGLYYLYCQVHFDEGKAVYLKLDLLV+GVLALRCLEEFSATAASS GPQLRLCQVSGLL LRPGSSLRIRTLPWAHLKAAPFLTYFGLFQVH",
+    "identity_percentage": 0.9346,
+    "coverage": 0.9935,
+    "e_value": 4.75916e-103,
+    "bit_score": 298.516,
+    "alignment_length": 153,
+    "gaps": 0,
+    "positive": 146,
+    "query_from": 2,
+    "query_to": 154,
+    "hit_from": 97,
+    "hit_to": 249
+   }
+  ],
+  "uniprot": [
+   {
+    "entity_id": 1,
+    "uniprot_accession": "O43508",
+    "entry_name": "TNF12_HUMAN",
+    "reviewed": true,
+    "taxon_id": 9606,
+    "protein_name": "Tumor necrosis factor ligand superfamily member 12",
+    "gene_name": "TNFSF12",
+    "organism": "Homo sapiens",
+    "function_desc": "Binds to FN14 and possibly also to TNRFSF12/APO3. Weak inducer of apoptosis in some cell types. Mediates NF-kappa-B activation. Promotes angiogenesis and the proliferation of endothelial cells. Also involved in induction of inflammatory cytokines. Promotes IL8 secretion",
+    "family": "Belongs to the tumor necrosis factor family",
+    "cross_reference": {
+     "alphafolddb": [
+      "O43508"
+     ],
+     "kegg": [
+      "hsa:407977",
+      "hsa:8742"
+     ],
+     "go_cellular_component": [
+      "GO:0005576",
+      "GO:0005615",
+      "GO:0048471",
+      "GO:0005886"
+     ],
+     "go_molecular_function": [
+      "GO:0005125",
+      "GO:0005102",
+      "GO:0005164"
+     ],
+     "go_biological_process": [
+      "GO:0001525",
+      "GO:0006915",
+      "GO:0030154",
+      "GO:0043542",
+      "GO:0097191",
+      "GO:0006955",
+      "GO:0045766",
+      "GO:0001938",
+      "GO:2001238",
+      "GO:0045732",
+      "GO:0007165"
+     ],
+     "interpro": [
+      "IPR006052",
+      "IPR051748",
+      "IPR008983"
+     ],
+     "pfam": [
+      "PF00229"
+     ]
+    }
+   }
+  ],
+  "pdb": [
+   {
+    "entity_id": 1,
+    "pdb_id": "4HT1",
+    "title": "Human TWEAK in complex with the Fab fragment of a neutralizing antibody",
+    "experimental_method": "X-RAY DIFFRACTION",
+    "deposition_date": "2012-10-31",
+    "resolution": 2.498,
+    "r_factor": 0.1879,
+    "r_free": 0.2111
+   }
+  ],
+  "features": [
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      26,
+      33
+     ]
+    ],
+    "evidence": "H-CDR1 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      51,
+      58
+     ]
+    ],
+    "evidence": "H-CDR2 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      97,
+      109
+     ]
+    ],
+    "evidence": "H-CDR3 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      31,
+      35
+     ]
+    ],
+    "evidence": "H-CDR1 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      50,
+      66
+     ]
+    ],
+    "evidence": "H-CDR2 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      99,
+      109
+     ]
+    ],
+    "evidence": "H-CDR3 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      26,
+      32
+     ]
+    ],
+    "evidence": "H-CDR1 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      52,
+      57
+     ]
+    ],
+    "evidence": "H-CDR2 (chain A)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      99,
+      109
+     ]
+    ],
+    "evidence": "H-CDR3 (chain A)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      27,
+      32
+     ]
+    ],
+    "evidence": "L-CDR1 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      50,
+      52
+     ]
+    ],
+    "evidence": "L-CDR2 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "IMGT",
+    "range": [
+     [
+      89,
+      101
+     ]
+    ],
+    "evidence": "L-CDR3 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      24,
+      34
+     ]
+    ],
+    "evidence": "L-CDR1 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      50,
+      56
+     ]
+    ],
+    "evidence": "L-CDR2 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Kabat",
+    "range": [
+     [
+      89,
+      101
+     ]
+    ],
+    "evidence": "L-CDR3 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      24,
+      34
+     ]
+    ],
+    "evidence": "L-CDR1 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      50,
+      56
+     ]
+    ],
+    "evidence": "L-CDR2 (chain B)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "cdr",
+    "annotation_source": "Chothia",
+    "range": [
+     [
+      89,
+      101
+     ]
+    ],
+    "evidence": "L-CDR3 (chain B)"
+   },
+   {
+    "entity_id": 1,
+    "type": "region",
+    "annotation_type": "paratope",
+    "annotation_source": "structure",
+    "loc": [
+     31,
+     33,
+     52,
+     54,
+     55,
+     59,
+     101,
+     102,
+     103,
+     104,
+     105
+    ],
+    "evidence": "Paratope of VH chain A (binds antigen chains C)"
+   },
+   {
+    "entity_id": 3,
+    "type": "region",
+    "annotation_type": "epitope",
+    "annotation_source": "structure",
+    "loc": [
+     32,
+     34,
+     55,
+     57,
+     59,
+     87,
+     89,
+     90,
+     91,
+     95,
+     126,
+     127,
+     128,
+     130,
+     132
+    ],
+    "evidence": "Epitope on antigen chains C (bound by VH chain A)"
+   },
+   {
+    "entity_id": 2,
+    "type": "region",
+    "annotation_type": "paratope",
+    "annotation_source": "structure",
+    "loc": [
+     28,
+     30,
+     31,
+     49,
+     50,
+     53,
+     68,
+     92,
+     93,
+     97
+    ],
+    "evidence": "Paratope of VL chain B (binds antigen chains C)"
+   },
+   {
+    "entity_id": 3,
+    "type": "region",
+    "annotation_type": "epitope",
+    "annotation_source": "structure",
+    "loc": [
+     31,
+     32,
+     81,
+     87,
+     90,
+     91,
+     92,
+     95,
+     97,
+     99,
+     134,
+     135,
+     136
+    ],
+    "evidence": "Epitope on antigen chains C (bound by VL chain B)"
+   }
+  ]
+ },
+ "classification": {
+  "class": "antigen-antibody",
+  "confidence": "high",
+  "reasoning": "The structure contains human TWEAK (Tumor necrosis factor ligand superfamily member 12) bound to the VH and VL chains of a neutralizing antibody Fab fragment, as confirmed by the entity summary and the PDB title.",
+  "description": "This structure shows human Tumor necrosis factor ligand superfamily member 12 (TWEAK) in complex with the Fab fragment of a neutralizing antibody. TWEAK is a cytokine of the tumor necrosis factor family involved in angiogenesis, inflammatory cytokine induction, and apoptosis regulation. The neutralizing antibody binds to TWEAK, which can inhibit its interaction with its receptor FN14."
+ },
+ "interactions": {
+  "2d_plot_data": [
+   {
+    "interaction_key": "A:B",
+    "interaction_type": "protein-protein",
+    "partner_a": {
+     "entity_id": 1,
+     "chain_ids": [
+      "A"
+     ]
+    },
+    "partner_b": {
+     "entity_id": 2,
+     "chain_ids": [
+      "B"
+     ]
+    },
+    "meta": {
+     "pdb_id": "178278742071954_MODEL_SAMPLE_2",
+     "n_contacts": 15
+    },
+    "residues_a": [
+     {
+      "key": "GLN39.A",
+      "name": "GLN",
+      "number": 39,
+      "chain": "A",
+      "property_type": "Polar"
+     },
+     {
+      "key": "LEU45.A",
+      "name": "LEU",
+      "number": 45,
+      "chain": "A",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "TRP47.A",
+      "name": "TRP",
+      "number": 47,
+      "chain": "A",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "TYR103.A",
+      "name": "TYR",
+      "number": 103,
+      "chain": "A",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "ASP104.A",
+      "name": "ASP",
+      "number": 104,
+      "chain": "A",
+      "property_type": "Acidic"
+     },
+     {
+      "key": "PHE107.A",
+      "name": "PHE",
+      "number": 107,
+      "chain": "A",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "VAL108.A",
+      "name": "VAL",
+      "number": 108,
+      "chain": "A",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "TRP110.A",
+      "name": "TRP",
+      "number": 110,
+      "chain": "A",
+      "property_type": "Aromatic"
+     }
+    ],
+    "residues_b": [
+     {
+      "key": "GLN38.B",
+      "name": "GLN",
+      "number": 38,
+      "chain": "B",
+      "property_type": "Polar"
+     },
+     {
+      "key": "TYR87.B",
+      "name": "TYR",
+      "number": 87,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "PRO44.B",
+      "name": "PRO",
+      "number": 44,
+      "chain": "B",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "PHE102.B",
+      "name": "PHE",
+      "number": 102,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "VAL100.B",
+      "name": "VAL",
+      "number": 100,
+      "chain": "B",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "TYR93.B",
+      "name": "TYR",
+      "number": 93,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "ASP98.B",
+      "name": "ASP",
+      "number": 98,
+      "chain": "B",
+      "property_type": "Acidic"
+     },
+     {
+      "key": "ASN32.B",
+      "name": "ASN",
+      "number": 32,
+      "chain": "B",
+      "property_type": "Polar"
+     },
+     {
+      "key": "ALA91.B",
+      "name": "ALA",
+      "number": 91,
+      "chain": "B",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "TYR36.B",
+      "name": "TYR",
+      "number": 36,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "LEU46.B",
+      "name": "LEU",
+      "number": 46,
+      "chain": "B",
+      "property_type": "Aliphatic"
+     }
+    ],
+    "interactions": [
+     {
+      "residue_key_a": "GLN39.A",
+      "residue_key_b": "GLN38.B",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.68
+     },
+     {
+      "residue_key_a": "GLN39.A",
+      "residue_key_b": "TYR87.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.736
+     },
+     {
+      "residue_key_a": "LEU45.A",
+      "residue_key_b": "PRO44.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.92
+     },
+     {
+      "residue_key_a": "LEU45.A",
+      "residue_key_b": "PHE102.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.704
+     },
+     {
+      "residue_key_a": "TRP47.A",
+      "residue_key_b": "VAL100.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.893
+     },
+     {
+      "residue_key_a": "TYR103.A",
+      "residue_key_b": "TYR93.B",
+      "type": "PIPISTACK",
+      "category": "π-π Stack",
+      "distance": 5.73
+     },
+     {
+      "residue_key_a": "TYR103.A",
+      "residue_key_b": "ASP98.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 3.242
+     },
+     {
+      "residue_key_a": "ASP104.A",
+      "residue_key_b": "ASN32.B",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 3.271
+     },
+     {
+      "residue_key_a": "ASP104.A",
+      "residue_key_b": "ALA91.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.924
+     },
+     {
+      "residue_key_a": "PHE107.A",
+      "residue_key_b": "TYR36.B",
+      "type": "PIPISTACK",
+      "category": "π-π Stack",
+      "distance": 6.43
+     },
+     {
+      "residue_key_a": "PHE107.A",
+      "residue_key_b": "TYR36.B",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.839
+     },
+     {
+      "residue_key_a": "PHE107.A",
+      "residue_key_b": "PHE102.B",
+      "type": "PIPISTACK",
+      "category": "π-π Stack",
+      "distance": 6.196
+     },
+     {
+      "residue_key_a": "PHE107.A",
+      "residue_key_b": "PHE102.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.877
+     },
+     {
+      "residue_key_a": "VAL108.A",
+      "residue_key_b": "LEU46.B",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.874
+     },
+     {
+      "residue_key_a": "TRP110.A",
+      "residue_key_b": "TYR36.B",
+      "type": "PIPISTACK",
+      "category": "π-π Stack",
+      "distance": 5.617
+     }
+    ],
+    "metrics": {
+     "hbond_count": 3,
+     "vdw_count": 8,
+     "ionic_count": 0,
+     "pication_count": 0,
+     "pipistack_count": 4,
+     "pihbond_count": 0,
+     "ssbond_count": 0,
+     "halogen_count": 0,
+     "metallic_count": 0
+    }
+   },
+   {
+    "interaction_key": "A:C",
+    "interaction_type": "protein-protein",
+    "partner_a": {
+     "entity_id": 1,
+     "chain_ids": [
+      "A"
+     ]
+    },
+    "partner_b": {
+     "entity_id": 3,
+     "chain_ids": [
+      "C"
+     ]
+    },
+    "meta": {
+     "pdb_id": "178278742071954_MODEL_SAMPLE_2",
+     "n_contacts": 14
+    },
+    "residues_a": [
+     {
+      "key": "TYR52.A",
+      "name": "TYR",
+      "number": 52,
+      "chain": "A",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "ARG54.A",
+      "name": "ARG",
+      "number": 54,
+      "chain": "A",
+      "property_type": "Basic"
+     },
+     {
+      "key": "GLN55.A",
+      "name": "GLN",
+      "number": 55,
+      "chain": "A",
+      "property_type": "Polar"
+     },
+     {
+      "key": "TYR101.A",
+      "name": "TYR",
+      "number": 101,
+      "chain": "A",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "ASN102.A",
+      "name": "ASN",
+      "number": 102,
+      "chain": "A",
+      "property_type": "Polar"
+     },
+     {
+      "key": "ASP104.A",
+      "name": "ASP",
+      "number": 104,
+      "chain": "A",
+      "property_type": "Acidic"
+     }
+    ],
+    "residues_b": [
+     {
+      "key": "ASP89.C",
+      "name": "ASP",
+      "number": 89,
+      "chain": "C",
+      "property_type": "Acidic"
+     },
+     {
+      "key": "GLU57.C",
+      "name": "GLU",
+      "number": 57,
+      "chain": "C",
+      "property_type": "Acidic"
+     },
+     {
+      "key": "SER128.C",
+      "name": "SER",
+      "number": 128,
+      "chain": "C",
+      "property_type": "Polar"
+     },
+     {
+      "key": "ILE55.C",
+      "name": "ILE",
+      "number": 55,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "ARG130.C",
+      "name": "ARG",
+      "number": 130,
+      "chain": "C",
+      "property_type": "Basic"
+     },
+     {
+      "key": "LEU87.C",
+      "name": "LEU",
+      "number": 87,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "GLY90.C",
+      "name": "GLY",
+      "number": 90,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "ARG132.C",
+      "name": "ARG",
+      "number": 132,
+      "chain": "C",
+      "property_type": "Basic"
+     }
+    ],
+    "interactions": [
+     {
+      "residue_key_a": "TYR52.A",
+      "residue_key_b": "ASP89.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.917
+     },
+     {
+      "residue_key_a": "ARG54.A",
+      "residue_key_b": "GLU57.C",
+      "type": "IONIC",
+      "category": "Ionic",
+      "distance": 3.316
+     },
+     {
+      "residue_key_a": "ARG54.A",
+      "residue_key_b": "GLU57.C",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.641
+     },
+     {
+      "residue_key_a": "ARG54.A",
+      "residue_key_b": "GLU57.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 3.068
+     },
+     {
+      "residue_key_a": "ARG54.A",
+      "residue_key_b": "SER128.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.77
+     },
+     {
+      "residue_key_a": "GLN55.A",
+      "residue_key_b": "ASP89.C",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.975
+     },
+     {
+      "residue_key_a": "TYR101.A",
+      "residue_key_b": "ILE55.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.918
+     },
+     {
+      "residue_key_a": "TYR101.A",
+      "residue_key_b": "ARG130.C",
+      "type": "PICATION",
+      "category": "π-Cation",
+      "distance": 4.143
+     },
+     {
+      "residue_key_a": "ASN102.A",
+      "residue_key_b": "LEU87.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.89
+     },
+     {
+      "residue_key_a": "ASN102.A",
+      "residue_key_b": "GLY90.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.703
+     },
+     {
+      "residue_key_a": "ASN102.A",
+      "residue_key_b": "ARG130.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.709
+     },
+     {
+      "residue_key_a": "ASN102.A",
+      "residue_key_b": "ARG132.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.394
+     },
+     {
+      "residue_key_a": "ASP104.A",
+      "residue_key_b": "ARG132.C",
+      "type": "IONIC",
+      "category": "Ionic",
+      "distance": 3.635
+     },
+     {
+      "residue_key_a": "ASP104.A",
+      "residue_key_b": "ARG132.C",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.644
+     }
+    ],
+    "metrics": {
+     "hbond_count": 3,
+     "vdw_count": 8,
+     "ionic_count": 2,
+     "pication_count": 1,
+     "pipistack_count": 0,
+     "pihbond_count": 0,
+     "ssbond_count": 0,
+     "halogen_count": 0,
+     "metallic_count": 0
+    }
+   },
+   {
+    "interaction_key": "B:C",
+    "interaction_type": "protein-protein",
+    "partner_a": {
+     "entity_id": 2,
+     "chain_ids": [
+      "B"
+     ]
+    },
+    "partner_b": {
+     "entity_id": 3,
+     "chain_ids": [
+      "C"
+     ]
+    },
+    "meta": {
+     "pdb_id": "178278742071954_MODEL_SAMPLE_2",
+     "n_contacts": 5
+    },
+    "residues_a": [
+     {
+      "key": "SER31.B",
+      "name": "SER",
+      "number": 31,
+      "chain": "B",
+      "property_type": "Polar"
+     },
+     {
+      "key": "TYR49.B",
+      "name": "TYR",
+      "number": 49,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "TYR53.B",
+      "name": "TYR",
+      "number": 53,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "TYR93.B",
+      "name": "TYR",
+      "number": 93,
+      "chain": "B",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "PRO97.B",
+      "name": "PRO",
+      "number": 97,
+      "chain": "B",
+      "property_type": "Aliphatic"
+     }
+    ],
+    "residues_b": [
+     {
+      "key": "TYR81.C",
+      "name": "TYR",
+      "number": 81,
+      "chain": "C",
+      "property_type": "Aromatic"
+     },
+     {
+      "key": "VAL31.C",
+      "name": "VAL",
+      "number": 31,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "PRO135.C",
+      "name": "PRO",
+      "number": 135,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "LEU92.C",
+      "name": "LEU",
+      "number": 92,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     },
+     {
+      "key": "VAL91.C",
+      "name": "VAL",
+      "number": 91,
+      "chain": "C",
+      "property_type": "Aliphatic"
+     }
+    ],
+    "interactions": [
+     {
+      "residue_key_a": "SER31.B",
+      "residue_key_b": "TYR81.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.923
+     },
+     {
+      "residue_key_a": "TYR49.B",
+      "residue_key_b": "VAL31.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 3.244
+     },
+     {
+      "residue_key_a": "TYR53.B",
+      "residue_key_b": "PRO135.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.893
+     },
+     {
+      "residue_key_a": "TYR93.B",
+      "residue_key_b": "LEU92.C",
+      "type": "HBOND",
+      "category": "H-Bond",
+      "distance": 2.796
+     },
+     {
+      "residue_key_a": "PRO97.B",
+      "residue_key_b": "VAL91.C",
+      "type": "VDW",
+      "category": "VdW Contact",
+      "distance": 2.405
+     }
+    ],
+    "metrics": {
+     "hbond_count": 1,
+     "vdw_count": 4,
+     "ionic_count": 0,
+     "pication_count": 0,
+     "pipistack_count": 0,
+     "pihbond_count": 0,
+     "ssbond_count": 0,
+     "halogen_count": 0,
+     "metallic_count": 0
+    }
+   }
+  ]
+ },
+ "model_tasks": {
+  "results": [
+   {
+    "task_id": "",
+    "task_type": "mos-abnumber",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966093824",
+     "302620966429696"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-ablang",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966315008",
+     "302620966327296"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "sequence",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966343680"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-blast",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966355968",
+     "302620966474752"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-score-esm",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966372352"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-score-ligandmpnn",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966384640"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-abnativ",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966401024",
+     "302620966413312"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-paragraph",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966441984",
+     "302620966458368"
+    ],
+    "completed_at": 1782787671
+   },
+   {
+    "task_id": "",
+    "task_type": "mos-score-msat",
+    "task_name": "",
+    "task_description": "",
+    "status": "succeed",
+    "result_object_ids": [
+     "302620966487040"
+    ],
+    "completed_at": 1782787671
+   }
+  ]
+ }
+}

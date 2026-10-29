@@ -5,7 +5,7 @@ MMetrics provides high-value protein data to help users understand and analyze p
 When a protein is loaded into a project, MMetrics automatically starts calculations. Proteins can originate from:
 
 -   Local uploads (supports .pdb and .cif formats)
--   Structures generated via MOS calculations (such as MMFold or DeNovo)
+-   Structures generated via MoleculeOS calculations (such as MMFold or DeNovo)
 -   Structures loaded into the project via PDB ID
 
 Currently supported protein types:
@@ -33,7 +33,7 @@ MMetrics searches for homologous proteins and displays the top five results rank
 -   Sequence identity (% ID)
 -   Reference link (clickable for direct navigation)
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_homologous.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-06.mp4"} mp4={"/manual-assets/shared/original-manual/original-06.mp4"} poster={"/manual-assets/shared/original-manual/original-06-poster.webp"} caption={"Review homologs: inspect matches, sequence identity, and Reference links."} />
 
 <h3 id="6-mmetrics-overview-annotations"><a id="heading_74"></a><strong>Annotations</strong></h3>
 
@@ -44,21 +44,21 @@ MMetrics searches for homologous proteins and displays the top five results rank
 
 Clicking a region name highlights the corresponding area in the 3D structure viewer on the left. Multiple regions can be selected at once; click "clear" to reset all active selections.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_sections.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-07.mp4"} mp4={"/manual-assets/shared/original-manual/original-07.mp4"} poster={"/manual-assets/shared/original-manual/original-07-poster.webp"} caption={"Region annotations: select a functional region to highlight it in 3D; use Clear to remove the selection."} />
 
 Clicking a single residue highlights only that specific position in the 3D viewer.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_mutation.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-08.mp4"} mp4={"/manual-assets/shared/original-manual/original-08.mp4"} poster={"/manual-assets/shared/original-manual/original-08-poster.webp"} caption={"Single-residue annotations: select a residue to locate its position in the structure."} />
 
-For antibody-antigen complexes, you can select from five antibody numbering schemes: IMGT, Kabat, EU, AHo, and ANARCI.
+For antibody-antigen complexes, you can select from four antibody numbering schemes: IMGT, Kabat, EU, and AHo.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_annotation_antibody.MP4"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-09.mp4"} mp4={"/manual-assets/shared/original-manual/original-09.mp4"} poster={"/manual-assets/shared/original-manual/original-09-poster.webp"} caption={"Antibody numbering: switch numbering schemes and review CDR and chain annotations."} />
 
 <h3 id="6-mmetrics-overview-interaction-network"><a id="heading_75"></a><strong>Interaction network</strong></h3>
 
 MMetrics can display interactions in either a table or a 2D diagram. Click "Table" or "2D" on the right to switch views.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_interaction.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-10.mp4"} mp4={"/manual-assets/shared/original-manual/original-10.mp4"} poster={"/manual-assets/shared/original-manual/original-10-poster.webp"} caption={"Interaction network: switch between Table and 2D views."} />
 
 <h5 id="6-mmetrics-overview-enzyme-small-molecule"><a id="heading_76"></a><strong>Enzyme + Small Molecule:</strong></h5>
 
@@ -70,11 +70,11 @@ Amino acid node colors indicate chemical properties (such as aromatic, sulfur-co
 
 Click an interaction dashed line to display the distance between the small molecule and the protein.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-11.mp4"} mp4={"/manual-assets/shared/original-manual/original-11.mp4"} poster={"/manual-assets/shared/original-manual/original-11-poster.webp"} caption={"Small-molecule 2D interactions: select an edge to inspect interaction type and distance."} />
 
 An amino acid may have multiple interactions with the small molecule; click the residue directly to view all of its associated interactions.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_smallmolecule2D_2.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-12.mp4"} mp4={"/manual-assets/shared/original-manual/original-12.mp4"} poster={"/manual-assets/shared/original-manual/original-12-poster.webp"} caption={"Small-molecule residue interactions: select an amino acid to inspect its contacts."} />
 
 Table View:
 
@@ -92,7 +92,7 @@ This view makes it easy to locate specific interacting atoms and residues and in
 
 Clicking an interaction row highlights the pair in the 3D viewer.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_table.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-13.mp4"} mp4={"/manual-assets/shared/original-manual/original-13.mp4"} poster={"/manual-assets/shared/original-manual/original-13-poster.webp"} caption={"Interaction table: select a row to locate the atoms and residues in 3D."} />
 
 <h5 id="6-mmetrics-overview-antibody-antigen"><a id="heading_77"></a><strong>Antibody + Antigen:</strong></h5>
 
@@ -100,7 +100,7 @@ For antibody-antigen complexes, the 2D view displays interactions between indivi
 
 Dashed lines represent interaction types, node colors represent amino acid classes (see legend), and labels along the lines indicate interaction distances in Angstroms (Å).
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_2D.MOV"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-14.mp4"} mp4={"/manual-assets/shared/original-manual/original-14.mp4"} poster={"/manual-assets/shared/original-manual/original-14-poster.webp"} caption={"Antibody–antigen 2D interactions: inspect interface residues and contact distances."} />
 
 The Table view lists interaction types, antibody residues, antigen residues, and distances row by row.
 
@@ -108,7 +108,7 @@ Residues are shown in the format "Chain ID: Residue Name and Position" (for exam
 
 Clicking an interaction row in the table highlights the corresponding sites in the 3D viewer.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_intereaction_antibody_table.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-15.mp4"} mp4={"/manual-assets/shared/original-manual/original-15.mp4"} poster={"/manual-assets/shared/original-manual/original-15-poster.webp"} caption={"Antibody–antigen interaction table: check chains, residues, interaction types, and distances."} />
 
 <h3 id="6-mmetrics-overview-mutation-scoring"><a id="heading_78"></a><strong>Mutation Scoring</strong></h3>
 
@@ -126,4 +126,4 @@ Each record includes:
 
 Click "View" to preview results online, or click "Download" to export the full CSV file. You can combine scores across all three dimensions for a comprehensive evaluation when selecting mutations.
 
-<ManualMissingVideo src={""} external={false} reference={"MMetrics_mutation scoring_1.mov"} />
+<ManualVideo src={"/manual-assets/shared/original-manual/original-16.mp4"} mp4={"/manual-assets/shared/original-manual/original-16.mp4"} poster={"/manual-assets/shared/original-manual/original-16-poster.webp"} caption={"Mutation scoring: use View to preview and Download to export CSV results."} />

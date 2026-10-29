@@ -1,0 +1,853 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: 5GRJ
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: 5GRJ
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: E
+- generic: V
+- generic: Q
+- generic: L
+- generic: L
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: F
+- generic: T
+- generic: F
+- generic: S
+- generic: "31"
+- generic: S
+- generic: "Y"
+- generic: I
+- generic: M
+- generic: M
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: V
+- generic: S
+- generic: S
+- generic: "51"
+- generic: I
+- generic: "Y"
+- generic: P
+- generic: S
+- generic: G
+- generic: G
+- generic: I
+- generic: T
+- generic: F
+- generic: "Y"
+- generic: "61"
+- generic: A
+- generic: D
+- generic: T
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: R
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: "N"
+- generic: T
+- generic: L
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: R
+- generic: A
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: I
+- generic: K
+- generic: "101"
+- generic: L
+- generic: G
+- generic: T
+- generic: V
+- generic: T
+- generic: T
+- generic: V
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: "111"
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: Q
+- generic: S
+- generic: A
+- generic: L
+- generic: T
+- generic: Q
+- generic: P
+- generic: A
+- generic: S
+- generic: V
+- generic: "11"
+- generic: S
+- generic: G
+- generic: S
+- generic: P
+- generic: G
+- generic: Q
+- generic: S
+- generic: I
+- generic: T
+- generic: I
+- generic: "21"
+- generic: S
+- generic: C
+- generic: T
+- generic: G
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: V
+- generic: G
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: "N"
+- generic: "Y"
+- generic: V
+- generic: S
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: "41"
+- generic: H
+- generic: P
+- generic: G
+- generic: K
+- generic: A
+- generic: P
+- generic: K
+- generic: L
+- generic: M
+- generic: I
+- generic: "51"
+- generic: "Y"
+- generic: D
+- generic: V
+- generic: S
+- generic: "N"
+- generic: R
+- generic: P
+- generic: S
+- generic: G
+- generic: V
+- generic: "61"
+- generic: S
+- generic: "N"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: K
+- generic: S
+- generic: G
+- generic: "71"
+- generic: "N"
+- generic: T
+- generic: A
+- generic: S
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: G
+- generic: L
+- generic: "81"
+- generic: Q
+- generic: A
+- generic: E
+- generic: D
+- generic: E
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: "91"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: T
+- generic: R
+- generic: V
+- generic: "101"
+- generic: F
+- generic: G
+- generic: T
+- generic: G
+- generic: T
+- generic: K
+- generic: V
+- generic: T
+- generic: V
+- generic: L
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: "171"
+- generic: E
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: "181"
+- generic: R
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "191"
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: "201"
+- generic: E
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: "211"
+- generic: E
+- generic: L
+- generic: P
+- generic: L
+- generic: A
+- generic: H
+- generic: P
+- generic: P
+- generic: "N"
+- generic: E
+- generic: R
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 9f62a8e2-8
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: The user wants the ZIP now, containing the entire case02_complete dir plus all 1…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Autocompute still RUNNING. Preserve as incomplete.
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case02/analysis/add_tasks.py": (/workspace/case02/analysis/add_tasks.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case02 && python analysis/build_pack…": (cd /workspace/case02 && python analysis/build_pack…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now add a README.md at package root, and note the 08_tasks dir in the report. Th…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case02_complete/README.md": (/workspace/case02_complete/README.md)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && rm -f case02_complete.zip && pyth…": (cd /workspace && rm -f case02_complete.zip && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'EOF' import zipfile, …": (cd /workspace && python - <<'EOF' import zipfile, …)
+- img "check-circle":
+- generic: ▸
+- paragraph:
+  - strong:
+    - code: /workspace/case02_complete.zip
+    - text: — 100 files, 4.7 MB, integrity verified.
+- paragraph: No new model runs were started and nothing was sent to administrators.
+- paragraph:
+  - strong: What the ZIP contains
+- table:
+  - rowgroup:
+    - row "Folder Files Contents":
+      - columnheader "Folder"
+      - columnheader "Files"
+      - columnheader "Contents"
+  - rowgroup:
+    - row "00_structure 4 MOS-sanitized 5GRJ CIF (same as registered object), local sanitized copy + old→new chain/residue mapping, raw RCSB CIF":
+      - cell "00_structure":
+        - code: 00_structure
+      - cell "4"
+      - cell "MOS-sanitized 5GRJ CIF (same as registered object), local sanitized copy + old→new chain/residue mapping, raw RCSB CIF"
+    - row "01_overview 11 chain identity JSON/CSV, chain-C→Q9NZQ7 residue map, entity FASTAs (gapped + full), UniProt Q9NZQ7 FASTA/features":
+      - cell "01_overview":
+        - code: 01_overview
+      - cell "11"
+      - cell "chain identity JSON/CSV, chain-C→Q9NZQ7 residue map, entity FASTAs (gapped + full), UniProt Q9NZQ7 FASTA/features"
+    - row "02_homologs 10 ranked PD-L1 / VH / VL homolog tables + raw task JSON/FASTA":
+      - cell "02_homologs":
+        - code: 02_homologs
+      - cell "10"
+      - cell "ranked PD-L1 / VH / VL homolog tables + raw task JSON/FASTA"
+    - row "03_antibody_annotation 3 IMGT residue mapping, CDR/FR summary, annotation JSON":
+      - cell "03_antibody_annotation":
+        - code: 03_antibody_annotation
+      - cell "3"
+      - cell "IMGT residue mapping, CDR/FR summary, annotation JSON"
+    - row "04_liabilities 2 liability motif hits (JSON + CSV)":
+      - cell "04_liabilities":
+        - code: 04_liabilities
+      - cell "2"
+      - cell "liability motif hits (JSON + CSV)"
+    - row "05_interactions 18 per-pair interface burial, H-bonds, salt bridges, π-stacks, contacts, consolidated JSONL":
+      - cell "05_interactions":
+        - code: 05_interactions
+      - cell "18"
+      - cell "per-pair interface burial, H-bonds, salt bridges, π-stacks, contacts, consolidated JSONL"
+    - row "06_mutations 13 merged 4-axis table, per-position summary, recommendations, liability-mitigation candidates, raw per-task CSVs":
+      - cell "06_mutations":
+        - code: 06_mutations
+      - cell "13"
+      - cell "merged 4-axis table, per-position summary, recommendations, liability-mitigation candidates, raw per-task CSVs"
+    - row "07_provenance 4 module_status.md + .json, task manifest":
+      - cell "07_provenance":
+        - code: 07_provenance
+      - cell "4"
+      - cell "module_status.md + .json, task manifest":
+        - code: module_status.md
+        - text: +
+        - code: .json
+        - text: ", task manifest"
+    - row "08_tasks 27 12 task folders (11 launched + 1 autocompute) with raw downloads and task_record.json (exact payload, status, duration) + task_ledger.json":
+      - cell "08_tasks":
+        - code: 08_tasks
+      - cell "27"
+      - cell "12 task folders (11 launched + 1 autocompute) with raw downloads and task_record.json (exact payload, status, duration) + task_ledger.json":
+        - text: 12 task folders (11 launched + 1 autocompute) with raw downloads and
+        - code: task_record.json
+        - text: (exact payload, status, duration) +
+        - code: task_ledger.json
+    - row "scripts 7 every analysis script, in run order":
+      - cell "scripts":
+        - code: scripts
+      - cell "7"
+      - cell "every analysis script, in run order"
+- paragraph:
+  - strong: MMetrics preserved as incomplete.
+  - code: autocompute-5GRJ
+  - text: (task
+  - code: "342256189539328"
+  - text: ) was still RUNNING at the final snapshot, duration frozen at 2.1 min, zero output files, no registered result object — recorded that way in
+  - code: module_status.json
+  - text: and its task folder carries
+  - code: "\"status\": \"running\""
+  - text: with the note that it is not a delivered module. All eleven tasks launched explicitly for the case show
+  - code: succeeded
+  - text: with their raw CSV/JSON/FASTA attached.
+- paragraph:
+  - strong: "Headline data in the export:"
+  - text: avelumab buries 2293 Å² on PD-L1 via VH versus 657 Å² via VL (3.5:1), with PD-L1 Asp44 (UniProt D61) the dominant contact at 146.5 Å² and a single salt bridge to VL Arg99; the epitope spans UniProt 32–156 across IgV and IgC. Mutation scoring covers 9020 substitutions on three axes plus 8341 affinity ddG values, and the affinity model’s most damaging calls (VL Y34A, VH Y52A, VL Y93A, VH F59A) coincide exactly with the largest paratope buried surfaces — an independent geometric check on the predictions.
+- img "case02_complete.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- generic: 09:52
+- generic: 5GRJ
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised
+- dialog:
+  - button "Close":
+    - generic "Close":
+      - img "close":
+  - text: Task List
+  - button "reload":
+    - img "reload":
+  - table:
+    - rowgroup:
+      - row "name status filter type filter Creation Time Update Time actions":
+        - columnheader "name"
+        - columnheader "status filter":
+          - generic: status
+          - button "filter":
+            - img "filter":
+        - columnheader "type filter":
+          - generic: type
+          - button "filter":
+            - img "filter":
+        - columnheader "Creation Time":
+          - generic: Creation Time
+        - columnheader "Update Time":
+          - generic: Update Time
+        - columnheader "actions"
+    - rowgroup:
+      - row "5GRJ_complex_structstab Succeed Structure Fitness Mutation Effect 2026-10-20 9:45:20 2026-10-20 9:45:25 profile delete":
+        - cell "5GRJ_complex_structstab"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Structure Fitness Mutation Effect"
+        - cell "2026-10-20 9:45:20"
+        - cell "2026-10-20 9:45:25"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_complex_affinity Succeed Binding Affinity Mutation Scoring 2026-10-20 9:45:20 2026-10-20 9:46:49 profile delete":
+        - cell "5GRJ_complex_affinity"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Binding Affinity Mutation Scoring"
+        - cell "2026-10-20 9:45:20"
+        - cell "2026-10-20 9:46:49"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_PDL1_evolve Succeed Evolutionary Mutation Effect 2026-10-20 9:45:17 2026-10-20 9:48:41 profile delete":
+        - cell "5GRJ_PDL1_evolve"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Evolutionary Mutation Effect"
+        - cell "2026-10-20 9:45:17"
+        - cell "2026-10-20 9:48:41"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_VH_evolve Succeed Evolutionary Mutation Effect 2026-10-20 9:45:16 2026-10-20 9:46:40 profile delete":
+        - cell "5GRJ_VH_evolve"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Evolutionary Mutation Effect"
+        - cell "2026-10-20 9:45:16"
+        - cell "2026-10-20 9:46:40"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_VL_evolve Succeed Evolutionary Mutation Effect 2026-10-20 9:45:16 2026-10-20 9:47:19 profile delete":
+        - cell "5GRJ_VL_evolve"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Evolutionary Mutation Effect"
+        - cell "2026-10-20 9:45:16"
+        - cell "2026-10-20 9:47:19"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_PDL1_seqfitness Succeed Seq Fitness Mutation Effect 2026-10-20 9:45:14 2026-10-20 9:45:25 profile delete":
+        - cell "5GRJ_PDL1_seqfitness"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Seq Fitness Mutation Effect"
+        - cell "2026-10-20 9:45:14"
+        - cell "2026-10-20 9:45:25"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_VL_seqfitness Succeed Seq Fitness Mutation Effect 2026-10-20 9:45:13 2026-10-20 9:45:18 profile delete":
+        - cell "5GRJ_VL_seqfitness"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Seq Fitness Mutation Effect"
+        - cell "2026-10-20 9:45:13"
+        - cell "2026-10-20 9:45:18"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_VH_seqfitness Succeed Seq Fitness Mutation Effect 2026-10-20 9:45:12 2026-10-20 9:45:15 profile delete":
+        - cell "5GRJ_VH_seqfitness"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Seq Fitness Mutation Effect"
+        - cell "2026-10-20 9:45:12"
+        - cell "2026-10-20 9:45:15"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_PDL1_homologs Succeed Sequence Similarity Search 2026-10-20 9:45:10 2026-10-20 9:45:13 profile delete":
+        - cell "5GRJ_PDL1_homologs"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Sequence Similarity Search"
+        - cell "2026-10-20 9:45:10"
+        - cell "2026-10-20 9:45:13"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "5GRJ_VH_homologs Succeed Sequence Similarity Search 2026-10-20 9:45:10 2026-10-20 9:45:16 profile delete":
+        - cell "5GRJ_VH_homologs"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Sequence Similarity Search"
+        - cell "2026-10-20 9:45:10"
+        - cell "2026-10-20 9:45:16"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+  - list:
+    - listitem "Previous Page":
+      - button "left" [disabled]:
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "2":
+      - generic: "2"
+    - listitem "Next Page":
+      - button "right":
+        - img "right":

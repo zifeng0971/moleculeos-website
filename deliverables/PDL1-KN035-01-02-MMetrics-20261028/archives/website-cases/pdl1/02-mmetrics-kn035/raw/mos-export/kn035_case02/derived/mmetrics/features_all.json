@@ -1,0 +1,179 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_path": "annotations.features",
+  "n_features": 11,
+  "raw": [
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          26,
+          33
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          51,
+          58
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "IMGT",
+      "range": [
+        [
+          97,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          31,
+          35
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          50,
+          66
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Kabat",
+      "range": [
+        [
+          99,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          26,
+          32
+        ]
+      ],
+      "evidence": "H-CDR1 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          52,
+          57
+        ]
+      ],
+      "evidence": "H-CDR2 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "cdr",
+      "annotation_source": "Chothia",
+      "range": [
+        [
+          99,
+          117
+        ]
+      ],
+      "evidence": "H-CDR3 (chain B)"
+    },
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "paratope",
+      "annotation_source": "structure",
+      "loc": [
+        27,
+        29,
+        30,
+        32,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        108,
+        109,
+        111,
+        113,
+        114,
+        115,
+        116
+      ],
+      "evidence": "Paratope of VHH chain B (binds antigen chains A)"
+    },
+    {
+      "entity_id": 1,
+      "type": "region",
+      "annotation_type": "epitope",
+      "annotation_source": "structure",
+      "loc": [
+        38,
+        40,
+        42,
+        45,
+        47,
+        50,
+        52,
+        53,
+        57,
+        60,
+        97,
+        99,
+        101,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109
+      ],
+      "evidence": "Epitope on antigen chains A (bound by VHH chain B)"
+    }
+  ]
+}

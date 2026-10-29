@@ -1,0 +1,1588 @@
+- text: MOS
+- generic: BETA
+- generic: D13-Humanization-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: aligned_1FDLFv_humanization_3_Fv
+- img "caret-down":
+- generic: aligned_1FDLFv_humanization_3_Fv
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_9
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_9
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_2
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_2
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_3
+- img "caret-down":
+- generic: superposed_1FDLparent_humanization_3
+- img "caret-down":
+- generic: 1BVL
+- img "caret-down":
+- generic: 1BVL
+- img "caret-down":
+- generic: 1FDL
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: 1FDL
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: D
+- generic: I
+- generic: Q
+- generic: M
+- generic: T
+- generic: Q
+- generic: S
+- generic: P
+- generic: A
+- generic: S
+- generic: "11"
+- generic: L
+- generic: S
+- generic: A
+- generic: S
+- generic: V
+- generic: G
+- generic: E
+- generic: T
+- generic: V
+- generic: T
+- generic: "21"
+- generic: I
+- generic: T
+- generic: C
+- generic: R
+- generic: A
+- generic: S
+- generic: G
+- generic: "N"
+- generic: I
+- generic: H
+- generic: "31"
+- generic: "N"
+- generic: "Y"
+- generic: L
+- generic: A
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: K
+- generic: Q
+- generic: "41"
+- generic: G
+- generic: K
+- generic: S
+- generic: P
+- generic: Q
+- generic: L
+- generic: L
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: "51"
+- generic: T
+- generic: T
+- generic: T
+- generic: L
+- generic: A
+- generic: D
+- generic: G
+- generic: V
+- generic: P
+- generic: S
+- generic: "61"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: S
+- generic: G
+- generic: T
+- generic: Q
+- generic: "71"
+- generic: "Y"
+- generic: S
+- generic: L
+- generic: K
+- generic: I
+- generic: "N"
+- generic: S
+- generic: L
+- generic: Q
+- generic: P
+- generic: "81"
+- generic: E
+- generic: D
+- generic: F
+- generic: G
+- generic: S
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: Q
+- generic: H
+- generic: "91"
+- generic: F
+- generic: W
+- generic: S
+- generic: T
+- generic: P
+- generic: R
+- generic: T
+- generic: F
+- generic: G
+- generic: G
+- generic: "101"
+- generic: G
+- generic: T
+- generic: K
+- generic: L
+- generic: E
+- generic: I
+- generic: K
+- generic: R
+- generic: A
+- generic: D
+- generic: "111"
+- generic: A
+- generic: A
+- generic: P
+- generic: T
+- generic: V
+- generic: S
+- generic: I
+- generic: F
+- generic: P
+- generic: P
+- generic: "121"
+- generic: S
+- generic: S
+- generic: E
+- generic: Q
+- generic: L
+- generic: T
+- generic: S
+- generic: G
+- generic: G
+- generic: A
+- generic: "131"
+- generic: S
+- generic: V
+- generic: V
+- generic: C
+- generic: F
+- generic: L
+- generic: "N"
+- generic: "N"
+- generic: F
+- generic: "Y"
+- generic: "141"
+- generic: P
+- generic: K
+- generic: D
+- generic: I
+- generic: "N"
+- generic: V
+- generic: K
+- generic: W
+- generic: K
+- generic: I
+- generic: "151"
+- generic: D
+- generic: G
+- generic: S
+- generic: E
+- generic: R
+- generic: Q
+- generic: "N"
+- generic: G
+- generic: V
+- generic: L
+- generic: "161"
+- generic: "N"
+- generic: S
+- generic: W
+- generic: T
+- generic: D
+- generic: Q
+- generic: D
+- generic: S
+- generic: K
+- generic: D
+- generic: "171"
+- generic: S
+- generic: T
+- generic: "Y"
+- generic: S
+- generic: M
+- generic: S
+- generic: S
+- generic: T
+- generic: L
+- generic: T
+- generic: "181"
+- generic: L
+- generic: T
+- generic: K
+- generic: D
+- generic: E
+- generic: "Y"
+- generic: E
+- generic: R
+- generic: H
+- generic: "N"
+- generic: "191"
+- generic: S
+- generic: "Y"
+- generic: T
+- generic: C
+- generic: E
+- generic: A
+- generic: T
+- generic: H
+- generic: K
+- generic: T
+- generic: "201"
+- generic: S
+- generic: T
+- generic: S
+- generic: P
+- generic: I
+- generic: V
+- generic: K
+- generic: S
+- generic: F
+- generic: "N"
+- generic: "211"
+- generic: R
+- generic: "N"
+- generic: E
+- generic: C
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: K
+- generic: E
+- generic: S
+- generic: G
+- generic: P
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: A
+- generic: P
+- generic: S
+- generic: Q
+- generic: S
+- generic: L
+- generic: S
+- generic: I
+- generic: "21"
+- generic: T
+- generic: C
+- generic: T
+- generic: V
+- generic: S
+- generic: G
+- generic: F
+- generic: S
+- generic: L
+- generic: T
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: G
+- generic: V
+- generic: "N"
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: P
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: L
+- generic: G
+- generic: M
+- generic: "51"
+- generic: I
+- generic: W
+- generic: G
+- generic: D
+- generic: G
+- generic: "N"
+- generic: T
+- generic: D
+- generic: "Y"
+- generic: "N"
+- generic: "61"
+- generic: S
+- generic: A
+- generic: L
+- generic: K
+- generic: S
+- generic: R
+- generic: L
+- generic: S
+- generic: I
+- generic: S
+- generic: "71"
+- generic: K
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: S
+- generic: Q
+- generic: V
+- generic: F
+- generic: L
+- generic: "81"
+- generic: K
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: H
+- generic: T
+- generic: D
+- generic: D
+- generic: T
+- generic: "91"
+- generic: A
+- generic: R
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: E
+- generic: R
+- generic: D
+- generic: "101"
+- generic: "Y"
+- generic: R
+- generic: L
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: "111"
+- generic: T
+- generic: L
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: A
+- generic: S
+- generic: T
+- generic: T
+- generic: "121"
+- generic: P
+- generic: P
+- generic: S
+- generic: V
+- generic: F
+- generic: P
+- generic: L
+- generic: A
+- generic: P
+- generic: G
+- generic: "131"
+- generic: S
+- generic: A
+- generic: A
+- generic: Q
+- generic: T
+- generic: "N"
+- generic: S
+- generic: M
+- generic: V
+- generic: T
+- generic: "141"
+- generic: L
+- generic: G
+- generic: C
+- generic: L
+- generic: V
+- generic: K
+- generic: G
+- generic: "Y"
+- generic: F
+- generic: P
+- generic: "151"
+- generic: E
+- generic: P
+- generic: V
+- generic: T
+- generic: V
+- generic: T
+- generic: W
+- generic: "N"
+- generic: S
+- generic: G
+- generic: "161"
+- generic: S
+- generic: L
+- generic: S
+- generic: S
+- generic: G
+- generic: V
+- generic: H
+- generic: T
+- generic: F
+- generic: P
+- generic: "171"
+- generic: A
+- generic: V
+- generic: L
+- generic: Q
+- generic: S
+- generic: D
+- generic: L
+- generic: "Y"
+- generic: T
+- generic: L
+- generic: "181"
+- generic: S
+- generic: S
+- generic: S
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: S
+- generic: S
+- generic: P
+- generic: "191"
+- generic: R
+- generic: P
+- generic: S
+- generic: E
+- generic: T
+- generic: V
+- generic: T
+- generic: C
+- generic: "N"
+- generic: V
+- generic: "201"
+- generic: A
+- generic: H
+- generic: P
+- generic: A
+- generic: S
+- generic: S
+- generic: T
+- generic: K
+- generic: V
+- generic: D
+- generic: "211"
+- generic: K
+- generic: K
+- generic: I
+- generic: V
+- generic: P
+- generic: R
+- generic: D
+- generic: C
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: K
+- generic: V
+- generic: F
+- generic: G
+- generic: R
+- generic: C
+- generic: E
+- generic: L
+- generic: A
+- generic: A
+- generic: "11"
+- generic: A
+- generic: M
+- generic: K
+- generic: R
+- generic: H
+- generic: G
+- generic: L
+- generic: D
+- generic: "N"
+- generic: "Y"
+- generic: "21"
+- generic: R
+- generic: G
+- generic: "Y"
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: W
+- generic: V
+- generic: C
+- generic: "31"
+- generic: A
+- generic: A
+- generic: K
+- generic: F
+- generic: E
+- generic: S
+- generic: "N"
+- generic: F
+- generic: "N"
+- generic: T
+- generic: "41"
+- generic: Q
+- generic: A
+- generic: T
+- generic: "N"
+- generic: R
+- generic: "N"
+- generic: T
+- generic: D
+- generic: G
+- generic: S
+- generic: "51"
+- generic: T
+- generic: D
+- generic: "Y"
+- generic: G
+- generic: I
+- generic: L
+- generic: Q
+- generic: I
+- generic: "N"
+- generic: S
+- generic: "61"
+- generic: R
+- generic: W
+- generic: W
+- generic: C
+- generic: "N"
+- generic: D
+- generic: G
+- generic: R
+- generic: T
+- generic: P
+- generic: "71"
+- generic: G
+- generic: S
+- generic: R
+- generic: "N"
+- generic: L
+- generic: C
+- generic: "N"
+- generic: I
+- generic: P
+- generic: C
+- generic: "81"
+- generic: S
+- generic: A
+- generic: L
+- generic: L
+- generic: S
+- generic: S
+- generic: D
+- generic: I
+- generic: T
+- generic: A
+- generic: "91"
+- generic: S
+- generic: V
+- generic: "N"
+- generic: C
+- generic: A
+- generic: K
+- generic: K
+- generic: I
+- generic: V
+- generic: S
+- generic: "101"
+- generic: D
+- generic: G
+- generic: "N"
+- generic: G
+- generic: M
+- generic: "N"
+- generic: A
+- generic: W
+- generic: V
+- generic: A
+- generic: "111"
+- generic: W
+- generic: R
+- generic: "N"
+- generic: R
+- generic: C
+- generic: K
+- generic: G
+- generic: T
+- generic: D
+- generic: V
+- generic: "121"
+- generic: Q
+- generic: A
+- generic: W
+- generic: I
+- generic: R
+- generic: G
+- generic: C
+- generic: R
+- generic: L
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Description
+- generic: Antigen–Antibody
+- generic: "confidence: high"
+- generic: This structure is an antibody fragment (Fab-like VL/VH pair) bound to Lysozyme C, a glycosyl hydrolase 22 family enzyme with bacteriolytic activity. The VL and VH chains form the antigen-binding module, while chain C corresponds to the lysozyme antigen recognized by the antibody. The complex illustrates molecular recognition of a bacterial cell-wall-degrading enzyme by an antibody, with no indication of a biologically relevant small-molecule ligand in the provided summary.
+- generic: ReasoningThe structure contains two antibody variable-domain chains, annotated as VL (chain A) and VH (chain B), forming an antibody fragment. Chain C is a separate protein antigen, identified by UniProt annotation as Lysozyme C, and the contact data show direct VL/VH interface with the antigen. Therefore the complex is best classified as antigen-antibody rather than a generic protein-protein complex.
+- generic: Chain A
+- text: · protein · VL
+- generic: Chain B
+- text: · protein · VH
+- generic: Chain C
+- text: · protein
+- generic: Homologs
+- generic: Searched by antigen sequence similarity
+- generic: No significant homologs found.
+- generic: Annotations
+- generic: CDR numbering
+- button "IMGT"
+- button "Kabat"
+- button "Chothia"
+- button "Binding Pocket 1 residue · uniprot C:ASP101":
+  - generic: Binding Pocket
+  - generic: 1 residue · uniprot
+  - button "C:ASP101"
+- button "Active Sites 2 residues · uniprot C:GLU35 C:ASP52":
+  - generic: Active Sites
+  - generic: 2 residues · uniprot
+  - button "C:GLU35"
+  - button "C:ASP52"
+- button "CDR 6 residues · IMGT A:27-32 A:50-52 A:89-97 B:26-33 B:51-57 B:96-105":
+  - generic: CDR
+  - generic: 6 residues · IMGT
+  - button "A:27-32"
+  - button "A:50-52"
+  - button "A:89-97"
+  - button "B:26-33"
+  - button "B:51-57"
+  - button "B:96-105"
+- button "Paratope 47 residues · structure A:TYR32 A:TYR49 A:TYR50 A:THR53 A:PHE91 A:TRP92 A:SER93 A:SER122 A:GLU123 A:THR126 A:ARG211 A:ASN212 A:GLU213 A:CYS214 B:SER17 B:THR30 B:GLY31 B:TYR32 B:TRP52 B:GLY53 B:ASP54 B:THR57 B:TYR59 B:LYS64 B:SER65 B:ARG66 B:LEU67 B:SER68 B:LYS81 B:ASN83 B:SER84 B:ARG99 B:ASP100 B:TYR101 B:ARG102 B:SER159 B:ASN199 B:LYS208 B:VAL209 B:ASP210 B:LYS211 B:LYS212 B:VAL214 B:PRO215 B:ARG216 B:ASP217 B:CYS218":
+  - generic: Paratope
+  - generic: 47 residues · structure
+  - button "A:TYR32"
+  - button "A:TYR49"
+  - button "A:TYR50"
+  - button "A:THR53"
+  - button "A:PHE91"
+  - button "A:TRP92"
+  - button "A:SER93"
+  - button "A:SER122"
+  - button "A:GLU123"
+  - button "A:THR126"
+  - button "A:ARG211"
+  - button "A:ASN212"
+  - button "A:GLU213"
+  - button "A:CYS214"
+  - button "B:SER17"
+  - button "B:THR30"
+  - button "B:GLY31"
+  - button "B:TYR32"
+  - button "B:TRP52"
+  - button "B:GLY53"
+  - button "B:ASP54"
+  - button "B:THR57"
+  - button "B:TYR59"
+  - button "B:LYS64"
+  - button "B:SER65"
+  - button "B:ARG66"
+  - button "B:LEU67"
+  - button "B:SER68"
+  - button "B:LYS81"
+  - button "B:ASN83"
+  - button "B:SER84"
+  - button "B:ARG99"
+  - button "B:ASP100"
+  - button "B:TYR101"
+  - button "B:ARG102"
+  - button "B:SER159"
+  - button "B:ASN199"
+  - button "B:LYS208"
+  - button "B:VAL209"
+  - button "B:ASP210"
+  - button "B:LYS211"
+  - button "B:LYS212"
+  - button "B:VAL214"
+  - button "B:PRO215"
+  - button "B:ARG216"
+  - button "B:ASP217"
+  - button "B:CYS218"
+- button "Epitope 46 residues · structure C:ARG5 C:CYS6 C:GLU7 C:ASP18 C:ASN19 C:GLY22 C:SER24 C:LEU25 C:THR43 C:ARG45 C:ARG68 C:GLN121 C:ILE124 C:ARG125 C:GLY126 C:CYS127 C:ARG128 C:VAL2 C:TYR20 C:ARG21 C:TYR23 C:ASN27 C:PHE34 C:GLU35 C:SER36 C:ASN37 C:ASN39 C:ASN44 C:ASN46 C:THR47 C:GLY49 C:GLN57 C:LEU75 C:ASN77 C:LYS96 C:LYS97 C:SER100 C:ASP101 C:GLY102 C:LYS116 C:GLY117 C:THR118 C:ASP119 C:VAL120 C:ALA122 C:LEU129":
+  - generic: Epitope
+  - generic: 46 residues · structure
+  - button "C:ARG5"
+  - button "C:CYS6"
+  - button "C:GLU7"
+  - button "C:ASP18"
+  - button "C:ASN19"
+  - button "C:GLY22"
+  - button "C:SER24"
+  - button "C:LEU25"
+  - button "C:THR43"
+  - button "C:ARG45"
+  - button "C:ARG68"
+  - button "C:GLN121"
+  - button "C:ILE124"
+  - button "C:ARG125"
+  - button "C:GLY126"
+  - button "C:CYS127"
+  - button "C:ARG128"
+  - button "C:VAL2"
+  - button "C:TYR20"
+  - button "C:ARG21"
+  - button "C:TYR23"
+  - button "C:ASN27"
+  - button "C:PHE34"
+  - button "C:GLU35"
+  - button "C:SER36"
+  - button "C:ASN37"
+  - button "C:ASN39"
+  - button "C:ASN44"
+  - button "C:ASN46"
+  - button "C:THR47"
+  - button "C:GLY49"
+  - button "C:GLN57"
+  - button "C:LEU75"
+  - button "C:ASN77"
+  - button "C:LYS96"
+  - button "C:LYS97"
+  - button "C:SER100"
+  - button "C:ASP101"
+  - button "C:GLY102"
+  - button "C:LYS116"
+  - button "C:GLY117"
+  - button "C:THR118"
+  - button "C:ASP119"
+  - button "C:VAL120"
+  - button "C:ALA122"
+  - button "C:LEU129"
+- button "Domain 1 residue · uniprot C:1-129":
+  - generic: Domain
+  - generic: 1 residue · uniprot
+  - button "C:1-129"
+- generic: Interaction Network
+- button "Table" [active]
+- button "2D"
+- generic: H-Bond 10
+- generic: VdW Contact 61
+- generic: Salt Bridge 2
+- generic: π-Cation 1
+- generic: π-π Stack 4
+- generic: π-H Bond 1
+- generic: Disulfide Bond 1
+- table:
+  - rowgroup:
+    - row "Type Residue A Residue B Dist (Å)":
+      - columnheader "Type"
+      - columnheader "Residue A"
+      - columnheader "Residue B"
+      - columnheader "Dist (Å)"
+  - rowgroup:
+    - row "H-Bond A:SER162 B:PRO170 2.62":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:SER162"
+      - cell "B:PRO170"
+      - cell "2.62"
+    - row "H-Bond A:ASN138 B:HIS167 2.73":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:ASN138"
+      - cell "B:HIS167"
+      - cell "2.73"
+    - row "H-Bond A:ARG96 B:GLU98 2.80":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:ARG96"
+      - cell "B:GLU98"
+      - cell "2.80"
+    - row "H-Bond A:PRO119 B:ARG216 2.82":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:PRO119"
+      - cell "B:ARG216"
+      - cell "2.82"
+    - row "H-Bond A:ASP1 B:SER61 2.88":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:ASP1"
+      - cell "B:SER61"
+      - cell "2.88"
+    - row "H-Bond A:GLU123 B:LYS211 2.90":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:GLU123"
+      - cell "B:LYS211"
+      - cell "2.90"
+    - row "H-Bond A:TYR36 B:LEU103 3.05":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:TYR36"
+      - cell "B:LEU103"
+      - cell "3.05"
+    - row "H-Bond A:ASN137 B:SER183 3.07":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:ASN137"
+      - cell "B:SER183"
+      - cell "3.07"
+    - row "H-Bond A:GLN38 B:GLN39 3.09":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:GLN38"
+      - cell "B:GLN39"
+      - cell "3.09"
+    - row "H-Bond A:SER176 B:SER181 3.32":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:SER176"
+      - cell "B:SER181"
+      - cell "3.32"
+    - row "Ionic A:GLU123 B:LYS211 3.09":
+      - cell "Ionic":
+        - generic: Ionic
+      - cell "A:GLU123"
+      - cell "B:LYS211"
+      - cell "3.09"
+    - row "Ionic A:ARG96 B:GLU98 3.52":
+      - cell "Ionic":
+        - generic: Ionic
+      - cell "A:ARG96"
+      - cell "B:GLU98"
+      - cell "3.52"
+    - row "π-Cation A:TYR49 B:ARG102 3.89":
+      - cell "π-Cation":
+        - generic: π-Cation
+      - cell "A:TYR49"
+      - cell "B:ARG102"
+      - cell "3.89"
+    - row "π-H Bond A:ARG96 B:TRP47 3.79":
+      - cell "π-H Bond":
+        - generic: π-H Bond
+      - cell "A:ARG96"
+      - cell "B:TRP47"
+      - cell "3.79"
+    - row "π-π Stack A:TYR36 B:TRP106 5.33":
+      - cell "π-π Stack":
+        - generic: π-π Stack
+      - cell "A:TYR36"
+      - cell "B:TRP106"
+      - cell "5.33"
+    - row "π-π Stack A:PHE135 B:PHE169 5.68":
+      - cell "π-π Stack":
+        - generic: π-π Stack
+      - cell "A:PHE135"
+      - cell "B:PHE169"
+      - cell "5.68"
+    - row "π-π Stack A:TYR32 B:TYR101 5.68":
+      - cell "π-π Stack":
+        - generic: π-π Stack
+      - cell "A:TYR32"
+      - cell "B:TYR101"
+      - cell "5.68"
+    - row "π-π Stack A:PHE98 B:TRP47 6.36":
+      - cell "π-π Stack":
+        - generic: π-π Stack
+      - cell "A:PHE98"
+      - cell "B:TRP47"
+      - cell "6.36"
+    - row "Salt Bridge A:CYS214 B:CYS218 2.02":
+      - cell "Salt Bridge":
+        - generic: Salt Bridge
+      - cell "A:CYS214"
+      - cell "B:CYS218"
+      - cell "2.02"
+    - row "VdW Contact A:SER162 B:PRO170 2.62":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER162"
+      - cell "B:PRO170"
+      - cell "2.62"
+    - row "VdW Contact A:ASN138 B:HIS167 2.73":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASN138"
+      - cell "B:HIS167"
+      - cell "2.73"
+    - row "VdW Contact A:ARG96 B:GLU98 2.75":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ARG96"
+      - cell "B:GLU98"
+      - cell "2.75"
+    - row "VdW Contact A:PRO119 B:ARG216 2.82":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO119"
+      - cell "B:ARG216"
+      - cell "2.82"
+    - row "VdW Contact A:SER174 B:HIS167 2.88":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER174"
+      - cell "B:HIS167"
+      - cell "2.88"
+    - row "VdW Contact A:ASP1 B:SER61 2.88":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASP1"
+      - cell "B:SER61"
+      - cell "2.88"
+    - row "VdW Contact A:CYS214 B:SER131 2.89":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:CYS214"
+      - cell "B:SER131"
+      - cell "2.89"
+    - row "VdW Contact A:GLU123 B:LYS211 2.90":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:GLU123"
+      - cell "B:LYS211"
+      - cell "2.90"
+    - row "VdW Contact A:CYS214 B:CYS218 3.02":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:CYS214"
+      - cell "B:CYS218"
+      - cell "3.02"
+    - row "VdW Contact A:ASN137 B:HIS167 3.02":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASN137"
+      - cell "B:HIS167"
+      - cell "3.02"
+    - row "VdW Contact A:TYR36 B:LEU103 3.05":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR36"
+      - cell "B:LEU103"
+      - cell "3.05"
+    - row "VdW Contact A:ASN137 B:SER183 3.07":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASN137"
+      - cell "B:SER183"
+      - cell "3.07"
+    - row "VdW Contact A:GLN38 B:TYR94 3.08":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:GLN38"
+      - cell "B:TYR94"
+      - cell "3.08"
+    - row "VdW Contact A:GLN38 B:GLN39 3.09":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:GLN38"
+      - cell "B:GLN39"
+      - cell "3.09"
+    - row "VdW Contact A:TYR49 B:ARG102 3.11":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR49"
+      - cell "B:ARG102"
+      - cell "3.11"
+    - row "VdW Contact A:SER121 B:PHE125 3.15":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER121"
+      - cell "B:PHE125"
+      - cell "3.15"
+    - row "VdW Contact A:SER43 B:GLY107 3.17":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER43"
+      - cell "B:GLY107"
+      - cell "3.17"
+    - row "VdW Contact A:TRP163 B:PRO170 3.20":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TRP163"
+      - cell "B:PRO170"
+      - cell "3.20"
+    - row "VdW Contact A:THR94 B:ASP58 3.21":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:THR94"
+      - cell "B:ASP58"
+      - cell "3.21"
+    - row "VdW Contact A:PHE118 B:THR140 3.27":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE118"
+      - cell "B:THR140"
+      - cell "3.27"
+    - row "VdW Contact A:ASN137 B:PHE169 3.31":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASN137"
+      - cell "B:PHE169"
+      - cell "3.31"
+    - row "VdW Contact A:PRO120 B:ARG216 3.32":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO120"
+      - cell "B:ARG216"
+      - cell "3.32"
+    - row "VdW Contact A:SER176 B:SER181 3.32":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER176"
+      - cell "B:SER181"
+      - cell "3.32"
+    - row "VdW Contact A:MET175 B:PHE169 3.34":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:MET175"
+      - cell "B:PHE169"
+      - cell "3.34"
+    - row "VdW Contact A:SER174 B:PHE169 3.37":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER174"
+      - cell "B:PHE169"
+      - cell "3.37"
+    - row "VdW Contact A:ASN161 B:VAL172 3.38":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ASN161"
+      - cell "B:VAL172"
+      - cell "3.38"
+    - row "VdW Contact A:PHE91 B:TYR101 3.38":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE91"
+      - cell "B:TYR101"
+      - cell "3.38"
+    - row "VdW Contact A:THR180 B:LYS146 3.40":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:THR180"
+      - cell "B:LYS146"
+      - cell "3.40"
+    - row "VdW Contact A:SER121 B:PRO126 3.40":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER121"
+      - cell "B:PRO126"
+      - cell "3.40"
+    - row "VdW Contact A:TYR36 B:TRP106 3.41":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR36"
+      - cell "B:TRP106"
+      - cell "3.41"
+    - row "VdW Contact A:GLN124 B:PHE125 3.43":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:GLN124"
+      - cell "B:PHE125"
+      - cell "3.43"
+    - row "VdW Contact A:PHE118 B:ALA128 3.43":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE118"
+      - cell "B:ALA128"
+      - cell "3.43"
+    - row "VdW Contact A:LEU160 B:GLN174 3.43":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:LEU160"
+      - cell "B:GLN174"
+      - cell "3.43"
+    - row "VdW Contact A:SER131 B:LYS146 3.43":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER131"
+      - cell "B:LYS146"
+      - cell "3.43"
+    - row "VdW Contact A:THR164 B:THR168 3.48":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:THR164"
+      - cell "B:THR168"
+      - cell "3.48"
+    - row "VdW Contact A:PHE91 B:ARG102 3.49":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE91"
+      - cell "B:ARG102"
+      - cell "3.49"
+    - row "VdW Contact A:TYR87 B:LEU45 3.50":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR87"
+      - cell "B:LEU45"
+      - cell "3.50"
+    - row "VdW Contact A:PRO44 B:TRP106 3.51":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO44"
+      - cell "B:TRP106"
+      - cell "3.51"
+    - row "VdW Contact A:PRO95 B:TRP47 3.52":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO95"
+      - cell "B:TRP47"
+      - cell "3.52"
+    - row "VdW Contact A:ARG96 B:TRP47 3.54":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ARG96"
+      - cell "B:TRP47"
+      - cell "3.54"
+    - row "VdW Contact A:TYR87 B:GLN39 3.57":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR87"
+      - cell "B:GLN39"
+      - cell "3.57"
+    - row "VdW Contact A:ARG96 B:TRP52 3.58":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ARG96"
+      - cell "B:TRP52"
+      - cell "3.58"
+    - row "VdW Contact A:ARG96 B:MET50 3.59":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:ARG96"
+      - cell "B:MET50"
+      - cell "3.59"
+    - row "VdW Contact A:GLN89 B:LEU103 3.60":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:GLN89"
+      - cell "B:LEU103"
+      - cell "3.60"
+    - row "VdW Contact A:PHE118 B:LEU127 3.60":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE118"
+      - cell "B:LEU127"
+      - cell "3.60"
+    - row "VdW Contact A:PHE91 B:GLU98 3.60":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE91"
+      - cell "B:GLU98"
+      - cell "3.60"
+    - row "VdW Contact A:LEU46 B:ARG102 3.61":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:LEU46"
+      - cell "B:ARG102"
+      - cell "3.61"
+    - row "VdW Contact A:SER43 B:GLN108 3.61":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER43"
+      - cell "B:GLN108"
+      - cell "3.61"
+    - row "VdW Contact A:PRO95 B:TYR59 3.63":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO95"
+      - cell "B:TYR59"
+      - cell "3.63"
+    - row "VdW Contact A:TYR87 B:GLY44 3.64":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR87"
+      - cell "B:GLY44"
+      - cell "3.64"
+    - row "VdW Contact A:SER176 B:PHE169 3.67":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER176"
+      - cell "B:PHE169"
+      - cell "3.67"
+    - row "VdW Contact A:PHE135 B:PHE169 3.69":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE135"
+      - cell "B:PHE169"
+      - cell "3.69"
+    - row "VdW Contact A:LEU46 B:LEU103 3.71":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:LEU46"
+      - cell "B:LEU103"
+      - cell "3.71"
+    - row "VdW Contact A:LEU160 B:VAL172 3.74":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:LEU160"
+      - cell "B:VAL172"
+      - cell "3.74"
+    - row "VdW Contact A:LEU46 B:ASP104 3.75":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:LEU46"
+      - cell "B:ASP104"
+      - cell "3.75"
+    - row "VdW Contact A:PRO44 B:LEU45 3.76":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PRO44"
+      - cell "B:LEU45"
+      - cell "3.76"
+    - row "VdW Contact A:PHE98 B:TRP47 3.78":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE98"
+      - cell "B:TRP47"
+      - cell "3.78"
+    - row "VdW Contact A:VAL133 B:LEU144 3.81":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:VAL133"
+      - cell "B:LEU144"
+      - cell "3.81"
+    - row "VdW Contact A:PHE98 B:VAL37 3.85":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE98"
+      - cell "B:VAL37"
+      - cell "3.85"
+    - row "VdW Contact A:TYR32 B:TYR101 3.86":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR32"
+      - cell "B:TYR101"
+      - cell "3.86"
+    - row "VdW Contact A:THR164 B:PHE169 3.89":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:THR164"
+      - cell "B:PHE169"
+      - cell "3.89"
+- generic: H-Bond 7
+- generic: VdW Contact 12
+- table:
+  - rowgroup:
+    - row "Type Residue A Residue B Dist (Å)":
+      - columnheader "Type"
+      - columnheader "Residue A"
+      - columnheader "Residue B"
+      - columnheader "Dist (Å)"
+  - rowgroup:
+    - row "H-Bond B:ASP100 C:SER24 2.82":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:ASP100"
+      - cell "C:SER24"
+      - cell "2.82"
+    - row "H-Bond B:GLY53 C:GLY117 2.87":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:GLY53"
+      - cell "C:GLY117"
+      - cell "2.87"
+    - row "H-Bond B:ASP100 C:ASN27 2.96":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:ASP100"
+      - cell "C:ASN27"
+      - cell "2.96"
+    - row "H-Bond B:TYR101 C:ASP119 2.97":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:TYR101"
+      - cell "C:ASP119"
+      - cell "2.97"
+    - row "H-Bond B:TYR101 C:GLN121 2.99":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:TYR101"
+      - cell "C:GLN121"
+      - cell "2.99"
+    - row "H-Bond B:ASP54 C:GLY117 3.19":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:ASP54"
+      - cell "C:GLY117"
+      - cell "3.19"
+    - row "H-Bond B:ARG102 C:GLY22 3.20":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "B:ARG102"
+      - cell "C:GLY22"
+      - cell "3.20"
+    - row "VdW Contact B:ASP100 C:SER24 2.63":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ASP100"
+      - cell "C:SER24"
+      - cell "2.63"
+    - row "VdW Contact B:GLY53 C:GLY117 2.87":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:GLY53"
+      - cell "C:GLY117"
+      - cell "2.87"
+    - row "VdW Contact B:ASP100 C:ASN27 2.96":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ASP100"
+      - cell "C:ASN27"
+      - cell "2.96"
+    - row "VdW Contact B:TYR101 C:ASP119 2.97":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:TYR101"
+      - cell "C:ASP119"
+      - cell "2.97"
+    - row "VdW Contact B:TYR101 C:GLN121 2.99":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:TYR101"
+      - cell "C:GLN121"
+      - cell "2.99"
+    - row "VdW Contact B:ASP54 C:GLY117 3.19":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ASP54"
+      - cell "C:GLY117"
+      - cell "3.19"
+    - row "VdW Contact B:ARG102 C:GLY22 3.20":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ARG102"
+      - cell "C:GLY22"
+      - cell "3.20"
+    - row "VdW Contact B:TYR101 C:VAL120 3.25":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:TYR101"
+      - cell "C:VAL120"
+      - cell "3.25"
+    - row "VdW Contact B:ASP100 C:GLY22 3.46":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ASP100"
+      - cell "C:GLY22"
+      - cell "3.46"
+    - row "VdW Contact B:ASP54 C:THR118 3.56":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:ASP54"
+      - cell "C:THR118"
+      - cell "3.56"
+    - row "VdW Contact B:TRP52 C:ASP119 3.66":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:TRP52"
+      - cell "C:ASP119"
+      - cell "3.66"
+    - row "VdW Contact B:GLY31 C:GLY117 3.66":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "B:GLY31"
+      - cell "C:GLY117"
+      - cell "3.66"
+- generic: H-Bond 4
+- generic: VdW Contact 9
+- generic: π-H Bond 1
+- table:
+  - rowgroup:
+    - row "Type Residue A Residue B Dist (Å)":
+      - columnheader "Type"
+      - columnheader "Residue A"
+      - columnheader "Residue B"
+      - columnheader "Dist (Å)"
+  - rowgroup:
+    - row "H-Bond A:TYR50 C:ASP18 2.86":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:TYR50"
+      - cell "C:ASP18"
+      - cell "2.86"
+    - row "H-Bond A:THR53 C:ASN19 3.07":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:THR53"
+      - cell "C:ASN19"
+      - cell "3.07"
+    - row "H-Bond A:PHE91 C:GLN121 3.07":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:PHE91"
+      - cell "C:GLN121"
+      - cell "3.07"
+    - row "H-Bond A:SER93 C:GLN121 3.20":
+      - cell "H-Bond":
+        - generic: H-Bond
+      - cell "A:SER93"
+      - cell "C:GLN121"
+      - cell "3.20"
+    - row "π-H Bond A:TYR32 C:GLN121 3.14":
+      - cell "π-H Bond":
+        - generic: π-H Bond
+      - cell "A:TYR32"
+      - cell "C:GLN121"
+      - cell "3.14"
+    - row "VdW Contact A:TYR50 C:ASP18 2.86":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR50"
+      - cell "C:ASP18"
+      - cell "2.86"
+    - row "VdW Contact A:TRP92 C:GLN121 3.00":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TRP92"
+      - cell "C:GLN121"
+      - cell "3.00"
+    - row "VdW Contact A:THR53 C:ASN19 3.07":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:THR53"
+      - cell "C:ASN19"
+      - cell "3.07"
+    - row "VdW Contact A:PHE91 C:GLN121 3.07":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:PHE91"
+      - cell "C:GLN121"
+      - cell "3.07"
+    - row "VdW Contact A:SER93 C:GLN121 3.20":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:SER93"
+      - cell "C:GLN121"
+      - cell "3.20"
+    - row "VdW Contact A:TYR32 C:GLN121 3.31":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR32"
+      - cell "C:GLN121"
+      - cell "3.31"
+    - row "VdW Contact A:TRP92 C:ARG125 3.54":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TRP92"
+      - cell "C:ARG125"
+      - cell "3.54"
+    - row "VdW Contact A:TYR50 C:ASN19 3.74":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TYR50"
+      - cell "C:ASN19"
+      - cell "3.74"
+    - row "VdW Contact A:TRP92 C:ILE124 3.86":
+      - cell "VdW Contact":
+        - generic: VdW Contact
+      - cell "A:TRP92"
+      - cell "C:ILE124"
+      - cell "3.86"
+- generic: Mutation Scoring
+- generic: CSV
+- generic: MutXevo.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXstruct.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXseq.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXaff.csv
+- generic: View
+- generic: Download
+- generic: Antibody Design
+- generic: CSV
+- generic: AbScN_heavy..csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbScN_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_light.csv
+- generic: View
+- generic: Download

@@ -1,0 +1,523 @@
+{
+  "case_id": "05",
+  "status": "succeeded_with_quality_limits",
+  "observed_utc": "2026-10-20T02:53:21.562931+00:00",
+  "tasks": [
+    {
+      "label": "seed111",
+      "task_id": "342254837666816",
+      "random_seed": 111,
+      "status": "succeeded",
+      "evidence": "raw/task-list-all-succeeded.txt"
+    },
+    {
+      "label": "seed222",
+      "task_id": "342254839784448",
+      "random_seed": 222,
+      "status": "succeeded",
+      "evidence": "raw/task-list-all-succeeded.txt"
+    },
+    {
+      "label": "seed333",
+      "task_id": "342254842782720",
+      "random_seed": 333,
+      "status": "succeeded",
+      "evidence": "raw/task-list-all-succeeded.txt",
+      "files": [
+        "05-denovo/raw/direct-task-exports/seed333/raw/output.cif",
+        "05-denovo/raw/direct-task-exports/seed333/raw/aligned.cif"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "label": "seed111",
+      "status": "succeeded",
+      "source_kind": "MOS_designed_sequence_and_repredicted_complex",
+      "binder_sequence": "DAAARAAELERRCESLAKIIAEHEAALAALRAAAASAADREAVAAAAARQARAAAALRALRARLEAEARALRE",
+      "binder_length": 73,
+      "binder_chain": "A",
+      "target_chain": "B",
+      "structure": "05-denovo/raw/mos-export/case05/designs/seed111/raw/179246416595260_aligned.cif",
+      "binder_CA_mean_plddt": 68.70506849315069,
+      "hotspots_engaged_within_4_5_A": 6,
+      "hotspots": [
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 37,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 54,
+          "residue": "I",
+          "minimum_heavy_atom_distance_to_binder_A": 3.729609489440918
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 39,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 56,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 3.05302357673645
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 41,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 58,
+          "residue": "E",
+          "minimum_heavy_atom_distance_to_binder_A": 2.4702260494232178
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 51,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 68,
+          "residue": "V",
+          "minimum_heavy_atom_distance_to_binder_A": 3.2700119018554688
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 96,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 113,
+          "residue": "R",
+          "minimum_heavy_atom_distance_to_binder_A": 2.4154210090637207
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 106,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 123,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 2.9651150703430176
+        }
+      ],
+      "local_geometry": {
+        "residue_contact_pair_count_4_5_A": 42,
+        "potential_ionic_residue_pairs_4_A": [
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 5,
+            "binder_residue": "ARG",
+            "target_chain": "B",
+            "target_seq_id": 105,
+            "target_residue": "ASP",
+            "charged_atom_min_distance_A": 3.6597890853881836
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 8,
+            "binder_residue": "GLU",
+            "target_chain": "B",
+            "target_seq_id": 96,
+            "target_residue": "ARG",
+            "charged_atom_min_distance_A": 2.4154212474823
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 8,
+            "binder_residue": "GLU",
+            "target_chain": "B",
+            "target_seq_id": 108,
+            "target_residue": "ARG",
+            "charged_atom_min_distance_A": 3.611466407775879
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 12,
+            "binder_residue": "ARG",
+            "target_chain": "B",
+            "target_seq_id": 41,
+            "target_residue": "GLU",
+            "charged_atom_min_distance_A": 2.4702260494232178
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 12,
+            "binder_residue": "ARG",
+            "target_chain": "B",
+            "target_seq_id": 44,
+            "target_residue": "ASP",
+            "charged_atom_min_distance_A": 2.8502442836761475
+          }
+        ],
+        "heavy_atom_clash_residue_pairs_below_2_A": [],
+        "sasa_probe_radius_A": 1.4,
+        "sasa_points": 200,
+        "delta_sasa_both_sides_A2": 1786.5407475017928,
+        "mean_buried_area_per_side_A2": 893.2703737508964,
+        "avelumab_reference_footprint_residue_count": 20,
+        "avelumab_footprint_overlap_residue_count": 16,
+        "avelumab_footprint_overlap_auth_seq_ids": [
+          54,
+          56,
+          58,
+          61,
+          63,
+          66,
+          69,
+          73,
+          75,
+          76,
+          113,
+          115,
+          117,
+          121,
+          123,
+          125
+        ]
+      },
+      "sequence_properties": {
+        "alanine_fraction": 0.4520547945205479,
+        "composition": {
+          "D": 2,
+          "A": 33,
+          "R": 12,
+          "E": 9,
+          "L": 8,
+          "C": 1,
+          "S": 2,
+          "K": 1,
+          "I": 2,
+          "H": 1,
+          "V": 1,
+          "Q": 1
+        },
+        "entropy_bits": 2.5184015320243507
+      },
+      "confidence_scope": "Binder CA B factors of aligned.cif; no complex ipTM/pTM/PAE delivered.",
+      "verified_analysis": "05-denovo/raw/seed111-verified-analysis.json",
+      "geometry_review_rank": 1
+    },
+    {
+      "label": "seed333",
+      "status": "succeeded",
+      "source_kind": "MOS_designed_sequence_and_repredicted_complex",
+      "binder_sequence": "MQEEFEKIKELVKKAEEALEKGDKEKATELYTKAAELLSDMVSKLIREAEEEGNKEKLEKLLEIQGLVDECLKNPLEAFDLLKEALKRLEEILKE",
+      "binder_length": 95,
+      "binder_chain": "A",
+      "target_chain": "B",
+      "structure": "05-denovo/raw/direct-task-exports/seed333/raw/aligned.cif",
+      "binder_CA_mean_plddt": 82.59842105263156,
+      "hotspots_engaged_within_4_5_A": 6,
+      "hotspots": [
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 37,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 54,
+          "residue": "I",
+          "minimum_heavy_atom_distance_to_binder_A": 2.6867353916168213
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 39,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 56,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 2.5986452102661133
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 41,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 58,
+          "residue": "E",
+          "minimum_heavy_atom_distance_to_binder_A": 1.7919459342956543
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 51,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 68,
+          "residue": "V",
+          "minimum_heavy_atom_distance_to_binder_A": 2.6436314582824707
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 96,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 113,
+          "residue": "R",
+          "minimum_heavy_atom_distance_to_binder_A": 1.9553357362747192
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 106,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 123,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 3.7902748584747314
+        }
+      ],
+      "local_geometry": {
+        "residue_contact_pair_count_4_5_A": 38,
+        "potential_ionic_residue_pairs_4_A": [
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 60,
+            "binder_residue": "LYS",
+            "target_chain": "B",
+            "target_seq_id": 44,
+            "target_residue": "ASP",
+            "charged_atom_min_distance_A": 3.9850151538848877
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 84,
+            "binder_residue": "GLU",
+            "target_chain": "B",
+            "target_seq_id": 96,
+            "target_residue": "ARG",
+            "charged_atom_min_distance_A": 1.9553357362747192
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 88,
+            "binder_residue": "ARG",
+            "target_chain": "B",
+            "target_seq_id": 41,
+            "target_residue": "GLU",
+            "charged_atom_min_distance_A": 1.857012152671814
+          }
+        ],
+        "heavy_atom_clash_residue_pairs_below_2_A": [
+          {
+            "binder_seq_id": 84,
+            "target_seq_id": 96,
+            "minimum_heavy_atom_distance_A": 1.9553357362747192
+          },
+          {
+            "binder_seq_id": 88,
+            "target_seq_id": 41,
+            "minimum_heavy_atom_distance_A": 1.7919459342956543
+          }
+        ],
+        "sasa_probe_radius_A": 1.4,
+        "sasa_points": 200,
+        "delta_sasa_both_sides_A2": 1354.5871388708256,
+        "mean_buried_area_per_side_A2": 677.2935694354128,
+        "avelumab_reference_footprint_residue_count": 20,
+        "avelumab_footprint_overlap_residue_count": 15,
+        "avelumab_footprint_overlap_auth_seq_ids": [
+          54,
+          56,
+          58,
+          60,
+          61,
+          63,
+          66,
+          69,
+          76,
+          78,
+          113,
+          115,
+          117,
+          121,
+          123
+        ]
+      },
+      "sequence_properties": {
+        "alanine_fraction": 0.08421052631578947,
+        "composition": {
+          "M": 2,
+          "Q": 2,
+          "E": 23,
+          "F": 2,
+          "K": 16,
+          "I": 4,
+          "L": 17,
+          "V": 3,
+          "A": 8,
+          "G": 3,
+          "D": 4,
+          "T": 2,
+          "Y": 1,
+          "S": 2,
+          "R": 2,
+          "N": 2,
+          "C": 1,
+          "P": 1
+        },
+        "entropy_bits": 3.401028573647853
+      },
+      "confidence_scope": "Binder CA B factors of aligned.cif; no complex ipTM/pTM/PAE delivered.",
+      "verified_analysis": "05-denovo/raw/seed333-verified-analysis.json",
+      "geometry_review_rank": 2
+    },
+    {
+      "label": "seed222",
+      "status": "succeeded",
+      "source_kind": "MOS_designed_sequence_and_repredicted_complex",
+      "binder_sequence": "MGSIEALNNLYKQMGEKAAELKEFAEEAEKKLEETRKKDEEKALELAKEIDKKTSKLFDELKGDNK",
+      "binder_length": 66,
+      "binder_chain": "A",
+      "target_chain": "B",
+      "structure": "05-denovo/raw/mos-export/case05/designs/seed222/raw/179246440257279_aligned.cif",
+      "binder_CA_mean_plddt": 65.75969696969696,
+      "hotspots_engaged_within_4_5_A": 5,
+      "hotspots": [
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 37,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 54,
+          "residue": "I",
+          "minimum_heavy_atom_distance_to_binder_A": 3.8695406913757324
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 39,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 56,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 4.336851596832275
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 41,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 58,
+          "residue": "E",
+          "minimum_heavy_atom_distance_to_binder_A": 4.718526363372803
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 51,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 68,
+          "residue": "V",
+          "minimum_heavy_atom_distance_to_binder_A": 1.8731083869934082
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 96,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 113,
+          "residue": "R",
+          "minimum_heavy_atom_distance_to_binder_A": 2.9719371795654297
+        },
+        {
+          "target_output_chain": "B",
+          "target_output_seq_id": 106,
+          "pdb_5grj_auth_chain": "A",
+          "pdb_5grj_auth_seq_id": 123,
+          "residue": "Y",
+          "minimum_heavy_atom_distance_to_binder_A": 2.374459743499756
+        }
+      ],
+      "local_geometry": {
+        "residue_contact_pair_count_4_5_A": 22,
+        "potential_ionic_residue_pairs_4_A": [
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 22,
+            "binder_residue": "LYS",
+            "target_chain": "B",
+            "target_seq_id": 44,
+            "target_residue": "ASP",
+            "charged_atom_min_distance_A": 2.844399929046631
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 29,
+            "binder_residue": "GLU",
+            "target_chain": "B",
+            "target_seq_id": 96,
+            "target_residue": "ARG",
+            "charged_atom_min_distance_A": 3.7955026626586914
+          },
+          {
+            "binder_chain": "A",
+            "binder_seq_id": 29,
+            "binder_residue": "GLU",
+            "target_chain": "B",
+            "target_seq_id": 108,
+            "target_residue": "ARG",
+            "charged_atom_min_distance_A": 3.693220376968384
+          }
+        ],
+        "heavy_atom_clash_residue_pairs_below_2_A": [
+          {
+            "binder_seq_id": 11,
+            "target_seq_id": 51,
+            "minimum_heavy_atom_distance_A": 1.8731083869934082
+          },
+          {
+            "binder_seq_id": 22,
+            "target_seq_id": 44,
+            "minimum_heavy_atom_distance_A": 1.7677351236343384
+          },
+          {
+            "binder_seq_id": 26,
+            "target_seq_id": 44,
+            "minimum_heavy_atom_distance_A": 1.7769683599472046
+          },
+          {
+            "binder_seq_id": 62,
+            "target_seq_id": 103,
+            "minimum_heavy_atom_distance_A": 1.9872344732284546
+          },
+          {
+            "binder_seq_id": 62,
+            "target_seq_id": 104,
+            "minimum_heavy_atom_distance_A": 1.6997047662734985
+          }
+        ],
+        "sasa_probe_radius_A": 1.4,
+        "sasa_points": 200,
+        "delta_sasa_both_sides_A2": 1190.441285198438,
+        "mean_buried_area_per_side_A2": 595.220642599219,
+        "avelumab_reference_footprint_residue_count": 20,
+        "avelumab_footprint_overlap_residue_count": 9,
+        "avelumab_footprint_overlap_auth_seq_ids": [
+          54,
+          56,
+          61,
+          69,
+          113,
+          115,
+          121,
+          123,
+          125
+        ]
+      },
+      "sequence_properties": {
+        "alanine_fraction": 0.10606060606060606,
+        "composition": {
+          "M": 2,
+          "G": 3,
+          "S": 2,
+          "I": 2,
+          "E": 14,
+          "A": 7,
+          "L": 8,
+          "N": 3,
+          "Y": 1,
+          "K": 14,
+          "Q": 1,
+          "F": 2,
+          "T": 2,
+          "R": 1,
+          "D": 4
+        },
+        "entropy_bits": 3.350951736383559
+      },
+      "confidence_scope": "Binder CA B factors of aligned.cif; no complex ipTM/pTM/PAE delivered.",
+      "verified_analysis": "05-denovo/raw/seed222-verified-analysis.json",
+      "geometry_review_rank": 3
+    }
+  ],
+  "ranking_method": "Local review: hotspot coverage, then mean buried area per side, then binder CA pLDDT. Not native MOS confidence rank or affinity rank.",
+  "virtual_backbone_policy": "output.cif is retained as a backbone intermediate; its poly-Gly residues and 0/1 B factors are not designed sequence or pLDDT. Use aligned.cif for final designed complex.",
+  "limitations": [
+    "These are unvalidated computational designs, not demonstrated binders.",
+    "Binder CA-mean pLDDT ranges from 65.76 to 82.60; complex relative pose confidence is unavailable.",
+    "No ipTM, pTM, PAE, Kd or experimentally validated affinity supplied.",
+    "Potential ionic pairs and interface geometry are locally derived, not measured binding energy.",
+    "Low sequence complexity and very close interchain heavy-atom distances require further relaxation and validation.",
+    "Mocha earlier called binder residue 8 Arg in prose; it is Glu in seed111. Canonical verified ionic residue identities are provided here.",
+    "Avelumab footprint overlap describes geometric epitope overlap, not biological competition demonstrated in an assay."
+  ],
+  "recommended_display_candidate": "seed333",
+  "display_selection_reason": "Highest binder CA-mean pLDDT (82.60) among three actual outputs. This is a display choice, not an affinity ranking. Keep collision and missing complex-confidence limitations visible."
+}

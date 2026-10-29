@@ -81,7 +81,7 @@ export function progressTodosItems(items: TodosItem[], executingIndex: number): 
       ? { text: item.text, status: 'loading', emphasis: true }
       : { text: item.text, status: 'unexecuted' });
 }
-export function mosTaskDetail(chip: string): UnfoldStep { return { text: chip, detail: `MOS task: ${chip}.` }; }
+export function mosTaskDetail(chip: string): UnfoldStep { return { text: chip, detail: `MoleculeOS task: ${chip}.` }; }
 export const qaCard = {
   title: 'Question', prompt: 'Where should the 30 mutations be introduced?',
   collapsedLabel: 'Mutation target', submitLabel: 'Continue',

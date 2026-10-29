@@ -1,0 +1,32 @@
+{
+  "project": "DevelopabilityLiabilities",
+  "url": "https://code.moleculemind.com/xinxu/developabilityliabilities",
+  "project_id": 503,
+  "visibility": "internal",
+  "branch": "main",
+  "observed_commit": "c3e7fe6fd067390af479479ccfb00d30a0b9c8ac",
+  "archive_url": "https://code.moleculemind.com/xinxu/developabilityliabilities/-/archive/main/developabilityliabilities-main.zip",
+  "downloaded_at": "2026-10-20T06:08:52.686849+00:00",
+  "archive_sha256": "b74688b40fb05c875c665823a2424013a8ed472eb0d05e0d4e4ab4a0ff2a58b6",
+  "download_method": "authenticated Chrome GitLab Download source code ZIP",
+  "archive_crc": "passed",
+  "archive_file_count": 29,
+  "rule_count": 38,
+  "groups": [
+    "脱酰胺",
+    "氧化",
+    "异构化",
+    "糖基化",
+    "游离巯基",
+    "细胞粘附",
+    "裂解",
+    "蛋白水解",
+    "环化",
+    "羟基化",
+    "赖氨酸糖基化",
+    "糖基化终产物"
+  ],
+  "svg_file_count": 0,
+  "license_file_found": false,
+  "execution": "Downloaded source was read as text; no dependencies installed or downloaded code executed."
+}

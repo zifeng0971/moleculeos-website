@@ -1,0 +1,609 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-KN035-20261029-Rerun
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: MMFold_1
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: MMFold_1
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: M
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: "11"
+- generic: L
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: "21"
+- generic: T
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: "31"
+- generic: Q
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: "41"
+- generic: W
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: "51"
+- generic: F
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: "61"
+- generic: Q
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: "71"
+- generic: L
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: "81"
+- generic: A
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: "91"
+- generic: Q
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: "101"
+- generic: S
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: "111"
+- generic: T
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: L
+- generic: E
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: Q
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: K
+- generic: M
+- generic: S
+- generic: S
+- generic: "31"
+- generic: R
+- generic: R
+- generic: C
+- generic: M
+- generic: A
+- generic: W
+- generic: F
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: E
+- generic: R
+- generic: E
+- generic: R
+- generic: V
+- generic: A
+- generic: K
+- generic: "51"
+- generic: L
+- generic: L
+- generic: T
+- generic: T
+- generic: S
+- generic: G
+- generic: S
+- generic: T
+- generic: "Y"
+- generic: L
+- generic: "61"
+- generic: A
+- generic: D
+- generic: S
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: Q
+- generic: "N"
+- generic: "N"
+- generic: A
+- generic: K
+- generic: S
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: K
+- generic: P
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: M
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: A
+- generic: D
+- generic: S
+- generic: "101"
+- generic: F
+- generic: E
+- generic: D
+- generic: P
+- generic: T
+- generic: C
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: "111"
+- generic: S
+- generic: S
+- generic: G
+- generic: A
+- generic: F
+- generic: Q
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: "121"
+- generic: G
+- generic: T
+- generic: Q
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha" [active]:
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 48ea338c-5
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: 本项目只分析当前已导入的 MMFold_1.cif，唯一原始 SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。A=人PD-L1 118aa，B=KN035 VHH 128aa，无轻链。不要用5GRJ、7XYQ、5JDS，不要重新预测，不要改动其他项目或任务。请核验导入对象链ID、完整序列、label/auth残基编号，记录object_id/work_id/tos_key和原始及sanitized输入hash、逐残基MOS↔MMFold_1映射。读取本结构自动MMetrics分析的真实任务ID/状态及所有可获得原始输出（Description reasoning roles、Homologs原始空结果也保留、完整Paratope/Epitope/Domain/PTM/UniProt、Interaction Network、所有MutX CSV、AbAn/AbScN/ParaDt heavy CSV与紧凑序号映射）。原生自动结果与独立任务和本地分析严格分开，未完成就写未完成，不用其他任务冒充。请把真实输出与任务payload完整复制到 /workspace/kn035_case02/，写provenance.json/numbering-map.json/task-ledger.json，再创建 /workspace/kn035_case02.zip 供Workspace下载。最终回复明确对象ID、任务ID、状态、路径；如仍computing只记录，不等待很久。
+- paragraph: I’ll start by verifying the import object and locating the MMetrics task for this structure.
+- button "Worked for 3m 57s" [expanded]:
+  - generic: Worked for 3m 57s
+- button "Execution details 3 items" [expanded]:
+  - generic: Execution details
+  - generic: 3 items
+- button "Shell ls -la /workspace/ && echo \"---\" && ls -la /worksp… Completed":
+  - generic: Shell
+  - generic "ls -la /workspace/ && echo \"---\" && ls -la /worksp…"
+  - img "Completed"
+- button "ListMOSObjects Completed":
+  - generic: ListMOSObjects
+  - img "Completed"
+- button "ListMOSTasks Completed":
+  - generic: ListMOSTasks
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- paragraph: "Confirmed: one object, one task (auto MMetrics, currently RUNNING). Let me set up tracking and begin verification."
+- button "Tool calls 2 items":
+  - generic: Tool calls
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Auto-MMetrics task payload captured. Now structural verification.
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Structural numbering verified as identity mapping. Now cross-checking the MOS-registered copy hash and loading the sequence skill.
+- button "Execution details 4 items":
+  - generic: Execution details
+  - generic: 4 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: MOS object is byte-identical to the user-declared original hash. Storing verified sequences in the library.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Global align against the full-length reference isn’t the right frame — this is a domain construct. Locating its exact span locally.
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Chain A is a faithful PD-L1 IgV fragment (115/115 identity to UniProt 18-132, no substitutions); chain B is the VHH. Now checking the MMetrics task.
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The auto task succeeded and spawned its MMetrics analysis child. Reading the parent’s raw output.
+- button "Tool calls":
+  - generic: Tool calls
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Auto-compute results captured (7 files). Its MMetrics child is the analysis task. Checking it.
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The MMetrics analysis task succeeded and returned a single structured record. Inspecting it.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: All raw outputs collected. Now verifying that every mutation token in the native CSVs resolves against the structure numbering.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph:
+  - text: My token parser is wrong — inspecting the actual
+  - code: mutstr
+  - text: format.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph:
+  - text: The affinity CSV has no chain column —
+  - code: mutstr
+  - text: is
+  - code: wt+pos+mut
+  - text: only. Verifying chain attribution by residue matching.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Format is ambiguous across lengths — sampling each class directly.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph:
+  - text: "Found it: the compact token is"
+  - code: Wt+Chain+Pos+Mut
+  - text: (not chain-first). Verifying all 4674 rows against the structure.
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: All 4,674 affinity mutations resolve cleanly. Now generating the three JSON deliverables programmatically.
+- button "Execution details 4 items":
+  - generic: Execution details
+  - generic: 4 items
+- button "Thinking":
+  - generic: Thinking
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The paratope/epitope name lookup dropped residues missing from the contact lists. Fixing to resolve names from the chain sequences.
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: The zip build asked for a cleaner layout — I removed the duplicate download and pointed the generator at the single input copy.
+- button "Run commands":
+  - generic: Run commands
+- paragraph: Now building the archive and verifying integrity.
+- button "Run commands 2 items":
+  - generic: Run commands
+  - generic: 2 items
+- button "Thinking":
+  - generic: Thinking
+- button "Execution details 2 items":
+  - generic: Execution details
+  - generic: 2 items
+- button "3D Viewer":
+  - generic: 3D Viewer
+- paragraph: 包已生成并校验完毕。以下全部为实测值，无一项推定。
+- heading "对象（唯一，已核验）" [level=2]
+- list:
+  - text: object_id
+  - code: "345488780645376"
+  - text: ，work_id
+  - code: "345488784675840"
+  - text: TOS key
+  - code: user_objects/123/330665428816896/345488780645376_MMFold_1.cif
+  - listitem: 链：A = 118 aa（人 PD-L1 IgV 构建体），B = 128 aa（KN035 VHH）；无轻链、无 HETATM、无 altloc、单模型
+  - text: 你给的原始 SHA256
+  - code: d32305d7…4822317
+  - text: 与 GetMOSObject 取回的 sanitized 副本、session 副本
+  - strong: 逐字节相同
+  - text: （154131 bytes）。即本次导入的原始 hash = sanitized hash，MOS 未改动任何字节，文件进入会话时已带
+  - code: _mos_mapping
+  - text: 与
+  - code: P 1
+  - text: 布局
+- paragraph:
+  - text: 序列核验：A 链与 UniProt Q9NZQ7 的 18–132 段比对 115/115 完全一致、
+  - strong: 0 个替换
+  - text: ，N 端多 1 个 Met、C 端多 LE，属构建体残留；B 链为 VHH（framework4
+  - code: WGQGTQVTVSS
+  - text: ，无 CH1）。此结论仅用 UniProt，未碰 5GRJ/7XYQ/5JDS。
+- heading "编号" [level=2]
+- paragraph:
+  - text: label_seq_id = auth_seq_id = MOS 残基号 = 1…N，两链皆无 insertion code，
+  - strong: MOS↔MMFold_1 是恒等映射
+  - text: ，246 条逐残基记录在 numbering-map.json。顺带查出一个真实陷阱：
+  - code: affinity_scores.csv
+  - text: 的
+  - code: mutstr
+  - text: 是
+  - code: <wt><链><位号><突变>
+  - text: ，
+  - strong: 链字母在第二位
+  - text: （
+  - code: AA105C
+  - text: =A105→C，
+  - code: EB6A
+  - text: =B6→A）；按链在首位解析会让全部 4503 行错配。按正确语法解码 4674 行零冲突，2242+2432 = 118×19+128×19。
+- heading "任务（全部 SUCCEED，均为平台自动产生，无独立任务）" [level=2]
+- table:
+  - rowgroup:
+    - row "任务 ID 名称 状态 输出":
+      - columnheader "任务 ID"
+      - columnheader "名称"
+      - columnheader "状态"
+      - columnheader "输出"
+  - rowgroup:
+    - row "345488784917504 autocompute-MMFold_1 SUCCEED（1.1 min） 7 个文件":
+      - cell "345488784917504"
+      - cell "autocompute-MMFold_1"
+      - cell "SUCCEED（1.1 min）"
+      - cell "7 个文件"
+    - row "345489060729856 mmetrics-analysis-345488784917504（子任务） SUCCEED（26 s） record.json":
+      - cell "345489060729856"
+      - cell "mmetrics-analysis-345488784917504（子任务）"
+      - cell "SUCCEED（26 s）"
+      - cell "record.json"
+- paragraph:
+  - strong: MMetrics 原生结果里真实存在的
+  - text: ：分类 antigen-antibody/high、reasoning 389 字符、description 447 字符；homology 3 条（5JDS_B 一致性 1.00、4DKA_A 0.721、4DK3_A 0.721）；paratope 18 残基（B 链）；epitope 19 残基（A 链）；9 条 CDR（IMGT/Kabat/Chothia）；A:B 界面 44 个接触、16+17 个界面残基、9 氢键/33 vdW/1 盐桥/1 π堆积。
+- paragraph:
+  - strong: 必须写明未产出的部分
+  - text: ：
+  - code: annotations.uniprot
+  - text: 是空数组、
+  - code: model_tasks.results
+  - text: 是空数组——因此
+  - strong: 没有 Domain、没有 PTM、没有 Interaction Network 图文件、没有任何 MutX CSV 或 AbAn/AbScN/ParaDt heavy CSV
+  - text: ，也就不存在可做的紧凑序号映射。这些一律记为未产出，未用 autocompute 的 fitness CSV 冒充。
+- paragraph: 原生记录里三处内部矛盾也照原样保留并标注：homology 条目 entity_id 标为 1 但序列是 B 链；reasoning 写 51 contacts 而 meta 与接触列表都是 44；annotations.pdb 列的 5JDS 等仅为管线参考命中，全程未下载未使用。
+- heading "交付" [level=2]
+- paragraph:
+  - code: /workspace/kn035_case02/
+  - text: — input/（cif + 两链 fasta）、raw/（7+1 个原始文件，逐字节与下载件一致）、payload/（两个任务的完整 payload）、numbering-map.json、provenance.json、task-ledger.json、README.md、两个可复现脚本。
+  - code: /workspace/kn035_case02.zip
+  - text: — 444278 bytes，SHA256
+  - code: 18b787c8acb639120fd6e4965a6bc613a08dfac074f95844e7001dd71e306342
+  - text: ，
+  - code: testzip
+  - text: 通过。
+- paragraph: 3D 视图中已把 paratope 与 epitope 共 37 个残基高亮。一个值得一提的生物学落点：epitope 按 A 链构建体偏移换算到 PD-L1 成熟序列约在 54–125，正是 PD-1 竞争面，与 KN035 阻断 PD-L1/PD-1 的机制相符——这是编号换算的旁证，不是新计算。
+- img "kn035_case02.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- navigation "Conversation navigator":
+  - button "本项目只分析当前已导入的 MMFold_1.cif，唯一原始 SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。A=人PD-L1 118aa，B=KN035 VHH 128aa，无轻链。不要用5GRJ、7XYQ、5JDS，不要重新预测，不要改动其他项目或任务。请核验导入对象链ID、完整序列、label/auth残基编号，记录object_id/work_id/tos_key和原始及sanitized输入hash、逐残基MOS↔MMFold_1映射。读取本结构自动MMetrics分析的真实任务ID/状态及所有可获得原始输出（Description reasoning roles、Homologs原始空结果也保留、完整Paratope/Epitope/Domain/PTM/UniProt、Interaction Network、所有MutX CSV、AbAn/AbScN/ParaDt heavy CSV与紧凑序号映射）。原生自动结果与独立任务和本地分析严格分开，未完成就写未完成，不用其他任务冒充。请把真实输出与任务payload完整复制到 /workspace/kn035_case02/，写provenance.json/numbering-map.json/task-ledger.json，再创建 /workspace/kn035_case02.zip 供Workspace下载。最终回复明确对象ID、任务ID、状态、路径；如仍computing只记录，不等待很久。"
+- button "Back to latest":
+- generic: MMFold_1
+- button "Upload":
+- textbox "Ask me to do anything"
+- button "Send" [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

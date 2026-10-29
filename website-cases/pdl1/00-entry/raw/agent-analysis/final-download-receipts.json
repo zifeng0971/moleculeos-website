@@ -1,0 +1,44 @@
+[
+  {
+    "source": "/Users/zifengye/Downloads/pdl1_kn035_view.cif",
+    "destination": "raw/agent-analysis/pdl1_kn035_view.cif",
+    "mtime_utc": "2026-10-22T01:51:30.122678+00:00",
+    "sha256": "1725bd9187cf4879d748249a9fab4b89b6ecdeaa2dc58295a32745336b4d34b7"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/pdl1_kn035_view.cif.mapping",
+    "destination": "raw/agent-analysis/pdl1_kn035_view.cif.mapping",
+    "mtime_utc": "2026-10-22T01:51:30.959219+00:00",
+    "sha256": "d8fb12ae69ecceee800f7400d2cbd12e4b122defb99ad838ca51f5ac9ffebf02"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/report.jsonl",
+    "destination": "raw/agent-analysis/report.jsonl",
+    "mtime_utc": "2026-10-22T01:51:31.720196+00:00",
+    "sha256": "3d81b77f2900c9a9f5f284c238fd5c7f160ca7bb0b68ba67f15534533df31dda"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/step1.json",
+    "destination": "raw/agent-analysis/step1.json",
+    "mtime_utc": "2026-10-22T01:51:32.451770+00:00",
+    "sha256": "0104d9f5fdb383aba885f31f1e1920864df8eca23462e0cc9758f9f838a75d0a"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/contacts.log",
+    "destination": "raw/agent-analysis/contacts.log",
+    "mtime_utc": "2026-10-22T01:51:33.322517+00:00",
+    "sha256": "3d536509021c52af033d3bd4ddcedc3c2da2b32b0566bb3afdf2abbd06f9b6bf"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/interface.log",
+    "destination": "raw/agent-analysis/interface.log",
+    "mtime_utc": "2026-10-22T01:51:34.091972+00:00",
+    "sha256": "a2053f1241b19cc637a390651c26f43d18c2703f266b8fb499b74ef033efe692"
+  },
+  {
+    "source": "/Users/zifengye/Downloads/interface_results.md",
+    "destination": "raw/agent-analysis/interface_results.md",
+    "mtime_utc": "2026-10-22T01:51:51.176487+00:00",
+    "sha256": "49e3a7f02783f8f21bad0d67b57be1624ff81e8fca689661303a30ba33e01542"
+  }
+]

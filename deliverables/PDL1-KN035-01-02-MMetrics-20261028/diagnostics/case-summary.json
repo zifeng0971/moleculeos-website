@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-28T15:40:37+07:00",
+  "timezone": "Asia/Jakarta",
+  "purpose": "01→02 MMetrics 同源蛋白空结果排查资料，供离线核对与后台定位",
+  "scope": {
+    "full_original_case_directories": [
+      "01-structure",
+      "02-mmetrics-kn035"
+    ],
+    "additional": [
+      "5JDS参考来源",
+      "当前官网01消费来源快照",
+      "跨案例追溯上下文"
+    ],
+    "new_mos_tasks_submitted": false,
+    "original_archives_modified": false,
+    "live_backend_logs_obtained": false
+  },
+  "identifiers": {
+    "case01_project": "342242986152960",
+    "case01_task": "342253805564928",
+    "case02_project": "342604060136448",
+    "case02_object": "342604293768192",
+    "case02_work": "342604299084800",
+    "autocompute_task": "342604299285504",
+    "mmetrics_task": "342604577018880",
+    "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6"
+  },
+  "structure_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "chains": [
+    {
+      "id": "A",
+      "role": "target",
+      "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "length": 118
+    },
+    {
+      "id": "B",
+      "role": "binder",
+      "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "length": 128
+    }
+  ],
+  "findings": [
+    "可以确认：原生 record.json 中 annotations.homology=[]，所以空结果已经出现在 MMetrics 产物层；不是只凭官网演示作出的判断。",
+    "可以确认：前置 mos-blast 有503条比对、500个唯一hit_id、500条FASTA；所有query都是B链KN035 VHH 128aa。",
+    "可以确认：Homologs原生UI写的是按抗原序列检索；当前抗原是A链PD-L1 118aa。抗体命中不能直接当作缺失的抗原同源结果。",
+    "不能确认：A链检索是否另行调度、跳过、失败或保存在未归档位置；也不能据此宣称PD-L1不存在同源蛋白。",
+    "排查优先级：A链query选择与调度 → entity/chain与产物的路由 → MMetrics装配/阈值过滤 → UI空状态分类。根因尚未确定。"
+  ],
+  "homolog_evidence": {
+    "audit_date": "2026-10-28",
+    "scope": "Local archived case 01 → case 02 evidence only; no new MOS task or external search was run.",
+    "identifiers": {
+      "case01_project": "342242986152960",
+      "case01_task": "342253805564928",
+      "case02_project": "342604060136448",
+      "case02_object": "342604293768192",
+      "case02_work": "342604299084800",
+      "autocompute_task": "342604299285504",
+      "mmetrics_task": "342604577018880",
+      "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6"
+    },
+    "facts": {
+      "structure_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "case01_case02_original_sanitized_byte_identical": true,
+      "chain_A_role": "PD-L1 antigen",
+      "chain_A_aa": 118,
+      "chain_B_role": "KN035 VHH antibody",
+      "chain_B_aa": 128,
+      "blast_alignment_rows": 503,
+      "blast_unique_hit_ids": 500,
+      "all_sequences_fasta_records": 500,
+      "raw_blast_and_similarity_download_identical": true,
+      "raw_fasta_and_download_identical": true,
+      "blast_general_query_is_chain_B": true,
+      "all_blast_rows_query_is_chain_B": true,
+      "blast_query_sequence_count": 1,
+      "blast_chain_A_query_rows": 0,
+      "hit_database_row_counts": {
+        "pdb": 503
+      },
+      "references": [
+        "RCSB"
+      ],
+      "multi_hsp_hit_ids": {
+        "pdb|8YNS|N": 2,
+        "pdb|9O9A|A": 2,
+        "pdb|8XLD|B": 2
+      },
+      "top_hit": {
+        "hit_id": "pdb|5JDS|B",
+        "hit_name": "5JDS_B",
+        "hit_desc": "Chain B, Nanobody [Camelidae]",
+        "hit_db": "pdb",
+        "reference": "RCSB",
+        "hit_len": 146,
+        "identity_percentage": 1.0,
+        "identity": 128,
+        "e_value": 2.10588e-92,
+        "bit_score": 266.544,
+        "query_from": 1,
+        "query_to": 128,
+        "hit_from": 3,
+        "hit_to": 130,
+        "gaps": 0
+      },
+      "top_hit_caveat": "5JDS_B is the KN035 source sequence self-hit; raw hits are sequence similarity records, not experimental proof of shared binding function.",
+      "identity_percentage_native_scale": "0–1 (top hit 1.0 = 100%)",
+      "ui_homologs_note": "Searched by antigen sequence similarity",
+      "ui_homologs_result": "No significant homologs found.",
+      "ui_capture_utc": "2026-10-21T02:23:00.211Z",
+      "ui_url": "https://mos.moleculemind.com/?projectId=342604060136448",
+      "ui_text_contains_both_homologs_statements": true,
+      "native_record_annotations_homology": [],
+      "native_record_annotations_uniprot": [],
+      "native_record_annotations_pdb": [],
+      "native_record_model_tasks_results": [],
+      "mmetrics_payload_autocompute_input_object_count": 7,
+      "mmetrics_payload_blast_input_objects": [
+        {
+          "id": "342604574114816",
+          "name": "all_sequences.fasta",
+          "key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+          "createTime": 1792549294,
+          "modelType": "mos-blast"
+        },
+        {
+          "key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+          "createTime": 1792549294,
+          "modelType": "mos-blast",
+          "id": "342604574229504",
+          "name": "blast_results.json"
+        }
+      ],
+      "sequence_info_fasta_verbatim": ">heavy_sequence\nQVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS\n>light_sequence\nNone\n",
+      "autocompute_task_succeeded": true,
+      "mmetrics_task_succeeded": true,
+      "autocompute_start_utc_from_archived_provenance": "2026-10-21T02:20:28Z",
+      "autocompute_duration_verbatim": "1.1min",
+      "mmetrics_start_utc_from_archived_provenance": "2026-10-21T02:21:36Z",
+      "mmetrics_duration_verbatim": "3s"
+    },
+    "interpretation": [
+      "The homolog panel empty state is already present in the native MMetrics record (annotations.homology=[]), not solely a website presentation issue.",
+      "The archived BLAST output contains substantial KN035 chain B results. It does not demonstrate that a PD-L1 chain A antigen query ran or succeeded.",
+      "The native Homologs UI explicitly describes antigen sequence similarity. Therefore chain B BLAST hits must not be counted as missing chain A homologs.",
+      "The root cause is not determined from this archive. First investigate antigen query selection/scheduling and per-entity output routing; then inspect homology assembly/filtering/schema handling."
+    ],
+    "not_established_from_archive": [
+      "Whether a separate chain A antigen sequence search was scheduled, skipped, failed, or stored outside this task archive.",
+      "Exact search algorithm/program and software version, database snapshot/release date, configured e-value or identity/coverage thresholds, maximum target count.",
+      "Per-stage backend logs, HTTP request/response statuses for external lookup, retries/timeouts, MMetrics worker application revision and schema implementation.",
+      "Whether MMetrics intentionally discards antibody BLAST for its antigen Homologs panel; the UI label suggests this distinction but implementation is not archived.",
+      "Any biological absence of PD-L1 homologs; an empty UI/list cannot establish this."
+    ],
+    "recommended_backend_checks": [
+      {
+        "priority": 1,
+        "check": "Inspect autocompute task 342604299285504 scheduling logs: list each selected query entity/chain, full query sequence, and enabled search modules. Determine why archived mos-blast has only B/128 aa."
+      },
+      {
+        "priority": 2,
+        "check": "Find the chain A/118 aa antigen search task or skipped-step reason using project/object/work IDs. Preserve exact raw response, database/version, thresholds and exit state."
+      },
+      {
+        "priority": 3,
+        "check": "Inspect MMetrics task 342604577018880: input artifact reads, antigen-vs-antibody entity association, expected schema, filtering reasons, and construction of annotations.homology/uniprot/pdb."
+      },
+      {
+        "priority": 4,
+        "check": "Distinguish no query performed, query failure, zero hits after filtering, and missing annotation assembly in the UI and task states."
+      }
+    ],
+    "source_files": [
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+        "bytes": 1882222,
+        "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/similarity_results.json",
+        "bytes": 1882222,
+        "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/all_sequences.fasta",
+        "bytes": 98182,
+        "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_info.fasta",
+        "bytes": 166,
+        "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json",
+        "bytes": 20632,
+        "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json",
+        "bytes": 2041,
+        "sha256": "68e824dfd6e5d403799ae83dc17933f54596d6fc452ca3887f7da4397807917b"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_payload.json",
+        "bytes": 176,
+        "sha256": "e3a1b5ca1d1b3707ec69d092105cf60e75a7a98fd09b3c6bfcd199d3ab17661c"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_status.txt",
+        "bytes": 434,
+        "sha256": "fbc86c4b63a958044fe01c43a8547bac35b65a26813fba758c58ee0c919e0e78"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_status.txt",
+        "bytes": 295,
+        "sha256": "30807126f69d5d096ace9f5cfb10d9abe9b28c9784ba4432a09cf2d6cc03ade4"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/homologs.json",
+        "bytes": 172,
+        "sha256": "6ee5b51277f6bfdec91be7be5bc36afee75f4247489e41f028dfa9f95587bb6e"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json",
+        "bytes": 211855,
+        "sha256": "5a820c949724775be40d9be1021de110aedaacaf0dce58b7d8ec8ede1da7493f"
+      },
+      {
+        "path": "website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+        "bytes": 154131,
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.original.cif",
+        "bytes": 154131,
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+      },
+      {
+        "path": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.sanitized.cif",
+        "bytes": 154131,
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+      }
+    ]
+  },
+  "timeline": [
+    [
+      "01",
+      "MMFold 创建（UI）",
+      "2026-10-20 9:34:18",
+      "原始 UI 未标时区",
+      "未擅自换算",
+      "Task List Creation Time",
+      "archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt"
+    ],
+    [
+      "01",
+      "MMFold 更新为成功时的更新时间（UI）",
+      "2026-10-20 9:36:23",
+      "原始 UI 未标时区",
+      "未擅自换算",
+      "Task List Update Time；不等同精确 worker finish",
+      "archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt"
+    ],
+    [
+      "02",
+      "autocompute-MMFold_1 开始",
+      "2026-10-21 02:20:28",
+      "原status无时区；旧ledger归一化=2026-10-21T02:20:28Z",
+      "2026-10-21T09:20:28+07:00（按旧档UTC声明）",
+      "duration=1.1min；未独立确认后台时区",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    ],
+    [
+      "02",
+      "mmetrics-analysis-342604299285504 开始",
+      "2026-10-21 02:21:36",
+      "原status无时区；旧ledger归一化=2026-10-21T02:21:36Z",
+      "2026-10-21T09:21:36+07:00（按旧档UTC声明）",
+      "duration=3s；未独立确认后台时区",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    ],
+    [
+      "02",
+      "前置输出对象 createTime",
+      "1792549294",
+      "Unix 秒（UTC）",
+      "2026-10-21T09:21:34+07:00",
+      "7个输入对象均记录此 createTime",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    ],
+    [
+      "02",
+      "原生 Homologs 面板采集",
+      "2026-10-21T02:23:00.211Z",
+      "captured_at 显式 Z/UTC",
+      "2026-10-21T09:23:00.211+07:00",
+      "这是采集时间，不是任务运行时间",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbAn-independent",
+      "2026-10-21 02:27:46",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:46Z",
+      "2026-10-21T09:27:46+07:00（按旧档UTC声明）",
+      "task=342606092895232；duration=20s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbScN-language-independent",
+      "2026-10-21 02:27:46",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:46Z",
+      "2026-10-21T09:27:46+07:00（按旧档UTC声明）",
+      "task=342606094599168；duration=3s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbScN-nativeness-independent",
+      "2026-10-21 02:27:47",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:47Z",
+      "2026-10-21T09:27:47+07:00（按旧档UTC声明）",
+      "task=342606097245184；duration=3s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-ParaDt-independent",
+      "2026-10-21 02:27:48",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:48Z",
+      "2026-10-21T09:27:48+07:00（按旧档UTC声明）",
+      "task=342606100722688；duration=25s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 操作观察",
+      "提交创建案例 02 项目",
+      "2026-10-21T02:19:28.859Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:28.859+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交创建案例 02 项目",
+      "2026-10-21T02:19:29.625Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:29.625+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "查看新项目导入入口",
+      "2026-10-21T02:19:37.698Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:37.698+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "向案例 02 上传唯一主结构",
+      "2026-10-21T02:19:59.116Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:59.116+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "指定主结构的绝对路径",
+      "2026-10-21T02:20:20.494Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:20.494+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "完成主结构导入",
+      "2026-10-21T02:20:26.350Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:26.350+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "核验导入后的链、序列及 MMetrics 状态",
+      "2026-10-21T02:20:40.995Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:40.995+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "打开并记录 KN035 原生 MMetrics 面板",
+      "2026-10-21T02:20:49.331Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:49.331+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "打开并记录 KN035 原生 MMetrics 面板",
+      "2026-10-21T02:20:50.196Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:50.196+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交案例 02 的原始结果导出与编号核验请求",
+      "2026-10-21T02:21:45.731Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:21:45.731+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交案例 02 的原始结果导出与编号核验请求",
+      "2026-10-21T02:21:46.245Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:21:46.245+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "下载原生完整亲和力评分 CSV",
+      "2026-10-21T02:25:32.259Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:25:32.259+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "下载原生归档并补齐独立抗体分析，保留来源区分",
+      "2026-10-21T02:27:26.513Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:27:26.513+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "保存原生面板首屏并开始重叠采集",
+      "2026-10-21T02:29:13.454Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:29:13.454+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "完成面板逐屏截图及对应的真实滚动记录",
+      "2026-10-21T02:29:20.763Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:29:20.763+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ]
+  ],
+  "timeline_audit_files": [
+    "session_observation_excerpts.json",
+    "timeline.json"
+  ],
+  "lineage_audit_files": [
+    "audit.json"
+  ],
+  "timestamps_policy": "保留原始UI时间。只有显式UTC/Unix epoch或旧档声明UTC时才提供Jakarta显示；旧档声明不等于独立后台时区验证。raw status缺少时区，精确finish/项目创建/上传完成时间未留档时标unknown。文件mtime不作运行时间。",
+  "raw_source_policy": "archives/ 中01及02原始文件按字节复制，嵌套历史ZIP也完整保留。context/跨案例文档只作上下文；不代表打包03—05的原始数据。"
+}

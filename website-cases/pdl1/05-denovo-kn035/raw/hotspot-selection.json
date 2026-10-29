@@ -1,0 +1,96 @@
+{
+  "source_kind": "native_epitope_plus_local_SASA",
+  "epitope_source": "02-mmetrics-kn035/residues-on-mmfold1.json",
+  "selection_method": "Six residues within native Epitope, isolated-chain SASA >=20 A2, prioritized by interface burial; target chain numbering preserved at import.",
+  "native_epitope_label_seq_ids": [
+    38,
+    40,
+    42,
+    45,
+    47,
+    50,
+    52,
+    53,
+    57,
+    60,
+    97,
+    99,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109
+  ],
+  "hotspots": [
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "isolated_sasa_A2": 60.88458922534577,
+      "complex_sasa_A2": 11.82469294872418,
+      "buried_sasa_A2": 49.059896276621586,
+      "mos_chain": "A",
+      "mos_residue": 38,
+      "native_epitope_member": true
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "isolated_sasa_A2": 62.334476122879515,
+      "complex_sasa_A2": 3.001158225986573,
+      "buried_sasa_A2": 59.33331789689294,
+      "mos_chain": "A",
+      "mos_residue": 40,
+      "native_epitope_member": true
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "isolated_sasa_A2": 138.45500431997237,
+      "complex_sasa_A2": 29.776470701658823,
+      "buried_sasa_A2": 108.67853361831355,
+      "mos_chain": "A",
+      "mos_residue": 45,
+      "native_epitope_member": true
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "isolated_sasa_A2": 66.79674720414866,
+      "complex_sasa_A2": 9.570051750056066,
+      "buried_sasa_A2": 57.22669545409259,
+      "mos_chain": "A",
+      "mos_residue": 97,
+      "native_epitope_member": true
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "isolated_sasa_A2": 61.4333613210779,
+      "complex_sasa_A2": 10.112484373612634,
+      "buried_sasa_A2": 51.320876947465266,
+      "mos_chain": "A",
+      "mos_residue": 105,
+      "native_epitope_member": true
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "isolated_sasa_A2": 101.01729392962457,
+      "complex_sasa_A2": 46.193941726470015,
+      "buried_sasa_A2": 54.823352203154556,
+      "mos_chain": "A",
+      "mos_residue": 107,
+      "native_epitope_member": true
+    }
+  ],
+  "hotspot_res_string": "A45,A40,A97,A107,A105,A38",
+  "not_experimental": true
+}

@@ -1,0 +1,248 @@
+{
+  "scope": "read-only local archived comparison; no external requests, no task launches",
+  "date": "2026-10-28",
+  "native_records": [
+    {
+      "case": "kn035-native",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json",
+      "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6",
+      "schema_version": "1.0.0",
+      "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91",
+      "entities": [
+        {
+          "entity_id": 1,
+          "chains": [
+            "A"
+          ],
+          "length": 118,
+          "antibody_fragment": null
+        },
+        {
+          "entity_id": 2,
+          "chains": [
+            "B"
+          ],
+          "length": 128,
+          "antibody_fragment": "VHH"
+        }
+      ],
+      "counts": {
+        "homology": 0,
+        "uniprot": 0,
+        "pdb": 0,
+        "features": 11
+      },
+      "model_tasks_results_count": 0,
+      "homology_entity_id_counts": {},
+      "homology_summary": []
+    },
+    {
+      "case": "petase-WT-native",
+      "source": "website-cases/petase-redesign/outputs/mos-export-v2/website_case_petase/native_tasks/_raw_api_returns/mmetrics_342337536795648_record.json",
+      "mmetrics_id": "1749f50f-db7b-4511-b267-2763f0888f58",
+      "schema_version": "1.0.0",
+      "sha256": "7afc5ca042159b2cac393372d411fd38c8df1de7506a7a400fc241bbce327a4d",
+      "entities": [
+        {
+          "entity_id": 1,
+          "chains": [
+            "A"
+          ],
+          "length": 268,
+          "antibody_fragment": null
+        }
+      ],
+      "counts": {
+        "homology": 0,
+        "uniprot": 0,
+        "pdb": 0,
+        "features": 0
+      },
+      "model_tasks_results_count": 0,
+      "homology_entity_id_counts": {},
+      "homology_summary": []
+    },
+    {
+      "case": "petase-5XH3-native",
+      "source": "website-cases/petase-redesign/outputs/mos-export-v2/website_case_petase/native_tasks/_raw_api_returns/mmetrics_342338457240576_record.json",
+      "mmetrics_id": "6c50d314-aa7e-47a8-97cc-c9a7b3f8fc8a",
+      "schema_version": "1.0.0",
+      "sha256": "60dbefad93809ce47331393a7328d6a968690ab8745636530b41d6520d8a07da",
+      "entities": [
+        {
+          "entity_id": 1,
+          "chains": [
+            "A"
+          ],
+          "length": 261,
+          "antibody_fragment": null
+        }
+      ],
+      "counts": {
+        "homology": 0,
+        "uniprot": 0,
+        "pdb": 0,
+        "features": 0
+      },
+      "model_tasks_results_count": 0,
+      "homology_entity_id_counts": {},
+      "homology_summary": []
+    },
+    {
+      "case": "4HT1-exported-reference",
+      "source": "content/mmetrics-4ht1.record.json",
+      "mmetrics_id": "a3204e85-aaa1-4d0e-b75c-99d921884441",
+      "schema_version": "1.0.0",
+      "sha256": "c1f9203e76263f62daab4d272c0bbd19f6889fc7c662a7ffc2d40af9bea48a94",
+      "entities": [
+        {
+          "entity_id": 1,
+          "chains": [
+            "A"
+          ],
+          "length": 120,
+          "antibody_fragment": "VH"
+        },
+        {
+          "entity_id": 2,
+          "chains": [
+            "B"
+          ],
+          "length": 111,
+          "antibody_fragment": "VL"
+        },
+        {
+          "entity_id": 3,
+          "chains": [
+            "C"
+          ],
+          "length": 154,
+          "antibody_fragment": null
+        }
+      ],
+      "counts": {
+        "homology": 3,
+        "uniprot": 1,
+        "pdb": 1,
+        "features": 22
+      },
+      "model_tasks_results_count": 9,
+      "homology_entity_id_counts": {
+        "1": 3
+      },
+      "homology_summary": [
+        {
+          "entity_id": 1,
+          "hit_id": "pdb|4HT1|T",
+          "query_aligned_aa": 154,
+          "identity_percentage": 1
+        },
+        {
+          "entity_id": 1,
+          "hit_id": "sp|O43508.1|",
+          "query_aligned_aa": 153,
+          "identity_percentage": 1
+        },
+        {
+          "entity_id": 1,
+          "hit_id": "sp|O54907.2|",
+          "query_aligned_aa": 153,
+          "identity_percentage": 0.9346
+        }
+      ]
+    }
+  ],
+  "native_UI_only_cases": [
+    {
+      "case": "legacy5GRJ",
+      "project_id": "342256011498496",
+      "homologs": "No significant homologs found.",
+      "method": "Searched by antigen sequence similarity",
+      "source": "website-cases/pdl1/02-mmetrics/MMETRICS_REPRODUCTION.md:33",
+      "caution": "separate independent SeqHomology results must not be counted as native Homologs"
+    },
+    {
+      "case": "d13/1FDL",
+      "homologs": "No significant homologs found.",
+      "method": "Searched by antigen sequence similarity",
+      "source": "website-cases/d13-humanization/tasks/native-1FDL-mmetrics-panel.json",
+      "note": "Description identifies antigen chainC Lysozyme and UniProt annotations, so annotations are not universally absent even while homology empty"
+    }
+  ],
+  "independent_PDL1_search": {
+    "task_id": "342256475304960",
+    "task_type": "Sequence Homology Search",
+    "purpose": "homologs of PD-L1 chain C (221 aa ectodomain construct)",
+    "input_sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER",
+    "length": 221,
+    "query_matches_payload": true,
+    "raw_alignment_rows": 642,
+    "unique_hit_ids": 500,
+    "databases": {
+      "pdb": 226,
+      "sp": 416
+    },
+    "native_or_independent": "explicit_independent_task_not_native_MMetrics",
+    "source_task_record": "website-cases/pdl1/02-mmetrics/raw/mos-export/case02_complete/08_tasks/342256475304960_5GRJ_PDL1_homologs/task_record.json",
+    "source_blast": "website-cases/pdl1/02-mmetrics/raw/mos-export/case02_complete/08_tasks/342256475304960_5GRJ_PDL1_homologs/similarity_results.json",
+    "current118aa_query_not_same_construct": true,
+    "longest_contiguous_identical_to_currentA": {
+      "length": 115,
+      "currentA_from_1based": 2,
+      "older_query_from_1based": 1
+    }
+  },
+  "case00_entry": {
+    "case": "00-entry",
+    "status": "no native MMetrics record found in archived00-entry; do not count MMFold/agentanalysis as nativeHomologs"
+  },
+  "observations": [
+    "Homologs empty recurs in KN035, legacy5GRJ,1FDL,WTpetase,5XH3; not uniquely explained by KN035 chainA/B selection.",
+    "All3 recent raw native MMetrics records have annotations.homology=[] and model_tasks.results=[].",
+    "Old4HT1 exported record has3 homology entries and9 model_tasks.results but association inconsistent: homology/uniprot entity_id1 while protein metadata1 is VH120aa, antigen is3/C154aa. This is not a clean matched positive control.",
+    "Historical independent PD-L1221aa search returns642 alignmentrows/500 uniquehitIDs in PDB/SwissProt. This proves a different explicitPDL1construct search succeeded historically, not that presentA118aa query wasrun."
+  ],
+  "unproven_hypotheses": [
+    "Recent MMetrics ingestion/aggregation of automatic outputs may be incomplete or contractchanged; recordpresence/model_tasks difference is a clue, not implementationproof.",
+    "KN035 antigen query may not have been selected/scheduled or may have separateunarchived output.",
+    "Entity-ID mapping/reordering may matter given old4HT1 internal inconsistency, but not established as currentrootcause."
+  ],
+  "missing_evidence": [
+    "Underlying rawBLAST outputs for2petase controls",
+    "NativeMMetricsrecord/payload for5GRJ and1FDL",
+    "Fulltask/autocomputepayload ofold4HT1positive",
+    "Backendlogs/config/schema implementation toconfirm failure mechanism"
+  ],
+  "current_KN035_query_selection_evidence": {
+    "raw_blast_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+    "metadata_final_record_correctly_labels_A_antigen_B_VHH": true,
+    "general_query_exact_chain_B": true,
+    "row_query_exact_chain_B": 503,
+    "row_query_exact_chain_A": 0,
+    "sequence_info_verbatim": ">heavy_sequence\nQVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS\n>light_sequence\nNone\n",
+    "conclusion": "No gross A/B mislabel at final native record; mismatch is between available rawquery B and UI requested antigen A. Whether Awasrunorstoredoffarchive remainsunknown."
+  },
+  "positive_control_reliability": {
+    "4HT1": {
+      "reliable_as": "historicalexport withnonemptyhomology only",
+      "not_reliable_as": "matchedsuccessfulcontrol of currentKN035pipeline",
+      "limitations": [
+        "No originalMMetrics/autocompute taskID/payload archived; modeltasks task_id empty",
+        "ResultobjectIDs/timeolder and implementation/config comparabilityunknown",
+        "Native record entityassociationinconsistent:homology entity1 while fullquery equalsentity3 antigen C"
+      ],
+      "top_query_equals_antigen_C_sequence": true,
+      "homology_entity_id": 1,
+      "actual_matching_metadata_entity_id": 3
+    },
+    "legacy_PDL1_221aa": {
+      "reliable_as": "historicalexplicitSequenceHomologySearchsuccessforPDL1221aa",
+      "not_reliable_as": "currentMMetricsantigen118aa queryexecutionproof",
+      "limitations": [
+        "Differentconstruct221aavs118aa",
+        "Independenttask,notnativeMMetrics",
+        "Differentdate/configmayapply"
+      ]
+    }
+  }
+}

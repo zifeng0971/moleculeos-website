@@ -1,0 +1,58 @@
+[
+  {
+    "path": "website-cases/d13-humanization/source/1FDL.cif",
+    "url": "https://files.rcsb.org/download/1FDL.cif",
+    "bytes": 467129,
+    "sha256": "6b525be71aff6850ebc4d83e2df75e2e8cfffbe7a2e4b68adf1aff9987a4c25f",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1FDL.pdb",
+    "url": "https://files.rcsb.org/download/1FDL.pdb",
+    "bytes": 391797,
+    "sha256": "2f634d7f3d7e53edd4676afa6f782c9a1194e1d0373959fdaa5f0f605ef8d91c",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1FDL.fasta",
+    "url": "https://www.rcsb.org/fasta/entry/1FDL",
+    "bytes": 790,
+    "sha256": "0777cc864934e6eb16d64e18ffd8b4447ce4b920de6190f8ea5856407a984719",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1FDL.metadata.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/1FDL",
+    "bytes": 9211,
+    "sha256": "d1a0d63badff295e94d0478eda9c9b4d7f333f05e8824a2dbe9ca3cd38cb4dad",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1BVL.cif",
+    "url": "https://files.rcsb.org/download/1BVL.cif",
+    "bytes": 372893,
+    "sha256": "95e655c26d6d2e302bd53a868403b42966d81324c1e12aa48fe865033cc3fbfb",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1BVL.pdb",
+    "url": "https://files.rcsb.org/download/1BVL.pdb",
+    "bytes": 322947,
+    "sha256": "699cc85c4e0ddc4160023070b99a518ccc50a1439dbfb55ea4eb65ca83afbdc1",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1BVL.fasta",
+    "url": "https://www.rcsb.org/fasta/entry/1BVL",
+    "bytes": 323,
+    "sha256": "75c5365869d4506fa53ae9e3238af988e73dfe77fc033d76863c7fc611498b14",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/d13-humanization/source/1BVL.metadata.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/1BVL",
+    "bytes": 10951,
+    "sha256": "9a4ea36d232a76e8d7c7118da35c4e36a13e9d5576a9f0a4176787343a4674e0",
+    "source_kind": "public experimental PDB entry"
+  }
+]

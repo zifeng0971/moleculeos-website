@@ -1,0 +1,19 @@
+{
+ "iface_CA_rmsd": [
+  0.0,
+  37
+ ],
+ "paratope_only_CA_rmsd": [
+  0.0,
+  18
+ ],
+ "epitope_only_CA_rmsd": [
+  0.0,
+  19
+ ],
+ "framework_B_only_CA_rmsd": [
+  0.0,
+  110
+ ],
+ "B_centroid_shift_A": 0.0
+}

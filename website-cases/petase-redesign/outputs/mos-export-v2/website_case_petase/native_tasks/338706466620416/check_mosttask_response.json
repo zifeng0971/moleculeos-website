@@ -1,0 +1,20 @@
+{
+ "task_id": "338706466620416",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "5xh3_A_ligand_affinity",
+  "type": "Protein-Ligand Affinity Evaluation",
+  "task_id": "338706466620416",
+  "started": "2026-10-10 02:00:08",
+  "duration": "3.2min"
+ },
+ "payload_exact": {
+  "target_file": "tos:mosv2-prod/user_objects/0/329502077678592/sanitized/179159720409225_5xh3_clean (2).cif",
+  "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [
+  "/workspace/downloads/protein_ligand_affinity_evaluation_338706466620416/predicted_sipobe_scores.csv"
+ ],
+ "note": "native reference run by the manual author; read-only lookup, not re-executed here"
+}

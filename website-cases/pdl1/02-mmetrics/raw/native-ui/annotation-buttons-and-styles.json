@@ -1,0 +1,56 @@
+[
+  {
+    "class": "clearBtn___yK_WK",
+    "rect": {
+      "h": 17,
+      "w": 48,
+      "x": 1396.4765625,
+      "y": 301.8671875
+    },
+    "style": {
+      "background": "rgba(0, 0, 0, 0)",
+      "border": "1px solid rgba(224, 138, 60, 0.4)",
+      "borderRadius": "6px",
+      "color": "rgb(224, 138, 60)",
+      "font": "11px / 12.65px -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    },
+    "text": "Clear",
+    "title": ""
+  },
+  {
+    "class": "viewBtn___UVCYM ",
+    "rect": {
+      "h": 19,
+      "w": 52,
+      "x": 1354.171875,
+      "y": 895.375
+    },
+    "style": {
+      "background": "rgb(29, 29, 29)",
+      "border": "0px none rgb(154, 154, 154)",
+      "borderRadius": "0px",
+      "color": "rgb(154, 154, 154)",
+      "font": "11px / 12.65px -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    },
+    "text": "Table",
+    "title": ""
+  },
+  {
+    "class": "viewBtn___UVCYM viewBtnActive___fE51y",
+    "rect": {
+      "h": 19,
+      "w": 39,
+      "x": 1406.234375,
+      "y": 895.375
+    },
+    "style": {
+      "background": "rgb(47, 47, 47)",
+      "border": "0px none rgb(255, 255, 255)",
+      "borderRadius": "0px",
+      "color": "rgb(255, 255, 255)",
+      "font": "11px / 12.65px -apple-system, \"system-ui\", \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\""
+    },
+    "text": "2D",
+    "title": ""
+  }
+]

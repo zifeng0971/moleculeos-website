@@ -1,0 +1,6366 @@
+{
+ "candidate": "humanization_8",
+ "model_used": "/workspace/website_case_d13/native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+ "n_models": 5,
+ "selection": "highest summary_confidences ranking_score",
+ "vs_parent": {
+  "label": "humanization_8_vs_parent",
+  "ref": "/workspace/website_case_d13/structures/parent_1FDL_Fv.pdb",
+  "mob": "/workspace/website_case_d13/native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+  "ref_chains": {
+   "A": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   },
+   "B": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   }
+  },
+  "mob_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.448
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.425,
+    "max_displacement": 1.007
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.392,
+    "max_displacement": 0.789
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.323,
+    "max_displacement": 1.57
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 0.316,
+    "max_displacement": 0.484
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.374,
+    "max_displacement": 0.887
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.52,
+    "max_displacement": 1.103
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.393,
+    "max_displacement": 0.665
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.437,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.197,
+     "displacement_after_FR_fit_mean": 0.407,
+     "displacement_after_FR_fit_max": 0.631
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.151,
+     "displacement_after_FR_fit_mean": 0.341,
+     "displacement_after_FR_fit_max": 0.454
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.241,
+     "displacement_after_FR_fit_mean": 0.431,
+     "displacement_after_FR_fit_max": 0.88
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.389,
+     "displacement_after_FR_fit_mean": 0.461,
+     "displacement_after_FR_fit_max": 0.768
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.13,
+     "displacement_after_FR_fit_mean": 0.299,
+     "displacement_after_FR_fit_max": 0.498
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.571,
+     "displacement_after_FR_fit_mean": 0.652,
+     "displacement_after_FR_fit_max": 1.145
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 40,
+   "substitutions": [
+    {
+     "role": "VH",
+     "imgt_position": "5",
+     "parent": "K",
+     "candidate": "Q",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "14",
+     "parent": "A",
+     "candidate": "K",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "17",
+     "parent": "Q",
+     "candidate": "E",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "18",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "21",
+     "parent": "I",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "24",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "42",
+     "parent": "V",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "45",
+     "parent": "P",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "53",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "77",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "80",
+     "parent": "K",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "82",
+     "parent": "N",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "91",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "94",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "95",
+     "parent": "H",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "96",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "97",
+     "parent": "D",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "101",
+     "parent": "R",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "123",
+     "parent": "T",
+     "candidate": "L",
+     "region": "FR4"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "2",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "4",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "9",
+     "parent": "A",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "17",
+     "parent": "E",
+     "candidate": "D",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "18",
+     "parent": "T",
+     "candidate": "R",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "22",
+     "parent": "T",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "46",
+     "parent": "Q",
+     "candidate": "P",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "48",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "49",
+     "parent": "S",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "51",
+     "parent": "Q",
+     "candidate": "K",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "86",
+     "parent": "Q",
+     "candidate": "E",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "87",
+     "parent": "Y",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "88",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "90",
+     "parent": "K",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "92",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "100",
+     "parent": "G",
+     "candidate": "A",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "101",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "120",
+     "parent": "G",
+     "candidate": "Q",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "124",
+     "parent": "L",
+     "candidate": "V",
+     "region": "FR4"
+    }
+   ]
+  },
+  "per_residue": [
+   {
+    "role": "VH",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.21
+   },
+   {
+    "role": "VH",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.505
+   },
+   {
+    "role": "VH",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.515
+   },
+   {
+    "role": "VH",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.21
+   },
+   {
+    "role": "VH",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "K",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.486
+   },
+   {
+    "role": "VH",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.695
+   },
+   {
+    "role": "VH",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.527
+   },
+   {
+    "role": "VH",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.325
+   },
+   {
+    "role": "VH",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.341
+   },
+   {
+    "role": "VH",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.515
+   },
+   {
+    "role": "VH",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.433
+   },
+   {
+    "role": "VH",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.745
+   },
+   {
+    "role": "VH",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.404
+   },
+   {
+    "role": "VH",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.202
+   },
+   {
+    "role": "VH",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.475
+   },
+   {
+    "role": "VH",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.635
+   },
+   {
+    "role": "VH",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.459
+   },
+   {
+    "role": "VH",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 1.007
+   },
+   {
+    "role": "VH",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.778
+   },
+   {
+    "role": "VH",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.211
+   },
+   {
+    "role": "VH",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.41
+   },
+   {
+    "role": "VH",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.331
+   },
+   {
+    "role": "VH",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.451
+   },
+   {
+    "role": "VH",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.18
+   },
+   {
+    "role": "VH",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.367
+   },
+   {
+    "role": "VH",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.353
+   },
+   {
+    "role": "VH",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.147
+   },
+   {
+    "role": "VH",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.571
+   },
+   {
+    "role": "VH",
+    "imgt_position": "30",
+    "region": "CDR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.493
+   },
+   {
+    "role": "VH",
+    "imgt_position": "35",
+    "region": "CDR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.474
+   },
+   {
+    "role": "VH",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.197
+   },
+   {
+    "role": "VH",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.31
+   },
+   {
+    "role": "VH",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.287
+   },
+   {
+    "role": "VH",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.308
+   },
+   {
+    "role": "VH",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.222
+   },
+   {
+    "role": "VH",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.116
+   },
+   {
+    "role": "VH",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.175
+   },
+   {
+    "role": "VH",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.329
+   },
+   {
+    "role": "VH",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.251
+   },
+   {
+    "role": "VH",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.22
+   },
+   {
+    "role": "VH",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.176
+   },
+   {
+    "role": "VH",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.21
+   },
+   {
+    "role": "VH",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.143
+   },
+   {
+    "role": "VH",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.134
+   },
+   {
+    "role": "VH",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.211
+   },
+   {
+    "role": "VH",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.124
+   },
+   {
+    "role": "VH",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.173
+   },
+   {
+    "role": "VH",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.345
+   },
+   {
+    "role": "VH",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.311
+   },
+   {
+    "role": "VH",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "M",
+    "candidate_aa": "M",
+    "displacement_under_global_fit": 0.303
+   },
+   {
+    "role": "VH",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.304
+   },
+   {
+    "role": "VH",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.44
+   },
+   {
+    "role": "VH",
+    "imgt_position": "58",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.346
+   },
+   {
+    "role": "VH",
+    "imgt_position": "59",
+    "region": "CDR2",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.296
+   },
+   {
+    "role": "VH",
+    "imgt_position": "63",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.266
+   },
+   {
+    "role": "VH",
+    "imgt_position": "64",
+    "region": "CDR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.408
+   },
+   {
+    "role": "VH",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.278
+   },
+   {
+    "role": "VH",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.293
+   },
+   {
+    "role": "VH",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.387
+   },
+   {
+    "role": "VH",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.394
+   },
+   {
+    "role": "VH",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.887
+   },
+   {
+    "role": "VH",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.825
+   },
+   {
+    "role": "VH",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.535
+   },
+   {
+    "role": "VH",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.468
+   },
+   {
+    "role": "VH",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.126
+   },
+   {
+    "role": "VH",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.482
+   },
+   {
+    "role": "VH",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.651
+   },
+   {
+    "role": "VH",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.612
+   },
+   {
+    "role": "VH",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.339
+   },
+   {
+    "role": "VH",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.329
+   },
+   {
+    "role": "VH",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.326
+   },
+   {
+    "role": "VH",
+    "imgt_position": "81",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.334
+   },
+   {
+    "role": "VH",
+    "imgt_position": "82",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.269
+   },
+   {
+    "role": "VH",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.379
+   },
+   {
+    "role": "VH",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.26
+   },
+   {
+    "role": "VH",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.081
+   },
+   {
+    "role": "VH",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.404
+   },
+   {
+    "role": "VH",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.21
+   },
+   {
+    "role": "VH",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.144
+   },
+   {
+    "role": "VH",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.03
+   },
+   {
+    "role": "VH",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.087
+   },
+   {
+    "role": "VH",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "M",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.184
+   },
+   {
+    "role": "VH",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.286
+   },
+   {
+    "role": "VH",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.875
+   },
+   {
+    "role": "VH",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.349
+   },
+   {
+    "role": "VH",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "H",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.57
+   },
+   {
+    "role": "VH",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.619
+   },
+   {
+    "role": "VH",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.607
+   },
+   {
+    "role": "VH",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.501
+   },
+   {
+    "role": "VH",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.413
+   },
+   {
+    "role": "VH",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.427
+   },
+   {
+    "role": "VH",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.247
+   },
+   {
+    "role": "VH",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.279
+   },
+   {
+    "role": "VH",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.372
+   },
+   {
+    "role": "VH",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.176
+   },
+   {
+    "role": "VH",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.169
+   },
+   {
+    "role": "VH",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.372
+   },
+   {
+    "role": "VH",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.374
+   },
+   {
+    "role": "VH",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.48
+   },
+   {
+    "role": "VH",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.852
+   },
+   {
+    "role": "VH",
+    "imgt_position": "113",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.636
+   },
+   {
+    "role": "VH",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.214
+   },
+   {
+    "role": "VH",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.299
+   },
+   {
+    "role": "VH",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.342
+   },
+   {
+    "role": "VH",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.208
+   },
+   {
+    "role": "VH",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.082
+   },
+   {
+    "role": "VH",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.181
+   },
+   {
+    "role": "VH",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.453
+   },
+   {
+    "role": "VH",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.467
+   },
+   {
+    "role": "VH",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.518
+   },
+   {
+    "role": "VH",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.348
+   },
+   {
+    "role": "VH",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "L",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.308
+   },
+   {
+    "role": "VH",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.309
+   },
+   {
+    "role": "VH",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.268
+   },
+   {
+    "role": "VH",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.388
+   },
+   {
+    "role": "VH",
+    "imgt_position": "128",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.265
+   },
+   {
+    "role": "VL",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.502
+   },
+   {
+    "role": "VL",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.455
+   },
+   {
+    "role": "VL",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.211
+   },
+   {
+    "role": "VL",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "M",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.222
+   },
+   {
+    "role": "VL",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.5
+   },
+   {
+    "role": "VL",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.484
+   },
+   {
+    "role": "VL",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.688
+   },
+   {
+    "role": "VL",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.281
+   },
+   {
+    "role": "VL",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.663
+   },
+   {
+    "role": "VL",
+    "imgt_position": "10",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.639
+   },
+   {
+    "role": "VL",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.464
+   },
+   {
+    "role": "VL",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.328
+   },
+   {
+    "role": "VL",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.575
+   },
+   {
+    "role": "VL",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.622
+   },
+   {
+    "role": "VL",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.264
+   },
+   {
+    "role": "VL",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.141
+   },
+   {
+    "role": "VL",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "E",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.35
+   },
+   {
+    "role": "VL",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.121
+   },
+   {
+    "role": "VL",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.71
+   },
+   {
+    "role": "VL",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.262
+   },
+   {
+    "role": "VL",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.091
+   },
+   {
+    "role": "VL",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.322
+   },
+   {
+    "role": "VL",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.387
+   },
+   {
+    "role": "VL",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.245
+   },
+   {
+    "role": "VL",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.339
+   },
+   {
+    "role": "VL",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.405
+   },
+   {
+    "role": "VL",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.218
+   },
+   {
+    "role": "VL",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.284
+   },
+   {
+    "role": "VL",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.331
+   },
+   {
+    "role": "VL",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.715
+   },
+   {
+    "role": "VL",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.789
+   },
+   {
+    "role": "VL",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.317
+   },
+   {
+    "role": "VL",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.292
+   },
+   {
+    "role": "VL",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.19
+   },
+   {
+    "role": "VL",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.164
+   },
+   {
+    "role": "VL",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.224
+   },
+   {
+    "role": "VL",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.125
+   },
+   {
+    "role": "VL",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.323
+   },
+   {
+    "role": "VL",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.953
+   },
+   {
+    "role": "VL",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 1.57
+   },
+   {
+    "role": "VL",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.098
+   },
+   {
+    "role": "VL",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.509
+   },
+   {
+    "role": "VL",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "S",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.42
+   },
+   {
+    "role": "VL",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.236
+   },
+   {
+    "role": "VL",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.366
+   },
+   {
+    "role": "VL",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.151
+   },
+   {
+    "role": "VL",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.118
+   },
+   {
+    "role": "VL",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.296
+   },
+   {
+    "role": "VL",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.203
+   },
+   {
+    "role": "VL",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.484
+   },
+   {
+    "role": "VL",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.123
+   },
+   {
+    "role": "VL",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.211
+   },
+   {
+    "role": "VL",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.176
+   },
+   {
+    "role": "VL",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.211
+   },
+   {
+    "role": "VL",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.162
+   },
+   {
+    "role": "VL",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.114
+   },
+   {
+    "role": "VL",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.194
+   },
+   {
+    "role": "VL",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.385
+   },
+   {
+    "role": "VL",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.557
+   },
+   {
+    "role": "VL",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.532
+   },
+   {
+    "role": "VL",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.459
+   },
+   {
+    "role": "VL",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.482
+   },
+   {
+    "role": "VL",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.579
+   },
+   {
+    "role": "VL",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.197
+   },
+   {
+    "role": "VL",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.294
+   },
+   {
+    "role": "VL",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.325
+   },
+   {
+    "role": "VL",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.427
+   },
+   {
+    "role": "VL",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.214
+   },
+   {
+    "role": "VL",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.064
+   },
+   {
+    "role": "VL",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.17
+   },
+   {
+    "role": "VL",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.285
+   },
+   {
+    "role": "VL",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.232
+   },
+   {
+    "role": "VL",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.29
+   },
+   {
+    "role": "VL",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.616
+   },
+   {
+    "role": "VL",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.459
+   },
+   {
+    "role": "VL",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.686
+   },
+   {
+    "role": "VL",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.846
+   },
+   {
+    "role": "VL",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.614
+   },
+   {
+    "role": "VL",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.423
+   },
+   {
+    "role": "VL",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.285
+   },
+   {
+    "role": "VL",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.517
+   },
+   {
+    "role": "VL",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.355
+   },
+   {
+    "role": "VL",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.416
+   },
+   {
+    "role": "VL",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.593
+   },
+   {
+    "role": "VL",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.297
+   },
+   {
+    "role": "VL",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.131
+   },
+   {
+    "role": "VL",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.178
+   },
+   {
+    "role": "VL",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.173
+   },
+   {
+    "role": "VL",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.226
+   },
+   {
+    "role": "VL",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.618
+   },
+   {
+    "role": "VL",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.564
+   },
+   {
+    "role": "VL",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.726
+   },
+   {
+    "role": "VL",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.103
+   },
+   {
+    "role": "VL",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.6
+   },
+   {
+    "role": "VL",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.677
+   },
+   {
+    "role": "VL",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.915
+   },
+   {
+    "role": "VL",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.511
+   },
+   {
+    "role": "VL",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.209
+   },
+   {
+    "role": "VL",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.284
+   },
+   {
+    "role": "VL",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.513
+   },
+   {
+    "role": "VL",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.566
+   },
+   {
+    "role": "VL",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.554
+   },
+   {
+    "role": "VL",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.501
+   },
+   {
+    "role": "VL",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "L",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.257
+   },
+   {
+    "role": "VL",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.483
+   },
+   {
+    "role": "VL",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.665
+   },
+   {
+    "role": "VL",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.624
+   }
+  ]
+ },
+ "vs_1BVL_Fv1_authorAB": {
+  "label": "humanization_8_vs_1BVL_Fv1_authorAB",
+  "ref": "/workspace/website_case_d13/structures/ref_1BVL_authAB.pdb",
+  "mob": "/workspace/website_case_d13/native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+  "ref_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "mob_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.67
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.595,
+    "max_displacement": 1.826
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.775,
+    "max_displacement": 1.454
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.407,
+    "max_displacement": 0.832
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 1.234,
+    "max_displacement": 2.482
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.555,
+    "max_displacement": 1.74
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.46,
+    "max_displacement": 0.826
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.404,
+    "max_displacement": 0.909
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.597,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.517,
+     "displacement_after_FR_fit_mean": 0.797,
+     "displacement_after_FR_fit_max": 1.519
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.175,
+     "displacement_after_FR_fit_mean": 1.512,
+     "displacement_after_FR_fit_max": 2.548
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.246,
+     "displacement_after_FR_fit_mean": 0.374,
+     "displacement_after_FR_fit_max": 0.519
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.522,
+     "displacement_after_FR_fit_mean": 0.807,
+     "displacement_after_FR_fit_max": 1.167
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.046,
+     "displacement_after_FR_fit_mean": 0.69,
+     "displacement_after_FR_fit_max": 0.829
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.193,
+     "displacement_after_FR_fit_mean": 0.575,
+     "displacement_after_FR_fit_max": 0.796
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 25,
+   "substitutions": [
+    {
+     "role": "VH",
+     "imgt_position": "14",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "17",
+     "parent": "Q",
+     "candidate": "E",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "24",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "42",
+     "parent": "V",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "45",
+     "parent": "P",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "48",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "53",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "76",
+     "parent": "V",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "78",
+     "parent": "M",
+     "candidate": "I",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "79",
+     "parent": "L",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "80",
+     "parent": "K",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "85",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "87",
+     "parent": "F",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "88",
+     "parent": "S",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "90",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "122",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "2",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "4",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "22",
+     "parent": "T",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "48",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "54",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "86",
+     "parent": "D",
+     "candidate": "E",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "87",
+     "parent": "Y",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "89",
+     "parent": "F",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "99",
+     "parent": "I",
+     "candidate": "F",
+     "region": "FR3"
+    }
+   ]
+  },
+  "per_residue": [
+   {
+    "role": "VH",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.48
+   },
+   {
+    "role": "VH",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.452
+   },
+   {
+    "role": "VH",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.591
+   },
+   {
+    "role": "VH",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.654
+   },
+   {
+    "role": "VH",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.509
+   },
+   {
+    "role": "VH",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.208
+   },
+   {
+    "role": "VH",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.648
+   },
+   {
+    "role": "VH",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.208
+   },
+   {
+    "role": "VH",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.391
+   },
+   {
+    "role": "VH",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.568
+   },
+   {
+    "role": "VH",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.633
+   },
+   {
+    "role": "VH",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.555
+   },
+   {
+    "role": "VH",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.744
+   },
+   {
+    "role": "VH",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.815
+   },
+   {
+    "role": "VH",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.669
+   },
+   {
+    "role": "VH",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.281
+   },
+   {
+    "role": "VH",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.239
+   },
+   {
+    "role": "VH",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.458
+   },
+   {
+    "role": "VH",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.764
+   },
+   {
+    "role": "VH",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.433
+   },
+   {
+    "role": "VH",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.271
+   },
+   {
+    "role": "VH",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.142
+   },
+   {
+    "role": "VH",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.335
+   },
+   {
+    "role": "VH",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.655
+   },
+   {
+    "role": "VH",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.975
+   },
+   {
+    "role": "VH",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.591
+   },
+   {
+    "role": "VH",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.647
+   },
+   {
+    "role": "VH",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.81
+   },
+   {
+    "role": "VH",
+    "imgt_position": "30",
+    "region": "CDR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 1.003
+   },
+   {
+    "role": "VH",
+    "imgt_position": "35",
+    "region": "CDR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.737
+   },
+   {
+    "role": "VH",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.454
+   },
+   {
+    "role": "VH",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.598
+   },
+   {
+    "role": "VH",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.106
+   },
+   {
+    "role": "VH",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.32
+   },
+   {
+    "role": "VH",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.361
+   },
+   {
+    "role": "VH",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.483
+   },
+   {
+    "role": "VH",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.4
+   },
+   {
+    "role": "VH",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.276
+   },
+   {
+    "role": "VH",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.587
+   },
+   {
+    "role": "VH",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.494
+   },
+   {
+    "role": "VH",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.832
+   },
+   {
+    "role": "VH",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.473
+   },
+   {
+    "role": "VH",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.704
+   },
+   {
+    "role": "VH",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.319
+   },
+   {
+    "role": "VH",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.213
+   },
+   {
+    "role": "VH",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.396
+   },
+   {
+    "role": "VH",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.216
+   },
+   {
+    "role": "VH",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.346
+   },
+   {
+    "role": "VH",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.518
+   },
+   {
+    "role": "VH",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "M",
+    "candidate_aa": "M",
+    "displacement_under_global_fit": 0.304
+   },
+   {
+    "role": "VH",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.529
+   },
+   {
+    "role": "VH",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 1.334
+   },
+   {
+    "role": "VH",
+    "imgt_position": "58",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 2.096
+   },
+   {
+    "role": "VH",
+    "imgt_position": "59",
+    "region": "CDR2",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 2.482
+   },
+   {
+    "role": "VH",
+    "imgt_position": "63",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 2.072
+   },
+   {
+    "role": "VH",
+    "imgt_position": "64",
+    "region": "CDR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 1.395
+   },
+   {
+    "role": "VH",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.254
+   },
+   {
+    "role": "VH",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.352
+   },
+   {
+    "role": "VH",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.513
+   },
+   {
+    "role": "VH",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.585
+   },
+   {
+    "role": "VH",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.465
+   },
+   {
+    "role": "VH",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.583
+   },
+   {
+    "role": "VH",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.51
+   },
+   {
+    "role": "VH",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.167
+   },
+   {
+    "role": "VH",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.205
+   },
+   {
+    "role": "VH",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.206
+   },
+   {
+    "role": "VH",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.905
+   },
+   {
+    "role": "VH",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.584
+   },
+   {
+    "role": "VH",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "M",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.299
+   },
+   {
+    "role": "VH",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.683
+   },
+   {
+    "role": "VH",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.33
+   },
+   {
+    "role": "VH",
+    "imgt_position": "81",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.782
+   },
+   {
+    "role": "VH",
+    "imgt_position": "82",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 1.596
+   },
+   {
+    "role": "VH",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.74
+   },
+   {
+    "role": "VH",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.37
+   },
+   {
+    "role": "VH",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.372
+   },
+   {
+    "role": "VH",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.227
+   },
+   {
+    "role": "VH",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.336
+   },
+   {
+    "role": "VH",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.132
+   },
+   {
+    "role": "VH",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.287
+   },
+   {
+    "role": "VH",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.529
+   },
+   {
+    "role": "VH",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.655
+   },
+   {
+    "role": "VH",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.935
+   },
+   {
+    "role": "VH",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.656
+   },
+   {
+    "role": "VH",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.496
+   },
+   {
+    "role": "VH",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.639
+   },
+   {
+    "role": "VH",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.461
+   },
+   {
+    "role": "VH",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.411
+   },
+   {
+    "role": "VH",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.395
+   },
+   {
+    "role": "VH",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.449
+   },
+   {
+    "role": "VH",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.443
+   },
+   {
+    "role": "VH",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.228
+   },
+   {
+    "role": "VH",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.243
+   },
+   {
+    "role": "VH",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.299
+   },
+   {
+    "role": "VH",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.296
+   },
+   {
+    "role": "VH",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.318
+   },
+   {
+    "role": "VH",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.313
+   },
+   {
+    "role": "VH",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.448
+   },
+   {
+    "role": "VH",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.278
+   },
+   {
+    "role": "VH",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.371
+   },
+   {
+    "role": "VH",
+    "imgt_position": "113",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.238
+   },
+   {
+    "role": "VH",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.291
+   },
+   {
+    "role": "VH",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.378
+   },
+   {
+    "role": "VH",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.324
+   },
+   {
+    "role": "VH",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.459
+   },
+   {
+    "role": "VH",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.338
+   },
+   {
+    "role": "VH",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.159
+   },
+   {
+    "role": "VH",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.631
+   },
+   {
+    "role": "VH",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.538
+   },
+   {
+    "role": "VH",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.159
+   },
+   {
+    "role": "VH",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.224
+   },
+   {
+    "role": "VH",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.326
+   },
+   {
+    "role": "VH",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.301
+   },
+   {
+    "role": "VH",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.663
+   },
+   {
+    "role": "VH",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.282
+   },
+   {
+    "role": "VH",
+    "imgt_position": "128",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.615
+   },
+   {
+    "role": "VL",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 1.826
+   },
+   {
+    "role": "VL",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.866
+   },
+   {
+    "role": "VL",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.562
+   },
+   {
+    "role": "VL",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "M",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.492
+   },
+   {
+    "role": "VL",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.796
+   },
+   {
+    "role": "VL",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.84
+   },
+   {
+    "role": "VL",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.134
+   },
+   {
+    "role": "VL",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.519
+   },
+   {
+    "role": "VL",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.458
+   },
+   {
+    "role": "VL",
+    "imgt_position": "10",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.461
+   },
+   {
+    "role": "VL",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.385
+   },
+   {
+    "role": "VL",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.369
+   },
+   {
+    "role": "VL",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.48
+   },
+   {
+    "role": "VL",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.996
+   },
+   {
+    "role": "VL",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.994
+   },
+   {
+    "role": "VL",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.63
+   },
+   {
+    "role": "VL",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.591
+   },
+   {
+    "role": "VL",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.452
+   },
+   {
+    "role": "VL",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.177
+   },
+   {
+    "role": "VL",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.325
+   },
+   {
+    "role": "VL",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.213
+   },
+   {
+    "role": "VL",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.462
+   },
+   {
+    "role": "VL",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.301
+   },
+   {
+    "role": "VL",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.726
+   },
+   {
+    "role": "VL",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.629
+   },
+   {
+    "role": "VL",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.967
+   },
+   {
+    "role": "VL",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.99
+   },
+   {
+    "role": "VL",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 1.168
+   },
+   {
+    "role": "VL",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.525
+   },
+   {
+    "role": "VL",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.767
+   },
+   {
+    "role": "VL",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.91
+   },
+   {
+    "role": "VL",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.546
+   },
+   {
+    "role": "VL",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.346
+   },
+   {
+    "role": "VL",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.26
+   },
+   {
+    "role": "VL",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.306
+   },
+   {
+    "role": "VL",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.178
+   },
+   {
+    "role": "VL",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.347
+   },
+   {
+    "role": "VL",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.304
+   },
+   {
+    "role": "VL",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.436
+   },
+   {
+    "role": "VL",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.649
+   },
+   {
+    "role": "VL",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.829
+   },
+   {
+    "role": "VL",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.538
+   },
+   {
+    "role": "VL",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.161
+   },
+   {
+    "role": "VL",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.154
+   },
+   {
+    "role": "VL",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.14
+   },
+   {
+    "role": "VL",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.351
+   },
+   {
+    "role": "VL",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.638
+   },
+   {
+    "role": "VL",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.492
+   },
+   {
+    "role": "VL",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.467
+   },
+   {
+    "role": "VL",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.823
+   },
+   {
+    "role": "VL",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.864
+   },
+   {
+    "role": "VL",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.491
+   },
+   {
+    "role": "VL",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.585
+   },
+   {
+    "role": "VL",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.482
+   },
+   {
+    "role": "VL",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.13
+   },
+   {
+    "role": "VL",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.891
+   },
+   {
+    "role": "VL",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.387
+   },
+   {
+    "role": "VL",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.244
+   },
+   {
+    "role": "VL",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.526
+   },
+   {
+    "role": "VL",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.257
+   },
+   {
+    "role": "VL",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.716
+   },
+   {
+    "role": "VL",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.583
+   },
+   {
+    "role": "VL",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.489
+   },
+   {
+    "role": "VL",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.871
+   },
+   {
+    "role": "VL",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.679
+   },
+   {
+    "role": "VL",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.452
+   },
+   {
+    "role": "VL",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.094
+   },
+   {
+    "role": "VL",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.105
+   },
+   {
+    "role": "VL",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.944
+   },
+   {
+    "role": "VL",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.319
+   },
+   {
+    "role": "VL",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.551
+   },
+   {
+    "role": "VL",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.343
+   },
+   {
+    "role": "VL",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.297
+   },
+   {
+    "role": "VL",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.686
+   },
+   {
+    "role": "VL",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.777
+   },
+   {
+    "role": "VL",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.957
+   },
+   {
+    "role": "VL",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.215
+   },
+   {
+    "role": "VL",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 1.17
+   },
+   {
+    "role": "VL",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.894
+   },
+   {
+    "role": "VL",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 1.009
+   },
+   {
+    "role": "VL",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.452
+   },
+   {
+    "role": "VL",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.459
+   },
+   {
+    "role": "VL",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.239
+   },
+   {
+    "role": "VL",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.083
+   },
+   {
+    "role": "VL",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.132
+   },
+   {
+    "role": "VL",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.194
+   },
+   {
+    "role": "VL",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.12
+   },
+   {
+    "role": "VL",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.412
+   },
+   {
+    "role": "VL",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.259
+   },
+   {
+    "role": "VL",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.691
+   },
+   {
+    "role": "VL",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.296
+   },
+   {
+    "role": "VL",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.766
+   },
+   {
+    "role": "VL",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.826
+   },
+   {
+    "role": "VL",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.747
+   },
+   {
+    "role": "VL",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.75
+   },
+   {
+    "role": "VL",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.475
+   },
+   {
+    "role": "VL",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.519
+   },
+   {
+    "role": "VL",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.362
+   },
+   {
+    "role": "VL",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.561
+   },
+   {
+    "role": "VL",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.703
+   },
+   {
+    "role": "VL",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.209
+   },
+   {
+    "role": "VL",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.238
+   },
+   {
+    "role": "VL",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.293
+   },
+   {
+    "role": "VL",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.175
+   },
+   {
+    "role": "VL",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.258
+   },
+   {
+    "role": "VL",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.531
+   },
+   {
+    "role": "VL",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.909
+   }
+  ]
+ },
+ "vs_1BVL_Fv2_authorCD": {
+  "label": "humanization_8_vs_1BVL_Fv2_authorCD",
+  "ref": "/workspace/website_case_d13/structures/ref_1BVL_authCD.pdb",
+  "mob": "/workspace/website_case_d13/native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+  "ref_chains": {
+   "C": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "D": {
+    "role": "VL",
+    "length": 108,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "mob_chains": {
+   "A": {
+    "role": "VH",
+    "length": 116,
+    "domain_length": 116,
+    "chain_type": "H"
+   },
+   "B": {
+    "role": "VL",
+    "length": 107,
+    "domain_length": 107,
+    "chain_type": "K"
+   }
+  },
+  "n_paired_residues": 223,
+  "global_fit": {
+   "method": "Kabsch superposition on CA atoms, all paired VH+VL residues (ANARCI IMGT pairing)",
+   "n_ca_atoms": 223,
+   "ca_rmsd": 0.62
+  },
+  "region_displacement_after_global_fit": {
+   "FR1": {
+    "n": 51,
+    "mean_displacement": 0.52,
+    "max_displacement": 1.248
+   },
+   "CDR1": {
+    "n": 14,
+    "mean_displacement": 0.478,
+    "max_displacement": 1.349
+   },
+   "FR2": {
+    "n": 34,
+    "mean_displacement": 0.441,
+    "max_displacement": 1.48
+   },
+   "CDR2": {
+    "n": 10,
+    "mean_displacement": 0.462,
+    "max_displacement": 0.746
+   },
+   "FR3": {
+    "n": 74,
+    "mean_displacement": 0.566,
+    "max_displacement": 2.013
+   },
+   "CDR3": {
+    "n": 19,
+    "mean_displacement": 0.434,
+    "max_displacement": 0.672
+   },
+   "FR4": {
+    "n": 21,
+    "mean_displacement": 0.628,
+    "max_displacement": 2.448
+   }
+  },
+  "framework_fit": {
+   "method": "Kabsch on CA of all IMGT framework residues of VH+VL; CDR values are measured after this framework fit; local_fit_ca_rmsd is an independent Kabsch fit on that CDR alone",
+   "n_ca_atoms": 180,
+   "ca_rmsd": 0.644,
+   "cdr": {
+    "VH_CDR1": {
+     "n_ca": 8,
+     "local_fit_ca_rmsd": 0.492,
+     "displacement_after_FR_fit_mean": 0.525,
+     "displacement_after_FR_fit_max": 1.331
+    },
+    "VH_CDR2": {
+     "n_ca": 7,
+     "local_fit_ca_rmsd": 0.206,
+     "displacement_after_FR_fit_mean": 0.505,
+     "displacement_after_FR_fit_max": 0.753
+    },
+    "VH_CDR3": {
+     "n_ca": 10,
+     "local_fit_ca_rmsd": 0.238,
+     "displacement_after_FR_fit_mean": 0.485,
+     "displacement_after_FR_fit_max": 0.675
+    },
+    "VL_CDR1": {
+     "n_ca": 6,
+     "local_fit_ca_rmsd": 0.391,
+     "displacement_after_FR_fit_mean": 0.456,
+     "displacement_after_FR_fit_max": 0.986
+    },
+    "VL_CDR2": {
+     "n_ca": 3,
+     "local_fit_ca_rmsd": 0.105,
+     "displacement_after_FR_fit_mean": 0.442,
+     "displacement_after_FR_fit_max": 0.466
+    },
+    "VL_CDR3": {
+     "n_ca": 9,
+     "local_fit_ca_rmsd": 0.268,
+     "displacement_after_FR_fit_mean": 0.43,
+     "displacement_after_FR_fit_max": 0.659
+    }
+   }
+  },
+  "sequence_differences": {
+   "count": 25,
+   "substitutions": [
+    {
+     "role": "VH",
+     "imgt_position": "14",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "17",
+     "parent": "Q",
+     "candidate": "E",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "24",
+     "parent": "T",
+     "candidate": "A",
+     "region": "FR1"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "42",
+     "parent": "V",
+     "candidate": "I",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "45",
+     "parent": "P",
+     "candidate": "A",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "48",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "53",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR2"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "76",
+     "parent": "V",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "78",
+     "parent": "M",
+     "candidate": "I",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "79",
+     "parent": "L",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "80",
+     "parent": "K",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "85",
+     "parent": "N",
+     "candidate": "S",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "87",
+     "parent": "F",
+     "candidate": "V",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "88",
+     "parent": "S",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "90",
+     "parent": "R",
+     "candidate": "K",
+     "region": "FR3"
+    },
+    {
+     "role": "VH",
+     "imgt_position": "122",
+     "parent": "S",
+     "candidate": "T",
+     "region": "FR4"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "2",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "4",
+     "parent": "M",
+     "candidate": "L",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "22",
+     "parent": "T",
+     "candidate": "S",
+     "region": "FR1"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "48",
+     "parent": "K",
+     "candidate": "R",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "54",
+     "parent": "I",
+     "candidate": "V",
+     "region": "FR2"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "86",
+     "parent": "D",
+     "candidate": "E",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "87",
+     "parent": "Y",
+     "candidate": "F",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "89",
+     "parent": "F",
+     "candidate": "L",
+     "region": "FR3"
+    },
+    {
+     "role": "VL",
+     "imgt_position": "99",
+     "parent": "I",
+     "candidate": "F",
+     "region": "FR3"
+    }
+   ]
+  },
+  "per_residue": [
+   {
+    "role": "VH",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.629
+   },
+   {
+    "role": "VH",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.31
+   },
+   {
+    "role": "VH",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.649
+   },
+   {
+    "role": "VH",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.284
+   },
+   {
+    "role": "VH",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.108
+   },
+   {
+    "role": "VH",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.174
+   },
+   {
+    "role": "VH",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.31
+   },
+   {
+    "role": "VH",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.813
+   },
+   {
+    "role": "VH",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.394
+   },
+   {
+    "role": "VH",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.3
+   },
+   {
+    "role": "VH",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.298
+   },
+   {
+    "role": "VH",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.227
+   },
+   {
+    "role": "VH",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.467
+   },
+   {
+    "role": "VH",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.312
+   },
+   {
+    "role": "VH",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.394
+   },
+   {
+    "role": "VH",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.356
+   },
+   {
+    "role": "VH",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.081
+   },
+   {
+    "role": "VH",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.248
+   },
+   {
+    "role": "VH",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.473
+   },
+   {
+    "role": "VH",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.563
+   },
+   {
+    "role": "VH",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.535
+   },
+   {
+    "role": "VH",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.397
+   },
+   {
+    "role": "VH",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.285
+   },
+   {
+    "role": "VH",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.264
+   },
+   {
+    "role": "VH",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.461
+   },
+   {
+    "role": "VH",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.286
+   },
+   {
+    "role": "VH",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.397
+   },
+   {
+    "role": "VH",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.571
+   },
+   {
+    "role": "VH",
+    "imgt_position": "30",
+    "region": "CDR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.385
+   },
+   {
+    "role": "VH",
+    "imgt_position": "35",
+    "region": "CDR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.356
+   },
+   {
+    "role": "VH",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.324
+   },
+   {
+    "role": "VH",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.481
+   },
+   {
+    "role": "VH",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.349
+   },
+   {
+    "role": "VH",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.15
+   },
+   {
+    "role": "VH",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.095
+   },
+   {
+    "role": "VH",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.106
+   },
+   {
+    "role": "VH",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "V",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.176
+   },
+   {
+    "role": "VH",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.157
+   },
+   {
+    "role": "VH",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.154
+   },
+   {
+    "role": "VH",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.252
+   },
+   {
+    "role": "VH",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 1.077
+   },
+   {
+    "role": "VH",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.215
+   },
+   {
+    "role": "VH",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.613
+   },
+   {
+    "role": "VH",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.719
+   },
+   {
+    "role": "VH",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.144
+   },
+   {
+    "role": "VH",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.164
+   },
+   {
+    "role": "VH",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.162
+   },
+   {
+    "role": "VH",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.315
+   },
+   {
+    "role": "VH",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.832
+   },
+   {
+    "role": "VH",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "M",
+    "candidate_aa": "M",
+    "displacement_under_global_fit": 0.764
+   },
+   {
+    "role": "VH",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.398
+   },
+   {
+    "role": "VH",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.332
+   },
+   {
+    "role": "VH",
+    "imgt_position": "58",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.618
+   },
+   {
+    "role": "VH",
+    "imgt_position": "59",
+    "region": "CDR2",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.552
+   },
+   {
+    "role": "VH",
+    "imgt_position": "63",
+    "region": "CDR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.746
+   },
+   {
+    "role": "VH",
+    "imgt_position": "64",
+    "region": "CDR2",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.425
+   },
+   {
+    "role": "VH",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.322
+   },
+   {
+    "role": "VH",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.121
+   },
+   {
+    "role": "VH",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.168
+   },
+   {
+    "role": "VH",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.82
+   },
+   {
+    "role": "VH",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.545
+   },
+   {
+    "role": "VH",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.419
+   },
+   {
+    "role": "VH",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.405
+   },
+   {
+    "role": "VH",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.642
+   },
+   {
+    "role": "VH",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.747
+   },
+   {
+    "role": "VH",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.68
+   },
+   {
+    "role": "VH",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.785
+   },
+   {
+    "role": "VH",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.441
+   },
+   {
+    "role": "VH",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "M",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.321
+   },
+   {
+    "role": "VH",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.32
+   },
+   {
+    "role": "VH",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.404
+   },
+   {
+    "role": "VH",
+    "imgt_position": "81",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.433
+   },
+   {
+    "role": "VH",
+    "imgt_position": "82",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 1.162
+   },
+   {
+    "role": "VH",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 2.013
+   },
+   {
+    "role": "VH",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 1.49
+   },
+   {
+    "role": "VH",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "N",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.778
+   },
+   {
+    "role": "VH",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.489
+   },
+   {
+    "role": "VH",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.287
+   },
+   {
+    "role": "VH",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.259
+   },
+   {
+    "role": "VH",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.237
+   },
+   {
+    "role": "VH",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.299
+   },
+   {
+    "role": "VH",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.381
+   },
+   {
+    "role": "VH",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.483
+   },
+   {
+    "role": "VH",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.479
+   },
+   {
+    "role": "VH",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.458
+   },
+   {
+    "role": "VH",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.992
+   },
+   {
+    "role": "VH",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 1.143
+   },
+   {
+    "role": "VH",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.739
+   },
+   {
+    "role": "VH",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.543
+   },
+   {
+    "role": "VH",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.247
+   },
+   {
+    "role": "VH",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.109
+   },
+   {
+    "role": "VH",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.15
+   },
+   {
+    "role": "VH",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.197
+   },
+   {
+    "role": "VH",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.254
+   },
+   {
+    "role": "VH",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.225
+   },
+   {
+    "role": "VH",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.184
+   },
+   {
+    "role": "VH",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.28
+   },
+   {
+    "role": "VH",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.286
+   },
+   {
+    "role": "VH",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.375
+   },
+   {
+    "role": "VH",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.672
+   },
+   {
+    "role": "VH",
+    "imgt_position": "113",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.667
+   },
+   {
+    "role": "VH",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.443
+   },
+   {
+    "role": "VH",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.521
+   },
+   {
+    "role": "VH",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.632
+   },
+   {
+    "role": "VH",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.625
+   },
+   {
+    "role": "VH",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.456
+   },
+   {
+    "role": "VH",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.441
+   },
+   {
+    "role": "VH",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.439
+   },
+   {
+    "role": "VH",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.106
+   },
+   {
+    "role": "VH",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.393
+   },
+   {
+    "role": "VH",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.158
+   },
+   {
+    "role": "VH",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.365
+   },
+   {
+    "role": "VH",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.635
+   },
+   {
+    "role": "VH",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.235
+   },
+   {
+    "role": "VH",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.322
+   },
+   {
+    "role": "VH",
+    "imgt_position": "128",
+    "region": "FR4",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 2.448
+   },
+   {
+    "role": "VL",
+    "imgt_position": "1",
+    "region": "FR1",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.863
+   },
+   {
+    "role": "VL",
+    "imgt_position": "2",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.424
+   },
+   {
+    "role": "VL",
+    "imgt_position": "3",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.528
+   },
+   {
+    "role": "VL",
+    "imgt_position": "4",
+    "region": "FR1",
+    "parent_aa": "M",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.482
+   },
+   {
+    "role": "VL",
+    "imgt_position": "5",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.577
+   },
+   {
+    "role": "VL",
+    "imgt_position": "6",
+    "region": "FR1",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.707
+   },
+   {
+    "role": "VL",
+    "imgt_position": "7",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.017
+   },
+   {
+    "role": "VL",
+    "imgt_position": "8",
+    "region": "FR1",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.623
+   },
+   {
+    "role": "VL",
+    "imgt_position": "9",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.014
+   },
+   {
+    "role": "VL",
+    "imgt_position": "10",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.071
+   },
+   {
+    "role": "VL",
+    "imgt_position": "11",
+    "region": "FR1",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 1.248
+   },
+   {
+    "role": "VL",
+    "imgt_position": "12",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.105
+   },
+   {
+    "role": "VL",
+    "imgt_position": "13",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.419
+   },
+   {
+    "role": "VL",
+    "imgt_position": "14",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.567
+   },
+   {
+    "role": "VL",
+    "imgt_position": "15",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.698
+   },
+   {
+    "role": "VL",
+    "imgt_position": "16",
+    "region": "FR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.973
+   },
+   {
+    "role": "VL",
+    "imgt_position": "17",
+    "region": "FR1",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.841
+   },
+   {
+    "role": "VL",
+    "imgt_position": "18",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.825
+   },
+   {
+    "role": "VL",
+    "imgt_position": "19",
+    "region": "FR1",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.568
+   },
+   {
+    "role": "VL",
+    "imgt_position": "20",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.348
+   },
+   {
+    "role": "VL",
+    "imgt_position": "21",
+    "region": "FR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.415
+   },
+   {
+    "role": "VL",
+    "imgt_position": "22",
+    "region": "FR1",
+    "parent_aa": "T",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.592
+   },
+   {
+    "role": "VL",
+    "imgt_position": "23",
+    "region": "FR1",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.315
+   },
+   {
+    "role": "VL",
+    "imgt_position": "24",
+    "region": "FR1",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.2
+   },
+   {
+    "role": "VL",
+    "imgt_position": "25",
+    "region": "FR1",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.198
+   },
+   {
+    "role": "VL",
+    "imgt_position": "26",
+    "region": "FR1",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.584
+   },
+   {
+    "role": "VL",
+    "imgt_position": "27",
+    "region": "CDR1",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.126
+   },
+   {
+    "role": "VL",
+    "imgt_position": "28",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.439
+   },
+   {
+    "role": "VL",
+    "imgt_position": "29",
+    "region": "CDR1",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.374
+   },
+   {
+    "role": "VL",
+    "imgt_position": "36",
+    "region": "CDR1",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.251
+   },
+   {
+    "role": "VL",
+    "imgt_position": "37",
+    "region": "CDR1",
+    "parent_aa": "N",
+    "candidate_aa": "N",
+    "displacement_under_global_fit": 0.93
+   },
+   {
+    "role": "VL",
+    "imgt_position": "38",
+    "region": "CDR1",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.418
+   },
+   {
+    "role": "VL",
+    "imgt_position": "39",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.278
+   },
+   {
+    "role": "VL",
+    "imgt_position": "40",
+    "region": "FR2",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.255
+   },
+   {
+    "role": "VL",
+    "imgt_position": "41",
+    "region": "FR2",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.174
+   },
+   {
+    "role": "VL",
+    "imgt_position": "42",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.13
+   },
+   {
+    "role": "VL",
+    "imgt_position": "43",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.458
+   },
+   {
+    "role": "VL",
+    "imgt_position": "44",
+    "region": "FR2",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.42
+   },
+   {
+    "role": "VL",
+    "imgt_position": "45",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 1.154
+   },
+   {
+    "role": "VL",
+    "imgt_position": "46",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 1.48
+   },
+   {
+    "role": "VL",
+    "imgt_position": "47",
+    "region": "FR2",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 1.261
+   },
+   {
+    "role": "VL",
+    "imgt_position": "48",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.308
+   },
+   {
+    "role": "VL",
+    "imgt_position": "49",
+    "region": "FR2",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.458
+   },
+   {
+    "role": "VL",
+    "imgt_position": "50",
+    "region": "FR2",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.4
+   },
+   {
+    "role": "VL",
+    "imgt_position": "51",
+    "region": "FR2",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.284
+   },
+   {
+    "role": "VL",
+    "imgt_position": "52",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.104
+   },
+   {
+    "role": "VL",
+    "imgt_position": "53",
+    "region": "FR2",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.398
+   },
+   {
+    "role": "VL",
+    "imgt_position": "54",
+    "region": "FR2",
+    "parent_aa": "I",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.114
+   },
+   {
+    "role": "VL",
+    "imgt_position": "55",
+    "region": "FR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.228
+   },
+   {
+    "role": "VL",
+    "imgt_position": "56",
+    "region": "CDR2",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.418
+   },
+   {
+    "role": "VL",
+    "imgt_position": "57",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.42
+   },
+   {
+    "role": "VL",
+    "imgt_position": "65",
+    "region": "CDR2",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.388
+   },
+   {
+    "role": "VL",
+    "imgt_position": "66",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.316
+   },
+   {
+    "role": "VL",
+    "imgt_position": "67",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.62
+   },
+   {
+    "role": "VL",
+    "imgt_position": "68",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.489
+   },
+   {
+    "role": "VL",
+    "imgt_position": "69",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.54
+   },
+   {
+    "role": "VL",
+    "imgt_position": "70",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.736
+   },
+   {
+    "role": "VL",
+    "imgt_position": "71",
+    "region": "FR3",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.725
+   },
+   {
+    "role": "VL",
+    "imgt_position": "72",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.725
+   },
+   {
+    "role": "VL",
+    "imgt_position": "74",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 1.058
+   },
+   {
+    "role": "VL",
+    "imgt_position": "75",
+    "region": "FR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 1.028
+   },
+   {
+    "role": "VL",
+    "imgt_position": "76",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.604
+   },
+   {
+    "role": "VL",
+    "imgt_position": "77",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.732
+   },
+   {
+    "role": "VL",
+    "imgt_position": "78",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.85
+   },
+   {
+    "role": "VL",
+    "imgt_position": "79",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.306
+   },
+   {
+    "role": "VL",
+    "imgt_position": "80",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.698
+   },
+   {
+    "role": "VL",
+    "imgt_position": "83",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.588
+   },
+   {
+    "role": "VL",
+    "imgt_position": "84",
+    "region": "FR3",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.524
+   },
+   {
+    "role": "VL",
+    "imgt_position": "85",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.184
+   },
+   {
+    "role": "VL",
+    "imgt_position": "86",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.442
+   },
+   {
+    "role": "VL",
+    "imgt_position": "87",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.436
+   },
+   {
+    "role": "VL",
+    "imgt_position": "88",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.572
+   },
+   {
+    "role": "VL",
+    "imgt_position": "89",
+    "region": "FR3",
+    "parent_aa": "F",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.435
+   },
+   {
+    "role": "VL",
+    "imgt_position": "90",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.215
+   },
+   {
+    "role": "VL",
+    "imgt_position": "91",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 0.535
+   },
+   {
+    "role": "VL",
+    "imgt_position": "92",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.912
+   },
+   {
+    "role": "VL",
+    "imgt_position": "93",
+    "region": "FR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.241
+   },
+   {
+    "role": "VL",
+    "imgt_position": "94",
+    "region": "FR3",
+    "parent_aa": "L",
+    "candidate_aa": "L",
+    "displacement_under_global_fit": 0.632
+   },
+   {
+    "role": "VL",
+    "imgt_position": "95",
+    "region": "FR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.615
+   },
+   {
+    "role": "VL",
+    "imgt_position": "96",
+    "region": "FR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.643
+   },
+   {
+    "role": "VL",
+    "imgt_position": "97",
+    "region": "FR3",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 0.792
+   },
+   {
+    "role": "VL",
+    "imgt_position": "98",
+    "region": "FR3",
+    "parent_aa": "D",
+    "candidate_aa": "D",
+    "displacement_under_global_fit": 0.418
+   },
+   {
+    "role": "VL",
+    "imgt_position": "99",
+    "region": "FR3",
+    "parent_aa": "I",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 1.001
+   },
+   {
+    "role": "VL",
+    "imgt_position": "100",
+    "region": "FR3",
+    "parent_aa": "A",
+    "candidate_aa": "A",
+    "displacement_under_global_fit": 0.956
+   },
+   {
+    "role": "VL",
+    "imgt_position": "101",
+    "region": "FR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.415
+   },
+   {
+    "role": "VL",
+    "imgt_position": "102",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.294
+   },
+   {
+    "role": "VL",
+    "imgt_position": "103",
+    "region": "FR3",
+    "parent_aa": "Y",
+    "candidate_aa": "Y",
+    "displacement_under_global_fit": 0.427
+   },
+   {
+    "role": "VL",
+    "imgt_position": "104",
+    "region": "FR3",
+    "parent_aa": "C",
+    "candidate_aa": "C",
+    "displacement_under_global_fit": 0.494
+   },
+   {
+    "role": "VL",
+    "imgt_position": "105",
+    "region": "CDR3",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.175
+   },
+   {
+    "role": "VL",
+    "imgt_position": "106",
+    "region": "CDR3",
+    "parent_aa": "H",
+    "candidate_aa": "H",
+    "displacement_under_global_fit": 0.241
+   },
+   {
+    "role": "VL",
+    "imgt_position": "107",
+    "region": "CDR3",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.413
+   },
+   {
+    "role": "VL",
+    "imgt_position": "108",
+    "region": "CDR3",
+    "parent_aa": "W",
+    "candidate_aa": "W",
+    "displacement_under_global_fit": 0.59
+   },
+   {
+    "role": "VL",
+    "imgt_position": "109",
+    "region": "CDR3",
+    "parent_aa": "S",
+    "candidate_aa": "S",
+    "displacement_under_global_fit": 0.438
+   },
+   {
+    "role": "VL",
+    "imgt_position": "114",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.21
+   },
+   {
+    "role": "VL",
+    "imgt_position": "115",
+    "region": "CDR3",
+    "parent_aa": "P",
+    "candidate_aa": "P",
+    "displacement_under_global_fit": 0.392
+   },
+   {
+    "role": "VL",
+    "imgt_position": "116",
+    "region": "CDR3",
+    "parent_aa": "R",
+    "candidate_aa": "R",
+    "displacement_under_global_fit": 0.628
+   },
+   {
+    "role": "VL",
+    "imgt_position": "117",
+    "region": "CDR3",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.477
+   },
+   {
+    "role": "VL",
+    "imgt_position": "118",
+    "region": "FR4",
+    "parent_aa": "F",
+    "candidate_aa": "F",
+    "displacement_under_global_fit": 0.317
+   },
+   {
+    "role": "VL",
+    "imgt_position": "119",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.43
+   },
+   {
+    "role": "VL",
+    "imgt_position": "120",
+    "region": "FR4",
+    "parent_aa": "Q",
+    "candidate_aa": "Q",
+    "displacement_under_global_fit": 0.504
+   },
+   {
+    "role": "VL",
+    "imgt_position": "121",
+    "region": "FR4",
+    "parent_aa": "G",
+    "candidate_aa": "G",
+    "displacement_under_global_fit": 0.592
+   },
+   {
+    "role": "VL",
+    "imgt_position": "122",
+    "region": "FR4",
+    "parent_aa": "T",
+    "candidate_aa": "T",
+    "displacement_under_global_fit": 0.363
+   },
+   {
+    "role": "VL",
+    "imgt_position": "123",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.592
+   },
+   {
+    "role": "VL",
+    "imgt_position": "124",
+    "region": "FR4",
+    "parent_aa": "V",
+    "candidate_aa": "V",
+    "displacement_under_global_fit": 0.633
+   },
+   {
+    "role": "VL",
+    "imgt_position": "125",
+    "region": "FR4",
+    "parent_aa": "E",
+    "candidate_aa": "E",
+    "displacement_under_global_fit": 1.435
+   },
+   {
+    "role": "VL",
+    "imgt_position": "126",
+    "region": "FR4",
+    "parent_aa": "I",
+    "candidate_aa": "I",
+    "displacement_under_global_fit": 1.503
+   },
+   {
+    "role": "VL",
+    "imgt_position": "127",
+    "region": "FR4",
+    "parent_aa": "K",
+    "candidate_aa": "K",
+    "displacement_under_global_fit": 0.812
+   }
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_path": "annotations.features[annotation_type=paratope]",
+  "chain": "B",
+  "entity_id": 2,
+  "residue_numbers_sequential": [
+    27,
+    29,
+    30,
+    32,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    108,
+    109,
+    111,
+    113,
+    114,
+    115,
+    116
+  ],
+  "n_residues": 18,
+  "evidence": "Paratope of VHH chain B (binds antigen chains A)",
+  "raw": [
+    {
+      "entity_id": 2,
+      "type": "region",
+      "annotation_type": "paratope",
+      "annotation_source": "structure",
+      "loc": [
+        27,
+        29,
+        30,
+        32,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        108,
+        109,
+        111,
+        113,
+        114,
+        115,
+        116
+      ],
+      "evidence": "Paratope of VHH chain B (binds antigen chains A)"
+    }
+  ]
+}

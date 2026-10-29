@@ -1,0 +1,10 @@
+chain	res_type	res_num	in_interface	on_surface	has_hbond	has_salt_bridge	asa	bsa	delta_g
+D	HIS	30	Y	N	N	N	89.55	50.93	-0.560
+D	TRP	92	Y	N	N	N	105.01	39.93	0.610
+A	ASN	56	Y	N	N	N	95.80	37.81	-0.380
+A	GLY	55	Y	N	N	N	33.65	20.84	-0.020
+A	ASP	54	Y	N	N	N	99.70	15.85	-0.160
+D	TYR	32	Y	N	N	N	86.62	12.26	0.050
+A	THR	57	Y	N	N	N	41.35	10.33	-0.070
+A	LEU	70	Y	N	N	N	98.85	7.52	0.120
+A	MET	69	Y	N	N	N	5.27	0.37	-0.000

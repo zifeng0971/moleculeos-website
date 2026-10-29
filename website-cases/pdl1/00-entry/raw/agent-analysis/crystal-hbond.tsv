@@ -1,0 +1,11 @@
+donor_chain	donor_pos	donor_ins	donor_res	donor_atom	receptor_chain	receptor_pos	receptor_ins	receptor_res	receptor_atom	distance	angle
+A	61		ASP	OD2	B	30		SER	OG	2.560	150.36
+B	30		SER	N	A	61		ASP	OD2	3.111	139.15
+B	32		ARG	NH1	A	61		ASP	O	2.911	172.65
+A	113		ARG	NH2	B	99		ASP	OD2	2.600	122.64
+A	113		ARG	NH1	B	99		ASP	OD1	2.978	149.82
+A	58		GLU	OE2	B	100		SER	OG	2.710	163.79
+A	113		ARG	NH2	B	100		SER	OG	3.117	121.31
+B	102		GLU	N	A	56		TYR	OH	2.915	158.63
+A	66		GLN	NE2	B	103		ASP	O	2.973	162.59
+A	125		ARG	NH2	B	116		GLN	OE1	2.574	119.19

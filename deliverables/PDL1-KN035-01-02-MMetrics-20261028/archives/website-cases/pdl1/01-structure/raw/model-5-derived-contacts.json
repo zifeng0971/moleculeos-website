@@ -1,0 +1,321 @@
+{
+  "source_kind": "local_geometry_of_MOS_prediction",
+  "cutoff_A": 4.5,
+  "pairs": [
+    {
+      "chain_1": "A",
+      "residue_1": 38,
+      "name_1": "ILE",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 3.749
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 47,
+      "name_2": "ARG",
+      "minimum_heavy_atom_distance_A": 4.392
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 107,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 3.255
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 2.614
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 40,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 110,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 3.834
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 42,
+      "name_1": "GLU",
+      "chain_2": "B",
+      "residue_2": 107,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 4.479
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 44,
+      "name_1": "GLU",
+      "chain_2": "B",
+      "residue_2": 65,
+      "name_2": "LYS",
+      "minimum_heavy_atom_distance_A": 3.859
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 47,
+      "name_2": "ARG",
+      "minimum_heavy_atom_distance_A": 3.184
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 59,
+      "name_2": "TYR",
+      "minimum_heavy_atom_distance_A": 3.401
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 60,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 3.102
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 45,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 61,
+      "name_2": "ALA",
+      "minimum_heavy_atom_distance_A": 4.418
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 46,
+      "name_1": "LYS",
+      "chain_2": "B",
+      "residue_2": 62,
+      "name_2": "ASP",
+      "minimum_heavy_atom_distance_A": 3.101
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 47,
+      "name_1": "ASN",
+      "chain_2": "B",
+      "residue_2": 110,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 3.56
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "name_1": "GLN",
+      "chain_2": "B",
+      "residue_2": 107,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 4.405
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "name_1": "GLN",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 4.232
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "name_1": "GLN",
+      "chain_2": "B",
+      "residue_2": 110,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 1.856
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 50,
+      "name_1": "GLN",
+      "chain_2": "B",
+      "residue_2": 111,
+      "name_2": "SER",
+      "minimum_heavy_atom_distance_A": 2.893
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 52,
+      "name_1": "VAL",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 4.438
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 57,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 111,
+      "name_2": "SER",
+      "minimum_heavy_atom_distance_A": 3.127
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 59,
+      "name_1": "LYS",
+      "chain_2": "B",
+      "residue_2": 44,
+      "name_2": "GLU",
+      "minimum_heavy_atom_distance_A": 3.733
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 60,
+      "name_1": "VAL",
+      "chain_2": "B",
+      "residue_2": 110,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 4.354
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 60,
+      "name_1": "VAL",
+      "chain_2": "B",
+      "residue_2": 111,
+      "name_2": "SER",
+      "minimum_heavy_atom_distance_A": 4.206
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 62,
+      "name_1": "HIS",
+      "chain_2": "B",
+      "residue_2": 62,
+      "name_2": "ASP",
+      "minimum_heavy_atom_distance_A": 3.253
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "name_1": "ARG",
+      "chain_2": "B",
+      "residue_2": 59,
+      "name_2": "TYR",
+      "minimum_heavy_atom_distance_A": 3.789
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "name_1": "ARG",
+      "chain_2": "B",
+      "residue_2": 103,
+      "name_2": "ASP",
+      "minimum_heavy_atom_distance_A": 3.72
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 97,
+      "name_1": "ARG",
+      "chain_2": "B",
+      "residue_2": 107,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 3.434
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "name_1": "MET",
+      "chain_2": "B",
+      "residue_2": 104,
+      "name_2": "PRO",
+      "minimum_heavy_atom_distance_A": 2.806
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "name_1": "MET",
+      "chain_2": "B",
+      "residue_2": 107,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 2.232
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 99,
+      "name_1": "MET",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 3.546
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 101,
+      "name_1": "SER",
+      "chain_2": "B",
+      "residue_2": 108,
+      "name_2": "LEU",
+      "minimum_heavy_atom_distance_A": 3.749
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 105,
+      "name_1": "ALA",
+      "chain_2": "B",
+      "residue_2": 104,
+      "name_2": "PRO",
+      "minimum_heavy_atom_distance_A": 4.372
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 105,
+      "name_1": "ALA",
+      "chain_2": "B",
+      "residue_2": 105,
+      "name_2": "THR",
+      "minimum_heavy_atom_distance_A": 3.096
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 106,
+      "name_1": "ASP",
+      "chain_2": "B",
+      "residue_2": 104,
+      "name_2": "PRO",
+      "minimum_heavy_atom_distance_A": 3.813
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 103,
+      "name_2": "ASP",
+      "minimum_heavy_atom_distance_A": 4.274
+    },
+    {
+      "chain_1": "A",
+      "residue_1": 107,
+      "name_1": "TYR",
+      "chain_2": "B",
+      "residue_2": 104,
+      "name_2": "PRO",
+      "minimum_heavy_atom_distance_A": 3.356
+    }
+  ]
+}

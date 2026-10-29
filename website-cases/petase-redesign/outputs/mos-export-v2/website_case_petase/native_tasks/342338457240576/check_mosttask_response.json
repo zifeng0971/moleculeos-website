@@ -1,0 +1,54 @@
+{
+ "task_id": "342338457240576",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "mmetrics-analysis-342337095480320",
+  "type": "MOSTask",
+  "task_id": "342338457240576",
+  "started": "2026-10-20 08:18:45",
+  "duration": "3s"
+ },
+ "payload_exact": {
+  "input_structure": "user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+  "autocomp_results": {
+   "result_data": {
+    "objects": [
+     {
+      "id": "342338453922816",
+      "name": "all_sequences.fasta",
+      "modelType": "mos-blast"
+     },
+     {
+      "id": "342338453935104",
+      "name": "blast_results.json",
+      "modelType": "mos-blast"
+     },
+     {
+      "id": "342338453943296",
+      "name": "esm_scores.csv",
+      "modelType": "mos-score-esm"
+     },
+     {
+      "id": "342338453955584",
+      "name": "proteinmpnn_scores.csv",
+      "modelType": "mos-score-ligandmpnn"
+     },
+     {
+      "id": "342338453963776",
+      "name": "msat_scores.csv",
+      "modelType": "mos-score-msat"
+     },
+     {
+      "id": "342338453976064",
+      "name": "sequence_info.fasta",
+      "modelType": null
+     }
+    ]
+   }
+  }
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [
+  "/workspace/downloads/mostask_342338457240576/record.json"
+ ]
+}

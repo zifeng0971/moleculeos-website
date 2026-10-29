@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "mmetrics_id": "1749f50f-db7b-4511-b267-2763f0888f58",
+  "protein_metadata": {
+    "entities": [
+      {
+        "entity_id": 1,
+        "entity_type": "protein",
+        "chain_id": [
+          "A"
+        ],
+        "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+      }
+    ]
+  },
+  "annotations": {
+    "homology": [],
+    "uniprot": [],
+    "pdb": [],
+    "features": []
+  },
+  "classification": {
+    "class": "monomer",
+    "confidence": "low",
+    "reasoning": "The asymmetric unit contains only a single protein chain of 268 residues, with no additional protein, nucleic acid, or peptide entities that would indicate a complex. No BLAST homology hits or UniProt annotations were available, so there is no evidence for catalytic activity, receptor function, or nucleic-acid binding. The suggested flags also report no ligand interaction and no antibody, supporting a classification of monomer, though the absence of functional annotation limits confidence.",
+    "description": "This structure comprises a single 268-residue polypeptide chain with no bound ligands, nucleic acids, or partner proteins. Neither sequence homology searches nor UniProt mapping returned any annotation, so the protein's identity, organism, and biological function remain undetermined. On the available evidence it behaves as an isolated monomer, and its functional role cannot be inferred without further sequence or experimental data."
+  },
+  "interactions": {
+    "2d_plot_data": []
+  },
+  "model_tasks": {
+    "results": []
+  }
+}

@@ -1,0 +1,668 @@
+[
+  {
+    "title": "Worked for 44s",
+    "duration_seconds": 44,
+    "steps": [
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Execution details 2 items",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "File operations",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Run commands 2 items",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Run commands",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Tool calls 2 items",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Run commands",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Tool calls",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Search sources",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Tool calls",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      }
+    ]
+  },
+  {
+    "title": "Worked for 7s",
+    "duration_seconds": 7,
+    "steps": [
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Tool calls",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Execution details 2 items",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Thinking",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      },
+      {
+        "title": "Run commands",
+        "start_seconds": "unknown",
+        "end_seconds": "unknown",
+        "duration_seconds": "unknown"
+      }
+    ]
+  },
+  {
+    "steps": [
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Tool calls"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Tool calls"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands 2 items"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "3D Viewer"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Tool calls"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "3D Viewer"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "3D Viewer"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "3D Viewer 4 items"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands 2 items"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Run commands"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "3D Viewer 3 items"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "File operations"
+      },
+      {
+        "duration_seconds": "unknown",
+        "end_seconds": "unknown",
+        "start_seconds": "unknown",
+        "title": "Thinking"
+      }
+    ],
+    "title": "Worked for 7m 34s",
+    "duration_seconds": 454
+  }
+]

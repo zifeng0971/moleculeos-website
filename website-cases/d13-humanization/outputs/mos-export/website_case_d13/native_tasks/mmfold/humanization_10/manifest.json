@@ -1,0 +1,97 @@
+{
+ "candidate": "humanization_10",
+ "n_samples": 5,
+ "samples": [
+  {
+   "sample": 1,
+   "file": "179248404567931_model_sample_1.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 96.2224349975586,
+   "ptm": 0.9710214734077454,
+   "iptm": 0.9621074795722961,
+   "ranking_score": 0.9638903141021729,
+   "chain_plddt": [
+    0.9635393023490906,
+    0.9608108997344971
+   ]
+  },
+  {
+   "sample": 2,
+   "file": "179248404674961_model_sample_2.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 96.22648620605469,
+   "ptm": 0.9710358381271362,
+   "iptm": 0.9620254635810852,
+   "ranking_score": 0.9638275504112244,
+   "chain_plddt": [
+    0.963573694229126,
+    0.9608578681945801
+   ]
+  },
+  {
+   "sample": 3,
+   "file": "179248404238407_model_sample_3.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 96.22328186035156,
+   "ptm": 0.9709893465042114,
+   "iptm": 0.9619550704956055,
+   "ranking_score": 0.9637619853019714,
+   "chain_plddt": [
+    0.9635220766067505,
+    0.9608469605445862
+   ]
+  },
+  {
+   "sample": 4,
+   "file": "179248404347389_model_sample_4.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 96.21212768554688,
+   "ptm": 0.9708687663078308,
+   "iptm": 0.9618813991546631,
+   "ranking_score": 0.9636788964271545,
+   "chain_plddt": [
+    0.9634125828742981,
+    0.96073317527771
+   ]
+  },
+  {
+   "sample": 5,
+   "file": "179248404456366_model_sample_5.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 96.22610473632812,
+   "ptm": 0.9709271192550659,
+   "iptm": 0.9618412852287292,
+   "ranking_score": 0.9636584520339966,
+   "chain_plddt": [
+    0.9635554552078247,
+    0.960869550704956
+   ]
+  }
+ ],
+ "best_sample": 1,
+ "best_by": "highest ranking_score in summary_confidences",
+ "chain_roles": {
+  "A": "VH",
+  "B": "VL"
+ }
+}

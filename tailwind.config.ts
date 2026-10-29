@@ -20,7 +20,7 @@ const config: Config = {
       borderRadius: { lg: '0.75rem', md: '0.5rem', sm: '0.5rem' },
       boxShadow: { soft: '0 8px 32px rgba(0, 0, 0, 0.4)' },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'PingFang SC', 'Inter', 'Noto Sans SC', 'system-ui', 'sans-serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'PingFang SC', 'Inter', 'Noto Sans SC', 'Segoe UI', 'Microsoft YaHei', 'system-ui', 'sans-serif'],
       },
     },
   },

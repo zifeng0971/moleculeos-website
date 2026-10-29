@@ -1,0 +1,1218 @@
+{
+  "source_kind": "local geometry",
+  "model": "179263337332420_model_sample_1.cif",
+  "model_sha256": "185d1ccfceb318e97c32214e2c27bebd1eb84053b5398c61e4022f29f0a7d0c0",
+  "reference": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS.cif",
+  "reference_sha256": "e3a5d004be09a985d049521179227b97834376a8fc56f48adf1d916f7521f324",
+  "method": "Global sequence alignment (match 3, mismatch -2, gap -3); Kabsch least squares over corresponding C-alpha atoms of predicted A and reference author chain A; no outlier rejection. Heavy atoms: first model, protein ATOM records, highest occupancy alternate, inclusive distance <=4.5 angstrom.",
+  "reference_chain_mapping": {
+    "PDL1": {
+      "auth_asym_id": "A",
+      "label_asym_id": "B"
+    },
+    "KN035": {
+      "auth_asym_id": "B",
+      "label_asym_id": "A"
+    }
+  },
+  "A_CA_RMSD_angstrom": 1.3042270227535213,
+  "A_CA_pairs": 115,
+  "A_identical_residue_pairs": 115,
+  "B_CA_RMSD_after_A_fit_angstrom": 1.0139305536187468,
+  "B_CA_pairs": 127,
+  "alignment": [
+    {
+      "model_label_seq_id": 2,
+      "reference_label_seq_id": 2,
+      "reference_auth_seq_id": "18",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 3,
+      "reference_label_seq_id": 3,
+      "reference_auth_seq_id": "19",
+      "model_aa": "F",
+      "reference_aa": "F"
+    },
+    {
+      "model_label_seq_id": 4,
+      "reference_label_seq_id": 4,
+      "reference_auth_seq_id": "20",
+      "model_aa": "T",
+      "reference_aa": "T"
+    },
+    {
+      "model_label_seq_id": 5,
+      "reference_label_seq_id": 5,
+      "reference_auth_seq_id": "21",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 6,
+      "reference_label_seq_id": 6,
+      "reference_auth_seq_id": "22",
+      "model_aa": "T",
+      "reference_aa": "T"
+    },
+    {
+      "model_label_seq_id": 7,
+      "reference_label_seq_id": 7,
+      "reference_auth_seq_id": "23",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 8,
+      "reference_label_seq_id": 8,
+      "reference_auth_seq_id": "24",
+      "model_aa": "P",
+      "reference_aa": "P"
+    },
+    {
+      "model_label_seq_id": 9,
+      "reference_label_seq_id": 9,
+      "reference_auth_seq_id": "25",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 10,
+      "reference_label_seq_id": 10,
+      "reference_auth_seq_id": "26",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 11,
+      "reference_label_seq_id": 11,
+      "reference_auth_seq_id": "27",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 12,
+      "reference_label_seq_id": 12,
+      "reference_auth_seq_id": "28",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 13,
+      "reference_label_seq_id": 13,
+      "reference_auth_seq_id": "29",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 14,
+      "reference_label_seq_id": 14,
+      "reference_auth_seq_id": "30",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 15,
+      "reference_label_seq_id": 15,
+      "reference_auth_seq_id": "31",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 16,
+      "reference_label_seq_id": 16,
+      "reference_auth_seq_id": "32",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 17,
+      "reference_label_seq_id": 17,
+      "reference_auth_seq_id": "33",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 18,
+      "reference_label_seq_id": 18,
+      "reference_auth_seq_id": "34",
+      "model_aa": "S",
+      "reference_aa": "S"
+    },
+    {
+      "model_label_seq_id": 19,
+      "reference_label_seq_id": 19,
+      "reference_auth_seq_id": "35",
+      "model_aa": "N",
+      "reference_aa": "N"
+    },
+    {
+      "model_label_seq_id": 20,
+      "reference_label_seq_id": 20,
+      "reference_auth_seq_id": "36",
+      "model_aa": "M",
+      "reference_aa": "M"
+    },
+    {
+      "model_label_seq_id": 21,
+      "reference_label_seq_id": 21,
+      "reference_auth_seq_id": "37",
+      "model_aa": "T",
+      "reference_aa": "T"
+    },
+    {
+      "model_label_seq_id": 22,
+      "reference_label_seq_id": 22,
+      "reference_auth_seq_id": "38",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 23,
+      "reference_label_seq_id": 23,
+      "reference_auth_seq_id": "39",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 24,
+      "reference_label_seq_id": 24,
+      "reference_auth_seq_id": "40",
+      "model_aa": "C",
+      "reference_aa": "C"
+    },
+    {
+      "model_label_seq_id": 25,
+      "reference_label_seq_id": 25,
+      "reference_auth_seq_id": "41",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 26,
+      "reference_label_seq_id": 26,
+      "reference_auth_seq_id": "42",
+      "model_aa": "F",
+      "reference_aa": "F"
+    },
+    {
+      "model_label_seq_id": 27,
+      "reference_label_seq_id": 27,
+      "reference_auth_seq_id": "43",
+      "model_aa": "P",
+      "reference_aa": "P"
+    },
+    {
+      "model_label_seq_id": 28,
+      "reference_label_seq_id": 28,
+      "reference_auth_seq_id": "44",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 29,
+      "reference_label_seq_id": 29,
+      "reference_auth_seq_id": "45",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 30,
+      "reference_label_seq_id": 30,
+      "reference_auth_seq_id": "46",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 31,
+      "reference_label_seq_id": 31,
+      "reference_auth_seq_id": "47",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 32,
+      "reference_label_seq_id": 32,
+      "reference_auth_seq_id": "48",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 33,
+      "reference_label_seq_id": 33,
+      "reference_auth_seq_id": "49",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 34,
+      "reference_label_seq_id": 34,
+      "reference_auth_seq_id": "50",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 35,
+      "reference_label_seq_id": 35,
+      "reference_auth_seq_id": "51",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 36,
+      "reference_label_seq_id": 36,
+      "reference_auth_seq_id": "52",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 37,
+      "reference_label_seq_id": 37,
+      "reference_auth_seq_id": "53",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 38,
+      "reference_label_seq_id": 38,
+      "reference_auth_seq_id": "54",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 39,
+      "reference_label_seq_id": 39,
+      "reference_auth_seq_id": "55",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 40,
+      "reference_label_seq_id": 40,
+      "reference_auth_seq_id": "56",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 41,
+      "reference_label_seq_id": 41,
+      "reference_auth_seq_id": "57",
+      "model_aa": "W",
+      "reference_aa": "W"
+    },
+    {
+      "model_label_seq_id": 42,
+      "reference_label_seq_id": 42,
+      "reference_auth_seq_id": "58",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 43,
+      "reference_label_seq_id": 43,
+      "reference_auth_seq_id": "59",
+      "model_aa": "M",
+      "reference_aa": "M"
+    },
+    {
+      "model_label_seq_id": 44,
+      "reference_label_seq_id": 44,
+      "reference_auth_seq_id": "60",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 45,
+      "reference_label_seq_id": 45,
+      "reference_auth_seq_id": "61",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 46,
+      "reference_label_seq_id": 46,
+      "reference_auth_seq_id": "62",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 47,
+      "reference_label_seq_id": 47,
+      "reference_auth_seq_id": "63",
+      "model_aa": "N",
+      "reference_aa": "N"
+    },
+    {
+      "model_label_seq_id": 48,
+      "reference_label_seq_id": 48,
+      "reference_auth_seq_id": "64",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 49,
+      "reference_label_seq_id": 49,
+      "reference_auth_seq_id": "65",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 50,
+      "reference_label_seq_id": 50,
+      "reference_auth_seq_id": "66",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 51,
+      "reference_label_seq_id": 51,
+      "reference_auth_seq_id": "67",
+      "model_aa": "F",
+      "reference_aa": "F"
+    },
+    {
+      "model_label_seq_id": 52,
+      "reference_label_seq_id": 52,
+      "reference_auth_seq_id": "68",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 53,
+      "reference_label_seq_id": 53,
+      "reference_auth_seq_id": "69",
+      "model_aa": "H",
+      "reference_aa": "H"
+    },
+    {
+      "model_label_seq_id": 54,
+      "reference_label_seq_id": 54,
+      "reference_auth_seq_id": "70",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 55,
+      "reference_label_seq_id": 55,
+      "reference_auth_seq_id": "71",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 56,
+      "reference_label_seq_id": 56,
+      "reference_auth_seq_id": "72",
+      "model_aa": "E",
+      "reference_aa": "E"
+    },
+    {
+      "model_label_seq_id": 57,
+      "reference_label_seq_id": 57,
+      "reference_auth_seq_id": "73",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 58,
+      "reference_label_seq_id": 58,
+      "reference_auth_seq_id": "74",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 59,
+      "reference_label_seq_id": 59,
+      "reference_auth_seq_id": "75",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 60,
+      "reference_label_seq_id": 60,
+      "reference_auth_seq_id": "76",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 61,
+      "reference_label_seq_id": 61,
+      "reference_auth_seq_id": "77",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 62,
+      "reference_label_seq_id": 62,
+      "reference_auth_seq_id": "78",
+      "model_aa": "H",
+      "reference_aa": "H"
+    },
+    {
+      "model_label_seq_id": 63,
+      "reference_label_seq_id": 63,
+      "reference_auth_seq_id": "79",
+      "model_aa": "S",
+      "reference_aa": "S"
+    },
+    {
+      "model_label_seq_id": 64,
+      "reference_label_seq_id": 64,
+      "reference_auth_seq_id": "80",
+      "model_aa": "S",
+      "reference_aa": "S"
+    },
+    {
+      "model_label_seq_id": 65,
+      "reference_label_seq_id": 65,
+      "reference_auth_seq_id": "81",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 66,
+      "reference_label_seq_id": 66,
+      "reference_auth_seq_id": "82",
+      "model_aa": "R",
+      "reference_aa": "R"
+    },
+    {
+      "model_label_seq_id": 67,
+      "reference_label_seq_id": 67,
+      "reference_auth_seq_id": "83",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 68,
+      "reference_label_seq_id": 68,
+      "reference_auth_seq_id": "84",
+      "model_aa": "R",
+      "reference_aa": "R"
+    },
+    {
+      "model_label_seq_id": 69,
+      "reference_label_seq_id": 69,
+      "reference_auth_seq_id": "85",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 70,
+      "reference_label_seq_id": 70,
+      "reference_auth_seq_id": "86",
+      "model_aa": "R",
+      "reference_aa": "R"
+    },
+    {
+      "model_label_seq_id": 71,
+      "reference_label_seq_id": 71,
+      "reference_auth_seq_id": "87",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 72,
+      "reference_label_seq_id": 72,
+      "reference_auth_seq_id": "88",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 73,
+      "reference_label_seq_id": 73,
+      "reference_auth_seq_id": "89",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 74,
+      "reference_label_seq_id": 74,
+      "reference_auth_seq_id": "90",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 75,
+      "reference_label_seq_id": 75,
+      "reference_auth_seq_id": "91",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 76,
+      "reference_label_seq_id": 76,
+      "reference_auth_seq_id": "92",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 77,
+      "reference_label_seq_id": 77,
+      "reference_auth_seq_id": "93",
+      "model_aa": "S",
+      "reference_aa": "S"
+    },
+    {
+      "model_label_seq_id": 78,
+      "reference_label_seq_id": 78,
+      "reference_auth_seq_id": "94",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 79,
+      "reference_label_seq_id": 79,
+      "reference_auth_seq_id": "95",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 80,
+      "reference_label_seq_id": 80,
+      "reference_auth_seq_id": "96",
+      "model_aa": "N",
+      "reference_aa": "N"
+    },
+    {
+      "model_label_seq_id": 81,
+      "reference_label_seq_id": 81,
+      "reference_auth_seq_id": "97",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 82,
+      "reference_label_seq_id": 82,
+      "reference_auth_seq_id": "98",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 83,
+      "reference_label_seq_id": 83,
+      "reference_auth_seq_id": "99",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 84,
+      "reference_label_seq_id": 84,
+      "reference_auth_seq_id": "100",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 85,
+      "reference_label_seq_id": 85,
+      "reference_auth_seq_id": "101",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 86,
+      "reference_label_seq_id": 86,
+      "reference_auth_seq_id": "102",
+      "model_aa": "T",
+      "reference_aa": "T"
+    },
+    {
+      "model_label_seq_id": 87,
+      "reference_label_seq_id": 87,
+      "reference_auth_seq_id": "103",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 88,
+      "reference_label_seq_id": 88,
+      "reference_auth_seq_id": "104",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 89,
+      "reference_label_seq_id": 89,
+      "reference_auth_seq_id": "105",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 90,
+      "reference_label_seq_id": 90,
+      "reference_auth_seq_id": "106",
+      "model_aa": "L",
+      "reference_aa": "L"
+    },
+    {
+      "model_label_seq_id": 91,
+      "reference_label_seq_id": 91,
+      "reference_auth_seq_id": "107",
+      "model_aa": "Q",
+      "reference_aa": "Q"
+    },
+    {
+      "model_label_seq_id": 92,
+      "reference_label_seq_id": 92,
+      "reference_auth_seq_id": "108",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 93,
+      "reference_label_seq_id": 93,
+      "reference_auth_seq_id": "109",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 94,
+      "reference_label_seq_id": 94,
+      "reference_auth_seq_id": "110",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 95,
+      "reference_label_seq_id": 95,
+      "reference_auth_seq_id": "111",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 96,
+      "reference_label_seq_id": 96,
+      "reference_auth_seq_id": "112",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 97,
+      "reference_label_seq_id": 97,
+      "reference_auth_seq_id": "113",
+      "model_aa": "R",
+      "reference_aa": "R"
+    },
+    {
+      "model_label_seq_id": 98,
+      "reference_label_seq_id": 98,
+      "reference_auth_seq_id": "114",
+      "model_aa": "C",
+      "reference_aa": "C"
+    },
+    {
+      "model_label_seq_id": 99,
+      "reference_label_seq_id": 99,
+      "reference_auth_seq_id": "115",
+      "model_aa": "M",
+      "reference_aa": "M"
+    },
+    {
+      "model_label_seq_id": 100,
+      "reference_label_seq_id": 100,
+      "reference_auth_seq_id": "116",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 101,
+      "reference_label_seq_id": 101,
+      "reference_auth_seq_id": "117",
+      "model_aa": "S",
+      "reference_aa": "S"
+    },
+    {
+      "model_label_seq_id": 102,
+      "reference_label_seq_id": 102,
+      "reference_auth_seq_id": "118",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 103,
+      "reference_label_seq_id": 103,
+      "reference_auth_seq_id": "119",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 104,
+      "reference_label_seq_id": 104,
+      "reference_auth_seq_id": "120",
+      "model_aa": "G",
+      "reference_aa": "G"
+    },
+    {
+      "model_label_seq_id": 105,
+      "reference_label_seq_id": 105,
+      "reference_auth_seq_id": "121",
+      "model_aa": "A",
+      "reference_aa": "A"
+    },
+    {
+      "model_label_seq_id": 106,
+      "reference_label_seq_id": 106,
+      "reference_auth_seq_id": "122",
+      "model_aa": "D",
+      "reference_aa": "D"
+    },
+    {
+      "model_label_seq_id": 107,
+      "reference_label_seq_id": 107,
+      "reference_auth_seq_id": "123",
+      "model_aa": "Y",
+      "reference_aa": "Y"
+    },
+    {
+      "model_label_seq_id": 108,
+      "reference_label_seq_id": 108,
+      "reference_auth_seq_id": "124",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 109,
+      "reference_label_seq_id": 109,
+      "reference_auth_seq_id": "125",
+      "model_aa": "R",
+      "reference_aa": "R"
+    },
+    {
+      "model_label_seq_id": 110,
+      "reference_label_seq_id": 110,
+      "reference_auth_seq_id": "126",
+      "model_aa": "I",
+      "reference_aa": "I"
+    },
+    {
+      "model_label_seq_id": 111,
+      "reference_label_seq_id": 111,
+      "reference_auth_seq_id": "127",
+      "model_aa": "T",
+      "reference_aa": "T"
+    },
+    {
+      "model_label_seq_id": 112,
+      "reference_label_seq_id": 112,
+      "reference_auth_seq_id": "128",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 113,
+      "reference_label_seq_id": 113,
+      "reference_auth_seq_id": "129",
+      "model_aa": "K",
+      "reference_aa": "K"
+    },
+    {
+      "model_label_seq_id": 114,
+      "reference_label_seq_id": 114,
+      "reference_auth_seq_id": "130",
+      "model_aa": "V",
+      "reference_aa": "V"
+    },
+    {
+      "model_label_seq_id": 115,
+      "reference_label_seq_id": 115,
+      "reference_auth_seq_id": "131",
+      "model_aa": "N",
+      "reference_aa": "N"
+    },
+    {
+      "model_label_seq_id": 116,
+      "reference_label_seq_id": 116,
+      "reference_auth_seq_id": "132",
+      "model_aa": "A",
+      "reference_aa": "A"
+    }
+  ],
+  "interface": {
+    "numbering": "original prediction label_seq_id, verified 1-based input sequence positions",
+    "cutoff_angstrom": 4.5,
+    "A": [
+      1,
+      38,
+      40,
+      42,
+      45,
+      50,
+      52,
+      53,
+      57,
+      60,
+      97,
+      99,
+      101,
+      103,
+      104,
+      105,
+      106,
+      107,
+      109
+    ],
+    "B": [
+      29,
+      30,
+      32,
+      44,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      108,
+      109,
+      111,
+      113,
+      114,
+      115,
+      116
+    ],
+    "pairs": [
+      {
+        "A": 1,
+        "B": 44,
+        "minimum_heavy_atom_distance_angstrom": 3.8552452580867027
+      },
+      {
+        "A": 38,
+        "B": 105,
+        "minimum_heavy_atom_distance_angstrom": 3.8858724889013017
+      },
+      {
+        "A": 38,
+        "B": 108,
+        "minimum_heavy_atom_distance_angstrom": 3.4973106810805366
+      },
+      {
+        "A": 38,
+        "B": 109,
+        "minimum_heavy_atom_distance_angstrom": 4.172175212044672
+      },
+      {
+        "A": 40,
+        "B": 100,
+        "minimum_heavy_atom_distance_angstrom": 3.745036448420763
+      },
+      {
+        "A": 40,
+        "B": 101,
+        "minimum_heavy_atom_distance_angstrom": 3.7183601224195595
+      },
+      {
+        "A": 40,
+        "B": 102,
+        "minimum_heavy_atom_distance_angstrom": 3.2072126527562834
+      },
+      {
+        "A": 40,
+        "B": 105,
+        "minimum_heavy_atom_distance_angstrom": 3.29930856392669
+      },
+      {
+        "A": 42,
+        "B": 99,
+        "minimum_heavy_atom_distance_angstrom": 4.31738694119487
+      },
+      {
+        "A": 42,
+        "B": 100,
+        "minimum_heavy_atom_distance_angstrom": 2.415219244706368
+      },
+      {
+        "A": 42,
+        "B": 116,
+        "minimum_heavy_atom_distance_angstrom": 3.9901422280415013
+      },
+      {
+        "A": 45,
+        "B": 29,
+        "minimum_heavy_atom_distance_angstrom": 3.179525436287623
+      },
+      {
+        "A": 45,
+        "B": 30,
+        "minimum_heavy_atom_distance_angstrom": 2.6158245353998804
+      },
+      {
+        "A": 45,
+        "B": 32,
+        "minimum_heavy_atom_distance_angstrom": 2.5363509220926037
+      },
+      {
+        "A": 45,
+        "B": 100,
+        "minimum_heavy_atom_distance_angstrom": 3.642874689033374
+      },
+      {
+        "A": 50,
+        "B": 102,
+        "minimum_heavy_atom_distance_angstrom": 3.5712661620215314
+      },
+      {
+        "A": 50,
+        "B": 103,
+        "minimum_heavy_atom_distance_angstrom": 3.2936831966660063
+      },
+      {
+        "A": 50,
+        "B": 104,
+        "minimum_heavy_atom_distance_angstrom": 3.293536245435899
+      },
+      {
+        "A": 50,
+        "B": 105,
+        "minimum_heavy_atom_distance_angstrom": 2.7300267397957847
+      },
+      {
+        "A": 52,
+        "B": 104,
+        "minimum_heavy_atom_distance_angstrom": 4.215544211605424
+      },
+      {
+        "A": 52,
+        "B": 105,
+        "minimum_heavy_atom_distance_angstrom": 4.201924083083844
+      },
+      {
+        "A": 52,
+        "B": 108,
+        "minimum_heavy_atom_distance_angstrom": 3.3340667359847487
+      },
+      {
+        "A": 53,
+        "B": 108,
+        "minimum_heavy_atom_distance_angstrom": 3.924578193895492
+      },
+      {
+        "A": 57,
+        "B": 104,
+        "minimum_heavy_atom_distance_angstrom": 3.659396261680334
+      },
+      {
+        "A": 60,
+        "B": 102,
+        "minimum_heavy_atom_distance_angstrom": 3.8489788256107613
+      },
+      {
+        "A": 60,
+        "B": 103,
+        "minimum_heavy_atom_distance_angstrom": 4.168069817073606
+      },
+      {
+        "A": 97,
+        "B": 99,
+        "minimum_heavy_atom_distance_angstrom": 2.3814142856714375
+      },
+      {
+        "A": 97,
+        "B": 100,
+        "minimum_heavy_atom_distance_angstrom": 3.508390371666186
+      },
+      {
+        "A": 97,
+        "B": 101,
+        "minimum_heavy_atom_distance_angstrom": 3.4948084353795417
+      },
+      {
+        "A": 97,
+        "B": 114,
+        "minimum_heavy_atom_distance_angstrom": 3.620966859831777
+      },
+      {
+        "A": 97,
+        "B": 116,
+        "minimum_heavy_atom_distance_angstrom": 2.97377890906503
+      },
+      {
+        "A": 99,
+        "B": 101,
+        "minimum_heavy_atom_distance_angstrom": 3.748067368658146
+      },
+      {
+        "A": 99,
+        "B": 105,
+        "minimum_heavy_atom_distance_angstrom": 3.735124362052755
+      },
+      {
+        "A": 99,
+        "B": 109,
+        "minimum_heavy_atom_distance_angstrom": 3.5432857632429253
+      },
+      {
+        "A": 99,
+        "B": 114,
+        "minimum_heavy_atom_distance_angstrom": 3.7168126129790298
+      },
+      {
+        "A": 101,
+        "B": 109,
+        "minimum_heavy_atom_distance_angstrom": 4.356161842723476
+      },
+      {
+        "A": 103,
+        "B": 111,
+        "minimum_heavy_atom_distance_angstrom": 3.0789233507835183
+      },
+      {
+        "A": 104,
+        "B": 111,
+        "minimum_heavy_atom_distance_angstrom": 3.550491374443825
+      },
+      {
+        "A": 105,
+        "B": 111,
+        "minimum_heavy_atom_distance_angstrom": 3.6656561486315105
+      },
+      {
+        "A": 105,
+        "B": 113,
+        "minimum_heavy_atom_distance_angstrom": 3.2765037768939007
+      },
+      {
+        "A": 105,
+        "B": 114,
+        "minimum_heavy_atom_distance_angstrom": 3.6634946430969433
+      },
+      {
+        "A": 106,
+        "B": 113,
+        "minimum_heavy_atom_distance_angstrom": 3.479474385593318
+      },
+      {
+        "A": 107,
+        "B": 113,
+        "minimum_heavy_atom_distance_angstrom": 3.4269636706565767
+      },
+      {
+        "A": 107,
+        "B": 114,
+        "minimum_heavy_atom_distance_angstrom": 3.619350356072205
+      },
+      {
+        "A": 107,
+        "B": 115,
+        "minimum_heavy_atom_distance_angstrom": 3.6289356566354276
+      },
+      {
+        "A": 107,
+        "B": 116,
+        "minimum_heavy_atom_distance_angstrom": 3.3751992533774957
+      },
+      {
+        "A": 109,
+        "B": 116,
+        "minimum_heavy_atom_distance_angstrom": 2.4102881570467862
+      }
+    ]
+  },
+  "comparison_to_agent": {
+    "all_positions_below_are_original_model_label_seq_id": true,
+    "A": {
+      "shared": [
+        38,
+        40,
+        42,
+        45,
+        50,
+        52,
+        53,
+        57,
+        60,
+        97,
+        99,
+        101,
+        103,
+        104,
+        105,
+        106,
+        107,
+        109
+      ],
+      "agent_only": [
+        47
+      ],
+      "local_only": [
+        1
+      ]
+    },
+    "B": {
+      "shared": [
+        29,
+        30,
+        32,
+        44,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        108,
+        109,
+        111,
+        113,
+        114,
+        115,
+        116
+      ],
+      "agent_only": [
+        27,
+        110,
+        117
+      ],
+      "local_only": []
+    },
+    "local_A_excluding_artificial_Met1": [
+      38,
+      40,
+      42,
+      45,
+      50,
+      52,
+      53,
+      57,
+      60,
+      97,
+      99,
+      101,
+      103,
+      104,
+      105,
+      106,
+      107,
+      109
+    ],
+    "explanation": "Agent uses surface burial, whereas local geometry uses <=4.5 angstrom heavy-atom distances. Artificial A:Met1 is explicitly excluded by agent from biological epitope but remains a physical distance contact in local geometry.",
+    "agent_only_nearest_distances": [
+      {
+        "chain": "A",
+        "label_seq_id": 47,
+        "aa": "N",
+        "nearest_opposing_chain_heavy_atom_distance_angstrom": 4.981567122904197
+      },
+      {
+        "chain": "B",
+        "label_seq_id": 27,
+        "aa": "K",
+        "nearest_opposing_chain_heavy_atom_distance_angstrom": 5.003188383421117
+      },
+      {
+        "chain": "B",
+        "label_seq_id": 110,
+        "aa": "T",
+        "nearest_opposing_chain_heavy_atom_distance_angstrom": 5.416936495843384
+      },
+      {
+        "chain": "B",
+        "label_seq_id": 117,
+        "aa": "Y",
+        "nearest_opposing_chain_heavy_atom_distance_angstrom": 4.777854748733997
+      }
+    ]
+  }
+}

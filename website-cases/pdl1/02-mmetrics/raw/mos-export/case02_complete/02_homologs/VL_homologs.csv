@@ -1,0 +1,501 @@
+hit_id,hit_db,description,hit_len,alignment_length,identical_residues,identity_percent_derived,identity_percent_reported,positives,gaps,e_value,bit_score,query_coverage_percent,query_from,query_to,web_link
+pdb|7K90|L,pdb,"Chain L, C144 Fab Light Chain [Homo sapiens]",216,110,110,100.0,1.0,110,0,1.72755e-74,223.016,100.0,1,110,https://www.rcsb.org/structure/7K90
+pdb|4NKI|L,pdb,"Chain L, Fab heavy chain [Homo sapiens]",216,110,110,100.0,1.0,110,0,2.67672e-74,222.246,100.0,1,110,https://www.rcsb.org/structure/4NKI
+pdb|5GRJ|L,pdb,"Chain L, avelumab L chain [Homo sapiens]",110,110,110,100.0,1.0,110,0,2.35123e-75,221.09,100.0,1,110,https://www.rcsb.org/structure/5GRJ
+pdb|8DCE|H,pdb,"Chain H, C144 scFv [Homo sapiens]",276,110,110,100.0,1.0,110,0,7.57282e-73,220.705,100.0,1,110,https://www.rcsb.org/structure/8DCE
+pdb|7L2D|L,pdb,"Chain L, 1-87 light chain [Homo sapiens]",215,110,108,98.2,0.9818181818181818,108,0,2.90062e-72,217.238,100.0,1,110,https://www.rcsb.org/structure/7L2D
+pdb|7T76|L,pdb,"Chain L, PG9.iGL Fab Light Chain [Homo sapiens]",264,110,106,96.4,0.9636363636363636,108,0,1.81945e-70,214.542,100.0,1,110,https://www.rcsb.org/structure/7T76
+pdb|6PZW|E,pdb,"Chain E, NA-22 fragment antigen binding light chain [Homo sapiens]",216,110,105,95.5,0.9545454545454546,107,0,4.37496e-71,214.157,100.0,1,110,https://www.rcsb.org/structure/6PZW
+pdb|6PZH|A,pdb,"Chain A, NA-22 Fab light chain [Homo sapiens]",217,110,105,95.5,0.9545454545454546,107,0,4.87731e-71,214.157,100.0,1,110,https://www.rcsb.org/structure/6PZH
+pdb|7YVI|H,pdb,"Chain H, TH236 Fab light chain [Homo sapiens]",111,111,109,98.2,0.9819819819819819,109,1,3.59628e-72,213.386,100.0,1,110,https://www.rcsb.org/structure/7YVI
+pdb|9Q5H|B,pdb,"Chain B, FabB2G1 L chain [Phagemid vector pComb3X-KD247scFv-VI]",216,110,106,96.4,0.9636363636363636,108,0,9.51505e-71,213.386,100.0,1,110,https://www.rcsb.org/structure/9Q5H
+pdb|3WLW|D,pdb,"Chain D, Antibody L Chain [Homo sapiens]",217,110,106,96.4,0.9636363636363636,107,0,1.24993e-70,213.001,100.0,1,110,https://www.rcsb.org/structure/3WLW
+pdb|7WPH|D,pdb,"Chain D, FAB06 light chain [Homo sapiens]",215,110,105,95.5,0.9545454545454546,107,0,2.52185e-70,212.231,100.0,1,110,https://www.rcsb.org/structure/7WPH
+pdb|7L5B|L,pdb,"Chain L, 2-15 Light Chain [Homo sapiens]",216,110,106,96.4,0.9636363636363636,107,0,2.78067e-70,212.231,100.0,1,110,https://www.rcsb.org/structure/7L5B
+pdb|6SM1|A,pdb,"Chain A, Immunoglobulin lambda variable 2-14 [Homo sapiens]",114,111,108,97.3,0.972972972972973,109,1,1.56273e-71,211.846,100.0,1,110,https://www.rcsb.org/structure/6SM1
+pdb|8Z4E|B,pdb,"Chain B, Light chain of 18_14D scFv [Homo sapiens]",216,110,105,95.5,0.9545454545454546,106,0,7.77775e-70,211.075,100.0,1,110,https://www.rcsb.org/structure/8Z4E
+pdb|7CZW|L,pdb,"Chain L, IGL c2312_light_IGLV2-14_IGLJ2,IGL@ protein [Homo sapiens]",217,111,107,96.4,0.963963963963964,108,1,9.35977e-70,211.075,100.0,1,110,https://www.rcsb.org/structure/7CZW
+pdb|8JG5|D,pdb,"Chain D, VL,SARAH [Homo sapiens]",169,110,105,95.5,0.9545454545454546,107,0,2.35335e-70,210.69,100.0,1,110,https://www.rcsb.org/structure/8JG5
+pdb|9B7X|L,pdb,"Chain L, Fab3-7 light chain [Homo sapiens]",111,110,105,95.5,0.9545454545454546,107,0,5.01202e-71,210.305,100.0,1,110,https://www.rcsb.org/structure/9B7X
+pdb|7R8N|L,pdb,"Chain L, C051 Fab Light Chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,108,0,2.67806e-69,209.92,100.0,1,110,https://www.rcsb.org/structure/7R8N
+pdb|9CLP|L,pdb,"Chain L, H11 Fab light chain [Homo sapiens]",217,111,106,95.5,0.954954954954955,108,1,2.88861e-69,209.534,100.0,1,110,https://www.rcsb.org/structure/9CLP
+pdb|7L56|G,pdb,"Chain G, Fab 2-43 variable domain light chain [Homo sapiens]",110,110,105,95.5,0.9545454545454546,106,0,1.36189e-70,209.149,100.0,1,110,https://www.rcsb.org/structure/7L56
+pdb|7L57|L,pdb,"Chain L, Fab 2-15 variable domain light chain [Homo sapiens]",110,109,105,96.3,0.963302752293578,106,0,1.99984e-70,208.764,99.1,2,110,https://www.rcsb.org/structure/7L57
+pdb|9OD3|L,pdb,"Chain L, 6B5 Light Chain [Homo sapiens]",109,109,103,94.5,0.944954128440367,107,0,2.16123e-70,208.764,99.1,2,110,https://www.rcsb.org/structure/9OD3
+pdb|7M42|A,pdb,"Chain A, REGN10989 antibody Fab fragment light chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,107,0,1.36712e-68,207.994,100.0,1,110,https://www.rcsb.org/structure/7M42
+pdb|7CZP|L,pdb,"Chain L, IG c181_light_IGLV2-14_IGLJ3,IGL@ protein [Homo sapiens]",216,110,102,92.7,0.9272727272727272,105,0,1.85714e-68,207.608,100.0,1,110,https://www.rcsb.org/structure/7CZP
+pdb|8EL2|K,pdb,"Chain K, Fab ICO-hu23 Light Chain [Homo sapiens]",216,107,103,96.3,0.9626168224299065,104,0,2.3368e-68,207.223,97.3,4,110,https://www.rcsb.org/structure/8EL2
+pdb|6XDG|A,pdb,"Chain A, REGN10987 antibody Fab fragment light chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,105,0,1.5339e-67,205.297,100.0,1,110,https://www.rcsb.org/structure/6XDG
+pdb|7ZJL|g,pdb,"Chain g, REGN10987 Fab homologue (Light chain) [Homo sapiens]",218,110,102,92.7,0.9272727272727272,105,0,1.59902e-67,205.297,100.0,1,110,https://www.rcsb.org/structure/7ZJL
+pdb|6DC3|L,pdb,"Chain L, Fab RSD5-Germline Light Chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,104,0,1.67418e-67,205.297,100.0,1,110,https://www.rcsb.org/structure/6DC3
+pdb|8J1Q|A,pdb,"Chain A, Fab Light chain (REGN10987) [Homo sapiens]",224,110,102,92.7,0.9272727272727272,105,0,1.97591e-67,205.297,100.0,1,110,https://www.rcsb.org/structure/8J1Q
+pdb|7RE7|J,pdb,"Chain J, Fab light chain [Homo sapiens]",216,110,101,91.8,0.9181818181818182,104,0,1.80741e-67,204.912,100.0,1,110,https://www.rcsb.org/structure/7RE7
+pdb|9XGO|L,pdb,"Chain L, BD58-0730 light chain [Homo sapiens]",112,110,102,92.7,0.9272727272727272,105,0,8.90699e-69,204.527,100.0,1,110,https://www.rcsb.org/structure/9XGO
+pdb|6LXI|D,pdb,"Chain D, Light chain of Z2B3 Fab [Homo sapiens]",216,110,101,91.8,0.9181818181818182,104,0,3.40876e-67,204.527,100.0,1,110,https://www.rcsb.org/structure/6LXI
+pdb|8QRF|L,pdb,"Chain L, XBB-6 light chain [Homo sapiens]",216,110,99,90.0,0.9,107,0,1.26662e-66,202.986,100.0,1,110,https://www.rcsb.org/structure/8QRF
+pdb|9PZC|L,pdb,"Chain L, B5L Fab light chain [Homo sapiens]",110,110,99,90.0,0.9,106,0,5.33841e-68,202.601,100.0,1,110,https://www.rcsb.org/structure/9PZC
+pdb|7FCP|L,pdb,"Chain L, P14-44 antibody Fab fragment light chain [Homo sapiens]",216,110,99,90.0,0.9,106,0,1.75853e-66,202.601,100.0,1,110,https://www.rcsb.org/structure/7FCP
+pdb|9V6R|D,pdb,"Chain D, Fab140 light chain [Homo sapiens]",224,110,98,89.1,0.8909090909090909,105,0,3.21121e-66,202.216,100.0,1,110,https://www.rcsb.org/structure/9V6R
+pdb|4Y5V|B,pdb,"Chain B, Diabody 305 VL domain [Homo sapiens]",117,110,100,90.9,0.9090909090909091,105,0,1.49006e-67,201.83,100.0,1,110,https://www.rcsb.org/structure/4Y5V
+pdb|8W3R|A,pdb,"Chain A, A4 single-chain fragment variable [Homo sapiens]",272,110,99,90.0,0.9,105,0,1.6898e-65,201.83,100.0,1,110,https://www.rcsb.org/structure/8W3R
+pdb|7LSS|L,pdb,"Chain L, Fab 2-7 variable light chain [Homo sapiens]",108,109,102,93.6,0.9357798165137615,104,1,1.46807e-67,201.445,99.1,2,110,https://www.rcsb.org/structure/7LSS
+pdb|6KTR|B,pdb,"Chain B, G1A8-Fab-LC [Homo sapiens]",216,110,99,90.0,0.9,104,0,4.35916e-66,201.445,100.0,1,110,https://www.rcsb.org/structure/6KTR
+pdb|7A3N|L,pdb,"Chain L, EDE1 C10 Fab [Homo sapiens]",217,110,98,89.1,0.8909090909090909,106,0,4.75191e-66,201.445,100.0,1,110,https://www.rcsb.org/structure/7A3N
+pdb|7MF1|L,pdb,"Chain L, 47D1 Fab light chain [Homo sapiens]",216,110,98,89.1,0.8909090909090909,104,0,5.2499e-66,201.445,100.0,1,110,https://www.rcsb.org/structure/7MF1
+pdb|8PMX|L,pdb,"Chain L, Fab p60.12-LC [Homo sapiens]",217,111,99,89.2,0.8918918918918919,106,1,6.38422e-66,201.06,100.0,1,110,https://www.rcsb.org/structure/8PMX
+pdb|5GKR|B,pdb,"Chain B, lambda, Fab (light chain) [Homo sapiens]",216,110,99,90.0,0.9,102,0,6.53353e-66,201.06,100.0,1,110,https://www.rcsb.org/structure/5GKR
+pdb|8Y3I|H,pdb,"Chain H, Human antibody C10 Fab (light chain) [Homo sapiens]",111,110,98,89.1,0.8909090909090909,106,0,3.05456e-67,200.675,100.0,1,110,https://www.rcsb.org/structure/8Y3I
+pdb|8CXH|L,pdb,"Chain L, C10 light chain [Homo sapiens]",110,110,98,89.1,0.8909090909090909,106,0,3.68433e-67,200.675,100.0,1,110,https://www.rcsb.org/structure/8CXH
+pdb|5CBA|B,pdb,"Chain B, 3b4 light chain [Homo sapiens]",117,110,98,89.1,0.8909090909090909,104,0,4.04493e-67,200.675,100.0,1,110,https://www.rcsb.org/structure/5CBA
+pdb|4UT9|L,pdb,"Chain L, BROADLY NEUTRALIZING HUMAN ANTIBODY EDE1 C10 [Homo sapiens]",154,110,98,89.1,0.8909090909090909,106,0,1.26121e-66,200.675,100.0,1,110,https://www.rcsb.org/structure/4UT9
+pdb|9AUG|J,pdb,"Chain J, UCA3.G57R light chain [Homo sapiens]",216,110,99,90.0,0.9,102,0,1.0119e-65,200.675,100.0,1,110,https://www.rcsb.org/structure/9AUG
+pdb|5U15|B,pdb,"Chain B, DH270.UCA3 light chain [Homo sapiens]",216,110,99,90.0,0.9,102,0,1.09241e-65,200.675,100.0,1,110,https://www.rcsb.org/structure/5U15
+pdb|9LLD|F,pdb,"Chain F, 2C4 Fab L chain [Homo sapiens]",235,109,98,89.9,0.8990825688073395,103,0,2.00183e-65,200.675,99.1,2,110,https://www.rcsb.org/structure/9LLD
+pdb|5C2B|H,pdb,"Chain H, scFv 3B4 [Homo sapiens]",254,110,98,89.1,0.8909090909090909,104,0,3.18528e-65,200.675,100.0,1,110,https://www.rcsb.org/structure/5C2B
+pdb|7MMO|B,pdb,"Chain B, LY-CoV1404 Fab light chain [Homo sapiens]",215,110,99,90.0,0.9,105,1,1.58643e-65,200.29,100.0,1,110,https://www.rcsb.org/structure/7MMO
+pdb|7JMP|L,pdb,"Chain L, COVA2-39 light chain [Homo sapiens]",216,110,99,90.0,0.9,102,0,1.60185e-65,200.29,100.0,1,110,https://www.rcsb.org/structure/7JMP
+pdb|4NIK|B,pdb,"Chain B, Single-chain Fv fragment antibody [Homo sapiens]",256,110,98,89.1,0.8909090909090909,102,0,5.77882e-65,200.29,100.0,1,110,https://www.rcsb.org/structure/4NIK
+pdb|9B7W|L,pdb,"Chain L, Fab3-6 light chain [Homo sapiens]",108,108,96,88.9,0.8888888888888888,104,0,6.60397e-67,199.904,98.2,3,110,https://www.rcsb.org/structure/9B7W
+pdb|9OST|I,pdb,"Chain I, Light chain of Fab from human antibody HB31 [Homo sapiens]",110,110,100,90.9,0.9090909090909091,103,0,7.60251e-67,199.904,100.0,1,110,https://www.rcsb.org/structure/9OST
+pdb|9ZBW|B,pdb,"Chain B, Antibody LY-CoV1404 Fab Light Chain [Homo sapiens]",215,110,99,90.0,0.9,105,1,1.86925e-65,199.904,100.0,1,110,https://www.rcsb.org/structure/9ZBW
+pdb|3TNN|B,pdb,"Chain B, Fab light chain of ADCC and non-neutralizing anti-HIV-1 antibody N5-i5 [Homo sapiens]",217,110,99,90.0,0.9,104,1,2.10279e-65,199.904,100.0,1,109,https://www.rcsb.org/structure/3TNN
+pdb|8SAX|D,pdb,"Chain D, DH270.UCA light chain [Homo sapiens]",111,110,99,90.0,0.9,102,0,8.38439e-67,199.519,100.0,1,110,https://www.rcsb.org/structure/8SAX
+pdb|8SAW|D,pdb,"Chain D, DH270.UCA. G57R light chain [Homo sapiens]",110,110,99,90.0,0.9,102,0,8.86522e-67,199.519,100.0,1,110,https://www.rcsb.org/structure/8SAW
+pdb|7V3J|L,pdb,"Chain L, Fab_C10_light_chain [Homo sapiens]",214,109,97,89.0,0.8899082568807339,105,0,2.43337e-65,199.519,99.1,2,110,https://www.rcsb.org/structure/7V3J
+pdb|9ML3|L,pdb,"Chain L, B25M05 Fab Light Chain [Homo sapiens]",216,110,98,89.1,0.8909090909090909,105,0,3.36965e-65,199.519,100.0,1,110,https://www.rcsb.org/structure/9ML3
+pdb|3KDM|A,pdb,"Chain A, Immunoglobulin light chain [Homo sapiens]",218,110,101,91.8,0.9181818181818182,104,1,3.54954e-65,199.519,100.0,1,109,https://www.rcsb.org/structure/3KDM
+pdb|4F57|L,pdb,"Chain L, Light chain of Fab of a neutralizing antibody L1 [Homo sapiens]",213,110,95,86.4,0.8636363636363636,105,0,3.30939e-65,199.134,100.0,1,110,https://www.rcsb.org/structure/4F57
+pdb|7MYT|B,pdb,"Chain B, B25.M05 Fab Light Chain [Homo sapiens]",235,110,98,89.1,0.8909090909090909,105,0,6.95585e-65,199.134,100.0,1,110,https://www.rcsb.org/structure/7MYT
+pdb|9N7T|F,pdb,"Chain F, ST14 Light Chain Fab [Homo sapiens]",110,110,100,90.9,0.9090909090909091,105,1,2.35458e-66,198.364,99.1,2,110,https://www.rcsb.org/structure/9N7T
+pdb|5H30|H,pdb,"Chain H, IgG C10 light chain [Homo sapiens]",109,109,97,89.0,0.8899082568807339,105,0,2.77857e-66,198.364,99.1,2,110,https://www.rcsb.org/structure/5H30
+pdb|7K8Q|L,pdb,"Chain L, C121 Fab Light Chain [Homo sapiens]",216,110,99,90.0,0.9,101,0,8.35161e-65,198.364,100.0,1,110,https://www.rcsb.org/structure/7K8Q
+pdb|5U0R|L,pdb,"Chain L, DH270.UCA1 light chain [Homo sapiens]",216,110,98,89.1,0.8909090909090909,101,0,1.25166e-64,197.978,100.0,1,110,https://www.rcsb.org/structure/5U0R
+pdb|4F58|L,pdb,"Chain L, Light chain of Fab of a neutralizing antibody L3 [Homo sapiens]",213,110,94,85.5,0.8545454545454545,104,0,1.25669e-64,197.978,100.0,1,110,https://www.rcsb.org/structure/4F58
+pdb|8SAZ|D,pdb,"Chain D, DH270.I5.6 variable light chain [Homo sapiens]",110,110,99,90.0,0.9,101,0,6.25359e-66,197.593,100.0,1,110,https://www.rcsb.org/structure/8SAZ
+pdb|8E1P|I,pdb,"Chain I, germline PGV20 light chain [Homo sapiens]",210,110,99,90.0,0.9,101,5,1.20749e-64,197.593,100.0,1,110,https://www.rcsb.org/structure/8E1P
+pdb|9I3X|A,pdb,"Chain A, light chain [Homo sapiens]",216,110,95,86.4,0.8636363636363636,102,0,1.39629e-64,197.593,100.0,1,110,https://www.rcsb.org/structure/9I3X
+pdb|9LOE|C,pdb,"Chain C, light chain of YSJ1C5 [Homo sapiens]",216,110,96,87.3,0.8727272727272727,104,0,1.44285e-64,197.593,100.0,1,110,https://www.rcsb.org/structure/9LOE
+pdb|8GDR|D,pdb,"Chain D, Monoclonal antibody 002-S21B10 light chain variable domain [Homo sapiens]",216,110,95,86.4,0.8636363636363636,103,0,1.60957e-64,197.593,100.0,1,110,https://www.rcsb.org/structure/8GDR
+pdb|9DEZ|L,pdb,"Chain L, PD41 Fab variable light-chain [Mus musculus]",111,111,99,89.2,0.8918918918918919,104,1,9.48085e-66,197.208,100.0,1,110,https://www.rcsb.org/structure/9DEZ
+pdb|8FK5|L,pdb,"Chain L, Immunoglobulin lambda-1 light chain-like [Homo sapiens]",216,110,97,88.2,0.8818181818181818,101,0,2.06983e-64,197.208,100.0,1,110,https://www.rcsb.org/structure/8FK5
+pdb|6TXZ|L,pdb,"Chain L, Fab L [Homo sapiens]",214,110,99,90.0,0.9,101,2,2.39258e-64,197.208,100.0,1,110,https://www.rcsb.org/structure/6TXZ
+pdb|8FL1|L,pdb,"Chain L, PG9 DU025 Light [Homo sapiens]",216,110,97,88.2,0.8818181818181818,101,0,2.75045e-64,197.208,100.0,1,110,https://www.rcsb.org/structure/8FL1
+pdb|7BWJ|L,pdb,"Chain L, antibody light chain [Homo sapiens]",216,110,95,86.4,0.8636363636363636,101,0,3.24067e-64,196.823,100.0,1,110,https://www.rcsb.org/structure/7BWJ
+pdb|3MUH|L,pdb,"Chain L, Antibody PG9 light chain [Homo sapiens]",216,110,96,87.3,0.8727272727272727,101,0,3.5758e-64,196.823,100.0,1,110,https://www.rcsb.org/structure/3MUH
+pdb|3U2S|B,pdb,"Chain B, PG9 light chain [Homo sapiens]",216,110,96,87.3,0.8727272727272727,101,0,3.94558e-64,196.823,100.0,1,110,https://www.rcsb.org/structure/3U2S
+sp|P01704.2|,sp,RecName: Full=Immunoglobulin lambda variable 2-14; AltName: Full=Ig lambda chain V-II region NIG-84; AltName: Full=Ig lambda chain V-II region TOG; AltName: Ful,120,98,97,99.0,0.9897959183673469,98,0,1.85891e-65,196.438,100.0,1,98,https://www.uniprot.org/uniprotkb/P01704/entry
+pdb|7XSA|C,pdb,"Chain C, P2S-2E9 Light chain [Homo sapiens]",215,110,99,90.0,0.9,103,1,4.5547e-64,196.438,100.0,1,110,https://www.rcsb.org/structure/7XSA
+pdb|9MI6|L,pdb,"Chain L, nipocalimab Fab light chain [Homo sapiens]",216,110,99,90.0,0.9,99,0,4.91002e-64,196.438,100.0,1,110,https://www.rcsb.org/structure/9MI6
+pdb|9I4D|B,pdb,"Chain B, light chain [Homo sapiens]",216,110,95,86.4,0.8636363636363636,101,0,5.53755e-64,196.438,100.0,1,110,https://www.rcsb.org/structure/9I4D
+pdb|7WC0|B,pdb,"Chain B, TAU-2212 Light chain [Homo sapiens]",237,112,100,89.3,0.8928571428571429,102,2,1.00691e-63,196.438,100.0,1,110,https://www.rcsb.org/structure/7WC0
+pdb|7LXX|L,pdb,"Chain L, S2L28 Fab Light Chain variable region [Homo sapiens]",107,107,100,93.5,0.9345794392523364,103,2,2.2406e-65,196.052,97.2,4,108,https://www.rcsb.org/structure/7LXX
+pdb|5CBE|B,pdb,"Chain B, E10 light chain [Homo sapiens]",122,110,96,87.3,0.8727272727272727,103,0,3.00855e-65,196.052,100.0,1,110,https://www.rcsb.org/structure/5CBE
+pdb|6PBV|A,pdb,"Chain A, Fab668 light chain [Homo sapiens]",216,110,98,89.1,0.8909090909090909,101,0,6.31393e-64,196.052,100.0,1,110,https://www.rcsb.org/structure/6PBV
+pdb|7LCN|D,pdb,"Chain D, DH1050.1 light chain [Homo sapiens]",216,111,97,87.4,0.8738738738738738,103,1,6.52448e-64,196.052,100.0,1,110,https://www.rcsb.org/structure/7LCN
+pdb|7V26|b,pdb,"Chain b, XG005 Light Chain [Homo sapiens]",215,110,98,89.1,0.8909090909090909,102,1,6.75175e-64,196.052,100.0,1,110,https://www.rcsb.org/structure/7V26
+pdb|9DF0|L,pdb,"Chain L, PD41 Fab variable light-chain [Mus musculus]",111,111,99,89.2,0.8918918918918919,103,1,2.96851e-65,195.667,100.0,1,110,https://www.rcsb.org/structure/9DF0
+pdb|7YCZ|E,pdb,"Chain E, XG005-VL [Homo sapiens]",205,110,98,89.1,0.8909090909090909,102,1,5.93436e-64,195.667,100.0,1,110,https://www.rcsb.org/structure/7YCZ
+pdb|8SGN|L,pdb,"Chain L, Cy651H02 Fab light chain [Macaca fascicularis]",214,110,93,84.5,0.8454545454545455,103,0,8.79033e-64,195.667,100.0,1,110,https://www.rcsb.org/structure/8SGN
+pdb|7DC7|B,pdb,"Chain B, D12 Fab light chain [Homo sapiens]",216,110,94,85.5,0.8545454545454545,101,0,9.46222e-64,195.667,100.0,1,110,https://www.rcsb.org/structure/7DC7
+pdb|5C6W|H,pdb,"Chain H, Protein IGHV1-69-2,Ig lambda chain V-II region NIG-84 [Homo sapiens]",264,110,96,87.3,0.8727272727272727,103,0,4.69395e-63,195.667,100.0,1,110,https://www.rcsb.org/structure/5C6W
+pdb|6XEY|G,pdb,"Chain G, 2-4 Light Chain [Homo sapiens]",110,110,95,86.4,0.8636363636363636,101,0,4.81582e-65,195.282,100.0,1,110,https://www.rcsb.org/structure/6XEY
+pdb|5M6I|B,pdb,"Chain B, light chain dimer [Homo sapiens]",216,110,97,88.2,0.8818181818181818,99,0,1.1775e-63,195.282,100.0,1,110,https://www.rcsb.org/structure/5M6I
+pdb|7LQ7|D,pdb,"Chain D, CV503 light chain [Homo sapiens]",216,110,94,85.5,0.8545454545454545,101,0,1.20353e-63,195.282,100.0,1,110,https://www.rcsb.org/structure/7LQ7
+pdb|5WHJ|L,pdb,"Chain L, DX-2507 Fab light chain [Homo sapiens]",216,110,98,89.1,0.8909090909090909,99,0,1.35734e-63,195.282,100.0,1,110,https://www.rcsb.org/structure/5WHJ
+pdb|9CJ7|L,pdb,"Chain L, Fv region of 8.9F light chain [Homo sapiens]",237,110,94,85.5,0.8545454545454545,103,0,2.28418e-63,195.282,100.0,1,110,https://www.rcsb.org/structure/9CJ7
+pdb|8R1C|E,pdb,"Chain E, SD1-2 fab light chain [Homo sapiens]",110,110,98,89.1,0.8909090909090909,100,0,5.93238e-65,194.897,100.0,1,110,https://www.rcsb.org/structure/8R1C
+pdb|7V27|A,pdb,"Chain A, XG005-VL [Homo sapiens]",109,110,98,89.1,0.8909090909090909,102,1,6.27332e-65,194.897,100.0,1,110,https://www.rcsb.org/structure/7V27
+pdb|7YCY|E,pdb,"Chain E, XG005-VL [Homo sapiens]",110,110,98,89.1,0.8909090909090909,102,1,8.24547e-65,194.512,100.0,1,110,https://www.rcsb.org/structure/7YCY
+pdb|8E1P|L,pdb,"Chain L, germline PGV20 light chain [Homo sapiens]",210,110,97,88.2,0.8818181818181818,101,5,2.26391e-63,194.512,100.0,1,110,https://www.rcsb.org/structure/8E1P
+pdb|8YBY|C,pdb,"Chain C, THSC20.HVTR26 (Fab26) - Light Chain [Homo sapiens]",216,107,96,89.7,0.897196261682243,98,0,2.64441e-63,194.512,97.3,4,110,https://www.rcsb.org/structure/8YBY
+pdb|6P95|E,pdb,"Chain E, FAB Antibody light chain [Homo sapiens]",217,107,95,88.8,0.8878504672897196,101,0,2.7284e-63,194.512,97.3,4,110,https://www.rcsb.org/structure/6P95
+pdb|7Z0X|L,pdb,"Chain L, THSC20.HVTR26 Fab light chain [Homo sapiens]",216,107,96,89.7,0.897196261682243,98,0,3.08178e-63,194.512,97.3,4,110,https://www.rcsb.org/structure/7Z0X
+pdb|30XO|L,pdb,"Chain L, Variable domain of the light chain of MIB22 [Homo sapiens]",110,109,95,87.2,0.8715596330275229,104,0,1.21069e-64,194.126,99.1,2,110,https://www.rcsb.org/structure/30XO
+pdb|7WCD|B,pdb,"Chain B, Light chain [Homo sapiens]",214,111,99,89.2,0.8918918918918919,101,2,3.84658e-63,194.126,99.1,2,110,https://www.rcsb.org/structure/7WCD
+pdb|6PBW|C,pdb,"Chain C, Fab667 light chain [Homo sapiens]",216,110,95,86.4,0.8636363636363636,101,0,4.13997e-63,194.126,100.0,1,110,https://www.rcsb.org/structure/6PBW
+pdb|8DV6|D,pdb,"Chain D, mAb Fab Light Chain [Homo sapiens]",216,110,96,87.3,0.8727272727272727,103,0,4.32503e-63,194.126,100.0,1,110,https://www.rcsb.org/structure/8DV6
+pdb|8SB1|D,pdb,"Chain D, DH270.I3 variable light chain [Homo sapiens]",110,110,97,88.2,0.8818181818181818,100,0,1.9622e-64,193.741,100.0,1,110,https://www.rcsb.org/structure/8SB1
+pdb|6IUT|L,pdb,"Chain L, AVFluIgG01 Light Chain [Homo sapiens]",216,108,95,88.0,0.8796296296296297,100,0,5.04034e-63,193.741,99.1,2,109,https://www.rcsb.org/structure/6IUT
+pdb|8SB0|D,pdb,"Chain D, DH270.I4.6 variable light chain [Homo sapiens]",110,110,97,88.2,0.8818181818181818,100,0,2.2384e-64,193.356,100.0,1,110,https://www.rcsb.org/structure/8SB0
+pdb|7ND7|G,pdb,"Chain G, COVOX-316 Fab light chain [Homo sapiens]",216,110,93,84.5,0.8454545454545455,100,0,7.1514e-63,193.356,100.0,1,110,https://www.rcsb.org/structure/7ND7
+pdb|5M6I|A,pdb,"Chain A, light chain dimer [Homo sapiens]",216,109,96,88.1,0.8807339449541285,98,0,7.23001e-63,193.356,99.1,2,110,https://www.rcsb.org/structure/5M6I
+pdb|7BEH|L,pdb,"Chain L, COVOX-316 light chain [Homo sapiens]",229,110,93,84.5,0.8454545454545455,100,0,9.81175e-63,193.356,100.0,1,110,https://www.rcsb.org/structure/7BEH
+pdb|8CZ8|A,pdb,"Chain A, scFv Anetumab [Homo sapiens]",247,109,98,89.9,0.8990825688073395,102,1,2.38723e-62,193.356,98.2,3,110,https://www.rcsb.org/structure/8CZ8
+pdb|9B6R|L,pdb,"Chain L, Fab1-5 light chain [Homo sapiens]",109,109,96,88.1,0.8807339449541285,101,0,3.67168e-64,192.971,99.1,2,110,https://www.rcsb.org/structure/9B6R
+pdb|8E8L|L,pdb,"Chain L, 9H2 Fab light chain [Homo sapiens]",110,110,93,84.5,0.8454545454545455,103,0,4.13846e-64,192.971,100.0,1,110,https://www.rcsb.org/structure/8E8L
+pdb|4RAV|B,pdb,"Chain B, Single-chain Fv, VL [Homo sapiens]",117,110,96,87.3,0.8727272727272727,104,1,4.29648e-64,192.971,100.0,1,110,https://www.rcsb.org/structure/4RAV
+pdb|7PS6|D,pdb,"Chain D, Beta-44 Fab light chain [Homo sapiens]",218,110,97,88.2,0.8818181818181818,99,0,1.28636e-62,192.971,100.0,1,110,https://www.rcsb.org/structure/7PS6
+pdb|8TP7|F,pdb,"Chain F, Light chain of monoclonal antibody 4-1-1G03 [Homo sapiens]",108,108,93,86.1,0.8611111111111112,101,0,6.15671e-64,192.2,98.2,3,110,https://www.rcsb.org/structure/8TP7
+pdb|9LJA|A,pdb,"Chain A, Monoclonal immunoglobulin light chains (LC) [Homo sapiens]",131,111,94,84.7,0.8468468468468469,105,1,1.64041e-63,192.2,100.0,1,110,https://www.rcsb.org/structure/9LJA
+pdb|7YAR|H,pdb,"Chain H, light chain [Homo sapiens]",212,109,95,87.2,0.8715596330275229,102,0,1.8425e-62,192.2,99.1,2,110,https://www.rcsb.org/structure/7YAR
+pdb|7M7W|D,pdb,"Chain D, Monoclonal antibody S2H97 Fab light chain [Homo sapiens]",218,112,97,86.6,0.8660714285714286,102,2,2.79511e-62,192.2,100.0,1,110,https://www.rcsb.org/structure/7M7W
+pdb|7X93|F,pdb,"Chain F, Ab765 light chain [Homo sapiens]",240,110,94,85.5,0.8545454545454545,99,0,4.14313e-62,192.2,100.0,1,110,https://www.rcsb.org/structure/7X93
+pdb|7X8W|L,pdb,"Chain L, Ab354 light chain [Homo sapiens]",242,110,92,83.6,0.8363636363636363,99,0,4.16937e-62,192.2,100.0,1,110,https://www.rcsb.org/structure/7X8W
+pdb|9OSS|I,pdb,"Chain I, Light chain of Fab from human antibody HB31 [Homo sapiens]",110,110,94,85.5,0.8545454545454545,101,0,9.63437e-64,191.815,100.0,1,110,https://www.rcsb.org/structure/9OSS
+pdb|7TQG|L,pdb,"Chain L, IOMA iGL Fab Light Chain [Homo sapiens]",210,110,97,88.2,0.8818181818181818,99,2,2.92522e-62,191.815,100.0,1,110,https://www.rcsb.org/structure/7TQG
+pdb|11IS|N,pdb,"Chain N, 1332E5 Light Chain [Homo sapiens]",235,110,95,86.4,0.8636363636363636,99,0,5.15494e-62,191.815,100.0,1,110,https://www.rcsb.org/structure/11IS
+pdb|7YD1|B,pdb,"Chain B, XG005-VL [Homo sapiens]",108,108,96,88.9,0.8888888888888888,100,1,1.49765e-63,191.43,98.2,3,110,https://www.rcsb.org/structure/7YD1
+pdb|7UEL|L,pdb,"Chain L, Light chain Fab of antibody JEC1 [Homo sapiens]",214,110,94,85.5,0.8545454545454545,100,2,4.75478e-62,191.43,100.0,1,110,https://www.rcsb.org/structure/7UEL
+pdb|7UL0|L,pdb,"Chain L, Light chain of EH8 [Homo sapiens]",217,110,95,86.4,0.8636363636363636,99,0,4.88904e-62,191.43,100.0,1,110,https://www.rcsb.org/structure/7UL0
+pdb|5WCA|L,pdb,"Chain L, VRC315 27-1C08 Fab Light chain [Homo sapiens]",213,110,95,86.4,0.8636363636363636,101,0,4.92118e-62,191.045,100.0,1,110,https://www.rcsb.org/structure/5WCA
+pdb|7UGM|L,pdb,"Chain L, BG24-iGL CDR3mat Fab light chain [Homo sapiens]",209,110,94,85.5,0.8545454545454545,99,5,4.95166e-62,191.045,100.0,1,110,https://www.rcsb.org/structure/7UGM
+pdb|7SUE|A,pdb,"Chain A, S24-188 Fab Light chain [Homo sapiens]",216,110,104,94.5,0.9454545454545454,107,0,7.25851e-62,191.045,100.0,1,110,https://www.rcsb.org/structure/7SUE
+pdb|7UGN|J,pdb,"Chain J, BG24 inferred germline Fab with germline CDR3s light chain [Homo sapiens]",106,110,96,87.3,0.8727272727272727,99,5,2.51444e-63,190.66,100.0,1,110,https://www.rcsb.org/structure/7UGN
+pdb|8E8Y|L,pdb,"Chain L, 9H2 Fab light chain [Homo sapiens]",109,109,92,84.4,0.8440366972477065,102,0,3.01963e-63,190.66,99.1,2,110,https://www.rcsb.org/structure/8E8Y
+pdb|25SB|C,pdb,"Chain C, Light chain of RDS059 Fab [Homo sapiens]",214,111,92,82.9,0.8288288288288288,101,1,8.67456e-62,190.66,100.0,1,110,https://www.rcsb.org/structure/25SB
+pdb|8CIN|F,pdb,"Chain F, BA.4/5-5 fab LIGHT CHAIN [Homo sapiens]",214,109,93,85.3,0.8532110091743119,99,0,9.57139e-62,190.66,99.1,2,110,https://www.rcsb.org/structure/8CIN
+pdb|9OWE|D,pdb,"Chain D, F25.S02 Light chain [Homo sapiens]",217,111,95,85.6,0.8558558558558559,100,1,9.84061e-62,190.66,100.0,1,110,https://www.rcsb.org/structure/9OWE
+pdb|7UOT|L,pdb,"Chain L, 8.9F light chain (variable domain) [Homo sapiens]",109,109,92,84.4,0.8440366972477065,101,0,3.76074e-63,190.274,100.0,1,109,https://www.rcsb.org/structure/7UOT
+pdb|4UU9|B,pdb,"Chain B, MEDI7814 [Homo sapiens]",111,110,92,83.6,0.8363636363636363,101,0,4.32807e-63,190.274,100.0,1,110,https://www.rcsb.org/structure/4UU9
+pdb|22HG|M,pdb,"Chain M, Light chain of monoclonal antibody S2H97 [Homo sapiens]",112,112,97,86.6,0.8660714285714286,102,2,4.93214e-63,190.274,100.0,1,110,https://www.rcsb.org/structure/22HG
+pdb|9MJD|F,pdb,"Chain F, 3G08 Fab light chain [Homo sapiens]",210,110,93,84.5,0.8454545454545455,100,5,8.9231e-62,190.274,100.0,1,110,https://www.rcsb.org/structure/9MJD
+pdb|9MID|L,pdb,"Chain L, 3G08 Fab Light Chain [Homo sapiens]",211,110,93,84.5,0.8454545454545455,100,5,9.20624e-62,190.274,100.0,1,110,https://www.rcsb.org/structure/9MID
+pdb|7S07|Y,pdb,"Chain Y, 769C2 Fab Light chain [Homo sapiens]",215,110,92,83.6,0.8363636363636363,103,0,1.13818e-61,190.274,100.0,1,110,https://www.rcsb.org/structure/7S07
+pdb|6D2P|L,pdb,"Chain L, IOMAclass naive CLK31 Fab light chain [Homo sapiens]",214,110,97,88.2,0.8818181818181818,99,2,1.29988e-61,190.274,100.0,1,110,https://www.rcsb.org/structure/6D2P
+pdb|9B8C|L,pdb,"Chain L, RM018 fragment antigen binding light chain [Macaca mulatta]",216,110,91,82.7,0.8272727272727273,100,0,1.36827e-61,190.274,100.0,1,110,https://www.rcsb.org/structure/9B8C
+pdb|7WE8|L,pdb,"Chain L, Light chain of Fab 265 [Homo sapiens]",109,109,94,86.2,0.8623853211009175,102,1,6.58167e-63,189.889,99.1,2,109,https://www.rcsb.org/structure/7WE8
+pdb|5W0D|C,pdb,"Chain C, Lineage K03.12 UCA antibody light chain [Homo sapiens]",214,110,97,88.2,0.8818181818181818,99,2,1.72716e-61,189.889,100.0,1,110,https://www.rcsb.org/structure/5W0D
+pdb|5NHW|L,pdb,"Chain L, anti-human ActRII Bimagrumab Fab light-chain [Homo sapiens]",216,111,96,86.5,0.8648648648648649,100,1,1.83796e-61,189.889,100.0,1,110,https://www.rcsb.org/structure/5NHW
+pdb|6WM9|C,pdb,"Chain C, Fab light chain [Homo sapiens]",221,110,92,83.6,0.8363636363636363,99,0,1.8416e-61,189.889,100.0,1,110,https://www.rcsb.org/structure/6WM9
+pdb|8YBS|E,pdb,"Chain E, THSC20.HVTR4 (Fab4) - Light Chain [Homo sapiens]",214,110,95,86.4,0.8636363636363636,98,2,2.01277e-61,189.889,100.0,1,110,https://www.rcsb.org/structure/8YBS
+pdb|3GHE|L,pdb,"Chain L, Fab 537-10D, light chain [Homo sapiens]",217,111,96,86.5,0.8648648648648649,104,1,2.519e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/3GHE
+pdb|8QPR|D,pdb,"Chain D, IgG light chain - FAB [Homo sapiens]",216,110,90,81.8,0.8181818181818182,99,0,2.5792e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/8QPR
+pdb|7L2C|D,pdb,"Chain D, 2-51 light chain [Homo sapiens]",215,110,94,85.5,0.8545454545454545,99,1,2.6698e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/7L2C
+pdb|6XCM|L,pdb,"Chain L, C105 Fab Light Chain [Homo sapiens]",217,111,94,84.7,0.8468468468468469,100,1,2.68972e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/6XCM
+pdb|7X08|L,pdb,"Chain L, light chain of 2G1 [Homo sapiens]",216,110,93,84.5,0.8454545454545455,99,0,2.69446e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/7X08
+pdb|6UM7|C,pdb,"Chain C, DH270.mu1 Fab Light chain [Homo sapiens]",235,110,94,85.5,0.8545454545454545,99,0,4.14906e-61,189.504,100.0,1,110,https://www.rcsb.org/structure/6UM7
+pdb|9M5H|L,pdb,"Chain L, D14.F25.S02 Fab light chain [Homo sapiens]",111,111,95,85.6,0.8558558558558559,100,1,1.31108e-62,189.119,100.0,1,110,https://www.rcsb.org/structure/9M5H
+pdb|9U37|D,pdb,"Chain D, D14.F25.S02 Fab light chain [Homo sapiens]",116,111,95,85.6,0.8558558558558559,100,1,1.5212e-62,189.119,100.0,1,110,https://www.rcsb.org/structure/9U37
+pdb|8QQ0|D,pdb,"Chain D, IgG light chain - FAB [Homo sapiens]",216,110,91,82.7,0.8272727272727273,98,0,3.24462e-61,189.119,100.0,1,110,https://www.rcsb.org/structure/8QQ0
+pdb|9PM6|D,pdb,"Chain D, OZ-D4 Light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,100,0,3.58e-61,189.119,100.0,1,110,https://www.rcsb.org/structure/9PM6
+pdb|2OLD|A,pdb,"Chain A, Bence Jones KWR Protein - Immunoglobulin Light Chain [Homo sapiens]",217,110,94,85.5,0.8545454545454545,102,1,3.81584e-61,189.119,99.1,2,110,https://www.rcsb.org/structure/2OLD
+pdb|6WNO|C,pdb,"Chain C, Fab light chain [Homo sapiens]",221,110,92,83.6,0.8363636363636363,99,0,4.41394e-61,189.119,100.0,1,110,https://www.rcsb.org/structure/6WNO
+pdb|7UGO|J,pdb,"Chain J, BG24 inferred germline Fab with mature CDR3s light chain [Homo sapiens]",106,110,94,85.5,0.8545454545454545,99,5,1.37786e-62,188.734,100.0,1,110,https://www.rcsb.org/structure/7UGO
+pdb|9N4F|L,pdb,"Chain L, Variable domain of the light chain of 240-14-IgA_2F02 Fab [Homo sapiens]",109,110,93,84.5,0.8454545454545455,100,1,1.69123e-62,188.734,100.0,1,110,https://www.rcsb.org/structure/9N4F
+pdb|4Y5Y|B,pdb,"Chain B, diabody 330 VL domain [Homo sapiens]",117,111,93,83.8,0.8378378378378378,100,1,1.99947e-62,188.734,100.0,1,110,https://www.rcsb.org/structure/4Y5Y
+pdb|5NH3|L,pdb,"Chain L, anti-human ActRIIB mAb BYM338 Fv light-chain [Homo sapiens]",119,111,96,86.5,0.8648648648648649,100,1,2.7137e-62,188.734,100.0,1,110,https://www.rcsb.org/structure/5NH3
+pdb|8TNT|D,pdb,"Chain D, 769C2 light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,103,0,4.35833e-61,188.734,100.0,1,110,https://www.rcsb.org/structure/8TNT
+pdb|9NW7|L,pdb,"Chain L, CA117v2v8 light chain [Homo sapiens]",217,108,93,86.1,0.8611111111111112,99,1,4.54496e-61,188.734,97.3,4,110,https://www.rcsb.org/structure/9NW7
+pdb|9AU2|I,pdb,"Chain I, VIR-7229 Fab light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,96,0,4.86167e-61,188.734,100.0,1,110,https://www.rcsb.org/structure/9AU2
+pdb|9I41|L,pdb,"Chain L, light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,97,0,5.07892e-61,188.734,100.0,1,110,https://www.rcsb.org/structure/9I41
+pdb|5N4J|L,pdb,"Chain L, LIGHT CHAIN [Homo sapiens]",216,110,94,85.5,0.8545454545454545,100,0,5.98367e-61,188.734,100.0,1,110,https://www.rcsb.org/structure/5N4J
+pdb|7UGP|J,pdb,"Chain J, BG24 mature Fab light chain [Homo sapiens]",105,109,95,87.2,0.8715596330275229,98,5,2.13997e-62,188.348,99.1,2,110,https://www.rcsb.org/structure/7UGP
+pdb|9OSR|L,pdb,"Chain L, Variable domain of the light chain of Fab HB420 [Homo sapiens]",110,110,92,83.6,0.8363636363636363,101,0,2.42651e-62,188.348,100.0,1,110,https://www.rcsb.org/structure/9OSR
+pdb|7YVK|I,pdb,"Chain I, TH272 Fab light chain [Homo sapiens]",109,110,96,87.3,0.8727272727272727,102,1,2.59459e-62,188.348,100.0,1,110,https://www.rcsb.org/structure/7YVK
+pdb|8HES|L,pdb,"Chain L, NIV-10 Fab L-chain [Homo sapiens]",217,111,96,86.5,0.8648648648648649,103,1,6.73585e-61,188.348,100.0,1,110,https://www.rcsb.org/structure/8HES
+pdb|7PS0|C,pdb,"Chain C, Beta-24 light chain [Homo sapiens]",216,107,93,86.9,0.8691588785046729,97,0,6.82219e-61,188.348,97.3,4,110,https://www.rcsb.org/structure/7PS0
+pdb|9CQD|F,pdb,"Chain F, Fab 2B11 Light Chain [Homo sapiens]",220,112,94,83.9,0.8392857142857143,102,2,7.89136e-61,188.348,100.0,1,110,https://www.rcsb.org/structure/9CQD
+pdb|8UDG|L,pdb,"Chain L, S1V2-72 light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,100,0,8.12578e-61,188.348,100.0,1,110,https://www.rcsb.org/structure/8UDG
+pdb|5VK2|E,pdb,"Chain E, Fab 37.7H light chain [Homo sapiens]",217,110,93,84.5,0.8454545454545455,101,0,8.20014e-61,188.348,100.0,1,110,https://www.rcsb.org/structure/5VK2
+pdb|8BG3|A,pdb,"Chain A, pT1610 single-chain Fv [Homo sapiens]",252,110,90,81.8,0.8181818181818182,100,0,2.13254e-60,188.348,100.0,1,110,https://www.rcsb.org/structure/8BG3
+pdb|9MIA|L,pdb,"Chain L, 206-3G08 lambda chain Fv [Homo sapiens]",105,110,93,84.5,0.8454545454545455,100,5,2.81554e-62,187.963,100.0,1,110,https://www.rcsb.org/structure/9MIA
+pdb|7MDU|F,pdb,"Chain F, RM20A3 mAb Light Chain [Macaca mulatta]",111,111,92,82.9,0.8288288288288288,101,1,3.84289e-62,187.963,100.0,1,110,https://www.rcsb.org/structure/7MDU
+pdb|6P9I|B,pdb,"Chain B, human anti staphylococcus aureus antibody STAU-399 Fab light chain [Homo sapiens]",216,110,92,83.6,0.8363636363636363,99,0,1.07961e-60,187.963,100.0,1,110,https://www.rcsb.org/structure/6P9I
+pdb|8GPY|C,pdb,"Chain C, scFv [Homo sapiens]",232,110,93,84.5,0.8454545454545455,100,1,1.78465e-60,187.963,100.0,1,110,https://www.rcsb.org/structure/8GPY
+pdb|6XCA|L,pdb,"Chain L, C105 Light Chain [Homo sapiens]",217,111,94,84.7,0.8468468468468469,100,1,1.31189e-60,187.578,100.0,1,110,https://www.rcsb.org/structure/6XCA
+pdb|7E7Y|B,pdb,"Chain B, BD-623 Fab L [Homo sapiens]",209,107,92,86.0,0.8598130841121495,97,0,1.37482e-60,187.578,97.3,4,110,https://www.rcsb.org/structure/7E7Y
+pdb|6XKP|L,pdb,"Chain L, CV07-270 Light Chain [Homo sapiens]",216,110,104,94.5,0.9454545454545454,106,0,1.4188e-60,187.578,100.0,1,110,https://www.rcsb.org/structure/6XKP
+sp|P0DOX8.1|,sp,RecName: Full=Immunoglobulin lambda-1 light chain; AltName: Full=Immunoglobulin lambda-1 light chain MCG [Homo sapiens],216,110,92,83.6,0.8363636363636363,99,0,1.61761e-60,187.578,100.0,1,110,https://www.uniprot.org/uniprotkb/P0DOX8/entry
+pdb|9ASD|L,pdb,"Chain L, VIR-7229 Fab light chain [Homo sapiens]",110,110,92,83.6,0.8363636363636363,96,0,7.68021e-62,187.193,100.0,1,110,https://www.rcsb.org/structure/9ASD
+pdb|7WPV|L,pdb,"Chain L, Fab14 light chain [Homo sapiens]",213,110,92,83.6,0.8363636363636363,101,2,1.98001e-60,187.193,100.0,1,110,https://www.rcsb.org/structure/7WPV
+pdb|7Z0Y|L,pdb,"Chain L, THSC20.HVTR04 Fab light chain [Homo sapiens]",214,109,94,86.2,0.8623853211009175,97,2,2.04234e-60,187.193,99.1,2,110,https://www.rcsb.org/structure/7Z0Y
+pdb|7TP4|L,pdb,"Chain L, K398.22 light chain [Macaca mulatta]",214,110,92,83.6,0.8363636363636363,100,2,2.13361e-60,187.193,100.0,1,110,https://www.rcsb.org/structure/7TP4
+pdb|8R3W|A,pdb,"Chain A, Homospecific Diabody CR57 [Homo sapiens]",262,112,93,83.0,0.8303571428571429,99,2,9.01181e-60,187.193,100.0,1,110,https://www.rcsb.org/structure/8R3W
+pdb|7WRL|B,pdb,"Chain B, BD55-1239L [SARS coronavirus B012]",105,105,94,89.5,0.8952380952380953,98,0,8.25359e-62,186.808,99.1,2,106,https://www.rcsb.org/structure/7WRL
+pdb|9OCL|L,pdb,"Chain L, 10D2 Light Chain [Homo sapiens]",110,110,93,84.5,0.8454545454545455,99,0,9.67052e-62,186.808,100.0,1,110,https://www.rcsb.org/structure/9OCL
+pdb|8GOU|J,pdb,"Chain J, TH003 Fab light chain [Homo sapiens]",109,110,93,84.5,0.8454545454545455,100,1,1.04548e-61,186.808,100.0,1,110,https://www.rcsb.org/structure/8GOU
+pdb|9KEP|A,pdb,"Chain A, NM57-scFv light chain [Homo sapiens]",116,112,93,83.0,0.8303571428571429,99,2,1.0607e-61,186.808,100.0,1,110,https://www.rcsb.org/structure/9KEP
+pdb|4UNU|A,pdb,"Chain A, IG LAMBDA CHAIN V-II REGION MGC [Homo sapiens]",111,110,92,83.6,0.8363636363636363,99,0,1.18988e-61,186.808,100.0,1,110,https://www.rcsb.org/structure/4UNU
+pdb|7LZ6|D,pdb,"Chain D, b96.11 Fab light chain [Homo sapiens]",217,111,92,82.9,0.8288288288288288,99,1,3.50762e-60,186.808,100.0,1,110,https://www.rcsb.org/structure/7LZ6
+pdb|6W52|L,pdb,"Chain L, RSB1 Fab Light Chain [Homo sapiens]",236,110,92,83.6,0.8363636363636363,98,0,5.50225e-60,186.808,100.0,1,110,https://www.rcsb.org/structure/6W52
+pdb|7WOP|B,pdb,"Chain B, 16L9 [Homo sapiens]",247,111,94,84.7,0.8468468468468469,99,1,9.02628e-60,186.808,100.0,1,110,https://www.rcsb.org/structure/7WOP
+pdb|9KFB|A,pdb,"Chain A, NM57-scFv light chain, NM57-scFv heavy chain [Homo sapiens]",264,112,93,83.0,0.8303571428571429,99,2,1.12548e-59,186.808,100.0,1,110,https://www.rcsb.org/structure/9KFB
+pdb|8SB2|D,pdb,"Chain D, DH270.I2.6 variable light chain [Homo sapiens]",110,110,94,85.5,0.8545454545454545,99,0,1.25841e-61,186.422,100.0,1,110,https://www.rcsb.org/structure/8SB2
+pdb|5NGV|L,pdb,"Chain L, anti-human ActRIIB mAb BYM338 light-chain [Homo sapiens]",119,110,95,86.4,0.8636363636363636,99,1,1.65851e-61,186.422,99.1,2,110,https://www.rcsb.org/structure/5NGV
+pdb|8S6M|L,pdb,"Chain L, S2V29 Fab light chain [Homo sapiens]",216,109,91,83.5,0.8348623853211009,95,0,3.55288e-60,186.422,99.1,2,110,https://www.rcsb.org/structure/8S6M
+pdb|3TNM|B,pdb,"Chain B, Fab light chain of human anti-HIV-1 Env antibody A32 [Homo sapiens]",216,110,90,81.8,0.8181818181818182,98,0,3.87746e-60,186.422,100.0,1,110,https://www.rcsb.org/structure/3TNM
+pdb|2JB5|L,pdb,"Chain L, FAB FRAGMENT MOR03268 LIGHT CHAIN [Homo sapiens]",216,109,96,88.1,0.8807339449541285,99,1,4.27818e-60,186.422,98.2,3,110,https://www.rcsb.org/structure/2JB5
+pdb|6B5P|L,pdb,"Chain L, CIS42 Fab Light chain [Homo sapiens]",216,110,91,82.7,0.8272727272727273,97,0,4.42075e-60,186.422,100.0,1,110,https://www.rcsb.org/structure/6B5P
+pdb|3MME|B,pdb,"Chain B, PG16 LIGHT CHAIN FAB [Homo sapiens]",216,110,89,80.9,0.8090909090909091,99,0,4.9312e-60,186.422,100.0,1,110,https://www.rcsb.org/structure/3MME
+pdb|9MSD|D,pdb,"Chain D, RM20A3 Fab light chain [Macaca mulatta]",215,109,90,82.6,0.8256880733944955,99,1,5.88447e-60,186.037,98.2,3,110,https://www.rcsb.org/structure/9MSD
+pdb|4DQO|L,pdb,"Chain L, PG16 Fab Light Chain [Homo sapiens]",216,110,89,80.9,0.8090909090909091,99,0,6.13572e-60,186.037,100.0,1,110,https://www.rcsb.org/structure/4DQO
+pdb|8D36|L,pdb,"Chain L, Neutralizing antibody COV44-62 light chain [Homo sapiens]",216,110,87,79.1,0.7909090909090909,100,0,6.55148e-60,186.037,100.0,1,110,https://www.rcsb.org/structure/8D36
+pdb|6PWU|L,pdb,"Chain L, Antibody PG16 Fab light chain [Homo sapiens]",250,110,89,80.9,0.8090909090909091,99,0,1.46196e-59,186.037,100.0,1,110,https://www.rcsb.org/structure/6PWU
+pdb|9D7Y|A,pdb,"Chain A, scFv corresponding to human autoantibody b96.11 [Homo sapiens]",265,111,92,82.9,0.8288288288288288,99,1,2.65247e-59,186.037,100.0,1,110,https://www.rcsb.org/structure/9D7Y
+pdb|9MML|L,pdb,"Chain L, 1A6 light chain [Homo sapiens]",217,109,94,86.2,0.8623853211009175,99,1,8.31569e-60,185.652,98.2,3,110,https://www.rcsb.org/structure/9MML
+pdb|1MCO|L,pdb,"Chain L, IGG1 MCG INTACT ANTIBODY (LIGHT CHAIN) [Homo sapiens]",216,109,91,83.5,0.8348623853211009,98,0,8.99414e-60,185.652,99.1,2,110,https://www.rcsb.org/structure/1MCO
+pdb|9JIL|F,pdb,"Chain F, C131 Fab light chain [Homo sapiens]",110,110,93,84.5,0.8454545454545455,99,0,4.30086e-61,185.267,100.0,1,110,https://www.rcsb.org/structure/9JIL
+pdb|8DY6|D,pdb,"Chain D, MU89+S27Y Light Chain [Mus musculus]",110,110,91,82.7,0.8272727272727273,97,0,4.59354e-61,185.267,100.0,1,110,https://www.rcsb.org/structure/8DY6
+pdb|1A8J|H,pdb,"Chain H, IMMUNOGLOBULIN LAMBDA LIGHT CHAIN DIMER (MCG) [Homo sapiens]",216,109,91,83.5,0.8348623853211009,98,0,1.1691e-59,185.267,99.1,2,110,https://www.rcsb.org/structure/1A8J
+pdb|1MCB|A,pdb,"Chain A, IMMUNOGLOBULIN LAMBDA DIMER MCG (LIGHT CHAIN) [Homo sapiens]",216,109,91,83.5,0.8348623853211009,98,0,1.34753e-59,185.267,99.1,2,110,https://www.rcsb.org/structure/1MCB
+pdb|9CF6|L,pdb,"Chain L, Fab eOD-CL02.1 lambda light chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,106,0,1.37731e-59,185.267,100.0,1,110,https://www.rcsb.org/structure/9CF6
+pdb|7WTI|J,pdb,"Chain J, Light chain of XGv264 [Homo sapiens]",111,109,91,83.5,0.8348623853211009,100,1,5.1203e-61,184.882,98.2,3,110,https://www.rcsb.org/structure/7WTI
+pdb|6NF5|I,pdb,"Chain I, base-binding RM20A3 fragment antigen binding light chain [Macaca mulatta]",128,109,90,82.6,0.8256880733944955,99,1,8.81584e-61,184.882,98.2,3,110,https://www.rcsb.org/structure/6NF5
+pdb|9B8B|G,pdb,"Chain G, RM20A3 fragment antigen binding light chain [Macaca mulatta]",109,109,90,82.6,0.8256880733944955,99,1,7.53554e-61,184.496,98.2,3,110,https://www.rcsb.org/structure/9B8B
+pdb|8SB3|D,pdb,"Chain D, DH270.2 Variable light chain [Homo sapiens]",110,110,93,84.5,0.8454545454545455,97,0,7.60948e-61,184.496,100.0,1,110,https://www.rcsb.org/structure/8SB3
+pdb|4UT6|L,pdb,"Chain L, BROADLY NEUTRALIZING HUMAN ANTIBODY EDE2 [Homo sapiens]",218,110,90,81.8,0.8181818181818182,96,0,2.19449e-59,184.496,100.0,1,110,https://www.rcsb.org/structure/4UT6
+pdb|7UVO|B,pdb,"Chain B, RUPA-38 Fab light chain [Homo sapiens]",218,109,89,81.7,0.8165137614678899,96,0,2.79071e-59,184.496,99.1,2,110,https://www.rcsb.org/structure/7UVO
+pdb|8Z6U|J,pdb,"Chain J, CYFN1006-2 light chain [Homo sapiens]",215,110,91,82.7,0.8272727272727273,97,1,2.8384e-59,184.111,100.0,1,110,https://www.rcsb.org/structure/8Z6U
+pdb|3MUG|A,pdb,"Chain A, Antibody PG16 Light Chain [Homo sapiens]",216,109,88,80.7,0.8073394495412844,98,0,3.6025e-59,184.111,99.1,2,110,https://www.rcsb.org/structure/3MUG
+pdb|9T3S|L,pdb,"Chain L, EPS226 Fab LC [Homo sapiens]",216,110,103,93.6,0.9363636363636364,105,0,4.19791e-59,183.726,100.0,1,110,https://www.rcsb.org/structure/9T3S
+pdb|7DM1|C,pdb,"Chain C, light chain [Homo sapiens]",220,111,90,81.1,0.8108108108108109,100,1,4.95843e-59,183.726,100.0,1,110,https://www.rcsb.org/structure/7DM1
+pdb|9SBB|L,pdb,"Chain L, TAU-2310 Fab Light Chain [Homo sapiens]",217,111,104,93.7,0.9369369369369369,108,1,5.75104e-59,183.726,100.0,1,110,https://www.rcsb.org/structure/9SBB
+pdb|7T4Q|G,pdb,"Chain G, Fab 2C12 light chain [Homo sapiens]",240,112,91,81.2,0.8125,100,2,9.29476e-59,183.726,100.0,1,110,https://www.rcsb.org/structure/7T4Q
+pdb|9V0Q|C,pdb,"Chain C, CNR2056 Light Chain [Homo sapiens]",110,110,90,81.8,0.8181818181818182,101,0,2.68759e-60,183.341,100.0,1,110,https://www.rcsb.org/structure/9V0Q
+pdb|4YBL|C,pdb,"Chain C, A32 antibody light chain [Homo sapiens]",210,107,88,82.2,0.822429906542056,96,0,5.2272e-59,183.341,97.3,4,110,https://www.rcsb.org/structure/4YBL
+pdb|4RFO|L,pdb,"Chain L, N60-i3 Fab light chain [Homo sapiens]",221,110,103,93.6,0.9363636363636364,105,0,7.09494e-59,183.341,100.0,1,110,https://www.rcsb.org/structure/4RFO
+pdb|1DCL|A,pdb,"Chain A, MCG [Homo sapiens]",216,109,90,82.6,0.8256880733944955,98,0,7.49048e-59,183.341,99.1,2,110,https://www.rcsb.org/structure/1DCL
+pdb|9EHL|J,pdb,"Chain J, IOMAmin5 Fab Light Chain [Homo sapiens]",111,110,92,83.6,0.8363636363636363,97,2,2.99564e-60,182.956,100.0,1,110,https://www.rcsb.org/structure/9EHL
+pdb|9MQ8|L,pdb,"Chain L, 310-33-1_H02 Fab Light chain [Homo sapiens]",111,111,94,84.7,0.8468468468468469,98,1,3.9411e-60,182.956,100.0,1,110,https://www.rcsb.org/structure/9MQ8
+pdb|3LRS|B,pdb,"Chain B, PG-16 Light Chain Fab [Homo sapiens]",211,108,87,80.6,0.8055555555555556,97,0,8.43871e-59,182.956,98.2,3,110,https://www.rcsb.org/structure/3LRS
+pdb|5M6A|A,pdb,"Chain A, Bence-Jones light chain [Homo sapiens]",216,110,90,81.8,0.8181818181818182,97,0,9.4221e-59,182.956,100.0,1,110,https://www.rcsb.org/structure/5M6A
+pdb|7E7X|L,pdb,"Chain L, N11 Fab Light chain [Homo sapiens]",216,110,102,92.7,0.9272727272727272,105,0,1.09792e-58,182.956,100.0,1,110,https://www.rcsb.org/structure/7E7X
+pdb|5F89|B,pdb,"Chain B, CAP248-2B Light Chain [Homo sapiens]",225,119,92,77.3,0.773109243697479,101,9,1.17479e-58,182.956,100.0,1,110,https://www.rcsb.org/structure/5F89
+pdb|9N7V|L,pdb,"Chain L, ST4 Light Chain Fab [Homo sapiens]",109,110,93,84.5,0.8454545454545455,100,1,4.6068e-60,182.57,100.0,1,110,https://www.rcsb.org/structure/9N7V
+pdb|9T3R|L,pdb,"Chain L, Ig-like domain-containing protein [Homo sapiens]",216,110,102,92.7,0.9272727272727272,104,0,1.54047e-58,182.57,100.0,1,110,https://www.rcsb.org/structure/9T3R
+pdb|8TEA|I,pdb,"Chain I, CS3pt1p4_C1L Fab light chain [Homo sapiens]",218,112,93,83.0,0.8303571428571429,99,2,1.74882e-58,182.57,100.0,1,110,https://www.rcsb.org/structure/8TEA
+pdb|8SUO|L,pdb,"Chain L, AZD3152 light chain [Homo sapiens]",215,110,90,81.8,0.8181818181818182,99,1,1.92065e-58,182.185,100.0,1,110,https://www.rcsb.org/structure/8SUO
+pdb|7ZFF|L,pdb,"Chain L, Omi-42 light chain [Homo sapiens]",215,110,90,81.8,0.8181818181818182,99,1,1.96307e-58,182.185,100.0,1,110,https://www.rcsb.org/structure/7ZFF
+pdb|6P9J|B,pdb,"Chain B, human anti staphylococcus aureus antibody STAU-229 Fab light chain [Homo sapiens]",216,110,86,78.2,0.7818181818181819,98,0,2.28271e-58,182.185,100.0,1,110,https://www.rcsb.org/structure/6P9J
+pdb|7K8W|L,pdb,"Chain L, C119 Fab Light Chain [Homo sapiens]",217,111,104,93.7,0.9369369369369369,107,1,2.51319e-58,181.8,100.0,1,110,https://www.rcsb.org/structure/7K8W
+pdb|9PZB|D,pdb,"Chain D, E10L Fab light chain [Homo sapiens]",111,111,93,83.8,0.8378378378378378,102,1,1.28895e-59,181.415,100.0,1,110,https://www.rcsb.org/structure/9PZB
+pdb|44AB|Q,pdb,"Chain Q, 2C12 Light chain [Homo sapiens]",113,112,91,81.2,0.8125,100,2,1.41932e-59,181.415,100.0,1,110,https://www.rcsb.org/structure/44AB
+pdb|8SB4|D,pdb,"Chain D, DH270.1 variable light chain [Homo sapiens]",110,110,90,81.8,0.8181818181818182,96,0,1.62496e-59,181.415,100.0,1,110,https://www.rcsb.org/structure/8SB4
+pdb|6SM2|A,pdb,"Chain A, Pat-1 [Homo sapiens]",112,111,94,84.7,0.8468468468468469,101,1,1.69368e-59,181.415,100.0,1,110,https://www.rcsb.org/structure/6SM2
+pdb|8VPF|F,pdb,"Chain F, CoV1-65 antibody light chain [Homo sapiens]",217,111,88,79.3,0.7927927927927928,99,1,4.19943e-58,181.415,100.0,1,110,https://www.rcsb.org/structure/8VPF
+pdb|7ZR7|E,pdb,"Chain E, Omi-42 light chain [Homo sapiens]",109,110,90,81.8,0.8181818181818182,99,1,1.81572e-59,181.03,100.0,1,110,https://www.rcsb.org/structure/7ZR7
+pdb|4UNV|A,pdb,"Chain A, IG LAMBDA CHAIN V-II REGION MGC [Homo sapiens]",111,110,90,81.8,0.8181818181818182,97,0,2.15868e-59,181.03,100.0,1,110,https://www.rcsb.org/structure/4UNV
+pdb|4UNT|A,pdb,"Chain A, IG LAMBDA CHAIN V-II REGION MGC [Homo sapiens]",111,110,90,81.8,0.8181818181818182,97,0,2.409e-59,181.03,100.0,1,110,https://www.rcsb.org/structure/4UNT
+pdb|1JVK|A,pdb,"Chain A, IMMUNOGLOBULIN LAMBDA LIGHT CHAIN [Homo sapiens]",216,110,91,82.7,0.8272727272727273,99,1,5.96946e-58,181.03,99.1,2,110,https://www.rcsb.org/structure/1JVK
+pdb|5MP6|L,pdb,"Chain L, CAP248-2B Light Chain [Homo sapiens]",225,118,91,77.1,0.7711864406779662,100,9,7.59983e-58,181.03,99.1,2,110,https://www.rcsb.org/structure/5MP6
+pdb|8WFH|E,pdb,"Chain E, D1 scFv [Homo sapiens]",232,110,88,80.0,0.8,96,0,8.98896e-58,181.03,100.0,1,110,https://www.rcsb.org/structure/8WFH
+sp|P01706.2|,sp,RecName: Full=Immunoglobulin lambda variable 2-11; AltName: Full=Ig gamma lambda chain V-II region DOT; AltName: Full=Ig lambda chain V-II region BOH; AltName: ,119,98,89,90.8,0.9081632653061225,91,0,3.39114e-59,180.644,100.0,1,98,https://www.uniprot.org/uniprotkb/P01706/entry
+pdb|9I45|L,pdb,"Chain L, light chain [Homo sapiens]",216,110,91,82.7,0.8272727272727273,97,0,7.7587e-58,180.644,100.0,1,110,https://www.rcsb.org/structure/9I45
+pdb|5WCC|B,pdb,"Chain B, VRC 315 02-1F07 Fab Light chain [Homo sapiens]",217,111,89,80.2,0.8018018018018018,97,1,7.91271e-58,180.644,100.0,1,110,https://www.rcsb.org/structure/5WCC
+pdb|8DTO|D,pdb,"Chain D, MU89 Light Chain [Mus musculus]",106,106,88,83.0,0.8301886792452831,94,0,3.40751e-59,180.259,96.4,5,110,https://www.rcsb.org/structure/8DTO
+pdb|8SB5|D,pdb,"Chain D, DH270.I1.6 variable light chain [Homo sapiens]",110,110,91,82.7,0.8272727272727273,98,0,4.08413e-59,180.259,100.0,1,110,https://www.rcsb.org/structure/8SB5
+pdb|9B7L|L,pdb,"Chain L, Fab2-2 light chain [Homo sapiens]",111,111,103,92.8,0.9279279279279279,106,1,4.26194e-59,180.259,100.0,1,110,https://www.rcsb.org/structure/9B7L
+pdb|8Z6Q|D,pdb,"Chain D, CYFN1006-1 light chain [Homo sapiens]",215,110,92,83.6,0.8363636363636363,96,1,9.46505e-58,180.259,100.0,1,110,https://www.rcsb.org/structure/8Z6Q
+pdb|3GJE|A,pdb,"Chain A, Fab Light Chain [Homo sapiens]",212,110,91,82.7,0.8272727272727273,97,1,9.73595e-58,180.259,100.0,1,110,https://www.rcsb.org/structure/3GJE
+pdb|5UKN|L,pdb,"Chain L, DH522UCA Fab fragment light chain [Macaca mulatta]",216,110,90,81.8,0.8181818181818182,98,0,9.97464e-58,180.259,100.0,1,110,https://www.rcsb.org/structure/5UKN
+pdb|5CCK|L,pdb,"Chain L, Antibody 3BC315 Fab light chain [Homo sapiens]",216,110,85,77.3,0.7727272727272727,96,0,1.21418e-57,180.259,100.0,1,110,https://www.rcsb.org/structure/5CCK
+pdb|6WTY|C,pdb,"Chain C, Fab light chain [Homo sapiens]",221,110,86,78.2,0.7818181818181819,99,0,1.22699e-57,180.259,100.0,1,110,https://www.rcsb.org/structure/6WTY
+pdb|3HAE|G,pdb,"Chain G, Antibody light chain [Homo sapiens]",212,110,91,82.7,0.8272727272727273,97,1,1.39623e-57,179.874,100.0,1,110,https://www.rcsb.org/structure/3HAE
+pdb|5TPL|L,pdb,"Chain L, DH270.3 Fab light chain [Homo sapiens]",216,110,88,80.0,0.8,99,0,2.52408e-57,179.489,100.0,1,110,https://www.rcsb.org/structure/5TPL
+pdb|5U0U|A,pdb,"Chain A, DH270.1 single-chain variable fragment [Homo sapiens]",256,109,90,82.6,0.8256880733944955,95,0,8.51818e-57,179.489,100.0,1,109,https://www.rcsb.org/structure/5U0U
+pdb|9IVJ|L,pdb,"Chain L, 4G12 fab L chain [Homo sapiens]",111,110,87,79.1,0.7909090909090909,95,0,1.48863e-58,178.718,100.0,1,110,https://www.rcsb.org/structure/9IVJ
+pdb|7WTH|L,pdb,"Chain L, Light chain of XGv264 [Homo sapiens]",106,106,87,82.1,0.8207547169811321,97,1,1.69111e-58,178.718,98.1,3,107,https://www.rcsb.org/structure/7WTH
+pdb|9W6U|C,pdb,"Chain C, C1554-L-Fab [Homo sapiens]",214,110,91,82.7,0.8272727272727273,96,2,4.3299e-57,178.718,100.0,1,110,https://www.rcsb.org/structure/9W6U
+pdb|8UDR|E,pdb,"Chain E, P1B7 Light Chain [Homo sapiens]",213,109,90,82.6,0.8256880733944955,96,1,4.63341e-57,178.718,98.2,3,110,https://www.rcsb.org/structure/8UDR
+pdb|8SAY|D,pdb,"Chain D, DH270.3 variable light chain [Homo sapiens]",110,110,88,80.0,0.8,99,0,1.93957e-58,178.333,100.0,1,110,https://www.rcsb.org/structure/8SAY
+sp|P01709.2|,sp,RecName: Full=Immunoglobulin lambda variable 2-8; AltName: Full=Ig lambda chain V-II region BO; AltName: Full=Ig lambda chain V-II region MGC; Flags: Precursor ,118,96,86,89.6,0.8958333333333334,90,0,3.47327e-58,178.333,100.0,1,96,https://www.uniprot.org/uniprotkb/P01709/entry
+pdb|5TQA|B,pdb,"Chain B, DH270.6 Fab light chain [Homo sapiens]",216,110,89,80.9,0.8090909090909091,97,0,5.85238e-57,178.333,100.0,1,110,https://www.rcsb.org/structure/5TQA
+pdb|9MJ6|F,pdb,"Chain F, 7A03 Fab light chain [Homo sapiens]",205,110,93,84.5,0.8454545454545455,94,10,7.13723e-57,177.948,100.0,1,110,https://www.rcsb.org/structure/9MJ6
+pdb|8SAQ|D,pdb,"Chain D, DH270.6 variable light chain [Homo sapiens]",110,110,89,80.9,0.8090909090909091,97,0,4.51427e-58,177.563,100.0,1,110,https://www.rcsb.org/structure/8SAQ
+pdb|8SAU|D,pdb,"Chain D, DH270.4 variable light chain [Homo sapiens]",110,110,89,80.9,0.8090909090909091,97,0,5.14947e-58,177.563,100.0,1,110,https://www.rcsb.org/structure/8SAU
+pdb|5W08|H,pdb,"Chain H, K03.12 antibody light chain [Homo sapiens]",214,109,90,82.6,0.8256880733944955,99,2,1.33371e-56,177.563,99.1,2,110,https://www.rcsb.org/structure/5W08
+pdb|5F6I|C,pdb,"Chain C, DH428 Antibody Light Chain [Macaca mulatta]",216,110,87,79.1,0.7909090909090909,97,0,1.37177e-56,177.563,100.0,1,110,https://www.rcsb.org/structure/5F6I
+pdb|6UR5|B,pdb,"Chain B, Antibody light chain [Homo sapiens]",216,109,90,82.6,0.8256880733944955,99,2,1.41745e-56,177.563,99.1,2,110,https://www.rcsb.org/structure/6UR5
+pdb|8RPB|L,pdb,"Chain L, light chain of S79 fab [Homo sapiens]",217,111,93,83.8,0.8378378378378378,96,1,2.00559e-56,177.178,100.0,1,110,https://www.rcsb.org/structure/8RPB
+pdb|7X9E|B,pdb,"Chain B, 76E1 Fab Light Chain [Homo sapiens]",216,110,84,76.4,0.7636363636363637,97,0,2.12318e-56,177.178,100.0,1,110,https://www.rcsb.org/structure/7X9E
+pdb|9MII|L,pdb,"Chain L, 253-7A03 lambda chain Fv [Homo sapiens]",100,110,93,84.5,0.8454545454545455,94,10,7.6771e-58,176.792,100.0,1,110,https://www.rcsb.org/structure/9MII
+pdb|7UGQ|J,pdb,"Chain J, BG24 with an inferred germline CDRL1 Fab light chain [Homo sapiens]",105,109,86,78.9,0.7889908256880734,97,5,9.17607e-58,176.792,99.1,2,110,https://www.rcsb.org/structure/7UGQ
+sp|P01705.2|,sp,RecName: Full=Immunoglobulin lambda variable 2-23; AltName: Full=Ig lambda chain V-II region NEI; Flags: Precursor [Homo sapiens],113,93,87,93.5,0.9354838709677419,88,0,9.79844e-58,176.792,100.0,1,93,https://www.uniprot.org/uniprotkb/P01705/entry
+pdb|7YD3|B,pdb,"Chain B, light chain of 3D1 scFv [Homo sapiens]",111,110,98,89.1,0.8909090909090909,104,0,1.32108e-57,176.407,100.0,1,110,https://www.rcsb.org/structure/7YD3
+pdb|8QTD|L,pdb,"Chain L, XBB-7 fab light chain [Homo sapiens]",100,110,93,84.5,0.8454545454545455,96,10,1.4193e-57,176.022,100.0,1,110,https://www.rcsb.org/structure/8QTD
+pdb|6XKQ|L,pdb,"Chain L, CV07-250 Light Chain [Homo sapiens]",216,110,84,76.4,0.7636363636363637,96,0,4.8158e-56,176.022,100.0,1,110,https://www.rcsb.org/structure/6XKQ
+pdb|8GAV|L,pdb,"Chain L, Fab NDS.3, light chain [Homo sapiens]",216,110,85,77.3,0.7727272727272727,97,0,5.86176e-56,176.022,100.0,1,110,https://www.rcsb.org/structure/8GAV
+pdb|22GI|A,pdb,"Chain A, Light chain of 3D1 [Homo sapiens]",211,109,97,89.0,0.8899082568807339,103,0,5.6161e-56,175.637,99.1,2,110,https://www.rcsb.org/structure/22GI
+pdb|5F6H|J,pdb,"Chain J, DH427 Antibody Light Chain [Macaca mulatta]",216,110,86,78.2,0.7818181818181819,96,0,7.13487e-56,175.637,100.0,1,110,https://www.rcsb.org/structure/5F6H
+pdb|6NB5|L,pdb,"Chain L, LCA60 antigen-binding (Fab) fragment, light chain [Homo sapiens]",215,109,91,83.5,0.8348623853211009,95,1,7.97744e-56,175.637,100.0,1,108,https://www.rcsb.org/structure/6NB5
+pdb|8GPU|D,pdb,"Chain D, YD6Fab_L [Homo sapiens]",217,111,86,77.5,0.7747747747747747,97,1,9.98422e-56,175.252,100.0,1,110,https://www.rcsb.org/structure/8GPU
+pdb|6VTU|L,pdb,"Chain L, DH717.1 light chain [Homo sapiens]",216,110,84,76.4,0.7636363636363637,97,0,1.05706e-55,175.252,100.0,1,110,https://www.rcsb.org/structure/6VTU
+pdb|5UKO|L,pdb,"Chain L, DH522IA Fab fragment light chain [Macaca mulatta]",216,110,87,79.1,0.7909090909090909,96,0,1.21827e-55,175.252,100.0,1,110,https://www.rcsb.org/structure/5UKO
+pdb|8ERQ|L,pdb,"Chain L, S2X324 Fab light chain [Homo sapiens]",110,110,93,84.5,0.8454545454545455,98,1,5.88138e-57,174.866,100.0,1,110,https://www.rcsb.org/structure/8ERQ
+sp|A0A075B6J9.2|,sp,RecName: Full=Immunoglobulin lambda variable 2-18; Flags: Precursor [Homo sapiens],118,98,88,89.8,0.8979591836734694,91,0,6.14862e-57,174.866,100.0,1,98,https://www.uniprot.org/uniprotkb/A0A075B6J9/entry
+pdb|9V5O|A,pdb,"Chain A, scFv antibody [Homo sapiens]",254,110,91,82.7,0.8272727272727273,95,4,4.62038e-55,174.866,100.0,1,110,https://www.rcsb.org/structure/9V5O
+pdb|6NB3|E,pdb,"Chain E, LCA60 light chain [Homo sapiens]",109,109,91,83.5,0.8348623853211009,95,1,6.57266e-57,174.481,100.0,1,108,https://www.rcsb.org/structure/6NB3
+pdb|8VGV|D,pdb,"Chain D, DH270.6 Antibody Fab Light Chain [Homo sapiens]",108,108,87,80.6,0.8055555555555556,95,0,7.67499e-57,174.481,98.2,3,110,https://www.rcsb.org/structure/8VGV
+pdb|7YI6|B,pdb,"Chain B, light chain of 3D1 [Homo sapiens]",214,108,96,88.9,0.8888888888888888,102,0,1.87421e-55,174.481,98.2,3,110,https://www.rcsb.org/structure/7YI6
+pdb|7DC8|A,pdb,"Chain A, Switch Ab Fab light chain [Homo sapiens]",216,110,84,76.4,0.7636363636363637,94,0,2.39734e-55,174.481,100.0,1,110,https://www.rcsb.org/structure/7DC8
+pdb|8GPT|E,pdb,"Chain E, YD6_VL [Homo sapiens]",112,111,86,77.5,0.7747747747747747,97,1,1.14522e-56,174.096,100.0,1,110,https://www.rcsb.org/structure/8GPT
+pdb|8C8T|D,pdb,"Chain D, IgG EPTC112 Fab Light Chain [Homo sapiens]",216,110,84,76.4,0.7636363636363637,95,0,3.18427e-55,174.096,100.0,1,110,https://www.rcsb.org/structure/8C8T
+pdb|7Y8J|L,pdb,"Chain L, light chain of 3D1 [Homo sapiens]",114,110,97,88.2,0.8818181818181818,103,0,1.50252e-56,173.711,100.0,1,110,https://www.rcsb.org/structure/7Y8J
+pdb|7PHS|L,pdb,"Chain L, Light chain of Fab129D3 [Lama glama]",212,110,83,75.5,0.7545454545454545,95,0,3.50953e-55,173.711,100.0,1,110,https://www.rcsb.org/structure/7PHS
+pdb|8VKX|L,pdb,"Chain L, VX22 light chain [Homo sapiens]",216,110,88,80.0,0.8,91,0,5.998e-55,173.326,100.0,1,110,https://www.rcsb.org/structure/8VKX
+pdb|6XRJ|B,pdb,"Chain B, DH717.1 light chain Fab fragment [Homo sapiens]",211,108,83,76.9,0.7685185185185185,95,0,6.8486e-55,172.94,98.2,3,110,https://www.rcsb.org/structure/6XRJ
+pdb|7TR4|H,pdb,"Chain H, Light chain [Homo sapiens]",214,110,88,80.0,0.8,93,1,1.19932e-54,172.555,100.0,1,110,https://www.rcsb.org/structure/7TR4
+pdb|6CBP|A,pdb,"Chain A, DH270.6 single chain variable fragment [Homo sapiens]",256,108,87,80.6,0.8055555555555556,95,0,3.5118e-54,172.555,99.1,2,109,https://www.rcsb.org/structure/6CBP
+pdb|5T3X|E,pdb,"Chain E, IOMA Light Chain [Homo sapiens]",214,110,85,77.3,0.7727272727272727,94,2,1.73838e-54,172.17,100.0,1,110,https://www.rcsb.org/structure/5T3X
+pdb|5AWN|L,pdb,"Chain L, Light chain of 3BC176 Fab [Homo sapiens]",216,110,79,71.8,0.7181818181818181,94,0,3.96426e-54,171.4,100.0,1,110,https://www.rcsb.org/structure/5AWN
+pdb|1NL0|L,pdb,"Chain L, anti-factor IX antibody, 10C12, chain L [Homo sapiens]",213,111,82,73.9,0.7387387387387387,97,2,1.80241e-53,169.474,100.0,1,110,https://www.rcsb.org/structure/1NL0
+pdb|3D69|A,pdb,"Chain A, anti-factor IX antibody, 10C12 [Homo sapiens]",216,111,82,73.9,0.7387387387387387,97,2,2.01568e-53,169.474,100.0,1,110,https://www.rcsb.org/structure/3D69
+pdb|5UKQ|L,pdb,"Chain L, DH522.2 Fab fragment light chain [Macaca mulatta]",216,110,83,75.5,0.7545454545454545,95,0,2.08277e-53,169.474,100.0,1,110,https://www.rcsb.org/structure/5UKQ
+pdb|2A9N|A,pdb,"Chain A, fluorescein-scfv [Homo sapiens]",264,111,82,73.9,0.7387387387387387,98,2,1.98507e-52,168.318,100.0,1,110,https://www.rcsb.org/structure/2A9N
+pdb|2A9M|A,pdb,"Chain A, fluorescein-scfv [Homo sapiens]",264,111,82,73.9,0.7387387387387387,98,2,2.21305e-52,168.318,100.0,1,110,https://www.rcsb.org/structure/2A9M
+pdb|9O8Q|J,pdb,"Chain J, NI06063_d30_103 Fab light chain [Homo sapiens]",109,110,89,80.9,0.8090909090909091,95,1,4.02444e-54,167.548,100.0,1,110,https://www.rcsb.org/structure/9O8Q
+pdb|6GLW|D,pdb,"Chain D, Fab 1D11 - Light chain [Lama glama]",216,110,81,73.6,0.7363636363636363,95,0,1.24701e-52,167.548,100.0,1,110,https://www.rcsb.org/structure/6GLW
+pdb|5TPP|L,pdb,"Chain L, DH270.5 Fab heavy chain [Homo sapiens]",216,107,83,77.6,0.7757009345794392,90,0,1.27452e-52,167.548,97.3,4,110,https://www.rcsb.org/structure/5TPP
+pdb|8SAS|D,pdb,"Chain D, DH270.5 variable light chain [Homo sapiens]",111,108,83,76.9,0.7685185185185185,90,0,9.33483e-54,166.777,98.2,3,110,https://www.rcsb.org/structure/8SAS
+pdb|2A9M|L,pdb,"Chain L, fluorescein-scfv light chain [Homo sapiens]",110,110,81,73.6,0.7363636363636363,97,2,1.3725e-53,166.392,99.1,2,110,https://www.rcsb.org/structure/2A9M
+pdb|1MCW|W,pdb,"Chain W, IMMUNOGLOBULIN WEIR (LIGHT CHAIN) [Homo sapiens]",216,109,80,73.4,0.7339449541284404,92,0,5.43948e-52,166.007,99.1,2,110,https://www.rcsb.org/structure/1MCW
+pdb|5WCD|L,pdb,"Chain L, VRC315 04-1D02 Fab Light chain [Homo sapiens]",217,111,82,73.9,0.7387387387387387,95,1,6.24936e-52,165.622,100.0,1,110,https://www.rcsb.org/structure/5WCD
+pdb|9R2E|B,pdb,"Chain B, ARGX-121 Fab fragment light chain [Homo sapiens]",235,110,79,71.8,0.7181818181818181,92,0,7.95212e-51,163.31,100.0,1,110,https://www.rcsb.org/structure/9R2E
+pdb|11LT|L,pdb,"Chain L, 1E11 Fab light chain [Macaca mulatta]",110,110,80,72.7,0.7272727272727273,93,0,1.53316e-51,160.999,100.0,1,110,https://www.rcsb.org/structure/11LT
+pdb|7M6F|D,pdb,"Chain D, BG1-22 Fab Light Chain [Homo sapiens]",217,111,81,73.0,0.7297297297297297,91,1,4.54267e-50,160.999,100.0,1,110,https://www.rcsb.org/structure/7M6F
+pdb|5LCV|L,pdb,"Chain L, BROADLY NEUTRALIZING HUMAN ANTIBODY EDE2 A11 [Homo sapiens]",216,110,85,77.3,0.7727272727272727,91,0,5.30955e-50,160.614,100.0,1,110,https://www.rcsb.org/structure/5LCV
+pdb|4D9L|L,pdb,"Chain L, Light chain of Fab fragment of anti-HIV1 gp120 V2 mAb 697 [Homo sapiens]",215,111,82,73.9,0.7387387387387387,92,1,6.07193e-50,160.614,100.0,1,110,https://www.rcsb.org/structure/4D9L
+pdb|4UTB|L,pdb,"Chain L, BROADLY NEUTRALIZING HUMAN ANTIBODY EDE2 A11 [Homo sapiens]",218,110,85,77.3,0.7727272727272727,91,0,6.41758e-50,160.614,100.0,1,110,https://www.rcsb.org/structure/4UTB
+pdb|4RNR|B,pdb,"Chain B, PGT130 Light Chain [Homo sapiens]",216,110,76,69.1,0.6909090909090909,92,0,6.97346e-50,160.614,100.0,1,110,https://www.rcsb.org/structure/4RNR
+pdb|7WHZ|L,pdb,"Chain L, IG c1437_light_IGLV1-40_IGLJ1 [Homo sapiens]",110,111,83,74.8,0.7477477477477478,94,2,3.72695e-51,160.229,100.0,1,110,https://www.rcsb.org/structure/7WHZ
+pdb|4ZS7|L,pdb,"Chain L, Llama Fab fragment 68F2 light chain [Lama glama]",216,110,75,68.2,0.6818181818181818,91,0,7.60909e-50,160.229,100.0,1,110,https://www.rcsb.org/structure/4ZS7
+pdb|7SEM|C,pdb,"Chain C, MPE8 Fab light chain [Homo sapiens]",216,110,78,70.9,0.7090909090909091,90,0,2.90907e-49,159.073,100.0,1,110,https://www.rcsb.org/structure/7SEM
+pdb|8VKE|B,pdb,"Chain B, SC27 Fab light chain [Homo sapiens]",238,113,80,70.8,0.7079646017699115,93,3,4.27102e-49,159.073,100.0,1,110,https://www.rcsb.org/structure/8VKE
+pdb|8CXI|L,pdb,"Chain L, A11 light chain [Homo sapiens]",111,110,85,77.3,0.7727272727272727,91,0,1.22933e-50,158.688,100.0,1,110,https://www.rcsb.org/structure/8CXI
+pdb|4UT7|L,pdb,"Chain L, BROADLY NEUTRALIZING HUMAN ANTIBODY EDE2 A11 [Homo sapiens]",153,110,85,77.3,0.7727272727272727,91,0,4.9796e-50,158.688,100.0,1,110,https://www.rcsb.org/structure/4UT7
+pdb|8VIF|L,pdb,"Chain L, SC27 Fab light chain [Homo sapiens]",113,113,80,70.8,0.7079646017699115,93,3,2.0285e-50,158.303,100.0,1,110,https://www.rcsb.org/structure/8VIF
+pdb|6AVN|L,pdb,"Chain L, PGV19 Fab light chain [Homo sapiens]",209,110,81,73.6,0.7363636363636363,92,6,3.54558e-49,158.303,100.0,1,110,https://www.rcsb.org/structure/6AVN
+pdb|9KVE|B,pdb,"Chain B, The light chain of 4C1 [Macaca mulatta]",110,111,80,72.1,0.7207207207207207,95,2,3.49026e-50,157.532,100.0,1,110,https://www.rcsb.org/structure/9KVE
+pdb|9JS6|L,pdb,"Chain L, antibody light chain [Homo sapiens]",110,110,89,80.9,0.8090909090909091,98,1,4.54096e-50,157.532,99.1,2,110,https://www.rcsb.org/structure/9JS6
+pdb|3TV3|L,pdb,"Chain L, PGT128 light chain, Ig lambda-2 chain C regions [Homo sapiens]",211,110,80,72.7,0.7272727272727273,90,5,7.89451e-49,157.532,100.0,1,110,https://www.rcsb.org/structure/3TV3
+pdb|6GKU|L,pdb,"Chain L, Fab 6F5 - Light chain [Lama glama]",216,110,78,70.9,0.7090909090909091,91,0,1.06451e-48,157.532,100.0,1,110,https://www.rcsb.org/structure/6GKU
+pdb|7N3E|L,pdb,"Chain L, C032 Fab Light Chain [Homo sapiens]",218,112,81,72.3,0.7232142857142857,91,2,1.0685e-48,157.532,100.0,1,110,https://www.rcsb.org/structure/7N3E
+pdb|12PY|L,pdb,"Chain L, CM11.1 Fab light chain [Macaca mulatta]",216,111,79,71.2,0.7117117117117117,94,2,1.17423e-48,157.532,100.0,1,110,https://www.rcsb.org/structure/12PY
+pdb|7M42|C,pdb,"Chain C, REGN10985 antibody Fab fragment light chain [Homo sapiens]",218,112,81,72.3,0.7232142857142857,91,2,1.43408e-48,157.147,100.0,1,110,https://www.rcsb.org/structure/7M42
+pdb|6ORP|E,pdb,"Chain E, Ab897NHP antibody Fab light chain [Macaca mulatta]",235,111,76,68.5,0.6846846846846847,97,2,2.57753e-48,157.147,100.0,1,110,https://www.rcsb.org/structure/6ORP
+pdb|8Y57|B,pdb,"Chain B, Light chain of 1bB11 [synthetic construct]",221,110,76,69.1,0.6909090909090909,91,1,2.36686e-48,156.762,100.0,1,109,https://www.rcsb.org/structure/8Y57
+pdb|6APC|L,pdb,"Chain L, IGL@ protein [Homo sapiens]",218,112,81,72.3,0.7232142857142857,91,2,2.50008e-48,156.762,100.0,1,110,https://www.rcsb.org/structure/6APC
+pdb|8CSJ|E,pdb,"Chain E, 4-33 light chain [Homo sapiens]",110,110,80,72.7,0.7272727272727273,91,1,1.0222e-49,156.377,99.1,2,110,https://www.rcsb.org/structure/8CSJ
+pdb|5ACO|J,pdb,"Chain J, PGT128 FAB [Homo sapiens]",211,110,79,71.8,0.7181818181818181,90,5,2.17642e-48,156.377,100.0,1,110,https://www.rcsb.org/structure/5ACO
+pdb|5ANM|A,pdb,"Chain A, IMMUNOGLOBULIN G [Homo sapiens]",217,111,79,71.2,0.7117117117117117,90,1,3.25939e-48,156.377,100.0,1,110,https://www.rcsb.org/structure/5ANM
+pdb|7U04|L,pdb,"Chain L, IOMA class antibody ACS101 light chain [Homo sapiens]",214,107,78,72.9,0.7289719626168224,92,4,3.55615e-48,155.992,97.3,4,110,https://www.rcsb.org/structure/7U04
+pdb|9UTF|L,pdb,"Chain L, XG83 antibody [Homo sapiens]",238,111,79,71.2,0.7117117117117117,91,1,7.38923e-48,155.992,100.0,1,110,https://www.rcsb.org/structure/9UTF
+pdb|8TP5|F,pdb,"Chain F, Light chain of Fab 1-1-1E04 [Homo sapiens]",112,112,79,70.5,0.7053571428571429,90,2,2.44817e-49,155.606,100.0,1,110,https://www.rcsb.org/structure/8TP5
+pdb|8TP4|L,pdb,"Chain L, Light chain of Fab 1-1-1E04 [Homo sapiens]",125,112,79,70.5,0.7053571428571429,90,2,3.51119e-49,155.606,100.0,1,110,https://www.rcsb.org/structure/8TP4
+pdb|3TYG|L,pdb,"Chain L, PGT128 light chain, Ig lambda-2 chain C regions [Homo sapiens]",211,109,79,72.5,0.7247706422018348,89,5,4.61816e-48,155.606,99.1,2,110,https://www.rcsb.org/structure/3TYG
+pdb|7TJQ|K,pdb,"Chain K, MPE8 Fab light chain [Homo sapiens]",214,107,76,71.0,0.7102803738317757,88,0,4.67013e-48,155.606,97.3,4,110,https://www.rcsb.org/structure/7TJQ
+pdb|4Q2Z|B,pdb,"Chain B, Light chain of Fab fragment of HIV vaccine-elicited CD4bs-directed antibody [Macaca mulatta]",212,111,77,69.4,0.6936936936936937,92,2,5.91346e-48,155.606,100.0,1,110,https://www.rcsb.org/structure/4Q2Z
+pdb|8DYT|B,pdb,"Chain B, Fab light chain [Homo sapiens]",217,111,80,72.1,0.7207207207207207,89,1,6.61864e-48,155.606,100.0,1,110,https://www.rcsb.org/structure/8DYT
+pdb|9MS9|L,pdb,"Chain L, RM5-16 Fab light chain [Macaca mulatta]",216,111,79,71.2,0.7117117117117117,92,2,6.78955e-48,155.606,100.0,1,110,https://www.rcsb.org/structure/9MS9
+pdb|7Z3A|L,pdb,"Chain L, ACS101 light chain [Homo sapiens]",108,107,78,72.9,0.7289719626168224,92,4,3.03836e-49,155.221,97.3,4,110,https://www.rcsb.org/structure/7Z3A
+pdb|7Y7J|D,pdb,"Chain D, 1F VL [Homo sapiens]",111,111,78,70.3,0.7027027027027027,90,1,3.76147e-49,155.221,100.0,1,110,https://www.rcsb.org/structure/7Y7J
+pdb|8Y4C|F,pdb,"Chain F, XGv280 Light chain [Homo sapiens]",111,111,79,71.2,0.7117117117117117,90,1,4.10629e-49,154.836,100.0,1,110,https://www.rcsb.org/structure/8Y4C
+pdb|7YDI|L,pdb,"Chain L, Light chain of R1-32 [Homo sapiens]",214,111,80,72.1,0.7207207207207207,90,1,1.17947e-47,154.836,100.0,1,110,https://www.rcsb.org/structure/7YDI
+pdb|8ZYF|C,pdb,"Chain C, ZW2G10 fab light chain [Homo sapiens]",214,111,78,70.3,0.7027027027027027,91,1,1.32969e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/8ZYF
+pdb|6BP2|L,pdb,"Chain L, MR191 Fab Light Chain [Homo sapiens]",217,112,78,69.6,0.6964285714285714,91,2,1.65304e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/6BP2
+pdb|9NI2|L,pdb,"Chain L, Fab369 light chain [Homo sapiens]",216,110,77,70.0,0.7,88,0,1.69584e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/9NI2
+pdb|6P3B|L,pdb,"Chain L, DH501UCA Fab Light chain [Macaca mulatta]",216,111,80,72.1,0.7207207207207207,92,2,1.83025e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/6P3B
+pdb|9X3J|D,pdb,"Chain D, MR191 Fab Light Chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,91,2,1.83631e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/9X3J
+pdb|8SIQ|L,pdb,"Chain L, CC25.36 Fab light chain [Homo sapiens]",217,111,80,72.1,0.7207207207207207,90,1,1.98942e-47,154.451,100.0,1,110,https://www.rcsb.org/structure/8SIQ
+pdb|5U68|E,pdb,"Chain E, MPE8 [Homo sapiens]",294,110,77,70.0,0.7,89,0,1.26234e-46,154.451,100.0,1,110,https://www.rcsb.org/structure/5U68
+pdb|7WQV|B,pdb,"Chain B, Ab08 [Homo sapiens]",303,111,80,72.1,0.7207207207207207,89,1,1.53414e-46,154.451,100.0,1,110,https://www.rcsb.org/structure/7WQV
+pdb|7UCG|E,pdb,"Chain E, BG24 light chain [Homo sapiens]",205,110,77,70.0,0.7,89,11,1.65204e-47,154.066,100.0,1,110,https://www.rcsb.org/structure/7UCG
+pdb|7UCE|L,pdb,"Chain L, BG24 Fab light chain [Homo sapiens]",205,110,77,70.0,0.7,89,11,1.74463e-47,154.066,100.0,1,110,https://www.rcsb.org/structure/7UCE
+pdb|9ECY|L,pdb,"Chain L, WRAIR-2039 Fab light chain [Homo sapiens]",218,112,79,70.5,0.7053571428571429,90,2,2.30839e-47,154.066,100.0,1,110,https://www.rcsb.org/structure/9ECY
+pdb|3TWC|L,pdb,"Chain L, PGT127 light chain, Ig lambda-2 chain C regions [Homo sapiens]",211,109,78,71.6,0.7155963302752294,91,5,2.36942e-47,154.066,99.1,2,110,https://www.rcsb.org/structure/3TWC
+pdb|7U2E|L,pdb,"Chain L, ADI-55688 light chain [Homo sapiens]",218,112,80,71.4,0.7142857142857143,90,2,2.74796e-47,154.066,100.0,1,110,https://www.rcsb.org/structure/7U2E
+pdb|8F6X|D,pdb,"Chain D, MPE8 Single chain variable fragment [Homo sapiens]",306,110,76,69.1,0.6909090909090909,89,0,4.18469e-46,153.68,100.0,1,110,https://www.rcsb.org/structure/8F6X
+pdb|7WON|L,pdb,"Chain L, VacW-209 light chain [Homo sapiens]",111,111,80,72.1,0.7207207207207207,90,1,1.80399e-48,153.295,100.0,1,110,https://www.rcsb.org/structure/7WON
+pdb|9MR2|B,pdb,"Chain B, NICA01A-1401 Fab Light chain [Homo sapiens]",110,110,76,69.1,0.6909090909090909,89,0,1.99499e-48,153.295,100.0,1,110,https://www.rcsb.org/structure/9MR2
+pdb|8AHN|L,pdb,"Chain L, Fab SNV-42 light chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,89,1,4.31196e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/8AHN
+pdb|5W6C|L,pdb,"Chain L, UCA Fab light chain [Homo sapiens]",218,112,79,70.5,0.7053571428571429,90,2,4.34231e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/5W6C
+pdb|9ML2|G,pdb,"Chain G, A7M08 Light Chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,89,1,4.45521e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/9ML2
+pdb|5BQ7|B,pdb,"Chain B, Fab 5F-10-Light Chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,90,2,4.68639e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/5BQ7
+pdb|7JXE|L,pdb,"Chain L, S2X35 antigen-binding (Fab) fragment [Homo sapiens]",219,113,79,69.9,0.6991150442477876,90,3,5.26226e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/7JXE
+pdb|35UH|B,pdb,"Chain B, TFPI-23-Fab Light chain [Homo sapiens]",218,112,79,70.5,0.7053571428571429,90,2,5.70158e-47,153.295,100.0,1,110,https://www.rcsb.org/structure/35UH
+pdb|8KGZ|A,pdb,"Chain A, Thioredoxin 1,scFv [synthetic construct]",412,110,75,68.2,0.6818181818181818,95,0,6.06888e-45,153.295,100.0,1,110,https://www.rcsb.org/structure/8KGZ
+pdb|7R8U|LLL,pdb,"Chain LLL, Antibody light chain, kappa [Homo sapiens]",216,111,79,71.2,0.7117117117117117,90,1,6.33801e-47,152.91,100.0,1,110,https://www.rcsb.org/structure/7R8U
+pdb|7SWP|L,pdb,"Chain L, G32Q4 Fab light chain [Homo sapiens]",217,112,81,72.3,0.7232142857142857,92,3,6.45257e-47,152.91,100.0,1,110,https://www.rcsb.org/structure/7SWP
+pdb|4TSA|L,pdb,"Chain L, FAb Light Chain [Homo sapiens]",217,111,79,71.2,0.7117117117117117,89,1,9.34519e-47,152.525,100.0,1,110,https://www.rcsb.org/structure/4TSA
+pdb|8VS7|L,pdb,"Chain L, ADI-19425 Light Chain [Homo sapiens]",218,109,78,71.6,0.7155963302752294,89,2,1.09606e-46,152.525,97.3,4,110,https://www.rcsb.org/structure/8VS7
+pdb|7PQZ|B,pdb,"Chain B, FD-11A Fab light chain [Homo sapiens]",219,113,79,69.9,0.6991150442477876,90,3,1.1528e-46,152.525,100.0,1,110,https://www.rcsb.org/structure/7PQZ
+pdb|8JUH|A,pdb,"Chain A, Single chain fab antibody [Ovis aries]",245,110,75,68.2,0.6818181818181818,95,0,2.05679e-46,152.525,100.0,1,110,https://www.rcsb.org/structure/8JUH
+pdb|9LOG|C,pdb,"Chain C, light chain of 65 [Homo sapiens]",217,111,78,70.3,0.7027027027027027,88,1,1.28169e-46,152.14,100.0,1,110,https://www.rcsb.org/structure/9LOG
+pdb|3WHE|0,pdb,"Chain 0, immunoglobulin light chain [Homo sapiens]",220,111,79,71.2,0.7117117117117117,89,1,1.459e-46,152.14,100.0,1,110,https://www.rcsb.org/structure/3WHE
+pdb|7DX4|L,pdb,"Chain L, Light chain of FC08 Fab [Homo sapiens]",112,110,79,71.8,0.7181818181818181,89,1,7.99609e-48,151.754,99.1,2,110,https://www.rcsb.org/structure/7DX4
+pdb|9XI2|L,pdb,"Chain L, Light chain of C807 Fab [Homo sapiens]",217,111,78,70.3,0.7027027027027027,89,1,1.6466e-46,151.754,100.0,1,110,https://www.rcsb.org/structure/9XI2
+pdb|5USH|E,pdb,"Chain E, Fab vv66 light chain [Homo sapiens]",213,111,78,70.3,0.7027027027027027,90,1,1.88544e-46,151.754,100.0,1,110,https://www.rcsb.org/structure/5USH
+pdb|8WFM|A,pdb,"Chain A, T11 scFv [Severe acute respiratory syndrome coronavirus 2]",255,111,79,71.2,0.7117117117117117,89,1,5.12955e-46,151.754,100.0,1,110,https://www.rcsb.org/structure/8WFM
+pdb|9V0N|B,pdb,"Chain B, CNR2042 Light Chain [Homo sapiens]",110,111,77,69.4,0.6936936936936937,90,2,1.11545e-47,151.369,100.0,1,110,https://www.rcsb.org/structure/9V0N
+pdb|7K37|G,pdb,"Chain G, antibody Fab light chain [Homo sapiens]",219,111,79,71.2,0.7117117117117117,89,1,2.55285e-46,151.369,100.0,1,110,https://www.rcsb.org/structure/7K37
+pdb|8SEF|L,pdb,"Chain L, Cy137C02 Fab light chain [Macaca fascicularis]",215,111,76,68.5,0.6846846846846847,90,1,2.62249e-46,151.369,100.0,1,110,https://www.rcsb.org/structure/8SEF
+pdb|9XHY|L,pdb,"Chain L, Light chain of C092 Fab [Homo sapiens]",217,111,77,69.4,0.6936936936936937,89,1,2.99749e-46,151.369,100.0,1,110,https://www.rcsb.org/structure/9XHY
+pdb|9Q1Z|B,pdb,"Chain B, 1C02 Fab Light chain [Homo sapiens]",238,108,78,72.2,0.7222222222222222,88,1,5.4215e-46,151.369,97.3,4,110,https://www.rcsb.org/structure/9Q1Z
+pdb|9KVD|F,pdb,"Chain F, The light chain of 4H5 [Macaca mulatta]",110,111,75,67.6,0.6756756756756757,91,2,1.49968e-47,150.984,100.0,1,110,https://www.rcsb.org/structure/9KVD
+pdb|8DPL|B,pdb,"Chain B, 2.1.1D5 light chain variable domain [Homo sapiens]",112,112,78,69.6,0.6964285714285714,90,2,1.72237e-47,150.984,100.0,1,110,https://www.rcsb.org/structure/8DPL
+pdb|4TTD|D,pdb,"Chain D, FAb Light Chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,88,1,3.56812e-46,150.984,100.0,1,110,https://www.rcsb.org/structure/4TTD
+pdb|7N4J|L,pdb,"Chain L, WRAIR-2173 antibody Fab light chain [Homo sapiens]",218,112,76,67.9,0.6785714285714286,90,2,4.18432e-46,150.984,100.0,1,110,https://www.rcsb.org/structure/7N4J
+pdb|8T4L|L,pdb,"Chain L, RM_N332_07 light chain Fv [Macaca mulatta]",110,111,74,66.7,0.6666666666666666,93,2,1.92975e-47,150.599,100.0,1,110,https://www.rcsb.org/structure/8T4L
+pdb|9PFJ|D,pdb,"Chain D, VX77 light chain [Homo sapiens]",113,113,77,68.1,0.6814159292035398,90,3,2.07103e-47,150.599,100.0,1,110,https://www.rcsb.org/structure/9PFJ
+pdb|8EKF|LLL,pdb,"Chain LLL, 311R Light Chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,89,2,5.92881e-46,150.599,100.0,1,110,https://www.rcsb.org/structure/8EKF
+pdb|6S8D|L,pdb,"Chain L, Light chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,88,2,6.6109e-46,150.599,100.0,1,110,https://www.rcsb.org/structure/6S8D
+pdb|9FJK|L,pdb,"Chain L, K501SP6 Fv Light Chain [Homo sapiens]",134,111,76,68.5,0.6846846846846847,90,1,5.94975e-47,150.214,100.0,1,110,https://www.rcsb.org/structure/9FJK
+pdb|4TSC|L,pdb,"Chain L, FAb Light Chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,88,1,7.90159e-46,150.214,100.0,1,110,https://www.rcsb.org/structure/4TSC
+pdb|7PS4|C,pdb,"Chain C, Beta-38 Fab light chain [Homo sapiens]",216,111,76,68.5,0.6846846846846847,92,2,8.56238e-46,150.214,100.0,1,110,https://www.rcsb.org/structure/7PS4
+pdb|7CHO|C,pdb,"Chain C, antibody P5A-1D2 light chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,88,1,9.00467e-46,150.214,100.0,1,110,https://www.rcsb.org/structure/7CHO
+pdb|3ZL4|L,pdb,"Chain L, A17 ANTIBODY FAB FRAGMENT LAMBDA LIGHT CHAIN [Homo sapiens]",247,110,73,66.4,0.6636363636363637,89,1,1.56901e-45,150.214,100.0,1,110,https://www.rcsb.org/structure/3ZL4
+pdb|3H42|L,pdb,"Chain L, Fab from LDLR competitive antibody: Light chain [Homo sapiens]",217,111,78,70.3,0.7027027027027027,89,1,9.30371e-46,149.828,100.0,1,110,https://www.rcsb.org/structure/3H42
+pdb|6II9|L,pdb,"Chain L, Light chain of L3A-44 Fab [Homo sapiens]",212,109,78,71.6,0.7155963302752294,88,1,9.70176e-46,149.828,98.2,3,110,https://www.rcsb.org/structure/6II9
+pdb|5YAX|A,pdb,"Chain A, scFv1 antibody [Homo sapiens]",246,111,77,69.4,0.6936936936936937,90,2,2.74448e-45,149.828,100.0,1,110,https://www.rcsb.org/structure/5YAX
+pdb|7YH6|L,pdb,"Chain L, NIV-8 Fab light chain [Homo sapiens]",111,111,76,68.5,0.6846846846846847,89,1,6.57364e-47,149.443,100.0,1,110,https://www.rcsb.org/structure/7YH6
+pdb|9V0S|E,pdb,"Chain E, CNR2047 Light Chain [Homo sapiens]",110,110,74,67.3,0.6727272727272727,87,0,6.88264e-47,149.443,100.0,1,110,https://www.rcsb.org/structure/9V0S
+pdb|7N3F|L,pdb,"Chain L, C080 Fab Light Chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,88,2,1.43225e-45,149.443,100.0,1,110,https://www.rcsb.org/structure/7N3F
+pdb|9B7G|K,pdb,"Chain K, TJ5-13 Fab light chain [Homo sapiens]",216,110,75,68.2,0.6818181818181818,88,2,1.70044e-45,149.443,100.0,1,108,https://www.rcsb.org/structure/9B7G
+pdb|8RRN|D,pdb,"Chain D, pT1616 Fab light chain [Severe acute respiratory syndrome coronavirus 2]",217,111,75,67.6,0.6756756756756757,90,1,1.7307e-45,149.443,100.0,1,110,https://www.rcsb.org/structure/8RRN
+pdb|4M6M|L,pdb,"Chain L, CNTO1959 light chain [Homo sapiens]",217,112,78,69.6,0.6964285714285714,92,3,2.06008e-45,149.058,100.0,1,110,https://www.rcsb.org/structure/4M6M
+pdb|8DYX|B,pdb,"Chain B, light chain [Homo sapiens]",218,112,77,68.8,0.6875,88,2,2.21392e-45,149.058,100.0,1,110,https://www.rcsb.org/structure/8DYX
+pdb|8R8D|I,pdb,"Chain I, Garadacimab light chain variable region [Homo sapiens]",215,110,73,66.4,0.6636363636363637,90,1,2.3162e-45,149.058,100.0,1,110,https://www.rcsb.org/structure/8R8D
+pdb|8REX|F,pdb,"Chain F, mFab LMT-12, Light Chain [Mus musculus]",236,111,75,67.6,0.6756756756756757,93,1,3.32684e-45,149.058,100.0,1,110,https://www.rcsb.org/structure/8REX
+pdb|7D3K|L,pdb,"Chain L, B77 VL [Bos taurus]",123,110,71,64.5,0.6454545454545455,92,0,1.96237e-46,148.673,100.0,1,110,https://www.rcsb.org/structure/7D3K
+pdb|9PZ6|L,pdb,"Chain L, IgG light chain [Homo sapiens]",217,111,75,67.6,0.6756756756756757,89,1,2.7944e-45,148.673,100.0,1,110,https://www.rcsb.org/structure/9PZ6
+pdb|6PZE|L,pdb,"Chain L, NA-45 FAB LIGHT CHAIN [Homo sapiens]",217,111,75,67.6,0.6756756756756757,90,2,2.88719e-45,148.673,100.0,1,110,https://www.rcsb.org/structure/6PZE
+pdb|6WFY|L,pdb,"Chain L, Fab224 light chain [Homo sapiens]",217,111,75,67.6,0.6756756756756757,89,1,3.01571e-45,148.673,100.0,1,110,https://www.rcsb.org/structure/6WFY
+pdb|7U2D|L,pdb,"Chain L, ADG20 light chain [Homo sapiens]",218,112,78,69.6,0.6964285714285714,89,2,3.57442e-45,148.673,100.0,1,110,https://www.rcsb.org/structure/7U2D
+pdb|9BLL|L,pdb,"Chain L, 1301B7 Light Chain [Homo sapiens]",110,110,71,64.5,0.6454545454545455,85,0,1.51537e-46,148.288,100.0,1,110,https://www.rcsb.org/structure/9BLL
+pdb|9XI6|L,pdb,"Chain L, Light chain of BD56-597 Fab [Homo sapiens]",217,111,77,69.4,0.6936936936936937,87,1,4.0025e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/9XI6
+pdb|8DZW|L,pdb,"Chain L, RSV-199 Light chain protein [Homo sapiens]",216,110,73,66.4,0.6636363636363637,85,0,4.0194e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/8DZW
+pdb|9NKY|L,pdb,"Chain L, Light Chain of Fab MAM01 [Homo sapiens]",217,111,76,68.5,0.6846846846846847,88,1,4.46287e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/9NKY
+pdb|5DUR|D,pdb,"Chain D, Light Chain of Antibody 100F4 [Homo sapiens]",218,112,75,67.0,0.6696428571428571,89,2,4.49255e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/5DUR
+pdb|9XJK|C,pdb,"Chain C, B9 light chain [Macaca fascicularis]",218,112,74,66.1,0.6607142857142857,91,2,5.40588e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/9XJK
+pdb|7MU4|L,pdb,"Chain L, D24.M01 Fab Light Chain [Homo sapiens]",236,111,76,68.5,0.6846846846846847,87,1,8.38011e-45,148.288,100.0,1,110,https://www.rcsb.org/structure/7MU4
+pdb|5DUP|L,pdb,"Chain L, AVFluIgG03 Light Chain [Homo sapiens]",215,108,75,69.4,0.6944444444444444,86,1,5.90871e-45,147.902,99.1,2,109,https://www.rcsb.org/structure/5DUP
+pdb|7M6H|F,pdb,"Chain F, BG7-20 Fab Light Chain [Homo sapiens]",217,111,77,69.4,0.6936936936936937,87,1,6.18673e-45,147.902,100.0,1,110,https://www.rcsb.org/structure/7M6H
+pdb|6MB3|K,pdb,"Chain K, Fab311 light chain [Homo sapiens]",218,112,76,67.9,0.6785714285714286,88,2,6.7208e-45,147.902,100.0,1,110,https://www.rcsb.org/structure/6MB3
+pdb|9ML1|L,pdb,"Chain L, D24.1M01 Light Chain [Homo sapiens]",217,111,76,68.5,0.6846846846846847,87,1,6.74972e-45,147.902,100.0,1,110,https://www.rcsb.org/structure/9ML1
+pdb|7LAA|L,pdb,"Chain L, DH1041 light chain [Homo sapiens]",217,111,77,69.4,0.6936936936936937,88,1,7.36393e-45,147.902,100.0,1,110,https://www.rcsb.org/structure/7LAA
+pdb|6MID|L,pdb,"Chain L, monoclonal antibody ZIKV-195 light chain [Homo sapiens]",110,111,77,69.4,0.6936936936936937,91,2,3.08993e-46,147.517,100.0,1,110,https://www.rcsb.org/structure/6MID
+pdb|10OR|H,pdb,"Chain H, 316L Light Chain [Macaca mulatta]",111,111,72,64.9,0.6486486486486487,89,1,3.88134e-46,147.517,100.0,1,110,https://www.rcsb.org/structure/10OR
+pdb|1AQK|L,pdb,"Chain L, FAB B7-15A2 [Homo sapiens]",216,107,71,66.4,0.6635514018691588,86,0,7.64095e-45,147.517,97.3,4,110,https://www.rcsb.org/structure/1AQK
+pdb|5DT1|L,pdb,"Chain L, Fab Light chain of broadly neutralizing antibody VRC26.25 [Homo sapiens]",217,112,69,61.6,0.6160714285714286,89,3,7.861e-45,147.517,100.0,1,110,https://www.rcsb.org/structure/5DT1
+pdb|8HRD|E,pdb,"Chain E, IMCAS74 Fab light chain [Homo sapiens]",217,110,74,67.3,0.6727272727272727,85,0,8.30075e-45,147.517,100.0,1,110,https://www.rcsb.org/structure/8HRD
+pdb|6P60|B,pdb,"Chain B, Antibody A12V163-a.02 light chain [Platyrrhini]",212,111,72,64.9,0.6486486486486487,90,2,8.47702e-45,147.517,100.0,1,110,https://www.rcsb.org/structure/6P60
+pdb|9NFT|D,pdb,"Chain D, PRO-37587 FAB light chain [Homo sapiens]",216,112,76,67.9,0.6785714285714286,87,3,8.70737e-45,147.517,99.1,2,110,https://www.rcsb.org/structure/9NFT
+pdb|5GZN|D,pdb,"Chain D, Antibody light chain [Homo sapiens]",216,111,74,66.7,0.6666666666666666,90,2,9.1945e-45,147.517,100.0,1,110,https://www.rcsb.org/structure/5GZN
+pdb|7M7W|B,pdb,"Chain B, Monoclonal antibody S2X259 Fab light chain [Homo sapiens]",219,113,76,67.3,0.672566371681416,88,3,1.03425e-44,147.517,100.0,1,110,https://www.rcsb.org/structure/7M7W
+pdb|4OD1|L,pdb,"Chain L, CAP256-VRC26.03 light chain [Homo sapiens]",217,112,69,61.6,0.6160714285714286,92,3,1.07791e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/4OD1
+pdb|5ALC|L,pdb,"Chain L, ANTI-TICAGRELOR FAB 72, LIGHT CHAIN [Homo sapiens]",216,111,73,65.8,0.6576576576576577,90,2,1.13074e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/5ALC
+pdb|8K3C|D,pdb,"Chain D, Light chain of 41-6 Fab fragment [Homo sapiens]",216,111,72,64.9,0.6486486486486487,91,2,1.23364e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/8K3C
+pdb|7RYV|F,pdb,"Chain F, Ab1573 Fab light chain [Macaca mulatta]",216,111,75,67.6,0.6756756756756757,91,2,1.31691e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/7RYV
+pdb|4ODH|L,pdb,"Chain L, CAP256-VRC26.UCA light chain [Homo sapiens]",217,112,74,66.1,0.6607142857142857,91,3,1.3401e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/4ODH
+pdb|9NJ3|K,pdb,"Chain K, Fab A Light Chain [Homo sapiens]",217,111,74,66.7,0.6666666666666666,85,1,1.35477e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/9NJ3
+pdb|6AXK|B,pdb,"Chain B, Fab311 light chain [Homo sapiens]",218,111,76,68.5,0.6846846846846847,87,2,1.4716e-44,147.132,99.1,2,110,https://www.rcsb.org/structure/6AXK
+pdb|4TSB|L,pdb,"Chain L, FAb Light Chain [Homo sapiens]",217,111,76,68.5,0.6846846846846847,86,1,1.49421e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/4TSB
+pdb|6SS5|LLL,pdb,"Chain LLL, Fab C0020187 light chain (IgG1) [Homo sapiens]",220,111,74,66.7,0.6666666666666666,90,2,1.54023e-44,147.132,100.0,1,110,https://www.rcsb.org/structure/6SS5
+pdb|8GSP|L,pdb,"Chain L, IG LAMDA CHAIN VARIABLE REGION [Bos taurus]",124,111,72,64.9,0.6486486486486487,94,1,1.02408e-45,146.747,100.0,1,110,https://www.rcsb.org/structure/8GSP
+pdb|5JZ7|D,pdb,"Chain D, MEDI578 scFv, light chain [Homo sapiens]",122,111,74,66.7,0.6666666666666666,90,2,1.02827e-45,146.747,100.0,1,110,https://www.rcsb.org/structure/5JZ7
+pdb|6PEF|B,pdb,"Chain B, antibody DF2F-a.01 light chain [Macaca mulatta]",216,111,73,65.8,0.6576576576576577,90,2,1.51711e-44,146.747,100.0,1,110,https://www.rcsb.org/structure/6PEF
+pdb|9FQ3|D,pdb,"Chain D, Human IgG antibody Es5.127 - Fab light chain [Homo sapiens]",216,111,74,66.7,0.6666666666666666,90,2,1.72883e-44,146.747,100.0,1,110,https://www.rcsb.org/structure/9FQ3
+pdb|7XMX|F,pdb,"Chain F, F61 light chain [Homo sapiens]",110,111,74,66.7,0.6666666666666666,90,2,9.98382e-46,146.362,100.0,1,110,https://www.rcsb.org/structure/7XMX
+pdb|7RA8|D,pdb,"Chain D, Light chain Fab S2X259 Fab variable domain [Homo sapiens]",113,113,76,67.3,0.672566371681416,88,3,1.119e-45,146.362,100.0,1,110,https://www.rcsb.org/structure/7RA8
+pdb|9DN2|L,pdb,"Chain L, TJ5-1 light chain Fab fragment [Homo sapiens]",111,112,78,69.6,0.6964285714285714,91,3,1.38403e-45,145.976,100.0,1,110,https://www.rcsb.org/structure/9DN2
+pdb|8EZ3|L,pdb,"Chain L, Light chain of influenza virus neuraminidase antibody 3A10 [Homo sapiens]",111,111,75,67.6,0.6756756756756757,88,2,1.56136e-45,145.976,99.1,2,110,https://www.rcsb.org/structure/8EZ3
+pdb|9B6P|L,pdb,"Chain L, Fab1-3 light chain [Homo sapiens]",109,108,75,69.4,0.6944444444444444,86,1,1.88951e-45,145.591,97.3,4,110,https://www.rcsb.org/structure/9B6P
+pdb|8DPM|E,pdb,"Chain E, Antibody 9.20.1A2 Fab light chain [Homo sapiens]",112,112,74,66.1,0.6607142857142857,86,2,3.54426e-45,145.206,100.0,1,110,https://www.rcsb.org/structure/8DPM
+pdb|7D4G|G,pdb,"Chain G, Light chain of FC05 Fab [Homo sapiens]",110,111,74,66.7,0.6666666666666666,90,2,3.59929e-45,144.821,100.0,1,110,https://www.rcsb.org/structure/7D4G
+pdb|7SJ0|L,pdb,"Chain L, A7V3 Fab light chain [Homo sapiens]",110,111,73,65.8,0.6576576576576577,90,2,4.43255e-45,144.821,100.0,1,110,https://www.rcsb.org/structure/7SJ0
+pdb|9JIM|D,pdb,"Chain D, C145 Fab light chain [Homo sapiens]",110,111,73,65.8,0.6576576576576577,90,2,4.73382e-45,144.821,100.0,1,110,https://www.rcsb.org/structure/9JIM
+pdb|7TAS|L,pdb,"Chain L, S2K146 Fab light chain [Homo sapiens]",109,110,71,64.5,0.6454545454545455,88,1,4.74455e-45,144.821,100.0,1,110,https://www.rcsb.org/structure/7TAS
+pdb|7NSL|A,pdb,"Chain A, Amyloid lambda1 light chain [Homo sapiens]",118,111,72,64.9,0.6486486486486487,89,2,4.86001e-45,144.821,100.0,1,110,https://www.rcsb.org/structure/7NSL
+pdb|9PZC|C,pdb,"Chain C, Immunoglobulin lambda variable 1-51 [Homo sapiens]",110,111,74,66.7,0.6666666666666666,89,2,5.3992e-45,144.436,100.0,1,110,https://www.rcsb.org/structure/9PZC
+pdb|8DG9|E,pdb,"Chain E, mAb MxR Light Chain, VL region [Homo sapiens]",111,112,75,67.0,0.6696428571428571,91,3,8.9185e-45,144.05,100.0,1,110,https://www.rcsb.org/structure/8DG9
+pdb|9O7G|D,pdb,"Chain D, H1 Fab heavy chain [Homo sapiens]",110,111,71,64.0,0.6396396396396397,91,3,1.46372e-44,143.28,99.1,2,110,https://www.rcsb.org/structure/9O7G

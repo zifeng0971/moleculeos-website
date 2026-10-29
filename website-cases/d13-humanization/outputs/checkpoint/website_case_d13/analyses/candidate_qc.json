@@ -1,0 +1,392 @@
+{
+ "humanization_1": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_2": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_3": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_4": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_5": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_6": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_7": {
+  "VH_len": 116,
+  "VL_len": 106,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 106
+ },
+ "humanization_8": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_9": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ },
+ "humanization_10": {
+  "VH_len": 116,
+  "VL_len": 107,
+  "cdr": {
+   "VH_CDR1": {
+    "cand": "GFSLTGYG",
+    "parent": "GFSLTGYG",
+    "same": true
+   },
+   "VH_CDR2": {
+    "cand": "IWGDGNT",
+    "parent": "IWGDGNT",
+    "same": true
+   },
+   "VH_CDR3": {
+    "cand": "ARERDYRLDY",
+    "parent": "ARERDYRLDY",
+    "same": true
+   },
+   "VL_CDR1": {
+    "cand": "GNIHNY",
+    "parent": "GNIHNY",
+    "same": true
+   },
+   "VL_CDR2": {
+    "cand": "YTT",
+    "parent": "YTT",
+    "same": true
+   },
+   "VL_CDR3": {
+    "cand": "QHFWSTPRT",
+    "parent": "QHFWSTPRT",
+    "same": true
+   }
+  },
+  "frameworks_same_len": true,
+  "VH_imgt_positions": 116,
+  "VL_imgt_positions": 107
+ }
+}

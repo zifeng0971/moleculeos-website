@@ -18,16 +18,15 @@ export function getMockContent(locale: Locale): typeof mockContent {
 // messages/en.json; keep translated business fields aligned when replacing data.
 export function presentationMessages<T>(source: T, locale: Locale): T {
   const clean = presentationContent(source, locale) as T & typeof en & {
-    home: { tasks: { selectorTasks: CapabilityTask[]; selectorDescription: string; mediaMissing: string }; models: { foundationLimitation: string } };
+    home: { tasks: { selectorTasks: CapabilityTask[]; selectorDescription: string; mediaMissing: string }; };
   };
   const data = getMockContent(locale);
   clean.home.tasks.selectorTasks = data.capabilities.tasks;
-  clean.home.models.foundationLimitation = data.models.models[0].limitation;
-  clean.home.models.items = clean.home.models.items.map((item, i) => ({ ...item, limitation: data.models.models[i + 1].limitation }));
+  clean.home.models.items = clean.home.models.items.map((item, i) => ({ ...item, limitation: data.models.models[i].limitation }));
   clean.home.validation.successCondition = data.validation.headline.text;
-  clean.home.validation.cases = data.validation.cases.map(item => ({ title: item.category, background: '', strategy: '', challenge: item.difficulty, result: item.result, molecule: item.molecule, duration: item.cycle }));
-  clean.pricingPage.plans = data.pricing.plans.map((plan, i) => ({ name: plan.name, price: plan.price, audience: plan.note, features: clean.pricingPage.plans[i].features }));
-  clean.pricingPage.rows = data.pricing.creditTable.map(row => [row.task, row.credit, row.time]);
+  // Cases flagged `hidden` stay in the data but are not shown (the PD-L1 case is parked for now).
+  clean.home.validation.cases = data.validation.cases.filter(item => !(item as { hidden?: boolean }).hidden).map(item => ({ title: item.category, subtitle: item.subtitle, figure: item.figure, result: item.result, body: item.body, tags: item.tags, viz: item.viz, background: '', strategy: item.body, challenge: item.body, molecule: item.tags.join(' / '), duration: '' }));
+  // Pricing now comes straight from messages (pricingPage, after the MOS pricing framework V1); the demo plans in content/mock/pricing.json are no longer shown.
   clean.footer.filing = (locale === 'zh' ? '备案号：' : 'ICP: ') + data.footer.icp;
   return clean;
 }

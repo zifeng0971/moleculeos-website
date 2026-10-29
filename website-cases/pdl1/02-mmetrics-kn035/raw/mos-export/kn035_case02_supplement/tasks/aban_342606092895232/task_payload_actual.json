@@ -1,0 +1,9 @@
+{
+  "schemes": [
+    "imgt",
+    "kabat",
+    "chothia"
+  ],
+  "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "light_sequence": null
+}

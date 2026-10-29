@@ -1,0 +1,576 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-05-DeNovo-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: PDL1_seed111_designed_complex
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: D
+- generic: A
+- generic: A
+- generic: A
+- generic: R
+- generic: A
+- generic: A
+- generic: E
+- generic: L
+- generic: E
+- generic: "11"
+- generic: R
+- generic: R
+- generic: C
+- generic: E
+- generic: S
+- generic: L
+- generic: A
+- generic: K
+- generic: I
+- generic: I
+- generic: "21"
+- generic: A
+- generic: E
+- generic: H
+- generic: E
+- generic: A
+- generic: A
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: "31"
+- generic: R
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: S
+- generic: A
+- generic: A
+- generic: D
+- generic: R
+- generic: "41"
+- generic: E
+- generic: A
+- generic: V
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: R
+- generic: Q
+- generic: "51"
+- generic: A
+- generic: R
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: L
+- generic: R
+- generic: A
+- generic: L
+- generic: "61"
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: E
+- generic: A
+- generic: E
+- generic: A
+- generic: R
+- generic: A
+- generic: "71"
+- generic: L
+- generic: R
+- generic: E
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: E
+- generic: K
+- generic: L
+- generic: "171"
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: R
+- generic: I
+- generic: "N"
+- generic: "181"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: "191"
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: E
+- generic: "N"
+- generic: H
+- generic: "201"
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: E
+- generic: L
+- generic: P
+- generic: "211"
+- generic: L
+- generic: A
+- generic: H
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": d3be78a0-9
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: "The user caught a real error. Let me verify: seed111 sequence \"DAAARAAELERRCESLA…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed333 still running. Now audit the chemistry.
+- generic: ▸
+- paragraph: The user is right to check. Auditing residue identity and charge class for every labeled salt bridge, directly from the coordinates.
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/audit_chemistry.py": (/workspace/case05/package/audit_chemistry.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/audit_chemi…": (cd /workspace/case05 && python package/audit_chemi…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/audit_chemi…": (cd /workspace/case05 && python package/audit_chemi…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed in both raw and MOS copy: binder pos 8 = GLU, 5 = ARG, 12 = ARG. PD-L1…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed333 still RUNNING with duration frozen at 8.2min for a long time. Suspicious…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now insert a new section 6 "Chemistry audit" and renumber subsequent sections (6…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Wait — in the audit table I wrote "Arg125 (B108)". B108 = auth 125 = ARG. Correc…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && grep -rn \"Arg8\\|ARG8\\|R8 \"…": (cd /workspace/case05 && grep -rn "Arg8\|ARG8\|R8 "…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All residue claims verified except the corrected one.
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254842782720": (342254842782720)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still RUNNING. I'll integrate the audit into the bundle, add audit files for bot…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed333 still running with duration frozen at 8.2 min — appears stuck or the sta…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "ZIP regenerated: 39 files, 519 KB. But it does not include seed333 (no output)."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05_bundle && grep -n \"Arg8\" REPO…": (cd /workspace/case05_bundle && grep -n "Arg8" REPO…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Everything consistent. Only remaining: seed333. Let me do one final ListMOSTasks…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- generic: NotifyMOSAdmins
+- generic "other_issue": (other_issue)
+- img "check-circle":
+- generic: ▸
+- paragraph: The audit found a real error, and I have corrected it. seed333 has still delivered nothing.
+- heading "The chemistry error — confirmed and corrected" [level=2]
+- paragraph:
+  - text: You were right. Position 8 of candidate_1 is
+  - strong: Glu
+  - text: ", not Arg:"
+- code: D A A A R A A E L E R R C ... 1 2 3 4 5 6 7 8 9 ... ^ position 8 = GLU (position 5 = ARG, position 12 = ARG)
+- paragraph:
+  - text: "Verified directly in both the raw task output and the MOS-sanitized copy. The corrected statement:"
+  - strong: binder Glu8 (acidic) forms a bidentate salt bridge to PD-L1 Arg113 (basic)
+  - text: — 2.4 Å to NH1, 3.5 Å to NH2. That is a legitimate opposite-charge salt bridge; only the residue name in my prose was wrong. Had position 8 actually been Arg, Arg8–Arg113 would be same-charge and I would not have called it a salt bridge — and no same-charge pair exists in either design, which I checked explicitly.
+- heading "Chemistry audit of every reported salt bridge" [level=2]
+- paragraph:
+  - text: InteractionNet labels any close N/O pair a salt bridge without testing charge, so I re-derived residue identities from coordinates and classified each call. Results now in
+  - code: audit_chemistry.py
+  - text: and
+  - code: designs/<label>/chemistry_audit.json
+  - text: ":"
+- table:
+  - rowgroup:
+    - row "seed111 seed222":
+      - columnheader
+      - columnheader "seed111"
+      - columnheader "seed222"
+  - rowgroup:
+    - row "Salt-bridge rows reported by tool 10 5":
+      - cell "Salt-bridge rows reported by tool"
+      - cell "10"
+      - cell "5"
+    - row "Charge-validated (acid vs base) 9 atom contacts, 4 distinct residue pairs 5 atom contacts, 3 distinct residue pairs":
+      - cell "Charge-validated (acid vs base)"
+      - cell "9 atom contacts, 4 distinct residue pairs":
+        - strong: 9 atom contacts, 4 distinct residue pairs
+      - cell "5 atom contacts, 3 distinct residue pairs":
+        - strong: 5 atom contacts, 3 distinct residue pairs
+    - row "Same-charge pairs rejected 0 0":
+      - cell "Same-charge pairs rejected"
+      - cell "0"
+      - cell "0"
+    - row "Rejected as non-salt-bridge 1 — His23–Asp56 (His is a weak partner, not a formal salt bridge) 0":
+      - cell "Rejected as non-salt-bridge"
+      - cell "1 — His23–Asp56 (His is a weak partner, not a formal salt bridge)":
+        - text: 1 —
+        - strong: His23–Asp56
+        - text: (His is a weak partner, not a formal salt bridge)
+      - cell "0"
+- paragraph: "seed111’s validated pairs: Glu8–Arg113 (bidentate), Glu8–Arg125, Arg12–Glu58 (tridentate), Arg12–Asp61 (bidentate), Arg5–Asp105. seed222’s: Glu29–Arg113, Glu29–Arg125 (×2), Lys22–Asp61 (×2, plus a 3.1 Å H-bond). H9–D56 in seed111 was a polar contact I had been counting; the honest number is 9 contacts / 4 pairs, not 10."
+- paragraph: I also re-verified every other residue claim in the report against the coordinates — A5 Arg, A12 Arg, B41 Glu, B44 Asp, B96 Arg, B105 Asp, B106 Tyr, B108 Arg, A23 His, and seed222’s A22 Lys / A29 Glu — all correct.
+- heading "seed333" [level=2]
+- paragraph:
+  - text: Task
+  - code: "342254842782720"
+  - text: is still RUNNING with its duration frozen at 8.2 min across every snapshot for well over 20 minutes, while both siblings with identical payloads finished (4.3 and 8.2 min). No output files are retrievable. I have reported this to MOS administrators as a probable stall (report
+  - code: MOS-REPORT-C9B19E1C803846FC
+  - text: ) rather than looping on it. The bundle therefore contains two analyzed candidates, not three; when seed333 either delivers or is relaunched,
+  - code: build_bundle.py
+  - text: regenerates the identical archive with the third included.
+- heading "Regenerated archive" [level=2]
+- paragraph:
+  - code: /workspace/case05_pdl1_binder_design_final.zip
+  - text: — 519,797 bytes, 39 files, CRC-verified, sha256
+  - code: ad5a3b09410b7ec4017954e0c0d592006979c1cf9af003d08d483b8bf2c417d0
+- img "case05_pdl1_binder_design_final.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- paragraph:
+  - text: "Additions over the previous build:"
+  - code: audit_chemistry.py
+  - text: ","
+  - code: chemistry_audit.json
+  - text: per candidate, four new audit columns in
+  - code: metrics_summary.csv
+  - text: (
+  - code: salt_bridges_charge_validated
+  - text: ","
+  - code: same_charge_rejected
+  - text: ","
+  - code: non_salt_bridge_rejected
+  - text: ), and REPORT.md §6 documenting the audit and the correction.
+- heading "Quality limits preserved unchanged" [level=2]
+- paragraph:
+  - text: Nothing here upgrades the candidates. Binder pLDDT remains 65.9 (seed111) and 62.2 (seed222); there is still no ipTM/PAE/interface energy, so relative poses remain unvalidated; the poly-Gly diffusion backbones still sit 6–10 Å from the hotspot atoms with ~103 Å² burial, meaning the interface is the predictor’s proposal rather than a property the generation stage established; and the sequences remain low-complexity (45% Ala with an
+  - code: RAAA
+  - text: repeat; 11% Ala but 21% Lys + 21% Glu, net −3, with an
+  - code: MGS
+  - text: artefact remnant). Ranking stays where it was — candidate_1 (seed111), then candidate_2 (seed222) — on the same structural-contact basis, and it remains a two-candidate ranking.
+- generic: 09:51
+- generic: PDL1_seed1...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

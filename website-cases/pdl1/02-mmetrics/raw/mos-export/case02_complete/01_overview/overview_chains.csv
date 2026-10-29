@@ -1,0 +1,4 @@
+mos_chain,author_chain,entity,role,entity_length,modelled_residues,modelled_span_entity,uniprot,uniprot_span
+A,H,1,avelumab heavy-chain variable domain (VH),120,118,1-118,,
+B,L,2,"avelumab light-chain variable domain (VL, lambda)",110,108,2-108,,
+C,A,3,antigen: human PD-L1 immunoglobulin-like ectodomain,221,213,1-213,Q9NZQ7,18-230

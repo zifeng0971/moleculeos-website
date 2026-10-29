@@ -1,0 +1,29 @@
+{
+  "task_id": "342256475304960",
+  "name": "5GRJ_PDL1_homologs",
+  "type": "Sequence Homology Search",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:10Z",
+  "duration": "3s",
+  "payload": {
+    "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER",
+    "max_seq": 500
+  },
+  "chain": "C",
+  "purpose": "homologs of PD-L1 chain C (221 aa ectodomain construct)",
+  "raw_dir": "sequence_homology_search_342256475304960",
+  "raw_files": [
+    "similarity_results.json",
+    "all_sequences.fasta"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "similarity_results.json",
+      "bytes": 8478245
+    },
+    {
+      "file": "all_sequences.fasta",
+      "bytes": 501679
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+  "contigs": "A1-118/0 60-100",
+  "hotspot_res": "A45,A40,A97,A107,A105,A38",
+  "compare_binder": 1,
+  "random_seed": 222
+}

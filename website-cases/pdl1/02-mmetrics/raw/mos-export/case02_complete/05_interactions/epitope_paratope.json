@@ -1,0 +1,1530 @@
+{
+  "structure": "5GRJ (MOS sanitized, chains A=VH, B=VL, C=PD-L1)",
+  "provenance": "InteractionNet (contacts) + PPInterface (burial) via interaction-analysis skill",
+  "interfaces": {
+    "A:C": {
+      "hv_side": "VH",
+      "n_pdl1_residues": 40,
+      "n_ab_residues": 44,
+      "bsa_pdl1_A2": 1125.9,
+      "bsa_ab_A2": 1167.1,
+      "bsa_total_A2": 2293.0,
+      "hbonds": [
+        {
+          "donor_chain": "C",
+          "donor_res": "GLN",
+          "donor_resnum": "49",
+          "donor_atom": "NE2",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "31",
+          "acceptor_atom": "O",
+          "distance": "3.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ARG",
+          "donor_resnum": "96",
+          "donor_atom": "NH2",
+          "acceptor_chain": "A",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "52",
+          "acceptor_atom": "OH",
+          "distance": "3.100"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "TYR",
+          "donor_resnum": "39",
+          "donor_atom": "OH",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "54",
+          "acceptor_atom": "O",
+          "distance": "2.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "SER",
+          "donor_resnum": "100",
+          "donor_atom": "OG",
+          "acceptor_chain": "A",
+          "acceptor_res": "GLY",
+          "acceptor_resnum": "55",
+          "acceptor_atom": "O",
+          "distance": "2.700"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASN",
+          "donor_resnum": "46",
+          "donor_atom": "N",
+          "acceptor_chain": "A",
+          "acceptor_res": "GLY",
+          "acceptor_resnum": "102",
+          "acceptor_atom": "O",
+          "distance": "2.300"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "GLU",
+          "donor_resnum": "41",
+          "donor_atom": "OE2",
+          "acceptor_chain": "A",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "52",
+          "acceptor_atom": "OH",
+          "distance": "2.800"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "TYR",
+          "donor_resnum": "39",
+          "donor_atom": "OH",
+          "acceptor_chain": "A",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "54",
+          "acceptor_atom": "N",
+          "distance": "3.200"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "O",
+          "acceptor_chain": "A",
+          "acceptor_res": "VAL",
+          "acceptor_resnum": "104",
+          "acceptor_atom": "N",
+          "distance": "2.800"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "OD1",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "105",
+          "acceptor_atom": "N",
+          "distance": "3.000"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "44",
+          "donor_atom": "OD2",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "106",
+          "acceptor_atom": "OG1",
+          "distance": "2.600"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "86",
+          "donor_atom": "OD2",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "114",
+          "acceptor_atom": "OG1",
+          "distance": "3.900"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "ASP",
+          "donor_resnum": "128",
+          "donor_atom": "OD1",
+          "acceptor_chain": "A",
+          "acceptor_res": "THR",
+          "acceptor_resnum": "58",
+          "acceptor_atom": "OG1",
+          "distance": "3.600"
+        }
+      ],
+      "n_hbonds": 12
+    },
+    "B:C": {
+      "hv_side": "VL",
+      "n_pdl1_residues": 13,
+      "n_ab_residues": 12,
+      "bsa_pdl1_A2": 333.2,
+      "bsa_ab_A2": 324.2,
+      "bsa_total_A2": 657.4,
+      "hbonds": [
+        {
+          "donor_chain": "C",
+          "donor_res": "ARG",
+          "donor_resnum": "108",
+          "donor_atom": "NH2",
+          "acceptor_chain": "B",
+          "acceptor_res": "SER",
+          "acceptor_resnum": "95",
+          "acceptor_atom": "O",
+          "distance": "3.700"
+        },
+        {
+          "donor_chain": "C",
+          "donor_res": "GLU",
+          "donor_resnum": "43",
+          "donor_atom": "OE1",
+          "acceptor_chain": "B",
+          "acceptor_res": "TYR",
+          "acceptor_resnum": "34",
+          "acceptor_atom": "OH",
+          "distance": "2.800"
+        }
+      ],
+      "n_hbonds": 2
+    }
+  },
+  "epitope_pdl1": [
+    {
+      "res": "ASP",
+      "mos": 44,
+      "uniprot": 61,
+      "bsa": 146.5,
+      "delta_g": -0.73,
+      "hbond": true,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLU",
+      "mos": 43,
+      "uniprot": 60,
+      "bsa": 82.0,
+      "delta_g": -0.06,
+      "hbond": true,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "LYS",
+      "mos": 119,
+      "uniprot": 136,
+      "bsa": 79.8,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "LYS",
+      "mos": 58,
+      "uniprot": 75,
+      "bsa": 68.8,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASN",
+      "mos": 18,
+      "uniprot": 35,
+      "bsa": 67.9,
+      "delta_g": -0.47,
+      "hbond": false,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLN",
+      "mos": 66,
+      "uniprot": 83,
+      "bsa": 65.3,
+      "delta_g": -0.41,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "TYR",
+      "mos": 39,
+      "uniprot": 56,
+      "bsa": 63.9,
+      "delta_g": 0.0,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "VAL",
+      "mos": 59,
+      "uniprot": 76,
+      "bsa": 60.3,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ARG",
+      "mos": 96,
+      "uniprot": 113,
+      "bsa": 58.3,
+      "delta_g": -0.58,
+      "hbond": true,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ARG",
+      "mos": 65,
+      "uniprot": 82,
+      "bsa": 55.3,
+      "delta_g": -1.6,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "VAL",
+      "mos": 130,
+      "uniprot": 147,
+      "bsa": 49.9,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "PRO",
+      "mos": 129,
+      "uniprot": 146,
+      "bsa": 42.9,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "ASP",
+      "mos": 86,
+      "uniprot": 103,
+      "bsa": 42.8,
+      "delta_g": -0.2,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "MET",
+      "mos": 98,
+      "uniprot": 115,
+      "bsa": 41.1,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLN",
+      "mos": 49,
+      "uniprot": 66,
+      "bsa": 41.0,
+      "delta_g": -0.44,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLU",
+      "mos": 41,
+      "uniprot": 58,
+      "bsa": 38.0,
+      "delta_g": -0.34,
+      "hbond": true,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ARG",
+      "mos": 108,
+      "uniprot": 125,
+      "bsa": 37.2,
+      "delta_g": -0.98,
+      "hbond": true,
+      "partners": [
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASN",
+      "mos": 121,
+      "uniprot": 138,
+      "bsa": 37.1,
+      "delta_g": -0.23,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "TYR",
+      "mos": 106,
+      "uniprot": 123,
+      "bsa": 37.0,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "SER",
+      "mos": 100,
+      "uniprot": 117,
+      "bsa": 34.3,
+      "delta_g": 0.0,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "THR",
+      "mos": 85,
+      "uniprot": 102,
+      "bsa": 32.2,
+      "delta_g": -0.14,
+      "hbond": false,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "HIS",
+      "mos": 61,
+      "uniprot": 78,
+      "bsa": 31.5,
+      "delta_g": -0.13,
+      "hbond": false,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASN",
+      "mos": 46,
+      "uniprot": 63,
+      "bsa": 23.8,
+      "delta_g": 0.0,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASP",
+      "mos": 128,
+      "uniprot": 145,
+      "bsa": 22.1,
+      "delta_g": -0.2,
+      "hbond": true,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "LYS",
+      "mos": 45,
+      "uniprot": 62,
+      "bsa": 20.0,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH",
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "TYR",
+      "mos": 15,
+      "uniprot": 32,
+      "bsa": 19.5,
+      "delta_g": -0.01,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ALA",
+      "mos": 104,
+      "uniprot": 121,
+      "bsa": 19.5,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ILE",
+      "mos": 37,
+      "uniprot": 54,
+      "bsa": 18.9,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLY",
+      "mos": 16,
+      "uniprot": 33,
+      "bsa": 17.3,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "HIS",
+      "mos": 52,
+      "uniprot": 69,
+      "bsa": 14.7,
+      "delta_g": -0.3,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "SER",
+      "mos": 17,
+      "uniprot": 34,
+      "bsa": 13.0,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "VAL",
+      "mos": 51,
+      "uniprot": 68,
+      "bsa": 12.0,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "LYS",
+      "mos": 88,
+      "uniprot": 105,
+      "bsa": 11.9,
+      "delta_g": -0.12,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLN",
+      "mos": 83,
+      "uniprot": 100,
+      "bsa": 10.7,
+      "delta_g": -0.15,
+      "hbond": false,
+      "partners": [
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "VAL",
+      "mos": 94,
+      "uniprot": 111,
+      "bsa": 9.7,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASP",
+      "mos": 56,
+      "uniprot": 73,
+      "bsa": 9.6,
+      "delta_g": -0.16,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "GLN",
+      "mos": 139,
+      "uniprot": 156,
+      "bsa": 6.4,
+      "delta_g": -0.1,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "LYS",
+      "mos": 72,
+      "uniprot": 89,
+      "bsa": 5.7,
+      "delta_g": -0.21,
+      "hbond": false,
+      "partners": [
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASN",
+      "mos": 118,
+      "uniprot": 135,
+      "bsa": 4.5,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "ILE",
+      "mos": 99,
+      "uniprot": 116,
+      "bsa": 1.4,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "MET",
+      "mos": 42,
+      "uniprot": 59,
+      "bsa": 1.3,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VL"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ARG",
+      "mos": 67,
+      "uniprot": 84,
+      "bsa": 1.3,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "ASP",
+      "mos": 105,
+      "uniprot": 122,
+      "bsa": 1.3,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    },
+    {
+      "res": "THR",
+      "mos": 131,
+      "uniprot": 148,
+      "bsa": 0.8,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgC (UniProt 128-225)",
+      "in_igv": false
+    },
+    {
+      "res": "GLN",
+      "mos": 60,
+      "uniprot": 77,
+      "bsa": 0.4,
+      "delta_g": 0.0,
+      "hbond": false,
+      "partners": [
+        "VH"
+      ],
+      "pdl1_domain": "IgV (UniProt 19-127)",
+      "in_igv": true
+    }
+  ],
+  "paratope_vh_vl": [
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 57,
+      "res": "ILE",
+      "imgt": "64",
+      "region": "CDR2-IMGT",
+      "bsa": 95.5,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 34,
+      "res": "TYR",
+      "imgt": "38",
+      "region": "CDR1-IMGT",
+      "bsa": 79.1,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 102,
+      "res": "GLY",
+      "imgt": "110",
+      "region": "CDR3-IMGT",
+      "bsa": 78.6,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 104,
+      "res": "VAL",
+      "imgt": "112",
+      "region": "CDR3-IMGT",
+      "bsa": 74.5,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 59,
+      "res": "PHE",
+      "imgt": "66",
+      "region": "FR3-IMGT",
+      "bsa": 64.3,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 112,
+      "res": "GLN",
+      "imgt": "120",
+      "region": "FR4-IMGT",
+      "bsa": 64.1,
+      "delta_g": -0.37,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 31,
+      "res": "SER",
+      "imgt": "36",
+      "region": "CDR1-IMGT",
+      "bsa": 63.1,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 55,
+      "res": "GLY",
+      "imgt": "62",
+      "region": "CDR2-IMGT",
+      "bsa": 61.4,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 76,
+      "res": "LYS",
+      "imgt": "84",
+      "region": "FR3-IMGT",
+      "bsa": 59.7,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 115,
+      "res": "LEU",
+      "imgt": "123",
+      "region": "FR4-IMGT",
+      "bsa": 59.2,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 54,
+      "res": "SER",
+      "imgt": "59",
+      "region": "CDR2-IMGT",
+      "bsa": 55.5,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 52,
+      "res": "TYR",
+      "imgt": "57",
+      "region": "CDR2-IMGT",
+      "bsa": 54.5,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 93,
+      "res": "TYR",
+      "imgt": "107",
+      "region": "CDR3-IMGT",
+      "bsa": 50.6,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 97,
+      "res": "SER",
+      "imgt": "114",
+      "region": "CDR3-IMGT",
+      "bsa": 49.0,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 101,
+      "res": "LEU",
+      "imgt": "109",
+      "region": "CDR3-IMGT",
+      "bsa": 44.7,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 44,
+      "res": "LYS",
+      "imgt": "48",
+      "region": "FR2-IMGT",
+      "bsa": 37.3,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 117,
+      "res": "THR",
+      "imgt": "125",
+      "region": "FR4-IMGT",
+      "bsa": 33.9,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 56,
+      "res": "GLY",
+      "imgt": "63",
+      "region": "CDR2-IMGT",
+      "bsa": 31.5,
+      "delta_g": -0.12,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 53,
+      "res": "PRO",
+      "imgt": "58",
+      "region": "CDR2-IMGT",
+      "bsa": 30.6,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 43,
+      "res": "GLY",
+      "imgt": "47",
+      "region": "FR2-IMGT",
+      "bsa": 30.5,
+      "delta_g": -0.15,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 32,
+      "res": "TYR",
+      "imgt": "36",
+      "region": "CDR1-IMGT",
+      "bsa": 29.4,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 58,
+      "res": "THR",
+      "imgt": "65",
+      "region": "CDR2-IMGT",
+      "bsa": 26.0,
+      "delta_g": -0.3,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 103,
+      "res": "THR",
+      "imgt": "111",
+      "region": "CDR3-IMGT",
+      "bsa": 23.2,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 41,
+      "res": "PRO",
+      "imgt": "46",
+      "region": "FR2-IMGT",
+      "bsa": 22.6,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 11,
+      "res": "LEU",
+      "imgt": "12",
+      "region": "FR1-IMGT",
+      "bsa": 18.8,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 5,
+      "res": "LEU",
+      "imgt": "5",
+      "region": "FR1-IMGT",
+      "bsa": 16.2,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 7,
+      "res": "SER",
+      "imgt": "7",
+      "region": "FR1-IMGT",
+      "bsa": 16.2,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 99,
+      "res": "ARG",
+      "imgt": "116",
+      "region": "CDR3-IMGT",
+      "bsa": 15.5,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 28,
+      "res": "THR",
+      "imgt": "29",
+      "region": "CDR1-IMGT",
+      "bsa": 14.4,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 95,
+      "res": "SER",
+      "imgt": "109",
+      "region": "CDR3-IMGT",
+      "bsa": 13.9,
+      "delta_g": -0.16,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 105,
+      "res": "THR",
+      "imgt": "113",
+      "region": "CDR3-IMGT",
+      "bsa": 13.8,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 106,
+      "res": "THR",
+      "imgt": "114",
+      "region": "CDR3-IMGT",
+      "bsa": 13.0,
+      "delta_g": -0.15,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 114,
+      "res": "THR",
+      "imgt": "122",
+      "region": "FR4-IMGT",
+      "bsa": 12.8,
+      "delta_g": 0.0,
+      "hbond": true
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 77,
+      "res": "ASN",
+      "imgt": "85",
+      "region": "FR3-IMGT",
+      "bsa": 12.7,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 27,
+      "res": "PHE",
+      "imgt": "28",
+      "region": "CDR1-IMGT",
+      "bsa": 12.5,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 24,
+      "res": "ALA",
+      "imgt": "25",
+      "region": "FR1-IMGT",
+      "bsa": 11.6,
+      "delta_g": -0.13,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 113,
+      "res": "GLY",
+      "imgt": "121",
+      "region": "FR4-IMGT",
+      "bsa": 11.5,
+      "delta_g": -0.13,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 6,
+      "res": "GLU",
+      "imgt": "6",
+      "region": "FR1-IMGT",
+      "bsa": 11.4,
+      "delta_g": -0.13,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 52,
+      "res": "ASP",
+      "imgt": "56",
+      "region": "CDR2-IMGT",
+      "bsa": 10.8,
+      "delta_g": -0.17,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 9,
+      "res": "GLY",
+      "imgt": "9",
+      "region": "FR1-IMGT",
+      "bsa": 9.8,
+      "delta_g": -0.11,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 78,
+      "res": "THR",
+      "imgt": "86",
+      "region": "FR3-IMGT",
+      "bsa": 6.8,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 60,
+      "res": "TYR",
+      "imgt": "67",
+      "region": "FR3-IMGT",
+      "bsa": 6.7,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 23,
+      "res": "ALA",
+      "imgt": "24",
+      "region": "FR1-IMGT",
+      "bsa": 6.7,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 33,
+      "res": "ILE",
+      "imgt": "38",
+      "region": "CDR1-IMGT",
+      "bsa": 6.0,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 3,
+      "res": "GLN",
+      "imgt": "3",
+      "region": "FR1-IMGT",
+      "bsa": 5.7,
+      "delta_g": -0.06,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 25,
+      "res": "SER",
+      "imgt": "26",
+      "region": "FR1-IMGT",
+      "bsa": 5.1,
+      "delta_g": -0.02,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 75,
+      "res": "SER",
+      "imgt": "83",
+      "region": "FR3-IMGT",
+      "bsa": 4.9,
+      "delta_g": -0.06,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 42,
+      "res": "PRO",
+      "imgt": "46",
+      "region": "FR2-IMGT",
+      "bsa": 4.5,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 96,
+      "res": "SER",
+      "imgt": "113",
+      "region": "CDR3-IMGT",
+      "bsa": 2.8,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 10,
+      "res": "GLY",
+      "imgt": "11",
+      "region": "FR1-IMGT",
+      "bsa": 2.5,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 30,
+      "res": "SER",
+      "imgt": "35",
+      "region": "CDR1-IMGT",
+      "bsa": 2.3,
+      "delta_g": -0.03,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 93,
+      "res": "VAL",
+      "imgt": "101",
+      "region": "FR3-IMGT",
+      "bsa": 1.0,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "B",
+      "role": "VL",
+      "mos": 45,
+      "res": "ALA",
+      "imgt": "49",
+      "region": "FR2-IMGT",
+      "bsa": 0.8,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 32,
+      "res": "TYR",
+      "imgt": "37",
+      "region": "CDR1-IMGT",
+      "bsa": 0.8,
+      "delta_g": 0.0,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 65,
+      "res": "LYS",
+      "imgt": "72",
+      "region": "FR3-IMGT",
+      "bsa": 0.7,
+      "delta_g": -0.02,
+      "hbond": false
+    },
+    {
+      "chain": "A",
+      "role": "VH",
+      "mos": 100,
+      "res": "LYS",
+      "imgt": "108",
+      "region": "CDR3-IMGT",
+      "bsa": 0.5,
+      "delta_g": 0.0,
+      "hbond": false
+    }
+  ],
+  "cdr_usage": {
+    "VH": {
+      "CDR1-IMGT": {
+        "n_residues": 6,
+        "bsa": 99.1,
+        "positions": [
+          "SER31",
+          "THR28",
+          "PHE27",
+          "ILE33",
+          "SER30",
+          "TYR32"
+        ]
+      },
+      "CDR2-IMGT": {
+        "n_residues": 7,
+        "bsa": 355.0,
+        "positions": [
+          "ILE57",
+          "GLY55",
+          "SER54",
+          "TYR52",
+          "GLY56",
+          "PRO53",
+          "THR58"
+        ]
+      },
+      "CDR3-IMGT": {
+        "n_residues": 7,
+        "bsa": 248.3,
+        "positions": [
+          "GLY102",
+          "VAL104",
+          "LEU101",
+          "THR103",
+          "THR105",
+          "THR106",
+          "LYS100"
+        ]
+      },
+      "FR1-IMGT": {
+        "n_residues": 10,
+        "bsa": 103.9,
+        "positions": [
+          "LEU11",
+          "LEU5",
+          "SER7",
+          "ALA24",
+          "GLU6",
+          "GLY9",
+          "ALA23",
+          "GLN3",
+          "SER25",
+          "GLY10"
+        ]
+      },
+      "FR2-IMGT": {
+        "n_residues": 1,
+        "bsa": 22.6,
+        "positions": [
+          "PRO41"
+        ]
+      },
+      "FR3-IMGT": {
+        "n_residues": 8,
+        "bsa": 156.7,
+        "positions": [
+          "PHE59",
+          "LYS76",
+          "ASN77",
+          "THR78",
+          "TYR60",
+          "SER75",
+          "VAL93",
+          "LYS65"
+        ]
+      },
+      "FR4-IMGT": {
+        "n_residues": 5,
+        "bsa": 181.4,
+        "positions": [
+          "GLN112",
+          "LEU115",
+          "THR117",
+          "THR114",
+          "GLY113"
+        ]
+      }
+    },
+    "VL": {
+      "CDR1-IMGT": {
+        "n_residues": 2,
+        "bsa": 108.6,
+        "positions": [
+          "TYR34",
+          "TYR32"
+        ]
+      },
+      "CDR2-IMGT": {
+        "n_residues": 1,
+        "bsa": 10.8,
+        "positions": [
+          "ASP52"
+        ]
+      },
+      "CDR3-IMGT": {
+        "n_residues": 5,
+        "bsa": 131.6,
+        "positions": [
+          "TYR93",
+          "SER97",
+          "ARG99",
+          "SER95",
+          "SER96"
+        ]
+      },
+      "FR2-IMGT": {
+        "n_residues": 4,
+        "bsa": 73.2,
+        "positions": [
+          "LYS44",
+          "GLY43",
+          "PRO42",
+          "ALA45"
+        ]
+      }
+    }
+  },
+  "totals": {
+    "epitope_residues": 45,
+    "epitope_igv_residues": 37,
+    "paratope_residues": 56,
+    "bsa_total_A2": 2950.4,
+    "hbonds_total": 14
+  }
+}

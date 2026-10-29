@@ -1,0 +1,203 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-00-Natural-Language-Entry-20261022
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- generic: No Data
+- generic: Amino Acid Group
+- generic: No Data
+- generic: Mocha
+- button "Copy session ID": 17d092af-3
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+- button "Worked for 44s" [expanded]:
+  - generic: Worked for 44s
+- button "Thinking":
+  - generic: Thinking
+- paragraph: I’ll start by checking available MOS structure-prediction tasks and setting up the sequences in the sequence library.
+- button "Execution details 2 items" [expanded]:
+  - generic: Execution details
+  - generic: 2 items
+- button "ListAvailableMOSTasks Completed":
+  - generic: ListAvailableMOSTasks
+  - img "Completed"
+- button "Read Completed" [expanded]:
+  - generic: Read
+  - img "Completed"
+- generic: path
+- generic: ":"
+- generic: "\"/app/src/mocha/agents/custom_skills/sequence-toolkit/SKILL.md\""
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "1 --- 2 name: sequence-toolkit 3 description: Use whenever a task touches protein sequences or mutations — the user pastes a sequence or FASTA, names a UniProt accession or PDB entry, asks to design, apply, inspect, or compare mutations, or a MOS task needs a sequence payload. Persists sequences in a project-local FASTA library and performs every sequence operation programmatically. 4 --- 5 6 # Sequence Toolkit 7 8 A single-command toolkit for protein sequence operations. All operations run 9 through `sequence_toolkit.py`, use a project-local directory of per-record 10 FASTA files, and emit typed JSONL records on stdout (FASTA/TSV where noted). 11 12 Invoke the toolkit as `python <<skill_dir>>/sequence_toolkit.py`; 13 `<<skill_dir>>` is this skill's directory — the `Path:` of this SKILL.md in 14 the system prompt's skill listing. 15 16 ## Requirements 17 18 Python >= 3.11. All dependencies (`requests`, `gemmi`, `biopython`) 19 are pre-installed in the Mocha sandbox — do not install anything. If an import 20 error nonetheless occurs, report it to the user instead of installing packages. 21 22 `gemmi` is only needed for `fetch-pdb`, and `biopython` only for 23 `compare`/`identify` and `store --crc64`; both are imported lazily, so the 24 other subcommands work without them. 25 26 ## Global Option 27 28 ```bash 29 --library <<path>> Sequence library directory (default: auto-detected, see below) 30 ``` 31 32 `--library` is a global option and must precede the subcommand: 33 34 ```bash 35 python <<skill_dir>>/sequence_toolkit.py --library <<path>> <<subcommand>> ... 36 ``` 37 38 ## Library Location 39 40 The library directory is resolved in this order: 41 42 1. `--library <<path>>` always wins. 43 2. If `/workspace` exists (the agent's default working environment), the 44 library is `/workspace/.mocha/seq_lib`. 45 3. Otherwise the location recorded by `init` (or chosen at an interactive 46 prompt on first use) is used. 47 48 When `/workspace` does not exist and nothing is recorded yet, an interactive 49 run prompts for a directory; non-interactive runs fail with instructions. 50 51 ### `init` 52 53 Create `seq_lib` inside a chosen directory and record it as the default 54 library location. The location is recorded in 55 `~/.config/sequence-toolkit/config.json`, so `init` needs write access to the 56 home config directory. 57 58 ```bash 59 python <<skill_dir>>/sequence_toolkit.py init <<project_dir>> 60 ``` 61 62 ## Subcommands 63 64 ### `fetch-uniprot` 65 66 Fetch the canonical sequence for a UniProt accession. 67 68 ```bash 69 python <<skill_dir>>/sequence_toolkit.py fetch-uniprot <<accession>> [--id <<id>>] [--force] 70 ``` 71 72 ### `fetch-pdb` 73 74 Fetch PDB chain sequences. Omit `--chain` to fetch every protein chain of the 75 entry — one record per chain, named `<<pdb_id>>_<<chain>>`; pass `--chain` for 76 a single chain (`--id` is only valid together with `--chain`). RCSB downloads 77 are brought into MOS layout first (chains relabeled A, B, C…, residues 78 reindexed to entity-sequence numbering), so chain references match MOS 79 objects; the summary's `chains` list gives each chain's MOS label, original 80 author label, and entity, and author labels are accepted as input — they are 81 translated with a warning. Local files supplied via `--cif` or `--pdb` 82 (mutually exclusive) keep their own layout. 83 84 The stored record preserves unresolved (unmodeled) residues as `-`, keeping 85 positions aligned with the structure. When unresolved residues exist, a second 86 record `<<id>>_full` is stored alongside, containing the complete entity 87 sequence with real residue letters at every position. The summary reports 88 `unresolved` (gap count), `unresolved_ranges` (1-based range syntax), and 89 `full_id` when the second record was created. 90 91 When using a PDB-derived chain as a sequence payload, check `unresolved` in 92 the summary: if greater than 0, use the `<<id>>_full` record so residues missing 93 from the structure are still included. 94 95 ```bash 96 python <<skill_dir>>/sequence_toolkit.py fetch-pdb <<pdb_id>> [--chain <<chain>>] [--id <<id>>] [--cif <<cif_path>>] [--pdb <<pdb_path>>] [--force] 97 ``` 98 99 ### `store` 100 101 Store a raw sequence or the first record of a FASTA file under a library ID. 102 Existing IDs require `--force` to overwrite. 103 104 **Prefer `--fasta` for long sequences** to avoid LLM transcription errors. 105 `--seq` is intended for short fragments: pastes longer than 50 residues are 106 **rejected** unless verified with at least one of: 107 108 - `--length <<residue_count>>` — expected residue count, taken from the user or source 109 metadata (not counted by the agent) 110 - `--crc64 <<hex>>` — UniProt CRC64 checksum of the sequence 111 112 Whitespace inside `--seq` is stripped, so long sequences can be pasted one 113 chunk per line, which lowers transcription error rates. 114 115 A failed `--length`/`--crc64` check means the paste is corrupted. Recover by 116 re-deriving from the source (`get` ranges → FASTA → `store --fasta`), not by 117 recounting residues or adjusting characters by hand. 118 119 **Never abbreviate or truncate the sequence** (no `...`): paste every residue, 120 transcribing directly from the user's source. 121 122 ```bash 123 python <<skill_dir>>/sequence_toolkit.py store --seq <<sequence>> --id <<id>> [--force] 124 python <<skill_dir>>/sequence_toolkit.py store --seq <<sequence>> --length <<residue_count>> --id <<id>> 125 python <<skill_dir>>/sequence_toolkit.py store --fasta <<fasta_path>> --id <<id>> [--force] 126 ``` 127 128 ### `get` 129 130 Retrieve a full sequence or segments. Ranges use 1-based inclusive syntax: 131 comma-separated positions and hyphenated ranges. 132 133 Output defaults to FASTA — one record per range; comma-separated segments are 134 returned as separate records, never concatenated. Use `--format jsonl` for 135 typed segment records. 136 137 To save a sequence to a file, pass `--output <<path>>`: the file receives pure 138 FASTA and nothing else. Do not redirect stdout — the closing JSONL summary 139 record would land in the file too. 140 141 ```bash 142 python <<skill_dir>>/sequence_toolkit.py get <<id>> 143 python <<skill_dir>>/sequence_toolkit.py get <<id>> <<ranges>> 144 python <<skill_dir>>/sequence_toolkit.py get <<id>> --output <<fasta_path>> 145 python <<skill_dir>>/sequence_toolkit.py get <<id>> <<ranges>> --format tsv # or jsonl 146 ``` 147 148 ### `compare` 149 150 Compare two sequences with Needleman-Wunsch global alignment and emit the 151 mutation report. Sequences longer than 5000 residues are rejected. 152 153 Use `compare` whenever two versions of the same sequence must be reconciled: 154 store both and let the diff locate every difference. 155 156 When two versions of the same sequence disagree — a structure construct vs. a 157 UniProt reference, two structures, two pastes — store both, settle the 158 difference with `compare`, and adjudicate against the canonical reference from 159 `fetch-uniprot`. Base the verdict on tool output, not on reading the 160 sequences. When the tools locate the difference but cannot establish which 161 version is correct, that choice belongs to the user — present the diff and 162 ask. 163 164 ```bash 165 python <<skill_dir>>/sequence_toolkit.py compare <<wt_id>> <<mutant_id>> 166 python <<skill_dir>>/sequence_toolkit.py compare <<wt.fasta>> <<mutant.fasta>> 167 ``` 168 169 ### `generate` 170 171 Generate a mutant from a single-chain library ID or a TSV batch file. 172 173 Single-chain mode: 174 175 ```bash 176 python <<skill_dir>>/sequence_toolkit.py generate --id <<id>> --mutation <<mutation>> [--store <<output_id>>] [--format A0M] [--force] 177 python <<skill_dir>>/sequence_toolkit.py generate --id <<id>> --mutation <<mutation>> --output <<fasta_path>> 178 ``` 179 180 Batch mode (TSV columns: `source_id`, `mutation`, `output_id`): 181 182 ```tsv 183 source_id mutation output_id 184 <<source_id>> <<mutation>> <<output_id>> 185 ``` 186 187 ```bash 188 python <<skill_dir>>/sequence_toolkit.py generate --batch <<tsv_path>> --output <<fasta_path>> 189 ``` 190 191 Use `--store` to persist a single-chain result in the library (single-chain 192 mode only; ignored in batch mode). Use `--output` to write all generated 193 sequences to a multi-record FASTA file. 194 195 In batch mode an invalid row does not abort the run: the row's error is logged 196 with its TSV row number, remaining rows still process, and the summary reports 197 `rows_processed` and `rows_failed` (`success` is `false` and the exit code is 198 1 when any row failed). 199 200 Mutation tokens are combined with the `--sep` separator (default `_`). 201 202 The default substitution format is `C:A0M`, so every substitution token must 203 include a chain prefix. Use `--format A0M` for bare single-chain tokens 204 without the chain prefix. 205 206 ### `identify` 207 208 Identify substitutions, insertions, and deletions in mutants relative to the 209 first sequence. Arguments may be library IDs or FASTA file paths. 210 211 ```bash 212 python <<skill_dir>>/sequence_toolkit.py identify <<wt_id>> <<mutant_id>> [<<mutant_id>> ...] 213 python <<skill_dir>>/sequence_toolkit.py identify <<wt.fasta>> <<mutant.fasta>> [<<mutant.fasta>> ...] 214 ``` 215 216 ### `list` 217 218 List all library IDs and their lengths. 219 220 ```bash 221 python <<skill_dir>>/sequence_toolkit.py list 222 ``` 223 224 ### `delete` 225 226 Delete a library record. 227 228 ```bash 229 python <<skill_dir>>/sequence_toolkit.py delete <<id>> 230 ``` 231 232 ## Shared Mutation Notation 233 234 The default substitution token format is `C:A0M`: `chain:wt_position_mutant`. 235 236 ### Substitutions 237 238 `<<chain>>:<<wt>><<position>><<mut>>` — chain ID, WT one-letter residue, 239 1-based position, mutant one-letter residue. 240 241 Single-chain library records (from `fetch-uniprot` or `store`) have no real 242 chain: the chain letter in a `C:A0M` token is ignored and any prefix resolves 243 to the only chain. Use `--format A0M` to omit the prefix entirely. 244 245 To use bare single-chain tokens, pass `--format A0M`. 246 247 ### Insertions 248 249 `i<<chain>><<position>><<seq>>` — insert residues `<<seq>>` immediately after 250 `<<position>>` on chain `<<chain>>`. Use position 0 to insert before the first 251 residue. 252 253 ### Deletions 254 255 `d<<chain>><<position>><<seq>>` — delete residues `<<seq>>` starting at 256 `<<position>>` on chain `<<chain>>`. 257 258 Positions are 1-based. Combine tokens with `_`. 259 260 ## Output Schemas 261 262 Commands that produce results emit one `entry` record per result (`init` and 263 `delete` produce none). Every command closes with exactly one `summary` 264 record, including on failure and on argument/usage errors. Errors and 265 warnings are `log` records. 266 267 ### Sequence entry (fetch, store, list) 268 269 ```json 270 { 271 \"type\": \"entry\", 272 \"entry_type\": \"sequence\", 273 \"id\": \"<<id>>\", 274 \"length\": <<residue_count>> 275 } 276 ``` 277 278 Fetch and store add `\"source\"` plus the source identifiers (`\"accession\"` for 279 UniProt; `\"pdbid\"` and `\"chain\"` for PDB). 280 281 ### Mutant entry (generate, single-chain mode) 282 283 ```json 284 { 285 \"type\": \"entry\", 286 \"entry_type\": \"mutant\", 287 \"mutation\": \"<<mutation>>\", 288 \"source_id\": \"<<id>>\", 289 \"length\": <<residue_count>>, 290 \"stored_id\": \"<<output_id>>\" 291 } 292 ``` 293 294 `stored_id` is present only with `--store`. The full mutant `sequence` is 295 inlined only when the result is not persisted (no `--store`/`--output`). 296 297 Batch mode emits one entry per `output_id`: 298 299 ```json 300 {\"type\": \"entry\", \"entry_type\": \"mutant\", \"output_id\": \"<<output_id>>\", \"sequences\": {\"<<chain>>\": \"<<sequence>>\"}} 301 ``` 302 303 `sequences` is inlined only without `--output`. For single-chain records the 304 chain key is the synthetic `\"A\"`. 305 306 ### Segment entry (get --format jsonl) 307 308 ```json 309 {\"type\": \"entry\", \"entry_type\": \"segment\", \"sequence_id\": \"<<id>>\", \"start\": <<start>>, \"end\": <<end>>, \"residues\": \"<<segment>>\"} 310 ``` 311 312 ### Mutant entry (compare, identify) 313 314 ```json 315 { 316 \"type\": \"entry\", 317 \"entry_type\": \"mutant\", 318 \"index\": <<argument_position_wt_is_1>>, 319 \"sequence_id\": \"<<id>>\", 320 \"length\": <<residue_count>>, 321 \"edit_distance\": <<edit_distance>>, 322 \"threshold\": <<divergence_threshold>>, 323 \"divergent\": false, 324 \"description\": \"<<mutation description>>\", 325 \"events\": [ 326 {\"type\": \"substitution\", \"wt_residue\": \"<<wt>>\", \"position\": <<position>>, \"mutant_residue\": \"<<mut>>\"} 327 ] 328 } 329 ``` 330 331 A pair is `divergent` when the edit distance exceeds `max(50, 10% of the mean 332 sequence length)`. When `divergent` is `true`, `description` and `events` are 333 `null`. `compare` adds `wt_id` to the entry. 334 335 ### Summary 336 337 Every command closes with exactly one summary record carrying `command`, 338 `success`, and per-command statistics. On failure the summary follows the 339 error log record and has `\"success\": false`: 340 341 ```json 342 {\"type\": \"summary\", \"command\": \"<<command>>\", \"success\": true, \"...\": \"...\"} 343 ``` 344 345 `generate` reports `records_written` (0 when nothing was persisted) and 346 `output_file`; batch mode also reports `rows_processed` and `rows_failed`. 347 `compare`/`identify` report `mutants_processed` and `exceeded_threshold`; 348 fetch/store report `length`; `get` reports `segments`. 349 350 ### Errors and warnings 351 352 Emitted as log records: 353 354 ```json 355 {\"type\": \"log\", \"level\": \"error\", \"msg\": \"Sequence '<<id>>' not found in library\"} 356 ``` 357 358 ## Recommended Workflow 359 360 1. Fetch: `python <<skill_dir>>/sequence_toolkit.py fetch-uniprot <<accession>>` 361 2. Inspect: `python <<skill_dir>>/sequence_toolkit.py get <<id>> <<position>>` 362 3. Generate: `python <<skill_dir>>/sequence_toolkit.py generate --id <<id>> --mutation <<mutation>> --store <<output_id>>` 363 4. Verify: `python <<skill_dir>>/sequence_toolkit.py identify <<id>> <<output_id>>` 364 365 ## Best Practices 366 367 - Treat toolkit output as final: build on it directly, and do not re-derive or 368 re-verify results by reading the raw sequence. 369 - Reference sequences by library ID or file path; avoid pasting long sequences inline. 370 - Write data to files only via `--output` flags; never redirect stdout — stdout 371 carries the JSONL record stream, not file content. 372 - Provide sequences as FASTA files whenever possible; use `--seq` only for short fragments. 373 - When pasting is unavoidable, always verify: pass `--length` or `--crc64` from source 374 metadata. Paste in per-line chunks. 375 - Paste the sequence in full, residue by residue from the source. Never truncate, 376 abbreviate with `...`, or reconstruct any part of it from memory. 377 - Verify the WT residue with `get <<id>> <<position>>` before designing a mutation. 378 - Use `--force` deliberately; the toolkit refuses to overwrite records by default. 379 - Keep manually stored sequences limited to standard amino-acid characters and `-` for gaps."
+- generic: "message:"
+- generic: "379 lines read from file starting from line 1. Total lines in file: 379. End of file reached."
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Sequences in hand. I’ll store them in the sequence library and validate chain A against the canonical PD-L1 reference before launching prediction.
+- button "File operations" [expanded]:
+  - generic: File operations
+- button "Write /workspace/pdl1_kn035_seq.fasta Completed":
+  - generic: Write
+  - generic "/workspace/pdl1_kn035_seq.fasta"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands 2 items" [expanded]:
+  - generic: Run commands
+  - generic: 2 items
+- button "Shell Completed" [expanded]:
+  - generic: Shell
+  - img "Completed"
+- button "command cd /workspace && S=/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence...":
+  - generic: command
+  - generic: cd /workspace && S=/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence...
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: ">pdl1_igv MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE >kn035 QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+- generic: "message:"
+- generic: Command executed successfully.
+- button "Shell cd /workspace && S=/app/src/mocha/agents/custom_sk… Completed":
+  - generic: Shell
+  - generic "cd /workspace && S=/app/src/mocha/agents/custom_sk…"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands" [expanded]:
+  - generic: Run commands
+- button "Shell Completed" [expanded]:
+  - generic: Shell
+  - img "Completed"
+- button "command cd /workspace && S=/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence...":
+  - generic: command
+  - generic: cd /workspace && S=/app/src/mocha/agents/custom_skills/sequence-toolkit/sequence...
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "{\"type\": \"summary\", \"command\": \"get\", \"id\": \"pdl1_uniprot\", \"success\": true, \"segments\": 1, \"output_file\": \"uniprot_igv.fasta\"} {\"type\": \"entry\", \"entry_type\": \"mutant\", \"index\": 2, \"sequence_id\": \"pdl1_igv\", \"length\": 118, \"edit_distance\": 4, \"threshold\": 50, \"divergent\": false, \"description\": \"i0MA P115L Y116E\", \"events\": [{\"type\": \"insertion\", \"position\": 0, \"residues\": \"MA\"}, {\"type\": \"substitution\", \"wt_residue\": \"P\", \"position\": 115, \"mutant_residue\": \"L\"}, {\"type\": \"substitution\", \"wt_residue\": \"Y\", \"position\": 116, \"mutant_residue\": \"E\"}], \"wt_id\": \"pdl1_uniprot_19-134\"} {\"type\": \"summary\", \"command\": \"compare\", \"success\": true, \"wt_id\": \"pdl1_uniprot_19-134\", \"mutant_id\": \"pdl1_igv\", \"mutants_processed\": 1, \"exceeded_threshold\": 0}"
+- generic: "message:"
+- generic: Command executed successfully.
+- button "Thinking":
+  - generic: Thinking
+- paragraph: "Chain A checks out: it is the PD-L1 IgV domain (UniProt 19–134) plus an N-terminal “MA” tag and a two-residue C-terminal change (PY→LE). Now let me get the MMFold schema."
+- button "Tool calls 2 items" [expanded]:
+  - generic: Tool calls
+  - generic: 2 items
+- button "GetMOSTaskSchema Completed" [expanded]:
+  - generic: GetMOSTaskSchema
+  - img "Completed"
+- generic: task_name
+- generic: ":"
+- generic: "\"MMFold\""
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "{ \"type\": \"object\", \"required\": [ \"name\", \"sequences\", \"dialect\", \"version\" ], \"properties\": { \"name\": { \"type\": \"string\", \"description\": \"Job display name.\" }, \"modelSeeds\": { \"type\": \"array\", \"items\": { \"type\": \"integer\" }, \"minItems\": 1, \"description\": \"Optional. Random seeds for structure sampling; omit to use the platform default.\" }, \"dialect\": { \"type\": \"string\", \"enum\": [ \"mmfold\" ], \"description\": \"Must always be 'mmfold'.\" }, \"version\": { \"type\": \"integer\", \"enum\": [ 1 ], \"description\": \"Must always be 1.\" }, \"sequences\": { \"type\": \"array\", \"description\": \"List of molecular entities. Each item must be exactly one of: protein, rna, dna, or ligand.\", \"items\": { \"oneOf\": [ { \"type\": \"object\", \"required\": [ \"protein\" ], \"properties\": { \"protein\": { \"type\": \"object\", \"required\": [ \"id\", \"sequence\" ], \"properties\": { \"id\": { \"oneOf\": [ { \"type\": \"string\" }, { \"type\": \"array\", \"items\": { \"type\": \"string\" } } ], \"description\": \"Chain ID(s). Use a list for homo-multimers, e.g. ['A', 'B'].\" }, \"sequence\": { \"type\": \"string\", \"description\": \"Amino acid sequence in one-letter code.\" }, \"modifications\": { \"type\": \"array\", \"description\": \"Post-translational modifications. Optional.\", \"items\": { \"type\": \"object\", \"required\": [ \"ptmType\", \"ptmPosition\" ], \"properties\": { \"ptmType\": { \"type\": \"string\", \"description\": \"PTM code, e.g. 'HY3', 'P1L'.\" }, \"ptmPosition\": { \"type\": \"integer\", \"description\": \"1-based residue position.\" } } } }, \"description\": { \"type\": \"string\", \"description\": \"Optional free-text label.\" }, \"templates\": { \"type\": \"array\", \"description\": \"Optional structural templates.\" } } } } }, { \"type\": \"object\", \"required\": [ \"rna\" ], \"properties\": { \"rna\": { \"type\": \"object\", \"required\": [ \"id\", \"sequence\" ], \"properties\": { \"id\": { \"oneOf\": [ { \"type\": \"string\" }, { \"type\": \"array\", \"items\": { \"type\": \"string\" } } ], \"description\": \"Chain ID(s).\" }, \"sequence\": { \"type\": \"string\", \"description\": \"RNA sequence using A, U, G, C.\" }, \"modifications\": { \"type\": \"array\", \"description\": \"Chemical modifications. Optional.\", \"items\": { \"type\": \"object\", \"required\": [ \"modificationType\", \"basePosition\" ], \"properties\": { \"modificationType\": { \"type\": \"string\", \"description\": \"Modification code, e.g. '2MG', '5MC'.\" }, \"basePosition\": { \"type\": \"integer\", \"description\": \"1-based nucleotide position.\" } } } }, \"description\": { \"type\": \"string\", \"description\": \"Optional free-text label.\" } } } } }, { \"type\": \"object\", \"required\": [ \"dna\" ], \"properties\": { \"dna\": { \"type\": \"object\", \"required\": [ \"id\", \"sequence\" ], \"properties\": { \"id\": { \"oneOf\": [ { \"type\": \"string\" }, { \"type\": \"array\", \"items\": { \"type\": \"string\" } } ], \"description\": \"Chain ID(s).\" }, \"sequence\": { \"type\": \"string\", \"description\": \"DNA sequence using A, T, G, C.\" }, \"modifications\": { \"type\": \"array\", \"description\": \"Chemical modifications. Optional.\", \"items\": { \"type\": \"object\", \"required\": [ \"modificationType\", \"basePosition\" ], \"properties\": { \"modificationType\": { \"type\": \"string\", \"description\": \"Modification code, e.g. '6OG', '6MA'.\" }, \"basePosition\": { \"type\": \"integer\", \"description\": \"1-based nucleotide position.\" } } } }, \"description\": { \"type\": \"string\", \"description\": \"Optional free-text label.\" } } } } }, { \"type\": \"object\", \"required\": [ \"ligand\" ], \"description\": \"Ligand via CCD code. id must be a list of chain IDs, one per copy.\", \"properties\": { \"ligand\": { \"type\": \"object\", \"required\": [ \"id\", \"ccdCodes\" ], \"properties\": { \"id\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"description\": \"List of chain IDs, one per ligand copy, e.g. ['G', 'H'].\" }, \"ccdCodes\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"description\": \"CCD ligand code(s), e.g. ['ATP'].\" }, \"description\": { \"type\": \"string\", \"description\": \"Optional free-text label.\" } } } } }, { \"type\": \"object\", \"required\": [ \"ligand\" ], \"description\": \"Ligand via SMILES. id must be a single chain ID string.\", \"properties\": { \"ligand\": { \"type\": \"object\", \"required\": [ \"id\", \"smiles\" ], \"properties\": { \"id\": { \"type\": \"string\", \"description\": \"Single chain ID, e.g. 'K'.\" }, \"smiles\": { \"type\": \"string\", \"description\": \"SMILES string for the small molecule.\" }, \"description\": { \"type\": \"string\", \"description\": \"Optional free-text label.\" } } } } } ] } }, \"bondedAtomPairs\": { \"type\": \"array\", \"description\": \"Optional covalent bond restraints between specific atoms. Each bond: [[chainA, residueIndexA, atomNameA], [chainB, residueIndexB, atomNameB]]. Residue index is 1-based. Example: [[['A', 145, 'SG'], ['L', 1, 'C04']]].\", \"items\": { \"type\": \"array\", \"minItems\": 2, \"maxItems\": 2, \"items\": { \"type\": \"array\", \"items\": [ { \"type\": \"string\", \"description\": \"Chain ID\" }, { \"type\": \"integer\", \"description\": \"Residue index (1-based)\" }, { \"type\": \"string\", \"description\": \"Atom name\" } ] } } } } }"
+- button "GetMOSQuota Completed" [expanded]:
+  - generic: GetMOSQuota
+  - img "Completed"
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "MOS task-creation quota (rolling 24h window): remaining: 500 reset_time: null (no active window yet — first create starts the 24h window) Orchestration: Use the `GetMOSQuota` tool to check the quota before creating tasks in batch; if remaining is 0, tell the user quota is exhausted and show a human readable reset time."
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands" [expanded]:
+  - generic: Run commands
+- button "Shell cd /workspace && S=/app/src/mocha/agents/custom_sk… Completed":
+  - generic: Shell
+  - generic "cd /workspace && S=/app/src/mocha/agents/custom_sk…"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Launching the complex prediction.
+- button "Tool calls" [expanded]:
+  - generic: Tool calls
+- button "StartMOSTask Completed" [expanded]:
+  - generic: StartMOSTask
+  - img "Completed"
+- generic: task_type
+- generic: ":"
+- generic: "\"MMFold\""
+- generic: task_name
+- generic: ":"
+- generic: "\"PDL1_KN035_complex\""
+- generic: task_description
+- generic: ":"
+- generic: "\"Predict the complex structure of human PD-L1 IgV domain (chain A) bound to nanobody KN035 (chain B).\""
+- 'button "payload {..."':
+  - generic: payload
+  - generic: "{..."
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "Task started successfully. Name: PDL1_KN035_complex Type: MMFold Task ID: 342948473701376 Statuses change on the platform, not by polling: end your turn and let the user watch the Task panel. At the next snapshot, ListMOSTasks covers the whole board at once; CheckMOSTask on a succeeded task shows its details and downloads its outputs."
+- button "Thinking":
+  - generic: Thinking
+- button "Search sources" [expanded]:
+  - generic: Search sources
+- button "Web Search KN035 nanobody PD-L1 complex crystal structure PDB… Completed":
+  - generic: Web Search
+  - generic "KN035 nanobody PD-L1 complex crystal structure PDB…"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Tool calls" [expanded]:
+  - generic: Tool calls
+- button "ListMOSTasks Completed":
+  - generic: ListMOSTasks
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- paragraph:
+  - text: The complex prediction is running on MMFold (task
+  - code: PDL1_KN035_complex
+  - text: ", ID 342948473701376)."
+- paragraph:
+  - strong: What went into the prediction
+- list:
+  - strong: Chain A
+  - text: "— human PD-L1 IgV domain. Verified against UniProt Q9NZQ7: identical to residues 19–134, with an N-terminal “MA” cloning tag and a C-terminal PY→LE change in the flexible tail. 118 residues, the domain that carries the PD-1/antibody binding face."
+  - strong: Chain B
+  - text: — KN035 (envafolimab) VHH, 128 residues, single immunoglobulin domain with the hallmark long CDR3.
+  - listitem: 1:1 stoichiometry, no ligands, default sampling seeds.
+- paragraph:
+  - strong: Reference point for cross-checking the prediction
+- paragraph:
+  - text: The experimental structure of exactly this complex exists — PDB 5JDS (Zhang et al.,
+  - emphasis: Cell Discovery
+  - text: "2017, 1.7 Å) — so the predicted interface can be validated rather than taken on trust. That crystal structure shows KN035 docking onto the front β-sheet of PD-L1 (C, C′, F, G strands), engaging almost exclusively through CDR3 plus a minor CDR1 contribution, and it buries five PD-L1 hotspot residues that are also shared with the PD-1 site:"
+  - strong: Ile54, Tyr56, Glu58, Gln66, Arg113
+  - text: (UniProt numbering). I will map the predicted interface onto that set and report agreement or divergence.
+- paragraph: "I’ll pick this up when the prediction lands: download the model, compute the interface (contacts, buried surface area, salt bridges/H-bonds), and report the epitope on PD-L1 and the paratope on KN035 — with chain-A residue numbers converted back to standard PD-L1 numbering so they are directly comparable to the literature. Let me know when you’d like me to continue."
+- navigation "Conversation navigator":
+  - 'button "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"'
+- button "Back to latest":
+- button "Upload":
+- textbox "Ask me to do anything"
+- button "Send" [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

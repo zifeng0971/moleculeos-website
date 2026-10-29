@@ -1,0 +1,39 @@
+PD-L1 / KN035：01→02 MMetrics Homologs 空结果排查单
+整理时间：2026-10-28T15:40:37+07:00（Asia/Jakarta）
+
+问题：02原生MOS MMetrics面板显示“Searched by antigen sequence similarity / No significant homologs found.”。
+排查对象是A链PD-L1抗原，不应把B链KN035抗体的BLAST命中当作A链结果。
+
+任务链路：
+01项目342242986152960 → MMFold任务342253805564928（PDL1_KN035_VHH_complex，Succeed）
+→ 选取MMFold_1.cif（A=PD-L1 118aa，B=KN035 VHH 128aa）
+→ 02项目342604060136448，object342604293768192，work342604299084800
+→ 自动前置任务342604299285504（autocompute-MMFold_1，Succeed）
+→ MMetrics任务342604577018880（mmetrics-analysis-342604299285504，Succeed）
+→ mmetrics_id=caca9ec3-b45d-4c7a-a69d-99cc182aa3f6，annotations.homology/uniprot/pdb均=[]。
+
+运行时间：
+01 UI创建2026-10-20 9:34:18，更新时间9:36:23；原始UI无时区，不擅自换算。
+02旧ledger记自动前置开始2026-10-21T02:20:28Z，耗时1.1min；MMetrics开始02:21:36Z，耗时3s。
+上述按旧档UTC声明换算Asia/Jakarta为09:20:28与09:21:36（UTC+07）；raw status未写时区。
+02前置产物createTime=1792549294（2026-10-21T02:21:34Z / Jakarta09:21:34+07:00），是Unix epoch的确定转换。
+原生UI采集时间=2026-10-21T02:23:00.211Z；采集时间与运行时间分开。详见diagnostics/timeline.csv与timeline-audit。
+
+关键证据：
+1. 01结构、02原始副本和sanitized副本字节一致：SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。
+2. mos-blast JSON并非空：503条比对、500个唯一hit_id；FASTA500条。
+3. 这503条query均为B链KN035128aa，A链query条数=0（仅指这份归档文件）。
+4. 首条hit=pdb|5JDS|B，identity=128，identity_percentage=1.0（0—1尺度），E-value=2.10588e-92。
+5. 原始blast_results.json对象342604574229504，下载名similarity_results.json；SHA256=b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931。
+6. BLAST FASTA对象342604574114816；上述两对象确实列在MMetrics输入payload的7个对象中。
+7. 原生record空homology，UI也显示空；缺的是抗原检索/注释证据，不是抗体BLAST零命中。
+
+请后台优先确认：
+A. task342604299285504实际选择了哪些entity/chain进行相似性搜索？A/118aa是否被提交？若跳过或失败，给出原因和日志。
+B. 如A链另有独立检索任务，请按project/object/work关联出任务ID、输入FASTA、数据库版本、阈值、状态、原始输出及完整起止时间/时区。
+C. task342604577018880读取了哪些产物、按哪个chain/entity关联，是否过滤了结果？请给出每步输入计数、输出计数和过滤理由。
+D. annotations.homology/uniprot/pdb为空是未运行、失败、零命中、过滤或装配问题中的哪一种？
+
+限制：未获得后台worker日志、版本/数据库快照、完整搜索参数、明确的A链搜索状态。现有证据不能定根因。
+本次只整理留档并离线复算；没有重新提交MOS任务。
+解压后先打开index.html；完整原始01/02目录和截图在archives/website-cases/pdl1/。

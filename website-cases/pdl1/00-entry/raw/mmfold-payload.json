@@ -1,0 +1,21 @@
+{
+  "name": "PDL1_KN035_complex",
+  "dialect": "mmfold",
+  "version": 1,
+  "sequences": [
+    {
+      "protein": {
+        "id": "A",
+        "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+        "description": "Human PD-L1 IgV domain (UniProt Q9NZQ7, residues 19-134) with N-terminal MA tag"
+      }
+    },
+    {
+      "protein": {
+        "id": "B",
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "description": "Nanobody KN035 (anti-PD-L1 VHH)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "case": "kn035_case05_de_novo",
+  "created_utc": "2026-10-21T02:28:04Z",
+  "target": {
+    "name": "MMFold_1 chain A (PD-L1 IgV domain, 118 aa)",
+    "mos_object_id": "342605515027456",
+    "mos_work_id": "342605519696896",
+    "tos_key": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+    "local_copy": "/workspace/protein_data/protein_342605519696896/MMFold_1_chain_A.cif",
+    "local_copy_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+    "object_download_copy_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+    "claimed_source_file": "MMFold_1.cif",
+    "claimed_source_sha256_by_user": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "claimed_source_present_in_project": false,
+    "claimed_source_verification": "NOT VERIFIED - the 2-chain MMFold_1.cif itself is not present in this project (only the 1-chain derived object exists), so its sha256 cannot be recomputed here. Provenance rests on the user statement that chain A was extracted unchanged (chain B deleted, 118 aa kept, coordinates untouched).",
+    "chains_in_imported_file": [
+      "A"
+    ],
+    "n_residues": 118,
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "sequence_source_check": "sequence rebuilt from ATOM records == _entity_poly.pdbx_seq_one_letter_code (identical, 118 aa)",
+    "residue_mapping": "label_seq_id 1-118 == auth_seq_id 1-118 == MOS residue number, chain A throughout (no offset, no gaps, 118/118 residues modeled)",
+    "external_local_verification_available": true,
+    "external_local_verification_note": "User confirms the main complex (2-chain MMFold_1.cif) was verified externally: local hash and extracted chain-A coordinates are identical. Recorded as user-attested provenance; no external structure was read into this project, and no other project's data was accessed."
+  },
+  "hotspots": {
+    "source": "Case02 MMetrics project 342604060136448 native epitope (observed): A38,40,42,45,47,50,52,53,57,60,97,99,101,103,104,105,106,107,109",
+    "selected_source_numbers": [
+      45,
+      40,
+      97,
+      107,
+      105,
+      38
+    ],
+    "selection_rule": "6 of the case02 observed epitope positions, ranked by interface-buried area preference; each required local Shrake-Rupley single-chain SASA >= 20 A^2 (probe 1.4 A, 960 points)",
+    "numbering_conversion": "identity: MOS number = case02/label_seq_id number (evidence: mapping_identity_label_vs_auth=true; all 6 pass SASA>=20 under identity, whereas the -17 UniProt-offset hypothesis puts A97->80 (2.96 A^2) and A105->88 (0.1 A^2) buried, i.e. impossible as interface hotspots)",
+    "hotspots_in_mos_numbering": [
+      {
+        "mos": 45,
+        "aa": "ASP",
+        "sasa_A2": 135.5
+      },
+      {
+        "mos": 40,
+        "aa": "TYR",
+        "sasa_A2": 58.85
+      },
+      {
+        "mos": 97,
+        "aa": "ARG",
+        "sasa_A2": 67.67
+      },
+      {
+        "mos": 107,
+        "aa": "TYR",
+        "sasa_A2": 98.36
+      },
+      {
+        "mos": 105,
+        "aa": "ALA",
+        "sasa_A2": 62.99
+      },
+      {
+        "mos": 38,
+        "aa": "ILE",
+        "sasa_A2": 63.65
+      }
+    ],
+    "hotspot_string_submitted": "A45,A40,A97,A107,A105,A38"
+  },
+  "payload_common": {
+    "contigs": "A1-118/0 60-100",
+    "contigs_meaning": "fix all 118 target residues on chain A, chain break, hallucinate a new binder chain of 60-100 residues",
+    "compare_binder": 1,
+    "compare_binder_meaning": "per schema: run sequence design and structure prediction after backbone generation, return aligned comparison structure",
+    "diffusion_steps": "unset -> platform default (50) per schema"
+  },
+  "runs": [
+    {
+      "run": 1,
+      "task_id": "342606137910272",
+      "task_name": "kn035_c05_denovo_seed111",
+      "payload_file": "payloads/payload_seed111.json",
+      "random_seed": 111,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z",
+      "status": "succeed",
+      "duration": "3.7min",
+      "downloaded_to": "downloads/protein_binder_design_342606137910272",
+      "archived_to": "outputs/seed111",
+      "output_files": [
+        {
+          "name": "179254989623579_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "d465d788a706f8983a801a5c51cc8b7aa6cbee99140c50092e42f669d8d93998"
+        },
+        {
+          "name": "179254989703386_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "b1199c034dfaf990d38a252e921bf166743c2b8e9b98f74f2de94cf91fb607c0"
+        }
+      ],
+      "binder_length": 73,
+      "confidence_metrics": "missing"
+    },
+    {
+      "run": 2,
+      "task_id": "342606139298816",
+      "task_name": "kn035_c05_denovo_seed222",
+      "payload_file": "payloads/payload_seed222.json",
+      "random_seed": 222,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z",
+      "status": "succeed",
+      "duration": "6.7min",
+      "downloaded_to": "downloads/protein_binder_design_342606139298816",
+      "archived_to": "outputs/seed222",
+      "output_files": [
+        {
+          "name": "179255007456107_output.cif",
+          "role": "backbone, binder chain A all-GLY virtual",
+          "sha256": "74fb11af1b5ea5abc4b178800b239c865a2a75f46c76be1d563685980a657ffa"
+        },
+        {
+          "name": "179255007523220_aligned.cif",
+          "role": "designed sequence + complex prediction",
+          "sha256": "65b15adfba3b900f6cf7d85dabd0a703ee81ecf583048fff2aed1b0c8cec4044"
+        }
+      ],
+      "binder_length": 66,
+      "confidence_metrics": "missing"
+    },
+    {
+      "run": 3,
+      "task_id": "342606141764608",
+      "task_name": "kn035_c05_denovo_seed333",
+      "payload_file": "payloads/payload_seed333.json",
+      "random_seed": 333,
+      "status_at_submit": "submitted",
+      "submitted_utc": "2026-10-21T02:28:04Z"
+    }
+  ],
+  "provenance_rules": [
+    "No existing binder/redesign was used or imitated; all binders come from these three de novo runs on the single-chain import.",
+    "No 5GRJ / 7XYQ / 5JDS coordinates were used as input or template.",
+    "No other project was modified.",
+    "Backbone-only GLY placeholder sequences (virtual backbone) will be labelled separately from real designed sequences.",
+    "Missing confidence metrics (ipTM/PAE) will be reported as missing, never imputed."
+  ],
+  "snapshots": [
+    {
+      "utc": "2026-10-21T02:28:00Z",
+      "source": "ListMOSTasks",
+      "states": {
+        "342606141764608": "PENDING",
+        "342606137910272": "PENDING",
+        "342606139298816": "PENDING"
+      },
+      "note": "statuses as reported by the platform at this moment; no result files yet"
+    },
+    {
+      "utc": "2026-10-21T02:29:11Z",
+      "source": "CheckMOSTask x3",
+      "states": {
+        "342606137910272": "running",
+        "342606139298816": "pending",
+        "342606141764608": "pending"
+      },
+      "platform_payload_echo": {
+        "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1
+      },
+      "raw_files": [
+        "tasks/check_seed111_20261021T0228Z.txt",
+        "tasks/check_seed222_20261021T0228Z.txt",
+        "tasks/check_seed333_20261021T0228Z.txt"
+      ],
+      "note": "platform normalises the TOS key with a 'tos:mosv2-prod/' prefix; payload otherwise unchanged"
+    }
+  ],
+  "chain_role_mapping": {
+    "output_chain_B": "PD-L1 target, identity-mapped to main structure chain A residues 1-118 (label_seq_id == auth_seq_id == output residue number)",
+    "output_chain_A": "de novo binder, NO counterpart in MMFold_1; binder-local numbering, intentionally unmapped",
+    "mapping_file": "analysis/output_chain_map_to_main.csv (118 rows, target only)",
+    "role_switch_note": "input chain A (target) becomes output chain B; output chain A is the new binder"
+  },
+  "archived_at_utc": "2026-10-21T02:36:35Z"
+}

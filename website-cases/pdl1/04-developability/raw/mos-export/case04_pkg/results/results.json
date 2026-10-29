@@ -1,0 +1,946 @@
+{
+ "case": "case04_developability_KN035_5JDS",
+ "generated_utc": "2026-10-20T02:37:34Z",
+ "target": {
+  "name": "KN035 (envafolimab) anti-PD-L1 single-domain antibody (VHH)",
+  "pdb": "5JDS",
+  "resolution_A": 1.7,
+  "title": "Crystal structure of PD-L1 complexed with a nanobody at 1.7 Angstrom resolution",
+  "antigen": "human PD-L1 IgV domain (PD1L1_HUMAN, Q9NZQ7)"
+ },
+ "input_files": {
+  "wt_fasta": "vhh_wt.fa",
+  "wt_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "wt_sequence_length": 128,
+  "pdb_sanitized_mos_layout": "structs/5JDS.cif",
+  "pdb_sha256_16": "28334591ab272bcb",
+  "vhh_only_renumbered": "structs/5JDS_vhh_renum.pdb",
+  "complex_renumbered": "structs/5JDS_complex_renum.pdb",
+  "mos_objects": {
+   "5JDS_KN035_VHH_PDL1.cif": {
+    "object_id": "342255217722368",
+    "work_id": "342255222821888"
+   },
+   "5JDS_KN035_VHH_renum": {
+    "object_id": "342255414207488",
+    "work_id": "342255419831296"
+   },
+   "5JDS_KN035_PDL1_renum": {
+    "object_id": "342255440987136",
+    "work_id": "342255446139904"
+   }
+  }
+ },
+ "chain_verification": {
+  "chain_A": {
+   "identity": "KN035 VHH (single immunoglobulin domain, 127 modelled residues)",
+   "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVS",
+   "evidence": "ANARCI HMM hit: camelid VH (e-value 7.4e-55), 1 domain; closest germline IGHV3-3*01 79% / IGHJ5*01 85%; no light chain present; CDR1/2/3 assigned",
+   "cdr_imgt": {
+    "CDR1": "GKMSSRRC",
+    "CDR2": "LLTTSGST",
+    "CDR3": "AADSFEDPTCTLVTSSGAFQY"
+   }
+  },
+  "chain_B": {
+   "identity": "human PD-L1 IgV domain (115 modelled residues)",
+   "start_residue": "A18 of Q9NZQ7",
+   "evidence": "_struct_ref: UNP PD1L1_HUMAN Q9NZQ7, db_align 18-132; sequence matches PD-L1 IgV"
+  },
+  "note": "An earlier numbered copy (structs/5JDS.cif) carries author numbering 3-129 for the VHH; the renumbered working copies start at 1 so that chain+index, author and label numbering coincide."
+ },
+ "annotation": {
+  "cdr_ranges_domain_numbering": {
+   "CDR1": [
+    26,
+    33
+   ],
+   "CDR2": [
+    51,
+    58
+   ],
+   "CDR3": [
+    97,
+    117
+   ]
+  },
+  "disulfides_domain_numbering": [
+   [
+    22,
+    96
+   ],
+   [
+    33,
+    106
+   ]
+  ],
+  "disulfide_evidence": "SG-SG distances 2.03-2.08 A; all four Cys relative SASA <= 0.002 (no free cysteine)",
+  "paratope_residues_domain_numbering": [
+   3,
+   5,
+   11,
+   25,
+   27,
+   29,
+   30,
+   32,
+   39,
+   41,
+   42,
+   55,
+   57,
+   59,
+   93,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   107,
+   108,
+   109,
+   110,
+   111,
+   113,
+   114,
+   116,
+   120,
+   121,
+   123,
+   125
+  ],
+  "interface": {
+   "vhh_bsa_A2": 1528.5,
+   "pdl1_bsa_A2": 1556.9,
+   "hbonds": 16,
+   "salt_bridges": 5,
+   "source": "interface/summary.md and contacts/"
+  },
+  "screened_positions": [
+   1,
+   2,
+   4,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   23,
+   24,
+   34,
+   35,
+   36,
+   37,
+   38,
+   40,
+   43,
+   44,
+   45,
+   46,
+   47,
+   48,
+   49,
+   50,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   72,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   80,
+   81,
+   82,
+   83,
+   84,
+   85,
+   86,
+   87,
+   88,
+   89,
+   90,
+   91,
+   92,
+   94,
+   95,
+   118,
+   119,
+   122,
+   124,
+   126,
+   127
+  ],
+  "screened_count": 75,
+  "excluded_positions": {
+   "3": [
+    "paratope_BSA>=10"
+   ],
+   "5": [
+    "paratope_BSA>=10"
+   ],
+   "11": [
+    "paratope_BSA>=10"
+   ],
+   "22": [
+    "disulfide_Cys"
+   ],
+   "25": [
+    "paratope_BSA>=10"
+   ],
+   "26": [
+    "CDR"
+   ],
+   "27": [
+    "CDR"
+   ],
+   "28": [
+    "CDR"
+   ],
+   "29": [
+    "CDR"
+   ],
+   "30": [
+    "CDR"
+   ],
+   "31": [
+    "CDR"
+   ],
+   "32": [
+    "CDR"
+   ],
+   "33": [
+    "CDR",
+    "disulfide_Cys"
+   ],
+   "39": [
+    "paratope_BSA>=10"
+   ],
+   "41": [
+    "paratope_BSA>=10"
+   ],
+   "42": [
+    "paratope_BSA>=10"
+   ],
+   "51": [
+    "CDR"
+   ],
+   "52": [
+    "CDR"
+   ],
+   "53": [
+    "CDR"
+   ],
+   "54": [
+    "CDR"
+   ],
+   "55": [
+    "CDR"
+   ],
+   "56": [
+    "CDR"
+   ],
+   "57": [
+    "CDR"
+   ],
+   "58": [
+    "CDR"
+   ],
+   "59": [
+    "paratope_BSA>=10"
+   ],
+   "93": [
+    "paratope_BSA>=10"
+   ],
+   "96": [
+    "disulfide_Cys"
+   ],
+   "97": [
+    "CDR"
+   ],
+   "98": [
+    "CDR"
+   ],
+   "99": [
+    "CDR"
+   ],
+   "100": [
+    "CDR"
+   ],
+   "101": [
+    "CDR"
+   ],
+   "102": [
+    "CDR"
+   ],
+   "103": [
+    "CDR"
+   ],
+   "104": [
+    "CDR"
+   ],
+   "105": [
+    "CDR"
+   ],
+   "106": [
+    "CDR",
+    "disulfide_Cys"
+   ],
+   "107": [
+    "CDR"
+   ],
+   "108": [
+    "CDR"
+   ],
+   "109": [
+    "CDR"
+   ],
+   "110": [
+    "CDR"
+   ],
+   "111": [
+    "CDR"
+   ],
+   "112": [
+    "CDR"
+   ],
+   "113": [
+    "CDR"
+   ],
+   "114": [
+    "CDR"
+   ],
+   "115": [
+    "CDR"
+   ],
+   "116": [
+    "CDR"
+   ],
+   "117": [
+    "CDR"
+   ],
+   "120": [
+    "paratope_BSA>=10"
+   ],
+   "121": [
+    "paratope_BSA>=10"
+   ],
+   "123": [
+    "paratope_BSA>=10"
+   ],
+   "125": [
+    "paratope_BSA>=10"
+   ]
+  }
+ },
+ "sequence_liabilities": {
+  "length": 128,
+  "molecular_weight_kDa": 13.81,
+  "isoelectric_point": 9.01,
+  "gravy": -0.375,
+  "aromaticity": 0.086,
+  "net_charge_pH7.4": 4.0,
+  "cys_count": 4,
+  "trp_count": 2,
+  "met_count": 4,
+  "n_glyc_motif_count": 0,
+  "deamid_motif_count": 1,
+  "isomerization_motif_count": 3,
+  "cdr3_length": 21,
+  "cdr3_net_charge": -3,
+  "n_terminal_residue": "Q",
+  "c_terminal_motif": "QVTVSS",
+  "hydrophobic_exposed_positions": [
+   11,
+   23,
+   28,
+   59,
+   75,
+   93,
+   108,
+   114
+  ],
+  "hydrophobic_exposed_in_paratope": [
+   11,
+   59,
+   93,
+   108,
+   114
+  ]
+ },
+ "liability_motifs": {
+  "n_glycosylation_NxST": [],
+  "deamidation_NS_NG_NH_NT": [
+   {
+    "motif": "NS",
+    "start": 84,
+    "end": 85,
+    "region": "framework"
+   }
+  ],
+  "isomerization_DG_DS_DT_DD": [
+   {
+    "motif": "DS",
+    "start": 62,
+    "end": 63,
+    "region": "framework"
+   },
+   {
+    "motif": "DT",
+    "start": 90,
+    "end": 91,
+    "region": "framework"
+   },
+   {
+    "motif": "DS",
+    "start": 99,
+    "end": 100,
+    "region": "CDR"
+   }
+  ],
+  "acid_labile_DP": [
+   {
+    "motif": "DP",
+    "start": 103,
+    "end": 104,
+    "region": "CDR"
+   }
+  ]
+ },
+ "tasks": [
+  {
+   "task_id": "342255494362112",
+   "name": "KN035_5JDS_struct_stability_scan",
+   "type": "Structural Stability Mutation Effect",
+   "params": {
+    "structure_path": "5JDS_KN035_VHH_renum (isolated VHH, chain A, residues renumbered 1-127)",
+    "redesigned_residues": "75 framework positions (list in design_manifest.json)"
+   },
+   "scored_positions": 75,
+   "mutations_scored": 2413,
+   "output": "downloads/structural_stability_mutation_effect_342255494362112/struct_fitness_scores.csv"
+  },
+  {
+   "task_id": "342255495889920",
+   "name": "KN035_5JDS_seq_fitness_scan",
+   "type": "Sequence Fitness Mutation Effect",
+   "params": {
+    "sequence": "128-aa KN035 VHH domain (5JDS chain A entity residues 3-130)"
+   },
+   "scored_positions": 128,
+   "mutations_scored": 2432,
+   "output": "downloads/sequence_fitness_mutation_effect_342255495889920/sequence_scores.csv"
+  },
+  {
+   "task_id": "342255510164480",
+   "name": "KN035_5JDS_evolutionary_scan",
+   "type": "Evolutionary Mutation Effect",
+   "params": {
+    "sequence": "128-aa KN035 VHH domain"
+   },
+   "scored_positions": 128,
+   "mutations_scored": 2432,
+   "output": "downloads/evolutionary_mutation_effect_342255510164480/evolutionary_scores.csv"
+  },
+  {
+   "task_id": "342255512777728",
+   "name": "KN035_5JDS_binding_affinity_scan",
+   "type": "Binding Affinity Mutation Effect",
+   "params": {
+    "input_structure": "5JDS_KN035_PDL1_renum (chains A=VHH, B=PD-L1, 1-127 / 1-115)",
+    "chain_ids": "A,B"
+   },
+   "mutations_scored": 4598,
+   "output": "downloads/binding_affinity_mutation_effect_342255512777728/affinity_scores.csv"
+  },
+  {
+   "task_id": "342255515612160",
+   "name": "KN035_5JDS_homology_search",
+   "type": "Sequence Homology Search",
+   "params": {
+    "sequence": "128-aa KN035 VHH domain",
+    "local": true,
+    "max_seq": 500
+   },
+   "hits_returned": 503,
+   "output": "downloads/sequence_homology_search_342255515612160/similarity_results.json"
+  }
+ ],
+ "ranking": {
+  "method": "weighted composite of baseline-relative percentiles across four independent models: structural stability 0.40, sequence fitness 0.30, evolutionary 0.20, binding affinity 0.10; hard filters: no new Cys, no new liability motif, no new proline, binding ddG_pred <= +0.30",
+  "candidate_pool": "75 structurally scored framework positions x 19 substitutions = 1425 mutations",
+  "passing_all_filters": 965,
+  "top10_by_composite": [
+   {
+    "position": 87,
+    "mutation": "K87R",
+    "region": "FW3",
+    "structural_score": 0.14,
+    "sequence_score": 1.377,
+    "evolutionary_score": -1.895,
+    "binding_ddg": -0.018,
+    "composite_percentile": 0.908
+   },
+   {
+    "position": 44,
+    "mutation": "E44S",
+    "region": "FW2",
+    "structural_score": 0.057,
+    "sequence_score": 1.523,
+    "evolutionary_score": -3.366,
+    "binding_ddg": -0.029,
+    "composite_percentile": 0.887
+   },
+   {
+    "position": 48,
+    "mutation": "V48I",
+    "region": "FW2",
+    "structural_score": 0.067,
+    "sequence_score": -0.588,
+    "evolutionary_score": -2.613,
+    "binding_ddg": -0.344,
+    "composite_percentile": 0.877
+   },
+   {
+    "position": 24,
+    "mutation": "A24V",
+    "region": "FW1",
+    "structural_score": 4.61,
+    "sequence_score": -0.634,
+    "evolutionary_score": -1.879,
+    "binding_ddg": -0.043,
+    "composite_percentile": 0.873
+   },
+   {
+    "position": 34,
+    "mutation": "M34L",
+    "region": "FW2",
+    "structural_score": 0.511,
+    "sequence_score": 0.471,
+    "evolutionary_score": -2.754,
+    "binding_ddg": 0.074,
+    "composite_percentile": 0.865
+   },
+   {
+    "position": 61,
+    "mutation": "A61S",
+    "region": "FW3",
+    "structural_score": 0.659,
+    "sequence_score": -1.106,
+    "evolutionary_score": -2.609,
+    "binding_ddg": -0.161,
+    "composite_percentile": 0.855
+   },
+   {
+    "position": 19,
+    "mutation": "R19S",
+    "region": "FW1",
+    "structural_score": 0.133,
+    "sequence_score": -0.239,
+    "evolutionary_score": -3.141,
+    "binding_ddg": 0.027,
+    "composite_percentile": 0.843
+   },
+   {
+    "position": 87,
+    "mutation": "K87T",
+    "region": "FW3",
+    "structural_score": 0.781,
+    "sequence_score": 1.151,
+    "evolutionary_score": -4.293,
+    "binding_ddg": 0.142,
+    "composite_percentile": 0.842
+   },
+   {
+    "position": 85,
+    "mutation": "S85N",
+    "region": "FW3",
+    "structural_score": 1.061,
+    "sequence_score": -1.729,
+    "evolutionary_score": -2.652,
+    "binding_ddg": -0.039,
+    "composite_percentile": 0.821
+   },
+   {
+    "position": 13,
+    "mutation": "Q13S",
+    "region": "FW1",
+    "structural_score": 0.426,
+    "sequence_score": 0.412,
+    "evolutionary_score": -6.151,
+    "binding_ddg": -0.017,
+    "composite_percentile": 0.821
+   }
+  ]
+ },
+ "candidates": [
+  {
+   "rank": 1,
+   "variant_id": "kn035_K87R",
+   "mutation": "K87R",
+   "wt_aa": "K",
+   "position_domain": 87,
+   "position_structure_chainA": 87,
+   "position_5JDS_author_numbering": 89,
+   "region": "FW3",
+   "relative_sasa_isolated_vhh": 0.335,
+   "burial_class": "partially exposed",
+   "scores": {
+    "structural_stability": 0.14,
+    "sequence_fitness": 1.377,
+    "evolutionary": -1.895,
+    "binding_ddg_pred": -0.018
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.979,
+    "sequence_fitness": 0.961,
+    "evolutionary": 0.809,
+    "binding_stabilizing": 0.659
+   },
+   "weighted_composite_percentile": 0.908,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.84,
+    "pI": 9.03,
+    "gravy": -0.38,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLRPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 2,
+   "variant_id": "kn035_V48I",
+   "mutation": "V48I",
+   "wt_aa": "V",
+   "position_domain": 48,
+   "position_structure_chainA": 48,
+   "position_5JDS_author_numbering": 50,
+   "region": "FW2",
+   "relative_sasa_isolated_vhh": 0.007,
+   "burial_class": "buried",
+   "scores": {
+    "structural_stability": 0.067,
+    "sequence_fitness": -0.588,
+    "evolutionary": -2.613,
+    "binding_ddg_pred": -0.344
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.976,
+    "sequence_fitness": 0.808,
+    "evolutionary": 0.761,
+    "binding_stabilizing": 0.919
+   },
+   "weighted_composite_percentile": 0.877,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.82,
+    "pI": 9.01,
+    "gravy": -0.373,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERIAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 3,
+   "variant_id": "kn035_A24V",
+   "mutation": "A24V",
+   "wt_aa": "A",
+   "position_domain": 24,
+   "position_structure_chainA": 24,
+   "position_5JDS_author_numbering": 26,
+   "region": "FW1",
+   "relative_sasa_isolated_vhh": 0.044,
+   "burial_class": "buried",
+   "scores": {
+    "structural_stability": 4.61,
+    "sequence_fitness": -0.634,
+    "evolutionary": -1.879,
+    "binding_ddg_pred": -0.043
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 1.0,
+    "sequence_fitness": 0.801,
+    "evolutionary": 0.81,
+    "binding_stabilizing": 0.712
+   },
+   "weighted_composite_percentile": 0.873,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.84,
+    "pI": 9.01,
+    "gravy": -0.356,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAVSGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 4,
+   "variant_id": "kn035_M34L",
+   "mutation": "M34L",
+   "wt_aa": "M",
+   "position_domain": 34,
+   "position_structure_chainA": 34,
+   "position_5JDS_author_numbering": 36,
+   "region": "FW2",
+   "relative_sasa_isolated_vhh": 0.006,
+   "burial_class": "buried",
+   "scores": {
+    "structural_stability": 0.511,
+    "sequence_fitness": 0.471,
+    "evolutionary": -2.754,
+    "binding_ddg_pred": 0.074
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.985,
+    "sequence_fitness": 0.91,
+    "evolutionary": 0.75,
+    "binding_stabilizing": 0.479
+   },
+   "weighted_composite_percentile": 0.865,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.79,
+    "pI": 9.01,
+    "gravy": -0.36,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 3,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCLAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 5,
+   "variant_id": "kn035_A61S",
+   "mutation": "A61S",
+   "wt_aa": "A",
+   "position_domain": 61,
+   "position_structure_chainA": 61,
+   "position_5JDS_author_numbering": 63,
+   "region": "FW3",
+   "relative_sasa_isolated_vhh": 0.162,
+   "burial_class": "partially exposed",
+   "scores": {
+    "structural_stability": 0.659,
+    "sequence_fitness": -1.106,
+    "evolutionary": -2.609,
+    "binding_ddg_pred": -0.161
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.987,
+    "sequence_fitness": 0.747,
+    "evolutionary": 0.762,
+    "binding_stabilizing": 0.837
+   },
+   "weighted_composite_percentile": 0.855,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.83,
+    "pI": 9.01,
+    "gravy": -0.395,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLSDSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 6,
+   "variant_id": "kn035_R19S",
+   "mutation": "R19S",
+   "wt_aa": "R",
+   "position_domain": 19,
+   "position_structure_chainA": 19,
+   "position_5JDS_author_numbering": 21,
+   "region": "FW1",
+   "relative_sasa_isolated_vhh": 0.423,
+   "burial_class": "exposed",
+   "scores": {
+    "structural_stability": 0.133,
+    "sequence_fitness": -0.239,
+    "evolutionary": -3.141,
+    "binding_ddg_pred": 0.027
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.979,
+    "sequence_fitness": 0.841,
+    "evolutionary": 0.713,
+    "binding_stabilizing": 0.567
+   },
+   "weighted_composite_percentile": 0.843,
+   "liabilities_removed": [],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.74,
+    "pI": 8.76,
+    "gravy": -0.346,
+    "net_charge_proxy_KR_minus_DE": 3,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 1,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLSLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  },
+  {
+   "rank": 7,
+   "variant_id": "kn035_S85N",
+   "mutation": "S85N",
+   "wt_aa": "S",
+   "position_domain": 85,
+   "position_structure_chainA": 85,
+   "position_5JDS_author_numbering": 87,
+   "region": "FW3",
+   "relative_sasa_isolated_vhh": 0.447,
+   "burial_class": "exposed",
+   "scores": {
+    "structural_stability": 1.061,
+    "sequence_fitness": -1.729,
+    "evolutionary": -2.652,
+    "binding_ddg_pred": -0.039
+   },
+   "percentile_among_all_scored_substitutions": {
+    "structural_stability": 0.992,
+    "sequence_fitness": 0.675,
+    "evolutionary": 0.755,
+    "binding_stabilizing": 0.704
+   },
+   "weighted_composite_percentile": 0.821,
+   "liabilities_removed": [
+    [
+     "deamidation",
+     84
+    ]
+   ],
+   "liabilities_created": [],
+   "variant_metrics": {
+    "length": 128,
+    "mw_kDa": 13.84,
+    "pI": 9.01,
+    "gravy": -0.396,
+    "net_charge_proxy_KR_minus_DE": 4,
+    "n_glyc_motifs": 0,
+    "deamidation_motifs": 0,
+    "isomerization_motifs": 3,
+    "met_count": 4,
+    "trp_count": 2,
+    "cys_count": 4
+   },
+   "fasta": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNNLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+  }
+ ],
+ "combined_variant": {
+  "variant_id": "kn035_v1_combined",
+  "mutations": [
+   "R19S",
+   "A24V",
+   "M34L",
+   "V48I",
+   "A61S",
+   "S85N",
+   "K87R"
+  ],
+  "metrics": {
+   "length": 128,
+   "mw_kDa": 13.84,
+   "pI": 8.77,
+   "gravy": -0.356,
+   "net_charge_proxy_KR_minus_DE": 3,
+   "n_glyc_motifs": 0,
+   "deamidation_motifs": 0,
+   "isomerization_motifs": 3,
+   "met_count": 3,
+   "trp_count": 2,
+   "cys_count": 4
+  },
+  "fasta": "QVQLQESGGGLVQPGGSLSLSCAVSGKMSSRRCLAWFRQAPGKERERIAKLLTTSGSTYLSDSVKGRFTISQNNAKSTVYLQMNNLRPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "caution": "single-mutation scores are not additive; combination is a hypothesis for experimental testing, not a validated design"
+ },
+ "developability_metrics_available": {
+  "computed_here_local": "pI, GRAVY, net-charge proxy, aromatic content, N-glyc/deamidation/isomerization/DP motifs, Met/Trp/Cys counts, per-residue SASA (freesasa on the 1.7 A structure)",
+  "mos_models_used": [
+   "Structural Stability Mutation Effect (reverse-folding)",
+   "Sequence Fitness Mutation Effect",
+   "Evolutionary Mutation Effect",
+   "Binding Affinity Mutation Effect",
+   "Sequence Homology Search"
+  ]
+ },
+ "developability_metrics_not_available": [
+  "aggregation propensity prediction (no TANGO/Zyggregator/AGGRESCAN-class model exposed on MOS)",
+  "solubility / expression-titre prediction (no model available)",
+  "conformational or thermal stability (Tm, Tagg) prediction - Antibody Stability Prediction is listed as coming soon",
+  "antibody nativeness / humanness scoring (AbNatiV, OASis) - Antibody Nativeness Evaluation and Antibody Language Scoring are coming soon",
+  "CDR/paratope annotation as a MOS module - Antibody Region Annotation is coming soon; CDRs were assigned locally with ANARCI and cross-checked against parse_structure.py",
+  "hydrophobic-interaction chromatography retention, viscosity, polyspecificity assays - experimental only"
+ ],
+ "limitations": [
+  "Scores are model outputs in arbitrary units, not measured free energies; structural and sequence axes are independent and frequently disagree.",
+  "The Structural Stability scan was restricted to 75 framework positions; CDR, disulfide-Cys and 13 framework paratope positions return 0.0 by construction and must not be read as neutral scores.",
+  "The best-scoring structural change (A24V, score +4.61) is a global maximum of the run and is treated as a hypothesis, not an established stabilisation.",
+  "Binding Affinity ddG predictions are for the crystallised complex and do not capture avidity, allostery or PD-L1 glycosylation.",
+  "All candidates are computational proposals; none has been structurally validated or experimentally measured.",
+  "Sequence Homology Search is PDB-restricted and therefore says nothing about human germline identity."
+ ]
+}

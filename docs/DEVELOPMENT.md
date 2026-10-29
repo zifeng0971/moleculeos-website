@@ -75,14 +75,13 @@ docs/              本文档等协作文档
 定义在 `components/pages/home-page.tsx`，叙事顺序为：
 
 1. `hero-section` —— 主标题 + Agent 工作区演示
-2. `results-section` —— 可解释的结果展示
-3. `tasks-section` —— 「它能帮我完成什么」任务选择器（左侧标签 + 右侧结构演示卡片）
-4. `model-stack-section` —— 三层模型体系（滚动时吸顶、卡片层叠）
-5. `flywheel-section` —— 数据飞轮（WebGL 粒子）
-6. `validation-section` —— 验证案例
-7. `enterprise-section` —— 企业级能力与访问方式
-8. `trust-section` —— 关键数据与合作方
-9. `final-cta-section` —— 结尾行动号召
+2. `capability-flow-section` —— 「你卡在哪一步」瀑布流：四个任务（实时 2FJG 结构舞台）与 MMetrics 可解释结果，五个同尺寸框左右交错，中间一条随滚动点亮的流线
+3. `model-stack-section` —— 三层模型体系（滚动时吸顶、卡片层叠）
+4. `flywheel-section` —— 数据飞轮（WebGL 粒子）
+5. `validation-section` —— 验证案例
+6. `enterprise-section` —— 企业级能力与访问方式
+7. `trust-section` —— 关键数据与合作方
+8. `final-cta-section` —— 结尾行动号召
 
 调整顺序只需改这个数组；右侧圆点导航会自动跟随。
 
@@ -157,7 +156,7 @@ docs/              本文档等协作文档
 
 `components/motion/flywheel-scene.tsx`
 
-- 三个阶段（设计 → 实验 → 进化）的粒子环，每跑一圈精度提升、粒子收紧；中心是 NewOrigin 粒子球
+- 三个阶段（设计 → 实验 → 进化）的粒子环，每跑一圈精度提升、粒子收紧；中心是 MoleculeOS 粒子球
 - 粒子在靠近画布边缘时**在着色器里淡出**（`EDGE_FADE`），不依赖 CSS 遮罩；新增粒子层时记得乘上 `edgeFade(gl_Position)`
 - 鼠标移动会让相机轻微偏转；滚出视口或页面隐藏时停止渲染
 - WebGL 不可用时自动降级为静态的三个阶段标签（`data-failed`）
@@ -174,7 +173,7 @@ docs/              本文档等协作文档
 
 - **Hero Agent 演示**使用同源的 `public/demo/2bdn.cif`，构建时 `scripts/prepare-agent-structure.ts` 校验 SHA-256。不连接 MOS 模型服务。细节见 README「Agent 结构资源」。
 - **任务演示视频**：放入 `public/` 对应路径后重新构建即会出现；文件缺失时页面显示“演示素材待补充”，不会 404。清单见 `content/mock/capabilities.json`。
-- **用户手册**：源文件为 DOCX，通过 `npm run ingest:manual` 生成 `content/manual/`。不要手改生成结果，改源文件后重新导入。
+- **用户手册**：源文件为 DOCX，通过 `npm run ingest:manual` 生成 `content/manual/`。不要手改生成结果，改源文件后重新导入。后续补录的双语步骤、视频配文与来源保存在 `content/manual-source/supplements/`；导入后由 `scripts/sync-manual-supplements.ts` 自动同步，单独同步可执行 `npx tsx scripts/sync-manual-supplements.ts`。该流程同时恢复被体积阈值降为封面的动态 GIF；发布后的共享 MP4 位于 `public/manual-assets/shared/`。原片仍留在本地 `manual-videos/`，已有发布视频时无需原片即可重复同步。
 - **占位图**在 `public/placeholder/`，正式素材获批后替换。
 - **大体积原始录屏**（`manual-videos/`）不进 Git，请通过网盘等方式单独传递。
 
@@ -253,3 +252,12 @@ chore / docs / perf / refactor ...
 ---
 
 有问题直接在 GitHub Issue 或群里提，改动较大的设计调整先对齐再动手。
+
+### 手册阅读性能与定位
+
+- 视频采用固定尺寸的懒加载封面，点击后才创建原生播放器；离开附近视口释放播放器，使用一个共享观察器。
+- 阅读页的正文、表格、图片与视频统一使用无外框排版。放大图片仅在打开弹窗后创建。
+- `ManualPosition` 缓存标题坐标，滚动时二分查找；内部链接用原生 hash 历史，跳转时按顶部栏高度留空。侧栏由用户控制展开，不在阅读滚动时自行滚动。
+- `content/manual/navigation.json` 是构建生成的精简目录，不包含原文或媒体清单。中英文对应小节由构建统一映射。
+- 搜索数据按当前发布 MDX 的小节边界生成，仅在打开搜索时请求，保留关键词及多词查询。
+- 验证阅读页需包含：直达与刷新锚点、前进/后退、语言切换、手机目录、搜索跳转，以及播放前后的布局高度。

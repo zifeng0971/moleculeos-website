@@ -1,0 +1,336 @@
+{
+  "case_id": "02",
+  "target": "Human PD-L1",
+  "binder": "Avelumab variable heavy/light domains",
+  "reference_pdb_id": "5GRJ",
+  "project_id": "342242986152960",
+  "project_url": "https://mos.moleculemind.com/?projectId=342242986152960",
+  "source_files": [
+    "sources/5GRJ.pdb",
+    "sources/5GRJ.cif",
+    "sources/5GRJ.fasta"
+  ],
+  "parameters_status": "Exact sequences, task payloads and raw files retained in case02_complete.zip",
+  "mos_structure_id": "342253790565376",
+  "import_method": "Computer Use native macOS file picker",
+  "trigger": "MMetrics automatically triggered by import",
+  "chain_mapping": [
+    {
+      "pdb_auth": "H",
+      "pdb_label": "A",
+      "mos": "A",
+      "role": "VH"
+    },
+    {
+      "pdb_auth": "L",
+      "pdb_label": "B",
+      "mos": "B",
+      "role": "VL"
+    },
+    {
+      "pdb_auth": "A",
+      "pdb_label": "C",
+      "mos": "C",
+      "role": "PD-L1"
+    }
+  ],
+  "construct_note": "5GRJ contains antibody variable heavy/light domains, not complete Fab constant domains. Retain PDB source naming but do not render a full-length IgG.",
+  "secondary_project_url": "https://mos.moleculemind.com/?projectId=342256011498496",
+  "secondary_session_id": "9f62a8e2-8a5b-40e6-98cc-156b691bbc5d",
+  "primary_ui_status": "Still generating after page reload and independent project import",
+  "analysis_project_id": "342256011498496",
+  "mos_object_id": "342256182768640",
+  "tasks": [
+    {
+      "task_id": "342256475304960",
+      "name": "5GRJ_PDL1_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "3s",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER",
+        "max_seq": 500
+      },
+      "chain": "C",
+      "purpose": "homologs of PD-L1 chain C (221 aa ectodomain construct)",
+      "raw_dir": "sequence_homology_search_342256475304960",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 8478245
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 501679
+        }
+      ]
+    },
+    {
+      "task_id": "342256475644928",
+      "name": "5GRJ_VH_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "6s",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS",
+        "max_seq": 500
+      },
+      "chain": "A",
+      "purpose": "homologs of avelumab VH",
+      "raw_dir": "sequence_homology_search_342256475644928",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 1925682
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 139129
+        }
+      ]
+    },
+    {
+      "task_id": "342256477762560",
+      "name": "5GRJ_VL_homologs",
+      "type": "Sequence Homology Search",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:10Z",
+      "duration": "9s",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL",
+        "max_seq": 500
+      },
+      "chain": "B",
+      "purpose": "homologs of avelumab VL",
+      "raw_dir": "sequence_homology_search_342256477762560",
+      "raw_files": [
+        "similarity_results.json",
+        "all_sequences.fasta"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "similarity_results.json",
+          "bytes": 1662385
+        },
+        {
+          "file": "all_sequences.fasta",
+          "bytes": 129567
+        }
+      ]
+    },
+    {
+      "task_id": "342256486130688",
+      "name": "5GRJ_VH_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:12Z",
+      "duration": "3s",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS"
+      },
+      "chain": "A",
+      "purpose": "deep sequence-model mutation scan, VH",
+      "raw_dir": "sequence_fitness_mutation_effect_342256486130688",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 61352
+        }
+      ]
+    },
+    {
+      "task_id": "342256488231936",
+      "name": "5GRJ_VL_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:13Z",
+      "duration": "5s",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+      },
+      "chain": "B",
+      "purpose": "deep sequence-model mutation scan, VL",
+      "raw_dir": "sequence_fitness_mutation_effect_342256488231936",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 56246
+        }
+      ]
+    },
+    {
+      "task_id": "342256491451392",
+      "name": "5GRJ_PDL1_seqfitness",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:14Z",
+      "duration": "11s",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+      },
+      "chain": "C",
+      "purpose": "deep sequence-model mutation scan, PD-L1",
+      "raw_dir": "sequence_fitness_mutation_effect_342256491451392",
+      "raw_files": [
+        "sequence_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "sequence_scores.csv",
+          "bytes": 115347
+        }
+      ]
+    },
+    {
+      "task_id": "342256499057664",
+      "name": "5GRJ_VH_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:16Z",
+      "duration": "1.4min",
+      "payload": {
+        "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS"
+      },
+      "chain": "A",
+      "purpose": "MSA conservation/covariance scan, VH",
+      "raw_dir": "evolutionary_mutation_effect_342256499057664",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 49042
+        }
+      ]
+    },
+    {
+      "task_id": "342256501269504",
+      "name": "5GRJ_VL_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:16Z",
+      "duration": "2.0min",
+      "payload": {
+        "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+      },
+      "chain": "B",
+      "purpose": "MSA conservation/covariance scan, VL",
+      "raw_dir": "evolutionary_mutation_effect_342256501269504",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 44676
+        }
+      ]
+    },
+    {
+      "task_id": "342256504251392",
+      "name": "5GRJ_PDL1_evolve",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:17Z",
+      "duration": "3.4min",
+      "payload": {
+        "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+      },
+      "chain": "C",
+      "purpose": "MSA conservation/covariance scan, PD-L1",
+      "raw_dir": "evolutionary_mutation_effect_342256504251392",
+      "raw_files": [
+        "evolutionary_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "evolutionary_scores.csv",
+          "bytes": 90591
+        }
+      ]
+    },
+    {
+      "task_id": "342256515642368",
+      "name": "5GRJ_complex_structstab",
+      "type": "Structural Stability Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:20Z",
+      "duration": "5s",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif"
+      },
+      "chain": "A,B,C",
+      "purpose": "reverse-folding mutation scan on the whole 3-chain complex",
+      "raw_dir": "structural_stability_mutation_effect_342256515642368",
+      "raw_files": [
+        "struct_fitness_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "struct_fitness_scores.csv",
+          "bytes": 227598
+        }
+      ]
+    },
+    {
+      "task_id": "342256515908608",
+      "name": "5GRJ_complex_affinity",
+      "type": "Binding Affinity Mutation Effect",
+      "status": "succeeded",
+      "submitted_utc": "2026-10-20T02:45:20Z",
+      "duration": "1.5min",
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+        "chain_ids": "A,B,C"
+      },
+      "chain": "A,B,C",
+      "purpose": "ddG mutation scan across the VH/VL - PD-L1 interface",
+      "raw_dir": "binding_affinity_mutation_effect_342256515908608",
+      "raw_files": [
+        "affinity_scores.csv"
+      ],
+      "raw_files_copied": [
+        {
+          "file": "affinity_scores.csv",
+          "bytes": 445350
+        }
+      ]
+    },
+    {
+      "task_id": "342256189539328",
+      "name": "autocompute-5GRJ",
+      "type": "MOSTask",
+      "status": "running",
+      "submitted_utc": "2026-10-20T02:44:00Z",
+      "duration_reported": "2.1min (unchanged across checks)",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+        "structure_pathFileId": "342256182768640",
+        "structure_pathFilename": "5GRJ.cif"
+      },
+      "chain": "A,B,C",
+      "purpose": "platform-side MMetrics autocompute job created automatically by the structure import",
+      "raw_dir": null,
+      "raw_files": [],
+      "note": "Still RUNNING at the final snapshot; no output files exist and no MMetrics result object was registered. Preserved as INCOMPLETE \u2014 not treated as a delivered module.",
+      "raw_files_copied": []
+    }
+  ]
+}

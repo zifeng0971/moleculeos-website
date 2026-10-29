@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-10-28T15:55:21+07:00",
+  "checks": {
+    "control_query_exact_original_A118": true,
+    "all_control_alignment_queries_exact_A": true,
+    "native_query_exact_B128": true,
+    "all_native_alignment_queries_exact_B": true,
+    "control_rows_473": true,
+    "control_unique_hits_457": true,
+    "native_rows_503": true,
+    "native_homology_empty": true,
+    "control_direct_UI_bytes_equal_export": true,
+    "top_alignment_118_of_118": true,
+    "original_CIF_hash_verified": true
+  },
+  "all_copied_files_byte_identical": true
+}

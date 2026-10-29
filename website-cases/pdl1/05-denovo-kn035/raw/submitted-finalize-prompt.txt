@@ -1,0 +1,1 @@
+请优先把seed111/222已完成的全部原始输出（output/aligned CIF、FASTA、confidence如有、actual payload及taskID）复制归档并更新/workspace/kn035_case05_checkpoint.zip，随后等seed333完成后出最终/workspace/kn035_case05.zip。不要再扩展额外分析，本地会独立计算对齐RMSD、BSA、接触重合及编号验证。输出链角色已变为A=binder/B=PDL1，务必写输出→主结构A编号映射；新binder残基本身没有MMFold_1对应不要强行映射。

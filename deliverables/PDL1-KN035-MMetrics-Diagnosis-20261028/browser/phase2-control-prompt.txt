@@ -1,0 +1,5 @@
+只读诊断阶段已完成。现在执行一个最小对照实验：仅新建并运行1个独立 Sequence Homology Search 任务，名称建议 diag_PDL1_A118_20261028；不要重跑原autocompute/MMetrics，不修改旧结构、原始注释或旧归档，也不启动其他模型。
+按刚读取的schema使用 sequence 直接输入以下完整118aa，local=true、max_seq=500；不要用B链，不要用221aa旧构建体，不传额外未定义字段：
+MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE
+保存工具schema、实际提交payload、task id/name、状态、时间字段原文、全部原始JSON/FASTA到新的 /workspace/kn035_homolog_diagnosis_20261028/control_A118/ 。成功后核验general.query_sequence与每条query均等于上述118aa，统计比对条数/唯一hit数/FASTA数，列出前5条hit的原始identity尺度、e-value、query覆盖范围及description；如果pending就记录pending，不用旧输出冒充。
+将对照结果与原task342604299285504(B链query)及MMetrics342604577018880的证据并列，严格说明：本对照能证明什么，仍不能证明哪一段后台实现出错；不要宣称已经修复MMetrics或自动回填了同源字段。保留先前诊断ZIP不变，把整个新增诊断目录打包为 /workspace/kn035_homolog_diagnosis_with_control_20261028.zip 。完成后给出任务ID、状态、关键结果与新ZIP路径。

@@ -1,0 +1,91 @@
+{
+  "case": "case04_developability_KN035_5JDS",
+  "launched_utc": "2026-10-20T02:41",
+  "tasks": [
+    {
+      "task_id": "342255494362112",
+      "name": "KN035_5JDS_struct_stability_scan",
+      "type": "Structural Stability Mutation Effect",
+      "status": "succeed",
+      "duration_s": 3,
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/sanitized/179246405018634_5JDS_KN035_VHH_renum.cif",
+        "redesigned_residues": "A1 A2 A4 A6 A7 A8 A9 A10 A12 A13 A14 A15 A16 A17 A18 A19 A20 A21 A23 A24 A34 A35 A36 A37 A38 A40 A43 A44 A45 A46 A47 A48 A49 A50 A60 A61 A62 A63 A64 A65 A66 A67 A68 A69 A70 A71 A72 A73 A74 A75 A76 A77 A78 A79 A80 A81 A82 A83 A84 A85 A86 A87 A88 A89 A90 A91 A92 A94 A95 A118 A119 A122 A124 A126 A127"
+      },
+      "structure": {
+        "file": "inputs/5JDS_vhh_renum.pdb",
+        "content": "5JDS chain A (KN035 VHH) only, waters/ions/tag removed, residues renumbered 1-127, 1.7 A X-ray coordinates",
+        "mos_object_id": "342255414207488",
+        "mos_work_id": "342255419831296"
+      },
+      "outputs": ["raw/structural_stability_mutation_effect_342255494362112/struct_fitness_scores.csv"],
+      "notes": "Returns 0.0 for all 20 rows of every position outside redesigned_residues (encoding 'not scored'). 2413 rows total; 75 positions interpretable."
+    },
+    {
+      "task_id": "342255495889920",
+      "name": "KN035_5JDS_seq_fitness_scan",
+      "type": "Sequence Fitness Mutation Effect",
+      "status": "succeed",
+      "duration_s": 3,
+      "payload": {
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      },
+      "outputs": ["raw/sequence_fitness_mutation_effect_342255495889920/sequence_scores.csv"],
+      "notes": "128 positions x 19 substitutions = 2432 rows; 315 above zero."
+    },
+    {
+      "task_id": "342255510164480",
+      "name": "KN035_5JDS_evolutionary_scan",
+      "type": "Evolutionary Mutation Effect",
+      "status": "succeed",
+      "duration_s": 78,
+      "payload": {
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      },
+      "outputs": ["raw/evolutionary_mutation_effect_342255510164480/evolutionary_scores.csv"],
+      "notes": "Conservation/covariance axis; MSA queried automatically from the sequence."
+    },
+    {
+      "task_id": "342255512777728",
+      "name": "KN035_5JDS_binding_affinity_scan",
+      "type": "Binding Affinity Mutation Effect",
+      "status": "succeed",
+      "duration_s": 25,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/sanitized/179246405657163_5JDS_KN035_PDL1_renum.cif",
+        "chain_ids": "A,B"
+      },
+      "structure": {
+        "file": "inputs/5JDS_complex_renum.pdb",
+        "content": "5JDS VHH (chain A, 1-127) + PD-L1 (chain B, 1-115), waters/ions/tag removed",
+        "mos_object_id": "342255440987136",
+        "mos_work_id": "342255446139904"
+      },
+      "outputs": ["raw/binding_affinity_mutation_effect_342255512777728/affinity_scores.csv"],
+      "notes": "Column order: wt_residue, chain, position, mutant. ddG_pred < 0 = binding stabilised."
+    },
+    {
+      "task_id": "342255515612160",
+      "name": "KN035_5JDS_homology_search",
+      "type": "Sequence Homology Search",
+      "status": "succeed",
+      "duration_s": 2,
+      "payload": {
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "local": true,
+        "max_seq": 500
+      },
+      "outputs": [
+        "raw/sequence_homology_search_342255515612160/similarity_results.json",
+        "raw/sequence_homology_search_342255515612160/all_sequences.fasta"
+      ],
+      "notes": "503 PDB hits; PDB-restricted, so not a humanness measure. AnalyzeSeqSimilarityResults returned 'No hits found' while the JSON contains 503 hits - results were parsed directly from the JSON."
+    }
+  ],
+  "quota_before_launch": {"remaining": 491, "reset_time": "2026-10-20T08:41:13Z"},
+  "mos_objects": {
+    "5JDS_KN035_VHH_PDL1.cif": {"object_id": "342255217722368", "work_id": "342255222821888", "content": "full 5JDS complex in MOS layout, author numbering 3-129 for the VHH"},
+    "5JDS_KN035_VHH_renum": {"object_id": "342255414207488", "work_id": "342255419831296", "content": "VHH only, renumbered 1-127"},
+    "5JDS_KN035_PDL1_renum": {"object_id": "342255440987136", "work_id": "342255446139904", "content": "complex, renumbered 1-127 / 1-115"}
+  }
+}

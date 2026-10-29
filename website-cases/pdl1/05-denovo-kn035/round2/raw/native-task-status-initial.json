@@ -1,0 +1,4 @@
+{
+  "captured_at": "2026-10-21T02:48:27.613Z",
+  "text": "Task List\nname\t\nstatus\n\t\ntype\n\t\nCreation Time\n\t\nUpdate Time\n\tactions\nkn035_c05_round2_seed666\tPending\tProtein Binder Design\t2026-10-21 9:46:35\t2026-10-21 9:46:35\t\n\nkn035_c05_round2_seed444\tPending\tProtein Binder Design\t2026-10-21 9:46:34\t2026-10-21 9:46:34\t\n\nkn035_c05_round2_seed555\tRunning\tProtein Binder Design\t2026-10-21 9:46:34\t2026-10-21 9:47:05\t\n\nkn035_c05_denovo_seed333\tSucceed\tProtein Binder Design\t2026-10-21 9:27:58\t2026-10-21 9:37:39\t\n\nkn035_c05_denovo_seed111\tSucceed\tProtein Binder Design\t2026-10-21 9:27:57\t2026-10-21 9:31:37\t\n\nkn035_c05_denovo_seed222\tSucceed\tProtein Binder Design\t2026-10-21 9:27:57\t2026-10-21 9:34:36\t\n1"
+}

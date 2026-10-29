@@ -1,0 +1,172 @@
+{
+  "case": "Independent website case 03 - Engineer Stronger Binding",
+  "system": {
+    "antigen": "Human PD-L1 (CD274)",
+    "binder": "DBL1_03 (de novo designed protein binder)",
+    "pdb": "7XYQ",
+    "title": "Crystal structure of PD-L1 and the computationally designed DBL1_03 protein binder"
+  },
+  "structure_inputs": {
+    "source": "RCSB PDB 7XYQ, sanitized to MOS layout, hetero/water/1-residue chains removed",
+    "mos_object_id": "342254388737024",
+    "mos_tos_key": "user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+    "chains_used": "A,B",
+    "chain_A": "PD-L1, 203 modelled residues of 207 (gaps 166-169), MOS numbering 1-207 = UniProt 19-225",
+    "chain_B": "DBL1_03, 124 residues, MOS numbering 1-124 = author numbering -4..119",
+    "model_compatibility": "Binding Affinity Mutation Effect accepted the non-immunoglobulin designed binder (no antibody/VHH requirement in the task schema; chain_ids A,B is the only interface constraint). No need to substitute KN035 (5JDS) or avelumab (5GRJ)."
+  },
+  "task": {
+    "task_id": "342254431249408",
+    "task_type": "Binding Affinity Mutation Effect",
+    "task_name": "PDL1_DBL1_03_affinity_scan",
+    "status": "succeed",
+    "duration": "1.2 min",
+    "payload": {
+      "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179246379963275_7XYQ_PDL1_DBL1_03_clean.cif",
+      "chain_ids": "A,B",
+      "custom_output_path": ""
+    }
+  },
+  "score_semantics": {
+    "ddG_pred_kcal_per_mol": "predicted change in binding free energy vs wild type; NEGATIVE = stronger binding, POSITIVE = weaker binding; units kcal/mol",
+    "score_ddg": "model convenience score = -ddG_pred (higher = stronger binding)",
+    "rank_model": "model-provided rank, 0-1, LOWER = better (0.0634 = top 0.06% of all 6213 substitutions)",
+    "baseline": "relative scale: the wild-type complex is the reference (ddG = 0). The task reports mutation effects only; it does not output an absolute wild-type binding affinity (dG), so no absolute Kd is claimed here."
+  },
+  "coverage": {
+    "mutations_scored": 6213,
+    "positions_scored": 327,
+    "chain_A_positions": 203,
+    "chain_B_positions": 124,
+    "stabilizing_chain_B": 903,
+    "destabilizing_chain_B": 1453
+  },
+  "interface_summary": {
+    "bsa_chainA_A2": 1059.3,
+    "bsa_chainB_A2": 1140.0,
+    "hbonds": 12,
+    "salt_bridges": 5,
+    "interface_residues_chainA": 38,
+    "interface_residues_chainB": 34
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "mutation_author": "Q13Y",
+      "mutation_mos": "QB18Y",
+      "residue_3letter": "GLN13TYR",
+      "chain": "B (DBL1_03 binder)",
+      "ddG_pred_kcal_per_mol": -2.4513,
+      "score_ddg": 2.4513,
+      "rank_model": 0.0002,
+      "at_interface": true,
+      "bsa_iface_A2": 6.7,
+      "mutated_sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL"
+    },
+    {
+      "rank": 2,
+      "mutation_author": "I50F",
+      "mutation_mos": "IB55F",
+      "residue_3letter": "ILE50PHE",
+      "chain": "B (DBL1_03 binder)",
+      "ddG_pred_kcal_per_mol": -1.7994,
+      "score_ddg": 1.7994,
+      "rank_model": 0.0008,
+      "at_interface": false,
+      "bsa_iface_A2": 0.0,
+      "mutated_sequence": "GGETGSSIESMKASMIVQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECFLKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL"
+    },
+    {
+      "rank": 3,
+      "mutation_author": "V12I",
+      "mutation_mos": "VB17I",
+      "residue_3letter": "VAL12ILE",
+      "chain": "B (DBL1_03 binder)",
+      "ddG_pred_kcal_per_mol": -1.6521,
+      "score_ddg": 1.6521,
+      "rank_model": 0.0011,
+      "at_interface": true,
+      "bsa_iface_A2": 78.57,
+      "mutated_sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL"
+    },
+    {
+      "rank": 4,
+      "mutation_author": "Q14Y",
+      "mutation_mos": "QB19Y",
+      "residue_3letter": "GLN14TYR",
+      "chain": "B (DBL1_03 binder)",
+      "ddG_pred_kcal_per_mol": -1.5915,
+      "score_ddg": 1.5915,
+      "rank_model": 0.0018,
+      "at_interface": false,
+      "bsa_iface_A2": 0.0,
+      "mutated_sequence": "GGETGSSIESMKASMIVQYILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL"
+    },
+    {
+      "rank": 5,
+      "mutation_author": "Q25Y",
+      "mutation_mos": "QB30Y",
+      "residue_3letter": "GLN25TYR",
+      "chain": "B (DBL1_03 binder)",
+      "ddG_pred_kcal_per_mol": -1.3651,
+      "score_ddg": 1.3651,
+      "rank_model": 0.0029,
+      "at_interface": false,
+      "bsa_iface_A2": 0.0,
+      "mutated_sequence": "GGETGSSIESMKASMIVQQILCQLETGIDYQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL"
+    }
+  ],
+  "antigen_sequence_preserved": true,
+  "caveats": [
+    "Single-model in silico ddG predictions on one crystal conformation; no MD, no experimental validation.",
+    "Antigen (chain A) substitutions were scored by the model but are NOT proposed - the antigen sequence is held fixed.",
+    "Candidates are mutually exclusive single mutants; ddG values are not additive and combinations were not scored."
+  ],
+  "interface_restricted_candidates": [
+    {
+      "mutation_author": "Q13Y",
+      "mutation_mos": "QB18Y",
+      "ddG_pred_kcal_per_mol": -2.4513,
+      "rank_model": 0.0002,
+      "bsa_iface_A2": 6.7,
+      "has_hbond_iface": false,
+      "has_saltbridge_iface": false
+    },
+    {
+      "mutation_author": "V12I",
+      "mutation_mos": "VB17I",
+      "ddG_pred_kcal_per_mol": -1.6521,
+      "rank_model": 0.0011,
+      "bsa_iface_A2": 78.57,
+      "has_hbond_iface": false,
+      "has_saltbridge_iface": false
+    },
+    {
+      "mutation_author": "G0F",
+      "mutation_mos": "GB5F",
+      "ddG_pred_kcal_per_mol": -1.3541,
+      "rank_model": 0.0031,
+      "bsa_iface_A2": 15.76,
+      "has_hbond_iface": false,
+      "has_saltbridge_iface": false
+    },
+    {
+      "mutation_author": "S9Y",
+      "mutation_mos": "SB14Y",
+      "ddG_pred_kcal_per_mol": -1.1902,
+      "rank_model": 0.0042,
+      "bsa_iface_A2": 8.47,
+      "has_hbond_iface": true,
+      "has_saltbridge_iface": false
+    },
+    {
+      "mutation_author": "E-2F",
+      "mutation_mos": "EB3F",
+      "ddG_pred_kcal_per_mol": -1.1464,
+      "rank_model": 0.0048,
+      "bsa_iface_A2": 55.79,
+      "has_hbond_iface": true,
+      "has_saltbridge_iface": false
+    }
+  ]
+}

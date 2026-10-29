@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-28T15:40:37+07:00",
+  "all_original_copies_byte_identical": true,
+  "scope_counts": {
+    "01-structure": {
+      "source_files": 45,
+      "copied_files": 45,
+      "bytes": 2169485
+    },
+    "02-mmetrics-kn035": {
+      "source_files": 127,
+      "copied_files": 127,
+      "bytes": 13241452
+    }
+  },
+  "copied_source_files": 195,
+  "structure_identity_passed": true,
+  "homolog_counts_verified": true,
+  "new_tasks_submitted": false,
+  "missing_backend_evidence_recorded": true
+}

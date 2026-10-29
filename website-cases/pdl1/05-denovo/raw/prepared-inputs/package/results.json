@@ -1,0 +1,37 @@
+{
+  "case": "05_invent_new_binders_pdl1",
+  "status": "submitted_running",
+  "note": "Scaffold written at launch. Metrics/sequences/artifacts are filled in after task completion.",
+  "tasks": [
+    {
+      "task_id": "342254837666816",
+      "random_seed": 111,
+      "status": "running"
+    },
+    {
+      "task_id": "342254839784448",
+      "random_seed": 222,
+      "status": "pending"
+    },
+    {
+      "task_id": "342254842782720",
+      "random_seed": 333,
+      "status": "pending"
+    }
+  ],
+  "candidates": [],
+  "status_snapshot_utc": "2026-10-20T02:44Z",
+  "observed_outputs": {
+    "downloaded_files": [],
+    "designed_sequences": [],
+    "confidence_metrics": null,
+    "interface_metrics": null,
+    "candidate_ranking": null,
+    "reason": "No task had reached 'succeed' at bundle build time; no output files existed to download."
+  },
+  "analysis_tool": {
+    "path": "analyze_designs.py",
+    "validated_against": "5GRJ avelumab H/L vs PD-L1, an independent positive control: it recovered I54 3.6 A, Y56 2.3 A, E58 2.8 A, R113 3.2 A, Y123 3.4 A from the heavy chain, matching the independently computed avelumab footprint",
+    "hotspot_lookup": "by pairwise sequence alignment to the reference target, not by assumed residue numbers"
+  }
+}

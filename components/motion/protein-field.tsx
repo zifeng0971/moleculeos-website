@@ -6,14 +6,39 @@ import { useEffect, useRef } from 'react';
 const SEQUENCE = 'NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALGQVASLNGTSSSPIYGKVDTARMGVMGWAMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS';
 const ALPHABET = 'ACDEFGHIKLMNPQRSTVWY';
 
-// Residue classes drive the highlight colour: hydrophobic, polar, positive, negative.
-const CLASS_COLORS = ['#A88BFF', '#6FD3FF', '#F08BD0', '#7EE0C3'];
+// Residue classes drive the highlight colour, by chemistry: hydrophobic (lilac), polar (sky), positive (rose), negative (sage).
+// Brighter and more saturated than the page palette on purpose: these are light-emitting glyphs on black, not surfaces.
+const CLASS_COLORS = ['#B8A4FF', '#6EC6FF', '#FF8FBF', '#74F0B4'];
 const classOf = (residue: string) => 'AVLIMFWC'.includes(residue) ? 0 : 'KRH'.includes(residue) ? 2 : 'DE'.includes(residue) ? 3 : 1;
 
 const CELL_W = 15, CELL_H = 22, FONT = '500 12px ui-monospace, "SF Mono", Menlo, monospace';
 const RADIUS = 210;
 
 type Reader = { row: number; col: number; length: number; start: number };
+type Ripple = { x: number; y: number; start: number; lobes: { k: number; a: number; ph: number }[] };
+
+// Click ripple: a ring expands from the click, shoving residues outward as it passes.
+const RIPPLE_LIFE = 4200, RIPPLE_REACH = 380, RIPPLE_WAVELENGTH = 52, RIPPLE_PUSH = 13, MAX_RIPPLES = 5;
+// The front decelerates like a real surface wave; a damped train of crests and troughs trails behind it.
+const rippleFront = (age: number) => RIPPLE_REACH * (1 - Math.exp(-age / 1300));
+// Irregular front: each click gets a few random angular lobes, so the ring is a lopsided blob rather than a circle.
+const RIPPLE_IRREGULARITY = 0.3;
+const makeLobes = () => [2, 3, 5].map(k => ({ k, a: (0.35 + Math.random() * 0.65) * RIPPLE_IRREGULARITY / Math.sqrt(k - 1), ph: Math.random() * Math.PI * 2 }));
+// Distance from the click as the wave sees it: stretched or squeezed along the lobes, with a slow wobble over time.
+const rippleDist = (rp: Ripple, dx: number, dy: number, age: number) => {
+  const th = Math.atan2(dy, dx);
+  let f = 1;
+  for (const l of rp.lobes) f += l.a * Math.sin(l.k * th + l.ph + age * 0.0012 * (l.k % 2 ? 1 : -1));
+  return Math.hypot(dx, dy) / f;
+};
+// Signed wave height (-1..1) and envelope (0..1) at distance `dist` from the click.
+const rippleWave = (dist: number, age: number) => {
+  const d = dist - rippleFront(age);
+  const env = d > 0 ? Math.exp(-(d * d) / 700) : Math.exp(-(d * d) / 9000);
+  const life = Math.pow(1 - age / RIPPLE_LIFE, 1.5), spread = 1 / Math.sqrt(1 + dist / 70);
+  const amp = env * life * spread * 1.6;
+  return { amp, h: amp * Math.cos((d / RIPPLE_WAVELENGTH) * Math.PI * 2) };
+};
 
 /**
  * Codex-style character field built from a real protein sequence.
@@ -41,6 +66,8 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
     const pointer = { x: -9999, y: -9999 };
     const eased = { x: -9999, y: -9999 };
     const readers: Reader[] = [];
+    const ripples: Ripple[] = [];
+    let lastFrame = 0, speed = 0;
     // Calm zone over the hero copy: highlights dim there so the headline and CTAs stay legible.
     const calm = { x: 0, y: 0, rx: 1, ry: 1 };
     const measureCalm = () => {
@@ -60,7 +87,7 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
       a.scale(dpr, dpr); a.font = FONT; a.textAlign = 'center'; a.textBaseline = 'middle';
       ['#ffffff', ...CLASS_COLORS].forEach((color, row) => {
         a.fillStyle = color;
-        if (row > 0) { a.shadowColor = color; a.shadowBlur = 8; }
+        if (row > 0) { a.shadowColor = color; a.shadowBlur = 12; }
         for (let i = 0; i < ALPHABET.length; i++) a.fillText(ALPHABET[i], i * CELL_W + CELL_W / 2, row * CELL_H + CELL_H / 2 + 0.5);
       });
     };
@@ -132,21 +159,65 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
         ? { x: width * (0.5 + 0.32 * Math.sin(now / 5200)), y: height * (0.42 + 0.22 * Math.sin(now / 3700 + 1)) }
         : pointer;
       if (eased.x < -9000) { eased.x = target.x; eased.y = target.y; }
-      const follow = idle ? 0.02 : 0.18;
+      // Frame-rate independent easing; the spotlight swells slightly while the pointer moves fast.
+      const dt = Math.min(64, lastFrame ? now - lastFrame : 16); lastFrame = now;
+      const follow = 1 - Math.exp(-dt / (idle ? 700 : 70));
+      const px = eased.x, py = eased.y;
       eased.x += (target.x - eased.x) * follow; eased.y += (target.y - eased.y) * follow;
+      speed += (Math.min(1, Math.hypot(eased.x - px, eased.y - py) / Math.max(dt, 1) / 1.2) - speed) * 0.12;
+      const radius = RADIUS * (1 + 0.3 * speed);
 
       // Spotlight: residues within RADIUS warm up; heat lingers briefly so the trail fades smoothly.
-      const c0 = Math.max(0, Math.floor((eased.x - RADIUS) / CELL_W)), c1 = Math.min(cols - 1, Math.ceil((eased.x + RADIUS) / CELL_W));
-      const r0 = Math.max(0, Math.floor((eased.y - RADIUS) / CELL_H)), r1 = Math.min(rows - 1, Math.ceil((eased.y + RADIUS) / CELL_H));
+      const c0 = Math.max(0, Math.floor((eased.x - radius) / CELL_W)), c1 = Math.min(cols - 1, Math.ceil((eased.x + radius) / CELL_W));
+      const r0 = Math.max(0, Math.floor((eased.y - radius) / CELL_H)), r1 = Math.min(rows - 1, Math.ceil((eased.y + radius) / CELL_H));
       for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
         const dx = c * CELL_W + CELL_W / 2 - eased.x, dy = r * CELL_H + CELL_H / 2 - eased.y;
-        const k = 1 - Math.hypot(dx, dy) / RADIUS;
+        const k = 1 - Math.hypot(dx, dy) / radius;
         if (k <= 0) continue;
         const i = r * cols + c, s = k * k * (3 - 2 * k);
         if (s > heat[i]) heat[i] = s;
         if (s > 0.55 && Math.random() < 0.012) {
           letters[i] = ALPHABET[Math.floor(Math.random() * ALPHABET.length)];
           mutatedUntil[i] = now + 700;
+        }
+      }
+
+      // Ripples: crests light up; displacement is applied when drawing.
+      for (let n = ripples.length - 1; n >= 0; n--) {
+        const rp = ripples[n], age = now - rp.start;
+        if (age > RIPPLE_LIFE) { ripples.splice(n, 1); continue; }
+        const reach = (rippleFront(age) + 60) * (1 + 2 * RIPPLE_IRREGULARITY);
+        const rc0 = Math.max(0, Math.floor((rp.x - reach) / CELL_W)), rc1 = Math.min(cols - 1, Math.ceil((rp.x + reach) / CELL_W));
+        const rr0 = Math.max(0, Math.floor((rp.y - reach) / CELL_H)), rr1 = Math.min(rows - 1, Math.ceil((rp.y + reach) / CELL_H));
+        for (let r = rr0; r <= rr1; r++) for (let c = rc0; c <= rc1; c++) {
+          const { amp, h } = rippleWave(rippleDist(rp, c * CELL_W + CELL_W / 2 - rp.x, r * CELL_H + CELL_H / 2 - rp.y, age), age);
+          const v = Math.min(1, 0.25 * amp + Math.max(0, h) * 0.85), i = r * cols + c;
+          if (v > heat[i]) heat[i] = v;
+        }
+      }
+
+      // Interference: where two fronts overlap, crests add (bright flash) and a crest meeting a trough cancels (dark seam).
+      if (ripples.length > 1) {
+        let c0 = cols, c1 = -1, r0 = rows, r1 = -1;
+        for (const rp of ripples) {
+          const reach = (rippleFront(now - rp.start) + 60) * (1 + 2 * RIPPLE_IRREGULARITY);
+          c0 = Math.min(c0, Math.floor((rp.x - reach) / CELL_W)); c1 = Math.max(c1, Math.ceil((rp.x + reach) / CELL_W));
+          r0 = Math.min(r0, Math.floor((rp.y - reach) / CELL_H)); r1 = Math.max(r1, Math.ceil((rp.y + reach) / CELL_H));
+        }
+        c0 = Math.max(0, c0); c1 = Math.min(cols - 1, c1); r0 = Math.max(0, r0); r1 = Math.min(rows - 1, r1);
+        for (let r = r0; r <= r1; r++) for (let c = c0; c <= c1; c++) {
+          const cx = c * CELL_W + CELL_W / 2, cy = r * CELL_H + CELL_H / 2;
+          let sum = 0, strong = 0, second = 0;
+          for (const rp of ripples) {
+            const w = rippleWave(rippleDist(rp, cx - rp.x, cy - rp.y, now - rp.start), now - rp.start);
+            sum += w.h;
+            if (w.amp > strong) { second = strong; strong = w.amp; } else if (w.amp > second) second = w.amp;
+          }
+          const overlap = Math.min(1, second * 2.2);
+          if (overlap < 0.05) continue;
+          const i = r * cols + c;
+          if (sum > 0) { const v = Math.min(1, sum * 0.7 * overlap + 0.25 * overlap); if (v > heat[i]) heat[i] = v; }
+          else heat[i] *= 1 - Math.min(0.85, -sum * 0.6 * overlap);
         }
       }
 
@@ -174,9 +245,16 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
         const zx = (x + CELL_W / 2 - calm.x) / calm.rx, zy = (y + CELL_H / 2 - calm.y) / calm.ry;
         const damp = Math.min(1, 0.22 + 0.78 * (zx * zx + zy * zy));
         if (!mutating && letters[i] !== original[i]) letters[i] = original[i];
-        ctx.globalAlpha = Math.min(1, h * (mutating ? 1 : 0.9) * damp);
-        glyph(letters[i], mutating ? 3 : 1 + classOf(letters[i]), x, y);
-        if (h > 0.7 && damp > 0.8) { ctx.globalAlpha = (h - 0.7) * 1.6 * damp; glyph(letters[i], 0, x, y); }
+        let ox = 0, oy = 0;
+        for (let n = 0; n < ripples.length; n++) {
+          const rp = ripples[n], age = now - rp.start;
+          const ddx = x + CELL_W / 2 - rp.x, ddy = y + CELL_H / 2 - rp.y, dist = Math.hypot(ddx, ddy) || 1;
+          const push = rippleWave(rippleDist(rp, ddx, ddy, age), age).h * RIPPLE_PUSH;
+          ox += (ddx / dist) * push; oy += (ddy / dist) * push;
+        }
+        ctx.globalAlpha = Math.min(1, h * 1.45 * damp);
+        glyph(letters[i], mutating ? 3 : 1 + classOf(letters[i]), x + ox, y + oy);
+        if (h > 0.55 && damp > 0.8) { ctx.globalAlpha = (h - 0.55) * 1.9 * damp; glyph(letters[i], 0, x + ox, y + oy); }
         heat[i] = h * 0.92;
       }
       ctx.globalAlpha = 1;
@@ -203,13 +281,23 @@ export function ProteinField({ className, calmSelector = '.hero-copy' }: { class
       if (x < 0 || y < 0 || x > rect.width || y > rect.height) return;
       pointer.x = x; pointer.y = y; lastPointer = performance.now();
     };
+    const onClick = (event: PointerEvent) => {
+      if (event.button !== 0 || (event.target as Element | null)?.closest?.('a, button, input, textarea, select, summary, [role="button"]')) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = event.clientX - rect.left, y = event.clientY - rect.top;
+      if (x < 0 || y < 0 || x > rect.width || y > rect.height) return;
+      ripples.push({ x, y, start: performance.now(), lobes: makeLobes() });
+      if (ripples.length > MAX_RIPPLES) ripples.shift();
+      pointer.x = x; pointer.y = y; lastPointer = performance.now();
+      kick();
+    };
     const onVisibility = () => { if (!document.hidden) kick(); };
-    if (!reduce && finePointer) window.addEventListener('pointermove', onPointer, { passive: true });
+    if (!reduce && finePointer) { window.addEventListener('pointermove', onPointer, { passive: true }); window.addEventListener('pointerdown', onClick, { passive: true }); }
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
       cancelAnimationFrame(frame); resizeObserver.disconnect(); intersection.disconnect();
       baseToken++; worker?.terminate(); if (baseUrl) URL.revokeObjectURL(baseUrl);
-      window.removeEventListener('pointermove', onPointer); document.removeEventListener('visibilitychange', onVisibility);
+      window.removeEventListener('pointermove', onPointer); window.removeEventListener('pointerdown', onClick); document.removeEventListener('visibilitychange', onVisibility);
     };
   }, [calmSelector]);
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />;

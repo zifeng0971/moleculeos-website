@@ -1,0 +1,1155 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-04-Developability-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: 5JDS_KN035_PDL1_renum
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: Q
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: K
+- generic: M
+- generic: S
+- generic: S
+- generic: "31"
+- generic: R
+- generic: R
+- generic: C
+- generic: M
+- generic: A
+- generic: W
+- generic: F
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: E
+- generic: R
+- generic: E
+- generic: R
+- generic: V
+- generic: A
+- generic: K
+- generic: "51"
+- generic: L
+- generic: L
+- generic: T
+- generic: T
+- generic: S
+- generic: G
+- generic: S
+- generic: T
+- generic: "Y"
+- generic: L
+- generic: "61"
+- generic: A
+- generic: D
+- generic: S
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: Q
+- generic: "N"
+- generic: "N"
+- generic: A
+- generic: K
+- generic: S
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: K
+- generic: P
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: M
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: A
+- generic: D
+- generic: S
+- generic: "101"
+- generic: F
+- generic: E
+- generic: D
+- generic: P
+- generic: T
+- generic: C
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: "111"
+- generic: S
+- generic: S
+- generic: G
+- generic: A
+- generic: F
+- generic: Q
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: "121"
+- generic: G
+- generic: T
+- generic: Q
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 193bddf7-8
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: "Let me start by planning. The task: anti-PD-L1 KN035 VHH from PDB 5JDS. Need to …"
+- generic: ▸
+- generic: ListAvailableMOSTasks
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSQuota
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now get schemas for the relevant tasks: Structural Stability Mutation Effect, Se…"
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Structural Stability Mutation Effect": (Structural Stability Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Sequence Fitness Mutation Effect": (Sequence Fitness Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Evolutionary Mutation Effect": (Evolutionary Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Binding Affinity Mutation Effect": (Binding Affinity Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Sequence Homology Search": (Sequence Homology Search)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now fetch 5JDS structure. Per skill: use search-protein-target skill's fetch_str…"
+- generic: ▸
+- img "file":
+- generic: Read
+- generic "/app/src/mocha/agents/custom_skills/search-protein…": (/app/src/mocha/agents/custom_skills/search-protein…)
+- img "check-circle":
+- generic: ▸
+- img "file":
+- generic: Read
+- generic "/app/src/mocha/agents/custom_skills/sequence-toolk…": (/app/src/mocha/agents/custom_skills/sequence-toolk…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now fetch 5JDS. Use fetch_struct.py which sanitizes to MOS layout. Let's do that…
+- generic: ▸
+- img "unordered-list":
+- generic: Todo List
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- 'generic "mkdir -p /workspace/kn035_case04/{structs,logs,res…"': "(mkdir -p /workspace/kn035_case04/{structs,logs,res…)"
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Interesting: chains relabeled — original chain B becomes A? Actually mapping say…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04/structs && head -80 5JD…": (cd /workspace/kn035_case04/structs && head -80 5JD…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "So sanitized: chain A = VHH (KN035 nanobody, 127 residues modeled, includes His-…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04/structs && grep -E \"_re…": (cd /workspace/kn035_case04/structs && grep -E "_re…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Good: 1.7 Å. Chain A (sanitized) = auth chain B → entity 1 = VHH. Wait mapping: …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04/structs && python -c \" …": (cd /workspace/kn035_case04/structs && python -c " …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Interesting! Chain A sequence = QVQLQESGGG... (starts Q, not T) — 127 residues, …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && printf '>KN035_VHH\\n…": (cd /workspace/kn035_case04 && printf '>KN035_VHH\n…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: ANARCI works. Let's get the full numbering and CDR boundaries in sequential (cha…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > cdr_map.py <<'…": (cd /workspace/kn035_case04 && cat > cdr_map.py <<'…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Great. Sequential numbering (MOS chain A) 1..127. CDRs in MOS numbering:"
+- generic: ▸
+- img "file":
+- generic: Read
+- generic "/app/src/mocha/agents/custom_skills/interaction-an…": (/app/src/mocha/agents/custom_skills/interaction-an…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Run parse_structure (with imgt numbering) and calc_interface/calc_contacts. Then…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && S=/app/src/mocha/age…": (cd /workspace/kn035_case04 && S=/app/src/mocha/age…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import j…": (cd /workspace/kn035_case04 && python -c " import j…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Let me print the actual entity dicts fully.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import j…": (cd /workspace/kn035_case04 && python -c " import j…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed: chain A = VHH (antibody VHH), CDR ranges match ANARCI. Chain B = PD-L…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && S=/app/src/mocha/age…": (cd /workspace/kn035_case04 && S=/app/src/mocha/age…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Interface: BSA ~1528 Å² on VHH side, 1557 on PD-L1 side. 59 VHH interface residu…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && head -3 interface/re…": (cd /workspace/kn035_case04 && head -3 interface/re…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important: interface residues include several framework residues outside CDRs wi…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import g…": (cd /workspace/kn035_case04 && python -c " import g…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: So auth/label numbering starts at 3. Cys at 24,35,98,108 → sequential index = au…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && T=/app/src/mocha/age…": (cd /workspace/kn035_case04 && T=/app/src/mocha/age…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Entity length 146 (not 144). Positions: unresolved 1-2 and 130-146. So modeled =…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && T=/app/src/mocha/age…": (cd /workspace/kn035_case04 && T=/app/src/mocha/age…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: WT library record = 128 aa, position 1..128 ↔ entity pos 3..130 ↔ MOS chain A po…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \"import fr…": (cd /workspace/kn035_case04 && python -c "import fr…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: freesasa available. Good.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > design_manifes…": (cd /workspace/kn035_case04 && cat > design_manifes…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Wait — paratope outside CDR includes 25, 39, 42, 120, 121. Hmm: 25 is A? positio…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > liability_scan…": (cd /workspace/kn035_case04 && cat > liability_scan…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: freesasa can't read this mmCIF (probably it parses as PDB). Convert chain A to P…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import g…": (cd /workspace/kn035_case04 && python -c " import g…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All four Cys have ~0 relative SASA → consistent with disulfide-bonded (verified …
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "local_file": (local_file)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now verify the sanitized MOS copy chain/residue layout to be safe: GetMOSObject …"
+- generic: ▸
+- generic: GetMOSObject
+- generic "342255217722368": (342255217722368)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python -c \" import gemmi st=gemmi…": (cd /workspace && python -c " import gemmi st=gemmi…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The MOS object retains chain A 3..129 (auth numbering) — same as our local file.…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \"import ge…": (cd /workspace/kn035_case04 && python -c "import ge…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: gemmi 0.7.4 has no mmCIF writer. Use write_pdb (PDB format is accepted by the ta…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Residue renumbering worked but some non-polymer chains remained (E, G, D are sin…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Problem: setup_entities() regenerated the entity sequence using original auth nu…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The complex file was written with SEQRES (12 records) before the error? Actually…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import g…": (cd /workspace/kn035_case04 && python -c " import g…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Clean: no SEQRES, no HETATM, chain A 1..127, B 1..115."
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "local_file": (local_file)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "local_file": (local_file)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: Prioritize submitting Structural Stability Mutation Effect and Sequence Fitness Mutation Effect NOW with the verified VHH sequence/clean structure. You have sufficient chain identity and CDR evidence. Do not delay launches for extra annotation or packaging. After launching, collect the actual outputs and create a downloadable ZIP of all case04 files. Current user authorization covers these computations.
+- img "bulb":
+- generic: Thinking
+- generic: The system says the sanitized object is .cif (converted from my PDB). The TOS ke…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python -c \" import gemmi p='prote…": (cd /workspace && python -c " import gemmi p='prote…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Numbering 1..127, auth == label. So "chain+index" = A22 etc. is unambiguous.
+- generic: ▸
+- generic: StartMOSTask
+- generic "Structural Stability Mutation Effect": (Structural Stability Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Sequence Fitness Mutation Effect": (Sequence Fitness Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both launched. Now also launch evolutionary? The user asked to prioritize the tw…
+- generic: ▸
+- generic: StartMOSTask
+- generic "Conservation/covariance-based mutation effect scan…": (Conservation/covariance-based mutation effect scan…)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Binding-affinity mutation scan of the KN035 VHH / …": (Binding-affinity mutation scan of the KN035 VHH / …)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Sequence homology search for the KN035 VHH domain …": (Sequence homology search for the KN035 VHH domain …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All five launched. Now snapshot the board once (ListMOSTasks) — allowed per work…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Structural stability and sequence fitness already succeeded (fast!). Homology su…
+- generic: ▸
+- generic: AnalyzeMutationScores
+- generic "342255494362112": (342255494362112)
+- img "check-circle":
+- generic: ▸
+- generic: AnalyzeMutationScores
+- generic "342255495889920": (342255495889920)
+- img "check-circle":
+- generic: ▸
+- generic: AnalyzeSeqSimilarityResults
+- generic "342255515612160": (342255515612160)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Results are in. Note numbering: structural stability reports positions 1..127 — …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && ls -R | head -40 && ech…": (cd /workspace/downloads && ls -R | head -40 && ech…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && wc -l */*.csv && head -…": (cd /workspace/downloads && wc -l */*.csv && head -…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Rows: 2540 for struct (127*20 = 2540: 19 substitutions + WT? Actually 20 per pos…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && python - <<'EOF' import…": (cd /workspace/downloads && python - <<'EOF' import…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important finding: Structural stability scan returned zero scores for ALL 20 ent…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && python - <<'EOF' import…": (cd /workspace/downloads && python - <<'EOF' import…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342255515612160": (342255515612160)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Exact match confirmed: the structural scan honored the excluded set."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/sequence_homology_search_3…": (cd /workspace/downloads/sequence_homology_search_3…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The homology search returned 500 hits (data list). AnalyzeSeqSimilarityResults s…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/sequence_homology_search_3…": (cd /workspace/downloads/sequence_homology_search_3…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Binding affinity succeeded. Evolutionary still pending.
+- generic: ▸
+- generic: AnalyzeAffinityScores
+- generic "342255512777728": (342255512777728)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Binding affinity: all top stabilizing mutations are in CDRs (33, 35, 97, 105, 10…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/binding_affinity_mutation_…": (cd /workspace/downloads/binding_affinity_mutation_…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/binding_affinity_mutation_…": (cd /workspace/downloads/binding_affinity_mutation_…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Binding scan only covers 18 positions on chain A (interface residues, presumably…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/binding_affinity_mutation_…": (cd /workspace/downloads/binding_affinity_mutation_…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Binding scan covers all positions of both chains (2413 = 127×19 for A; 2185 ≈ 11…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Evolutionary running (MSA query, takes longer). While waiting, build the ranking…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > analyze_candid…": (cd /workspace/kn035_case04 && cat > analyze_candid…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Working, without evolution. Note seq_score can be negative while composite still…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Whoa — strict pass = 0. That means NO mutation in the screened framework set rea…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342255510164480": (342255510164480)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/evolutionary_mutation_effe…": (cd /workspace/downloads/evolutionary_mutation_effe…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now with evolution. Top candidates: A24V, N73D, R47Y, K50S, K50R, F37Y, K50T, A3…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The filter produced empty because liab_created is a string read from CSV (not li…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > rank_final.py …": (cd /workspace/kn035_case04 && cat > rank_final.py …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still empty — `df['flags']` is '' initialized for all; `df.passes = (df.flags=='…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import p…": (cd /workspace/kn035_case04 && python -c " import p…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All rows have flags → all mutated rows got at least one flag. But "binding_risk"…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python -c \" import p…": (cd /workspace/kn035_case04 && python -c " import p…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "flags is NaN for 965 rows (the passing ones) — because `df['flags']=''` then... …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now sensible. Top candidates:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent data. Now consider candidates:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "R47L: bind_ddG +0.61 (loses ~0.6 kcal/mol binding, ~-1 kcal/mol affinity → ~5x w…"
+- generic: ▸
+- generic: TodoList
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && mkdir -p variants &&…": (cd /workspace/kn035_case04 && mkdir -p variants &&…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: TodoList tool wasn't found (I used SetTodoList earlier). Fine.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && T=/app/src/mocha/age…": (cd /workspace/kn035_case04 && T=/app/src/mocha/age…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Only the first record was processed — identify takes multiple mutant args, and p…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "All variants verified: exactly one substitution each, combined has all 7."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat > build_results.…": (cd /workspace/kn035_case04 && cat > build_results.…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Wait — S85N changes the deamidation motif count? WT had 1 (NS at 84). Combined v…
+- generic: ▸
+- generic: SelectResidues
+- generic "342255446139904": (342255446139904)
+- img "check-circle":
+- generic: ▸
+- generic: 7 residues in Chain A
+- generic: "Selected 7 residues: A:19,24,34,48,61,85,87"
+- button "Replay selection":
+  - img "reload":
+- button "Add annotation":
+  - img "edit":
+- generic: ManageAnnotation
+- generic "create": (create)
+- img "check-circle":
+- generic: ▸
+- generic: 7 residues in Chain A
+- generic: "7 ranked single-residue candidates: K87R, V48I, A24V, M34L, A61S, R19S, S85N. CDRs (26-33, 51-58, 97-117), the two disulfides (22-96, 33-106) and 13 framework paratope residues were held fixed."
+- img "bulb":
+- generic: Thinking
+- generic: "Also annotate CDRs and disulfides for visual context, maybe. Keep it minimal: on…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && python - <<'EOF' imp…": (cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now write README.md report and package.
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/kn035_case04/README.md": (/workspace/kn035_case04/README.md)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now assemble the package directories and zip. Also write tasks/tasks.json with e…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && cat interface/summar…": (cd /workspace/kn035_case04 && cat interface/summar…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Interface table: B chain (PD-L1) 47 residues, A (VHH) 52 residues. So 52 VHH int…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/kn035_case04 && sed -i 's/\\*\\*Parato…": (cd /workspace/kn035_case04 && sed -i 's/\*\*Parato…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && rm -rf case04_pkg && mkdir -p cas…": (cd /workspace && rm -rf case04_pkg && mkdir -p cas…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now write tasks/tasks.json with exact payloads (from StartMOSTask calls) and sta…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case04_pkg/tasks/tasks.json": (/workspace/case04_pkg/tasks/tasks.json)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && cp case04_pkg/tasks/tasks.json kn…": (cd /workspace && cp case04_pkg/tasks/tasks.json kn…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'EOF' import zipfile, …": (cd /workspace && python - <<'EOF' import zipfile, …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "ZIP created: 625 KB, 37 files, no empty files."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'EOF' import json, os,…": (cd /workspace && python - <<'EOF' import json, os,…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'EOF' import json, pan…": (cd /workspace && python - <<'EOF' import json, pan…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Everything checks out. The ZIP was built before adding tasks.json? No — I copied…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python -c \" import zipfile z=zipf…": (cd /workspace && python -c " import zipfile z=zipf…)
+- img "check-circle":
+- generic: ▸
+- paragraph: All five MOS tasks ran to completion. Here is what the case actually established.
+- heading "Chain identity verified, not assumed" [level=2]
+- paragraph:
+  - text: 5JDS chain A is the
+  - strong: KN035 VHH
+  - text: (single Ig domain, no light chain; ANARCI HMM hit to camelid VH at e-value 7.4e-55, closest germline IGHV3-3*01/IGHJ5*01), chain B is the
+  - strong: human PD-L1 IgV domain
+  - text: "(Q9NZQ7, db_align 18–132). They form a real interface: 1528.5 Å² buried on the VHH side, 1556.9 Å² on PD-L1, with 16 H-bonds and 5 salt bridges."
+- paragraph:
+  - strong: Held fixed during screening
+  - text: ": CDR1 26–33 (GKMSSRRC), CDR2 51–58 (LLTTSGST), CDR3 97–117 (21 aa), both measured disulfides —"
+  - strong: Cys22–Cys96 (2.08 Å) and an extra Cys33–Cys106 CDR1–CDR3 bond (2.03 Å)
+  - text: ", all four Cys at relative SASA ≤ 0.002 — plus 13 framework paratope residues. That left 75 framework positions (1425 mutations). The structural task honored the restriction exactly: all 52 excluded positions came back as 0.0 (unscored, not neutral)."
+- heading "The four axes disagree, and that is the finding" [level=2]
+- paragraph: Structure and evolution reward buried framework repacking; the sequence model’s favourable substitutions sit almost entirely in the CDRs; the binding model’s top hits are all CDR changes (A35W −1.79, C33Y −1.40 — and C33Y would break the CDR1–CDR3 disulfide, so affinity gain alone is not permission to mutate).
+- heading "Wild-type baseline" [level=2]
+- paragraph:
+  - text: pI
+  - strong: "9.01"
+  - text: ", GRAVY −0.375, net charge proxy +4, no N-glycosylation motif,"
+  - strong: one deamidation site (Asn84-Ser85)
+  - text: ", three isomerization motifs (D62-S63, D90-T91, D99-S100 in CDR3), no free cysteine, eight exposed hydrophobics (11, 23, 28, 59, 75, 93, 108, 114). Homology is PDB-restricted: 72 % identity to the closest non-self lama VHHs, 68 % median over 503 hits — not a humanness measure."
+- heading "Ranked candidates (965 of 1425 mutations passed all filters)" [level=2]
+- table:
+  - rowgroup:
+    - row "# Mutation Region Structural (pct) Sequence (pct) Evolutionary (pct) Binding ddG Composite":
+      - columnheader "#"
+      - columnheader "Mutation"
+      - columnheader "Region"
+      - columnheader "Structural (pct)"
+      - columnheader "Sequence (pct)"
+      - columnheader "Evolutionary (pct)"
+      - columnheader "Binding ddG"
+      - columnheader "Composite"
+  - rowgroup:
+    - row "1 K87R FW3 +0.14 (97.9) +1.38 (96.1) −1.89 (80.9) −0.02 0.908":
+      - cell "1"
+      - cell "K87R"
+      - cell "FW3"
+      - cell "+0.14 (97.9)"
+      - cell "+1.38 (96.1)"
+      - cell "−1.89 (80.9)"
+      - cell "−0.02"
+      - cell "0.908"
+    - row "2 V48I FW2 buried +0.07 (97.6) −0.59 (80.8) −2.61 (76.1) −0.34 0.877":
+      - cell "2"
+      - cell "V48I"
+      - cell "FW2 buried"
+      - cell "+0.07 (97.6)"
+      - cell "−0.59 (80.8)"
+      - cell "−2.61 (76.1)"
+      - cell "−0.34"
+      - cell "0.877"
+    - row "3 A24V FW1 buried +4.61 (100) −0.63 (80.1) −1.88 (81.0) −0.04 0.873":
+      - cell "3"
+      - cell "A24V"
+      - cell "FW1 buried"
+      - cell "+4.61 (100)":
+        - strong: +4.61 (100)
+      - cell "−0.63 (80.1)"
+      - cell "−1.88 (81.0)"
+      - cell "−0.04"
+      - cell "0.873"
+    - row "4 M34L FW2 buried +0.51 (98.5) +0.47 (91.0) −2.75 (75.0) +0.07 0.865":
+      - cell "4"
+      - cell "M34L"
+      - cell "FW2 buried"
+      - cell "+0.51 (98.5)"
+      - cell "+0.47 (91.0)"
+      - cell "−2.75 (75.0)"
+      - cell "+0.07"
+      - cell "0.865"
+    - row "5 A61S FW3 +0.66 (98.7) −1.11 (74.7) −2.61 (76.2) −0.16 0.855":
+      - cell "5"
+      - cell "A61S"
+      - cell "FW3"
+      - cell "+0.66 (98.7)"
+      - cell "−1.11 (74.7)"
+      - cell "−2.61 (76.2)"
+      - cell "−0.16"
+      - cell "0.855"
+    - row "6 R19S FW1 exposed +0.13 (97.9) −0.24 (84.1) −3.14 (71.3) +0.03 0.843":
+      - cell "6"
+      - cell "R19S"
+      - cell "FW1 exposed"
+      - cell "+0.13 (97.9)"
+      - cell "−0.24 (84.1)"
+      - cell "−3.14 (71.3)"
+      - cell "+0.03"
+      - cell "0.843"
+    - row "7 S85N FW3 +1.06 (99.2) −1.73 (67.5) −2.65 (75.5) −0.04 0.821":
+      - cell "7"
+      - cell "S85N"
+      - cell "FW3"
+      - cell "+1.06 (99.2)"
+      - cell "−1.73 (67.5)"
+      - cell "−2.65 (75.5)"
+      - cell "−0.04"
+      - cell "0.821"
+- paragraph:
+  - text: K87R is the only candidate in the top decile of both structural and sequence models; M34L also removes one of four oxidation-capable methionines; R19S lowers pI 9.01 → 8.76; S85N abolishes the Asn84-Ser85 deamidation motif (1 → 0) and is proposed on liability grounds, not sequence fitness. A75S and N74T scored higher but were rejected because they
+  - emphasis: create
+  - text: an N74-S75 glycosylation motif; R47L, the most evolutionarily favoured change, was rejected for a +0.61 binding penalty.
+- heading "Honestly unsupported" [level=2]
+- paragraph: No aggregation predictor, no solubility/expression model, no Tm model, no humanness model (Antibody Stability Prediction, Nativeness Evaluation, Language Scoring and Region Annotation are all “coming soon” on MOS). Nothing here is structurally or experimentally validated — 5JDS is the only experimental structure in the case, and the seven-mutation combined variant is a hypothesis, since single-mutation scores are not additive.
+- paragraph:
+  - text: "Package: task IDs and exact payloads ("
+  - code: tasks/tasks.json
+  - text: ), raw CSVs/JSON untouched,
+  - code: results/results.json
+  - text: ", per-residue liability and SASA table, original and optimised FASTA, and the 128-aa WT with all numbering mappings."
+- img "case04_KN035_5JDS_developability.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- generic: 09:45
+- generic: 5JDS_KN035...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

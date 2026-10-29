@@ -1,0 +1,26 @@
+{
+  "case_id": "01",
+  "target": "Human PD-L1",
+  "binder": "KN035 VHH",
+  "reference_pdb_id": "5JDS",
+  "project_id": "342242986152960",
+  "mos_task_id": "342253805564928",
+  "mode": "MMFold",
+  "chains": [
+    {
+      "id": "A",
+      "role": "target",
+      "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "length": 118
+    },
+    {
+      "id": "B",
+      "role": "binder",
+      "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "length": 128
+    }
+  ],
+  "stoichiometry": "1:1",
+  "templates_supplied": false,
+  "preprocessing": "PD-L1 deposited 5JDS sequence minus terminal H6; KN035 deposited sequence minus N-terminal TG and C-terminal GSMDPGGSH8. Initiator M and terminal LE retained in target."
+}

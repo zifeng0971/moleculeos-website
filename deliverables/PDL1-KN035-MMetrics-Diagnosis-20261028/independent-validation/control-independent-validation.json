@@ -1,0 +1,23 @@
+{
+  "query_is_exact_A118": true,
+  "all_rows_exact_A": true,
+  "row_count": 473,
+  "unique_hits": 457,
+  "fasta_count": 457,
+  "db_rows": {
+    "pdb": 239,
+    "sp": 234
+  },
+  "E_lt_1e_minus5": 80,
+  "pdb_E_lt_1e_minus5": 63,
+  "top": {
+    "hit_id": "pdb|5JDS|A",
+    "hit_desc": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+    "identity": 118,
+    "identity_percentage": 1.0,
+    "e_value": 5.20957e-85,
+    "query_from": 1,
+    "query_to": 118
+  },
+  "sha256": "40e3cea779a3ec9da098caac71ca4791cd1f2a5e1941f83922c9db140b7905ea"
+}

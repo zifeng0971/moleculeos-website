@@ -1,0 +1,419 @@
+{
+  "seed": "111",
+  "task_output_dir": "/workspace/downloads/protein_binder_design_342606137910272",
+  "reference": "/workspace/protein_data/protein_342605519696896/MMFold_1_chain_A.cif",
+  "hotspots_mos": [
+    45,
+    40,
+    97,
+    107,
+    105,
+    38
+  ],
+  "kn035_epitope_case02": [
+    38,
+    40,
+    42,
+    45,
+    47,
+    50,
+    52,
+    53,
+    57,
+    60,
+    97,
+    99,
+    101,
+    103,
+    104,
+    105,
+    106,
+    107,
+    109
+  ],
+  "structures": [
+    {
+      "file": "/workspace/downloads/protein_binder_design_342606137910272/179254989623579_output.cif",
+      "n_models": 1,
+      "chains": [
+        {
+          "chain": "A",
+          "n_residues": 73,
+          "length": 73,
+          "sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+          "gly_only_or_near": true,
+          "identical_to_target": false,
+          "identity_to_target": 0.017
+        },
+        {
+          "chain": "B",
+          "n_residues": 118,
+          "length": 118,
+          "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+          "gly_only_or_near": false,
+          "identical_to_target": true,
+          "identity_to_target": 1.0
+        }
+      ],
+      "sasa_analysis": {},
+      "target_chain": "B",
+      "binder_chains": [],
+      "virtual_backbone_chains": [
+        "A"
+      ],
+      "ca_superposition": {
+        "n_common_ca": 118,
+        "rmsd_A": 0.063,
+        "target_chain": "B"
+      },
+      "hotspot_min_distance_A": {},
+      "interface": {
+        "bsa_A2_total": null,
+        "note": "no binder chain identified"
+      }
+    },
+    {
+      "file": "/workspace/downloads/protein_binder_design_342606137910272/179254989703386_aligned.cif",
+      "n_models": 1,
+      "chains": [
+        {
+          "chain": "A",
+          "n_residues": 73,
+          "length": 73,
+          "sequence": "AAAAAAAAAAAAAAAEAAAAAAAAAAAEAEAAALRAEEEKREAELRKLQEKKNEEKRLARIAAWKAAAAAAAL",
+          "gly_only_or_near": false,
+          "identical_to_target": false,
+          "identity_to_target": 0.068
+        },
+        {
+          "chain": "B",
+          "n_residues": 118,
+          "length": 118,
+          "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+          "gly_only_or_near": false,
+          "identical_to_target": true,
+          "identity_to_target": 1.0
+        }
+      ],
+      "sasa_analysis": {},
+      "target_chain": "B",
+      "binder_chains": [
+        "A"
+      ],
+      "virtual_backbone_chains": [],
+      "ca_superposition": {
+        "n_common_ca": 118,
+        "rmsd_A": 0.488,
+        "target_chain": "B"
+      },
+      "hotspot_min_distance_A": {
+        "A:A45": 6.22,
+        "A:A40": 5.62,
+        "A:A97": 5.94,
+        "A:A107": 5.3,
+        "A:A105": 3.67,
+        "A:A38": 5.33
+      },
+      "interface": {
+        "bsa_A2_total": 1236.6,
+        "bsa_A2_target_side": 539.6,
+        "bsa_A2_binder_side": 697.0,
+        "bsa_per_target_residue": {
+          "35": 1.35,
+          "36": 9.56,
+          "38": 68.58,
+          "40": 22.26,
+          "42": 15.88,
+          "44": 0.1,
+          "50": 35.46,
+          "52": 27.74,
+          "53": 71.33,
+          "57": 0.56,
+          "97": 29.31,
+          "99": 83.06,
+          "100": 1.41,
+          "101": 28.33,
+          "103": 0.36,
+          "105": 40.28,
+          "106": 9.71,
+          "107": 60.41,
+          "109": 33.87
+        },
+        "n_contact_pairs_lt4A": 23,
+        "contact_pairs": [
+          {
+            "target_res": 36,
+            "target_name": "ALA",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 1.72
+          },
+          {
+            "target_res": 37,
+            "target_name": "LEU",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 3.12
+          },
+          {
+            "target_res": 38,
+            "target_name": "ILE",
+            "binder_chain": "A",
+            "binder_res": 64,
+            "binder_name": "TRP",
+            "min_dist_A": 3.1
+          },
+          {
+            "target_res": 38,
+            "target_name": "ILE",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 1.24
+          },
+          {
+            "target_res": 40,
+            "target_name": "TYR",
+            "binder_chain": "A",
+            "binder_res": 57,
+            "binder_name": "ARG",
+            "min_dist_A": 3.46
+          },
+          {
+            "target_res": 42,
+            "target_name": "GLU",
+            "binder_chain": "A",
+            "binder_res": 57,
+            "binder_name": "ARG",
+            "min_dist_A": 0.79
+          },
+          {
+            "target_res": 50,
+            "target_name": "GLN",
+            "binder_chain": "A",
+            "binder_res": 64,
+            "binder_name": "TRP",
+            "min_dist_A": 1.88
+          },
+          {
+            "target_res": 52,
+            "target_name": "VAL",
+            "binder_chain": "A",
+            "binder_res": 64,
+            "binder_name": "TRP",
+            "min_dist_A": 1.86
+          },
+          {
+            "target_res": 52,
+            "target_name": "VAL",
+            "binder_chain": "A",
+            "binder_res": 68,
+            "binder_name": "ALA",
+            "min_dist_A": 3.35
+          },
+          {
+            "target_res": 53,
+            "target_name": "HIS",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 3.71
+          },
+          {
+            "target_res": 53,
+            "target_name": "HIS",
+            "binder_chain": "A",
+            "binder_res": 68,
+            "binder_name": "ALA",
+            "min_dist_A": 3.04
+          },
+          {
+            "target_res": 53,
+            "target_name": "HIS",
+            "binder_chain": "A",
+            "binder_res": 69,
+            "binder_name": "ALA",
+            "min_dist_A": 2.74
+          },
+          {
+            "target_res": 97,
+            "target_name": "ARG",
+            "binder_chain": "A",
+            "binder_res": 54,
+            "binder_name": "GLU",
+            "min_dist_A": 3.0
+          },
+          {
+            "target_res": 97,
+            "target_name": "ARG",
+            "binder_chain": "A",
+            "binder_res": 57,
+            "binder_name": "ARG",
+            "min_dist_A": 1.88
+          },
+          {
+            "target_res": 99,
+            "target_name": "MET",
+            "binder_chain": "A",
+            "binder_res": 57,
+            "binder_name": "ARG",
+            "min_dist_A": 3.2
+          },
+          {
+            "target_res": 99,
+            "target_name": "MET",
+            "binder_chain": "A",
+            "binder_res": 58,
+            "binder_name": "LEU",
+            "min_dist_A": 3.33
+          },
+          {
+            "target_res": 99,
+            "target_name": "MET",
+            "binder_chain": "A",
+            "binder_res": 61,
+            "binder_name": "ILE",
+            "min_dist_A": 2.05
+          },
+          {
+            "target_res": 101,
+            "target_name": "SER",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 2.07
+          },
+          {
+            "target_res": 102,
+            "target_name": "TYR",
+            "binder_chain": "A",
+            "binder_res": 65,
+            "binder_name": "LYS",
+            "min_dist_A": 3.55
+          },
+          {
+            "target_res": 106,
+            "target_name": "ASP",
+            "binder_chain": "A",
+            "binder_res": 58,
+            "binder_name": "LEU",
+            "min_dist_A": 3.67
+          },
+          {
+            "target_res": 107,
+            "target_name": "TYR",
+            "binder_chain": "A",
+            "binder_res": 54,
+            "binder_name": "GLU",
+            "min_dist_A": 1.52
+          },
+          {
+            "target_res": 107,
+            "target_name": "TYR",
+            "binder_chain": "A",
+            "binder_res": 58,
+            "binder_name": "LEU",
+            "min_dist_A": 3.17
+          },
+          {
+            "target_res": 109,
+            "target_name": "ARG",
+            "binder_chain": "A",
+            "binder_res": 54,
+            "binder_name": "GLU",
+            "min_dist_A": 3.99
+          }
+        ],
+        "interface_target_residues": [
+          35,
+          36,
+          37,
+          38,
+          40,
+          42,
+          44,
+          50,
+          52,
+          53,
+          57,
+          97,
+          99,
+          100,
+          101,
+          102,
+          103,
+          105,
+          106,
+          107,
+          109
+        ],
+        "interface_binder_residues": [
+          "A:54",
+          "A:57",
+          "A:58",
+          "A:61",
+          "A:64",
+          "A:65",
+          "A:68",
+          "A:69"
+        ],
+        "target_residues_within_5A": [
+          35,
+          38,
+          40,
+          42,
+          44,
+          51,
+          52,
+          53,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109
+        ]
+      },
+      "epitope_overlap": {
+        "n_interface_target_residues": 21,
+        "n_epitope_residues": 19,
+        "overlap_residues": [
+          38,
+          40,
+          42,
+          50,
+          52,
+          53,
+          57,
+          97,
+          99,
+          101,
+          103,
+          105,
+          106,
+          107,
+          109
+        ],
+        "n_overlap": 15,
+        "fraction_of_kn035_epitope_recovered": 0.789,
+        "fraction_of_designed_interface_on_kn035_epitope": 0.714,
+        "jaccard": 0.6,
+        "hotspots_contacted": [
+          38,
+          40,
+          97,
+          105,
+          107
+        ]
+      }
+    }
+  ],
+  "confidence_metrics_found": {},
+  "missing_metrics": [],
+  "structure_files_found": [
+    "/workspace/downloads/protein_binder_design_342606137910272/179254989623579_output.cif",
+    "/workspace/downloads/protein_binder_design_342606137910272/179254989703386_aligned.cif"
+  ]
+}

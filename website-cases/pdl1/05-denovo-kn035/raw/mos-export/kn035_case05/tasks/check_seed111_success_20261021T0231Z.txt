@@ -1,0 +1,5 @@
+ListMOSTasks snapshot: [succeed] kn035_c05_denovo_seed111, Task ID 342606137910272, Duration 3.7min
+DownloadTaskResults -> /workspace/downloads/protein_binder_design_342606137910272
+  179254989623579_output.cif
+  179254989703386_aligned.cif
+(platform payload echo identical to payloads/payload_seed111.json, input_structure normalised to tos:mosv2-prod/...)

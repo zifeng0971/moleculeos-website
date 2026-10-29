@@ -1,0 +1,101 @@
+{
+  "label": "seed111",
+  "task_dir": "/workspace/downloads/protein_binder_design_342254837666816",
+  "structure_files_found": 2,
+  "hotspots_sanitized": [
+    37,
+    39,
+    41,
+    51,
+    96,
+    106
+  ],
+  "designs": [
+    {
+      "file": "179246416525812_output.cif",
+      "target_chain": "B",
+      "target_len": 213,
+      "binder_chains": [
+        {
+          "chain": "A",
+          "length": 73,
+          "sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+          "sequence_type": "virtual_backbone_no_designed_sequence",
+          "nonstandard_residues": [],
+          "hotspot_min_heavy_atom_dist_A": {
+            "A37(I54)@struct37": 7.76,
+            "A39(Y56)@struct39": 8.48,
+            "A41(E58)@struct41": 8.42,
+            "A51(V68)@struct51": 5.97,
+            "A96(R113)@struct96": 10.44,
+            "A106(Y123)@struct106": 9.16
+          },
+          "hotspots_engaged": 0,
+          "hotspot_engagement_list": [],
+          "interface": {
+            "error": "interface pipeline failed: Command '['/opt/conda/bin/python', '/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/calc_interface.py', '/workspace/downloads/protein_binder_design_342254837666816/179246416525812_output.cif', '--chain-pairs', 'A:B', '-o', '/workspace/case05_bundle/designs/seed111/analysis/ppi_179246416525812_output_A']' returned non-zero exit status 1."
+          }
+        }
+      ],
+      "target_numbering": {
+        "first": 1,
+        "last": 213,
+        "n_residues": 213,
+        "matches_sanitized_1_based": true
+      }
+    },
+    {
+      "file": "179246416595260_aligned.cif",
+      "target_chain": "B",
+      "target_len": 213,
+      "binder_chains": [
+        {
+          "chain": "A",
+          "length": 73,
+          "sequence": "DAAARAAELERRCESLAKIIAEHEAALAALRAAAASAADREAVAAAAARQARAAAALRALRARLEAEARALRE",
+          "sequence_type": "designed_or_modeled_sequence",
+          "nonstandard_residues": [],
+          "hotspot_min_heavy_atom_dist_A": {
+            "A37(I54)@struct37": 3.73,
+            "A39(Y56)@struct39": 3.05,
+            "A41(E58)@struct41": 2.47,
+            "A51(V68)@struct51": 3.27,
+            "A96(R113)@struct96": 2.42,
+            "A106(Y123)@struct106": 2.97
+          },
+          "hotspots_engaged": 6,
+          "hotspot_engagement_list": [
+            "A37(I54)@struct37",
+            "A39(Y56)@struct39",
+            "A41(E58)@struct41",
+            "A51(V68)@struct51",
+            "A96(R113)@struct96",
+            "A106(Y123)@struct106"
+          ],
+          "interface": {
+            "total_bsa_A2": 1833.3,
+            "interface_residues_total": 51,
+            "interface_residues_per_chain": {
+              "B": 26,
+              "A": 25
+            },
+            "hbonds": 2,
+            "salt_bridges": 10
+          }
+        }
+      ],
+      "target_numbering": {
+        "first": 1,
+        "last": 213,
+        "n_residues": 213,
+        "matches_sanitized_1_based": true
+      }
+    }
+  ],
+  "confidence_fields_found": {},
+  "notes": [
+    "sequence_type 'virtual_backbone_no_designed_sequence' means >90% Gly/Ala, i.e. a hallucinated backbone without sequence design",
+    "hotspot distance is minimum non-hydrogen atom distance; <=4.5 A is treated as engaged (contact-level, not energetic)",
+    "interface metrics come from the interaction-analysis pipeline; null values mean the file did not permit computation"
+  ]
+}

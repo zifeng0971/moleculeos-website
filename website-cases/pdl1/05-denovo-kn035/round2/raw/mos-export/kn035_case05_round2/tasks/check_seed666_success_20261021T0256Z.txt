@@ -1,0 +1,17 @@
+CheckMOSTask 342610718331904  (kn035_c05_round2_seed666)
+[succeed] kn035_c05_round2_seed666
+Type:     Protein Binder Design
+Task ID:  342610718331904
+Started:  2026-10-21 02:46:35
+Duration: 9.5min
+Input parameters (platform echo, in effect):
+{
+  "compare_binder": 1,
+  "contigs": "A1-118/0 60-100",
+  "hotspot_res": "A45,A40,A97,A107,A105,A38",
+  "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+  "random_seed": 666
+}
+Downloaded 2 file(s) to: /workspace/downloads/protein_binder_design_342610718331904
+  179255136680417_output.cif
+  179255136586359_aligned.cif

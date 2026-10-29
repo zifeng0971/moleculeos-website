@@ -1,0 +1,65 @@
+{
+  "review_date": "2026-10-28",
+  "control_task_id": "345176768607232",
+  "control_task_name": "diag_PDL1_A118_20261028",
+  "facts_independently_recomputed": {
+    "raw_sha256": "40e3cea779a3ec9da098caac71ca4791cd1f2a5e1941f83922c9db140b7905ea",
+    "download_direct_ui_sha256": "40e3cea779a3ec9da098caac71ca4791cd1f2a5e1941f83922c9db140b7905ea",
+    "rows": 473,
+    "unique_hit_ids": 457,
+    "all_queries_exact_A118": true,
+    "general_query_exact_A118": true,
+    "database_rows": {
+      "pdb": 239,
+      "sp": 234
+    },
+    "database_unique_hits": {
+      "sp": 224,
+      "pdb": 233
+    },
+    "pdb_rows_evalue_lt_1e_5": 63,
+    "pdb_unique_hits_evalue_lt_1e_5": 61,
+    "top_hit": {
+      "hit_id": "pdb|5JDS|A",
+      "hit_name": "5JDS_A",
+      "hit_desc": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "identity": 118,
+      "identity_percentage": 1.0,
+      "e_value": 5.20957e-85,
+      "query_from": 1,
+      "query_to": 118,
+      "hit_from": 1,
+      "hit_to": 118,
+      "gaps": 0
+    },
+    "general": {
+      "query_sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "score_max": 628.0,
+      "score_min": 62.0,
+      "e_value_max": 9.84716,
+      "e_value_min": 5.20957e-85,
+      "bit_score_max": 246.514,
+      "bit_score_min": 28.4906,
+      "identity_percentage_max": 1.0,
+      "identity_percentage_min": 0.1834862385321101,
+      "references": [
+        "UniProt",
+        "RCSB"
+      ]
+    }
+  },
+  "checks_passed": true,
+  "supports": [
+    "Current MOS standalone sequence search can return strong PDB and SwissProt similarity matches for exactly the original antigen A118 sequence.",
+    "The original empty nativeHomologs is not explained by a malformed A118sequence or an inherent inability of currentMOS tosearchthissequence.",
+    "Together with originalautocomputeB-onlysearch, evidence favors automaticantigenqueryselection/scheduling/outputhandoff/annotationassembly as nextlocalizationtargets."
+  ],
+  "does_not_prove": [
+    "Doesnotlocatewhichbackendstepfailedintheoriginal2026-10-21run.",
+    "Doesnotfullyexcludehistoricaldatabaseversion/configuredthresholdorservicestatechanges, becausecontrolison2026-10-28.",
+    "Standalonecontrolusesbroaderdatabasecoverage; evenPDB-onlystronghitsshowcurrentcapabilitybutdonotproveoriginalPDBsnapshot/thresholdconfiguration.",
+    "Doesnotproveall473rowsweredroppedbyoriginalMMetrics; theyweregeneratedinaseparatenewtask.",
+    "E-value1e-5isreviewthresholdonly,notknownoriginalMMetricsconfiguration."
+  ],
+  "recommended_final_wording_zh": "已用原始A链118aa做了新的独立检索对照，能得到显著PDB命中；结合旧自动任务只检索B链，问题更可能在自动抗原检索的调度、结果传递或注释装配链路。具体后台故障点仍需日志确认；不能排除两次运行间数据库/阈值/服务版本差异。"
+}

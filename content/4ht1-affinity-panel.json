@@ -1,0 +1,632 @@
+[
+  {
+    "rank": 1,
+    "tier": "STRONG",
+    "chain": "B",
+    "position": 109,
+    "wildType": "I",
+    "mutation": "W",
+    "key": "B:109W",
+    "bindingAffinity": {
+      "ddG": -1.22
+    },
+    "stability": {
+      "score": -1.24,
+      "percentile": 71
+    },
+    "context": {
+      "region": "CDR-H3",
+      "burial": "partly buried"
+    },
+    "rationale": "Aromatic cap at the CDR-H3 end thickens the paratope shell without entering the epitope."
+  },
+  {
+    "rank": 2,
+    "tier": "STRONG",
+    "chain": "C",
+    "position": 29,
+    "wildType": "I",
+    "mutation": "F",
+    "key": "C:29F",
+    "bindingAffinity": {
+      "ddG": -1.22
+    },
+    "stability": {
+      "score": -2.4,
+      "percentile": 55
+    },
+    "context": {
+      "region": "CDR-L1",
+      "burial": "buried"
+    },
+    "rationale": "Mid-size aromatic in the buried CDR-L1 site tightens loop packing."
+  },
+  {
+    "rank": 3,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 29,
+    "wildType": "I",
+    "mutation": "Y",
+    "key": "C:29Y",
+    "bindingAffinity": {
+      "ddG": -1.3
+    },
+    "stability": {
+      "score": -3.63,
+      "percentile": 38
+    },
+    "context": {
+      "region": "CDR-L1",
+      "burial": "buried"
+    },
+    "rationale": "Larger aromatic option at the same CDR-L1 site; test in parallel with I29F."
+  },
+  {
+    "rank": 4,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 65,
+    "wildType": "S",
+    "mutation": "W",
+    "key": "C:65W",
+    "bindingAffinity": {
+      "ddG": -1.04
+    },
+    "stability": {
+      "score": -4.33,
+      "percentile": 30
+    },
+    "context": {
+      "region": "FW",
+      "burial": "exposed"
+    },
+    "rationale": "Aromatic on the exposed FR3 surface extends the contact shell around CDR-L2."
+  },
+  {
+    "rank": 5,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 51,
+    "wildType": "A",
+    "mutation": "L",
+    "key": "C:51L",
+    "bindingAffinity": {
+      "ddG": -1.03
+    },
+    "stability": {
+      "score": -3.09,
+      "percentile": 46
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "buried"
+    },
+    "rationale": "Hydrophobic repacking reshapes the CDR-L2 loop read by the epitope."
+  },
+  {
+    "rank": 6,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 65,
+    "wildType": "S",
+    "mutation": "Y",
+    "key": "C:65Y",
+    "bindingAffinity": {
+      "ddG": -0.97
+    },
+    "stability": {
+      "score": -3.46,
+      "percentile": 41
+    },
+    "context": {
+      "region": "FW",
+      "burial": "exposed"
+    },
+    "rationale": "Orthogonal aromatic option at the exposed FR3 site."
+  },
+  {
+    "rank": 7,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 2,
+    "wildType": "I",
+    "mutation": "Y",
+    "key": "C:2Y",
+    "bindingAffinity": {
+      "ddG": -0.96
+    },
+    "stability": {
+      "score": -3.03,
+      "percentile": 47
+    },
+    "context": {
+      "region": "FW",
+      "burial": "buried"
+    },
+    "rationale": "N-terminal FR1 repacking indirectly positions CDR-L1."
+  },
+  {
+    "rank": 8,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 35,
+    "wildType": "S",
+    "mutation": "W",
+    "key": "B:35W",
+    "bindingAffinity": {
+      "ddG": -0.9
+    },
+    "stability": {
+      "score": -4.42,
+      "percentile": 28
+    },
+    "context": {
+      "region": "CDR-H1",
+      "burial": "buried"
+    },
+    "rationale": "Aromatic next to the Tyr33 contact residue at the CDR-H1 edge."
+  },
+  {
+    "rank": 9,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 35,
+    "wildType": "S",
+    "mutation": "Y",
+    "key": "B:35Y",
+    "bindingAffinity": {
+      "ddG": -0.88
+    },
+    "stability": {
+      "score": -2.6,
+      "percentile": 52
+    },
+    "context": {
+      "region": "CDR-H1",
+      "burial": "buried"
+    },
+    "rationale": "Conservative aromatic option with lower stability risk."
+  },
+  {
+    "rank": 10,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 51,
+    "wildType": "A",
+    "mutation": "Y",
+    "key": "C:51Y",
+    "bindingAffinity": {
+      "ddG": -0.87
+    },
+    "stability": {
+      "score": -2.79,
+      "percentile": 49
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "buried"
+    },
+    "rationale": "Aromatic at the CDR-L2 site."
+  },
+  {
+    "rank": 11,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 50,
+    "wildType": "T",
+    "mutation": "Y",
+    "key": "B:50Y",
+    "bindingAffinity": {
+      "ddG": -0.75
+    },
+    "stability": {
+      "score": -1.61,
+      "percentile": 66
+    },
+    "context": {
+      "region": "CDR-H2",
+      "burial": "buried"
+    },
+    "rationale": "Aromatic at the start of CDR-H2, next to the Arg54/Gln55 contacts."
+  },
+  {
+    "rank": 12,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 52,
+    "wildType": "S",
+    "mutation": "D",
+    "key": "C:52D",
+    "bindingAffinity": {
+      "ddG": -0.74
+    },
+    "stability": {
+      "score": 2.04,
+      "percentile": 99
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "partly buried"
+    },
+    "rationale": "Only candidate the stability model rewards: a negative charge at the CDR-L2 edge for long-range steering toward the basic TWEAK surface."
+  },
+  {
+    "rank": 13,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 52,
+    "wildType": "S",
+    "mutation": "Y",
+    "key": "C:52Y",
+    "bindingAffinity": {
+      "ddG": -0.65
+    },
+    "stability": {
+      "score": -1.91,
+      "percentile": 62
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "partly buried"
+    },
+    "rationale": "Hydrophobic option at the same CDR-L2 site."
+  },
+  {
+    "rank": 14,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 2,
+    "wildType": "I",
+    "mutation": "F",
+    "key": "C:2F",
+    "bindingAffinity": {
+      "ddG": -0.61
+    },
+    "stability": {
+      "score": -3.75,
+      "percentile": 37
+    },
+    "context": {
+      "region": "FW",
+      "burial": "buried"
+    },
+    "rationale": "Alternative FR1 packing mechanism."
+  },
+  {
+    "rank": 15,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 53,
+    "wildType": "V",
+    "mutation": "M",
+    "key": "B:53M",
+    "bindingAffinity": {
+      "ddG": -0.61
+    },
+    "stability": {
+      "score": -1.49,
+      "percentile": 68
+    },
+    "context": {
+      "region": "CDR-H2",
+      "burial": "partly buried"
+    },
+    "rationale": "Hydrophobic rearrangement reshapes the CDR-H2 loop."
+  },
+  {
+    "rank": 16,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 50,
+    "wildType": "T",
+    "mutation": "I",
+    "key": "B:50I",
+    "bindingAffinity": {
+      "ddG": -0.58
+    },
+    "stability": {
+      "score": -1.91,
+      "percentile": 62
+    },
+    "context": {
+      "region": "CDR-H2",
+      "burial": "buried"
+    },
+    "rationale": "Hydrophobic option at the same CDR-H2 site."
+  },
+  {
+    "rank": 17,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 2,
+    "wildType": "E",
+    "mutation": "F",
+    "key": "B:2F",
+    "bindingAffinity": {
+      "ddG": -0.48
+    },
+    "stability": {
+      "score": -1.72,
+      "percentile": 65
+    },
+    "context": {
+      "region": "FW",
+      "burial": "exposed"
+    },
+    "rationale": "Aromatic at the exposed N-terminus."
+  },
+  {
+    "rank": 18,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 53,
+    "wildType": "V",
+    "mutation": "T",
+    "key": "B:53T",
+    "bindingAffinity": {
+      "ddG": -0.48
+    },
+    "stability": {
+      "score": -0.18,
+      "percentile": 83
+    },
+    "context": {
+      "region": "CDR-H2",
+      "burial": "partly buried"
+    },
+    "rationale": "Shorter side chain relieves crowding at the CDR-H2 edge."
+  },
+  {
+    "rank": 19,
+    "tier": "RECOMMEND",
+    "chain": "B",
+    "position": 31,
+    "wildType": "T",
+    "mutation": "Y",
+    "key": "B:31Y",
+    "bindingAffinity": {
+      "ddG": -0.46
+    },
+    "stability": {
+      "score": -1.6,
+      "percentile": 67
+    },
+    "context": {
+      "region": "CDR-H1",
+      "burial": "partly buried"
+    },
+    "rationale": "Aromatic beside the Tyr33 contact at CDR-H1."
+  },
+  {
+    "rank": 20,
+    "tier": "RECOMMEND",
+    "chain": "C",
+    "position": 56,
+    "wildType": "S",
+    "mutation": "Y",
+    "key": "C:56Y",
+    "bindingAffinity": {
+      "ddG": -0.46
+    },
+    "stability": {
+      "score": -2.56,
+      "percentile": 52
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "exposed"
+    },
+    "rationale": "Aromatic at the outer edge of CDR-L2."
+  },
+  {
+    "rank": 21,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 55,
+    "wildType": "A",
+    "mutation": "W",
+    "key": "C:55W",
+    "bindingAffinity": {
+      "ddG": -1.7
+    },
+    "stability": {
+      "score": -5.45,
+      "percentile": 11
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "partly buried"
+    },
+    "rationale": "Top affinity score, but the stability model ranks it 11th percentile: the bulk strains the fold."
+  },
+  {
+    "rank": 22,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 55,
+    "wildType": "A",
+    "mutation": "Y",
+    "key": "C:55Y",
+    "bindingAffinity": {
+      "ddG": -1.61
+    },
+    "stability": {
+      "score": -5.14,
+      "percentile": 19
+    },
+    "context": {
+      "region": "CDR-L2",
+      "burial": "partly buried"
+    },
+    "rationale": "Same site, Tyr variant; stability veto."
+  },
+  {
+    "rank": 23,
+    "tier": "WATCH",
+    "chain": "B",
+    "position": 100,
+    "wildType": "G",
+    "mutation": "W",
+    "key": "B:100W",
+    "bindingAffinity": {
+      "ddG": -1.15
+    },
+    "stability": {
+      "score": -5.39,
+      "percentile": 13
+    },
+    "context": {
+      "region": "CDR-H3",
+      "burial": "buried"
+    },
+    "rationale": "Trp is squeezed at a buried CDR-H3 site."
+  },
+  {
+    "rank": 24,
+    "tier": "WATCH",
+    "chain": "B",
+    "position": 100,
+    "wildType": "G",
+    "mutation": "Y",
+    "key": "B:100Y",
+    "bindingAffinity": {
+      "ddG": -1.03
+    },
+    "stability": {
+      "score": -5.22,
+      "percentile": 17
+    },
+    "context": {
+      "region": "CDR-H3",
+      "burial": "buried"
+    },
+    "rationale": "Same site, Tyr variant; stability veto."
+  },
+  {
+    "rank": 25,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 90,
+    "wildType": "T",
+    "mutation": "W",
+    "key": "C:90W",
+    "bindingAffinity": {
+      "ddG": -0.82
+    },
+    "stability": {
+      "score": -5.32,
+      "percentile": 15
+    },
+    "context": {
+      "region": "CDR-L3",
+      "burial": "buried"
+    },
+    "rationale": "Strain at a buried CDR-L3 site."
+  },
+  {
+    "rank": 26,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 58,
+    "wildType": "V",
+    "mutation": "W",
+    "key": "C:58W",
+    "bindingAffinity": {
+      "ddG": -0.79
+    },
+    "stability": {
+      "score": -5.14,
+      "percentile": 19
+    },
+    "context": {
+      "region": "FW",
+      "burial": "partly buried"
+    },
+    "rationale": "Partly buried FR3 site."
+  },
+  {
+    "rank": 27,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 90,
+    "wildType": "T",
+    "mutation": "Y",
+    "key": "C:90Y",
+    "bindingAffinity": {
+      "ddG": -0.79
+    },
+    "stability": {
+      "score": -5.51,
+      "percentile": 8
+    },
+    "context": {
+      "region": "CDR-L3",
+      "burial": "buried"
+    },
+    "rationale": "Same site, Tyr variant; stability veto."
+  },
+  {
+    "rank": 28,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 66,
+    "wildType": "G",
+    "mutation": "Y",
+    "key": "C:66Y",
+    "bindingAffinity": {
+      "ddG": -0.59
+    },
+    "stability": {
+      "score": -5.54,
+      "percentile": 6
+    },
+    "context": {
+      "region": "FW",
+      "burial": "partly buried"
+    },
+    "rationale": "FR3 site with poor stability."
+  },
+  {
+    "rank": 29,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 58,
+    "wildType": "V",
+    "mutation": "L",
+    "key": "C:58L",
+    "bindingAffinity": {
+      "ddG": -0.54
+    },
+    "stability": {
+      "score": -5.76,
+      "percentile": 1
+    },
+    "context": {
+      "region": "FW",
+      "burial": "partly buried"
+    },
+    "rationale": "Bottom of the stability ranking; not recommended."
+  },
+  {
+    "rank": 30,
+    "tier": "WATCH",
+    "chain": "C",
+    "position": 64,
+    "wildType": "G",
+    "mutation": "Y",
+    "key": "C:64Y",
+    "bindingAffinity": {
+      "ddG": -0.41
+    },
+    "stability": {
+      "score": -5.56,
+      "percentile": 5
+    },
+    "context": {
+      "region": "FW",
+      "burial": "buried"
+    },
+    "rationale": "Buried site with limited room."
+  }
+]

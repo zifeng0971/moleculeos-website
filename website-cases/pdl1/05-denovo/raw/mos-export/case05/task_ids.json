@@ -1,0 +1,16 @@
+{
+  "case": "05_invent_new_binders_pdl1",
+  "task_type": "Protein Binder Design",
+  "tasks": [
+    {"name": "PDL1 de novo binder seed111", "task_id": "342254837666816", "random_seed": 111},
+    {"name": "PDL1 de novo binder seed222", "task_id": "342254839784448", "random_seed": 222},
+    {"name": "PDL1 de novo binder seed333", "task_id": "342254842782720", "random_seed": 333}
+  ],
+  "shared_payload": {
+    "input_structure": "user_objects/123/330665428816896/sanitized/179246388469366_PD-L1_5GRJ_chainA_target.mos.cif",
+    "contigs": "A1-213/0 60-100",
+    "hotspot_res": "A37,A39,A41,A51,A96,A106",
+    "compare_binder": 1,
+    "diffusion_steps": 50
+  }
+}

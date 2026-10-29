@@ -1,0 +1,82 @@
+/* MOS v3 design tokens (owner: E). Token NAMES follow docs/STUDIO-V3-SPEC.md §6.1 / §6.2.
+   Dark is the default; light is a warm white. Every colour used by the product comes from here. */
+.v3 {
+  /* surfaces */
+  --bg: #0f0f11; --side: #0b0b0d; --panel: #151518; --panel-2: #1b1b1f; --raise: #24242a; --raise-2: #2c2c33;
+  --hover: rgba(255,255,255,.04); --press: rgba(255,255,255,.07);
+  --line: rgba(255,255,255,.07); --line-2: rgba(255,255,255,.11); --line-3: rgba(255,255,255,.18);
+  /* text (muted/faint both clear 4.5:1 on --panel and --raise) */
+  --text: #ededf0; --muted: #a8a8b3; --faint: #8b8b97; --ghost: #5c5c67; --on-strong: #0f0f11;
+  /* accent + status */
+  --accent: #8b7cff; --accent-soft: rgba(139,124,255,.14); --accent-text: #b5abff; --accent-line: rgba(139,124,255,.45);
+  --ok: #3fcf9a; --ok-soft: rgba(63,207,154,.12);
+  --warn: #f0a24b; --warn-soft: rgba(240,162,75,.11); --warn-line: rgba(240,162,75,.36);
+  --bad: #ff6b6b; --bad-soft: rgba(255,107,107,.12);
+  --sel: #5bf08a; --sel-soft: rgba(91,240,138,.10); --sel-text: #7ef0a6;
+  --strong: #ededf0; --strong-hover: #ffffff;
+  --grad: linear-gradient(115deg, #5a6cf0 0%, #8a5cf0 50%, #e45fb6 100%);
+  --res-mix: white;
+  --focus-ring: #a99dff;
+  /* elevation */
+  --glass: rgba(18,18,21,.74);
+  --glass-line: rgba(255,255,255,.11);
+  --shadow-pop: 0 0 0 1px var(--line-2), 0 16px 40px -12px rgba(0,0,0,.7), 0 4px 12px -4px rgba(0,0,0,.4);
+  --shadow-focus: 0 0 0 3px rgba(139,124,255,.18);
+  --stage: radial-gradient(ellipse 80% 70% at 50% 45%, #18181f 0%, #0d0d10 72%);
+  --seq-text: #c9c9d2;
+  /* shape + type */
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-pill: 999px;
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', Inter, 'Segoe UI', system-ui, sans-serif;
+  --mono: ui-monospace, 'SF Mono', 'JetBrains Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+
+  /* evidence kinds: colour + shape + letter (S ● / M ◆ / P ■ / PAT ⬡ / R ◎!) */
+  --ev-struct: #4fd3d0; --ev-model: #a58bff; --ev-paper: #6aa5ff; --ev-patent: #ff7fb7; --ev-risk: #ff6b6b;
+  /* origin: real = solid dot / derived = half disc / demo = dashed gold box + hatch */
+  --origin-real: var(--ok); --origin-derived: #4fd3d0; --origin-demo: #e8b64a;
+  --origin-demo-bg: repeating-linear-gradient(135deg, rgba(232,180,74,.13) 0 4px, transparent 4px 8px);
+  --origin-demo-line: rgba(232,180,74,.58);
+  /* FTO levels: deliberately no green */
+  --fto-unsearched: var(--faint); --fto-low: #7f9cc2; --fto-medium: var(--warn); --fto-high: var(--bad);
+  --hatch-patent: repeating-linear-gradient(135deg, rgba(255,127,183,.36) 0 3px, transparent 3px 7px);
+  --hatch-gap: repeating-linear-gradient(135deg, rgba(255,255,255,.10) 0 2px, transparent 2px 6px);
+
+  /* layout */
+  --z1-h: 40px; --z7-h: 24px; --rail-w: 52px; --side-w: 212px; --mocha-w: 360px; --track-h: 72px; --dock-h-fold: 36px;
+  --stage-min-w: 480px; --stage-min-h: 420px; --stage-min-h-read: 300px;
+  /* motion */
+  --ease: cubic-bezier(.2,.8,.2,1); --dur: .16s;
+  --dur-fast: .12s; --dur-panel: .28s; --ease-panel: cubic-bezier(.2,.8,.2,1);
+
+  color-scheme: dark;
+}
+
+.v3[data-theme='light'] {
+  --bg: #fbfaf7; --side: #f4f2ed; --panel: #ffffff; --panel-2: #f6f4ef; --raise: #ece9e2; --raise-2: #e3dfd6;
+  --hover: rgba(60,45,20,.045); --press: rgba(60,45,20,.08);
+  --line: rgba(40,30,15,.09); --line-2: rgba(40,30,15,.14); --line-3: rgba(40,30,15,.22);
+  --text: #1c1a17; --muted: #4f4b44; --faint: #6b675d; --ghost: #a8a399; --on-strong: #ffffff;
+  --accent: #5f4ee6; --accent-soft: rgba(95,78,230,.09); --accent-text: #5441dc; --accent-line: rgba(95,78,230,.42);
+  --ok: #0f8a5f; --ok-soft: rgba(15,138,95,.10);
+  --warn: #9a5a0c; --warn-soft: rgba(214,138,40,.11); --warn-line: rgba(154,90,12,.34);
+  --bad: #c73a3a; --bad-soft: rgba(214,69,69,.09);
+  --sel: #1ca653; --sel-soft: rgba(34,180,90,.10); --sel-text: #13803d;
+  --strong: #1c1a17; --strong-hover: #000000;
+  --res-mix: black;
+  --focus-ring: #5f4ee6;
+  --glass: rgba(255,255,255,.80);
+  --glass-line: rgba(40,30,15,.11);
+  --shadow-pop: 0 0 0 1px var(--line-2), 0 16px 40px -12px rgba(60,45,20,.24), 0 4px 12px -4px rgba(60,45,20,.12);
+  --shadow-focus: 0 0 0 3px rgba(95,78,230,.16);
+  --stage: radial-gradient(ellipse 80% 70% at 50% 45%, #ffffff 0%, #eeece6 76%);
+  --seq-text: #3d3a35;
+
+  --ev-struct: #0b7a6a; --ev-model: #5b43d6; --ev-paper: #1f5fd1; --ev-patent: #c4225f; --ev-risk: #c62f2f;
+  --origin-derived: #0b7a86; --origin-demo: #8a6410;
+  --origin-demo-bg: repeating-linear-gradient(135deg, rgba(154,116,28,.14) 0 4px, transparent 4px 8px);
+  --origin-demo-line: rgba(138,100,16,.55);
+  --fto-low: #3f6590;
+  --hatch-patent: repeating-linear-gradient(135deg, rgba(196,34,95,.30) 0 3px, transparent 3px 7px);
+  --hatch-gap: repeating-linear-gradient(135deg, rgba(40,30,15,.12) 0 2px, transparent 2px 6px);
+
+  color-scheme: light;
+}

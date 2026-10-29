@@ -1,0 +1,2194 @@
+{
+  "case": "d13-humanization",
+  "generated_utc": "2026-10-20T08:54:13.690645+00:00",
+  "files": [
+    {
+      "path": "analysis/audit_outputs.py",
+      "bytes": 9248,
+      "sha256": "6d35a3d1cb5a4f87f309e07b45c225f70cf0f62a8d8d92ed64f570fab1592ddd"
+    },
+    {
+      "path": "analysis/audit_reference_interface.py",
+      "bytes": 3038,
+      "sha256": "3902aab1489f77d05953e0a68af6f42f35cd3202c8052992295f383467441ee7"
+    },
+    {
+      "path": "analysis/candidate-comparison.png",
+      "bytes": 94247,
+      "sha256": "83a0802e04ba4da4a1726effba2eb5cd538baadad555811e7049fa68952d1b29"
+    },
+    {
+      "path": "analysis/candidate-comparison.svg",
+      "bytes": 65710,
+      "sha256": "4fccab52556d524c06f3213b8bcbc74ac30d2726e190a40b0f14f0c48acd6694"
+    },
+    {
+      "path": "analysis/candidate-summary.csv",
+      "bytes": 2644,
+      "sha256": "1cc56c80c04e967ed2865c722fc358dde0c7c3995376873e13cc4501563d8495"
+    },
+    {
+      "path": "analysis/reference-interface-verified.json",
+      "bytes": 5849,
+      "sha256": "144d41ea60f985a746527d27b081e54384c2e32d317e0913c862016fb5831fc6"
+    },
+    {
+      "path": "analysis/verified-results.json",
+      "bytes": 447409,
+      "sha256": "8dac93dd0c6a05ae29648d871224e047e3726461aec4d4ad4c15ed65c633057e"
+    },
+    {
+      "path": "outputs/all-humanized-sequences.fasta",
+      "bytes": 2631,
+      "sha256": "56c9d5ec0f9a7078e8d5892e48045f8ab6575358c05883fc84cbf94ac86276fe"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/01_anarci.py",
+      "bytes": 953,
+      "sha256": "1cb61c4d68dd229a71e84ddf028d0c4e6e3eb5ff2796181c8c69c2e6f0dc5ec6"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/02_numbering.py",
+      "bytes": 3848,
+      "sha256": "e5f7b4235236e21fdc0f2c409fb70075e4131f2ac4b0e4b4c12570d0c86cf9e8"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/03_interface_table.py",
+      "bytes": 4231,
+      "sha256": "ac7773ed0b1561f8d52fc7f4d06a2866b5414ff1c53ec11961cbdeaa4198ea56"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/04_bsa_freesasa.py",
+      "bytes": 2504,
+      "sha256": "d97260cb32cc44ee5a2af0314a52bc9e8a29506117d1cd2bb3fa67941e1a3b80"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/05_seq_region_diff.py",
+      "bytes": 1592,
+      "sha256": "f03926d6088360f1279888ea90196ad643a8a80d0f2b4a8937fd2747f73267bb"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/06_qc_candidates.py",
+      "bytes": 1868,
+      "sha256": "58a258ba306bbe3bd5be147dd94f57b3f03665ea350521061a93fd46a1336c48"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/07_run_comparisons.py",
+      "bytes": 2649,
+      "sha256": "7e0217ced970706d9db73ebdaeea60f847c05c5aa71502947003b1ec7edf0343"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/1bvl_step1.json",
+      "bytes": 4877,
+      "sha256": "c5df6a6bef1068452601759fdc84853447d7d434182c9260c3c19b628ba1d604"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/anarci_raw.json",
+      "bytes": 23095,
+      "sha256": "fa9442acad5692768d1cd95a0c279ffdd521fd8af1380781b2f0f701308ca29f"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/bsa_freesasa_1FDL.json",
+      "bytes": 22265,
+      "sha256": "2082088a3b30174a0eecb2830248fda04e3be123d2551694c3e55fab9e38c993"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/candidate_qc.json",
+      "bytes": 6843,
+      "sha256": "f5ca07b768249eea60b4c3eaae415e3ddb900455f79bcb7eb2a3cce0fe641998"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/hbond.tsv",
+      "bytes": 1148,
+      "sha256": "c7219eecc085bf328b415ced13e84753a88822babef3d56ca29a3cd4110efb88"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/ionic.tsv",
+      "bytes": 211,
+      "sha256": "93b6a62e51bffd9fbffb6bbc1de5a32ef85344040a2bc5dee2cfe7553bc1250c"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/pication.tsv",
+      "bytes": 162,
+      "sha256": "22c4c5eace241bce80b17007375598f1b2e1561d1c656a9c69615f4ee11bc8ac"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/pihbond.tsv",
+      "bytes": 136,
+      "sha256": "0c83e019567d988462691a893186cefb829e8eac21be61ed2f34f4d5e026c2bc"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/pistack.tsv",
+      "bytes": 342,
+      "sha256": "2a81b3098711598f57aff41f3d53c316beb05e98a0f5eee44ef082b5efdcec3f"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/residues.tsv",
+      "bytes": 25317,
+      "sha256": "daeb7eff43f5efbfc04cbd623d0b8015400eeb92440d33f4256c61bb1df931ab"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/ssbond.tsv",
+      "bytes": 113,
+      "sha256": "ce5781f56b447c2183bbfa65c1b3bd815cf2f1687462199d0f5d13d52decfe8d"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/summary.md",
+      "bytes": 964,
+      "sha256": "436503535273bd8cf7078adf3984613e2cffc5d82420afe6110ad8ccda407e7b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/contacts_1FDL/vdw.tsv",
+      "bytes": 1358,
+      "sha256": "c40d9dcb9a807894c500112c9815f5550c84af533eaa3670c3b7527ff51262b0"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/domains_meta.json",
+      "bytes": 4655,
+      "sha256": "4a20772e71262d828b8b780359836de71b42304e1c939de5032fc8b129232b69"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/fv_compare.py",
+      "bytes": 7195,
+      "sha256": "5eaabd899ed254825c75a4325bba4caa158bb71baf76c8ea61fa6bf09712c212"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AC/hbond.tsv",
+      "bytes": 543,
+      "sha256": "5377f908d7ffa27c59af3c1443e13e187d88fa373c21e74cf2eaef13d94ce5de"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AC/residues.tsv",
+      "bytes": 2634,
+      "sha256": "d12f64027a88bac7134a38735c723c68634521fa831dd3cfed522484aa79a42a"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AC/salt_bridge.tsv",
+      "bytes": 283,
+      "sha256": "736f00681491bb459b98db5df12631afb2302d2624648dc6b4a41b4bcb3d3758"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AC/summary.md",
+      "bytes": 818,
+      "sha256": "ea8746a8a0a7dbf0cf4963135b39ffec8247ffec6d33fe8def0928f69ec19d1e"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AD/hbond.tsv",
+      "bytes": 113,
+      "sha256": "524ba7f178780ba0fcf96152d1da08d5db313e4c383823f6f0353a85246904b6"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AD/residues.tsv",
+      "bytes": 408,
+      "sha256": "b64c0403b980ccba75145d92070c930d929314f32ea9f3da2df5d49b8e0f5a4b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AD/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_AD/summary.md",
+      "bytes": 812,
+      "sha256": "b777d5eb7098bb5cfb3fe9b3be40960a1d5bf4233c96234de9b168443e2cd73e"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BC/hbond.tsv",
+      "bytes": 113,
+      "sha256": "524ba7f178780ba0fcf96152d1da08d5db313e4c383823f6f0353a85246904b6"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BC/residues.tsv",
+      "bytes": 233,
+      "sha256": "03dc789b57f7dd0d4b34e7b0668e56abe24e11e683cd1a64b4bd94e2aed65a20"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BC/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BC/summary.md",
+      "bytes": 811,
+      "sha256": "4bdba0cd4df79cbac214f69a09dbb31601ce5491cb8a5053384ea5774389b42b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BD/hbond.tsv",
+      "bytes": 451,
+      "sha256": "60dc71919f61a39cd58bde4972652306268ec69b0e4c7a7b130c4d8728cdb2cb"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BD/residues.tsv",
+      "bytes": 2424,
+      "sha256": "504f9705b64a7daa364fa8aa6f1333e4ad3f29e6f8904086499212a18b1e9ef9"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BD/salt_bridge.tsv",
+      "bytes": 125,
+      "sha256": "5b37953bd99d3c87419fe53cad1748b66ed7db5a52f1906807c7580852f31a93"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/iface_1BVL_BD/summary.md",
+      "bytes": 818,
+      "sha256": "5274f9eabbc79508e214b3820aa38f4fdfe0d89b2b12da854a5bdc6413eb2559"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/ifdl_step1.json",
+      "bytes": 5320,
+      "sha256": "7f2bb29cc0122fed21d779d7183eb1863fb886205138100834c457ae68a4238d"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL/hbond.tsv",
+      "bytes": 1141,
+      "sha256": "6d3c133b63fd94cac12f7f2ee2ed6e086041ec83e812dc605c6b13de5a087297"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL/residues.tsv",
+      "bytes": 4344,
+      "sha256": "462da006af0bf6aba26a5e8f4a39c3c8d124077211d3a70155740f6ab6c7abe7"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL/salt_bridge.tsv",
+      "bytes": 192,
+      "sha256": "444f9eb574e6ee67fc652eace82d83648e2ecdd13f9eb28e7de6f411e8bd8702"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL/summary.md",
+      "bytes": 862,
+      "sha256": "9921851bd8132e9a97c131f4673adcdcd17b9a54dbcc16794ce45e45116a787a"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL_Vdom/hbond.tsv",
+      "bytes": 549,
+      "sha256": "10bd1c59f04d8f62cf0b07528ae0707027f4eca4896d73d6a80ac368f7cfb5b1"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL_Vdom/residues.tsv",
+      "bytes": 1589,
+      "sha256": "a30d4792cc927748056fdaf381da3d75597b9edd2e4e42a287e5125960a39000"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL_Vdom/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_1FDL_Vdom/summary.md",
+      "bytes": 859,
+      "sha256": "f5e551cdf888ba838e44cf0b2474e360bb0d7758dbf2f8c982691d9f75dbcef7"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_residues_1FDL.json",
+      "bytes": 31677,
+      "sha256": "77cfe68d4a3ece8a33fcccf18a33d06d3137c527ec71c9c7a94d589d3f390648"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/interface_residues_1FDL.tsv",
+      "bytes": 11791,
+      "sha256": "a47e3069cd76f3ed2e5ea7f4ae7851fae9f046020824949ec07730e65bb88280"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/mmfold_ingest.py",
+      "bytes": 2254,
+      "sha256": "ba66b54aaf13c14be4d98289f0679095b95a3f80f28415763281559eba5a49f7"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/mos_label_auth_map.json",
+      "bytes": 8910,
+      "sha256": "7fa903abe9b3a4905eb0b7ddce10466de4ec10a558886d334bd3005bf7fbe96a"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/numbering_all_schemes.tsv",
+      "bytes": 83050,
+      "sha256": "bf1e10591166d2c190ab567e485d9d1dcf513e6647a49de1d9511ffce2df3c64"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/report_1FDL.jsonl",
+      "bytes": 41638,
+      "sha256": "181dc3400c8191a97f5ff0978fdbdd73b44b2480c474eca38d35ee0838662281"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/analyses/seqdiff_parent_vs_1BVL.tsv",
+      "bytes": 4773,
+      "sha256": "a20c8b553a5c7a41a065eee9e222edeca7878b4dde7b611d044029b4b8d3259f"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL.cif",
+      "bytes": 372893,
+      "sha256": "95e655c26d6d2e302bd53a868403b42966d81324c1e12aa48fe865033cc3fbfb"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL.pdb",
+      "bytes": 322947,
+      "sha256": "699cc85c4e0ddc4160023070b99a518ccc50a1439dbfb55ea4eb65ca83afbdc1"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL_assembly1.json",
+      "bytes": 3625,
+      "sha256": "0bb7ad5a4dd7b9f4c6ee85198350ee8d61b0e861fb8335f46033f61ddae536c8"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL_assembly2.json",
+      "bytes": 3627,
+      "sha256": "0ef326ced4d48806d7af78a4753b18333dcf6e806b5ffcfa9425f3bee7b5488e"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL_fasta.txt",
+      "bytes": 323,
+      "sha256": "13de944505fea9c12615304172115ce83b6da46cf746f1a66643c89bbff5539b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1BVL_metadata.json",
+      "bytes": 10951,
+      "sha256": "9a4ea36d232a76e8d7c7118da35c4e36a13e9d5576a9f0a4176787343a4674e0"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1FDL.cif",
+      "bytes": 467129,
+      "sha256": "6b525be71aff6850ebc4d83e2df75e2e8cfffbe7a2e4b68adf1aff9987a4c25f"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1FDL.pdb",
+      "bytes": 391797,
+      "sha256": "2f634d7f3d7e53edd4676afa6f782c9a1194e1d0373959fdaa5f0f605ef8d91c"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1FDL_fasta.txt",
+      "bytes": 790,
+      "sha256": "0777cc864934e6eb16d64e18ffd8b4447ce4b920de6190f8ea5856407a984719"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/1FDL_metadata.json",
+      "bytes": 9211,
+      "sha256": "d1a0d63badff295e94d0478eda9c9b4d7f333f05e8824a2dbe9ca3cd38cb4dad"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/D13_VH_VL_from_ANARCI.fasta",
+      "bytes": 610,
+      "sha256": "8ed4d906ce33526da1918307e371ddff370db2b4ff5108f62f7985dec25a16bc"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/seq/D13_VH_mouse.fasta",
+      "bytes": 131,
+      "sha256": "7a3a3aeaa8e0a9a5acd8cd730e0ffb39c866bb5d1b8a5cf876ee7efde3c6b602"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/seq/D13_VL_mouse.fasta",
+      "bytes": 122,
+      "sha256": "96d9a841b845ddfb1ebaec114b58123c8ce78348e8b536bdb79453cd2ff80218"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/seq/HuLys11_VH.fasta",
+      "bytes": 129,
+      "sha256": "8c3286c2e9a4e82e8787fdfb1a06f80a28553da983a0ba0aad42f5bb4abbf2b1"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/inputs/seq/HuLys11_VL.fasta",
+      "bytes": 120,
+      "sha256": "ebdc777385393f340d4f93b101f6f7637ae5ce1193e2a4fd4f25f37a15efc356"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/logs/execution_log.md",
+      "bytes": 3525,
+      "sha256": "47e7fc3009f4035bdcad62e086f443ff766c3cfda2c55cd4db434c420ec9cb34"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/179248388743747_model_sample_1.cif",
+      "bytes": 139392,
+      "sha256": "5554dc6b649a46168528f7160e90d64179a5ed576bdf77da5ca60b0fcc9c2fab"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/179248388855103_model_sample_2.cif",
+      "bytes": 139392,
+      "sha256": "af76318d05e4fcc6e4a8caf9349edea5b31963a26375eedaf7f08907d18eb2ee"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/179248388963120_model_sample_3.cif",
+      "bytes": 139392,
+      "sha256": "95f84558cd962f07b88ea91d50c5ba64eb0c30a5018e118a95d6003de08f25ae"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/179248389069855_model_sample_4.cif",
+      "bytes": 139392,
+      "sha256": "790cce4a0df304b1dfae45bdad2a9be29233aafc510ac452e359754a0f3d7e81"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/179248389176291_model_sample_5.cif",
+      "bytes": 139392,
+      "sha256": "6335ccff1aa4eee9a7770c914c6c5f6909d2dfd47ff72bc4a345af38e4d9cd20"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/abnativ_batch_heavy_details.csv",
+      "bytes": 120928,
+      "sha256": "88037393d0110d19d536616996fefddccc421fb04ee89df13a4d128024ed526e"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/abnativ_batch_light_details.csv",
+      "bytes": 67416,
+      "sha256": "255d0b8d18613a2f5a1e1069e65aa0339b3448340f96f85e82afe56477c7ad4a"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/abnativ_batch_summary.csv",
+      "bytes": 2211,
+      "sha256": "4d32a4922b9576e29f9181354314d6650d6e090b7f22cc23ad99f683a969a3de"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/biophi_humanization_results.json",
+      "bytes": 6849,
+      "sha256": "f37db681af0c55cc1cec0abf3bd5b91fdd89eb63c2484d3b732c5ee9f02b878e"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/final_ranked_summary.csv",
+      "bytes": 8055,
+      "sha256": "e2cba9f5744370a1ed4d64b605dd5e48e503736ba99d0f81db3659572abb0bd3"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/result.fasta",
+      "bytes": 2410,
+      "sha256": "721bdea9a1559e8caf197703b28d00728300902a45ed21bc97c0f855d06265b9"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/summary_confidences_sample_1.json",
+      "bytes": 718,
+      "sha256": "0634b009a523de97ba94e3e96aa1cea5298bd44ec61299d7ef5d6b24e43c8667"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "baaedfe984d3d030750c5ed9dddc39ea65c1412733f55d19a157bea4adebef4b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/summary_confidences_sample_3.json",
+      "bytes": 722,
+      "sha256": "7eac8bf034c895de0ca3237d6af9d9c1b076f088ee1b39f899bafc479791da50"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "83e2cb4ee59ec6098d647383707ed6514b35907bd0be1c13fac8b0183bcda494"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/humanization/summary_confidences_sample_5.json",
+      "bytes": 715,
+      "sha256": "b188e30a250a77c514f3b4335465232ac36657aab492250629f98442d76b1215"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/179248404238407_model_sample_3.cif",
+      "bytes": 138567,
+      "sha256": "1ea355a34d122caddf27aa4be757e78f74a6a127e236883640f5aeea8631710c"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/179248404347389_model_sample_4.cif",
+      "bytes": 138567,
+      "sha256": "14252957c4747b99ec20c5d9b62e84dc97fc931ef7b18522b1d1c13cd5f7a23d"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/179248404456366_model_sample_5.cif",
+      "bytes": 138567,
+      "sha256": "93c7ba7a3d74b91d780314675f892e18a720177f1a70272a4743eae7ae7b7d00"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/179248404567931_model_sample_1.cif",
+      "bytes": 138567,
+      "sha256": "69dbccd409bc9254503e0b53b91bf0ef1954f502a2b8ee503cf024d57d1f490b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/179248404674961_model_sample_2.cif",
+      "bytes": 138567,
+      "sha256": "9d65eaef64399cdfa916cfa2092f0ef5ef9eefc805527b74a288e629a6a0dd70"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/manifest.json",
+      "bytes": 2005,
+      "sha256": "77f85b0f410562ce512e9dc3c1f98eb6abd462a0eb9ff7b7b94aa92cc9cb43d4"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_1.json",
+      "bytes": 722,
+      "sha256": "b584515d45b292c5ed0f24e7cb282e3d0392a8306402da841398908f5a0f10a6"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_2.json",
+      "bytes": 720,
+      "sha256": "d6fe57ef77d9af43da020132823de5f766bdde34133db9ff052abd50c2dc9010"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_3.json",
+      "bytes": 723,
+      "sha256": "f57bec8d03a61878f3f55b9e478cc4450b3892c18dae818bfd0f9bd7fb86bd99"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_4.json",
+      "bytes": 719,
+      "sha256": "79aacad6ecdd0552421199907e48240977bebe7a423c5e699f13b7d7862406b2"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_5.json",
+      "bytes": 722,
+      "sha256": "624d0e895f098846ba91f5a160fabe02a2dd13ae9eeab196e79227f42d56dc80"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_1.json",
+      "bytes": 581,
+      "sha256": "79e7f5d1c882e64cff3b59553340e05faab7ce8bd510ccc96500ace5d7a4cc55"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_10.json",
+      "bytes": 582,
+      "sha256": "b27de18fe6dbfb8115311792a7993d68d1f8f7b2bf7926d3dee28c35ca7ebd8a"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_2.json",
+      "bytes": 581,
+      "sha256": "110517d92442af1a43596d4dbb7429a873d9956f4edc2e4067265a233da4f4bc"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_3.json",
+      "bytes": 581,
+      "sha256": "4f021fbde7389fe4af79968e4dcf3207450c0ae835226900a762bdecb62bc993"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_4.json",
+      "bytes": 581,
+      "sha256": "d650caf1c1da99c32d6dc2a49fdd242a140c2d203a4f353c570070c1be4778e8"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_5.json",
+      "bytes": 581,
+      "sha256": "54ba1b378e12b307236ba3b909028fb12d9b31b979e6810464660e6ab07d721d"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_6.json",
+      "bytes": 581,
+      "sha256": "7f4e0b6f82258b98bfee8efb8fa9a5212bf2ad7b2db1e17bc8a937b27a8ca39c"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_7.json",
+      "bytes": 580,
+      "sha256": "45c0c569953e72a1fdb9a1c4cc0091ef958b5f856606d7028f812fd927c123fb"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_8.json",
+      "bytes": 581,
+      "sha256": "e64f887151db92c6e8590fcd8475f6fad6f9eef8e479b4639304927726b02004"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/mmfold_payloads/humanization_9.json",
+      "bytes": 581,
+      "sha256": "9b9c0288aa90a4a8d455e546d284f7c0057a57a8642b7fe73f31efb19d224db5"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/native_tasks/task-ledger.json",
+      "bytes": 12271,
+      "sha256": "f8e516c7e5cb8e37429dad4b8dd32d18ed0f8dee993c63365709346c51ddbc9f"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/1BVL_sanitized.cif",
+      "bytes": 268251,
+      "sha256": "6a1e6508e86271b6ab1597fe22db05fc264a6772e10ae0140a7e0c055a2b5d81"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/1BVL_sanitized.cif.mapping",
+      "bytes": 5621,
+      "sha256": "c0f69dc9b68d83df10614e57b6467d592a49d5a70edf8022b7038e69b2b58bf7"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/1FDL_Vdomain_lysozyme.pdb",
+      "bytes": 221464,
+      "sha256": "c5ebe6d96738f1c13ef0c79bcc7ac53e47195f3a0cfae132e417fd568cac5830"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/1FDL_mos_sanitized.cif",
+      "bytes": 354561,
+      "sha256": "9c5c2222a05fbe424ba4f5faefad8f29ccbda6bb7357982319fe7a1274c5bcd7"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/parent_1FDL_Fv.pdb",
+      "bytes": 140301,
+      "sha256": "8d9a7109c116a84d5623e10ebd969758a79144d7081fb45121a25d26a7b5725b"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/ref_1BVL_Fv1.pdb",
+      "bytes": 141354,
+      "sha256": "ad4dc1219039a24c2431879863946247761a07b0c036e343ada983586c032274"
+    },
+    {
+      "path": "outputs/checkpoint/website_case_d13/structures/ref_1BVL_Fv2.pdb",
+      "bytes": 141354,
+      "sha256": "6bb58eb2ce07065ae807a5949ef86fcb82b245a936e251ec9e8aa5cb3519e180"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/README.txt",
+      "bytes": 4021,
+      "sha256": "09508470045af557d767acdef58f18f8dd296a407d14f777fc9b85bd0289240e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/01_anarci.py",
+      "bytes": 953,
+      "sha256": "1cb61c4d68dd229a71e84ddf028d0c4e6e3eb5ff2796181c8c69c2e6f0dc5ec6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/02_numbering.py",
+      "bytes": 3848,
+      "sha256": "e5f7b4235236e21fdc0f2c409fb70075e4131f2ac4b0e4b4c12570d0c86cf9e8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/03_interface_table.py",
+      "bytes": 4231,
+      "sha256": "ac7773ed0b1561f8d52fc7f4d06a2866b5414ff1c53ec11961cbdeaa4198ea56"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/04_bsa_freesasa.py",
+      "bytes": 2504,
+      "sha256": "d97260cb32cc44ee5a2af0314a52bc9e8a29506117d1cd2bb3fa67941e1a3b80"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/05_seq_region_diff.py",
+      "bytes": 1592,
+      "sha256": "f03926d6088360f1279888ea90196ad643a8a80d0f2b4a8937fd2747f73267bb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/06_qc_candidates.py",
+      "bytes": 1868,
+      "sha256": "58a258ba306bbe3bd5be147dd94f57b3f03665ea350521061a93fd46a1336c48"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/07_run_comparisons.py",
+      "bytes": 2379,
+      "sha256": "3b61ff64e27145c7f7128413c74151058881de6cf3daf1fdd821df98acb1b705"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/08_1bvl_mapping.py",
+      "bytes": 2605,
+      "sha256": "d5fda99ccbf4d1f0cfdf16887485484d1e317d25952cef9aed69adcb13808fcf"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/09_metrics.py",
+      "bytes": 3743,
+      "sha256": "8c89ee55e14e1143b77f662ebbdaf0db193eb24803654b7baebe1a335b666fc2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/10_ref_baselines.py",
+      "bytes": 1206,
+      "sha256": "f654c846e8f8a2a40a0f28bc1dd2406a44fe19f22ccc9fa068acac3667ef7d1f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/11_build_superpos.py",
+      "bytes": 2662,
+      "sha256": "a718b219e7afeb2bc77f1c1071e1d4e274eb2c6ca7c119ebde96f07548f4fe14"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/12_build_results.py",
+      "bytes": 14673,
+      "sha256": "05e46df18685db554ee06598f43fcdce0b342ebb890730a74aac5620c0e74f34"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/13_bsa_recheck.py",
+      "bytes": 2367,
+      "sha256": "33adf3a9998192f2844dc4babe93f3a73293186ee8c4b8a9ae80aae4220990a9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/14_contacts_recheck.py",
+      "bytes": 2879,
+      "sha256": "7311affeb4139585f39b8d2ce2d69a149ffbb0e69f06cfd6e7388deff03a19c6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/15_rebuild_interface_table.py",
+      "bytes": 2999,
+      "sha256": "c96270fc92d904cf83f913fc908829871421842b271830848b2a0f1dcff77ca2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/1BVL_chain_mapping.json",
+      "bytes": 1403,
+      "sha256": "2df16eb237e492e0d38e56263ea4d5a33c92314140f2bfdfdaee9d6967bfe5f8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/1BVL_chain_mapping.tsv",
+      "bytes": 187,
+      "sha256": "a72f3aae0d95d597f5f7f278b6dab233e581776fd55a7054dad9c60ca81c96e8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/1bvl_step1.json",
+      "bytes": 4877,
+      "sha256": "c5df6a6bef1068452601759fdc84853447d7d434182c9260c3c19b628ba1d604"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/anarci_cache.json",
+      "bytes": 45218,
+      "sha256": "6a94412dd28f715140cfc6cf88b09c14c91c407a3418e82d0388a7f777ea8ac1"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/anarci_raw.json",
+      "bytes": 23095,
+      "sha256": "fa9442acad5692768d1cd95a0c279ffdd521fd8af1380781b2f0f701308ca29f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/bsa_freesasa_1FDL.json",
+      "bytes": 22265,
+      "sha256": "2082088a3b30174a0eecb2830248fda04e3be123d2551694c3e55fab9e38c993"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/bsa_recheck_1FDL.json",
+      "bytes": 62841,
+      "sha256": "43c42279479a3727e832864d6907cdbf1dc67cd1d43a56996ee3ae72ffc738e0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/candidate_metrics.json",
+      "bytes": 12095,
+      "sha256": "bffc562f1f913d332560620e10696c97e2362ff6876149d073ceafcb59d22b49"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/candidate_metrics.tsv",
+      "bytes": 2359,
+      "sha256": "9d2027f6e9f9e96e7e3ba878fee8db76e2363af71d6e09923884f7692e7076bf"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/candidate_qc.json",
+      "bytes": 6843,
+      "sha256": "f5ca07b768249eea60b4c3eaae415e3ddb900455f79bcb7eb2a3cce0fe641998"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparison_summary.tsv",
+      "bytes": 1110,
+      "sha256": "225879c6946dd699a3c5cb1207619960674ba4bdf47e647a39af7df8afbc9b9d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_1.json",
+      "bytes": 131325,
+      "sha256": "a57e287c279c64bccbab6a143556825abba606d1e3b5bb946d5cc1da5c2e1931"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_10.json",
+      "bytes": 131577,
+      "sha256": "0b07e84a6d70691e8e017e3ad2683b752c64f927a01065855e1a72b6fdf9a3cb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_2.json",
+      "bytes": 130483,
+      "sha256": "908c8d00a977d0268e97b17c42ae3c19294432b1c2c2b15a7140247626b24f25"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_3.json",
+      "bytes": 132054,
+      "sha256": "7b90b56a25189307a1488d3abb344fbe1472b6a874fa1938e899ae7bdeefb55b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_4.json",
+      "bytes": 131327,
+      "sha256": "34703ea0d699635e7487614a43421ace5f0d0d412a103f4943d25f9d4e7753a3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_5.json",
+      "bytes": 130964,
+      "sha256": "c402028167e2f77e05afdc590e9e5ce46758181bb75d411b84e064790968f4ea"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_6.json",
+      "bytes": 132082,
+      "sha256": "ebebd9a84627b97a31a0d40797f7b0b25b995c527f8f0bcf6f66bc5314c7b9a3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_7.json",
+      "bytes": 132086,
+      "sha256": "67544f1d1e5aa48add30ed3a70d88654aeefd082a5281a94e871551c3047e3ed"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_8.json",
+      "bytes": 132076,
+      "sha256": "e0cd56a6cc56172ad28009adb5e33868991c8f91f17f3a943801d8dc8990d8d9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/comparisons/humanization_9.json",
+      "bytes": 131085,
+      "sha256": "36618e7825c3a4894bfd2bdcd870279ce0796ccec478aaf470b27d5d0821c898"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/hbond.tsv",
+      "bytes": 1148,
+      "sha256": "c7219eecc085bf328b415ced13e84753a88822babef3d56ca29a3cd4110efb88"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/ionic.tsv",
+      "bytes": 211,
+      "sha256": "93b6a62e51bffd9fbffb6bbc1de5a32ef85344040a2bc5dee2cfe7553bc1250c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/pication.tsv",
+      "bytes": 162,
+      "sha256": "22c4c5eace241bce80b17007375598f1b2e1561d1c656a9c69615f4ee11bc8ac"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/pihbond.tsv",
+      "bytes": 136,
+      "sha256": "0c83e019567d988462691a893186cefb829e8eac21be61ed2f34f4d5e026c2bc"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/pistack.tsv",
+      "bytes": 342,
+      "sha256": "2a81b3098711598f57aff41f3d53c316beb05e98a0f5eee44ef082b5efdcec3f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/residues.tsv",
+      "bytes": 25317,
+      "sha256": "daeb7eff43f5efbfc04cbd623d0b8015400eeb92440d33f4256c61bb1df931ab"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/ssbond.tsv",
+      "bytes": 113,
+      "sha256": "ce5781f56b447c2183bbfa65c1b3bd815cf2f1687462199d0f5d13d52decfe8d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/summary.md",
+      "bytes": 964,
+      "sha256": "436503535273bd8cf7078adf3984613e2cffc5d82420afe6110ad8ccda407e7b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_1FDL/vdw.tsv",
+      "bytes": 1358,
+      "sha256": "c40d9dcb9a807894c500112c9815f5550c84af533eaa3670c3b7527ff51262b0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_recheck_1FDL.json",
+      "bytes": 20504,
+      "sha256": "7a361b8b3d1d32c56ee9ddf87c561dedaba63f4dbc2ac415a643ed5b6dd7219a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/contacts_recheck_1FDL.tsv",
+      "bytes": 2783,
+      "sha256": "abf6b18d4cc73abcf86417fa25e3773d07b250638043919d66eda25ee78de4aa"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/domains_meta.json",
+      "bytes": 4655,
+      "sha256": "4a20772e71262d828b8b780359836de71b42304e1c939de5032fc8b129232b69"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/fv_compare.py",
+      "bytes": 7474,
+      "sha256": "84e5252a07cfc2b086b0c678c4e8957c93db13222d7d7c94f9285c99d29af454"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AC/hbond.tsv",
+      "bytes": 543,
+      "sha256": "5377f908d7ffa27c59af3c1443e13e187d88fa373c21e74cf2eaef13d94ce5de"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AC/residues.tsv",
+      "bytes": 2634,
+      "sha256": "d12f64027a88bac7134a38735c723c68634521fa831dd3cfed522484aa79a42a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AC/salt_bridge.tsv",
+      "bytes": 283,
+      "sha256": "736f00681491bb459b98db5df12631afb2302d2624648dc6b4a41b4bcb3d3758"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AC/summary.md",
+      "bytes": 818,
+      "sha256": "ea8746a8a0a7dbf0cf4963135b39ffec8247ffec6d33fe8def0928f69ec19d1e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AD/hbond.tsv",
+      "bytes": 113,
+      "sha256": "524ba7f178780ba0fcf96152d1da08d5db313e4c383823f6f0353a85246904b6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AD/residues.tsv",
+      "bytes": 408,
+      "sha256": "b64c0403b980ccba75145d92070c930d929314f32ea9f3da2df5d49b8e0f5a4b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AD/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_AD/summary.md",
+      "bytes": 812,
+      "sha256": "b777d5eb7098bb5cfb3fe9b3be40960a1d5bf4233c96234de9b168443e2cd73e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BC/hbond.tsv",
+      "bytes": 113,
+      "sha256": "524ba7f178780ba0fcf96152d1da08d5db313e4c383823f6f0353a85246904b6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BC/residues.tsv",
+      "bytes": 233,
+      "sha256": "03dc789b57f7dd0d4b34e7b0668e56abe24e11e683cd1a64b4bd94e2aed65a20"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BC/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BC/summary.md",
+      "bytes": 811,
+      "sha256": "4bdba0cd4df79cbac214f69a09dbb31601ce5491cb8a5053384ea5774389b42b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BD/hbond.tsv",
+      "bytes": 451,
+      "sha256": "60dc71919f61a39cd58bde4972652306268ec69b0e4c7a7b130c4d8728cdb2cb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BD/residues.tsv",
+      "bytes": 2424,
+      "sha256": "504f9705b64a7daa364fa8aa6f1333e4ad3f29e6f8904086499212a18b1e9ef9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BD/salt_bridge.tsv",
+      "bytes": 125,
+      "sha256": "5b37953bd99d3c87419fe53cad1748b66ed7db5a52f1906807c7580852f31a93"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/iface_1BVL_BD/summary.md",
+      "bytes": 818,
+      "sha256": "5274f9eabbc79508e214b3820aa38f4fdfe0d89b2b12da854a5bdc6413eb2559"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/ifdl_step1.json",
+      "bytes": 5320,
+      "sha256": "7f2bb29cc0122fed21d779d7183eb1863fb886205138100834c457ae68a4238d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL/hbond.tsv",
+      "bytes": 1141,
+      "sha256": "6d3c133b63fd94cac12f7f2ee2ed6e086041ec83e812dc605c6b13de5a087297"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL/residues.tsv",
+      "bytes": 4344,
+      "sha256": "462da006af0bf6aba26a5e8f4a39c3c8d124077211d3a70155740f6ab6c7abe7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL/salt_bridge.tsv",
+      "bytes": 192,
+      "sha256": "444f9eb574e6ee67fc652eace82d83648e2ecdd13f9eb28e7de6f411e8bd8702"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL/summary.md",
+      "bytes": 862,
+      "sha256": "9921851bd8132e9a97c131f4673adcdcd17b9a54dbcc16794ce45e45116a787a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL_Vdom/hbond.tsv",
+      "bytes": 549,
+      "sha256": "10bd1c59f04d8f62cf0b07528ae0707027f4eca4896d73d6a80ac368f7cfb5b1"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL_Vdom/residues.tsv",
+      "bytes": 1589,
+      "sha256": "a30d4792cc927748056fdaf381da3d75597b9edd2e4e42a287e5125960a39000"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL_Vdom/salt_bridge.tsv",
+      "bytes": 61,
+      "sha256": "c73ff423cc2b490615b8edc59704dc846ae815665c1001e943d2e24c63145fc5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_1FDL_Vdom/summary.md",
+      "bytes": 859,
+      "sha256": "f5e551cdf888ba838e44cf0b2474e360bb0d7758dbf2f8c982691d9f75dbcef7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_residues_1FDL.json",
+      "bytes": 125199,
+      "sha256": "49e6c76f5500ec33c98949c871c448fde15322079b269a6aca5a55f53b46e4e9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/interface_residues_1FDL.tsv",
+      "bytes": 22774,
+      "sha256": "7e6b68cba9ce46c7074c8906a5e6e5e0eb589f830e0b22ce368a7a8f692e49d6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/mmfold_ingest.py",
+      "bytes": 2254,
+      "sha256": "ba66b54aaf13c14be4d98289f0679095b95a3f80f28415763281559eba5a49f7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/mos_label_auth_map.json",
+      "bytes": 8910,
+      "sha256": "7fa903abe9b3a4905eb0b7ddce10466de4ec10a558886d334bd3005bf7fbe96a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/mos_superposed_cdr_residues.json",
+      "bytes": 852,
+      "sha256": "7325cbf7e5bfb33865bdaff75d52340a0821174f488c1ea7cfdf467869972b94"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/numbering_all_schemes.tsv",
+      "bytes": 83050,
+      "sha256": "bf1e10591166d2c190ab567e485d9d1dcf513e6647a49de1d9511ffce2df3c64"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/original_task_models_vs_mmfold.json",
+      "bytes": 10188,
+      "sha256": "bbcf669d6cee095c4887db04ff953ff9f5ce62c745fa8db7c6f998472ba07056"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/reference_baselines.json",
+      "bytes": 19050,
+      "sha256": "f68a06a81f40c5e7b5a92056bb9083d380a526ab1eb831b25bbf9926610173f4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/report_1FDL.jsonl",
+      "bytes": 41638,
+      "sha256": "181dc3400c8191a97f5ff0978fdbdd73b44b2480c474eca38d35ee0838662281"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/analyses/seqdiff_parent_vs_1BVL.tsv",
+      "bytes": 4773,
+      "sha256": "a20c8b553a5c7a41a065eee9e222edeca7878b4dde7b611d044029b4b8d3259f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL.cif",
+      "bytes": 372893,
+      "sha256": "95e655c26d6d2e302bd53a868403b42966d81324c1e12aa48fe865033cc3fbfb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL.pdb",
+      "bytes": 322947,
+      "sha256": "699cc85c4e0ddc4160023070b99a518ccc50a1439dbfb55ea4eb65ca83afbdc1"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL_assembly1.json",
+      "bytes": 3625,
+      "sha256": "0bb7ad5a4dd7b9f4c6ee85198350ee8d61b0e861fb8335f46033f61ddae536c8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL_assembly2.json",
+      "bytes": 3627,
+      "sha256": "0ef326ced4d48806d7af78a4753b18333dcf6e806b5ffcfa9425f3bee7b5488e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL_fasta.txt",
+      "bytes": 323,
+      "sha256": "13de944505fea9c12615304172115ce83b6da46cf746f1a66643c89bbff5539b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1BVL_metadata.json",
+      "bytes": 10951,
+      "sha256": "9a4ea36d232a76e8d7c7118da35c4e36a13e9d5576a9f0a4176787343a4674e0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1FDL.cif",
+      "bytes": 467129,
+      "sha256": "6b525be71aff6850ebc4d83e2df75e2e8cfffbe7a2e4b68adf1aff9987a4c25f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1FDL.pdb",
+      "bytes": 391797,
+      "sha256": "2f634d7f3d7e53edd4676afa6f782c9a1194e1d0373959fdaa5f0f605ef8d91c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1FDL_fasta.txt",
+      "bytes": 790,
+      "sha256": "0777cc864934e6eb16d64e18ffd8b4447ce4b920de6190f8ea5856407a984719"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/1FDL_metadata.json",
+      "bytes": 9211,
+      "sha256": "d1a0d63badff295e94d0478eda9c9b4d7f333f05e8824a2dbe9ca3cd38cb4dad"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/D13_VH_VL_from_ANARCI.fasta",
+      "bytes": 610,
+      "sha256": "8ed4d906ce33526da1918307e371ddff370db2b4ff5108f62f7985dec25a16bc"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/seq/D13_VH_mouse.fasta",
+      "bytes": 131,
+      "sha256": "7a3a3aeaa8e0a9a5acd8cd730e0ffb39c866bb5d1b8a5cf876ee7efde3c6b602"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/seq/D13_VL_mouse.fasta",
+      "bytes": 122,
+      "sha256": "96d9a841b845ddfb1ebaec114b58123c8ce78348e8b536bdb79453cd2ff80218"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/seq/HuLys11_VH.fasta",
+      "bytes": 129,
+      "sha256": "8c3286c2e9a4e82e8787fdfb1a06f80a28553da983a0ba0aad42f5bb4abbf2b1"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/inputs/seq/HuLys11_VL.fasta",
+      "bytes": 120,
+      "sha256": "ebdc777385393f340d4f93b101f6f7637ae5ce1193e2a4fd4f25f37a15efc356"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/logs/autocompute_1FDL_last_check.json",
+      "bytes": 592,
+      "sha256": "995ba9839472256cff0c073c4d8b287593665b8bef090506f34f070661e2d0d4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/logs/comparisons_run.log",
+      "bytes": 4984,
+      "sha256": "f3ded6b5af6ee4bda90ec68f576ad74a8977c4e3619575dcd3651510329d33c6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/logs/execution_log.md",
+      "bytes": 8257,
+      "sha256": "c67edb8a9496435280b44867823196222e133a587e6f95413a6ca9d015e33ad2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/179248388743747_model_sample_1.cif",
+      "bytes": 139392,
+      "sha256": "5554dc6b649a46168528f7160e90d64179a5ed576bdf77da5ca60b0fcc9c2fab"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/179248388855103_model_sample_2.cif",
+      "bytes": 139392,
+      "sha256": "af76318d05e4fcc6e4a8caf9349edea5b31963a26375eedaf7f08907d18eb2ee"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/179248388963120_model_sample_3.cif",
+      "bytes": 139392,
+      "sha256": "95f84558cd962f07b88ea91d50c5ba64eb0c30a5018e118a95d6003de08f25ae"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/179248389069855_model_sample_4.cif",
+      "bytes": 139392,
+      "sha256": "790cce4a0df304b1dfae45bdad2a9be29233aafc510ac452e359754a0f3d7e81"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/179248389176291_model_sample_5.cif",
+      "bytes": 139392,
+      "sha256": "6335ccff1aa4eee9a7770c914c6c5f6909d2dfd47ff72bc4a345af38e4d9cd20"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/abnativ_batch_heavy_details.csv",
+      "bytes": 120928,
+      "sha256": "88037393d0110d19d536616996fefddccc421fb04ee89df13a4d128024ed526e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/abnativ_batch_light_details.csv",
+      "bytes": 67416,
+      "sha256": "255d0b8d18613a2f5a1e1069e65aa0339b3448340f96f85e82afe56477c7ad4a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/abnativ_batch_summary.csv",
+      "bytes": 2211,
+      "sha256": "4d32a4922b9576e29f9181354314d6650d6e090b7f22cc23ad99f683a969a3de"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/biophi_humanization_results.json",
+      "bytes": 6849,
+      "sha256": "f37db681af0c55cc1cec0abf3bd5b91fdd89eb63c2484d3b732c5ee9f02b878e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/final_ranked_summary.csv",
+      "bytes": 8055,
+      "sha256": "e2cba9f5744370a1ed4d64b605dd5e48e503736ba99d0f81db3659572abb0bd3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/result.fasta",
+      "bytes": 2410,
+      "sha256": "721bdea9a1559e8caf197703b28d00728300902a45ed21bc97c0f855d06265b9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/summary_confidences_sample_1.json",
+      "bytes": 718,
+      "sha256": "0634b009a523de97ba94e3e96aa1cea5298bd44ec61299d7ef5d6b24e43c8667"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "baaedfe984d3d030750c5ed9dddc39ea65c1412733f55d19a157bea4adebef4b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/summary_confidences_sample_3.json",
+      "bytes": 722,
+      "sha256": "7eac8bf034c895de0ca3237d6af9d9c1b076f088ee1b39f899bafc479791da50"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "83e2cb4ee59ec6098d647383707ed6514b35907bd0be1c13fac8b0183bcda494"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/humanization/summary_confidences_sample_5.json",
+      "bytes": 715,
+      "sha256": "b188e30a250a77c514f3b4335465232ac36657aab492250629f98442d76b1215"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/179248406572616_model_sample_3.cif",
+      "bytes": 139542,
+      "sha256": "4e846c70a85a6e4877e98e388f942cded6afde45659abbbf1ed177ff21b04bbd"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/179248406669282_model_sample_4.cif",
+      "bytes": 139542,
+      "sha256": "f797588a5d9c1b75e935e9d198f5f65957aaa38886519acd838b12651712d7cd"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/179248406755643_model_sample_1.cif",
+      "bytes": 139542,
+      "sha256": "c5252c9ef8aa29d5df73da1f33fb5bad73a6e48b69541d92e489938c8b2d0cc7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/179248406843457_model_sample_2.cif",
+      "bytes": 139542,
+      "sha256": "f89641bde5bc6f39f8595983b8c6dc1ac2987a89818c98900535e888aa7da5a2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/179248406933319_model_sample_5.cif",
+      "bytes": 139542,
+      "sha256": "adb34da7c5c54fcc734b544cd6a8c897dcc699465d9786dd4072ed2290bb869a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/manifest.json",
+      "bytes": 2000,
+      "sha256": "cc4803538fbcb67b2ea2006358fa85deadd299b7b463d0b79111c688ed3de5c8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/summary_confidences_sample_1.json",
+      "bytes": 712,
+      "sha256": "ca2a4440b69d2dabe71441741d8d23efa28974876abc51a979ca6c4cb12cdd73"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/summary_confidences_sample_2.json",
+      "bytes": 720,
+      "sha256": "2fd3d2f6752770e0958b2e2f0e571f8fde8fed45bf3a3474b238372681259f14"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/summary_confidences_sample_3.json",
+      "bytes": 723,
+      "sha256": "afa35fd92fed8c5dcb53927e83db57b2dacaeb052411ea597da4ab22f44fdbbe"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/summary_confidences_sample_4.json",
+      "bytes": 719,
+      "sha256": "3d31139f12e1277863e27895766590abc6f5077916f5303d1f265d23dc9d616c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_1/summary_confidences_sample_5.json",
+      "bytes": 721,
+      "sha256": "24e2c92288c5acd65f1e0b3dd46b46050531dd96669a604b2ee57f582f8dddf4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/179248404238407_model_sample_3.cif",
+      "bytes": 138567,
+      "sha256": "1ea355a34d122caddf27aa4be757e78f74a6a127e236883640f5aeea8631710c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/179248404347389_model_sample_4.cif",
+      "bytes": 138567,
+      "sha256": "14252957c4747b99ec20c5d9b62e84dc97fc931ef7b18522b1d1c13cd5f7a23d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/179248404456366_model_sample_5.cif",
+      "bytes": 138567,
+      "sha256": "93c7ba7a3d74b91d780314675f892e18a720177f1a70272a4743eae7ae7b7d00"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/179248404567931_model_sample_1.cif",
+      "bytes": 138567,
+      "sha256": "69dbccd409bc9254503e0b53b91bf0ef1954f502a2b8ee503cf024d57d1f490b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/179248404674961_model_sample_2.cif",
+      "bytes": 138567,
+      "sha256": "9d65eaef64399cdfa916cfa2092f0ef5ef9eefc805527b74a288e629a6a0dd70"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/manifest.json",
+      "bytes": 2005,
+      "sha256": "77f85b0f410562ce512e9dc3c1f98eb6abd462a0eb9ff7b7b94aa92cc9cb43d4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_1.json",
+      "bytes": 722,
+      "sha256": "b584515d45b292c5ed0f24e7cb282e3d0392a8306402da841398908f5a0f10a6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_2.json",
+      "bytes": 720,
+      "sha256": "d6fe57ef77d9af43da020132823de5f766bdde34133db9ff052abd50c2dc9010"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_3.json",
+      "bytes": 723,
+      "sha256": "f57bec8d03a61878f3f55b9e478cc4450b3892c18dae818bfd0f9bd7fb86bd99"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_4.json",
+      "bytes": 719,
+      "sha256": "79aacad6ecdd0552421199907e48240977bebe7a423c5e699f13b7d7862406b2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_10/summary_confidences_sample_5.json",
+      "bytes": 722,
+      "sha256": "624d0e895f098846ba91f5a160fabe02a2dd13ae9eeab196e79227f42d56dc80"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/179248425678642_model_sample_3.cif",
+      "bytes": 139617,
+      "sha256": "4584df223cff92dfa5a425f0b4086b71da647015618817db9f31351e94d8cdb8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/179248425773487_model_sample_5.cif",
+      "bytes": 139617,
+      "sha256": "27e1689b4ff58b0e38a26fdc7be056ac10f5338c9b4009baba9d112091d7537e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/179248425867073_model_sample_1.cif",
+      "bytes": 139617,
+      "sha256": "f84e6d59e0d1649d7e5ff14e9a2e14e18381f90a38a3aba485bcc3a384b05d41"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/179248425960655_model_sample_2.cif",
+      "bytes": 139617,
+      "sha256": "87187eca787a092532d14c40b7fbec216a18ee5eed7b6124502fa6122068b8ec"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/179248426056312_model_sample_4.cif",
+      "bytes": 139617,
+      "sha256": "d284288e0bd9197632de018cd378927f87cc0fea5d8f93b8797ed05cada7e790"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/manifest.json",
+      "bytes": 2004,
+      "sha256": "dab7402715bbeff5d9908fb23e92bdf69918b222edee94b72555041681ddb9c9"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/summary_confidences_sample_1.json",
+      "bytes": 721,
+      "sha256": "24275be524824e82c6b594b40240a95c00051b9f6a66b3e9c7ceeaa2395bd136"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/summary_confidences_sample_2.json",
+      "bytes": 723,
+      "sha256": "1b87fc4f7b0117fcb9fa82eb9a6e4d41173d5cc966c5aee4145ff296c719f303"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/summary_confidences_sample_3.json",
+      "bytes": 720,
+      "sha256": "2452a7e14d6578bb60eb565ef239a04e7489c75bb797aec64baacfbd0a5471ce"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/summary_confidences_sample_4.json",
+      "bytes": 722,
+      "sha256": "75da8856b9aa04843418139ed3602a80f4cc448770a778d1e570b8fc3a3cb1df"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_2/summary_confidences_sample_5.json",
+      "bytes": 718,
+      "sha256": "f1945c3c959072893a8199d95d39c700af1e355b36de7e2a4fdfd404ad55839c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/179248425366261_model_sample_2.cif",
+      "bytes": 140067,
+      "sha256": "7b81d13df0bdb7fbf61b233d1e69a1db20b9628f6a8d5010c20a4f9639e662c3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/179248425441616_model_sample_3.cif",
+      "bytes": 140067,
+      "sha256": "39bbc79f7337ac06ec77ce889d13286ebea98c834dae6685047830d782c64338"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/179248425511183_model_sample_4.cif",
+      "bytes": 140067,
+      "sha256": "9c67f1a3aa1757dfe656f88deae1f59c5a73326c58cb6c69c8b2cd9789d4985d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/179248425579484_model_sample_5.cif",
+      "bytes": 140067,
+      "sha256": "d9aec69a68616d6cfa41450deed16d3c8440c462ef654d3dc13d072758043aef"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/179248425649150_model_sample_1.cif",
+      "bytes": 140067,
+      "sha256": "2bdeb5c76c219efba67841b813310d8ac7810b041d4ec1f913c4be0a806fcff5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/manifest.json",
+      "bytes": 2006,
+      "sha256": "b448442714ee01041eec9fb7dce17a046d1b27c59f360d2498a49bd7b0af07ff"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/summary_confidences_sample_1.json",
+      "bytes": 721,
+      "sha256": "5f4b9deceed8f035605ed9e2928d1a12fd2913b22944d5e1b5b1ea44587227c1"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/summary_confidences_sample_2.json",
+      "bytes": 723,
+      "sha256": "0dfa61a53b904d3464ecd0757ae57a50b3da27fb2971e9b2ce5ddb88306f78b5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/summary_confidences_sample_3.json",
+      "bytes": 721,
+      "sha256": "88aa64b25208733948e4020e894d6c5906e1ee84ba82e4e1b428c95bc6afacd3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "380f94e106ce5c06d9e2f45af32c6743023ac8546ce3df04f1823af829bc18b0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_3/summary_confidences_sample_5.json",
+      "bytes": 721,
+      "sha256": "5cc44ddf8b8f7802b672eafff47f973023d70afa840b692741ca8c304d605af2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/179248425384081_model_sample_2.cif",
+      "bytes": 139242,
+      "sha256": "9e5998b07fa7b08e330db72e59ab9da70e835bc27e76678bee396245a4a5c441"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/179248425501566_model_sample_5.cif",
+      "bytes": 139242,
+      "sha256": "d8bca7fe2fb1fecc39be9fc39996ee37a56cf973fe7e86cda607fba854c4956f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/179248425613355_model_sample_1.cif",
+      "bytes": 139242,
+      "sha256": "7b3f2dd01c526d6ea2e641d0133d0f088b37d6857a5f93440071811b3dfceeb8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/179248425725603_model_sample_3.cif",
+      "bytes": 139242,
+      "sha256": "c04402d92b23387fd21fba38f5f1b3fda87ca1f000f4ba9a1e9cdac08f62d601"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/179248425875436_model_sample_4.cif",
+      "bytes": 139242,
+      "sha256": "f726763c92b8461cd79fc81ab568bc2d51f365f8349c530d8097f355e04f149e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/manifest.json",
+      "bytes": 2006,
+      "sha256": "de5111259f2f58c889b428ff9cecbb8ddfd273dfde08f0f7020c0d776cfebb10"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/summary_confidences_sample_1.json",
+      "bytes": 719,
+      "sha256": "aaee0c332f1701225d7ba92d6e13569b61339073accad2d23dcacad440376cd7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "bfad75222615d79e6f37abc7d1c020b4fe92decbeb2bcbb4d3e960727e24ff75"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/summary_confidences_sample_3.json",
+      "bytes": 723,
+      "sha256": "6bd8e57a00d9d14e69ec9ed4f9db2464139623502f8519eedd66e5452c0b2a10"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/summary_confidences_sample_4.json",
+      "bytes": 722,
+      "sha256": "9e4463ef7446c310129e10298b53f9de05168b6f226840b36b8c106b6dc07cb0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_4/summary_confidences_sample_5.json",
+      "bytes": 722,
+      "sha256": "b4fe492ab54a8a1555ca10c9332252ca2c7697df1dda6155a1939e7decc1425a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/179248426044477_model_sample_1.cif",
+      "bytes": 139617,
+      "sha256": "11b8b525f5a64b5c6da2cf26326e31f24eb10bafa31d515d225fc620b40ec767"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/179248426160100_model_sample_2.cif",
+      "bytes": 139617,
+      "sha256": "8e649c678b21c8bf7241beb61afabf06c3dae48d27a6a9365afcd7a41164439b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/179248426271167_model_sample_5.cif",
+      "bytes": 139617,
+      "sha256": "6269aa155c5af2ce629eab99d018e1e3ac82649bd118709f90b61da45131277d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/179248426381610_model_sample_3.cif",
+      "bytes": 139617,
+      "sha256": "e29fdd7905268099d823708804432e1d238afeaf0c1c755fea83be229189eaa3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/179248426496125_model_sample_4.cif",
+      "bytes": 139617,
+      "sha256": "fad85abb3a7ffe73740c20e71c8da34f5079cd275dcd5cbe8df4594f6ea3d7cd"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/manifest.json",
+      "bytes": 1999,
+      "sha256": "1fe5641b0f321e7ca764e45c6bd832818044acd5d8b2caae4036b3ae6311bcc5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/summary_confidences_sample_1.json",
+      "bytes": 720,
+      "sha256": "41c711307600cb6c2c6a3dbb6edd69793844dc74b502790b68cdfd75b1a8df7e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "e158a52131739d68e2bbe401e119e851c0d9aeb2c2377140a2ef66ac6e00c40a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/summary_confidences_sample_3.json",
+      "bytes": 720,
+      "sha256": "5f1bcaa3a27d9ea33df30a9c30b8dbe9ca04401c53f5655b0be14417680f3085"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/summary_confidences_sample_4.json",
+      "bytes": 709,
+      "sha256": "1932034388e99f270334fcb041fdb18ca7b93a0450bdb341ff308c415b4e1395"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_5/summary_confidences_sample_5.json",
+      "bytes": 719,
+      "sha256": "c6b9bac1deea952ca508ea657d4a01ee059fc5e8d1c89f71be4e822faafc93d0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/179248425800390_model_sample_1.cif",
+      "bytes": 139617,
+      "sha256": "7b5264c6ae46515b35d72e0f8d5219d4f67f4d56cc27827882a534773789e72a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/179248425876641_model_sample_2.cif",
+      "bytes": 139617,
+      "sha256": "f6a91453b44f6b34fad6601df7fce40f05d615748c47bb10bd2a3e49b055c335"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/179248425949123_model_sample_3.cif",
+      "bytes": 139617,
+      "sha256": "b7e3a2721c6f81f944c51c01a9802237ef914c32afaf20fddc99d4fd28e26fb4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/179248426021883_model_sample_5.cif",
+      "bytes": 139617,
+      "sha256": "a0f4d32f90a8deef9c5e747490c315ce97c378cb42986dc31078c63d3984302b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/179248426090212_model_sample_4.cif",
+      "bytes": 139617,
+      "sha256": "d512e2bf6de8cb4219b2a6689bc253226ece2e6ff7298fe4c8d87b45eb3ab10e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/manifest.json",
+      "bytes": 2007,
+      "sha256": "26fa62802bc2311d93500034a7dfa28970cc0240a39e92a6349f198d8ab314bc"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/summary_confidences_sample_1.json",
+      "bytes": 722,
+      "sha256": "2b8a8631ba9bbb12b8c5dae0375adba776367624ac1f04cabd5a56e705e36015"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/summary_confidences_sample_2.json",
+      "bytes": 723,
+      "sha256": "7900f441a499b3fd0ca4dc4ac6ec7dfd5e4ac6411c81e32bfd40dca084eed097"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/summary_confidences_sample_3.json",
+      "bytes": 721,
+      "sha256": "29dc233ed0ed5f796eec2624ef982a4f87d9e660ba0801bcb1cfba423f70866b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "68be81ee42a91ec00d1fff14052a61fcaa4709bdb188a3cb6d2212554cb557d4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_6/summary_confidences_sample_5.json",
+      "bytes": 723,
+      "sha256": "64ae94b9b99ed133b29d5bcb639799a38d41c9092018ca4a364838e36d8dd898"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/179248418385282_model_sample_3.cif",
+      "bytes": 138462,
+      "sha256": "294b48ec64cdce26ccc4898341ed0afefb7db2838c7b2dde73ce05dde00bff25"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/179248418485494_model_sample_4.cif",
+      "bytes": 138462,
+      "sha256": "4b64e88ffde60befb0a63ca3fef12c430b3e0161d128273d498f58b6d12542b3"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/179248418587617_model_sample_5.cif",
+      "bytes": 138462,
+      "sha256": "0f28bb9b0d3226a7848180427eee5ddb79311a98178b28be1423ace7c3253a2c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/179248418684907_model_sample_2.cif",
+      "bytes": 138462,
+      "sha256": "970543818e2f971b1b372e0bee4ac27432d4ed2e5155c03631f3433531e376dc"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/179248418791745_model_sample_1.cif",
+      "bytes": 138462,
+      "sha256": "581bde24187c07eb43f5aa5fd000c161bf6be86fef13f26a692ac6bdb27f4692"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/manifest.json",
+      "bytes": 2004,
+      "sha256": "2e635bf149a0aeb061479bba0b6259857295a94afec7e76bba0819257f9e9280"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/summary_confidences_sample_1.json",
+      "bytes": 722,
+      "sha256": "06a4af1c0eb407763f424db5dbc09e23fe06aeb1327adacd2ecf1be81cc8a5f5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/summary_confidences_sample_2.json",
+      "bytes": 723,
+      "sha256": "be6ccc2e611fef51c35951b0a9a64720b6f7279cbf74b8d4fffd6a90052e1cea"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/summary_confidences_sample_3.json",
+      "bytes": 719,
+      "sha256": "f288bfb7930cfd9baf5d179dd8eafa9e822f03c2d65f340b05469c2899fcc35c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/summary_confidences_sample_4.json",
+      "bytes": 705,
+      "sha256": "92e1029686427450fe94972f9cc5d990ac28fc06f53fbc0399c70e7942015ad4"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_7/summary_confidences_sample_5.json",
+      "bytes": 723,
+      "sha256": "4b106bb9860d42c9cdf7f031c631eab85bb86dff7e82c01359c606c7ba1962af"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/179248425073612_model_sample_1.cif",
+      "bytes": 138942,
+      "sha256": "810a0bea5b4243142abc22d6895cd386a5b121298878d76dac2aa09330896a5c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/179248425168799_model_sample_4.cif",
+      "bytes": 138942,
+      "sha256": "fbc1530f45a149eee190cd42a7b78fb282f1c8a71c8ab5b922a7a2b9908df84f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/179248425262640_model_sample_5.cif",
+      "bytes": 138942,
+      "sha256": "071b4564f17329ddd5d5293f8c332a7c44b85a1d4ee80ef5821f50c2b18562ba"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/179248425357094_model_sample_2.cif",
+      "bytes": 138942,
+      "sha256": "f2370d6e7f47829136f4fa9dc70ec23c096915721c9b99b188f59d7f8a54a9d8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/179248425452271_model_sample_3.cif",
+      "bytes": 138942,
+      "sha256": "e55dc4c7e00a8373f732cd6b641c57f0c57b9ce240ed9771cc16b062cd79066f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/manifest.json",
+      "bytes": 2002,
+      "sha256": "14d23713f1331a088f05ce1a59991375b2b3df84ff02fdb772a55cd6beb55fab"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/summary_confidences_sample_1.json",
+      "bytes": 716,
+      "sha256": "b6fd986945d2d056dbf0f3ad1d12509034df3ce577db097ee3d03a1e3978cf61"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/summary_confidences_sample_2.json",
+      "bytes": 719,
+      "sha256": "262274a4fd4341e5cffaaf38abe12aba1848ff593ac228f77b29be6a9c525556"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/summary_confidences_sample_3.json",
+      "bytes": 722,
+      "sha256": "5dd9601d346c1f766987b5eb1908ece3b62046c7f18aa564f1d5a6f706cef20b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "771e50ce93fdd3ecc3d2d805e7d6f4ae051f4f3d061e9510322fae9a2a3b45c6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_8/summary_confidences_sample_5.json",
+      "bytes": 723,
+      "sha256": "f5cc11b6cce70c275716bb92ee42aeb065cbd847356f6a6cb7fa902c9d96df2b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/179248413076797_model_sample_1.cif",
+      "bytes": 139392,
+      "sha256": "d3e8d241f1b44f5c562e15bde9606217ca6360a1aa167582aab65fb2cf430cc0"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/179248413168359_model_sample_3.cif",
+      "bytes": 139392,
+      "sha256": "69d55f31365f7621295204e35670507107cacd2e51f9c6c236d7a1f616097578"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/179248413263937_model_sample_5.cif",
+      "bytes": 139392,
+      "sha256": "732b2de379145abea37239fb1c0322b3c5bf7b41597b3bd2096c0614457fd93c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/179248413359523_model_sample_2.cif",
+      "bytes": 139392,
+      "sha256": "48172d644c6139cfadee23386a0cb8840d70159589f079c8b05a6947540a878e"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/179248413451046_model_sample_4.cif",
+      "bytes": 139392,
+      "sha256": "01b2e9c0d2c685e3538bd055f604525674eedf8e36786438f7703e5e4db4d4e2"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/manifest.json",
+      "bytes": 1990,
+      "sha256": "808c83497058842fc570f8e027e3abc24d0a9038145cb110623dda095f5e5e1c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/summary_confidences_sample_1.json",
+      "bytes": 717,
+      "sha256": "d4ba61adf84b05d05ab1a3de2f5f3083b6920a78bf8c249ce0630a0315175f3b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "4b3fde767b021f5678b6d132a1752715a06fd1a8996b5a1582ca8af71e71a1df"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/summary_confidences_sample_3.json",
+      "bytes": 713,
+      "sha256": "b6dc28b14ae39768f1a7657072d455398ed9a5f4e54cf2f1851e159e47e8547f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/summary_confidences_sample_4.json",
+      "bytes": 720,
+      "sha256": "f8850199a8371606d1375a1eca9c318677cc6340a73f55bcecf8e50c01dfb26f"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold/humanization_9/summary_confidences_sample_5.json",
+      "bytes": 720,
+      "sha256": "3f73baf5116a3fa35fef3ec68cbb12de71dd09a8f2dfcad61e4bb925934c47fb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_1.json",
+      "bytes": 581,
+      "sha256": "79e7f5d1c882e64cff3b59553340e05faab7ce8bd510ccc96500ace5d7a4cc55"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_10.json",
+      "bytes": 582,
+      "sha256": "b27de18fe6dbfb8115311792a7993d68d1f8f7b2bf7926d3dee28c35ca7ebd8a"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_2.json",
+      "bytes": 581,
+      "sha256": "110517d92442af1a43596d4dbb7429a873d9956f4edc2e4067265a233da4f4bc"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_3.json",
+      "bytes": 581,
+      "sha256": "4f021fbde7389fe4af79968e4dcf3207450c0ae835226900a762bdecb62bc993"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_4.json",
+      "bytes": 581,
+      "sha256": "d650caf1c1da99c32d6dc2a49fdd242a140c2d203a4f353c570070c1be4778e8"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_5.json",
+      "bytes": 581,
+      "sha256": "54ba1b378e12b307236ba3b909028fb12d9b31b979e6810464660e6ab07d721d"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_6.json",
+      "bytes": 581,
+      "sha256": "7f4e0b6f82258b98bfee8efb8fa9a5212bf2ad7b2db1e17bc8a937b27a8ca39c"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_7.json",
+      "bytes": 580,
+      "sha256": "45c0c569953e72a1fdb9a1c4cc0091ef958b5f856606d7028f812fd927c123fb"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_8.json",
+      "bytes": 581,
+      "sha256": "e64f887151db92c6e8590fcd8475f6fad6f9eef8e479b4639304927726b02004"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/mmfold_payloads/humanization_9.json",
+      "bytes": 581,
+      "sha256": "9b9c0288aa90a4a8d455e546d284f7c0057a57a8642b7fe73f31efb19d224db5"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/native_tasks/task-ledger.json",
+      "bytes": 24443,
+      "sha256": "20ebfad33783712f1b5e3bacf4a4843507dd92a65f1e754c7e056a1e527bc70b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/report.md",
+      "bytes": 15261,
+      "sha256": "455688297a25fe3b0a25b0c95a805c426a9e3921cd8a6e8d5a11b3751fdb32c7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/results.json",
+      "bytes": 240026,
+      "sha256": "7493bb1912d47435663b4e7c75ee81537c382a283698db6347b98433c9248147"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/1BVL_sanitized.cif",
+      "bytes": 268251,
+      "sha256": "6a1e6508e86271b6ab1597fe22db05fc264a6772e10ae0140a7e0c055a2b5d81"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/1BVL_sanitized.cif.mapping",
+      "bytes": 5621,
+      "sha256": "c0f69dc9b68d83df10614e57b6467d592a49d5a70edf8022b7038e69b2b58bf7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/1FDL_Vdomain_lysozyme.pdb",
+      "bytes": 221464,
+      "sha256": "c5ebe6d96738f1c13ef0c79bcc7ac53e47195f3a0cfae132e417fd568cac5830"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/1FDL_mos_sanitized.cif",
+      "bytes": 354561,
+      "sha256": "9c5c2222a05fbe424ba4f5faefad8f29ccbda6bb7357982319fe7a1274c5bcd7"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/mos_imports/179248452825782_superposed_1FDLparent_humanization_3.cif",
+      "bytes": 276869,
+      "sha256": "31bc9ec1c87b7dc8016f3d34a4d1a926354da668c5d828f6d19b71a1012ab754"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/mos_imports/179248452851558_superposed_1FDLparent_humanization_2.cif",
+      "bytes": 276419,
+      "sha256": "52296c1c0265e271ca6b31bb74d12e6b0d7fe436c6b50aacfb53fe9c1f5f05ca"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/mos_imports/179248452914266_superposed_1FDLparent_humanization_9.cif",
+      "bytes": 276194,
+      "sha256": "85bc92353a648c37a9b3a0e6fc6e872840b86ec5c773df5ea49396d1e4e5b6a6"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/parent_1FDL_Fv.pdb",
+      "bytes": 140301,
+      "sha256": "8d9a7109c116a84d5623e10ebd969758a79144d7081fb45121a25d26a7b5725b"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/ref_1BVL_authAB.pdb",
+      "bytes": 141354,
+      "sha256": "9196c6d1b2b38c6276868c0bd59ac306c76e989480498419b8df1c1492040218"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/ref_1BVL_authCD.pdb",
+      "bytes": 141354,
+      "sha256": "3cc65748eff4908ee3cf51f81cb180176ba51b31026b37fb6feef7092de9c456"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/superposed_parent_humanization_2.pdb",
+      "bytes": 280433,
+      "sha256": "d8a6dfbe380dd830335300dc55b6979698296081f7e23d3ccb99196be8ba0b38"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/superposed_parent_humanization_3.pdb",
+      "bytes": 280919,
+      "sha256": "ca5952fdb7c4f8ebc94d866cb48a66a3c015bb01a7d9b2cf997cda0b6a72c686"
+    },
+    {
+      "path": "outputs/mos-export/website_case_d13/structures/superposed_parent_humanization_9.pdb",
+      "bytes": 280190,
+      "sha256": "5d7cf77151be9b2832b21b1b770bd94376053307fcbfb9745e090ce1495bb6a1"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/AbAn_heavy.csv",
+      "bytes": 3562,
+      "sha256": "14612014f18dd413cc054430a237db6d4b8d1572658670836d9e72f9bd7c5f24"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/AbAn_light.csv",
+      "bytes": 3270,
+      "sha256": "19f154d85cb7babe04786d6cb9295fbc5399bfcfa5e6fd7159e9c2bb18ac314e"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/AbScN_heavy.csv",
+      "bytes": 7468,
+      "sha256": "490231b160f095f3c63fca6cc2ff919338fb5ad5cca91b1d413f3f5e4f7021b9"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/AbScN_light.csv",
+      "bytes": 3765,
+      "sha256": "1c0ebc9218b6b9f541d78e1dfcc4ae323a51c861185f28a6dcca680553eb042d"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/MutXaff.csv",
+      "bytes": 439127,
+      "sha256": "58a9fc471876a201859d52bfa5941736983ed59bf2b10dc0f878124ca6bb76c6"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/MutXevo.csv",
+      "bytes": 231288,
+      "sha256": "4c1770e23a60e7010b38bd04e5ca4cc500933e73ec93e96477de4d06d64cfc7d"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/MutXseq.csv",
+      "bytes": 290943,
+      "sha256": "a4425c28b156b95e900b37ebcf7fb7b13890bbba4b1ddf58a2c27cc7ebb957fa"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/MutXstruct.csv",
+      "bytes": 292192,
+      "sha256": "81161168d9b2422e383124729025c43aa6367e8b55c3943b9ec644b1009dde40"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/ParaDt_heavy.csv",
+      "bytes": 2648,
+      "sha256": "ec1165ec699c7e8e4b226652bfbdc9c6818f8406cfc5503d786f087bc4afad72"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/ParaDt_light.csv",
+      "bytes": 2378,
+      "sha256": "349e68358412b0b2a1341594a2404e7181cdadf27f8ed2aa3fe297d6343912c0"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/download-manifest.json",
+      "bytes": 3969,
+      "sha256": "039458f0cfbf85c7e26a2b4dd6c62e77dae13b2e59d368ce06a4ee3b2c4287a5"
+    },
+    {
+      "path": "outputs/native-mmetrics-1FDL/interactions.csv",
+      "bytes": 4355,
+      "sha256": "add935cf6acaa5f699dc4c22676d97cc93ed4cbfcdfe9ee35762124cf4ee48fb"
+    },
+    {
+      "path": "outputs/website_case_d13.zip",
+      "bytes": 3514363,
+      "sha256": "5d865febab5838641d5a3c319f4ef12b31912aef0cb100e3d3ab998250fa5b6d"
+    },
+    {
+      "path": "outputs/website_case_d13_checkpoint.zip",
+      "bytes": 1211785,
+      "sha256": "2369bbbd3b4a054710edaae65da86b4965bed076c8aa848ea668e021d656963a"
+    },
+    {
+      "path": "screenshots/1FDL-native-structure.jpg",
+      "bytes": 65793,
+      "sha256": "b37332d7ebb4190189133afc7d67681f40949a2b9c48d63129b06f5179349583"
+    },
+    {
+      "path": "screenshots/function-list-superimpose-search.jpg",
+      "bytes": 93356,
+      "sha256": "eeb0875a331f2295980fceb61ce58c8ac059f3795d3bb3bddff56ba6cec6167e"
+    },
+    {
+      "path": "screenshots/mmetrics-initial-loading.jpg",
+      "bytes": 52109,
+      "sha256": "d51195b7becd22a5e6e4091338e7ea96952b4dcd25232174053e4c40db8de685"
+    },
+    {
+      "path": "screenshots/mocha-final-results.jpg",
+      "bytes": 112883,
+      "sha256": "fe432397f225ff04e26dc8af8ce4a5fed522bd1896a14714ae006fd1d3d408f4"
+    },
+    {
+      "path": "screenshots/mocha-humanization-and-folds-running.jpg",
+      "bytes": 87382,
+      "sha256": "90680cd73834f2490a1aef050cc25617b969924f6d7f57fb434ae07249b5a614"
+    },
+    {
+      "path": "screenshots/native-1FDL-mmetrics-antigen-interface.jpg",
+      "bytes": 101630,
+      "sha256": "569106d68dae78b970877c6557df864069050bdba3afd151ec5e2e9e1a773f6e"
+    },
+    {
+      "path": "screenshots/native-1FDL-mmetrics-final-state.jpg",
+      "bytes": 112829,
+      "sha256": "fd4db0354ecf7a7c699ab86bb0f097f1ac8220b6fe472ff713ad319e286613e2"
+    },
+    {
+      "path": "screenshots/native-1FDL-mmetrics-interactions.jpg",
+      "bytes": 112844,
+      "sha256": "58a66658f56fcd0153514c8f9554bfabf9cf0094df916d00333ffdb205c677d9"
+    },
+    {
+      "path": "screenshots/native-humanization-task-details.jpg",
+      "bytes": 88859,
+      "sha256": "35e4901ea52d28f5f775ebe9a49bb571669f707aabc38a7ec0c09079afc86afb"
+    },
+    {
+      "path": "screenshots/native-humanization-task-succeeded.jpg",
+      "bytes": 78412,
+      "sha256": "88c5d40fdd6f87ad79d38f925712332a7986badfc78ba991c4125163e5e0dcba"
+    },
+    {
+      "path": "screenshots/native-tasks-succeeded-page1.jpg",
+      "bytes": 110969,
+      "sha256": "a616be6f1847a659af734eada957df69335abd6dd83927c92be49c6f9ebd2bcd"
+    },
+    {
+      "path": "screenshots/representative-humanization-2-overlay.jpg",
+      "bytes": 118284,
+      "sha256": "e7ee75ae1310ea5684f13f03a84eba64bdf48f7e655b307e9667780432130ff7"
+    },
+    {
+      "path": "screenshots/representative-humanization-3-overlay.jpg",
+      "bytes": 116581,
+      "sha256": "7b57987b418c792793ce3110390eb20d67b547d6b2dcf4b5ccab904e1564cbf0"
+    },
+    {
+      "path": "screenshots/representative-humanization-9-overlay.jpg",
+      "bytes": 116746,
+      "sha256": "3af4912ed11436f9d0406493e056459f4dc8c9d2cb776ba7b4890f484b09d6bf"
+    },
+    {
+      "path": "source/1BVL-verified-metadata.json",
+      "bytes": 74076,
+      "sha256": "91cef858ed703f4ca83975ebbd46f38ae0a77e0643c2fd94b1dfe3fb87e19300"
+    },
+    {
+      "path": "source/1BVL.cif",
+      "bytes": 372893,
+      "sha256": "95e655c26d6d2e302bd53a868403b42966d81324c1e12aa48fe865033cc3fbfb"
+    },
+    {
+      "path": "source/1BVL.fasta",
+      "bytes": 323,
+      "sha256": "75c5365869d4506fa53ae9e3238af988e73dfe77fc033d76863c7fc611498b14"
+    },
+    {
+      "path": "source/1BVL.metadata.json",
+      "bytes": 10951,
+      "sha256": "9a4ea36d232a76e8d7c7118da35c4e36a13e9d5576a9f0a4176787343a4674e0"
+    },
+    {
+      "path": "source/1BVL.pdb",
+      "bytes": 322947,
+      "sha256": "699cc85c4e0ddc4160023070b99a518ccc50a1439dbfb55ea4eb65ca83afbdc1"
+    },
+    {
+      "path": "source/1FDL-verified-metadata.json",
+      "bytes": 92682,
+      "sha256": "7082fcc29bbd947c1d204b1d5fe44fde07bbc1893f9b3109b70e822200c5d4cd"
+    },
+    {
+      "path": "source/1FDL.cif",
+      "bytes": 467129,
+      "sha256": "6b525be71aff6850ebc4d83e2df75e2e8cfffbe7a2e4b68adf1aff9987a4c25f"
+    },
+    {
+      "path": "source/1FDL.fasta",
+      "bytes": 790,
+      "sha256": "0777cc864934e6eb16d64e18ffd8b4447ce4b920de6190f8ea5856407a984719"
+    },
+    {
+      "path": "source/1FDL.metadata.json",
+      "bytes": 9211,
+      "sha256": "d1a0d63badff295e94d0478eda9c9b4d7f333f05e8824a2dbe9ca3cd38cb4dad"
+    },
+    {
+      "path": "source/1FDL.pdb",
+      "bytes": 391797,
+      "sha256": "2f634d7f3d7e53edd4676afa6f782c9a1194e1d0373959fdaa5f0f605ef8d91c"
+    },
+    {
+      "path": "source/sources.json",
+      "bytes": 2262,
+      "sha256": "24aea298a48205605bda3e94f7d244989e778dff8038ebf4d2666b39050fcc5b"
+    },
+    {
+      "path": "summary.md",
+      "bytes": 6426,
+      "sha256": "778d84d589c75928b5c60652116abeab78a36280575a768771c8ca44a1f0473c"
+    },
+    {
+      "path": "tasks/1BVL-chain-pairing-correction.txt",
+      "bytes": 845,
+      "sha256": "3b2ff10a6990f8944d45afb33374b55c41d4cd4b01c8e53cf5dbd6f6ec0a7a27"
+    },
+    {
+      "path": "tasks/1FDL-interface-audit-correction.txt",
+      "bytes": 817,
+      "sha256": "cd34dec5e68a560d013a47ec1d10a509b6a8e3c83323dffd18b421842b1c5f21"
+    },
+    {
+      "path": "tasks/continue-after-humanization.txt",
+      "bytes": 555,
+      "sha256": "948a1b3842548080b283aa22af2d036fced9a48f4b8966de33face2034da535a"
+    },
+    {
+      "path": "tasks/initial-prompt.txt",
+      "bytes": 2622,
+      "sha256": "62d1bd66e3b636c18ecb3b6f4eec6a77c7e05c29b9ce9ef05b275db103699e76"
+    },
+    {
+      "path": "tasks/mocha-final-01.txt",
+      "bytes": 46469,
+      "sha256": "abfc70fc062019c63f8decf6a3815273e2da68c9ebe410485500330bd3d1a0cc"
+    },
+    {
+      "path": "tasks/mocha-progress-01.txt",
+      "bytes": 34519,
+      "sha256": "12267b3b7496b3c85f3a348193b62b260e89677caa67607c62f52c4e46f998e7"
+    },
+    {
+      "path": "tasks/mocha-progress-02.txt",
+      "bytes": 30274,
+      "sha256": "7184238c234a0e95cedd24992ca93b538de9cbac0eda0ea0ca54b0537d0b95c1"
+    },
+    {
+      "path": "tasks/native-1FDL-mmetrics-final-state.txt",
+      "bytes": 35865,
+      "sha256": "99cb41ce38959940e3447a4292c78f79bd4c4aac5baed7d464165017d1323fdf"
+    },
+    {
+      "path": "tasks/native-1FDL-mmetrics-panel.json",
+      "bytes": 112976,
+      "sha256": "77313518f209e56fe93436c372a8ee1aadd0ea200b854f98e0eaf0518248f7d2"
+    },
+    {
+      "path": "tasks/native-1FDL-mmetrics-tables.json",
+      "bytes": 81653,
+      "sha256": "15a68bb02f4d850e5e1a9318d65666ab32a1fd5e69f470da73a42e17a3d2452f"
+    },
+    {
+      "path": "tasks/native-humanization-details.txt",
+      "bytes": 47652,
+      "sha256": "2192818f82da987f139d352fb4c9f6166e277deeedfce0d45b51c2a86312cc3d"
+    },
+    {
+      "path": "tasks/native-task-list-page1.txt",
+      "bytes": 50948,
+      "sha256": "e077904ee92d9524104cd408013df6e3dd9cb4af122194d939360808b06733d8"
+    },
+    {
+      "path": "tasks/native-task-list-page2.txt",
+      "bytes": 46383,
+      "sha256": "8b4fd29edcdf816a6e940e8f9f21a52d6a26d4e1de75afcd62d9a4396f698209"
+    },
+    {
+      "path": "tasks/native-ui-and-alignment-requirements.txt",
+      "bytes": 639,
+      "sha256": "30810a17fa8ffce65b0272ede60ef476041b8a269adb2b13a87b23ce5d0378d4"
+    },
+    {
+      "path": "tasks/native-ui-status.json",
+      "bytes": 787,
+      "sha256": "943a8d99126458980ea4981db518d42bb5df89fec59025b314b87e334e2df409"
+    },
+    {
+      "path": "tasks/representative-2-view-dom.txt",
+      "bytes": 44925,
+      "sha256": "2464972aeb133bfeee32f3b9beedbacd6a40dee459e77ad396291264e7fa03e1"
+    },
+    {
+      "path": "tasks/representative-9-view-dom.txt",
+      "bytes": 44907,
+      "sha256": "5fe58e2823ba944f3872e84858ec53be3c6662cda91b063b98dea1d9cc1dfde4"
+    },
+    {
+      "path": "website-data.json",
+      "bytes": 1941,
+      "sha256": "5979766f68178be1212f007be6558da0a8d809ba48dd9f2d8a5049e78760306c"
+    }
+  ],
+  "file_count": 436,
+  "total_bytes": 29877524,
+  "integrity": "SHA256 per file; all raw ZIP CRCs checked; structure paths and website index paths checked",
+  "coverage": {
+    "model_tasks": "all explicitly launched tasks succeeded",
+    "native_MMetrics": "native 1FDL results returned and archived",
+    "native_Superimpose": "not exposed; Kabsch comparisons separately labelled"
+  }
+}

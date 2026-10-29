@@ -1,0 +1,23 @@
+{
+  "task_id": "342256488231936",
+  "name": "5GRJ_VL_seqfitness",
+  "type": "Sequence Fitness Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:13Z",
+  "duration": "5s",
+  "payload": {
+    "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+  },
+  "chain": "B",
+  "purpose": "deep sequence-model mutation scan, VL",
+  "raw_dir": "sequence_fitness_mutation_effect_342256488231936",
+  "raw_files": [
+    "sequence_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "sequence_scores.csv",
+      "bytes": 56246
+    }
+  ]
+}

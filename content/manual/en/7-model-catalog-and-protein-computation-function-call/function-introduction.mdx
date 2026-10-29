@@ -8,9 +8,9 @@
 
 -   Launch the model calculation and complete the required inputs as prompted.
 
-<ManualImage src={"/manual-assets/en/video/video-52-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/animation-7fd078f02c60fa6e3c5277c61db584c4.mp4"} mp4={"/manual-assets/shared/animation-7fd078f02c60fa6e3c5277c61db584c4.mp4"} poster={"/manual-assets/en/video/video-52-poster.webp"} />
 
--   View results: Open the task results panel and import the models into the MOS project. This tool generates three candidate PDB structures.
+-   View results: Open the task results panel and import the models into the MoleculeOS project. This tool generates three candidate PDB structures.
 
 <ManualVideo src={"/manual-assets/en/video/video-53.webm"} poster={"/manual-assets/en/video/video-53-poster.webp"} webm={"/manual-assets/en/video/video-53.webm"} mp4={"/manual-assets/en/video/video-53.mp4"} external={false} reference={"image76.gif"} />
 
@@ -22,17 +22,27 @@
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-2"><a id="heading_94"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Import a PDB/CIF structure, choose Protein Redesign in Mocha, and select the input structure. For a partial redesign, specify the design residues (for example A1 A4 B2 B3) and check the chain IDs and residue numbering before submitting.
+2. Wait for Succeed in Task, then open the results panel to inspect redesign.fasta. Keep the input structure and task record for sequence comparisons.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2-poster.webp"} caption={"7.2 · Input and submission"} />
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results-poster.webp"} caption={"7.2 · Result review"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-3-protein-binder-design"><a id="heading_95"></a>3. <strong>Protein Binder Design</strong></h3>
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-overview-3"><a id="heading_96"></a><strong>Overview</strong></h4>
 
-<ManualTable html={"<table><tbody><tr><td><p>Designs target-specific binder proteins (backbone structures alone or including sequence).</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-3\"><a id=\"heading_97\"></a><strong>Target Users</strong></h5><ul><li><strong>Synthetic Biologists:</strong> Design enzyme inhibitors or stabilizers.</li><li><strong>Drug Discovery Researchers:</strong> Design mini-protein therapeutics, masking peptides, etc.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-3\"><a id=\"heading_98\"></a><strong>Use Cases</strong></h5><ul><li>Inhibit enzyme activity by binding to active or allosteric sites.</li><li>Stabilize protein folding or prevent aggregation during expression.</li><li>Target disease-associated proteins as antibody alternatives (e.g., viral or oncology targets).</li><li>Deliver drugs or nanoparticles to specific tissues via targeted binding.</li><li>Mimic or block natural ligands to modulate receptor signaling pathways.</li><li>Target immune receptors to regulate immune responses.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-2\"><a id=\"heading_99\"></a><strong>Inputs</strong></h5><ul><li><strong>\"Input Structure\" (Required): </strong>File containing the target protein structure (can contain multiple chains).</li><li><strong>\"Target Binding\" (Required): </strong>Target protein residues in the intended binding region (e.g., \"A5 A8-20\" specifies residue 5 and residues 8 through 20 on Chain A).</li><li><strong>\"Binder Size Min\" (Required): </strong>Minimum length of the designed binder peptide (e.g., 15).</li><li><strong>\"Binder Size Max\" (Required): </strong>Maximum length of the designed binder peptide (e.g., 30).</li><li><strong>\"Align Binder\" (Optional): </strong>When enabled, MOS predicts the target-binder complex and aligns it against the original target chain.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-3\"><a id=\"heading_100\"></a><strong>Outputs</strong></h5><ul><li>Designed binder structure containing heavy-atom 3D coordinates and virtual amino acid annotations: output.cif</li><li>If mosapp_compare_binder==1, the complex structure of the target protein and binder peptide containing valid sequences: aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
+<ManualTable html={"<table><tbody><tr><td><p>Designs target-specific binder proteins (backbone structures alone or including sequence).</p><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-target-users-3\"><a id=\"heading_97\"></a><strong>Target Users</strong></h5><ul><li><strong>Synthetic Biologists:</strong> Design enzyme inhibitors or stabilizers.</li><li><strong>Drug Discovery Researchers:</strong> Design mini-protein therapeutics, masking peptides, etc.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-use-cases-3\"><a id=\"heading_98\"></a><strong>Use Cases</strong></h5><ul><li>Inhibit enzyme activity by binding to active or allosteric sites.</li><li>Stabilize protein folding or prevent aggregation during expression.</li><li>Target disease-associated proteins as antibody alternatives (e.g., viral or oncology targets).</li><li>Deliver drugs or nanoparticles to specific tissues via targeted binding.</li><li>Mimic or block natural ligands to modulate receptor signaling pathways.</li><li>Target immune receptors to regulate immune responses.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-inputs-2\"><a id=\"heading_99\"></a><strong>Inputs</strong></h5><ul><li><strong>\"Input Structure\" (Required): </strong>File containing the target protein structure (can contain multiple chains).</li><li><strong>\"Target Binding\" (Required): </strong>Target protein residues in the intended binding region (e.g., \"A5 A8-20\" specifies residue 5 and residues 8 through 20 on Chain A).</li><li><strong>\"Binder Size Min\" (Required): </strong>Minimum length of the designed binder peptide (e.g., 15).</li><li><strong>\"Binder Size Max\" (Required): </strong>Maximum length of the designed binder peptide (e.g., 30).</li><li><strong>\"Align Binder\" (Optional): </strong>When enabled, MoleculeOS predicts the target-binder complex and aligns it against the original target chain.</li></ul><h5 id=\"7-model-catalog-and-protein-computation-function-call-function-introduction-outputs-3\"><a id=\"heading_100\"></a><strong>Outputs</strong></h5><ul><li>Designed binder structure containing heavy-atom 3D coordinates and virtual amino acid annotations: output.cif</li><li>If mosapp_compare_binder==1, the complex structure of the target protein and binder peptide containing valid sequences: aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-3"><a id="heading_101"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Import the target structure and choose Protein Binder Design in Mocha. Specify Target Binding residues and Binder Size Min / Max. Enable Align Binder when complex prediction and alignment are needed.
+2. Check the task status in Task. After success, open output.cif and, when alignment is enabled, inspect aligned.cif. Import the results to review the target and candidate binder geometry.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design-poster.webp"} caption={"7.3 · Input and submission"} />
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output-poster.webp"} caption={"7.3 · Candidate outputs"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-4-sequence-fitness-mutation-effect"><a id="heading_102"></a>4. <strong>Sequence Fitness Mutation Effect</strong></h3>
 
@@ -42,17 +52,14 @@ Launch the model computation via Mocha.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-4"><a id="heading_108"></a><strong>Steps</strong></h4>
 
--   Launch the model calculation and complete the required inputs as prompted.
+1. Choose Sequence Fitness Mutation Effect in Mocha, enter a protein sequence containing standard amino acids, check the sequence, and submit.
+2. After success, preview or download the CSV from the results panel. Use Display Score Heatmap to inspect scores by position and substitution, and compare candidates with the raw table.
 
-<ManualImage src={"/manual-assets/en/video/video-54-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input-poster.webp"} caption={"7.4 · Sequence input"} />
 
--   View results: Open the task results panel and click "Display Score Heatmap" to view the scoring matrix (higher scores indicate better performance).
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv-poster.webp"} caption={"7.4 · CSV inspection"} />
 
-<ManualVideo src={"/manual-assets/en/video/video-55.webm"} poster={"/manual-assets/en/video/video-55-poster.webp"} webm={"/manual-assets/en/video/video-55.webm"} mp4={"/manual-assets/en/video/video-55.mp4"} external={false} reference={"image78.gif"} />
-
-Online previewing and direct CSV downloads are supported.
-
-<ManualImage src={"/manual-assets/en/video/video-56-poster.webp"} width={2040} height={1016} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results-poster.webp"} caption={"7.4 · Result review"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-5-evolutionary-mutation-effect"><a id="heading_109"></a>5. <strong>Evolutionary Mutation Effect</strong></h3>
 
@@ -62,13 +69,10 @@ Online previewing and direct CSV downloads are supported.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-5"><a id="heading_115"></a><strong>Steps</strong></h4>
 
--   Launch the model calculation and complete the required inputs as prompted.
+1. Choose Evolutionary Mutation Effect in Mocha, enter a protein sequence, and submit. The successful example uses the 110-residue barnase sequence from chain B of 1BRS.
+2. Confirm Succeed in Task, then open the results panel to inspect and download the MutXevo CSV. Review candidates by position, substitution, and model score.
 
-<ManualImage src={"/manual-assets/en/video/video-57-poster.webp"} width={1952} height={1062} alt={""} />
-
--   View results: Open the task results panel to download the CSV result file directly.
-
-<ManualImage src={"/manual-assets/en/video/video-58-poster.webp"} width={2040} height={1016} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success-poster.webp"} caption={"7.5 · Successful run and CSV"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-6-structural-stability-mutation-effect"><a id="heading_116"></a>6. <strong>Structural Stability Mutation Effect</strong></h3>
 
@@ -82,17 +86,12 @@ Output example:
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-6"><a id="heading_122"></a><strong>Steps</strong></h4>
 
--   Launch the model calculation and complete the required inputs as prompted.
+1. Import the protein structure, choose Structural Stability Mutation Effect in Mocha, and check the structure, chain IDs, and evaluation positions before submitting.
+2. After success, inspect the heatmap and preview or download the CSV. Check the score field, units, and model definition when comparing mutations, and retain the raw results.
 
-<ManualImage src={"/manual-assets/en/video/video-59-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input-poster.webp"} caption={"7.6 · Structure input"} />
 
--   View results: Open the task results panel and click "Display Score Heatmap" to view the scoring matrix (higher scores indicate better performance).
-
-<ManualImage src={"/manual-assets/en/video/video-60-poster.webp"} width={1952} height={1062} alt={""} />
-
-Online previewing and direct CSV downloads are supported.
-
-<ManualImage src={"/manual-assets/en/video/video-61-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results-poster.webp"} caption={"7.6 · Result review"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-7-protein-ligand-affinity-evaluation"><a id="heading_123"></a>7. <strong>Protein-Ligand Affinity Evaluation</strong></h3>
 
@@ -108,7 +107,10 @@ Online previewing and direct CSV downloads are supported.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-7"><a id="heading_130"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Prepare the protein receptor structure and ligand SDF. Choose Protein-Ligand Affinity Evaluation in Mocha and specify the protein and small-molecule inputs separately.
+2. Submit and wait for success, then review the output table and scores in the results panel. Retain the receptor, ligand, and calculation settings for comparison and review.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity-poster.webp"} caption={"7.7 · Affinity evaluation workflow"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-8-geometric-pocket-detection"><a id="heading_131"></a>8. <strong>Geometric Pocket Detection</strong></h3>
 
@@ -124,7 +126,10 @@ Launch the model computation via Mocha.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-8"><a id="heading_138"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Prepare a protein-only structure of chain A from 5XH3. Run geometric pocket detection in Mocha, select the top 3 pockets, and inspect their positions.
+2. This example continues with AutoDock Vina 1.2.7 in the existing Mocha environment: pockets 2, 1, and 8, with 9 poses per pocket and 27 poses in total. Inspect pose files, pocket boxes, and raw score tables.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking-poster.webp"} caption={"7.8 · Pocket detection and docking in Mocha"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-9-antibody-humanization-modelling"><a id="heading_139"></a>9. <strong>Antibody Humanization Modelling</strong></h3>
 
@@ -134,7 +139,10 @@ Launch the model computation via Mocha.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-9"><a id="heading_145"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Choose Antibody Humanization Modelling in Mocha. Enter the heavy- and light-chain variable-region sequences in their respective fields, check chain types, and submit.
+2. After success, inspect candidate sequences in the output FASTA and compare them with the input antibody. This example uses public 1FDL chain H VH (1–116) and chain L VL (1–107), producing 10 candidates.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization-poster.webp"} caption={"7.9 · Humanization input and results"} />
 
 <h3 id="7-model-catalog-and-protein-computation-function-call-function-introduction-10-binding-affinity-mutation-scoring"><a id="heading_146"></a>10. <strong>Binding Affinity Mutation Scoring</strong></h3>
 
@@ -144,4 +152,8 @@ Launch the model computation via Mocha.
 
 <h4 id="7-model-catalog-and-protein-computation-function-call-function-introduction-steps-10"><a id="heading_152"></a><strong>Steps</strong></h4>
 
-Launch the model computation via Mocha.
+1. Import a complex containing the interacting chains, choose Binding Affinity Mutation Scoring in Mocha, and specify chains as required by the form. This example uses public 1BRS imported as a sanitized CIF, with chain parameter A,D.
+2. After success, open the results panel to inspect and download the MutXaff CSV. Check each mutation position, substitution, score field, and unit.
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results-poster.webp"} caption={"7.10 · Binding mutation scoring results"} />
+

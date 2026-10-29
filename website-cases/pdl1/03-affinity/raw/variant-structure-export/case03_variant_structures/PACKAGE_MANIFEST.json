@@ -1,0 +1,153 @@
+{
+  "package": "case03_variant_structures.zip",
+  "case": "Independent website case 03 - variant structure assets (sequence-only MMFold)",
+  "tasks": [
+    {
+      "task_id": "342259574002688",
+      "variant": "Q18Y (author Q13Y)",
+      "type": "MMFold",
+      "status": "succeed"
+    },
+    {
+      "task_id": "342259585696768",
+      "variant": "V17I (author V12I)",
+      "type": "MMFold",
+      "status": "succeed"
+    }
+  ],
+  "note": "Structural confidence only. No affinity ddG is included or derived; the affinity results live in case03_complete.zip.",
+  "file_count": 26,
+  "total_bytes": 2143132,
+  "files": [
+    {
+      "path": "Q18Y/cif/179246519899289_model_sample_1.cif",
+      "bytes": 211964,
+      "sha256": "40d06fd9e529160f6fc3ce109efa83e738f65f973e32e72114f7805e588ff2ec"
+    },
+    {
+      "path": "Q18Y/cif/179246520009403_model_sample_2.cif",
+      "bytes": 211964,
+      "sha256": "aaf526f56be58f5ef6acbacdf3ae3ab8b4c0039b1cb6d7ad1c5ac5d41d295782"
+    },
+    {
+      "path": "Q18Y/cif/179246520113773_model_sample_5.cif",
+      "bytes": 211964,
+      "sha256": "93659db34551daa9ae285908719e526fab2bb8a2acc4ceec9dad96786022d02b"
+    },
+    {
+      "path": "Q18Y/cif/179246520233187_model_sample_3.cif",
+      "bytes": 211964,
+      "sha256": "c9468e8741a3541aa72d4577cdce85a7b3713a9e860eb853160bdc2cf13961ec"
+    },
+    {
+      "path": "Q18Y/cif/179246520338048_model_sample_4.cif",
+      "bytes": 211964,
+      "sha256": "fe42b054aff8b987758f1826698a628529549d9d3e0ac9567a7409b3d4f12164"
+    },
+    {
+      "path": "Q18Y/confidence/summary_confidences_sample_1.json",
+      "bytes": 715,
+      "sha256": "083d35b83058b950a69cef5b707b3cce044be7a4a18bdbdda82cd741174a7365"
+    },
+    {
+      "path": "Q18Y/confidence/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "7ae6196c5cced999ef1e00a4ae44fa90577dbcbee083d14424c74a1478f7cff7"
+    },
+    {
+      "path": "Q18Y/confidence/summary_confidences_sample_3.json",
+      "bytes": 722,
+      "sha256": "0a73aa4320788dfe02e98da75f166b718ada17cf23edebbc345a3be57d5d8360"
+    },
+    {
+      "path": "Q18Y/confidence/summary_confidences_sample_4.json",
+      "bytes": 722,
+      "sha256": "930d91d98995fd6bc12baf1dc42fc976a891280413137e6ea4bf7d8302f0de64"
+    },
+    {
+      "path": "Q18Y/confidence/summary_confidences_sample_5.json",
+      "bytes": 722,
+      "sha256": "cb36bf9e7582d9c618f64e00e7a7c85d7006b4f7dc026a5428a5140e15d2fc42"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2907,
+      "sha256": "4d44ac47a5cf60c80a100ad16576bd5b1e9fc22a2de0491ee2874e78bf8045ae"
+    },
+    {
+      "path": "V17I/cif/179246520081974_model_sample_1.cif",
+      "bytes": 211814,
+      "sha256": "a190202684fc1422ef0e00c14b3109aa15f5f30855a947c46d7bc5079bbd62a0"
+    },
+    {
+      "path": "V17I/cif/179246520193986_model_sample_2.cif",
+      "bytes": 211814,
+      "sha256": "2f2e2dd8e76e0bba0a1f5bec74af1cd25e9dd47b04a645a5cb7e863156a72690"
+    },
+    {
+      "path": "V17I/cif/179246520307120_model_sample_5.cif",
+      "bytes": 211814,
+      "sha256": "665d69d12331493739c6e82f673fa152c65700060ad362655a710c876b78b65d"
+    },
+    {
+      "path": "V17I/cif/179246520421979_model_sample_3.cif",
+      "bytes": 211814,
+      "sha256": "4e93fc8dff985126967b3206b24e9cfea36959243b25c2259025c1923da4acf1"
+    },
+    {
+      "path": "V17I/cif/179246520539642_model_sample_4.cif",
+      "bytes": 211814,
+      "sha256": "51ce67ac7176dc30a3a96ff9d32b45173c478cbc1ef3bad64f2807d645b8517c"
+    },
+    {
+      "path": "V17I/confidence/summary_confidences_sample_1.json",
+      "bytes": 716,
+      "sha256": "7898f7035760643001d999e29ed01188947200ad5fa3130af5c8e214a94e3fb4"
+    },
+    {
+      "path": "V17I/confidence/summary_confidences_sample_2.json",
+      "bytes": 722,
+      "sha256": "38a05509d2f6ff71b0e9c6266fa65eea284d850e4bec5bb758d0f2c8147a8758"
+    },
+    {
+      "path": "V17I/confidence/summary_confidences_sample_3.json",
+      "bytes": 717,
+      "sha256": "41c1011c2ce8f8300c719f8a5064733ee3b1d75542ca47f03eb94dac6e8b9002"
+    },
+    {
+      "path": "V17I/confidence/summary_confidences_sample_4.json",
+      "bytes": 723,
+      "sha256": "c515415e43ddbdd07d5b767f793a930fa83297d1ff536bef06e37073c317162b"
+    },
+    {
+      "path": "V17I/confidence/summary_confidences_sample_5.json",
+      "bytes": 720,
+      "sha256": "7362195d48734764a9568177231e4b03836816cc5dc19e0b8f7782cf97843b9c"
+    },
+    {
+      "path": "confidence_summary.csv",
+      "bytes": 923,
+      "sha256": "1e38e03298a6b985af7af83ed337ce791898bb7c88cff4f3a53fa311d30fecaa"
+    },
+    {
+      "path": "payloads/MMFold_Q18Y.json",
+      "bytes": 842,
+      "sha256": "062daa7239e1b114bffbddff742c4225af04b059a8a9cdfc3d234404015a5b8b"
+    },
+    {
+      "path": "payloads/MMFold_V17I.json",
+      "bytes": 842,
+      "sha256": "0b531ea90d8436e00ed429e7b465d7a616b681183ba236122764f32cbe90840c"
+    },
+    {
+      "path": "variant_results.json",
+      "bytes": 10607,
+      "sha256": "d931fb5576dbdfef098d55d18a33d5f2290248d4b559c4daf641f569531cfb53"
+    },
+    {
+      "path": "variant_sequences.fasta",
+      "bytes": 920,
+      "sha256": "c9975e60b85646610a2ed2b0240691d23ee17170f481cdb021f23f2fd61ae226"
+    }
+  ]
+}

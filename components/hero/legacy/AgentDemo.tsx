@@ -96,7 +96,7 @@ export function LegacyAgentDemo() {
   }
 
   return <div className="agent-demo-slot"><div ref={frame} className={`agent-demo agent-demo-live agent-multitask ${active ? 'agent-has-task' : ''} ${hasStructure ? 'agent-has-structure' : ''}`} aria-label={t('label')}>
-    <div className="agent-demo-top"><span className="agent-brand">MOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{task ? taskTitle(task.id) : 'Mocha'}</span></div>
+    <div className="agent-demo-top"><span className="agent-brand">MoleculeOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{task ? taskTitle(task.id) : 'Mocha'}</span></div>
     <div className="agent-workspace">
       <aside className="agent-run-sidebar" aria-label={t('tasksLabel')}><div className="agent-sidebar-heading"><span>{t('tasksLabel')}</span><button type="button" className="agent-new-task" onClick={() => setActiveId(null)}><Plus size={14}/>{t('newTask')}</button></div>
         <div className="agent-run-list">{AGENT_PROJECTS.map(project => <button type="button" className="agent-run agent-preset-project" aria-pressed={activeId === 0} key={project.title} onClick={() => start(project.taskId)}>{presetRun ? runStatus(presetRun) === 'complete' ? <CheckCircle2 size={15}/> : runStatus(presetRun) === 'paused' ? <Circle size={15}/> : <LoaderCircle size={15} className="agent-running-icon"/> : <FileText size={15}/>}<span><strong>{project.title}</strong>{presetRun && <small>{t(runStatus(presetRun))}</small>}</span></button>)}

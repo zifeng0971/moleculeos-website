@@ -1,0 +1,1 @@
+我在原生MMetrics 1FDL面板仍看到Generating description / Analyzing structure / Model Computing。请在完成比较后检查本项目autocompute-1FDL的真实task ID与状态，保存原始返回及可取得输出，明确原生分析是否完成；不要用内置interaction脚本冒充原生MMetrics。另请在MOS内导入2-3代表候选与已经对齐的1FDL Fv用于截图，保存导入object/work ID。若有原生Superimpose工具可调用请实际使用并保存参数；若没有，明确将Kabsch拟合列作Mocha额外结构统计，不能写成原生Superimpose已运行。完成全部结构比较后生成最终ZIP。

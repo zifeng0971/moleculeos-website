@@ -1,0 +1,22 @@
+CheckMOSTask(345176768607232) — captured 2026-10-28T08:48Z
+
+[SUCCEED] diag_PDL1_A118_20261028
+Type:     Sequence Homology Search
+Task ID:  345176768607232
+Started:  2026-10-28 08:47:52
+Duration: 3s
+
+Input parameters (verbatim):
+{
+  "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+  "local": true,
+  "max_seq": 500
+}
+
+Downloaded 2 file(s):
+  all_sequences.fasta
+  similarity_results.json
+
+Time semantics: the platform printed no timezone suffix. The session clock at launch read
+2026-10-28T08:47:5xZ, so the displayed start time is consistent with UTC. Original strings are
+preserved above exactly as returned.

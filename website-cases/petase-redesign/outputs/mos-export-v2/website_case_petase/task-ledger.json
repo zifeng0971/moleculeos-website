@@ -1,0 +1,631 @@
+{
+ "case": "website_case_petase \u2014 rational engineering of IsPETase around the experimental HEMT site",
+ "ledger_version": 2,
+ "note": "payload_exact is the complete parameter object as echoed by the platform; sequences are the full 268/261-letter strings, written from the local FASTA and verified by length+SHA256 in each response file. Fields the platform did not return are listed under payload_fields_not_exposed instead of being guessed.",
+ "inputs": {
+  "5XH3.pdb": {
+   "bytes": 394389,
+   "sha256": "a550503b1c82fa917708bc99762c472287ea24195a0a79d14af20af8898cb156"
+  },
+  "5XH3.cif": {
+   "bytes": 481172,
+   "sha256": "7b2970c554287d5b889856b287ef9a50bf906409f7cf18fa7051781fab4938ea"
+  },
+  "5XH3_pdbx_fasta.fasta": {
+   "bytes": 364,
+   "sha256": "c3119cc4295e9d99b7084aaf36d06e0049ca0c2ccd79e446800a4718ad95775a"
+  },
+  "5XH3_metadata.json": {
+   "bytes": 15918,
+   "sha256": "550bc2a7fa49f1f4c97899fb17c829ab41beba5b46bc293c3531f49876b112b3"
+  },
+  "5XG0.pdb": {
+   "bytes": 609039,
+   "sha256": "3ac32c91bc854a9f498c9c45e688688c4a92ed352796569d143cb53795f4c322"
+  },
+  "5XG0.cif": {
+   "bytes": 759856,
+   "sha256": "a5c0862be0d3b6305db7a493ca5b6cfa0f60c5c8042c8b918c250d0eb207a23f"
+  },
+  "5XG0_pdbx_fasta.fasta": {
+   "bytes": 378,
+   "sha256": "d13894b013391691a55590b1cb634861904336b5bfea1d0876ce3da7ae1461f6"
+  },
+  "5XG0_metadata.json": {
+   "bytes": 14386,
+   "sha256": "2025c47e337520037957907cf98887d6fb567cfca81f1b70d797ccdd49fc8e7d"
+  },
+  "uniprot_A0A0K8P6T7.fasta": {
+   "bytes": 422,
+   "sha256": "e1d2c99f6cfa33ceb1faa519ea9dda372e391511f7a295c9474c1af8be61c207"
+  },
+  "856_ccd.json": {
+   "bytes": 3298,
+   "sha256": "97a664cd2b0cb432015b86082104d965997ccf828087863579295b6b42a42667"
+  },
+  "manual_example_protein_5xh3_clean.pdb": {
+   "bytes": 156500,
+   "sha256": "aa9ddaea2fb33662c15cfd0fb1d8877203bf0ad33132d77553cb4f8eeb12853c",
+   "expected_bytes": 156500,
+   "expected_sha256": "aa9ddaea2fb33662c15cfd0fb1d8877203bf0ad33132d77553cb4f8eeb12853c",
+   "verified": true,
+   "reconstruction": "all b'ATOM  ' lines of inputs/5XH3.pdb (1931 lines, 80 bytes each) + b'TER    1932      SER A 261'.ljust(81,b' ') + b'END   ', joined with b'\\n' plus trailing b'\\n'"
+  },
+  "manual_example_ligand_5xh3_B_856.sdf": {
+   "bytes": 2191,
+   "sha256": "44c9ea73346d5d29b74d034010fcb65e4489dd58407ecccb219863d70fe443e9",
+   "expected_bytes": 2191,
+   "expected_sha256": "44c9ea73346d5d29b74d034010fcb65e4489dd58407ecccb219863d70fe443e9",
+   "verified": true,
+   "reconstruction": "decoded user-supplied base64 (manual file), repaired to the byte-verified form and checked against the deposited 856 atom block"
+  }
+ },
+ "mos_tasks": [
+  {
+   "role": "affinity (manual example, native reference run \u2014 read-only lookup, not re-executed)",
+   "task_id": "338706466620416",
+   "task_type": "Protein-Ligand Affinity Evaluation",
+   "task_name": "5xh3_A_ligand_affinity",
+   "status": "SUCCEED",
+   "started": "2026-10-10 02:00:08",
+   "duration": "3.2min",
+   "payload_exact": {
+    "target_file": "tos:mosv2-prod/user_objects/0/329502077678592/sanitized/179159720409225_5xh3_clean (2).cif",
+    "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/338706466620416/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/protein_ligand_affinity_evaluation_338706466620416/predicted_sipobe_scores.csv"
+   ],
+   "archived_output": "native_tasks/affinity_338706466620416_manual_native/predicted_sipobe_scores.csv",
+   "archived_output_sha256": "59800c21393e52d3006c130ef299534055deb6bded9eb1deb9398f5ff542b61a",
+   "result": {
+    "score": -4.310292,
+    "vdw": -2.4951997,
+    "hbond": -0.5505939,
+    "metal": 0.0,
+    "hydrophobic": -1.2644981
+   },
+   "note": "native reference run by the manual author; read-only lookup, not re-executed here"
+  },
+  {
+   "role": "WT sequence fitness scan (5XG0 chain C construct, 268 aa)",
+   "task_id": "342337264870400",
+   "task_type": "Sequence Fitness Mutation Effect",
+   "task_name": "WT_PETase_seqfitness",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:13:54",
+   "duration": "8s",
+   "payload_exact": {
+    "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337264870400/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/sequence_fitness_mutation_effect_342337264870400/sequence_scores.csv"
+   ],
+   "archived_output": "native_tasks/seqfitness_342337264870400/sequence_scores.csv",
+   "archived_output_sha256": "8c2833162b49401b739625acbf0d91424735eb09517d26c7f29c0617da515fa8"
+  },
+  {
+   "role": "WT evolutionary scan (identical 268 aa input)",
+   "task_id": "342337268093952",
+   "task_type": "Evolutionary Mutation Effect",
+   "task_name": "WT_PETase_evomut",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:13:55",
+   "duration": "2.5min",
+   "payload_exact": {
+    "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337268093952/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/evolutionary_mutation_effect_342337268093952/evolutionary_scores.csv"
+   ],
+   "archived_output": "native_tasks/evomut_342337268093952/evolutionary_scores.csv",
+   "archived_output_sha256": "b280a3cab68382f6d46f24f162d56dc1db70cca3cc0cab52d3286221765c0938"
+  },
+  {
+   "role": "WT structural fitness scan (same construct as a 268-residue structure)",
+   "task_id": "342337277858816",
+   "task_type": "Structural Stability Mutation Effect",
+   "task_name": "WT_PETase_structfitness",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:13:57",
+   "duration": "3s",
+   "payload_exact": {
+    "structure_path": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248398139384_5XG0_WT_chainC_author-6_261.cif"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337277858816/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/structural_stability_mutation_effect_342337277858816/struct_fitness_scores.csv"
+   ],
+   "archived_output": "native_tasks/structfitness_342337277858816/struct_fitness_scores.csv",
+   "archived_output_sha256": "7a9b7f1c5580b68b3426ed6d4f84aa6ec2353b2dcf32a4bd66771c2978138971"
+  },
+  {
+   "role": "affinity (this run)",
+   "task_id": "342337422410752",
+   "task_type": "Protein-Ligand Affinity Evaluation",
+   "task_name": "PETase_5xh3_HEMT_affinity_rerun",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:14:32",
+   "duration": "38s",
+   "payload_exact": {
+    "model_name": "sipobe",
+    "batch_size": 1,
+    "ngpu": 0,
+    "target_file": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+    "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337422410752/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/protein_ligand_affinity_evaluation_342337422410752/predicted_sipobe_scores.csv"
+   ],
+   "archived_output": "native_tasks/affinity_342337422410752/predicted_sipobe_scores.csv",
+   "archived_output_sha256": "23be5c5796112a15e4a611d6c0df3c783953cfa703b53e1983fe146497ac8f8f",
+   "result": {
+    "score": -4.310292,
+    "vdw": -2.4951997,
+    "hbond": -0.5505939,
+    "metal": 0.0,
+    "hydrophobic": -1.2644981
+   }
+  },
+  {
+   "role": "native MMetrics analysis of 5XG0 chain C object",
+   "task_id": "342337536795648",
+   "task_type": "MOSTask",
+   "task_name": "mmetrics-analysis-342337061192704",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:15:00",
+   "duration": "5s",
+   "payload_exact": {
+    "input_structure": "user_objects/123/330665428816896/sanitized/179248398139384_5XG0_WT_chainC_author-6_261.cif",
+    "autocomp_results": {
+     "result_data": {
+      "objects": [
+       {
+        "id": "342337533723648",
+        "name": "all_sequences.fasta",
+        "modelType": "mos-blast"
+       },
+       {
+        "id": "342337533740032",
+        "name": "blast_results.json",
+        "modelType": "mos-blast"
+       },
+       {
+        "id": "342337533756416",
+        "name": "esm_scores.csv",
+        "modelType": "mos-score-esm"
+       },
+       {
+        "id": "342337533772800",
+        "name": "proteinmpnn_scores.csv",
+        "modelType": "mos-score-ligandmpnn"
+       },
+       {
+        "id": "342337533789184",
+        "name": "msat_scores.csv",
+        "modelType": "mos-score-msat"
+       },
+       {
+        "id": "342337533801472",
+        "name": "sequence_info.fasta",
+        "modelType": null
+       }
+      ]
+     }
+    }
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337536795648/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/mostask_342337536795648/record.json"
+   ],
+   "archived_output": "native_tasks/_raw_api_returns/mmetrics_342337536795648_record.json",
+   "archived_output_sha256": "7afc5ca042159b2cac393372d411fd38c8df1de7506a7a400fc241bbce327a4d"
+  },
+  {
+   "role": "auto-triggered native MMetrics/autocompute for 5XH3_HEMT_complex (duplicate 1)",
+   "task_id": "342337764889600",
+   "task_type": "MOSTask",
+   "task_name": "autocompute-5XH3_HEMT_complex",
+   "status": "PENDING",
+   "started": "2026-10-20 08:15:56",
+   "duration": "0s",
+   "payload_exact": {
+    "structure_path": "user_objects/123/330665428816896/sanitized/179248415413957_5XH3_HEMT_complex.cif",
+    "structure_pathFileId": "342337760510976",
+    "structure_pathFilename": "5XH3_HEMT_complex.cif"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337764889600/check_mosttask_response.json",
+   "downloaded_files": [],
+   "note": "auto-triggered by importing the 5XH3 complex; still PENDING at the last check, therefore no native MMetrics output exists for this object yet"
+  },
+  {
+   "role": "auto-triggered native MMetrics/autocompute for 5XH3_HEMT_complex (duplicate 2)",
+   "task_id": "342337765340160",
+   "task_type": "MOSTask",
+   "task_name": "autocompute-5XH3_HEMT_complex",
+   "status": "PENDING",
+   "started": "2026-10-20 08:15:56",
+   "duration": "0s",
+   "payload_exact": {
+    "structure_path": "user_objects/123/330665428816896/sanitized/179248415413957_5XH3_HEMT_complex.cif",
+    "structure_pathFileId": "342337760510976",
+    "structure_pathFilename": "5XH3_HEMT_complex.cif"
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342337765340160/check_mosttask_response.json",
+   "downloaded_files": [],
+   "note": "second duplicate auto-triggered job for the same object; also PENDING"
+  },
+  {
+   "role": "native MMetrics analysis of 5xh3_clean object",
+   "task_id": "342338457240576",
+   "task_type": "MOSTask",
+   "task_name": "mmetrics-analysis-342337095480320",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:18:45",
+   "duration": "3s",
+   "payload_exact": {
+    "input_structure": "user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+    "autocomp_results": {
+     "result_data": {
+      "objects": [
+       {
+        "id": "342338453922816",
+        "name": "all_sequences.fasta",
+        "modelType": "mos-blast"
+       },
+       {
+        "id": "342338453935104",
+        "name": "blast_results.json",
+        "modelType": "mos-blast"
+       },
+       {
+        "id": "342338453943296",
+        "name": "esm_scores.csv",
+        "modelType": "mos-score-esm"
+       },
+       {
+        "id": "342338453955584",
+        "name": "proteinmpnn_scores.csv",
+        "modelType": "mos-score-ligandmpnn"
+       },
+       {
+        "id": "342338453963776",
+        "name": "msat_scores.csv",
+        "modelType": "mos-score-msat"
+       },
+       {
+        "id": "342338453976064",
+        "name": "sequence_info.fasta",
+        "modelType": null
+       }
+      ]
+     }
+    }
+   },
+   "payload_fields_not_exposed": [],
+   "full_response_file": "native_tasks/342338457240576/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/mostask_342338457240576/record.json"
+   ],
+   "archived_output": "native_tasks/_raw_api_returns/mmetrics_342338457240576_record.json",
+   "archived_output_sha256": "60dbefad93809ce47331393a7328d6a968690ab8745636530b41d6520d8a07da"
+  },
+  {
+   "role": "ligand-aware local redesign, 10 designs, 5 opened positions",
+   "task_id": "342338944422912",
+   "task_type": "Protein Redesign",
+   "task_name": "PETase_WT_HEMT_local_redesign_10",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:20:44",
+   "duration": "35s",
+   "payload_exact": {
+    "structure_path": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248434317855_5XG0_WT_HEMT_model.cif",
+    "n_designs": 10,
+    "chains_to_design": "D",
+    "redesigned_residues": "D130 D156 D157 D179 D209",
+    "design_output_mode": "full"
+   },
+   "payload_fields_not_exposed": [
+    "temperature",
+    "random seed",
+    "per-position sampling probabilities",
+    "model checkpoint / weight name",
+    "fixed_residues (we left it unset; all residues outside redesigned_residues were fixed by the platform default)"
+   ],
+   "full_response_file": "native_tasks/342338944422912/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/protein_redesign_342338944422912/redesign.fasta"
+   ],
+   "archived_output": "native_tasks/redesign_342338944422912/redesign.fasta",
+   "archived_output_sha256": "de2e2a66077ac38bdf58bff27e922b19db09621ed8ae48a223fa75b850fa49a0"
+  },
+  {
+   "role": "MMFold candidate seq_4",
+   "task_id": "342339217835008",
+   "task_type": "MMFold",
+   "task_name": "MMFold_candidate_seq_4",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:21:51",
+   "duration": "2.1min",
+   "payload_exact": {
+    "name": "PETase_design_seq_4_W130H_W156Y_D157H_S209G",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+      }
+     }
+    ]
+   },
+   "payload_fields_not_exposed": [
+    "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+   ],
+   "full_response_file": "native_tasks/342339217835008/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/mmfold_342339217835008/179248463118514_model_sample_3.cif",
+    "/workspace/downloads/mmfold_342339217835008/179248463218181_model_sample_5.cif",
+    "/workspace/downloads/mmfold_342339217835008/179248463320004_model_sample_1.cif",
+    "/workspace/downloads/mmfold_342339217835008/179248463416154_model_sample_2.cif",
+    "/workspace/downloads/mmfold_342339217835008/179248463515908_model_sample_4.cif",
+    "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_1.json",
+    "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_2.json",
+    "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_3.json",
+    "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_4.json",
+    "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_5.json"
+   ],
+   "archived_output": "native_tasks/mmfold_seq_4_342339217835008/",
+   "archived_output_sha256": null
+  },
+  {
+   "role": "MMFold candidate seq_2",
+   "task_id": "342339221820416",
+   "task_type": "MMFold",
+   "task_name": "MMFold_candidate_seq_2",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:21:52",
+   "duration": "2.1min",
+   "payload_exact": {
+    "name": "PETase_design_seq_2_W130H_W156Y_D157Y_S209G",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYYSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+      }
+     }
+    ]
+   },
+   "payload_fields_not_exposed": [
+    "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+   ],
+   "full_response_file": "native_tasks/342339221820416/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/mmfold_342339221820416/179248463462346_model_sample_3.cif",
+    "/workspace/downloads/mmfold_342339221820416/179248463539742_model_sample_5.cif",
+    "/workspace/downloads/mmfold_342339221820416/179248463619830_model_sample_1.cif",
+    "/workspace/downloads/mmfold_342339221820416/179248463691638_model_sample_2.cif",
+    "/workspace/downloads/mmfold_342339221820416/179248463763615_model_sample_4.cif",
+    "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_1.json",
+    "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_2.json",
+    "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_3.json",
+    "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_4.json",
+    "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_5.json"
+   ],
+   "archived_output": "native_tasks/mmfold_seq_2_342339221820416/",
+   "archived_output_sha256": null
+  },
+  {
+   "role": "MMFold candidate seq_1",
+   "task_id": "342339232719872",
+   "task_type": "MMFold",
+   "task_name": "MMFold_candidate_seq_1",
+   "status": "SUCCEED",
+   "started": "2026-10-20 08:21:54",
+   "duration": "2.0min",
+   "payload_exact": {
+    "name": "PETase_design_seq_1_W130H_W156Y_D157H_I179V_S209G",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSVAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+      }
+     }
+    ]
+   },
+   "payload_fields_not_exposed": [
+    "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+   ],
+   "full_response_file": "native_tasks/342339232719872/check_mosttask_response.json",
+   "downloaded_files": [
+    "/workspace/downloads/mmfold_342339232719872/179248463080003_model_sample_1.cif",
+    "/workspace/downloads/mmfold_342339232719872/179248463208425_model_sample_2.cif",
+    "/workspace/downloads/mmfold_342339232719872/179248463322333_model_sample_4.cif",
+    "/workspace/downloads/mmfold_342339232719872/179248463437021_model_sample_5.cif",
+    "/workspace/downloads/mmfold_342339232719872/179248463556667_model_sample_3.cif",
+    "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_1.json",
+    "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_2.json",
+    "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_3.json",
+    "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_4.json",
+    "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_5.json"
+   ],
+   "archived_output": "native_tasks/mmfold_seq_1_342339232719872/",
+   "archived_output_sha256": null
+  }
+ ],
+ "native_mmetrics_status": {
+  "5XH3_HEMT_complex": {
+   "autocompute_task_ids": [
+    "342337764889600",
+    "342337765340160"
+   ],
+   "status": "PENDING (platform: 'Task is waiting (not queued)') at final check",
+   "downloadable_native_results": false,
+   "consequence": "no native MMetrics CSVs exist for the 5XH3 complex yet; the pocket/contact analysis in this case therefore rests on the Mocha built-in scripts, not on MMetrics"
+  },
+  "5XG0_WT_chainC": {
+   "mmetrics_task_id": "342337536795648",
+   "status": "SUCCEED",
+   "object_ids": {
+    "all_sequences.fasta": "342337533723648",
+    "blast_results.json": "342337533740032",
+    "esm_scores.csv": "342337533756416",
+    "proteinmpnn_scores.csv": "342337533772800",
+    "msat_scores.csv": "342337533789184",
+    "sequence_info.fasta": "342337533801472"
+   },
+   "downloadable_native_results": true
+  },
+  "5xh3_clean": {
+   "mmetrics_task_id": "342338457240576",
+   "status": "SUCCEED",
+   "object_ids": {
+    "all_sequences.fasta": "342338453922816",
+    "blast_results.json": "342338453935104",
+    "esm_scores.csv": "342338453943296",
+    "proteinmpnn_scores.csv": "342338453955584",
+    "msat_scores.csv": "342338453963776",
+    "sequence_info.fasta": "342338453976064"
+   },
+   "downloadable_native_results": true
+  },
+  "candidate_models": {
+   "autocompute_task_ids": [
+    "342339910697984",
+    "342339911291904",
+    "342339921769472",
+    "342339922211840",
+    "342339942724608",
+    "342339943171072"
+   ],
+   "status": "PENDING at final check",
+   "downloadable_native_results": false
+  },
+  "5XG0_WT_HEMT_model": {
+   "autocompute_task_ids": [
+    "342338538587136",
+    "342338541339648"
+   ],
+   "status": "PENDING at final check",
+   "downloadable_native_results": false
+  }
+ },
+ "limitations": [
+  {
+   "item": "ImportStructure of SDF ligands",
+   "status": "not supported in this environment",
+   "raw_error": "ERROR: This file is already a sanitized MOS structure and cannot be re-imported as a local file. Use source='mos_object' with the objectId from the original task result instead.",
+   "reproduced_on": [
+    "inputs/5xh3_B_856.sdf",
+    "inputs/tmp/lig856.sdf (renamed copy)",
+    "inputs/tmp/tiny.sdf (3-atom test)"
+   ],
+   "consequence": "the manual SDF was passed to the affinity task at its original TOS path; no substitute ligand was used"
+  },
+  {
+   "item": "ImportStructure of MMFold output CIFs as local files",
+   "status": "blocked by the same guard (files carry _mos_mapping)",
+   "workaround": "imported with source='mos_object' using the object id found in the data block"
+  },
+  {
+   "item": "MOS Superimpose task",
+   "status": "not offered by ListAvailableMOSTasks in this environment",
+   "consequence": "superpositions computed with gemmi (Mocha built-in, deterministic), labelled as such"
+  },
+  {
+   "item": "AnalyzeMutationScores on task 342337268093952",
+   "status": "wrapper returned 'succeeded but some expected output files are missing'",
+   "workaround": "the raw evolutionary_scores.csv was present and used directly"
+  }
+ ],
+ "overlays_for_screenshots": [
+  {
+   "file_cif": "structures/overlays/overlay_WT_chainA_seq_4_chainB.cif",
+   "file_pdb": "structures/overlays/overlay_WT_chainA_seq_4_chainB.pdb",
+   "candidate": "seq_4",
+   "substitutions_AUTH": "W130H W156Y D157H S209G",
+   "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+   "chain_B": "MMFold prediction for candidate seq_4 (task payload name PETase_design_seq_4), model_sample_1, rigid-body superposed onto chain A",
+   "chain_B_source_file": "native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+   "matched_CA": 261,
+   "superpose_RMSD_A": 0.249,
+   "max_CA_dev_after_superpose_A": 1.122,
+   "contains_ligand": false,
+   "not_an_experimental_complex": true,
+   "mos": {
+    "object_id": "342340955022336",
+    "work_id": "342340966765568",
+    "tos_key": "user_objects/123/330665428816896/sanitized/179248493397396_overlay_WT_chainA_seq_4_chainB.cif"
+   },
+   "chain_labeling": {
+    "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+    "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+   }
+  },
+  {
+   "file_cif": "structures/overlays/overlay_WT_chainA_seq_2_chainB.cif",
+   "file_pdb": "structures/overlays/overlay_WT_chainA_seq_2_chainB.pdb",
+   "candidate": "seq_2",
+   "substitutions_AUTH": "W130H W156Y D157Y S209G",
+   "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+   "chain_B": "MMFold prediction for candidate seq_2 (task payload name PETase_design_seq_2), model_sample_1, rigid-body superposed onto chain A",
+   "chain_B_source_file": "native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif",
+   "matched_CA": 261,
+   "superpose_RMSD_A": 0.288,
+   "max_CA_dev_after_superpose_A": 1.002,
+   "contains_ligand": false,
+   "not_an_experimental_complex": true,
+   "mos": {
+    "object_id": "342340958577664",
+    "work_id": "342340974621696",
+    "tos_key": "user_objects/123/330665428816896/sanitized/179248493477927_overlay_WT_chainA_seq_2_chainB.cif"
+   },
+   "chain_labeling": {
+    "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+    "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+   }
+  },
+  {
+   "file_cif": "structures/overlays/overlay_WT_chainA_seq_1_chainB.cif",
+   "file_pdb": "structures/overlays/overlay_WT_chainA_seq_1_chainB.pdb",
+   "candidate": "seq_1",
+   "substitutions_AUTH": "W130H W156Y D157H I179V S209G",
+   "chain_A": "wild-type IsPETase, 5XG0 chain C, author 1-261, experimental coordinates, no ligand, no tag",
+   "chain_B": "MMFold prediction for candidate seq_1 (task payload name PETase_design_seq_1), model_sample_1, rigid-body superposed onto chain A",
+   "chain_B_source_file": "native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif",
+   "matched_CA": 261,
+   "superpose_RMSD_A": 0.291,
+   "max_CA_dev_after_superpose_A": 1.043,
+   "contains_ligand": false,
+   "not_an_experimental_complex": true,
+   "mos": {
+    "object_id": "342340999898112",
+    "work_id": "342341006595072",
+    "tos_key": "user_objects/123/330665428816896/sanitized/179248494492003_overlay_WT_chainA_seq_1_chainB.cif"
+   },
+   "chain_labeling": {
+    "A": "WT 5XG0 chain C (experimental coordinates, chain relabeled from C to A, tag -6..0 removed)",
+    "B": "MMFold prediction of the design (model_sample_1), superposed onto chain A"
+   }
+  }
+ ]
+}

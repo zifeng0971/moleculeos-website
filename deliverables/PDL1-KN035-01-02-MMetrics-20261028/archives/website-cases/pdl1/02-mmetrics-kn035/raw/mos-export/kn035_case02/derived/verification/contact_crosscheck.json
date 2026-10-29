@@ -1,0 +1,36 @@
+{
+  "source": "local heavy-atom distance calculation on raw/structure/MMFold_1.sanitized.cif, compared with the native MMetrics interaction block",
+  "native_reported": {
+    "n_typed_interaction_records": 44,
+    "n_contacts_field": 44,
+    "metric_breakdown": {
+      "hbond_count": 9,
+      "vdw_count": 33,
+      "ionic_count": 1,
+      "pication_count": 0,
+      "pipistack_count": 1,
+      "pihbond_count": 0,
+      "ssbond_count": 0,
+      "halogen_count": 0,
+      "metallic_count": 0,
+      "hydrophobic_count": 0
+    },
+    "n_epitope_residues": 19,
+    "n_paratope_residues": 18,
+    "n_residues_in_2d_plot_chain_A": 16,
+    "n_residues_in_2d_plot_chain_B": 17
+  },
+  "local_recalculation": {
+    "n_residue_pairs_within_5A": 51,
+    "n_unique_antigen_residues": 19,
+    "n_unique_vhh_residues": 18,
+    "all_native_pairs_within_5A": true,
+    "max_local_distance_over_native_pairs": 3.828
+  },
+  "agreement": {
+    "local_5A_antigen_set_equals_native_epitope": true,
+    "local_5A_vhh_set_equals_native_paratope": true
+  },
+  "explanation_of_44_vs_51": "The classification reasoning quotes 51 contacts; interaction meta.n_contacts and the interaction list carry 44. Both are internally consistent: 44 is the number of typed interaction records (9 HBOND + 33 VDW + 1 IONIC + 1 PIPISTACK), while 51 is the number of residue pairs with any heavy-atom distance <= 5 A. The local recalculation reproduces both numbers exactly.",
+  "full_local_table": "derived/verification/local_contact_pairs.json"
+}

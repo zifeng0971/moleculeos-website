@@ -1,0 +1,23 @@
+{
+  "task_id": "342256491451392",
+  "name": "5GRJ_PDL1_seqfitness",
+  "type": "Sequence Fitness Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:14Z",
+  "duration": "11s",
+  "payload": {
+    "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+  },
+  "chain": "C",
+  "purpose": "deep sequence-model mutation scan, PD-L1",
+  "raw_dir": "sequence_fitness_mutation_effect_342256491451392",
+  "raw_files": [
+    "sequence_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "sequence_scores.csv",
+      "bytes": 115347
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+ListMOSTasks (limit=20) — verbatim board snapshot taken at the final verification pass
+Found 20 task(s).
+
+[PENDING] autocompute-candidate_seq_1_model_sample1
+   Type:     MOSTask
+   Task ID:  342339942724608
+   Started:  2026-10-20 08:24:48
+   Duration: 0s
+
+[PENDING] autocompute-candidate_seq_1_model_sample1
+   Type:     MOSTask
+   Task ID:  342339943171072
+   Started:  2026-10-20 08:24:48
+   Duration: 0s
+
+[PENDING] autocompute-candidate_seq_2_model_sample1
+   Type:     MOSTask
+   Task ID:  342339922211840
+   Started:  2026-10-20 08:24:43
+   Duration: 0s
+
+[PENDING] autocompute-candidate_seq_2_model_sample1
+   Type:     MOSTask
+   Task ID:  342339921769472
+   Started:  2026-10-20 08:24:42
+   Duration: 0s
+
+[PENDING] autocompute-candidate_seq_4_model_sample1
+   Type:     MOSTask
+   Task ID:  342339911291904
+   Started:  2026-10-20 08:24:40
+   Duration: 0s
+
+[PENDING] autocompute-candidate_seq_4_model_sample1
+   Type:     MOSTask
+   Task ID:  342339910697984
+   Started:  2026-10-20 08:24:40
+   Duration: 0s
+
+[SUCCEED] MMFold_candidate_seq_1
+   Type:     MMFold
+   Task ID:  342339232719872
+   Started:  2026-10-20 08:21:54
+   Duration: 2.0min
+
+[SUCCEED] MMFold_candidate_seq_2
+   Type:     MMFold
+   Task ID:  342339221820416
+   Started:  2026-10-20 08:21:52
+   Duration: 2.1min
+
+[SUCCEED] MMFold_candidate_seq_4
+   Type:     MMFold
+   Task ID:  342339217835008
+   Started:  2026-10-20 08:21:51
+   Duration: 2.1min
+
+[SUCCEED] PETase_WT_HEMT_local_redesign_10
+   Type:     Protein Redesign
+   Task ID:  342338944422912
+   Started:  2026-10-20 08:20:44
+   Duration: 35s
+
+[PENDING] autocompute-5XG0_WT_HEMT_model
+   Type:     MOSTask
+   Task ID:  342338538587136
+   Started:  2026-10-20 08:19:05
+   Duration: 0s
+
+[PENDING] autocompute-5XG0_WT_HEMT_model
+   Type:     MOSTask
+   Task ID:  342338541339648
+   Started:  2026-10-20 08:19:05
+   Duration: 0s
+
+[SUCCEED] mmetrics-analysis-342337095480320
+   Type:     MOSTask
+   Task ID:  342338457240576
+   Started:  2026-10-20 08:18:45
+   Duration: 3s
+
+[PENDING] autocompute-5XH3_HEMT_complex
+   Type:     MOSTask
+   Task ID:  342337765340160
+   Started:  2026-10-20 08:15:56
+   Duration: 0s
+
+[PENDING] autocompute-5XH3_HEMT_complex
+   Type:     MOSTask
+   Task ID:  342337764889600
+   Started:  2026-10-20 08:15:56
+   Duration: 0s
+
+[SUCCEED] mmetrics-analysis-342337061192704
+   Type:     MOSTask
+   Task ID:  342337536795648
+   Started:  2026-10-20 08:15:00
+   Duration: 5s
+
+[SUCCEED] PETase_5xh3_HEMT_affinity_rerun
+   Type:     Protein-Ligand Affinity Evaluation
+   Task ID:  342337422410752
+   Started:  2026-10-20 08:14:32
+   Duration: 38s
+
+[SUCCEED] WT_PETase_structfitness
+   Type:     Structural Stability Mutation Effect
+   Task ID:  342337277858816
+   Started:  2026-10-20 08:13:57
+   Duration: 3s
+
+[SUCCEED] WT_PETase_evomut
+   Type:     Evolutionary Mutation Effect
+   Task ID:  342337268093952
+   Started:  2026-10-20 08:13:55
+   Duration: 2.5min
+
+[SUCCEED] WT_PETase_seqfitness
+   Type:     Sequence Fitness Mutation Effect
+   Task ID:  342337264870400
+   Started:  2026-10-20 08:13:54
+   Duration: 8s

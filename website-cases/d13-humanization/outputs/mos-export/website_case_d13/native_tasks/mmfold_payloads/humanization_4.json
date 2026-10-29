@@ -1,0 +1,21 @@
+{
+ "name": "D13_hum_humanization_4_Fv",
+ "sequences": [
+  {
+   "protein": {
+    "id": "A",
+    "sequence": "QVQLQESGPGLVKPSETLSLTCSVSGFSLTGYGVNWIRQAPGKGLEWIAMIWGDGNTDYNSALKSRLTISLDTSKSQVFLKLSSVTAADTAVYYCARERDYRLDYWGQGTLVTVSS",
+    "description": "D1.3 humanization candidate heavy chain (VH)"
+   }
+  },
+  {
+   "protein": {
+    "id": "B",
+    "sequence": "DIQLTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPNLLVYYTTTLADGVPSRFSGSGSGTHFTLTISSLQPEDFATYYCQHFWSTPRTFGQGTKVEIK",
+    "description": "D1.3 humanization candidate light chain (VL)"
+   }
+  }
+ ],
+ "dialect": "mmfold",
+ "version": 1
+}

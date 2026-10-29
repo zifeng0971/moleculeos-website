@@ -1,0 +1,69 @@
+{
+  "source_kind": "local_extraction_of_native_MOS_record_plus_direct_UI_capture",
+  "native_record": "raw/mos-export/kn035_case02/raw/mmetrics_345489060729856/record.json",
+  "native_field": "annotations.homology",
+  "n_entries": 3,
+  "items": [
+    {
+      "hit_id": "pdb|5JDS|B",
+      "pdb_id": "5JDS",
+      "ui_identity": "100%",
+      "identity_fraction_native": 1.0,
+      "query_chain_verified_by_full_sequence": "B",
+      "query_length": 128,
+      "query_coverage_native": 1.0,
+      "query_start": 1,
+      "query_end": 128,
+      "e_value_native": 2.10588e-92,
+      "native_entity_id": 1,
+      "native_alignment_length": 128,
+      "aligned_columns_computed_locally": 128,
+      "identical_residues_computed_locally": 128,
+      "identity_fraction_computed_locally": 1.0,
+      "reference_url": "https://www.rcsb.org/structure/5JDS"
+    },
+    {
+      "hit_id": "pdb|4DKA|A",
+      "pdb_id": "4DKA",
+      "ui_identity": "72.1%",
+      "identity_fraction_native": 0.7209,
+      "query_chain_verified_by_full_sequence": "B",
+      "query_length": 128,
+      "query_coverage_native": 1.0,
+      "query_start": 1,
+      "query_end": 128,
+      "e_value_native": 4.94522e-59,
+      "native_entity_id": 1,
+      "native_alignment_length": 128,
+      "aligned_columns_computed_locally": 129,
+      "identical_residues_computed_locally": 93,
+      "identity_fraction_computed_locally": 0.7209302325581395,
+      "reference_url": "https://www.rcsb.org/structure/4DKA"
+    },
+    {
+      "hit_id": "pdb|4DK3|A",
+      "pdb_id": "4DK3",
+      "ui_identity": "72.1%",
+      "identity_fraction_native": 0.7209,
+      "query_chain_verified_by_full_sequence": "B",
+      "query_length": 128,
+      "query_coverage_native": 1.0,
+      "query_start": 1,
+      "query_end": 128,
+      "e_value_native": 5.99254e-59,
+      "native_entity_id": 1,
+      "native_alignment_length": 128,
+      "aligned_columns_computed_locally": 129,
+      "identical_residues_computed_locally": 93,
+      "identity_fraction_computed_locally": 0.7209302325581395,
+      "reference_url": "https://www.rcsb.org/structure/4DK3"
+    }
+  ],
+  "notes": [
+    "Native homology entity_id=1 contradicts the aligned query sequence, which exactly matches KN035 chain B, rather than PD-L1 chain A.",
+    "The UI says antigen sequence similarity. This wording is preserved without endorsing its chain attribution.",
+    "4DKA and 4DK3 have identical aligned hit sequences and are redundant sequence examples.",
+    "Native alignment_length is 128 for 4DKA and 4DK3, while the gapped strings have 129 columns. Native fields are preserved and local recomputation is labelled separately.",
+    "5JDS is a reference for the same molecule. Homology to other VHH sequences does not establish PD-L1 binding."
+  ]
+}

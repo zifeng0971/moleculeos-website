@@ -5,7 +5,7 @@
 | 页面 / 模块 | 待确认内容 | 当前文件 |
 | --- | --- | --- |
 | 首页 · 信任条 | 真实临床靶点数、完成湿实验验证的项目数 | `messages/zh.json`、`messages/en.json` |
-| 平台 · 模型体系 | NewOrigin、MMFold、MMDesign 的输入、输出、适用分子、Benchmark 与已知局限 | `messages/zh.json`、`messages/en.json` |
+| 平台 · 模型体系 | MMFold、MMDesign 的输入、输出、适用分子、Benchmark 与已知局限 | `messages/zh.json`、`messages/en.json` |
 | 平台任务页 | 四个任务的 Hero 说明、适用分子、典型场景、输入、输出、调用模型与相关案例 | `messages/zh.json`、`messages/en.json` |
 | 首页 · 验证与证据 | 已验证候选数、覆盖靶点数、设计到验证周期 | `messages/zh.json`、`messages/en.json` |
 | 首页与验证页 · 六个案例模板 | 核心结果、难点、分子类型、周期、项目背景、设计策略与授权范围 | `messages/zh.json`、`messages/en.json` |
@@ -44,4 +44,4 @@
 | 位置 | 待确认内容 |
 | --- | --- |
 | 帮助中心：更新日志、API 文档 | {{TODO: 待确认}}；本轮仅禁用入口与占位页 |
-| 社区：用户论坛、飞书、X、Discord、Reddit、Quora、Facebook | {{TODO: 待确认}}；逐项核实账号开通状态后再启用外链 |
+| 社区：用户论坛、飞书（已接入群链接）、X、Discord、Reddit、Quora、Facebook | {{TODO: 待确认}}；逐项核实账号开通状态后再启用外链 |

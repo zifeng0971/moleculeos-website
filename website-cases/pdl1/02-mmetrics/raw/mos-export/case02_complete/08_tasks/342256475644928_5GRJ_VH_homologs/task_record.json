@@ -1,0 +1,29 @@
+{
+  "task_id": "342256475644928",
+  "name": "5GRJ_VH_homologs",
+  "type": "Sequence Homology Search",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:10Z",
+  "duration": "6s",
+  "payload": {
+    "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS",
+    "max_seq": 500
+  },
+  "chain": "A",
+  "purpose": "homologs of avelumab VH",
+  "raw_dir": "sequence_homology_search_342256475644928",
+  "raw_files": [
+    "similarity_results.json",
+    "all_sequences.fasta"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "similarity_results.json",
+      "bytes": 1925682
+    },
+    {
+      "file": "all_sequences.fasta",
+      "bytes": 139129
+    }
+  ]
+}

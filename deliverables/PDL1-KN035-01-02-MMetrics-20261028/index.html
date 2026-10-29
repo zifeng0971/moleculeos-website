@@ -1,0 +1,647 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PD-L1 / KN035 01→02 MMetrics 同源蛋白排查资料</title><style>body{font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#182b3a;background:#f4f6f8;margin:0}main{max-width:1150px;margin:0 auto;padding:40px 28px;background:white}h1{font-size:32px;line-height:1.3}h2{border-top:2px solid #dbe4eb;padding-top:24px;margin-top:48px;font-size:23px}a{color:#14648c;overflow-wrap:anywhere}p,li,td{overflow-wrap:anywhere}nav{padding:18px 24px;background:#edf5fa;columns:2}nav a{display:block;padding:3px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f3f6;padding:14px;border-radius:5px;font-size:12px;max-height:650px;overflow:auto}code{font:13px ui-monospace,Menlo,monospace;background:#f0f3f6}table{width:100%;border-collapse:collapse;font-size:13px}th,td{border:1px solid #dce3e8;text-align:left;padding:10px;vertical-align:top}th{background:#edf3f6}.table{overflow-x:auto}.finding{border-left:5px solid #b67718;background:#fff9ec;padding:14px 20px}.flow{font:14px/2 ui-monospace,Menlo,monospace;border:1px solid #d9e5ed;padding:20px;background:#f3f8fc;overflow-wrap:anywhere}details{margin:16px 0;border:1px solid #e0e6eb;padding:12px}summary{font-weight:600;cursor:pointer}img{width:100%;height:auto;border:1px solid #d9e2e9}figcaption{font-size:12px;color:#526475}figure{margin:28px 0}.muted{color:#536879;font-size:13px}@media(max-width:650px){main{padding:20px 14px}nav{columns:1}h1{font-size:26px}}@media print{body{background:#fff}main{max-width:none;padding:0}nav{display:none}details{break-inside:avoid}pre{max-height:none}img{max-height:750px;object-fit:contain}}</style><main><h1>PD-L1 / KN035<br>01→02 MMetrics 同源蛋白排查资料</h1><p class="muted">证据整理日期：2026-10-28 · 用户时区：Asia/Jakarta · 原任务发生于2026-10-20至21</p><nav><a href="#overview">1. 排查摘要</a><a href="#lineage">2. 01→02 数据流与文件同一性</a><a href="#ids">3. 全部相关ID与项目入口</a><a href="#time">4. 运行、产物与采集时间线</a><a href="#inputs">5. 输入、完整序列与原始操作指令</a><a href="#homologs">6. 同源检索证据：抗体命中与抗原空结果</a><a href="#next">7. 待后台核对的事项与证据缺口</a><a href="#screenshots">8. 原始任务与Homologs界面截图</a><a href="#scope">9. 包含内容与留档层级说明</a><a href="#integrity">10. 文件索引、完整性与离线复核</a></nav><section id="overview"><h2>1. 排查摘要</h2><p>目标：排查 <strong>02 原生 MMetrics 的抗原 Homologs 为空</strong>。这份资料把01预测、下载选样、02导入、自动前置分析、MMetrics记录和原生UI串成可核对的链路。</p><div class="finding">可以确认：原生 record.json 中 annotations.homology=[]，所以空结果已经出现在 MMetrics 产物层；不是只凭官网演示作出的判断。<p>可以确认：前置 mos-blast 有503条比对、500个唯一hit_id、500条FASTA；所有query都是B链KN035 VHH 128aa。<p>可以确认：Homologs原生UI写的是按抗原序列检索；当前抗原是A链PD-L1 118aa。抗体命中不能直接当作缺失的抗原同源结果。<p>不能确认：A链检索是否另行调度、跳过、失败或保存在未归档位置；也不能据此宣称PD-L1不存在同源蛋白。<p>排查优先级：A链query选择与调度 → entity/chain与产物的路由 → MMetrics装配/阈值过滤 → UI空状态分类。根因尚未确定。</p></div><p>本次整理于 <strong>2026-10-28T15:40:37+07:00</strong>。没有重新提交MOS任务；没有取得后台日志。以下计数与哈希在本次重新读取原始文件计算，原运行状态与时间来自留档。</p><p><a href="ISSUE-BRIEF.txt">可直接转发的排查单（纯文本）</a> · <a href="diagnostics/case-summary.json">完整机器可读摘要</a></p></section><section id="lineage"><h2>2. 01→02 数据流与文件同一性</h2><div class="flow">01 MMFold task 342253805564928<br>↓ 下载并选择 MMFold_1.cif（sample 1）<br>02 project 342604060136448 / object 342604293768192 / work 342604299084800<br>↓ 自动前置 autocompute task 342604299285504<br>mos-blast（留档只有B链query） + 其他评分，共7个输出对象<br>↓ 作为 autocomp_results 传给 MMetrics task 342604577018880<br>record.json：annotations.homology = []<br>↓ 原生 Homologs 面板<br>Searched by antigen sequence similarity / No significant homologs found.</div><p>02输入结构与01输出是同一份文件。当前实算01原始CIF、02 original与sanitized副本均为154,131字节，SHA-256相同：</p><pre>d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317</pre><p>原始证据：<a href="archives/website-cases/pdl1/01-structure/raw/MMFold_1.cif">01 选中结构</a> · <a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.original.cif">02 导入副本</a> · <a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.sanitized.cif">02 sanitized副本</a> · <a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/residue-numbering-map.json">完整残基映射</a></p><p>02没有再次预测结构。01其余四个模型保留以备追溯；5JDS文件是实验参考和序列来源，不是本次MOS预测输出。</p><h3>01 五个样本及选样依据</h3><div class="table"><table><thead><tr><th>sample</th><th>pLDDT 0–100</th><th>pTM 0–1</th><th>ipTM 0–1</th><th>ranking_score</th><th>使用情况</th></tr></thead><tbody><tr><td>1</td><td>93.71290588378906</td><td>0.936729907989502</td><td>0.9182515740394592</td><td>0.9219472408294678</td><td>用于02</td></tr><tr><td>2</td><td>87.98397827148438</td><td>0.7746131420135498</td><td>0.575352668762207</td><td>0.6152048110961914</td><td>留档备查</td></tr><tr><td>3</td><td>87.28251647949219</td><td>0.695294201374054</td><td>0.455554723739624</td><td>0.503502607345581</td><td>留档备查</td></tr><tr><td>4</td><td>87.21683502197266</td><td>0.6828274726867676</td><td>0.44188353419303894</td><td>0.4900723099708557</td><td>留档备查</td></tr><tr><td>5</td><td>84.99858856201172</td><td>0.6282225847244263</td><td>0.2926967144012451</td><td>0.35980188846588135</td><td>留档备查</td></tr></tbody></table></div><p>数值取自01保留的summary confidence JSON及results.json；本表用于确认选择了哪个模型。PAE未包含在原输出中；置信度不是实验亲和力，也不用于判定Homologs模块是否正常。</p></section><section id="ids"><h2>3. 全部相关ID与项目入口</h2><div class="table"><table><thead><tr><th>对象类型</th><th>ID</th><th>名称/入口</th><th>定位用途</th></tr></thead><tbody><tr><td>01 项目</td><td>342242986152960</td><td>https://mos.moleculemind.com/?projectId=342242986152960</td><td>原始项目，线上名称 nn（本聊天已核对）</td></tr><tr><td>01 MMFold 任务</td><td>342253805564928</td><td>PDL1_KN035_VHH_complex</td><td>官网 01 的来源</td></tr><tr><td>01 选用样本</td><td>1</td><td>MMFold_1.cif</td><td>按平台 ranking_score 选取；另四样本完整保留</td></tr><tr><td>02 项目</td><td>342604060136448</td><td>https://mos.moleculemind.com/?projectId=342604060136448</td><td>历史项目名 PDL1-02-MMetrics-KN035-20261021</td></tr><tr><td>02 结构对象 object_id</td><td>342604293768192</td><td>MMFold_1.cif</td><td>不是 task_id</td></tr><tr><td>02 work_id</td><td>342604299084800</td><td></td><td>不是 task_id</td></tr><tr><td>02 自动前置任务</td><td>342604299285504</td><td>autocompute-MMFold_1</td><td>产生 mos-blast 等7个对象</td></tr><tr><td>02 MMetrics 任务</td><td>342604577018880</td><td>mmetrics-analysis-342604299285504</td><td>输出 record.json</td></tr><tr><td>02 mmetrics_id</td><td>caca9ec3-b45d-4c7a-a69d-99cc182aa3f6</td><td></td><td>注释记录UUID，不是 task_id</td></tr><tr><td>02 BLAST JSON 对象</td><td>342604574229504</td><td>blast_results.json</td><td>下载名 similarity_results.json；字节相同</td></tr><tr><td>02 BLAST FASTA 对象</td><td>342604574114816</td><td>all_sequences.fasta</td><td>500条序列</td></tr><tr><td>02 后续独立补充任务</td><td>342606092895232</td><td>kn035-AbAn-independent</td><td>Antibody Region Annotation；不属于同源检索链路</td></tr><tr><td>02 后续独立补充任务</td><td>342606094599168</td><td>kn035-AbScN-language-independent</td><td>Antibody Language Scoring；不属于同源检索链路</td></tr><tr><td>02 后续独立补充任务</td><td>342606097245184</td><td>kn035-AbScN-nativeness-independent</td><td>Antibody Nativeness Evaluation；不属于同源检索链路</td></tr><tr><td>02 后续独立补充任务</td><td>342606100722688</td><td>kn035-ParaDt-independent</td><td>Paratope Identification；不属于同源检索链路</td></tr></tbody></table></div><p>可点击项目：<a href="https://mos.moleculemind.com/?projectId=342242986152960">01 原始项目</a> · <a href="https://mos.moleculemind.com/?projectId=342604060136448">02 MMetrics项目</a>。界面登录权限由MOS控制。后四个补充任务用于抗体CSV，不能算作同源检索或原生MMetrics再次运行。</p><p><a href="diagnostics/identifiers.csv">完整ID表CSV</a></p></section><section id="time"><h2>4. 运行、产物与采集时间线</h2><p><strong>时区口径：</strong>保留原始UI时间。只有显式UTC/Unix epoch或旧档声明UTC时才提供Jakarta显示；旧档声明不等于独立后台时区验证。raw status缺少时区，精确finish/项目创建/上传完成时间未留档时标unknown。文件mtime不作运行时间。</p><div class="table"><table><thead><tr><th>阶段</th><th>事件</th><th>原始时间</th><th>时区证据</th><th>Jakarta显示</th><th>说明</th><th>证据文件</th></tr></thead><tbody><tr><td>01</td><td>MMFold 创建（UI）</td><td>2026-10-20 9:34:18</td><td>原始 UI 未标时区</td><td>未擅自换算</td><td>Task List Creation Time</td><td><a href="archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt">task-list-succeeded.txt</a></td></tr><tr><td>01</td><td>MMFold 更新为成功时的更新时间（UI）</td><td>2026-10-20 9:36:23</td><td>原始 UI 未标时区</td><td>未擅自换算</td><td>Task List Update Time；不等同精确 worker finish</td><td><a href="archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt">task-list-succeeded.txt</a></td></tr><tr><td>02</td><td>autocompute-MMFold_1 开始</td><td>2026-10-21 02:20:28</td><td>原status无时区；旧ledger归一化=2026-10-21T02:20:28Z</td><td>2026-10-21T09:20:28+07:00（按旧档UTC声明）</td><td>duration=1.1min；未独立确认后台时区</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json">task-ledger.json</a></td></tr><tr><td>02</td><td>mmetrics-analysis-342604299285504 开始</td><td>2026-10-21 02:21:36</td><td>原status无时区；旧ledger归一化=2026-10-21T02:21:36Z</td><td>2026-10-21T09:21:36+07:00（按旧档UTC声明）</td><td>duration=3s；未独立确认后台时区</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json">task-ledger.json</a></td></tr><tr><td>02</td><td>前置输出对象 createTime</td><td>1792549294</td><td>Unix 秒（UTC）</td><td>2026-10-21T09:21:34+07:00</td><td>7个输入对象均记录此 createTime</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json">task_payload.json</a></td></tr><tr><td>02</td><td>原生 Homologs 面板采集</td><td>2026-10-21T02:23:00.211Z</td><td>captured_at 显式 Z/UTC</td><td>2026-10-21T09:23:00.211+07:00</td><td>这是采集时间，不是任务运行时间</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json">panel-dom.json</a></td></tr><tr><td>02 补充</td><td>kn035-AbAn-independent</td><td>2026-10-21 02:27:46</td><td>原status无时区；旧manifest归一化=2026-10-21T02:27:46Z</td><td>2026-10-21T09:27:46+07:00（按旧档UTC声明）</td><td>task=342606092895232；duration=20s</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json">supplement-manifest.json</a></td></tr><tr><td>02 补充</td><td>kn035-AbScN-language-independent</td><td>2026-10-21 02:27:46</td><td>原status无时区；旧manifest归一化=2026-10-21T02:27:46Z</td><td>2026-10-21T09:27:46+07:00（按旧档UTC声明）</td><td>task=342606094599168；duration=3s</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json">supplement-manifest.json</a></td></tr><tr><td>02 补充</td><td>kn035-AbScN-nativeness-independent</td><td>2026-10-21 02:27:47</td><td>原status无时区；旧manifest归一化=2026-10-21T02:27:47Z</td><td>2026-10-21T09:27:47+07:00（按旧档UTC声明）</td><td>task=342606097245184；duration=3s</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json">supplement-manifest.json</a></td></tr><tr><td>02 补充</td><td>kn035-ParaDt-independent</td><td>2026-10-21 02:27:48</td><td>原status无时区；旧manifest归一化=2026-10-21T02:27:48Z</td><td>2026-10-21T09:27:48+07:00（按旧档UTC声明）</td><td>task=342606100722688；duration=25s</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json">supplement-manifest.json</a></td></tr><tr><td>02 操作观察</td><td>提交创建案例 02 项目</td><td>2026-10-21T02:19:28.859Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:19:28.859+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>提交创建案例 02 项目</td><td>2026-10-21T02:19:29.625Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:19:29.625+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>查看新项目导入入口</td><td>2026-10-21T02:19:37.698Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:19:37.698+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>向案例 02 上传唯一主结构</td><td>2026-10-21T02:19:59.116Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:19:59.116+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>指定主结构的绝对路径</td><td>2026-10-21T02:20:20.494Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:20:20.494+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>完成主结构导入</td><td>2026-10-21T02:20:26.350Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:20:26.350+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>核验导入后的链、序列及 MMetrics 状态</td><td>2026-10-21T02:20:40.995Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:20:40.995+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>打开并记录 KN035 原生 MMetrics 面板</td><td>2026-10-21T02:20:49.331Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:20:49.331+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>打开并记录 KN035 原生 MMetrics 面板</td><td>2026-10-21T02:20:50.196Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:20:50.196+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>提交案例 02 的原始结果导出与编号核验请求</td><td>2026-10-21T02:21:45.731Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:21:45.731+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>提交案例 02 的原始结果导出与编号核验请求</td><td>2026-10-21T02:21:46.245Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:21:46.245+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>下载原生完整亲和力评分 CSV</td><td>2026-10-21T02:25:32.259Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:25:32.259+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>下载原生归档并补齐独立抗体分析，保留来源区分</td><td>2026-10-21T02:27:26.513Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:27:26.513+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>保存原生面板首屏并开始重叠采集</td><td>2026-10-21T02:29:13.454Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:29:13.454+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr><tr><td>02 操作观察</td><td>完成面板逐屏截图及对应的真实滚动记录</td><td>2026-10-21T02:29:20.763Z</td><td>原始会话事件显式UTC</td><td>2026-10-21T09:29:20.763+07:00</td><td>动作/观察时刻；不是后台生命周期</td><td><a href="diagnostics/timeline-audit/session_observation_excerpts.json">session_observation_excerpts.json</a></td></tr></tbody></table></div><p>01 UI创建→更新间隔为125秒，只是两列时间的差值，不能当作后台精确运行耗时。02显示耗时保留原文1.1min、3s，未据此伪造finish时间；精确任务结束、项目创建、上传开始/完成时间，若无直接留档则为unknown。</p><p><a href="diagnostics/timeline.csv">时间线CSV</a> · <a href="diagnostics/time-and-id-ledger.json">时间与ID JSON</a></p><details><summary>补充时间证据：session_observation_excerpts.json</summary><pre>[
+  {
+    &quot;event&quot;: &quot;Create case 02 project action submitted&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:28.859Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 102,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;提交创建案例 02 项目&quot;,
+    &quot;action_code&quot;: &quot;await mosTab.typeText(453,&#x27;PDL1-02-MMetrics-KN035-20261021&#x27;); await mosTab.click(458); await mosTab.getAXState();&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Case 02 project URL observed after create&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:29.625Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 104,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;提交创建案例 02 项目&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;Browser tab: 997465025, Title: \&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;, URL: \&quot;https://mos.moleculemind.com/?projectId=342604060136448\&quot;.\n1 AXWebArea mos.moleculemind.com/?projectId=342604060136448\n\nThe focused UI element is 1 AXWebArea mos.moleculemind.com/?projectId=342604060136448&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Case 02 project display name observed&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:37.698Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 111,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;查看新项目导入入口&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;Browser tab: 997465025, Title: \&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;, URL: \&quot;https://mos.moleculemind.com/?projectId=342604060136448\&quot;.\n1 AXWebArea mos.moleculemind.com/?projectId=342604060136448\n\t2 container root\n\t\t3 text MOS BETA\n\t\t4 container\n\t\t\t5 text PDL1-02-MMetrics-KN035-20261021\n\t\t\t6 image down\n\t\t7 container\n\t\t\t8 text Z\n\t\t\t9 button Task\n\t\t\t10 button Share\n\t\t\t11 button mail\n\t\t\t\t12 image mail\n\t\t\t13 button bell\n\t\t\t\t14 image bell\n\t\t\t15 button Setting\n\t\t\t\t16 image setting\n\t\t17 container\n\t\t\t18 text Protein\n\t\t\t19 button plus Add New\n\t\t\t\t20 image plus\n\t\t\t\t21 text Add New\n\t\t\t22 text No Data\n\t\t\t23 text Amino Acid Group\n\t\t\t24 text No Data\n\t\t\t25 container\n\t\t\t\t26 text I&#x27;m  Mocha , your AI assistant from MoleculeMind. What can I do for you? Agent Mode\n\t\t\t\t27 switch Description: Agent Mode, Value: 1\n\t\t\t\t28 text Try these samples\n\t\t\t\t29 checkbox Value: 0, Humanization Minimize immunogenicity of heterologous antibodies while maintaining antigen-binding capability\n\t\t\t\t\t30 image\n\t\t\t\t\t31 text Humanization\n\t\t\t\t\t32 text Minimize immunogenicity of heterologous antibodies while maintaining antigen-binding capability\n\t\t\t\t33 checkbox Value: 0, Binding Affinity Predict binding free energy and recommend optimal mutations to enhance antibody-antigen affinity\n\t\t\t\t\t34 image\n\t\t\t\t\t35 text Binding Affinity\n\t\t\t\t\t36 text Predict binding free energy and recommend optimal mutations to enhance antibody-antigen affinity\n\t\t\t\t37 checkbox Value: 0, Sequence Homology Identify evolutionary relatives and homologous proteins across multi-source sequence databases\n\t\t\t\t\t38 image\n\t\t\t\t\t39 text Sequence Homology\n\t\t\t\t\t40 text Identify evolutionary relatives and homologous proteins across multi-source sequence databases\n\t\t\t\t41 checkbox Value: 0, Epitope Analysis Map interacting residues and pinpoint key antigenic determinants or binding hotspots\n\t\t\t\t\t42 image\n\t\t\t\t\t43 text Epitope Analysis\n\t\t\t\t\t44 text Map interacting residues and pinpoint key antigenic determinants or binding hotspots\n\t\t\t\t45 text entry area (settable)\n\t\t\t\t46 button upload Upload\n\t\t\t\t\t47 image upload\n\t\t\t\t\t48 text Upload\n\t\t\t\t49 button Structure Prediction with MMFold\n\t\t\t\t50 button About MOS\n\nThe focused UI element is 1 AXWebArea mos.moleculemind.com/?projectId=342604060136448&quot;
+  },
+  {
+    &quot;event&quot;: &quot;First browser filechooser upload failed due to local-file permission&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:59.116Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 126,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;向案例 02 上传唯一主结构&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;{\&quot;content\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;text\&quot;:\&quot;Error: To enable file upload, go to chrome://extensions in Google Chrome, click Details under the ChatGPT extension, and enable \\\&quot;Allow access to file URLs.\\\&quot; See [here](https://developers.openai.com/codex/app/chrome-extension#upload-files) for details.\\nfileChooser.setFiles failed\&quot;}],\&quot;isError\&quot;:true,\&quot;_meta\&quot;:{\&quot;browser_use\&quot;:{\&quot;url\&quot;:\&quot;https://mos.moleculemind.com/\&quot;},\&quot;codex/browserUse\&quot;:true,\&quot;codex/nodeReplExecutionDurationMs\&quot;:816,\&quot;codex/toolSurface\&quot;:{\&quot;backend\&quot;:\&quot;chrome\&quot;,\&quot;browserFamily\&quot;:\&quot;chrome\&quot;,\&quot;browserId\&quot;:\&quot;1\&quot;,\&quot;extensionInstanceId\&quot;:\&quot;2c431c20-0346-46be-8079-5fabdcc2a800\&quot;,\&quot;kind\&quot;:\&quot;browserUse\&quot;,\&quot;openTabIds\&quot;:[\&quot;997465025\&quot;],\&quot;openTabs\&quot;:[{\&quot;id\&quot;:997465025,\&quot;title\&quot;:\&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;,\&quot;url\&quot;:\&quot;https://mos.moleculemind.com\&quot;}],\&quot;screenshot\&quot;:{\&quot;pageUrl\&quot;:\&quot;https://mos.moleculemind.com\&quot;,\&quot;tabId\&quot;:\&quot;997465025\&quot;,\&quot;url\&quot;:\&quot;data:image/jpeg;base64,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&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Native macOS picker selected original case01 MMFold_1.cif&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:20.494Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 143,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;指定主结构的绝对路径&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;The following is a diff from the previous accessibility tree for Window: \&quot;Open\&quot; with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n+\t\t\t\t131 scroll area Secondary Actions: Scroll Up, Scroll Down\n+\t\t\t\t\t132 image Description: Preview, ID: QLAXImageAndText_Image\n+\t\t\t\t\t133 text MMFold_1.cif Document - 154 KB Information Created Yesterday, 9:39 AM Modified Yesterday, 9:39 AM Tags\n+\t\t\t\t\t134 scroll area\n+\t\t\t\t\t\t135 text field Description: tag editor, Placeholder: Add Tags…\n+\t\t\t\t\t136 scroll bar (settable, float) 0\n+\t\t\t\t\t\t137 value indicator (settable, float) 0\n+\t\t\t\t\t\t138 increment arrow button\n+\t\t\t\t\t\t139 decrement arrow button\n+\t\t\t\t\t\t140 increment page button\n+\t\t\t\t\t\t141 decrement page button\n~\t\t\t\t114 scroll bar (settable, float) 1\n~\t\t\t\t\t115 value indicator (settable, float) 1\n~\t\t130 button Open, ID: OKButton&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Native filepicker Open clicked; upload workflow returned to Create a Work&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:26.350Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 148,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;完成主结构导入&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;Browser tab: 997465025, Title: \&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;, URL: \&quot;https://mos.moleculemind.com/?projectId=342604060136448\&quot;.\n1 AXWebArea mos.moleculemind.com/?projectId=342604060136448\n\t2 container Create a Work\n\t\t3 container\n\t\t\t4 button Close\n\t\t\t\t5 container Close\n\t\t\t\t\t6 image close\n\t\t\t7 text Create a Work\n\t\t\t8 image\n\t\t\t9 text Click to upload or drag and drop\n\t\t\t10 text .pdb, .cif, .sdf files here\n\t\t\t11 button Browse File\n\t\t\t\t12 image\n\t\t\t\t13 text Browse File\n\nThe focused UI element is 11 button Browse File&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Read imported structure state action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:40.995Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 156,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;核验导入后的链、序列及 MMetrics 状态&quot;,
+    &quot;action_code&quot;: &quot;await mosTab.getAXState();&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Open native MMetrics and save initial screenshot action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:49.331Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 163,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;打开并记录 KN035 原生 MMetrics 面板&quot;,
+    &quot;action_code&quot;: &quot;await mosTab.click(102); await mosTab.getAXState(); var fs = await import(&#x27;node:fs/promises&#x27;); await fs.writeFile(&#x27;/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-initial.png&#x27;,await mosTab.screenshot({fullPage:false}));&quot;
+  },
+  {
+    &quot;event&quot;: &quot;MMetrics initial Generating/Computing state observed&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:50.196Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 165,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;打开并记录 KN035 原生 MMetrics 面板&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;{\&quot;content\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;text\&quot;:\&quot;Browser tab: 997465025, Title: \\\&quot;mos.moleculemind.com/?projectId=342604060136448\\\&quot;, URL: \\\&quot;https://mos.moleculemind.com/?projectId=342604060136448\\\&quot;.\\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\\nRemoved element IDs: 105-135\\n~\\t\\t\\t\\t104 text Generating description... Analyzing structure and generating annotations and bonds... Model Computing...\\nThe focused UI element is 102 button MMetrics\&quot;}],\&quot;isError\&quot;:false,\&quot;_meta\&quot;:{\&quot;browser_use\&quot;:{\&quot;url\&quot;:\&quot;https://mos.moleculemind.com/\&quot;},\&quot;codex/browserUse\&quot;:true,\&quot;codex/nodeReplExecutionDurationMs\&quot;:803,\&quot;codex/toolSurface\&quot;:{\&quot;backend\&quot;:\&quot;chrome\&quot;,\&quot;browserFamily\&quot;:\&quot;chrome\&quot;,\&quot;browserId\&quot;:\&quot;1\&quot;,\&quot;extensionInstanceId\&quot;:\&quot;2c431c20-0346-46be-8079-5fabdcc2a800\&quot;,\&quot;kind\&quot;:\&quot;browserUse\&quot;,\&quot;openTabIds\&quot;:[\&quot;997465025\&quot;],\&quot;openTabs\&quot;:[{\&quot;id\&quot;:997465025,\&quot;title\&quot;:\&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;,\&quot;url\&quot;:\&quot;https://mos.moleculemind.com\&quot;}],\&quot;screenshot\&quot;:{\&quot;pageUrl\&quot;:\&quot;https://mos.moleculemind.com\&quot;,\&quot;tabId\&quot;:\&quot;997465025\&quot;,\&quot;url\&quot;:\&quot;data:image/jpeg;base64,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&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Submit Mocha export/verification prompt action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:21:45.731Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 182,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;提交案例 02 的原始结果导出与编号核验请求&quot;,
+    &quot;action_code&quot;: &quot;var prompt02 = &#x27;本项目只分析当前已导入的 MMFold_1.cif，唯一原始 SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。A=人PD-L1 118aa，B=KN035 VHH 128aa，无轻链。不要用5GRJ、7XYQ、5JDS，不要重新预测，不要改动其他项目或任务。请核验导入对象链ID、完整序列、label/auth残基编号，记录object_id/work_id/tos_key和原始及sanitized输入hash、逐残基MOS↔MMFold_1映射。读取本结构自动MMetrics分析的真实任务ID/状态及所有可获得原始输出（Description reasoning roles、Homologs原始空结果也保留、完整Paratope/Epitope/Domain/PTM/UniProt、Interaction Network、所有MutX CSV、AbAn/AbScN/ParaDt heavy CSV与紧凑序号映射）。原生自动结果与独立任务和本地分析严格分开，未完成就写未完成，不用其他任务冒充。请把真实输出与任务payload完整复制到 /workspace/kn035_case02/，写provenance.json/numbering-map.json/task-ledger.json，再创建 /workspace/kn035_case02.zip 供Workspace下载。最终回复明确对象ID、任务ID、状态、路径；如仍computing只记录，不等待很久。&#x27;; await fs.writeFile(&#x27;/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/submitted-prompt.txt&#x27;,prompt02); await mosTab.playwright.getByRole(&#x27;textbox&#x27;).count().then(n=&gt;nodeRepl.write(n)); await mosTab.paste(132,prompt02); await mosTab.pressKey(null,&#x27;Return&#x27;); await mosTab.getAXState();&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Mocha prompt submitted&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:21:46.245Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 184,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;提交案例 02 的原始结果导出与编号核验请求&quot;,
+    &quot;observed_text_excerpt&quot;: &quot;{\&quot;content\&quot;:[{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;text\&quot;:\&quot;Browser tab: 997465025, Title: \\\&quot;mos.moleculemind.com/?projectId=342604060136448\\\&quot;, URL: \\\&quot;https://mos.moleculemind.com/?projectId=342604060136448\\\&quot;.\\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\\nRemoved element IDs: 116-130\\n+\\t\\t\\t\\t\\t136 text AI-generated research aid. Experimental validation advised\\nThe focused UI element is 132 text entry area (settable)\&quot;},{\&quot;type\&quot;:\&quot;text\&quot;,\&quot;text\&quot;:\&quot;2\&quot;}],\&quot;isError\&quot;:false,\&quot;_meta\&quot;:{\&quot;browser_use\&quot;:{\&quot;url\&quot;:\&quot;https://mos.moleculemind.com/\&quot;},\&quot;codex/browserUse\&quot;:true,\&quot;codex/nodeReplExecutionDurationMs\&quot;:452,\&quot;codex/toolSurface\&quot;:{\&quot;backend\&quot;:\&quot;chrome\&quot;,\&quot;browserFamily\&quot;:\&quot;chrome\&quot;,\&quot;browserId\&quot;:\&quot;1\&quot;,\&quot;extensionInstanceId\&quot;:\&quot;2c431c20-0346-46be-8079-5fabdcc2a800\&quot;,\&quot;kind\&quot;:\&quot;browserUse\&quot;,\&quot;openTabIds\&quot;:[\&quot;997465025\&quot;],\&quot;openTabs\&quot;:[{\&quot;id\&quot;:997465025,\&quot;title\&quot;:\&quot;mos.moleculemind.com/?projectId=342604060136448\&quot;,\&quot;url\&quot;:\&quot;https://mos.moleculemind.com\&quot;}],\&quot;screenshot\&quot;:{\&quot;pageUrl\&quot;:\&quot;https://mos.moleculemind.com\&quot;,\&quot;tabId\&quot;:\&quot;997465025\&quot;,\&quot;url\&quot;:\&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAWSC3wDASIAAhEBAxEB/8QAHQABAAMBAQEBAQEAAAAAAAAAAAQFBgMHAgEICf/EAGoQAAEDAwEDBgkHBgkJBQQCEwABAgMEBREGEiExExRBUWGBBxUiUnGRobHRFjI0U1SioyM1QlWkwTM2coKSstLh8AgkN2JzdJOz8RdWY4SUGCV1g8LTOENEtMNXlaYmZCdGR3bE8obi4//EABoBAQADAQEBAAAAAAAAAAAAAAABAwQCBQb/xAA8EQEAAQMCAwYDBgQHAQADAQAAAQIDEQQSITFRE0FSYZGhMtHhBRQicYGxM1PB8BUjQmKi0uKSJDTxQ//aAAwDAQACEQMRAD8A8HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHufg78B9JrDwe0t+S71EFdUsm5OHk2rGjmPexuV44XZTPpPDpY3xSPjla5kjFVrmuTCoqcUUD5B7P4HfAzDrrTM14uVwqaGNah0MDY40Xba1Ey7K9GVVP5qnnDNL1tbrefTVnY6rq0rJKWLdja2HKiuXqTCKq9SZAz4P6Hf4FNF6YoYfl7rB1NXSt20jp5I4U7dlrmuc9EX9LCehDhd/ATabxZZbj4N9SMuvJIqchNLHIj3ImdlJGYRrsdDk6UyqcQP5/BbWLT1yvWpaew0dO5LlNMsHJSIrdhyZ2trpRGoiqvUiKe2VHgk8HmnFiodY62liu6oivjgkjjRirvTLVa5UTHSqpnjuA/n0Hr/AIS/A62w6c+UulLs29WHcr1TZV8bF3baObue3O5cIipnhuVU8gAAF3peyLd6lXSqraWLG2qcXL5qHdu3VcqiinnJyVlJR1NY/ZpYJJVTjsNzj09RZJpe8KmUo175GfE9KpqeGlhbFTxtjjbwa1MHdsb3JlrXKnYh7NH2VREfjqnPk43PLvktePsf4rPiPktePsf4rPieoOarVw5FRe1D9axzvmtcvoQ7/wALs9Z9vkjdLy75LXj7H+Kz4j5LXj7H+Kz4nqSxSImVY7HoCRvVMoxyp1ohH+F2es+3yN0vLfktePsf4rPiPktePsf4rPiepLG9EyrHInWqH41jnZ2WquOpB/hdnrPt8jdLy5dL3hEytGvdIz4lbV0dTRv2aqCSJV4bbcZ9HWewnKpp4aqF0VRG2SN3Frkyc1/ZVGPwVTnzTueNgu9UWRbRUo6JVdSy52FXi1fNUpDxrluq3VNFXOHfMABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHrE/g2sNFS0stz1DzRZ2bTeWVjEduTOMrvxlAPJwept8GlpuTJG2DU1PU1LGq7k8tenZnZXLUz04Uy+l9JPuWr5bFc3yUksKP21aiKuW9WeheOeoDKA9Un0BpWnnfBPqyGKZjla5j5Imq1U6FRV3FVqnwb1FstTrpaa6O50LGq96sbhzW+cmFVHInSoGABsfBzpGDVlRXR1FVJTpTsa5NhqLnKr1+gxwAA1Wh9GVWqn1TmS81poG/wAM6NXI5/Q1N6dGVXq3dYGVAAAGo0Xoy4aqfK+ncyno4l2ZKiRFVM+a1Olen/CF1ffBhW0VtkrbXXwXOOJFWRsbdl2E44TKouN+7OfSB56C101Ya3UdzbQ25jVkxtPe9cNY3rVe9Dev8EjlV0MN/pX1rW7SwLFjHpw5Vx24A8tBNvNrq7NcpqG4R8nURLhyZyiou9FRelFQhAAel1vg1ij0V45pa2WSpSkZVLC5iI3GyjnJnjuTPqPNAAPTLJ4NIq3SLLvV1s0M8kDp2xNYips4VW7+1ERe8rvB1oin1XR1k9RWS06wSIxEY1FzlM9IGEBZajtclkvtbbpVVy08itRypjabxaveioveXvg60emrKusbNO+np6ZiK57ERVVzl3Jv7Ed6gMgC71pZY9P6kq7bDM6ZkKMVHuTCrtMR37ykAAF/qrStfplKNbhJTv501XM5FyrjGM5yidaAUABqLDp633DSt0udTc209XS7XJU6q3MmGoqcVzvVcbgMuAAAAAAGk0Dp2LU99WgnnfAxInSbTGoq7lTdv9IGbBOvNClBe66gic6RKeokgauN7tlytRcduDbReD6mtumVu2qrhJQOXe2njYjn7+Dd/Fy9XR09OA87B6Lovwewal07JcErpYJuUfHGxWIrdyJjPT0mAraWaiq5qWqjWOeF6sexehUXCgcQa6o0pDF4O6bUaVMizSyKxYdlNlE23N48f0cn1ozQdfqWnfV8tHR0DVVvLSoq7Spx2U6UTpXKe8DHg3WqPBzXWe2OuVFVw3KiYm1I6JuHNTzsZVFROlUX2byn0fpG46pqJG0WxFBF/CTy52UXqTHFewDOg9MqvBPUuppX2q8UldPH86LZ2N/VnK7/AE4MRYbJUXfUMFoReb1Ej3MdyjV8hWoqrlOzCgVQPUl8D9Wi4W8Uuf8AZr8TE6w09Jpm7JQy1MdQ5Ymy7caYTeqpj2AUYBs9G6Ar9SUa1z546K3oqok0ibSvxxVE3bk4ZVU94GMB6Fe/BjV0lrkr7TcILpDGiuc2Nuy7CcdneqLjqzkzWkdMV+qK91PQIxrI0R0s0mdmNF4Z7V34TsAogel3DwT1jKWV9rulNXVEXz4dnYXOOCLld/pwYSz2etu92jttHCq1T3K1Wu8nYxxV3UiAV4PUk8EipsQyX+lbXObnkOSz6vKyqduDA6jsdbp65vobixrZUTaa5q5a9q8HIvVuUCrB6HafBjUzWyOtvdzp7SyVEVjJW5cmeCOyrURezepS610XXaW5GWWWOpopl2WTxphNrGcKnQuMr0gZYEyz26ou1yp6GjYr5pnoxMIq4zxVexOKqWetdOu0veUoH1KVKrE2XbRmxxzuxleoCgBpdGaOuGqppOaqyCliVEkqJM4RepE6V6feu9C/vPgtraW3y1dpuEFzSJFV8cbdl+7ijd6oq9m5e/cB52C101Ya3UdzbQ25jVkxtPe9cNY3rVe9Dev8EjlV0MN/pX1rW7SwLFjHpw5Vx24A8tBNvNrq7NcpqG4R8nURLhyZyiou9FRelFQvdD6MqtVPqnMl5rTQN/hnRq5HP6GpvToyq9W7rAyoB+tRXKiNRVVdyInSB+A7VVLUUkvJVcEsEmM7ErFauOvCnEADtNS1EEUUs0EsccqZje9ioj060VePFDiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+oiuVERFVV3IiGjoNH188bZat8VFGu9ElXy1/m/EudJ2iO3UcdxqWI6smTaha5N0bfO9Kl1HHUVkytijlnlXfhjVcvqQ9vSfZlNVMXL3f3fNxNXRmnaLh2fIu7Ff1OgVE9eSmu+nLhbI1lkY2anT/wC2wrtNT09KHo3im4/q+r/4LvgR4pXwPVMbt6OY5Ny9aKhrr+zNPXGKOE/nlG6XlANLrCyx0To66hbs0c64Vn1b+r0L0GaPnr1mqzXNFfOHcTkABUl0p4nT1EULPnSORielVwem2y209ugbHAxNrHlPVPKcvap51Z/zvQ/7dn9ZD1E9v7Jt0zFVcxxcVAOkET6ieOGJu1JI5GNTOMqq4Q1//Zlqz9WN/wDUxf2j1q7tFv46ohzhjAa6r8HWqKSlmqJ7cjYYWOke7nEa4aiZVcI7qMiTRcoufBOQAB2gBeaX01W6kdWNoZKdi0sXLP5ZyplOpMIu8ozmKomZpjnAEO522nuMDo52JtY8l6J5TV7FJgFVMVxtqjMDyaoidBUSwv8AnRuVi+lFwcyZePzvXf7d/wDWUhnx1cbapiFwb3Stogp6GKqlY19RK1Ho5yZ2UXhjuMEepWf80UP+wZ/VQ9L7Kt01XJmY5Q5qSwCwstnr73WpSWqlfUzqiu2W4RETrVV3InpPoJmKYzKtXg2lf4M9T0dJy60TJ0RqucyGVHPb3dK9iZKfSemqzU9zkoaCSCKaOJZlWdytTCKiY3Iu/wApCqL9uaZqiqMQnCjABcgAAAAAD5kYyRitka17V4o5Mop9AgefastkdurWOp02YZkVUb5qpxROzehRmv1//wDcH/zP/omQPltdRTbv1U08votp5AAMiQAttKWZ2oL/AElsZMkCzq78ordrZRrVcu7p3IBUg9EvGgbNZpo4rnqttO+Ru2zaoHKjk60VHYUgfJnS/wD31i//ACe/+0BigeiWjQVmvE74bZqtKh7G7Ttm3vRGp1qquwneZHVdmdp+/wBXbHzJOsCt/KI3Z2kc1HJu6NygVIAAAAAC005Y6zUFzbRUDW7eNt73rhsbEVMuVepMobd1h0glmWzLqGiS8NnWTnqwuRnVsK75uz253cQLfwUaKtDdOJqvVNNz6OaV0NvoFcrWSq350j1Ti1F3Y7Fybaa36S1Izxdd9NWu2Ml8iKttkKQSQOXg5cbnJ15PjRFDLVaNo9JyvhS+2d0s1PE16bNZTSu21fGq42sOyip0Y7SxoNM1m2+ovET7bbKfy6mpqk5JrGJxxnj3Hlam7qKb0RRyfRaDT6GvSTVemN3HPHjHTD+cNXWGp0xqW42WtVHT0cqxq9qYR6cWuTsVFRe8qDU+FHUUOq9fXm80rVSmqZUSLaTCqxjUY1VToVUai47TLHqvnQAAAayl8Huo6htK9tCjIaiNJElfK1GsaqZ8rflNy8MZNS6q0q3UK6florRzBKdIvGLUwqS7Cb+Uz19PWB5UDWVng+1FTMqpG0bJ6enZyizxStVsjcZyzKort3Z7TJgAAAAAAAAAAAAAAAAAAB/XfghvjNP+A7StbOuIHVy08iquERslW+PK9iK5F7jw3w/6bdYvCncY4I15G5KlbA1u9VWRV2kx/tEfhOrBvKr/AOxAo/8Abr/9+ON3a7PD4ULb4NtWTKj5rdIrq3giucxq53dP5aJu7qeoGl0SkOlZdNaGh5NZ4bRJWVOyvB6SRtVfQ575V/mnnHgBt1N/2ieEW9VEf5SjqnwxyLwa18sjn9/kN3/EkeDrUS6l/wApTU9Ux6upqe3y0cG/KbEcsTcp2K7ad/OK3wDXukpvCtrqx1TtmS51Ur4UXg9Y5JdpvpVr1X0NUD+f9T3yt1Jfq273ORX1VVIsjt6qjU6GpngiJhETqQ2f+T/qGpsXhNtUcUrm0txkSjqI+h6P3N3daO2Vz6etTPeEHR1y0VqKpttxglSJHu5tUObhs8edzkXhwxlOhdym7/ybNF1151tSX2Wney0WxyyLM5MNklxhrGr0qirtLjhjfjKAay/VVr0P/lQx3G4JDT2+tiSV8ipuhfJGrFf2Zei5XqcqnXwj+Ay46lv9bqHTF6oquC4yLU8nUPVMbW/DHtRyOTq4YTCb8ZKd1BYvC94eb9TV1dVRW9lOraOSmkY1ZHRbDVxtI5Fav5RyY6DzO+xah8HWqrja6SvudtfDM5GPilfDy8aOVGSblRFRUTIGurH+EDwZaIumnbpZIW2S5rI19RI3lkYr2oxdl7H7LVVERURyceg8jP6q8F+oL1rHwTarfr1vOLVHTSJDWSQo10jEjcr13IiLsK1qo7jnO/KH8qgD1PSlM2lsNIiJvkbyrl61dv8Adg8sPVtMztqLDROavzY0jXsVu79x6n2VjtJ64c1clme4eD2a5QeC/lLHTxVNxbM7kopVw135RM53p0ZXieHntWh6KvuPgofS2ip5rXSSu5OblHM2cSIq+U3KpuRU7zf9oY7OnPWHNK0rJbjXaJvT9cW+jpEjicsSRORy52dyp5TkR21jG/j7afwOPqY9E3l9BG2WsbM9YY3/ADXP5Nuyi703KuOlC5stNX6XsFzl1neI62B7cMY+RX7sLlqOciKquyiY7Ck8EEE9ToW9wUcvI1MssjIpMqmw9YmojspvTC4PPnHZVxGMZj8v76uu993m9eECK01j66x22KlSF/Kva9FVrcb1TEq9HYV3gz1vcqm6WiwSQUaUaMWLbRjuUw1jlTftY6E6DvV6H1pNSyx1GpGywuaqPY+plVHJ0oqYMf4Kf4/2r0yf8p5opotV2a8YnEd2enmjjlqvCZri5Ut1u9gjgo1o1jSLbcx3KYfG1V37WM+UvQX3gugptPaRo6muckU92qWozKb1V26NveiK7+cYTXlvkuvhWqaCHKPqJYY84zsosbMr3Jle49A1lqPTdjqaG03KgqKjmjGTQthRNmJUyjf0k3oie04uUR2VFqiPijM4/Ijnl5Z4SLT4n1hXQtbswzO5xF1bL9+7sRdpO4zB674XaeG9aatGo6Fq7GEa7KJtIx6ZTa9Dkx6XHkR6GkuTctRM844T+jmeap1XTNqrDVoqb428q1epW7/dk8sPVtTTtp7DWucvzo1jTtV27955SeX9q47SOuHdPIAB5boAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9t8KOnbrf7dp/xRSLUchG/lMPa3ZyjMfOVOpTxI9o8LF7uVntunvFdZLS8rG/b5NcbWEjxn1qBWeDfQ1/tmqaW4XGnSkp6dHKqrK1yvy1W4RGqvX0k3T9bT3Dw3XGopHo+FYnMRycFVrGtVU7Mou883rdVX6uhdDVXatfE5Fa5nKqiOReKKicU9JovAt/HeP8A3eT9wFBrr+OV6/3uT+sptPAXcZludfaZXbdJLAsyMcuURyKiLhOG9Hb/AEIY3XDHO1peUa1yqtXJhETj5Sm+8EFkls0Vx1BeI30kDYFZHyqK1VZ85zscceS3HXvAk+CGlZQ6r1VSRJiOCXkmpnO5sj0T3HjJ7D4F6tbhqHUlY5uy6oc2ZW9Sue9ce08i5CX6p/8ARUDpbqpaG4U1W1jJHQStlRj0y1ytVFwvZuPd/BtrGr1Stxjq6amgbTMYreRRd+1tccr2HgT2OYuHtVvpTB6t4BP4W+fyIv8A6YHk4JVqq1t90o6xGJItPMybYVcI7Zci49h6NWeFuWppJ4PEsDeVY5meWVcZTHmgS73I+xeBW2Q0qq11e5rZHtXCqj9qReHHciN9BV+A2ukh1RUUm2vIVFO5VZncrmqiovqV3rLS9RPv3gWtk1Iivdb3NdK1N6ojEcxfUio70FZ4DrfLLqSor1jclNTwOasi8NtyphPVlQOdl1HR6JvOrKVtNMsskz4qVWImI0Y56JnK8N7fUUWgrddLtqujnoUmc+KobNPUKq4Ym1lVc7rXfu6S60vp+m1lq69XKrldHZ4p5KiRc7KuRznK1uehMIqqvUnblJWovCJzamda9G0rKCgZlqTozD3drU6M9a5Xp3KBF8N1TBUawjZA5rnwUrI5cdDtpzsepyes8+NBpHUkunL3JcnU6VkkkbmOSV6oqq5UVXZ3793tL7VvhGk1DY5rc61w06SOavKJLtKmFReGE6gPVLPcGU1u0pRT4WKuokiwqblckTXJnuRyd54dU6bmj1u6wM2kctUkLXKmV2FXKOX+aqKbvX1ZJbtK6HrYP4WnbFK3PSqRsXBsEtNFPqin1ij2JR+L1ftLuVFxuev/AMtVTuQCVLXRPdqC1UyNbBbqCNiNRPmucyRcejZRhhPBHVyUGi9TVkOFlp2ulZnhlsaqnuOng0uEl1i1xXzZR9Q1JMKudlFSXCdybu4h+DT/AEd6w/2En/JcBH8NFHFPPar/AEaZpq+BEVyJ0omWqvarV+6afweMTTujrQr0VtVeK1iplP0V4d2wzPpcVWkqVNaeDJ1mdI1tZQVDUje5cq1uco7+ir2p6CVqavjd4T9M2elRG09uVjdhP0XORN3c1GetQM/rOyTah8LtTboHbHK8kr5MZ2GJE1XL6vbgsbhUaA03XvtMtpmrpIsRz1GdvDunerk3p07KJgt7fPFD4dLmyVUR01K1kefO5ON3uapU6n1hS2rUNdRVej7bJMyZ35SRrdqVFXKP+Z0pv7wK7VGnLJpu8Wq7pDLXabrUc7kWuXKZZlqI7KKqLlFTK58lcmm8MlVaIrRRxVlDJNWTRP5nKjsJD8zOd+/o6F4FH4U665SaWtEFwttFboZJElhhilVXsRrFTZVuyiIiI5OHDcdPDon5PTq9HJS//gwLa5WDRmn7RbbtdaN3lRNRIGOc7lnq1FzhV6ML0om/f0FFa7NYb1pTVd5ht6sWGWZ1JlzmrE1I0c1Nlrtncq9p9eGX8zaST/8AV3/1YjroD/RPqn/53/KaBE0hpqzW7SjtTarjfNC5fyFOirvTOEXGUyqqi4RVxjevZaUtt0tru1XBtkty2y50rdpmMNznONyLhUXGF3ZTJz1ax9w8DViloWq+KmWJZtn9HZa5jlX+cvtMXpDR9XqWnraiKeKlpaVPLllRcKuFVUTHUiZX0oBqNLWOx2jQ7NTX6hmuLpXqjYmplsabStTKZxvVN6r1omOvndINH6j0zXV9rZHZ7nStV6QPkRvK4TOEbnC53omMLn29bBdtRaL0lRVskdHXWOpdlkW2u3FtZXGcbkVUXr3+ktaSPTuv7FdJ4rO22V9LHtrMxEaiOVFVF2kxtJ5O/KcF7wPGj0DwI/xzd/usnvadtP8AhPks9lpLelohmSnZscosqt2u3GCf4Obwt+8KNZcnQNp1npV/JtXKNwjG8e4DWae0RHQ6hut+uMaVFXJVTTUsKKioxFeqtdv3bS7sdXp4ePa11DcdQXmWS5I6FIXOjjpd+IcLvTHnbt6/BETRXTW90t3hIq6yWV0tPS1ElLzdNzVhR6oqInXuRc9aJ0bi28KunYLnQRarsWJYJWI6oRnS3okx1pwd/coErRV0msvgjqrjTIiy09VtI1eDk5RiKneiqneQvClaae92ik1fZk2opWNSpRMZxwRy9qL5K93Up82j/QXdf9v/APhIyD4I9RRU9XLp+6bL7dcMsY1/zUkVMbK9jk3enHWoE6t/0DW//br/AM5538JMrrP4O9O2inXk2zsasuzu29lqK7KdrnIvpQsdfWdLD4K0trH8pHDVeQ5eOy6Vzm57cKmSt8I0Lrz4O9O3im/Ktp42tlVu/Z2mo1yr6HNRO8Dl4DKrl5rxaKj8pSzQpKsbl8nzXbu1HJn0IZul1XLZdJ3LTdPSqyeWZ23Vtmwqb0RU2cdKNxx6TSeBGlWk8cXuqR0dHDByfKKm5f0nY9CNT1lCmkfGOhptTU9TJNV8o50tM1mdlNvC7+O5FR3oA13gz0TeNP3l90ujmU8DYXNWKN+26TPWjc7t2evKIVXg7dDd/CxcLhA1WxNWoqY0VMLhztnKp14eRPBVfL9U6tpabntZVUjkdy7JZHSNaxGrv352d+N+7q6SzuNiudy8I2onaXuEVvmhSNZMSOjV+0xFdjZRc+Um/PSoHS6+DJ1yvFdMt+o219RLJPzZGZVNpyrx2s9PHB5tqCy1tguclDco0ZM1MoqLlr2rwc1elD4pY7k69xxwNqPGvL+Sm9JElz0535z1nrfhSvcdi1VpyubDHUVdNFM58Suxlrk2U9u1j0AeKm11DrCCu0TarDQQzwLTtYlQqqiNkVrexd6K7yt/UhY6g8J8l4stXb1tEMKVDNjlElV2z24wTdM2SzaW0xT6l1JCtXU1GHUtNhHJvTLdy7lXG/K7kTHSBO8CtDW2ykud1uG1S2p8SORZdyP2cqr07ETO/pz2H5YZks3givN1t7Vilq5nqxUXDo0c9IkwqdSZVO0xesNb3bUu1DKvNqDOUpos4Xq2l4uX2buBr9Lxvv3gbudspEV9VTvdiNN6rh7ZEwnbvRO0DJ+Ciulo9cW9rHq2OoV0MjUXc5FauEXvRF7jUVV7t+jPChf6iopJpGzMbsJFjcr0Y9y716VyZnwT26au1tQyRxudDTKssr0TcxEauM+lcIXlZZGa28K12jbI9lDA5EnkbxwxrWK1vRlXIvdlQMZaaW8ak1Ej6LlZbhLLyrpkVU5Nc521d+iif9D1fXsdLdvCDpS2OcySaJzpZ24zlu5yNX07Dt3UpQ37XlLY4ZLRoijip4Y12XVeztbSpuy3Pzv5Ts56uCmW0FcXs8IFrrK+V8kks6tfJIqqque1Woqqva5APSNd6Pr9TX509bc6egtsLWxUzXrtK5VRFc7ZyiIqqqpxz5Kdhktd0mo9P6apbNcH01VZkeiQ1LGrtIqZVGqq8OnHZ07jj4a21yawV1Vt80WFvNfN2ceVjt2s57uwvq900fgJjbc1ckz3MbAknzlbyuWpv/1EXHYBU+D/AF5W0L7RYoqKjWB9QyB0uHbao+TevHGfKOHhv/jmz/dY/e4y2j/422T/AH6D/mNNT4b/AOObP91j97gLqpldY/AhTJTryc1e/Ze9u5V23Kq/cbs+gpfAnXyU2r+ao93JVcLmuZncrmptIuOtER3rUuaiF1+8CNMtN+Umtz9p7G71TYVyL6mOR3oKjwJ22Wp1Zz1GO5Ckieqvxu2nJsomevCqvcBJoNQ0miNQ6tp+bSrNPMraZY0bsxoivVqLleHlN9Rm9BW66XbVdHPQpM58VQ2aeoVVwxNrKq53Wu/d0mgsVhp9Z62vtxrJtmz0875XvR2NtqquymehMNyq9XpynTUXhE5tTOtejaVlBQMy1J0Zh7u1qdGetcr07lA+fC9c4YfCBRT0yRTS0MUSyNdvar2vc9Gu7lTPpNt4NtY1eqVuMdXTU0DaZjFbyKLv2trjlew8Cle+SRz5XOdI5Vc5zlyqqvFVU9W8An8LfP5EX/0wPJwABvaNV1xp1KJ+F1Ba4s0zlXfVQpxYvW5Oj+9VKfRlgiuVTU1d2V8Nnt7Flqn4xtY4RovnL6+/BR22tqLbXwVlHIsVRA9HscnQqe9OzpNLrLWDb7R01JQ0bbfTIqzVMcaoiTTO4uXHHHRnfv8AQBV6tv0+obvJVS5ZTt8ingTc2KNODUThnHHtKUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEi3QJVXClp14Sytj9aohHJFunSluFLULwilbJ6lRTqjG6M8h6jXqi1T0aiI1nkoidCJuP2grqm3z8tRTOhlwrdpvHB+V7USqeqKitf5bVTgqLvLTSDrXFd2z3qXYgibtsarFcjn5TGcIu7p7j7S5MRTM4ypauO83CxWHnl2qpJrjVtxTUz+EbfPcn7vQnXjzqR7pJHPeuXuVVVetVNdeGWe7XCWrqtT5e9dyJQSYa3oam/gZKVrWyvbG/bYiqiOxjKdeCmxTEZnHGfLCZcLnElTp+5wuTKNi5ZvYrd55kem3OZKbT9zmcqJtRcinartx5keN9sY7Snrj+rugAB5DpMs/wCd6H/bs/rIeonl1n/O9D/t2f1kPUT3vsj4KvzcVv1qq1yOaqoqLlFToN94KLrcanXtsiqa+rmidyuWSTOc1fyT13oqmANl4IP9Idq9Ev8Aynm/VRE2a89J/ZzHNx1BXXGr1nc6BbrPBTy18sKrLUObExqyKm/fhGonsNElh8H0FbDa5bxXVVXIrWLVU7mrE1y44KiKmFz/AK2OlSjhtUF78K1Vb6t6sgmuM6PVFwqojnrhF7cY7zbyzQ0mq22S0aEo1ZHM1jaqog212c/wm0qcOK5yv7jJdr2xTTTMxwzwxH7phh6nRE8XhAZpptQmJXbTKhzeMeyrlXHWiIqY60L6XT+gUulRZXXS401bC50a1U6tbFtpnKKqoiYRU7M9Ck3wgxXWXwsUXyf2fGbKZj4kV7W5xt5Tylwu7O7qyTrfck1Nf0sur9HxpXOyySrhYrVbjgqrxRu7ijlTq4nFV65VRTXM/wCnM4mM/njvThU+CWmSjuuqaZs0VQ2KlcxJYnI5kiIq4cip0LxKSx6QoqbTsl+1fPPSUT24pKeFUSadehUyi7l6PXuTjrfBvQ01j1lq2kp385pqWFUTaVFVURc7K9qcF9BG1XDH4RtLxX2zo9Lnb2qyoodtXYbxXZTr6UVO&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Open native MMetrics and capture panel content action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:25:32.259Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 371,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;下载原生完整亲和力评分 CSV&quot;,
+    &quot;action_code&quot;: &quot;await tab02.playwright.getByRole(&#x27;button&#x27;,{name:&#x27;MMetrics&#x27;,exact:true}).click(); var n02=await tab02.playwright.evaluate(()=&gt;{let p=document.querySelector(&#x27;.panelBody___IvNbM&#x27;);return {text:p.innerText,html:p.outerHTML,buttons:[...p.querySelectorAll(&#x27;button&#x27;)].map(e=&gt;({text:e.innerText,title:e.getAttribute(&#x27;title&#x27;),&#x27;aria-label&#x27;:e.getAttribute(&#x27;aria-label&#x27;)})),files:[...p.querySelectorAll(&#x27;.fileCard___msYsS&#x27;)].map(e=&gt;e.innerText)}});await fs.writeFile(dir02+&#x27;/raw/native-ui/native-panel-content.json&#x27;,JSON.stringify(n02,null,2));nodeRepl.write(n02.files); var dl02p=tab02.playwright.waitForEvent(&#x27;download&#x27;); await tab02.playwright.locator(&#x27;.fileCard___msYsS&#x27;).filter({hasText:&#x27;MutXaff.csv&#x27;}).getByText(&#x27;Download&#x27;,{exact:true}).click(); var dl02=await dl02p; var dl02path=await dl02.path();nodeRepl.write(dl02path); if(dl02path)await fs.copyFile(dl02path,dir02+&#x27;/raw/native-ui/MutXaff.csv&#x27;);&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Download case02 archive and submit independent antibody supplement request action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:27:26.513Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 458,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;下载原生归档并补齐独立抗体分析，保留来源区分&quot;,
+    &quot;action_code&quot;: &quot;await tab02.playwright.getByRole(&#x27;button&#x27;,{name:&#x27;download kn035_case02.zip&#x27;,exact:true}).click();await tab02.playwright.getByRole(&#x27;button&#x27;,{name:&#x27;Close file panel&#x27;,exact:true}).click();var supplement02=&#x27;原生结果已在浏览器采集。为补齐用户要求的抗体CSV，请只在本项目追加独立的Antibody Region Annotation（AbAn）、Antibody Language Model Scoring（AbScN，如实际task名不同按schema）、Paratope预测/ParaDt（若可用）任务，输入同一KN035链B完整128aa，绝不伪称原生MMetrics文件。保存全部CSV、schema、实际payload/ID/状态和每个CSV紧凑序号到MMFold_1 B label_seq_id逐残基映射，和已有native任务明确分目录。不可用则记录具体工具/限制。保留已有归档，补充放/workspace/kn035_case02_supplement/并打包/workspace/kn035_case02_supplement.zip；避免继续探索不相关服务。&#x27;;await fs.writeFile(root+&#x27;/02-mmetrics-kn035/raw/submitted-supplement-prompt.txt&#x27;,supplement02);await tab02.playwright.getByRole(&#x27;textbox&#x27;).last().fill(supplement02);await tab02.playwright.getByRole(&#x27;textbox&#x27;).last().press(&#x27;Enter&#x27;);nodeRepl.write((await tab02.playwright.domSnapshot()).slice(-1600));&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Save completed MMetrics screenshot capture action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:29:13.454Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 558,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;保存原生面板首屏并开始重叠采集&quot;,
+    &quot;action_code&quot;: &quot;var capture02=[];var meta02=await tab02.playwright.evaluate(()=&gt;({scrollTop:document.querySelector(&#x27;.panelBody___IvNbM&#x27;).scrollTop,scrollHeight:document.querySelector(&#x27;.panelBody___IvNbM&#x27;).scrollHeight,viewport:{width:innerWidth,height:innerHeight},devicePixelRatio}));await fs.writeFile(root+&#x27;/02-mmetrics-kn035/visuals/native-complete-00.png&#x27;,await tab02.screenshot({fullPage:false}));capture02.push({file:&#x27;visuals/native-complete-00.png&#x27;,...meta02});nodeRepl.write(meta02);await tab02.scroll([1200,400],&#x27;down&#x27;,0.65);await tab02.getAXState({emit:false});&quot;
+  },
+  {
+    &quot;event&quot;: &quot;Save remaining completed MMetrics screenshot captures action&quot;,
+    &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:29:20.763Z&quot;,
+    &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+    &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+    &quot;source_session_line&quot;: 565,
+    &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+    &quot;action_title&quot;: &quot;完成面板逐屏截图及对应的真实滚动记录&quot;,
+    &quot;action_code&quot;: &quot;for(var j=1;j&lt;=5;j++){var img=await tab02.screenshot({fullPage:false});var meta02=await tab02.playwright.evaluate(()=&gt;({scrollTop:document.querySelector(&#x27;.panelBody___IvNbM&#x27;).scrollTop,scrollHeight:document.querySelector(&#x27;.panelBody___IvNbM&#x27;).scrollHeight,viewport:{width:innerWidth,height:innerHeight},devicePixelRatio}));var file=&#x27;visuals/native-complete-&#x27;+String(j).padStart(2,&#x27;0&#x27;)+&#x27;.png&#x27;;await fs.writeFile(root+&#x27;/02-mmetrics-kn035/&#x27;+file,img);capture02.push({file,...meta02});await tab02.scroll([1200,400],&#x27;down&#x27;,0.65);await tab02.getAXState({emit:false});}await fs.writeFile(root+&#x27;/02-mmetrics-kn035/raw/native-ui/complete-scroll-captures.json&#x27;,JSON.stringify(capture02,null,2));nodeRepl.write(capture02.map(x=&gt;x.scrollTop));&quot;
+  }
+]</pre></details><details><summary>补充时间证据：timeline.json</summary><pre>{
+  &quot;schema_version&quot;: &quot;1.0&quot;,
+  &quot;purpose&quot;: &quot;Historical case 01 to case 02 task timeline; timezone claims preserved by evidence level&quot;,
+  &quot;timezone_policy&quot;: {
+    &quot;stage01_UI&quot;: &quot;Creation/Update labels have no timezone. Preserve literal values; no conversion.&quot;,
+    &quot;stage02_raw_status&quot;: &quot;Started text has no timezone. Preserve literal values.&quot;,
+    &quot;stage02_manifests&quot;: &quot;started strings ending Z are archived derived normalization assertions. Source CheckMOSTask responses were not archived with an explicit timezone label; do not treat as independently verified backend UTC.&quot;,
+    &quot;session_timestamps&quot;: &quot;UTC Z timestamps from local Codex event log are action/observation times, not task lifecycle times.&quot;,
+    &quot;payload_createTime&quot;: &quot;Unix seconds from archived task payload; UTC conversion explicit and independent of local timezone. Output-object creation, not task start or finish.&quot;,
+    &quot;duration&quot;: &quot;Preserve source duration; no inferred finish timestamps; 1.1min is rounded.&quot;
+  },
+  &quot;projects&quot;: [
+    {
+      &quot;case&quot;: &quot;01&quot;,
+      &quot;project_id&quot;: &quot;342242986152960&quot;,
+      &quot;archived_display_name&quot;: &quot;nn&quot;,
+      &quot;url&quot;: &quot;https://mos.moleculemind.com/?projectId=342242986152960&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02&quot;,
+      &quot;project_id&quot;: &quot;342604060136448&quot;,
+      &quot;archived_display_name&quot;: &quot;PDL1-02-MMetrics-KN035-20261021&quot;,
+      &quot;url&quot;: &quot;https://mos.moleculemind.com/?projectId=342604060136448&quot;,
+      &quot;input_object_id&quot;: &quot;342604293768192&quot;,
+      &quot;input_work_id&quot;: &quot;342604299084800&quot;
+    }
+  ],
+  &quot;tasks&quot;: [
+    {
+      &quot;case&quot;: &quot;01&quot;,
+      &quot;task_id&quot;: &quot;342253805564928&quot;,
+      &quot;task_name&quot;: &quot;PDL1_KN035_VHH_complex&quot;,
+      &quot;type&quot;: &quot;Structure Prediction with MMFold&quot;,
+      &quot;status&quot;: &quot;Succeed&quot;,
+      &quot;ui_creation_time_literal&quot;: &quot;2026-10-20 9:34:18&quot;,
+      &quot;ui_update_time_literal&quot;: &quot;2026-10-20 9:36:23&quot;,
+      &quot;timezone&quot;: null,
+      &quot;started&quot;: null,
+      &quot;finished&quot;: null,
+      &quot;duration&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/01-structure/raw/task-details-succeeded.txt&quot;,
+      &quot;source_lines&quot;: [
+        589,
+        597,
+        599,
+        614,
+        623
+      ],
+      &quot;notes&quot;: &quot;Update Time is not independently a finished-at field; actual start, finished and duration not recorded in this archive.&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-native&quot;,
+      &quot;task_id&quot;: &quot;342604299285504&quot;,
+      &quot;task_name&quot;: &quot;autocompute-MMFold_1&quot;,
+      &quot;type&quot;: &quot;MOSTask&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;role&quot;: &quot;native automatic pre-analysis, created by the platform when the structure was imported (before MMetrics)&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:20:28&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:20:28Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;1.1min&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-native&quot;,
+      &quot;task_id&quot;: &quot;342604577018880&quot;,
+      &quot;task_name&quot;: &quot;mmetrics-analysis-342604299285504&quot;,
+      &quot;type&quot;: &quot;MOSTask&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;role&quot;: &quot;native automatic MMetrics analysis of this structure&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:21:36&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:21:36Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;3s&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-independent-supplement&quot;,
+      &quot;task_id&quot;: &quot;342606092895232&quot;,
+      &quot;task_name&quot;: &quot;kn035-AbAn-independent&quot;,
+      &quot;type&quot;: &quot;Antibody Region Annotation&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:27:46&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:27:46Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;20s&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json&quot;,
+      &quot;relationship&quot;: &quot;Independent antibody supplementary tasks; not the native MMetrics homology pipeline.&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-independent-supplement&quot;,
+      &quot;task_id&quot;: &quot;342606094599168&quot;,
+      &quot;task_name&quot;: &quot;kn035-AbScN-language-independent&quot;,
+      &quot;type&quot;: &quot;Antibody Language Scoring&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:27:46&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:27:46Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;3s&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json&quot;,
+      &quot;relationship&quot;: &quot;Independent antibody supplementary tasks; not the native MMetrics homology pipeline.&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-independent-supplement&quot;,
+      &quot;task_id&quot;: &quot;342606097245184&quot;,
+      &quot;task_name&quot;: &quot;kn035-AbScN-nativeness-independent&quot;,
+      &quot;type&quot;: &quot;Antibody Nativeness Evaluation&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:27:47&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:27:47Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;3s&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json&quot;,
+      &quot;relationship&quot;: &quot;Independent antibody supplementary tasks; not the native MMetrics homology pipeline.&quot;
+    },
+    {
+      &quot;case&quot;: &quot;02-independent-supplement&quot;,
+      &quot;task_id&quot;: &quot;342606100722688&quot;,
+      &quot;task_name&quot;: &quot;kn035-ParaDt-independent&quot;,
+      &quot;type&quot;: &quot;Paratope Identification&quot;,
+      &quot;status&quot;: &quot;succeed&quot;,
+      &quot;raw_started_literal&quot;: &quot;2026-10-21 02:27:48&quot;,
+      &quot;raw_started_timezone&quot;: null,
+      &quot;archived_normalized_started&quot;: &quot;2026-10-21T02:27:48Z&quot;,
+      &quot;archived_normalized_started_timezone_claim&quot;: &quot;UTC (Z), unverified normalization&quot;,
+      &quot;duration_literal&quot;: &quot;25s&quot;,
+      &quot;finished&quot;: null,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_status.txt&quot;,
+      &quot;source_lines&quot;: [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      &quot;normalized_source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json&quot;,
+      &quot;relationship&quot;: &quot;Independent antibody supplementary tasks; not the native MMetrics homology pipeline.&quot;
+    }
+  ],
+  &quot;action_observations&quot;: [
+    {
+      &quot;event&quot;: &quot;Create case 02 project action submitted&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:28.859Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 102,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;提交创建案例 02 项目&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Case 02 project URL observed after create&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:29.625Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 104,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;提交创建案例 02 项目&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Case 02 project display name observed&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:37.698Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 111,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;查看新项目导入入口&quot;
+    },
+    {
+      &quot;event&quot;: &quot;First browser filechooser upload failed due to local-file permission&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:19:59.116Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 126,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;向案例 02 上传唯一主结构&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Native macOS picker selected original case01 MMFold_1.cif&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:20.494Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 143,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;指定主结构的绝对路径&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Native filepicker Open clicked; upload workflow returned to Create a Work&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:26.350Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 148,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;完成主结构导入&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Read imported structure state action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:40.995Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 156,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;核验导入后的链、序列及 MMetrics 状态&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Open native MMetrics and save initial screenshot action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:49.331Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 163,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;打开并记录 KN035 原生 MMetrics 面板&quot;
+    },
+    {
+      &quot;event&quot;: &quot;MMetrics initial Generating/Computing state observed&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:20:50.196Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 165,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;打开并记录 KN035 原生 MMetrics 面板&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Submit Mocha export/verification prompt action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:21:45.731Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 182,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;提交案例 02 的原始结果导出与编号核验请求&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Mocha prompt submitted&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:21:46.245Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 184,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;提交案例 02 的原始结果导出与编号核验请求&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Open native MMetrics and capture panel content action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:25:32.259Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 371,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;下载原生完整亲和力评分 CSV&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Download case02 archive and submit independent antibody supplement request action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:27:26.513Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 458,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;下载原生归档并补齐独立抗体分析，保留来源区分&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Save completed MMetrics screenshot capture action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:29:13.454Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 558,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;保存原生面板首屏并开始重叠采集&quot;
+    },
+    {
+      &quot;event&quot;: &quot;Save remaining completed MMetrics screenshot captures action&quot;,
+      &quot;observation_timestamp_utc&quot;: &quot;2026-10-21T02:29:20.763Z&quot;,
+      &quot;source_session_id&quot;: &quot;01a15c40-8eca-77d0-a4ac-80cc5838fbea&quot;,
+      &quot;source_session_file&quot;: &quot;/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl&quot;,
+      &quot;source_session_line&quot;: 565,
+      &quot;semantic&quot;: &quot;action_or_observation_time_not_task_lifecycle&quot;,
+      &quot;action_title&quot;: &quot;完成面板逐屏截图及对应的真实滚动记录&quot;
+    }
+  ],
+  &quot;output_object_creation_times&quot;: [
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/0&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/1&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/2&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/3&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/4&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/5&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    },
+    {
+      &quot;json_path&quot;: &quot;/autocomp_results/result_data/objects/6&quot;,
+      &quot;epoch_seconds&quot;: 1792549294,
+      &quot;utc&quot;: &quot;2026-10-21T02:21:34Z&quot;,
+      &quot;asia_jakarta&quot;: &quot;2026-10-21T09:21:34+07:00&quot;,
+      &quot;object_key&quot;: &quot;user_objects/123/330665428816896/342604299285504/sequence_info.fasta&quot;,
+      &quot;meaning&quot;: &quot;autocompute output object createTime, not task lifecycle&quot;,
+      &quot;source&quot;: &quot;website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json&quot;
+    }
+  ],
+  &quot;missing_fields&quot;: [
+    &quot;Stage 01 actual task started_at, finished_at and duration&quot;,
+    &quot;Stage 01 UI timezone&quot;,
+    &quot;Stage 02 raw status timezone&quot;,
+    &quot;Stage 02 exact finish times for all tasks&quot;,
+    &quot;Project and structure upload API created_at fields (only local session observations retained)&quot;,
+    &quot;Native server/API response giving explicit timezone for CheckMOSTask Started values&quot;
+  ]
+}</pre></details></section><section id="inputs"><h2>5. 输入、完整序列与原始操作指令</h2><div class="table"><table><thead><tr><th>链</th><th>角色</th><th>长度aa</th><th>完整序列</th></tr></thead><tbody><tr><td>A</td><td>target</td><td>118</td><td><pre>MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE</pre></td></tr><tr><td>B</td><td>binder</td><td>128</td><td><pre>QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS</pre></td></tr></tbody></table></div><p>01：1:1复合物，输入为两条独立蛋白序列。留档提交回执声明 dialect=mmfold v1、default seeds、未提供模板；没有单独找到完整StartMOSTask请求JSON，不能把本地input.json当作原始接口请求。02：上传同一CIF，再在该项目Mocha中要求读取已导入结构和自动分析结果。</p><details><summary>01 原始提交prompt（完整）</summary><pre>Run MMFold complex structure prediction for human PD-L1 and KN035 VHH, two separate protein chains, 1:1 stoichiometry. Use these exact sequences derived from PDB 5JDS with cloning/His tags removed. Save predicted PDB/mmCIF and confidence outputs (pLDDT, pTM, ipTM, PAE if provided), give MOS task ID and status. Do not use the experimental PDB as a predicted result.
+&gt;PDL1
+MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE
+&gt;KN035
+QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS</pre></details><details><summary>02 原始提交prompt（完整）</summary><pre>本项目只分析当前已导入的 MMFold_1.cif，唯一原始 SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。A=人PD-L1 118aa，B=KN035 VHH 128aa，无轻链。不要用5GRJ、7XYQ、5JDS，不要重新预测，不要改动其他项目或任务。请核验导入对象链ID、完整序列、label/auth残基编号，记录object_id/work_id/tos_key和原始及sanitized输入hash、逐残基MOS↔MMFold_1映射。读取本结构自动MMetrics分析的真实任务ID/状态及所有可获得原始输出（Description reasoning roles、Homologs原始空结果也保留、完整Paratope/Epitope/Domain/PTM/UniProt、Interaction Network、所有MutX CSV、AbAn/AbScN/ParaDt heavy CSV与紧凑序号映射）。原生自动结果与独立任务和本地分析严格分开，未完成就写未完成，不用其他任务冒充。请把真实输出与任务payload完整复制到 /workspace/kn035_case02/，写provenance.json/numbering-map.json/task-ledger.json，再创建 /workspace/kn035_case02.zip 供Workspace下载。最终回复明确对象ID、任务ID、状态、路径；如仍computing只记录，不等待很久。</pre></details><details><summary>02 后续独立抗体补充prompt（完整）</summary><pre>原生结果已在浏览器采集。为补齐用户要求的抗体CSV，请只在本项目追加独立的Antibody Region Annotation（AbAn）、Antibody Language Model Scoring（AbScN，如实际task名不同按schema）、Paratope预测/ParaDt（若可用）任务，输入同一KN035链B完整128aa，绝不伪称原生MMetrics文件。保存全部CSV、schema、实际payload/ID/状态和每个CSV紧凑序号到MMFold_1 B label_seq_id逐残基映射，和已有native任务明确分目录。不可用则记录具体工具/限制。保留已有归档，补充放/workspace/kn035_case02_supplement/并打包/workspace/kn035_case02_supplement.zip；避免继续探索不相关服务。</pre></details><details><summary>02 autocompute实际payload</summary><pre>{
+  &quot;structure_path&quot;: &quot;user_objects/123/330665428816896/342604293768192_MMFold_1.cif&quot;,
+  &quot;structure_pathFileId&quot;: &quot;342604293768192&quot;,
+  &quot;structure_pathFilename&quot;: &quot;MMFold_1.cif&quot;
+}</pre></details><details><summary>02 MMetrics实际payload（含全部7个对象）</summary><pre>{
+  &quot;input_structure&quot;: &quot;user_objects/123/330665428816896/342604293768192_MMFold_1.cif&quot;,
+  &quot;autocomp_results&quot;: {
+    &quot;result_data&quot;: {
+      &quot;objects&quot;: [
+        {
+          &quot;id&quot;: &quot;342604574114816&quot;,
+          &quot;name&quot;: &quot;all_sequences.fasta&quot;,
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta&quot;,
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-blast&quot;
+        },
+        {
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json&quot;,
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-blast&quot;,
+          &quot;id&quot;: &quot;342604574229504&quot;,
+          &quot;name&quot;: &quot;blast_results.json&quot;
+        },
+        {
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv&quot;,
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-score-esm&quot;,
+          &quot;id&quot;: &quot;342604574241792&quot;,
+          &quot;name&quot;: &quot;esm_scores.csv&quot;
+        },
+        {
+          &quot;id&quot;: &quot;342604574258176&quot;,
+          &quot;name&quot;: &quot;proteinmpnn_scores.csv&quot;,
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv&quot;,
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-score-ligandmpnn&quot;
+        },
+        {
+          &quot;name&quot;: &quot;diffaffinity_scores.csv&quot;,
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv&quot;,
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-diffaffinity&quot;,
+          &quot;id&quot;: &quot;342604574270464&quot;
+        },
+        {
+          &quot;createTime&quot;: 1792549294,
+          &quot;modelType&quot;: &quot;mos-score-msat&quot;,
+          &quot;id&quot;: &quot;342604574282752&quot;,
+          &quot;name&quot;: &quot;msat_scores.csv&quot;,
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv&quot;
+        },
+        {
+          &quot;id&quot;: &quot;342604574299136&quot;,
+          &quot;name&quot;: &quot;sequence_info.fasta&quot;,
+          &quot;key&quot;: &quot;user_objects/123/330665428816896/342604299285504/sequence_info.fasta&quot;,
+          &quot;createTime&quot;: 1792549294
+        }
+      ]
+    }
+  }
+}</pre></details><p>完整原始输入与回执：<a href="archives/website-cases/pdl1/01-structure/input.json">01 input.json</a> · <a href="archives/website-cases/pdl1/01-structure/raw/mocha-launch-receipt.txt">01 提交回执</a> · <a href="archives/website-cases/pdl1/02-mmetrics-kn035/input.json">02 input.json</a></p></section><section id="homologs"><h2>6. 同源检索证据：抗体命中与抗原空结果</h2><div class="table"><table><thead><tr><th>层级</th><th>已确认事实</th><th>完整原始文件</th></tr></thead><tbody><tr><td>结构来源</td><td>01与02副本字节相同；A118aa/B128aa</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/provenance.json">provenance.json</a></td></tr><tr><td>前置查询序列</td><td>general.query_sequence及全部data[*].query_sequence_full均=B链；A链query=0（只就本文件而言）</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json">原始blast_results.json</a></td></tr><tr><td>命中数</td><td>503比对记录 / 500唯一hit_id / 500FASTA记录；3个hit_id各含2条HSP</td><td><a href="diagnostics/homolog-audit/homolog_evidence.json">本次离线核对</a></td></tr><tr><td>首条命中</td><td>pdb|5JDS|B；128/128一致；identity_percentage=1.0；E-value=2.10588e-92</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/similarity_results.json">下载名similarity_results.json</a></td></tr><tr><td>查询元信息</td><td>hit_db均为pdb，references=[RCSB]；软件/库快照/搜索阈值未留档</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_info.fasta">sequence_info.fasta</a></td></tr><tr><td>传给MMetrics</td><td>7对象中明确包含BLAST JSON与FASTA，具有对象ID/key/createTime</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json">MMetrics payload</a></td></tr><tr><td>MMetrics产物</td><td>annotations.homology=[]；uniprot=[]；pdb=[]；model_tasks.results=[]</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json">原生record.json</a></td></tr><tr><td>原生界面</td><td>Searched by antigen sequence similarity；No significant homologs found.</td><td><a href="archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json">原生DOM及captured_at</a></td></tr></tbody></table></div><p><strong>不要混用链号：</strong>当前复合物A是PD-L1抗原，B是KN035 VHH；数据库hit_id的链后缀属于该数据库记录，不能直接当作当前复合物链映射。首条5JDS命中来自KN035来源序列，不是独立功能验证。</p><p><strong>尺度：</strong>identity_percentage原始值为0—1，1.0表示100%。raw general中的e_value_max/min是结果统计值，不能当作配置阈值。</p><details><summary>BLAST首条命中关键字段</summary><pre>{
+  &quot;hit_id&quot;: &quot;pdb|5JDS|B&quot;,
+  &quot;hit_name&quot;: &quot;5JDS_B&quot;,
+  &quot;hit_desc&quot;: &quot;Chain B, Nanobody [Camelidae]&quot;,
+  &quot;hit_db&quot;: &quot;pdb&quot;,
+  &quot;reference&quot;: &quot;RCSB&quot;,
+  &quot;hit_len&quot;: 146,
+  &quot;identity_percentage&quot;: 1.0,
+  &quot;identity&quot;: 128,
+  &quot;e_value&quot;: 2.10588e-92,
+  &quot;bit_score&quot;: 266.544,
+  &quot;query_from&quot;: 1,
+  &quot;query_to&quot;: 128,
+  &quot;hit_from&quot;: 3,
+  &quot;hit_to&quot;: 130,
+  &quot;gaps&quot;: 0
+}</pre></details><details><summary>前置sequence_info.fasta原文</summary><pre>&gt;heavy_sequence
+QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS
+&gt;light_sequence
+None
+</pre></details><details><summary>原生空Homologs提取</summary><pre>{
+  &quot;source&quot;: &quot;raw/native_task_342604577018880/record.json&quot;,
+  &quot;native_field_path&quot;: &quot;annotations.homology&quot;,
+  &quot;status&quot;: &quot;present_but_empty&quot;,
+  &quot;n_entries&quot;: 0,
+  &quot;raw&quot;: []
+}</pre></details><p>MMetrics状态Succeed只表明任务结束成功，不证明每一注释模块都有结果。不能写成“BLAST没有命中”，也不能写成“503条PD-L1同源结果被丢弃”。</p></section><section id="next"><h2>7. 待后台核对的事项与证据缺口</h2><div class="table"><table><thead><tr><th>优先级</th><th>检查点</th><th>具体定位</th></tr></thead><tbody><tr><td>P1</td><td>抗原检索调度</td><td>按project342604060136448、object342604293768192、work342604299084800和task342604299285504查每条chain/entity的query。A链118aa是否被提交、跳过、失败或另存？保存调度理由与请求/响应。</td></tr><tr><td>P2</td><td>实体路由</td><td>检查classification把A当抗原、B当VHH后，mos-blast产物如何绑定entity；B链结果是否被合理排除，A链结果位置在哪里？当前归档未含实现代码。</td></tr><tr><td>P3</td><td>MMetrics装配与过滤</td><td>查task342604577018880读取BLAST对象342604574229504及FASTA342604574114816的记录、schema解析、阈值、过滤前后条数、annotations.homology/uniprot/pdb的写入。</td></tr><tr><td>P4</td><td>可解释空状态</td><td>区分未运行、检索失败、原始零命中、阈值过滤为空、注释装配缺失；总任务Succeed和UI统一No significant homologs不足以区分。</td></tr></tbody></table></div><p>未归档/未确认：A链独立搜索任务ID或跳过原因；BLAST程序/版本与数据库快照；准确e-value/identity/coverage阈值与max_target设置；worker版本、日志、HTTP错误、重试/超时；精确finish及未标时区字段的服务端约定。<strong>这些是待查项，不是已证明的故障。</strong></p><p>如果复现，应使用包内同一CIF和两条FASTA，在测试环境显式记录每条链的query、参数、输出和状态。这个包本身不会发送任务或访问网络。</p></section><section id="screenshots"><h2>8. 原始任务与Homologs界面截图</h2><p>以下为当时真实截屏，不是重绘。02完整六段截图及scroll位置记录均保留在原始目录；图片时间以其配套采集JSON为准，不使用本地mtime反推。</p><figure><a href="archives/website-cases/pdl1/01-structure/visuals/task-succeeded.jpg"><img loading="lazy" src="archives/website-cases/pdl1/01-structure/visuals/task-succeeded.jpg" alt="01-structure/visuals/task-succeeded.jpg"></a><figcaption>01-structure/visuals/task-succeeded.jpg</figcaption></figure><figure><a href="archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-00.png"><img loading="lazy" src="archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-00.png" alt="02-mmetrics-kn035/visuals/native-complete-00.png"></a><figcaption>02-mmetrics-kn035/visuals/native-complete-00.png</figcaption></figure><figure><a href="archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-01.png"><img loading="lazy" src="archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-01.png" alt="02-mmetrics-kn035/visuals/native-complete-01.png"></a><figcaption>02-mmetrics-kn035/visuals/native-complete-01.png</figcaption></figure></section><section id="scope"><h2>9. 包含内容与留档层级说明</h2><ul><li><code>archives/website-cases/pdl1/01-structure/</code>：01完整目录，5份CIF与置信度、输入FASTA、原始prompt、Task UI、提交回执、截图与派生文件。</li><li><code>archives/website-cases/pdl1/02-mmetrics-kn035/</code>：02完整目录，原始/下载对象、实际payload、task_status、record、BLAST、FASTA、全部CSV、原生DOM/截图、映射、后续独立补充及历史ZIP。</li><li><code>archives/website-cases/pdl1/sources/</code>：5JDS实验参考文件及原sources.json。sources.json原文也列有其他历史案例；那些结构不属于本次01→02输入。</li><li><code>diagnostics/</code>：本次生成的排查单数据、ID表、时间线、同源审计和结构同一性审计。</li><li><code>website-consumer/</code>：当前官网01来源的文件快照；不是MOS后端实现。</li><li><code>context/</code>：原有跨案例说明与manifest，按原文保留，会提及03—05；本包未打包03—05原始数据。</li><li><code>tools/verify_package.py</code>：纯Python标准库本地校验，无网络、无MOS调用。</li></ul><p>原始native归档中“未追加独立任务”的文字描述的是当时那次导出；后来supplement目录确有四个独立抗体任务。它们各自按原始阶段保存，不互相覆盖。原provenance中“added mapping”等叙述与字节一致性不能混读，实际数据比较以文件hash和本次lineage审计为准。</p><p>未修改任何01/02原始文件；没有把unknown补成完成，也没有用其他结构填充Homologs。</p></section><section id="integrity"><h2>10. 文件索引、完整性与离线复核</h2><p>解压后打开本页即可离线浏览，所有原始文件都有相对链接。建议先阅读ISSUE-BRIEF.txt，再核对同源证据和时间线。</p><p>命令：<code>python3 tools/verify_package.py</code>。脚本核对manifest内每个文件SHA-256、01/02结构同一性、B链503条query与500个hit、原生homology为空以及payload对象引用。</p><p><a href="FILE-INDEX.html">全部文件可点击索引</a> · <a href="manifest.json">全文件manifest</a> · <a href="SHA256SUMS.txt">SHA-256清单</a> · <a href="validation.json">本次校验结果</a></p></section></main></html>

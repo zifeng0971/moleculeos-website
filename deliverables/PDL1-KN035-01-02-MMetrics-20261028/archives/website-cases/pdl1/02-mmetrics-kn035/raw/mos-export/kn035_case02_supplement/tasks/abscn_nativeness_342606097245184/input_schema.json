@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "title": "Input",
+  "properties": {
+    "fasta_file": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Fasta File",
+      "default": null,
+      "description": "FASTA path or TOS URI. Sequences can be 'H:L' or just 'H'."
+    },
+    "heavy_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Heavy Sequence",
+      "default": null,
+      "description": "Heavy sequence"
+    },
+    "light_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Light Sequence",
+      "default": null,
+      "description": "Light sequence"
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework."
+    }
+  }
+}

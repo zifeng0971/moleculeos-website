@@ -24,7 +24,7 @@
     "next": "Next",
     "pages": "{count} chapters. Read continuously.",
     "searchPlaceholder": "e.g. alignment, Credit",
-    "mochaHelp": "Nothing found? Ask Mocha in the MOS platform →",
+    "mochaHelp": "Nothing found? Ask Mocha in the MoleculeOS platform →",
     "onThisPage": "On this page",
     "switchLanguage": "Switch language",
     "chapters": "Chapters",
@@ -35,20 +35,20 @@
     "manualDescription": "Complete instructions, screenshots, and videos organized by chapter."
   },
   "nav": {
-    "platform": "Platform",
+    "platform": "Models",
     "models": "Models",
     "validation": "Validation",
     "pricing": "Pricing",
     "docs": "Help Center",
     "community": "Community",
-    "start": "Start Building",
-    "contact": "Talk to Us",
+    "start": "Start designing",
+    "contact": "Contact us",
     "menu": "Open menu",
     "close": "Close menu",
     "byTask": "By task",
-    "structurePrediction": "Structure Prediction",
-    "affinityOptimization": "Affinity Optimization",
-    "stabilityEngineering": "Stability Engineering",
+    "structurePrediction": "Structure Prediction | MMFold",
+    "affinityOptimization": "Affinity Optimization | Mutation Effect",
+    "stabilityEngineering": "Developability",
     "deNovoDesign": "De Novo Design",
     "antibody": "Antibody",
     "peptide": "Peptide",
@@ -56,12 +56,13 @@
     "miniProtein": "Mini-protein",
     "language": "中文",
     "modelSystem": "Model system",
-    "neworigin": "NewOrigin (Darwin)",
     "mmfold": "MMFold",
-    "mmdesign": "MMDesign"
+    "mmdesign": "MMDesign",
+    "moleculeos": "MoleculeOS"
   },
   "footer": {
-    "tagline": "Move protein design from repeated trial and error to a computable, interpretable, and testable process.",
+    "platformModels": "Models",
+    "tagline": "One less round of trial and error. One more molecule that works.",
     "product": "Product",
     "resources": "Resources",
     "company": "Company",
@@ -78,8 +79,7 @@
     "careers": "Careers",
     "contact": "Contact",
     "privacy": "Privacy",
-    "terms": "Terms",
-    "security": "Data Security",
+    "terms": "Terms & Data Security",
     "filing": "Registration: {{TODO: pending confirmation}}",
     "forum": "User forum",
     "webinar": "Monthly Webinar",
@@ -90,26 +90,53 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "MOLECULEOS · The R&D Operating System for Programmable Biology",
-      "title": "The Operating System for Life Science R&D",
-      "description": "From drug design to enzyme design, MOS brings the models, compute, and data behind protein design into one platform — a complete protein design solution for research and industry teams.",
+      "eyebrow": "MoleculeOS · The operating system for the age of programmable biology",
+      "title": "Writing our understanding of life\ninto new molecules",
+      "description": "Spanning protein analysis, optimization and de novo design, so scientific insight becomes the starting point of experiments",
       "imageAlt": "Static placeholder of the MoleculeOS protein design workspace"
     },
     "trust": {
-      "label": "Advancing real programs with leading bioresearch teams",
+      "label": "Working on real programs with these teams",
       "targets": "Clinical targets",
-      "successCondition": "Across 12 targets, with no more than 50 candidates tested per target under low-throughput conditions, the target success rate exceeded 90%",
+      "successCondition": "Across 19 design tasks covering 18 distinct targets, 18 produced experimentally validated binders. Each task tested only 9–50 candidates, for a 94.7% success rate.",
+      "source": "Figures come from experimental validation of MMDesign de novo protein design, including nanobody (VHH) binders.",
+      "reportLabel": "Read the technical report",
       "validated": "Wet-lab validated programs",
-      "todo": "{{TODO: pending confirmation}}"
+      "todo": "{{TODO: pending confirmation}}",
+      "feedback": {
+        "label": "What customers say",
+        "items": [
+          {
+            "pre": "Measured against our own project workflow, we strongly endorse MoleculeOS's ",
+            "hl": "end-to-end design and optimization",
+            "post": "."
+          },
+          {
+            "pre": "",
+            "hl": "Intuitive visualization and smooth interaction",
+            "post": ", and a product design that stands out among protein computing software."
+          },
+          {
+            "pre": "Predicted structures, interfaces and scores can all be inspected directly, so ",
+            "hl": "every candidate has evidence behind it",
+            "post": "."
+          },
+          {
+            "pre": "Only a few dozen candidates per task are needed ",
+            "hl": "to reach effective binders",
+            "post": "."
+          }
+        ]
+      }
     },
     "tasks": {
-      "eyebrow": "START WITH THE R&D TASK",
-      "selectorDescription": "Choose the problem holding your research back.",
+      "eyebrow": "What it does",
+      "selectorDescription": "The four places teams get stuck most often, all shown on one VEGF-A antibody case. Pick one to see how MoleculeOS handles it.",
       "mediaMissing": "Demo media coming soon",
-      "title": "What can MOS help me get done?",
+      "title": "Where are you stuck?",
       "description": "Start from the experimental goal in front of you—not from a catalog of algorithms.",
       "situation": "Your situation",
-      "approach": "What MOS does",
+      "approach": "What MoleculeOS does",
       "outcome": "What you get",
       "learn": "Explore capability",
       "items": [
@@ -166,6 +193,37 @@
         "target": "Target",
         "binder": "Designed binder",
         "folding": "Predicting structure"
+      },
+      "vegf": {
+        "caseKicker": "Running case",
+        "caseTitle": "Antibody and binder design against VEGF-A",
+        "caseStart": "Reference start: G6 Fab–VEGF-A complex · PDB 2FJG",
+        "viewPdb": "View 2FJG on RCSB",
+        "tag": "Real crystal structure · annotations illustrative",
+        "loading": "Loading the 2FJG crystal structure",
+        "hint": "Drag to rotate · scroll to zoom",
+        "vegf": "VEGF-A dimer",
+        "fab": "G6 Fab",
+        "epitope": "VEGF-A epitope",
+        "paratope": "Fab contact residues",
+        "locked": "Locked: binding interface",
+        "framework": "Candidate: framework stabilising sites",
+        "contacts": "Interface contact residues",
+        "vegfShort": "VEGF-A",
+        "fabShort": "G6 Fab",
+        "stepVegf": "VEGF-A dimer",
+        "stepFab": "G6 light + heavy chain",
+        "stepComplex": "Complex and interface",
+        "antigenSide": "VEGF-A side",
+        "fabSide": "Fab side",
+        "target": "Target VEGF-A",
+        "captions": {
+          "affinity": "Cyan is the epitope on VEGF-A, pink the G6 residues touching it. MoleculeOS picks mutations only among these sites.",
+          "stability": "The pink interface stays fixed; yellow marks framework sites away from it that are safe to engineer.",
+          "denovo": "Remove G6 and keep only VEGF-A. Starting from the receptor-binding surface, generate new binders directly.",
+          "structure": "From sequence to complex: the VEGF-A dimer first, then the Fab light and heavy chains, then the interface."
+        },
+        "binder": "Designed binder"
       }
     },
     "agentDemo": {
@@ -174,73 +232,75 @@
       "inputPlaceholder": "Describe your R&D goal to Mocha"
     },
     "results": {
-      "eyebrow": "Inspectable results",
-      "title": "{{TODO: 待确认}}",
-      "description": "{{TODO: 待确认}}",
-      "link": "Explore the full experience in MOS"
+      "eyebrow": "Explainable results",
+      "title": "Every result comes with its reasons",
+      "description": "This is the real analysis panel for avelumab bound to PD-L1: description, annotations, interaction network and mutation scoring, every residue linked to the 3D structure. Click a paratope, an epitope or an interaction and see where it sits. Drag the structure and look around.",
+      "link": "Analyze your own molecule in MoleculeOS"
     },
     "models": {
-      "eyebrow": "MODEL SYSTEM",
-      "title": "From shared representation to task models and scientific computing",
-      "description": "MOS uses NewOrigin as a unified representation foundation connecting task models with scientific computing methods.",
-      "foundation": "Foundation model",
-      "foundationDescription": "A multimodal protein foundation model combining sequence, structure, function, and evolution as the unified representation layer for all MOS capabilities",
-      "taskModels": "Task models",
-      "scienceLayer": "Scientific computing layer",
-      "scienceDescription": "Integrates methods including molecular dynamics and quantum chemistry, spanning static structure through dynamic design",
+      "eyebrow": "Models",
+      "title": "Building the programmable\ninfrastructure of\nthe life-science era",
+      "description": "MMFold reads protein structure and molecular interactions. MMDesign designs new molecules on top of that understanding. MoleculeOS starts from your research question and runs the whole workflow.",
       "descriptionLabel": "Model role",
       "limitation": "Known limitation",
       "viewAll": "View all models",
       "items": [
         {
           "name": "MMFold",
-          "description": "An all-atom macromolecular complex structure prediction model",
+          "role": "Understand life",
+          "description": "A life-science foundation model for protein structure and protein–ligand interactions.",
           "limitation": "{{TODO: pending confirmation}}"
         },
         {
           "name": "MMDesign",
-          "description": "A generative design model for nanobodies, enzymes, and functional proteins",
+          "role": "Design biomolecules",
+          "description": "De novo design of macromolecules, including antibodies, protein drugs and industrial enzymes.",
           "limitation": "{{TODO: pending confirmation}}"
         }
       ],
-      "band": [
-        {
-          "name": "NewOrigin (Darwin)",
-          "description": "Foundation",
-          "anchor": "neworigin"
-        },
-        {
-          "name": "MMFold",
-          "description": "Structure model",
-          "anchor": "mmfold"
-        },
-        {
-          "name": "MMDesign",
-          "description": "Design model",
-          "anchor": "mmdesign"
-        }
-      ],
-      "viewSystem": "Explore the model system",
-      "modalities": [
-        "Sequence",
-        "Structure",
-        "Function",
-        "Evolution"
-      ],
-      "scienceMethods": [
-        "Molecular dynamics",
-        "Quantum chemistry"
-      ],
+      "viewSystem": "See what each model does, and where it falls short",
       "layerLabels": [
         "Layer 1",
         "Layer 2",
         "Layer 3"
+      ],
+      "layers": [
+        {
+          "role": "Understand life",
+          "name": "MMFold",
+          "body": "A life-science foundation model that understands protein structure and how proteins interact with ligands.",
+          "chips": [
+            "Structure prediction",
+            "Antibody–antigen complexes",
+            "Confidence scoring"
+          ]
+        },
+        {
+          "role": "Design molecules",
+          "name": "MMDesign",
+          "body": "Designs macromolecules from scratch based on structure and mechanism, including antibodies, protein drugs and industrial enzymes.",
+          "chips": [
+            "Antibodies",
+            "Protein drugs",
+            "Industrial enzymes"
+          ]
+        },
+        {
+          "role": "Operating system",
+          "name": "MoleculeOS",
+          "body": "Starts from your research question, orchestrates models and tools, and drives the whole R&D workflow. Mocha works at this layer.",
+          "chips": [
+            "Research question",
+            "Orchestration",
+            "Mocha"
+          ]
+        }
       ]
     },
     "validation": {
-      "eyebrow": "VALIDATION & EVIDENCE",
+      "eyebrow": "Case studies",
       "title": "Calibrate every design with wet-lab results",
-      "description": "We publish only confirmed program facts. Values and case identities remain placeholders until review.",
+      "description": "Real research results across antibody discovery, protein engineering and biomanufacturing.",
       "successCondition": "Across 12 targets, with no more than 50 candidates tested per target under low-throughput conditions, the target success rate exceeded 90%",
       "metric2": "Wet-lab validated programs",
       "metric3": "Design-to-test cycle",
@@ -252,69 +312,115 @@
       "details": "View case details",
       "cases": [
         {
-          "title": "Antibody affinity optimization",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "De novo PD-L1 nanobody design",
+          "subtitle": "Immune checkpoint · specified epitope",
+          "figure": "86.7%",
+          "result": "Of 30 prioritized candidates, 26 showed binding activity in BLI, with a best affinity of 7.2 nM.",
+          "body": "MMDesign generates nanobody candidates against a specified PD-L1 epitope and narrows large-scale designs to 30 experimental candidates by jointly weighing structural reliability, sequence properties and binding evaluation.",
+          "tags": [
+            "PD-L1",
+            "VHH",
+            "BLI validated"
+          ],
+          "background": "",
+          "challenge": "MMDesign generates nanobody candidates against a specified PD-L1 epitope and narrows large-scale designs to 30 experimental candidates by jointly weighing structural reliability, sequence properties and binding evaluation.",
+          "strategy": "MMDesign generates nanobody candidates against a specified PD-L1 epitope and narrows large-scale designs to 30 experimental candidates by jointly weighing structural reliability, sequence properties and binding evaluation.",
+          "molecule": "PD-L1 / VHH / BLI validated",
+          "duration": ""
         },
         {
-          "title": "Enzyme stability engineering",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "De novo NK3R GPCR nanobody design",
+          "subtitle": "Membrane protein · complex target",
+          "figure": "30/30",
+          "result": "All 30 prioritized nanobodies were binding-positive in BLI, with a best apparent affinity of 23.2 nM.",
+          "body": "De novo design against the extracellular region of NK3R, with multi-stage computational screening to select the experimental candidates, extending binder discovery to complex GPCR membrane proteins.",
+          "tags": [
+            "NK3R",
+            "GPCR",
+            "BLI validated"
+          ],
+          "background": "",
+          "challenge": "De novo design against the extracellular region of NK3R, with multi-stage computational screening to select the experimental candidates, extending binder discovery to complex GPCR membrane proteins.",
+          "strategy": "De novo design against the extracellular region of NK3R, with multi-stage computational screening to select the experimental candidates, extending binder discovery to complex GPCR membrane proteins.",
+          "molecule": "NK3R / GPCR / BLI validated",
+          "duration": ""
         },
         {
-          "title": "Complex structure prediction",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "De novo high-affinity TNF nanobodies",
+          "subtitle": "Cytokine · small screen, high hit rate",
+          "figure": "51 pM",
+          "result": "Testing only 14 candidates yielded 7 TNF binders, with a best apparent BLI affinity of 51 pM.",
+          "body": "Candidate nanobodies are generated de novo and screened in multiple stages on structure and sequence properties; a small-scale experiment validated high-affinity binders.",
+          "tags": [
+            "TNF",
+            "VHH",
+            "7/14 hits"
+          ],
+          "background": "",
+          "challenge": "Candidate nanobodies are generated de novo and screened in multiple stages on structure and sequence properties; a small-scale experiment validated high-affinity binders.",
+          "strategy": "Candidate nanobodies are generated de novo and screened in multiple stages on structure and sequence properties; a small-scale experiment validated high-affinity binders.",
+          "molecule": "TNF / VHH / 7/14 hits",
+          "duration": ""
         },
         {
-          "title": "De novo design",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "pH-responsive antibody design",
+          "subtitle": "Histidine engineering · antibody optimization",
+          "figure": "62×",
+          "result": "At pH 6.0, the optimized antibody dissociates about 62 times faster than at pH 7.4.",
+          "body": "Histidine site design combined with analysis of the protonation state of the binding interface tunes binding kinetics at different acidities, yielding experimentally validated pH-responsive candidates.",
+          "tags": [
+            "Histidine Engineering",
+            "pH 6.0 vs 7.4"
+          ],
+          "background": "",
+          "challenge": "Histidine site design combined with analysis of the protonation state of the binding interface tunes binding kinetics at different acidities, yielding experimentally validated pH-responsive candidates.",
+          "strategy": "Histidine site design combined with analysis of the protonation state of the binding interface tunes binding kinetics at different acidities, yielding experimentally validated pH-responsive candidates.",
+          "molecule": "Histidine Engineering / pH 6.0 vs 7.4",
+          "duration": ""
         },
         {
-          "title": "Functional protein design",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "Thermostability engineering of a sugar-substitute enzyme",
+          "subtitle": "Industrial enzyme · multi-objective optimization",
+          "figure": "200 h",
+          "result": "Half-life extended from 2.3 h to 200 h, with the melting temperature raised by 15°C.",
+          "body": "Sequence and structure analysis plus multi-objective mutation design around the enzyme's thermostability significantly improve its heat tolerance.",
+          "tags": [
+            "Enzyme Engineering",
+            "Tm +15°C"
+          ],
+          "background": "",
+          "challenge": "Sequence and structure analysis plus multi-objective mutation design around the enzyme's thermostability significantly improve its heat tolerance.",
+          "strategy": "Sequence and structure analysis plus multi-objective mutation design around the enzyme's thermostability significantly improve its heat tolerance.",
+          "molecule": "Enzyme Engineering / Tm +15°C",
+          "duration": ""
         },
         {
-          "title": "Protein stability engineering",
-          "background": "{{TODO: 待业务方确认}}",
-          "challenge": "{{TODO: 待业务方确认}}",
-          "strategy": "{{TODO: 待业务方确认}}",
-          "result": "{{TODO: 待业务方确认}}",
-          "molecule": "{{TODO: 待业务方确认}}",
-          "duration": "{{TODO: 待业务方确认}}"
+          "title": "PRK codon optimization",
+          "subtitle": "PISCO · Pichia pastoris",
+          "figure": "12/13",
+          "result": "Of 13 PISCO-optimized PRK coding sequences, 12 showed improved soluble expression in Pichia pastoris experiments.",
+          "body": "Protein 3D structure, amino-acid sequence and host codon preference are optimized together, designing host-adapted coding schemes without changing the protein sequence.",
+          "tags": [
+            "PISCO",
+            "Codon Optimization",
+            "Pichia pastoris"
+          ],
+          "background": "",
+          "challenge": "Protein 3D structure, amino-acid sequence and host codon preference are optimized together, designing host-adapted coding schemes without changing the protein sequence.",
+          "strategy": "Protein 3D structure, amino-acid sequence and host codon preference are optimized together, designing host-adapted coding schemes without changing the protein sequence.",
+          "molecule": "PISCO / Codon Optimization / Pichia pastoris",
+          "duration": ""
         }
       ],
       "projectType": "Project type",
       "molecule": "Molecule",
       "duration": "Duration",
-      "gridTitle": "Project facts, not promises"
+      "gridTitle": "From computational design to experimental validation"
     },
     "flywheel": {
-      "eyebrow": "DATA FLYWHEEL",
-      "title": "Every experiment improves the next design",
-      "description": "Design, experiment, and learning form a traceable loop within explicit data boundaries.",
+      "eyebrow": "Data flywheel",
+      "title": "The more you run, the sharper it gets",
+      "description": "Every round of wet-lab results goes back into the model, so the next round needs fewer candidates. Your data only serves your project unless you say otherwise.",
       "design": "Precise AI design",
       "experiment": "Small-sample wet-lab validation",
       "evolve": "Continuous model improvement",
@@ -337,31 +443,36 @@
       "precision": "Design precision"
     },
     "access": {
-      "eyebrow": "WAYS TO WORK",
-      "title": "Fit your scale and security requirements",
+      "eyebrow": "Ways to work",
+      "title": "Fit MoleculeOS into the way you work",
       "learn": "Learn more",
       "items": [
         {
           "title": "Web platform",
-          "description": "For teams starting standard protein design tasks quickly.",
-          "compactDescription": "Start standard research tasks"
+          "description": "Launch computations, inspect structures and review results in the web workspace for protein analysis and design",
+          "compactDescription": "Open the browser and focus on research"
         },
         {
           "title": "API",
-          "description": "For integrating model capabilities into existing R&D pipelines.",
-          "compactDescription": "Integrate existing R&D workflows"
+          "description": "Connect existing tools and data pipelines and call MoleculeOS from your familiar environment, extending your team's compute and analysis capacity",
+          "compactDescription": "Plug model capabilities into your existing workflow"
         },
         {
           "title": "Joint research",
-          "description": "For complex new targets, long validation cycles, or custom methods.",
-          "compactDescription": "For complex or custom programs"
+          "description": "For difficult targets, long validation cycles and custom methods: we plan the research path and move the project forward together",
+          "compactDescription": "Tougher problems, advanced together"
         }
+      ],
+      "scale": [
+        "Online",
+        "MCP access",
+        "Co-development"
       ]
     },
     "security": {
-      "eyebrow": "DATA SECURITY & IP",
-      "title": "Your data and design outputs remain under your control",
-      "description": "Security is the default for enterprise R&D collaboration.",
+      "eyebrow": "Data & IP",
+      "title": "Your sequences stay in your project",
+      "description": "The first three questions every enterprise team asks, answered up front.",
       "items": [
         {
           "title": "Sequence data is not used for training",
@@ -379,7 +490,15 @@
           "compactDescription": "Isolation across transfer, storage, and access"
         }
       ],
-      "whitepaper": "View security whitepaper"
+      "whitepaper": "View security whitepaper",
+      "diagram": {
+        "source": "Your sequences",
+        "models": "General model training",
+        "output": "Design outputs",
+        "vault": "Your project space",
+        "tunnel": "Encrypted in transit",
+        "blocked": "Blocked"
+      }
     },
     "community": {
       "eyebrow": "COMMUNITY & RESOURCES",
@@ -403,37 +522,120 @@
       ]
     },
     "final": {
-      "title": "Give your next protein R&D question a more testable starting point",
-      "description": "Start with a clear objective and take fewer, better candidates into the lab."
+      "title": "Bring your idea to MoleculeOS",
+      "description": "Provide sequences or structures, describe your R&D goal, and carry out analysis and design with MoleculeOS"
     },
     "position": {
       "label": "Homepage sections",
       "labels": [
         "Overview",
-        "Inspectable results",
         "Capabilities",
         "Models",
-        "Data flywheel",
         "Validation",
-        "Enterprise",
+        "Ways to work",
         "Evidence",
         "Start Building"
       ]
+    },
+    "flow": {
+      "eyebrow": "From understanding to design",
+      "title": "Around one target,\nfrom molecular insight to new designs",
+      "items": {
+        "structure": {
+          "title": "Assess structures and complexes from sequences",
+          "lead": "See how PD-L1 and the KN035 nanobody fit together",
+          "body": "Submit the PD-L1 and KN035 sequences, predict the complex, and mark the contact interface on both sides. An inspectable complex with confidence indicators, the starting point for later design."
+        },
+        "affinity": {
+          "title": "Prioritize mutations for improved binding",
+          "lead": "Which mutations are worth testing first?",
+          "body": "Start from the PD-L1 complex with the DBL1_03 binder (7XYQ). MoleculeOS scores 2,356 single-point substitutions on the binder chain and ranks them by predicted binding effect. Select a recommendation to see where it sits on the structure and which PD-L1 residue it faces, then decide what to test first."
+        },
+        "stability": {
+          "title": "Improve expression, stability and developability",
+          "lead": "Active enough; developability still lags",
+          "body": "Lock the CDRs, disulfide bonds and PD-L1 interface that hold binding, flag oxidation, deamidation and isomerization sites in the sequence, then screen only the framework: 75 positions, 1,425 substitutions scored by structure, sequence and evolution models. A shortlist with the trade-offs visible, each with its sequence-property check."
+        },
+        "denovo": {
+          "title": "Inspired by the known,\nshaping the new",
+          "lead": "Design new binders, no starting molecule needed",
+          "body": "Start from the PD-L1 structure and the hotspots on its binding face. MoleculeOS generates new binder backbones and sequences (60–100 aa) from three independent seeds, predicts each complex and reports confidence and hotspot contacts. Three distinct computational designs to review before anything is ordered."
+        },
+        "mmetrics": {
+          "title": "Every result comes with its reasons",
+          "lead": "Explainable results",
+          "body": "This is the real analysis panel for avelumab bound to PD-L1: description, annotations, interaction network and mutation scoring, every residue linked to the 3D structure. Click a paratope, an epitope or an interaction and see where it sits. Drag the structure and look around."
+        }
+      },
+      "tracks": {
+        "a": {
+          "label": "Track A",
+          "title": "Start from a molecule you have: understand, assess, optimize",
+          "sub": "You hold a sequence or antibody — follow 01–04 to see it clearly, then improve it"
+        },
+        "b": {
+          "label": "Track B",
+          "title": "Start from nothing: design a new molecule",
+          "sub": "No starting molecule — generate fresh candidates against the same target"
+        },
+        "or": "No starting molecule?"
+      }
+    },
+    "story": {
+      "eyebrow": "From understanding to design",
+      "title": "Around one target,\nfrom molecular insight to new designs",
+      "case": {
+        "kicker": "Running case",
+        "title": "PD-L1 × KN035",
+        "start": "Starting from PD-L1 and KN035, turn your understanding of the molecule, step by step, into a basis for design, and give the next round of experiments a clearer direction"
+      },
+      "rail": "Step",
+      "items": {
+        "structure": {
+          "title": "Starting from sequence,\nsee how molecules might meet",
+          "lead": "Predict the 3D conformation and likely binding mode, turning sequence information into a spatial model you can inspect",
+          "body": "Enter the PD-L1 and KN035 sequences, and MMFold generates five complex structure samples. Using the structures together with their predicted confidence, examine the binding interface to establish a starting point for further analysis and antibody optimization"
+        },
+        "mmetrics": {
+          "title": "Into the interface,\nfinding clues for design",
+          "lead": "Link functional regions, interactions and spatial positions, so structural details become checkable, designable evidence",
+          "body": "MMetrics brings high-value data for understanding and analyzing a protein into one view. Descriptive data covers homologous proteins, enzyme active sites, antibody–antigen CDRs and epitopes, and interactions such as hydrogen bonds, π-π stacking, van der Waals contacts, salt bridges and π-cation; model-computed data adds mutation scores and more. On this complex it marks 19 epitope residues on PD-L1 and 18 paratope residues on KN035, with 44 interaction records, each tied to a position on the structure"
+        },
+        "affinity": {
+          "title": "Every mutation,\nwith evidence behind it",
+          "lead": "Look for mutations that may improve binding, combining mutation scoring with interface analysis to prioritize experimental validation",
+          "body": "MoleculeOS predicts binding affinity for all 2,432 single-point substitutions on KN035. Among the interface candidates, V109L, Q116M and T105L rank highest. For each of the three, five complex structure samples were generated to examine the predicted interface more closely"
+        },
+        "stability": {
+          "title": "Balancing binding and developability,\npreparing candidates for the next stage",
+          "lead": "Variants that passed the affinity screen are assessed for structural, sequence and evolutionary fitness and scanned for risk motifs, so that binding potential is weighed against developability concerns",
+          "body": "With the sites involved in the two disulfide bonds held fixed, the selected mutations were assessed along several dimensions. Combining this round's scores with a risk screen, V109L is ranked as the priority candidate for validation; Q116M flags a potential methionine oxidation risk, and T105L shows weaker evolutionary fitness. Weighing binding potential against developability risk gives the next round of experiments a more complete basis"
+        },
+        "denovo": {
+          "title": "Inspired by the known,\nshaping the new",
+          "lead": "Constrained by the target structure and a specified region, generate small binders unlike existing antibodies, opening new possibilities for molecular design",
+          "body": "Taking the predicted epitope on PD-L1 as a reference, candidates 60–100 aa in length were generated. In the predicted complexes, all three candidates shown contact all 6 designated design hotspots, and cover 14–18 of the 19 reference epitope residues",
+          "verdict": "All three pass the metric filters; you choose which to take to the bench.",
+          "note": "For antibody, VHH or macrocyclic peptide design needs, feel free to contact us"
+        }
+      }
     }
   },
   "common": {
-    "start": "Start Building",
-    "contact": "Talk to Us",
+    "start": "Start designing",
+    "contact": "Contact us",
     "learnMore": "Learn more",
     "back": "Back",
     "todo": "{{TODO: pending confirmation}}",
     "redirect": "This page has moved. Redirecting.",
-    "continue": "Continue to the new page"
+    "continue": "Continue to the new page",
+    "signIn": "Sign in",
+    "signUp": "Sign up"
   },
   "modelsPage": {
     "eyebrow": "MODELS",
     "title": "A model system built for real protein R&D",
-    "description": "NewOrigin provides the unified representation foundation connecting MMFold, MMDesign, and scientific computing methods.",
+    "description": "MMFold understands structure, MMDesign designs molecules, MoleculeOS runs the workflow. Each model states where it falls short.",
     "detailTitle": "Model details",
     "how": "Model role",
     "limits": "Known limits and usage boundaries",
@@ -441,69 +643,123 @@
   },
   "pricingPage": {
     "eyebrow": "PRICING",
-    "title": "Choose a plan for your stage of R&D",
-    "description": "Choose a plan for your research stage and review task credit consumption.",
+    "title": "Find the right support for your research",
+    "description": "All compute is metered in MCU. Refreshed monthly and available long term",
+    "billing": {
+      "standard": "Standard",
+      "edu": "Education",
+      "eduNote": "For universities and research institutes"
+    },
+    "perMonth": "/ month",
+    "mcuUnit": "MCU / month",
+    "recommended": "Recommended",
     "plans": [
       {
-        "name": "Academic",
-        "audience": "For university labs and non-commercial research",
-        "price": "{{TODO: pending confirmation}}",
+        "id": "free",
+        "name": "Free",
+        "tagline": "A research entry point that stays free",
+        "price": "¥0",
+        "eduPrice": "¥0",
+        "mcu": 40,
+        "mcuNote": "Refreshes monthly",
+        "cta": "Start free",
         "features": [
-          "Standard model task allowance",
-          "Academic-use license",
-          "Community support"
+          "3 projects, 3 structures each",
+          "Standard task queue"
         ]
       },
       {
-        "name": "Professional",
-        "audience": "For biotech teams and focused programs",
-        "price": "{{TODO: pending confirmation}}",
+        "id": "individual",
+        "name": "Individual",
+        "tagline": "Everyday research, in focused bursts",
+        "price": "¥49",
+        "eduPrice": "¥39",
+        "mcu": 120,
+        "mcuNote": "Carries over 1 month",
+        "cta": "Get started",
         "features": [
-          "Higher concurrency and allowance",
-          "Full result export",
-          "Project collaboration"
+          "10 projects, unlimited structures",
+          "Runs ahead of Free"
         ]
       },
       {
-        "name": "Enterprise",
-        "audience": "For pharma and scaled R&D organizations",
-        "price": "{{TODO: pending confirmation}}",
+        "id": "pro",
+        "name": "Pro",
+        "tagline": "High-frequency, project-based research",
+        "price": "¥199",
+        "eduPrice": "¥159",
+        "mcu": 800,
+        "mcuNote": "Carries over 1 month",
+        "cta": "Get started",
         "features": [
-          "Enterprise security and access",
-          "API or private deployment",
-          "Dedicated program support"
+          "Unlimited projects and structures",
+          "Top priority, higher concurrency"
+        ]
+      },
+      {
+        "id": "team",
+        "name": "Team",
+        "tagline": "Team collaboration and governance",
+        "price": "Custom",
+        "eduPrice": "Custom",
+        "mcu": 0,
+        "mcuNote": "Pooled team compute",
+        "cta": "Contact us",
+        "features": [
+          "Org workspace, permissions, audit",
+          "SSO, SLA, private deployment"
         ]
       }
     ],
-    "choose": "Talk to Us",
-    "credits": "Compute usage",
-    "creditDescription": "Actual use depends on sequence length, candidate count, and task complexity.",
-    "task": "Task type",
-    "consumption": "Credit use",
-    "duration": "Estimated time",
-    "rows": [
-      [
-        "Structure prediction",
-        "{{TODO: pending confirmation}}",
-        "{{TODO: pending confirmation}}"
-      ],
-      [
-        "Affinity optimization",
-        "{{TODO: pending confirmation}}",
-        "{{TODO: pending confirmation}}"
-      ],
-      [
-        "Stability engineering",
-        "{{TODO: pending confirmation}}",
-        "{{TODO: pending confirmation}}"
-      ],
-      [
-        "De novo design",
-        "{{TODO: pending confirmation}}",
-        "{{TODO: pending confirmation}}"
-      ]
+    "specs": [
+      {
+        "value": "¥0.75",
+        "label": "per MCU, the same everywhere"
+      },
+      {
+        "value": "1 MCU",
+        "label": "= 1 effective compute minute, Heavy tasks count double"
+      },
+      {
+        "value": "0",
+        "label": "charged for queueing or waiting"
+      },
+      {
+        "value": "API",
+        "label": "no subscription, pay as you go"
+      }
     ],
-    "moreQuestions": "For more questions, see the docs"
+    "footnote": "Out of MCU? Top up as you go, or upgrade your plan.",
+    "moreQuestions": "FAQ",
+    "models": {
+      "title": "How many MCU does one run take?",
+      "lead": "See the estimated usage per task for commonly used models, and plan the compute for your research accordingly",
+      "rows": [
+        {
+          "name": "MMFold",
+          "fn": "Structure prediction",
+          "secs": 300,
+          "mod": "structure",
+          "mcu": 5.0
+        },
+        {
+          "name": "Binding Affinity Mutation Effect",
+          "fn": "Protein optimization",
+          "secs": 105,
+          "mod": "affinity",
+          "mcu": 1.75
+        },
+        {
+          "name": "Protein Redesign",
+          "fn": "Protein design",
+          "secs": 20,
+          "mod": "design",
+          "mcu": 0.33
+        }
+      ],
+      "approx": "~",
+      "unit": "MCU"
+    }
   },
   "validationPage": {
     "eyebrow": "VALIDATION",
@@ -518,23 +774,28 @@
   },
   "contactPage": {
     "eyebrow": "CONTACT",
-    "title": "Tell us about the R&D problem you are solving",
-    "description": "Our team will route your request by task type. This preview form does not send data yet.",
+    "title": "Contact us",
+    "description": "Leave your contact details and research focus, and a specialist will get in touch with you.",
     "name": "Name",
     "organization": "Organization",
     "email": "Work email",
+    "phone": "Phone",
     "type": "Request type",
     "message": "Message",
     "select": "Select one",
     "options": [
-      "Structure prediction",
-      "Affinity optimization",
-      "Stability engineering",
-      "De novo design",
+      "Structure Prediction | MMFold",
+      "Affinity Optimization | Mutation Effect",
+      "Developability",
+      "De Novo Design",
       "API / private deployment",
       "Joint research",
       "Other"
     ],
+    "sending": "Sending…",
+    "doneTitle": "We've got your message",
+    "doneBody": "A specialist will be in touch with you soon.",
+    "again": "Send another",
     "submit": "Submit request",
     "privacy": "By submitting, you agree that we may process this information for this conversation."
   },
@@ -555,15 +816,15 @@
     "todo": "{{TODO: pending confirmation}}",
     "tasks": {
       "structure-prediction": {
-        "title": "Structure Prediction",
+        "title": "Structure Prediction | MMFold",
         "description": "{{TODO: pending confirmation}}"
       },
       "affinity-optimization": {
-        "title": "Affinity Optimization",
+        "title": "Affinity Optimization | Mutation Effect",
         "description": "{{TODO: pending confirmation}}"
       },
       "stability-engineering": {
-        "title": "Stability Engineering",
+        "title": "Developability",
         "description": "{{TODO: pending confirmation}}"
       },
       "de-novo-design": {
@@ -573,9 +834,8 @@
     },
     "overview": "Platform overview",
     "title": "Research tasks and models, in one connected platform",
-    "description": "Explore MOS by task, then review its foundation, task models, and scientific computing layer.",
+    "description": "Start from the task you need to do, then see which models sit behind it.",
     "modelsTitle": "Model system",
-    "compute": "Scientific computing",
     "sidebar": "On this page",
     "modelInput": "Input",
     "modelOutput": "Output",
@@ -591,7 +851,7 @@
     "community": {
       "eyebrow": "COMMUNITY",
       "title": "Connect protein design researchers and practitioners",
-      "description": "The user forum, monthly webinar, and academic program will be updated here."
+      "description": "The user forum and academic program will be updated here."
     },
     "coming": "Content in progress",
     "browse": "Back to home"
@@ -601,26 +861,34 @@
     "title": "Start with your first research task",
     "description": "Quick start, user manual, and frequently asked questions.",
     "quickStart": "Quick start",
-    "quickDescription": "Choose a research task, review the inputs, then start in MOS.",
+    "quickDescription": "Choose a research task, review the inputs, then start in MoleculeOS.",
     "manual": "User manual",
     "manualPlaceholder": "User manual integration is planned; this section is a placeholder.",
     "faq": "Frequently asked questions",
     "faqs": [
       [
-        "How are credits calculated?",
-        "Credits depend on task type, input size, and candidate count. Final rules are pending confirmation."
+        "What is an MCU, and how many does one run take?",
+        "MCU is the single unit all compute on MoleculeOS is metered in: in standard compute, 1 MCU is 1 effective compute minute, Heavy compute counts double, and queueing or waiting is not charged. A run costs what its effective compute time comes to; for example MMFold structure prediction is about 5 MCU, Binding Affinity Mutation Effect about 1.75 MCU and protein design about 0.33 MCU. See the pricing page for the estimates.\nThe free tier refreshes every month; when it runs out, top up as you go or upgrade your plan. An MCU costs ¥0.75 everywhere on the platform."
       ],
       [
-        "Can I trial before choosing a plan?",
-        "Trial policy and model access are pending confirmation."
+        "Does MoleculeOS read my data?",
+        "It does not read user data for any purpose unrelated to the service. When you start a computation, analysis or project action, the platform processes the data you enter or upload only to the extent needed for that function; security risk identification may also involve necessary processing under risk rules. Access is permission-controlled: only authorized personnel who need to know in order to deliver the service can reach it, and they are bound by confidentiality obligations."
       ],
       [
-        "Do you support annual contracts?",
-        "Our team can explain enterprise procurement and contracting during a consultation."
+        "What if different companies work on the same target?",
+        "The platform does not promise exclusivity on any target or research direction, and will not disclose one party's data to another because both study the same target. Because of public databases, model principles and similar inputs, different users may receive the same or similar outputs. Users should run their own patent searches, freedom-to-operate (FTO) analysis, experimental validation and compliance review; if a company needs target exclusivity or stricter project isolation, it should sign a separate written agreement."
       ],
       [
-        "How is private deployment priced?",
-        "Private deployment is scoped around infrastructure, security, and service requirements."
+        "How is data security and the confidentiality of uploaded data ensured?",
+        "Under the agreement, a user's unpublished information is protected as a trade secret. The platform applies reasonable measures no weaker than those it uses for its own comparable trade secrets, uses the information only for the services the agreement covers, and does not disclose it to third parties except as required by law or as the agreement provides. Internal staff and professional advisers who need to know are bound by the same confidentiality duties.\nFor personal information, the platform uses industry-standard safeguards, including encryption, trusted protection mechanisms and access control. The internet is never absolutely secure, so users should also keep their account, password and other credentials safe."
+      ],
+      [
+        "Who owns the results and any related patents?",
+        "Data that users enter or upload, and the result data the platform computes, analyzes or generates on their instructions, belongs to the lawful holder of that data. MoleculeMind holds, as the law provides, the intellectual property in the platform itself and its technical work, including algorithms, models, model weights, code, interface and documentation."
+      ],
+      [
+        "Does MoleculeOS train models on my data?",
+        "User business data is not used to train or tune protein design models.\nTo provide and keep improving the service, the platform uses operational behavior data for basic experience analytics, feature iteration, maintenance, risk control and account security; the agreement states that this use does not involve tuning protein design models. Mocha chat records are used to improve the product experience, and uploaded or imported files are used to complete tasks as instructed; neither is used to tune protein design models."
       ]
     ]
   },
@@ -664,8 +932,8 @@
     "send": "Send message",
     "chatTitle": "New conversation",
     "chatStatus": "Conversation",
-    "localReply": "To have Mocha analyze your specific question, continue in the MOS platform for the full experience.",
-    "openPlatform": "Open MOS",
+    "localReply": "To have Mocha analyze your specific question, continue in the MoleculeOS platform for the full experience.",
+    "openPlatform": "Open MoleculeOS",
     "resultNote": "Ready to review from your task list.",
     "pause": "Pause task",
     "resume": "Continue task",
@@ -692,6 +960,10 @@
         "plan1": "Organize sequence regions for review",
         "plan2": "Prepare a design checklist",
         "result": "Humanization preparation checklist"
+      },
+      "structure": {
+        "title": "Structure prediction",
+        "short": "Predict the complex and its interface"
       },
       "affinity": {
         "title": "Binding Affinity",
@@ -731,19 +1003,19 @@
   "mmetricsDemo": {
     "loading": "Loading structure",
     "label": "MMetrics structural demo",
-    "preview": "5xh3 preview placeholder",
+    "preview": "4HT1 first-frame preview",
     "enter": "Enter interactive demo",
     "mobile": "Load local structure · Drag to rotate",
     "local": "Local structure · Preset annotations; computed interactions, not experimental validation",
     "close": "Close",
-    "notice": "Explore the complete functionality in MOS",
+    "notice": "Explore the complete functionality in MoleculeOS",
     "mochaInput": "Describe your R&D goal to Mocha",
-    "mocha0": "Explore structure prediction in MOS.",
-    "mocha1": "Explore sequence redesign in MOS.",
-    "mocha2": "Explore mutation evaluation in MOS.",
-    "mocha3": "Explore protein–ligand evaluation in MOS.",
+    "mocha0": "Explore structure prediction in MoleculeOS.",
+    "mocha1": "Explore sequence redesign in MoleculeOS.",
+    "mocha2": "Explore mutation evaluation in MoleculeOS.",
+    "mocha3": "Explore protein–ligand evaluation in MoleculeOS.",
     "more": "Show full analysis",
-    "viewer": "5xh3 interactive structure: drag to rotate, scroll to zoom",
+    "viewer": "4HT1 structure: drag to rotate, scroll to zoom",
     "error": "Unable to initialize WebGL. Please enable hardware acceleration or retry.",
     "retry": "Retry",
     "chunkError": "The interactive component could not load. The preview is available; reload to retry.",
@@ -756,44 +1028,324 @@
     "firstAtom": "First atom selected. Select a second atom.",
     "clear": "Clear measurements",
     "overlays": "Toggle status overlay",
-    "align": "Explore structure alignment in MOS",
+    "align": "Explore structure alignment in MoleculeOS",
     "ready": "Drag to rotate · scroll to zoom",
     "selected": "Residue selected",
     "missing": "Annotation not found in this original structure; platform numbering needs confirmation.",
-    "schematic": "Schematic"
+    "schematic": "Schematic",
+    "expand": "Full screen",
+    "collapse": "Exit full screen",
+    "liabLabel": "LIABILITIES",
+    "liabCaption": "Motif scan of VH / VL; regions follow the CDR numbering scheme chosen above. Flags chemical-liability sites only; not experimentally validated.",
+    "liabNone": "No sites worth flagging",
+    "sev": {
+      "high": "High",
+      "mid": "Medium",
+      "low": "Low"
+    },
+    "rule": {
+      "glyc": "N-glycosylation (N-X-S/T)",
+      "deamG": "Deamidation (NG)",
+      "deam": "Deamidation-prone",
+      "isoG": "Isomerization (DG)",
+      "iso": "Isomerization-prone",
+      "cleave": "Acid-labile (DP)",
+      "ox": "Oxidation (Met / Trp)"
+    },
+    "framework": "Framework",
+    "sugLabel": "SUGGESTED MUTATIONS",
+    "example": "Example",
+    "sugCaption": "Example data: assembled from the real 4HT1 contacts and sequence rules to show the layout; not model scores.",
+    "kind": {
+      "affinity": "Improve affinity",
+      "risk": "Remove a risk",
+      "keep": "Keep and evaluate"
+    },
+    "basisLabel": "Basis",
+    "riskLabel": "Risk",
+    "expLabel": "Suggested assay",
+    "viewSite": "Show in structure",
+    "suggest": {
+      "q55r": {
+        "basis": "Hydrogen-bonds antigen C:Asp89 (2.98 Å)",
+        "how": "Arg could form a salt bridge with Asp89 and improve electrostatic complementarity",
+        "risk": "The long Arg side chain may clash with neighbours",
+        "exp": "Re-measure KD by BLI / SPR"
+      },
+      "s31y": {
+        "basis": "Only a van der Waals contact with antigen C:Tyr81 (2.92 Å)",
+        "how": "Tyr could π-stack with Tyr81 and add contact area",
+        "risk": "L-CDR1 conformation may change; check the fold",
+        "exp": "Re-measure KD by BLI / SPR; check thermal stability by DSF"
+      },
+      "n102d": {
+        "basis": "Van der Waals contacts with antigen C:Arg130 and C:Arg132 (2.39–2.71 Å)",
+        "how": "Asp could form salt bridges with both Arg residues and add electrostatic complementarity",
+        "risk": "More Asp in H-CDR3; watch isomerization (Asp104–Asp105 are already nearby)",
+        "exp": "Re-measure KD by BLI / SPR and assess stability"
+      },
+      "s95a": {
+        "basis": "L-CDR3 Asn94–Ser95 is a deamidation-prone motif (NS)",
+        "how": "Ser95→Ala breaks the NS motif and lowers deamidation risk; the site is not in direct antigen contact",
+        "risk": "May slightly change CDR loop flexibility",
+        "exp": "Forced degradation + LC-MS peptide mapping; re-measure affinity"
+      },
+      "g66a": {
+        "basis": "Framework Asn65–Gly66 is an NG motif with high deamidation propensity",
+        "how": "Gly66→Ala breaks the NG motif; framework sites have little direct effect on binding",
+        "risk": "Framework mutations can affect folding and stability",
+        "exp": "DSF thermal stability + forced degradation; re-measure affinity"
+      },
+      "d104": {
+        "basis": "H-CDR3 Asp104–Asp105 carries an isomerization-prone motif (DD), but Asp104 also forms a salt bridge and H-bond with antigen Arg132 (3.63 Å / 2.64 Å)",
+        "how": "This is a key contact; mutating it directly is not advised",
+        "risk": "A mutation would lose a key salt bridge",
+        "exp": "Run accelerated stability first to confirm isomerization before deciding"
+      }
+    },
+    "typeFilter": "Filter by interaction type",
+    "typeAll": "All",
+    "typeHint": "Pick a type to show only that kind of interaction; the matching residues appear as sticks in the structure.",
+    "typeTotal": "interactions",
+    "secLabel": "Analysis sections",
+    "secDesc": "Overview",
+    "secHomologs": "Homologs",
+    "secAnnotations": "Annotations",
+    "secLiab": "Liabilities",
+    "secNet": "Interactions",
+    "secSug": "Suggestions",
+    "secScore": "Scoring"
   },
   "helpPage": {
     "title": "Help Center",
     "changelog": "Changelog",
     "api": "API Documentation",
     "soon": "Coming soon",
-    "todo": "{{TODO: 待确认}}"
+    "todo": "{{TODO: 待确认}}",
+    "start": "Get started",
+    "more": "More",
+    "overview": "Overview",
+    "home": {
+      "eyebrow": "MOLECULEOS AT A GLANCE",
+      "title": "Describe the research question; MoleculeOS moves it forward",
+      "lead": "Structure prediction, interaction analysis, mutation scoring and molecular design in one workspace.",
+      "body": "You set the goal and make the final call. Mocha understands the intent, picks the right models and tools, and keeps the inputs, results and reasoning of every step in the project, ready to review and reuse.",
+      "caption": "MoleculeOS: an R&D operating system that connects understanding and designing biomolecules.",
+      "loopEyebrow": "A RESEARCH LOOP",
+      "loopTitle": "From a research question to candidates you can verify",
+      "loopLead": "MoleculeOS keeps molecules, models and compute in one task, turning a conversation into a workflow you can run and review.",
+      "steps": [
+        {
+          "title": "Establish molecular context",
+          "body": "Upload a sequence or structure, or fetch one by PDB ID. Selected chains, residues and measurements go to Mocha as context.",
+          "chips": [
+            "Sequences",
+            "Structures",
+            "Selections & measurements"
+          ]
+        },
+        {
+          "title": "Call the right capabilities",
+          "body": "Mocha breaks the goal down and runs structure prediction, MMetrics, homology search, mutation scoring and other tools.",
+          "chips": [
+            "Mocha",
+            "Molecular Analysis | MMetrics",
+            "Model calls",
+            "Homology search"
+          ]
+        },
+        {
+          "title": "Review and iterate",
+          "body": "Structures, scores and interactions sit side by side; every candidate states its rationale and can be exported for the next round.",
+          "chips": [
+            "Structure view",
+            "Scoring & ranking",
+            "Export"
+          ]
+        }
+      ],
+      "featuresTitle": "What's in the platform",
+      "featuresLead": "Each capability maps to a chapter of the user manual.",
+      "cols": [
+        "Capability",
+        "What it does",
+        "Manual chapter"
+      ],
+      "features": [
+        [
+          "Mocha",
+          "Describe a task in natural language; it plans the steps and calls models"
+        ],
+        [
+          "Molecular Analysis | MMetrics",
+          "Description, homologs, annotations, interaction network and mutation scores"
+        ],
+        [
+          "Structure workspace",
+          "Load structures, select residues, measure distances, switch representations"
+        ],
+        [
+          "Non-covalent interactions",
+          "Hydrogen bonds, salt bridges, π-π stacking and other interface contacts"
+        ],
+        [
+          "Homologous protein search",
+          "Find similar sequences and compare evolutionary relationships"
+        ],
+        [
+          "Models & Function Call",
+          "Browse available models and run protein computations directly"
+        ]
+      ],
+      "nextTitle": "Next steps"
+    },
+    "quick": {
+      "eyebrow": "QUICK START",
+      "title": "Run your first task in ten minutes",
+      "lead": "Create an account, load a molecule, and ask Mocha your first question.",
+      "steps": [
+        {
+          "title": "Sign up and sign in",
+          "body": "Register with your email and confirm the verification code.",
+          "chips": [
+            "Email",
+            "Verification code"
+          ]
+        },
+        {
+          "title": "Create a project and load a molecule",
+          "body": "Upload a PDB / mmCIF structure or a FASTA sequence, or enter a PDB ID.",
+          "chips": [
+            "PDB",
+            "mmCIF",
+            "FASTA"
+          ]
+        },
+        {
+          "title": "Describe the task to Mocha",
+          "body": "For example, “predict this antibody's structure and list the residues contacting the antigen”. Mocha plans the steps and returns the results.",
+          "chips": [
+            "Structure Prediction | MMFold",
+            "Interactions",
+            "Mutation scoring"
+          ]
+        }
+      ],
+      "more": "Read the full Quick Start chapter"
+    },
+    "soonBody": "This section is being prepared and will appear here once it is ready.",
+    "hub": {
+      "eyebrow": "HELP CENTER",
+      "title": "How can we help?",
+      "lead": "Search the user manual, or start from one of the paths below.",
+      "popular": "Popular",
+      "topics": [
+        "Quick start",
+        "Mocha",
+        "Molecular Analysis | MMetrics",
+        "Non-covalent interactions",
+        "Homology search",
+        "Model calls"
+      ],
+      "startEyebrow": "FIRST TIME",
+      "startTitle": "Three steps to your first task",
+      "manualEyebrow": "USER MANUAL",
+      "manualTitle": "Read by chapter",
+      "manualAll": "Open the full manual",
+      "faqEyebrow": "FAQ",
+      "faqTitle": "Start with these",
+      "moreEyebrow": "MORE RESOURCES",
+      "resources": [
+        {
+          "key": "changelog",
+          "title": "Changelog",
+          "body": "New features and fixes in each release"
+        },
+        {
+          "key": "api",
+          "title": "API docs",
+          "body": "Bring MoleculeOS into your pipeline"
+        },
+        {
+          "key": "community",
+          "title": "Community",
+          "body": "Swap approaches with other R&D teams"
+        },
+        {
+          "key": "contact",
+          "title": "Contact us",
+          "body": "Hard targets, private deployment, procurement"
+        }
+      ],
+      "askTitle": "Didn't find it in the manual?",
+      "askBody": "Ask Mocha inside MoleculeOS; it understands your current molecule and project.",
+      "askCta": "Open MoleculeOS and ask Mocha"
+    }
   },
   "communityPage": {
     "owned": "Community spaces",
     "forum": "User forum",
     "feishu": "Feishu group",
+    "feishuDesc": "Talk directly with the MoleculeOS team and fellow researchers: which model to pick, how to read results, and early news on new features.",
     "social": "Social channels",
-    "todo": "{{TODO: 待确认}}"
+    "todo": "{{TODO: 待确认}}",
+    "feishuLive": "Open now",
+    "feishuCta": "Join on Feishu",
+    "feishuTags": [
+      "Protein design",
+      "Model Q&A",
+      "Product updates"
+    ],
+    "forumDesc": "In preparation. You can join the Feishu group in the meantime",
+    "soon": "Coming soon",
+    "sectionTalk": "Talk with us",
+    "sectionPrograms": "Programs",
+    "sectionFollow": "Follow MoleculeOS",
+    "academic": "Academic program",
+    "academicDesc": "Collaboration and support for universities and research institutes. Details coming soon.",
+    "groupCn": "China",
+    "groupGlobal": "Global",
+    "channels": {
+      "cn": [
+        [
+          "WeChat Official Account",
+          "Search \"分子之心MoleculeMind\" for release notes, case write-ups and event news"
+        ]
+      ],
+      "global": [
+        [
+          "LinkedIn",
+          "Company news and partnerships",
+          "https://www.linkedin.com/company/moleculemind/"
+        ],
+        [
+          "YouTube",
+          "Tutorials and case videos",
+          ""
+        ]
+      ]
+    },
+    "contactTitle": "Didn't find the right channel?",
+    "contactDesc": "For partnerships, press or anything else, reach us directly."
   },
   "mockContent": {
     "trust": {
       "_demo": true,
       "items": [
         {
-          "value": "12",
-          "label": "Clinical targets",
+          "value": "18",
+          "label": "Distinct targets covered",
           "isReal": true
         },
         {
-          "value": "90%+",
-          "label": "Target success under low-throughput conditions",
+          "value": "94.7%",
+          "label": "Design-task success rate",
           "isReal": true
         },
         {
-          "value": "37",
-          "label": "Wet-lab-validated projects",
-          "isReal": false
+          "value": "9–50",
+          "label": "Candidates tested per task",
+          "isReal": true
         }
       ],
       "_note": "演示数据,上线前必须替换"
@@ -804,40 +1356,40 @@
         {
           "id": "affinity",
           "title": "Improve candidate binding",
-          "brief": "A lead exists, but affinity has stalled",
-          "situation": "Your lead is active, but further affinity gains have become expensive trial and error: structure limits mutable regions, and the combination space is too large to exhaust.",
-          "approach": "Identify key binding-interface residues, generate a small set of informative mutation combinations, and provide consistent ranking and explanations.",
-          "outcome": "An experiment-ready candidate list, showing what changed in each candidate and why.",
+          "brief": "G6 binds VEGF-A; make it stronger",
+          "situation": "The G6 Fab already binds VEGF-A, but pushing affinity higher is costly trial and error. Structure limits which interface residues can move, and the combinations are too many to exhaust.",
+          "approach": "Start from the 2FJG binding interface, generate a few informative mutation combinations on the contacting heavy- and light-chain residues, then rank and explain them.",
+          "outcome": "An experiment-ready candidate list showing which interface residue changed in each candidate and why.",
           "media": "/demo/capability-affinity.webm",
           "mediaTodo": "替换为亲和力优化的真实操作录屏"
         },
         {
           "id": "stability",
           "title": "Improve expression, stability and developability",
-          "brief": "Activity is good; manufacturing is not",
-          "situation": "Activity meets your target, but low expression, poor thermal stability or aggregation blocks process and formulation development.",
-          "approach": "Explore more robust sequences while preserving functional regions, and assess the impact of changes on activity.",
-          "outcome": "Modification proposals that respect functional constraints, with risk warnings to avoid trading activity for stability.",
+          "brief": "Active enough; developability still lags",
+          "situation": "G6 binds well enough, but expression, thermal stability or aggregation still falls short of development needs. If process and formulation fail, the earlier work is wasted.",
+          "approach": "Lock the interface that contacts VEGF-A and search only the framework away from it, assessing each change for its effect on binding.",
+          "outcome": "Modification proposals that leave the binding interface alone, each with a risk note.",
           "media": "/demo/capability-stability.webm",
           "mediaTodo": "替换为稳定性改造的真实操作录屏"
         },
         {
           "id": "denovo",
           "title": "Generate binders for a new target",
-          "brief": "There is no lead yet",
-          "situation": "The target is new, with no known binder to improve. Candidates must start from structural interface features; conventional routes rely on phage display or chance.",
-          "approach": "Generate new sequences from target structures and design constraints, then screen and provide explainable rankings.",
-          "outcome": "A diverse set of candidate sequences ready for synthesis and validation.",
+          "brief": "Design new binders, independent of G6",
+          "situation": "To step outside existing antibodies and their epitopes, you start from the VEGF-A receptor-binding surface and look for new binders from scratch. Conventional routes rely on phage display or chance.",
+          "approach": "Generate new sequences from the VEGF-A structure and your constraints, then screen them and give the ranking rationale.",
+          "outcome": "A diverse set of binder sequences, ready to order for validation.",
           "media": "/demo/capability-denovo.webm",
           "mediaTodo": "替换为从头设计的真实操作录屏"
         },
         {
           "id": "structure",
           "title": "Assess structures and complexes from sequences",
-          "brief": "Without a reliable structure, work is blocked",
-          "situation": "Without a reliable structure, experiment design and residue decisions lack a foundation. Co-crystal work is slow, and homologous templates are not close enough.",
-          "approach": "Submit sequences or existing structures, predict monomers and complexes, and highlight key regions.",
-          "outcome": "Inspectable structures with confidence indicators, providing a starting point for subsequent design.",
+          "brief": "See how VEGF-A and the Fab fit together",
+          "situation": "Without a reliable complex structure, residue decisions and experiment design have no footing. Co-crystals are slow and homologous templates are not close enough.",
+          "approach": "Submit the VEGF-A and Fab sequences, predict monomer and complex structures, and mark the contact interface on both sides.",
+          "outcome": "An inspectable complex with confidence indicators, the starting point for later design.",
           "media": "/demo/capability-structure.webm",
           "mediaTodo": "替换为结构预测的真实操作录屏"
         }
@@ -852,46 +1404,137 @@
       },
       "cases": [
         {
-          "category": "Antibody affinity optimization",
-          "result": "Lead antibody affinity improved 23-fold, with specificity unchanged",
-          "difficulty": "CDR structure constrains mutable regions; over 10⁶ combinations require more than 4 rounds of conventional saturation-mutagenesis screening",
-          "molecule": "IgG monoclonal antibody",
-          "cycle": "6 weeks"
+          "hidden": true,
+          "category": "De novo PD-L1 nanobody design",
+          "subtitle": "Immune checkpoint · specified epitope",
+          "figure": "86.7%",
+          "result": "Of 30 prioritized candidates, 26 showed binding activity in BLI, with a best affinity of 7.2 nM.",
+          "body": "MMDesign generates nanobody candidates against a specified PD-L1 epitope and narrows large-scale designs to 30 experimental candidates by jointly weighing structural reliability, sequence properties and binding evaluation.",
+          "tags": [
+            "PD-L1",
+            "VHH",
+            "BLI validated"
+          ],
+          "viz": {
+            "kind": "dots",
+            "total": 30,
+            "hits": 26,
+            "caption": "30 prioritized candidates · 26 hits",
+            "extra": "Best affinity 7.2 nM"
+          }
         },
         {
-          "category": "Enzyme stability engineering",
-          "result": "Industrial enzyme Tm increased by 11.4°C; residual activity at 60°C rose from 31% to 86%",
-          "difficulty": "Thermal stability must improve without sacrificing catalytic efficiency; the two often trade off",
-          "molecule": "Hydrolase",
-          "cycle": "8 weeks"
+          "category": "De novo NK3R GPCR nanobody design",
+          "subtitle": "Membrane protein · complex target",
+          "figure": "30/30",
+          "result": "All 30 prioritized nanobodies were binding-positive in BLI, with a best apparent affinity of 23.2 nM.",
+          "body": "De novo design against the extracellular region of NK3R, with multi-stage computational screening to select the experimental candidates, extending binder discovery to complex GPCR membrane proteins.",
+          "tags": [
+            "NK3R",
+            "GPCR",
+            "BLI validated"
+          ],
+          "viz": {
+            "kind": "dots",
+            "total": 30,
+            "hits": 30,
+            "caption": "30 prioritized nanobodies · 30 binding-positive",
+            "extra": "Best apparent affinity 23.2 nM"
+          }
         },
         {
-          "category": "Complex structure prediction",
-          "result": "Antibody–antigen interface DockQ reached 0.78; 14 of 16 key contact residues matched",
-          "difficulty": "No co-crystal structure was available; homologous templates shared less than 40% sequence identity",
-          "molecule": "Antibody–antigen complex",
-          "cycle": "3 days"
+          "category": "De novo high-affinity TNF nanobodies",
+          "subtitle": "Cytokine · small screen, high hit rate",
+          "figure": "51 pM",
+          "result": "Testing only 14 candidates yielded 7 TNF binders, with a best apparent BLI affinity of 51 pM.",
+          "body": "Candidate nanobodies are generated de novo and screened in multiple stages on structure and sequence properties; a small-scale experiment validated high-affinity binders.",
+          "tags": [
+            "TNF",
+            "VHH",
+            "7/14 hits"
+          ],
+          "viz": {
+            "kind": "dots",
+            "total": 14,
+            "hits": 7,
+            "caption": "14 candidates tested · 7 binders",
+            "extra": "Best apparent affinity 51 pM"
+          }
         },
         {
-          "category": "De novo design",
-          "result": "48 candidates for a new target yielded 5 wet-lab binding signals; the best KD was 42 nM",
-          "difficulty": "No known binders or usable leads; candidates must start from interface features",
-          "molecule": "Small-protein binder",
-          "cycle": "10 weeks"
+          "category": "pH-responsive antibody design",
+          "subtitle": "Histidine engineering · antibody optimization",
+          "figure": "62×",
+          "result": "At pH 6.0, the optimized antibody dissociates about 62 times faster than at pH 7.4.",
+          "body": "Histidine site design combined with analysis of the protonation state of the binding interface tunes binding kinetics at different acidities, yielding experimentally validated pH-responsive candidates.",
+          "tags": [
+            "Histidine Engineering",
+            "pH 6.0 vs 7.4"
+          ],
+          "viz": {
+            "kind": "bars",
+            "caption": "Relative dissociation rate",
+            "extra": "Histidine engineering",
+            "bars": [
+              {
+                "label": "pH 7.4",
+                "value": 1,
+                "text": "1×"
+              },
+              {
+                "label": "pH 6.0",
+                "value": 62,
+                "text": "≈ 62×"
+              }
+            ]
+          }
         },
         {
-          "category": "Functional protein design",
-          "result": "Nanobody aggregation propensity decreased by 62%, with neutralizing activity retained",
-          "difficulty": "A hydrophobic patch near the CDR makes binding sensitive to modification",
-          "molecule": "VHH nanobody",
-          "cycle": "7 weeks"
+          "category": "Thermostability engineering of a sugar-substitute enzyme",
+          "subtitle": "Industrial enzyme · multi-objective optimization",
+          "figure": "200 h",
+          "result": "Half-life extended from 2.3 h to 200 h, with the melting temperature raised by 15°C.",
+          "body": "Sequence and structure analysis plus multi-objective mutation design around the enzyme's thermostability significantly improve its heat tolerance.",
+          "tags": [
+            "Enzyme Engineering",
+            "Tm +15°C"
+          ],
+          "viz": {
+            "kind": "bars",
+            "caption": "Half-life",
+            "extra": "Tm +15°C",
+            "bars": [
+              {
+                "label": "Before",
+                "value": 2.3,
+                "text": "2.3 h"
+              },
+              {
+                "label": "After",
+                "value": 200,
+                "text": "200 h"
+              }
+            ]
+          }
         },
         {
-          "category": "Protein stability engineering",
-          "result": "Therapeutic protein degradation slowed 3.8-fold in accelerated testing at 40°C",
-          "difficulty": "Expression-host compatibility and formulation conditions must both be considered; single mutations offer limited benefit",
-          "molecule": "Recombinant therapeutic protein",
-          "cycle": "9 weeks"
+          "category": "PRK codon optimization",
+          "subtitle": "PISCO · Pichia pastoris",
+          "figure": "12/13",
+          "result": "Of 13 PISCO-optimized PRK coding sequences, 12 showed improved soluble expression in Pichia pastoris experiments.",
+          "body": "Protein 3D structure, amino-acid sequence and host codon preference are optimized together, designing host-adapted coding schemes without changing the protein sequence.",
+          "tags": [
+            "PISCO",
+            "Codon Optimization",
+            "Pichia pastoris"
+          ],
+          "viz": {
+            "kind": "dots",
+            "total": 13,
+            "hits": 12,
+            "caption": "13 optimized sequences · 12 with higher soluble expression",
+            "extra": "Pichia pastoris"
+          }
         }
       ],
       "_note": "演示数据,上线前必须替换"
@@ -899,10 +1542,6 @@
     "models": {
       "_demo": true,
       "models": [
-        {
-          "name": "NewOrigin (Darwin)",
-          "limitation": "Representation quality decreases for orphan proteins without homologous information; cross-species transfer needs calibration with experimental data."
-        },
         {
           "name": "MMFold",
           "limitation": "Confidence is lower for highly flexible and disordered regions; conformations dependent on cofactors or specific pH require consideration of experimental conditions."
@@ -972,5 +1611,180 @@
       "icp": "京ICP备2023XXXXXX号-1",
       "_note": "演示数据,上线前必须替换"
     }
+  },
+  "helpCenter": {
+    "eyebrow": "HELP CENTER",
+    "title": "A method for every step of your exploration",
+    "lead": "Browse the guides and learn from user cases to apply MoleculeOS analysis and design to your research",
+    "navCore": "Core features",
+    "navCases": "User stories",
+    "navApi": "API key",
+    "navMcp": "MCP service",
+    "navDev": "Developers",
+    "navFaq": "FAQ",
+    "flowLabel": "One research flow, seven entry points",
+    "indexManual": "User manual",
+    "caseLabel": "CASE",
+    "pathLabel": "How it works",
+    "exampleLabel": "Example prompt",
+    "cases": [
+      {
+        "nav": "Set a goal",
+        "title": "Set a goal, and let analysis and computation follow the task",
+        "tags": [
+          "Mocha"
+        ],
+        "lead": "You want to optimize an antibody, but first you need to prepare the structure, inspect the interface, assess mutations and then collate every step. With Mocha you describe the research goal and constraints directly; it breaks the task down, works out which models to call, and afterwards organizes candidates, scores and the rationale. You can follow the task as it runs, or open the raw results and keep checking.",
+        "body": [
+          "In the project chat, provide the antigen, antibody heavy and light chain sequences, and state the goal and the regions that must stay unchanged. For example:"
+        ],
+        "prompt": "Predict the structure from the given sequences and recommend 30 mutations that may improve antibody affinity, avoiding positions that already interact with the antigen.",
+        "after": [
+          "After submitting, open **Task** to see status, duration and per-task details. When it finishes, read the key findings and recommended candidates first, then find reports, data tables and structure files in **Workspace**."
+        ]
+      },
+      {
+        "nav": "Sequence to structure",
+        "title": "From sequence to structure: a starting point for analysis",
+        "tags": [
+          "MMFold",
+          "Protein manager"
+        ],
+        "lead": "You have antibody and target sequences but no structure to analyze yet. With MMFold you can start a structure prediction from sequence, load the result into a MoleculeOS project, then inspect the molecular shape, locate residues and compare with other structures. If you already have a structure, upload it directly or load it by PDB ID.",
+        "steps": [
+          "Format the input as FASTA as the model requires; for several chains, separate them with : on one line as the manual describes. After starting the MMFold job, open the task details to see the returned files: five CIF structures with their confidence JSON files. Download them and load them into the project to keep viewing and comparing.",
+          "Select one of the structures and click a residue in the sequence; the matching position is highlighted in the 3D view. From here you can analyze regions and sites on the same object."
+        ]
+      },
+      {
+        "nav": "Molecule overview",
+        "title": "Around one molecule, find the research information worth noting",
+        "tags": [
+          "Molecular Analysis | MMetrics"
+        ],
+        "lead": "With the structure in hand, you need to confirm what each chain is, which regions deserve attention, and what homologous information is available. MMetrics organizes the loaded complex into a molecular description, homologous references, functional regions, interactions and mutation scores, so you go from the overview down to specific positions and build up your understanding of the subject.",
+        "steps": [
+          "Once the antibody–antigen complex is loaded, MMetrics starts computing. First check the protein type, name, function, chain composition and the evidence behind each call in **Description**.",
+          "Then look at CDR, heavy/light chain and epitope annotations in **Annotations**. Click a region name to highlight it in the structure; click a single residue to locate it further. Build the overview first, then move on to homology search, interaction checks or mutation assessment as your question requires."
+        ]
+      },
+      {
+        "nav": "Homologous references",
+        "title": "Find homologous references to support the redesign",
+        "tags": [
+          "SeqSim Search"
+        ],
+        "lead": "Before redesigning a sequence you want to know what related proteins can tell you: which positions are conserved, which vary, and which structural or functional information is worth reading further. SeqSim Search starts from a sequence or a chain in your project, then helps you find suitable references through filtering, multiple sequence alignment and source access.",
+        "steps": [
+          "Open **SeqSim Search** from the bottom toolbar. With a structure loaded, choose **Search by chain**, pick the protein and chain, then click **Blast**; with only a sequence, use **Search by Sequence**.",
+          "When the job finishes, load the results into the project, review the match metrics and expand the hit sequences. If there are too many, narrow them with **Filter**; tick several related proteins and click **Align** to see how a region of interest varies across sequences. To check background information, go back to the source database through **Reference**."
+        ]
+      },
+      {
+        "nav": "Locating sites",
+        "title": "From structural differences to specific interactions: find sites worth checking",
+        "tags": [
+          "Superimpose",
+          "Non-Covalent Bond",
+          "5Å",
+          "Distance",
+          "Annotation"
+        ],
+        "lead": "With references found, attention turns to specific positions: which local regions differ between structures? Which residues surround a candidate site, and what interactions do they take part in? In MoleculeOS you can align structures, inspect spatial neighbourhoods and non-covalent interactions, then save key positions and observations in the project.",
+        "steps": [
+          "**Compare first, then focus.** With several structures, use Superimpose: set one as Fixed, the others as Moving, choose the chains to align and inspect local regions. After selecting residues of interest, use 5Å to filter neighbours by distance and amino-acid type; use Distance to check distances further.",
+          "**Then move from position to interaction.** Open Non-Covalent Bond to check hydrogen bonds, π–π stacking and π–cation interactions of the selected residues. To decide which positions to look at first, consult Hotspots, which ranks single sites by their number of interactions.",
+          "**Finally,** save key residues with Annotation: name them and write your observations, for example separate notes for “positions to keep” and “positions to evaluate further”, so they are easy to find again."
+        ]
+      },
+      {
+        "nav": "Design options",
+        "title": "Turn the evidence into candidates and compare every option",
+        "tags": [
+          "Mocha",
+          "Mutation Scoring",
+          "Protein Redesign"
+        ],
+        "lead": "With structure, homologous references and key sites in place, the next step is to propose concrete substitutions and compare how they perform on different dimensions. MoleculeOS provides mutation scores along sequence, structure and evolution axes, and also supports binding-affinity mutation assessment. Around your research goal, get candidate recommendations and reasons from Mocha, or run sequence redesign on a region you specify.",
+        "steps": [
+          "In **MMetrics → Mutation Scoring**, view or download `MutXseq.csv`, `MutXstruct.csv` and `MutXevo.csv` and check the chain, specific mutation and score on each dimension for every record. To assess binding affinity, specify the complex, the chain to scan and the partner chain as the model requires, create a scoring task through Mocha, and fetch the results from **Output Data**.",
+          "Submit the redesign scope and research constraints to Mocha and review the candidate positions, scores and reasons it gives. To redesign a specific region, start **Protein Redesign**, check the designed residues under **Input Data** in the task details, and download the generated FASTA sequences from **Output Data**."
+        ]
+      },
+      {
+        "nav": "Team collaboration",
+        "title": "Keep results and observations in the project so the team can carry on",
+        "tags": [
+          "Task",
+          "Workspace",
+          "Annotation",
+          "Project sharing"
+        ],
+        "lead": "Once candidates are ready, the team still has to check positions, discuss the evidence and decide the next round of experiments. MoleculeOS organizes the related proteins, tools and tasks in the project; you can view or download result files, record key observations on sites, then invite members into the project to keep checking.",
+        "steps": [
+          "Before a review, check the related computations in **Task** and fetch Mocha's reports, data tables and structure files from **Workspace**. Put the structures to discuss into the project and use **Annotation** to note the sites and explanations, so colleagues can jump straight to the right position.",
+          "A member with sharing rights opens **Share**, picks colleagues from the company and invites them with **Read / Edit**. Permissions can be adjusted later as work changes. Site annotations in the project can be viewed by members with access and kept up by members with edit rights."
+        ]
+      }
+    ],
+    "stories": {
+      "title": "User stories",
+      "lead": "MoleculeOS in real research scenarios",
+      "items": [
+        {
+          "tag": "Molecular Analysis | MMetrics",
+          "title": "Around one protein, trace the evidence behind the analysis",
+          "body": "Content coming soon",
+          "demoLabel": "The same 4HT1 structure as the MMetrics view in MoleculeOS; drag and click it directly."
+        }
+      ]
+    },
+    "api": {
+      "title": "API key",
+      "lead": "Bring MoleculeOS capabilities into your research workflow through the API",
+      "body": "API documentation and onboarding guides are being prepared and will open soon."
+    },
+    "mcp": {
+      "title": "MCP service",
+      "lead": "Call MoleculeOS models directly from the agent tools you already use, through the Model Context Protocol",
+      "body": "You need a MoleculeOS API Key (the page to get one opens soon). Add the configuration below to your agent tool's MCP settings and replace the text after Bearer with your key.",
+      "configLabel": "Streamable HTTP configuration",
+      "exampleLabel": "Example prompt",
+      "example": "predict the structure of sequence use MOS model MSDQDHSMDEMTAVVKIEKGVGGNNGGNGNGGGAFSQARSSSTGSSSSTGGGGQESQP",
+      "toolsLabel": "Available MCP tools",
+      "tools": [
+        {"name": "create_structure_prediction_task", "desc": "3D structure prediction for protein, DNA, RNA and ligand assemblies (MMFold)"},
+        {"name": "create_protein_binder_design_task", "desc": "Design binder backbones for a target structure"},
+        {"name": "create_sequence_homology_search_task", "desc": "Sequence similarity and homology search"},
+        {"name": "create_sequence_fitness_mutation_effect_task", "desc": "Score mutation effects from sequence context"},
+        {"name": "create_evolutionary_mutation_effect_task", "desc": "Score mutations by evolutionary conservation and covariation"},
+        {"name": "create_structural_stability_mutation_effect_task", "desc": "Score mutations under structure and stability constraints"},
+        {"name": "create_binding_affinity_mutation_effect_task", "desc": "Assess how mutations change binding affinity in a complex"},
+        {"name": "create_antibody_humanization_task", "desc": "Humanize antibody sequences while preserving binding"}
+      ]
+    },
+    "soon": "Coming soon",
+    "faq": {
+      "title": "FAQ",
+      "lead": "Common questions about pricing, tasks and data",
+      "groups": [
+        {"title": "Billing and usage", "items": [0]},
+        {"title": "Data and security", "items": [1, 3, 5]},
+        {"title": "Results and rights", "items": [2, 4]}
+      ]
+    },
+    "more": {
+      "title": "Want more?",
+      "manual": "Full user manual",
+      "manualBody": "Detailed steps for every feature",
+      "changelog": "Changelog",
+      "changelogBody": "New features and fixes in each release",
+      "community": "Community",
+      "communityBody": "Compare notes with other research teams",
+      "ask": "Can't find your answer?",
+      "askBody": "Ask Mocha inside MoleculeOS; it can read your current molecule and project.",
+      "askCta": "Open MoleculeOS and ask Mocha"
+    },
+    "searchHint": "Search the manual, e.g. alignment, Credit"
   }
 }

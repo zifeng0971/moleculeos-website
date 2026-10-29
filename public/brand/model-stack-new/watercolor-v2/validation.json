@@ -1,0 +1,56 @@
+{
+  "mmfold": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      300,
+      151,
+      940,
+      588
+    ],
+    "generated_source": "exec-fa12c1a8-b18d-44fc-b2da-f8a2c6cb343e.png"
+  },
+  "mmdesign": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      232,
+      147,
+      967,
+      567
+    ],
+    "generated_source": "exec-dcff2188-1b52-4113-913a-2d04ab6d2cbd.png"
+  },
+  "moleculeos": {
+    "size": [
+      1200,
+      750
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      228,
+      140,
+      964,
+      600
+    ],
+    "generated_source": "exec-e2085faf-5312-4156-8d51-255dbdc523a9.png"
+  }
+}

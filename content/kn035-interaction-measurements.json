@@ -1,0 +1,1432 @@
+{
+  "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json",
+  "structure": "website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+  "structureSha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "provenance": "Local reconstruction of measurement loci from MMFold_1; MOS provides residue pairs and distances only. Atom identities are inferred, not native exported assignments.",
+  "toleranceAngstrom": 0.00051,
+  "interactions": [
+    {
+      "a": "ARG109.A",
+      "b": "GLN116.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:109",
+        "B:116"
+      ],
+      "atoms": [
+        [
+          "NH2"
+        ],
+        [
+          "OE1"
+        ]
+      ],
+      "sourceDistance": 2.524,
+      "coordinateDistance": 2.52382031848545,
+      "points": [
+        [
+          0.377,
+          -6.978,
+          7.84
+        ],
+        [
+          -1.015,
+          -5.412,
+          6.433
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "THR105.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:50",
+        "B:105"
+      ],
+      "atoms": [
+        [
+          "OE1"
+        ],
+        [
+          "N"
+        ]
+      ],
+      "sourceDistance": 3.065,
+      "coordinateDistance": 3.064940619326906,
+      "points": [
+        [
+          -4.496,
+          8.256,
+          -0.295
+        ],
+        [
+          -3.492,
+          7.238,
+          -3.006
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "ARG32.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:45",
+        "B:32"
+      ],
+      "atoms": [
+        [
+          "O"
+        ],
+        [
+          "NH1"
+        ]
+      ],
+      "sourceDistance": 3.079,
+      "coordinateDistance": 3.0794546595135963,
+      "points": [
+        [
+          -9.176,
+          1.485,
+          6.968
+        ],
+        [
+          -9.647,
+          1.181,
+          3.94
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "ASP103.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:50",
+        "B:103"
+      ],
+      "atoms": [
+        [
+          "NE2"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.25,
+      "coordinateDistance": 3.250453814469604,
+      "points": [
+        [
+          -5.787,
+          9.754,
+          0.747
+        ],
+        [
+          -7.352,
+          8.755,
+          -1.921
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR40.A",
+      "b": "GLU102.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:40",
+        "B:102"
+      ],
+      "atoms": [
+        [
+          "OH"
+        ],
+        [
+          "N"
+        ]
+      ],
+      "sourceDistance": 3.144,
+      "coordinateDistance": 3.144365277762747,
+      "points": [
+        [
+          -5.839,
+          4.52,
+          3.114
+        ],
+        [
+          -6.749,
+          3.862,
+          0.177
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "SER29.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:45",
+        "B:29"
+      ],
+      "atoms": [
+        [
+          "OD2"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 3.169,
+      "coordinateDistance": 3.169061217458571,
+      "points": [
+        [
+          -9.184,
+          -3.746,
+          7.395
+        ],
+        [
+          -12.126,
+          -3.278,
+          6.314
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG97.A",
+      "b": "ASP99.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:97",
+        "B:99"
+      ],
+      "atoms": [
+        [
+          "NH1"
+        ],
+        [
+          "OD2"
+        ]
+      ],
+      "sourceDistance": 3.19,
+      "coordinateDistance": 3.18986974655706,
+      "points": [
+        [
+          0.508,
+          -1.977,
+          4.222
+        ],
+        [
+          -1.002,
+          -3.09,
+          1.642
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLU42.A",
+      "b": "SER100.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:42",
+        "B:100"
+      ],
+      "atoms": [
+        [
+          "OE2"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 2.372,
+      "coordinateDistance": 2.3715819614763474,
+      "points": [
+        [
+          -4.594,
+          0.951,
+          5.909
+        ],
+        [
+          -5.235,
+          -0.621,
+          4.253
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "SER30.B",
+      "category": "H-Bond",
+      "residues": [
+        "A:45",
+        "B:30"
+      ],
+      "atoms": [
+        [
+          "OD2"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 2.602,
+      "coordinateDistance": 2.6018443458439244,
+      "points": [
+        [
+          -9.184,
+          -3.746,
+          7.395
+        ],
+        [
+          -8.839,
+          -5.934,
+          6.03
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG97.A",
+      "b": "ASP99.B",
+      "category": "Ionic",
+      "residues": [
+        "A:97",
+        "B:99"
+      ],
+      "atoms": [
+        [
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ],
+        [
+          "CG",
+          "OD1",
+          "OD2"
+        ]
+      ],
+      "sourceDistance": 3.485,
+      "coordinateDistance": 3.484775826721139,
+      "points": [
+        [
+          -0.5465,
+          -1.5877500000000002,
+          4.9115
+        ],
+        [
+          -2.0123333333333333,
+          -2.750666666666666,
+          1.9716666666666665
+        ]
+      ],
+      "method": "charge-group-centroids"
+    },
+    {
+      "a": "ILE38.A",
+      "b": "LEU108.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:38",
+        "B:108"
+      ],
+      "atoms": [
+        [
+          "CD1"
+        ],
+        [
+          "CB"
+        ]
+      ],
+      "sourceDistance": 3.491,
+      "coordinateDistance": 3.4914968136889373,
+      "points": [
+        [
+          2.581,
+          7.597,
+          -3.526
+        ],
+        [
+          0.331,
+          7.53,
+          -6.195
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR40.A",
+      "b": "PHE101.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:40",
+        "B:101"
+      ],
+      "atoms": [
+        [
+          "CD2"
+        ],
+        [
+          "CD1"
+        ]
+      ],
+      "sourceDistance": 3.806,
+      "coordinateDistance": 3.8056103321280808,
+      "points": [
+        [
+          -2.364,
+          4.158,
+          4.207
+        ],
+        [
+          -2.319,
+          1.789,
+          1.229
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR40.A",
+      "b": "GLU102.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:40",
+        "B:102"
+      ],
+      "atoms": [
+        [
+          "OH"
+        ],
+        [
+          "N"
+        ]
+      ],
+      "sourceDistance": 3.144,
+      "coordinateDistance": 3.144365277762747,
+      "points": [
+        [
+          -5.839,
+          4.52,
+          3.114
+        ],
+        [
+          -6.749,
+          3.862,
+          0.177
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR40.A",
+      "b": "THR105.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:40",
+        "B:105"
+      ],
+      "atoms": [
+        [
+          "CD1"
+        ],
+        [
+          "OG1"
+        ]
+      ],
+      "sourceDistance": 3.298,
+      "coordinateDistance": 3.297994238927655,
+      "points": [
+        [
+          -2.49,
+          5.848,
+          2.52
+        ],
+        [
+          -2.048,
+          7.147,
+          -0.479
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLU42.A",
+      "b": "SER100.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:42",
+        "B:100"
+      ],
+      "atoms": [
+        [
+          "OE1"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 3.035,
+      "coordinateDistance": 3.035160786515271,
+      "points": [
+        [
+          -3.261,
+          -0.671,
+          6.558
+        ],
+        [
+          -5.235,
+          -0.621,
+          4.253
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "SER29.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:45",
+        "B:29"
+      ],
+      "atoms": [
+        [
+          "OD2"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 3.169,
+      "coordinateDistance": 3.169061217458571,
+      "points": [
+        [
+          -9.184,
+          -3.746,
+          7.395
+        ],
+        [
+          -12.126,
+          -3.278,
+          6.314
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "SER30.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:45",
+        "B:30"
+      ],
+      "atoms": [
+        [
+          "OD2"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 2.602,
+      "coordinateDistance": 2.6018443458439244,
+      "points": [
+        [
+          -9.184,
+          -3.746,
+          7.395
+        ],
+        [
+          -8.839,
+          -5.934,
+          6.03
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "ARG32.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:45",
+        "B:32"
+      ],
+      "atoms": [
+        [
+          "O"
+        ],
+        [
+          "NH1"
+        ]
+      ],
+      "sourceDistance": 3.079,
+      "coordinateDistance": 3.0794546595135963,
+      "points": [
+        [
+          -9.176,
+          1.485,
+          6.968
+        ],
+        [
+          -9.647,
+          1.181,
+          3.94
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP45.A",
+      "b": "SER100.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:45",
+        "B:100"
+      ],
+      "atoms": [
+        [
+          "OD1"
+        ],
+        [
+          "CB"
+        ]
+      ],
+      "sourceDistance": 3.7,
+      "coordinateDistance": 3.700087566531365,
+      "points": [
+        [
+          -7.213,
+          -2.883,
+          6.935
+        ],
+        [
+          -6.465,
+          -1.113,
+          3.773
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "GLU102.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:50",
+        "B:102"
+      ],
+      "atoms": [
+        [
+          "OE1"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.478,
+      "coordinateDistance": 3.4782705472691453,
+      "points": [
+        [
+          -4.496,
+          8.256,
+          -0.295
+        ],
+        [
+          -5.69,
+          5.339,
+          -1.766
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "ASP103.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:50",
+        "B:103"
+      ],
+      "atoms": [
+        [
+          "NE2"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.25,
+      "coordinateDistance": 3.250453814469604,
+      "points": [
+        [
+          -5.787,
+          9.754,
+          0.747
+        ],
+        [
+          -7.352,
+          8.755,
+          -1.921
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "PRO104.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:50",
+        "B:104"
+      ],
+      "atoms": [
+        [
+          "OE1"
+        ],
+        [
+          "CD"
+        ]
+      ],
+      "sourceDistance": 3.32,
+      "coordinateDistance": 3.320280861613969,
+      "points": [
+        [
+          -4.496,
+          8.256,
+          -0.295
+        ],
+        [
+          -5.275,
+          10.336,
+          -2.763
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLN50.A",
+      "b": "THR105.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:50",
+        "B:105"
+      ],
+      "atoms": [
+        [
+          "OE1"
+        ],
+        [
+          "OG1"
+        ]
+      ],
+      "sourceDistance": 2.694,
+      "coordinateDistance": 2.693778201708523,
+      "points": [
+        [
+          -4.496,
+          8.256,
+          -0.295
+        ],
+        [
+          -2.048,
+          7.147,
+          -0.479
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "VAL52.A",
+      "b": "LEU108.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:52",
+        "B:108"
+      ],
+      "atoms": [
+        [
+          "CG2"
+        ],
+        [
+          "CD2"
+        ]
+      ],
+      "sourceDistance": 3.285,
+      "coordinateDistance": 3.285101368299006,
+      "points": [
+        [
+          0.167,
+          12.116,
+          -3.356
+        ],
+        [
+          -0.292,
+          9.917,
+          -5.753
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP57.A",
+      "b": "PRO104.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:57",
+        "B:104"
+      ],
+      "atoms": [
+        [
+          "OD2"
+        ],
+        [
+          "CD"
+        ]
+      ],
+      "sourceDistance": 3.615,
+      "coordinateDistance": 3.6145431246562816,
+      "points": [
+        [
+          -6.424,
+          13.276,
+          -1.002
+        ],
+        [
+          -5.275,
+          10.336,
+          -2.763
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "VAL60.A",
+      "b": "GLU102.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:60",
+        "B:102"
+      ],
+      "atoms": [
+        [
+          "CB"
+        ],
+        [
+          "CG"
+        ]
+      ],
+      "sourceDistance": 3.828,
+      "coordinateDistance": 3.8275357607735025,
+      "points": [
+        [
+          -9.674,
+          8.828,
+          2.679
+        ],
+        [
+          -8.948,
+          5.213,
+          1.652
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG97.A",
+      "b": "ASP99.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:97",
+        "B:99"
+      ],
+      "atoms": [
+        [
+          "NH2"
+        ],
+        [
+          "CG"
+        ]
+      ],
+      "sourceDistance": 3.142,
+      "coordinateDistance": 3.1419014943183687,
+      "points": [
+        [
+          -1.623,
+          -1.171,
+          4.269
+        ],
+        [
+          -2.207,
+          -2.763,
+          1.624
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG97.A",
+      "b": "PHE101.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:97",
+        "B:101"
+      ],
+      "atoms": [
+        [
+          "NH2"
+        ],
+        [
+          "CE1"
+        ]
+      ],
+      "sourceDistance": 3.54,
+      "coordinateDistance": 3.5396854380015186,
+      "points": [
+        [
+          -1.623,
+          -1.171,
+          4.269
+        ],
+        [
+          -1.145,
+          1.221,
+          1.704
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG97.A",
+      "b": "GLN116.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:97",
+        "B:116"
+      ],
+      "atoms": [
+        [
+          "CZ"
+        ],
+        [
+          "NE2"
+        ]
+      ],
+      "sourceDistance": 3.009,
+      "coordinateDistance": 3.0092299679486114,
+      "points": [
+        [
+          -0.545,
+          -1.587,
+          4.916
+        ],
+        [
+          -2.159,
+          -4.125,
+          5.011
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "MET99.A",
+      "b": "PHE101.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:99",
+        "B:101"
+      ],
+      "atoms": [
+        [
+          "CG"
+        ],
+        [
+          "CZ"
+        ]
+      ],
+      "sourceDistance": 3.73,
+      "coordinateDistance": 3.7303761204468375,
+      "points": [
+        [
+          2.886,
+          1.396,
+          2.176
+        ],
+        [
+          -0.457,
+          0.312,
+          0.925
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "MET99.A",
+      "b": "THR105.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:99",
+        "B:105"
+      ],
+      "atoms": [
+        [
+          "CE"
+        ],
+        [
+          "CG2"
+        ]
+      ],
+      "sourceDistance": 3.815,
+      "coordinateDistance": 3.815327508877842,
+      "points": [
+        [
+          1.897,
+          3.51,
+          0.644
+        ],
+        [
+          -1.275,
+          4.926,
+          -0.934
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "MET99.A",
+      "b": "VAL109.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:99",
+        "B:109"
+      ],
+      "atoms": [
+        [
+          "CE"
+        ],
+        [
+          "CG1"
+        ]
+      ],
+      "sourceDistance": 3.465,
+      "coordinateDistance": 3.465490730040985,
+      "points": [
+        [
+          1.897,
+          3.51,
+          0.644
+        ],
+        [
+          1.608,
+          3.609,
+          -2.808
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "MET99.A",
+      "b": "ALA114.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:99",
+        "B:114"
+      ],
+      "atoms": [
+        [
+          "SD"
+        ],
+        [
+          "CB"
+        ]
+      ],
+      "sourceDistance": 3.709,
+      "coordinateDistance": 3.7093494038712507,
+      "points": [
+        [
+          3.438,
+          2.631,
+          0.964
+        ],
+        [
+          3.222,
+          -0.268,
+          -1.34
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLY103.A",
+      "b": "SER111.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:103",
+        "B:111"
+      ],
+      "atoms": [
+        [
+          "O"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 3.214,
+      "coordinateDistance": 3.213931237596722,
+      "points": [
+        [
+          10.043,
+          3.418,
+          -5.728
+        ],
+        [
+          7.83,
+          1.089,
+          -5.64
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "GLY104.A",
+      "b": "SER111.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:104",
+        "B:111"
+      ],
+      "atoms": [
+        [
+          "CA"
+        ],
+        [
+          "OG"
+        ]
+      ],
+      "sourceDistance": 3.604,
+      "coordinateDistance": 3.603912318578242,
+      "points": [
+        [
+          10.68,
+          1.829,
+          -3.562
+        ],
+        [
+          7.83,
+          1.089,
+          -5.64
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ALA105.A",
+      "b": "SER111.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:105",
+        "B:111"
+      ],
+      "atoms": [
+        [
+          "CB"
+        ],
+        [
+          "CB"
+        ]
+      ],
+      "sourceDistance": 3.6,
+      "coordinateDistance": 3.600330679257115,
+      "points": [
+        [
+          6.713,
+          1.048,
+          -1.506
+        ],
+        [
+          7.111,
+          0.077,
+          -4.95
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ALA105.A",
+      "b": "GLY113.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:105",
+        "B:113"
+      ],
+      "atoms": [
+        [
+          "O"
+        ],
+        [
+          "CA"
+        ]
+      ],
+      "sourceDistance": 3.25,
+      "coordinateDistance": 3.250411973888848,
+      "points": [
+        [
+          8.751,
+          -1.166,
+          -0.224
+        ],
+        [
+          6.8,
+          -3.502,
+          -1.365
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ALA105.A",
+      "b": "ALA114.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:105",
+        "B:114"
+      ],
+      "atoms": [
+        [
+          "CB"
+        ],
+        [
+          "N"
+        ]
+      ],
+      "sourceDistance": 3.704,
+      "coordinateDistance": 3.704153344557971,
+      "points": [
+        [
+          6.713,
+          1.048,
+          -1.506
+        ],
+        [
+          4.813,
+          -2.116,
+          -1.19
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ASP106.A",
+      "b": "GLY113.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:106",
+        "B:113"
+      ],
+      "atoms": [
+        [
+          "CA"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.438,
+      "coordinateDistance": 3.4380764971128843,
+      "points": [
+        [
+          7.859,
+          -0.813,
+          2.389
+        ],
+        [
+          5.744,
+          -2.925,
+          0.69
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR107.A",
+      "b": "GLY113.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:107",
+        "B:113"
+      ],
+      "atoms": [
+        [
+          "CD1"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.435,
+      "coordinateDistance": 3.4345800325512874,
+      "points": [
+        [
+          4.068,
+          -3.333,
+          3.66
+        ],
+        [
+          5.744,
+          -2.925,
+          0.69
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR107.A",
+      "b": "PHE115.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:107",
+        "B:115"
+      ],
+      "atoms": [
+        [
+          "CE1"
+        ],
+        [
+          "O"
+        ]
+      ],
+      "sourceDistance": 3.71,
+      "coordinateDistance": 3.7102586163231264,
+      "points": [
+        [
+          3.858,
+          -4.688,
+          3.459
+        ],
+        [
+          2.467,
+          -6.151,
+          0.346
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR107.A",
+      "b": "GLN116.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:107",
+        "B:116"
+      ],
+      "atoms": [
+        [
+          "OH"
+        ],
+        [
+          "CA"
+        ]
+      ],
+      "sourceDistance": 3.497,
+      "coordinateDistance": 3.496941520815011,
+      "points": [
+        [
+          3.354,
+          -6.842,
+          4.347
+        ],
+        [
+          0.532,
+          -6.696,
+          2.287
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "ARG109.A",
+      "b": "GLN116.B",
+      "category": "VdW Contact",
+      "residues": [
+        "A:109",
+        "B:116"
+      ],
+      "atoms": [
+        [
+          "CZ"
+        ],
+        [
+          "OE1"
+        ]
+      ],
+      "sourceDistance": 3.489,
+      "coordinateDistance": 3.48882745345768,
+      "points": [
+        [
+          1.087,
+          -6.684,
+          8.91
+        ],
+        [
+          -1.015,
+          -5.412,
+          6.433
+        ]
+      ],
+      "method": "atom-pair-matched-to-exported-distance"
+    },
+    {
+      "a": "TYR40.A",
+      "b": "PHE101.B",
+      "category": "π-π Stack",
+      "residues": [
+        "A:40",
+        "B:101"
+      ],
+      "atoms": [
+        [
+          "CG",
+          "CD1",
+          "CD2",
+          "CE1",
+          "CE2",
+          "CZ"
+        ],
+        [
+          "CG",
+          "CD1",
+          "CD2",
+          "CE1",
+          "CE2",
+          "CZ"
+        ]
+      ],
+      "sourceDistance": 5.16,
+      "coordinateDistance": 5.159953504312482,
+      "points": [
+        [
+          -3.1101666666666667,
+          4.908166666666666,
+          3.316333333333333
+        ],
+        [
+          -1.6313333333333333,
+          0.88,
+          0.4506666666666666
+        ]
+      ],
+      "method": "aromatic-ring-centroids"
+    }
+  ]
+}

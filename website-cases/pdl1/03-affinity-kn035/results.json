@@ -1,0 +1,4347 @@
+{
+  "case_id": "03-kn035",
+  "status": "completed_with_model_and_unit_limits",
+  "tasks": [
+    {
+      "purpose": "binding affinity mutation scan on the WT complex",
+      "task_type": "Binding Affinity Mutation Effect",
+      "task_id": "342605020787712",
+      "task_name": "KN035_c03_bindmut_WT_complex",
+      "status": "SUCCEED",
+      "duration_s": 37,
+      "submitted_payload": {
+        "input_structure": "user_objects/123/330665428816896/342604788900864_MMFold_1.cif",
+        "chain_ids": "A,B"
+      },
+      "output": "raw/bindmut/affinity_scores.csv",
+      "output_rows": 4674,
+      "note": "Schema has no mutation-list input, so the scan is exhaustive over both chains: 246 residues x 19 substitutions. Full original table kept unchanged; only chain-B rows used as candidates.",
+      "cross_check": "Output is byte-identical (md5 ddcc858ceb28d60271bf00a2d1e8cd1b) to the native MMetrics autocompute diffaffinity scores for the same object, so this task and the native MMetrics DDG are one and the same model, not two independent methods."
+    },
+    {
+      "purpose": "variant structure prediction - candidate 1",
+      "task_type": "MMFold",
+      "task_id": "342605501072384",
+      "task_name": "KN035_c03_var_A35W",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_A35W.json",
+      "submitted_payload_sha256_pending": null,
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "A35W single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "note": "Variant prediction only. Not a re-do of the main complex.",
+      "duration_s": 210,
+      "raw_dir": "raw/variants/A35W",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_A35W",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMWWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_A35W.json",
+      "best_sample": 1,
+      "best_sample_iptm": 0.6119044423103333,
+      "best_sample_plddt": 86.54154205322266,
+      "confidence_source": "raw summary_confidences JSON independently verified locally"
+    },
+    {
+      "purpose": "variant structure prediction - candidate 2",
+      "task_type": "MMFold",
+      "task_id": "342605511136256",
+      "task_name": "KN035_c03_var_V109L",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_V109L.json",
+      "chain_A": "original 118 aa, unchanged (verified)",
+      "chain_B": "V109L single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "duration_s": 192,
+      "raw_dir": "raw/variants/V109L",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_V109L",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLLTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_V109L.json",
+      "best_sample": 1,
+      "best_sample_iptm": 0.9169299602508545,
+      "best_sample_plddt": 93.63365173339844,
+      "confidence_source": "raw summary_confidences JSON independently verified locally"
+    },
+    {
+      "purpose": "variant structure prediction - candidate 3",
+      "task_type": "MMFold",
+      "task_id": "342605520978944",
+      "task_name": "KN035_c03_var_C33Y",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_C33Y.json",
+      "chain_A": "original 118 aa, unchanged (verified)",
+      "chain_B": "C33Y single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "caveat": "B33 is a disulfide-forming cysteine (SG-SG 2.18 A to B106) in MMFold_1; this variant is predicted on request of the rank order but is chemically a disulfide-ablating variant.",
+      "duration_s": 198,
+      "raw_dir": "raw/variants/C33Y",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_C33Y",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRYMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_C33Y.json",
+      "best_sample": 1,
+      "best_sample_iptm": 0.26021215319633484,
+      "best_sample_plddt": 82.80867004394531,
+      "confidence_source": "raw summary_confidences JSON independently verified locally"
+    },
+    {
+      "purpose": "VOIDED erroneous submission - must not be used",
+      "task_type": "MMFold",
+      "task_id": "342605442536448",
+      "task_name": "KN035_c03_var_A35W",
+      "status": "SUCCEED (task ran) / EXCLUDED FROM ALL ANALYSIS",
+      "reason": "Payload transcribed by hand contained the WT residue at position 35 (no A35W change) and instead substituted the C-terminal S128W. Verified by diff against the library sequence. Superseded by task 342605501072384. Results, if any, are excluded from all analysis.",
+      "verified_diff_vs_WT": [
+        {
+          "position": 128,
+          "wt": "S",
+          "submitted": "W"
+        }
+      ],
+      "exclusion_reason": "Payload carried the WT residue at position 35 and instead substituted C-terminal S128W. Results exist on the platform but are excluded; the task was neither cancelled nor deleted.",
+      "superseded_by": "342605501072384"
+    },
+    {
+      "purpose": "variant structure prediction - interface-priority candidate 2",
+      "task_type": "MMFold",
+      "task_id": "342606341129216",
+      "task_name": "KN035_c03_var_Q116M",
+      "status": "SUCCEED",
+      "duration_s": 120,
+      "submitted_payload_file": "variants/payload_Q116M.json",
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "Q116M single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "raw_dir": "raw/variants/Q116M",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_Q116M",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFMYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_Q116M.json",
+      "best_sample": 1,
+      "best_sample_iptm": 0.9183361530303955,
+      "best_sample_plddt": 93.70343780517578,
+      "confidence_source": "raw summary_confidences JSON independently verified locally"
+    },
+    {
+      "purpose": "variant structure prediction - interface-priority candidate 3",
+      "task_type": "MMFold",
+      "task_id": "342606351508480",
+      "task_name": "KN035_c03_var_T105L",
+      "status": "SUCCEED",
+      "duration_s_at_packaging": 80,
+      "submitted_payload_file": "variants/payload_T105L.json",
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "T105L single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "raw_dir": "raw/variants/T105L",
+      "duration_s": 228,
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_T105L",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPLCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_T105L.json",
+      "best_sample": 1,
+      "best_sample_iptm": 0.900540292263031,
+      "best_sample_plddt": 92.86156463623047,
+      "confidence_source": "raw summary_confidences JSON independently verified locally"
+    }
+  ],
+  "all_score_rows": 4674,
+  "chain_B_substitution_rows": 2432,
+  "metric": {
+    "name": "ddG_pred",
+    "unit": null,
+    "direction": "lower predicts stronger binding relative to WT",
+    "direction_source": "inferred from output score_ddg=-ddG_pred and ranking; unit is undocumented",
+    "experimental": false
+  },
+  "candidates_top10_allB": [
+    {
+      "mutation": "A35W",
+      "chain": "B",
+      "label_seq_id": 35,
+      "wild_type": "A",
+      "mutant": "W",
+      "ddG_pred_raw": "-1.7464554",
+      "ddG_pred": -1.7464554,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.7464554",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 3,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972742325_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972835327_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972927676_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973022478_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973115226_model_sample_3.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 1,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "V109L",
+      "chain": "B",
+      "label_seq_id": 109,
+      "wild_type": "V",
+      "mutant": "L",
+      "ddG_pred_raw": "-1.6510735",
+      "ddG_pred": -1.6510735,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.6510735",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        99,
+        101
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971300539_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971415598_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971535343_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971653076_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971766289_model_sample_3.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 2,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "A35Y",
+      "chain": "B",
+      "label_seq_id": 35,
+      "wild_type": "A",
+      "mutant": "Y",
+      "ddG_pred_raw": "-1.5832196",
+      "ddG_pred": -1.5832196,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.5832196",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 3,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 3,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "A35F",
+      "chain": "B",
+      "label_seq_id": 35,
+      "wild_type": "A",
+      "mutant": "F",
+      "ddG_pred_raw": "-1.5236144",
+      "ddG_pred": -1.5236144,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.5236144",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 3,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 4,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "V109W",
+      "chain": "B",
+      "label_seq_id": 109,
+      "wild_type": "V",
+      "mutant": "W",
+      "ddG_pred_raw": "-1.5057821",
+      "ddG_pred": -1.5057821,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.5057821",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        99,
+        101
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 5,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "C33Y",
+      "chain": "B",
+      "label_seq_id": 33,
+      "wild_type": "C",
+      "mutant": "Y",
+      "ddG_pred_raw": "-1.4980912",
+      "ddG_pred": -1.4980912,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4980912",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 1,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": true,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971844525_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971940989_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972032012_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972128443_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972218130_model_sample_5.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 6,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "Q116M",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "M",
+      "ddG_pred_raw": "-1.4936166",
+      "ddG_pred": -1.4936166,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4936166",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984099951_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984204151_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984303593_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984401177_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984501258_model_sample_4.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 7,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "A97F",
+      "chain": "B",
+      "label_seq_id": 97,
+      "wild_type": "A",
+      "mutant": "F",
+      "ddG_pred_raw": "-1.4836845",
+      "ddG_pred": -1.4836845,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4836845",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 2,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 8,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "A35S",
+      "chain": "B",
+      "label_seq_id": 35,
+      "wild_type": "A",
+      "mutant": "S",
+      "ddG_pred_raw": "-1.4654148",
+      "ddG_pred": -1.4654148,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4654148",
+      "native_paratope": false,
+      "sequence_distance_to_paratope": 3,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 9,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116K",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "K",
+      "ddG_pred_raw": "-1.4106131",
+      "ddG_pred": -1.4106131,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4106131",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 10,
+      "prediction_completed": false
+    }
+  ],
+  "candidates_top10_interface": [
+    {
+      "mutation": "V109L",
+      "chain": "B",
+      "label_seq_id": 109,
+      "wild_type": "V",
+      "mutant": "L",
+      "ddG_pred_raw": "-1.6510735",
+      "ddG_pred": -1.6510735,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.6510735",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        99,
+        101
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971300539_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971415598_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971535343_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971653076_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971766289_model_sample_3.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 2,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "V109W",
+      "chain": "B",
+      "label_seq_id": 109,
+      "wild_type": "V",
+      "mutant": "W",
+      "ddG_pred_raw": "-1.5057821",
+      "ddG_pred": -1.5057821,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.5057821",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        99,
+        101
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 5,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116M",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "M",
+      "ddG_pred_raw": "-1.4936166",
+      "ddG_pred": -1.4936166,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4936166",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984099951_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984204151_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984303593_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984401177_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984501258_model_sample_4.cif"
+      ],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 7,
+      "prediction_completed": true
+    },
+    {
+      "mutation": "Q116K",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "K",
+      "ddG_pred_raw": "-1.4106131",
+      "ddG_pred": -1.4106131,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4106131",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 10,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116L",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "L",
+      "ddG_pred_raw": "-1.4014784",
+      "ddG_pred": -1.4014784,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4014784",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 11,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116C",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "C",
+      "ddG_pred_raw": "-1.3289425",
+      "ddG_pred": -1.3289425,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.3289425",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 13,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116E",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "E",
+      "ddG_pred_raw": "-1.2501823",
+      "ddG_pred": -1.2501823,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.2501823",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 14,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116V",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "V",
+      "ddG_pred_raw": "-1.2034042",
+      "ddG_pred": -1.2034042,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.2034042",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 17,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116D",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "D",
+      "ddG_pred_raw": "-1.17819",
+      "ddG_pred": -1.17819,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.17819",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 20,
+      "prediction_completed": false
+    },
+    {
+      "mutation": "Q116W",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "W",
+      "ddG_pred_raw": "-1.1747804",
+      "ddG_pred": -1.1747804,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.1747804",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 22,
+      "prediction_completed": false
+    }
+  ],
+  "candidate_files": [
+    "raw/candidates-all-chain-B.json",
+    "raw/candidates-interface-priority.json"
+  ],
+  "native_paratope_source": "02-mmetrics-kn035/residues-on-mmfold1.json",
+  "variant_models": [
+    {
+      "mutation": "A35W",
+      "task_id": "342605501072384",
+      "ddG_pred": -1.7464554,
+      "ddG_pred_raw": "-1.7464554",
+      "affinity_unit": null,
+      "best_sample_selection": "highest raw ranking_score",
+      "best_sample": 1,
+      "best_structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972742325_model_sample_1.cif",
+      "best_aligned_structure": "03-affinity-kn035/raw/local/variants/A35W_best_A_aligned.cif",
+      "best_confidence_raw": {
+        "plddt": 86.54154205322266,
+        "ptm": 0.7357651591300964,
+        "iptm": 0.6119044423103333,
+        "chain_ptm": [
+          0.9336773157119751,
+          0.8997885584831238
+        ],
+        "chain_iptm": [
+          0.6119044423103333,
+          0.6119044423103333
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.6119044423103333
+          ],
+          [
+            0.6119044423103333,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.8867475390434265,
+          0.8446747064590454
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.8654153943061829
+          ],
+          [
+            0.8654153943061829,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.6366766095161438,
+        "abag_score": 0.6119044423103333
+      },
+      "samples": [
+        {
+          "mutation": "A35W",
+          "task_id": "342605501072384",
+          "sample": 1,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972742325_model_sample_1.cif",
+          "structure_sha256": "2fd062affaa97799100957f73da868d32ccc1bab221cb214242f0e42cd57c548",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/summary_confidences_sample_1.json",
+          "confidence_raw": {
+            "plddt": 86.54154205322266,
+            "ptm": 0.7357651591300964,
+            "iptm": 0.6119044423103333,
+            "chain_ptm": [
+              0.9336773157119751,
+              0.8997885584831238
+            ],
+            "chain_iptm": [
+              0.6119044423103333,
+              0.6119044423103333
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.6119044423103333
+              ],
+              [
+                0.6119044423103333,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8867475390434265,
+              0.8446747064590454
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8654153943061829
+              ],
+              [
+                0.8654153943061829,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.6366766095161438,
+            "abag_score": 0.6119044423103333
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 35,
+              "WT": "A",
+              "mutant": "W"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.4813594897386263,
+            "binder_B_CA_RMSD_after_A_alignment_A": 26.297733306884766,
+            "native_epitope_CA_RMSD_A": 0.5264886021614075,
+            "native_paratope_CA_RMSD_A": 15.862717628479004,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              47,
+              50,
+              60,
+              62,
+              63,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 38
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "A35W",
+          "task_id": "342605501072384",
+          "sample": 2,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972835327_model_sample_2.cif",
+          "structure_sha256": "9ccd785f3ef867fb1db17b5f3c97ff154b19f993148269c3a44b027591602ba4",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/summary_confidences_sample_2.json",
+          "confidence_raw": {
+            "plddt": 82.0645523071289,
+            "ptm": 0.5816121697425842,
+            "iptm": 0.2574630081653595,
+            "chain_ptm": [
+              0.9255243539810181,
+              0.8845903873443604
+            ],
+            "chain_iptm": [
+              0.2574630081653595,
+              0.2574630081653595
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.2574630081653595
+              ],
+              [
+                0.2574630081653595,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8377941250801086,
+              0.8039723038673401
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8206455111503601
+              ],
+              [
+                0.8206455111503601,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.32229283452033997,
+            "abag_score": 0.2574630081653595
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 35,
+              "WT": "A",
+              "mutant": "W"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6000883971894573,
+            "binder_B_CA_RMSD_after_A_alignment_A": 7.072414398193359,
+            "native_epitope_CA_RMSD_A": 0.819327712059021,
+            "native_paratope_CA_RMSD_A": 5.796133995056152,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              40,
+              42,
+              44,
+              45,
+              46,
+              47,
+              50,
+              60,
+              97,
+              99,
+              101,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 45
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "A35W",
+          "task_id": "342605501072384",
+          "sample": 4,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972927676_model_sample_4.cif",
+          "structure_sha256": "f7084d12e4544f2fa58e82abe820cc99e28bce0427b5b106ff22861605adc7ec",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/summary_confidences_sample_4.json",
+          "confidence_raw": {
+            "plddt": 86.62464904785156,
+            "ptm": 0.7374711632728577,
+            "iptm": 0.6109943985939026,
+            "chain_ptm": [
+              0.9343488216400146,
+              0.9019479751586914
+            ],
+            "chain_iptm": [
+              0.6109943985939026,
+              0.6109943985939026
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.6109943985939026
+              ],
+              [
+                0.6109943985939026,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8871399164199829,
+              0.8459320664405823
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8662464618682861
+              ],
+              [
+                0.8662464618682861,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.6362897753715515,
+            "abag_score": 0.6109943985939026
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 35,
+              "WT": "A",
+              "mutant": "W"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.7756247327849489,
+            "binder_B_CA_RMSD_after_A_alignment_A": 25.235837936401367,
+            "native_epitope_CA_RMSD_A": 0.4857483208179474,
+            "native_paratope_CA_RMSD_A": 16.236034393310547,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              46,
+              47,
+              50,
+              60,
+              62,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 38
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "A35W",
+          "task_id": "342605501072384",
+          "sample": 5,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973022478_model_sample_5.cif",
+          "structure_sha256": "903a694ede022c12ab98d84fc194ec5eaf98aa9020b200c701ff1c31c2c7bd1f",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/summary_confidences_sample_5.json",
+          "confidence_raw": {
+            "plddt": 86.5507583618164,
+            "ptm": 0.7377253174781799,
+            "iptm": 0.6090994477272034,
+            "chain_ptm": [
+              0.934333324432373,
+              0.9006454944610596
+            ],
+            "chain_iptm": [
+              0.6090994477272034,
+              0.6090994477272034
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.6090994477272034
+              ],
+              [
+                0.6090994477272034,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8870092034339905,
+              0.8446019887924194
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8655076026916504
+              ],
+              [
+                0.8655076026916504,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.6348246335983276,
+            "abag_score": 0.6090994477272034
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 35,
+              "WT": "A",
+              "mutant": "W"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.4610484209151799,
+            "binder_B_CA_RMSD_after_A_alignment_A": 25.63722801208496,
+            "native_epitope_CA_RMSD_A": 0.3545277714729309,
+            "native_paratope_CA_RMSD_A": 16.232175827026367,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              44,
+              45,
+              47,
+              50,
+              60,
+              62,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 40
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "A35W",
+          "task_id": "342605501072384",
+          "sample": 3,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973115226_model_sample_3.cif",
+          "structure_sha256": "788c207509bbe0ad82e314f5dd75434326dba544321a781bd504037480bc37dc",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/summary_confidences_sample_3.json",
+          "confidence_raw": {
+            "plddt": 81.72850799560547,
+            "ptm": 0.5712359547615051,
+            "iptm": 0.2303738296031952,
+            "chain_ptm": [
+              0.9265933036804199,
+              0.871447741985321
+            ],
+            "chain_iptm": [
+              0.2303738296031952,
+              0.2303738296031952
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.2303738296031952
+              ],
+              [
+                0.2303738296031952,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8465051651000977,
+              0.7888749241828918
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8172850608825684
+              ],
+              [
+                0.8172850608825684,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.2985462546348572,
+            "abag_score": 0.2303738296031952
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 35,
+              "WT": "A",
+              "mutant": "W"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.9233072189053747,
+            "binder_B_CA_RMSD_after_A_alignment_A": 53.954322814941406,
+            "native_epitope_CA_RMSD_A": 0.5716687440872192,
+            "native_paratope_CA_RMSD_A": 34.53550338745117,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 116,
+                "aa": "A",
+                "minimum_heavy_atom_distance_A": 3.949075698852539
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              13,
+              16,
+              44,
+              89,
+              90,
+              91,
+              93,
+              94,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118
+            ],
+            "residue_contact_pairs_4_5_A": 37
+          },
+          "disulfide_breaking": false
+        }
+      ],
+      "sample_count": 5,
+      "sample_ipTM_range": [
+        0.2303738296031952,
+        0.6119044423103333
+      ],
+      "experimental": false,
+      "disulfide_breaking": false
+    },
+    {
+      "mutation": "V109L",
+      "task_id": "342605511136256",
+      "ddG_pred": -1.6510735,
+      "ddG_pred_raw": "-1.6510735",
+      "affinity_unit": null,
+      "best_sample_selection": "highest raw ranking_score",
+      "best_sample": 1,
+      "best_structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971300539_model_sample_1.cif",
+      "best_aligned_structure": "03-affinity-kn035/raw/local/variants/V109L_best_A_aligned.cif",
+      "best_confidence_raw": {
+        "plddt": 93.63365173339844,
+        "ptm": 0.9403924942016602,
+        "iptm": 0.9169299602508545,
+        "chain_ptm": [
+          0.9449557065963745,
+          0.9605855345726013
+        ],
+        "chain_iptm": [
+          0.9169299602508545,
+          0.9169299602508545
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.9169299602508545
+          ],
+          [
+            0.9169299602508545,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9287843704223633,
+          0.9437402486801147
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9363365173339844
+          ],
+          [
+            0.9363365173339844,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.9216225147247314,
+        "abag_score": 0.9169299602508545
+      },
+      "samples": [
+        {
+          "mutation": "V109L",
+          "task_id": "342605511136256",
+          "sample": 1,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971300539_model_sample_1.cif",
+          "structure_sha256": "404d195b0def5c022d9cac1e6b59a50e9293af0fa83226aeae6cc8cd6ad9d01e",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/summary_confidences_sample_1.json",
+          "confidence_raw": {
+            "plddt": 93.63365173339844,
+            "ptm": 0.9403924942016602,
+            "iptm": 0.9169299602508545,
+            "chain_ptm": [
+              0.9449557065963745,
+              0.9605855345726013
+            ],
+            "chain_iptm": [
+              0.9169299602508545,
+              0.9169299602508545
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.9169299602508545
+              ],
+              [
+                0.9169299602508545,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.9287843704223633,
+              0.9437402486801147
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9363365173339844
+              ],
+              [
+                0.9363365173339844,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9216225147247314,
+            "abag_score": 0.9169299602508545
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 109,
+              "WT": "V",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.2817156609614996,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.8598335981369019,
+            "native_epitope_CA_RMSD_A": 0.12767727673053741,
+            "native_paratope_CA_RMSD_A": 0.25418633222579956,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.263396739959717
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.5435609817504883
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 3.5821733474731445
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.167301177978516
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4654908180236816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 4.278552532196045
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 46
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "V109L",
+          "task_id": "342605511136256",
+          "sample": 2,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971415598_model_sample_2.cif",
+          "structure_sha256": "c621c73dead010151bd04b08cb3f4752313b831498f4f2e99568ec4c34e7cd74",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/summary_confidences_sample_2.json",
+          "confidence_raw": {
+            "plddt": 85.74815368652344,
+            "ptm": 0.6500416398048401,
+            "iptm": 0.3497409224510193,
+            "chain_ptm": [
+              0.9246593713760376,
+              0.935640275478363
+            ],
+            "chain_iptm": [
+              0.3497409224510193,
+              0.3497409224510193
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.3497409224510193
+              ],
+              [
+                0.3497409224510193,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8514963984489441,
+              0.8633490800857544
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8574815392494202
+              ],
+              [
+                0.8574815392494202,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.40980106592178345,
+            "abag_score": 0.3497409224510193
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 109,
+              "WT": "V",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.5682018448593127,
+            "binder_B_CA_RMSD_after_A_alignment_A": 24.27336311340332,
+            "native_epitope_CA_RMSD_A": 0.5695403814315796,
+            "native_paratope_CA_RMSD_A": 17.020906448364258,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.2401504516601562
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 4.300192832946777
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4531912803649902
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.167301177978516
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4654908180236816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 4.278552532196045
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              44,
+              45,
+              46,
+              47,
+              50,
+              52,
+              53,
+              60,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 43
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "V109L",
+          "task_id": "342605511136256",
+          "sample": 4,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971535343_model_sample_4.cif",
+          "structure_sha256": "89a861004b1a3ccbc92f9ae0033680afd7c0e7b7d36ea931ed8559855988c19b",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/summary_confidences_sample_4.json",
+          "confidence_raw": {
+            "plddt": 85.83393096923828,
+            "ptm": 0.6460564732551575,
+            "iptm": 0.34592339396476746,
+            "chain_ptm": [
+              0.924082338809967,
+              0.9361937642097473
+            ],
+            "chain_iptm": [
+              0.34592339396476746,
+              0.34592339396476746
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.34592339396476746
+              ],
+              [
+                0.34592339396476746,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8517348170280457,
+              0.864814043045044
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8583393096923828
+              ],
+              [
+                0.8583393096923828,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.40595000982284546,
+            "abag_score": 0.34592339396476746
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 109,
+              "WT": "V",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6718937799780533,
+            "binder_B_CA_RMSD_after_A_alignment_A": 9.765997886657715,
+            "native_epitope_CA_RMSD_A": 0.793980062007904,
+            "native_paratope_CA_RMSD_A": 5.714372634887695,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.7691471576690674
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.167301177978516
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4654908180236816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 4.278552532196045
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              44,
+              45,
+              47,
+              50,
+              52,
+              60,
+              97,
+              99,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 40
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "V109L",
+          "task_id": "342605511136256",
+          "sample": 5,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971653076_model_sample_5.cif",
+          "structure_sha256": "8e9406d3f4f65ef41c047cc53147760a20515261242298b2ac9267c52411f26a",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/summary_confidences_sample_5.json",
+          "confidence_raw": {
+            "plddt": 85.76707458496094,
+            "ptm": 0.649995744228363,
+            "iptm": 0.34494805335998535,
+            "chain_ptm": [
+              0.924017608165741,
+              0.9354795813560486
+            ],
+            "chain_iptm": [
+              0.34494805335998535,
+              0.34494805335998535
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.34494805335998535
+              ],
+              [
+                0.34494805335998535,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8519921898841858,
+              0.8632376790046692
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8576707243919373
+              ],
+              [
+                0.8576707243919373,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.40595757961273193,
+            "abag_score": 0.34494805335998535
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 109,
+              "WT": "V",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.873506773920315,
+            "binder_B_CA_RMSD_after_A_alignment_A": 26.729951858520508,
+            "native_epitope_CA_RMSD_A": 0.49078983068466187,
+            "native_paratope_CA_RMSD_A": 17.231842041015625,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 2.799804925918579
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.53309965133667
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.167301177978516
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4654908180236816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 4.278552532196045
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              46,
+              47,
+              50,
+              52,
+              59,
+              60,
+              61,
+              62,
+              63,
+              66,
+              97,
+              99,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 39
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "V109L",
+          "task_id": "342605511136256",
+          "sample": 3,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971766289_model_sample_3.cif",
+          "structure_sha256": "fd705e6e44436232b7be53da9f4572253a1a2bf33a8768470cb785ee538a6a68",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/summary_confidences_sample_3.json",
+          "confidence_raw": {
+            "plddt": 85.72805786132812,
+            "ptm": 0.6505645513534546,
+            "iptm": 0.3479505181312561,
+            "chain_ptm": [
+              0.9244852662086487,
+              0.9354584217071533
+            ],
+            "chain_iptm": [
+              0.3479505181312561,
+              0.3479505181312561
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.3479505181312561
+              ],
+              [
+                0.3479505181312561,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8517151474952698,
+              0.8627365827560425
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8572805523872375
+              ],
+              [
+                0.8572805523872375,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.40847334265708923,
+            "abag_score": 0.3479505181312561
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 109,
+              "WT": "V",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6731261352966137,
+            "binder_B_CA_RMSD_after_A_alignment_A": 26.119382858276367,
+            "native_epitope_CA_RMSD_A": 0.5683649182319641,
+            "native_paratope_CA_RMSD_A": 17.205568313598633,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.615827798843384
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.5038411617279053
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 4.167301177978516
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.4654908180236816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 101,
+                "aa": "S",
+                "minimum_heavy_atom_distance_A": 4.278552532196045
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              46,
+              47,
+              50,
+              52,
+              53,
+              59,
+              60,
+              61,
+              62,
+              63,
+              97,
+              99,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 42
+          },
+          "disulfide_breaking": false
+        }
+      ],
+      "sample_count": 5,
+      "sample_ipTM_range": [
+        0.34494805335998535,
+        0.9169299602508545
+      ],
+      "experimental": false,
+      "disulfide_breaking": false
+    },
+    {
+      "mutation": "C33Y",
+      "task_id": "342605520978944",
+      "ddG_pred": -1.4980912,
+      "ddG_pred_raw": "-1.4980912",
+      "affinity_unit": null,
+      "best_sample_selection": "highest raw ranking_score",
+      "best_sample": 1,
+      "best_structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971940989_model_sample_1.cif",
+      "best_aligned_structure": "03-affinity-kn035/raw/local/variants/C33Y_best_A_aligned.cif",
+      "best_confidence_raw": {
+        "plddt": 82.80867004394531,
+        "ptm": 0.5986561179161072,
+        "iptm": 0.26021215319633484,
+        "chain_ptm": [
+          0.9236128330230713,
+          0.9026032090187073
+        ],
+        "chain_iptm": [
+          0.26021215319633484,
+          0.26021215319633484
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.26021215319633484
+          ],
+          [
+            0.26021215319633484,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.8328420519828796,
+          0.8234488368034363
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.8280866742134094
+          ],
+          [
+            0.8280866742134094,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.3279009461402893,
+        "abag_score": 0.26021215319633484
+      },
+      "samples": [
+        {
+          "mutation": "C33Y",
+          "task_id": "342605520978944",
+          "sample": 3,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971844525_model_sample_3.cif",
+          "structure_sha256": "95af38ef11d8349ed2e4754d47d9353a067a6f8620c4a2da62b7197a7414737e",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/summary_confidences_sample_3.json",
+          "confidence_raw": {
+            "plddt": 82.76358032226562,
+            "ptm": 0.5945624709129333,
+            "iptm": 0.25199806690216064,
+            "chain_ptm": [
+              0.9237557053565979,
+              0.9020299315452576
+            ],
+            "chain_iptm": [
+              0.25199806690216064,
+              0.25199806690216064
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.25199806690216064
+              ],
+              [
+                0.25199806690216064,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8316982984542847,
+              0.823673665523529
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8276357650756836
+              ],
+              [
+                0.8276357650756836,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.32051095366477966,
+            "abag_score": 0.25199806690216064
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 33,
+              "WT": "C",
+              "mutant": "Y"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6095397988242908,
+            "binder_B_CA_RMSD_after_A_alignment_A": 14.03059196472168,
+            "native_epitope_CA_RMSD_A": 0.6976739764213562,
+            "native_paratope_CA_RMSD_A": 13.43030071258545,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.174363851547241
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 43,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 4.475029945373535
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 44,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 2.105679988861084
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 45,
+                "aa": "D",
+                "minimum_heavy_atom_distance_A": 3.582385778427124
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 46,
+                "aa": "K",
+                "minimum_heavy_atom_distance_A": 3.6818015575408936
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 4.472700595855713
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              40,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              50,
+              52,
+              57,
+              60,
+              95,
+              97,
+              99,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 49
+          },
+          "disulfide_breaking": true
+        },
+        {
+          "mutation": "C33Y",
+          "task_id": "342605520978944",
+          "sample": 1,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971940989_model_sample_1.cif",
+          "structure_sha256": "0e57f7317fd117a7a5ab27b40120c971560f4b8ee4c529ca7ac5d3c224581b68",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/summary_confidences_sample_1.json",
+          "confidence_raw": {
+            "plddt": 82.80867004394531,
+            "ptm": 0.5986561179161072,
+            "iptm": 0.26021215319633484,
+            "chain_ptm": [
+              0.9236128330230713,
+              0.9026032090187073
+            ],
+            "chain_iptm": [
+              0.26021215319633484,
+              0.26021215319633484
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.26021215319633484
+              ],
+              [
+                0.26021215319633484,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8328420519828796,
+              0.8234488368034363
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8280866742134094
+              ],
+              [
+                0.8280866742134094,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.3279009461402893,
+            "abag_score": 0.26021215319633484
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 33,
+              "WT": "C",
+              "mutant": "Y"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.8534955135382221,
+            "binder_B_CA_RMSD_after_A_alignment_A": 25.151643753051758,
+            "native_epitope_CA_RMSD_A": 0.8264737725257874,
+            "native_paratope_CA_RMSD_A": 17.096027374267578,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              40,
+              42,
+              44,
+              45,
+              46,
+              47,
+              50,
+              59,
+              60,
+              61,
+              62,
+              63,
+              66,
+              95,
+              97,
+              99,
+              105,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 47
+          },
+          "disulfide_breaking": true
+        },
+        {
+          "mutation": "C33Y",
+          "task_id": "342605520978944",
+          "sample": 2,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972032012_model_sample_2.cif",
+          "structure_sha256": "294db5f56c20a2da6e1821625e042c8443d5dca908f1f132c0ddc50410a90719",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/summary_confidences_sample_2.json",
+          "confidence_raw": {
+            "plddt": 82.9013442993164,
+            "ptm": 0.5916221737861633,
+            "iptm": 0.2571043372154236,
+            "chain_ptm": [
+              0.9236686825752258,
+              0.9016245603561401
+            ],
+            "chain_iptm": [
+              0.2571043372154236,
+              0.2571043372154236
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.2571043372154236
+              ],
+              [
+                0.2571043372154236,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.834063708782196,
+              0.8240881562232971
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.829013466835022
+              ],
+              [
+                0.829013466835022,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.32400789856910706,
+            "abag_score": 0.2571043372154236
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 33,
+              "WT": "C",
+              "mutant": "Y"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.5040835043329936,
+            "binder_B_CA_RMSD_after_A_alignment_A": 33.395442962646484,
+            "native_epitope_CA_RMSD_A": 0.8018581867218018,
+            "native_paratope_CA_RMSD_A": 13.45584487915039,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              40,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              50,
+              59,
+              60,
+              63,
+              95,
+              97,
+              99,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 45
+          },
+          "disulfide_breaking": true
+        },
+        {
+          "mutation": "C33Y",
+          "task_id": "342605520978944",
+          "sample": 4,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972128443_model_sample_4.cif",
+          "structure_sha256": "c7efbf7f65d573db8bcfba9aa179e0a722397ff77abecd4dad8b2dbda0f0dd41",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/summary_confidences_sample_4.json",
+          "confidence_raw": {
+            "plddt": 82.43423461914062,
+            "ptm": 0.5777827501296997,
+            "iptm": 0.22346243262290955,
+            "chain_ptm": [
+              0.9220119714736938,
+              0.8964270353317261
+            ],
+            "chain_iptm": [
+              0.22346243262290955,
+              0.22346243262290955
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.22346243262290955
+              ],
+              [
+                0.22346243262290955,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8309715986251831,
+              0.8178769946098328
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8243423700332642
+              ],
+              [
+                0.8243423700332642,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.2943264842033386,
+            "abag_score": 0.22346243262290955
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 33,
+              "WT": "C",
+              "mutant": "Y"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6618694529750128,
+            "binder_B_CA_RMSD_after_A_alignment_A": 28.951641082763672,
+            "native_epitope_CA_RMSD_A": 0.49067041277885437,
+            "native_paratope_CA_RMSD_A": 14.829747200012207,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              40,
+              42,
+              45,
+              47,
+              50,
+              59,
+              60,
+              61,
+              62,
+              63,
+              97,
+              99,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 36
+          },
+          "disulfide_breaking": true
+        },
+        {
+          "mutation": "C33Y",
+          "task_id": "342605520978944",
+          "sample": 5,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972218130_model_sample_5.cif",
+          "structure_sha256": "91516ae5dabd8c89145b2e43c527fb0c16068858d816d05c25e378155d6cbaa9",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/summary_confidences_sample_5.json",
+          "confidence_raw": {
+            "plddt": 82.20307922363281,
+            "ptm": 0.5728323459625244,
+            "iptm": 0.21736952662467957,
+            "chain_ptm": [
+              0.9226690530776978,
+              0.8927942514419556
+            ],
+            "chain_iptm": [
+              0.21736952662467957,
+              0.21736952662467957
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.21736952662467957
+              ],
+              [
+                0.21736952662467957,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.828697144985199,
+              0.8155291676521301
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.822030782699585
+              ],
+              [
+                0.822030782699585,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.2884621024131775,
+            "abag_score": 0.21736952662467957
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 33,
+              "WT": "C",
+              "mutant": "Y"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.8303904029209306,
+            "binder_B_CA_RMSD_after_A_alignment_A": 32.87437438964844,
+            "native_epitope_CA_RMSD_A": 0.5018182396888733,
+            "native_paratope_CA_RMSD_A": 29.403921127319336,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 91,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.3976762294769287
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [],
+            "target_contact_label_seq_ids": [
+              13,
+              16,
+              43,
+              44,
+              45,
+              46,
+              62,
+              64,
+              90,
+              91,
+              93,
+              94,
+              95,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117
+            ],
+            "residue_contact_pairs_4_5_A": 39
+          },
+          "disulfide_breaking": true
+        }
+      ],
+      "sample_count": 5,
+      "sample_ipTM_range": [
+        0.21736952662467957,
+        0.26021215319633484
+      ],
+      "experimental": false,
+      "disulfide_breaking": true
+    },
+    {
+      "mutation": "Q116M",
+      "task_id": "342606341129216",
+      "ddG_pred": -1.4936166,
+      "ddG_pred_raw": "-1.4936166",
+      "affinity_unit": null,
+      "best_sample_selection": "highest raw ranking_score",
+      "best_sample": 1,
+      "best_structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984099951_model_sample_1.cif",
+      "best_aligned_structure": "03-affinity-kn035/raw/local/variants/Q116M_best_A_aligned.cif",
+      "best_confidence_raw": {
+        "plddt": 93.70343780517578,
+        "ptm": 0.9389172792434692,
+        "iptm": 0.9183361530303955,
+        "chain_ptm": [
+          0.9447889924049377,
+          0.9586281776428223
+        ],
+        "chain_iptm": [
+          0.9183361530303955,
+          0.9183361530303955
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.9183361530303955
+          ],
+          [
+            0.9183361530303955,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9290512800216675,
+          0.9448767900466919
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9370343685150146
+          ],
+          [
+            0.9370343685150146,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.9224523901939392,
+        "abag_score": 0.9183361530303955
+      },
+      "samples": [
+        {
+          "mutation": "Q116M",
+          "task_id": "342606341129216",
+          "sample": 1,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984099951_model_sample_1.cif",
+          "structure_sha256": "38f0bd24685329a29a7ebcbe5075affa5808430df011e0ee430c92abbba68d57",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/summary_confidences_sample_1.json",
+          "confidence_raw": {
+            "plddt": 93.70343780517578,
+            "ptm": 0.9389172792434692,
+            "iptm": 0.9183361530303955,
+            "chain_ptm": [
+              0.9447889924049377,
+              0.9586281776428223
+            ],
+            "chain_iptm": [
+              0.9183361530303955,
+              0.9183361530303955
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.9183361530303955
+              ],
+              [
+                0.9183361530303955,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.9290512800216675,
+              0.9448767900466919
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9370343685150146
+              ],
+              [
+                0.9370343685150146,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9224523901939392,
+            "abag_score": 0.9183361530303955
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 116,
+              "WT": "Q",
+              "mutant": "M"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 1.2816875243019745,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.7904636859893799,
+            "native_epitope_CA_RMSD_A": 0.2155962884426117,
+            "native_paratope_CA_RMSD_A": 0.2826521396636963,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.408365488052368
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4240643978118896
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.0558910369873047
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.9417924880981445
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.009229898452759
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4969418048858643
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 2.523820400238037
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 46
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "Q116M",
+          "task_id": "342606341129216",
+          "sample": 5,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984204151_model_sample_5.cif",
+          "structure_sha256": "5da698f53689e095088f69aaa2bb2fdc3dda8f57aff737fd2c615e4e9925a2a5",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/summary_confidences_sample_5.json",
+          "confidence_raw": {
+            "plddt": 93.70999145507812,
+            "ptm": 0.9388936161994934,
+            "iptm": 0.9179903268814087,
+            "chain_ptm": [
+              0.9445027709007263,
+              0.9587043523788452
+            ],
+            "chain_iptm": [
+              0.9179903268814087,
+              0.9179903268814087
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.9179903268814087
+              ],
+              [
+                0.9179903268814087,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.929034411907196,
+              0.945023238658905
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9370999336242676
+              ],
+              [
+                0.9370999336242676,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9221709966659546,
+            "abag_score": 0.9179903268814087
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 116,
+              "WT": "Q",
+              "mutant": "M"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.7722569384138406,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.3884231746196747,
+            "native_epitope_CA_RMSD_A": 0.2465529441833496,
+            "native_paratope_CA_RMSD_A": 0.30884650349617004,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.2952630519866943
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.3652398586273193
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 4.368896484375
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.9417924880981445
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.009229898452759
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4969418048858643
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 2.523820400238037
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              44,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 47
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "Q116M",
+          "task_id": "342606341129216",
+          "sample": 2,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984303593_model_sample_2.cif",
+          "structure_sha256": "92ec8fa46d582f916e5251fec278d8cbb0e596dab2a7c28509151411eb4b3736",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/summary_confidences_sample_2.json",
+          "confidence_raw": {
+            "plddt": 88.9281997680664,
+            "ptm": 0.8569747805595398,
+            "iptm": 0.7773920297622681,
+            "chain_ptm": [
+              0.9348592758178711,
+              0.9197500348091125
+            ],
+            "chain_iptm": [
+              0.7773920297622681,
+              0.7773920297622681
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.7773920297622681
+              ],
+              [
+                0.7773920297622681,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.9000301957130432,
+              0.8787234425544739
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8892819881439209
+              ],
+              [
+                0.8892819881439209,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.7933085560798645,
+            "abag_score": 0.7773920297622681
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 116,
+              "WT": "Q",
+              "mutant": "M"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.5179847197464392,
+            "binder_B_CA_RMSD_after_A_alignment_A": 23.94999885559082,
+            "native_epitope_CA_RMSD_A": 0.6196795701980591,
+            "native_paratope_CA_RMSD_A": 15.607263565063477,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.9417924880981445
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.009229898452759
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4969418048858643
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 2.523820400238037
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              50,
+              95,
+              96,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 38
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "Q116M",
+          "task_id": "342606341129216",
+          "sample": 3,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984401177_model_sample_3.cif",
+          "structure_sha256": "623220c3e350f2f8ed578169ae4349d02d22cfd0989b2017e110653c775bb8d2",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/summary_confidences_sample_3.json",
+          "confidence_raw": {
+            "plddt": 86.89276885986328,
+            "ptm": 0.6809191107749939,
+            "iptm": 0.4210948944091797,
+            "chain_ptm": [
+              0.9348008632659912,
+              0.9393224716186523
+            ],
+            "chain_iptm": [
+              0.4210948944091797,
+              0.4210948944091797
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.4210948944091797
+              ],
+              [
+                0.4210948944091797,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.8665056228637695,
+              0.8713071942329407
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.8689277172088623
+              ],
+              [
+                0.8689277172088623,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.473059743642807,
+            "abag_score": 0.4210948944091797
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 116,
+              "WT": "Q",
+              "mutant": "M"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.7473571315359288,
+            "binder_B_CA_RMSD_after_A_alignment_A": 24.00236701965332,
+            "native_epitope_CA_RMSD_A": 0.326596736907959,
+            "native_paratope_CA_RMSD_A": 16.15561866760254,
+            "mutation_facing_PDL1_residues_within_4_5_A": [],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.9417924880981445
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.009229898452759
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4969418048858643
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 2.523820400238037
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              39,
+              40,
+              42,
+              45,
+              50,
+              51,
+              52,
+              97,
+              99,
+              100,
+              101,
+              105,
+              106,
+              107
+            ],
+            "residue_contact_pairs_4_5_A": 26
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "Q116M",
+          "task_id": "342606341129216",
+          "sample": 4,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984501258_model_sample_4.cif",
+          "structure_sha256": "8371c7932bfc0edb20986426ec335f13682997c12ce1a6a8d727c77359afa3d6",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/summary_confidences_sample_4.json",
+          "confidence_raw": {
+            "plddt": 93.70951080322266,
+            "ptm": 0.9390835165977478,
+            "iptm": 0.9180761575698853,
+            "chain_ptm": [
+              0.9447411298751831,
+              0.9586847424507141
+            ],
+            "chain_iptm": [
+              0.9180761575698853,
+              0.9180761575698853
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.9180761575698853
+              ],
+              [
+                0.9180761575698853,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.929087221622467,
+              0.9449617862701416
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9370951056480408
+              ],
+              [
+                0.9370951056480408,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9222776889801025,
+            "abag_score": 0.9180761575698853
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 116,
+              "WT": "Q",
+              "mutant": "M"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.8353900584350115,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.7737313508987427,
+            "native_epitope_CA_RMSD_A": 0.14178070425987244,
+            "native_paratope_CA_RMSD_A": 0.3347763121128082,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.3601231575012207
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.5209052562713623
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 4.417757987976074
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 42,
+                "aa": "E",
+                "minimum_heavy_atom_distance_A": 3.9417924880981445
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 97,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 3.009229898452759
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 107,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4969418048858643
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 109,
+                "aa": "R",
+                "minimum_heavy_atom_distance_A": 2.523820400238037
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 46
+          },
+          "disulfide_breaking": false
+        }
+      ],
+      "sample_count": 5,
+      "sample_ipTM_range": [
+        0.4210948944091797,
+        0.9183361530303955
+      ],
+      "experimental": false,
+      "disulfide_breaking": false
+    },
+    {
+      "mutation": "T105L",
+      "task_id": "342606351508480",
+      "ddG_pred": -1.1324842,
+      "ddG_pred_raw": "-1.1324842",
+      "affinity_unit": null,
+      "best_sample_selection": "highest raw ranking_score",
+      "best_sample": 1,
+      "best_structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995379032_model_sample_1.cif",
+      "best_aligned_structure": "03-affinity-kn035/raw/local/variants/T105L_best_A_aligned.cif",
+      "best_confidence_raw": {
+        "plddt": 92.86156463623047,
+        "ptm": 0.9232257008552551,
+        "iptm": 0.900540292263031,
+        "chain_ptm": [
+          0.93764728307724,
+          0.955264687538147
+        ],
+        "chain_iptm": [
+          0.900540292263031,
+          0.900540292263031
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.900540292263031
+          ],
+          [
+            0.900540292263031,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.919903576374054,
+          0.9371565580368042
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9286156296730042
+          ],
+          [
+            0.9286156296730042,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.905077338218689,
+        "abag_score": 0.900540292263031
+      },
+      "samples": [
+        {
+          "mutation": "T105L",
+          "task_id": "342606351508480",
+          "sample": 2,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995024162_model_sample_2.cif",
+          "structure_sha256": "151e926f08a93dc5761cd232ec91a8687c75188f6a803a6003adc430b2a85c32",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/summary_confidences_sample_2.json",
+          "confidence_raw": {
+            "plddt": 92.84151458740234,
+            "ptm": 0.9226762056350708,
+            "iptm": 0.899798572063446,
+            "chain_ptm": [
+              0.937139630317688,
+              0.9551570415496826
+            ],
+            "chain_iptm": [
+              0.899798572063446,
+              0.899798572063446
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.899798572063446
+              ],
+              [
+                0.899798572063446,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.919638454914093,
+              0.9370192885398865
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9284151196479797
+              ],
+              [
+                0.9284151196479797,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9043741226196289,
+            "abag_score": 0.899798572063446
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 105,
+              "WT": "T",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.4404814023083631,
+            "binder_B_CA_RMSD_after_A_alignment_A": 1.953937292098999,
+            "native_epitope_CA_RMSD_A": 0.2060195654630661,
+            "native_paratope_CA_RMSD_A": 0.626906156539917,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.937478542327881
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4790596961975098
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 3.3791046142578125
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 3.270179033279419
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 4.263848781585693
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.887836217880249
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.297994375228882
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.6937777996063232
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.097535133361816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.8153276443481445
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 43
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "T105L",
+          "task_id": "342606351508480",
+          "sample": 3,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995141534_model_sample_3.cif",
+          "structure_sha256": "d6691491a0a2780e96b90c8c12e01c72863d6953ca9e60cf05ec602bf40d9e50",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/summary_confidences_sample_3.json",
+          "confidence_raw": {
+            "plddt": 92.84129333496094,
+            "ptm": 0.9228519201278687,
+            "iptm": 0.8997880220413208,
+            "chain_ptm": [
+              0.936892032623291,
+              0.9550949335098267
+            ],
+            "chain_iptm": [
+              0.8997880220413208,
+              0.8997880220413208
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.8997880220413208
+              ],
+              [
+                0.8997880220413208,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.9196500778198242,
+              0.9370034337043762
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.928412914276123
+              ],
+              [
+                0.928412914276123,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9044008255004883,
+            "abag_score": 0.8997880220413208
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 105,
+              "WT": "T",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.41513786429061283,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.738447904586792,
+            "native_epitope_CA_RMSD_A": 0.2438964545726776,
+            "native_paratope_CA_RMSD_A": 0.5096479654312134,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 2.8760650157928467
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.3393373489379883
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 3.837897300720215
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.0762104988098145
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 4.42514181137085
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.887836217880249
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.297994375228882
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.6937777996063232
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.097535133361816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.8153276443481445
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 47
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "T105L",
+          "task_id": "342606351508480",
+          "sample": 4,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995266398_model_sample_4.cif",
+          "structure_sha256": "bbaa0dfaf800b2edb6faf656cb2de9a2968781f1f74939e04f0ff2fcbbb4da60",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/summary_confidences_sample_4.json",
+          "confidence_raw": {
+            "plddt": 92.8349380493164,
+            "ptm": 0.9226603507995605,
+            "iptm": 0.899433434009552,
+            "chain_ptm": [
+              0.9371113181114197,
+              0.9549886584281921
+            ],
+            "chain_iptm": [
+              0.899433434009552,
+              0.899433434009552
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.899433434009552
+              ],
+              [
+                0.899433434009552,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.9195613861083984,
+              0.9369646906852722
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9283493757247925
+              ],
+              [
+                0.9283493757247925,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9040788412094116,
+            "abag_score": 0.899433434009552
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 105,
+              "WT": "T",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.7074912542102291,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.8395274877548218,
+            "native_epitope_CA_RMSD_A": 0.21759584546089172,
+            "native_paratope_CA_RMSD_A": 0.4762110710144043,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.2866010665893555
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.3717193603515625
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 3.6479666233062744
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 3.3216209411621094
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.887836217880249
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.297994375228882
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.6937777996063232
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.097535133361816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.8153276443481445
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 43
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "T105L",
+          "task_id": "342606351508480",
+          "sample": 1,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995379032_model_sample_1.cif",
+          "structure_sha256": "d9da36d8c7c95f5169bca12c48f6e7062a8439b6ef4545ce66e55dcfef68bb71",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/summary_confidences_sample_1.json",
+          "confidence_raw": {
+            "plddt": 92.86156463623047,
+            "ptm": 0.9232257008552551,
+            "iptm": 0.900540292263031,
+            "chain_ptm": [
+              0.93764728307724,
+              0.955264687538147
+            ],
+            "chain_iptm": [
+              0.900540292263031,
+              0.900540292263031
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.900540292263031
+              ],
+              [
+                0.900540292263031,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.919903576374054,
+              0.9371565580368042
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9286156296730042
+              ],
+              [
+                0.9286156296730042,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.905077338218689,
+            "abag_score": 0.900540292263031
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 105,
+              "WT": "T",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.6643285572762108,
+            "binder_B_CA_RMSD_after_A_alignment_A": 1.442665934562683,
+            "native_epitope_CA_RMSD_A": 0.23517991602420807,
+            "native_paratope_CA_RMSD_A": 0.686103880405426,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.0635993480682373
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.3393027782440186
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 3.8772175312042236
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 3.714682102203369
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 4.321638107299805
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.887836217880249
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.297994375228882
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.6937777996063232
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.097535133361816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.8153276443481445
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              45,
+              50,
+              52,
+              57,
+              60,
+              97,
+              99,
+              101,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 44
+          },
+          "disulfide_breaking": false
+        },
+        {
+          "mutation": "T105L",
+          "task_id": "342606351508480",
+          "sample": 5,
+          "structure": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995490636_model_sample_5.cif",
+          "structure_sha256": "b449720df24a032c62e48d46e22fa36292db47b58c7d7b2864dfc179bf49d053",
+          "confidence_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/summary_confidences_sample_5.json",
+          "confidence_raw": {
+            "plddt": 92.83013916015625,
+            "ptm": 0.9224392175674438,
+            "iptm": 0.8989943861961365,
+            "chain_ptm": [
+              0.9372197985649109,
+              0.9550665020942688
+            ],
+            "chain_iptm": [
+              0.8989943861961365,
+              0.8989943861961365
+            ],
+            "chain_pair_iptm": [
+              [
+                0.0,
+                0.8989943861961365
+              ],
+              [
+                0.8989943861961365,
+                0.0
+              ]
+            ],
+            "chain_plddt": [
+              0.91957026720047,
+              0.9368608593940735
+            ],
+            "chain_pair_plddt": [
+              [
+                0.0,
+                0.9283013939857483
+              ],
+              [
+                0.9283013939857483,
+                0.0
+              ]
+            ],
+            "ranking_score": 0.9036834239959717,
+            "abag_score": 0.8989943861961365
+          },
+          "sequence_and_numbering_verified": true,
+          "PDL1_sequence_unchanged": true,
+          "B_single_substitution": [
+            {
+              "label_seq_id": 105,
+              "WT": "T",
+              "mutant": "L"
+            }
+          ],
+          "source_kind": "MOS_variant_prediction_plus_local_geometry",
+          "local_geometry": {
+            "method": "Biopython Superimposer fitted on all 118 target C-alpha atoms; distances computed within transformed variant complex",
+            "target_A_CA_RMSD_A": 0.4643298825907772,
+            "binder_B_CA_RMSD_after_A_alignment_A": 0.7545584440231323,
+            "native_epitope_CA_RMSD_A": 0.2337186187505722,
+            "native_paratope_CA_RMSD_A": 0.4833468794822693,
+            "mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.7919294834136963
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.4377472400665283
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 3.209095001220703
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 3.190875291824341
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 4.350315093994141
+              }
+            ],
+            "WT_mutation_facing_PDL1_residues_within_4_5_A": [
+              {
+                "chain": "A",
+                "label_seq_id": 38,
+                "aa": "I",
+                "minimum_heavy_atom_distance_A": 3.887836217880249
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 40,
+                "aa": "Y",
+                "minimum_heavy_atom_distance_A": 3.297994375228882
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 50,
+                "aa": "Q",
+                "minimum_heavy_atom_distance_A": 2.6937777996063232
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 52,
+                "aa": "V",
+                "minimum_heavy_atom_distance_A": 4.097535133361816
+              },
+              {
+                "chain": "A",
+                "label_seq_id": 99,
+                "aa": "M",
+                "minimum_heavy_atom_distance_A": 3.8153276443481445
+              }
+            ],
+            "target_contact_label_seq_ids": [
+              38,
+              40,
+              42,
+              44,
+              45,
+              50,
+              52,
+              53,
+              57,
+              60,
+              97,
+              99,
+              103,
+              104,
+              105,
+              106,
+              107,
+              109
+            ],
+            "residue_contact_pairs_4_5_A": 45
+          },
+          "disulfide_breaking": false
+        }
+      ],
+      "sample_count": 5,
+      "sample_ipTM_range": [
+        0.8989943861961365,
+        0.900540292263031
+      ],
+      "experimental": false,
+      "disulfide_breaking": false
+    }
+  ],
+  "limitations": [
+    "No experimental affinity supplied.",
+    "MOS exhaustive scan covers both chains; PD-L1 mutations are excluded from all candidate selections.",
+    "Two native/explicit CSVs are byte-identical outputs of the same model, not independent validation.",
+    "Raw task and analysis history retain excluded submissions, which never count as the requested variant.",
+    "Confidence summaries and atom-site B factors are retained separately; neither is affinity.",
+    "MOS-export task ledger lists C33Y best_sample_iptm=0.5987, but raw summary says pTM=0.598656 and ipTM=0.260212. Canonical data uses raw confidence JSON.",
+    "Native Paratope has 18 residues; local 4.5 A has 17, not an exact match of the whole native list. Canonical provenance uses case02 raw native record.",
+    "A35W is a distant/framework hit by IMGT but CDR1 by Kabat; it is not treated as evidence of improved original-interface binding.",
+    "V109L has one high-ipTM sample and four much lower-ipTM samples; keep all five."
+  ],
+  "variant_sample_count": 25,
+  "master_confidence_raw": {
+    "plddt": 93.71290588378906,
+    "ptm": 0.936729907989502,
+    "iptm": 0.9182515740394592,
+    "chain_ptm": [
+      0.9448949098587036,
+      0.960560142993927
+    ],
+    "chain_iptm": [
+      0.9182515740394592,
+      0.9182515740394592
+    ],
+    "chain_pair_iptm": [
+      [
+        0.0,
+        0.9182515740394592
+      ],
+      [
+        0.9182515740394592,
+        0.0
+      ]
+    ],
+    "chain_plddt": [
+      0.9287236332893372,
+      0.9453778266906738
+    ],
+    "chain_pair_plddt": [
+      [
+        0.0,
+        0.937129020690918
+      ],
+      [
+        0.937129020690918,
+        0.0
+      ]
+    ],
+    "ranking_score": 0.9219472408294678,
+    "abag_score": 0.9182515740394592
+  },
+  "master_confidence_source": "01-structure/raw/summary_confidences_sample_1.json",
+  "local_reaudit": "handoff/scripts/audit_kn035_structures.py",
+  "interface_candidates_top10_distinct_sites": [
+    {
+      "mutation": "V109L",
+      "chain": "B",
+      "label_seq_id": 109,
+      "wild_type": "V",
+      "mutant": "L",
+      "ddG_pred_raw": "-1.6510735",
+      "ddG_pred": -1.6510735,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.6510735",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        99,
+        101
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 2
+    },
+    {
+      "mutation": "Q116M",
+      "chain": "B",
+      "label_seq_id": 116,
+      "wild_type": "Q",
+      "mutant": "M",
+      "ddG_pred_raw": "-1.4936166",
+      "ddG_pred": -1.4936166,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.4936166",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97,
+        107,
+        109
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 7
+    },
+    {
+      "mutation": "T105L",
+      "chain": "B",
+      "label_seq_id": 105,
+      "wild_type": "T",
+      "mutant": "L",
+      "ddG_pred_raw": "-1.1324842",
+      "ddG_pred": -1.1324842,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.1324842",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        38,
+        40,
+        50,
+        52,
+        99
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 27
+    },
+    {
+      "mutation": "A114E",
+      "chain": "B",
+      "label_seq_id": 114,
+      "wild_type": "A",
+      "mutant": "E",
+      "ddG_pred_raw": "-1.0713909",
+      "ddG_pred": -1.0713909,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "1.0713909",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        97,
+        99,
+        105,
+        107
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 32
+    },
+    {
+      "mutation": "D99C",
+      "chain": "B",
+      "label_seq_id": 99,
+      "wild_type": "D",
+      "mutant": "C",
+      "ddG_pred_raw": "-0.85388345",
+      "ddG_pred": -0.85388345,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.85388345",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        42,
+        97
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 45
+    },
+    {
+      "mutation": "S111W",
+      "chain": "B",
+      "label_seq_id": 111,
+      "wild_type": "S",
+      "mutant": "W",
+      "ddG_pred_raw": "-0.82916296",
+      "ddG_pred": -0.82916296,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.82916296",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        103,
+        104,
+        105
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 48
+    },
+    {
+      "mutation": "S100W",
+      "chain": "B",
+      "label_seq_id": 100,
+      "wild_type": "S",
+      "mutant": "W",
+      "ddG_pred_raw": "-0.8221607",
+      "ddG_pred": -0.8221607,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.8221607",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        40,
+        42,
+        45,
+        97
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 52
+    },
+    {
+      "mutation": "K27Y",
+      "chain": "B",
+      "label_seq_id": 27,
+      "wild_type": "K",
+      "mutant": "Y",
+      "ddG_pred_raw": "-0.6255979",
+      "ddG_pred": -0.6255979,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.6255979",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 84
+    },
+    {
+      "mutation": "R32Y",
+      "chain": "B",
+      "label_seq_id": 32,
+      "wild_type": "R",
+      "mutant": "Y",
+      "ddG_pred_raw": "-0.47290376",
+      "ddG_pred": -0.47290376,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.47290376",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        45
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 132
+    },
+    {
+      "mutation": "G113C",
+      "chain": "B",
+      "label_seq_id": 113,
+      "wild_type": "G",
+      "mutant": "C",
+      "ddG_pred_raw": "-0.43953505",
+      "ddG_pred": -0.43953505,
+      "unit": null,
+      "unit_status": "not specified by MOS task schema or CSV",
+      "direction": "lower is predicted more favorable relative to WT; inference from score_ddg=-ddG_pred and platform scoring convention",
+      "score_ddg_raw": "0.43953505",
+      "native_paratope": true,
+      "sequence_distance_to_paratope": 0,
+      "paratope_neighbour_within_3_sequence_positions": true,
+      "PDL1_residues_facing_WT_at_4_5_A": [
+        105,
+        106,
+        107
+      ],
+      "disulfide_breaking": false,
+      "MMFold_structure_paths": [],
+      "source_kind": "MOS_task_output",
+      "mos_task_id": "342605020787712",
+      "source_file": "03-affinity-kn035/raw/mos-export/kn035_case03/raw/bindmut/affinity_scores.csv",
+      "rank_all_chain_B": 148
+    }
+  ],
+  "structural_selection_method": "Validate three best native-paratope substitutions after deduplicating sites (V109L,Q116M,T105L); retain A35W and C33Y as diagnostic counterexamples, not validated affinity improvements.",
+  "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+  "time_zone": "Asia/Jakarta",
+  "residue_highlights": "residues-on-mmfold1.json",
+  "numbering_contract": "MMFold_1 label_asym_id + label_seq_id; never compact antibody/UniProt/IMGT identifiers"
+}

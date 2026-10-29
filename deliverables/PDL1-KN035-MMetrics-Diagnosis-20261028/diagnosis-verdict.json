@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-10-28T15:55:21+07:00",
+  "status": "diagnosis_narrowed_not_code_level_root_cause_confirmed",
+  "conclusion_zh": "证据更支持MOS原生自动流程未提供或未接入A链抗原检索结果；优先查query选择/调度与MMetrics结果装配。精确后台故障点尚未确认。",
+  "ids": {
+    "source01_task": "342253805564928",
+    "project02": "342604060136448",
+    "structure_object": "342604293768192",
+    "structure_work": "342604299084800",
+    "native_autocompute": "342604299285504",
+    "native_mmetrics": "342604577018880",
+    "new_independent_A118_control": "345176768607232"
+  },
+  "confirmed": [
+    "01结构与02导入副本哈希一致，不能将故障归咎于传错文件或序列变化。",
+    "原生自动前置产物503条比对全部查询B链KN035128aa，当前可访问产物没有A链query。",
+    "原生MMetrics record.json的homology/uniprot/pdb为空，线上界面也为空，非单纯官网静态展示错误。",
+    "新独立对照直接使用原始A链118aa，任务Succeed，473条比对、457个唯一候选；首条5JDS_A118/118一致，E-value5.20957e-85。",
+    "对照原始JSON与直接从MOS任务详情下载的SeqSrch.json字节一致，SHA25640e3cea779a3ec9da098caac71ca4791cd1f2a5e1941f83922c9db140b7905ea。"
+  ],
+  "most_likely": [
+    "自动流程只安排或只保存了抗体链检索，抗原链检索未提供。",
+    "MMetrics未正确关联、读取、解析或写入抗原同源结果。"
+  ],
+  "not_proven": [
+    "原生内部mos-blast是否曾进行未归档的A链调用。",
+    "具体后台函数、配置或代码行。",
+    "原生MMetrics内部阈值、库快照、服务版本；不能由新对照完全排除历史配置差异。",
+    "model_tasks.results为空是否是根因；其他案例也有该现象，但仅是关联线索。"
+  ],
+  "comparison_limits": [
+    "原运行2026-10-21，新对照2026-10-28，历史数据库和服务版本差异未知。",
+    "新独立Sequence Homology Search（UI名Sequence Similarity Search）同时返回PDB与Swiss-Prot；原生B产物只有PDB。PDB子集可对照数据库类别，但不等于相同服务实现或数据库快照。",
+    "E-value<1e-5仅是本次离线复核采用的筛选阈值，不是已知MMetrics配置。",
+    "457个候选中包含弱命中，不能全称为可靠PD-L1同源蛋白；支持结论的是显著、明确PD-L1的头部命中。"
+  ],
+  "no_fix_claim": true,
+  "original_native_records_backfilled": false,
+  "control_metrics": {
+    "alignments": 473,
+    "unique_hits": 457,
+    "pdb_alignments": 239,
+    "pdb_unique_hits": 233,
+    "pdb_alignments_evalue_below_review_threshold_1e_minus5": 63,
+    "all_alignments_evalue_below_review_threshold_1e_minus5": 80,
+    "top_hit": {
+      "hit_id": "pdb|5JDS|A",
+      "hit_desc": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "identity": 118,
+      "identity_percentage": 1.0,
+      "e_value": 5.20957e-85,
+      "query_from": 1,
+      "query_to": 118
+    }
+  },
+  "validation": {
+    "control_query_exact_original_A118": true,
+    "all_control_alignment_queries_exact_A": true,
+    "native_query_exact_B128": true,
+    "all_native_alignment_queries_exact_B": true,
+    "control_rows_473": true,
+    "control_unique_hits_457": true,
+    "native_rows_503": true,
+    "native_homology_empty": true,
+    "control_direct_UI_bytes_equal_export": true,
+    "top_alignment_118_of_118": true,
+    "original_CIF_hash_verified": true
+  }
+}

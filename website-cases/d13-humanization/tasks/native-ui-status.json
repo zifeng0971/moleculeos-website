@@ -1,0 +1,16 @@
+{
+  "native_MMetrics": "Result visibly returned for original 1FDL; description, annotations, interaction tables, 10 CSV downloads archived. Earlier RUNNING records are historical. Final scheduler status was not separately retrieved.",
+  "auto_task_id": "342335703909376",
+  "native_chains": {
+    "A": "author L light",
+    "B": "author H heavy",
+    "C": "author Y lysozyme"
+  },
+  "interaction_rows": {
+    "A-B": 80,
+    "B-C": 19,
+    "A-C": 14
+  },
+  "antigen_interface_native_H_Bond_rows": 11,
+  "caution": "Native paratope list includes constant-domain residues not reproducing direct antigen contacts; keep unmodified native list and independent coordinate audit separate. IMGT range labels in UI are serialized sequence ranges, use archived ANARCI table for actual IMGT IDs."
+}

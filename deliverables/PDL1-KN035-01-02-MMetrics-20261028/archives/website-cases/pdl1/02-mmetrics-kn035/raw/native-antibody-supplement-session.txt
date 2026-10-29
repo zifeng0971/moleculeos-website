@@ -1,0 +1,273 @@
+MOS
+BETA
+PDL1-02-MMetrics-KN035-20261021
+Z
+Task
+Share
+MMFold_1
+1:A
+1
+MAFTVTVPKD
+11
+LYVVEYGSNM
+21
+TIECKFPVEK
+31
+QLDLAALIVY
+41
+WEMEDKNIIQ
+51
+FVHGEEDLKV
+61
+QHSSYRQRAR
+71
+LLKDQLSLGN
+81
+AALQITDVKL
+91
+QDAGVYRCMI
+101
+SYGGADYKRI
+111
+TVKVNALE
+2:B
+1
+QVQLQESGGG
+11
+LVQPGGSLRL
+21
+SCAASGKMSS
+31
+RRCMAWFRQA
+41
+PGKERERVAK
+51
+LLTTSGSTYL
+61
+ADSVKGRFTI
+71
+SQNNAKSTVY
+81
+LQMNSLKPED
+91
+TAMYYCAADS
+101
+FEDPTCTLVT
+111
+SSGAFQYWGQ
+121
+GTQVTVSS
+Mocha
+MMetrics
+✕
+Mocha
+e0709b0c-5
+Assistant
+Thinking
+The user wants me to launch independent tasks: Antibody Region Annotation (AbAn)…
+▸
+GetMOSTaskSchema
+(Antibody Region Annotation)
+▸
+GetMOSTaskSchema
+(Antibody Language Scoring)
+▸
+GetMOSTaskSchema
+(Antibody Nativeness Evaluation)
+▸
+GetMOSTaskSchema
+(Paratope Identification)
+▸
+GetMOSQuota
+▸
+Thinking
+All four schemas available. Quota 463 — plenty.
+▸
+Shell
+(cd /workspace && python /app/src/mocha/agents/cust…)
+▸
+Thinking
+Now launch 4 tasks. Write the payloads with the sequence. Let me construct them …
+▸
+StartMOSTask
+(Antibody Region Annotation)
+▸
+StartMOSTask
+(Antibody Language Scoring)
+▸
+StartMOSTask
+(Antibody Nativeness Evaluation)
+▸
+StartMOSTask
+(Paratope Identification)
+▸
+Thinking
+All four launched. Now wait a bit and snapshot with ListMOSTasks once. The guida…
+▸
+Shell
+(sleep 45; echo done)
+▸
+ListMOSTasks
+▸
+Thinking
+All four succeeded. Now CheckMOSTask each to get details + download outputs. Let…
+▸
+CheckMOSTask
+(342606092895232)
+▸
+CheckMOSTask
+(342606094599168)
+▸
+CheckMOSTask
+(342606097245184)
+▸
+CheckMOSTask
+(342606100722688)
+▸
+Thinking
+All 4 produced a single CSV each. Note ParaDt's pdb_path was normalized to "tos:…
+▸
+Shell
+(cd /workspace/downloads && for d in antibody_regio…)
+▸
+Thinking
+Excellent. CSVs:
+▸
+Shell
+(cd /workspace/downloads/antibody_region_annotation…)
+▸
+Thinking
+Interesting: pos_imgt is a *compressed/sequential* IMGT numbering (H1..H128, no …
+▸
+Shell
+(cd /workspace/downloads/antibody_region_annotation…)
+▸
+Thinking
+Now clear: The AbAn output provides proper canonical numbering with insertion co…
+▸
+Shell
+(cd /workspace/downloads && python - <<'EOF' import…)
+▸
+Thinking
+All consistent. Now build the supplement.
+▸
+Shell
+(mkdir -p /workspace/kn035_case02_supplement/{tasks…)
+▸
+Thinking
+Good comparison data.
+▸
+Shell
+(cd /workspace/kn035_case02_supplement && cat > scr…)
+▸
+Thinking
+Now verify mappings: check that mapping CSV row count 128/2560, and that label_s…
+▸
+Shell
+(cd /workspace/kn035_case02_supplement && cat > scr…)
+▸
+Thinking
+Now README.md for supplement, then zip.
+▸
+Write
+(/workspace/kn035_case02_supplement/README.md)
+▸
+Shell
+(cd /workspace && python - <<'EOF' import zipfile, …)
+▸
+Thinking
+Done. Let me do a final check of a few files (e.g., mapping_abnumber_heavy.csv h…
+▸
+Shell
+(cd /workspace/kn035_case02_supplement && head -3 m…)
+▸
+Thinking
+The unzip command failed silently? It printed nothing for unzip, likely command …
+▸
+
+四个独立任务全部成功，补充包已生成。原生归档 /workspace/kn035_case02/ 保持不变（51 个文件），新内容全部隔离在 /workspace/kn035_case02_supplement/。
+
+独立任务（均为本次新启动，非原生 MMetrics）
+任务类型（实际 display name）	Task ID	状态	耗时	CSV
+Antibody Region Annotation（AbAn）	342606092895232	succeed	20s	abnumber_heavy.csv
+Antibody Language Scoring（AbScN-语言模型）	342606094599168	succeed	3s	ablang_heavy_scores.csv
+Antibody Nativeness Evaluation（AbScN-nativeness）	342606097245184	succeed	3s	abnativ_heavy.csv
+Paratope Identification（ParaDt）	342606100722688	succeed	25s	paragraph_heavy.csv
+
+输入统一为 KN035 链 B 完整 128 aa（取自 sequence-toolkit 记录 MMFold_1_B）。没有 light chain，没有传 custom_output_path。
+
+AbScN 在 MOS 上没有单一同名任务，实际对应两个不同任务类型，两者都跑了并分目录存放，未混称。ParaDt 提交的 pdb_path 被平台补全为 tos:mosv2-prod/user_objects/.../MMFold_1.cif，提交值与生效值都已记录；pdb_heavy_chain=B、is_pdb_numbered=false。
+
+序号映射（已自动校验）
+abnumber_heavy.csv、abnativ_heavy.csv、paragraph_heavy.csv：aa_index 即 MMFold_1 链 B label_seq_id（1–128）。
+ablang_heavy_scores.csv：mutation 如 Q1A，数字段即 label_seq_id；chain=H → 结构链 B。
+校验结果：四个 CSV 序列与链 B 完全一致；2560 条替换的野生型字母与结构序列 0 处不符；三张逐残基表标签连续 1–128。
+
+AbAn 编号列按工具原样保存，其中两点需要使用者知情：IMGT 有标准缺口（H9→H11、H30→H35、H59→H62、H72→H74）与插入码 H111A–H111D；残基 108–111 的 IMGT 位置被工具输出为 H112D, H112C, H112B, H112A（降序），未做修正。
+
+ParaDt 与原生 paratope 对照
+
+仅作对照、不替代：独立 ParaDt 取分数最高 18 个残基，与原生 18 残基 paratope 重合 12 个；两者都集中在 CDR3。独立模型额外给出 CDR2/FR 位点（如 50、55、57、59），原生结构法另含 CDR1 的 27/29/30/32。
+
+交付路径
+目录：/workspace/kn035_case02_supplement/（28 个文件）
+压缩包：/workspace/kn035_case02_supplement.zip（98 KB）
+内容：
+tasks/<slug>/ — CSV + input_schema.json + task_payload_actual.json + task_status.txt
+mapping/ — 5 张映射表 + mapping_summary.json + mapping_verification.json
+comparison/paradt_vs_native_paratope.json
+supplement-manifest.json — 任务、payload、CSV SHA256、分离声明
+README.md、scripts/
+
+无不可用项；四个请求的输出均已取得。
+
+09:29
+MMFold_1
+Upload
+AI-generated research aid. Experimental validation advised
+Workspace
+downloads
+6
+antibody_language_scoring_342606094599168
+1
+antibody_nativeness_evaluation_342606097245184
+1
+antibody_region_annotation_342606092895232
+1
+mostask_342604299285504
+7
+mostask_342604577018880
+1
+paratope_identification_342606100722688
+1
+kn035_case02
+7
+derived
+4
+raw
+3
+scripts
+7
+numbering-map.json
+provenance.json
+README.md
+task-ledger.json
+kn035_case02_supplement
+6
+comparison
+1
+mapping
+7
+scripts
+2
+tasks
+4
+README.md
+supplement-manifest.json
+protein_data
+1
+protein_342604299084800
+1
+kn035_case02_supplement.zip
+kn035_case02.zip
+Download

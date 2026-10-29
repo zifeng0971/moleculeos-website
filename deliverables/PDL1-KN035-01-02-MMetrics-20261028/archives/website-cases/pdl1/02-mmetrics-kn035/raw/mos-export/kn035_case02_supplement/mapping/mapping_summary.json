@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-10-21T02:29:23+00:00",
+  "chain": "MMFold_1 chain B (KN035 VHH), label_seq_id 1..128",
+  "principle": "Every independent CSV indexes residues either by aa_index (1..128 sequential) or, for AbLang, by the number embedded in the mutation string. Both coincide with MMFold_1 chain B label_seq_id because chain B is fully modelled, starts at label_seq_id 1 and has no insertion codes.",
+  "sequence_in_all_csvs_equals_chain_B": true,
+  "per_csv": [
+    {
+      "csv": "abnumber_heavy.csv",
+      "task_id": "342606092895232",
+      "n_rows": 128,
+      "row_key": "aa_index (1..128, sequential)",
+      "maps_to": "MMFold_1 chain B label_seq_id 1..128, identity",
+      "scheme_columns": {
+        "pos_imgt": "IMGT position with insertion codes and IMGT gaps (H9->H11, H30->H35, H59->H62, H72->H74); odd descending block H112D,H112C,H112B,H112A at label_seq_id 108-111 as emitted by the tool",
+        "pos_kabat": "Kabat position with insertions H52A, H82A-C, H100A-K",
+        "pos_chothia": "Chothia position with insertions H52A, H82A-C, H100A-K"
+      },
+      "mapping_file": "mapping/mapping_abnumber_heavy.csv"
+    },
+    {
+      "csv": "abnativ_heavy.csv",
+      "task_id": "342606097245184",
+      "n_rows": 128,
+      "row_key": "aa_index (1..128, sequential)",
+      "maps_to": "MMFold_1 chain B label_seq_id 1..128, identity",
+      "mapping_file": "mapping/mapping_abnativ_heavy.csv",
+      "score_columns": {
+        "humanness_VH2_score": "per-residue",
+        "sequence_humanness_VH2_score": "whole-sequence constant",
+        "humanness_VHH2_score": "per-residue",
+        "sequence_humanness_VHH2_score": "whole-sequence constant"
+      }
+    },
+    {
+      "csv": "paragraph_heavy.csv",
+      "task_id": "342606100722688",
+      "n_rows": 128,
+      "row_key": "aa_index (1..128, sequential)",
+      "maps_to": "MMFold_1 chain B label_seq_id 1..128, identity",
+      "mapping_file": "mapping/mapping_paragraph_heavy.csv"
+    },
+    {
+      "csv": "ablang_heavy_scores.csv",
+      "task_id": "342606094599168",
+      "n_rows": 2560,
+      "row_key": "mutation string '{wt}{aa_index}{mut}', e.g. Q1A",
+      "chain_column_value": "H",
+      "maps_to": "MMFold_1 chain B label_seq_id = aa_index parsed from the mutation string; chain 'H' -> chain 'B'",
+      "n_positions": 128,
+      "n_substitutions_per_position": [
+        20
+      ],
+      "wildtype_mismatches_against_structure_sequence": 0,
+      "mapping_file": "mapping/mapping_ablang_heavy_scores.csv",
+      "per_residue_summary_file": "mapping/mapping_ablang_per_residue.csv"
+    }
+  ]
+}

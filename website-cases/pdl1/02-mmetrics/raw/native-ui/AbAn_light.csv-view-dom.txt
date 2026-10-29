@@ -1,0 +1,1853 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: 5GRJ
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: E
+- generic: V
+- generic: Q
+- generic: L
+- generic: L
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: F
+- generic: T
+- generic: F
+- generic: S
+- generic: "31"
+- generic: S
+- generic: "Y"
+- generic: I
+- generic: M
+- generic: M
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: V
+- generic: S
+- generic: S
+- generic: "51"
+- generic: I
+- generic: "Y"
+- generic: P
+- generic: S
+- generic: G
+- generic: G
+- generic: I
+- generic: T
+- generic: F
+- generic: "Y"
+- generic: "61"
+- generic: A
+- generic: D
+- generic: T
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: R
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: "N"
+- generic: T
+- generic: L
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: R
+- generic: A
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: I
+- generic: K
+- generic: "101"
+- generic: L
+- generic: G
+- generic: T
+- generic: V
+- generic: T
+- generic: T
+- generic: V
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: "111"
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: Q
+- generic: S
+- generic: A
+- generic: L
+- generic: T
+- generic: Q
+- generic: P
+- generic: A
+- generic: S
+- generic: V
+- generic: "11"
+- generic: S
+- generic: G
+- generic: S
+- generic: P
+- generic: G
+- generic: Q
+- generic: S
+- generic: I
+- generic: T
+- generic: I
+- generic: "21"
+- generic: S
+- generic: C
+- generic: T
+- generic: G
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: V
+- generic: G
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: "N"
+- generic: "Y"
+- generic: V
+- generic: S
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: "41"
+- generic: H
+- generic: P
+- generic: G
+- generic: K
+- generic: A
+- generic: P
+- generic: K
+- generic: L
+- generic: M
+- generic: I
+- generic: "51"
+- generic: "Y"
+- generic: D
+- generic: V
+- generic: S
+- generic: "N"
+- generic: R
+- generic: P
+- generic: S
+- generic: G
+- generic: V
+- generic: "61"
+- generic: S
+- generic: "N"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: K
+- generic: S
+- generic: G
+- generic: "71"
+- generic: "N"
+- generic: T
+- generic: A
+- generic: S
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: G
+- generic: L
+- generic: "81"
+- generic: Q
+- generic: A
+- generic: E
+- generic: D
+- generic: E
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: "91"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: T
+- generic: R
+- generic: V
+- generic: "101"
+- generic: F
+- generic: G
+- generic: T
+- generic: G
+- generic: T
+- generic: K
+- generic: V
+- generic: T
+- generic: V
+- generic: L
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: "171"
+- generic: E
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: "181"
+- generic: R
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "191"
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: "201"
+- generic: E
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: "211"
+- generic: E
+- generic: L
+- generic: P
+- generic: L
+- generic: A
+- generic: H
+- generic: P
+- generic: P
+- generic: "N"
+- generic: E
+- generic: R
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Description
+- generic: Antigen–Antibody
+- generic: "confidence: high"
+- generic: This complex shows an antibody fragment (VH and VL chains) bound to human Programmed cell death 1 ligand 1 (PD-L1), an immunoglobulin superfamily protein and BTN/MOG family member. PD-L1 is an immune checkpoint ligand for the inhibitory receptor PD-1 that helps modulate T-cell activation and immune tolerance. The structure captures the antigen-binding interface between the antibody variable domains and PD-L1, a biologically relevant antigen-antibody recognition event.
+- generic: ReasoningThe structure contains two antibody fragment chains annotated as VH and VL, and a third protein chain matching Programmed cell death 1 ligand 1 (PD-L1). The suggested valid protein-protein contacts show the VH/VL pair binding the PD-L1 antigen chain, which is the defining arrangement of an antigen-antibody complex. No non-solvent small-molecule ligand evidence is provided, so the ligand interaction flag remains false.
+- generic: Chain A
+- text: · protein · VH
+- generic: Chain B
+- text: · protein · VL
+- generic: Chain C
+- text: · protein
+- generic: Homologs
+- generic: Searched by antigen sequence similarity
+- generic: No significant homologs found.
+- generic: Annotations
+- button "Paratope 43 residues · structure A:GLU6 A:SER7 A:GLY9 A:LEU11 A:ALA24 A:PHE27 A:THR28 A:SER30 A:SER31 A:ILE33 A:PRO41 A:TYR52 A:PRO53 A:SER54 A:GLY55 A:GLY56 A:ILE57 A:THR58 A:PHE59 A:SER75 A:LYS76 A:ASN77 A:LEU101 A:GLY102 A:THR103 A:VAL104 A:THR105 A:THR106 A:GLN112 A:GLY113 A:THR114 A:LEU115 A:THR117 B:TYR32 B:TYR34 B:GLY43 B:LYS44 B:ASP52 B:TYR93 B:SER95 B:SER96 B:SER97 B:ARG99":
+  - generic: Paratope
+  - generic: 43 residues · structure
+  - button "A:GLU6"
+  - button "A:SER7"
+  - button "A:GLY9"
+  - button "A:LEU11"
+  - button "A:ALA24"
+  - button "A:PHE27"
+  - button "A:THR28"
+  - button "A:SER30"
+  - button "A:SER31"
+  - button "A:ILE33"
+  - button "A:PRO41"
+  - button "A:TYR52"
+  - button "A:PRO53"
+  - button "A:SER54"
+  - button "A:GLY55"
+  - button "A:GLY56"
+  - button "A:ILE57"
+  - button "A:THR58"
+  - button "A:PHE59"
+  - button "A:SER75"
+  - button "A:LYS76"
+  - button "A:ASN77"
+  - button "A:LEU101"
+  - button "A:GLY102"
+  - button "A:THR103"
+  - button "A:VAL104"
+  - button "A:THR105"
+  - button "A:THR106"
+  - button "A:GLN112"
+  - button "A:GLY113"
+  - button "A:THR114"
+  - button "A:LEU115"
+  - button "A:THR117"
+  - button "B:TYR32"
+  - button "B:TYR34"
+  - button "B:GLY43"
+  - button "B:LYS44"
+  - button "B:ASP52"
+  - button "B:TYR93"
+  - button "B:SER95"
+  - button "B:SER96"
+  - button "B:SER97"
+  - button "B:ARG99"
+- button "Epitope 38 residues · structure C:TYR15 C:GLY16 C:SER17 C:ASN18 C:ILE37 C:TYR39 C:GLU41 C:GLU43 C:ASP44 C:LYS45 C:ASN46 C:GLN49 C:HIS52 C:ASP56 C:LYS58 C:VAL59 C:GLN60 C:HIS61 C:ARG65 C:GLN66 C:THR85 C:ASP86 C:LYS88 C:ARG96 C:MET98 C:ILE99 C:SER100 C:ALA104 C:TYR106 C:LYS119 C:ASN121 C:ASP128 C:PRO129 C:VAL130 C:GLN139 C:MET42 C:GLN83 C:ARG108":
+  - generic: Epitope
+  - generic: 38 residues · structure
+  - button "C:TYR15"
+  - button "C:GLY16"
+  - button "C:SER17"
+  - button "C:ASN18"
+  - button "C:ILE37"
+  - button "C:TYR39"
+  - button "C:GLU41"
+  - button "C:GLU43"
+  - button "C:ASP44"
+  - button "C:LYS45"
+  - button "C:ASN46"
+  - button "C:GLN49"
+  - button "C:HIS52"
+  - button "C:ASP56"
+  - button "C:LYS58"
+  - button "C:VAL59"
+  - button "C:GLN60"
+  - button "C:HIS61"
+  - button "C:ARG65"
+  - button "C:GLN66"
+  - button "C:THR85"
+  - button "C:ASP86"
+  - button "C:LYS88"
+  - button "C:ARG96"
+  - button "C:MET98"
+  - button "C:ILE99"
+  - button "C:SER100"
+  - button "C:ALA104"
+  - button "C:TYR106"
+  - button "C:LYS119"
+  - button "C:ASN121"
+  - button "C:ASP128"
+  - button "C:PRO129"
+  - button "C:VAL130"
+  - button "C:GLN139"
+  - button "C:MET42"
+  - button "C:GLN83"
+  - button "C:ARG108"
+- button "Domain 3 residues · uniprot C:2-221 C:2-110 C:116-208":
+  - generic: Domain
+  - generic: 3 residues · uniprot
+  - button "C:2-221"
+  - button "C:2-110"
+  - button "C:116-208"
+- button "PTM 4 residues · uniprot C:ASN18 C:ASN175 C:ASN183 C:ASN202":
+  - generic: PTM
+  - generic: 4 residues · uniprot
+  - button "C:ASN18"
+  - button "C:ASN175"
+  - button "C:ASN183"
+  - button "C:ASN202"
+- button "UniProt Feature 1 residue · uniprot C:ARG221":
+  - generic: UniProt Feature
+  - generic: 1 residue · uniprot
+  - button "C:ARG221"
+- generic: Interaction Network
+- button "Table"
+- button "2D"
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain C
+  - generic: 2.28Å
+  - generic: 2.29Å
+  - generic: 2.75Å
+  - generic: 3.29Å
+  - generic: 2.80Å
+  - generic: 3.15Å
+  - generic: 2.73Å
+  - generic: 3.03Å
+  - generic: 2.65Å
+  - generic: 3.62Å
+  - generic: 3.29Å
+  - generic: 3.67Å
+  - generic: 3.67Å
+  - generic: 3.86Å
+  - generic: 2.75Å
+  - generic: 3.15Å
+  - generic: 3.29Å
+  - generic: 3.21Å
+  - generic: 3.68Å
+  - generic: 3.57Å
+  - generic: 3.20Å
+  - generic: 2.73Å
+  - generic: 3.80Å
+  - generic: 3.36Å
+  - generic: 3.44Å
+  - generic: 3.30Å
+  - generic: 3.02Å
+  - generic: 3.33Å
+  - generic: 2.99Å
+  - generic: 3.18Å
+  - generic: 3.35Å
+  - generic: 2.80Å
+  - generic: 3.37Å
+  - generic: 3.70Å
+  - generic: 2.94Å
+  - generic: 2.65Å
+  - generic: 5.16Å
+  - generic: 5.55Å
+  - generic: GLY
+  - generic: A102
+  - generic: SER
+  - generic: A54
+  - generic: TYR
+  - generic: A52
+  - generic: SER
+  - generic: A31
+  - generic: VAL
+  - generic: A104
+  - generic: GLY
+  - generic: A55
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: THR
+  - generic: A28
+  - generic: PRO
+  - generic: A53
+  - generic: ILE
+  - generic: A57
+  - generic: PHE
+  - generic: A59
+  - generic: LEU
+  - generic: A101
+  - generic: THR
+  - generic: A103
+  - generic: ASN
+  - generic: C46
+  - generic: TYR
+  - generic: C39
+  - generic: GLU
+  - generic: C41
+  - generic: GLN
+  - generic: C49
+  - generic: ASP
+  - generic: C44
+  - generic: ARG
+  - generic: C96
+  - generic: SER
+  - generic: C100
+  - generic: LYS
+  - generic: C58
+  - generic: ASP
+  - generic: C56
+  - generic: MET
+  - generic: C98
+  - generic: ILE
+  - generic: C37
+  - generic: TYR
+  - generic: C106
+  - generic: VAL
+  - generic: C59
+  - generic: LYS
+  - generic: C45
+  - generic: GLU
+  - generic: C43
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain B
+  - generic: 3.26Å
+  - generic: 2.45Å
+  - generic: 3.26Å
+  - generic: 3.59Å
+  - generic: 3.03Å
+  - generic: 3.31Å
+  - generic: 3.84Å
+  - generic: 3.50Å
+  - generic: 3.46Å
+  - generic: 3.81Å
+  - generic: 3.15Å
+  - generic: 3.41Å
+  - generic: 2.80Å
+  - generic: 3.17Å
+  - generic: 3.08Å
+  - generic: 3.58Å
+  - generic: 3.68Å
+  - generic: 3.13Å
+  - generic: 3.49Å
+  - generic: 6.32Å
+  - generic: 5.62Å
+  - generic: 4.18Å
+  - generic: GLN
+  - generic: A39
+  - generic: VAL
+  - generic: A107
+  - generic: LEU
+  - generic: A45
+  - generic: TRP
+  - generic: A47
+  - generic: TYR
+  - generic: A95
+  - generic: LYS
+  - generic: A100
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: ASP
+  - generic: A108
+  - generic: TRP
+  - generic: A110
+  - generic: GLN
+  - generic: A112
+  - generic: TYR
+  - generic: B89
+  - generic: TYR
+  - generic: B38
+  - generic: PHE
+  - generic: B101
+  - generic: THR
+  - generic: B98
+  - generic: PRO
+  - generic: B46
+  - generic: TYR
+  - generic: B51
+  - generic: TYR
+  - generic: B93
+  - generic: ARG
+  - generic: B99
+  - generic: LEU
+  - generic: B48
+  - generic: ALA
+  - generic: B45
+- img "protein-protein interaction plot":
+  - generic: Chain B
+  - generic: Chain C
+  - generic: 2.77Å
+  - generic: 2.73Å
+  - generic: 3.35Å
+  - generic: 3.63Å
+  - generic: 2.77Å
+  - generic: 3.40Å
+  - generic: 3.26Å
+  - generic: 3.16Å
+  - generic: 3.10Å
+  - generic: 3.45Å
+  - generic: 2.73Å
+  - generic: TYR
+  - generic: B34
+  - generic: ARG
+  - generic: B99
+  - generic: TYR
+  - generic: B32
+  - generic: TYR
+  - generic: B93
+  - generic: SER
+  - generic: B97
+  - generic: GLU
+  - generic: C43
+  - generic: ASP
+  - generic: C44
+  - generic: MET
+  - generic: C42
+  - generic: LYS
+  - generic: C45
+  - generic: ARG
+  - generic: C96
+- generic: H-Bond
+- generic: VdW Contact
+- generic: π-π Stack
+- generic: π-Cation
+- generic: Aliphatic
+- generic: Polar
+- generic: Aromatic
+- generic: Acidic
+- generic: Basic
+- generic: Sulfur
+- generic: Mutation Scoring
+- generic: CSV
+- generic: MutXevo.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXstruct.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXseq.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXaff.csv
+- generic: View
+- generic: Download
+- generic: Antibody Design
+- generic: CSV
+- generic: AbScN_heavy..csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbScN_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_light.csv
+- generic: View
+- generic: Download
+- separator "调整 Mocha 与文件面板宽度"
+- complementary "File viewer":
+  - generic "AbAn_light.csv"
+  - button "Open file in new window":
+    - img "export":
+  - button "Close file panel":
+    - img "close":
+  - table:
+    - rowgroup:
+      - row "aa_index aa pos_imgt region_imgt pos_kabat region_kabat pos_chothia region_chothia":
+        - columnheader "aa_index":
+          - generic: aa_index
+        - columnheader "aa":
+          - generic: aa
+        - columnheader "pos_imgt":
+          - generic: pos_imgt
+        - columnheader "region_imgt":
+          - generic: region_imgt
+        - columnheader "pos_kabat":
+          - generic: pos_kabat
+        - columnheader "region_kabat":
+          - generic: region_kabat
+        - columnheader "pos_chothia":
+          - generic: pos_chothia
+        - columnheader "region_chothia":
+          - generic: region_chothia
+  - table:
+    - rowgroup:
+      - row "1 S L2 FR1 L2 FR1 L2 FR1":
+        - cell "1"
+        - cell "S"
+        - cell "L2"
+        - cell "FR1"
+        - cell "L2"
+        - cell "FR1"
+        - cell "L2"
+        - cell "FR1"
+      - row "2 A L3 FR1 L3 FR1 L3 FR1":
+        - cell "2"
+        - cell "A"
+        - cell "L3"
+        - cell "FR1"
+        - cell "L3"
+        - cell "FR1"
+        - cell "L3"
+        - cell "FR1"
+      - row "3 L L4 FR1 L4 FR1 L4 FR1":
+        - cell "3"
+        - cell "L"
+        - cell "L4"
+        - cell "FR1"
+        - cell "L4"
+        - cell "FR1"
+        - cell "L4"
+        - cell "FR1"
+      - row "4 T L5 FR1 L5 FR1 L5 FR1":
+        - cell "4"
+        - cell "T"
+        - cell "L5"
+        - cell "FR1"
+        - cell "L5"
+        - cell "FR1"
+        - cell "L5"
+        - cell "FR1"
+      - row "5 Q L6 FR1 L6 FR1 L6 FR1":
+        - cell "5"
+        - cell "Q"
+        - cell "L6"
+        - cell "FR1"
+        - cell "L6"
+        - cell "FR1"
+        - cell "L6"
+        - cell "FR1"
+      - row "6 P L7 FR1 L7 FR1 L7 FR1":
+        - cell "6"
+        - cell "P"
+        - cell "L7"
+        - cell "FR1"
+        - cell "L7"
+        - cell "FR1"
+        - cell "L7"
+        - cell "FR1"
+      - row "7 A L8 FR1 L8 FR1 L8 FR1":
+        - cell "7"
+        - cell "A"
+        - cell "L8"
+        - cell "FR1"
+        - cell "L8"
+        - cell "FR1"
+        - cell "L8"
+        - cell "FR1"
+      - row "8 S L9 FR1 L9 FR1 L9 FR1":
+        - cell "8"
+        - cell "S"
+        - cell "L9"
+        - cell "FR1"
+        - cell "L9"
+        - cell "FR1"
+        - cell "L9"
+        - cell "FR1"
+      - row "9 V L11 FR1 L11 FR1 L11 FR1":
+        - cell "9"
+        - cell "V"
+        - cell "L11"
+        - cell "FR1"
+        - cell "L11"
+        - cell "FR1"
+        - cell "L11"
+        - cell "FR1"
+      - row "10 S L12 FR1 L12 FR1 L12 FR1":
+        - cell "10"
+        - cell "S"
+        - cell "L12"
+        - cell "FR1"
+        - cell "L12"
+        - cell "FR1"
+        - cell "L12"
+        - cell "FR1"
+      - row "11 G L13 FR1 L13 FR1 L13 FR1":
+        - cell "11"
+        - cell "G"
+        - cell "L13"
+        - cell "FR1"
+        - cell "L13"
+        - cell "FR1"
+        - cell "L13"
+        - cell "FR1"
+      - row "12 S L14 FR1 L14 FR1 L14 FR1":
+        - cell "12"
+        - cell "S"
+        - cell "L14"
+        - cell "FR1"
+        - cell "L14"
+        - cell "FR1"
+        - cell "L14"
+        - cell "FR1"
+      - row "13 P L15 FR1 L15 FR1 L15 FR1":
+        - cell "13"
+        - cell "P"
+        - cell "L15"
+        - cell "FR1"
+        - cell "L15"
+        - cell "FR1"
+        - cell "L15"
+        - cell "FR1"
+      - row "14 G L16 FR1 L16 FR1 L16 FR1":
+        - cell "14"
+        - cell "G"
+        - cell "L16"
+        - cell "FR1"
+        - cell "L16"
+        - cell "FR1"
+        - cell "L16"
+        - cell "FR1"
+      - row "15 Q L17 FR1 L17 FR1 L17 FR1":
+        - cell "15"
+        - cell "Q"
+        - cell "L17"
+        - cell "FR1"
+        - cell "L17"
+        - cell "FR1"
+        - cell "L17"
+        - cell "FR1"
+      - row "16 S L18 FR1 L18 FR1 L18 FR1":
+        - cell "16"
+        - cell "S"
+        - cell "L18"
+        - cell "FR1"
+        - cell "L18"
+        - cell "FR1"
+        - cell "L18"
+        - cell "FR1"
+      - row "17 I L19 FR1 L19 FR1 L19 FR1":
+        - cell "17"
+        - cell "I"
+        - cell "L19"
+        - cell "FR1"
+        - cell "L19"
+        - cell "FR1"
+        - cell "L19"
+        - cell "FR1"
+      - row "18 T L20 FR1 L20 FR1 L20 FR1":
+        - cell "18"
+        - cell "T"
+        - cell "L20"
+        - cell "FR1"
+        - cell "L20"
+        - cell "FR1"
+        - cell "L20"
+        - cell "FR1"
+      - row "19 I L21 FR1 L21 FR1 L21 FR1":
+        - cell "19"
+        - cell "I"
+        - cell "L21"
+        - cell "FR1"
+        - cell "L21"
+        - cell "FR1"
+        - cell "L21"
+        - cell "FR1"
+      - row "20 S L22 FR1 L22 FR1 L22 FR1":
+        - cell "20"
+        - cell "S"
+        - cell "L22"
+        - cell "FR1"
+        - cell "L22"
+        - cell "FR1"
+        - cell "L22"
+        - cell "FR1"
+      - row "21 C L23 FR1 L23 FR1 L23 FR1":
+        - cell "21"
+        - cell "C"
+        - cell "L23"
+        - cell "FR1"
+        - cell "L23"
+        - cell "FR1"
+        - cell "L23"
+        - cell "FR1"
+      - row "22 T L24 FR1 L24 CDR1 L24 CDR1":
+        - cell "22"
+        - cell "T"
+        - cell "L24"
+        - cell "FR1"
+        - cell "L24"
+        - cell "CDR1"
+        - cell "L24"
+        - cell "CDR1"
+      - row "23 G L25 FR1 L25 CDR1 L25 CDR1":
+        - cell "23"
+        - cell "G"
+        - cell "L25"
+        - cell "FR1"
+        - cell "L25"
+        - cell "CDR1"
+        - cell "L25"
+        - cell "CDR1"
+      - row "24 T L26 FR1 L26 CDR1 L26 CDR1":
+        - cell "24"
+        - cell "T"
+        - cell "L26"
+        - cell "FR1"
+        - cell "L26"
+        - cell "CDR1"
+        - cell "L26"
+        - cell "CDR1"
+      - row "25 S L27 CDR1 L27 CDR1 L27 CDR1":
+        - cell "25"
+        - cell "S"
+        - cell "L27"
+        - cell "CDR1"
+        - cell "L27"
+        - cell "CDR1"
+        - cell "L27"
+        - cell "CDR1"
+      - row "26 S L28 CDR1 L27A CDR1 L28 CDR1":
+        - cell "26"
+        - cell "S"
+        - cell "L28"
+        - cell "CDR1"
+        - cell "L27A"
+        - cell "CDR1"
+        - cell "L28"
+        - cell "CDR1"
+      - row "27 D L29 CDR1 L27B CDR1 L29 CDR1":
+        - cell "27"
+        - cell "D"
+        - cell "L29"
+        - cell "CDR1"
+        - cell "L27B"
+        - cell "CDR1"
+        - cell "L29"
+        - cell "CDR1"
+      - row "28 V L30 CDR1 L27C CDR1 L30 CDR1":
+        - cell "28"
+        - cell "V"
+        - cell "L30"
+        - cell "CDR1"
+        - cell "L27C"
+        - cell "CDR1"
+        - cell "L30"
+        - cell "CDR1"
+      - row "29 G L31 CDR1 L28 CDR1 L30A CDR1":
+        - cell "29"
+        - cell "G"
+        - cell "L31"
+        - cell "CDR1"
+        - cell "L28"
+        - cell "CDR1"
+        - cell "L30A"
+        - cell "CDR1"
+      - row "30 G L35 CDR1 L29 CDR1 L30B CDR1":
+        - cell "30"
+        - cell "G"
+        - cell "L35"
+        - cell "CDR1"
+        - cell "L29"
+        - cell "CDR1"
+        - cell "L30B"
+        - cell "CDR1"
+      - row "31 Y L36 CDR1 L30 CDR1 L30C CDR1":
+        - cell "31"
+        - cell "Y"
+        - cell "L36"
+        - cell "CDR1"
+        - cell "L30"
+        - cell "CDR1"
+        - cell "L30C"
+        - cell "CDR1"
+      - row "32 N L37 CDR1 L31 CDR1 L31 CDR1":
+        - cell "32"
+        - cell "N"
+        - cell "L37"
+        - cell "CDR1"
+        - cell "L31"
+        - cell "CDR1"
+        - cell "L31"
+        - cell "CDR1"
+      - row "33 Y L38 CDR1 L32 CDR1 L32 CDR1":
+        - cell "33"
+        - cell "Y"
+        - cell "L38"
+        - cell "CDR1"
+        - cell "L32"
+        - cell "CDR1"
+        - cell "L32"
+        - cell "CDR1"
+      - row "34 V L39 FR2 L33 CDR1 L33 CDR1":
+        - cell "34"
+        - cell "V"
+        - cell "L39"
+        - cell "FR2"
+        - cell "L33"
+        - cell "CDR1"
+        - cell "L33"
+        - cell "CDR1"
+      - row "35 S L40 FR2 L34 CDR1 L34 CDR1":
+        - cell "35"
+        - cell "S"
+        - cell "L40"
+        - cell "FR2"
+        - cell "L34"
+        - cell "CDR1"
+        - cell "L34"
+        - cell "CDR1"
+      - row "36 W L41 FR2 L35 FR2 L35 FR2":
+        - cell "36"
+        - cell "W"
+        - cell "L41"
+        - cell "FR2"
+        - cell "L35"
+        - cell "FR2"
+        - cell "L35"
+        - cell "FR2"
+      - row "37 Y L42 FR2 L36 FR2 L36 FR2":
+        - cell "37"
+        - cell "Y"
+        - cell "L42"
+        - cell "FR2"
+        - cell "L36"
+        - cell "FR2"
+        - cell "L36"
+        - cell "FR2"
+      - row "38 Q L43 FR2 L37 FR2 L37 FR2":
+        - cell "38"
+        - cell "Q"
+        - cell "L43"
+        - cell "FR2"
+        - cell "L37"
+        - cell "FR2"
+        - cell "L37"
+        - cell "FR2"
+      - row "39 Q L44 FR2 L38 FR2 L38 FR2":
+        - cell "39"
+        - cell "Q"
+        - cell "L44"
+        - cell "FR2"
+        - cell "L38"
+        - cell "FR2"
+        - cell "L38"
+        - cell "FR2"
+      - row "40 H L45 FR2 L39 FR2 L39 FR2":
+        - cell "40"
+        - cell "H"
+        - cell "L45"
+        - cell "FR2"
+        - cell "L39"
+        - cell "FR2"
+        - cell "L39"
+        - cell "FR2"
+      - row "41 P L46 FR2 L40 FR2 L40 FR2":
+        - cell "41"
+        - cell "P"
+        - cell "L46"
+        - cell "FR2"
+        - cell "L40"
+        - cell "FR2"
+        - cell "L40"
+        - cell "FR2"
+      - row "42 G L47 FR2 L41 FR2 L41 FR2":
+        - cell "42"
+        - cell "G"
+        - cell "L47"
+        - cell "FR2"
+        - cell "L41"
+        - cell "FR2"
+        - cell "L41"
+        - cell "FR2"
+      - row "43 K L48 FR2 L42 FR2 L42 FR2":
+        - cell "43"
+        - cell "K"
+        - cell "L48"
+        - cell "FR2"
+        - cell "L42"
+        - cell "FR2"
+        - cell "L42"
+        - cell "FR2"
+      - row "44 A L49 FR2 L43 FR2 L43 FR2":
+        - cell "44"
+        - cell "A"
+        - cell "L49"
+        - cell "FR2"
+        - cell "L43"
+        - cell "FR2"
+        - cell "L43"
+        - cell "FR2"
+      - row "45 P L50 FR2 L44 FR2 L44 FR2":
+        - cell "45"
+        - cell "P"
+        - cell "L50"
+        - cell "FR2"
+        - cell "L44"
+        - cell "FR2"
+        - cell "L44"
+        - cell "FR2"
+      - row "46 K L51 FR2 L45 FR2 L45 FR2":
+        - cell "46"
+        - cell "K"
+        - cell "L51"
+        - cell "FR2"
+        - cell "L45"
+        - cell "FR2"
+        - cell "L45"
+        - cell "FR2"
+      - row "47 L L52 FR2 L46 FR2 L46 FR2":
+        - cell "47"
+        - cell "L"
+        - cell "L52"
+        - cell "FR2"
+        - cell "L46"
+        - cell "FR2"
+        - cell "L46"
+        - cell "FR2"
+      - row "48 M L53 FR2 L47 FR2 L47 FR2":
+        - cell "48"
+        - cell "M"
+        - cell "L53"
+        - cell "FR2"
+        - cell "L47"
+        - cell "FR2"
+        - cell "L47"
+        - cell "FR2"
+      - row "49 I L54 FR2 L48 FR2 L48 FR2":
+        - cell "49"
+        - cell "I"
+        - cell "L54"
+        - cell "FR2"
+        - cell "L48"
+        - cell "FR2"
+        - cell "L48"
+        - cell "FR2"
+      - row "50 Y L55 FR2 L49 FR2 L49 FR2":
+        - cell "50"
+        - cell "Y"
+        - cell "L55"
+        - cell "FR2"
+        - cell "L49"
+        - cell "FR2"
+        - cell "L49"
+        - cell "FR2"
+      - row "51 D L56 CDR2 L50 CDR2 L50 CDR2":
+        - cell "51"
+        - cell "D"
+        - cell "L56"
+        - cell "CDR2"
+        - cell "L50"
+        - cell "CDR2"
+        - cell "L50"
+        - cell "CDR2"
+      - row "52 V L57 CDR2 L51 CDR2 L51 CDR2":
+        - cell "52"
+        - cell "V"
+        - cell "L57"
+        - cell "CDR2"
+        - cell "L51"
+        - cell "CDR2"
+        - cell "L51"
+        - cell "CDR2"
+      - row "53 S L65 CDR2 L52 CDR2 L52 CDR2":
+        - cell "53"
+        - cell "S"
+        - cell "L65"
+        - cell "CDR2"
+        - cell "L52"
+        - cell "CDR2"
+        - cell "L52"
+        - cell "CDR2"
+      - row "54 N L66 FR3 L53 CDR2 L53 CDR2":
+        - cell "54"
+        - cell "N"
+        - cell "L66"
+        - cell "FR3"
+        - cell "L53"
+        - cell "CDR2"
+        - cell "L53"
+        - cell "CDR2"
+      - row "55 R L67 FR3 L54 CDR2 L54 CDR2":
+        - cell "55"
+        - cell "R"
+        - cell "L67"
+        - cell "FR3"
+        - cell "L54"
+        - cell "CDR2"
+        - cell "L54"
+        - cell "CDR2"
+      - row "56 P L68 FR3 L55 CDR2 L55 CDR2":
+        - cell "56"
+        - cell "P"
+        - cell "L68"
+        - cell "FR3"
+        - cell "L55"
+        - cell "CDR2"
+        - cell "L55"
+        - cell "CDR2"
+      - row "57 S L69 FR3 L56 CDR2 L56 CDR2":
+        - cell "57"
+        - cell "S"
+        - cell "L69"
+        - cell "FR3"
+        - cell "L56"
+        - cell "CDR2"
+        - cell "L56"
+        - cell "CDR2"
+      - row "58 G L70 FR3 L57 FR3 L57 FR3":
+        - cell "58"
+        - cell "G"
+        - cell "L70"
+        - cell "FR3"
+        - cell "L57"
+        - cell "FR3"
+        - cell "L57"
+        - cell "FR3"
+      - row "59 V L71 FR3 L58 FR3 L58 FR3":
+        - cell "59"
+        - cell "V"
+        - cell "L71"
+        - cell "FR3"
+        - cell "L58"
+        - cell "FR3"
+        - cell "L58"
+        - cell "FR3"
+      - row "60 S L72 FR3 L59 FR3 L59 FR3":
+        - cell "60"
+        - cell "S"
+        - cell "L72"
+        - cell "FR3"
+        - cell "L59"
+        - cell "FR3"
+        - cell "L59"
+        - cell "FR3"
+      - row "61 N L74 FR3 L60 FR3 L60 FR3":
+        - cell "61"
+        - cell "N"
+        - cell "L74"
+        - cell "FR3"
+        - cell "L60"
+        - cell "FR3"
+        - cell "L60"
+        - cell "FR3"
+      - row "62 R L75 FR3 L61 FR3 L61 FR3":
+        - cell "62"
+        - cell "R"
+        - cell "L75"
+        - cell "FR3"
+        - cell "L61"
+        - cell "FR3"
+        - cell "L61"
+        - cell "FR3"
+      - row "63 F L76 FR3 L62 FR3 L62 FR3":
+        - cell "63"
+        - cell "F"
+        - cell "L76"
+        - cell "FR3"
+        - cell "L62"
+        - cell "FR3"
+        - cell "L62"
+        - cell "FR3"
+      - row "64 S L77 FR3 L63 FR3 L63 FR3":
+        - cell "64"
+        - cell "S"
+        - cell "L77"
+        - cell "FR3"
+        - cell "L63"
+        - cell "FR3"
+        - cell "L63"
+        - cell "FR3"
+      - row "65 G L78 FR3 L64 FR3 L64 FR3":
+        - cell "65"
+        - cell "G"
+        - cell "L78"
+        - cell "FR3"
+        - cell "L64"
+        - cell "FR3"
+        - cell "L64"
+        - cell "FR3"
+      - row "66 S L79 FR3 L65 FR3 L65 FR3":
+        - cell "66"
+        - cell "S"
+        - cell "L79"
+        - cell "FR3"
+        - cell "L65"
+        - cell "FR3"
+        - cell "L65"
+        - cell "FR3"
+      - row "67 K L80 FR3 L66 FR3 L66 FR3":
+        - cell "67"
+        - cell "K"
+        - cell "L80"
+        - cell "FR3"
+        - cell "L66"
+        - cell "FR3"
+        - cell "L66"
+        - cell "FR3"
+      - row "68 S L83 FR3 L67 FR3 L67 FR3":
+        - cell "68"
+        - cell "S"
+        - cell "L83"
+        - cell "FR3"
+        - cell "L67"
+        - cell "FR3"
+        - cell "L67"
+        - cell "FR3"
+      - row "69 G L84 FR3 L68 FR3 L68 FR3":
+        - cell "69"
+        - cell "G"
+        - cell "L84"
+        - cell "FR3"
+        - cell "L68"
+        - cell "FR3"
+        - cell "L68"
+        - cell "FR3"
+      - row "70 N L85 FR3 L69 FR3 L69 FR3":
+        - cell "70"
+        - cell "N"
+        - cell "L85"
+        - cell "FR3"
+        - cell "L69"
+        - cell "FR3"
+        - cell "L69"
+        - cell "FR3"
+      - row "71 T L86 FR3 L70 FR3 L70 FR3":
+        - cell "71"
+        - cell "T"
+        - cell "L86"
+        - cell "FR3"
+        - cell "L70"
+        - cell "FR3"
+        - cell "L70"
+        - cell "FR3"
+      - row "72 A L87 FR3 L71 FR3 L71 FR3":
+        - cell "72"
+        - cell "A"
+        - cell "L87"
+        - cell "FR3"
+        - cell "L71"
+        - cell "FR3"
+        - cell "L71"
+        - cell "FR3"
+      - row "73 S L88 FR3 L72 FR3 L72 FR3":
+        - cell "73"
+        - cell "S"
+        - cell "L88"
+        - cell "FR3"
+        - cell "L72"
+        - cell "FR3"
+        - cell "L72"
+        - cell "FR3"
+      - row "74 L L89 FR3 L73 FR3 L73 FR3":
+        - cell "74"
+        - cell "L"
+        - cell "L89"
+        - cell "FR3"
+        - cell "L73"
+        - cell "FR3"
+        - cell "L73"
+        - cell "FR3"
+      - row "75 T L90 FR3 L74 FR3 L74 FR3":
+        - cell "75"
+        - cell "T"
+        - cell "L90"
+        - cell "FR3"
+        - cell "L74"
+        - cell "FR3"
+        - cell "L74"
+        - cell "FR3"
+      - row "76 I L91 FR3 L75 FR3 L75 FR3":
+        - cell "76"
+        - cell "I"
+        - cell "L91"
+        - cell "FR3"
+        - cell "L75"
+        - cell "FR3"
+        - cell "L75"
+        - cell "FR3"
+      - row "77 S L92 FR3 L76 FR3 L76 FR3":
+        - cell "77"
+        - cell "S"
+        - cell "L92"
+        - cell "FR3"
+        - cell "L76"
+        - cell "FR3"
+        - cell "L76"
+        - cell "FR3"
+      - row "78 G L93 FR3 L77 FR3 L77 FR3":
+        - cell "78"
+        - cell "G"
+        - cell "L93"
+        - cell "FR3"
+        - cell "L77"
+        - cell "FR3"
+        - cell "L77"
+        - cell "FR3"
+      - row "79 L L94 FR3 L78 FR3 L78 FR3":
+        - cell "79"
+        - cell "L"
+        - cell "L94"
+        - cell "FR3"
+        - cell "L78"
+        - cell "FR3"
+        - cell "L78"
+        - cell "FR3"
+      - row "80 Q L95 FR3 L79 FR3 L79 FR3":
+        - cell "80"
+        - cell "Q"
+        - cell "L95"
+        - cell "FR3"
+        - cell "L79"
+        - cell "FR3"
+        - cell "L79"
+        - cell "FR3"
+      - row "81 A L96 FR3 L80 FR3 L80 FR3":
+        - cell "81"
+        - cell "A"
+        - cell "L96"
+        - cell "FR3"
+        - cell "L80"
+        - cell "FR3"
+        - cell "L80"
+        - cell "FR3"
+      - row "82 E L97 FR3 L81 FR3 L81 FR3":
+        - cell "82"
+        - cell "E"
+        - cell "L97"
+        - cell "FR3"
+        - cell "L81"
+        - cell "FR3"
+        - cell "L81"
+        - cell "FR3"
+      - row "83 D L98 FR3 L82 FR3 L82 FR3":
+        - cell "83"
+        - cell "D"
+        - cell "L98"
+        - cell "FR3"
+        - cell "L82"
+        - cell "FR3"
+        - cell "L82"
+        - cell "FR3"
+      - row "84 E L99 FR3 L83 FR3 L83 FR3":
+        - cell "84"
+        - cell "E"
+        - cell "L99"
+        - cell "FR3"
+        - cell "L83"
+        - cell "FR3"
+        - cell "L83"
+        - cell "FR3"
+      - row "85 A L100 FR3 L84 FR3 L84 FR3":
+        - cell "85"
+        - cell "A"
+        - cell "L100"
+        - cell "FR3"
+        - cell "L84"
+        - cell "FR3"
+        - cell "L84"
+        - cell "FR3"
+      - row "86 D L101 FR3 L85 FR3 L85 FR3":
+        - cell "86"
+        - cell "D"
+        - cell "L101"
+        - cell "FR3"
+        - cell "L85"
+        - cell "FR3"
+        - cell "L85"
+        - cell "FR3"
+      - row "87 Y L102 FR3 L86 FR3 L86 FR3":
+        - cell "87"
+        - cell "Y"
+        - cell "L102"
+        - cell "FR3"
+        - cell "L86"
+        - cell "FR3"
+        - cell "L86"
+        - cell "FR3"
+      - row "88 Y L103 FR3 L87 FR3 L87 FR3":
+        - cell "88"
+        - cell "Y"
+        - cell "L103"
+        - cell "FR3"
+        - cell "L87"
+        - cell "FR3"
+        - cell "L87"
+        - cell "FR3"
+      - row "89 C L104 FR3 L88 FR3 L88 FR3":
+        - cell "89"
+        - cell "C"
+        - cell "L104"
+        - cell "FR3"
+        - cell "L88"
+        - cell "FR3"
+        - cell "L88"
+        - cell "FR3"
+      - row "90 S L105 CDR3 L89 CDR3 L89 CDR3":
+        - cell "90"
+        - cell "S"
+        - cell "L105"
+        - cell "CDR3"
+        - cell "L89"
+        - cell "CDR3"
+        - cell "L89"
+        - cell "CDR3"
+      - row "91 S L106 CDR3 L90 CDR3 L90 CDR3":
+        - cell "91"
+        - cell "S"
+        - cell "L106"
+        - cell "CDR3"
+        - cell "L90"
+        - cell "CDR3"
+        - cell "L90"
+        - cell "CDR3"
+      - row "92 Y L107 CDR3 L91 CDR3 L91 CDR3":
+        - cell "92"
+        - cell "Y"
+        - cell "L107"
+        - cell "CDR3"
+        - cell "L91"
+        - cell "CDR3"
+        - cell "L91"
+        - cell "CDR3"
+      - row "93 T L108 CDR3 L92 CDR3 L92 CDR3":
+        - cell "93"
+        - cell "T"
+        - cell "L108"
+        - cell "CDR3"
+        - cell "L92"
+        - cell "CDR3"
+        - cell "L92"
+        - cell "CDR3"
+      - row "94 S L109 CDR3 L93 CDR3 L93 CDR3":
+        - cell "94"
+        - cell "S"
+        - cell "L109"
+        - cell "CDR3"
+        - cell "L93"
+        - cell "CDR3"
+        - cell "L93"
+        - cell "CDR3"
+      - row "95 S L113 CDR3 L94 CDR3 L94 CDR3":
+        - cell "95"
+        - cell "S"
+        - cell "L113"
+        - cell "CDR3"
+        - cell "L94"
+        - cell "CDR3"
+        - cell "L94"
+        - cell "CDR3"
+      - row "96 S L114 CDR3 L95 CDR3 L95 CDR3":
+        - cell "96"
+        - cell "S"
+        - cell "L114"
+        - cell "CDR3"
+        - cell "L95"
+        - cell "CDR3"
+        - cell "L95"
+        - cell "CDR3"
+      - row "97 T L115 CDR3 L95A CDR3 L95A CDR3":
+        - cell "97"
+        - cell "T"
+        - cell "L115"
+        - cell "CDR3"
+        - cell "L95A"
+        - cell "CDR3"
+        - cell "L95A"
+        - cell "CDR3"
+      - row "98 R L116 CDR3 L96 CDR3 L96 CDR3":
+        - cell "98"
+        - cell "R"
+        - cell "L116"
+        - cell "CDR3"
+        - cell "L96"
+        - cell "CDR3"
+        - cell "L96"
+        - cell "CDR3"
+      - row "99 V L117 CDR3 L97 CDR3 L97 CDR3":
+        - cell "99"
+        - cell "V"
+        - cell "L117"
+        - cell "CDR3"
+        - cell "L97"
+        - cell "CDR3"
+        - cell "L97"
+        - cell "CDR3"
+      - row "100 F L118 FR4 L98 FR4 L98 FR4":
+        - cell "100"
+        - cell "F"
+        - cell "L118"
+        - cell "FR4"
+        - cell "L98"
+        - cell "FR4"
+        - cell "L98"
+        - cell "FR4"
+  - list:
+    - listitem: 108 rows
+    - listitem "Previous Page":
+      - button "left" [disabled]:
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "2":
+      - generic: "2"
+    - listitem "Next Page":
+      - button "right":
+        - img "right":
+    - generic "Page Size":
+      - combobox "Page Size"
+      - generic "100 / page"

@@ -1,0 +1,74 @@
+{
+  "case_id": "05-kn035",
+  "project_id": "342605363971072",
+  "project_url": "https://mos.moleculemind.com/?projectId=342605363971072",
+  "mos_object_id": "342605515027456",
+  "mos_work_id": "342605519696896",
+  "master": "01-structure/raw/MMFold_1.cif",
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "input_file": "05-denovo-kn035/raw/MMFold_1_chain_A.cif",
+  "input_file_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "MOS_import_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "MOS_import_byte_identity_verified": true,
+  "chain_mapping": {
+    "A": {
+      "mmfold1": "A",
+      "role": "PD-L1",
+      "length": 118
+    }
+  },
+  "extraction_provenance": {
+    "source": "local_extraction",
+    "parent": "01-structure/raw/MMFold_1.cif",
+    "parent_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+    "chain": "A",
+    "length": 118,
+    "method": "Filter mmCIF atom_site and entity/sequence/asym rows by original chain/entity; no atom-coordinate or label/auth-number changes. PDB is auxiliary. CIF is canonical.",
+    "coordinate_equality_verified": true,
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+  },
+  "submitted_prompts": {
+    "submitted-continue-prompt.txt": "继续执行至交付：请现在检查3个已提交任务真实状态，保存CheckMOSTask状态/payload原文，先把现有输入、schema、payload、ledger打包/workspace/kn035_case05_checkpoint.zip供下载，不必等任务完成才给输入包。随后在本轮以每次<=45秒的间隔检查，完成就下载全部真实输出、做已有分析并打包/workspace/kn035_case05.zip；不能仅告知我之后再说。主复合物本地已核验hash和提取坐标完全相同，所以可在provenance写external_local_verification_available，不要擅取其他项目。",
+    "submitted-finalize-prompt.txt": "请优先把seed111/222已完成的全部原始输出（output/aligned CIF、FASTA、confidence如有、actual payload及taskID）复制归档并更新/workspace/kn035_case05_checkpoint.zip，随后等seed333完成后出最终/workspace/kn035_case05.zip。不要再扩展额外分析，本地会独立计算对齐RMSD、BSA、接触重合及编号验证。输出链角色已变为A=binder/B=PDL1，务必写输出→主结构A编号映射；新binder残基本身没有MMFold_1对应不要强行映射。",
+    "submitted-prompt.txt": "案例05真正de novo：只用本项目导入的MMFold_1_chain_A.cif，来源唯一MMFold_1.cif（sha256 d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317）删除链B而保留A全部118aa，坐标未改。不能用任何现有binder重设计冒充de novo，不用5GRJ/7XYQ/5JDS，不改其他项目。先核验导入对象ID/tos_key、序列、链名、逐残基MOS↔MMFold_1 label_seq_id映射及输入hash。案例02原生MMetrics项目342604060136448已观察Epitope A38,40,42,45,47,50,52,53,57,60,97,99,101,103,104,105,106,107,109。我们选其中6个位点A45,A40,A97,A107,A105,A38作为hotspots（本地ShrakeRupley探针1.4A/960点验证单链SASA>=20A²，按界面埋藏面积优先），必须换算成导入后的MOS编号再提交。读取Protein Binder Design实际schema，binder长度60-100aa，保留全靶点A1-118；3个独立运行seed111/222/333，若schema支持compare_binder等开启序列生成+复合物预测。保存完整schema和3个实际payload、ID/状态/时间、所有原始输出/结构/FASTA/置信度与界面指标，有什么写什么，骨架虚拟GLY等序列与真正设计序列分别标注；没ipTM/PAE就写缺失。任务出结果后本地计算hotspot距离、SASA/BSA，并以PD-L1 Cα对齐到原始MMFold_1（若本项目无主复合物只写待外部比较，不要借旧结构），报告接触位点与KN035原生Epitope重合率与Jaccard。原始及分析存/workspace/kn035_case05/，记录所有真实输入、任务ledger和映射，完成打包/workspace/kn035_case05.zip供Workspace下载。不要只准备参数，要真实启动3个独立de novo任务；Generating/Computing如实保留，不能假装完成。"
+  },
+  "task_payloads": [
+    {
+      "task_id": "342606137910272",
+      "seed": 111,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 111
+      }
+    },
+    {
+      "task_id": "342606139298816",
+      "seed": 222,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 222
+      }
+    },
+    {
+      "task_id": "342606141764608",
+      "seed": 333,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 333
+      }
+    }
+  ],
+  "actual_schema": "05-denovo-kn035/raw/mos-export/kn035_case05/schema/protein_binder_design_schema.json",
+  "residue_mapping_file": "raw/residue-numbering-map.json",
+  "new_binder_input": null
+}

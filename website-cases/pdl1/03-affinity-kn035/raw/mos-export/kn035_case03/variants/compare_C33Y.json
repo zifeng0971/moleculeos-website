@@ -1,0 +1,53 @@
+{
+ "label": "C33Y",
+ "variant_file": "variant_model_sample1.cif",
+ "mutation": "B:C33Y",
+ "chainA_ca_rmsd_A": 0.853,
+ "chainB_ca_rmsd_A_after_Aalign": 25.152,
+ "complex_allatom_rmsd_A": 17.998,
+ "variant_residue": "Y",
+ "variant_residue_matches_requested": true,
+ "mutated_pos_min_dist_to_A": 3.53,
+ "A_neighbours_within_4.5A": [
+  {
+   "chain": "A",
+   "res": 45,
+   "aa": "D",
+   "min_dist": 3.53
+  }
+ ],
+ "A_neighbours_within_6A": [
+  {
+   "chain": "A",
+   "res": 45,
+   "aa": "D",
+   "min_dist": 3.53
+  }
+ ],
+ "reference_residue_at_position": "C",
+ "reference_pos_min_dist_to_A": 8.94,
+ "reference_A_neighbours_within_6A": [],
+ "variant_plddt_from_bfactor": {
+  "A": {
+   "mean_ca_plddt": 87.5,
+   "min": 47.71
+  },
+  "B": {
+   "mean_ca_plddt": 85.77,
+   "min": 33.52
+  }
+ },
+ "variant_plddt_at_mutated_position": 80.88,
+ "variant_disulfides_SG_under_2.5A": [
+  [
+   "A:24",
+   "A:98",
+   1.79
+  ],
+  [
+   "B:22",
+   "B:96",
+   2.08
+  ]
+ ]
+}

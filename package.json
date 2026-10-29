@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "tsx scripts/dev-manual-route.ts dev && next dev",
-    "build": "tsx scripts/prepare-agent-structure.ts && tsx scripts/validate-antibody-affinity.ts && tsx scripts/prepare-mocha-structure.ts && tsx scripts/dev-manual-route.ts build && tsx scripts/build-manual-search.ts && tsx scripts/sync-manual-redirects.ts && tsx scripts/build-site.ts",
+    "build": "tsx scripts/prepare-agent-structure.ts && tsx scripts/validate-antibody-affinity.ts && tsx scripts/dev-manual-route.ts build && tsx scripts/build-manual-search.ts && tsx scripts/sync-manual-redirects.ts && tsx scripts/build-site.ts",
     "ingest:manual": "tsx scripts/ingest-manual.ts && tsx scripts/sync-manual-redirects.ts",
     "test:manual": "tsx scripts/test-manual-ingest.ts && tsx scripts/test-manual-media.ts",
     "verify:manual": "tsx scripts/verify-manual-export.ts",
@@ -13,6 +13,8 @@
     "typecheck": "tsc --noEmit",
     "test:mock": "tsx scripts/test-mock-content.ts",
     "test:demo": "tsx scripts/test-demo.ts",
+    "collab:dev": "cd collab-worker && npx --yes wrangler@4.151.0 dev --port 8787",
+    "collab:pull": "tsx scripts/collab-pull.ts",
     "ingest:affinity": "tsx scripts/ingest-antibody-affinity.ts",
     "verify:affinity": "tsx scripts/validate-antibody-affinity.ts"
   },

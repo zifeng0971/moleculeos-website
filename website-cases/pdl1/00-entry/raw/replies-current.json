@@ -1,0 +1,62 @@
+[
+  {
+    "html": "<p>The prediction finished. Fetching its outputs.</p>\n",
+    "text": "The prediction finished. Fetching its outputs."
+  },
+  {
+    "html": "<p>Sample 1 is the only converged model (ipTM 0.92, pTM 0.94, pLDDT 93.7; the other four sit at ipTM ~0.33, i.e. no interface agreement). I’ll use it.</p>\n",
+    "text": "Sample 1 is the only converged model (ipTM 0.92, pTM 0.94, pLDDT 93.7; the other four sit at ipTM ~0.33, i.e. no interface agreement). I’ll use it."
+  },
+  {
+    "html": "<p>Discovery confirms a single A:B protein–protein interface (50 contacts), and chain B is annotated as a VHH with CDR1 26–33, CDR2 51–58, CDR3 97–117. Now the quantitative interface analysis.</p>\n",
+    "text": "Discovery confirms a single A:B protein–protein interface (50 contacts), and chain B is annotated as a VHH with CDR1 26–33, CDR2 51–58, CDR3 97–117. Now the quantitative interface analysis."
+  },
+  {
+    "html": "<p>Strong convergence with the experimental epitope. Let me pull the specific bonds and π-stacking.</p>\n",
+    "text": "Strong convergence with the experimental epitope. Let me pull the specific bonds and π-stacking."
+  },
+  {
+    "html": "<p>All five published hotspot residues are recovered. Registering the model in MOS so we can look at the interface.</p>\n",
+    "text": "All five published hotspot residues are recovered. Registering the model in MOS so we can look at the interface."
+  },
+  {
+    "html": "<p>The prediction output carries MOS mapping metadata, so it can’t be re-imported directly. I’ll make a clean sanitized copy for the viewer.</p>\n",
+    "text": "The prediction output carries MOS mapping metadata, so it can’t be re-imported directly. I’ll make a clean sanitized copy for the viewer."
+  },
+  {
+    "html": "<p>Let me cross-check the prediction directly against the experimental 5JDS complex rather than relying on the literature summary.</p>\n",
+    "text": "Let me cross-check the prediction directly against the experimental 5JDS complex rather than relying on the literature summary."
+  },
+  {
+    "html": "<p>The experimental interface came out much larger than the predicted one — I need to resolve that before making any claim. Checking whether it is a real difference or an artifact of how the crystal entry is assembled.</p>\n",
+    "text": "The experimental interface came out much larger than the predicted one — I need to resolve that before making any claim. Checking whether it is a real difference or an artifact of how the crystal entry is assembled."
+  },
+  {
+    "html": "<p>Sign error on my part — ΔASA = isolated − complex. Recomputing both.</p>\n",
+    "text": "Sign error on my part — ΔASA = isolated − complex. Recomputing both."
+  },
+  {
+    "html": "<p>The 5JDS entry contains two copies of the complex in its asymmetric unit, which polluted my comparison. Let me isolate a single contacting pair and recompute.</p>\n",
+    "text": "The 5JDS entry contains two copies of the complex in its asymmetric unit, which polluted my comparison. Let me isolate a single contacting pair and recompute."
+  },
+  {
+    "html": "<p>Something inconsistent between two SASA implementations on the crystal entry. Settling it with a fresh unsanitized download.</p>\n",
+    "text": "Something inconsistent between two SASA implementations on the crystal entry. Settling it with a fresh unsanitized download."
+  },
+  {
+    "html": "<p>Found it — the sanitized 5JDS file was giving corrupted SASA values. The raw crystal entry gives a normal ~640 Å² buried per side. Recomputing the crystal interface from the raw coordinates.</p>\n",
+    "text": "Found it — the sanitized 5JDS file was giving corrupted SASA values. The raw crystal entry gives a normal ~640 Å² buried per side. Recomputing the crystal interface from the raw coordinates."
+  },
+  {
+    "html": "<p>PPInterface was counting crystallographic waters. Computing the crystal ΔASA protein-only for a true like-for-like comparison.</p>\n",
+    "text": "PPInterface was counting crystallographic waters. Computing the crystal ΔASA protein-only for a true like-for-like comparison."
+  },
+  {
+    "html": "<p>Now the two datasets are methodologically identical. The prediction recovers 18 of 19 experimental epitope residues and 18 of 18 paratope residues. Let me get the crystal’s bond chemistry for comparison.</p>\n",
+    "text": "Now the two datasets are methodologically identical. The prediction recovers 18 of 19 experimental epitope residues and 18 of 18 paratope residues. Let me get the crystal’s bond chemistry for comparison."
+  },
+  {
+    "html": "<p>The hydrogen-bond network matches the crystal almost bond-for-bond. Let me finalize the viewer with distinct colors for each partner.</p>\n",
+    "text": "The hydrogen-bond network matches the crystal almost bond-for-bond. Let me finalize the viewer with distinct colors for each partner."
+  }
+]

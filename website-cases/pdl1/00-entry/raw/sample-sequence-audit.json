@@ -1,0 +1,42 @@
+[
+  {
+    "file": "179263337235057_model_sample_3.cif",
+    "sequences_equal_input": true,
+    "chains": {
+      "A": 118,
+      "B": 128
+    }
+  },
+  {
+    "file": "179263337332420_model_sample_1.cif",
+    "sequences_equal_input": true,
+    "chains": {
+      "A": 118,
+      "B": 128
+    }
+  },
+  {
+    "file": "179263337433230_model_sample_2.cif",
+    "sequences_equal_input": true,
+    "chains": {
+      "A": 118,
+      "B": 128
+    }
+  },
+  {
+    "file": "179263337528124_model_sample_4.cif",
+    "sequences_equal_input": true,
+    "chains": {
+      "A": 118,
+      "B": 128
+    }
+  },
+  {
+    "file": "179263337625246_model_sample_5.cif",
+    "sequences_equal_input": true,
+    "chains": {
+      "A": 118,
+      "B": 128
+    }
+  }
+]

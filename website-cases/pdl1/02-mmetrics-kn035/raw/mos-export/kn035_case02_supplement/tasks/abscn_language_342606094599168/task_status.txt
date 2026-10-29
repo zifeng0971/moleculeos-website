@@ -1,0 +1,7 @@
+SUCCEED | Antibody Language Scoring | Task ID 342606094599168 | Started 2026-10-21 02:27:46 | Duration 3s
+
+Task name: kn035-AbScN-language-independent
+Task type: Antibody Language Scoring
+Result: 1 output file, ablang_heavy_scores.csv
+Captured from CheckMOSTask on 2026-10-21 after the task reached SUCCEED.
+INDEPENDENT TASK - not part of the native MMetrics analysis of MMFold_1.

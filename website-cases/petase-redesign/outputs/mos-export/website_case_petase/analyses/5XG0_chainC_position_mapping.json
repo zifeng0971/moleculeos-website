@@ -1,0 +1,1610 @@
+[
+ {
+  "construct_pos": 1,
+  "auth_seq": -6,
+  "unp_seq": 23,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 2,
+  "auth_seq": -5,
+  "unp_seq": 24,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 3,
+  "auth_seq": -4,
+  "unp_seq": 25,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 4,
+  "auth_seq": -3,
+  "unp_seq": 26,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 5,
+  "auth_seq": -2,
+  "unp_seq": 27,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 6,
+  "auth_seq": -1,
+  "unp_seq": 28,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 7,
+  "auth_seq": 0,
+  "unp_seq": 29,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 8,
+  "auth_seq": 1,
+  "unp_seq": 30,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 9,
+  "auth_seq": 2,
+  "unp_seq": 31,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 10,
+  "auth_seq": 3,
+  "unp_seq": 32,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 11,
+  "auth_seq": 4,
+  "unp_seq": 33,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 12,
+  "auth_seq": 5,
+  "unp_seq": 34,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 13,
+  "auth_seq": 6,
+  "unp_seq": 35,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 14,
+  "auth_seq": 7,
+  "unp_seq": 36,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 15,
+  "auth_seq": 8,
+  "unp_seq": 37,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 16,
+  "auth_seq": 9,
+  "unp_seq": 38,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 17,
+  "auth_seq": 10,
+  "unp_seq": 39,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 18,
+  "auth_seq": 11,
+  "unp_seq": 40,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 19,
+  "auth_seq": 12,
+  "unp_seq": 41,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 20,
+  "auth_seq": 13,
+  "unp_seq": 42,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 21,
+  "auth_seq": 14,
+  "unp_seq": 43,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 22,
+  "auth_seq": 15,
+  "unp_seq": 44,
+  "resname_3": "GLU"
+ },
+ {
+  "construct_pos": 23,
+  "auth_seq": 16,
+  "unp_seq": 45,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 24,
+  "auth_seq": 17,
+  "unp_seq": 46,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 25,
+  "auth_seq": 18,
+  "unp_seq": 47,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 26,
+  "auth_seq": 19,
+  "unp_seq": 48,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 27,
+  "auth_seq": 20,
+  "unp_seq": 49,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 28,
+  "auth_seq": 21,
+  "unp_seq": 50,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 29,
+  "auth_seq": 22,
+  "unp_seq": 51,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 30,
+  "auth_seq": 23,
+  "unp_seq": 52,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 31,
+  "auth_seq": 24,
+  "unp_seq": 53,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 32,
+  "auth_seq": 25,
+  "unp_seq": 54,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 33,
+  "auth_seq": 26,
+  "unp_seq": 55,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 34,
+  "auth_seq": 27,
+  "unp_seq": 56,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 35,
+  "auth_seq": 28,
+  "unp_seq": 57,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 36,
+  "auth_seq": 29,
+  "unp_seq": 58,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 37,
+  "auth_seq": 30,
+  "unp_seq": 59,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 38,
+  "auth_seq": 31,
+  "unp_seq": 60,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 39,
+  "auth_seq": 32,
+  "unp_seq": 61,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 40,
+  "auth_seq": 33,
+  "unp_seq": 62,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 41,
+  "auth_seq": 34,
+  "unp_seq": 63,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 42,
+  "auth_seq": 35,
+  "unp_seq": 64,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 43,
+  "auth_seq": 36,
+  "unp_seq": 65,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 44,
+  "auth_seq": 37,
+  "unp_seq": 66,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 45,
+  "auth_seq": 38,
+  "unp_seq": 67,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 46,
+  "auth_seq": 39,
+  "unp_seq": 68,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 47,
+  "auth_seq": 40,
+  "unp_seq": 69,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 48,
+  "auth_seq": 41,
+  "unp_seq": 70,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 49,
+  "auth_seq": 42,
+  "unp_seq": 71,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 50,
+  "auth_seq": 43,
+  "unp_seq": 72,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 51,
+  "auth_seq": 44,
+  "unp_seq": 73,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 52,
+  "auth_seq": 45,
+  "unp_seq": 74,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 53,
+  "auth_seq": 46,
+  "unp_seq": 75,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 54,
+  "auth_seq": 47,
+  "unp_seq": 76,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 55,
+  "auth_seq": 48,
+  "unp_seq": 77,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 56,
+  "auth_seq": 49,
+  "unp_seq": 78,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 57,
+  "auth_seq": 50,
+  "unp_seq": 79,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 58,
+  "auth_seq": 51,
+  "unp_seq": 80,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 59,
+  "auth_seq": 52,
+  "unp_seq": 81,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 60,
+  "auth_seq": 53,
+  "unp_seq": 82,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 61,
+  "auth_seq": 54,
+  "unp_seq": 83,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 62,
+  "auth_seq": 55,
+  "unp_seq": 84,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 63,
+  "auth_seq": 56,
+  "unp_seq": 85,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 64,
+  "auth_seq": 57,
+  "unp_seq": 86,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 65,
+  "auth_seq": 58,
+  "unp_seq": 87,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 66,
+  "auth_seq": 59,
+  "unp_seq": 88,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 67,
+  "auth_seq": 60,
+  "unp_seq": 89,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 68,
+  "auth_seq": 61,
+  "unp_seq": 90,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 69,
+  "auth_seq": 62,
+  "unp_seq": 91,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 70,
+  "auth_seq": 63,
+  "unp_seq": 92,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 71,
+  "auth_seq": 64,
+  "unp_seq": 93,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 72,
+  "auth_seq": 65,
+  "unp_seq": 94,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 73,
+  "auth_seq": 66,
+  "unp_seq": 95,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 74,
+  "auth_seq": 67,
+  "unp_seq": 96,
+  "resname_3": "TRP"
+ },
+ {
+  "construct_pos": 75,
+  "auth_seq": 68,
+  "unp_seq": 97,
+  "resname_3": "TRP"
+ },
+ {
+  "construct_pos": 76,
+  "auth_seq": 69,
+  "unp_seq": 98,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 77,
+  "auth_seq": 70,
+  "unp_seq": 99,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 78,
+  "auth_seq": 71,
+  "unp_seq": 100,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 79,
+  "auth_seq": 72,
+  "unp_seq": 101,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 80,
+  "auth_seq": 73,
+  "unp_seq": 102,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 81,
+  "auth_seq": 74,
+  "unp_seq": 103,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 82,
+  "auth_seq": 75,
+  "unp_seq": 104,
+  "resname_3": "HIS"
+ },
+ {
+  "construct_pos": 83,
+  "auth_seq": 76,
+  "unp_seq": 105,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 84,
+  "auth_seq": 77,
+  "unp_seq": 106,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 85,
+  "auth_seq": 78,
+  "unp_seq": 107,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 86,
+  "auth_seq": 79,
+  "unp_seq": 108,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 87,
+  "auth_seq": 80,
+  "unp_seq": 109,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 88,
+  "auth_seq": 81,
+  "unp_seq": 110,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 89,
+  "auth_seq": 82,
+  "unp_seq": 111,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 90,
+  "auth_seq": 83,
+  "unp_seq": 112,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 91,
+  "auth_seq": 84,
+  "unp_seq": 113,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 92,
+  "auth_seq": 85,
+  "unp_seq": 114,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 93,
+  "auth_seq": 86,
+  "unp_seq": 115,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 94,
+  "auth_seq": 87,
+  "unp_seq": 116,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 95,
+  "auth_seq": 88,
+  "unp_seq": 117,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 96,
+  "auth_seq": 89,
+  "unp_seq": 118,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 97,
+  "auth_seq": 90,
+  "unp_seq": 119,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 98,
+  "auth_seq": 91,
+  "unp_seq": 120,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 99,
+  "auth_seq": 92,
+  "unp_seq": 121,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 100,
+  "auth_seq": 93,
+  "unp_seq": 122,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 101,
+  "auth_seq": 94,
+  "unp_seq": 123,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 102,
+  "auth_seq": 95,
+  "unp_seq": 124,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 103,
+  "auth_seq": 96,
+  "unp_seq": 125,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 104,
+  "auth_seq": 97,
+  "unp_seq": 126,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 105,
+  "auth_seq": 98,
+  "unp_seq": 127,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 106,
+  "auth_seq": 99,
+  "unp_seq": 128,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 107,
+  "auth_seq": 100,
+  "unp_seq": 129,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 108,
+  "auth_seq": 101,
+  "unp_seq": 130,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 109,
+  "auth_seq": 102,
+  "unp_seq": 131,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 110,
+  "auth_seq": 103,
+  "unp_seq": 132,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 111,
+  "auth_seq": 104,
+  "unp_seq": 133,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 112,
+  "auth_seq": 105,
+  "unp_seq": 134,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 113,
+  "auth_seq": 106,
+  "unp_seq": 135,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 114,
+  "auth_seq": 107,
+  "unp_seq": 136,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 115,
+  "auth_seq": 108,
+  "unp_seq": 137,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 116,
+  "auth_seq": 109,
+  "unp_seq": 138,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 117,
+  "auth_seq": 110,
+  "unp_seq": 139,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 118,
+  "auth_seq": 111,
+  "unp_seq": 140,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 119,
+  "auth_seq": 112,
+  "unp_seq": 141,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 120,
+  "auth_seq": 113,
+  "unp_seq": 142,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 121,
+  "auth_seq": 114,
+  "unp_seq": 143,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 122,
+  "auth_seq": 115,
+  "unp_seq": 144,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 123,
+  "auth_seq": 116,
+  "unp_seq": 145,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 124,
+  "auth_seq": 117,
+  "unp_seq": 146,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 125,
+  "auth_seq": 118,
+  "unp_seq": 147,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 126,
+  "auth_seq": 119,
+  "unp_seq": 148,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 127,
+  "auth_seq": 120,
+  "unp_seq": 149,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 128,
+  "auth_seq": 121,
+  "unp_seq": 150,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 129,
+  "auth_seq": 122,
+  "unp_seq": 151,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 130,
+  "auth_seq": 123,
+  "unp_seq": 152,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 131,
+  "auth_seq": 124,
+  "unp_seq": 153,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 132,
+  "auth_seq": 125,
+  "unp_seq": 154,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 133,
+  "auth_seq": 126,
+  "unp_seq": 155,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 134,
+  "auth_seq": 127,
+  "unp_seq": 156,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 135,
+  "auth_seq": 128,
+  "unp_seq": 157,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 136,
+  "auth_seq": 129,
+  "unp_seq": 158,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 137,
+  "auth_seq": 130,
+  "unp_seq": 159,
+  "resname_3": "TRP"
+ },
+ {
+  "construct_pos": 138,
+  "auth_seq": 131,
+  "unp_seq": 160,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 139,
+  "auth_seq": 132,
+  "unp_seq": 161,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 140,
+  "auth_seq": 133,
+  "unp_seq": 162,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 141,
+  "auth_seq": 134,
+  "unp_seq": 163,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 142,
+  "auth_seq": 135,
+  "unp_seq": 164,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 143,
+  "auth_seq": 136,
+  "unp_seq": 165,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 144,
+  "auth_seq": 137,
+  "unp_seq": 166,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 145,
+  "auth_seq": 138,
+  "unp_seq": 167,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 146,
+  "auth_seq": 139,
+  "unp_seq": 168,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 147,
+  "auth_seq": 140,
+  "unp_seq": 169,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 148,
+  "auth_seq": 141,
+  "unp_seq": 170,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 149,
+  "auth_seq": 142,
+  "unp_seq": 171,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 150,
+  "auth_seq": 143,
+  "unp_seq": 172,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 151,
+  "auth_seq": 144,
+  "unp_seq": 173,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 152,
+  "auth_seq": 145,
+  "unp_seq": 174,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 153,
+  "auth_seq": 146,
+  "unp_seq": 175,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 154,
+  "auth_seq": 147,
+  "unp_seq": 176,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 155,
+  "auth_seq": 148,
+  "unp_seq": 177,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 156,
+  "auth_seq": 149,
+  "unp_seq": 178,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 157,
+  "auth_seq": 150,
+  "unp_seq": 179,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 158,
+  "auth_seq": 151,
+  "unp_seq": 180,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 159,
+  "auth_seq": 152,
+  "unp_seq": 181,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 160,
+  "auth_seq": 153,
+  "unp_seq": 182,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 161,
+  "auth_seq": 154,
+  "unp_seq": 183,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 162,
+  "auth_seq": 155,
+  "unp_seq": 184,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 163,
+  "auth_seq": 156,
+  "unp_seq": 185,
+  "resname_3": "TRP"
+ },
+ {
+  "construct_pos": 164,
+  "auth_seq": 157,
+  "unp_seq": 186,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 165,
+  "auth_seq": 158,
+  "unp_seq": 187,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 166,
+  "auth_seq": 159,
+  "unp_seq": 188,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 167,
+  "auth_seq": 160,
+  "unp_seq": 189,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 168,
+  "auth_seq": 161,
+  "unp_seq": 190,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 169,
+  "auth_seq": 162,
+  "unp_seq": 191,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 170,
+  "auth_seq": 163,
+  "unp_seq": 192,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 171,
+  "auth_seq": 164,
+  "unp_seq": 193,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 172,
+  "auth_seq": 165,
+  "unp_seq": 194,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 173,
+  "auth_seq": 166,
+  "unp_seq": 195,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 174,
+  "auth_seq": 167,
+  "unp_seq": 196,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 175,
+  "auth_seq": 168,
+  "unp_seq": 197,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 176,
+  "auth_seq": 169,
+  "unp_seq": 198,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 177,
+  "auth_seq": 170,
+  "unp_seq": 199,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 178,
+  "auth_seq": 171,
+  "unp_seq": 200,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 179,
+  "auth_seq": 172,
+  "unp_seq": 201,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 180,
+  "auth_seq": 173,
+  "unp_seq": 202,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 181,
+  "auth_seq": 174,
+  "unp_seq": 203,
+  "resname_3": "CYS"
+ },
+ {
+  "construct_pos": 182,
+  "auth_seq": 175,
+  "unp_seq": 204,
+  "resname_3": "GLU"
+ },
+ {
+  "construct_pos": 183,
+  "auth_seq": 176,
+  "unp_seq": 205,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 184,
+  "auth_seq": 177,
+  "unp_seq": 206,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 185,
+  "auth_seq": 178,
+  "unp_seq": 207,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 186,
+  "auth_seq": 179,
+  "unp_seq": 208,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 187,
+  "auth_seq": 180,
+  "unp_seq": 209,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 188,
+  "auth_seq": 181,
+  "unp_seq": 210,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 189,
+  "auth_seq": 182,
+  "unp_seq": 211,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 190,
+  "auth_seq": 183,
+  "unp_seq": 212,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 191,
+  "auth_seq": 184,
+  "unp_seq": 213,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 192,
+  "auth_seq": 185,
+  "unp_seq": 214,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 193,
+  "auth_seq": 186,
+  "unp_seq": 215,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 194,
+  "auth_seq": 187,
+  "unp_seq": 216,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 195,
+  "auth_seq": 188,
+  "unp_seq": 217,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 196,
+  "auth_seq": 189,
+  "unp_seq": 218,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 197,
+  "auth_seq": 190,
+  "unp_seq": 219,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 198,
+  "auth_seq": 191,
+  "unp_seq": 220,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 199,
+  "auth_seq": 192,
+  "unp_seq": 221,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 200,
+  "auth_seq": 193,
+  "unp_seq": 222,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 201,
+  "auth_seq": 194,
+  "unp_seq": 223,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 202,
+  "auth_seq": 195,
+  "unp_seq": 224,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 203,
+  "auth_seq": 196,
+  "unp_seq": 225,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 204,
+  "auth_seq": 197,
+  "unp_seq": 226,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 205,
+  "auth_seq": 198,
+  "unp_seq": 227,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 206,
+  "auth_seq": 199,
+  "unp_seq": 228,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 207,
+  "auth_seq": 200,
+  "unp_seq": 229,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 208,
+  "auth_seq": 201,
+  "unp_seq": 230,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 209,
+  "auth_seq": 202,
+  "unp_seq": 231,
+  "resname_3": "GLU"
+ },
+ {
+  "construct_pos": 210,
+  "auth_seq": 203,
+  "unp_seq": 232,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 211,
+  "auth_seq": 204,
+  "unp_seq": 233,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 212,
+  "auth_seq": 205,
+  "unp_seq": 234,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 213,
+  "auth_seq": 206,
+  "unp_seq": 235,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 214,
+  "auth_seq": 207,
+  "unp_seq": 236,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 215,
+  "auth_seq": 208,
+  "unp_seq": 237,
+  "resname_3": "HIS"
+ },
+ {
+  "construct_pos": 216,
+  "auth_seq": 209,
+  "unp_seq": 238,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 217,
+  "auth_seq": 210,
+  "unp_seq": 239,
+  "resname_3": "CYS"
+ },
+ {
+  "construct_pos": 218,
+  "auth_seq": 211,
+  "unp_seq": 240,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 219,
+  "auth_seq": 212,
+  "unp_seq": 241,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 220,
+  "auth_seq": 213,
+  "unp_seq": 242,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 221,
+  "auth_seq": 214,
+  "unp_seq": 243,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 222,
+  "auth_seq": 215,
+  "unp_seq": 244,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 223,
+  "auth_seq": 216,
+  "unp_seq": 245,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 224,
+  "auth_seq": 217,
+  "unp_seq": 246,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 225,
+  "auth_seq": 218,
+  "unp_seq": 247,
+  "resname_3": "GLN"
+ },
+ {
+  "construct_pos": 226,
+  "auth_seq": 219,
+  "unp_seq": 248,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 227,
+  "auth_seq": 220,
+  "unp_seq": 249,
+  "resname_3": "LEU"
+ },
+ {
+  "construct_pos": 228,
+  "auth_seq": 221,
+  "unp_seq": 250,
+  "resname_3": "ILE"
+ },
+ {
+  "construct_pos": 229,
+  "auth_seq": 222,
+  "unp_seq": 251,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 230,
+  "auth_seq": 223,
+  "unp_seq": 252,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 231,
+  "auth_seq": 224,
+  "unp_seq": 253,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 232,
+  "auth_seq": 225,
+  "unp_seq": 254,
+  "resname_3": "GLY"
+ },
+ {
+  "construct_pos": 233,
+  "auth_seq": 226,
+  "unp_seq": 255,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 234,
+  "auth_seq": 227,
+  "unp_seq": 256,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 235,
+  "auth_seq": 228,
+  "unp_seq": 257,
+  "resname_3": "TRP"
+ },
+ {
+  "construct_pos": 236,
+  "auth_seq": 229,
+  "unp_seq": 258,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 237,
+  "auth_seq": 230,
+  "unp_seq": 259,
+  "resname_3": "LYS"
+ },
+ {
+  "construct_pos": 238,
+  "auth_seq": 231,
+  "unp_seq": 260,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 239,
+  "auth_seq": 232,
+  "unp_seq": 261,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 240,
+  "auth_seq": 233,
+  "unp_seq": 262,
+  "resname_3": "MET"
+ },
+ {
+  "construct_pos": 241,
+  "auth_seq": 234,
+  "unp_seq": 263,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 242,
+  "auth_seq": 235,
+  "unp_seq": 264,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 243,
+  "auth_seq": 236,
+  "unp_seq": 265,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 244,
+  "auth_seq": 237,
+  "unp_seq": 266,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 245,
+  "auth_seq": 238,
+  "unp_seq": 267,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 246,
+  "auth_seq": 239,
+  "unp_seq": 268,
+  "resname_3": "TYR"
+ },
+ {
+  "construct_pos": 247,
+  "auth_seq": 240,
+  "unp_seq": 269,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 248,
+  "auth_seq": 241,
+  "unp_seq": 270,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 249,
+  "auth_seq": 242,
+  "unp_seq": 271,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 250,
+  "auth_seq": 243,
+  "unp_seq": 272,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 251,
+  "auth_seq": 244,
+  "unp_seq": 273,
+  "resname_3": "CYS"
+ },
+ {
+  "construct_pos": 252,
+  "auth_seq": 245,
+  "unp_seq": 274,
+  "resname_3": "GLU"
+ },
+ {
+  "construct_pos": 253,
+  "auth_seq": 246,
+  "unp_seq": 275,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 254,
+  "auth_seq": 247,
+  "unp_seq": 276,
+  "resname_3": "PRO"
+ },
+ {
+  "construct_pos": 255,
+  "auth_seq": 248,
+  "unp_seq": 277,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 256,
+  "auth_seq": 249,
+  "unp_seq": 278,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 257,
+  "auth_seq": 250,
+  "unp_seq": 279,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 258,
+  "auth_seq": 251,
+  "unp_seq": 280,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 259,
+  "auth_seq": 252,
+  "unp_seq": 281,
+  "resname_3": "VAL"
+ },
+ {
+  "construct_pos": 260,
+  "auth_seq": 253,
+  "unp_seq": 282,
+  "resname_3": "SER"
+ },
+ {
+  "construct_pos": 261,
+  "auth_seq": 254,
+  "unp_seq": 283,
+  "resname_3": "ASP"
+ },
+ {
+  "construct_pos": 262,
+  "auth_seq": 255,
+  "unp_seq": 284,
+  "resname_3": "PHE"
+ },
+ {
+  "construct_pos": 263,
+  "auth_seq": 256,
+  "unp_seq": 285,
+  "resname_3": "ARG"
+ },
+ {
+  "construct_pos": 264,
+  "auth_seq": 257,
+  "unp_seq": 286,
+  "resname_3": "THR"
+ },
+ {
+  "construct_pos": 265,
+  "auth_seq": 258,
+  "unp_seq": 287,
+  "resname_3": "ALA"
+ },
+ {
+  "construct_pos": 266,
+  "auth_seq": 259,
+  "unp_seq": 288,
+  "resname_3": "ASN"
+ },
+ {
+  "construct_pos": 267,
+  "auth_seq": 260,
+  "unp_seq": 289,
+  "resname_3": "CYS"
+ },
+ {
+  "construct_pos": 268,
+  "auth_seq": 261,
+  "unp_seq": 290,
+  "resname_3": "SER"
+ }
+]

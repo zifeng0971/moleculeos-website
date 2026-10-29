@@ -12,7 +12,7 @@ async function main(){
       const source=path.join(root,'public/manual-assets',lang,'gif-original');
       if(await fs.access(source).then(()=>true,()=>false)){const backup=path.join(temporary,lang);await fs.rename(source,backup);moved.push({source,backup});}
     }
-    const result=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build'],{stdio:'inherit'});
+    const result=spawnSync(process.execPath,[path.join(root,'node_modules/next/dist/bin/next'),'build',...(process.env.NEXT_IGNORE_LINT==='1'?['--no-lint']:[])],{stdio:'inherit'});
     if(result.status!==0)throw new Error(`Next build exited ${result.status}`);
   } finally {for(const item of moved)await fs.rename(item.backup,item.source);await fs.rmdir(temporary);}
 }

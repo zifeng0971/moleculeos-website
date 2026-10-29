@@ -1,0 +1,254 @@
+{
+  "case_id": "01",
+  "status": "succeeded",
+  "source_kind": "MOS_prediction",
+  "mos_task_id": "342253805564928",
+  "best_sample": 1,
+  "models": [
+    {
+      "sample": 1,
+      "structure": "01-structure/raw/MMFold_1.cif",
+      "confidence_file": "01-structure/raw/summary_confidences_sample_1.json",
+      "plddt": 93.71290588378906,
+      "ptm": 0.936729907989502,
+      "iptm": 0.9182515740394592,
+      "chain_ptm": [
+        0.9448949098587036,
+        0.960560142993927
+      ],
+      "chain_iptm": [
+        0.9182515740394592,
+        0.9182515740394592
+      ],
+      "chain_pair_iptm": [
+        [
+          0.0,
+          0.9182515740394592
+        ],
+        [
+          0.9182515740394592,
+          0.0
+        ]
+      ],
+      "chain_plddt": [
+        0.9287236332893372,
+        0.9453778266906738
+      ],
+      "chain_pair_plddt": [
+        [
+          0.0,
+          0.937129020690918
+        ],
+        [
+          0.937129020690918,
+          0.0
+        ]
+      ],
+      "ranking_score": 0.9219472408294678,
+      "abag_score": 0.9182515740394592,
+      "interchain_residue_pairs_within_4_5_A": 46,
+      "derived_complex_CA_RMSD_to_5JDS_A": 1.0545397656943167,
+      "aligned_CA_count": 242
+    },
+    {
+      "sample": 2,
+      "structure": "01-structure/raw/MMFold_2.cif",
+      "confidence_file": "01-structure/raw/summary_confidences_sample_2.json",
+      "plddt": 87.98397827148438,
+      "ptm": 0.7746131420135498,
+      "iptm": 0.575352668762207,
+      "chain_ptm": [
+        0.9294641613960266,
+        0.9469032287597656
+      ],
+      "chain_iptm": [
+        0.575352668762207,
+        0.575352668762207
+      ],
+      "chain_pair_iptm": [
+        [
+          0.0,
+          0.575352668762207
+        ],
+        [
+          0.575352668762207,
+          0.0
+        ]
+      ],
+      "chain_plddt": [
+        0.8737346529960632,
+        0.8858311176300049
+      ],
+      "chain_pair_plddt": [
+        [
+          0.0,
+          0.8798397779464722
+        ],
+        [
+          0.8798397779464722,
+          0.0
+        ]
+      ],
+      "ranking_score": 0.6152048110961914,
+      "abag_score": 0.575352668762207,
+      "interchain_residue_pairs_within_4_5_A": 43,
+      "derived_complex_CA_RMSD_to_5JDS_A": 13.681326742179285,
+      "aligned_CA_count": 242
+    },
+    {
+      "sample": 3,
+      "structure": "01-structure/raw/MMFold_3.cif",
+      "confidence_file": "01-structure/raw/summary_confidences_sample_3.json",
+      "plddt": 87.28251647949219,
+      "ptm": 0.695294201374054,
+      "iptm": 0.455554723739624,
+      "chain_ptm": [
+        0.9311522245407104,
+        0.9444842338562012
+      ],
+      "chain_iptm": [
+        0.455554723739624,
+        0.455554723739624
+      ],
+      "chain_pair_iptm": [
+        [
+          0.0,
+          0.455554723739624
+        ],
+        [
+          0.455554723739624,
+          0.0
+        ]
+      ],
+      "chain_plddt": [
+        0.8664485216140747,
+        0.8790828585624695
+      ],
+      "chain_pair_plddt": [
+        [
+          0.0,
+          0.8728251457214355
+        ],
+        [
+          0.8728251457214355,
+          0.0
+        ]
+      ],
+      "ranking_score": 0.503502607345581,
+      "abag_score": 0.455554723739624,
+      "interchain_residue_pairs_within_4_5_A": 35,
+      "derived_complex_CA_RMSD_to_5JDS_A": 14.968483003842001,
+      "aligned_CA_count": 242
+    },
+    {
+      "sample": 4,
+      "structure": "01-structure/raw/MMFold_4.cif",
+      "confidence_file": "01-structure/raw/summary_confidences_sample_4.json",
+      "plddt": 87.21683502197266,
+      "ptm": 0.6828274726867676,
+      "iptm": 0.44188353419303894,
+      "chain_ptm": [
+        0.9314282536506653,
+        0.9445997476577759
+      ],
+      "chain_iptm": [
+        0.44188353419303894,
+        0.44188353419303894
+      ],
+      "chain_pair_iptm": [
+        [
+          0.0,
+          0.44188353419303894
+        ],
+        [
+          0.44188353419303894,
+          0.0
+        ]
+      ],
+      "chain_plddt": [
+        0.8660467267036438,
+        0.8781759142875671
+      ],
+      "chain_pair_plddt": [
+        [
+          0.0,
+          0.8721683621406555
+        ],
+        [
+          0.8721683621406555,
+          0.0
+        ]
+      ],
+      "ranking_score": 0.4900723099708557,
+      "abag_score": 0.44188353419303894,
+      "interchain_residue_pairs_within_4_5_A": 27,
+      "derived_complex_CA_RMSD_to_5JDS_A": 8.086521893445836,
+      "aligned_CA_count": 242
+    },
+    {
+      "sample": 5,
+      "structure": "01-structure/raw/MMFold_5.cif",
+      "confidence_file": "01-structure/raw/summary_confidences_sample_5.json",
+      "plddt": 84.99858856201172,
+      "ptm": 0.6282225847244263,
+      "iptm": 0.2926967144012451,
+      "chain_ptm": [
+        0.9316843748092651,
+        0.9339718818664551
+      ],
+      "chain_iptm": [
+        0.2926967144012451,
+        0.2926967144012451
+      ],
+      "chain_pair_iptm": [
+        [
+          0.0,
+          0.2926967144012451
+        ],
+        [
+          0.2926967144012451,
+          0.0
+        ]
+      ],
+      "chain_plddt": [
+        0.845818817615509,
+        0.8540754318237305
+      ],
+      "chain_pair_plddt": [
+        [
+          0.0,
+          0.8499858975410461
+        ],
+        [
+          0.8499858975410461,
+          0.0
+        ]
+      ],
+      "ranking_score": 0.35980188846588135,
+      "abag_score": 0.2926967144012451,
+      "interchain_residue_pairs_within_4_5_A": 35,
+      "derived_complex_CA_RMSD_to_5JDS_A": 14.880249310813348,
+      "aligned_CA_count": 242
+    }
+  ],
+  "available_outputs": [
+    "five mmCIF",
+    "five summary confidence JSON",
+    "derived PDB",
+    "derived contacts",
+    "reference residue mapping"
+  ],
+  "limitations": [
+    "PAE matrix was not included in the task output.",
+    "Confidence is prediction quality, not measured binding affinity.",
+    "Reference RMSD and contacts were calculated locally from real downloaded outputs."
+  ],
+  "confidence_scales": {
+    "plddt": "0-100 global",
+    "ptm": "0-1",
+    "iptm": "0-1",
+    "ranking_score": "0-1",
+    "chain_plddt": "0-1 as returned; multiply by 100 only for explicit display conversion"
+  },
+  "highlights_file": "01-structure/raw/highlights.json"
+}

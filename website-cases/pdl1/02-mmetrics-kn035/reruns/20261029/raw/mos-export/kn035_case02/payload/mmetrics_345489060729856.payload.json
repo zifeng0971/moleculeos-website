@@ -1,0 +1,66 @@
+{
+  "task_id": "345489060729856",
+  "task_name": "mmetrics-analysis-345488784917504",
+  "task_type": "MOSTask",
+  "status_at_capture": "SUCCEED",
+  "duration": "26s",
+  "started": "2026-10-29 05:58:35",
+  "parent_task_id": "345488784917504",
+  "input_parameters": {
+    "autocomp_results": {
+      "result_data": {
+        "objects": [
+          {
+            "key": "user_objects/123/330665428816896/345488784917504/mos-diffaffinity/diffaffinity_scores.csv",
+            "createTime": 1793253514,
+            "modelType": "mos-diffaffinity",
+            "id": "345489058489344",
+            "name": "diffaffinity_scores.csv"
+          },
+          {
+            "name": "msat_scores.csv",
+            "key": "user_objects/123/330665428816896/345488784917504/mos-score-msat/msat_scores.csv",
+            "createTime": 1793253514,
+            "modelType": "mos-score-msat",
+            "id": "345489058509824"
+          },
+          {
+            "id": "345489058530304",
+            "name": "all_sequences.fasta",
+            "key": "user_objects/123/330665428816896/345488784917504/mos-blast/all_sequences.fasta",
+            "createTime": 1793253514,
+            "modelType": "mos-blast"
+          },
+          {
+            "createTime": 1793253514,
+            "modelType": "mos-blast",
+            "id": "345489058554880",
+            "name": "blast_results.json",
+            "key": "user_objects/123/330665428816896/345488784917504/mos-blast/blast_results.json"
+          },
+          {
+            "id": "345489058579456",
+            "name": "sequence_info.fasta",
+            "key": "user_objects/123/330665428816896/345488784917504/sequence_info.fasta",
+            "createTime": 1793253514
+          },
+          {
+            "name": "esm_scores.csv",
+            "key": "user_objects/123/330665428816896/345488784917504/mos-score-esm/esm_scores.csv",
+            "createTime": 1793253514,
+            "modelType": "mos-score-esm",
+            "id": "345489058595840"
+          },
+          {
+            "id": "345489058612224",
+            "name": "proteinmpnn_scores.csv",
+            "key": "user_objects/123/330665428816896/345488784917504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+            "createTime": 1793253514,
+            "modelType": "mos-score-ligandmpnn"
+          }
+        ]
+      }
+    },
+    "input_structure": "user_objects/123/330665428816896/345488780645376_MMFold_1.cif"
+  }
+}

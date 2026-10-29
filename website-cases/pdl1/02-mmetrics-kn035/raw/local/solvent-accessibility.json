@@ -1,0 +1,1975 @@
+{
+  "source_kind": "local_geometry",
+  "method": "Biopython ShrakeRupley, probe 1.4 A, 960 sphere points per atom, heavy atoms from prediction",
+  "buried_interface_area_A2": 671.4113696841559,
+  "residues": [
+    {
+      "chain": "A",
+      "label_seq_id": 1,
+      "aa": "M",
+      "isolated_sasa_A2": 224.15705893428859,
+      "complex_sasa_A2": 224.15705893428859,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 2,
+      "aa": "A",
+      "isolated_sasa_A2": 75.07472210964244,
+      "complex_sasa_A2": 75.07472210964244,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 3,
+      "aa": "F",
+      "isolated_sasa_A2": 38.145793958540416,
+      "complex_sasa_A2": 38.145793958540416,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 4,
+      "aa": "T",
+      "isolated_sasa_A2": 66.13367087770953,
+      "complex_sasa_A2": 66.13367087770953,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 5,
+      "aa": "V",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 6,
+      "aa": "T",
+      "isolated_sasa_A2": 70.70184112034036,
+      "complex_sasa_A2": 70.70184112034036,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 7,
+      "aa": "V",
+      "isolated_sasa_A2": 42.00071664005431,
+      "complex_sasa_A2": 42.00071664005431,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 8,
+      "aa": "P",
+      "isolated_sasa_A2": 77.94124607346248,
+      "complex_sasa_A2": 77.94124607346248,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 9,
+      "aa": "K",
+      "isolated_sasa_A2": 99.12667299871873,
+      "complex_sasa_A2": 99.12667299871873,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 10,
+      "aa": "D",
+      "isolated_sasa_A2": 98.5382068798085,
+      "complex_sasa_A2": 98.5382068798085,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 11,
+      "aa": "L",
+      "isolated_sasa_A2": 74.72533773665506,
+      "complex_sasa_A2": 74.72533773665506,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 12,
+      "aa": "Y",
+      "isolated_sasa_A2": 20.107360608244257,
+      "complex_sasa_A2": 20.107360608244257,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 13,
+      "aa": "V",
+      "isolated_sasa_A2": 89.31063716188045,
+      "complex_sasa_A2": 89.31063716188045,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 14,
+      "aa": "V",
+      "isolated_sasa_A2": 15.346941912173934,
+      "complex_sasa_A2": 15.346941912173934,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 15,
+      "aa": "E",
+      "isolated_sasa_A2": 79.28820130569521,
+      "complex_sasa_A2": 79.28820130569521,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 16,
+      "aa": "Y",
+      "isolated_sasa_A2": 115.34110289032841,
+      "complex_sasa_A2": 115.34110289032841,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 17,
+      "aa": "G",
+      "isolated_sasa_A2": 38.12217441777318,
+      "complex_sasa_A2": 38.12217441777318,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 18,
+      "aa": "S",
+      "isolated_sasa_A2": 35.42823908236585,
+      "complex_sasa_A2": 35.42823908236585,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 19,
+      "aa": "N",
+      "isolated_sasa_A2": 100.98984819080465,
+      "complex_sasa_A2": 100.98984819080465,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 20,
+      "aa": "M",
+      "isolated_sasa_A2": 7.421881744411985,
+      "complex_sasa_A2": 7.421881744411985,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 21,
+      "aa": "T",
+      "isolated_sasa_A2": 47.80046843371174,
+      "complex_sasa_A2": 47.80046843371174,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 22,
+      "aa": "I",
+      "isolated_sasa_A2": 0.6289730291874563,
+      "complex_sasa_A2": 0.6289730291874563,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 23,
+      "aa": "E",
+      "isolated_sasa_A2": 49.28247811612843,
+      "complex_sasa_A2": 49.28247811612843,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 24,
+      "aa": "C",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 25,
+      "aa": "K",
+      "isolated_sasa_A2": 69.28161609344428,
+      "complex_sasa_A2": 69.28161609344428,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 26,
+      "aa": "F",
+      "isolated_sasa_A2": 12.861436850365957,
+      "complex_sasa_A2": 12.861436850365957,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 27,
+      "aa": "P",
+      "isolated_sasa_A2": 56.386998788668656,
+      "complex_sasa_A2": 56.386998788668656,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 28,
+      "aa": "V",
+      "isolated_sasa_A2": 38.2877612215592,
+      "complex_sasa_A2": 38.2877612215592,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 29,
+      "aa": "E",
+      "isolated_sasa_A2": 155.17745723260325,
+      "complex_sasa_A2": 155.17745723260325,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 30,
+      "aa": "K",
+      "isolated_sasa_A2": 199.98091696062508,
+      "complex_sasa_A2": 199.98091696062508,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 31,
+      "aa": "Q",
+      "isolated_sasa_A2": 160.78884305774227,
+      "complex_sasa_A2": 160.78884305774227,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 32,
+      "aa": "L",
+      "isolated_sasa_A2": 30.241374054512555,
+      "complex_sasa_A2": 30.241374054512555,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 33,
+      "aa": "D",
+      "isolated_sasa_A2": 76.10436993887791,
+      "complex_sasa_A2": 76.10436993887791,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 34,
+      "aa": "L",
+      "isolated_sasa_A2": 75.61168836198175,
+      "complex_sasa_A2": 75.61168836198175,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 35,
+      "aa": "A",
+      "isolated_sasa_A2": 72.74283307461334,
+      "complex_sasa_A2": 72.74283307461334,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 36,
+      "aa": "A",
+      "isolated_sasa_A2": 42.16696972328228,
+      "complex_sasa_A2": 42.16696972328228,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 37,
+      "aa": "L",
+      "isolated_sasa_A2": 1.3393237800784004,
+      "complex_sasa_A2": 1.3393237800784004,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "isolated_sasa_A2": 60.88458922534577,
+      "complex_sasa_A2": 11.82469294872418,
+      "buried_sasa_A2": 49.059896276621586
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 39,
+      "aa": "V",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "isolated_sasa_A2": 62.334476122879515,
+      "complex_sasa_A2": 3.001158225986573,
+      "buried_sasa_A2": 59.33331789689294
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 41,
+      "aa": "W",
+      "isolated_sasa_A2": 0.25158921167498255,
+      "complex_sasa_A2": 0.25158921167498255,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 42,
+      "aa": "E",
+      "isolated_sasa_A2": 27.683086144902532,
+      "complex_sasa_A2": 9.490604798837596,
+      "buried_sasa_A2": 18.192481346064937
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 43,
+      "aa": "M",
+      "isolated_sasa_A2": 1.761124481724878,
+      "complex_sasa_A2": 1.761124481724878,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 44,
+      "aa": "E",
+      "isolated_sasa_A2": 117.95074536784912,
+      "complex_sasa_A2": 117.95074536784912,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "isolated_sasa_A2": 138.45500431997237,
+      "complex_sasa_A2": 29.776470701658823,
+      "buried_sasa_A2": 108.67853361831355
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 46,
+      "aa": "K",
+      "isolated_sasa_A2": 43.66136382573882,
+      "complex_sasa_A2": 43.66136382573882,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 47,
+      "aa": "N",
+      "isolated_sasa_A2": 9.448423681475397,
+      "complex_sasa_A2": 6.429353141375607,
+      "buried_sasa_A2": 3.01907054009979
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 48,
+      "aa": "I",
+      "isolated_sasa_A2": 1.3393237800784004,
+      "complex_sasa_A2": 1.3393237800784004,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 49,
+      "aa": "I",
+      "isolated_sasa_A2": 1.257946058374913,
+      "complex_sasa_A2": 1.257946058374913,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "isolated_sasa_A2": 46.23364360362976,
+      "complex_sasa_A2": 1.8226473378576784,
+      "buried_sasa_A2": 44.41099626577208
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 51,
+      "aa": "F",
+      "isolated_sasa_A2": 2.767481328424808,
+      "complex_sasa_A2": 2.767481328424808,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "isolated_sasa_A2": 46.48653919424986,
+      "complex_sasa_A2": 14.534709311527074,
+      "buried_sasa_A2": 31.951829882722784
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 53,
+      "aa": "H",
+      "isolated_sasa_A2": 137.30346269577763,
+      "complex_sasa_A2": 120.91089402873388,
+      "buried_sasa_A2": 16.392568667043747
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 54,
+      "aa": "G",
+      "isolated_sasa_A2": 19.9696541302619,
+      "complex_sasa_A2": 19.9696541302619,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 55,
+      "aa": "E",
+      "isolated_sasa_A2": 123.5178412815572,
+      "complex_sasa_A2": 123.5178412815572,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 56,
+      "aa": "E",
+      "isolated_sasa_A2": 43.46422495973523,
+      "complex_sasa_A2": 43.46422495973523,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 57,
+      "aa": "D",
+      "isolated_sasa_A2": 56.85179480377339,
+      "complex_sasa_A2": 38.923222948573255,
+      "buried_sasa_A2": 17.928571855200133
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 58,
+      "aa": "L",
+      "isolated_sasa_A2": 83.20197256259553,
+      "complex_sasa_A2": 83.20197256259553,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 59,
+      "aa": "K",
+      "isolated_sasa_A2": 183.24284116952728,
+      "complex_sasa_A2": 183.24284116952728,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 60,
+      "aa": "V",
+      "isolated_sasa_A2": 77.82471654795918,
+      "complex_sasa_A2": 39.85452191079118,
+      "buried_sasa_A2": 37.97019463716801
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 61,
+      "aa": "Q",
+      "isolated_sasa_A2": 26.313529771521086,
+      "complex_sasa_A2": 26.313529771521086,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 62,
+      "aa": "H",
+      "isolated_sasa_A2": 69.87779089532827,
+      "complex_sasa_A2": 69.87779089532827,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 63,
+      "aa": "S",
+      "isolated_sasa_A2": 65.39581024714866,
+      "complex_sasa_A2": 65.39581024714866,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 64,
+      "aa": "S",
+      "isolated_sasa_A2": 48.25625593188231,
+      "complex_sasa_A2": 48.25625593188231,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 65,
+      "aa": "Y",
+      "isolated_sasa_A2": 1.1586560225582074,
+      "complex_sasa_A2": 1.1586560225582074,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 66,
+      "aa": "R",
+      "isolated_sasa_A2": 155.75814267370814,
+      "complex_sasa_A2": 155.75814267370814,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 67,
+      "aa": "Q",
+      "isolated_sasa_A2": 168.08250200699496,
+      "complex_sasa_A2": 168.08250200699496,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 68,
+      "aa": "R",
+      "isolated_sasa_A2": 27.008160778171636,
+      "complex_sasa_A2": 27.008160778171636,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 69,
+      "aa": "A",
+      "isolated_sasa_A2": 0.12579460583749127,
+      "complex_sasa_A2": 0.12579460583749127,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 70,
+      "aa": "R",
+      "isolated_sasa_A2": 95.34458814287832,
+      "complex_sasa_A2": 95.34458814287832,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 71,
+      "aa": "L",
+      "isolated_sasa_A2": 7.477891105437735,
+      "complex_sasa_A2": 7.477891105437735,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 72,
+      "aa": "L",
+      "isolated_sasa_A2": 45.160263495659365,
+      "complex_sasa_A2": 45.160263495659365,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 73,
+      "aa": "K",
+      "isolated_sasa_A2": 106.96030496627958,
+      "complex_sasa_A2": 106.96030496627958,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 74,
+      "aa": "D",
+      "isolated_sasa_A2": 106.44213329199034,
+      "complex_sasa_A2": 106.44213329199034,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 75,
+      "aa": "Q",
+      "isolated_sasa_A2": 50.77993658041916,
+      "complex_sasa_A2": 50.77993658041916,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 76,
+      "aa": "L",
+      "isolated_sasa_A2": 3.144865145937282,
+      "complex_sasa_A2": 3.144865145937282,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 77,
+      "aa": "S",
+      "isolated_sasa_A2": 68.18315822211662,
+      "complex_sasa_A2": 68.18315822211662,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 78,
+      "aa": "L",
+      "isolated_sasa_A2": 126.29673706329005,
+      "complex_sasa_A2": 126.29673706329005,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 79,
+      "aa": "G",
+      "isolated_sasa_A2": 2.288943463454499,
+      "complex_sasa_A2": 2.288943463454499,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 80,
+      "aa": "N",
+      "isolated_sasa_A2": 2.7626053148270495,
+      "complex_sasa_A2": 2.7626053148270495,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 81,
+      "aa": "A",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 82,
+      "aa": "A",
+      "isolated_sasa_A2": 0.5031784233499651,
+      "complex_sasa_A2": 0.5031784233499651,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 83,
+      "aa": "L",
+      "isolated_sasa_A2": 0.3348309450196001,
+      "complex_sasa_A2": 0.3348309450196001,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 84,
+      "aa": "Q",
+      "isolated_sasa_A2": 70.1843553604472,
+      "complex_sasa_A2": 70.1843553604472,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 85,
+      "aa": "I",
+      "isolated_sasa_A2": 0.37738381751247385,
+      "complex_sasa_A2": 0.37738381751247385,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 86,
+      "aa": "T",
+      "isolated_sasa_A2": 57.059286526567476,
+      "complex_sasa_A2": 57.059286526567476,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 87,
+      "aa": "D",
+      "isolated_sasa_A2": 65.84339033451172,
+      "complex_sasa_A2": 65.84339033451172,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 88,
+      "aa": "V",
+      "isolated_sasa_A2": 0.11161031500653336,
+      "complex_sasa_A2": 0.11161031500653336,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 89,
+      "aa": "K",
+      "isolated_sasa_A2": 71.05408826963331,
+      "complex_sasa_A2": 71.05408826963331,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 90,
+      "aa": "L",
+      "isolated_sasa_A2": 79.57724877377649,
+      "complex_sasa_A2": 79.57724877377649,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 91,
+      "aa": "Q",
+      "isolated_sasa_A2": 133.60391925991948,
+      "complex_sasa_A2": 133.60391925991948,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 92,
+      "aa": "D",
+      "isolated_sasa_A2": 4.017971340235201,
+      "complex_sasa_A2": 4.017971340235201,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 93,
+      "aa": "A",
+      "isolated_sasa_A2": 37.88063306660192,
+      "complex_sasa_A2": 37.88063306660192,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 94,
+      "aa": "G",
+      "isolated_sasa_A2": 16.360301892497493,
+      "complex_sasa_A2": 16.360301892497493,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 95,
+      "aa": "V",
+      "isolated_sasa_A2": 68.55618438881916,
+      "complex_sasa_A2": 68.55618438881916,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 96,
+      "aa": "Y",
+      "isolated_sasa_A2": 0.23740492084402465,
+      "complex_sasa_A2": 0.23740492084402465,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "isolated_sasa_A2": 66.79674720414866,
+      "complex_sasa_A2": 9.570051750056066,
+      "buried_sasa_A2": 57.22669545409259
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 98,
+      "aa": "C",
+      "isolated_sasa_A2": 0.1139154586161049,
+      "complex_sasa_A2": 0.1139154586161049,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "isolated_sasa_A2": 49.29793736997797,
+      "complex_sasa_A2": 0.8568039464196662,
+      "buried_sasa_A2": 48.441133423558306
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 100,
+      "aa": "I",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "isolated_sasa_A2": 28.10488684654901,
+      "complex_sasa_A2": 10.826200555633736,
+      "buried_sasa_A2": 17.278686290915275
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 102,
+      "aa": "Y",
+      "isolated_sasa_A2": 39.508506895924796,
+      "complex_sasa_A2": 39.508506895924796,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 103,
+      "aa": "G",
+      "isolated_sasa_A2": 81.38166178427397,
+      "complex_sasa_A2": 68.1000342984965,
+      "buried_sasa_A2": 13.281627485777477
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 104,
+      "aa": "G",
+      "isolated_sasa_A2": 29.55623458466667,
+      "complex_sasa_A2": 22.260147446092176,
+      "buried_sasa_A2": 7.296087138574492
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "isolated_sasa_A2": 61.4333613210779,
+      "complex_sasa_A2": 10.112484373612634,
+      "buried_sasa_A2": 51.320876947465266
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 106,
+      "aa": "D",
+      "isolated_sasa_A2": 33.54418800709682,
+      "complex_sasa_A2": 26.804387915681225,
+      "buried_sasa_A2": 6.739800091415596
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "isolated_sasa_A2": 101.01729392962457,
+      "complex_sasa_A2": 46.193941726470015,
+      "buried_sasa_A2": 54.823352203154556
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 108,
+      "aa": "K",
+      "isolated_sasa_A2": 64.60018096367602,
+      "complex_sasa_A2": 64.60018096367602,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 109,
+      "aa": "R",
+      "isolated_sasa_A2": 142.8867574466058,
+      "complex_sasa_A2": 118.28101838552716,
+      "buried_sasa_A2": 24.605739061078637
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 110,
+      "aa": "I",
+      "isolated_sasa_A2": 0.37738381751247385,
+      "complex_sasa_A2": 0.37738381751247385,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 111,
+      "aa": "T",
+      "isolated_sasa_A2": 49.30184603483781,
+      "complex_sasa_A2": 49.30184603483781,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 112,
+      "aa": "V",
+      "isolated_sasa_A2": 3.125088820182934,
+      "complex_sasa_A2": 3.125088820182934,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 113,
+      "aa": "K",
+      "isolated_sasa_A2": 110.54898028839563,
+      "complex_sasa_A2": 110.54898028839563,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 114,
+      "aa": "V",
+      "isolated_sasa_A2": 24.968535416702956,
+      "complex_sasa_A2": 24.968535416702956,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 115,
+      "aa": "N",
+      "isolated_sasa_A2": 64.63193199342831,
+      "complex_sasa_A2": 64.63193199342831,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 116,
+      "aa": "A",
+      "isolated_sasa_A2": 50.620617253977045,
+      "complex_sasa_A2": 50.620617253977045,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 117,
+      "aa": "L",
+      "isolated_sasa_A2": 136.1173177375005,
+      "complex_sasa_A2": 136.1173177375005,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 118,
+      "aa": "E",
+      "isolated_sasa_A2": 215.18409042999212,
+      "complex_sasa_A2": 215.18409042999212,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 1,
+      "aa": "Q",
+      "isolated_sasa_A2": 180.67120934512116,
+      "complex_sasa_A2": 180.67120934512116,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 2,
+      "aa": "V",
+      "isolated_sasa_A2": 17.161483940985352,
+      "complex_sasa_A2": 17.161483940985352,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 3,
+      "aa": "Q",
+      "isolated_sasa_A2": 130.64880761925596,
+      "complex_sasa_A2": 130.64880761925596,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 4,
+      "aa": "L",
+      "isolated_sasa_A2": 17.641707794013087,
+      "complex_sasa_A2": 17.641707794013087,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 5,
+      "aa": "Q",
+      "isolated_sasa_A2": 103.39878478566303,
+      "complex_sasa_A2": 103.39878478566303,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 6,
+      "aa": "E",
+      "isolated_sasa_A2": 9.59848709056187,
+      "complex_sasa_A2": 9.59848709056187,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 7,
+      "aa": "S",
+      "isolated_sasa_A2": 57.7621812308939,
+      "complex_sasa_A2": 57.7621812308939,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 8,
+      "aa": "G",
+      "isolated_sasa_A2": 36.302584896765,
+      "complex_sasa_A2": 36.302584896765,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 9,
+      "aa": "G",
+      "isolated_sasa_A2": 34.39353590695197,
+      "complex_sasa_A2": 34.39353590695197,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 10,
+      "aa": "G",
+      "isolated_sasa_A2": 25.018942270829804,
+      "complex_sasa_A2": 25.018942270829804,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 11,
+      "aa": "L",
+      "isolated_sasa_A2": 130.11605633706017,
+      "complex_sasa_A2": 130.11605633706017,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 12,
+      "aa": "V",
+      "isolated_sasa_A2": 22.51723444491094,
+      "complex_sasa_A2": 22.51723444491094,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 13,
+      "aa": "Q",
+      "isolated_sasa_A2": 122.92117953281192,
+      "complex_sasa_A2": 122.92117953281192,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 14,
+      "aa": "P",
+      "isolated_sasa_A2": 59.81371977350438,
+      "complex_sasa_A2": 59.81371977350438,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 15,
+      "aa": "G",
+      "isolated_sasa_A2": 54.65596291058353,
+      "complex_sasa_A2": 54.65596291058353,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 16,
+      "aa": "G",
+      "isolated_sasa_A2": 20.924545144311338,
+      "complex_sasa_A2": 20.924545144311338,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 17,
+      "aa": "S",
+      "isolated_sasa_A2": 63.20092737673958,
+      "complex_sasa_A2": 63.20092737673958,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 18,
+      "aa": "L",
+      "isolated_sasa_A2": 26.291072620035674,
+      "complex_sasa_A2": 26.291072620035674,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 19,
+      "aa": "R",
+      "isolated_sasa_A2": 123.17246767519094,
+      "complex_sasa_A2": 123.17246767519094,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 20,
+      "aa": "L",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 21,
+      "aa": "S",
+      "isolated_sasa_A2": 25.463927926259778,
+      "complex_sasa_A2": 25.463927926259778,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 22,
+      "aa": "C",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 23,
+      "aa": "A",
+      "isolated_sasa_A2": 48.58188724641464,
+      "complex_sasa_A2": 48.58188724641464,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 24,
+      "aa": "A",
+      "isolated_sasa_A2": 14.654911882441175,
+      "complex_sasa_A2": 14.654911882441175,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 25,
+      "aa": "S",
+      "isolated_sasa_A2": 46.29212827786715,
+      "complex_sasa_A2": 46.29212827786715,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 26,
+      "aa": "G",
+      "isolated_sasa_A2": 36.15976024075117,
+      "complex_sasa_A2": 36.15976024075117,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 27,
+      "aa": "K",
+      "isolated_sasa_A2": 147.16371906720906,
+      "complex_sasa_A2": 144.39623773878424,
+      "buried_sasa_A2": 2.7674813284248216
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 28,
+      "aa": "M",
+      "isolated_sasa_A2": 73.0974704523169,
+      "complex_sasa_A2": 73.0974704523169,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 29,
+      "aa": "S",
+      "isolated_sasa_A2": 55.27740135339013,
+      "complex_sasa_A2": 38.58327120752831,
+      "buried_sasa_A2": 16.69413014586182
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 30,
+      "aa": "S",
+      "isolated_sasa_A2": 32.067985035101515,
+      "complex_sasa_A2": 14.259615750815485,
+      "buried_sasa_A2": 17.80836928428603
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 31,
+      "aa": "R",
+      "isolated_sasa_A2": 16.403826040719103,
+      "complex_sasa_A2": 16.403826040719103,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 32,
+      "aa": "R",
+      "isolated_sasa_A2": 62.226474712433806,
+      "complex_sasa_A2": 38.418143861667886,
+      "buried_sasa_A2": 23.80833085076592
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 33,
+      "aa": "C",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 34,
+      "aa": "M",
+      "isolated_sasa_A2": 1.794111204587571,
+      "complex_sasa_A2": 1.794111204587571,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "isolated_sasa_A2": 1.647296725903686,
+      "complex_sasa_A2": 1.647296725903686,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 36,
+      "aa": "W",
+      "isolated_sasa_A2": 0.25158921167498255,
+      "complex_sasa_A2": 0.25158921167498255,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 37,
+      "aa": "F",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 38,
+      "aa": "R",
+      "isolated_sasa_A2": 18.633110659681932,
+      "complex_sasa_A2": 18.633110659681932,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 39,
+      "aa": "Q",
+      "isolated_sasa_A2": 60.21186166447545,
+      "complex_sasa_A2": 60.21186166447545,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 40,
+      "aa": "A",
+      "isolated_sasa_A2": 24.008325948090384,
+      "complex_sasa_A2": 24.008325948090384,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 41,
+      "aa": "P",
+      "isolated_sasa_A2": 120.00419373699356,
+      "complex_sasa_A2": 120.00419373699356,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 42,
+      "aa": "G",
+      "isolated_sasa_A2": 91.02768117168466,
+      "complex_sasa_A2": 91.02768117168466,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 43,
+      "aa": "K",
+      "isolated_sasa_A2": 136.01913773108808,
+      "complex_sasa_A2": 136.01913773108808,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 44,
+      "aa": "E",
+      "isolated_sasa_A2": 159.8944499552224,
+      "complex_sasa_A2": 159.8944499552224,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 45,
+      "aa": "R",
+      "isolated_sasa_A2": 73.92623044831554,
+      "complex_sasa_A2": 73.92623044831554,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 46,
+      "aa": "E",
+      "isolated_sasa_A2": 82.53035110413866,
+      "complex_sasa_A2": 82.53035110413866,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 47,
+      "aa": "R",
+      "isolated_sasa_A2": 20.345446207496558,
+      "complex_sasa_A2": 20.345446207496558,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 48,
+      "aa": "V",
+      "isolated_sasa_A2": 1.9701608209069867,
+      "complex_sasa_A2": 1.9701608209069867,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 49,
+      "aa": "A",
+      "isolated_sasa_A2": 0.12579460583749127,
+      "complex_sasa_A2": 0.12579460583749127,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 50,
+      "aa": "K",
+      "isolated_sasa_A2": 0.25158921167498255,
+      "complex_sasa_A2": 0.25158921167498255,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 51,
+      "aa": "L",
+      "isolated_sasa_A2": 3.7738381751247383,
+      "complex_sasa_A2": 3.7738381751247383,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 52,
+      "aa": "L",
+      "isolated_sasa_A2": 9.811979255324319,
+      "complex_sasa_A2": 9.811979255324319,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 53,
+      "aa": "T",
+      "isolated_sasa_A2": 3.1978742859788536,
+      "complex_sasa_A2": 3.1978742859788536,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 54,
+      "aa": "T",
+      "isolated_sasa_A2": 86.40493491967626,
+      "complex_sasa_A2": 86.40493491967626,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 55,
+      "aa": "S",
+      "isolated_sasa_A2": 79.9166245561683,
+      "complex_sasa_A2": 79.9166245561683,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 56,
+      "aa": "G",
+      "isolated_sasa_A2": 34.983529625290004,
+      "complex_sasa_A2": 34.983529625290004,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 57,
+      "aa": "S",
+      "isolated_sasa_A2": 44.33469614319496,
+      "complex_sasa_A2": 44.33469614319496,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 58,
+      "aa": "T",
+      "isolated_sasa_A2": 70.08145903806354,
+      "complex_sasa_A2": 70.08145903806354,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 59,
+      "aa": "Y",
+      "isolated_sasa_A2": 85.97454196212222,
+      "complex_sasa_A2": 85.97454196212222,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 60,
+      "aa": "L",
+      "isolated_sasa_A2": 33.34470080058468,
+      "complex_sasa_A2": 33.34470080058468,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 61,
+      "aa": "A",
+      "isolated_sasa_A2": 16.593008823327462,
+      "complex_sasa_A2": 16.593008823327462,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 62,
+      "aa": "D",
+      "isolated_sasa_A2": 120.26148363033789,
+      "complex_sasa_A2": 120.26148363033789,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 63,
+      "aa": "S",
+      "isolated_sasa_A2": 63.36958508734449,
+      "complex_sasa_A2": 63.36958508734449,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 64,
+      "aa": "V",
+      "isolated_sasa_A2": 0.12579460583749127,
+      "complex_sasa_A2": 0.12579460583749127,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 65,
+      "aa": "K",
+      "isolated_sasa_A2": 110.30540868297199,
+      "complex_sasa_A2": 110.30540868297199,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 66,
+      "aa": "G",
+      "isolated_sasa_A2": 85.01595957670483,
+      "complex_sasa_A2": 85.01595957670483,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 67,
+      "aa": "R",
+      "isolated_sasa_A2": 27.936590419099268,
+      "complex_sasa_A2": 27.936590419099268,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 68,
+      "aa": "F",
+      "isolated_sasa_A2": 2.3863694876300743,
+      "complex_sasa_A2": 2.3863694876300743,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 69,
+      "aa": "T",
+      "isolated_sasa_A2": 76.30772523134478,
+      "complex_sasa_A2": 76.30772523134478,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 70,
+      "aa": "I",
+      "isolated_sasa_A2": 17.127003652615265,
+      "complex_sasa_A2": 17.127003652615265,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 71,
+      "aa": "S",
+      "isolated_sasa_A2": 52.622514705669985,
+      "complex_sasa_A2": 52.622514705669985,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 72,
+      "aa": "Q",
+      "isolated_sasa_A2": 45.674993816995965,
+      "complex_sasa_A2": 45.674993816995965,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 73,
+      "aa": "N",
+      "isolated_sasa_A2": 39.62014862685787,
+      "complex_sasa_A2": 39.62014862685787,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 74,
+      "aa": "N",
+      "isolated_sasa_A2": 158.8726587256148,
+      "complex_sasa_A2": 158.8726587256148,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 75,
+      "aa": "A",
+      "isolated_sasa_A2": 74.46228694778225,
+      "complex_sasa_A2": 74.46228694778225,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 76,
+      "aa": "K",
+      "isolated_sasa_A2": 69.34650176271336,
+      "complex_sasa_A2": 69.34650176271336,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 77,
+      "aa": "S",
+      "isolated_sasa_A2": 40.77877323348953,
+      "complex_sasa_A2": 40.77877323348953,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 78,
+      "aa": "T",
+      "isolated_sasa_A2": 23.35236532901165,
+      "complex_sasa_A2": 23.35236532901165,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 79,
+      "aa": "V",
+      "isolated_sasa_A2": 7.158413385515615,
+      "complex_sasa_A2": 7.158413385515615,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 80,
+      "aa": "Y",
+      "isolated_sasa_A2": 43.84826109969168,
+      "complex_sasa_A2": 43.84826109969168,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 81,
+      "aa": "L",
+      "isolated_sasa_A2": 0.37738381751247385,
+      "complex_sasa_A2": 0.37738381751247385,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 82,
+      "aa": "Q",
+      "isolated_sasa_A2": 51.67778412586103,
+      "complex_sasa_A2": 51.67778412586103,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 83,
+      "aa": "M",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 84,
+      "aa": "N",
+      "isolated_sasa_A2": 58.73852277778268,
+      "complex_sasa_A2": 58.73852277778268,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 85,
+      "aa": "S",
+      "isolated_sasa_A2": 61.09272104764304,
+      "complex_sasa_A2": 61.09272104764304,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 86,
+      "aa": "L",
+      "isolated_sasa_A2": 3.5715300802090675,
+      "complex_sasa_A2": 3.5715300802090675,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 87,
+      "aa": "K",
+      "isolated_sasa_A2": 87.35587799895771,
+      "complex_sasa_A2": 87.35587799895771,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 88,
+      "aa": "P",
+      "isolated_sasa_A2": 69.50136002758737,
+      "complex_sasa_A2": 69.50136002758737,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 89,
+      "aa": "E",
+      "isolated_sasa_A2": 129.2121834787081,
+      "complex_sasa_A2": 129.2121834787081,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 90,
+      "aa": "D",
+      "isolated_sasa_A2": 3.125088820182934,
+      "complex_sasa_A2": 3.125088820182934,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 91,
+      "aa": "T",
+      "isolated_sasa_A2": 37.289348677282035,
+      "complex_sasa_A2": 37.289348677282035,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 92,
+      "aa": "A",
+      "isolated_sasa_A2": 2.8932759342622996,
+      "complex_sasa_A2": 2.8932759342622996,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 93,
+      "aa": "M",
+      "isolated_sasa_A2": 53.593410825292516,
+      "complex_sasa_A2": 53.593410825292516,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 94,
+      "aa": "Y",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 95,
+      "aa": "Y",
+      "isolated_sasa_A2": 30.227346843314272,
+      "complex_sasa_A2": 30.227346843314272,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 96,
+      "aa": "C",
+      "isolated_sasa_A2": 0.8042477193189872,
+      "complex_sasa_A2": 0.8042477193189872,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 97,
+      "aa": "A",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 98,
+      "aa": "A",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 99,
+      "aa": "D",
+      "isolated_sasa_A2": 3.9063610252286676,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 3.9063610252286676
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 100,
+      "aa": "S",
+      "isolated_sasa_A2": 43.89567820480987,
+      "complex_sasa_A2": 0.37738381751247385,
+      "buried_sasa_A2": 43.518294387297395
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 101,
+      "aa": "F",
+      "isolated_sasa_A2": 48.17933403575916,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 48.17933403575916
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 102,
+      "aa": "E",
+      "isolated_sasa_A2": 93.20367521626403,
+      "complex_sasa_A2": 36.45588414628467,
+      "buried_sasa_A2": 56.747791069979364
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 103,
+      "aa": "D",
+      "isolated_sasa_A2": 62.03934051003496,
+      "complex_sasa_A2": 42.479166802229706,
+      "buried_sasa_A2": 19.560173707805255
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 104,
+      "aa": "P",
+      "isolated_sasa_A2": 84.61225313974609,
+      "complex_sasa_A2": 41.84208715499904,
+      "buried_sasa_A2": 42.770165984747045
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 105,
+      "aa": "T",
+      "isolated_sasa_A2": 62.4013828834224,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 62.4013828834224
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 106,
+      "aa": "C",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 107,
+      "aa": "T",
+      "isolated_sasa_A2": 37.38118266653422,
+      "complex_sasa_A2": 37.38118266653422,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 108,
+      "aa": "L",
+      "isolated_sasa_A2": 124.63749443132107,
+      "complex_sasa_A2": 63.818962427504786,
+      "buried_sasa_A2": 60.81853200381629
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "isolated_sasa_A2": 34.216132787797626,
+      "complex_sasa_A2": 0.37738381751247385,
+      "buried_sasa_A2": 33.83874897028515
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 110,
+      "aa": "T",
+      "isolated_sasa_A2": 76.60740306356765,
+      "complex_sasa_A2": 74.33831446568384,
+      "buried_sasa_A2": 2.2690885978838082
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 111,
+      "aa": "S",
+      "isolated_sasa_A2": 74.83722425001574,
+      "complex_sasa_A2": 20.965741895975412,
+      "buried_sasa_A2": 53.871482354040324
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 112,
+      "aa": "S",
+      "isolated_sasa_A2": 37.150108054887184,
+      "complex_sasa_A2": 37.150108054887184,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 113,
+      "aa": "G",
+      "isolated_sasa_A2": 78.11304406772402,
+      "complex_sasa_A2": 25.60384922706291,
+      "buried_sasa_A2": 52.50919484066111
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 114,
+      "aa": "A",
+      "isolated_sasa_A2": 36.6292490098822,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 36.6292490098822
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 115,
+      "aa": "F",
+      "isolated_sasa_A2": 14.093132284126249,
+      "complex_sasa_A2": 5.594700041157626,
+      "buried_sasa_A2": 8.498432242968622
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "isolated_sasa_A2": 119.4095897314364,
+      "complex_sasa_A2": 34.54176279333303,
+      "buried_sasa_A2": 84.86782693810338
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 117,
+      "aa": "Y",
+      "isolated_sasa_A2": 41.32077650605011,
+      "complex_sasa_A2": 37.91386588088915,
+      "buried_sasa_A2": 3.406910625160961
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 118,
+      "aa": "W",
+      "isolated_sasa_A2": 69.78083611005073,
+      "complex_sasa_A2": 69.78083611005073,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 119,
+      "aa": "G",
+      "isolated_sasa_A2": 12.88146712152647,
+      "complex_sasa_A2": 12.88146712152647,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 120,
+      "aa": "Q",
+      "isolated_sasa_A2": 93.44423089274021,
+      "complex_sasa_A2": 93.44423089274021,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 121,
+      "aa": "G",
+      "isolated_sasa_A2": 13.170017170770937,
+      "complex_sasa_A2": 13.170017170770937,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 122,
+      "aa": "T",
+      "isolated_sasa_A2": 17.461218060076597,
+      "complex_sasa_A2": 17.461218060076597,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 123,
+      "aa": "Q",
+      "isolated_sasa_A2": 77.89579377274973,
+      "complex_sasa_A2": 77.89579377274973,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 124,
+      "aa": "V",
+      "isolated_sasa_A2": 0.0,
+      "complex_sasa_A2": 0.0,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 125,
+      "aa": "T",
+      "isolated_sasa_A2": 43.507429712703725,
+      "complex_sasa_A2": 43.507429712703725,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 126,
+      "aa": "V",
+      "isolated_sasa_A2": 7.2546704754246685,
+      "complex_sasa_A2": 7.2546704754246685,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 127,
+      "aa": "S",
+      "isolated_sasa_A2": 56.906667955456086,
+      "complex_sasa_A2": 56.906667955456086,
+      "buried_sasa_A2": 0.0
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 128,
+      "aa": "S",
+      "isolated_sasa_A2": 137.65479223821632,
+      "complex_sasa_A2": 137.65479223821632,
+      "buried_sasa_A2": 0.0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "label_equals_auth_all_residues": true,
+  "contiguous_numbering": true,
+  "residue_counts": {
+    "A": 118,
+    "B": 128
+  },
+  "entity_poly_lengths": {
+    "1": "A len 118",
+    "2": "B len 128"
+  },
+  "mos_mapping_rows": 246,
+  "mos_mapping_identity": true,
+  "sanitized_equals_original_sha256": true,
+  "record_json_sequences_equal_cif": true,
+  "conclusion": "MOS object, MOS label numbering, MOS auth numbering and MMFold_1 numbering coincide exactly for all 246 residues; the sanitization step did not rewrite a single byte."
+}

@@ -1,0 +1,839 @@
+{
+  "seed": 111,
+  "task_id": "342606137910272",
+  "target_map": [
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 1,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 1,
+      "aa": "M"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 2,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 2,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 3,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 3,
+      "aa": "F"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 4,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 4,
+      "aa": "T"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 5,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 5,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 6,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 6,
+      "aa": "T"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 7,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 7,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 8,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 8,
+      "aa": "P"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 9,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 9,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 10,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 10,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 11,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 11,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 12,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 12,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 13,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 13,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 14,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 14,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 15,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 15,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 16,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 16,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 17,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 17,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 18,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 18,
+      "aa": "S"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 19,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 19,
+      "aa": "N"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 20,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 20,
+      "aa": "M"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 21,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 21,
+      "aa": "T"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 22,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 22,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 23,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 23,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 24,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 24,
+      "aa": "C"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 25,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 25,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 26,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 26,
+      "aa": "F"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 27,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 27,
+      "aa": "P"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 28,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 28,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 29,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 29,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 30,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 30,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 31,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 31,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 32,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 32,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 33,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 33,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 34,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 34,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 35,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 35,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 36,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 36,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 37,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 37,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 38,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 38,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 39,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 39,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 40,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 40,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 41,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 41,
+      "aa": "W"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 42,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 42,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 43,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 43,
+      "aa": "M"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 44,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 44,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 45,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 45,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 46,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 46,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 47,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 47,
+      "aa": "N"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 48,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 48,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 49,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 49,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 50,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 50,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 51,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 51,
+      "aa": "F"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 52,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 52,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 53,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 53,
+      "aa": "H"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 54,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 54,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 55,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 55,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 56,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 56,
+      "aa": "E"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 57,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 57,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 58,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 58,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 59,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 59,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 60,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 60,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 61,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 61,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 62,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 62,
+      "aa": "H"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 63,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 63,
+      "aa": "S"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 64,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 64,
+      "aa": "S"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 65,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 65,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 66,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 66,
+      "aa": "R"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 67,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 67,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 68,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 68,
+      "aa": "R"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 69,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 69,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 70,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 70,
+      "aa": "R"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 71,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 71,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 72,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 72,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 73,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 73,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 74,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 74,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 75,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 75,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 76,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 76,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 77,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 77,
+      "aa": "S"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 78,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 78,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 79,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 79,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 80,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 80,
+      "aa": "N"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 81,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 81,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 82,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 82,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 83,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 83,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 84,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 84,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 85,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 85,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 86,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 86,
+      "aa": "T"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 87,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 87,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 88,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 88,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 89,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 89,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 90,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 90,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 91,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 91,
+      "aa": "Q"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 92,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 92,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 93,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 93,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 94,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 94,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 95,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 95,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 96,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 96,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 97,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 97,
+      "aa": "R"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 98,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 98,
+      "aa": "C"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 99,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 99,
+      "aa": "M"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 100,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 100,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 101,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 101,
+      "aa": "S"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 102,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 102,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 103,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 103,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 104,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 104,
+      "aa": "G"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 105,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 105,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 106,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 106,
+      "aa": "D"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 107,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 107,
+      "aa": "Y"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 108,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 108,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 109,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 109,
+      "aa": "R"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 110,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 110,
+      "aa": "I"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 111,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 111,
+      "aa": "T"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 112,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 112,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 113,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 113,
+      "aa": "K"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 114,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 114,
+      "aa": "V"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 115,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 115,
+      "aa": "N"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 116,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 116,
+      "aa": "A"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 117,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 117,
+      "aa": "L"
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 118,
+      "mmfold1_chain": "A",
+      "mmfold1_label_seq_id": 118,
+      "aa": "E"
+    }
+  ],
+  "binder": {
+    "output_chain": "A",
+    "length": 73,
+    "mmfold1_chain": null,
+    "mmfold1_label_seq_id": null,
+    "reason": "New de novo binder has no homologous residue correspondence to KN035; never map binder output A onto master target A."
+  }
+}

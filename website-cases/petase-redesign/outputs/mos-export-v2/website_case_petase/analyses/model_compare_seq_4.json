@@ -1,0 +1,55 @@
+{
+ "label": "seq_4",
+ "model_file": "../native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+ "matched_CA": 261,
+ "global_CA_RMSD_vs_5XG0_A": 0.249,
+ "pocket_CA_RMSD_vs_5XG0_A": 0.288,
+ "designed_site_CA_RMSD_vs_5XG0_A": 0.37,
+ "max_CA_displacement_A": 1.122,
+ "max_CA_displacement_auth": 29,
+ "catalytic_geometry_model_A": {
+  "Ser131_OG__His208_NE2": 2.9,
+  "His208_ND1__Asp177_OD2": 2.754,
+  "Cys174_SG__Cys210_SG": 2.091,
+  "Cys244_SG__Cys260_SG": 2.031
+ },
+ "ligand_frame_superpose_RMSD_A": 0.214,
+ "designed_residue_HEMT_contacts": [
+  {
+   "auth_res": 130,
+   "model_resname": "H",
+   "min_dist_to_HEMT_A": 3.63,
+   "protein_atom": "CE1",
+   "ligand_atom": "C12"
+  },
+  {
+   "auth_res": 156,
+   "model_resname": "Y",
+   "min_dist_to_HEMT_A": 2.59,
+   "protein_atom": "CE1",
+   "ligand_atom": "O02"
+  },
+  {
+   "auth_res": 157,
+   "model_resname": "H",
+   "min_dist_to_HEMT_A": 5.89,
+   "protein_atom": "N",
+   "ligand_atom": "C06"
+  },
+  {
+   "auth_res": 179,
+   "model_resname": "I",
+   "min_dist_to_HEMT_A": 3.82,
+   "protein_atom": "CG2",
+   "ligand_atom": "C15"
+  },
+  {
+   "auth_res": 209,
+   "model_resname": "G",
+   "min_dist_to_HEMT_A": 7.4,
+   "protein_atom": "N",
+   "ligand_atom": "C12"
+  }
+ ],
+ "clashes_under_2.2A": []
+}

@@ -1,0 +1,1259 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: 5GRJ
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: E
+- generic: V
+- generic: Q
+- generic: L
+- generic: L
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: F
+- generic: T
+- generic: F
+- generic: S
+- generic: "31"
+- generic: S
+- generic: "Y"
+- generic: I
+- generic: M
+- generic: M
+- generic: W
+- generic: V
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: G
+- generic: L
+- generic: E
+- generic: W
+- generic: V
+- generic: S
+- generic: S
+- generic: "51"
+- generic: I
+- generic: "Y"
+- generic: P
+- generic: S
+- generic: G
+- generic: G
+- generic: I
+- generic: T
+- generic: F
+- generic: "Y"
+- generic: "61"
+- generic: A
+- generic: D
+- generic: T
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: R
+- generic: D
+- generic: "N"
+- generic: S
+- generic: K
+- generic: "N"
+- generic: T
+- generic: L
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: R
+- generic: A
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: V
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: R
+- generic: I
+- generic: K
+- generic: "101"
+- generic: L
+- generic: G
+- generic: T
+- generic: V
+- generic: T
+- generic: T
+- generic: V
+- generic: D
+- generic: "Y"
+- generic: W
+- generic: "111"
+- generic: G
+- generic: Q
+- generic: G
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: Q
+- generic: S
+- generic: A
+- generic: L
+- generic: T
+- generic: Q
+- generic: P
+- generic: A
+- generic: S
+- generic: V
+- generic: "11"
+- generic: S
+- generic: G
+- generic: S
+- generic: P
+- generic: G
+- generic: Q
+- generic: S
+- generic: I
+- generic: T
+- generic: I
+- generic: "21"
+- generic: S
+- generic: C
+- generic: T
+- generic: G
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: V
+- generic: G
+- generic: "31"
+- generic: G
+- generic: "Y"
+- generic: "N"
+- generic: "Y"
+- generic: V
+- generic: S
+- generic: W
+- generic: "Y"
+- generic: Q
+- generic: Q
+- generic: "41"
+- generic: H
+- generic: P
+- generic: G
+- generic: K
+- generic: A
+- generic: P
+- generic: K
+- generic: L
+- generic: M
+- generic: I
+- generic: "51"
+- generic: "Y"
+- generic: D
+- generic: V
+- generic: S
+- generic: "N"
+- generic: R
+- generic: P
+- generic: S
+- generic: G
+- generic: V
+- generic: "61"
+- generic: S
+- generic: "N"
+- generic: R
+- generic: F
+- generic: S
+- generic: G
+- generic: S
+- generic: K
+- generic: S
+- generic: G
+- generic: "71"
+- generic: "N"
+- generic: T
+- generic: A
+- generic: S
+- generic: L
+- generic: T
+- generic: I
+- generic: S
+- generic: G
+- generic: L
+- generic: "81"
+- generic: Q
+- generic: A
+- generic: E
+- generic: D
+- generic: E
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: "91"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: T
+- generic: R
+- generic: V
+- generic: "101"
+- generic: F
+- generic: G
+- generic: T
+- generic: G
+- generic: T
+- generic: K
+- generic: V
+- generic: T
+- generic: V
+- generic: L
+- generic: "3:"
+- generic: C
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: "171"
+- generic: E
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: "181"
+- generic: R
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "191"
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: "201"
+- generic: E
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: "211"
+- generic: E
+- generic: L
+- generic: P
+- generic: L
+- generic: A
+- generic: H
+- generic: P
+- generic: P
+- generic: "N"
+- generic: E
+- generic: R
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Description
+- generic: Antigen–Antibody
+- generic: "confidence: high"
+- generic: This complex shows an antibody fragment (VH and VL chains) bound to human Programmed cell death 1 ligand 1 (PD-L1), an immunoglobulin superfamily protein and BTN/MOG family member. PD-L1 is an immune checkpoint ligand for the inhibitory receptor PD-1 that helps modulate T-cell activation and immune tolerance. The structure captures the antigen-binding interface between the antibody variable domains and PD-L1, a biologically relevant antigen-antibody recognition event.
+- generic: ReasoningThe structure contains two antibody fragment chains annotated as VH and VL, and a third protein chain matching Programmed cell death 1 ligand 1 (PD-L1). The suggested valid protein-protein contacts show the VH/VL pair binding the PD-L1 antigen chain, which is the defining arrangement of an antigen-antibody complex. No non-solvent small-molecule ligand evidence is provided, so the ligand interaction flag remains false.
+- generic: Chain A
+- text: · protein · VH
+- generic: Chain B
+- text: · protein · VL
+- generic: Chain C
+- text: · protein
+- generic: Homologs
+- generic: Searched by antigen sequence similarity
+- generic: No significant homologs found.
+- generic: Annotations
+- button "Paratope 43 residues · structure A:GLU6 A:SER7 A:GLY9 A:LEU11 A:ALA24 A:PHE27 A:THR28 A:SER30 A:SER31 A:ILE33 A:PRO41 A:TYR52 A:PRO53 A:SER54 A:GLY55 A:GLY56 A:ILE57 A:THR58 A:PHE59 A:SER75 A:LYS76 A:ASN77 A:LEU101 A:GLY102 A:THR103 A:VAL104 A:THR105 A:THR106 A:GLN112 A:GLY113 A:THR114 A:LEU115 A:THR117 B:TYR32 B:TYR34 B:GLY43 B:LYS44 B:ASP52 B:TYR93 B:SER95 B:SER96 B:SER97 B:ARG99":
+  - generic: Paratope
+  - generic: 43 residues · structure
+  - button "A:GLU6"
+  - button "A:SER7"
+  - button "A:GLY9"
+  - button "A:LEU11"
+  - button "A:ALA24"
+  - button "A:PHE27"
+  - button "A:THR28"
+  - button "A:SER30"
+  - button "A:SER31"
+  - button "A:ILE33"
+  - button "A:PRO41"
+  - button "A:TYR52"
+  - button "A:PRO53"
+  - button "A:SER54"
+  - button "A:GLY55"
+  - button "A:GLY56"
+  - button "A:ILE57"
+  - button "A:THR58"
+  - button "A:PHE59"
+  - button "A:SER75"
+  - button "A:LYS76"
+  - button "A:ASN77"
+  - button "A:LEU101"
+  - button "A:GLY102"
+  - button "A:THR103"
+  - button "A:VAL104"
+  - button "A:THR105"
+  - button "A:THR106"
+  - button "A:GLN112"
+  - button "A:GLY113"
+  - button "A:THR114"
+  - button "A:LEU115"
+  - button "A:THR117"
+  - button "B:TYR32"
+  - button "B:TYR34"
+  - button "B:GLY43"
+  - button "B:LYS44"
+  - button "B:ASP52"
+  - button "B:TYR93"
+  - button "B:SER95"
+  - button "B:SER96"
+  - button "B:SER97"
+  - button "B:ARG99"
+- button "Epitope 38 residues · structure C:TYR15 C:GLY16 C:SER17 C:ASN18 C:ILE37 C:TYR39 C:GLU41 C:GLU43 C:ASP44 C:LYS45 C:ASN46 C:GLN49 C:HIS52 C:ASP56 C:LYS58 C:VAL59 C:GLN60 C:HIS61 C:ARG65 C:GLN66 C:THR85 C:ASP86 C:LYS88 C:ARG96 C:MET98 C:ILE99 C:SER100 C:ALA104 C:TYR106 C:LYS119 C:ASN121 C:ASP128 C:PRO129 C:VAL130 C:GLN139 C:MET42 C:GLN83 C:ARG108":
+  - generic: Epitope
+  - generic: 38 residues · structure
+  - button "C:TYR15"
+  - button "C:GLY16"
+  - button "C:SER17"
+  - button "C:ASN18"
+  - button "C:ILE37"
+  - button "C:TYR39"
+  - button "C:GLU41"
+  - button "C:GLU43"
+  - button "C:ASP44"
+  - button "C:LYS45"
+  - button "C:ASN46"
+  - button "C:GLN49"
+  - button "C:HIS52"
+  - button "C:ASP56"
+  - button "C:LYS58"
+  - button "C:VAL59"
+  - button "C:GLN60"
+  - button "C:HIS61"
+  - button "C:ARG65"
+  - button "C:GLN66"
+  - button "C:THR85"
+  - button "C:ASP86"
+  - button "C:LYS88"
+  - button "C:ARG96"
+  - button "C:MET98"
+  - button "C:ILE99"
+  - button "C:SER100"
+  - button "C:ALA104"
+  - button "C:TYR106"
+  - button "C:LYS119"
+  - button "C:ASN121"
+  - button "C:ASP128"
+  - button "C:PRO129"
+  - button "C:VAL130"
+  - button "C:GLN139"
+  - button "C:MET42"
+  - button "C:GLN83"
+  - button "C:ARG108"
+- button "Domain 3 residues · uniprot C:2-221 C:2-110 C:116-208":
+  - generic: Domain
+  - generic: 3 residues · uniprot
+  - button "C:2-221"
+  - button "C:2-110"
+  - button "C:116-208"
+- button "PTM 4 residues · uniprot C:ASN18 C:ASN175 C:ASN183 C:ASN202":
+  - generic: PTM
+  - generic: 4 residues · uniprot
+  - button "C:ASN18"
+  - button "C:ASN175"
+  - button "C:ASN183"
+  - button "C:ASN202"
+- button "UniProt Feature 1 residue · uniprot C:ARG221":
+  - generic: UniProt Feature
+  - generic: 1 residue · uniprot
+  - button "C:ARG221"
+- generic: Interaction Network
+- button "Table"
+- button "2D"
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain C
+  - generic: 2.28Å
+  - generic: 2.29Å
+  - generic: 2.75Å
+  - generic: 3.29Å
+  - generic: 2.80Å
+  - generic: 3.15Å
+  - generic: 2.73Å
+  - generic: 3.03Å
+  - generic: 2.65Å
+  - generic: 3.62Å
+  - generic: 3.29Å
+  - generic: 3.67Å
+  - generic: 3.67Å
+  - generic: 3.86Å
+  - generic: 2.75Å
+  - generic: 3.15Å
+  - generic: 3.29Å
+  - generic: 3.21Å
+  - generic: 3.68Å
+  - generic: 3.57Å
+  - generic: 3.20Å
+  - generic: 2.73Å
+  - generic: 3.80Å
+  - generic: 3.36Å
+  - generic: 3.44Å
+  - generic: 3.30Å
+  - generic: 3.02Å
+  - generic: 3.33Å
+  - generic: 2.99Å
+  - generic: 3.18Å
+  - generic: 3.35Å
+  - generic: 2.80Å
+  - generic: 3.37Å
+  - generic: 3.70Å
+  - generic: 2.94Å
+  - generic: 2.65Å
+  - generic: 5.16Å
+  - generic: 5.55Å
+  - generic: GLY
+  - generic: A102
+  - generic: SER
+  - generic: A54
+  - generic: TYR
+  - generic: A52
+  - generic: SER
+  - generic: A31
+  - generic: VAL
+  - generic: A104
+  - generic: GLY
+  - generic: A55
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: THR
+  - generic: A28
+  - generic: PRO
+  - generic: A53
+  - generic: ILE
+  - generic: A57
+  - generic: PHE
+  - generic: A59
+  - generic: LEU
+  - generic: A101
+  - generic: THR
+  - generic: A103
+  - generic: ASN
+  - generic: C46
+  - generic: TYR
+  - generic: C39
+  - generic: GLU
+  - generic: C41
+  - generic: GLN
+  - generic: C49
+  - generic: ASP
+  - generic: C44
+  - generic: ARG
+  - generic: C96
+  - generic: SER
+  - generic: C100
+  - generic: LYS
+  - generic: C58
+  - generic: ASP
+  - generic: C56
+  - generic: MET
+  - generic: C98
+  - generic: ILE
+  - generic: C37
+  - generic: TYR
+  - generic: C106
+  - generic: VAL
+  - generic: C59
+  - generic: LYS
+  - generic: C45
+  - generic: GLU
+  - generic: C43
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain B
+  - generic: 3.26Å
+  - generic: 2.45Å
+  - generic: 3.26Å
+  - generic: 3.59Å
+  - generic: 3.03Å
+  - generic: 3.31Å
+  - generic: 3.84Å
+  - generic: 3.50Å
+  - generic: 3.46Å
+  - generic: 3.81Å
+  - generic: 3.15Å
+  - generic: 3.41Å
+  - generic: 2.80Å
+  - generic: 3.17Å
+  - generic: 3.08Å
+  - generic: 3.58Å
+  - generic: 3.68Å
+  - generic: 3.13Å
+  - generic: 3.49Å
+  - generic: 6.32Å
+  - generic: 5.62Å
+  - generic: 4.18Å
+  - generic: GLN
+  - generic: A39
+  - generic: VAL
+  - generic: A107
+  - generic: LEU
+  - generic: A45
+  - generic: TRP
+  - generic: A47
+  - generic: TYR
+  - generic: A95
+  - generic: LYS
+  - generic: A100
+  - generic: THR
+  - generic: A105
+  - generic: THR
+  - generic: A106
+  - generic: ASP
+  - generic: A108
+  - generic: TRP
+  - generic: A110
+  - generic: GLN
+  - generic: A112
+  - generic: TYR
+  - generic: B89
+  - generic: TYR
+  - generic: B38
+  - generic: PHE
+  - generic: B101
+  - generic: THR
+  - generic: B98
+  - generic: PRO
+  - generic: B46
+  - generic: TYR
+  - generic: B51
+  - generic: TYR
+  - generic: B93
+  - generic: ARG
+  - generic: B99
+  - generic: LEU
+  - generic: B48
+  - generic: ALA
+  - generic: B45
+- img "protein-protein interaction plot":
+  - generic: Chain B
+  - generic: Chain C
+  - generic: 2.77Å
+  - generic: 2.73Å
+  - generic: 3.35Å
+  - generic: 3.63Å
+  - generic: 2.77Å
+  - generic: 3.40Å
+  - generic: 3.26Å
+  - generic: 3.16Å
+  - generic: 3.10Å
+  - generic: 3.45Å
+  - generic: 2.73Å
+  - generic: TYR
+  - generic: B34
+  - generic: ARG
+  - generic: B99
+  - generic: TYR
+  - generic: B32
+  - generic: TYR
+  - generic: B93
+  - generic: SER
+  - generic: B97
+  - generic: GLU
+  - generic: C43
+  - generic: ASP
+  - generic: C44
+  - generic: MET
+  - generic: C42
+  - generic: LYS
+  - generic: C45
+  - generic: ARG
+  - generic: C96
+- generic: H-Bond
+- generic: VdW Contact
+- generic: π-π Stack
+- generic: π-Cation
+- generic: Aliphatic
+- generic: Polar
+- generic: Aromatic
+- generic: Acidic
+- generic: Basic
+- generic: Sulfur
+- generic: Mutation Scoring
+- generic: CSV
+- generic: MutXevo.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXstruct.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXseq.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXaff.csv
+- generic: View
+- generic: Download
+- generic: Antibody Design
+- generic: CSV
+- generic: AbScN_heavy..csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbScN_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: AbAn_light.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_heavy.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: ParaDt_light.csv
+- generic: View
+- generic: Download
+- separator "调整 Mocha 与文件面板宽度"
+- complementary "File viewer":
+  - generic "MutXaff.csv"
+  - button "Open file in new window":
+    - img "export":
+  - button "Close file panel":
+    - img "close":
+  - table:
+    - rowgroup:
+      - row "#1 mutstr ddG_pred score_ddg rank":
+        - columnheader "#1":
+          - generic: "#1"
+        - columnheader "mutstr":
+          - generic: mutstr
+        - columnheader "ddG_pred":
+          - generic: ddG_pred
+        - columnheader "score_ddg":
+          - generic: score_ddg
+        - columnheader "rank":
+          - generic: rank
+  - table:
+    - rowgroup:
+      - row "60 AA61F -0.9427009 0.9427009 0.011877037727061016":
+        - cell "60"
+        - cell "AA61F"
+        - cell "-0.9427009"
+        - cell "0.9427009"
+        - cell "0.011877037727061016"
+      - row "1366 IB50W -0.9291496 0.9291496 0.012109920819748486":
+        - cell "1366"
+        - cell "IB50W"
+        - cell "-0.9291496"
+        - cell "0.9291496"
+        - cell "0.012109920819748486"
+      - row "136 AB3F -0.9128981 0.9128981 0.012342803912435958":
+        - cell "136"
+        - cell "AB3F"
+        - cell "-0.9128981"
+        - cell "0.9128981"
+        - cell "0.012342803912435958"
+      - row "1262 IA57L -0.91213673 0.91213673 0.012575687005123428":
+        - cell "1262"
+        - cell "IA57L"
+        - cell "-0.91213673"
+        - cell "0.91213673"
+        - cell "0.012575687005123428"
+      - row "3582 TB94M -0.9120038 0.9120038 0.012808570097810898":
+        - cell "3582"
+        - cell "TB94M"
+        - cell "-0.9120038"
+        - cell "0.9120038"
+        - cell "0.012808570097810898"
+      - row "3937 VB60F -0.91089636 0.91089636 0.01304145319049837":
+        - cell "3937"
+        - cell "VB60F"
+        - cell "-0.91089636"
+        - cell "0.91089636"
+        - cell "0.01304145319049837"
+      - row "2640 SA31Y -0.9077073 0.9077073 0.01327433628318584":
+        - cell "2640"
+        - cell "SA31Y"
+        - cell "-0.9077073"
+        - cell "0.9077073"
+        - cell "0.01327433628318584"
+      - row "70 AA61R -0.9047081 0.9047081 0.01350721937587331":
+        - cell "70"
+        - cell "AA61R"
+        - cell "-0.9047081"
+        - cell "0.9047081"
+        - cell "0.01350721937587331"
+      - row "1638 LA45F -0.8983427 0.8983427 0.013740102468560783":
+        - cell "1638"
+        - cell "LA45F"
+        - cell "-0.8983427"
+        - cell "0.8983427"
+        - cell "0.013740102468560783"
+      - row "3217 TA105H -0.8929599 0.8929599 0.013972985561248253":
+        - cell "3217"
+        - cell "TA105H"
+        - cell "-0.8929599"
+        - cell "0.8929599"
+        - cell "0.013972985561248253"
+      - row "683 FB101Y -0.8835905 0.8835905 0.014205868653935725":
+        - cell "683"
+        - cell "FB101Y"
+        - cell "-0.8835905"
+        - cell "0.8835905"
+        - cell "0.014205868653935725"
+      - row "1271 IA57W -0.8800981 0.8800981 0.014438751746623195":
+        - cell "1271"
+        - cell "IA57W"
+        - cell "-0.8800981"
+        - cell "0.8800981"
+        - cell "0.014438751746623195"
+      - row "3624 VA104R -0.87839335 0.87839335 0.014671634839310665":
+        - cell "3624"
+        - cell "VA104R"
+        - cell "-0.87839335"
+        - cell "0.87839335"
+        - cell "0.014671634839310665"
+      - row "138 AB3H -0.8781826 0.8781826 0.014904517931998137":
+        - cell "138"
+        - cell "AB3H"
+        - cell "-0.8781826"
+        - cell "0.8781826"
+        - cell "0.014904517931998137"
+      - row "150 AB3W -0.8709261 0.8709261 0.015137401024685608":
+        - cell "150"
+        - cell "AB3W"
+        - cell "-0.8709261"
+        - cell "0.8709261"
+        - cell "0.015137401024685608"
+      - row "3247 TA106W -0.8681192 0.8681192 0.015370284117373078":
+        - cell "3247"
+        - cell "TA106W"
+        - cell "-0.8681192"
+        - cell "0.8681192"
+        - cell "0.015370284117373078"
+      - row "3589 TB94W -0.8676155 0.8676155 0.01560316721006055":
+        - cell "3589"
+        - cell "TB94W"
+        - cell "-0.8676155"
+        - cell "0.8676155"
+        - cell "0.01560316721006055"
+      - row "1537 KB68W -0.8658644 0.8658644 0.015836050302748022":
+        - cell "1537"
+        - cell "KB68W"
+        - cell "-0.8658644"
+        - cell "0.8658644"
+        - cell "0.015836050302748022"
+      - row "109 AA92S -0.8620667 0.8620667 0.01606893339543549":
+        - cell "109"
+        - cell "AA92S"
+        - cell "-0.8620667"
+        - cell "0.8620667"
+        - cell "0.01606893339543549"
+      - row "3806 VB100H -0.8614353 0.8614353 0.016301816488122962":
+        - cell "3806"
+        - cell "VB100H"
+        - cell "-0.8614353"
+        - cell "0.8614353"
+        - cell "0.016301816488122962"
+      - row "645 FA59Y -0.8545254 0.8545254 0.016534699580810434":
+        - cell "645"
+        - cell "FA59Y"
+        - cell "-0.8545254"
+        - cell "0.8545254"
+        - cell "0.016534699580810434"
+      - row "3201 TA103L -0.85131973 0.85131973 0.016767582673497903":
+        - cell "3201"
+        - cell "TA103L"
+        - cell "-0.85131973"
+        - cell "0.85131973"
+        - cell "0.016767582673497903"
+      - row "1398 KA100P -0.84702486 0.84702486 0.017000465766185375":
+        - cell "1398"
+        - cell "KA100P"
+        - cell "-0.84702486"
+        - cell "0.84702486"
+        - cell "0.017000465766185375"
+      - row "188 AB73W -0.84350973 0.84350973 0.017233348858872847":
+        - cell "188"
+        - cell "AB73W"
+        - cell "-0.84350973"
+        - cell "0.84350973"
+        - cell "0.017233348858872847"
+      - row "3215 TA105F -0.8387299 0.8387299 0.017466231951560315":
+        - cell "3215"
+        - cell "TA105F"
+        - cell "-0.8387299"
+        - cell "0.8387299"
+        - cell "0.017466231951560315"
+      - row "3403 TB103D -0.838181 0.838181 0.017699115044247787":
+        - cell "3403"
+        - cell "TB103D"
+        - cell "-0.838181"
+        - cell "0.838181"
+        - cell "0.017699115044247787"
+      - row "62 AA61H -0.8344632 0.8344632 0.01793199813693526":
+        - cell "62"
+        - cell "AA61H"
+        - cell "-0.8344632"
+        - cell "0.8344632"
+        - cell "0.01793199813693526"
+      - row "3760 VA48W -0.8176728 0.8176728 0.018164881229622728":
+        - cell "3760"
+        - cell "VA48W"
+        - cell "-0.8176728"
+        - cell "0.8176728"
+        - cell "0.018164881229622728"
+      - row "41 AA40F -0.81491673 0.81491673 0.0183977643223102":
+        - cell "41"
+        - cell "AA40F"
+        - cell "-0.81491673"
+        - cell "0.81491673"
+        - cell "0.0183977643223102"
+      - row "3646 VA107W -0.7958167 0.7958167 0.018630647414997672":
+        - cell "3646"
+        - cell "VA107W"
+        - cell "-0.7958167"
+        - cell "0.7958167"
+        - cell "0.018630647414997672"
+      - row "3248 TA106Y -0.7932188 0.7932188 0.01886353050768514":
+        - cell "3248"
+        - cell "TA106Y"
+        - cell "-0.7932188"
+        - cell "0.7932188"
+        - cell "0.01886353050768514"
+      - row "531 EA6Y -0.7832009 0.7832009 0.019096413600372612":
+        - cell "531"
+        - cell "EA6Y"
+        - cell "-0.7832009"
+        - cell "0.7832009"
+        - cell "0.019096413600372612"
+      - row "3198 TA103H -0.781923 0.781923 0.019329296693060084":
+        - cell "3198"
+        - cell "TA103H"
+        - cell "-0.781923"
+        - cell "0.781923"
+        - cell "0.019329296693060084"
+      - row "3719 VA2R -0.77409744 0.77409744 0.019562179785747556":
+        - cell "3719"
+        - cell "VA2R"
+        - cell "-0.77409744"
+        - cell "0.77409744"
+        - cell "0.019562179785747556"
+      - row "105 AA92N -0.7740696 0.7740696 0.019795062878435025":
+        - cell "105"
+        - cell "AA92N"
+        - cell "-0.7740696"
+        - cell "0.7740696"
+        - cell "0.019795062878435025"
+      - row "3999 WA47L -0.77270836 0.77270836 0.020027945971122497":
+        - cell "3999"
+        - cell "WA47L"
+        - cell "-0.77270836"
+        - cell "0.77270836"
+        - cell "0.020027945971122497"
+      - row "873 GA44Y -0.7668244 0.7668244 0.02026082906380997":
+        - cell "873"
+        - cell "GA44Y"
+        - cell "-0.7668244"
+        - cell "0.7668244"
+        - cell "0.02026082906380997"
+      - row "146 AB3R -0.7666555 0.7666555 0.020493712156497437":
+        - cell "146"
+        - cell "AB3R"
+        - cell "-0.7666555"
+        - cell "0.7666555"
+        - cell "0.020493712156497437"
+      - row "3766 VA64F -0.7644318 0.7644318 0.02072659524918491":
+        - cell "3766"
+        - cell "VA64F"
+        - cell "-0.7644318"
+        - cell "0.7644318"
+        - cell "0.02072659524918491"
+      - row "1367 IB50Y -0.75810254 0.75810254 0.02095947834187238":
+        - cell "1367"
+        - cell "IB50Y"
+        - cell "-0.75810254"
+        - cell "0.75810254"
+        - cell "0.02095947834187238"
+      - row "3742 VA37Y -0.75547826 0.75547826 0.02119236143455985":
+        - cell "3742"
+        - cell "VA37Y"
+        - cell "-0.75547826"
+        - cell "0.75547826"
+        - cell "0.02119236143455985"
+      - row "25 AA24I -0.7541991 0.7541991 0.02142524452724732":
+        - cell "25"
+        - cell "AA24I"
+        - cell "-0.7541991"
+        - cell "0.7541991"
+        - cell "0.02142524452724732"
+      - row "2151 PB57F -0.7475937 0.7475937 0.021658127619934794":
+        - cell "2151"
+        - cell "PB57F"
+        - cell "-0.7475937"
+        - cell "0.7475937"
+        - cell "0.021658127619934794"
+      - row "3195 TA103E -0.74638695 0.74638695 0.021891010712622262":
+        - cell "3195"
+        - cell "TA103E"
+        - cell "-0.74638695"
+        - cell "0.74638695"
+        - cell "0.021891010712622262"
+      - row "891 GA55W -0.74362665 0.74362665 0.022123893805309734":
+        - cell "891"
+        - cell "GA55W"
+        - cell "-0.74362665"
+        - cell "0.74362665"
+        - cell "0.022123893805309734"
+      - row "59 AA61E -0.73639077 0.73639077 0.022356776897997206":
+        - cell "59"
+        - cell "AA61E"
+        - cell "-0.73639077"
+        - cell "0.73639077"
+        - cell "0.022356776897997206"
+      - row "3779 VA64W -0.73007554 0.73007554 0.022589659990684675":
+        - cell "3779"
+        - cell "VA64W"
+        - cell "-0.73007554"
+        - cell "0.73007554"
+        - cell "0.022589659990684675"
+      - row "27 AA24L -0.7290072 0.7290072 0.022822543083372147":
+        - cell "27"
+        - cell "AA24L"
+        - cell "-0.7290072"
+        - cell "0.7290072"
+        - cell "0.022822543083372147"
+      - row "3994 WA47F -0.72284067 0.72284067 0.02305542617605962":
+        - cell "3994"
+        - cell "WA47F"
+        - cell "-0.72284067"
+        - cell "0.72284067"
+        - cell "0.02305542617605962"
+      - row "115 AA97D -0.7221012 0.7221012 0.02328830926874709":
+        - cell "115"
+        - cell "AA97D"
+        - cell "-0.7221012"
+        - cell "0.7221012"
+        - cell "0.02328830926874709"
+  - list:
+    - listitem: 4294 rows
+    - listitem "Previous Page":
+      - button "left":
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "2" [active]:
+      - generic: "2"
+    - listitem "3":
+      - generic: "3"
+    - listitem "4":
+      - generic: "4"
+    - listitem "5":
+      - generic: "5"
+    - listitem "Next 5 Pages":
+      - img "double-right":
+      - generic: •••
+    - listitem "86":
+      - generic: "86"
+    - listitem "Next Page":
+      - button "right":
+        - img "right":
+    - generic "Page Size":
+      - generic: 50 / page
+      - combobox "Page Size"
+      - generic "50 / page"

@@ -1,0 +1,89 @@
+{
+  "package": "case03_complete.zip",
+  "case": "Independent website case 03 - Engineer Stronger Binding",
+  "system": "Human PD-L1 (chain A) + designed binder DBL1_03 (chain B), PDB 7XYQ",
+  "mos_task": {
+    "task_id": "342254431249408",
+    "type": "Binding Affinity Mutation Effect",
+    "status": "succeed"
+  },
+  "submitted_payload_file": "task_params.json",
+  "chain_residue_mapping_files": [
+    "mapping/chain_residue_mapping.csv",
+    "mapping/chain_residue_mapping.json"
+  ],
+  "file_count": 14,
+  "total_bytes": 2524807,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4102,
+      "sha256": "ad1765dc2e1df07a52fdb530d57287d07a0efd00ffcff3b908249a52f76bd781"
+    },
+    {
+      "path": "inputs/7XYQ_PDL1_DBL1_03_MOSsanitized.cif",
+      "bytes": 354903,
+      "sha256": "1f73bf62774e2a102917e9c42d3d206afeba854ab3cb5a75cb4ae6aa77d45618"
+    },
+    {
+      "path": "inputs/7XYQ_PDL1_DBL1_03_clean.pdb",
+      "bytes": 427032,
+      "sha256": "fcfa2b8454e51712eae4d6eb63aa74e60d4b53a7f4248b68b52fb745171195b6"
+    },
+    {
+      "path": "mapping/chain_residue_mapping.csv",
+      "bytes": 25154,
+      "sha256": "45385e7bf6adf564274b57297d67acca12ee5068b5526c571de131da9f8e3787"
+    },
+    {
+      "path": "mapping/chain_residue_mapping.json",
+      "bytes": 1842,
+      "sha256": "8767281269ccf1363446edc955f0d97b6835e27000995270bff206369e955668"
+    },
+    {
+      "path": "raw/affinity_scores.csv",
+      "bytes": 331570,
+      "sha256": "a3feb39f5ad2398826fded3fd99583f2a4d6ea7dfa4e576e11b59e118295e2c8"
+    },
+    {
+      "path": "results.json",
+      "bytes": 6518,
+      "sha256": "4ec03bfeaa650a4727f297a72b97f734cc177fa1a3ef9bc57e7ed607abe087c8"
+    },
+    {
+      "path": "sequences/optimized_7XYQ_PDL1_DBL1_03_candidates.fasta",
+      "bytes": 1601,
+      "sha256": "aed9b0bd6648c0d55b615440ddd062a015ec23d09b09cd6a6913dc807b3d0e2f"
+    },
+    {
+      "path": "sequences/original_7XYQ_PDL1_DBL1_03.fasta",
+      "bytes": 805,
+      "sha256": "524b6a51d8c4668a957ba7a4dbe8d436a96ac383dfd70c1a30d427fc02e4ac31"
+    },
+    {
+      "path": "structures/7XYQ_original_sanitized.cif",
+      "bytes": 360935,
+      "sha256": "ad215ecb405da9996aaf2f36c9a4d1207bb701bbbf1094bfbefea56c1b11da52"
+    },
+    {
+      "path": "tables/7XYQ_interface_residues.csv",
+      "bytes": 2706,
+      "sha256": "dc6af0f95cbdc704d3146e973c9b31722158f56e438d10e40410b580fefbefed"
+    },
+    {
+      "path": "tables/binder_candidates_ranked.csv",
+      "bytes": 273895,
+      "sha256": "e0436299bc6d1eed7ffe9bd88ceb62fdf3175d59759778c8f3efa806dd64bfc9"
+    },
+    {
+      "path": "tables/mutation_scores_all.csv",
+      "bytes": 732196,
+      "sha256": "03809aa3c45523c4673e47f7ceebb20e69b6a61f275a60c9cee7857f5c7ff6ac"
+    },
+    {
+      "path": "task_params.json",
+      "bytes": 1548,
+      "sha256": "c26aada68acf3ca026269256238924611b337523b97c4e7e71f015512bbc9c35"
+    }
+  ]
+}

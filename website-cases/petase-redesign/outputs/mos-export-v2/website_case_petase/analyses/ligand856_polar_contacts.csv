@@ -1,0 +1,7 @@
+auth_res,unp_res,resname,protein_atom,protein_element,ligand_atom,ligand_element,ligand_role,distance
+58,87,Y,O,O,O14,O,terminal_hydroxyl_O,2.616
+58,87,Y,N,N,O10,O,carbonyl_O,2.896
+58,87,Y,N,N,O14,O,terminal_hydroxyl_O,3.352
+132,161,M,N,N,O10,O,carbonyl_O,2.932
+156,185,W,NE1,N,O02,O,methoxy_O,3.203
+208,237,H,NE2,N,O11,O,hydroxyethyl_ester_O,2.865

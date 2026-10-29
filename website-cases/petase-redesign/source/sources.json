@@ -1,0 +1,58 @@
+[
+  {
+    "path": "website-cases/petase-redesign/source/5XH3.cif",
+    "url": "https://files.rcsb.org/download/5XH3.cif",
+    "bytes": 481172,
+    "sha256": "7b2970c554287d5b889856b287ef9a50bf906409f7cf18fa7051781fab4938ea",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XH3.pdb",
+    "url": "https://files.rcsb.org/download/5XH3.pdb",
+    "bytes": 394389,
+    "sha256": "a550503b1c82fa917708bc99762c472287ea24195a0a79d14af20af8898cb156",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XH3.fasta",
+    "url": "https://www.rcsb.org/fasta/entry/5XH3",
+    "bytes": 364,
+    "sha256": "c3119cc4295e9d99b7084aaf36d06e0049ca0c2ccd79e446800a4718ad95775a",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XH3.metadata.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/5XH3",
+    "bytes": 15918,
+    "sha256": "550bc2a7fa49f1f4c97899fb17c829ab41beba5b46bc293c3531f49876b112b3",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XG0.cif",
+    "url": "https://files.rcsb.org/download/5XG0.cif",
+    "bytes": 759856,
+    "sha256": "a5c0862be0d3b6305db7a493ca5b6cfa0f60c5c8042c8b918c250d0eb207a23f",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XG0.pdb",
+    "url": "https://files.rcsb.org/download/5XG0.pdb",
+    "bytes": 609039,
+    "sha256": "3ac32c91bc854a9f498c9c45e688688c4a92ed352796569d143cb53795f4c322",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XG0.fasta",
+    "url": "https://www.rcsb.org/fasta/entry/5XG0",
+    "bytes": 378,
+    "sha256": "d13894b013391691a55590b1cb634861904336b5bfea1d0876ce3da7ae1461f6",
+    "source_kind": "public experimental PDB entry"
+  },
+  {
+    "path": "website-cases/petase-redesign/source/5XG0.metadata.json",
+    "url": "https://data.rcsb.org/rest/v1/core/entry/5XG0",
+    "bytes": 14386,
+    "sha256": "2025c47e337520037957907cf98887d6fb567cfca81f1b70d797ccdd49fc8e7d",
+    "source_kind": "public experimental PDB entry"
+  }
+]

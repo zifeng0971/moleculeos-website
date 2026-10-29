@@ -1,0 +1,20 @@
+同源蛋白问题证据核对（2026-10-28，仅重新解析本地历史留档）
+
+已确认：
+1. 01 的 MMFold_1.cif 与 02 导入/平台返回副本 SHA-256 相同：d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。
+2. 02 自动前置任务 342604299285504 与 MMetrics 任务 342604577018880 均记录为 Succeed。前者开始于档案 UTC 2026-10-21T02:20:28Z（耗时原文 1.1min），后者 UTC 02:21:36Z（耗时 3s）。
+3. 前置 mos-blast 不是空输出：blast_results.json 有 503 条比对记录、500 个唯一 hit_id；all_sequences.fasta 有 500 条序列。下载名 similarity_results.json 与原对象 blast_results.json 字节一致。
+4. 上述所有 503 条记录的 query_sequence_full 都是 B 链 KN035 VHH 128 aa；general.query_sequence 同样如此。未在这个输出中发现 A 链 PD-L1 118 aa 的 query。
+5. BLAST 首条命中为 pdb|5JDS|B，128/128 一致，identity_percentage 原值 1.0（此字段尺度 0–1），E-value 2.10588e-92。其为 KN035 来源序列自身命中，不能视为独立功能同源验证。所有 503 条记录的 hit_db 都为 pdb、reference 为 RCSB。
+6. 02 原生 MMetrics record.json 的 annotations.homology、annotations.uniprot、annotations.pdb 均为 []；model_tasks.results 也为 []。空结果已存在于原生记录，并非只发生在官网展示层。
+7. 原生 MOS UI 留档（2026-10-21T02:23:00.211Z）Homologs 提示 “Searched by antigen sequence similarity”，结果 “No significant homologs found.”。UI 所指对象是抗原；不能把 B 链抗体的 BLAST 命中直接当作 A 链 PD-L1 同源检索结果。
+8. MMetrics 输入 payload 明确携带该前置任务的 7 个对象，其中 mos-blast JSON 对象 342604574229504，FASTA 对象 342604574114816。结构对象为 342604293768192，work 为 342604299084800。
+
+排查顺序：
+第一步检查 342604299285504 的 query 选择/任务编排：为何归档只见 B 链抗体检索，A 链抗原是否调度、跳过、失败或另存；要求查逐 entity/chain 的输入序列与输出。
+第二步查 342604577018880 如何关联实体、读取结果、按阈值过滤及写入 annotations.homology/uniprot/pdb；逐条记录过滤理由。
+第三步把“未运行/上游失败/检索零命中/过滤为空/注释未装配”区分开。
+
+目前不能确认根因。数据库版本、算法版本、确切阈值、后台日志和 A 链独立检索状态均未在现有归档中确定。不得写成“BLAST 没有命中”，也不得断言“503 条抗原同源结果被 MMetrics 丢了”。
+
+详细机器可读核对、原始字段路径与文件 SHA-256 见 homolog_evidence.json。

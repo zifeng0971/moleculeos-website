@@ -1,0 +1,132 @@
+{
+  "case_id": "05",
+  "target": "Human PD-L1",
+  "binder": "New PD-L1 binders",
+  "reference_pdb_id": "5GRJ",
+  "project_id": "342254460007424",
+  "project_url": "https://mos.moleculemind.com/?projectId=342254460007424",
+  "source_files": [
+    "sources/5GRJ.pdb",
+    "sources/5GRJ.cif",
+    "sources/5GRJ.fasta"
+  ],
+  "parameters_status": "See exact submitted prompt and MOS task input; compilation in progress",
+  "exact_exported_parameters": {
+    "case": "05_invent_new_binders_pdl1",
+    "target": {
+      "pdb_id": "5GRJ",
+      "target_protein": "Human PD-L1 (CD274 / B7-H1) extracellular IgV domain",
+      "source_entity": "entity 3, label_asym_id C, auth_asym_id A, UNP residues 18-238",
+      "target_input_file_local": "/workspace/case05/PD-L1_5GRJ_chainA_target.mos.cif",
+      "target_input_file_local_pdb": "/workspace/case05/PD-L1_5GRJ_chainA_target.pdb",
+      "mos_object_id": "342254736761856",
+      "mos_work_id": "342254742443008",
+      "tos_key": "user_objects/123/330665428816896/sanitized/179246388469366_PD-L1_5GRJ_chainA_target.mos.cif",
+      "removed_chains": [
+        "H (avelumab heavy chain, entity 1)",
+        "L (avelumab light chain, entity 2)"
+      ],
+      "removed_nonpolymer": "waters, glycans, ions, ligands - none present in this crystal form",
+      "retained_residues": "all 213 modeled extracellular residues, sanitized chain A 1-213 (auth 18-184, 188-233; auth 185-187 disordered, not modeled)",
+      "numbering_map_chain": "A",
+      "chain_relabel": {
+        "auth": "A",
+        "sanitized": "A"
+      }
+    },
+    "hotspots": {
+      "author_residues_requested": [
+        "I54",
+        "Y56",
+        "R113"
+      ],
+      "author_to_sanitized": {
+        "I54": "A37",
+        "Y56": "A39",
+        "R113": "A96"
+      },
+      "nearby_accessible_interface_positions_used": {
+        "E58": "A41",
+        "V68": "A51",
+        "Y123": "A106"
+      },
+      "hotspot_res_string": "A37,A39,A41,A51,A96,A106",
+      "evidence": "All six are in the avelumab (PD-1-competitive) footprint on PD-L1 in 5GRJ at <4.5 A, and all are solvent-exposed (SASA 25-113 A^2)"
+    },
+    "design_parameters": {
+      "contigs": "A1-213/0 60-100",
+      "binder_length_range_aa": [
+        60,
+        100
+      ],
+      "compare_binder": 1,
+      "diffusion_steps": 50,
+      "random_seeds": [
+        111,
+        222,
+        333
+      ],
+      "n_runs": 3,
+      "rationale": "Protein Binder Design schema has no num_designs field; 3 independent runs with distinct seeds give 3 de novo candidates. compare_binder=1 enables sequence design + complex structure prediction on the hallucinated backbone."
+    }
+  },
+  "task_ids_export": {
+    "case": "05_invent_new_binders_pdl1",
+    "task_type": "Protein Binder Design",
+    "tasks": [
+      {
+        "name": "PDL1 de novo binder seed111",
+        "task_id": "342254837666816",
+        "random_seed": 111
+      },
+      {
+        "name": "PDL1 de novo binder seed222",
+        "task_id": "342254839784448",
+        "random_seed": 222
+      },
+      {
+        "name": "PDL1 de novo binder seed333",
+        "task_id": "342254842782720",
+        "random_seed": 333
+      }
+    ],
+    "shared_payload": {
+      "input_structure": "user_objects/123/330665428816896/sanitized/179246388469366_PD-L1_5GRJ_chainA_target.mos.cif",
+      "contigs": "A1-213/0 60-100",
+      "hotspot_res": "A37,A39,A41,A51,A96,A106",
+      "compare_binder": 1,
+      "diffusion_steps": 50
+    }
+  },
+  "target_construct": "213 modeled extracellular residues from 5GRJ auth chain A; excludes membrane/cytoplasmic regions and unmodeled residues, no antibody or glycan",
+  "final_task_statuses": {
+    "observed_at": "2026-10-20T09:53:19.447582+07:00",
+    "tasks": [
+      {
+        "label": "seed111",
+        "task_id": "342254837666816",
+        "random_seed": 111,
+        "status": "succeeded",
+        "evidence": "raw/task-list-all-succeeded.txt"
+      },
+      {
+        "label": "seed222",
+        "task_id": "342254839784448",
+        "random_seed": 222,
+        "status": "succeeded",
+        "evidence": "raw/task-list-all-succeeded.txt"
+      },
+      {
+        "label": "seed333",
+        "task_id": "342254842782720",
+        "random_seed": 333,
+        "status": "succeeded",
+        "evidence": "raw/task-list-all-succeeded.txt",
+        "files": [
+          "05-denovo/raw/direct-task-exports/seed333/raw/output.cif",
+          "05-denovo/raw/direct-task-exports/seed333/raw/aligned.cif"
+        ]
+      }
+    ]
+  }
+}

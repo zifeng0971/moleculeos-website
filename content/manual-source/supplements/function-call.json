@@ -1,0 +1,264 @@
+{
+  "recordedAt": "2026-10-10",
+  "sourceManifest": "manual-videos/2026-10-10/recording-manifest.json",
+  "sections": [
+    {
+      "section": "7.2",
+      "title": "Protein Redesign",
+      "taskId": "338705295062016",
+      "steps": {
+        "zh": [
+          "在项目中导入 PDB/CIF 结构，在 Mocha 中选择 Protein Redesign，指定输入结构。需要局部设计时，填写待设计残基（如 A1 A4 B2 B3）；确认链名与结构编号一致后提交。",
+          "在 Task 中等待任务显示 Succeed，再打开结果面板查看 redesign.fasta。保留输入结构与任务记录，供后续序列比较。"
+        ],
+        "en": [
+          "Import a PDB/CIF structure, choose Protein Redesign in Mocha, and select the input structure. For a partial redesign, specify the design residues (for example A1 A4 B2 B3) and check the chain IDs and residue numbering before submitting.",
+          "Wait for Succeed in Task, then open the results panel to inspect redesign.fasta. Keep the input structure and task record for sequence comparisons."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-2-protein-redesign-take2.mp4",
+          "caption": {
+            "zh": "7.2 · 输入与提交",
+            "en": "7.2 · Input and submission"
+          }
+        },
+        {
+          "filename": "7-2-redesign-results.mp4",
+          "caption": {
+            "zh": "7.2 · 结果查看",
+            "en": "7.2 · Result review"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.3",
+      "title": "Protein Binder Design",
+      "taskId": "338705455961088",
+      "steps": {
+        "zh": [
+          "导入靶蛋白结构，在 Mocha 中选择 Protein Binder Design，填写 Target Binding 残基范围，以及 Binder Size Min / Max。需要复合物预测与比对时启用 Align Binder。",
+          "提交后在 Task 查看状态。成功后打开 output.cif；启用比对时检查 aligned.cif，将结果导入项目并查看靶点与候选 binder 的空间位置。"
+        ],
+        "en": [
+          "Import the target structure and choose Protein Binder Design in Mocha. Specify Target Binding residues and Binder Size Min / Max. Enable Align Binder when complex prediction and alignment are needed.",
+          "Check the task status in Task. After success, open output.cif and, when alignment is enabled, inspect aligned.cif. Import the results to review the target and candidate binder geometry."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-3-binder-design.mp4",
+          "caption": {
+            "zh": "7.3 · 输入与提交",
+            "en": "7.3 · Input and submission"
+          }
+        },
+        {
+          "filename": "7-3-binder-output.mp4",
+          "caption": {
+            "zh": "7.3 · 候选输出",
+            "en": "7.3 · Candidate outputs"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.4",
+      "title": "Sequence Fitness Mutation Effect",
+      "taskId": "338705815196672",
+      "steps": {
+        "zh": [
+          "在 Mocha 中选择 Sequence Fitness Mutation Effect，输入由标准氨基酸组成的蛋白序列，检查序列后提交。",
+          "任务成功后打开结果面板，预览或下载 CSV；通过 Display Score Heatmap 查看位点和替换氨基酸的分数，结合原始表格筛选候选突变。"
+        ],
+        "en": [
+          "Choose Sequence Fitness Mutation Effect in Mocha, enter a protein sequence containing standard amino acids, check the sequence, and submit.",
+          "After success, preview or download the CSV from the results panel. Use Display Score Heatmap to inspect scores by position and substitution, and compare candidates with the raw table."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-4-sequence-fitness-input.mp4",
+          "caption": {
+            "zh": "7.4 · 序列输入",
+            "en": "7.4 · Sequence input"
+          }
+        },
+        {
+          "filename": "7-4-sequence-fitness-csv.mp4",
+          "caption": {
+            "zh": "7.4 · CSV 查看",
+            "en": "7.4 · CSV inspection"
+          }
+        },
+        {
+          "filename": "7-4-sequence-fitness-results.mp4",
+          "caption": {
+            "zh": "7.4 · 结果查看",
+            "en": "7.4 · Result review"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.5",
+      "title": "Evolutionary Mutation Effect",
+      "taskId": "338717708784640",
+      "steps": {
+        "zh": [
+          "在 Mocha 中选择 Evolutionary Mutation Effect，输入蛋白序列并提交。本次成功演示使用 1BRS 的 B 链 barnase 序列，共 110 个残基。",
+          "在 Task 确认 Succeed 后打开结果面板，查看并下载 MutXevo CSV；按位点、替换和模型分数检查候选。"
+        ],
+        "en": [
+          "Choose Evolutionary Mutation Effect in Mocha, enter a protein sequence, and submit. The successful example uses the 110-residue barnase sequence from chain B of 1BRS.",
+          "Confirm Succeed in Task, then open the results panel to inspect and download the MutXevo CSV. Review candidates by position, substitution, and model score."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-5-evolutionary-success.mp4",
+          "caption": {
+            "zh": "7.5 · 成功运行与 CSV",
+            "en": "7.5 · Successful run and CSV"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.6",
+      "title": "Structural Stability Mutation Effect",
+      "taskId": "338706156491776",
+      "steps": {
+        "zh": [
+          "导入所需蛋白结构，在 Mocha 中选择 Structural Stability Mutation Effect，核对结构、链名和待评估位点后提交。",
+          "任务成功后打开结果，查看热图并预览或下载 CSV。比较突变时同时核对分数字段、单位和模型定义，保留原始结果。"
+        ],
+        "en": [
+          "Import the protein structure, choose Structural Stability Mutation Effect in Mocha, and check the structure, chain IDs, and evaluation positions before submitting.",
+          "After success, inspect the heatmap and preview or download the CSV. Check the score field, units, and model definition when comparing mutations, and retain the raw results."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-6-structural-stability-input.mp4",
+          "caption": {
+            "zh": "7.6 · 结构输入",
+            "en": "7.6 · Structure input"
+          }
+        },
+        {
+          "filename": "7-6-stability-results.mp4",
+          "caption": {
+            "zh": "7.6 · 结果查看",
+            "en": "7.6 · Result review"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.7",
+      "title": "Protein-Ligand Affinity",
+      "taskId": "338706466620416",
+      "steps": {
+        "zh": [
+          "准备蛋白受体结构和配体 SDF，在 Mocha 中选择 Protein-Ligand Affinity Evaluation，分别指定蛋白与小分子输入。",
+          "提交并等待任务成功，在结果面板查看输出表格和评分；保留受体、配体与计算条件，便于比较和复核。"
+        ],
+        "en": [
+          "Prepare the protein receptor structure and ligand SDF. Choose Protein-Ligand Affinity Evaluation in Mocha and specify the protein and small-molecule inputs separately.",
+          "Submit and wait for success, then review the output table and scores in the results panel. Retain the receptor, ligand, and calculation settings for comparison and review."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-7-protein-ligand-affinity.mp4",
+          "caption": {
+            "zh": "7.7 · 亲和力评估流程",
+            "en": "7.7 · Affinity evaluation workflow"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.8",
+      "title": "Geometric Pocket Detection",
+      "taskId": null,
+      "steps": {
+        "zh": [
+          "准备仅含蛋白的 5XH3 A 链结构，在 Mocha 中发起几何口袋检测，选择前 3 个口袋并检查口袋位置。",
+          "本次演示在已有 Mocha 环境内继续使用 AutoDock Vina 1.2.7 对配体进行对接：口袋 2、1、8，每个口袋 9 个构象，共 27 个。查看构象文件、口袋边界和原始打分表。"
+        ],
+        "en": [
+          "Prepare a protein-only structure of chain A from 5XH3. Run geometric pocket detection in Mocha, select the top 3 pockets, and inspect their positions.",
+          "This example continues with AutoDock Vina 1.2.7 in the existing Mocha environment: pockets 2, 1, and 8, with 9 poses per pocket and 27 poses in total. Inspect pose files, pocket boxes, and raw score tables."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-8-pocket-detection-and-docking.mp4",
+          "caption": {
+            "zh": "7.8 · 口袋检测与 Mocha 内对接",
+            "en": "7.8 · Pocket detection and docking in Mocha"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.9",
+      "title": "Antibody Humanization",
+      "taskId": "338707713315840",
+      "steps": {
+        "zh": [
+          "在 Mocha 中选择 Antibody Humanization Modelling，按字段分别输入抗体重链和轻链可变区序列，核对链类型后提交。",
+          "任务成功后查看输出 FASTA 中的候选序列，并与输入抗体对比。此演示使用公开 1FDL 的 H 链 VH（1–116）与 L 链 VL（1–107），结果含 10 个候选。"
+        ],
+        "en": [
+          "Choose Antibody Humanization Modelling in Mocha. Enter the heavy- and light-chain variable-region sequences in their respective fields, check chain types, and submit.",
+          "After success, inspect candidate sequences in the output FASTA and compare them with the input antibody. This example uses public 1FDL chain H VH (1–116) and chain L VL (1–107), producing 10 candidates."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-9-antibody-humanization.mp4",
+          "caption": {
+            "zh": "7.9 · 人源化输入与结果",
+            "en": "7.9 · Humanization input and results"
+          }
+        }
+      ]
+    },
+    {
+      "section": "7.10",
+      "title": "Binding Affinity Mutation Scoring",
+      "taskId": "338717670908928",
+      "steps": {
+        "zh": [
+          "导入包含相互作用链的复合物结构，在 Mocha 中选择 Binding Affinity Mutation Scoring，按功能表单指定链。本次演示使用清理后以 CIF 导入的公开 1BRS 结构，链参数为 A,D。",
+          "任务成功后打开结果面板，查看并下载 MutXaff CSV，逐项核对突变位点、替换、分数字段和单位。"
+        ],
+        "en": [
+          "Import a complex containing the interacting chains, choose Binding Affinity Mutation Scoring in Mocha, and specify chains as required by the form. This example uses public 1BRS imported as a sanitized CIF, with chain parameter A,D.",
+          "After success, open the results panel to inspect and download the MutXaff CSV. Check each mutation position, substitution, score field, and unit."
+        ]
+      },
+      "clips": [
+        {
+          "filename": "7-10-binding-affinity-clean-results.mp4",
+          "caption": {
+            "zh": "7.10 · 结合突变评分结果",
+            "en": "7.10 · Binding mutation scoring results"
+          }
+        }
+      ]
+    }
+  ],
+  "importClip": {
+    "filename": "protein-import.mp4",
+    "caption": {
+      "zh": "导入蛋白：在项目中上传结构并确认导入。",
+      "en": "Import a protein: upload a structure to the project and confirm the import."
+    }
+  }
+}

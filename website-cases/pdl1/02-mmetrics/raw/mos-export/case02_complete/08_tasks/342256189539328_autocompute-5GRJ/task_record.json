@@ -1,0 +1,19 @@
+{
+  "task_id": "342256189539328",
+  "name": "autocompute-5GRJ",
+  "type": "MOSTask",
+  "status": "running",
+  "submitted_utc": "2026-10-20T02:44:00Z",
+  "duration_reported": "2.1min (unchanged across checks)",
+  "payload": {
+    "structure_path": "user_objects/123/330665428816896/sanitized/179246423758257_5GRJ.cif",
+    "structure_pathFileId": "342256182768640",
+    "structure_pathFilename": "5GRJ.cif"
+  },
+  "chain": "A,B,C",
+  "purpose": "platform-side MMetrics autocompute job created automatically by the structure import",
+  "raw_dir": null,
+  "raw_files": [],
+  "note": "Still RUNNING at the final snapshot; no output files exist and no MMetrics result object was registered. Preserved as INCOMPLETE \u2014 not treated as a delivered module.",
+  "raw_files_copied": []
+}

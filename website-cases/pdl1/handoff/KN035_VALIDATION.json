@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "master_sha256_verified": true,
+  "all_highlight_entries_match_master_sequence": true,
+  "highlight_entries_by_case": {
+    "02-mmetrics-kn035": 993,
+    "03-affinity-kn035": 201,
+    "04-developability-kn035": 205,
+    "05-denovo-kn035": 73
+  },
+  "json_files_parsed": 188,
+  "affinity_raw_rows_verified": 4674,
+  "native_mutation_rows_verified": 19434,
+  "developability_raw_rows_verified": 7680,
+  "antibody_supplement_rows_verified": 2944,
+  "variant_models_sequence_and_numbering_verified": 25,
+  "de_novo_designs_target_sequence_and_mapping_verified": 3,
+  "protected_framework_candidates": 6,
+  "crosscase_comparison_rows": 11,
+  "old_case_directories_unchanged": true,
+  "old_MOS_projects_or_tasks_deleted_or_modified": false
+}

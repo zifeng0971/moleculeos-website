@@ -1,0 +1,6 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_path": "annotations.<ptm>",
+  "status": "absent",
+  "note": "The MMetrics record emitted for this structure has no PTM/modification field at any level. Nothing is inferred or substituted here."
+}

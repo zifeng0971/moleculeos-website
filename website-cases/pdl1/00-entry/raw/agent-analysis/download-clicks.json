@@ -1,0 +1,50 @@
+{
+  "downloadStart": 1792633659848,
+  "requested": [
+    {
+      "name": "hbond.tsv",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:40.157Z"
+    },
+    {
+      "name": "hbond.tsv",
+      "index": 1,
+      "clicked_at": "2026-10-22T01:47:40.666Z"
+    },
+    {
+      "name": "ionic.tsv",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:41.518Z"
+    },
+    {
+      "name": "pistack.tsv",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:42.309Z"
+    },
+    {
+      "name": "residues.tsv",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:43.129Z"
+    },
+    {
+      "name": "residues.tsv",
+      "index": 1,
+      "clicked_at": "2026-10-22T01:47:43.880Z"
+    },
+    {
+      "name": "summary.md",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:44.798Z"
+    },
+    {
+      "name": "summary.md",
+      "index": 1,
+      "clicked_at": "2026-10-22T01:47:45.608Z"
+    },
+    {
+      "name": "salt_bridge.tsv",
+      "index": 0,
+      "clicked_at": "2026-10-22T01:47:46.487Z"
+    }
+  ]
+}

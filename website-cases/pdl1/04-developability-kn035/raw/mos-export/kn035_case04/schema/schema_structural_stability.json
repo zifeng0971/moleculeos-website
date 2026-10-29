@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "title": "UdfInputData",
+  "required": ["structure_path"],
+  "properties": {
+    "fixed_residues": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": "", "description": "Space-separated list of residues to hold fixed during sequence design in chain+index format. Mutually exclusive with redesigned_residues."},
+    "structure_path": {"type": "string", "description": "TOS URI to the input protein structure in PDB/mmCIF format."},
+    "redesigned_residues": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": "", "description": "Space-separated list of residues to redesign in chain+index format. All other residues are held fixed. Mutually exclusive with fixed_residues."}
+  },
+  "additionalProperties": true
+}

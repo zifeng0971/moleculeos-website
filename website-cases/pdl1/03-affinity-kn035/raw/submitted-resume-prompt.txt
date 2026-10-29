@@ -1,0 +1,1 @@
+继续：现在请CheckMOSTask Q116M/T105L 的真实状态并下载，立即打包/workspace/kn035_case03.zip（若未完成也要包括前三个已完成变体的全部原始CIF与confidence、输入payload、ID和当前状态）。不要只回复等待，不要继续调试分析脚本。

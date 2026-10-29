@@ -1,0 +1,956 @@
+{
+  "source_kind": "MOS_CIF_atom_site_B_iso_or_equiv",
+  "semantic_label": "Raw B values; not promoted to calibrated pLDDT without an explicit output declaration.",
+  "rows": [
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 1,
+      "atom_site_B_iso_or_equiv_CA": 58.47
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 2,
+      "atom_site_B_iso_or_equiv_CA": 71.55
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 3,
+      "atom_site_B_iso_or_equiv_CA": 75.07
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 4,
+      "atom_site_B_iso_or_equiv_CA": 76.62
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 5,
+      "atom_site_B_iso_or_equiv_CA": 83.3
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 6,
+      "atom_site_B_iso_or_equiv_CA": 82.07
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 7,
+      "atom_site_B_iso_or_equiv_CA": 81.12
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 8,
+      "atom_site_B_iso_or_equiv_CA": 82.46
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 9,
+      "atom_site_B_iso_or_equiv_CA": 86.39
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 10,
+      "atom_site_B_iso_or_equiv_CA": 84.05
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 11,
+      "atom_site_B_iso_or_equiv_CA": 83.68
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 12,
+      "atom_site_B_iso_or_equiv_CA": 84.53
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 13,
+      "atom_site_B_iso_or_equiv_CA": 88.44
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 14,
+      "atom_site_B_iso_or_equiv_CA": 84.2
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 15,
+      "atom_site_B_iso_or_equiv_CA": 79.79
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 16,
+      "atom_site_B_iso_or_equiv_CA": 87.01
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 17,
+      "atom_site_B_iso_or_equiv_CA": 82.69
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 18,
+      "atom_site_B_iso_or_equiv_CA": 80.53
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 19,
+      "atom_site_B_iso_or_equiv_CA": 83.04
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 20,
+      "atom_site_B_iso_or_equiv_CA": 85.05
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 21,
+      "atom_site_B_iso_or_equiv_CA": 82.81
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 22,
+      "atom_site_B_iso_or_equiv_CA": 79.59
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 23,
+      "atom_site_B_iso_or_equiv_CA": 79.15
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 24,
+      "atom_site_B_iso_or_equiv_CA": 80.55
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 25,
+      "atom_site_B_iso_or_equiv_CA": 86.93
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 26,
+      "atom_site_B_iso_or_equiv_CA": 89.46
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 27,
+      "atom_site_B_iso_or_equiv_CA": 92.02
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 28,
+      "atom_site_B_iso_or_equiv_CA": 91.21
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 29,
+      "atom_site_B_iso_or_equiv_CA": 91.21
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 30,
+      "atom_site_B_iso_or_equiv_CA": 90.81
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 31,
+      "atom_site_B_iso_or_equiv_CA": 93.46
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 32,
+      "atom_site_B_iso_or_equiv_CA": 91.77
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 33,
+      "atom_site_B_iso_or_equiv_CA": 91.9
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 34,
+      "atom_site_B_iso_or_equiv_CA": 92.2
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 35,
+      "atom_site_B_iso_or_equiv_CA": 94.59
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 36,
+      "atom_site_B_iso_or_equiv_CA": 92.28
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 37,
+      "atom_site_B_iso_or_equiv_CA": 91.54
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 38,
+      "atom_site_B_iso_or_equiv_CA": 92.52
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 39,
+      "atom_site_B_iso_or_equiv_CA": 94.01
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 40,
+      "atom_site_B_iso_or_equiv_CA": 91.17
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 41,
+      "atom_site_B_iso_or_equiv_CA": 89.77
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 42,
+      "atom_site_B_iso_or_equiv_CA": 92.8
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 43,
+      "atom_site_B_iso_or_equiv_CA": 90.42
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 44,
+      "atom_site_B_iso_or_equiv_CA": 87.9
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 45,
+      "atom_site_B_iso_or_equiv_CA": 82.76
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 46,
+      "atom_site_B_iso_or_equiv_CA": 79.44
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 47,
+      "atom_site_B_iso_or_equiv_CA": 78.07
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 48,
+      "atom_site_B_iso_or_equiv_CA": 86.06
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 49,
+      "atom_site_B_iso_or_equiv_CA": 85.34
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 50,
+      "atom_site_B_iso_or_equiv_CA": 82.54
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 51,
+      "atom_site_B_iso_or_equiv_CA": 83.83
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 52,
+      "atom_site_B_iso_or_equiv_CA": 87.19
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 53,
+      "atom_site_B_iso_or_equiv_CA": 88.28
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 54,
+      "atom_site_B_iso_or_equiv_CA": 81.16
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 55,
+      "atom_site_B_iso_or_equiv_CA": 84.36
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 56,
+      "atom_site_B_iso_or_equiv_CA": 88.16
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 57,
+      "atom_site_B_iso_or_equiv_CA": 87.56
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 58,
+      "atom_site_B_iso_or_equiv_CA": 85.36
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 59,
+      "atom_site_B_iso_or_equiv_CA": 87.27
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 60,
+      "atom_site_B_iso_or_equiv_CA": 90.45
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 61,
+      "atom_site_B_iso_or_equiv_CA": 85.27
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 62,
+      "atom_site_B_iso_or_equiv_CA": 86.79
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 63,
+      "atom_site_B_iso_or_equiv_CA": 90.58
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 64,
+      "atom_site_B_iso_or_equiv_CA": 89.63
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 65,
+      "atom_site_B_iso_or_equiv_CA": 87.02
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 66,
+      "atom_site_B_iso_or_equiv_CA": 91.17
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 67,
+      "atom_site_B_iso_or_equiv_CA": 91.69
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 68,
+      "atom_site_B_iso_or_equiv_CA": 89.15
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 69,
+      "atom_site_B_iso_or_equiv_CA": 89.14
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 70,
+      "atom_site_B_iso_or_equiv_CA": 89.0
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 71,
+      "atom_site_B_iso_or_equiv_CA": 88.25
+    },
+    {
+      "output_chain": "A",
+      "output_label_seq_id": 72,
+      "atom_site_B_iso_or_equiv_CA": 83.21
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 1,
+      "atom_site_B_iso_or_equiv_CA": 61.74
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 2,
+      "atom_site_B_iso_or_equiv_CA": 76.63
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 3,
+      "atom_site_B_iso_or_equiv_CA": 87.0
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 4,
+      "atom_site_B_iso_or_equiv_CA": 92.17
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 5,
+      "atom_site_B_iso_or_equiv_CA": 94.44
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 6,
+      "atom_site_B_iso_or_equiv_CA": 95.37
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 7,
+      "atom_site_B_iso_or_equiv_CA": 96.09
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 8,
+      "atom_site_B_iso_or_equiv_CA": 95.66
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 9,
+      "atom_site_B_iso_or_equiv_CA": 96.32
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 10,
+      "atom_site_B_iso_or_equiv_CA": 95.65
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 11,
+      "atom_site_B_iso_or_equiv_CA": 97.13
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 12,
+      "atom_site_B_iso_or_equiv_CA": 97.24
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 13,
+      "atom_site_B_iso_or_equiv_CA": 96.37
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 14,
+      "atom_site_B_iso_or_equiv_CA": 94.56
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 15,
+      "atom_site_B_iso_or_equiv_CA": 95.2
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 16,
+      "atom_site_B_iso_or_equiv_CA": 95.23
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 17,
+      "atom_site_B_iso_or_equiv_CA": 94.5
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 18,
+      "atom_site_B_iso_or_equiv_CA": 93.93
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 19,
+      "atom_site_B_iso_or_equiv_CA": 95.81
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 20,
+      "atom_site_B_iso_or_equiv_CA": 95.62
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 21,
+      "atom_site_B_iso_or_equiv_CA": 97.67
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 22,
+      "atom_site_B_iso_or_equiv_CA": 97.57
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 23,
+      "atom_site_B_iso_or_equiv_CA": 97.16
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 24,
+      "atom_site_B_iso_or_equiv_CA": 96.84
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 25,
+      "atom_site_B_iso_or_equiv_CA": 95.87
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 26,
+      "atom_site_B_iso_or_equiv_CA": 93.81
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 27,
+      "atom_site_B_iso_or_equiv_CA": 92.01
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 28,
+      "atom_site_B_iso_or_equiv_CA": 89.78
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 29,
+      "atom_site_B_iso_or_equiv_CA": 86.02
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 30,
+      "atom_site_B_iso_or_equiv_CA": 84.71
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 31,
+      "atom_site_B_iso_or_equiv_CA": 87.28
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 32,
+      "atom_site_B_iso_or_equiv_CA": 90.34
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 33,
+      "atom_site_B_iso_or_equiv_CA": 86.48
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 34,
+      "atom_site_B_iso_or_equiv_CA": 86.84
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 35,
+      "atom_site_B_iso_or_equiv_CA": 83.9
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 36,
+      "atom_site_B_iso_or_equiv_CA": 84.36
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 37,
+      "atom_site_B_iso_or_equiv_CA": 89.42
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 38,
+      "atom_site_B_iso_or_equiv_CA": 88.53
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 39,
+      "atom_site_B_iso_or_equiv_CA": 92.85
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 40,
+      "atom_site_B_iso_or_equiv_CA": 89.96
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 41,
+      "atom_site_B_iso_or_equiv_CA": 93.42
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 42,
+      "atom_site_B_iso_or_equiv_CA": 89.12
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 43,
+      "atom_site_B_iso_or_equiv_CA": 92.25
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 44,
+      "atom_site_B_iso_or_equiv_CA": 83.62
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 45,
+      "atom_site_B_iso_or_equiv_CA": 80.59
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 46,
+      "atom_site_B_iso_or_equiv_CA": 89.77
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 47,
+      "atom_site_B_iso_or_equiv_CA": 86.95
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 48,
+      "atom_site_B_iso_or_equiv_CA": 91.81
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 49,
+      "atom_site_B_iso_or_equiv_CA": 89.99
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 50,
+      "atom_site_B_iso_or_equiv_CA": 87.02
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 51,
+      "atom_site_B_iso_or_equiv_CA": 91.01
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 52,
+      "atom_site_B_iso_or_equiv_CA": 82.54
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 53,
+      "atom_site_B_iso_or_equiv_CA": 81.02
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 54,
+      "atom_site_B_iso_or_equiv_CA": 85.08
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 55,
+      "atom_site_B_iso_or_equiv_CA": 82.26
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 56,
+      "atom_site_B_iso_or_equiv_CA": 85.27
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 57,
+      "atom_site_B_iso_or_equiv_CA": 81.0
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 58,
+      "atom_site_B_iso_or_equiv_CA": 83.87
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 59,
+      "atom_site_B_iso_or_equiv_CA": 80.69
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 60,
+      "atom_site_B_iso_or_equiv_CA": 81.82
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 61,
+      "atom_site_B_iso_or_equiv_CA": 90.06
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 62,
+      "atom_site_B_iso_or_equiv_CA": 88.55
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 63,
+      "atom_site_B_iso_or_equiv_CA": 89.72
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 64,
+      "atom_site_B_iso_or_equiv_CA": 91.8
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 65,
+      "atom_site_B_iso_or_equiv_CA": 91.8
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 66,
+      "atom_site_B_iso_or_equiv_CA": 89.07
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 67,
+      "atom_site_B_iso_or_equiv_CA": 91.54
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 68,
+      "atom_site_B_iso_or_equiv_CA": 94.6
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 69,
+      "atom_site_B_iso_or_equiv_CA": 95.75
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 70,
+      "atom_site_B_iso_or_equiv_CA": 94.32
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 71,
+      "atom_site_B_iso_or_equiv_CA": 95.46
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 72,
+      "atom_site_B_iso_or_equiv_CA": 95.71
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 73,
+      "atom_site_B_iso_or_equiv_CA": 93.22
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 74,
+      "atom_site_B_iso_or_equiv_CA": 90.97
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 75,
+      "atom_site_B_iso_or_equiv_CA": 94.49
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 76,
+      "atom_site_B_iso_or_equiv_CA": 94.47
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 77,
+      "atom_site_B_iso_or_equiv_CA": 92.69
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 78,
+      "atom_site_B_iso_or_equiv_CA": 92.81
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 79,
+      "atom_site_B_iso_or_equiv_CA": 94.75
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 80,
+      "atom_site_B_iso_or_equiv_CA": 96.58
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 81,
+      "atom_site_B_iso_or_equiv_CA": 96.61
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 82,
+      "atom_site_B_iso_or_equiv_CA": 97.41
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 83,
+      "atom_site_B_iso_or_equiv_CA": 97.32
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 84,
+      "atom_site_B_iso_or_equiv_CA": 97.01
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 85,
+      "atom_site_B_iso_or_equiv_CA": 97.16
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 86,
+      "atom_site_B_iso_or_equiv_CA": 96.0
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 87,
+      "atom_site_B_iso_or_equiv_CA": 94.96
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 88,
+      "atom_site_B_iso_or_equiv_CA": 95.84
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 89,
+      "atom_site_B_iso_or_equiv_CA": 94.29
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 90,
+      "atom_site_B_iso_or_equiv_CA": 93.72
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 91,
+      "atom_site_B_iso_or_equiv_CA": 93.69
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 92,
+      "atom_site_B_iso_or_equiv_CA": 95.4
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 93,
+      "atom_site_B_iso_or_equiv_CA": 96.18
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 94,
+      "atom_site_B_iso_or_equiv_CA": 95.31
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 95,
+      "atom_site_B_iso_or_equiv_CA": 94.18
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 96,
+      "atom_site_B_iso_or_equiv_CA": 95.18
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 97,
+      "atom_site_B_iso_or_equiv_CA": 91.57
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 98,
+      "atom_site_B_iso_or_equiv_CA": 94.44
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 99,
+      "atom_site_B_iso_or_equiv_CA": 90.66
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 100,
+      "atom_site_B_iso_or_equiv_CA": 92.89
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 101,
+      "atom_site_B_iso_or_equiv_CA": 87.55
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 102,
+      "atom_site_B_iso_or_equiv_CA": 87.77
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 103,
+      "atom_site_B_iso_or_equiv_CA": 81.32
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 104,
+      "atom_site_B_iso_or_equiv_CA": 83.19
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 105,
+      "atom_site_B_iso_or_equiv_CA": 85.17
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 106,
+      "atom_site_B_iso_or_equiv_CA": 90.4
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 107,
+      "atom_site_B_iso_or_equiv_CA": 90.05
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 108,
+      "atom_site_B_iso_or_equiv_CA": 93.06
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 109,
+      "atom_site_B_iso_or_equiv_CA": 94.29
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 110,
+      "atom_site_B_iso_or_equiv_CA": 96.64
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 111,
+      "atom_site_B_iso_or_equiv_CA": 97.01
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 112,
+      "atom_site_B_iso_or_equiv_CA": 96.66
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 113,
+      "atom_site_B_iso_or_equiv_CA": 96.93
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 114,
+      "atom_site_B_iso_or_equiv_CA": 95.1
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 115,
+      "atom_site_B_iso_or_equiv_CA": 92.62
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 116,
+      "atom_site_B_iso_or_equiv_CA": 80.23
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 117,
+      "atom_site_B_iso_or_equiv_CA": 68.55
+    },
+    {
+      "output_chain": "B",
+      "output_label_seq_id": 118,
+      "atom_site_B_iso_or_equiv_CA": 54.16
+    }
+  ]
+}

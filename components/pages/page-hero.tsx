@@ -1,5 +1,10 @@
 import { Reveal } from '@/components/motion/reveal';
+import { ProteinField } from '@/components/motion/protein-field';
+import { Flow, Phrases } from '@/components/ui/phrase-title';
 
-export function PageHero({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {
-  return <section className="relative overflow-hidden border-b border-border bg-surface py-24"><div className="ambient-glow -right-40 -top-36 size-[36rem]"/><div className="site-container relative"><Reveal><p className="eyebrow">{eyebrow}</p><h1 className="section-title">{title}</h1><p className="mt-6 max-w-[680px] text-lg leading-[1.85] text-muted-foreground">{description}</p></Reveal></div></section>;
+/** Sub-page opener: eyebrow, one large headline, one lead. `fx` adds the faint pointer-reactive residue field behind it. */
+export function PageHero({ eyebrow, title, description, fx = false }: { eyebrow: string; title: string; description: string; fx?: boolean }) {
+  return <section className="page-hero">
+    {fx && <><ProteinField className="px-field" calmSelector=".px-hero-copy" /><div className="px-hero-fade" aria-hidden="true" /></>}
+    <div className="site-container relative px-hero-copy"><Reveal><p className="eyebrow">{eyebrow}</p><h1 className="page-hero-title"><Phrases text={title} /></h1><p className="page-hero-lead"><Flow text={description} /></p></Reveal></div></section>;
 }

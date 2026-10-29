@@ -1,0 +1,17 @@
+pos,aa,relSASA,liability_class,motif,severity,note
+22,C,0.0,Free_Cys_check,C22,none,disulfide-paired Cys (see disulfide map)
+28,M,0.343,Oxidation,M28,medium,M oxidation-sensitive; relSASA=0.34
+33,C,0.0,Free_Cys_check,C33,none,disulfide-paired Cys (see disulfide map)
+34,M,0.011,Oxidation,M34,medium,M oxidation-sensitive; relSASA=0.01
+36,W,0.0,Oxidation,W36,low,W oxidation-sensitive; relSASA=0.00
+62,D,0.565,Isomerization,D62S,medium,DS motif
+74,N,0.807,Deamidation,N74A,low,NA motif
+83,M,0.0,Oxidation,M83,medium,M oxidation-sensitive; relSASA=0.00
+84,N,0.293,Deamidation,N84S,medium,NS motif
+90,D,0.022,Isomerization,D90T,medium,DT motif
+93,M,0.226,Oxidation,M93,medium,M oxidation-sensitive; relSASA=0.23
+96,C,0.0,Free_Cys_check,C96,none,disulfide-paired Cys (see disulfide map)
+99,D,0.022,Isomerization,D99S,medium,DS motif
+106,C,0.0,Free_Cys_check,C106,none,disulfide-paired Cys (see disulfide map)
+118,W,0.251,Oxidation,W118,low,W oxidation-sensitive; relSASA=0.25
+120,Q,0.406,Deamidation,Q120G,low,"QG motif, slow deamidation"

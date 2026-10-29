@@ -1,0 +1,189 @@
+{
+  "schema": "kn035_case02/provenance/v1",
+  "package": "kn035_case02",
+  "created_utc": "2026-10-29T05:56:06+00:00",
+  "scope_statement": "This package covers exactly one imported molecular object, MMFold_1, and the MMetrics/auto-compute tasks the platform ran on it. No structure was re-predicted, no external structure (5GRJ / 7XYQ / 5JDS) was downloaded or used as a model, and no other project or task was touched.",
+  "object": {
+    "name": "MMFold_1.cif",
+    "object_id": "345488780645376",
+    "work_id": "345488784675840",
+    "tos_key": "user_objects/123/330665428816896/345488780645376_MMFold_1.cif",
+    "entity_count": 2,
+    "chain_ids": [
+      "A",
+      "B"
+    ],
+    "chains": {
+      "A": {
+        "length": 118,
+        "identity": "human PD-L1 (CD274) IgV-domain construct, antigen"
+      },
+      "B": {
+        "length": 128,
+        "identity": "KN035 VHH single-domain antibody, binder"
+      }
+    },
+    "light_chain_present": false,
+    "hetero_atoms_present": false,
+    "altlocs_present": false,
+    "n_models": 1
+  },
+  "hashes": {
+    "declared_original_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "declared_original_matches_observed": true,
+    "observed": {
+      "mos_object_download (GetMOSObject, sanitized)": {
+        "path": "input/MMFold_1.cif (downloaded copy kept as the single package input copy)",
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+        "bytes": 154131
+      },
+      "session_copy (protein_data)": {
+        "path": "/workspace/protein_data/protein_345488784675840/MMFold_1.cif",
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+        "bytes": 154131
+      },
+      "package_input_copy": {
+        "path": "input/MMFold_1.cif",
+        "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+        "bytes": 154131
+      }
+    },
+    "interpretation": "The declared source SHA256, the MOS-sanitized object served by GetMOSObject, and the session copy are byte-identical. For this import the sanitization step changed no bytes, so 'raw input hash' and 'sanitized input hash' are the same value; the file already carried the MOS layout (_mos_mapping, P 1 cell, _entry.id 342254287430656_model_sample_1) when it entered the session."
+  },
+  "sequence_verification": {
+    "method": "sequence-toolkit store --length + Biopython BLOSUM62 local alignment vs UniProt Q9NZQ7",
+    "chain_A": {
+      "length": 118,
+      "identical_to_uniprot_span": "Q9NZQ7 residues 18-132",
+      "aligned_length": 115,
+      "identities": 115,
+      "identity_percentage": 100.0,
+      "substitutions_in_aligned_span": 0,
+      "construct_artifacts": "leading Met (residue 1) and trailing LE (residues 117-118) outside the UniProt span"
+    },
+    "chain_B": {
+      "length": 128,
+      "annotation": "VHH (record.json protein_metadata.entities[1].antibody_fragment)",
+      "framework4": "WGQGTQVTVSS (hallmark of camelid VHH, CH1 absent)",
+      "note": "no light chain in the structure, consistent with a single-domain binder"
+    },
+    "library_ids": [
+      "kn035_case02_A",
+      "kn035_case02_B",
+      "pd_l1_human_uni"
+    ]
+  },
+  "native_mmetrics_record": {
+    "file": "raw/mmetrics_345489060729856/record.json",
+    "sha256": "5f9240b89d8bdd4dbce27c7c6104eb4027d705d3463c87e5e9d4846a82c42748",
+    "mmetrics_id": "d8d4e831-5b7a-41bc-868a-93dc27bc3cd5",
+    "schema_version": "1.0.0",
+    "sections_present": [
+      "protein_metadata",
+      "annotations.homology",
+      "annotations.pdb",
+      "annotations.features",
+      "classification",
+      "interactions"
+    ],
+    "sections_empty_verbatim": {
+      "annotations.uniprot": "[] (empty array kept as produced)",
+      "model_tasks.results": "[] (no MutX / AbAn / AbScN / ParaDt model output produced)"
+    },
+    "sections_absent": [
+      "protein domain annotation (no feature with annotation_type 'domain')",
+      "PTM annotation (no feature with annotation_type ptm/glycosylation/phosphorylation)",
+      "no separate 'Homologs' boolean section; homology is annotations.homology (3 hits) and annotations.uniprot is empty"
+    ],
+    "native_inconsistencies_noted": [
+      "annotations.homology entries carry entity_id=1 but their query/aligned sequence is chain B (the VHH) - entity tagging error in the native output, left unmodified.",
+      "classification.reasoning states '51 contacts' while interactions.2d_plot_data[0].meta.n_contacts is 44 and the contact list holds 44 entries; the reasoning text is not reconciled with the numeric block.",
+      "annotations.pdb lists 5JDS / 4DKA / 4DK3 and annotations.homology hit pdb|5JDS|B at identity 1.0. These are native pipeline reference hits only. They were NOT downloaded, opened, or used as a model for any analysis in this package; 5JDS/7XYQ/5GRJ were excluded per instruction."
+    ]
+  },
+  "numbering_summary": {
+    "identity_mapping": true,
+    "residues_mapped": 246,
+    "detail": "numbering-map.json"
+  },
+  "mutation_token_verification": {
+    "affinity_scores.csv": {
+      "rows": 4674,
+      "parsed_and_matched": 4674,
+      "conflicts": 0,
+      "conflict_examples": [],
+      "per_chain_after_decode": {
+        "A": 2242,
+        "B": 2432
+      },
+      "positions_covered": {
+        "A": [
+          118,
+          118
+        ],
+        "B": [
+          128,
+          128
+        ]
+      },
+      "all_positions_contiguous_1_to_N": true,
+      "all_19_non_native_substitutions_per_position": true
+    },
+    "fitness_csvs": {
+      "evolutionary_scores.csv": {
+        "rows": 4920,
+        "wt_letter_mismatches": 0,
+        "wild_type_rows": 246
+      },
+      "sequence_scores.csv": {
+        "rows": 4920,
+        "wt_letter_mismatches": 0,
+        "wild_type_rows": 246
+      },
+      "struct_fitness_scores.csv": {
+        "rows": 4920,
+        "wt_letter_mismatches": 0,
+        "wild_type_rows": 246
+      }
+    },
+    "conclusion": "The auto-compute mutation tables are internally consistent with the structure numbering: 4674 = 118x19 + 128x19 affinity rows, every wild-type letter matches the residue at that index, and each position carries exactly 19 non-native substitutions."
+  },
+  "separation_of_sources": {
+    "native_auto_results": {
+      "produced_by": [
+        "345488784917504",
+        "345489060729856"
+      ],
+      "paths": [
+        "raw/autocompute_345488784917504/",
+        "raw/mmetrics_345489060729856/record.json"
+      ],
+      "hashes": {
+        "affinity_scores.csv": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+        "all_sequences.fasta": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+        "evolutionary_scores.csv": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+        "sequence_info.fasta": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+        "sequence_scores.csv": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+        "similarity_results.json": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+        "struct_fitness_scores.csv": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+      }
+    },
+    "independent_tasks": {
+      "count": 0,
+      "note": "No independently launched MOS task exists for this structure; the platform task list held only the two auto tasks."
+    },
+    "local_analysis": {
+      "performed_here": [
+        "chain/sequence/label-auth verification from MMFold_1.cif",
+        "SHA256 comparison of declared vs registered vs session copy",
+        "BLOSUM62 local alignment of chain A/B vs UniProt Q9NZQ7 (sequence-identity check only)",
+        "decoding and validating mutstr tokens against structure residues"
+      ],
+      "files": [
+        "verification.json (embedded in this file)",
+        "numbering-map.json"
+      ],
+      "note": "No local structural or energetic recomputation (no re-fold, no docking, no ddG). Local work is limited to identity, numbering and token decoding checks."
+    }
+  }
+}

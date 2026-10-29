@@ -1,0 +1,4 @@
+Snapshot: ListMOSTasks (limit 5) at 2026-10-21T02:28Z
+PENDING  kn035_c05_denovo_seed333  342606141764608  Protein Binder Design  started 2026-10-21 02:27:58  Duration 0s
+PENDING  kn035_c05_denovo_seed111  342606137910272  Protein Binder Design  started 2026-10-21 02:27:57  Duration 0s
+PENDING  kn035_c05_denovo_seed222  342606139298816  Protein Binder Design  started 2026-10-21 02:27:57  Duration 0s

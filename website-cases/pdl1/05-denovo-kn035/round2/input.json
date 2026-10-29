@@ -1,0 +1,73 @@
+{
+  "case_id": "05-kn035-round2",
+  "project_id": "342605363971072",
+  "project_url": "https://mos.moleculemind.com/?projectId=342605363971072",
+  "mos_object_id": "342605515027456",
+  "mos_work_id": "342605519696896",
+  "master": "01-structure/raw/MMFold_1.cif",
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "input_file": "05-denovo-kn035/raw/MMFold_1_chain_A.cif",
+  "input_file_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "MOS_import_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "MOS_import_byte_identity_verified": true,
+  "chain_mapping": {
+    "A": {
+      "mmfold1": "A",
+      "role": "PD-L1",
+      "length": 118
+    }
+  },
+  "extraction_provenance": {
+    "source": "local_extraction",
+    "parent": "01-structure/raw/MMFold_1.cif",
+    "parent_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+    "chain": "A",
+    "length": 118,
+    "method": "Filter mmCIF atom_site and entity/sequence/asym rows by original chain/entity; no atom-coordinate or label/auth-number changes. PDB is auxiliary. CIF is canonical.",
+    "coordinate_equality_verified": true,
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+  },
+  "submitted_prompts": {
+    "submitted-checkpoint-prompt.txt": "请把已完成seed555的全部真实原始输出和当前输入/ledger打包为/workspace/kn035_case05_round2_checkpoint.zip，便于本地先核验；保留同一输出目录不改首轮，继续等待444/666完成后最终打包round2.zip。请在最终包复制一份实际输入MMFold_1_chain_A.cif，保存CheckMOSTask原文、生效payload和实际各任务用时。仍不需要额外分析。",
+    "submitted-prompt.txt": "用户已明确授权再跑3次真正de novo。请现在启动第二轮3个独立Protein Binder Design任务，seed=444/555/666；复用本项目原有PD-L1对象342605515027456，输入tos=user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif，sha256=8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e。与首轮保持完全相同schema和参数：contigs=\"A1-118/0 60-100\",hotspot_res=\"A45,A40,A97,A107,A105,A38\",compare_binder=1，其他字段与首轮保持一致（diffusion_steps不设置，平台默认50），仅random_seed改为444/555/666。任务名kn035_c05_round2_seed444/555/666。请先读取已有schema与首轮payload文件，程序化复制修改seed，核验后真实提交，不能只生成参数。不得使用现有binder重新设计，不得重新预测主结构，不得修改/删除首轮任务、文件或旧项目。结果全新保存/workspace/kn035_case05_round2/，包含input对象/hash/链映射、原始schema、3份实际提交payload及生效payload、真实任务ID、状态和提交时间；优先马上给任务ID和输入checkpoint ZIP，然后每次不超过45秒等待直到3个任务完成或明确失败。完成后只收集全部原始*_output.cif和*_aligned.cif、FASTA（区分全G虚拟骨架和真实设计序列）、所有实际置信度文件（没有就明确缺失），按输出链B=PD-L1→主结构链A的118行映射保存，binder无主结构对应。不要调试或扩展几何分析，本地会独立复算SASA、热点距离、CA RMSD和接触重合。打包/workspace/kn035_case05_round2.zip供Workspace下载。所有状态与等待时间如实记录；若budget_exceeded/429停止重试并报告。"
+  },
+  "task_payloads": [
+    {
+      "task_id": "342610714428416",
+      "seed": 444,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 444
+      }
+    },
+    {
+      "task_id": "342610715788288",
+      "seed": 555,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 555
+      }
+    },
+    {
+      "task_id": "342610718331904",
+      "seed": 666,
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+        "contigs": "A1-118/0 60-100",
+        "hotspot_res": "A45,A40,A97,A107,A105,A38",
+        "compare_binder": 1,
+        "random_seed": 666
+      }
+    }
+  ],
+  "actual_schema": "05-denovo-kn035/round2/raw/mos-export/kn035_case05_round2/schema/protein_binder_design_schema.json",
+  "residue_mapping_file": "raw/residue-numbering-map.json",
+  "new_binder_input": null
+}

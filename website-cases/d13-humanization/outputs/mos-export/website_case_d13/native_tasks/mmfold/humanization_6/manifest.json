@@ -1,0 +1,97 @@
+{
+ "candidate": "humanization_6",
+ "n_samples": 5,
+ "samples": [
+  {
+   "sample": 1,
+   "file": "179248425800390_model_sample_1.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.7398681640625,
+   "ptm": 0.9704392552375793,
+   "iptm": 0.9594592452049255,
+   "ranking_score": 0.9616552591323853,
+   "chain_plddt": [
+    0.9595346450805664,
+    0.9550772309303284
+   ]
+  },
+  {
+   "sample": 2,
+   "file": "179248425876641_model_sample_2.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.71231079101562,
+   "ptm": 0.9703515768051147,
+   "iptm": 0.9593133926391602,
+   "ranking_score": 0.9615210890769958,
+   "chain_plddt": [
+    0.9593249559402466,
+    0.9547297358512878
+   ]
+  },
+  {
+   "sample": 3,
+   "file": "179248425949123_model_sample_3.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.72711181640625,
+   "ptm": 0.9704414010047913,
+   "iptm": 0.9592885375022888,
+   "ranking_score": 0.9615191221237183,
+   "chain_plddt": [
+    0.9593961238861084,
+    0.954961359500885
+   ]
+  },
+  {
+   "sample": 4,
+   "file": "179248426090212_model_sample_4.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.73184967041016,
+   "ptm": 0.9703620076179504,
+   "iptm": 0.9592044353485107,
+   "ranking_score": 0.9614359736442566,
+   "chain_plddt": [
+    0.9594607353210449,
+    0.9549898505210876
+   ]
+  },
+  {
+   "sample": 5,
+   "file": "179248426021883_model_sample_5.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.74148559570312,
+   "ptm": 0.9703284502029419,
+   "iptm": 0.9590575098991394,
+   "ranking_score": 0.9613116979598999,
+   "chain_plddt": [
+    0.9595350623130798,
+    0.9551101922988892
+   ]
+  }
+ ],
+ "best_sample": 1,
+ "best_by": "highest ranking_score in summary_confidences",
+ "chain_roles": {
+  "A": "VH",
+  "B": "VL"
+ }
+}

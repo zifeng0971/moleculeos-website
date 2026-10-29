@@ -1,0 +1,31 @@
+/* MOS v3 motion (owner: E). Keyframes are v3- prefixed and express state change only; no decorative loops.
+   Loops that exist (v3-spin, v3-sweep, v3-ring) are tied to a running/loading state and switch off under reduced motion. */
+@keyframes v3-fade { from { opacity: 0; } }
+@keyframes v3-in { from { opacity: 0; transform: translateY(6px); } }
+@keyframes v3-pop { from { opacity: 0; transform: translateY(4px) scale(.98); } }
+@keyframes v3-slide-in { from { opacity: 0; transform: translateX(14px); } }
+@keyframes v3-slide-up { from { opacity: 0; transform: translateY(12px); } }
+@keyframes v3-spin { to { transform: rotate(360deg); } }
+/* progress bar shimmer: put on an element whose background is a gradient with background-size: 200% 100% */
+@keyframes v3-sweep { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+/* pulse ring for a running item: expands and fades; apply to a ::after ring */
+@keyframes v3-ring { 0% { transform: scale(.85); opacity: .7; } 100% { transform: scale(1.9); opacity: 0; } }
+/* one-shot highlight (a citation landing): 600ms */
+@keyframes v3-flash { 0% { background-color: color-mix(in srgb, var(--accent) 32%, transparent); } 100% { background-color: transparent; } }
+
+.v3-anim-in { animation: v3-in var(--dur-panel) var(--ease-panel) both; }
+.v3-anim-fade { animation: v3-fade var(--dur-panel) var(--ease-panel) both; }
+.v3-anim-pop { animation: v3-pop .18s var(--ease-panel) both; }
+.v3-anim-slide { animation: v3-slide-in var(--dur-panel) var(--ease-panel) both; }
+.v3-anim-flash { animation: v3-flash .6s ease-out 1; }
+.v3-spin { animation: v3-spin .9s linear infinite; }
+.v3-sweep { background-size: 200% 100%; animation: v3-sweep 1.8s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  @keyframes v3-in { from { opacity: 0; } }
+  @keyframes v3-pop { from { opacity: 0; } }
+  @keyframes v3-slide-in { from { opacity: 0; } }
+  @keyframes v3-slide-up { from { opacity: 0; } }
+  .v3-spin, .v3-sweep { animation: none; }
+  .v3-spin { opacity: .65; }
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "342256504251392",
+  "name": "5GRJ_PDL1_evolve",
+  "type": "Evolutionary Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:17Z",
+  "duration": "3.4min",
+  "payload": {
+    "sequence": "AFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+  },
+  "chain": "C",
+  "purpose": "MSA conservation/covariance scan, PD-L1",
+  "raw_dir": "evolutionary_mutation_effect_342256504251392",
+  "raw_files": [
+    "evolutionary_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "evolutionary_scores.csv",
+      "bytes": 90591
+    }
+  ]
+}

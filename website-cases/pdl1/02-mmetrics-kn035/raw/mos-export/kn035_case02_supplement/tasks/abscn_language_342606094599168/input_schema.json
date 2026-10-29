@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "title": "Input",
+  "properties": {
+    "heavy_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Heavy Sequence",
+      "default": null,
+      "description": "Input heavy-chain sequence"
+    },
+    "light_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Light Sequence",
+      "default": null,
+      "description": "Input light-chain sequence"
+    },
+    "heavy_sequence_id": {
+      "type": "string",
+      "title": "Heavy Sequence Id",
+      "default": "H",
+      "description": "Heavy-chain identifier"
+    },
+    "light_sequence_id": {
+      "type": "string",
+      "title": "Light Sequence Id",
+      "default": "L",
+      "description": "Light-chain identifier"
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework."
+    }
+  }
+}

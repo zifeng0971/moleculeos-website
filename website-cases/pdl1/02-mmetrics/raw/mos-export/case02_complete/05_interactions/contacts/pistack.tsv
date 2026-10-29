@@ -1,0 +1,6 @@
+pi1_chain	pi1_pos	pi1_ins	pi1_res	pi2_chain	pi2_pos	pi2_ins	pi2_res	distance	angle	orientation
+A	52		TYR	C	39		TYR	5.157	71.49	T,Θ 85.04,γ 71.49,δ 23.46
+A	59		PHE	C	106		TYR	5.547	41.40	I,Θ 8.24,γ 41.40,δ 34.84
+A	110		TRP	B	38		TYR	5.274	69.22	T,Θ 15.21,γ 69.23,δ 56.63
+A	110		TRP	B	38		TYR	5.619	68.91	T,Θ 14.65,γ 68.91,δ 77.44
+A	110		TRP	B	101		PHE	6.318	80.86	T,Θ 4.99,γ 80.86,δ 33.35

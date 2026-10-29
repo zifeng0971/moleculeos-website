@@ -1,0 +1,333 @@
+{
+ "pdb": "5JDS",
+ "resolution_A": 1.7,
+ "vhh_chain_mos": "A",
+ "antigen_chain_mos": "B",
+ "antigen": "human PD-L1 (PD1L1_HUMAN, Q9NZQ7) IgV domain",
+ "numbering": {
+  "library_position": "VHH domain positions 1-128 = entity positions 3-130 of 5JDS chain A",
+  "mos_chain_A_position": "1-127 (structure numbering = library position for 1-127; library 128 unmodelled)",
+  "structure_auth_seq_id": "MOS position + 2",
+  "anarci": "sequential index == MOS chain A position"
+ },
+ "cdr_ranges_mos": {
+  "CDR1_IMGT": [
+   26,
+   33
+  ],
+  "CDR2_IMGT": [
+   51,
+   58
+  ],
+  "CDR3_IMGT": [
+   97,
+   117
+  ]
+ },
+ "disulfides_mos": [
+  [
+   22,
+   96
+  ],
+  [
+   33,
+   106
+  ]
+ ],
+ "cys_residues_mos": [
+  22,
+  33,
+  96,
+  106
+ ],
+ "paratope_definition": "VHH residues with interface BSA >= 10.0 A^2 in 5JDS A:B interface",
+ "paratope_all_mos": [
+  3,
+  5,
+  11,
+  25,
+  27,
+  29,
+  30,
+  32,
+  39,
+  41,
+  42,
+  55,
+  57,
+  59,
+  93,
+  100,
+  101,
+  102,
+  103,
+  104,
+  105,
+  107,
+  108,
+  109,
+  110,
+  111,
+  113,
+  114,
+  116,
+  120,
+  121,
+  123,
+  125
+ ],
+ "paratope_outside_cdr_mos": [
+  3,
+  5,
+  11,
+  25,
+  39,
+  41,
+  42,
+  59,
+  93,
+  120,
+  121,
+  123,
+  125
+ ],
+ "excluded": {
+  "3": [
+   "paratope_BSA>=10"
+  ],
+  "5": [
+   "paratope_BSA>=10"
+  ],
+  "11": [
+   "paratope_BSA>=10"
+  ],
+  "22": [
+   "disulfide_Cys"
+  ],
+  "25": [
+   "paratope_BSA>=10"
+  ],
+  "26": [
+   "CDR"
+  ],
+  "27": [
+   "CDR"
+  ],
+  "28": [
+   "CDR"
+  ],
+  "29": [
+   "CDR"
+  ],
+  "30": [
+   "CDR"
+  ],
+  "31": [
+   "CDR"
+  ],
+  "32": [
+   "CDR"
+  ],
+  "33": [
+   "CDR",
+   "disulfide_Cys"
+  ],
+  "39": [
+   "paratope_BSA>=10"
+  ],
+  "41": [
+   "paratope_BSA>=10"
+  ],
+  "42": [
+   "paratope_BSA>=10"
+  ],
+  "51": [
+   "CDR"
+  ],
+  "52": [
+   "CDR"
+  ],
+  "53": [
+   "CDR"
+  ],
+  "54": [
+   "CDR"
+  ],
+  "55": [
+   "CDR"
+  ],
+  "56": [
+   "CDR"
+  ],
+  "57": [
+   "CDR"
+  ],
+  "58": [
+   "CDR"
+  ],
+  "59": [
+   "paratope_BSA>=10"
+  ],
+  "93": [
+   "paratope_BSA>=10"
+  ],
+  "96": [
+   "disulfide_Cys"
+  ],
+  "97": [
+   "CDR"
+  ],
+  "98": [
+   "CDR"
+  ],
+  "99": [
+   "CDR"
+  ],
+  "100": [
+   "CDR"
+  ],
+  "101": [
+   "CDR"
+  ],
+  "102": [
+   "CDR"
+  ],
+  "103": [
+   "CDR"
+  ],
+  "104": [
+   "CDR"
+  ],
+  "105": [
+   "CDR"
+  ],
+  "106": [
+   "CDR",
+   "disulfide_Cys"
+  ],
+  "107": [
+   "CDR"
+  ],
+  "108": [
+   "CDR"
+  ],
+  "109": [
+   "CDR"
+  ],
+  "110": [
+   "CDR"
+  ],
+  "111": [
+   "CDR"
+  ],
+  "112": [
+   "CDR"
+  ],
+  "113": [
+   "CDR"
+  ],
+  "114": [
+   "CDR"
+  ],
+  "115": [
+   "CDR"
+  ],
+  "116": [
+   "CDR"
+  ],
+  "117": [
+   "CDR"
+  ],
+  "120": [
+   "paratope_BSA>=10"
+  ],
+  "121": [
+   "paratope_BSA>=10"
+  ],
+  "123": [
+   "paratope_BSA>=10"
+  ],
+  "125": [
+   "paratope_BSA>=10"
+  ]
+ },
+ "screened_positions_mos": [
+  1,
+  2,
+  4,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  23,
+  24,
+  34,
+  35,
+  36,
+  37,
+  38,
+  40,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  94,
+  95,
+  118,
+  119,
+  122,
+  124,
+  126,
+  127
+ ],
+ "screened_count": 75,
+ "redesigned_residues_arg": "A1 A2 A4 A6 A7 A8 A9 A10 A12 A13 A14 A15 A16 A17 A18 A19 A20 A21 A23 A24 A34 A35 A36 A37 A38 A40 A43 A44 A45 A46 A47 A48 A49 A50 A60 A61 A62 A63 A64 A65 A66 A67 A68 A69 A70 A71 A72 A73 A74 A75 A76 A77 A78 A79 A80 A81 A82 A83 A84 A85 A86 A87 A88 A89 A90 A91 A92 A94 A95 A118 A119 A122 A124 A126 A127"
+}

@@ -1,0 +1,191 @@
+{
+ "case": "kn035_case03",
+ "created_utc": "2026-10-21T02:26Z",
+ "project_scope": "Only MMFold_1.cif from this project. No legacy/old structures used. No existing project objects modified or deleted. No new structure imported.",
+ "input_object": {
+  "name": "MMFold_1.cif",
+  "mos_object_id": "342604788900864",
+  "mos_work_id": "342604793074688",
+  "tos_key": "user_objects/123/330665428816896/342604788900864_MMFold_1.cif",
+  "sha256_claimed": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "sha256_verified": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "hash_match": true,
+  "local_copy": "inputs/MMFold_1.cif",
+  "chains": {
+   "A": {
+    "length": 118,
+    "role": "PD-L1 (IgV-like domain construct)",
+    "mutated_in_this_case": false
+   },
+   "B": {
+    "length": 128,
+    "role": "KN035 single-domain antibody VHH",
+    "mutated_in_this_case": true
+   }
+  },
+  "numbering_check": {
+   "method": "per-residue comparison of MOS residue index vs _atom_site.label_seq_id vs _atom_site.auth_seq_id from the raw mmCIF",
+   "result": "identity mapping for all 246 residues; zero mismatches; no insertion codes; no alternate conformers",
+   "file": "residue_numbering_map.csv"
+  }
+ },
+ "direction_and_units": {
+  "column": "ddG_pred",
+  "direction": "Negative ddG_pred = mutation predicted to STRENGTHEN binding (more favourable interface free energy); positive = predicted to WEAKEN binding.",
+  "direction_evidence": [
+   "score_ddg = -ddG_pred exactly in every one of 4674 rows (max abs deviation 0.0), and MMetrics convention documents ddG_score_ddg as the inverse of raw ddG.",
+   "The 'rank' column is a pure monotone rescaling of ddG_pred: Spearman(rank, ddG_pred) = 1.0; most negative ddG_pred gets rank 0.00021, most positive gets rank 1.0. rank is ascending-bad."
+  ],
+  "units": "NOT documented anywhere in the task schema or output header. Treated as an unlabelled relative free-energy score. Do not report as kcal/mol without confirmation.",
+  "source": "Binding Affinity Mutation Effect schema (raw/bindmut/schema_binding_affinity_mutation_effect.json) documents no direction or unit; direction inferred from the output table's internal arithmetic, not from documentation."
+ },
+ "tasks": [
+  {
+   "purpose": "binding affinity mutation scan on the WT complex",
+   "task_type": "Binding Affinity Mutation Effect",
+   "task_id": "342605020787712",
+   "task_name": "KN035_c03_bindmut_WT_complex",
+   "status": "SUCCEED",
+   "duration_s": 37,
+   "submitted_payload": {
+    "input_structure": "user_objects/123/330665428816896/342604788900864_MMFold_1.cif",
+    "chain_ids": "A,B"
+   },
+   "output": "raw/bindmut/affinity_scores.csv",
+   "output_rows": 4674,
+   "note": "Schema has no mutation-list input, so the scan is exhaustive over both chains: 246 residues x 19 substitutions. Full original table kept unchanged; only chain-B rows used as candidates.",
+   "cross_check": "Output is byte-identical (md5 ddcc858ceb28d60271bf00a2d1e8cd1b) to the native MMetrics autocompute diffaffinity scores for the same object, so this task and the native MMetrics DDG are one and the same model, not two independent methods."
+  },
+  {
+   "purpose": "variant structure prediction - candidate 1",
+   "task_type": "MMFold",
+   "task_id": "342605501072384",
+   "task_name": "KN035_c03_var_A35W",
+   "status": "SUBMITTED",
+   "submitted_payload_file": "variants/payload_A35W.json",
+   "submitted_payload_sha256_pending": null,
+   "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+   "chain_B": "A35W single substitution on 128 aa WT",
+   "variant_sequence_verified": true,
+   "note": "Variant prediction only. Not a re-do of the main complex."
+  },
+  {
+   "purpose": "variant structure prediction - candidate 2",
+   "task_type": "MMFold",
+   "task_id": "342605511136256",
+   "task_name": "KN035_c03_var_V109L",
+   "status": "SUBMITTED",
+   "submitted_payload_file": "variants/payload_V109L.json",
+   "chain_A": "original 118 aa, unchanged (verified)",
+   "chain_B": "V109L single substitution on 128 aa WT",
+   "variant_sequence_verified": true
+  },
+  {
+   "purpose": "variant structure prediction - candidate 3",
+   "task_type": "MMFold",
+   "task_id": "342605520978944",
+   "task_name": "KN035_c03_var_C33Y",
+   "status": "SUBMITTED",
+   "submitted_payload_file": "variants/payload_C33Y.json",
+   "chain_A": "original 118 aa, unchanged (verified)",
+   "chain_B": "C33Y single substitution on 128 aa WT",
+   "variant_sequence_verified": true,
+   "caveat": "B33 is a disulfide-forming cysteine (SG-SG 2.18 A to B106) in MMFold_1; this variant is predicted on request of the rank order but is chemically a disulfide-ablating variant."
+  },
+  {
+   "purpose": "VOIDED erroneous submission - must not be used",
+   "task_type": "MMFold",
+   "task_id": "342605442536448",
+   "task_name": "KN035_c03_var_A35W",
+   "status": "SUCCEED (task ran) / EXCLUDED FROM ALL ANALYSIS",
+   "reason": "Payload transcribed by hand contained the WT residue at position 35 (no A35W change) and instead substituted the C-terminal S128W. Verified by diff against the library sequence. Superseded by task 342605501072384. Results, if any, are excluded from all analysis.",
+   "verified_diff_vs_WT": [
+    {
+     "position": 128,
+     "wt": "S",
+     "submitted": "W"
+    }
+   ],
+   "exclusion_reason": "Payload carried the WT residue at position 35 and instead substituted C-terminal S128W. Results exist on the platform but are excluded; the task was neither cancelled nor deleted.",
+   "superseded_by": "342605501072384"
+  }
+ ],
+ "native_mmetrics_context": {
+  "note": "Pre-existing autocompute MMetrics results for the SAME object (342604788900864), used only as cross-check context, not as a substitute for the requested task.",
+  "objects": {
+   "diffaffinity_scores.csv": "342605076034560",
+   "msat_scores.csv": "342605076042752",
+   "esm_scores.csv": "342605076009984 (not downloaded)",
+   "proteinmpnn_scores.csv": "342605076022272 (not downloaded)",
+   "blast_results.json": "342605075997696 (not downloaded)"
+  },
+  "paratope": "NOT PRESENT in the MMetrics output set - no paratope file was produced for this object. Paratope status = UNVERIFIED."
+ },
+ "updated_utc": "2026-10-21T02:28:20Z",
+ "native_paratope_provenance": {
+  "status": "NATIVE (produced in a different project, supplied by user)",
+  "paratope_chainB": [
+   27,
+   29,
+   30,
+   32,
+   99,
+   100,
+   101,
+   102,
+   103,
+   104,
+   105,
+   108,
+   109,
+   111,
+   113,
+   114,
+   115,
+   116
+  ],
+  "imgt_cdr_chainB": {
+   "CDR1": [
+    26,
+    33
+   ],
+   "CDR2": [
+    51,
+    58
+   ],
+   "CDR3": [
+    97,
+    117
+   ]
+  },
+  "epitope_chainA": [
+   38,
+   40,
+   42,
+   45,
+   47,
+   50,
+   52,
+   53,
+   57,
+   60,
+   97,
+   99,
+   101,
+   103,
+   104,
+   105,
+   106,
+   107,
+   109
+  ],
+  "source_project_id": "342604060136448",
+  "source_project": "case02",
+  "source_task_id": "342604577018880",
+  "source_task_type": "native MMetrics paratope/epitope analysis (case02 project)",
+  "verification_status_in_case03": "NOT re-run in case03. No paratope output exists among this project's MMetrics objects. The values above are carried over from the case02 native run and are labelled native on that basis.",
+  "cross_check_case03": "Independently reproduced by case03 local 4.5 A geometry on MMFold_1.cif: all 17 chain-B paratope residues match the case03 4.5 A contact set exactly (17/17); the case03 local A-interface set is a near-superset of the carried-over epitope. This is corroboration, not provenance."
+ },
+ "status_snapshot_utc": "2026-10-21T02:28:20Z",
+ "status_snapshot_note": "A35W/V109L/C33Y MMFold runs still RUNNING at checkpoint time; no variant results in this checkpoint."
+}

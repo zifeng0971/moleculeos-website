@@ -1,0 +1,72 @@
+{
+  "status": "preview_not_submitted",
+  "source_kind": "local_geometry",
+  "native_epitope_verified": false,
+  "selection": "Geometric contact, isolated SASA >=20 A2, ranked by interface burial; require native Epitope intersection and spatial review before submission.",
+  "candidates": [
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "isolated_sasa_A2": 138.45500431997237,
+      "complex_sasa_A2": 29.776470701658823,
+      "buried_sasa_A2": 108.67853361831355
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "isolated_sasa_A2": 62.334476122879515,
+      "complex_sasa_A2": 3.001158225986573,
+      "buried_sasa_A2": 59.33331789689294
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "isolated_sasa_A2": 66.79674720414866,
+      "complex_sasa_A2": 9.570051750056066,
+      "buried_sasa_A2": 57.22669545409259
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "isolated_sasa_A2": 101.01729392962457,
+      "complex_sasa_A2": 46.193941726470015,
+      "buried_sasa_A2": 54.823352203154556
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "isolated_sasa_A2": 61.4333613210779,
+      "complex_sasa_A2": 10.112484373612634,
+      "buried_sasa_A2": 51.320876947465266
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "isolated_sasa_A2": 60.88458922534577,
+      "complex_sasa_A2": 11.82469294872418,
+      "buried_sasa_A2": 49.059896276621586
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "isolated_sasa_A2": 49.29793736997797,
+      "complex_sasa_A2": 0.8568039464196662,
+      "buried_sasa_A2": 48.441133423558306
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "isolated_sasa_A2": 46.23364360362976,
+      "complex_sasa_A2": 1.8226473378576784,
+      "buried_sasa_A2": 44.41099626577208
+    }
+  ]
+}

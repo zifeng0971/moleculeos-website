@@ -1,0 +1,581 @@
+{
+  "zh": {
+    "agentDemo.tasks.structure.title": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "contactPage.description": {
+      "t": "请留下联系方式和研究方向，我们会安排专员与您联系。"
+    },
+    "contactPage.options.0": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "contactPage.options.1": {
+      "t": "亲和力优化｜Mutation Effect"
+    },
+    "contactPage.options.2": {
+      "t": "可开发性评估｜Developability"
+    },
+    "contactPage.options.3": {
+      "t": "从头设计｜De Novo Design"
+    },
+    "contactPage.privacy": {
+      "t": ""
+    },
+    "footer.platformModels": {
+      "t": "模型体系"
+    },
+    "helpCenter.cases.1.tags.0": {
+      "t": "MMFold/QuantaMind"
+    },
+    "helpCenter.cases.2.tags.0": {
+      "t": "分子分析｜MMetrics"
+    },
+    "helpCenter.lead": {
+      "t": "查阅操作指南，借鉴用户案例，将 MoleculeOS 的分析与设计能力用于你的研究"
+    },
+    "helpCenter.more.manualBody": {
+      "t": "了解每个功能的详细操作"
+    },
+    "helpCenter.stories.items.0.tag": {
+      "t": "分子分析｜MMetrics"
+    },
+    "helpCenter.title": {
+      "t": "让每一步探索，都有方法可循"
+    },
+    "helpPage.home.features.1.0": {
+      "t": "分子分析｜MMetrics"
+    },
+    "helpPage.home.steps.1.chips.1": {
+      "t": "分子分析｜MMetrics"
+    },
+    "helpPage.hub.topics.2": {
+      "t": "分子分析｜MMetrics"
+    },
+    "helpPage.quick.steps.2.chips.0": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "home.access.items.0.compactDescription": {
+      "t": "打开浏览器，专注研究"
+    },
+    "home.access.items.0.description": {
+      "t": "打开网页，即刻开启。从立项调研、模型调用到人机协同与多人协作，所需工具一站配齐，无需安装或配置。"
+    },
+    "home.access.items.1.compactDescription": {
+      "t": "将模型能力接入现有流程"
+    },
+    "home.access.items.1.description": {
+      "t": "熟悉的工作方式，全新的科研潜能。将 MoleculeOS 接入现有工具与数据管线，让团队的计算与分析能力更进一步。"
+    },
+    "home.access.items.2.compactDescription": {
+      "t": "更具挑战的课题，与您共同推进"
+    },
+    "home.access.items.2.description": {
+      "t": "攻克复杂靶点，探索更多可能。从研究路径规划到方法定制与长期验证，我们与你并肩前行。"
+    },
+    "home.access.scale.0": {
+      "t": "在线使用"
+    },
+    "home.access.scale.1": {
+      "t": "MCP接入"
+    },
+    "home.access.scale.2": {
+      "t": "联合研发"
+    },
+    "home.access.title": {
+      "t": "让 MoleculeOS 融入您的研发方式"
+    },
+    "home.final.description": {
+      "t": "提供序列或结构，描述研发目标，与 MoleculeOS一起开展分析与设计"
+    },
+    "home.final.title": {
+      "t": "把您的构想，带进 MoleculeOS"
+    },
+    "home.flow.eyebrow": {
+      "t": "从理解到设计"
+    },
+    "home.flow.items.denovo.title": {
+      "t": "以已知为启发，\n为全新构想赋形"
+    },
+    "home.flow.title": {
+      "t": "围绕一个靶点，\n从分子洞见走向新的设计",
+      "s": {
+        "lineHeight": "0"
+      }
+    },
+    "home.hero.description": {
+      "t": "贯通蛋白质分析、优化与从头设计，让科学洞见成为实验的起点"
+    },
+    "home.hero.eyebrow": {
+      "t": "MoleculeOS · 生物可编程时代的操作系统"
+    },
+    "home.hero.title": {
+      "t": "把对生命的理解，\n写进新的分子"
+    },
+    "home.models.items.0.name": {
+      "t": "MMFold/QuantaMind"
+    },
+    "home.models.layers.0.chips.1": {
+      "t": "分子模拟"
+    },
+    "home.models.layers.0.chips.2": {
+      "t": "高精度评估"
+    },
+    "home.models.layers.0.name": {
+      "t": "MMFold/QuantaMind"
+    },
+    "home.models.layers.1.chips.0": {
+      "t": "优化"
+    },
+    "home.models.layers.1.chips.1": {
+      "t": "设计"
+    },
+    "home.models.layers.1.chips.2": {
+      "t": "蛋白药物/工业酶"
+    },
+    "home.models.layers.1.role": {
+      "t": "设计分子"
+    },
+    "home.models.layers.2.chips.0": {
+      "t": "研发迭代"
+    },
+    "home.models.title": {
+      "t": "构建可编程\n生命科学时代的\n基础设施"
+    },
+    "home.story.case.kicker": {
+      "t": ""
+    },
+    "home.story.case.start": {
+      "t": "以 PD-L1 与 KN035 为起点，让对分子的理解逐步沉淀为设计依据，让下一轮实验有更明确的方向"
+    },
+    "home.story.case.title": {
+      "t": ""
+    },
+    "home.story.eyebrow": {
+      "t": "从理解到设计"
+    },
+    "home.story.items.affinity.body": {
+      "t": "MoleculeOS 对 KN035 的 2,432 种单点替换进行结合亲和力预测。在界面候选中，V109L、Q116M 与 T105L 排名靠前。对这三个候选分别生成 5 个复合物结构样本，进一步检查预测界面"
+    },
+    "home.story.items.affinity.lead": {
+      "t": "结合模型评分、理化性质、文献知识，寻找可能改善结合的突变"
+    },
+    "home.story.items.affinity.title": {
+      "t": "每一次突变，\n都有据可依"
+    },
+    "home.story.items.denovo.body": {
+      "t": "参考 PD-L1 的预测表位，生成长度为 60–100 aa 的候选。展示的 3 个候选在预测复合物中均接触 6 个指定设计热点，分别覆盖 19 个参考表位残基中的 14–18 个"
+    },
+    "home.story.items.denovo.lead": {
+      "t": "基于靶点序列，也可按需指定结合区域与设计要求，从零生成全新的结合蛋白"
+    },
+    "home.story.items.denovo.note": {
+      "t": "注：设计效果依赖于使用者对模型的熟悉程度与实践经验。仅采用默认参数和较低计算投入，不保证获得有效命中；候选分子仍需进一步筛选与实验验证。   如有抗体、VHH 或环肽设计需求，欢迎联系合作"
+    },
+    "home.story.items.denovo.title": {
+      "t": "以已知为启发，\n为全新构想赋形"
+    },
+    "home.story.items.denovo.verdict": {
+      "t": ""
+    },
+    "home.story.items.mmetrics.body": {
+      "t": "MMetrics 把帮助理解、分析蛋白的高价值数据汇在同一视图：描述性数据涵盖同源蛋白、酶的活性位点、抗体抗原复合物的 CDR 与表位，以及氢键、π-π 堆积、范德华接触、盐桥、π-阳离子等相互作用；模型计算数据提供突变打分等。在这个复合物中，它标出 PD-L1 的 19 个表位残基、KN035 的 18 个互补位残基和 44 条相互作用记录，每一条都对应结构上的位置"
+    },
+    "home.story.items.mmetrics.lead": {
+      "t": "关联序列、结构、图表，整体结构与局部界面信息以多角度呈现，辅助用户评估与设计"
+    },
+    "home.story.items.mmetrics.title": {
+      "t": "深入界面，\n发现设计线索"
+    },
+    "home.story.items.stability.body": {
+      "t": "在保留两对二硫键相关位点的约束下，对入选突变开展多维评估。综合本次评分与风险筛查，V109L 被列为优先验证候选；Q116M 提示潜在的甲硫氨酸氧化风险，T105L 的进化适应度表现较弱。让候选选择同时考虑结合潜力与开发风险，为后续实验提供更完整的依据"
+    },
+    "home.story.items.stability.lead": {
+      "t": "对亲和力初筛后的变体开展结构、序列与进化适应度评估，并扫描风险基序，综合考量结合潜力与开发隐患"
+    },
+    "home.story.items.stability.title": {
+      "t": "兼顾亲和力与可开发性，推荐最平衡的优化"
+    },
+    "home.story.items.structure.body": {
+      "t": "输入 PD-L1与 KN035的序列，MMFold 生成 5 个复合物结构样本。结合结构与预测置信度，检查二者的结合界面，为后续分析与抗体优化建立起点"
+    },
+    "home.story.items.structure.lead": {
+      "t": "将序列转化为可靠的三维结构，让用户得以评估候选分子"
+    },
+    "home.story.items.structure.title": {
+      "t": "从序列出发，\n看见分子相遇的可能"
+    },
+    "home.story.title": {
+      "t": "围绕一个靶点，\n从分子洞见走向新的设计"
+    },
+    "home.tasks.selectorTasks.0.title": {
+      "t": "亲和力优化｜Mutation Effect"
+    },
+    "home.tasks.selectorTasks.2.title": {
+      "t": "从头设计｜De Novo Design"
+    },
+    "home.tasks.selectorTasks.3.title": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "home.tasks.vegf.binder": {
+      "t": "设计分子"
+    },
+    "home.tasks.vegf.caseKicker": {
+      "t": ""
+    },
+    "home.tasks.visual.binder": {
+      "t": "设计分子"
+    },
+    "nav.affinityOptimization": {
+      "t": "亲和力优化｜Mutation Effect"
+    },
+    "nav.antibody": {
+      "t": "优化"
+    },
+    "nav.deNovoDesign": {
+      "t": "从头设计｜De Novo Design"
+    },
+    "nav.mmfold": {
+      "t": "MMFold/QuantaMind"
+    },
+    "nav.platform": {
+      "t": "模型体系"
+    },
+    "nav.stabilityEngineering": {
+      "t": "可开发性评估｜Developability"
+    },
+    "nav.structurePrediction": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "platformPage.tasks.affinity-optimization.title": {
+      "t": "亲和力优化｜Mutation Effect"
+    },
+    "platformPage.tasks.de-novo-design.title": {
+      "t": "从头设计｜De Novo Design"
+    },
+    "platformPage.tasks.stability-engineering.title": {
+      "t": "可开发性评估｜Developability"
+    },
+    "platformPage.tasks.structure-prediction.title": {
+      "t": "结构预测 ｜MMFold"
+    },
+    "pricingPage.description": {
+      "t": "所有计算按 MCU 计量，每月刷新、长期可用"
+    },
+    "pricingPage.models.lead": {
+      "t": "了解常用模型的单次任务预估用量，为你的研究规划计算投入"
+    },
+    "pricingPage.models.title": {
+      "t": "一次计算，需要多少 MCU？"
+    },
+    "pricingPage.title": {
+      "t": "为您的研究，找到合适的支持"
+    },
+    "x.3ad519e5d": {
+      "t": "无需参考，按需生成有效结合蛋白",
+      "o": "以已知为启发为全新构想赋形"
+    },
+    "x.4566170be": {
+      "t": "蛋白如何相互作用?",
+      "o": "从序列出发看见分子相遇的可能"
+    },
+    "x.4d99118815": {
+      "t": "设计分子",
+      "o": "设计分子"
+    },
+    "x.6267c3f41e": {
+      "t": "1.75",
+      "o": "约1.75"
+    },
+    "x.6dea02bc16": {
+      "t": "用",
+      "o": "用。"
+    },
+    "x.70dec1521b": {
+      "t": "5",
+      "o": "约5"
+    },
+    "x.7e33584d10": {
+      "t": "",
+      "o": "洞见"
+    },
+    "x.833aa974a": {
+      "t": "让每一次突变都有据可依",
+      "o": "每一次突变都有据可依"
+    },
+    "x.8453e6f11e": {
+      "t": "0.33",
+      "o": "约0.33"
+    },
+    "x.a68bf4fd8": {
+      "t": "分子分析｜MMetrics",
+      "o": "MMetrics"
+    },
+    "x.b01b80f211": {
+      "t": "从分子评估",
+      "o": "从分子"
+    },
+    "x.c083d6cg": {
+      "t": "每一次突变，都有据可依次",
+      "o": "每一次序列改变，都有据可依次突变"
+    },
+    "x.ebf7bc5015": {
+      "t": "读懂分子",
+      "o": "读懂分子"
+    },
+    "x.fbb6b37ec": {
+      "t": "每一次序列改变，都有据可依",
+      "o": "每一次序列改变都有据可依"
+    }
+  },
+  "en": {
+    "agentDemo.tasks.structure.title": {
+      "t": "Structure Prediction | MMFold"
+    },
+    "contactPage.description": {
+      "t": "Leave your contact details and research focus, and the right specialist will be in touch."
+    },
+    "contactPage.options.0": {
+      "t": "Structure Prediction | MMFold"
+    },
+    "contactPage.options.1": {
+      "t": "Affinity Optimization | Mutation Effect"
+    },
+    "contactPage.options.2": {
+      "t": "Developability"
+    },
+    "contactPage.options.3": {
+      "t": "De Novo Design"
+    },
+    "contactPage.privacy": {
+      "t": ""
+    },
+    "footer.platformModels": {
+      "t": "Models"
+    },
+    "helpCenter.cases.1.tags.0": {
+      "t": "MMFold/QuantaMind"
+    },
+    "helpCenter.cases.2.tags.0": {
+      "t": "Molecular Analysis | MMetrics"
+    },
+    "helpCenter.lead": {
+      "t": "Browse the guides and learn from user cases to apply MoleculeOS analysis and design to your research"
+    },
+    "helpCenter.more.manualBody": {
+      "t": "Step-by-step guidance for every feature"
+    },
+    "helpCenter.stories.items.0.tag": {
+      "t": "Molecular Analysis | MMetrics"
+    },
+    "helpCenter.title": {
+      "t": "A clear path for every step of discovery"
+    },
+    "helpPage.home.features.1.0": {
+      "t": "Molecular Analysis | MMetrics"
+    },
+    "helpPage.home.steps.1.chips.1": {
+      "t": "Molecular Analysis | MMetrics"
+    },
+    "helpPage.hub.topics.2": {
+      "t": "Molecular Analysis | MMetrics"
+    },
+    "helpPage.quick.steps.2.chips.0": {
+      "t": "Structure Prediction | MMFold"
+    },
+    "home.access.items.0.compactDescription": {
+      "t": "Open your browser and get to work"
+    },
+    "home.access.items.0.description": {
+      "t": "Open a page and start at once. From project scoping and model calls to human–AI and team collaboration, every tool is in one place, with nothing to install or configure."
+    },
+    "home.access.items.1.compactDescription": {
+      "t": "Bring model capabilities into your existing workflow"
+    },
+    "home.access.items.1.description": {
+      "t": "Work the way you already do, with far more reach. Connect MoleculeOS to your existing tools and data pipelines to extend your team's compute and analysis."
+    },
+    "home.access.items.2.compactDescription": {
+      "t": "Harder problems, tackled together"
+    },
+    "home.access.items.2.description": {
+      "t": "Take on complex targets and open up new possibilities. From research-path planning to custom methods and long-term validation, we work alongside you."
+    },
+    "home.access.scale.0": {
+      "t": "Online"
+    },
+    "home.access.scale.1": {
+      "t": "MCP access"
+    },
+    "home.access.scale.2": {
+      "t": "Co-development"
+    },
+    "home.access.title": {
+      "t": "Make MoleculeOS part of how you work"
+    },
+    "home.final.description": {
+      "t": "Share your sequences or structures and describe your R&D goal, then carry out analysis and design with MoleculeOS"
+    },
+    "home.final.title": {
+      "t": "Bring your idea to MoleculeOS"
+    },
+    "home.flow.eyebrow": {
+      "t": "From understanding to design"
+    },
+    "home.flow.items.denovo.title": {
+      "t": "Inspired by the known,\ngiving form to the new"
+    },
+    "home.flow.title": {
+      "t": "Around one target,\nfrom molecular insight to new designs",
+      "s": {
+        "lineHeight": "0"
+      }
+    },
+    "home.hero.description": {
+      "t": "From protein analysis and optimization to de novo design, turning scientific insight into the starting point of experiments"
+    },
+    "home.hero.eyebrow": {
+      "t": "MoleculeOS · The operating system for programmable biology"
+    },
+    "home.hero.title": {
+      "t": "Writing our understanding of life\ninto new molecules"
+    },
+    "home.models.items.0.name": {
+      "t": "MMFold/QuantaMind"
+    },
+    "home.models.layers.0.chips.1": {
+      "t": "Molecular simulation"
+    },
+    "home.models.layers.0.chips.2": {
+      "t": "High-accuracy assessment"
+    },
+    "home.models.layers.0.name": {
+      "t": "MMFold/QuantaMind"
+    },
+    "home.models.layers.1.chips.0": {
+      "t": "Optimization"
+    },
+    "home.models.layers.1.chips.1": {
+      "t": "Design"
+    },
+    "home.models.layers.1.chips.2": {
+      "t": "Protein drugs / industrial enzymes"
+    },
+    "home.models.layers.2.chips.0": {
+      "t": "R&D iteration"
+    },
+    "home.models.title": {
+      "t": "Building the infrastructure\nfor programmable\nlife science"
+    },
+    "home.story.case.kicker": {
+      "t": ""
+    },
+    "home.story.case.title": {
+      "t": ""
+    },
+    "home.story.eyebrow": {
+      "t": "From understanding to design"
+    },
+    "home.story.items.affinity.lead": {
+      "t": "Combine model scoring, physicochemical properties and the literature to find mutations likely to improve binding"
+    },
+    "home.story.items.denovo.lead": {
+      "t": "Starting from the target sequence, optionally with a specified binding region and design requirements, generate entirely new binders from scratch"
+    },
+    "home.story.items.denovo.note": {
+      "t": "Note: results depend on the user's familiarity with the models and hands-on experience. These designs used default parameters and modest compute, so effective hits are not guaranteed; candidates still need further screening and experimental validation.   For antibody, VHH or macrocyclic peptide design, feel free to get in touch"
+    },
+    "home.story.items.denovo.title": {
+      "t": "Inspired by the known,\ngiving form to the new"
+    },
+    "home.story.items.denovo.verdict": {
+      "t": ""
+    },
+    "home.story.items.mmetrics.lead": {
+      "t": "Linking sequence, structure and charts, it shows the overall structure and local interface details from multiple angles to support evaluation and design"
+    },
+    "home.story.items.mmetrics.title": {
+      "t": "Into the interface,\nfinding clues for design"
+    },
+    "home.story.items.stability.title": {
+      "t": "Balancing affinity and developability, recommending the best-balanced optimization"
+    },
+    "home.story.items.structure.lead": {
+      "t": "Turn sequences into reliable 3D structures so candidate molecules can be evaluated"
+    },
+    "home.story.items.structure.title": {
+      "t": "Starting from sequence,\nsee how molecules might meet"
+    },
+    "home.story.title": {
+      "t": "Around one target,\nfrom molecular insight to new designs"
+    },
+    "home.tasks.vegf.caseKicker": {
+      "t": ""
+    },
+    "nav.affinityOptimization": {
+      "t": "Affinity Optimization | Mutation Effect"
+    },
+    "nav.antibody": {
+      "t": "Optimization"
+    },
+    "nav.deNovoDesign": {
+      "t": "De Novo Design"
+    },
+    "nav.mmfold": {
+      "t": "MMFold/QuantaMind"
+    },
+    "nav.platform": {
+      "t": "Models"
+    },
+    "nav.stabilityEngineering": {
+      "t": "Developability"
+    },
+    "nav.structurePrediction": {
+      "t": "Structure Prediction | MMFold"
+    },
+    "platformPage.tasks.affinity-optimization.title": {
+      "t": "Affinity Optimization | Mutation Effect"
+    },
+    "platformPage.tasks.de-novo-design.title": {
+      "t": "De Novo Design"
+    },
+    "platformPage.tasks.stability-engineering.title": {
+      "t": "Developability"
+    },
+    "platformPage.tasks.structure-prediction.title": {
+      "t": "Structure Prediction | MMFold"
+    },
+    "pricingPage.description": {
+      "t": "All compute is metered in MCU, refreshed monthly and available long term"
+    },
+    "pricingPage.models.title": {
+      "t": "How many MCU does a run take?"
+    },
+    "pricingPage.title": {
+      "t": "Find the right support for your research"
+    },
+    "home.story.items.mmetrics.body": {
+      "t": "MMetrics brings high-value data for understanding and analyzing a protein into one view. Descriptive data covers homologous proteins, enzyme active sites, antibody–antigen CDRs and epitopes, and interactions such as hydrogen bonds, π-π stacking, van der Waals contacts, salt bridges and π-cation; model-computed data adds mutation scores and more. On this complex it marks 19 epitope residues on PD-L1 and 18 paratope residues on KN035, with 44 interaction records, each tied to a position on the structure"
+    },
+    "home.story.case.start": {
+      "t": "Starting from PD-L1 and KN035, turn your understanding of the molecule, step by step, into a basis for design, and give the next round of experiments a clearer direction"
+    },
+    "home.story.items.affinity.body": {
+      "t": "MoleculeOS predicts binding affinity for all 2,432 single-point substitutions on KN035. Among the interface candidates, V109L, Q116M and T105L rank highest. For each of the three, five complex structure samples were generated to examine the predicted interface more closely"
+    },
+    "home.story.items.denovo.body": {
+      "t": "Taking the predicted epitope on PD-L1 as a reference, candidates 60–100 aa in length were generated. In the predicted complexes, all three candidates shown contact all 6 designated design hotspots, and cover 14–18 of the 19 reference epitope residues"
+    },
+    "home.story.items.stability.body": {
+      "t": "With the sites involved in the two disulfide bonds held fixed, the selected mutations were assessed along several dimensions. Combining this round's scores with a risk screen, V109L is ranked as the priority candidate for validation; Q116M flags a potential methionine oxidation risk, and T105L shows weaker evolutionary fitness. Weighing binding potential against developability risk gives the next round of experiments a more complete basis"
+    },
+    "home.story.items.stability.lead": {
+      "t": "Variants that passed the affinity screen are assessed for structural, sequence and evolutionary fitness and scanned for risk motifs, so that binding potential is weighed against developability concerns"
+    },
+    "home.story.items.structure.body": {
+      "t": "Enter the PD-L1 and KN035 sequences, and MMFold generates five complex structure samples. Using the structures together with their predicted confidence, examine the binding interface to establish a starting point for further analysis and antibody optimization"
+    },
+    "pricingPage.models.lead": {
+      "t": "See the estimated usage per task for commonly used models, and plan the compute for your research accordingly"
+    }
+  }
+}

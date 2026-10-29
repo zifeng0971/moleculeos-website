@@ -1,0 +1,45 @@
+{
+ "task_id": "342339232719872",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "MMFold_candidate_seq_1",
+  "type": "MMFold",
+  "task_id": "342339232719872",
+  "started": "2026-10-20 08:21:54",
+  "duration": "2.0min"
+ },
+ "payload_exact": {
+  "name": "PETase_design_seq_1_W130H_W156Y_D157H_I179V_S209G",
+  "dialect": "mmfold",
+  "version": 1,
+  "sequences": [
+   {
+    "protein": {
+     "id": "A",
+     "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSVAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+    }
+   }
+  ]
+ },
+ "payload_fields_not_exposed": [
+  "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+ ],
+ "downloaded_files": [
+  "/workspace/downloads/mmfold_342339232719872/179248463080003_model_sample_1.cif",
+  "/workspace/downloads/mmfold_342339232719872/179248463208425_model_sample_2.cif",
+  "/workspace/downloads/mmfold_342339232719872/179248463322333_model_sample_4.cif",
+  "/workspace/downloads/mmfold_342339232719872/179248463437021_model_sample_5.cif",
+  "/workspace/downloads/mmfold_342339232719872/179248463556667_model_sample_3.cif",
+  "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_1.json",
+  "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_2.json",
+  "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_3.json",
+  "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_4.json",
+  "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_5.json"
+ ],
+ "sequence_verification": {
+  "label": "seq_1",
+  "length": 261,
+  "sha256": "3d1c3aa06b9d59256b4f0b6090c68a5d8cfe9967b3d8823f328252bfb525b256",
+  "source_file": "analyses/representatives.fasta"
+ }
+}

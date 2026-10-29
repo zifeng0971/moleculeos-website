@@ -1,0 +1,281 @@
+{
+  "source_kind": "local_geometry_of_designed_predicted_complex",
+  "cutoff_A": 4.5,
+  "pairs": [
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 38,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 38,
+      "target_aa": "I",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 15,
+      "binder_aa": "I",
+      "minimum_heavy_atom_distance_A": 3.6369221210479736
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 38,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 38,
+      "target_aa": "I",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 19,
+      "binder_aa": "V",
+      "minimum_heavy_atom_distance_A": 4.158727169036865
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 40,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 40,
+      "target_aa": "Y",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 16,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 3.269425630569458
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 42,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 42,
+      "target_aa": "E",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 16,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 4.435878276824951
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 47,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 47,
+      "target_aa": "N",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 16,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 4.170924186706543
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 50,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 50,
+      "target_aa": "Q",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 11,
+      "binder_aa": "K",
+      "minimum_heavy_atom_distance_A": 4.448602676391602
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 50,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 50,
+      "target_aa": "Q",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 12,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 2.7158639430999756
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 50,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 50,
+      "target_aa": "Q",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 15,
+      "binder_aa": "I",
+      "minimum_heavy_atom_distance_A": 3.3257174491882324
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 52,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 52,
+      "target_aa": "V",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 15,
+      "binder_aa": "I",
+      "minimum_heavy_atom_distance_A": 3.4452662467956543
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 57,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 57,
+      "target_aa": "D",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 8,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 3.9075019359588623
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 59,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 59,
+      "target_aa": "K",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 4,
+      "binder_aa": "E",
+      "minimum_heavy_atom_distance_A": 2.22200608253479
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 59,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 59,
+      "target_aa": "K",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 5,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 4.127933979034424
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 59,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 59,
+      "target_aa": "K",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 8,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 4.294957637786865
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 60,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 60,
+      "target_aa": "V",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 8,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 3.5961318016052246
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 60,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 60,
+      "target_aa": "V",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 9,
+      "binder_aa": "E",
+      "minimum_heavy_atom_distance_A": 3.8968300819396973
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 60,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 60,
+      "target_aa": "V",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 12,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 3.9079949855804443
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 99,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 99,
+      "target_aa": "M",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 16,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 4.3272809982299805
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 99,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 99,
+      "target_aa": "M",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 19,
+      "binder_aa": "V",
+      "minimum_heavy_atom_distance_A": 3.279513120651245
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 99,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 99,
+      "target_aa": "M",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 20,
+      "binder_aa": "E",
+      "minimum_heavy_atom_distance_A": 3.7722489833831787
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 101,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 101,
+      "target_aa": "S",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 19,
+      "binder_aa": "V",
+      "minimum_heavy_atom_distance_A": 3.920942544937134
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 105,
+      "target_aa": "A",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 19,
+      "binder_aa": "V",
+      "minimum_heavy_atom_distance_A": 3.7583250999450684
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 105,
+      "target_aa": "A",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 22,
+      "binder_aa": "A",
+      "minimum_heavy_atom_distance_A": 3.7149171829223633
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 105,
+      "target_aa": "A",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 23,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 3.929640293121338
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 106,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 106,
+      "target_aa": "D",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 23,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 3.7578606605529785
+    },
+    {
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 107,
+      "target_mmfold1_chain": "A",
+      "target_mmfold1_label_seq_id": 107,
+      "target_aa": "Y",
+      "binder_output_chain": "A",
+      "binder_output_label_seq_id": 23,
+      "binder_aa": "R",
+      "minimum_heavy_atom_distance_A": 2.4375598430633545
+    }
+  ]
+}

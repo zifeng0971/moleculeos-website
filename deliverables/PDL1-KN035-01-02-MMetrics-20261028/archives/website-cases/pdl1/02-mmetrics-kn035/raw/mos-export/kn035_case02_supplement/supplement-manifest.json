@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "case": "kn035_case02 supplement",
+  "generated_utc": "2026-10-21T02:29:23+00:00",
+  "purpose": "Independent antibody CSV outputs requested to complement the native MMetrics archive. They are NOT native MMetrics files and do not replace anything in /workspace/kn035_case02.",
+  "input": {
+    "chain": "MMFold_1 chain B (KN035 VHH)",
+    "length": 128,
+    "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+    "sequence_source": "sequence-toolkit record MMFold_1_B, derived from /workspace/protein_data/protein_342604299084800/MMFold_1.cif",
+    "structure_object_id": "342604293768192",
+    "structure_work_id": "342604299084800",
+    "structure_tos_key": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif"
+  },
+  "separation": {
+    "native_archive": "/workspace/kn035_case02 (unchanged)",
+    "independent_tasks": "all four tasks below are independent runs launched in this session",
+    "native_files_reused": "none"
+  },
+  "tasks": [
+    {
+      "slug": "aban_342606092895232",
+      "task_type": "Antibody Region Annotation",
+      "task_id": "342606092895232",
+      "task_name": "kn035-AbAn-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:46Z",
+      "duration": "20s",
+      "csv": "abnumber_heavy.csv",
+      "csv_sha256": "104920c75790e964adab48f2b9c8f829bca1a28486e342cb625d26786a332454",
+      "csv_bytes": 4023,
+      "dir": "tasks/aban_342606092895232",
+      "payload": {
+        "schemes": [
+          "imgt",
+          "kabat",
+          "chothia"
+        ],
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "slug": "abscn_language_342606094599168",
+      "task_type": "Antibody Language Scoring",
+      "task_id": "342606094599168",
+      "task_name": "kn035-AbScN-language-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:46Z",
+      "duration": "3s",
+      "csv": "ablang_heavy_scores.csv",
+      "csv_sha256": "2f2e04d6a82b25fc9301aedda472ef633bbe54311b093faafe349d6ce0b23c5b",
+      "csv_bytes": 65774,
+      "dir": "tasks/abscn_language_342606094599168",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "heavy_sequence_id": "H",
+        "light_sequence_id": "L"
+      }
+    },
+    {
+      "slug": "abscn_nativeness_342606097245184",
+      "task_type": "Antibody Nativeness Evaluation",
+      "task_id": "342606097245184",
+      "task_name": "kn035-AbScN-nativeness-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:47Z",
+      "duration": "3s",
+      "csv": "abnativ_heavy.csv",
+      "csv_sha256": "40dcd8c14bddd71e9ff161a5676b0c01f68caca30a14dd9753f2a8105ae33f58",
+      "csv_bytes": 8137,
+      "dir": "tasks/abscn_nativeness_342606097245184",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "slug": "paradt_342606100722688",
+      "task_type": "Paratope Identification",
+      "task_id": "342606100722688",
+      "task_name": "kn035-ParaDt-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:48Z",
+      "duration": "25s",
+      "csv": "paragraph_heavy.csv",
+      "csv_sha256": "fc23351b15b536a70697c5861a46de73d75e9f32ff69a2ad9ba8ffad10532028",
+      "csv_bytes": 3081,
+      "dir": "tasks/paradt_342606100722688",
+      "payload": {
+        "pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "is_pdb_numbered": false,
+        "pdb_heavy_chain": "B",
+        "pdb_light_chain": "L"
+      },
+      "submitted_pdb_path": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+      "effective_pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif"
+    }
+  ],
+  "abscn_note": "The requested AbScN corresponds to two distinct MOS task types. Both were run and are kept apart: 'Antibody Language Scoring' (AbLang, mutation-level scores) and 'Antibody Nativeness Evaluation' (AbNatiV, humanness scores). Neither is the native MMetrics output.",
+  "unavailable": [],
+  "all_requested_delivered": true
+}

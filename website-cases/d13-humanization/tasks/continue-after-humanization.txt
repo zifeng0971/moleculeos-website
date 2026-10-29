@@ -1,0 +1,1 @@
+请继续而不要停在interim：监控这10项MMFold直至完成（保存pending/running/succeed/failed历史），完成全部10候选与1FDL的FR/CDR结构比较及2-3代表对1BVL的独立比较。明确1BVL生物配对A+C（VH+VL）/B+D，不要凭链名顺序配对。原始humanization_9自带5结构与十项独立MMFold分开保留。全部输出齐后按前述要求生成website_case_d13.zip。可以先生成checkpoint ZIP供下载，然后继续最终结构与报告。不要只回复等待；继续有用的准备、评分与结果汇总。

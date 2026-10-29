@@ -1,0 +1,13 @@
+CheckMOSTask 342606139298816  (kn035_c05_denovo_seed222)
+[succeed] kn035_c05_denovo_seed222, Duration 6.7min
+Input parameters (platform echo):
+{
+  "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+  "contigs": "A1-118/0 60-100",
+  "hotspot_res": "A45,A40,A97,A107,A105,A38",
+  "compare_binder": 1,
+  "random_seed": 222
+}
+DownloadTaskResults -> /workspace/downloads/protein_binder_design_342606139298816
+  179255007456107_output.cif
+  179255007523220_aligned.cif

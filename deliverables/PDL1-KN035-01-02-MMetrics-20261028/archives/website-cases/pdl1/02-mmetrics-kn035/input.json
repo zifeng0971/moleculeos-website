@@ -1,0 +1,145 @@
+{
+  "case_id": "02-kn035",
+  "project_id": "342604060136448",
+  "project_url": "https://mos.moleculemind.com/?projectId=342604060136448",
+  "mos_object_id": "342604293768192",
+  "mos_work_id": "342604299084800",
+  "input_structure": "01-structure/raw/MMFold_1.cif",
+  "input_file_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "chain_mapping": {
+    "A": {
+      "mmfold1": "A",
+      "role": "PD-L1",
+      "length": 118
+    },
+    "B": {
+      "mmfold1": "B",
+      "role": "KN035_VHH",
+      "length": 128
+    }
+  },
+  "residue_mapping_file": "raw/residue-numbering-map.json",
+  "submitted_prompt": "本项目只分析当前已导入的 MMFold_1.cif，唯一原始 SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317。A=人PD-L1 118aa，B=KN035 VHH 128aa，无轻链。不要用5GRJ、7XYQ、5JDS，不要重新预测，不要改动其他项目或任务。请核验导入对象链ID、完整序列、label/auth残基编号，记录object_id/work_id/tos_key和原始及sanitized输入hash、逐残基MOS↔MMFold_1映射。读取本结构自动MMetrics分析的真实任务ID/状态及所有可获得原始输出（Description reasoning roles、Homologs原始空结果也保留、完整Paratope/Epitope/Domain/PTM/UniProt、Interaction Network、所有MutX CSV、AbAn/AbScN/ParaDt heavy CSV与紧凑序号映射）。原生自动结果与独立任务和本地分析严格分开，未完成就写未完成，不用其他任务冒充。请把真实输出与任务payload完整复制到 /workspace/kn035_case02/，写provenance.json/numbering-map.json/task-ledger.json，再创建 /workspace/kn035_case02.zip 供Workspace下载。最终回复明确对象ID、任务ID、状态、路径；如仍computing只记录，不等待很久。",
+  "additional_prompts": {
+    "submitted-supplement-prompt.txt": "原生结果已在浏览器采集。为补齐用户要求的抗体CSV，请只在本项目追加独立的Antibody Region Annotation（AbAn）、Antibody Language Model Scoring（AbScN，如实际task名不同按schema）、Paratope预测/ParaDt（若可用）任务，输入同一KN035链B完整128aa，绝不伪称原生MMetrics文件。保存全部CSV、schema、实际payload/ID/状态和每个CSV紧凑序号到MMFold_1 B label_seq_id逐残基映射，和已有native任务明确分目录。不可用则记录具体工具/限制。保留已有归档，补充放/workspace/kn035_case02_supplement/并打包/workspace/kn035_case02_supplement.zip；避免继续探索不相关服务。"
+  },
+  "task_payloads": [
+    {
+      "task_id": "342604299285504",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+        "structure_pathFileId": "342604293768192",
+        "structure_pathFilename": "MMFold_1.cif"
+      }
+    },
+    {
+      "task_id": "342604577018880",
+      "payload": {
+        "input_structure": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+        "autocomp_results": {
+          "result_data": {
+            "objects": [
+              {
+                "id": "342604574114816",
+                "name": "all_sequences.fasta",
+                "key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+                "createTime": 1792549294,
+                "modelType": "mos-blast"
+              },
+              {
+                "key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+                "createTime": 1792549294,
+                "modelType": "mos-blast",
+                "id": "342604574229504",
+                "name": "blast_results.json"
+              },
+              {
+                "key": "user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv",
+                "createTime": 1792549294,
+                "modelType": "mos-score-esm",
+                "id": "342604574241792",
+                "name": "esm_scores.csv"
+              },
+              {
+                "id": "342604574258176",
+                "name": "proteinmpnn_scores.csv",
+                "key": "user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+                "createTime": 1792549294,
+                "modelType": "mos-score-ligandmpnn"
+              },
+              {
+                "name": "diffaffinity_scores.csv",
+                "key": "user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv",
+                "createTime": 1792549294,
+                "modelType": "mos-diffaffinity",
+                "id": "342604574270464"
+              },
+              {
+                "createTime": 1792549294,
+                "modelType": "mos-score-msat",
+                "id": "342604574282752",
+                "name": "msat_scores.csv",
+                "key": "user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv"
+              },
+              {
+                "id": "342604574299136",
+                "name": "sequence_info.fasta",
+                "key": "user_objects/123/330665428816896/342604299285504/sequence_info.fasta",
+                "createTime": 1792549294
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "task_id": "342606092895232",
+      "task_type": "Antibody Region Annotation",
+      "source_kind": "independent_MOS_task",
+      "payload": {
+        "schemes": [
+          "imgt",
+          "kabat",
+          "chothia"
+        ],
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "task_id": "342606094599168",
+      "task_type": "Antibody Language Scoring",
+      "source_kind": "independent_MOS_task",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "heavy_sequence_id": "H",
+        "light_sequence_id": "L"
+      }
+    },
+    {
+      "task_id": "342606097245184",
+      "task_type": "Antibody Nativeness Evaluation",
+      "source_kind": "independent_MOS_task",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "task_id": "342606100722688",
+      "task_type": "Paratope Identification",
+      "source_kind": "independent_MOS_task",
+      "payload": {
+        "pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "is_pdb_numbered": false,
+        "pdb_heavy_chain": "B",
+        "pdb_light_chain": "L"
+      }
+    }
+  ],
+  "source_project_id": "342242986152960",
+  "source_task_id": "342253805564928"
+}

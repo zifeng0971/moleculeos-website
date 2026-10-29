@@ -1,0 +1,9 @@
+执行真实官网案例 B：PETase 理性改造。请实际使用MOS计算与Mocha工具执行，不止计划。所有文件放 /workspace/website_case_petase/，保留 inputs/、native_tasks/、analyses/、structures/、logs/。禁止给管理员/外部人员发送消息或报告，禁止编造预测或任务状态。
+1. 下载 RCSB 5XH3 与野生型5XG0的原始PDB/CIF/FASTA/metadata，导入项目可见视图。重要：5XH3是R103G/S131A配体复合物，不能当WT；确认成熟/全长/author/label/MOS编号的映射，识别HEMT真实化学成分与链/残基ID。分析该实验配体与蛋白的口袋残基、互作类型和距离，原生MMetrics将由我另行采集，你可提供内置确定性分析CSV/JSON并标来源。
+2. 必须通过注册任务 Protein-Ligand Affinity Evaluation 使用手册示例 5xh3_clean.pdb 与 5xh3_B_856.sdf（不是自行生成/重新对接的替代物）。手册原生成功任务ID338706466620416，可用GetMOSTask/GetMOSObject只读找回其输入或用户现有对象 5xh3_clean / 5xh3_B_856，下载原文件。精确蛋白字节数156500，SHA256 aa9ddaea2fb33662c15cfd0fb1d8877203bf0ad33132d77553cb4f8eeb12853c；配体2191字节，SHA256 44c9ea73346d5d29b74d034010fcb65e4489dd58407ecccb219863d70fe443e9。与我本地手册同名文件核对。若无法找回，明确阻塞并先做其他独立步骤；不可以拿别的输入冒充手册示例。
+3. 将5XG0与5XH3用Superimpose对齐，保存逐残基映射及每链/每残基CA偏差。依原始序列、文献或结构核实催化Ser/Asp/His、氧阴离子孔、二硫键、结构突变，明确具体编号；不要猜统一偏移。
+4. 在野生型5XG0合适的单链蛋白上发起注册Sequence Fitness、Evolutionary Mutation Effect、Structural Fitness三类任务，保留精确payload、task ID、状态与原始CSV。使用相同的真实WT序列/结构并核对一致性。不能把5XH3 R103G/S131A误作WT。
+5. 结合HEMT接触和第二壳层几何、三类评分挑选少量局部非催化残基。保护催化三联体、关键氧阴离子孔、二硫键/关键稳定性位点；保存每个位置选择或排除理由和距离。避免无依据地改造全蛋白。通过MOS注册 Protein Redesign 生成10条候选（若支持数目参数；否则使用真实支持值并记载），仅开放筛选出的局部位置，其余固定，保留完整FASTA与概率/模型输出。
+6. 从实际候选中选择2-3个代表（例如保守/中等/改动较多）分别注册MMFold，保留所有模型结构与confidence，不用骨架冒充预测。用Superimpose与5XG0做全链及局部口袋/催化位点结构比较，输出RMSD、匹配CA数和位移；对候选的新突变再用已支持评分计算（能用模型的组合序列评分则做，否则只标WT单点分数，不叠加当作多点性能）。无模型亲和力/酶活数据不得宣称催化效率或PET降解提升。
+7. 最后导入WT、5XH3与代表候选供原生截图；导出全部原始输入与任务结果、FASTA/PDB/CIF/CSV/JSON、task-ledger.json、results.json、编号与选择理由及运行日志，打包 /workspace/website_case_petase.zip 并提供Workspace下载路径。所有失败路径保留。实验参考、MOS注册模型、Mocha内置分析分别注明。
+请先发起WT三项评分和手册亲和力（输入可获取时）再继续设计，不要等待一个长任务才开始其他工作。

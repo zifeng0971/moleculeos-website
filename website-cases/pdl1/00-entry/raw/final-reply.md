@@ -1,0 +1,56 @@
+The complex is predicted and the interface is defined. Here is what came out.
+
+
+## The model
+
+
+MMFold produced five samples; only one converged on an assembled complex — interface ipTM 0.925, pTM 0.941, mean pLDDT 93.7. The other four scored ipTM ~0.33, meaning they docked the nanobody in four mutually inconsistent, low-confidence ways. Everything below is from that single converged model, which is now loaded in the viewer with the interface colored (orange, PD-L1; green, KN035) and the hotspot patch annotated.
+
+
+The two partners form one interface, burying **1419 Å² total** (699 Å² on PD-L1, 721 Å² on KN035) — a compact, antibody-typical paratope–epitope footprint, with 13 hydrogen bonds, one salt bridge, and one aromatic stacking contact.
+
+
+## What KN035 grips on PD-L1
+
+
+The nanobody lands on the front β-sheet of the PD-L1 IgV domain, and the footprint is built from three separate patches that its CDR3 spans. In standard PD-L1 numbering, the residues in contact are:
+
+
+**Strand C and the C–C′ loop** — Ile54, Tyr56, Glu58, Asp61, Asn63 — this is the heart of the epitope. Asp61 alone buries 104 Å², the single largest contribution on PD-L1, and it is pinned by three separate contacts to the nanobody (Ser29 OG, Ser30 OG, and the Arg32 backbone amide).
+
+
+**The C′–D region** — Gln66, Val68, His69, Asp73, Val76 — a secondary anchor, with Gln66 donating two hydrogen bonds into the CDR3 backbone and accepting one.
+
+
+**The F–G edge** — Arg113, Met115, Ser117, Gly119, Gly120, Ala121, Asp122, Tyr123, Arg125 — the C-terminal end of the footprint, where Arg113 and Arg125 make the electrostatic contacts (Arg113–Asp99 is the only true salt bridge, 2.4 Å; Arg125–Gln116, 2.4 Å).
+
+
+The single most important chemical feature is the **aromatic stacking of PD-L1 Tyr56 against KN035 Phe101** (ring centroids 5.2 Å apart, tilted 83° — an edge-to-face arrangement). Tyr56 also hydrogen bonds to both the Glu102 backbone nitrogen and Ser100 hydroxyl, so it is engaged by stacking and by two polar contacts at once.
+
+
+## How KN035 grips back
+
+
+The paratope is overwhelmingly CDR3, exactly as expected for this nanobody: **Asp99 through Tyr117** (16 of the 21 interface residues). The N-terminal half of CDR3 — Asp99, Ser100, Phe101, Glu102, Asp103, Pro104, Thr105 — carries the polar and stacking contacts, while the C-terminal half (Leu108, Val109, Thr110, Ser111, Gly113, Ala114, Phe115, Gln116, Tyr117) contributes mostly hydrophobic burial. A minor CDR1 contribution comes from Lys27, Ser29, Ser30, and Arg32, with framework residue Glu44 at the CDR1 base also touching the interface. CDR2 makes no contact at all.
+
+
+## Does the prediction hold up?
+
+
+A crystal structure of this exact complex exists (PDB 5JDS, 1.7 Å), so I recomputed its interface with an identical protein-only protocol and compared directly:
+
+
+
+- **Epitope: 18 of 19 crystal residues reproduced.** The model misses only Glu60 (a 9 Å² marginal contact) and adds Val76.
+- **Paratope: 18 of 18 crystal residues reproduced.** The model adds Glu44, Thr110, Tyr117 as peripheral contacts.
+- **The hydrogen-bond network is nearly bond-for-bond identical**: Asp61–Ser30, Glu58–Ser100, Gln66–Asp103, Arg113–Asp99, Arg113–Ser100, Arg125–Gln116, Tyr56–Glu102 all appear in both.
+- All five published hotspot residues that KN035 depends on — **Ile54, Tyr56, Glu58, Gln66, Arg113** — are present in the predicted interface with the correct chemistry.
+
+
+Two caveats worth stating plainly. First, the construct you supplied carries an N-terminal **MA tag**, and the artificial Met1 accounts for 42 Å² of the apparent interface, forming a spurious salt bridge to Glu44 of the nanobody; I excluded it from the epitope above, but it is a real artifact of the model, not PD-L1 biology. Second, this is a single converged prediction, and the peripheral contacts (Val76, Glu44, Thr110, Tyr117) are the parts most likely to differ in reality.
+
+
+The functional readout is that the epitope overlaps the PD-1 binding site — Ile54, Tyr56, Glu58, Gln66 and Arg113 are shared with PD-1 — which is why KN035 blocks the checkpoint interaction by direct steric competition rather than allostery.
+
+
+Full measurements are saved in `/workspace/analysis/interface_results.md`.

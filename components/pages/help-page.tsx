@@ -1,29 +1,45 @@
 'use client';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { BookOpen, HelpCircle, Zap, History, Code } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import manifest from '@/content/manual/manifest.json';
 import { localizeHref, type Locale } from '@/lib/site-config';
-import { DocsSearch } from '@/components/docs/docs-search';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { HelpCenter } from '@/components/pages/help-center';
 
-export function HelpPage({ locale, kind = 'home' }: { locale: Locale; kind?: 'home' | 'getting-started' | 'faq' | 'changelog' | 'api' }) {
+type Step = { title: string; body: string; chips: string[] };
+type Kind = 'home' | 'getting-started' | 'faq' | 'changelog' | 'api';
+// Manual group indexes are the same in the zh and en manifests.
+const QUICK_START_GROUP = 3;
+
+/**
+ * Help center. The home page (and the /help/api and /help/faq entries) is `HelpCenter`: a sidebar hierarchy of core
+ * features, user stories, API key, MCP service and FAQ. Getting-started and changelog stay single reading columns,
+ * and the user manual keeps the docs shell with the left navigation.
+ */
+export function HelpPage({ locale, kind = 'home' }: { locale: Locale; kind?: Kind }) {
   const t = useTranslations('helpPage');
-  const docs = useTranslations('docsPage');
-  const ui = useTranslations('manualUI');
-  const entries = [{ key: 'getting-started', title: docs('quickStart'), description: ui('quickStartDescription'), Icon: Zap }, { key: 'manual', title: docs('manual'), description: ui('manualDescription'), Icon: BookOpen }, { key: 'faq', title: docs('faq'), description: ui('faqDescription'), Icon: HelpCircle }, { key: 'changelog', title: t('changelog'), description: t.raw('todo') as string, Icon: History }, { key: 'api', title: t('api'), description: t.raw('todo') as string, Icon: Code }];
-  const selected = entries.find(e => e.key === kind);
-  return <article className="site-container py-24">
-    {kind !== 'home' && <Link href={localizeHref('/help', locale)} className="mb-6 inline-flex text-sm text-muted-foreground">← {t('title')}</Link>}
-    <h1 className="section-title">{selected?.title ?? t('title')}</h1>
-    <p className="section-copy">{kind === 'home' ? docs('description') : kind === 'getting-started' ? docs('quickDescription') : selected?.description}</p>
-    {kind === 'home' && <div className="help-entry-grid mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">{entries.map(({ key, title, description, Icon }, i) => {
-      const content = <><Icon size={24} strokeWidth={1.5} aria-hidden="true"/><h2 className="mt-5 text-xl font-semibold">{title}</h2><p className="mt-3 text-sm text-muted-foreground">{description}</p><p className="mt-5 text-sm">{i > 2 ? t('soon') : i === 1 ? ui('pages', { count: manifest.languages[locale].pageCount }) : '→'}</p></>;
-      return i > 2 ? <div key={key} className="rounded-2xl border border-border p-8 opacity-50" aria-disabled="true">{content}</div> : <Link id={key} key={key} href={localizeHref('/help/' + key, locale)} className="rounded-2xl border border-border p-8 transition hover:border-accent">{content}</Link>;
-    })}</div>}
-    {kind === 'getting-started' && <Link href={localizeHref('/help/manual', locale)} className="mt-8 inline-flex min-h-11 items-center text-[var(--accent-text)]">{ui('openManual')}</Link>}
-    {kind === 'faq' && <div className="mt-12 max-w-[760px]"><Accordion type="single" collapsible>{(docs.raw('faqs') as string[][]).map((faq, i) => <AccordionItem key={i} value={'faq-' + i}><AccordionTrigger>{faq[0]}</AccordionTrigger><AccordionContent>{faq[1]}</AccordionContent></AccordionItem>)}</Accordion></div>}
-    {(kind === 'api' || kind === 'changelog') && <p className="mt-8 text-muted-foreground">{t('soon')}</p>}
-    {kind === 'home' && <div className="mt-12 max-w-[480px]"><DocsSearch locale={locale}/></div>}
-  </article>;
+  const groups = manifest.languages[locale].groups;
+  const manualHref = (index: number) => localizeHref('/help/manual', locale) + '#' + groups[index].slug;
+
+  const Steps = ({ steps }: { steps: Step[] }) => <ol className="help-steps">{steps.map((step, i) => <li key={step.title}>
+    <span className="help-step-no">{i + 1}</span>
+    <div><h3>{step.title}</h3><p>{step.body}</p><div className="help-chips">{step.chips.map(chip => <span key={chip}>{chip}</span>)}</div></div>
+  </li>)}</ol>;
+  const Head = ({ crumb, eyebrow, title, lead }: { crumb: string; eyebrow: string; title: string; lead: string }) => <>
+    <nav className="manual-breadcrumb" aria-label="breadcrumb"><Link href={localizeHref('/help', locale)}>{t('title')}</Link><span>/</span><span>{crumb}</span></nav>
+    <p className="manual-eyebrow">{eyebrow}</p><h1>{title}</h1><p className="manual-lead">{lead}</p>
+  </>;
+
+  if (kind === 'home' || kind === 'api' || kind === 'faq') return <HelpCenter locale={locale} initial={kind === 'home' ? undefined : kind} />;
+
+  if (kind === 'getting-started') return <div className="site-container help-page"><article className="manual-article help-article">
+    <Head crumb={t('start')} eyebrow={t('quick.eyebrow')} title={t('quick.title')} lead={t('quick.lead')} />
+    <Steps steps={t.raw('quick.steps') as Step[]} />
+    <Link href={manualHref(QUICK_START_GROUP)} className="help-more group">{t('quick.more')}<ArrowRight size={16} aria-hidden="true" /></Link>
+  </article></div>;
+
+  return <div className="site-container help-page"><article className="manual-article help-article">
+    <Head crumb={t('more')} eyebrow="CHANGELOG" title={t('changelog')} lead={t('soonBody')} />
+    <p className="help-soon">{t('soon')}</p>
+  </article></div>;
 }

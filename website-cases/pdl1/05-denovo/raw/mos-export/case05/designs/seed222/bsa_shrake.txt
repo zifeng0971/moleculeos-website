@@ -1,0 +1,2 @@
+179246440160605_output.cif	bsa_total=131.6	bsa_per_side=65.8
+179246440257279_aligned.cif	bsa_total=1201.6	bsa_per_side=600.8

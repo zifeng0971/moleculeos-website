@@ -1,0 +1,651 @@
+{
+  "schema_version": "1.0",
+  "master": "01-structure/raw/MMFold_1.cif",
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "numbering": "MMFold_1 label_asym_id + label_seq_id",
+  "mapping_verified": true,
+  "residues": [
+    {
+      "chain": "A",
+      "label_seq_id": 36,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 37,
+      "aa": "L",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 42,
+      "aa": "E",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 44,
+      "aa": "E",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 53,
+      "aa": "H",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 102,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 106,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 109,
+      "aa": "R",
+      "group": "new_binder_contact",
+      "seed": 111,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 38,
+      "minimum_heavy_atom_distance_to_new_binder_A": 1.2413359880447388,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 40,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.4615726470947266,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 45,
+      "minimum_heavy_atom_distance_to_new_binder_A": 6.259592533111572,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 97,
+      "minimum_heavy_atom_distance_to_new_binder_A": 1.8762009143829346,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "minimum_heavy_atom_distance_to_new_binder_A": 4.367419719696045,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 107,
+      "minimum_heavy_atom_distance_to_new_binder_A": 1.5193581581115723,
+      "group": "hotspot",
+      "seed": 111,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 42,
+      "aa": "E",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 47,
+      "aa": "N",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 57,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 59,
+      "aa": "K",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 60,
+      "aa": "V",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 106,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 222,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 38,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.6369221210479736,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 40,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.269425630569458,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 45,
+      "minimum_heavy_atom_distance_to_new_binder_A": 6.561068058013916,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 97,
+      "minimum_heavy_atom_distance_to_new_binder_A": 7.696236610412598,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.7149171829223633,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 107,
+      "minimum_heavy_atom_distance_to_new_binder_A": 2.4375598430633545,
+      "group": "hotspot",
+      "seed": 222,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 33,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 34,
+      "aa": "L",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 36,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 37,
+      "aa": "L",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 42,
+      "aa": "E",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 44,
+      "aa": "E",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 47,
+      "aa": "N",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 53,
+      "aa": "H",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 60,
+      "aa": "V",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 103,
+      "aa": "G",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 104,
+      "aa": "G",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 106,
+      "aa": "D",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 109,
+      "aa": "R",
+      "group": "new_binder_contact",
+      "seed": 333,
+      "source_kind": "local_geometry_of_MOS_de_novo_complex"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 38,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.446230888366699,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 40,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.9027762413024902,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 45,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.394925117492676,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 97,
+      "minimum_heavy_atom_distance_to_new_binder_A": 2.6025869846343994,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 105,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.1250619888305664,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "target_output_chain": "B",
+      "target_output_label_seq_id": 107,
+      "minimum_heavy_atom_distance_to_new_binder_A": 3.467763900756836,
+      "group": "hotspot",
+      "seed": 333,
+      "source_kind": "native_epitope_plus_local_geometry"
+    }
+  ],
+  "new_binder_residues": {
+    "mapped": false,
+    "reason": "No counterpart in the master structure; use separate design structure for the binder."
+  }
+}

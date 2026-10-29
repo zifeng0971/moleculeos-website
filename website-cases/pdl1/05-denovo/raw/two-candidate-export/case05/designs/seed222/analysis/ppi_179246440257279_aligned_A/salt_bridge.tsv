@@ -1,0 +1,6 @@
+chain1	res1	resnum1	atom1	chain2	res2	resnum2	atom2	distance
+A	LYS	22	NZ	B	ASP	44	OD1	2.800
+A	LYS	22	NZ	B	ASP	44	OD2	4.000
+A	GLU	29	OE2	B	ARG	96	NH1	3.800
+A	GLU	29	OE2	B	ARG	108	NE	3.700
+A	GLU	29	OE2	B	ARG	108	NH1	3.800

@@ -1,0 +1,70 @@
+{
+  "chain_A": {
+    "length": 118,
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "reference": "UniProt Q9NZQ7 (human PD-L1, 290 aa), fetched with sequence-toolkit fetch-uniprot",
+    "exact_match_against_reference": {
+      "query_region_1based": [
+        2,
+        116
+      ],
+      "reference_region_1based": [
+        18,
+        132
+      ],
+      "n_residues": 115,
+      "identical": true
+    },
+    "extra_residues": {
+      "n_terminal": [
+        {
+          "chain_A_position": 1,
+          "residue": "M",
+          "note": "initiator methionine, absent from the mature UniProt sequence"
+        }
+      ],
+      "c_terminal": [
+        {
+          "chain_A_positions": [
+            117,
+            118
+          ],
+          "residues": "LE",
+          "note": "not present at reference positions 133-134 (reference has AP); non-native two-residue appendage"
+        }
+      ]
+    },
+    "identity_over_aligned_region": 1.0,
+    "identity_over_full_chain": 0.9746,
+    "interpretation": "Chain A equals UniProt Q9NZQ7 residues 18-132 (the C-terminal alanine of the 18-residue signal peptide plus the mature IgV domain 19-132), preceded by an artificial initiator Met and followed by a non-native LE. The MMetrics record itself returned no UniProt annotation for chain A (annotations.uniprot = []), so the PD-L1 assignment is an external sequence check, not a native MMetrics call.",
+    "reference_region_note": "Q9NZQ7 signal peptide is annotated 1-18; the mature chain begins at F19. Chain A therefore also carries the signal-peptide-terminal A18."
+  },
+  "chain_B": {
+    "length": 128,
+    "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+    "native_blast_top_hit": {
+      "hit_id": "pdb|5JDS|B",
+      "identity_percentage": 1.0,
+      "query_from": 1,
+      "query_to": 128,
+      "hit_from": 3,
+      "hit_to": 130,
+      "e_value": 2.10588e-92,
+      "bit_score": 266.544,
+      "hit_description": "Chain B, Nanobody [Camelidae]"
+    },
+    "native_blast_summary": {
+      "n_hits": 503,
+      "identity_percentage_min": 0.5367647058823529,
+      "identity_percentage_max": 1.0,
+      "query_sequence_used_by_blast": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+    },
+    "interpretation": "The VHH heavy chain is identical (100%, 128/128) to PDB 5JDS chain B, i.e. the blast top hit is the same nanobody sequence. It is a sequence-level self-hit, not an independent homologue. Per the case instruction, 5JDS was not downloaded, superimposed or otherwise used as a reference structure."
+  },
+  "forbidden_references_not_used": [
+    "5GRJ",
+    "7XYQ",
+    "5JDS"
+  ],
+  "structure_prediction": "not re-run; the only structure in this case is the imported MMFold_1.cif"
+}

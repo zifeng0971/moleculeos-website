@@ -1,0 +1,29 @@
+{
+  "seed": 666,
+  "task_id": "342610718331904",
+  "task_name": "kn035_c05_round2_seed666",
+  "payload_file": "payloads/payload_seed666.json",
+  "files": [
+    {
+      "file": "outputs/seed666/179255136586359_aligned.cif",
+      "sha256": "c6fabbe72e43e432068e342bbc1844518a536fc649369b6122bc8e0852bd1061",
+      "bytes": 129954
+    },
+    {
+      "file": "outputs/seed666/179255136680417_output.cif",
+      "sha256": "520ef7f0565ef871ccccb6ccb72d29dcf8b310a708231d274396d610a0803d0c",
+      "bytes": 66558
+    }
+  ],
+  "fasta": {
+    "file": "outputs/seed666/sequences.fasta",
+    "sha256": "84335c9eb081122914eff40628e5d6e33b26bad3df3d308a1998ea2d683831e5"
+  },
+  "sequences": {
+    "designed_sequence_complex:A": "AAEGAARAAALRRQAAEAAAAEQRQVEVGAEKFLRIAAGELSDEESIEIYDKYEDSLPDIRAVLAADAAKLAAFDAAVARIEALKAARK",
+    "designed_sequence_complex:B": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "backbone_virtual_gly:A": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+    "backbone_virtual_gly:B": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+  },
+  "confidence_metrics": "MISSING - only two CIF files returned; no ipTM / pLDDT / PAE / score file"
+}

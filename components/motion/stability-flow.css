@@ -1,0 +1,41 @@
+/* Step 04: shares the step 03 stage (.ak); this adds the tabs, the "kept" list and the score meters. */
+.capability-media:has(.ad) { background: radial-gradient(ellipse 55% 55% at 36% 50%, rgba(240,139,208,.1), rgba(124,92,255,.1) 55%, transparent 78%), #0a0a10; }
+.ad-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; border-radius: 9px; background: #14141b; }
+.ad-tabs button { padding: 5px 0; border: 0; border-radius: 7px; background: transparent; color: #9b9ba3; font: 600 11px Arial, 'Noto Sans SC', sans-serif; transition: background .25s, color .25s; }
+.ad-tabs button[aria-selected=true] { background: #2b2b36; color: #fff; }
+.ad-body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 8px; animation: ak-in .45s ease both; }
+.ad-body > strong { display: flex; align-items: center; gap: 6px; font-size: 12.5px; }
+.ad-body > strong svg { color: #7ddc95; }
+.ad-body > strong code { margin-left: auto; color: #9b9ba3; font: 500 10px ui-monospace, 'SF Mono', monospace; }
+.ad-body > small { color: #8f8f98; font-size: 10px; line-height: 1.35; margin-top: auto; }
+.ad-keep { display: grid; gap: 6px; padding: 0; margin: 0; list-style: none; }
+.ad-keep li { display: grid; grid-template-columns: 8px 1fr auto; align-items: center; gap: 9px; padding: 8px 10px; border-radius: 9px; background: #2a2a34; }
+.ad-keep li > i { width: 8px; height: 8px; border-radius: 50%; box-shadow: 0 0 8px currentColor; }
+.ad-keep b { display: block; font-size: 11.5px; }
+.ad-keep span { display: block; color: #9b9ba3; font-size: 10px; line-height: 1.35; }
+.ad-keep em { padding: 1px 7px; border-radius: 999px; background: #7ddc9522; color: #7ddc95; font-style: normal; font-size: 9.5px; }
+.ad-region { flex: none; padding: 0 6px; border-radius: 4px; background: #393550; color: #cfc7ff; font-style: normal; font: 600 9px ui-monospace, monospace; }
+.ad .ak-list button b { width: 54px; }
+.ad .ak-list { flex: 1 1 0; }
+.ad-detail { display: grid; gap: 7px; padding: 9px 10px; border-radius: 9px; background: #2a2a34; animation: ak-in .45s ease both; }
+.ad-meters { display: grid; gap: 5px; }
+.ad-meter { display: grid; grid-template-columns: 50px 1fr 22px; align-items: center; gap: 8px; font-size: 10px; color: #b9b3c4; }
+.ad-meter i { height: 4px; border-radius: 4px; background: #ffffff10; overflow: hidden; }
+.ad-meter u { display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #8970ee, #f08bd0); }
+.ad-meter code { text-align: right; color: #fff; font-size: 10px; }
+.ad-detail p { margin: 0; color: #ffcd5a; font-size: 11px; }
+.ad .ak-tag[data-kind="ds"] b { font: 700 11px ui-monospace, 'SF Mono', monospace; }
+
+.ad-sub { margin: -4px 0 0; color: #8f8f98; font-size: 10.5px; line-height: 1.4; }
+.ad .ak-list button { flex: 1 0 24px; max-height: 36px; }
+.ad .ak-list button.ad-risk { gap: 9px; flex: 1 0 34px; max-height: 48px; padding: 0 9px; }
+.ad-risk > i { flex: none; width: 8px; height: 8px; border-radius: 50%; box-shadow: 0 0 8px currentColor; }
+.ad-risk > div { flex: 1; min-width: 0; }
+.ad .ak-list .ad-risk b { display: block; width: auto; font: 600 11.5px Arial, 'Noto Sans SC', sans-serif; }
+.ad-risk span { display: block; color: #9b9ba3; font: 500 9.5px/1.3 ui-monospace, 'SF Mono', monospace; }
+.ad-detail p { display: grid; gap: 2px; }
+.ad-detail p span { color: #9b9ba3; font-size: 9.5px; line-height: 1.35; }
+.ad-detail { gap: 6px; padding: 8px 10px; }
+.ad-meters { gap: 4px; }
+.ad .ad-body > small { font-size: 9.5px; line-height: 1.3; }
+.ad .ad-detail { padding: 7px 9px; }

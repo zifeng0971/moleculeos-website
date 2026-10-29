@@ -1,0 +1,563 @@
+MOS
+BETA
+PDL1-05-DeNovo-KN035-20261021
+Z
+Task
+Share
+MMFold_1_chain_A
+1:A
+1
+MAFTVTVPKD
+11
+LYVVEYGSNM
+21
+TIECKFPVEK
+31
+QLDLAALIVY
+41
+WEMEDKNIIQ
+51
+FVHGEEDLKV
+61
+QHSSYRQRAR
+71
+LLKDQLSLGN
+81
+AALQITDVKL
+91
+QDAGVYRCMI
+101
+SYGGADYKRI
+111
+TVKVNALE
+Mocha
+MMetrics
+✕
+Mocha
+8fb018d3-4
+Assistant
+
+I’ll start by verifying the imported object and inputs before anything else.
+
+Shell
+(ls -la /workspace/ && echo "---" && ls -la /worksp…)
+▸
+ListMOSObjects
+▸
+Thinking
+Only one object. Let me verify the file: hash, chain content, sequence, mapping.
+▸
+Shell
+(cd /workspace && sha256sum protein_data/protein_34…)
+▸
+Read
+(/app/src/mocha/agents/custom_skills/sequence-toolk…)
+▸
+Thinking
+The local file hash is different from the one the user said (d32305... is for MM…
+▸
+Shell
+(cd /workspace && grep -n "atom_site" protein_data/…)
+▸
+ListAvailableMOSTasks
+▸
+Thinking
+The awk $19 gave 1 unique - my column indexing is wrong due to multi-space separ…
+▸
+GetMOSTaskSchema
+(Protein Binder Design)
+▸
+Shell
+(cd /workspace && mkdir -p kn035_case05 && grep "^A…)
+▸
+Thinking
+Order of fields differs: my awk gave "1 A 1": $9=1 (label_seq_id), $18="A"?? Let…
+▸
+Shell
+(cd /workspace && python -c " import importlib for …)
+▸
+Shell
+(mkdir -p /workspace/kn035_case05/{inputs,payloads,…)
+▸
+Thinking
+Now write verification script that:
+▸
+Write
+(/workspace/kn035_case05/analysis/01_verify_input.p…)
+▸
+Shell
+(cd /workspace && python kn035_case05/analysis/01_v…)
+▸
+Edit
+(/workspace/kn035_case05/analysis/01_verify_input.p…)
+▸
+Shell
+(cd /workspace && python kn035_case05/analysis/01_v…)
+▸
+Thinking
+freeSASA Parameters API differs. Use dict params instead: freesasa.calc(structur…
+▸
+Shell
+(cd /workspace && python -c " import freesasa,inspe…)
+▸
+Edit
+(/workspace/kn035_case05/analysis/01_verify_input.p…)
+▸
+Edit
+(/workspace/kn035_case05/analysis/01_verify_input.p…)
+▸
+Shell
+(cd /workspace && python kn035_case05/analysis/01_v…)
+▸
+Shell
+(cd /workspace && python -c " import freesasa s=fre…)
+▸
+Thinking
+freesasa's mmCIF parser is mis-parsing columns (it seems to treat fields wrong —…
+▸
+Shell
+(cd /workspace && python -c " import gemmi, freesas…)
+▸
+Thinking
+Good — total SASA 6836.6 Å², sane. residueNumber returns str. Fine, int() it.
+▸
+Edit
+(/workspace/kn035_case05/analysis/01_verify_input.p…)
+▸
+Shell
+(cd /workspace && python kn035_case05/analysis/01_v…)
+▸
+Thinking
+Two issues:
+▸
+Shell
+(cd /workspace && python - <<'EOF' 2>&1 | grep -v "…)
+▸
+Thinking
+The atom sequence is identical to the entity poly sequence and to the pasted str…
+▸
+Shell
+(cd /workspace && python - <<'EOF' import re,io p='…)
+▸
+GetMOSObject
+(342605515027456)
+▸
+Thinking
+Now compare hashes: local protein_data file vs downloaded MOS object.
+▸
+Shell
+(cd /workspace && sha256sum protein_data/protein_34…)
+▸
+Thinking
+Good. Now store the sequence in library and verify against entity poly. Use sequ…
+▸
+Shell
+(cd /workspace && python /app/src/mocha/agents/cust…)
+▸
+GetMOSQuota
+▸
+Thinking
+Quota 460, fine.
+▸
+Write
+(/workspace/kn035_case05/schema/protein_binder_desi…)
+▸
+Thinking
+Now write the three payloads. Let me define:
+▸
+Shell
+(cd /workspace/kn035_case05/payloads && python - <<…)
+▸
+Thinking
+Now launch 3 independent tasks. Before launching, I should note this is a costly…
+▸
+
+Inputs verified (identity label_seq_id↔auth_seq_id mapping, 118 aa, single chain A, all 6 hotspots ≥20 Å² SASA). Launching the three independent de novo runs now.
+
+StartMOSTask
+(Protein Binder Design)
+▸
+StartMOSTask
+(Protein Binder Design)
+▸
+StartMOSTask
+(Protein Binder Design)
+▸
+Thinking
+Three tasks launched. Now write the ledger with real timestamps. Get current UTC…
+▸
+Shell
+(cd /workspace && date -u +"%Y-%m-%dT%H:%M:%SZ" && …)
+▸
+Thinking
+Now snapshot task board once to record current status (Generating/Computing as-i…
+▸
+ListMOSTasks
+▸
+Thinking
+Three tasks pending. Record status snapshot in ledger. Then write README + analy…
+▸
+Shell
+(cd /workspace && cat > kn035_case05/tasks/status_s…)
+▸
+Write
+(/workspace/kn035_case05/README_case05.md)
+▸
+Thinking
+Now end turn with a status report. Should I wait for completion? The workflow sa…
+▸
+
+三个 de novo 任务已真实提交并进入排队。
+
+输入核验（实测）
+对象：ID 342605515027456，work ID 342605519696896，TOS key user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif，仅链 A、118 残基、1–118 连续无缺失，947 原子。
+hash：本地副本与重新 GetMOSObject 下载的副本逐字节相同，sha256 8303fd10…b38253e。
+序列：由 ATOM 记录重建的序列与 _entity_poly 一字不差（118 aa）。
+映射：label_seq_id = auth_seq_id = MOS 编号，恒定恒等，无插入码、无多重 auth 编号 → analysis/residue_mapping_MOS_vs_MMFold_1.csv 给出 118 行逐残基对照。
+
+必须说明的不可验证点：2 链源文件 MMFold_1.cif 本身不在本项目内，您给的 sha256 d32305… 在此无法重算验证；"删 B 保 A、坐标未改"只能作为来源陈述记录，不能算独立复核。这是本案例唯一的证据缺口。
+
+Hotspot
+
+先用 freeSASA（Shrake–Rupley，1.4 Å 探针，960 点，单链）验证 case02 的 6 个位点：Asp45 135.5 Å²、Tyr40 58.9、Arg97 67.7、Tyr107 98.4、Ala105 63.0、Ile38 63.7，全部 ≥20 Å²。编号换算为恒等，并有独立性证据：若按 UniProt 全长偏移 −17 解读，A97 会落到完全埋藏的 Asn80（2.96 Å²）、A105 落到 Val88（0.10 Å²），不可能是界面热点。
+
+已提交的三次独立运行
+
+统一 payload：contigs="A1-118/0 60-100"（固定整条靶点 A1–118，链断裂后生成 60–100 aa 新链）、hotspot_res="A45,A40,A97,A107,A105,A38"、compare_binder=1（schema 明示：backbone 后跑序列设计+结构预测，返回对齐复合物）、diffusion_steps 未设 → 平台默认 50。三次唯一差异字段是 seed。
+
+run	task ID	seed	状态
+1	342606137910272	111	PENDING
+2	342606139298816	222	PENDING
+3	342606141764608	333	PENDING
+
+Schema 原文、三个 payload 原文、ledger（ID/时间/状态/合规声明）与平台快照均落在 /workspace/kn035_case05/{schema,payloads,tasks}/，报告在 README_case05.md。
+
+任务仍在队列中，尚无任何结果文件，因此还不存在可分析的结构——我不会用旧结构或现有 binder 填补这一段。等它们跑完（您说一声，或平台任务面板显示完成），我接着做：下载全部原始输出、区分虚拟 GLY 骨架与真实设计序列、本地算 hotspot 距离与 SASA/BSA、把复合物中 PD-L1 Cα 叠回原始 MMFold_1 报 RMSD、算接触位点与 KN035 原生 19 位点表位的重合率与 Jaccard，最后打包 kn035_case05.zip。
+
+09:28
+You
+继续执行至交付：请现在检查3个已提交任务真实状态，保存CheckMOSTask状态/payload原文，先把现有输入、schema、payload、ledger打包/workspace/kn035_case05_checkpoint.zip供下载，不必等任务完成才给输入包。随后在本轮以每次<=45秒的间隔检查，完成就下载全部真实输出、做已有分析并打包/workspace/kn035_case05.zip；不能仅告知我之后再说。主复合物本地已核验hash和提取坐标完全相同，所以可在provenance写external_local_verification_available，不要擅取其他项目。
+09:28
+Assistant
+Thinking
+Let me check task statuses with CheckMOSTask for each, save raw output. Then bui…
+▸
+CheckMOSTask
+(342606137910272)
+▸
+CheckMOSTask
+(342606139298816)
+▸
+CheckMOSTask
+(342606141764608)
+▸
+Thinking
+Save these raw outputs to files. Also record that platform normalizes TOS key to…
+▸
+Shell
+(cd /workspace/kn035_case05 && cat > tasks/check_se…)
+▸
+Shell
+(cd /workspace && python - <<'EOF' import json, dat…)
+▸
+Shell
+(cd /workspace && python - <<'EOF' import zipfile, …)
+▸
+Thinking
+Checkpoint zip built (57 KB) at /workspace/kn035_case05_checkpoint.zip. Deliver …
+▸
+
+输入包已就绪：/workspace/kn035_case05_checkpoint.zip（57 KB，含输入核验、映射表 CSV、schema 原文、3 个 payload 原文、CheckMOSTask 原文、ledger）。
+
+Click to enlarge
+Open in file panel
+
+三个任务现状：seed111 running（38s），seed222/seed333 pending（"waiting，not queued"）。我开始按 ≤45 秒间隔跟踪。
+
+Shell
+(sleep 42 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+Still running/pending. Duration stuck at 38s for seed111 — maybe listing is cach…
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+Duration frozen at 38s — the list view may be stale. Use CheckMOSTask on seed111…
+▸
+CheckMOSTask
+(342606137910272)
+▸
+Thinking
+Duration still 38s even in CheckMOSTask — suspicious; platform duration field ma…
+▸
+Write
+(/workspace/kn035_case05/analysis/02_analyze_binder…)
+▸
+Shell
+(sleep 44 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+seed111 SUCCEED. Download its results now.
+▸
+DownloadTaskResults
+(342606137910272)
+▸
+Shell
+(cd /workspace/downloads/protein_binder_design_3426…)
+▸
+Thinking
+Excellent — real outputs. Note: chain A = binder (73 aa), chain B = target (118 …
+▸
+Shell
+(cd /workspace/downloads/protein_binder_design_3426…)
+▸
+Thinking
+Real designed sequence (seed111, 73 aa):
+▸
+Shell
+(cd /workspace/kn035_case05 && python analysis/02_a…)
+▸
+Thinking
+The grep filtered output; the python script probably errored but stderr was... "…
+▸
+Shell
+(cd /workspace/kn035_case05 && python analysis/02_a…)
+▸
+Shell
+(cd /workspace/kn035_case05 && ls -la analysis/ && …)
+▸
+Thinking
+Segfault — likely freeSASA on a PDB written with duplicate chain handling, or ge…
+▸
+Shell
+(cd /workspace && python - <<'EOF' import gemmi, fr…)
+▸
+Thinking
+Whole complex works. Segfault likely in the chain-filtered write (st.clone + del…
+▸
+Shell
+(cd /workspace && python - <<'EOF' import gemmi, fr…)
+▸
+Thinking
+The segfault is in freesasa.calc on the 73-residue all-Ala binder written alone?…
+▸
+Shell
+(cd /workspace && python - <<'EOF' 2>&1 | tail -20 …)
+▸
+Thinking
+The binder-only PDB has an OXT atom at the C-term and all residues named ALA but…
+▸
+Shell
+(cd /workspace && python -c " import freesasa frees…)
+▸
+Thinking
+It works in isolation! So the segfault comes from repeated freesasa calls in the…
+▸
+Write
+(/workspace/kn035_case05/analysis/sasa_helper.py)
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' p="…)
+▸
+Shell
+(cd /workspace/kn035_case05 && python -c " import j…)
+▸
+Thinking
+Excellent results for seed111. Note hotspot distances: A105 3.67 Å (<4), others …
+▸
+Shell
+(date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+While waiting, let me copy seed111 outputs into the case dir (inputs/outputs), c…
+▸
+Shell
+(cd /workspace/kn035_case05 && mkdir -p outputs/see…)
+▸
+Shell
+(sleep 40 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+Elapsed times frozen again — the list view caches. Let me CheckMOSTask on seed22…
+▸
+CheckMOSTask
+(342606139298816)
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+DownloadTaskResults
+(342606139298816)
+▸
+Shell
+(cd /workspace/kn035_case05 && mkdir -p outputs/see…)
+▸
+Thinking
+seed222: binder 66 aa, BSA 1219.9, overlap 16/19, Jaccard 0.667.
+▸
+Shell
+(sleep 42 && date -u +%H:%M:%SZ)
+▸
+Steer
+请优先把seed111/222已完成的全部原始输出（output/aligned CIF、FASTA、confidence如有、actual payload及taskID）复制归档并更新/workspace/kn035_case05_checkpoint.zip，随后等seed333完成后出最终/workspace/kn035_case05.zip。不要再扩展额外分析，本地会独立计算对齐RMSD、BSA、接触重合及编号验证。输出链角色已变为A=binder/B=PDL1，务必写输出→主结构A编号映射；新binder残基本身没有MMFold_1对应不要强行映射。
+Thinking
+User wants: archive raw outputs + FASTA + confidence (if any) + actual payload &…
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+ListMOSTasks
+▸
+Thinking
+seed333 still running. Now write the chain-role mapping document (output chain →…
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+Thinking
+Fix the last row: "A","1-118?" is wrong — binder length differs per seed (73 / 6…
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+Thinking
+Remove the stray tmp_binder_only.pdb (junk) and rebuild. Then report checkpoint …
+▸
+Shell
+(cd /workspace/kn035_case05 && rm -f analysis/tmp_b…)
+▸
+
+Checkpoint 已更新（含 seed111/222 全部原始 CIF、FASTA、manifest、真实 payload、task ID 与链角色映射）：
+
+Click to enlarge
+Open in file panel
+角色重命名已记录：输入链 A（PD-L1）在输出中变成链 B，输出链 A 是全新 binder；analysis/output_chain_map_to_main.csv 给 118 行靶点恒等映射，binder 残基在 MMFold_1 中无对应物，映射行刻意留空（analysis/chain_role_and_mapping.md 说明）。
+骨架虚拟 vs 真实序列已分文件：*_output.cif 链 A 为全 GLY 虚拟占位；*_aligned.cif 链 A 为真实设计序列，另存 sequences.fasta。
+置信度：平台只返回两个 CIF，无 ipTM/pLDDT/PAE/score → 记为缺失。
+
+seed333 仍在运行，我继续等它完成后出最终包。
+
+Shell
+(sleep 44 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342606141764608)
+▸
+Shell
+(cd /workspace/kn035_case05 && mkdir -p outputs/see…)
+▸
+Thinking
+seed333: 95 aa binder, BSA 1823.7 Å², all 19 KN035 epitope residues contacted, J…
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' imp…)
+▸
+Shell
+(cd /workspace/kn035_case05 && cat > tasks/check_se…)
+▸
+Thinking
+Now update README results table with seed333 actual values and the measured metr…
+▸
+Shell
+(cd /workspace/kn035_case05 && python - <<'EOF' p="…)
+▸
+Thinking
+Everything packaged. Also update checkpoint zip to final state? The user asked c…
+▸
+Shell
+(cd /workspace && python -c " import zipfile z=zipf…)
+▸
+
+三个任务全部 succeed，最终包已生成。
+
+Click to enlarge
+Open in file panel
+交付内容
+
+最终包：/workspace/kn035_case05.zip（220 KB，41 个条目，完整性校验 OK，无空文件）
+输入 checkpoint：/workspace/kn035_case05_checkpoint.zip（164 KB）
+
+三次独立 de novo 运行（seed 111/222/333，同一输入对象 342605515027456，payload 仅 seed 不同）：
+
+seed	task ID	用时	binder	真实设计序列
+111	342606137910272	3.7 min	73 aa	AAAA…AEAAAAAAAAAAAEAEAAALRAEEEKREAELRKLQEKKNEEKRLARIAAWKAAAAAAAL
+222	342606139298816	6.7 min	66 aa	AAEERAAAEAKAAAIRAEVEAARAAAEAAAA…
+333	342606141764608	9.7 min	95 aa	SALDARVAELAAIMAEVAKLAARALALLRAGPASAAEADAAEAELRALLDRHLEKAREMGENEVALIEALRAQVLGRLAAERAALAAAAAAAAAA
+
+关键口径（都写在包里）：
+
+链角色重命名：输出链 B = PD-L1 靶点，与主结构链 A 编号恒等 1–118（analysis/output_chain_map_to_main.csv 118 行）；输出链 A = 全新 binder，在 MMFold_1 中无对应物，映射刻意留空。
+*_output.cif 链 A 是全 GLY 虚拟骨架，*_aligned.cif 链 A 才是真实设计序列；FASTA 里两类分别打标签。
+置信度：平台只回两个 CIF，ipTM / pLDDT / PAE / score 全部缺失，未做任何估算。
+来源：单链对象本地与重下载副本 sha256 一致（8303fd10…）；用户所称 MMFold_1.cif 的 d32305… 不在项目内，无法重算，已按 external_local_verification_available 记录为用户核验陈述。
+
+已算几何数值（保留供你本地独立复算对照，未再扩展）：界面 BSA 1236.6 / 1219.9 / 1823.7 Å²；接触对 23 / 18 / 38；与 KN035 19 位点表位重合 15/19、16/19、19/19，Jaccard 0.600 / 0.667 / 0.731；复合物靶点 Cα RMSD 到原始 MMFold_1 为 0.488 / 0.383 / 0.366 Å。这三次都落在同一表位区，但没有任何置信度指标支撑亲和力结论——几何埋藏不等于结合。
+
+未使用任何现有 binder 重设计、未触碰 5GRJ/7XYQ/5JDS、未读写其他项目。
+
+09:38
+MMFold_1_c...
+Upload
+AI-generated research aid. Experimental validation advised
+Workspace
+downloads
+3
+protein_binder_design_342606137910272
+2
+protein_binder_design_342606139298816
+2
+protein_binder_design_342606141764608
+2
+kn035_case05
+7
+analysis
+11
+inputs
+2
+outputs
+3
+payloads
+3
+schema
+1
+tasks
+8
+README_case05.md
+protein_data
+1
+protein_342605519696896
+1
+kn035_case05_checkpoint.zip
+kn035_case05.zip
+Refresh
+Download

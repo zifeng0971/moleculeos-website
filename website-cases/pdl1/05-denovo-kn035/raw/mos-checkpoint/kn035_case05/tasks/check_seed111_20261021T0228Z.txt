@@ -1,0 +1,14 @@
+CheckMOSTask 342606137910272  (kn035_c05_denovo_seed111)
+[running] kn035_c05_denovo_seed111
+Type:     Protein Binder Design
+Task ID:  342606137910272
+Started:  2026-10-21 02:27:57
+Duration: 38s
+Input parameters (platform echo):
+{
+  "input_structure": "tos:mosv2-prod/user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+  "contigs": "A1-118/0 60-100",
+  "hotspot_res": "A45,A40,A97,A107,A105,A38",
+  "compare_binder": 1,
+  "random_seed": 111
+}

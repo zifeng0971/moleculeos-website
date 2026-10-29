@@ -1,0 +1,606 @@
+{
+  "case_id": "02-kn035",
+  "status": "completed_with_native_UI_scope_limits",
+  "source_kind": "native_MMetrics_UI_and_tasks",
+  "native_tasks": [
+    {
+      "task_id": "342604299285504",
+      "task_name": "autocompute-MMFold_1",
+      "task_type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic pre-analysis, created by the platform when the structure was imported (before MMetrics)",
+      "started": "2026-10-21T02:20:28Z",
+      "duration": "1.1min",
+      "payload_file": "raw/native_task_342604299285504/task_payload.json",
+      "payload_summary": "structure_path = user_objects/123/330665428816896/342604293768192_MMFold_1.cif (fileId 342604293768192)",
+      "status_file": "raw/native_task_342604299285504/task_status.txt",
+      "outputs": [
+        {
+          "file": "raw/native_task_342604299285504/affinity_scores.csv",
+          "bytes": 248333,
+          "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799"
+        },
+        {
+          "file": "raw/native_task_342604299285504/all_sequences.fasta",
+          "bytes": 98182,
+          "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+        },
+        {
+          "file": "raw/native_task_342604299285504/evolutionary_scores.csv",
+          "bytes": 99890,
+          "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad"
+        },
+        {
+          "file": "raw/native_task_342604299285504/sequence_info.fasta",
+          "bytes": 166,
+          "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+        },
+        {
+          "file": "raw/native_task_342604299285504/sequence_scores.csv",
+          "bytes": 126395,
+          "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7"
+        },
+        {
+          "file": "raw/native_task_342604299285504/similarity_results.json",
+          "bytes": 1882222,
+          "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+        },
+        {
+          "file": "raw/native_task_342604299285504/struct_fitness_scores.csv",
+          "bytes": 126608,
+          "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+        }
+      ],
+      "output_objects": [
+        {
+          "model_type": "mos-blast",
+          "object_id": "342604574114816",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+          "original_name": "all_sequences.fasta",
+          "downloaded_as": "all_sequences.fasta",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-blast@all_sequences.fasta",
+          "sha256_original_object": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+          "sha256_downloaded_copy": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+          "identical": true,
+          "bytes": 98182
+        },
+        {
+          "model_type": "mos-blast",
+          "object_id": "342604574229504",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+          "original_name": "blast_results.json",
+          "downloaded_as": "similarity_results.json",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+          "sha256_original_object": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+          "sha256_downloaded_copy": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+          "identical": true,
+          "bytes": 1882222
+        },
+        {
+          "model_type": "mos-score-esm",
+          "object_id": "342604574241792",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv",
+          "original_name": "esm_scores.csv",
+          "downloaded_as": "sequence_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-esm@esm_scores.csv",
+          "sha256_original_object": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+          "sha256_downloaded_copy": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+          "identical": true,
+          "bytes": 126395
+        },
+        {
+          "model_type": "mos-score-ligandmpnn",
+          "object_id": "342604574258176",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+          "original_name": "proteinmpnn_scores.csv",
+          "downloaded_as": "struct_fitness_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-ligandmpnn@proteinmpnn_scores.csv",
+          "sha256_original_object": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+          "sha256_downloaded_copy": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+          "identical": true,
+          "bytes": 126608
+        },
+        {
+          "model_type": "mos-diffaffinity",
+          "object_id": "342604574270464",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv",
+          "original_name": "diffaffinity_scores.csv",
+          "downloaded_as": "affinity_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-diffaffinity@diffaffinity_scores.csv",
+          "sha256_original_object": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+          "sha256_downloaded_copy": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+          "identical": true,
+          "bytes": 248333
+        },
+        {
+          "model_type": "mos-score-msat",
+          "object_id": "342604574282752",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv",
+          "original_name": "msat_scores.csv",
+          "downloaded_as": "evolutionary_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-msat@msat_scores.csv",
+          "sha256_original_object": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+          "sha256_downloaded_copy": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+          "identical": true,
+          "bytes": 99890
+        },
+        {
+          "model_type": "n/a (task-level output)",
+          "object_id": "342604574299136",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/sequence_info.fasta",
+          "original_name": "sequence_info.fasta",
+          "downloaded_as": "sequence_info.fasta",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/sequence_info.fasta",
+          "sha256_original_object": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+          "sha256_downloaded_copy": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+          "identical": true,
+          "bytes": 166
+        }
+      ],
+      "note": "The seven objects produced here are the direct inputs of the MMetrics task. Their platform download names differ from the model output names; object_manifest.json proves the rename by sha256."
+    },
+    {
+      "task_id": "342604577018880",
+      "task_name": "mmetrics-analysis-342604299285504",
+      "task_type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic MMetrics analysis of this structure",
+      "started": "2026-10-21T02:21:36Z",
+      "duration": "3s",
+      "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6",
+      "payload_file": "raw/native_task_342604577018880/task_payload.json",
+      "payload_summary": "input_structure = user_objects/123/330665428816896/342604293768192_MMFold_1.cif; autocomp_results = 7 objects of task 342604299285504",
+      "status_file": "raw/native_task_342604577018880/task_status.txt",
+      "outputs": [
+        {
+          "file": "raw/native_task_342604577018880/record.json",
+          "bytes": 20632,
+          "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91"
+        }
+      ],
+      "note": "record.json is the only artifact this task emitted. Everything in derived/mmetrics/ is an extraction from it, not an additional computation."
+    }
+  ],
+  "description": {
+    "source": "raw/native_task_342604577018880/record.json",
+    "native_field_paths": [
+      "classification.class",
+      "classification.confidence",
+      "classification.reasoning",
+      "classification.description",
+      "protein_metadata.entities[].antibody_fragment"
+    ],
+    "class": "antigen-antibody",
+    "confidence": "high",
+    "reasoning": "The structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.",
+    "description": "This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available.",
+    "entity_roles": [
+      {
+        "entity_id": 1,
+        "chain_id": [
+          "A"
+        ],
+        "role": "antigen / bound target",
+        "evidence": "class=antigen-antibody; epitope annotation is on entity 1; no antibody_fragment tag"
+      },
+      {
+        "entity_id": 2,
+        "chain_id": [
+          "B"
+        ],
+        "role": "antibody fragment (VHH, heavy chain only)",
+        "evidence": "protein_metadata.entities[1].antibody_fragment = 'VHH'"
+      }
+    ],
+    "raw": {
+      "class": "antigen-antibody",
+      "confidence": "high",
+      "reasoning": "The structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.",
+      "description": "This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available."
+    }
+  },
+  "homologs": {
+    "observed_date_local": "2026-10-29",
+    "time_zone": "Asia/Jakarta",
+    "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+    "native_UI_text": "Searched by antigen sequence similarity\n5JDS\nCrystal\n100%\nReference\n4DKA\nCrystal\n72.1%\nReference\n4DK3\nCrystal\n72.1%\nReference",
+    "native_UI_source": "reruns/20261029/raw/homologs-ui-cards.json",
+    "native_UI_screenshot": "reruns/20261029/visuals/native-homologs-overview.jpg",
+    "native_record": {
+      "source": "reruns/20261029/raw/mos-export/kn035_case02/raw/mmetrics_345489060729856/record.json",
+      "sha256": "5f9240b89d8bdd4dbce27c7c6104eb4027d705d3463c87e5e9d4846a82c42748",
+      "native_field_path": "annotations.homology",
+      "status": "present_nonempty",
+      "n_entries": 3,
+      "raw": [
+        {
+          "entity_id": 1,
+          "hit_id": "pdb|5JDS|B",
+          "hit_name": "PDB_5JDS",
+          "hit_db": "pdb",
+          "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+          "hit_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+          "midline": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+          "identity_percentage": 1.0,
+          "coverage": 1.0,
+          "e_value": 2.10588e-92,
+          "bit_score": 266.544,
+          "alignment_length": 128,
+          "gaps": 0,
+          "positive": 128,
+          "query_from": 1,
+          "query_to": 128,
+          "hit_from": 3,
+          "hit_to": 130
+        },
+        {
+          "entity_id": 1,
+          "hit_id": "pdb|4DKA|A",
+          "hit_name": "PDB_4DKA",
+          "hit_db": "pdb",
+          "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVT-SSGAFQYWGQGTQVTVSS",
+          "hit_sequence_aligned": "QVQLQESGGGLVQAGGSLRLSCAASGRTSSLYSMGWFRQAPGKEREFVAAISRNGANTYYTDSVKGRFTISRDNAKNTVELQMNSLKPEDTAVYYCAADRF--PTMEVVTIMTNEYDYWGQGTQVTVSS",
+          "midline": "QVQLQESGGGLVQ GGSLRLSCAASG+ SS   M WFRQAPGKERE VA +     +TY  DSVKGRFTIS++NAK+TV LQMNSLKPEDTA+YYCAAD F  PT  +VT  +  + YWGQGTQVTVSS",
+          "identity_percentage": 0.7209,
+          "coverage": 1.0,
+          "e_value": 4.94522e-59,
+          "bit_score": 181.415,
+          "alignment_length": 128,
+          "gaps": 3,
+          "positive": 103,
+          "query_from": 1,
+          "query_to": 128,
+          "hit_from": 1,
+          "hit_to": 127
+        },
+        {
+          "entity_id": 1,
+          "hit_id": "pdb|4DK3|A",
+          "hit_name": "PDB_4DK3",
+          "hit_db": "pdb",
+          "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVT-SSGAFQYWGQGTQVTVSS",
+          "hit_sequence_aligned": "QVQLQESGGGLVQAGGSLRLSCAASGRTSSLYSMGWFRQAPGKEREFVAAISRNGANTYYTDSVKGRFTISRDNAKNTVELQMNSLKPEDTAVYYCAADRF--PTMEVVTIMTNEYDYWGQGTQVTVSS",
+          "midline": "QVQLQESGGGLVQ GGSLRLSCAASG+ SS   M WFRQAPGKERE VA +     +TY  DSVKGRFTIS++NAK+TV LQMNSLKPEDTA+YYCAAD F  PT  +VT  +  + YWGQGTQVTVSS",
+          "identity_percentage": 0.7209,
+          "coverage": 1.0,
+          "e_value": 5.99254e-59,
+          "bit_score": 181.415,
+          "alignment_length": 128,
+          "gaps": 3,
+          "positive": 103,
+          "query_from": 1,
+          "query_to": 128,
+          "hit_from": 1,
+          "hit_to": 127
+        }
+      ]
+    },
+    "query_chain_assessment": {
+      "source_kind": "local_sequence_identity_check_of_native_output",
+      "actual_query_chain": "B",
+      "actual_query_role": "KN035 VHH",
+      "actual_query_length": 128,
+      "all_ungapped_query_sequences_equal_master_chain_B": true,
+      "native_entity_id": 1,
+      "native_entity_id_resolves_to_chain": "A",
+      "native_UI_method_label": "Searched by antigen sequence similarity",
+      "entity_id_and_UI_label_disagree_with_query_sequence": true,
+      "residue_mapping_by_native_entity_id_permitted": false
+    },
+    "historical_observations": [
+      {
+        "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+        "project_id": "342604060136448",
+        "project_url": "https://mos.moleculemind.com/?projectId=342604060136448",
+        "snapshot": {
+          "native_UI_text": "No significant homologs found.",
+          "native_record": {
+            "source": "raw/native_task_342604577018880/record.json",
+            "native_field_path": "annotations.homology",
+            "status": "present_but_empty",
+            "n_entries": 0,
+            "raw": []
+          },
+          "note": "Separate pre-analysis binder BLAST hits are retained in raw export, not substituted for antigen Homologs panel."
+        }
+      }
+    ],
+    "note": "2026-10-29 same-input, byte-identical-prompt native rerun produced three record/UI entries. Original 2026-10-21 empty record/UI remain preserved. These returned alignments are KN035 chain B similarity hits, despite native entity_id=1 and antigen UI wording; do not label them as verified PD-L1 chain A homologs.",
+    "limitations": [
+      "5JDS_B is a same-sequence KN035 hit (128/128), not independent evidence of an evolutionary relative or experimentally shared binding function.",
+      "New native Description says crystal structure at 1.7 A, but the imported MMFold_1.cif remains the same MOS prediction. Experimental reference metadata must not change input provenance.",
+      "Only the canonical Homologs snapshot is refreshed here. Other module values, descriptions, native_tasks and observed_utc remain the original 2026-10-21 observation."
+    ]
+  },
+  "epitope": {
+    "chain": "A",
+    "label_seq_ids": [
+      38,
+      40,
+      42,
+      45,
+      47,
+      50,
+      52,
+      53,
+      57,
+      60,
+      97,
+      99,
+      101,
+      103,
+      104,
+      105,
+      106,
+      107,
+      109
+    ],
+    "count": 19
+  },
+  "paratope": {
+    "chain": "B",
+    "label_seq_ids": [
+      27,
+      29,
+      30,
+      32,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      108,
+      109,
+      111,
+      113,
+      114,
+      115,
+      116
+    ],
+    "count": 18
+  },
+  "CDR_by_scheme": {
+    "IMGT": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 26,
+        "end": 33
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 51,
+        "end": 58
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 97,
+        "end": 117
+      }
+    ],
+    "Kabat": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 31,
+        "end": 35
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 50,
+        "end": 66
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 99,
+        "end": 117
+      }
+    ],
+    "Chothia": [
+      {
+        "name": "H-CDR1 (chain B)",
+        "start": 26,
+        "end": 32
+      },
+      {
+        "name": "H-CDR2 (chain B)",
+        "start": 52,
+        "end": 57
+      },
+      {
+        "name": "H-CDR3 (chain B)",
+        "start": 99,
+        "end": 117
+      }
+    ]
+  },
+  "interaction_table_count": 44,
+  "native_interaction_svg": "raw/native-ui/interaction-plot-1.svg",
+  "native_datasets": {
+    "MutXevo.csv": {
+      "rows": 4920,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+      "source_kind": "native_UI_download",
+      "every_row_WT_and_numbering_verified": true
+    },
+    "MutXstruct.csv": {
+      "rows": 4920,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+      "source_kind": "native_UI_download",
+      "every_row_WT_and_numbering_verified": true
+    },
+    "MutXseq.csv": {
+      "rows": 4920,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+      "source_kind": "native_UI_download",
+      "every_row_WT_and_numbering_verified": true
+    },
+    "MutXaff.csv": {
+      "rows": 4674,
+      "columns": [
+        "",
+        "mutstr",
+        "ddG_pred",
+        "score_ddg",
+        "rank"
+      ],
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+      "source_kind": "native_UI_download",
+      "every_row_WT_and_numbering_verified": true
+    }
+  },
+  "native_missing_or_empty": [
+    "Domain absent",
+    "PTM absent",
+    "UniProt Feature empty",
+    "AbAn/AbScN/ParaDt CSV not produced by native task"
+  ],
+  "independent_antibody_supplement_status": "completed",
+  "metrics": {
+    "ddG_pred": {
+      "direction": "lower predicts improved binding relative to WT",
+      "unit": null,
+      "unit_status": "requires explicit schema or backend evidence; raw CSV has no unit column",
+      "experimental": false
+    },
+    "MutXstruct/MutXseq/MutXevo": {
+      "unit": "dimensionless_model_score",
+      "direction": "must use corresponding task/model semantics; never experimental stability/expression/solubility"
+    }
+  },
+  "limitations": [
+    "Native Description confidence high is classification confidence, not pLDDT.",
+    "Description says 51 contacts, typed interaction table has 44 records. Preserve both; local 5 A residue-pair geometry corroborates 51 separately.",
+    "Local 4.5 A contacts have 18 antigen and 17 binder residues, distinct from native annotation at 5 A.",
+    "Independent antibody CSV supplement is not original native UI output."
+  ],
+  "independent_antibody_tasks": [
+    {
+      "slug": "aban_342606092895232",
+      "task_type": "Antibody Region Annotation",
+      "task_id": "342606092895232",
+      "task_name": "kn035-AbAn-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:46Z",
+      "duration": "20s",
+      "csv": "abnumber_heavy.csv",
+      "csv_sha256": "104920c75790e964adab48f2b9c8f829bca1a28486e342cb625d26786a332454",
+      "csv_bytes": 4023,
+      "dir": "tasks/aban_342606092895232",
+      "payload": {
+        "schemes": [
+          "imgt",
+          "kabat",
+          "chothia"
+        ],
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "slug": "abscn_language_342606094599168",
+      "task_type": "Antibody Language Scoring",
+      "task_id": "342606094599168",
+      "task_name": "kn035-AbScN-language-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:46Z",
+      "duration": "3s",
+      "csv": "ablang_heavy_scores.csv",
+      "csv_sha256": "2f2e04d6a82b25fc9301aedda472ef633bbe54311b093faafe349d6ce0b23c5b",
+      "csv_bytes": 65774,
+      "dir": "tasks/abscn_language_342606094599168",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "heavy_sequence_id": "H",
+        "light_sequence_id": "L"
+      }
+    },
+    {
+      "slug": "abscn_nativeness_342606097245184",
+      "task_type": "Antibody Nativeness Evaluation",
+      "task_id": "342606097245184",
+      "task_name": "kn035-AbScN-nativeness-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:47Z",
+      "duration": "3s",
+      "csv": "abnativ_heavy.csv",
+      "csv_sha256": "40dcd8c14bddd71e9ff161a5676b0c01f68caca30a14dd9753f2a8105ae33f58",
+      "csv_bytes": 8137,
+      "dir": "tasks/abscn_nativeness_342606097245184",
+      "payload": {
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null
+      }
+    },
+    {
+      "slug": "paradt_342606100722688",
+      "task_type": "Paratope Identification",
+      "task_id": "342606100722688",
+      "task_name": "kn035-ParaDt-independent",
+      "status": "succeed",
+      "started": "2026-10-21T02:27:48Z",
+      "duration": "25s",
+      "csv": "paragraph_heavy.csv",
+      "csv_sha256": "fc23351b15b536a70697c5861a46de73d75e9f32ff69a2ad9ba8ffad10532028",
+      "csv_bytes": 3081,
+      "dir": "tasks/paradt_342606100722688",
+      "payload": {
+        "pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+        "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "light_sequence": null,
+        "is_pdb_numbered": false,
+        "pdb_heavy_chain": "B",
+        "pdb_light_chain": "L"
+      },
+      "submitted_pdb_path": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+      "effective_pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif"
+    }
+  ],
+  "independent_antibody_csv_rows": {
+    "abnumber_heavy.csv": 128,
+    "ablang_heavy_scores.csv": 2560,
+    "abnativ_heavy.csv": 128,
+    "paragraph_heavy.csv": 128
+  },
+  "independent_antibody_mapping": "raw/antibody-csv-compact-to-mmfold1.json",
+  "independent_antibody_dataset": "raw/independent-antibody-datasets.json",
+  "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+  "time_zone": "Asia/Jakarta",
+  "residue_highlights": "residues-on-mmfold1.json",
+  "numbering_contract": "MMFold_1 label_asym_id + label_seq_id; never compact antibody/UniProt/IMGT identifiers",
+  "latest_rerun": {
+    "run_id": "20261029",
+    "observed_date_local": "2026-10-29",
+    "time_zone": "Asia/Jakarta",
+    "recorded_at_utc": "2026-10-29T06:04:19.840670+00:00",
+    "project_id": "345488380847104",
+    "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+    "mos_object_id": "345488780645376",
+    "mos_work_id": "345488784675840",
+    "mmetrics_id": "d8d4e831-5b7a-41bc-868a-93dc27bc3cd5",
+    "task_ids": [
+      "345488784917504",
+      "345489060729856"
+    ],
+    "task_status": "SUCCEED",
+    "results": "reruns/20261029/results.json",
+    "readme": "reruns/20261029/README.md",
+    "scope": "Latest native Homologs observation only; other canonical modules and native_tasks retain their 2026-10-21 snapshot."
+  }
+}

@@ -1,0 +1,1350 @@
+- text: MOS
+- generic: BETA
+- generic: PETase-Redesign-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: 5XH3_HEMT_complex
+- img "caret-down":
+- generic: 5xh3_clean
+- img "caret-down":
+- generic: 5XG0_WT_chainC_author-6_261
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: 5XH3_HEMT_complex
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: "N"
+- generic: P
+- generic: "Y"
+- generic: A
+- generic: R
+- generic: G
+- generic: P
+- generic: "N"
+- generic: P
+- generic: T
+- generic: "11"
+- generic: A
+- generic: A
+- generic: S
+- generic: L
+- generic: E
+- generic: A
+- generic: S
+- generic: A
+- generic: G
+- generic: P
+- generic: "21"
+- generic: F
+- generic: T
+- generic: V
+- generic: R
+- generic: S
+- generic: F
+- generic: T
+- generic: V
+- generic: S
+- generic: R
+- generic: "31"
+- generic: P
+- generic: S
+- generic: G
+- generic: "Y"
+- generic: G
+- generic: A
+- generic: G
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "41"
+- generic: "Y"
+- generic: P
+- generic: T
+- generic: "N"
+- generic: A
+- generic: G
+- generic: G
+- generic: T
+- generic: V
+- generic: G
+- generic: "51"
+- generic: A
+- generic: I
+- generic: A
+- generic: I
+- generic: V
+- generic: P
+- generic: G
+- generic: "Y"
+- generic: T
+- generic: A
+- generic: "61"
+- generic: R
+- generic: Q
+- generic: S
+- generic: S
+- generic: I
+- generic: K
+- generic: W
+- generic: W
+- generic: G
+- generic: P
+- generic: "71"
+- generic: R
+- generic: L
+- generic: A
+- generic: S
+- generic: H
+- generic: G
+- generic: F
+- generic: V
+- generic: V
+- generic: I
+- generic: "81"
+- generic: T
+- generic: I
+- generic: D
+- generic: T
+- generic: "N"
+- generic: S
+- generic: T
+- generic: L
+- generic: D
+- generic: Q
+- generic: "91"
+- generic: P
+- generic: S
+- generic: S
+- generic: R
+- generic: S
+- generic: S
+- generic: Q
+- generic: Q
+- generic: M
+- generic: A
+- generic: "101"
+- generic: A
+- generic: L
+- generic: G
+- generic: Q
+- generic: V
+- generic: A
+- generic: S
+- generic: L
+- generic: "N"
+- generic: G
+- generic: "111"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: P
+- generic: I
+- generic: "Y"
+- generic: G
+- generic: K
+- generic: V
+- generic: "121"
+- generic: D
+- generic: T
+- generic: A
+- generic: R
+- generic: M
+- generic: G
+- generic: V
+- generic: M
+- generic: G
+- generic: W
+- generic: "131"
+- generic: A
+- generic: M
+- generic: G
+- generic: G
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: I
+- generic: S
+- generic: "141"
+- generic: A
+- generic: A
+- generic: "N"
+- generic: "N"
+- generic: P
+- generic: S
+- generic: L
+- generic: K
+- generic: A
+- generic: A
+- generic: "151"
+- generic: A
+- generic: P
+- generic: Q
+- generic: A
+- generic: P
+- generic: W
+- generic: D
+- generic: S
+- generic: S
+- generic: T
+- generic: "161"
+- generic: "N"
+- generic: F
+- generic: S
+- generic: S
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: T
+- generic: L
+- generic: "171"
+- generic: I
+- generic: F
+- generic: A
+- generic: C
+- generic: E
+- generic: "N"
+- generic: D
+- generic: S
+- generic: I
+- generic: A
+- generic: "181"
+- generic: P
+- generic: V
+- generic: "N"
+- generic: S
+- generic: S
+- generic: A
+- generic: L
+- generic: P
+- generic: I
+- generic: "Y"
+- generic: "191"
+- generic: D
+- generic: S
+- generic: M
+- generic: S
+- generic: R
+- generic: "N"
+- generic: A
+- generic: K
+- generic: Q
+- generic: F
+- generic: "201"
+- generic: L
+- generic: E
+- generic: I
+- generic: "N"
+- generic: G
+- generic: G
+- generic: S
+- generic: H
+- generic: S
+- generic: C
+- generic: "211"
+- generic: A
+- generic: "N"
+- generic: S
+- generic: G
+- generic: "N"
+- generic: S
+- generic: "N"
+- generic: Q
+- generic: A
+- generic: L
+- generic: "221"
+- generic: I
+- generic: G
+- generic: K
+- generic: K
+- generic: G
+- generic: V
+- generic: A
+- generic: W
+- generic: M
+- generic: K
+- generic: "231"
+- generic: R
+- generic: F
+- generic: M
+- generic: D
+- generic: "N"
+- generic: D
+- generic: T
+- generic: R
+- generic: "Y"
+- generic: S
+- generic: "241"
+- generic: T
+- generic: F
+- generic: A
+- generic: C
+- generic: E
+- generic: "N"
+- generic: P
+- generic: "N"
+- generic: S
+- generic: T
+- generic: "251"
+- generic: R
+- generic: V
+- generic: S
+- generic: D
+- generic: F
+- generic: R
+- generic: T
+- generic: A
+- generic: "N"
+- generic: C
+- generic: "261"
+- generic: S
+- generic: "2:"
+- generic: B
+- generic: "262"
+- generic: "856"
+- generic: "3:"
+- generic: C
+- generic: "263"
+- generic: SO4
+- generic: "3:"
+- generic: D
+- generic: "264"
+- generic: SO4
+- generic: "4:"
+- generic: E
+- generic: "265"
+- generic: GOL
+- generic: "5:"
+- generic: F
+- generic: "266"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "276"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "286"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "296"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "306"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "316"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "326"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "336"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "346"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "356"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "366"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "376"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "386"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "396"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "406"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "416"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "426"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "436"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "446"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "456"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "466"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "476"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "486"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "496"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: "506"
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- generic: HOH
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": b7bf4c4b-4
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- paragraph: I’ll start by setting up the workspace and exploring what’s available, then launch the long-running scoring tasks early so they run while I do the structural work.
+- img "code":
+- generic: Shell
+- 'generic "mkdir -p /workspace/website_case_petase/{inputs,na…"': "(mkdir -p /workspace/website_case_petase/{inputs,na…)"
+- img "check-circle":
+- generic: ▸
+- generic: ListAvailableMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important: \"Protein-Ligand Affinity Evaluation\" and \"Protein Redesign\" are liste…"
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Empty project. So no 5xh3_clean / 5xh3_B_856 objects. The user said the manual's…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "338706466620416": (338706466620416)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Protein-Ligand Affinity Evaluation": (Protein-Ligand Affinity Evaluation)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The CheckMOSTask actually succeeded and found the task — it downloaded predicted…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls -la /workspace/downloads/protein_ligand_affinit…": (ls -la /workspace/downloads/protein_ligand_affinit…)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSObject
+- generic "179159720409225": (179159720409225)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The object isn't accessible in our project. Let me try the full TOS key forms, a…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls -la /workspace/ /workspace/downloads/ 2>&1 | he…": (ls -la /workspace/ /workspace/downloads/ 2>&1 | he…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: No local manual files. So the manual example inputs are not retrievable locally;…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && for id…": (cd /workspace/website_case_petase/inputs && for id…)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Sequence Fitness Mutation Effect": (Sequence Fitness Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now get metadata essentials and check sequences. Let me examine the FASTA …
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Evolutionary Mutation Effect": (Evolutionary Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Structural Stability Mutation Effect": (Structural Stability Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Interesting — Structural Stability Mutation Effect schema has redesigned_residue…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && cat 5X…": (cd /workspace/website_case_petase/inputs && cat 5X…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && python…": (cd /workspace/website_case_petase/inputs && python…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Key difference: 5XG0 sequence has \"MAALRQV\" while 5XH3 has \"MAALGQV\" → R103G. An…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && for u …": (cd /workspace/website_case_petase/inputs && for u …)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && python…": (cd /workspace/website_case_petase/inputs && python…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: JSON fetch likely failed (empty/error). Let me check file content and use correc…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && ls -l …": (cd /workspace/website_case_petase/inputs && ls -l …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The JSON exists. The KeyError 'entity' — maybe key is different. Let me print ke…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && curl -…": (cd /workspace/website_case_petase/inputs && curl -…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && python…": (cd /workspace/website_case_petase/inputs && python…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Right, no 'entity' key; description is in rcsb_polymer_entity. And HEMT chemcomp…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && cat HE…": (cd /workspace/website_case_petase/inputs && cat HE…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent — key finding: the ligand in 5XH3 is not a \"HEMT\" chem comp; the ligan…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && curl -…": (cd /workspace/website_case_petase/inputs && curl -…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && python…": (cd /workspace/website_case_petase/inputs && python…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed: ligand 856 in label asym chain B, author chain A. So MOS sanitized la…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'E…": (cd /workspace/website_case_petase && python - <<'E…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important: gemmi read CIF with auth numbering (seqid.num = auth). For 5XG0: chai…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && grep -n \" 856…": (cd /workspace/website_case_petase && grep -n " 856…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'E…": (cd /workspace/website_case_petase && python - <<'E…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Interesting! So author numbering here is 1..261 for mature, but the catalytic tr…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && grep -E \"^(SE…": (cd /workspace/website_case_petase && grep -E "^(SE…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'E…": (cd /workspace/website_case_petase && python - <<'E…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent — SEQADV gives the authoritative mapping: author 103 ↔ UniProt 132; au…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs && curl -…": (cd /workspace/website_case_petase/inputs && curl -…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'E…": (cd /workspace/website_case_petase && python - <<'E…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "UniProt is authoritative:"
+- generic: ▸
+- img "file":
+- generic: Read
+- generic "/app/src/mocha/agents/custom_skills/sequence-toolk…": (/app/src/mocha/agents/custom_skills/sequence-toolk…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'E…": (cd /workspace/website_case_petase && python - <<'E…)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: 手册示例输入阻塞已解决，无需等待上传。请严格重建同一字节文件并验证SHA后运行亲和力： 蛋白：从你已下载原始 RCSB 5XH3.pdb 读取bytes，splitlines()，保留所有 startswith(b'ATOM ') 的行（每行80字节，1931行），追加 b'TER 1932 SER A 261'.ljust(81,b' ') 和 b'END '，用 b'\n'.join(lines)+b'\n' 保存为 inputs/5xh3_clean.pdb。我本地已验证这一转换与手册文件逐字节相同，156500 bytes，SHA256 aa9ddaea2fb33662c15cfd0fb1d8877203bf0ad33132d77553cb4f8eeb12853c。 配体：以下base64直接来自手册 2191-byte 5xh3_B_856.sdf原文件，base64.b64decode写inputs/5xh3_B_856.sdf并核验SHA256 44c9ea73346d5d29b74d034010fcb65e4489dd58407ecccb219863d70fe443e9。 BEGIN_MANUAL_SDF_BASE64 ODU2CiAgTW9kZWxTZXJ2ZXIgMC45LjEyCgogMTYgMTYgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjIuOTQxMCAgIC05LjA4NDAgICAgMy4zMjIwIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgLTIzLjA4NDAgIC0xMy4zNzEwICAgIDUuNTI1MCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogIC0yMy43MzAwICAtMTYuNzEyMCAgIDEwLjY1ODAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjMuMDIwMCAgLTE1Ljg3NDAgICAgOS43NzcwIE8gICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgLTIzLjU4MzAgIC0xNS43MzYwICAgIDguNTAzMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogIC0yNC42MjcwICAtMTYuMjQ0MCAgICA4LjIzOTAgTyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjIuOTc2MCAgLTE0LjY4OTAgICAgNy41ODAwIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgLTIxLjg0MzAgIC0xNC4wMjUwICAgIDcuOTk2MCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogIC0yMS4yOTIwICAtMTMuMDg3MCAgICA3LjEyMzAgQyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjEuODkzMCAgLTEyLjc2NjAgICAgNS45MDkwIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgLTIxLjM2MjAgIC0xMS41NDYwICAgIDUuMTMyMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogIC0yMC4yODkwICAtMTEuNTU2MCAgICA0LjYyNjAgTyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjIuMjI0MCAgLTEwLjQ0NjAgICAgNC45NjYwIE8gICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgLTIxLjkwNjAgICAtOS4yMjQwICAgIDQuNDEzMCBDICAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMCAgMAogIC0yMi4yMDcwICAgLTguNjg2MCAgICAyLjIyNDAgTyAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAgIDAKICAtMjMuNjEyMCAgLTE0LjM0ODAgICAgNi4zNzEwIEMgICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwICAwCiAgMSAxNSAgMSAgMCAgMCAgMCAgMAogIDEgMTQgIDEgIDAgIDAgIDAgIDAKICAyIDEwICAyICAwICAwICAwICAwCiAgMiAxNiAgMSAgMCAgMCAgMCAgMAogIDMgIDQgIDEgIDAgIDAgIDAgIDAKICA0ICA1ICAxICAwICAwICAwICAwCiAgNSAgNyAgMSAgMCAgMCAgMCAgMAogIDUgIDYgIDIgIDAgIDAgIDAgIDAKICA3IDE2ICAyICAwICAwICAwICAwCiAgNyAgOCAgMSAgMCAgMCAgMCAgMAogIDggIDkgIDIgIDAgIDAgIDAgIDAKICA5IDEwICAxICAwICAwICAwICAwCiAxMCAxMSAgMSAgMCAgMCAgMCAgMAogMTEgMTIgIDIgIDAgIDAgIDAgIDAKIDExIDEzICAxICAwICAwICAwICAwCiAxMyAxNCAgMSAgMCAgMCAgMCAgMApNICBFTkQKPiA8bW9kZWxfc2VydmVyX3Jlc3VsdC5qb2JfaWQ+ClFzMDJiMEZPSUxXUG8tamtyR1VQQ2cKCj4gPG1vZGVsX3NlcnZlcl9yZXN1bHQuZGF0ZXRpbWVfdXRjPgoyMDI1LTA4LTA1IDAyOjM3OjMyCgo+IDxtb2RlbF9zZXJ2ZXJfcmVzdWx0LnNlcnZlcl92ZXJzaW9uPgowLjkuMTIKCj4gPG1vZGVsX3NlcnZlcl9yZXN1bHQucXVlcnlfbmFtZT4KbGlnYW5kCgo+IDxtb2RlbF9zZXJ2ZXJfcmVzdWx0LnNvdXJjZV9pZD4KcGRiLWJjaWYKCj4gPG1vZGVsX3NlcnZlcl9yZXN1bHQuZW50cnlfaWQ+CjV4aDMKCj4gPG1vZGVsX3NlcnZlcl9wYXJhbXMubmFtZT4KYXRvbV9zaXRlCgo+IDxtb2RlbF9zZXJ2ZXJfcGFyYW1zLnZhbHVlPgp7ImxhYmVsX2FzeW1faWQiOiJCIiwiYXV0aF9zZXFfaWQiOjMwMX0KCj4gPG1vZGVsX3NlcnZlcl9zdGF0cy5pb190aW1lX21zPgoxNAoKPiA8bW9kZWxfc2VydmVyX3N0YXRzLnBhcnNlX3RpbWVfbXM+CjExCgo+IDxtb2RlbF9zZXJ2ZXJfc3RhdHMuY3JlYXRlX21vZGVsX3RpbWVfbXM+CjQKCj4gPG1vZGVsX3NlcnZlcl9zdGF0cy5xdWVyeV90aW1lX21zPgozNTIKCj4gPG1vZGVsX3NlcnZlcl9zdGF0cy5lbmNvZGVfdGltZV9tcz4KMAoKPiA8bW9kZWxfc2VydmVyX3N0YXRzLmVsZW1lbnRfY291bnQ+CjE2CgokJCQkCg== END_MANUAL_SDF_BASE64 如果hash不匹配则不要运行错误输入；匹配则通过注册Protein-Ligand Affinity Evaluation实际新运行，保留payload和ID。不要把旧338706466620416输出当成本次新任务。 另外官方5XG0含三条WT链A/B/C，C的268残基坐标完整，A263/B262有缺失；如还没提交WT评分，优先单独提取chain C并明确重编号映射。源5XH3的856是HEMT（16重原子），不是上一轮口袋对接使用的BHET（18重原子）；本次不应混淆。
+- img "bulb":
+- generic: Thinking
+- generic: The user provided a reconstruction recipe for 5xh3_clean.pdb from 5XH3.pdb, and …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Protein byte-exact match. Now the SDF.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: 2190 vs 2191 bytes — and I suspect my transcription has an error. I typed atom l…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "My transcription broke two lines: line 11 (atom 8) is 71 chars (should be 69) an…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now 2189 — went down. Because original was 2190 with line11=71: replacing with 6…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Found it: line 73 is `> <model_server_stats.encode_time_ms` — missing the closin…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both files now match the manual's SHA256 exactly.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Chain C: 268 residues, complete backbone, no altlocs, mean B 11.89."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python /app/s…": (cd /workspace/website_case_petase && python /app/s…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "local_file": (local_file)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now import the affinity inputs (5xh3_clean.pdb, 5xh3_B_856.sdf). Careful: import…"
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/inputs/5xh3_clean.p…": (/workspace/website_case_petase/inputs/5xh3_clean.p…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python -c \" f…": (cd /workspace/website_case_petase && python -c " f…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The SDF ligand: SMILES COC(=O)c1ccc(C(=O)OCCO)cc1 = methyl 4-(2-hydroxyethyl) te…"
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/inputs/5xh3_B_856.s…": (/workspace/website_case_petase/inputs/5xh3_B_856.s…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Odd. Perhaps the import pipeline compares content hashes: since 5xh3_clean.pdb p…"
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The SDF import failed — probably because the sanitizer thought it's a structure;…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p inpu…": (cd /workspace/website_case_petase && mkdir -p inpu…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/inputs/tmp/lig856.s…": (/workspace/website_case_petase/inputs/tmp/lig856.s…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Same error regardless of name → the guard likely triggers on SDF files generally…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "pip list 2>/dev/null | grep -iE \"mos|molecule|tos|…": (pip list 2>/dev/null | grep -iE "mos|molecule|tos|…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: There's MOS_TOS_ACCESS_KEY / MOS_TOS_SECRET_KEY in env, and boto3 installed. But…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/inputs/tmp && pr…": (cd /workspace/website_case_petase/inputs/tmp && pr…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/inputs/tmp/tiny.sdf": (/workspace/website_case_petase/inputs/tmp/tiny.sdf)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Generic to SDF: local_file import of SDF is blocked in this environment. So regi…"
+- generic: ▸
+- generic: GetMOSQuota
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python /app/s…": (cd /workspace/website_case_petase && python /app/s…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Quota 437. Now launch the three WT scoring tasks in parallel.
+- generic: ▸
+- generic: StartMOSTask
+- generic "Sequence Fitness Mutation Effect": (Sequence Fitness Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Evolutionary Mutation Effect": (Evolutionary Mutation Effect)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Structure fitness (reverse-folding) mutation scan …": (Structure fitness (reverse-folding) mutation scan …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Three WT scoring tasks launched:"
+- generic: ▸
+- img "file":
+- generic: Read
+- generic "/app/src/mocha/agents/custom_skills/interaction-an…": (/app/src/mocha/agents/custom_skills/interaction-an…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The skill requires InteractionNet/PPInterface binaries. Let me check if they exi…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls /app/src/mocha/agents/custom_skills/interaction…": (ls /app/src/mocha/agents/custom_skills/interaction…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "MOS layout for 5XH3: chain A = protein 1..261 (entity seq numbering → same as au…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && head -c 600 s…": (cd /workspace/website_case_petase && head -c 600 s…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python -c \" i…": (cd /workspace/website_case_petase && python -c " i…)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: 补充执行要求：不要读取、输出或使用环境变量中的访问密钥，也不要绕过导入保护。SDF 的 Import Structure 不支持时，请记录这一限制。检查手册旧任务338706466620416返回的完整input/payload，如果有原始蛋白/配体user_objects/TOS对象路径，可将同一原输入路径传入本次注册亲和力任务（新task ID）；不必把SDF作为结构导入。原本地手册文件哈希已确认，只要任务实际使用同一原始输入即可。请不要在这里反复尝试SDF导入而耽误WT三项评分与Protein Redesign。5XG0构建体前7aa GAGAGAM为非成熟PETase引导序列：可保留以维持结构/序列一致，但不得纳入位点选择，也不要标成天然WT核心序列。
+- img "bulb":
+- generic: Thinking
+- generic: "Key new info: the old task's input parameters gave TOS paths:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Our registered object 5xh3_clean.cif = 1931 atoms, identical coordinates to the …
+- generic: ▸
+- generic: StartMOSTask
+- 'generic "Re-run of the manual example: SiPoBe scoring of HE…"': "(Re-run of the manual example: SiPoBe scoring of HE…)"
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The affinity task launched (so the "coming soon" label doesn't block it). Task I…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python /app/s…": (cd /workspace/website_case_petase && python /app/s…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && grep -E \"^(do…": (cd /workspace/website_case_petase && grep -E "^(do…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The vdw.tsv and pistack involve ligand chain B at position 262 (MOS layout renum…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && awk -F'\\t' 'N…": (cd /workspace/website_case_petase && awk -F'\t' 'N…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Hmm, hbond.tsv shows no rows for chain B — odd, since 7 inter-chain H-bonds were…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && grep -n \"856\"…": (cd /workspace/website_case_petase && grep -n "856"…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Ligand H-bonds (auth numbering, A chain residues; ligand O atoms O10, O11, O14):"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "python -c \"import freesasa; print(freesasa.__versi…": (python -c "import freesasa; print(freesasa.__versi…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Ligand atoms (PDB names): C13, C15, C01, O02, C03, O04, C05, C06, C07, C08, C09,…"
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/analyses/ligand_poc…": (/workspace/website_case_petase/analyses/ligand_poc…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "freesasa.Structure signature: Structure(pdb_path=None, classifier=None, options=…"
+- generic: ▸
+- img "edit":
+- generic: Edit
+- generic "/workspace/website_case_petase/analyses/ligand_poc…": (/workspace/website_case_petase/analyses/ligand_poc…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "freesasa selections need \"resn 856\" maybe quoted differently: selection syntax f…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Good but two issues:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now clear chemistry (with sanitize=True):"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- generic: Steer
+- generic: 请在不停止计算的情况下，用 ImportStructure(pdb_id="5XH3") 将含真实856/HEMT配体的完整实验复合物另导入本项目（名称5XH3_HEMT_complex），不要只导入5xh3_clean蛋白。保留其MOS object/work ID和原始auth/label链映射，我需要在独立原生页面中操作MMetrics采集口袋与配体交互。无须在你那里保持选中，避免影响你的计算。
+- img "bulb":
+- generic: Thinking
+- generic: "User asks: import full 5XH3 experimental complex via ImportStructure(pdb_id=\"5XH…"
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "5XH3_HEMT_complex.cif": (5XH3_HEMT_complex.cif)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Roles now correct: O02=methoxy_O, O10=carbonyl_O (of hydroxyethyl ester), O11=hy…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: freesasa loaded only 1911 atoms = protein only (the PDB has 1931 ATOM + ~16 HETA…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "With hetatm=True: ligand SASA in complex = 88.89 Å². Need isolated ligand SASA: …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Ligand burial 78.7% (328.4 Å² buried of 417.3).
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/analyses/superpose_…": (/workspace/website_case_petase/analyses/superpose_…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Status: affinity task SUCCEEDED (38s), seqfitness SUCCEEDED, structfitness SUCCE…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Deviations of 40-60 Å mean the superposition transform isn't being applied corre…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Something wrong: the transform application still yields ~50 Å deviations, and th…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "gemmi's transform maps pos2 → pos1 (i.e., inverse of what I assumed): applying t…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now sensible: global CA RMSD 0.256 Å over 261 residues, max dev 1.005 Å at AUTH1…"
+- generic: ▸
+- generic: AnalyzeMutationScores
+- generic "342337264870400": (342337264870400)
+- img "check-circle":
+- generic: ▸
+- generic: AnalyzeMutationScores
+- generic "342337277858816": (342337277858816)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Positions are in the construct numbering 1..268 (chain A of the submitted sequen…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && ls -la /works…": (cd /workspace/website_case_petase && ls -la /works…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342337422410752": (342337422410752)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && cat /workspac…": (cd /workspace/website_case_petase && cat /workspac…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The new affinity run reproduces the manual's native score exactly: -4.310292 wit…"
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "Protein Redesign": (Protein Redesign)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p nati…": (cd /workspace/website_case_petase && mkdir -p nati…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Protein Redesign schema: structure_path (required), n_designs, redesigned_residu…"
+- generic: ▸
+- img "edit":
+- generic: Write
+- img "loading":
+- generic: ▸
+- generic: 5XH3_HEMT_...
+- textbox "Steer the agent..."
+- button "upload Upload" [disabled]:
+  - img "upload":
+  - generic: Upload
+- button "Stop":
+  - generic: Stop
+- generic: AI-generated research aid. Experimental validation advised

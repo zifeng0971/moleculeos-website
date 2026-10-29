@@ -1,0 +1,29 @@
+{
+  "seed": 111,
+  "task_id": "342606137910272",
+  "task_name": "kn035_c05_denovo_seed111",
+  "payload_file": "payloads/payload_seed111.json",
+  "files": [
+    {
+      "file": "outputs/seed111/179254989623579_output.cif",
+      "sha256": "d465d788a706f8983a801a5c51cc8b7aa6cbee99140c50092e42f669d8d93998",
+      "bytes": 61662
+    },
+    {
+      "file": "outputs/seed111/179254989703386_aligned.cif",
+      "sha256": "b1199c034dfaf990d38a252e921bf166743c2b8e9b98f74f2de94cf91fb607c0",
+      "bytes": 117324
+    }
+  ],
+  "fasta": {
+    "file": "outputs/seed111/sequences.fasta",
+    "sha256": "e18cf45159029faed73397b6f2a9ff2f626db5c4d613ca213a3a79888eea480b"
+  },
+  "sequences": {
+    "backbone_virtual_gly:A": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+    "backbone_virtual_gly:B": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "designed_sequence_complex:A": "AAAAAAAAAAAAAAAEAAAAAAAAAAAEAEAAALRAEEEKREAELRKLQEKKNEEKRLARIAAWKAAAAAAAL",
+    "designed_sequence_complex:B": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+  },
+  "confidence_metrics": "MISSING - the task returned only two CIF files; no ipTM, pLDDT, PAE, or score JSON was delivered"
+}

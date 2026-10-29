@@ -1,0 +1,41 @@
+{
+ "method": "gemmi.Superpose.ca_align on 261 matched CA atoms (Mocha built-in, deterministic)",
+ "wt_structure": "5XG0 chain C (author -6..261, mature 1..261)",
+ "mutant_structure": "5XH3 chain A (author 1..261, R103G/S131A, ligand 856)",
+ "matched_CA": 261,
+ "sequence_differences": [
+  [
+   103,
+   "R",
+   "G"
+  ],
+  [
+   131,
+   "S",
+   "A"
+  ]
+ ],
+ "global_ca_rmsd_A": 0.256,
+ "global_ca_rmsd_A_median_dev": 0.151,
+ "global_ca_max_dev_A": 1.005,
+ "global_ca_max_dev_auth": 164,
+ "pocket_ca_rmsd_A": 0.39,
+ "pocket_ca_max_dev_A": 0.939,
+ "catalytic_ca_rmsd_A": 0.193,
+ "wt_catalytic_geometry_A": {
+  "catalytic_Ser131_OG__His208_NE2_A": 2.909,
+  "catalytic_His208_ND1__Asp177_OD1_A": 3.037,
+  "catalytic_His208_ND1__Asp177_OD2_A": 2.652,
+  "oxyanion_Tyr58_N__Ser131_OG_A": 5.595,
+  "oxyanion_Met132_N__Ser131_OG_A": 3.357,
+  "disulfide_Cys174_SG__Cys210_SG_A": 2.056,
+  "disulfide_Cys244_SG__Cys260_SG_A": 2.052
+ },
+ "x5h3_Ala131_CB_min_dist_to_ligand_A": 3.01,
+ "wt_Ser131_OG_after_superpose_min_dist_to_ligand_A": 2.513,
+ "wt_Ser131_OG_after_superpose_xyz": [
+  -20.51,
+  -10.023,
+  6.941
+ ]
+}

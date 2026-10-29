@@ -1,0 +1,57 @@
+/* /platform: a quiet spec sheet. Type and hairlines do the work; the only colour is a small key square per model. */
+.pm { --pm-gap: clamp(80px, 11vw, 140px); padding-block: clamp(40px, 6vw, 72px) var(--pm-gap); }
+.pm-head { max-width: 760px; }
+.pm-eyebrow { font-size: 13px; color: var(--text-tertiary); }
+.pm h1 { margin-top: 16px; font-size: clamp(34px, 4.6vw, 56px); font-weight: 600; line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+.pm-lead { margin-top: 20px; max-width: 62ch; font-size: clamp(16px, 1.4vw, 18px); line-height: 1.75; color: var(--text-secondary); text-wrap: pretty; }
+
+/* The stack: four plain columns under one rule. */
+.pm-stack { margin-top: clamp(40px, 6vw, 72px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; list-style: none; padding: 0; border-top: 1px solid var(--hairline-strong); counter-reset: layer; }
+.pm-stack li { counter-increment: layer; padding: 18px 24px 0 0; }
+.pm-stack li::before { content: counter(layer, decimal-leading-zero); display: block; font: 500 12px/1 ui-monospace, 'SF Mono', Menlo, monospace; color: var(--text-tertiary); }
+.pm-stack b { display: block; margin-top: 14px; font-size: 16px; font-weight: 600; }
+.pm-stack span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.65; color: var(--text-secondary); }
+
+.pm-section { margin-top: var(--pm-gap); }
+.pm h2 { font-size: clamp(26px, 3vw, 36px); font-weight: 600; line-height: 1.25; letter-spacing: -.015em; }
+.pm-sub { margin-top: 12px; max-width: 50ch; font-size: 16px; line-height: 1.7; color: var(--text-secondary); }
+
+/* Models: one row each. Name on the left, the description and a plain metrics table on the right. */
+.pm-engines { margin-top: 48px; border-top: 1px solid var(--hairline-strong); }
+.pm-engine { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(24px, 5vw, 80px); padding: 44px 0 48px; border-bottom: 1px solid var(--hairline); scroll-margin-top: 90px; }
+.pm-engine h3 { display: flex; align-items: center; gap: 12px; font-size: 30px; font-weight: 600; letter-spacing: -.01em; }
+.pm-engine h3::before { content: ''; width: 9px; height: 9px; background: var(--c); }
+.pm-engine-kind { display: block; margin-top: 10px; font-size: 14px; color: var(--text-tertiary); }
+.pm-engine-body { font-size: 16px; line-height: 1.8; color: var(--text-primary); max-width: 60ch; }
+.pm-stats { margin-top: 28px; }
+.pm-stats div { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 13px 0; border-top: 1px solid var(--hairline); font-size: 14.5px; }
+.pm-stats dt { color: var(--text-secondary); }
+.pm-stats dd { flex: none; font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.pm-note { margin-top: 16px; font-size: 12px; line-height: 1.7; color: var(--text-tertiary); max-width: 70ch; }
+.pm-report { display: inline-block; margin-top: 8px; font-size: 12.5px; font-weight: 600; color: var(--text-secondary, #cfcfd6); text-decoration: underline; text-underline-offset: 3px; }
+.pm-report:hover { color: #fff; }
+
+/* Watercolor plates under the model name; transparent webp, so they sit straight on the page. */
+.pm-art { display: block; width: 100%; max-width: 360px; height: auto; margin: 28px 0 0 -8px; user-select: none; pointer-events: none; }
+
+/* Engineering capabilities: a plain table. */
+.pm-skills { margin-top: 40px; border-top: 1px solid var(--hairline-strong); list-style: none; padding: 0; }
+.pm-skill { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 5fr) minmax(0, 4fr); gap: clamp(16px, 3vw, 48px); align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--hairline); }
+.pm-skill small { display: block; font-size: 12.5px; color: var(--text-tertiary); }
+.pm-skill h3 { margin-top: 4px; font-size: 18px; font-weight: 600; }
+.pm-skill p { font-size: 14.5px; line-height: 1.75; color: var(--text-secondary); }
+.pm-skill em { font-style: normal; font-size: 14.5px; line-height: 1.65; }
+
+/* MoleculeOS: same grid as the models, no panel. */
+.pm-os { margin-top: var(--pm-gap); padding-top: 48px; border-top: 1px solid var(--hairline-strong); display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(24px, 5vw, 80px); }
+.pm-os p.pm-sub { max-width: 56ch; }
+.pm-os-points { margin-top: 28px; list-style: none; padding: 0; }
+.pm-os-points li { padding: 13px 0; border-top: 1px solid var(--hairline); font-size: 14.5px; line-height: 1.7; color: var(--text-secondary); }
+.pm-cta { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
+
+@media (max-width: 900px) {
+  .pm-stack { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
+  .pm-engine, .pm-os { grid-template-columns: 1fr; gap: 20px; }
+  .pm-skill { grid-template-columns: 1fr; gap: 8px; }
+}
+@media (max-width: 520px) { .pm-stack { grid-template-columns: 1fr; } }

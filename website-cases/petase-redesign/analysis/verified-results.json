@@ -1,0 +1,1971 @@
+{
+  "case_id": "PETase",
+  "source_labels": {
+    "reference": "public experimental RCSB 5XH3/5XG0",
+    "scores": "actual registered MOS tasks; raw outputs preserved",
+    "geometry": "independent local audit of downloaded coordinates; not experimental activity"
+  },
+  "native_tasks_new_count": 8,
+  "WT_scan_audit": {
+    "sequence": {
+      "rows": 5360,
+      "WT_self": 268,
+      "nonself": 5092,
+      "input_sequence_verified": true
+    },
+    "evolution": {
+      "rows": 5360,
+      "WT_self": 268,
+      "nonself": 5092,
+      "input_sequence_verified": true
+    },
+    "structure": {
+      "rows": 5360,
+      "WT_self": 268,
+      "nonself": 5092,
+      "input_sequence_verified": true
+    }
+  },
+  "redesign_count": 10,
+  "unique_sequences": 4,
+  "sequence_groups": {
+    "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSVAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS": [
+      "seq_1"
+    ],
+    "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYYSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS": [
+      "seq_2",
+      "seq_3",
+      "seq_6"
+    ],
+    "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS": [
+      "seq_4",
+      "seq_5",
+      "seq_8",
+      "seq_9",
+      "seq_10"
+    ],
+    "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYYSSTNFSSVTVPTLIFACENDSVAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS": [
+      "seq_7"
+    ]
+  },
+  "all_mutations": {
+    "seq_1": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 179,
+        "position_construct": 186,
+        "position_UNP": 208,
+        "WT": "I",
+        "mut": "V",
+        "mutation": "I179V",
+        "WT_single_mutant_scores": {
+          "sequence": 0.9371683597564697,
+          "evolution": -1.671875,
+          "structure": -0.42077791690826416
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_2": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "Y",
+        "mutation": "D157Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6609792709350586,
+          "evolution": -4.896484375,
+          "structure": -0.07934427261352539
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_3": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "Y",
+        "mutation": "D157Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6609792709350586,
+          "evolution": -4.896484375,
+          "structure": -0.07934427261352539
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_4": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_5": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_6": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "Y",
+        "mutation": "D157Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6609792709350586,
+          "evolution": -4.896484375,
+          "structure": -0.07934427261352539
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_7": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "Y",
+        "mutation": "D157Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6609792709350586,
+          "evolution": -4.896484375,
+          "structure": -0.07934427261352539
+        }
+      },
+      {
+        "position_AUTH": 179,
+        "position_construct": 186,
+        "position_UNP": 208,
+        "WT": "I",
+        "mut": "V",
+        "mutation": "I179V",
+        "WT_single_mutant_scores": {
+          "sequence": 0.9371683597564697,
+          "evolution": -1.671875,
+          "structure": -0.42077791690826416
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_8": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_9": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ],
+    "seq_10": [
+      {
+        "position_AUTH": 130,
+        "position_construct": 137,
+        "position_UNP": 159,
+        "WT": "W",
+        "mut": "H",
+        "mutation": "W130H",
+        "WT_single_mutant_scores": {
+          "sequence": -1.5537304878234863,
+          "evolution": -8.576171875,
+          "structure": 2.5302603244781494
+        }
+      },
+      {
+        "position_AUTH": 156,
+        "position_construct": 163,
+        "position_UNP": 185,
+        "WT": "W",
+        "mut": "Y",
+        "mutation": "W156Y",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6122941970825195,
+          "evolution": -4.3203125,
+          "structure": 0.9746474027633667
+        }
+      },
+      {
+        "position_AUTH": 157,
+        "position_construct": 164,
+        "position_UNP": 186,
+        "WT": "D",
+        "mut": "H",
+        "mutation": "D157H",
+        "WT_single_mutant_scores": {
+          "sequence": -0.11326360702514648,
+          "evolution": -0.66796875,
+          "structure": 3.9420440196990967
+        }
+      },
+      {
+        "position_AUTH": 209,
+        "position_construct": 216,
+        "position_UNP": 238,
+        "WT": "S",
+        "mut": "G",
+        "mutation": "S209G",
+        "WT_single_mutant_scores": {
+          "sequence": -0.6464730501174927,
+          "evolution": -6.943359375,
+          "structure": 0.6659002304077148
+        }
+      }
+    ]
+  },
+  "fixed_sites_preserved": true,
+  "experimental_ligand_contacts": {
+    "cutoff_A": 4,
+    "residues": [
+      {
+        "AUTH": 57,
+        "UNP": 86,
+        "aa": "G",
+        "min_distance_A": 3.329575300216675
+      },
+      {
+        "AUTH": 58,
+        "UNP": 87,
+        "aa": "Y",
+        "min_distance_A": 2.616488456726074
+      },
+      {
+        "AUTH": 60,
+        "UNP": 89,
+        "aa": "A",
+        "min_distance_A": 3.7623543739318848
+      },
+      {
+        "AUTH": 130,
+        "UNP": 159,
+        "aa": "W",
+        "min_distance_A": 3.2101972103118896
+      },
+      {
+        "AUTH": 131,
+        "UNP": 160,
+        "aa": "A",
+        "min_distance_A": 3.0095512866973877
+      },
+      {
+        "AUTH": 132,
+        "UNP": 161,
+        "aa": "M",
+        "min_distance_A": 2.9315319061279297
+      },
+      {
+        "AUTH": 156,
+        "UNP": 185,
+        "aa": "W",
+        "min_distance_A": 3.203192710876465
+      },
+      {
+        "AUTH": 179,
+        "UNP": 208,
+        "aa": "I",
+        "min_distance_A": 3.597670793533325
+      },
+      {
+        "AUTH": 208,
+        "UNP": 237,
+        "aa": "H",
+        "min_distance_A": 2.7814488410949707
+      }
+    ],
+    "atom_pairs": [
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "CA",
+        "ligand_atom": "O10",
+        "distance_A": 3.7208821773529053
+      },
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "CA",
+        "ligand_atom": "C12",
+        "distance_A": 3.8394930362701416
+      },
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "CA",
+        "ligand_atom": "O14",
+        "distance_A": 3.5166306495666504
+      },
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "C",
+        "ligand_atom": "O10",
+        "distance_A": 3.7926082611083984
+      },
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "C",
+        "ligand_atom": "O14",
+        "distance_A": 3.329575300216675
+      },
+      {
+        "protein_AUTH": 57,
+        "protein_atom": "O",
+        "ligand_atom": "O14",
+        "distance_A": 3.8355112075805664
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "C13",
+        "distance_A": 3.9313809871673584
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "C09",
+        "distance_A": 3.6551578044891357
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "O10",
+        "distance_A": 2.8961775302886963
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "O11",
+        "distance_A": 3.9672458171844482
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "C12",
+        "distance_A": 3.791306972503662
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "N",
+        "ligand_atom": "O14",
+        "distance_A": 3.3524084091186523
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "CA",
+        "ligand_atom": "O10",
+        "distance_A": 3.7211415767669678
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "C",
+        "ligand_atom": "O14",
+        "distance_A": 3.5672550201416016
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "O",
+        "ligand_atom": "C13",
+        "distance_A": 3.238862991333008
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "O",
+        "ligand_atom": "O14",
+        "distance_A": 2.616488456726074
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "CB",
+        "ligand_atom": "C09",
+        "distance_A": 3.5819454193115234
+      },
+      {
+        "protein_AUTH": 58,
+        "protein_atom": "CB",
+        "ligand_atom": "O10",
+        "distance_A": 3.2983436584472656
+      },
+      {
+        "protein_AUTH": 60,
+        "protein_atom": "CB",
+        "ligand_atom": "O14",
+        "distance_A": 3.7623543739318848
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CE2",
+        "ligand_atom": "C12",
+        "distance_A": 3.8125574588775635
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CE3",
+        "ligand_atom": "O14",
+        "distance_A": 3.76751446723938
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CZ2",
+        "ligand_atom": "C13",
+        "distance_A": 3.683713674545288
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CZ2",
+        "ligand_atom": "C12",
+        "distance_A": 3.7342922687530518
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CZ2",
+        "ligand_atom": "O14",
+        "distance_A": 3.8265724182128906
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CZ3",
+        "ligand_atom": "C13",
+        "distance_A": 3.9525134563446045
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CZ3",
+        "ligand_atom": "O14",
+        "distance_A": 3.2101972103118896
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CH2",
+        "ligand_atom": "C13",
+        "distance_A": 3.519902229309082
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CH2",
+        "ligand_atom": "C12",
+        "distance_A": 3.996664524078369
+      },
+      {
+        "protein_AUTH": 130,
+        "protein_atom": "CH2",
+        "ligand_atom": "O14",
+        "distance_A": 3.2554492950439453
+      },
+      {
+        "protein_AUTH": 131,
+        "protein_atom": "C",
+        "ligand_atom": "O10",
+        "distance_A": 3.888984203338623
+      },
+      {
+        "protein_AUTH": 131,
+        "protein_atom": "CB",
+        "ligand_atom": "C09",
+        "distance_A": 3.3201847076416016
+      },
+      {
+        "protein_AUTH": 131,
+        "protein_atom": "CB",
+        "ligand_atom": "O10",
+        "distance_A": 3.1357738971710205
+      },
+      {
+        "protein_AUTH": 131,
+        "protein_atom": "CB",
+        "ligand_atom": "O11",
+        "distance_A": 3.299079656600952
+      },
+      {
+        "protein_AUTH": 131,
+        "protein_atom": "CB",
+        "ligand_atom": "C12",
+        "distance_A": 3.0095512866973877
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "N",
+        "ligand_atom": "C09",
+        "distance_A": 3.7896945476531982
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "N",
+        "ligand_atom": "O10",
+        "distance_A": 2.9315319061279297
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "CA",
+        "ligand_atom": "O10",
+        "distance_A": 3.761223793029785
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "CB",
+        "ligand_atom": "O10",
+        "distance_A": 3.4496967792510986
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "CG",
+        "ligand_atom": "C07",
+        "distance_A": 3.835711717605591
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "CG",
+        "ligand_atom": "C08",
+        "distance_A": 3.976672887802124
+      },
+      {
+        "protein_AUTH": 132,
+        "protein_atom": "CG",
+        "ligand_atom": "O10",
+        "distance_A": 3.270470142364502
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CB",
+        "ligand_atom": "C06",
+        "distance_A": 3.7440643310546875
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CB",
+        "ligand_atom": "C07",
+        "distance_A": 3.7394802570343018
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CG",
+        "ligand_atom": "C06",
+        "distance_A": 3.3902604579925537
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CG",
+        "ligand_atom": "C07",
+        "distance_A": 3.892418622970581
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CD1",
+        "ligand_atom": "O02",
+        "distance_A": 3.5764544010162354
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CD1",
+        "ligand_atom": "C06",
+        "distance_A": 3.8944928646087646
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CD2",
+        "ligand_atom": "O02",
+        "distance_A": 3.963611364364624
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CD2",
+        "ligand_atom": "C06",
+        "distance_A": 3.4472854137420654
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "NE1",
+        "ligand_atom": "C01",
+        "distance_A": 3.6255850791931152
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "NE1",
+        "ligand_atom": "O02",
+        "distance_A": 3.203192710876465
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CE2",
+        "ligand_atom": "O02",
+        "distance_A": 3.4711110591888428
+      },
+      {
+        "protein_AUTH": 156,
+        "protein_atom": "CE3",
+        "ligand_atom": "C06",
+        "distance_A": 3.8807852268218994
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "O",
+        "ligand_atom": "O02",
+        "distance_A": 3.628140449523926
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "O",
+        "ligand_atom": "C03",
+        "distance_A": 3.7218432426452637
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "O",
+        "ligand_atom": "C05",
+        "distance_A": 3.8964250087738037
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "CG2",
+        "ligand_atom": "C15",
+        "distance_A": 3.597670793533325
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "CG2",
+        "ligand_atom": "C08",
+        "distance_A": 3.912020206451416
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "CG2",
+        "ligand_atom": "O11",
+        "distance_A": 3.955477714538574
+      },
+      {
+        "protein_AUTH": 179,
+        "protein_atom": "CG2",
+        "ligand_atom": "C16",
+        "distance_A": 3.670726776123047
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "CD2",
+        "ligand_atom": "C13",
+        "distance_A": 3.8814656734466553
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "CD2",
+        "ligand_atom": "O11",
+        "distance_A": 3.7459609508514404
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "CD2",
+        "ligand_atom": "C12",
+        "distance_A": 3.5127065181732178
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "CE1",
+        "ligand_atom": "O11",
+        "distance_A": 3.8329100608825684
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "CE1",
+        "ligand_atom": "C12",
+        "distance_A": 3.8845841884613037
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "NE2",
+        "ligand_atom": "C13",
+        "distance_A": 3.6487832069396973
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "NE2",
+        "ligand_atom": "C09",
+        "distance_A": 3.8773531913757324
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "NE2",
+        "ligand_atom": "O11",
+        "distance_A": 2.8654184341430664
+      },
+      {
+        "protein_AUTH": 208,
+        "protein_atom": "NE2",
+        "ligand_atom": "C12",
+        "distance_A": 2.7814488410949707
+      }
+    ]
+  },
+  "5XG0_vs_5XH3_CA_RMSD_A": 0.255914568901062,
+  "5XG0_vs_5XH3_matched_CA": 261,
+  "representative_models": [
+    {
+      "candidate": "seq_1",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 97.22090148925781,
+        "ptm": 0.9838268160820007,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9838268160820007
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9722090363502502
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19676536321640015
+      },
+      "ranking_score": 0.19676536321640015,
+      "CA_mean_pLDDT": 98.49160919540229,
+      "global_CA_RMSD_vs_5XG0_A": 0.2911006212234497,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.3155215084552765,
+      "designed_CA_RMSD_after_global_fit_A": 0.39573046565055847,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2392263263463974,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.1115856170654297,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 2,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 96.8326644897461,
+        "ptm": 0.9810746312141418,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9810746312141418
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9683266282081604
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1962149292230606
+      },
+      "ranking_score": 0.1962149292230606,
+      "CA_mean_pLDDT": 98.28134099616857,
+      "global_CA_RMSD_vs_5XG0_A": 0.28836560249328613,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2391481101512909,
+      "designed_CA_RMSD_after_global_fit_A": 0.25951680541038513,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.22563128173351288,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.665091633796692,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 1,
+        "atom_pairs_under_2_2A": 3,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 97.2912368774414,
+        "ptm": 0.9837198257446289,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9837198257446289
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9729123711585999
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19674396514892578
+      },
+      "ranking_score": 0.19674396514892578,
+      "CA_mean_pLDDT": 98.52731800766283,
+      "global_CA_RMSD_vs_5XG0_A": 0.2493661493062973,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.24097318947315216,
+      "designed_CA_RMSD_after_global_fit_A": 0.3698882460594177,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.19292862713336945,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.151069164276123,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    }
+  ],
+  "all_15_model_samples": [
+    {
+      "candidate": "seq_1",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 97.22090148925781,
+        "ptm": 0.9838268160820007,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9838268160820007
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9722090363502502
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19676536321640015
+      },
+      "ranking_score": 0.19676536321640015,
+      "CA_mean_pLDDT": 98.49160919540229,
+      "global_CA_RMSD_vs_5XG0_A": 0.2911006212234497,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.3155215084552765,
+      "designed_CA_RMSD_after_global_fit_A": 0.39573046565055847,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2392263263463974,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.1115856170654297,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 2,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_1",
+      "sample": 2,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463208425_model_sample_2.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_2.json",
+      "confidence": {
+        "plddt": 97.21991729736328,
+        "ptm": 0.9838202595710754,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9838202595710754
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9721992015838623
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1967640519142151
+      },
+      "ranking_score": 0.1967640519142151,
+      "CA_mean_pLDDT": 98.49134099616857,
+      "global_CA_RMSD_vs_5XG0_A": 0.2555113136768341,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2445724457502365,
+      "designed_CA_RMSD_after_global_fit_A": 0.3627026677131653,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.22049903869628906,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.1551060676574707,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_1",
+      "sample": 3,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463556667_model_sample_3.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_3.json",
+      "confidence": {
+        "plddt": 97.2178955078125,
+        "ptm": 0.9837784171104431,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9837784171104431
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9721789360046387
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19675569236278534
+      },
+      "ranking_score": 0.19675569236278534,
+      "CA_mean_pLDDT": 98.48961685823755,
+      "global_CA_RMSD_vs_5XG0_A": 0.27798110246658325,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.27133089303970337,
+      "designed_CA_RMSD_after_global_fit_A": 0.37806180119514465,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.252703458070755,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.1607282161712646,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_1",
+      "sample": 4,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463322333_model_sample_4.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_4.json",
+      "confidence": {
+        "plddt": 97.21703338623047,
+        "ptm": 0.9837716221809387,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9837716221809387
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.972170352935791
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1967543214559555
+      },
+      "ranking_score": 0.1967543214559555,
+      "CA_mean_pLDDT": 98.48934865900384,
+      "global_CA_RMSD_vs_5XG0_A": 0.26573610305786133,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.24658727645874023,
+      "designed_CA_RMSD_after_global_fit_A": 0.34975293278694153,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2885831594467163,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.0941202640533447,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 2,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_1",
+      "sample": 5,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463437021_model_sample_5.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/summary_confidences_sample_5.json",
+      "confidence": {
+        "plddt": 97.21627044677734,
+        "ptm": 0.9837660193443298,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9837660193443298
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9721627235412598
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19675320386886597
+      },
+      "ranking_score": 0.19675320386886597,
+      "CA_mean_pLDDT": 98.48942528735631,
+      "global_CA_RMSD_vs_5XG0_A": 0.27009958028793335,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.28230521082878113,
+      "designed_CA_RMSD_after_global_fit_A": 0.3938935697078705,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.22704218327999115,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.2060513496398926,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 0,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 96.8326644897461,
+        "ptm": 0.9810746312141418,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9810746312141418
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9683266282081604
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1962149292230606
+      },
+      "ranking_score": 0.1962149292230606,
+      "CA_mean_pLDDT": 98.28134099616857,
+      "global_CA_RMSD_vs_5XG0_A": 0.28836560249328613,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2391481101512909,
+      "designed_CA_RMSD_after_global_fit_A": 0.25951680541038513,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.22563128173351288,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.665091633796692,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 1,
+        "atom_pairs_under_2_2A": 3,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 2,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463691638_model_sample_2.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_2.json",
+      "confidence": {
+        "plddt": 96.83170318603516,
+        "ptm": 0.9810280799865723,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9810280799865723
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9683170318603516
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19620561599731445
+      },
+      "ranking_score": 0.19620561599731445,
+      "CA_mean_pLDDT": 98.2811111111111,
+      "global_CA_RMSD_vs_5XG0_A": 0.2753884196281433,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2578589916229248,
+      "designed_CA_RMSD_after_global_fit_A": 0.30117446184158325,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.23027829825878143,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.9106383323669434,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 1,
+        "atom_pairs_under_2_2A": 2,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 3,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463462346_model_sample_3.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_3.json",
+      "confidence": {
+        "plddt": 96.82948303222656,
+        "ptm": 0.9809907078742981,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9809907078742981
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9682948589324951
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19619815051555634
+      },
+      "ranking_score": 0.19619815051555634,
+      "CA_mean_pLDDT": 98.27988505747128,
+      "global_CA_RMSD_vs_5XG0_A": 0.25002801418304443,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.19101527333259583,
+      "designed_CA_RMSD_after_global_fit_A": 0.23332692682743073,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.21491041779518127,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.3584665060043335,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 5,
+        "atom_pairs_under_2_2A": 10,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 4,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463763615_model_sample_4.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_4.json",
+      "confidence": {
+        "plddt": 96.82535552978516,
+        "ptm": 0.980964720249176,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.980964720249176
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9682535529136658
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19619295001029968
+      },
+      "ranking_score": 0.19619295001029968,
+      "CA_mean_pLDDT": 98.27727969348658,
+      "global_CA_RMSD_vs_5XG0_A": 0.30993354320526123,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2676546573638916,
+      "designed_CA_RMSD_after_global_fit_A": 0.23780450224876404,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2837097644805908,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.5144047737121582,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 1,
+        "atom_pairs_under_2_2A": 5,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_2",
+      "sample": 5,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463539742_model_sample_5.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/summary_confidences_sample_5.json",
+      "confidence": {
+        "plddt": 96.82373046875,
+        "ptm": 0.980944037437439,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.980944037437439
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9682372808456421
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1961888074874878
+      },
+      "ranking_score": 0.1961888074874878,
+      "CA_mean_pLDDT": 98.27586206896552,
+      "global_CA_RMSD_vs_5XG0_A": 0.288525253534317,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.23912912607192993,
+      "designed_CA_RMSD_after_global_fit_A": 0.19955600798130035,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.29857155680656433,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.3534680604934692,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 2,
+        "atom_pairs_under_2_2A": 7,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 1,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_1.json",
+      "confidence": {
+        "plddt": 97.2912368774414,
+        "ptm": 0.9837198257446289,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9837198257446289
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9729123711585999
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19674396514892578
+      },
+      "ranking_score": 0.19674396514892578,
+      "CA_mean_pLDDT": 98.52731800766283,
+      "global_CA_RMSD_vs_5XG0_A": 0.2493661493062973,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.24097318947315216,
+      "designed_CA_RMSD_after_global_fit_A": 0.3698882460594177,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.19292862713336945,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.151069164276123,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 2,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463416154_model_sample_2.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_2.json",
+      "confidence": {
+        "plddt": 97.29000854492188,
+        "ptm": 0.9836989045143127,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9836989045143127
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9729000926017761
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.1967397779226303
+      },
+      "ranking_score": 0.1967397779226303,
+      "CA_mean_pLDDT": 98.52701149425286,
+      "global_CA_RMSD_vs_5XG0_A": 0.2683577239513397,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.27820882201194763,
+      "designed_CA_RMSD_after_global_fit_A": 0.376565158367157,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2443864345550537,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.1530492305755615,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 3,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463118514_model_sample_3.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_3.json",
+      "confidence": {
+        "plddt": 97.28669738769531,
+        "ptm": 0.9836461544036865,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9836461544036865
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.972866952419281
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19672922790050507
+      },
+      "ranking_score": 0.19672922790050507,
+      "CA_mean_pLDDT": 98.52501915708812,
+      "global_CA_RMSD_vs_5XG0_A": 0.2936122417449951,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2750822901725769,
+      "designed_CA_RMSD_after_global_fit_A": 0.3689989447593689,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.26648539304733276,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.104605197906494,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 4,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463515908_model_sample_4.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_4.json",
+      "confidence": {
+        "plddt": 97.28837585449219,
+        "ptm": 0.9836418628692627,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.9836418628692627
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9728837609291077
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19672837853431702
+      },
+      "ranking_score": 0.19672837853431702,
+      "CA_mean_pLDDT": 98.52567049808428,
+      "global_CA_RMSD_vs_5XG0_A": 0.26360225677490234,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.2683112323284149,
+      "designed_CA_RMSD_after_global_fit_A": 0.389750212430954,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2329418808221817,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 2.0990500450134277,
+        "nearest_protein_AUTH": 131,
+        "protein_atom": "OG",
+        "ligand_atom": "C09",
+        "atom_pairs_under_2A": 0,
+        "atom_pairs_under_2_2A": 1,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    },
+    {
+      "candidate": "seq_4",
+      "sample": 5,
+      "structure": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463218181_model_sample_5.cif",
+      "confidence_json": "outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/summary_confidences_sample_5.json",
+      "confidence": {
+        "plddt": 97.2852554321289,
+        "ptm": 0.983634352684021,
+        "iptm": 0.0,
+        "chain_ptm": [
+          0.983634352684021
+        ],
+        "chain_iptm": [
+          0.0
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9728525280952454
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0
+          ]
+        ],
+        "ranking_score": 0.19672687351703644
+      },
+      "ranking_score": 0.19672687351703644,
+      "CA_mean_pLDDT": 98.52402298850573,
+      "global_CA_RMSD_vs_5XG0_A": 0.25776752829551697,
+      "matched_CA": 261,
+      "pocket_CA_RMSD_after_global_fit_A": 0.23040926456451416,
+      "designed_CA_RMSD_after_global_fit_A": 0.30194568634033203,
+      "catalytic_CA_RMSD_after_global_fit_A": 0.2951366901397705,
+      "rigid_HEMT_transfer": {
+        "min_heavy_atom_distance_A": 1.688004732131958,
+        "nearest_protein_AUTH": 156,
+        "protein_atom": "CE1",
+        "ligand_atom": "O02",
+        "atom_pairs_under_2A": 1,
+        "atom_pairs_under_2_2A": 3,
+        "method": "All 261 CAs aligned to original 5XH3, original ligand kept fixed; no relaxation, energy or affinity calculation."
+      }
+    }
+  ],
+  "affinity_manual_rerun": {
+    "task_id": "342337422410752",
+    "raw": {
+      "pair_name": "179248399086985_5xh3_clean_338706328146944_5xh3_B_856 (1)_0",
+      "score": "-4.310292",
+      "vdw": "-2.4951997",
+      "hbond": "-0.5505939",
+      "metal": "0.0",
+      "hydrophobic": "-1.2644981"
+    },
+    "units": "Not stated in output CSV; retain native score label, not Kd, pKd or experimentally measured energy"
+  },
+  "native_MMetrics_status": {
+    "native_MMetrics_full_5XH3": "Still Generating description / Analyzing structure / Model Computing in final original-complex page screenshot. Auto tasks 342337764889600 and 342337765340160 previously PENDING, waiting not queued. No complete native HEMT pocket table retrieved.",
+    "WT_native_MMetrics": "Three native score CSVs available and downloaded; no significant homologs, no residue annotations, interaction computation error.",
+    "native_Superimpose": "Not exposed in available session tool/task list; additional Kabsch fits used and overlays imported into MOS."
+  },
+  "limitations": [
+    "10 outputs comprise repeated sequences; report actual unique count.",
+    "Best structures selected by native ranking_score, separate from engineering candidate choice.",
+    "All changes lie within five allowed mature positions; catalytic/oxyanion/disulfide sequence identities verified.",
+    "Design scaffold is a constructed mutant-bound WT-sequence model, not an experimental WT–HEMT complex.",
+    "Model disagreements and short rigid-ligand-transfer contacts do not prove improved enzymatic activity."
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Historical case 01 to case 02 task timeline; timezone claims preserved by evidence level",
+  "timezone_policy": {
+    "stage01_UI": "Creation/Update labels have no timezone. Preserve literal values; no conversion.",
+    "stage02_raw_status": "Started text has no timezone. Preserve literal values.",
+    "stage02_manifests": "started strings ending Z are archived derived normalization assertions. Source CheckMOSTask responses were not archived with an explicit timezone label; do not treat as independently verified backend UTC.",
+    "session_timestamps": "UTC Z timestamps from local Codex event log are action/observation times, not task lifecycle times.",
+    "payload_createTime": "Unix seconds from archived task payload; UTC conversion explicit and independent of local timezone. Output-object creation, not task start or finish.",
+    "duration": "Preserve source duration; no inferred finish timestamps; 1.1min is rounded."
+  },
+  "projects": [
+    {
+      "case": "01",
+      "project_id": "342242986152960",
+      "archived_display_name": "nn",
+      "url": "https://mos.moleculemind.com/?projectId=342242986152960"
+    },
+    {
+      "case": "02",
+      "project_id": "342604060136448",
+      "archived_display_name": "PDL1-02-MMetrics-KN035-20261021",
+      "url": "https://mos.moleculemind.com/?projectId=342604060136448",
+      "input_object_id": "342604293768192",
+      "input_work_id": "342604299084800"
+    }
+  ],
+  "tasks": [
+    {
+      "case": "01",
+      "task_id": "342253805564928",
+      "task_name": "PDL1_KN035_VHH_complex",
+      "type": "Structure Prediction with MMFold",
+      "status": "Succeed",
+      "ui_creation_time_literal": "2026-10-20 9:34:18",
+      "ui_update_time_literal": "2026-10-20 9:36:23",
+      "timezone": null,
+      "started": null,
+      "finished": null,
+      "duration": null,
+      "source": "website-cases/pdl1/01-structure/raw/task-details-succeeded.txt",
+      "source_lines": [
+        589,
+        597,
+        599,
+        614,
+        623
+      ],
+      "notes": "Update Time is not independently a finished-at field; actual start, finished and duration not recorded in this archive."
+    },
+    {
+      "case": "02-native",
+      "task_id": "342604299285504",
+      "task_name": "autocompute-MMFold_1",
+      "type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic pre-analysis, created by the platform when the structure was imported (before MMetrics)",
+      "raw_started_literal": "2026-10-21 02:20:28",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:20:28Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "1.1min",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_status.txt",
+      "source_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    },
+    {
+      "case": "02-native",
+      "task_id": "342604577018880",
+      "task_name": "mmetrics-analysis-342604299285504",
+      "type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic MMetrics analysis of this structure",
+      "raw_started_literal": "2026-10-21 02:21:36",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:21:36Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "3s",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_status.txt",
+      "source_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    },
+    {
+      "case": "02-independent-supplement",
+      "task_id": "342606092895232",
+      "task_name": "kn035-AbAn-independent",
+      "type": "Antibody Region Annotation",
+      "status": "succeed",
+      "raw_started_literal": "2026-10-21 02:27:46",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:27:46Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "20s",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_status.txt",
+      "source_lines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "relationship": "Independent antibody supplementary tasks; not the native MMetrics homology pipeline."
+    },
+    {
+      "case": "02-independent-supplement",
+      "task_id": "342606094599168",
+      "task_name": "kn035-AbScN-language-independent",
+      "type": "Antibody Language Scoring",
+      "status": "succeed",
+      "raw_started_literal": "2026-10-21 02:27:46",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:27:46Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "3s",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_status.txt",
+      "source_lines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "relationship": "Independent antibody supplementary tasks; not the native MMetrics homology pipeline."
+    },
+    {
+      "case": "02-independent-supplement",
+      "task_id": "342606097245184",
+      "task_name": "kn035-AbScN-nativeness-independent",
+      "type": "Antibody Nativeness Evaluation",
+      "status": "succeed",
+      "raw_started_literal": "2026-10-21 02:27:47",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:27:47Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "3s",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_status.txt",
+      "source_lines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "relationship": "Independent antibody supplementary tasks; not the native MMetrics homology pipeline."
+    },
+    {
+      "case": "02-independent-supplement",
+      "task_id": "342606100722688",
+      "task_name": "kn035-ParaDt-independent",
+      "type": "Paratope Identification",
+      "status": "succeed",
+      "raw_started_literal": "2026-10-21 02:27:48",
+      "raw_started_timezone": null,
+      "archived_normalized_started": "2026-10-21T02:27:48Z",
+      "archived_normalized_started_timezone_claim": "UTC (Z), unverified normalization",
+      "duration_literal": "25s",
+      "finished": null,
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_status.txt",
+      "source_lines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "normalized_source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "relationship": "Independent antibody supplementary tasks; not the native MMetrics homology pipeline."
+    }
+  ],
+  "action_observations": [
+    {
+      "event": "Create case 02 project action submitted",
+      "observation_timestamp_utc": "2026-10-21T02:19:28.859Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 102,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "提交创建案例 02 项目"
+    },
+    {
+      "event": "Case 02 project URL observed after create",
+      "observation_timestamp_utc": "2026-10-21T02:19:29.625Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 104,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "提交创建案例 02 项目"
+    },
+    {
+      "event": "Case 02 project display name observed",
+      "observation_timestamp_utc": "2026-10-21T02:19:37.698Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 111,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "查看新项目导入入口"
+    },
+    {
+      "event": "First browser filechooser upload failed due to local-file permission",
+      "observation_timestamp_utc": "2026-10-21T02:19:59.116Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 126,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "向案例 02 上传唯一主结构"
+    },
+    {
+      "event": "Native macOS picker selected original case01 MMFold_1.cif",
+      "observation_timestamp_utc": "2026-10-21T02:20:20.494Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 143,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "指定主结构的绝对路径"
+    },
+    {
+      "event": "Native filepicker Open clicked; upload workflow returned to Create a Work",
+      "observation_timestamp_utc": "2026-10-21T02:20:26.350Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 148,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "完成主结构导入"
+    },
+    {
+      "event": "Read imported structure state action",
+      "observation_timestamp_utc": "2026-10-21T02:20:40.995Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 156,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "核验导入后的链、序列及 MMetrics 状态"
+    },
+    {
+      "event": "Open native MMetrics and save initial screenshot action",
+      "observation_timestamp_utc": "2026-10-21T02:20:49.331Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 163,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "打开并记录 KN035 原生 MMetrics 面板"
+    },
+    {
+      "event": "MMetrics initial Generating/Computing state observed",
+      "observation_timestamp_utc": "2026-10-21T02:20:50.196Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 165,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "打开并记录 KN035 原生 MMetrics 面板"
+    },
+    {
+      "event": "Submit Mocha export/verification prompt action",
+      "observation_timestamp_utc": "2026-10-21T02:21:45.731Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 182,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "提交案例 02 的原始结果导出与编号核验请求"
+    },
+    {
+      "event": "Mocha prompt submitted",
+      "observation_timestamp_utc": "2026-10-21T02:21:46.245Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 184,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "提交案例 02 的原始结果导出与编号核验请求"
+    },
+    {
+      "event": "Open native MMetrics and capture panel content action",
+      "observation_timestamp_utc": "2026-10-21T02:25:32.259Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 371,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "下载原生完整亲和力评分 CSV"
+    },
+    {
+      "event": "Download case02 archive and submit independent antibody supplement request action",
+      "observation_timestamp_utc": "2026-10-21T02:27:26.513Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 458,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "下载原生归档并补齐独立抗体分析，保留来源区分"
+    },
+    {
+      "event": "Save completed MMetrics screenshot capture action",
+      "observation_timestamp_utc": "2026-10-21T02:29:13.454Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 558,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "保存原生面板首屏并开始重叠采集"
+    },
+    {
+      "event": "Save remaining completed MMetrics screenshot captures action",
+      "observation_timestamp_utc": "2026-10-21T02:29:20.763Z",
+      "source_session_id": "01a15c40-8eca-77d0-a4ac-80cc5838fbea",
+      "source_session_file": "/Users/zifengye/.codex/sessions/2026/10/21/rollout-2026-10-21T09-18-17-01a15c40-8eca-77d0-a4ac-80cc5838fbea.jsonl",
+      "source_session_line": 565,
+      "semantic": "action_or_observation_time_not_task_lifecycle",
+      "action_title": "完成面板逐屏截图及对应的真实滚动记录"
+    }
+  ],
+  "output_object_creation_times": [
+    {
+      "json_path": "/autocomp_results/result_data/objects/0",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/1",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/2",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/3",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/4",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/5",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    },
+    {
+      "json_path": "/autocomp_results/result_data/objects/6",
+      "epoch_seconds": 1792549294,
+      "utc": "2026-10-21T02:21:34Z",
+      "asia_jakarta": "2026-10-21T09:21:34+07:00",
+      "object_key": "user_objects/123/330665428816896/342604299285504/sequence_info.fasta",
+      "meaning": "autocompute output object createTime, not task lifecycle",
+      "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    }
+  ],
+  "missing_fields": [
+    "Stage 01 actual task started_at, finished_at and duration",
+    "Stage 01 UI timezone",
+    "Stage 02 raw status timezone",
+    "Stage 02 exact finish times for all tasks",
+    "Project and structure upload API created_at fields (only local session observations retained)",
+    "Native server/API response giving explicit timezone for CheckMOSTask Started values"
+  ]
+}

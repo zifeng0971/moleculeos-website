@@ -1,0 +1,3 @@
+donor_chain	donor_res	donor_resnum	donor_atom	acceptor_chain	acceptor_res	acceptor_resnum	acceptor_atom	distance
+A	SER	15	OG	B	GLU	41	OE2	2.900
+A	ARG	5	NH2	B	TYR	106	OH	3.300

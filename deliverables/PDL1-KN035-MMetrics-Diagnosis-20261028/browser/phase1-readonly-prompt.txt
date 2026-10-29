@@ -1,0 +1,7 @@
+请排查本项目原生 MMetrics 的 Homologs 为空，先做只读诊断：不要调用 StartMOSTask，不要重跑/刷新任何模型或自动分析，不要修改现有结构、任务、注释或旧归档。只允许在新的 /workspace/kn035_homolog_diagnosis_20261028/ 保存诊断文件。
+已核对：project=342604060136448，object=342604293768192，work=342604299084800；MMFold_1.cif SHA256=d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317，A=PD-L1 118aa，B=KN035 VHH 128aa。autocompute task342604299285504 产生的原始 mos-blast JSON 有503条比对/500个hit，全部query都是B链128aa，没有A链query；MMetrics task342604577018880 的record.annotations.homology/uniprot/pdb均=[]，原生UI写“Searched by antigen sequence similarity / No significant homologs found.”。
+请实际读取证据，而不是重复上述结论：
+1. 用只读工具复查这两个真实任务的状态、实际输入参数、对象列表和可获得日志；核查是否存在关联的A链抗原检索任务或skipped/failed记录。保持原始时间字段及其时区语义。
+2. 若本运行环境有 autocompute/MMetrics/sequence homology 工具的可读源码或配置，请定向检查query选择、antibody/antigen chain路由、BLAST输出schema以及annotations.homology装配/过滤；引用准确文件路径、行号和小段代码。不要读取或输出凭据、环境变量、auth文件；不要遍历不相关项目。源码/后台日志不可访问就明确写不可访问，勿凭推测编造根因。
+3. 读取现有Sequence Homology/Similarity Search工具schema（只读，不启动），说明能否显式用A链118aa作单独对照，以及会返回哪些字段。
+4. 给出已证实原因、最可能原因、尚缺证据三者分开的结论，尤其不能把B链抗体的503条命中当作A链PD-L1结果。将实际任务payload/原始记录、相关源码摘录/日志、结论JSON和说明保存到新目录并打包 /workspace/kn035_homolog_diagnosis_20261028.zip 供Workspace下载。不要修改旧包。完成后返回诊断文件路径、重要证据和可执行的下一步。

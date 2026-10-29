@@ -1,0 +1,171 @@
+{
+  "source_kind": "local_analysis",
+  "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "risk_count": 10,
+  "risks": [
+    {
+      "chain": "B",
+      "label_seq_id": 28,
+      "aa": "M",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "GKMSSR",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 34,
+      "aa": "M",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "RCMAWF",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 36,
+      "aa": "W",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "MAWFRQ",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 62,
+      "aa": "D",
+      "kind": "isomerization_sequence_motif",
+      "sequence_context": "LADSVK",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 83,
+      "aa": "M",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "LQMNSL",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 84,
+      "aa": "N",
+      "kind": "deamidation_sequence_motif",
+      "sequence_context": "QMNSLK",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 90,
+      "aa": "D",
+      "kind": "isomerization_sequence_motif",
+      "sequence_context": "PEDTAM",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 93,
+      "aa": "M",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "TAMYYC",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 99,
+      "aa": "D",
+      "kind": "isomerization_sequence_motif",
+      "sequence_context": "AADSFE",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 118,
+      "aa": "W",
+      "kind": "oxidation_susceptible_residue",
+      "sequence_context": "QYWGQG",
+      "source_kind": "local_sequence_motif",
+      "experimental_risk": null
+    }
+  ],
+  "limitations": [
+    "Motif flags are heuristic screening only; no probability, expression, solubility, or experimental stability is inferred.",
+    "N-glycosylation depends on expression system and accessibility."
+  ],
+  "cysteine_pairs": [
+    {
+      "chain": "B",
+      "positions": [
+        22,
+        33
+      ],
+      "SG_distance_A": 12.048725128173828,
+      "geometric_disulfide_candidate": false,
+      "experimentally_confirmed": false
+    },
+    {
+      "chain": "B",
+      "positions": [
+        22,
+        96
+      ],
+      "SG_distance_A": 2.0655179023742676,
+      "geometric_disulfide_candidate": true,
+      "experimentally_confirmed": false
+    },
+    {
+      "chain": "B",
+      "positions": [
+        22,
+        106
+      ],
+      "SG_distance_A": 13.229372024536133,
+      "geometric_disulfide_candidate": false,
+      "experimentally_confirmed": false
+    },
+    {
+      "chain": "B",
+      "positions": [
+        33,
+        96
+      ],
+      "SG_distance_A": 10.412826538085938,
+      "geometric_disulfide_candidate": false,
+      "experimentally_confirmed": false
+    },
+    {
+      "chain": "B",
+      "positions": [
+        33,
+        106
+      ],
+      "SG_distance_A": 2.179733991622925,
+      "geometric_disulfide_candidate": true,
+      "experimentally_confirmed": false
+    },
+    {
+      "chain": "B",
+      "positions": [
+        96,
+        106
+      ],
+      "SG_distance_A": 11.681757926940918,
+      "geometric_disulfide_candidate": false,
+      "experimentally_confirmed": false
+    }
+  ],
+  "protected_cysteines": [
+    22,
+    33,
+    96,
+    106
+  ],
+  "native_CDR_annotation_status": "pending_case02_AbAn",
+  "native_paratope_status": "pending_case02_annotations"
+}

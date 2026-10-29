@@ -1,0 +1,18 @@
+{
+ "task_id": "342337277858816",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "WT_PETase_structfitness",
+  "type": "Structural Stability Mutation Effect",
+  "task_id": "342337277858816",
+  "started": "2026-10-20 08:13:57",
+  "duration": "3s"
+ },
+ "payload_exact": {
+  "structure_path": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248398139384_5XG0_WT_chainC_author-6_261.cif"
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [
+  "/workspace/downloads/structural_stability_mutation_effect_342337277858816/struct_fitness_scores.csv"
+ ]
+}

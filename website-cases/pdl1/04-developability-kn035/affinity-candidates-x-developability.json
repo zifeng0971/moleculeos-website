@@ -1,0 +1,695 @@
+{
+  "source_kind": "local_merge_of_case03_MOS_affinity_and_case04_MOS_scores",
+  "score_sources": {
+    "structural_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/struct_fitness_scores.csv",
+      "task_id": "342605430273024",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "B": "B"
+      }
+    },
+    "sequence_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/sequence_scores.csv",
+      "task_id": "342605430948864",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "A": "B"
+      }
+    },
+    "evolutionary_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/evolutionary_scores.csv",
+      "task_id": "342605471151104",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "A": "B"
+      }
+    }
+  },
+  "rows": [
+    {
+      "mutation": "A35W",
+      "chain": "B",
+      "label_seq_id": 35,
+      "ddG_pred": -1.7464554,
+      "ddG_pred_raw": "-1.7464554",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-4.927154541015625",
+          "value": -4.927154541015625,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -4.927154541015625
+        },
+        "sequence_fitness": {
+          "raw": "-1.9919896125793457",
+          "value": -1.9919896125793457,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -1.9919896125793457
+        },
+        "evolutionary_fitness": {
+          "raw": "-2.236572265625",
+          "value": -2.236572265625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -2.236572265625
+        }
+      },
+      "local_risk_motifs_added": [
+        [
+          35,
+          "oxidation_susceptible_W"
+        ]
+      ],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "predicted_structure_sequence_verified",
+      "experimental_validation": false,
+      "variant_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972742325_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972835327_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254972927676_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973022478_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/A35W/179254973115226_model_sample_3.cif"
+      ],
+      "MMFold_best_confidence_raw": {
+        "plddt": 86.54154205322266,
+        "ptm": 0.7357651591300964,
+        "iptm": 0.6119044423103333,
+        "chain_ptm": [
+          0.9336773157119751,
+          0.8997885584831238
+        ],
+        "chain_iptm": [
+          0.6119044423103333,
+          0.6119044423103333
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.6119044423103333
+          ],
+          [
+            0.6119044423103333,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.8867475390434265,
+          0.8446747064590454
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.8654153943061829
+          ],
+          [
+            0.8654153943061829,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.6366766095161438,
+        "abag_score": 0.6119044423103333
+      },
+      "MMFold_task_id": "342605501072384"
+    },
+    {
+      "mutation": "V109L",
+      "chain": "B",
+      "label_seq_id": 109,
+      "ddG_pred": -1.6510735,
+      "ddG_pred_raw": "-1.6510735",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": true,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-0.03691506385803223",
+          "value": -0.03691506385803223,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -0.03691506385803223
+        },
+        "sequence_fitness": {
+          "raw": "0.20480632781982422",
+          "value": 0.20480632781982422,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.20480632781982422
+        },
+        "evolutionary_fitness": {
+          "raw": "1.33984375",
+          "value": 1.33984375,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 1.33984375
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "predicted_structure_sequence_verified",
+      "experimental_validation": false,
+      "variant_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971300539_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971415598_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971535343_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971653076_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/V109L/179254971766289_model_sample_3.cif"
+      ],
+      "MMFold_best_confidence_raw": {
+        "plddt": 93.63365173339844,
+        "ptm": 0.9403924942016602,
+        "iptm": 0.9169299602508545,
+        "chain_ptm": [
+          0.9449557065963745,
+          0.9605855345726013
+        ],
+        "chain_iptm": [
+          0.9169299602508545,
+          0.9169299602508545
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.9169299602508545
+          ],
+          [
+            0.9169299602508545,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9287843704223633,
+          0.9437402486801147
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9363365173339844
+          ],
+          [
+            0.9363365173339844,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.9216225147247314,
+        "abag_score": 0.9169299602508545
+      },
+      "MMFold_task_id": "342605511136256"
+    },
+    {
+      "mutation": "A35Y",
+      "chain": "B",
+      "label_seq_id": 35,
+      "ddG_pred": -1.5832196,
+      "ddG_pred_raw": "-1.5832196",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-4.1399617195129395",
+          "value": -4.1399617195129395,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -4.1399617195129395
+        },
+        "sequence_fitness": {
+          "raw": "0.5503830909729004",
+          "value": 0.5503830909729004,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.5503830909729004
+        },
+        "evolutionary_fitness": {
+          "raw": "-0.01953125",
+          "value": -0.01953125,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.01953125
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "A35F",
+      "chain": "B",
+      "label_seq_id": 35,
+      "ddG_pred": -1.5236144,
+      "ddG_pred_raw": "-1.5236144",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-5.028595924377441",
+          "value": -5.028595924377441,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -5.028595924377441
+        },
+        "sequence_fitness": {
+          "raw": "-0.42992496490478516",
+          "value": -0.42992496490478516,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.42992496490478516
+        },
+        "evolutionary_fitness": {
+          "raw": "-1.431640625",
+          "value": -1.431640625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -1.431640625
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "V109W",
+      "chain": "B",
+      "label_seq_id": 109,
+      "ddG_pred": -1.5057821,
+      "ddG_pred_raw": "-1.5057821",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": true,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-2.213602066040039",
+          "value": -2.213602066040039,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -2.213602066040039
+        },
+        "sequence_fitness": {
+          "raw": "-0.7431628704071045",
+          "value": -0.7431628704071045,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.7431628704071045
+        },
+        "evolutionary_fitness": {
+          "raw": "0.48828125",
+          "value": 0.48828125,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.48828125
+        }
+      },
+      "local_risk_motifs_added": [
+        [
+          109,
+          "oxidation_susceptible_W"
+        ]
+      ],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "C33Y",
+      "chain": "B",
+      "label_seq_id": 33,
+      "ddG_pred": -1.4980912,
+      "ddG_pred_raw": "-1.4980912",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": true,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-5.404641151428223",
+          "value": -5.404641151428223,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -5.404641151428223
+        },
+        "sequence_fitness": {
+          "raw": "2.5876429080963135",
+          "value": 2.5876429080963135,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 2.5876429080963135
+        },
+        "evolutionary_fitness": {
+          "raw": "3.642578125",
+          "value": 3.642578125,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 3.642578125
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "predicted_structure_sequence_verified",
+      "experimental_validation": false,
+      "variant_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971844525_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254971940989_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972032012_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972128443_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/C33Y/179254972218130_model_sample_5.cif"
+      ],
+      "MMFold_best_confidence_raw": {
+        "plddt": 82.80867004394531,
+        "ptm": 0.5986561179161072,
+        "iptm": 0.26021215319633484,
+        "chain_ptm": [
+          0.9236128330230713,
+          0.9026032090187073
+        ],
+        "chain_iptm": [
+          0.26021215319633484,
+          0.26021215319633484
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.26021215319633484
+          ],
+          [
+            0.26021215319633484,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.8328420519828796,
+          0.8234488368034363
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.8280866742134094
+          ],
+          [
+            0.8280866742134094,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.3279009461402893,
+        "abag_score": 0.26021215319633484
+      },
+      "MMFold_task_id": "342605520978944"
+    },
+    {
+      "mutation": "Q116M",
+      "chain": "B",
+      "label_seq_id": 116,
+      "ddG_pred": -1.4936166,
+      "ddG_pred_raw": "-1.4936166",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": true,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-2.1538617610931396",
+          "value": -2.1538617610931396,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -2.1538617610931396
+        },
+        "sequence_fitness": {
+          "raw": "-0.7302489280700684",
+          "value": -0.7302489280700684,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.7302489280700684
+        },
+        "evolutionary_fitness": {
+          "raw": "-3.376952886581421",
+          "value": -3.376952886581421,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -3.376952886581421
+        }
+      },
+      "local_risk_motifs_added": [
+        [
+          116,
+          "oxidation_susceptible_M"
+        ]
+      ],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "predicted_structure_sequence_verified",
+      "experimental_validation": false,
+      "variant_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984099951_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984204151_model_sample_5.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984303593_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984401177_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/Q116M/179254984501258_model_sample_4.cif"
+      ],
+      "MMFold_best_confidence_raw": {
+        "plddt": 93.70343780517578,
+        "ptm": 0.9389172792434692,
+        "iptm": 0.9183361530303955,
+        "chain_ptm": [
+          0.9447889924049377,
+          0.9586281776428223
+        ],
+        "chain_iptm": [
+          0.9183361530303955,
+          0.9183361530303955
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.9183361530303955
+          ],
+          [
+            0.9183361530303955,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.9290512800216675,
+          0.9448767900466919
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9370343685150146
+          ],
+          [
+            0.9370343685150146,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.9224523901939392,
+        "abag_score": 0.9183361530303955
+      },
+      "MMFold_task_id": "342606341129216"
+    },
+    {
+      "mutation": "A97F",
+      "chain": "B",
+      "label_seq_id": 97,
+      "ddG_pred": -1.4836845,
+      "ddG_pred_raw": "-1.4836845",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-5.107237815856934",
+          "value": -5.107237815856934,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -5.107237815856934
+        },
+        "sequence_fitness": {
+          "raw": "-4.49491024017334",
+          "value": -4.49491024017334,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -4.49491024017334
+        },
+        "evolutionary_fitness": {
+          "raw": "-2.072265625",
+          "value": -2.072265625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -2.072265625
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "A35S",
+      "chain": "B",
+      "label_seq_id": 35,
+      "ddG_pred": -1.4654148,
+      "ddG_pred_raw": "-1.4654148",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": false,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-0.9330732822418213",
+          "value": -0.9330732822418213,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -0.9330732822418213
+        },
+        "sequence_fitness": {
+          "raw": "1.0456287860870361",
+          "value": 1.0456287860870361,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 1.0456287860870361
+        },
+        "evolutionary_fitness": {
+          "raw": "0.541015625",
+          "value": 0.541015625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.541015625
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "Q116K",
+      "chain": "B",
+      "label_seq_id": 116,
+      "ddG_pred": -1.4106131,
+      "ddG_pred_raw": "-1.4106131",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": true,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "0.6436681747436523",
+          "value": 0.6436681747436523,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 0.6436681747436523
+        },
+        "sequence_fitness": {
+          "raw": "-0.13730573654174805",
+          "value": -0.13730573654174805,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.13730573654174805
+        },
+        "evolutionary_fitness": {
+          "raw": "0.072265625",
+          "value": 0.072265625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.072265625
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "score_only_no_variant_structure",
+      "experimental_validation": false,
+      "variant_structure_paths": []
+    },
+    {
+      "mutation": "T105L",
+      "chain": "B",
+      "label_seq_id": 105,
+      "ddG_pred": -1.1324842,
+      "ddG_pred_raw": "-1.1324842",
+      "affinity_unit": null,
+      "affinity_unit_status": "not documented",
+      "native_paratope": true,
+      "protected_developability_position": true,
+      "disulfide_breaking": false,
+      "scores": {
+        "structural_fitness": {
+          "raw": "-0.04916024208068848",
+          "value": -0.04916024208068848,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -0.04916024208068848
+        },
+        "sequence_fitness": {
+          "raw": "-0.04160928726196289",
+          "value": -0.04160928726196289,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.04160928726196289
+        },
+        "evolutionary_fitness": {
+          "raw": "-0.7109375",
+          "value": -0.7109375,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.7109375
+        }
+      },
+      "local_risk_motifs_added": [],
+      "local_risk_motifs_removed": [],
+      "structure_validation_status": "predicted_structure_sequence_verified",
+      "experimental_validation": false,
+      "variant_structure_paths": [
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995024162_model_sample_2.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995141534_model_sample_3.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995266398_model_sample_4.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995379032_model_sample_1.cif",
+        "03-affinity-kn035/raw/mos-export/kn035_case03/raw/variants/T105L/179254995490636_model_sample_5.cif"
+      ],
+      "MMFold_best_confidence_raw": {
+        "plddt": 92.86156463623047,
+        "ptm": 0.9232257008552551,
+        "iptm": 0.900540292263031,
+        "chain_ptm": [
+          0.93764728307724,
+          0.955264687538147
+        ],
+        "chain_iptm": [
+          0.900540292263031,
+          0.900540292263031
+        ],
+        "chain_pair_iptm": [
+          [
+            0.0,
+            0.900540292263031
+          ],
+          [
+            0.900540292263031,
+            0.0
+          ]
+        ],
+        "chain_plddt": [
+          0.919903576374054,
+          0.9371565580368042
+        ],
+        "chain_pair_plddt": [
+          [
+            0.0,
+            0.9286156296730042
+          ],
+          [
+            0.9286156296730042,
+            0.0
+          ]
+        ],
+        "ranking_score": 0.905077338218689,
+        "abag_score": 0.900540292263031
+      },
+      "MMFold_task_id": "342606351508480"
+    }
+  ]
+}

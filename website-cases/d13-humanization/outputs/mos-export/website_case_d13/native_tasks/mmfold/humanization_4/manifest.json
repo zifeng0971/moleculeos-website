@@ -1,0 +1,97 @@
+{
+ "candidate": "humanization_4",
+ "n_samples": 5,
+ "samples": [
+  {
+   "sample": 1,
+   "file": "179248425613355_model_sample_1.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 94.82023620605469,
+   "ptm": 0.9685961008071899,
+   "iptm": 0.9590898752212524,
+   "ranking_score": 0.9609911441802979,
+   "chain_plddt": [
+    0.9484401345252991,
+    0.9479473829269409
+   ]
+  },
+  {
+   "sample": 2,
+   "file": "179248425384081_model_sample_2.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 94.8025894165039,
+   "ptm": 0.9684391021728516,
+   "iptm": 0.9589506983757019,
+   "ranking_score": 0.9608484506607056,
+   "chain_plddt": [
+    0.9482871294021606,
+    0.9477455615997314
+   ]
+  },
+  {
+   "sample": 3,
+   "file": "179248425725603_model_sample_3.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 94.78814697265625,
+   "ptm": 0.9683529138565063,
+   "iptm": 0.9587919116020203,
+   "ranking_score": 0.9607040882110596,
+   "chain_plddt": [
+    0.9481423497200012,
+    0.9476014375686646
+   ]
+  },
+  {
+   "sample": 4,
+   "file": "179248425875436_model_sample_4.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 94.7952880859375,
+   "ptm": 0.9682278037071228,
+   "iptm": 0.9587550163269043,
+   "ranking_score": 0.9606496095657349,
+   "chain_plddt": [
+    0.9482441544532776,
+    0.9476402401924133
+   ]
+  },
+  {
+   "sample": 5,
+   "file": "179248425501566_model_sample_5.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 94.78410339355469,
+   "ptm": 0.968329906463623,
+   "iptm": 0.9587079882621765,
+   "ranking_score": 0.9606323838233948,
+   "chain_plddt": [
+    0.9480690956115723,
+    0.9475962519645691
+   ]
+  }
+ ],
+ "best_sample": 1,
+ "best_by": "highest ranking_score in summary_confidences",
+ "chain_roles": {
+  "A": "VH",
+  "B": "VL"
+ }
+}

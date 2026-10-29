@@ -1,0 +1,320 @@
+[
+  {
+    "mutation": "Q5V",
+    "chain": "B",
+    "label_seq_id": 5,
+    "wild_type": "Q",
+    "mutant": "V",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "5",
+      "wt": "Q",
+      "mut": "V",
+      "mutation": "B:Q5V",
+      "acceptance": "strict",
+      "tier": "A_paratope_distal",
+      "stability_delta": "1.1569",
+      "seq_fitness_delta": "1.9142",
+      "evolutionary_delta": "4.1074",
+      "consensus": "0.276",
+      "risk_flags": "none",
+      "rel_sasa": "0.478",
+      "nearest_paratope_res": "Q116",
+      "nearest_paratope_dist_A": "11.87",
+      "vhh_hallmark": "False"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "1.1569222211837769",
+        "value": 1.1569222211837769,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": 1.1569222211837769
+      },
+      "sequence_fitness": {
+        "raw": "1.914225459098816",
+        "value": 1.914225459098816,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 1.914225459098816
+      },
+      "evolutionary_fitness": {
+        "raw": "4.107421875",
+        "value": 4.107421875,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 4.107421875
+      }
+    }
+  },
+  {
+    "mutation": "M93V",
+    "chain": "B",
+    "label_seq_id": 93,
+    "wild_type": "M",
+    "mutant": "V",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "93",
+      "wt": "M",
+      "mut": "V",
+      "mutation": "B:M93V",
+      "acceptance": "extended",
+      "tier": "A_paratope_distal",
+      "stability_delta": "2.251",
+      "seq_fitness_delta": "-0.2345",
+      "evolutionary_delta": "4.0352",
+      "consensus": "0.26",
+      "risk_flags": "removes_oxidation_Met",
+      "rel_sasa": "0.226",
+      "nearest_paratope_res": "S111",
+      "nearest_paratope_dist_A": "13.05",
+      "vhh_hallmark": "False"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "2.2510409355163574",
+        "value": 2.2510409355163574,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": 2.2510409355163574
+      },
+      "sequence_fitness": {
+        "raw": "-0.23450660705566406",
+        "value": -0.23450660705566406,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": -0.23450660705566406
+      },
+      "evolutionary_fitness": {
+        "raw": "4.03515625",
+        "value": 4.03515625,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 4.03515625
+      }
+    }
+  },
+  {
+    "mutation": "N73D",
+    "chain": "B",
+    "label_seq_id": 73,
+    "wild_type": "N",
+    "mutant": "D",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "73",
+      "wt": "N",
+      "mut": "D",
+      "mutation": "B:N73D",
+      "acceptance": "extended",
+      "tier": "A_paratope_distal",
+      "stability_delta": "-0.7103",
+      "seq_fitness_delta": "4.0442",
+      "evolutionary_delta": "3.918",
+      "consensus": "0.236",
+      "risk_flags": "none",
+      "rel_sasa": "0.211",
+      "nearest_paratope_res": "R32",
+      "nearest_paratope_dist_A": "11.32",
+      "vhh_hallmark": "False"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "-0.7102775573730469",
+        "value": -0.7102775573730469,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": -0.7102775573730469
+      },
+      "sequence_fitness": {
+        "raw": "4.044163227081299",
+        "value": 4.044163227081299,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 4.044163227081299
+      },
+      "evolutionary_fitness": {
+        "raw": "3.91796875",
+        "value": 3.91796875,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 3.91796875
+      }
+    }
+  },
+  {
+    "mutation": "M93T",
+    "chain": "B",
+    "label_seq_id": 93,
+    "wild_type": "M",
+    "mutant": "T",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "93",
+      "wt": "M",
+      "mut": "T",
+      "mutation": "B:M93T",
+      "acceptance": "extended",
+      "tier": "A_paratope_distal",
+      "stability_delta": "1.8531",
+      "seq_fitness_delta": "2.9152",
+      "evolutionary_delta": "-0.8848",
+      "consensus": "0.189",
+      "risk_flags": "removes_oxidation_Met",
+      "rel_sasa": "0.226",
+      "nearest_paratope_res": "S111",
+      "nearest_paratope_dist_A": "13.05",
+      "vhh_hallmark": "False"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "1.8530974388122559",
+        "value": 1.8530974388122559,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": 1.8530974388122559
+      },
+      "sequence_fitness": {
+        "raw": "2.9152450561523438",
+        "value": 2.9152450561523438,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 2.9152450561523438
+      },
+      "evolutionary_fitness": {
+        "raw": "-0.884765625",
+        "value": -0.884765625,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": -0.884765625
+      }
+    }
+  },
+  {
+    "mutation": "A75S",
+    "chain": "B",
+    "label_seq_id": 75,
+    "wild_type": "A",
+    "mutant": "S",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "75",
+      "wt": "A",
+      "mut": "S",
+      "mutation": "B:A75S",
+      "acceptance": "strict",
+      "tier": "A_paratope_distal",
+      "stability_delta": "0.4314",
+      "seq_fitness_delta": "0.8123",
+      "evolutionary_delta": "1.043",
+      "consensus": "0.09",
+      "risk_flags": "none",
+      "rel_sasa": "0.603",
+      "nearest_paratope_res": "K27",
+      "nearest_paratope_dist_A": "9.58",
+      "vhh_hallmark": "False"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "0.43140995502471924",
+        "value": 0.43140995502471924,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": 0.43140995502471924
+      },
+      "sequence_fitness": {
+        "raw": "0.8123055100440979",
+        "value": 0.8123055100440979,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 0.8123055100440979
+      },
+      "evolutionary_fitness": {
+        "raw": "1.04296875",
+        "value": 1.04296875,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 1.04296875
+      }
+    }
+  },
+  {
+    "mutation": "R47L",
+    "chain": "B",
+    "label_seq_id": 47,
+    "wild_type": "R",
+    "mutant": "L",
+    "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+    "CDR_membership_by_scheme": {
+      "IMGT": false,
+      "Kabat": false,
+      "Chothia": false
+    },
+    "predicted_structure_available": false,
+    "candidate_only": true,
+    "source_kind": "local_screen_of_MOS_task_outputs",
+    "screen_notes": {
+      "pos": "47",
+      "wt": "R",
+      "mut": "L",
+      "mutation": "B:R47L",
+      "acceptance": "strict",
+      "tier": "B_paratope_adjacent",
+      "stability_delta": "1.3527",
+      "seq_fitness_delta": "0.8823",
+      "evolutionary_delta": "6.4771",
+      "consensus": "0.328",
+      "risk_flags": "none",
+      "rel_sasa": "0.079",
+      "nearest_paratope_res": "V109",
+      "nearest_paratope_dist_A": "2.63",
+      "vhh_hallmark": "True"
+    },
+    "scores": {
+      "structural_fitness": {
+        "raw": "1.3527323007583618",
+        "value": 1.3527323007583618,
+        "source_chain": "B",
+        "delta_vs_WT_at_same_position": 1.3527323007583618
+      },
+      "sequence_fitness": {
+        "raw": "0.8823142051696777",
+        "value": 0.8823142051696777,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 0.8823142051696777
+      },
+      "evolutionary_fitness": {
+        "raw": "6.47705078125",
+        "value": 6.47705078125,
+        "source_chain": "A",
+        "delta_vs_WT_at_same_position": 6.47705078125
+      }
+    }
+  }
+]

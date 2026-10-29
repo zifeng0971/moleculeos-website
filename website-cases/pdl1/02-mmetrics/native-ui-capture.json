@@ -1,0 +1,162 @@
+{
+  "status": "native_available_scope_collection_complete",
+  "updated_utc": "2026-10-20T07:03:10.128549+00:00",
+  "project_id": "342256011498496",
+  "project_url": "https://mos.moleculemind.com/?projectId=342256011498496",
+  "reproduction_guide": "02-mmetrics/MMETRICS_REPRODUCTION.md",
+  "native_summary": "02-mmetrics/raw/native-ui/verified-native-summary.json",
+  "requested_modules": [
+    {
+      "name": "Overview",
+      "status": "collected_as_Description",
+      "data": "panel-dom.json"
+    },
+    {
+      "name": "Homologs",
+      "status": "collected_native_empty_state",
+      "text": "No significant homologs found."
+    },
+    {
+      "name": "Annotations",
+      "status": "collected",
+      "data": [
+        "annotations.json",
+        "AbAn_heavy.csv",
+        "AbAn_light.csv",
+        "verified-antibody-csv-numbering.json"
+      ]
+    },
+    {
+      "name": "Risk Sites",
+      "status": "not_present_as_native_section",
+      "supplemental": "02-mmetrics/raw/mos-export/case02_complete/04_liabilities/liability_sites.json"
+    },
+    {
+      "name": "Interactions",
+      "status": "collected_table_and_2D",
+      "data": [
+        "interactions.json",
+        "interaction-plot-1.svg",
+        "interaction-plot-2.svg",
+        "interaction-plot-3.svg"
+      ]
+    },
+    {
+      "name": "Recommended Mutations",
+      "status": "not_present_as_native_section",
+      "supplemental": "02-mmetrics/raw/mos-export/case02_complete/06_mutations/recommended_mutations.csv"
+    },
+    {
+      "name": "Mutation Scores",
+      "status": "collected_native_CSVs_and_viewer",
+      "data": "native-datasets.json"
+    }
+  ],
+  "additional_native_data": [
+    "AbScN_heavy..csv",
+    "AbScN_light.csv",
+    "ParaDt_heavy.csv",
+    "ParaDt_light.csv"
+  ],
+  "screenshots": [
+    "02-mmetrics/visuals/native-MutXevo-view.jpg",
+    "02-mmetrics/visuals/native-affinity-page2-50.jpg",
+    "02-mmetrics/visuals/native-affinity-sorted.jpg",
+    "02-mmetrics/visuals/native-file-AbAn_heavy.csv.jpg",
+    "02-mmetrics/visuals/native-file-AbAn_light.csv.jpg",
+    "02-mmetrics/visuals/native-file-AbScN_heavy..csv.jpg",
+    "02-mmetrics/visuals/native-file-AbScN_light.csv.jpg",
+    "02-mmetrics/visuals/native-file-MutXaff.csv.jpg",
+    "02-mmetrics/visuals/native-file-MutXevo.csv.jpg",
+    "02-mmetrics/visuals/native-file-MutXseq.csv.jpg",
+    "02-mmetrics/visuals/native-file-MutXstruct.csv.jpg",
+    "02-mmetrics/visuals/native-file-ParaDt_heavy.csv.jpg",
+    "02-mmetrics/visuals/native-file-ParaDt_light.csv.jpg",
+    "02-mmetrics/visuals/native-final-overview.jpg",
+    "02-mmetrics/visuals/native-interaction-2d.jpg",
+    "02-mmetrics/visuals/native-interaction-table.jpg",
+    "02-mmetrics/visuals/native-mmetrics-final-state.jpg",
+    "02-mmetrics/visuals/native-overview.jpg",
+    "02-mmetrics/visuals/native-pagination-options.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-00.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-01.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-02.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-03.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-04.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-05.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-06.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-07.jpg",
+    "02-mmetrics/visuals/native-panel-scroll-08.jpg",
+    "02-mmetrics/visuals/native-paratope-epitope-selected.jpg",
+    "02-mmetrics/visuals/native-paratope-selected.jpg",
+    "02-mmetrics/visuals/native-ptm-selected.jpg",
+    "02-mmetrics/visuals/native-residue-A52-selected.jpg",
+    "02-mmetrics/visuals/native-table-header.jpg"
+  ],
+  "raw_native_files": [
+    "02-mmetrics/raw/native-ui/AbAn_heavy.csv",
+    "02-mmetrics/raw/native-ui/AbAn_heavy.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/AbAn_light.csv",
+    "02-mmetrics/raw/native-ui/AbAn_light.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/AbScN_heavy..csv",
+    "02-mmetrics/raw/native-ui/AbScN_heavy..csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/AbScN_light.csv",
+    "02-mmetrics/raw/native-ui/AbScN_light.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/MutXaff.csv",
+    "02-mmetrics/raw/native-ui/MutXaff.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/MutXevo-view-dom.txt",
+    "02-mmetrics/raw/native-ui/MutXevo.csv",
+    "02-mmetrics/raw/native-ui/MutXevo.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/MutXseq.csv",
+    "02-mmetrics/raw/native-ui/MutXseq.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/MutXstruct.csv",
+    "02-mmetrics/raw/native-ui/MutXstruct.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/ParaDt_heavy.csv",
+    "02-mmetrics/raw/native-ui/ParaDt_heavy.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/ParaDt_light.csv",
+    "02-mmetrics/raw/native-ui/ParaDt_light.csv-view-dom.txt",
+    "02-mmetrics/raw/native-ui/affinity-page2-50-dom.txt",
+    "02-mmetrics/raw/native-ui/affinity-pagination-options-dom.txt",
+    "02-mmetrics/raw/native-ui/affinity-sorted-dom.txt",
+    "02-mmetrics/raw/native-ui/annotation-buttons-and-styles.json",
+    "02-mmetrics/raw/native-ui/annotations.json",
+    "02-mmetrics/raw/native-ui/file-view-layout.json",
+    "02-mmetrics/raw/native-ui/file-view-summaries.json",
+    "02-mmetrics/raw/native-ui/initial-loaded-dom.txt",
+    "02-mmetrics/raw/native-ui/interaction-plot-1.svg",
+    "02-mmetrics/raw/native-ui/interaction-plot-2.svg",
+    "02-mmetrics/raw/native-ui/interaction-plot-3.svg",
+    "02-mmetrics/raw/native-ui/interaction-table-dom.txt",
+    "02-mmetrics/raw/native-ui/interaction-tables.json",
+    "02-mmetrics/raw/native-ui/interactions.json",
+    "02-mmetrics/raw/native-ui/layout-and-typography.json",
+    "02-mmetrics/raw/native-ui/native-datasets.json",
+    "02-mmetrics/raw/native-ui/panel-dom.json",
+    "02-mmetrics/raw/native-ui/paratope-selected-dom.txt",
+    "02-mmetrics/raw/native-ui/ptm-selected-dom.txt",
+    "02-mmetrics/raw/native-ui/residue-A52-selected-dom.txt",
+    "02-mmetrics/raw/native-ui/scroll-captures.json",
+    "02-mmetrics/raw/native-ui/task-list-page2-dom.txt",
+    "02-mmetrics/raw/native-ui/verified-antibody-csv-numbering.json",
+    "02-mmetrics/raw/native-ui/verified-native-summary.json"
+  ],
+  "verified_interactions": [
+    "group annotation selection",
+    "single residue A52 navigation",
+    "PTM selection",
+    "clear selection",
+    "2D/Table switch",
+    "all 10 CSV views",
+    "all 10 downloads",
+    "affinity ddG ascending sort",
+    "page-size menu",
+    "50/page and page2",
+    "structure reset"
+  ],
+  "not_verified": [
+    "new window file viewer action",
+    "drag divider behavior"
+  ],
+  "prior_loading_evidence": "02-mmetrics/visuals/native-mmetrics-final-state.jpg",
+  "prior_login_evidence": "02-mmetrics/visuals/resume-login-required.jpg"
+}

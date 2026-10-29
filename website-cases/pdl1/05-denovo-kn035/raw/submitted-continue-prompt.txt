@@ -1,0 +1,1 @@
+继续执行至交付：请现在检查3个已提交任务真实状态，保存CheckMOSTask状态/payload原文，先把现有输入、schema、payload、ledger打包/workspace/kn035_case05_checkpoint.zip供下载，不必等任务完成才给输入包。随后在本轮以每次<=45秒的间隔检查，完成就下载全部真实输出、做已有分析并打包/workspace/kn035_case05.zip；不能仅告知我之后再说。主复合物本地已核验hash和提取坐标完全相同，所以可在provenance写external_local_verification_available，不要擅取其他项目。

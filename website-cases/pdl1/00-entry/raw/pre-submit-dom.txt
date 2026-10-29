@@ -1,0 +1,52 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-00-Natural-Language-Entry-20261022
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- generic: No Data
+- generic: Amino Acid Group
+- generic: No Data
+- generic: ✦
+- text: I'm Mocha, your AI assistant from MoleculeMind.
+- generic: What can I do for you?
+- generic: Agent Mode
+- switch "Agent Mode" [checked]
+- generic: Try these samples
+- button "Humanization Minimize immunogenicity of heterologous antibodies while maintaining antigen-binding capability":
+  - generic: Humanization
+  - generic: Minimize immunogenicity of heterologous antibodies while maintaining antigen-binding capability
+- button "Binding Affinity Predict binding free energy and recommend optimal mutations to enhance antibody-antigen affinity":
+  - generic: Binding Affinity
+  - generic: Predict binding free energy and recommend optimal mutations to enhance antibody-antigen affinity
+- button "Sequence Homology Identify evolutionary relatives and homologous proteins across multi-source sequence databases":
+  - generic: Sequence Homology
+  - generic: Identify evolutionary relatives and homologous proteins across multi-source sequence databases
+- button "Epitope Analysis Map interacting residues and pinpoint key antigenic determinants or binding hotspots":
+  - generic: Epitope Analysis
+  - generic: Map interacting residues and pinpoint key antigenic determinants or binding hotspots
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..." [active]: "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button:
+- button "Structure Prediction with MMFold":
+  - text: Structure Prediction with MMFold
+  - generic: →
+- button "About MOS":
+  - text: About MOS
+  - generic: →

@@ -1,0 +1,8 @@
+CheckMOSTask(342604577018880) -> SUCCEED
+Name:      mmetrics-analysis-342604299285504
+Type:      MOSTask
+Task ID:   342604577018880
+Started:   2026-10-21 02:21:36
+Duration:  3s
+Downloaded 1 file(s): record.json
+(re-read live with CheckMOSTask and DownloadTaskResults; status SUCCEED both times)

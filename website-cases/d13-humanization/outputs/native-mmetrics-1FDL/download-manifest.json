@@ -1,0 +1,146 @@
+{
+  "origin": "MOS native page Download controls via Chrome Computer Use",
+  "captured_utc": "2026-10-20T08:49:55.680554+00:00",
+  "files": [
+    {
+      "file": "outputs/native-mmetrics-1FDL/MutXevo.csv",
+      "download_name": "MutXevo (4).csv",
+      "bytes": 231288,
+      "sha256": "4c1770e23a60e7010b38bd04e5ca4cc500933e73ec93e96477de4d06d64cfc7d",
+      "data_rows": 11220,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/MutXstruct.csv",
+      "download_name": "MutXstruct (2).csv",
+      "bytes": 292192,
+      "sha256": "81161168d9b2422e383124729025c43aa6367e8b55c3943b9ec644b1009dde40",
+      "data_rows": 11220,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/MutXseq.csv",
+      "download_name": "MutXseq (2).csv",
+      "bytes": 290943,
+      "sha256": "a4425c28b156b95e900b37ebcf7fb7b13890bbba4b1ddf58a2c27cc7ebb957fa",
+      "data_rows": 11220,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/MutXaff.csv",
+      "download_name": "MutXaff (3).csv",
+      "bytes": 439127,
+      "sha256": "58a9fc471876a201859d52bfa5941736983ed59bf2b10dc0f878124ca6bb76c6",
+      "data_rows": 8208,
+      "header": [
+        "",
+        "mutstr",
+        "ddG_pred",
+        "score_ddg",
+        "rank"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/AbScN_heavy.csv",
+      "download_name": "AbScN_heavy. (1).csv",
+      "bytes": 7468,
+      "sha256": "490231b160f095f3c63fca6cc2ff919338fb5ad5cca91b1d413f3f5e4f7021b9",
+      "data_rows": 116,
+      "header": [
+        "aa_index",
+        "aa",
+        "humanness_VH2_score",
+        "sequence_humanness_VH2_score",
+        "humanness_VHH2_score",
+        "sequence_humanness_VHH2_score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/AbScN_light.csv",
+      "download_name": "AbScN_light (1).csv",
+      "bytes": 3765,
+      "sha256": "1c0ebc9218b6b9f541d78e1dfcc4ae323a51c861185f28a6dcca680553eb042d",
+      "data_rows": 107,
+      "header": [
+        "aa_index",
+        "aa",
+        "humanness_VL2_score",
+        "sequence_humanness_VL2_score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/AbAn_heavy.csv",
+      "download_name": "AbAn_heavy (1).csv",
+      "bytes": 3562,
+      "sha256": "14612014f18dd413cc054430a237db6d4b8d1572658670836d9e72f9bd7c5f24",
+      "data_rows": 116,
+      "header": [
+        "aa_index",
+        "aa",
+        "pos_imgt",
+        "region_imgt",
+        "pos_kabat",
+        "region_kabat",
+        "pos_chothia",
+        "region_chothia"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/AbAn_light.csv",
+      "download_name": "AbAn_light (1).csv",
+      "bytes": 3270,
+      "sha256": "19f154d85cb7babe04786d6cb9295fbc5399bfcfa5e6fd7159e9c2bb18ac314e",
+      "data_rows": 107,
+      "header": [
+        "aa_index",
+        "aa",
+        "pos_imgt",
+        "region_imgt",
+        "pos_kabat",
+        "region_kabat",
+        "pos_chothia",
+        "region_chothia"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/ParaDt_heavy.csv",
+      "download_name": "ParaDt_heavy (1).csv",
+      "bytes": 2648,
+      "sha256": "ec1165ec699c7e8e4b226652bfbdc9c6818f8406cfc5503d786f087bc4afad72",
+      "data_rows": 116,
+      "header": [
+        "aa_index",
+        "aa",
+        "pos_imgt",
+        "region_imgt",
+        "paragraph_score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-1FDL/ParaDt_light.csv",
+      "download_name": "ParaDt_light (1).csv",
+      "bytes": 2378,
+      "sha256": "349e68358412b0b2a1341594a2404e7181cdadf27f8ed2aa3fe297d6343912c0",
+      "data_rows": 107,
+      "header": [
+        "aa_index",
+        "aa",
+        "pos_imgt",
+        "region_imgt",
+        "paragraph_score"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "label": "A35W",
+ "variant_file": "variant_model_sample1.cif",
+ "mutation": "B:A35W",
+ "chainA_ca_rmsd_A": 0.481,
+ "chainB_ca_rmsd_A_after_Aalign": 26.298,
+ "complex_allatom_rmsd_A": 18.764,
+ "variant_residue": "W",
+ "variant_residue_matches_requested": true,
+ "mutated_pos_min_dist_to_A": 6.32,
+ "A_neighbours_within_4.5A": [],
+ "A_neighbours_within_6A": [],
+ "reference_residue_at_position": "A",
+ "reference_pos_min_dist_to_A": 13.13,
+ "reference_A_neighbours_within_6A": [],
+ "variant_plddt_from_bfactor": {
+  "A": {
+   "mean_ca_plddt": 92.55,
+   "min": 55.95
+  },
+  "B": {
+   "mean_ca_plddt": 88.14,
+   "min": 61.66
+  }
+ },
+ "variant_plddt_at_mutated_position": 89.03,
+ "variant_disulfides_SG_under_2.5A": [
+  [
+   "A:24",
+   "A:98",
+   1.8
+  ],
+  [
+   "B:22",
+   "B:96",
+   2.17
+  ],
+  [
+   "B:33",
+   "B:106",
+   2.05
+  ]
+ ]
+}

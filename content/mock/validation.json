@@ -6,46 +6,137 @@
   },
   "cases": [
     {
-      "category": "抗体亲和力优化",
-      "result": "先导抗体亲和力提升 23 倍，特异性保持不变",
-      "difficulty": "可突变区域受 CDR 结构约束，组合空间超过 10⁶，传统饱和突变需 4 轮以上筛选",
-      "molecule": "IgG 单抗",
-      "cycle": "6 周"
+      "hidden": true,
+      "category": "PD-L1 纳米抗体从头设计",
+      "subtitle": "免疫检查点 · 指定表位设计",
+      "figure": "86.7%",
+      "result": "30 条优选候选中，26 条经 BLI 验证具有结合活性，最佳亲和力达到 7.2 nM。",
+      "body": "MMDesign 面向 PD-L1 指定表位生成纳米抗体候选，综合结构可靠性、序列性质与结合评价，将大规模设计结果收敛至 30 条实验候选。",
+      "tags": [
+        "PD-L1",
+        "VHH",
+        "BLI 验证"
+      ],
+      "viz": {
+        "kind": "dots",
+        "total": 30,
+        "hits": 26,
+        "caption": "30 条优选候选 · 26 条命中",
+        "extra": "最佳亲和力 7.2 nM"
+      }
     },
     {
-      "category": "酶稳定性改造",
-      "result": "工业酶 Tm 提高 11.4℃，60℃ 下残余活性由 31% 升至 86%",
-      "difficulty": "需在提升热稳定性的同时保住催化效率，两者常此消彼长",
-      "molecule": "水解酶",
-      "cycle": "8 周"
+      "category": "NK3R GPCR 纳米抗体从头设计",
+      "subtitle": "膜蛋白 · 复杂靶点",
+      "figure": "30/30",
+      "result": "30 条优选纳米抗体在 BLI 实验中全部获得结合阳性，最佳表观亲和力为 23.2 nM。",
+      "body": "针对 NK3R 的胞外区域开展从头设计，并通过多级计算筛选优选实验候选，将结合分子发现延伸至复杂 GPCR 膜蛋白。",
+      "tags": [
+        "NK3R",
+        "GPCR",
+        "BLI 验证"
+      ],
+      "viz": {
+        "kind": "dots",
+        "total": 30,
+        "hits": 30,
+        "caption": "30 条优选纳米抗体 · 30 条结合阳性",
+        "extra": "最佳表观亲和力 23.2 nM"
+      }
     },
     {
-      "category": "复合物结构预测",
-      "result": "抗原抗体复合物界面预测 DockQ 0.78，关键接触残基命中 14/16",
-      "difficulty": "缺少共晶结构，同源模板序列一致性不足 40%",
-      "molecule": "抗体-抗原复合物",
-      "cycle": "3 天"
+      "category": "TNF 高亲和力纳米抗体从头设计",
+      "subtitle": "细胞因子 · 小规模高命中",
+      "figure": "51 pM",
+      "result": "仅测试 14 条候选，即获得 7 条 TNF 结合分子，最佳 BLI 表观亲和力达到 51 pM。",
+      "body": "从头生成候选纳米抗体，再结合结构与序列性质进行多级筛选，以小规模实验验证获得高亲和力结合分子。",
+      "tags": [
+        "TNF",
+        "VHH",
+        "7/14 命中"
+      ],
+      "viz": {
+        "kind": "dots",
+        "total": 14,
+        "hits": 7,
+        "caption": "14 条测试候选 · 7 条结合",
+        "extra": "最佳表观亲和力 51 pM"
+      }
     },
     {
-      "category": "从头设计",
-      "result": "针对新靶点生成 48 个候选，湿实验测得 5 个有结合信号，最优 KD 42 nM",
-      "difficulty": "靶点无已知结合分子，缺少可用先导，需从界面特征直接建立候选",
-      "molecule": "小蛋白 binder",
-      "cycle": "10 周"
+      "category": "pH 响应型抗体设计",
+      "subtitle": "组氨酸工程 · 抗体优化",
+      "figure": "62×",
+      "result": "在 pH 6.0 条件下，优化抗体的解离速率达到 pH 7.4 条件下的约 62 倍。",
+      "body": "通过组氨酸位点设计与结合界面质子化状态分析，调节抗体在不同酸度环境中的结合动力学，获得实验验证的 pH 响应候选。",
+      "tags": [
+        "Histidine Engineering",
+        "pH 6.0 vs 7.4"
+      ],
+      "viz": {
+        "kind": "bars",
+        "caption": "相对解离速率",
+        "extra": "组氨酸工程",
+        "bars": [
+          {
+            "label": "pH 7.4",
+            "value": 1,
+            "text": "1×"
+          },
+          {
+            "label": "pH 6.0",
+            "value": 62,
+            "text": "≈ 62×"
+          }
+        ]
+      }
     },
     {
-      "category": "功能蛋白设计",
-      "result": "纳米抗体在保持中和活性前提下，聚集倾向下降 62%",
-      "difficulty": "疏水补丁位于 CDR 邻近区域，改造易影响结合能力",
-      "molecule": "纳米抗体 VHH",
-      "cycle": "7 周"
+      "category": "代糖酶热稳定性改造",
+      "subtitle": "工业酶 · 多目标优化",
+      "figure": "200 h",
+      "result": "半衰期从 2.3 小时延长至 200 小时，熔解温度同步提高 15°C。",
+      "body": "围绕代糖酶的热稳定性开展序列与结构分析、多目标突变设计，显著改善其耐热表现。",
+      "tags": [
+        "Enzyme Engineering",
+        "Tm +15°C"
+      ],
+      "viz": {
+        "kind": "bars",
+        "caption": "半衰期",
+        "extra": "Tm +15°C",
+        "bars": [
+          {
+            "label": "优化前",
+            "value": 2.3,
+            "text": "2.3 h"
+          },
+          {
+            "label": "优化后",
+            "value": 200,
+            "text": "200 h"
+          }
+        ]
+      }
     },
     {
-      "category": "蛋白质稳定性改造",
-      "result": "治疗性蛋白在 40℃ 加速试验中降解速率降低 3.8 倍",
-      "difficulty": "需兼顾表达宿主适配与制剂条件，单点改造收益有限",
-      "molecule": "重组治疗蛋白",
-      "cycle": "9 周"
+      "category": "PRK 密码子优化",
+      "subtitle": "PISCO · 毕赤酵母",
+      "figure": "12/13",
+      "result": "13 条经 PISCO 优化的 PRK 编码序列中，12 条在毕赤酵母实验中实现可溶表达提升。",
+      "body": "将蛋白质三维结构、氨基酸序列与宿主密码子偏好共同纳入优化，在不改变蛋白质序列的前提下设计适配宿主的编码方案。",
+      "tags": [
+        "PISCO",
+        "Codon Optimization",
+        "Pichia pastoris"
+      ],
+      "viz": {
+        "kind": "dots",
+        "total": 13,
+        "hits": 12,
+        "caption": "13 条优化序列 · 12 条可溶表达提升",
+        "extra": "毕赤酵母"
+      }
     }
   ],
   "_note": "演示数据,上线前必须替换"

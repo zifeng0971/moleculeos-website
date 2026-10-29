@@ -1,0 +1,530 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-02-MMetrics-KN035-20261021
+- img "down":
+- generic: Z
+- generic: X
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: MMFold_1
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: MMFold_1
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: M
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: "11"
+- generic: L
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: "21"
+- generic: T
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: "31"
+- generic: Q
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: "41"
+- generic: W
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: "51"
+- generic: F
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: "61"
+- generic: Q
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: "71"
+- generic: L
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: "81"
+- generic: A
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: "91"
+- generic: Q
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: "101"
+- generic: S
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: "111"
+- generic: T
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: L
+- generic: E
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: Q
+- generic: V
+- generic: Q
+- generic: L
+- generic: Q
+- generic: E
+- generic: S
+- generic: G
+- generic: G
+- generic: G
+- generic: "11"
+- generic: L
+- generic: V
+- generic: Q
+- generic: P
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: R
+- generic: L
+- generic: "21"
+- generic: S
+- generic: C
+- generic: A
+- generic: A
+- generic: S
+- generic: G
+- generic: K
+- generic: M
+- generic: S
+- generic: S
+- generic: "31"
+- generic: R
+- generic: R
+- generic: C
+- generic: M
+- generic: A
+- generic: W
+- generic: F
+- generic: R
+- generic: Q
+- generic: A
+- generic: "41"
+- generic: P
+- generic: G
+- generic: K
+- generic: E
+- generic: R
+- generic: E
+- generic: R
+- generic: V
+- generic: A
+- generic: K
+- generic: "51"
+- generic: L
+- generic: L
+- generic: T
+- generic: T
+- generic: S
+- generic: G
+- generic: S
+- generic: T
+- generic: "Y"
+- generic: L
+- generic: "61"
+- generic: A
+- generic: D
+- generic: S
+- generic: V
+- generic: K
+- generic: G
+- generic: R
+- generic: F
+- generic: T
+- generic: I
+- generic: "71"
+- generic: S
+- generic: Q
+- generic: "N"
+- generic: "N"
+- generic: A
+- generic: K
+- generic: S
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: M
+- generic: "N"
+- generic: S
+- generic: L
+- generic: K
+- generic: P
+- generic: E
+- generic: D
+- generic: "91"
+- generic: T
+- generic: A
+- generic: M
+- generic: "Y"
+- generic: "Y"
+- generic: C
+- generic: A
+- generic: A
+- generic: D
+- generic: S
+- generic: "101"
+- generic: F
+- generic: E
+- generic: D
+- generic: P
+- generic: T
+- generic: C
+- generic: T
+- generic: L
+- generic: V
+- generic: T
+- generic: "111"
+- generic: S
+- generic: S
+- generic: G
+- generic: A
+- generic: F
+- generic: Q
+- generic: "Y"
+- generic: W
+- generic: G
+- generic: Q
+- generic: "121"
+- generic: G
+- generic: T
+- generic: Q
+- generic: V
+- generic: T
+- generic: V
+- generic: S
+- generic: S
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics" [active]:
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Description
+- generic: Antigen–Antibody
+- generic: "confidence: high"
+- generic: This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available.
+- generic: ReasoningThe structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.
+- generic: Chain A
+- text: · protein
+- generic: Chain B
+- text: · protein · VHH
+- generic: Homologs
+- generic: Searched by antigen sequence similarity
+- generic: No significant homologs found.
+- generic: Annotations
+- generic: CDR numbering
+- button "IMGT"
+- button "Kabat"
+- button "Chothia"
+- button "CDR 3 residues · IMGT B:26-33 B:51-58 B:97-117":
+  - generic: CDR
+  - generic: 3 residues · IMGT
+  - button "B:26-33"
+  - button "B:51-58"
+  - button "B:97-117"
+- button "Paratope 18 residues · structure B:LYS27 B:SER29 B:SER30 B:ARG32 B:ASP99 B:SER100 B:PHE101 B:GLU102 B:ASP103 B:PRO104 B:THR105 B:LEU108 B:VAL109 B:SER111 B:GLY113 B:ALA114 B:PHE115 B:GLN116":
+  - generic: Paratope
+  - generic: 18 residues · structure
+  - button "B:LYS27"
+  - button "B:SER29"
+  - button "B:SER30"
+  - button "B:ARG32"
+  - button "B:ASP99"
+  - button "B:SER100"
+  - button "B:PHE101"
+  - button "B:GLU102"
+  - button "B:ASP103"
+  - button "B:PRO104"
+  - button "B:THR105"
+  - button "B:LEU108"
+  - button "B:VAL109"
+  - button "B:SER111"
+  - button "B:GLY113"
+  - button "B:ALA114"
+  - button "B:PHE115"
+  - button "B:GLN116"
+- button "Epitope 19 residues · structure A:ILE38 A:TYR40 A:GLU42 A:ASP45 A:ASN47 A:GLN50 A:VAL52 A:HIS53 A:ASP57 A:VAL60 A:ARG97 A:MET99 A:SER101 A:GLY103 A:GLY104 A:ALA105 A:ASP106 A:TYR107 A:ARG109":
+  - generic: Epitope
+  - generic: 19 residues · structure
+  - button "A:ILE38"
+  - button "A:TYR40"
+  - button "A:GLU42"
+  - button "A:ASP45"
+  - button "A:ASN47"
+  - button "A:GLN50"
+  - button "A:VAL52"
+  - button "A:HIS53"
+  - button "A:ASP57"
+  - button "A:VAL60"
+  - button "A:ARG97"
+  - button "A:MET99"
+  - button "A:SER101"
+  - button "A:GLY103"
+  - button "A:GLY104"
+  - button "A:ALA105"
+  - button "A:ASP106"
+  - button "A:TYR107"
+  - button "A:ARG109"
+- generic: Interaction Network
+- button "Table"
+- button "2D"
+- img "protein-protein interaction plot":
+  - generic: Chain A
+  - generic: Chain B
+  - generic: 2.52Å
+  - generic: 3.06Å
+  - generic: 3.08Å
+  - generic: 3.25Å
+  - generic: 3.14Å
+  - generic: 3.17Å
+  - generic: 3.19Å
+  - generic: 2.37Å
+  - generic: 2.60Å
+  - generic: 3.48Å
+  - generic: 3.49Å
+  - generic: 3.81Å
+  - generic: 3.14Å
+  - generic: 3.30Å
+  - generic: 3.04Å
+  - generic: 3.17Å
+  - generic: 2.60Å
+  - generic: 3.08Å
+  - generic: 3.70Å
+  - generic: 3.48Å
+  - generic: 3.25Å
+  - generic: 3.32Å
+  - generic: 2.69Å
+  - generic: 3.29Å
+  - generic: 3.62Å
+  - generic: 3.83Å
+  - generic: 3.14Å
+  - generic: 3.54Å
+  - generic: 3.01Å
+  - generic: 3.73Å
+  - generic: 3.81Å
+  - generic: 3.46Å
+  - generic: 3.71Å
+  - generic: 3.21Å
+  - generic: 3.60Å
+  - generic: 3.60Å
+  - generic: 3.25Å
+  - generic: 3.70Å
+  - generic: 3.44Å
+  - generic: 3.44Å
+  - generic: 3.71Å
+  - generic: 3.50Å
+  - generic: 3.49Å
+  - generic: 5.16Å
+  - generic: ARG
+  - generic: A109
+  - generic: GLN
+  - generic: A50
+  - generic: ASP
+  - generic: A45
+  - generic: TYR
+  - generic: A40
+  - generic: ARG
+  - generic: A97
+  - generic: GLU
+  - generic: A42
+  - generic: ILE
+  - generic: A38
+  - generic: VAL
+  - generic: A52
+  - generic: ASP
+  - generic: A57
+  - generic: VAL
+  - generic: A60
+  - generic: MET
+  - generic: A99
+  - generic: GLY
+  - generic: A103
+  - generic: GLY
+  - generic: A104
+  - generic: ALA
+  - generic: A105
+  - generic: ASP
+  - generic: A106
+  - generic: TYR
+  - generic: A107
+  - generic: GLN
+  - generic: B116
+  - generic: THR
+  - generic: B105
+  - generic: ARG
+  - generic: B32
+  - generic: ASP
+  - generic: B103
+  - generic: GLU
+  - generic: B102
+  - generic: SER
+  - generic: B29
+  - generic: ASP
+  - generic: B99
+  - generic: SER
+  - generic: B100
+  - generic: SER
+  - generic: B30
+  - generic: LEU
+  - generic: B108
+  - generic: PHE
+  - generic: B101
+  - generic: PRO
+  - generic: B104
+  - generic: VAL
+  - generic: B109
+  - generic: ALA
+  - generic: B114
+  - generic: SER
+  - generic: B111
+  - generic: GLY
+  - generic: B113
+  - generic: PHE
+  - generic: B115
+- generic: H-Bond
+- generic: Salt Bridge
+- generic: VdW Contact
+- generic: π-π Stack
+- generic: Basic
+- generic: Polar
+- generic: Acidic
+- generic: Aromatic
+- generic: Aliphatic
+- generic: Sulfur
+- generic: Mutation Scoring
+- generic: CSV
+- generic: MutXevo.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXstruct.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXseq.csv
+- generic: View
+- generic: Download
+- generic: CSV
+- generic: MutXaff.csv
+- generic: View
+- generic: Download

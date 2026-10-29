@@ -1,0 +1,421 @@
+{
+ "342337264870400": {
+  "task_id": "342337264870400",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "WT_PETase_seqfitness",
+   "type": "Sequence Fitness Mutation Effect",
+   "task_id": "342337264870400",
+   "started": "2026-10-20 08:13:54",
+   "duration": "8s"
+  },
+  "payload_exact": {
+   "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/sequence_fitness_mutation_effect_342337264870400/sequence_scores.csv"
+  ],
+  "sequence_verification": {
+   "label": "WT268",
+   "length": 268,
+   "sha256": "2eace7d7ed441600082b967d4c1398a9e7c5dbcf5c754178a8cdac97a0b1ac93",
+   "source_file": "analyses/5XG0_chainC_seq.fasta"
+  }
+ },
+ "342337268093952": {
+  "task_id": "342337268093952",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "WT_PETase_evomut",
+   "type": "Evolutionary Mutation Effect",
+   "task_id": "342337268093952",
+   "started": "2026-10-20 08:13:55",
+   "duration": "2.5min"
+  },
+  "payload_exact": {
+   "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/evolutionary_mutation_effect_342337268093952/evolutionary_scores.csv"
+  ],
+  "sequence_verification": {
+   "label": "WT268",
+   "length": 268,
+   "sha256": "2eace7d7ed441600082b967d4c1398a9e7c5dbcf5c754178a8cdac97a0b1ac93",
+   "source_file": "analyses/5XG0_chainC_seq.fasta"
+  }
+ },
+ "342337277858816": {
+  "task_id": "342337277858816",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "WT_PETase_structfitness",
+   "type": "Structural Stability Mutation Effect",
+   "task_id": "342337277858816",
+   "started": "2026-10-20 08:13:57",
+   "duration": "3s"
+  },
+  "payload_exact": {
+   "structure_path": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248398139384_5XG0_WT_chainC_author-6_261.cif"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/structural_stability_mutation_effect_342337277858816/struct_fitness_scores.csv"
+  ]
+ },
+ "342337422410752": {
+  "task_id": "342337422410752",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "PETase_5xh3_HEMT_affinity_rerun",
+   "type": "Protein-Ligand Affinity Evaluation",
+   "task_id": "342337422410752",
+   "started": "2026-10-20 08:14:32",
+   "duration": "38s"
+  },
+  "payload_exact": {
+   "model_name": "sipobe",
+   "batch_size": 1,
+   "ngpu": 0,
+   "target_file": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+   "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/protein_ligand_affinity_evaluation_342337422410752/predicted_sipobe_scores.csv"
+  ]
+ },
+ "338706466620416": {
+  "task_id": "338706466620416",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "5xh3_A_ligand_affinity",
+   "type": "Protein-Ligand Affinity Evaluation",
+   "task_id": "338706466620416",
+   "started": "2026-10-10 02:00:08",
+   "duration": "3.2min"
+  },
+  "payload_exact": {
+   "target_file": "tos:mosv2-prod/user_objects/0/329502077678592/sanitized/179159720409225_5xh3_clean (2).cif",
+   "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/protein_ligand_affinity_evaluation_338706466620416/predicted_sipobe_scores.csv"
+  ],
+  "note": "native reference run by the manual author; read-only lookup, not re-executed here"
+ },
+ "342338944422912": {
+  "task_id": "342338944422912",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "PETase_WT_HEMT_local_redesign_10",
+   "type": "Protein Redesign",
+   "task_id": "342338944422912",
+   "started": "2026-10-20 08:20:44",
+   "duration": "35s"
+  },
+  "payload_exact": {
+   "structure_path": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248434317855_5XG0_WT_HEMT_model.cif",
+   "n_designs": 10,
+   "chains_to_design": "D",
+   "redesigned_residues": "D130 D156 D157 D179 D209",
+   "design_output_mode": "full"
+  },
+  "payload_fields_not_exposed": [
+   "temperature",
+   "random seed",
+   "per-position sampling probabilities",
+   "model checkpoint / weight name",
+   "fixed_residues (we left it unset; all residues outside redesigned_residues were fixed by the platform default)"
+  ],
+  "downloaded_files": [
+   "/workspace/downloads/protein_redesign_342338944422912/redesign.fasta"
+  ]
+ },
+ "342339217835008": {
+  "task_id": "342339217835008",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "MMFold_candidate_seq_4",
+   "type": "MMFold",
+   "task_id": "342339217835008",
+   "started": "2026-10-20 08:21:51",
+   "duration": "2.1min"
+  },
+  "payload_exact": {
+   "name": "PETase_design_seq_4_W130H_W156Y_D157H_S209G",
+   "dialect": "mmfold",
+   "version": 1,
+   "sequences": [
+    {
+     "protein": {
+      "id": "A",
+      "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+     }
+    }
+   ]
+  },
+  "payload_fields_not_exposed": [
+   "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+  ],
+  "downloaded_files": [
+   "/workspace/downloads/mmfold_342339217835008/179248463118514_model_sample_3.cif",
+   "/workspace/downloads/mmfold_342339217835008/179248463218181_model_sample_5.cif",
+   "/workspace/downloads/mmfold_342339217835008/179248463320004_model_sample_1.cif",
+   "/workspace/downloads/mmfold_342339217835008/179248463416154_model_sample_2.cif",
+   "/workspace/downloads/mmfold_342339217835008/179248463515908_model_sample_4.cif",
+   "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_1.json",
+   "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_2.json",
+   "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_3.json",
+   "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_4.json",
+   "/workspace/downloads/mmfold_342339217835008/summary_confidences_sample_5.json"
+  ],
+  "sequence_verification": {
+   "label": "seq_4",
+   "length": 261,
+   "sha256": "af030d9db1cf6822301801624ee86d4beb71a8494faddfe4ca0062012bba133c",
+   "source_file": "analyses/representatives.fasta"
+  }
+ },
+ "342339221820416": {
+  "task_id": "342339221820416",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "MMFold_candidate_seq_2",
+   "type": "MMFold",
+   "task_id": "342339221820416",
+   "started": "2026-10-20 08:21:52",
+   "duration": "2.1min"
+  },
+  "payload_exact": {
+   "name": "PETase_design_seq_2_W130H_W156Y_D157Y_S209G",
+   "dialect": "mmfold",
+   "version": 1,
+   "sequences": [
+    {
+     "protein": {
+      "id": "A",
+      "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYYSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+     }
+    }
+   ]
+  },
+  "payload_fields_not_exposed": [
+   "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+  ],
+  "downloaded_files": [
+   "/workspace/downloads/mmfold_342339221820416/179248463462346_model_sample_3.cif",
+   "/workspace/downloads/mmfold_342339221820416/179248463539742_model_sample_5.cif",
+   "/workspace/downloads/mmfold_342339221820416/179248463619830_model_sample_1.cif",
+   "/workspace/downloads/mmfold_342339221820416/179248463691638_model_sample_2.cif",
+   "/workspace/downloads/mmfold_342339221820416/179248463763615_model_sample_4.cif",
+   "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_1.json",
+   "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_2.json",
+   "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_3.json",
+   "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_4.json",
+   "/workspace/downloads/mmfold_342339221820416/summary_confidences_sample_5.json"
+  ],
+  "sequence_verification": {
+   "label": "seq_2",
+   "length": 261,
+   "sha256": "7f7489f311f9931f7ba7cbec6e5dea7c29d3987d6c8eb25741e734eee578cb73",
+   "source_file": "analyses/representatives.fasta"
+  }
+ },
+ "342339232719872": {
+  "task_id": "342339232719872",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "MMFold_candidate_seq_1",
+   "type": "MMFold",
+   "task_id": "342339232719872",
+   "started": "2026-10-20 08:21:54",
+   "duration": "2.0min"
+  },
+  "payload_exact": {
+   "name": "PETase_design_seq_1_W130H_W156Y_D157H_I179V_S209G",
+   "dialect": "mmfold",
+   "version": 1,
+   "sequences": [
+    {
+     "protein": {
+      "id": "A",
+      "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGHSMGGGGSLISAANNPSLKAAAPQAPYHSSTNFSSVTVPTLIFACENDSVAPVNSSALPIYDSMSRNAKQFLEINGGSHGCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+     }
+    }
+   ]
+  },
+  "payload_fields_not_exposed": [
+   "modelSeeds (we omitted it; the platform default was used and the seed values were not echoed back)"
+  ],
+  "downloaded_files": [
+   "/workspace/downloads/mmfold_342339232719872/179248463080003_model_sample_1.cif",
+   "/workspace/downloads/mmfold_342339232719872/179248463208425_model_sample_2.cif",
+   "/workspace/downloads/mmfold_342339232719872/179248463322333_model_sample_4.cif",
+   "/workspace/downloads/mmfold_342339232719872/179248463437021_model_sample_5.cif",
+   "/workspace/downloads/mmfold_342339232719872/179248463556667_model_sample_3.cif",
+   "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_1.json",
+   "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_2.json",
+   "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_3.json",
+   "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_4.json",
+   "/workspace/downloads/mmfold_342339232719872/summary_confidences_sample_5.json"
+  ],
+  "sequence_verification": {
+   "label": "seq_1",
+   "length": 261,
+   "sha256": "3d1c3aa06b9d59256b4f0b6090c68a5d8cfe9967b3d8823f328252bfb525b256",
+   "source_file": "analyses/representatives.fasta"
+  }
+ },
+ "342337764889600": {
+  "task_id": "342337764889600",
+  "check_mosttask_response": {
+   "status": "PENDING",
+   "task_name": "autocompute-5XH3_HEMT_complex",
+   "type": "MOSTask",
+   "task_id": "342337764889600",
+   "started": "2026-10-20 08:15:56",
+   "duration": "0s",
+   "platform_note": "Task is waiting (not queued)."
+  },
+  "payload_exact": {
+   "structure_path": "user_objects/123/330665428816896/sanitized/179248415413957_5XH3_HEMT_complex.cif",
+   "structure_pathFileId": "342337760510976",
+   "structure_pathFilename": "5XH3_HEMT_complex.cif"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [],
+  "note": "auto-triggered by importing the 5XH3 complex; still PENDING at the last check, therefore no native MMetrics output exists for this object yet"
+ },
+ "342337765340160": {
+  "task_id": "342337765340160",
+  "check_mosttask_response": {
+   "status": "PENDING",
+   "task_name": "autocompute-5XH3_HEMT_complex",
+   "type": "MOSTask",
+   "task_id": "342337765340160",
+   "started": "2026-10-20 08:15:56",
+   "duration": "0s",
+   "platform_note": "Task is waiting (not queued)."
+  },
+  "payload_exact": {
+   "structure_path": "user_objects/123/330665428816896/sanitized/179248415413957_5XH3_HEMT_complex.cif",
+   "structure_pathFileId": "342337760510976",
+   "structure_pathFilename": "5XH3_HEMT_complex.cif"
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [],
+  "note": "second duplicate auto-triggered job for the same object; also PENDING"
+ },
+ "342337536795648": {
+  "task_id": "342337536795648",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "mmetrics-analysis-342337061192704",
+   "type": "MOSTask",
+   "task_id": "342337536795648",
+   "started": "2026-10-20 08:15:00",
+   "duration": "5s"
+  },
+  "payload_exact": {
+   "input_structure": "user_objects/123/330665428816896/sanitized/179248398139384_5XG0_WT_chainC_author-6_261.cif",
+   "autocomp_results": {
+    "result_data": {
+     "objects": [
+      {
+       "id": "342337533723648",
+       "name": "all_sequences.fasta",
+       "modelType": "mos-blast"
+      },
+      {
+       "id": "342337533740032",
+       "name": "blast_results.json",
+       "modelType": "mos-blast"
+      },
+      {
+       "id": "342337533756416",
+       "name": "esm_scores.csv",
+       "modelType": "mos-score-esm"
+      },
+      {
+       "id": "342337533772800",
+       "name": "proteinmpnn_scores.csv",
+       "modelType": "mos-score-ligandmpnn"
+      },
+      {
+       "id": "342337533789184",
+       "name": "msat_scores.csv",
+       "modelType": "mos-score-msat"
+      },
+      {
+       "id": "342337533801472",
+       "name": "sequence_info.fasta",
+       "modelType": null
+      }
+     ]
+    }
+   }
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/mostask_342337536795648/record.json"
+  ]
+ },
+ "342338457240576": {
+  "task_id": "342338457240576",
+  "check_mosttask_response": {
+   "status": "SUCCEED",
+   "task_name": "mmetrics-analysis-342337095480320",
+   "type": "MOSTask",
+   "task_id": "342338457240576",
+   "started": "2026-10-20 08:18:45",
+   "duration": "3s"
+  },
+  "payload_exact": {
+   "input_structure": "user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+   "autocomp_results": {
+    "result_data": {
+     "objects": [
+      {
+       "id": "342338453922816",
+       "name": "all_sequences.fasta",
+       "modelType": "mos-blast"
+      },
+      {
+       "id": "342338453935104",
+       "name": "blast_results.json",
+       "modelType": "mos-blast"
+      },
+      {
+       "id": "342338453943296",
+       "name": "esm_scores.csv",
+       "modelType": "mos-score-esm"
+      },
+      {
+       "id": "342338453955584",
+       "name": "proteinmpnn_scores.csv",
+       "modelType": "mos-score-ligandmpnn"
+      },
+      {
+       "id": "342338453963776",
+       "name": "msat_scores.csv",
+       "modelType": "mos-score-msat"
+      },
+      {
+       "id": "342338453976064",
+       "name": "sequence_info.fasta",
+       "modelType": null
+      }
+     ]
+    }
+   }
+  },
+  "payload_fields_not_exposed": [],
+  "downloaded_files": [
+   "/workspace/downloads/mostask_342338457240576/record.json"
+  ]
+ }
+}

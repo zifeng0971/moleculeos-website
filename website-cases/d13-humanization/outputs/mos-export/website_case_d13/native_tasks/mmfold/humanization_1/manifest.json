@@ -1,0 +1,97 @@
+{
+ "candidate": "humanization_1",
+ "n_samples": 5,
+ "samples": [
+  {
+   "sample": 1,
+   "file": "179248406755643_model_sample_1.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.84188842773438,
+   "ptm": 0.9693601727485657,
+   "iptm": 0.95920330286026,
+   "ranking_score": 0.9612346887588501,
+   "chain_plddt": [
+    0.9594731330871582,
+    0.957282543182373
+   ]
+  },
+  {
+   "sample": 2,
+   "file": "179248406843457_model_sample_2.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.84381866455078,
+   "ptm": 0.9692516326904297,
+   "iptm": 0.9590926766395569,
+   "ranking_score": 0.9611244797706604,
+   "chain_plddt": [
+    0.9594736099243164,
+    0.95732182264328
+   ]
+  },
+  {
+   "sample": 3,
+   "file": "179248406572616_model_sample_3.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.84334564208984,
+   "ptm": 0.9693148136138916,
+   "iptm": 0.9590049386024475,
+   "ranking_score": 0.9610669612884521,
+   "chain_plddt": [
+    0.9594770073890686,
+    0.9573082327842712
+   ]
+  },
+  {
+   "sample": 4,
+   "file": "179248406669282_model_sample_4.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.8318099975586,
+   "ptm": 0.9691058397293091,
+   "iptm": 0.9588701725006104,
+   "ranking_score": 0.9609173536300659,
+   "chain_plddt": [
+    0.959368884563446,
+    0.9571852087974548
+   ]
+  },
+  {
+   "sample": 5,
+   "file": "179248406933319_model_sample_5.cif",
+   "chains": {
+    "A": 116,
+    "B": 107
+   },
+   "sequence_matches_payload": true,
+   "plddt": 95.81907653808594,
+   "ptm": 0.969015896320343,
+   "iptm": 0.9586347341537476,
+   "ranking_score": 0.9607110023498535,
+   "chain_plddt": [
+    0.959269106388092,
+    0.9570280313491821
+   ]
+  }
+ ],
+ "best_sample": 1,
+ "best_by": "highest ranking_score in summary_confidences",
+ "chain_roles": {
+  "A": "VH",
+  "B": "VL"
+ }
+}

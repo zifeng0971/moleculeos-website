@@ -1,0 +1,322 @@
+{
+  "case": "05_invent_new_binders_pdl1",
+  "tasks": [
+    {
+      "label": "seed111",
+      "task_id": "342254837666816",
+      "random_seed": 111,
+      "output_dir": "/workspace/downloads/protein_binder_design_342254837666816",
+      "files": [
+        "raw/179246416525812_output.cif",
+        "raw/179246416595260_aligned.cif"
+      ],
+      "status": "succeeded"
+    },
+    {
+      "label": "seed222",
+      "task_id": "342254839784448",
+      "random_seed": 222,
+      "output_dir": "/workspace/downloads/protein_binder_design_342254839784448",
+      "files": [
+        "raw/179246440160605_output.cif",
+        "raw/179246440257279_aligned.cif"
+      ],
+      "status": "succeeded"
+    },
+    {
+      "label": "seed333",
+      "task_id": "342254842782720",
+      "random_seed": 333,
+      "output_dir": "/workspace/downloads/protein_binder_design_342254842782720",
+      "files": [],
+      "status": "running_at_bundle_build"
+    }
+  ],
+  "candidates": [
+    {
+      "label": "seed111",
+      "task_id": "342254837666816",
+      "random_seed": 111,
+      "bsa_shrake": [
+        {
+          "file": "179246416525812_output.cif",
+          "bsa_total_A2": 103.1,
+          "bsa_per_side_A2": 51.6
+        },
+        {
+          "file": "179246416595260_aligned.cif",
+          "bsa_total_A2": 1773.9,
+          "bsa_per_side_A2": 887.0
+        }
+      ],
+      "models": [
+        {
+          "file": "179246416525812_output.cif",
+          "binder_chain": "A",
+          "target_chain": "B",
+          "binder_length": 73,
+          "sequence_type": "virtual_backbone_no_designed_sequence",
+          "designed_sequence": null,
+          "virtual_backbone_sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+          "hotspot_min_dist_A": {
+            "A37(I54)@struct37": 7.76,
+            "A39(Y56)@struct39": 8.48,
+            "A41(E58)@struct41": 8.42,
+            "A51(V68)@struct51": 5.97,
+            "A96(R113)@struct96": 10.44,
+            "A106(Y123)@struct106": 9.16
+          },
+          "hotspots_engaged": 0,
+          "interface": {
+            "error": "interface pipeline failed: Command '['/opt/conda/bin/python', '/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/calc_interface.py', '/workspace/downloads/protein_binder_design_342254837666816/179246416525812_output.cif', '--chain-pairs', 'A:B', '-o', '/workspace/case05_bundle/designs/seed111/analysis/ppi_179246416525812_output_A']' returned non-zero exit status 1."
+          },
+          "plddt": {
+            "A": {
+              "mean": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "frac_ge70": 0.0,
+              "frac_ge80": 0.0
+            },
+            "B": {
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1.0,
+              "max": 1.0,
+              "frac_ge70": 0.0,
+              "frac_ge80": 0.0
+            }
+          },
+          "helix_fraction": null,
+          "sequence_properties": null,
+          "bsa_shrake": {
+            "file": "179246416525812_output.cif",
+            "bsa_total_A2": 103.1,
+            "bsa_per_side_A2": 51.6
+          },
+          "interface_plddt_mean": null
+        },
+        {
+          "file": "179246416595260_aligned.cif",
+          "binder_chain": "A",
+          "target_chain": "B",
+          "binder_length": 73,
+          "sequence_type": "designed_or_modeled_sequence",
+          "designed_sequence": "DAAARAAELERRCESLAKIIAEHEAALAALRAAAASAADREAVAAAAARQARAAAALRALRARLEAEARALRE",
+          "virtual_backbone_sequence": null,
+          "hotspot_min_dist_A": {
+            "A37(I54)@struct37": 3.73,
+            "A39(Y56)@struct39": 3.05,
+            "A41(E58)@struct41": 2.47,
+            "A51(V68)@struct51": 3.27,
+            "A96(R113)@struct96": 2.42,
+            "A106(Y123)@struct106": 2.97
+          },
+          "hotspots_engaged": 6,
+          "interface": {
+            "total_bsa_A2": 1833.3,
+            "interface_residues_total": 51,
+            "interface_residues_per_chain": {
+              "B": 26,
+              "A": 25
+            },
+            "hbonds": 2,
+            "salt_bridges": 10
+          },
+          "plddt": {
+            "A": {
+              "mean": 65.9,
+              "median": 67.0,
+              "min": 55.9,
+              "max": 74.1,
+              "frac_ge70": 0.137,
+              "frac_ge80": 0.0
+            },
+            "B": {
+              "mean": 87.6,
+              "median": 90.4,
+              "min": 40.9,
+              "max": 97.5,
+              "frac_ge70": 0.967,
+              "frac_ge80": 0.864
+            }
+          },
+          "helix_fraction": 0.94,
+          "sequence_properties": {
+            "length": 73,
+            "composition": {
+              "A": 33,
+              "R": 12,
+              "E": 9,
+              "L": 8,
+              "D": 2,
+              "S": 2,
+              "I": 2,
+              "C": 1,
+              "K": 1,
+              "H": 1,
+              "V": 1,
+              "Q": 1
+            },
+            "frac_ala": 0.45,
+            "net_charge_ph7": 2,
+            "charge_density": 0.33,
+            "frac_hydrophobic": 0.6,
+            "shannon_entropy_bits": 2.52
+          },
+          "bsa_shrake": {
+            "file": "179246416595260_aligned.cif",
+            "bsa_total_A2": 1773.9,
+            "bsa_per_side_A2": 887.0
+          },
+          "interface_plddt_mean": 65.3
+        }
+      ]
+    },
+    {
+      "label": "seed222",
+      "task_id": "342254839784448",
+      "random_seed": 222,
+      "bsa_shrake": [
+        {
+          "file": "179246440160605_output.cif",
+          "bsa_total_A2": 131.6,
+          "bsa_per_side_A2": 65.8
+        },
+        {
+          "file": "179246440257279_aligned.cif",
+          "bsa_total_A2": 1201.6,
+          "bsa_per_side_A2": 600.8
+        }
+      ],
+      "models": [
+        {
+          "file": "179246440160605_output.cif",
+          "binder_chain": "A",
+          "target_chain": "B",
+          "binder_length": 66,
+          "sequence_type": "virtual_backbone_no_designed_sequence",
+          "designed_sequence": null,
+          "virtual_backbone_sequence": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+          "hotspot_min_dist_A": {
+            "A37(I54)@struct37": 5.98,
+            "A39(Y56)@struct39": 7.47,
+            "A41(E58)@struct41": 9.07,
+            "A51(V68)@struct51": 6.29,
+            "A96(R113)@struct96": 9.04,
+            "A106(Y123)@struct106": 6.77
+          },
+          "hotspots_engaged": 0,
+          "interface": {
+            "error": "interface pipeline failed: Command '['/opt/conda/bin/python', '/app/src/mocha/agents/custom_skills/interaction-analysis/scripts/calc_interface.py', '/workspace/downloads/protein_binder_design_342254839784448/179246440160605_output.cif', '--chain-pairs', 'A:B', '-o', '/workspace/case05_bundle/designs/seed222/analysis/ppi_179246440160605_output_A']' returned non-zero exit status 1."
+          },
+          "plddt": {
+            "A": {
+              "mean": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "max": 0.0,
+              "frac_ge70": 0.0,
+              "frac_ge80": 0.0
+            },
+            "B": {
+              "mean": 1.0,
+              "median": 1.0,
+              "min": 1.0,
+              "max": 1.0,
+              "frac_ge70": 0.0,
+              "frac_ge80": 0.0
+            }
+          },
+          "helix_fraction": null,
+          "sequence_properties": null,
+          "bsa_shrake": {
+            "file": "179246440160605_output.cif",
+            "bsa_total_A2": 131.6,
+            "bsa_per_side_A2": 65.8
+          },
+          "interface_plddt_mean": null
+        },
+        {
+          "file": "179246440257279_aligned.cif",
+          "binder_chain": "A",
+          "target_chain": "B",
+          "binder_length": 66,
+          "sequence_type": "designed_or_modeled_sequence",
+          "designed_sequence": "MGSIEALNNLYKQMGEKAAELKEFAEEAEKKLEETRKKDEEKALELAKEIDKKTSKLFDELKGDNK",
+          "virtual_backbone_sequence": null,
+          "hotspot_min_dist_A": {
+            "A37(I54)@struct37": 3.87,
+            "A39(Y56)@struct39": 4.34,
+            "A41(E58)@struct41": 4.72,
+            "A51(V68)@struct51": 1.87,
+            "A96(R113)@struct96": 2.97,
+            "A106(Y123)@struct106": 2.37
+          },
+          "hotspots_engaged": 5,
+          "interface": {
+            "total_bsa_A2": 1214.2,
+            "interface_residues_total": 37,
+            "interface_residues_per_chain": {
+              "A": 19,
+              "B": 18
+            },
+            "hbonds": 1,
+            "salt_bridges": 5
+          },
+          "plddt": {
+            "A": {
+              "mean": 62.2,
+              "median": 64.4,
+              "min": 38.2,
+              "max": 85.4,
+              "frac_ge70": 0.273,
+              "frac_ge80": 0.015
+            },
+            "B": {
+              "mean": 88.8,
+              "median": 91.3,
+              "min": 45.7,
+              "max": 98.2,
+              "frac_ge70": 0.977,
+              "frac_ge80": 0.869
+            }
+          },
+          "helix_fraction": 0.97,
+          "sequence_properties": {
+            "length": 66,
+            "composition": {
+              "E": 14,
+              "K": 14,
+              "L": 8,
+              "A": 7,
+              "D": 4,
+              "G": 3,
+              "N": 3,
+              "M": 2,
+              "S": 2,
+              "I": 2,
+              "F": 2,
+              "T": 2,
+              "Y": 1,
+              "Q": 1,
+              "R": 1
+            },
+            "frac_ala": 0.11,
+            "net_charge_ph7": -3,
+            "charge_density": 0.5,
+            "frac_hydrophobic": 0.33,
+            "shannon_entropy_bits": 3.35
+          },
+          "bsa_shrake": {
+            "file": "179246440257279_aligned.cif",
+            "bsa_total_A2": 1201.6,
+            "bsa_per_side_A2": 600.8
+          },
+          "interface_plddt_mean": 60.2
+        }
+      ]
+    }
+  ]
+}

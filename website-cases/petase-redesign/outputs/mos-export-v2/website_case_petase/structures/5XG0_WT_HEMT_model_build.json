@@ -1,0 +1,12 @@
+{
+ "superpose_rmsd_A": 0.256,
+ "n_protein_residues": 261,
+ "n_ligand_atoms": 16,
+ "reverted_103": "GLY -> ARG (5XG0 rotamer, superposed)",
+ "reverted_131": "ALA -> SER (5XG0 rotamer, superposed)",
+ "reverted_atom_clashes_with_ligand_lt_2.2A": [],
+ "Ser131_OG_min_dist_to_ligand_A": 2.513,
+ "Ser131_OG_nearest_ligand_atom": "C09",
+ "Ser131_OG_to_ester_C09_A": 2.513,
+ "Arg103_NH1_min_dist_to_ligand_A": 26.355
+}

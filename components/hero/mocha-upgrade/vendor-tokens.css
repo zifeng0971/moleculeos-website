@@ -18,9 +18,9 @@
   --ct-composer-bg: #31313b;
   --ct-timestamp: #818c98;
   --ct-hit: #8e8bd5;
-  --mocha-font: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', sans-serif;
-  --mocha-font-pingfang: 'PingFang SC', -apple-system, 'Noto Sans SC', sans-serif;
-  --mocha-font-source-han: 'Source Han Sans SC', 'PingFang SC', -apple-system, sans-serif;
+  --mocha-font: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Source Han Sans SC', 'Noto Sans SC', 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  --mocha-font-pingfang: 'PingFang SC', -apple-system, 'Noto Sans SC', 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  --mocha-font-source-han: 'Source Han Sans SC', 'PingFang SC', -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
   color-scheme: dark;
   font-family: var(--mocha-font);
   color: var(--ct-text-h1);

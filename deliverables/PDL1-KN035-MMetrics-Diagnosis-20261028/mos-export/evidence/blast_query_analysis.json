@@ -1,0 +1,94 @@
+{
+  "alignments": 503,
+  "unique_hits": 500,
+  "unique_query_sequences": 1,
+  "query_is_chain_B": true,
+  "query_lengths": [
+    128
+  ],
+  "general_query_is_chain_B": true,
+  "hit_dbs": [
+    "pdb"
+  ],
+  "references": [
+    "RCSB"
+  ],
+  "fields": [
+    "bit_score",
+    "display_name",
+    "download_desc",
+    "e_value",
+    "gaps",
+    "hit_bar_chunks",
+    "hit_db",
+    "hit_desc",
+    "hit_from",
+    "hit_id",
+    "hit_len",
+    "hit_name",
+    "hit_sequence_aligned",
+    "hit_sequence_full",
+    "hit_sequence_print",
+    "hit_to",
+    "hsp_id",
+    "identity",
+    "identity_percentage",
+    "links",
+    "midline",
+    "midline_print",
+    "positive",
+    "query_from",
+    "query_sequence_aligned",
+    "query_sequence_full",
+    "query_sequence_print",
+    "query_to",
+    "reference",
+    "score"
+  ],
+  "e_value_range": [
+    2.10588e-92,
+    3.3873e-36
+  ],
+  "identity_range": [
+    0.5367647058823529,
+    1.0
+  ],
+  "top_hit": {
+    "hit_id": "pdb|5JDS|B",
+    "hit_desc": "Chain B, Nanobody [Camelidae]",
+    "identity_percentage": 1.0,
+    "e_value": 2.10588e-92,
+    "hit_len": 146,
+    "query_from": 1,
+    "query_to": 128,
+    "hit_from": 3,
+    "hit_to": 130
+  },
+  "pdl1_motifs_found_in_hits": [],
+  "any_query_is_chain_A": false,
+  "record_annotation_counts": {
+    "homology": 0,
+    "uniprot": 0,
+    "pdb": 0,
+    "features": 11
+  },
+  "record_model_tasks": {
+    "results": []
+  },
+  "record_entities": [
+    {
+      "entity_id": 1,
+      "chain_id": [
+        "A"
+      ],
+      "antibody_fragment": null
+    },
+    {
+      "entity_id": 2,
+      "chain_id": [
+        "B"
+      ],
+      "antibody_fragment": "VHH"
+    }
+  ]
+}

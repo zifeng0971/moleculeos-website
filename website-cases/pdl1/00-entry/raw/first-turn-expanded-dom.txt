@@ -1,0 +1,156 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-00-Natural-Language-Entry-20261022
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- generic: No Data
+- generic: Amino Acid Group
+- generic: No Data
+- generic: Mocha
+- button "Copy session ID": 17d092af-3
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+- button "Worked for 44s" [expanded]:
+  - generic: Worked for 44s
+- button "Thinking":
+  - generic: Thinking
+- paragraph: I’ll start by checking available MOS structure-prediction tasks and setting up the sequences in the sequence library.
+- button "Execution details 2 items" [expanded]:
+  - generic: Execution details
+  - generic: 2 items
+- button "ListAvailableMOSTasks Completed":
+  - generic: ListAvailableMOSTasks
+  - img "Completed"
+- button "Read /app/src/mocha/agents/custom_skills/sequence-toolk… Completed":
+  - generic: Read
+  - generic "/app/src/mocha/agents/custom_skills/sequence-toolk…"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Sequences in hand. I’ll store them in the sequence library and validate chain A against the canonical PD-L1 reference before launching prediction.
+- button "File operations" [expanded]:
+  - generic: File operations
+- button "Write /workspace/pdl1_kn035_seq.fasta Completed":
+  - generic: Write
+  - generic "/workspace/pdl1_kn035_seq.fasta"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands 2 items" [expanded]:
+  - generic: Run commands
+  - generic: 2 items
+- button "Shell cd /workspace && S=/app/src/mocha/agents/custom_sk… Completed":
+  - generic: Shell
+  - generic "cd /workspace && S=/app/src/mocha/agents/custom_sk…"
+  - img "Completed"
+- button "Shell cd /workspace && S=/app/src/mocha/agents/custom_sk… Completed":
+  - generic: Shell
+  - generic "cd /workspace && S=/app/src/mocha/agents/custom_sk…"
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: "Chain A checks out: it is the PD-L1 IgV domain (UniProt 19–134) plus an N-terminal “MA” tag and a two-residue C-terminal change (PY→LE). Now let me get the MMFold schema."
+- button "Tool calls 2 items" [expanded] [active]:
+  - generic: Tool calls
+  - generic: 2 items
+- button "GetMOSTaskSchema MMFold Completed":
+  - generic: GetMOSTaskSchema
+  - generic "MMFold"
+  - img "Completed"
+- button "GetMOSQuota Completed":
+  - generic: GetMOSQuota
+  - img "Completed"
+- button "Thinking":
+  - generic: Thinking
+- button "Run commands":
+  - generic: Run commands
+- button "Thinking":
+  - generic: Thinking
+- paragraph: Launching the complex prediction.
+- button "Tool calls" [expanded]:
+  - generic: Tool calls
+- button "StartMOSTask Completed" [expanded]:
+  - generic: StartMOSTask
+  - img "Completed"
+- generic: task_type
+- generic: ":"
+- generic: "\"MMFold\""
+- generic: task_name
+- generic: ":"
+- generic: "\"PDL1_KN035_complex\""
+- generic: task_description
+- generic: ":"
+- generic: "\"Predict the complex structure of human PD-L1 IgV domain (chain A) bound to nanobody KN035 (chain B).\""
+- button "payload":
+  - generic: payload
+- generic: json
+- button "Copy code"
+- generic: "{ \"name\": \"PDL1_KN035_complex\", \"dialect\": \"mmfold\", \"version\": 1, \"sequences\": [ { \"protein\": { \"id\": \"A\", \"sequence\": \"MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE\", \"description\": \"Human PD-L1 IgV domain (UniProt Q9NZQ7, residues 19-134) with N-terminal MA tag\" } }, { \"protein\": { \"id\": \"B\", \"sequence\": \"QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS\", \"description\": \"Nanobody KN035 (anti-PD-L1 VHH)\" } } ] }"
+- generic: "result:"
+- generic: text
+- button "Copy code"
+- generic: "Task started successfully. Name: PDL1_KN035_complex Type: MMFold Task ID: 342948473701376 Statuses change on the platform, not by polling: end your turn and let the user watch the Task panel. At the next snapshot, ListMOSTasks covers the whole board at once; CheckMOSTask on a succeeded task shows its details and downloads its outputs."
+- button "Thinking":
+  - generic: Thinking
+- button "Search sources":
+  - generic: Search sources
+- button "Thinking":
+  - generic: Thinking
+- button "Tool calls":
+  - generic: Tool calls
+- button "Thinking":
+  - generic: Thinking
+- paragraph:
+  - text: The complex prediction is running on MMFold (task
+  - code: PDL1_KN035_complex
+  - text: ", ID 342948473701376)."
+- paragraph:
+  - strong: What went into the prediction
+- list:
+  - strong: Chain A
+  - text: "— human PD-L1 IgV domain. Verified against UniProt Q9NZQ7: identical to residues 19–134, with an N-terminal “MA” cloning tag and a C-terminal PY→LE change in the flexible tail. 118 residues, the domain that carries the PD-1/antibody binding face."
+  - strong: Chain B
+  - text: — KN035 (envafolimab) VHH, 128 residues, single immunoglobulin domain with the hallmark long CDR3.
+  - listitem: 1:1 stoichiometry, no ligands, default sampling seeds.
+- paragraph:
+  - strong: Reference point for cross-checking the prediction
+- paragraph:
+  - text: The experimental structure of exactly this complex exists — PDB 5JDS (Zhang et al.,
+  - emphasis: Cell Discovery
+  - text: "2017, 1.7 Å) — so the predicted interface can be validated rather than taken on trust. That crystal structure shows KN035 docking onto the front β-sheet of PD-L1 (C, C′, F, G strands), engaging almost exclusively through CDR3 plus a minor CDR1 contribution, and it buries five PD-L1 hotspot residues that are also shared with the PD-1 site:"
+  - strong: Ile54, Tyr56, Glu58, Gln66, Arg113
+  - text: (UniProt numbering). I will map the predicted interface onto that set and report agreement or divergence.
+- paragraph: "I’ll pick this up when the prediction lands: download the model, compute the interface (contacts, buried surface area, salt bridges/H-bonds), and report the epitope on PD-L1 and the paratope on KN035 — with chain-A residue numbers converted back to standard PD-L1 numbering so they are directly comparable to the literature. Let me know when you’d like me to continue."
+- navigation "Conversation navigator":
+  - 'button "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface. A: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE B: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"'
+- button "Back to latest":
+- button "Upload":
+- textbox "Ask me to do anything"
+- button "Send" [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

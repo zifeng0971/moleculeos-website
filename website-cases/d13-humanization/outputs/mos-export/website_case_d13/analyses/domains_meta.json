@@ -1,0 +1,150 @@
+{
+ "1FDL_3|Chain": {
+  "imgt": {
+   "chain_type": null,
+   "species": null,
+   "v_gene": null,
+   "j_gene": null,
+   "domain_sequence": "",
+   "domain_length": 0,
+   "n_numbered_positions": 0,
+   "note": "no immunoglobulin domain detected by ANARCI (non-Ig chain or below threshold)"
+  },
+  "kabat": {
+   "chain_type": null,
+   "species": null,
+   "v_gene": null,
+   "j_gene": null,
+   "domain_sequence": "",
+   "domain_length": 0,
+   "n_numbered_positions": 0,
+   "note": "no immunoglobulin domain detected by ANARCI (non-Ig chain or below threshold)"
+  },
+  "chothia": {
+   "chain_type": null,
+   "species": null,
+   "v_gene": null,
+   "j_gene": null,
+   "domain_sequence": "",
+   "domain_length": 0,
+   "n_numbered_positions": 0,
+   "note": "no immunoglobulin domain detected by ANARCI (non-Ig chain or below threshold)"
+  }
+ },
+ "1FDL_2|Chain": {
+  "imgt": {
+   "chain_type": "H",
+   "species": "mouse",
+   "v_gene": "IGHV2-6-7*01",
+   "j_gene": "IGHJ2*01",
+   "domain_sequence": "QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 128
+  },
+  "kabat": {
+   "chain_type": "H",
+   "species": "mouse",
+   "v_gene": "IGHV2-6-7*01",
+   "j_gene": "IGHJ2*01",
+   "domain_sequence": "QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 116
+  },
+  "chothia": {
+   "chain_type": "H",
+   "species": "mouse",
+   "v_gene": "IGHV2-6-7*01",
+   "j_gene": "IGHJ2*01",
+   "domain_sequence": "QVQLKESGPGLVAPSQSLSITCTVSGFSLTGYGVNWVRQPPGKGLEWLGMIWGDGNTDYNSALKSRLSISKDNSKSQVFLKMNSLHTDDTARYYCARERDYRLDYWGQGTTLTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 116
+  }
+ },
+ "1FDL_1|Chain": {
+  "imgt": {
+   "chain_type": "K",
+   "species": "mouse",
+   "v_gene": "IGKV12-41*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 127
+  },
+  "kabat": {
+   "chain_type": "K",
+   "species": "mouse",
+   "v_gene": "IGKV12-41*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 107
+  },
+  "chothia": {
+   "chain_type": "K",
+   "species": "mouse",
+   "v_gene": "IGKV12-41*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPASLSASVGETVTITCRASGNIHNYLAWYQQKQGKSPQLLVYYTTTLADGVPSRFSGSGSGTQYSLKINSLQPEDFGSYYCQHFWSTPRTFGGGTKLEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 107
+  }
+ },
+ "1BVL_2|Chains": {
+  "imgt": {
+   "chain_type": "K",
+   "species": "human",
+   "v_gene": "IGKV1-27*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 127
+  },
+  "kabat": {
+   "chain_type": "K",
+   "species": "human",
+   "v_gene": "IGKV1-27*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 107
+  },
+  "chothia": {
+   "chain_type": "K",
+   "species": "human",
+   "v_gene": "IGKV1-27*01",
+   "j_gene": "IGKJ1*01",
+   "domain_sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIK",
+   "domain_length": 107,
+   "n_numbered_positions": 107
+  }
+ },
+ "1BVL_1|Chains": {
+  "imgt": {
+   "chain_type": "H",
+   "species": "rhesus",
+   "v_gene": "IGHV4-38-2*02",
+   "j_gene": "IGHJ4*01",
+   "domain_sequence": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 128
+  },
+  "kabat": {
+   "chain_type": "H",
+   "species": "rhesus",
+   "v_gene": "IGHV4-38-2*02",
+   "j_gene": "IGHJ4*01",
+   "domain_sequence": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 116
+  },
+  "chothia": {
+   "chain_type": "H",
+   "species": "rhesus",
+   "v_gene": "IGHV4-38-2*02",
+   "j_gene": "IGHJ4*01",
+   "domain_sequence": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSS",
+   "domain_length": 116,
+   "n_numbered_positions": 116
+  }
+ }
+}

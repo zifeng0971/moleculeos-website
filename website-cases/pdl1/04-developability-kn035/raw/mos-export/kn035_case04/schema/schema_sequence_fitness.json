@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "title": "UdfInputData",
+  "properties": {
+    "sequence": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": null, "description": "Input protein sequence as a single-letter string of standard amino acids. Only ACDEFGHIKLMNPQRSTVWY are accepted. Gaps, unknown residues (X), and ambiguous codes (B/Z/U/O/J) are not supported. Preferred over structure_path."},
+    "structure_path": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": null, "description": "Path or TOS URI to an input protein structure in PDB or mmCIF format. Used only when sequence is not provided. The model extracts standard amino-acid sequences from the structure file."}
+  },
+  "additionalProperties": true
+}

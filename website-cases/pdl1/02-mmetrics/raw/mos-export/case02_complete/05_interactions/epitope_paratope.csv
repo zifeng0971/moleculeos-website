@@ -1,0 +1,102 @@
+side,chain,role,mos_residue,aa,uniprot_position,imgt_label,imgt_region,bsa_A2,delta_g_kcal_mol,hbond,note
+epitope,C,PD-L1,44,ASP,61,,,146.5,-0.73,True,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,43,GLU,60,,,82.0,-0.06,True,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,119,LYS,136,,,79.8,0.0,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,58,LYS,75,,,68.8,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,18,ASN,35,,,67.9,-0.47,False,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,66,GLN,83,,,65.3,-0.41,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,39,TYR,56,,,63.9,0.0,True,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,59,VAL,76,,,60.3,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,96,ARG,113,,,58.3,-0.58,True,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,65,ARG,82,,,55.3,-1.6,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,130,VAL,147,,,49.9,0.0,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,129,PRO,146,,,42.9,0.0,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,86,ASP,103,,,42.8,-0.2,True,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,98,MET,115,,,41.1,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,49,GLN,66,,,41.0,-0.44,True,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,41,GLU,58,,,38.0,-0.34,True,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,108,ARG,125,,,37.2,-0.98,True,IgV (UniProt 19-127); partners=VL
+epitope,C,PD-L1,121,ASN,138,,,37.1,-0.23,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,106,TYR,123,,,37.0,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,100,SER,117,,,34.3,0.0,True,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,85,THR,102,,,32.2,-0.14,False,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,61,HIS,78,,,31.5,-0.13,False,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,46,ASN,63,,,23.8,0.0,True,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,128,ASP,145,,,22.1,-0.2,True,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,45,LYS,62,,,20.0,0.0,False,"IgV (UniProt 19-127); partners=VH,VL"
+epitope,C,PD-L1,15,TYR,32,,,19.5,-0.01,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,104,ALA,121,,,19.5,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,37,ILE,54,,,18.9,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,16,GLY,33,,,17.3,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,52,HIS,69,,,14.7,-0.3,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,17,SER,34,,,13.0,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,51,VAL,68,,,12.0,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,88,LYS,105,,,11.9,-0.12,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,83,GLN,100,,,10.7,-0.15,False,IgV (UniProt 19-127); partners=VL
+epitope,C,PD-L1,94,VAL,111,,,9.7,0.0,False,IgV (UniProt 19-127); partners=VL
+epitope,C,PD-L1,56,ASP,73,,,9.6,-0.16,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,139,GLN,156,,,6.4,-0.1,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,72,LYS,89,,,5.7,-0.21,False,IgV (UniProt 19-127); partners=VL
+epitope,C,PD-L1,118,ASN,135,,,4.5,0.0,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,99,ILE,116,,,1.4,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,42,MET,59,,,1.3,0.0,False,IgV (UniProt 19-127); partners=VL
+epitope,C,PD-L1,67,ARG,84,,,1.3,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,105,ASP,122,,,1.3,0.0,False,IgV (UniProt 19-127); partners=VH
+epitope,C,PD-L1,131,THR,148,,,0.8,0.0,False,IgC (UniProt 128-225); partners=VH
+epitope,C,PD-L1,60,GLN,77,,,0.4,0.0,False,IgV (UniProt 19-127); partners=VH
+paratope,A,VH,57,ILE,,64,CDR2-IMGT,95.5,0.0,False,
+paratope,B,VL,34,TYR,,38,CDR1-IMGT,79.1,0.0,True,
+paratope,A,VH,102,GLY,,110,CDR3-IMGT,78.6,0.0,True,
+paratope,A,VH,104,VAL,,112,CDR3-IMGT,74.5,0.0,True,
+paratope,A,VH,59,PHE,,66,FR3-IMGT,64.3,0.0,False,
+paratope,A,VH,112,GLN,,120,FR4-IMGT,64.1,-0.37,False,
+paratope,A,VH,31,SER,,36,CDR1-IMGT,63.1,0.0,True,
+paratope,A,VH,55,GLY,,62,CDR2-IMGT,61.4,0.0,True,
+paratope,A,VH,76,LYS,,84,FR3-IMGT,59.7,0.0,False,
+paratope,A,VH,115,LEU,,123,FR4-IMGT,59.2,0.0,False,
+paratope,A,VH,54,SER,,59,CDR2-IMGT,55.5,0.0,True,
+paratope,A,VH,52,TYR,,57,CDR2-IMGT,54.5,0.0,True,
+paratope,B,VL,93,TYR,,107,CDR3-IMGT,50.6,0.0,False,
+paratope,B,VL,97,SER,,114,CDR3-IMGT,49.0,0.0,False,
+paratope,A,VH,101,LEU,,109,CDR3-IMGT,44.7,0.0,False,
+paratope,B,VL,44,LYS,,48,FR2-IMGT,37.3,0.0,False,
+paratope,A,VH,117,THR,,125,FR4-IMGT,33.9,0.0,False,
+paratope,A,VH,56,GLY,,63,CDR2-IMGT,31.5,-0.12,False,
+paratope,A,VH,53,PRO,,58,CDR2-IMGT,30.6,0.0,False,
+paratope,B,VL,43,GLY,,47,FR2-IMGT,30.5,-0.15,False,
+paratope,B,VL,32,TYR,,36,CDR1-IMGT,29.4,0.0,False,
+paratope,A,VH,58,THR,,65,CDR2-IMGT,26.0,-0.3,True,
+paratope,A,VH,103,THR,,111,CDR3-IMGT,23.2,0.0,False,
+paratope,A,VH,41,PRO,,46,FR2-IMGT,22.6,0.0,False,
+paratope,A,VH,11,LEU,,12,FR1-IMGT,18.8,0.0,False,
+paratope,A,VH,5,LEU,,5,FR1-IMGT,16.2,0.0,False,
+paratope,A,VH,7,SER,,7,FR1-IMGT,16.2,0.0,False,
+paratope,B,VL,99,ARG,,116,CDR3-IMGT,15.5,0.0,False,
+paratope,A,VH,28,THR,,29,CDR1-IMGT,14.4,0.0,False,
+paratope,B,VL,95,SER,,109,CDR3-IMGT,13.9,-0.16,True,
+paratope,A,VH,105,THR,,113,CDR3-IMGT,13.8,0.0,True,
+paratope,A,VH,106,THR,,114,CDR3-IMGT,13.0,-0.15,True,
+paratope,A,VH,114,THR,,122,FR4-IMGT,12.8,0.0,True,
+paratope,A,VH,77,ASN,,85,FR3-IMGT,12.7,0.0,False,
+paratope,A,VH,27,PHE,,28,CDR1-IMGT,12.5,0.0,False,
+paratope,A,VH,24,ALA,,25,FR1-IMGT,11.6,-0.13,False,
+paratope,A,VH,113,GLY,,121,FR4-IMGT,11.5,-0.13,False,
+paratope,A,VH,6,GLU,,6,FR1-IMGT,11.4,-0.13,False,
+paratope,B,VL,52,ASP,,56,CDR2-IMGT,10.8,-0.17,False,
+paratope,A,VH,9,GLY,,9,FR1-IMGT,9.8,-0.11,False,
+paratope,A,VH,78,THR,,86,FR3-IMGT,6.8,0.0,False,
+paratope,A,VH,60,TYR,,67,FR3-IMGT,6.7,0.0,False,
+paratope,A,VH,23,ALA,,24,FR1-IMGT,6.7,0.0,False,
+paratope,A,VH,33,ILE,,38,CDR1-IMGT,6.0,0.0,False,
+paratope,A,VH,3,GLN,,3,FR1-IMGT,5.7,-0.06,False,
+paratope,A,VH,25,SER,,26,FR1-IMGT,5.1,-0.02,False,
+paratope,A,VH,75,SER,,83,FR3-IMGT,4.9,-0.06,False,
+paratope,B,VL,42,PRO,,46,FR2-IMGT,4.5,0.0,False,
+paratope,B,VL,96,SER,,113,CDR3-IMGT,2.8,0.0,False,
+paratope,A,VH,10,GLY,,11,FR1-IMGT,2.5,0.0,False,
+paratope,A,VH,30,SER,,35,CDR1-IMGT,2.3,-0.03,False,
+paratope,A,VH,93,VAL,,101,FR3-IMGT,1.0,0.0,False,
+paratope,B,VL,45,ALA,,49,FR2-IMGT,0.8,0.0,False,
+paratope,A,VH,32,TYR,,37,CDR1-IMGT,0.8,0.0,False,
+paratope,A,VH,65,LYS,,72,FR3-IMGT,0.7,-0.02,False,
+paratope,A,VH,100,LYS,,108,CDR3-IMGT,0.5,0.0,False,

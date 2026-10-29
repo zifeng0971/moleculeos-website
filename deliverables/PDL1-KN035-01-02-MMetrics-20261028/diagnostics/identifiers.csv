@@ -1,0 +1,16 @@
+﻿kind,id,name_or_url,purpose
+01 项目,342242986152960,https://mos.moleculemind.com/?projectId=342242986152960,原始项目，线上名称 nn（本聊天已核对）
+01 MMFold 任务,342253805564928,PDL1_KN035_VHH_complex,官网 01 的来源
+01 选用样本,1,MMFold_1.cif,按平台 ranking_score 选取；另四样本完整保留
+02 项目,342604060136448,https://mos.moleculemind.com/?projectId=342604060136448,历史项目名 PDL1-02-MMetrics-KN035-20261021
+02 结构对象 object_id,342604293768192,MMFold_1.cif,不是 task_id
+02 work_id,342604299084800,,不是 task_id
+02 自动前置任务,342604299285504,autocompute-MMFold_1,产生 mos-blast 等7个对象
+02 MMetrics 任务,342604577018880,mmetrics-analysis-342604299285504,输出 record.json
+02 mmetrics_id,caca9ec3-b45d-4c7a-a69d-99cc182aa3f6,,注释记录UUID，不是 task_id
+02 BLAST JSON 对象,342604574229504,blast_results.json,下载名 similarity_results.json；字节相同
+02 BLAST FASTA 对象,342604574114816,all_sequences.fasta,500条序列
+02 后续独立补充任务,342606092895232,kn035-AbAn-independent,Antibody Region Annotation；不属于同源检索链路
+02 后续独立补充任务,342606094599168,kn035-AbScN-language-independent,Antibody Language Scoring；不属于同源检索链路
+02 后续独立补充任务,342606097245184,kn035-AbScN-nativeness-independent,Antibody Nativeness Evaluation；不属于同源检索链路
+02 后续独立补充任务,342606100722688,kn035-ParaDt-independent,Paratope Identification；不属于同源检索链路

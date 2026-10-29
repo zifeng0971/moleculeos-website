@@ -1,0 +1,22 @@
+{
+  "note": "Raw strings are reproduced exactly as the platform returned them. The platform does not label a timezone on task times; the epoch field is unambiguous and is converted to UTC below.",
+  "raw": {
+    "autocompute_task_started_string": "2026-10-21 02:20:28",
+    "autocompute_task_duration": "1.1min",
+    "mmetrics_task_started_string": "2026-10-21 02:21:36",
+    "mmetrics_task_duration": "3s",
+    "autocompute_object_createTime_epoch": 1792549294
+  },
+  "derived_utc": {
+    "autocompute_object_createTime": "2026-10-21T02:21:34+00:00",
+    "implied_autocompute_end": "2026-10-21T02:21:34+00:00 (computed as start + 1.1 min = 02:21:34, matching createTime)",
+    "mmetrics_start": "2026-10-21T02:21:36+00:00",
+    "gap_seconds_between_autocompute_objects_and_mmetrics_start": 2
+  },
+  "consistency_check": "Only the UTC interpretation makes the epoch createTime (02:21:34) fall between the autocompute start (02:20:28) and the MMetrics start (02:21:36). The displayed times are therefore consistent with UTC; no other zone was applied or assumed.",
+  "local_file_mtimes": {
+    "similarity_results.json": "2026-10-21T02:21:59Z (session download time, not a model timestamp)",
+    "record.json": "2026-10-21T02:22:02Z (session download time, not a model timestamp)"
+  },
+  "recheck_note": "CheckMOSTask was re-run on 2026-10-28; the downloader skipped the existing files (mtimes unchanged at 2026-10-21T02:21:59Z / 02:22:02Z), so the re-check added no files and altered no evidence."
+}

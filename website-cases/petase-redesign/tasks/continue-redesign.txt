@@ -1,0 +1,1 @@
+请继续刚才未完成的Protein Redesign提交以及候选MMFold/结构比较，不要停在最后一次Shell错误。必须实际尝试注册Protein Redesign并保存精确payload、task ID/返回错误；模板若为你构造的WT+移植HEMT而非原始5XG0，必须标明由5XG0与5XH3衍生、任何侧链坐标替换/调整、编号映射，不可冒充实验WT复合物。用于三类WT评分的输入应保持原始5XG0链C。若配体感知模板导入不兼容，可在原始WT纯蛋白主链上仅开放同样五个位点做局部Protein Redesign（保存调整理由）。成功后生成全部10个候选，挑选2-3代表通过原生MMFold并导出，最后打包website_case_petase.zip。请先生成checkpoint ZIP再继续长计算供我们保留现有亲和力和三项WT结果。

@@ -1,0 +1,80 @@
+{
+  "label": "seed222",
+  "structure": "/workspace/case05_bundle/designs/seed222/raw/179246440257279_aligned.cif",
+  "salt_bridges": [
+    {
+      "chain1": "A",
+      "resnum1": 22,
+      "resname1": "LYS",
+      "charge1": "basic(+1)",
+      "chain2": "B",
+      "resnum2": 44,
+      "resname2": "ASP",
+      "charge2": "acidic(-1)",
+      "distance_A": 2.8,
+      "verdict": "salt_bridge"
+    },
+    {
+      "chain1": "A",
+      "resnum1": 22,
+      "resname1": "LYS",
+      "charge1": "basic(+1)",
+      "chain2": "B",
+      "resnum2": 44,
+      "resname2": "ASP",
+      "charge2": "acidic(-1)",
+      "distance_A": 4.0,
+      "verdict": "salt_bridge"
+    },
+    {
+      "chain1": "A",
+      "resnum1": 29,
+      "resname1": "GLU",
+      "charge1": "acidic(-1)",
+      "chain2": "B",
+      "resnum2": 96,
+      "resname2": "ARG",
+      "charge2": "basic(+1)",
+      "distance_A": 3.8,
+      "verdict": "salt_bridge"
+    },
+    {
+      "chain1": "A",
+      "resnum1": 29,
+      "resname1": "GLU",
+      "charge1": "acidic(-1)",
+      "chain2": "B",
+      "resnum2": 108,
+      "resname2": "ARG",
+      "charge2": "basic(+1)",
+      "distance_A": 3.7,
+      "verdict": "salt_bridge"
+    },
+    {
+      "chain1": "A",
+      "resnum1": 29,
+      "resname1": "GLU",
+      "charge1": "acidic(-1)",
+      "chain2": "B",
+      "resnum2": 108,
+      "resname2": "ARG",
+      "charge2": "basic(+1)",
+      "distance_A": 3.8,
+      "verdict": "salt_bridge"
+    }
+  ],
+  "hbonds": [
+    {
+      "donor": "A/LYS22",
+      "acceptor": "B/ASP44",
+      "distance_A": 3.1
+    }
+  ],
+  "summary": {
+    "salt_bridge_rows_reported": 5,
+    "legitimate_salt_bridges": 5,
+    "same_charge_rejected": 0,
+    "not_a_salt_bridge_neutral_partner": 0,
+    "hbond_rows": 1
+  }
+}

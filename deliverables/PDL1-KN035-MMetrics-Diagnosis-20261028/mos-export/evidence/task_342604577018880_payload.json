@@ -1,0 +1,57 @@
+{
+  "input_structure": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+  "autocomp_results": {
+    "result_data": {
+      "objects": [
+        {
+          "id": "342604574114816",
+          "name": "all_sequences.fasta",
+          "key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+          "createTime": 1792549294,
+          "modelType": "mos-blast"
+        },
+        {
+          "key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+          "createTime": 1792549294,
+          "modelType": "mos-blast",
+          "id": "342604574229504",
+          "name": "blast_results.json"
+        },
+        {
+          "key": "user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv",
+          "createTime": 1792549294,
+          "modelType": "mos-score-esm",
+          "id": "342604574241792",
+          "name": "esm_scores.csv"
+        },
+        {
+          "id": "342604574258176",
+          "name": "proteinmpnn_scores.csv",
+          "key": "user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+          "createTime": 1792549294,
+          "modelType": "mos-score-ligandmpnn"
+        },
+        {
+          "name": "diffaffinity_scores.csv",
+          "key": "user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv",
+          "createTime": 1792549294,
+          "modelType": "mos-diffaffinity",
+          "id": "342604574270464"
+        },
+        {
+          "createTime": 1792549294,
+          "modelType": "mos-score-msat",
+          "id": "342604574282752",
+          "name": "msat_scores.csv",
+          "key": "user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv"
+        },
+        {
+          "id": "342604574299136",
+          "name": "sequence_info.fasta",
+          "key": "user_objects/123/330665428816896/342604299285504/sequence_info.fasta",
+          "createTime": 1792549294
+        }
+      ]
+    }
+  }
+}

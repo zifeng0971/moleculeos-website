@@ -1,0 +1,1482 @@
+{
+  "source_kind": "MOS_prediction_atom_site_B_iso_or_equiv",
+  "note": "CA B-factor values from predicted mmCIF; confidence summaries retain original platform scaling.",
+  "residues": [
+    {
+      "chain": "A",
+      "seq_id": 1,
+      "residue": "M",
+      "ca_b_factor": 56.75
+    },
+    {
+      "chain": "A",
+      "seq_id": 2,
+      "residue": "A",
+      "ca_b_factor": 75.57
+    },
+    {
+      "chain": "A",
+      "seq_id": 3,
+      "residue": "F",
+      "ca_b_factor": 89.38
+    },
+    {
+      "chain": "A",
+      "seq_id": 4,
+      "residue": "T",
+      "ca_b_factor": 95.0
+    },
+    {
+      "chain": "A",
+      "seq_id": 5,
+      "residue": "V",
+      "ca_b_factor": 94.78
+    },
+    {
+      "chain": "A",
+      "seq_id": 6,
+      "residue": "T",
+      "ca_b_factor": 97.33
+    },
+    {
+      "chain": "A",
+      "seq_id": 7,
+      "residue": "V",
+      "ca_b_factor": 97.34
+    },
+    {
+      "chain": "A",
+      "seq_id": 8,
+      "residue": "P",
+      "ca_b_factor": 95.93
+    },
+    {
+      "chain": "A",
+      "seq_id": 9,
+      "residue": "K",
+      "ca_b_factor": 96.48
+    },
+    {
+      "chain": "A",
+      "seq_id": 10,
+      "residue": "D",
+      "ca_b_factor": 96.41
+    },
+    {
+      "chain": "A",
+      "seq_id": 11,
+      "residue": "L",
+      "ca_b_factor": 97.78
+    },
+    {
+      "chain": "A",
+      "seq_id": 12,
+      "residue": "Y",
+      "ca_b_factor": 97.6
+    },
+    {
+      "chain": "A",
+      "seq_id": 13,
+      "residue": "V",
+      "ca_b_factor": 96.83
+    },
+    {
+      "chain": "A",
+      "seq_id": 14,
+      "residue": "V",
+      "ca_b_factor": 95.32
+    },
+    {
+      "chain": "A",
+      "seq_id": 15,
+      "residue": "E",
+      "ca_b_factor": 94.67
+    },
+    {
+      "chain": "A",
+      "seq_id": 16,
+      "residue": "Y",
+      "ca_b_factor": 94.6
+    },
+    {
+      "chain": "A",
+      "seq_id": 17,
+      "residue": "G",
+      "ca_b_factor": 94.09
+    },
+    {
+      "chain": "A",
+      "seq_id": 18,
+      "residue": "S",
+      "ca_b_factor": 93.9
+    },
+    {
+      "chain": "A",
+      "seq_id": 19,
+      "residue": "N",
+      "ca_b_factor": 95.12
+    },
+    {
+      "chain": "A",
+      "seq_id": 20,
+      "residue": "M",
+      "ca_b_factor": 95.67
+    },
+    {
+      "chain": "A",
+      "seq_id": 21,
+      "residue": "T",
+      "ca_b_factor": 98.03
+    },
+    {
+      "chain": "A",
+      "seq_id": 22,
+      "residue": "I",
+      "ca_b_factor": 97.99
+    },
+    {
+      "chain": "A",
+      "seq_id": 23,
+      "residue": "E",
+      "ca_b_factor": 98.0
+    },
+    {
+      "chain": "A",
+      "seq_id": 24,
+      "residue": "C",
+      "ca_b_factor": 97.25
+    },
+    {
+      "chain": "A",
+      "seq_id": 25,
+      "residue": "K",
+      "ca_b_factor": 97.55
+    },
+    {
+      "chain": "A",
+      "seq_id": 26,
+      "residue": "F",
+      "ca_b_factor": 96.43
+    },
+    {
+      "chain": "A",
+      "seq_id": 27,
+      "residue": "P",
+      "ca_b_factor": 95.92
+    },
+    {
+      "chain": "A",
+      "seq_id": 28,
+      "residue": "V",
+      "ca_b_factor": 93.84
+    },
+    {
+      "chain": "A",
+      "seq_id": 29,
+      "residue": "E",
+      "ca_b_factor": 89.64
+    },
+    {
+      "chain": "A",
+      "seq_id": 30,
+      "residue": "K",
+      "ca_b_factor": 87.86
+    },
+    {
+      "chain": "A",
+      "seq_id": 31,
+      "residue": "Q",
+      "ca_b_factor": 92.75
+    },
+    {
+      "chain": "A",
+      "seq_id": 32,
+      "residue": "L",
+      "ca_b_factor": 94.06
+    },
+    {
+      "chain": "A",
+      "seq_id": 33,
+      "residue": "D",
+      "ca_b_factor": 93.76
+    },
+    {
+      "chain": "A",
+      "seq_id": 34,
+      "residue": "L",
+      "ca_b_factor": 91.78
+    },
+    {
+      "chain": "A",
+      "seq_id": 35,
+      "residue": "A",
+      "ca_b_factor": 88.31
+    },
+    {
+      "chain": "A",
+      "seq_id": 36,
+      "residue": "A",
+      "ca_b_factor": 89.28
+    },
+    {
+      "chain": "A",
+      "seq_id": 37,
+      "residue": "L",
+      "ca_b_factor": 91.35
+    },
+    {
+      "chain": "A",
+      "seq_id": 38,
+      "residue": "I",
+      "ca_b_factor": 89.32
+    },
+    {
+      "chain": "A",
+      "seq_id": 39,
+      "residue": "V",
+      "ca_b_factor": 91.3
+    },
+    {
+      "chain": "A",
+      "seq_id": 40,
+      "residue": "Y",
+      "ca_b_factor": 86.57
+    },
+    {
+      "chain": "A",
+      "seq_id": 41,
+      "residue": "W",
+      "ca_b_factor": 91.38
+    },
+    {
+      "chain": "A",
+      "seq_id": 42,
+      "residue": "E",
+      "ca_b_factor": 86.53
+    },
+    {
+      "chain": "A",
+      "seq_id": 43,
+      "residue": "M",
+      "ca_b_factor": 87.22
+    },
+    {
+      "chain": "A",
+      "seq_id": 44,
+      "residue": "E",
+      "ca_b_factor": 79.73
+    },
+    {
+      "chain": "A",
+      "seq_id": 45,
+      "residue": "D",
+      "ca_b_factor": 70.94
+    },
+    {
+      "chain": "A",
+      "seq_id": 46,
+      "residue": "K",
+      "ca_b_factor": 84.12
+    },
+    {
+      "chain": "A",
+      "seq_id": 47,
+      "residue": "N",
+      "ca_b_factor": 82.32
+    },
+    {
+      "chain": "A",
+      "seq_id": 48,
+      "residue": "I",
+      "ca_b_factor": 90.59
+    },
+    {
+      "chain": "A",
+      "seq_id": 49,
+      "residue": "I",
+      "ca_b_factor": 89.1
+    },
+    {
+      "chain": "A",
+      "seq_id": 50,
+      "residue": "Q",
+      "ca_b_factor": 83.64
+    },
+    {
+      "chain": "A",
+      "seq_id": 51,
+      "residue": "F",
+      "ca_b_factor": 91.83
+    },
+    {
+      "chain": "A",
+      "seq_id": 52,
+      "residue": "V",
+      "ca_b_factor": 84.72
+    },
+    {
+      "chain": "A",
+      "seq_id": 53,
+      "residue": "H",
+      "ca_b_factor": 82.94
+    },
+    {
+      "chain": "A",
+      "seq_id": 54,
+      "residue": "G",
+      "ca_b_factor": 87.51
+    },
+    {
+      "chain": "A",
+      "seq_id": 55,
+      "residue": "E",
+      "ca_b_factor": 85.03
+    },
+    {
+      "chain": "A",
+      "seq_id": 56,
+      "residue": "E",
+      "ca_b_factor": 85.32
+    },
+    {
+      "chain": "A",
+      "seq_id": 57,
+      "residue": "D",
+      "ca_b_factor": 79.56
+    },
+    {
+      "chain": "A",
+      "seq_id": 58,
+      "residue": "L",
+      "ca_b_factor": 82.36
+    },
+    {
+      "chain": "A",
+      "seq_id": 59,
+      "residue": "K",
+      "ca_b_factor": 72.41
+    },
+    {
+      "chain": "A",
+      "seq_id": 60,
+      "residue": "V",
+      "ca_b_factor": 76.71
+    },
+    {
+      "chain": "A",
+      "seq_id": 61,
+      "residue": "Q",
+      "ca_b_factor": 88.14
+    },
+    {
+      "chain": "A",
+      "seq_id": 62,
+      "residue": "H",
+      "ca_b_factor": 82.98
+    },
+    {
+      "chain": "A",
+      "seq_id": 63,
+      "residue": "S",
+      "ca_b_factor": 83.0
+    },
+    {
+      "chain": "A",
+      "seq_id": 64,
+      "residue": "S",
+      "ca_b_factor": 88.71
+    },
+    {
+      "chain": "A",
+      "seq_id": 65,
+      "residue": "Y",
+      "ca_b_factor": 89.68
+    },
+    {
+      "chain": "A",
+      "seq_id": 66,
+      "residue": "R",
+      "ca_b_factor": 89.09
+    },
+    {
+      "chain": "A",
+      "seq_id": 67,
+      "residue": "Q",
+      "ca_b_factor": 91.53
+    },
+    {
+      "chain": "A",
+      "seq_id": 68,
+      "residue": "R",
+      "ca_b_factor": 94.62
+    },
+    {
+      "chain": "A",
+      "seq_id": 69,
+      "residue": "A",
+      "ca_b_factor": 95.44
+    },
+    {
+      "chain": "A",
+      "seq_id": 70,
+      "residue": "R",
+      "ca_b_factor": 95.36
+    },
+    {
+      "chain": "A",
+      "seq_id": 71,
+      "residue": "L",
+      "ca_b_factor": 95.8
+    },
+    {
+      "chain": "A",
+      "seq_id": 72,
+      "residue": "L",
+      "ca_b_factor": 96.82
+    },
+    {
+      "chain": "A",
+      "seq_id": 73,
+      "residue": "K",
+      "ca_b_factor": 95.42
+    },
+    {
+      "chain": "A",
+      "seq_id": 74,
+      "residue": "D",
+      "ca_b_factor": 93.4
+    },
+    {
+      "chain": "A",
+      "seq_id": 75,
+      "residue": "Q",
+      "ca_b_factor": 96.24
+    },
+    {
+      "chain": "A",
+      "seq_id": 76,
+      "residue": "L",
+      "ca_b_factor": 96.45
+    },
+    {
+      "chain": "A",
+      "seq_id": 77,
+      "residue": "S",
+      "ca_b_factor": 95.41
+    },
+    {
+      "chain": "A",
+      "seq_id": 78,
+      "residue": "L",
+      "ca_b_factor": 95.53
+    },
+    {
+      "chain": "A",
+      "seq_id": 79,
+      "residue": "G",
+      "ca_b_factor": 97.08
+    },
+    {
+      "chain": "A",
+      "seq_id": 80,
+      "residue": "N",
+      "ca_b_factor": 98.08
+    },
+    {
+      "chain": "A",
+      "seq_id": 81,
+      "residue": "A",
+      "ca_b_factor": 97.34
+    },
+    {
+      "chain": "A",
+      "seq_id": 82,
+      "residue": "A",
+      "ca_b_factor": 97.84
+    },
+    {
+      "chain": "A",
+      "seq_id": 83,
+      "residue": "L",
+      "ca_b_factor": 97.49
+    },
+    {
+      "chain": "A",
+      "seq_id": 84,
+      "residue": "Q",
+      "ca_b_factor": 97.35
+    },
+    {
+      "chain": "A",
+      "seq_id": 85,
+      "residue": "I",
+      "ca_b_factor": 97.39
+    },
+    {
+      "chain": "A",
+      "seq_id": 86,
+      "residue": "T",
+      "ca_b_factor": 95.45
+    },
+    {
+      "chain": "A",
+      "seq_id": 87,
+      "residue": "D",
+      "ca_b_factor": 95.83
+    },
+    {
+      "chain": "A",
+      "seq_id": 88,
+      "residue": "V",
+      "ca_b_factor": 96.29
+    },
+    {
+      "chain": "A",
+      "seq_id": 89,
+      "residue": "K",
+      "ca_b_factor": 95.0
+    },
+    {
+      "chain": "A",
+      "seq_id": 90,
+      "residue": "L",
+      "ca_b_factor": 94.28
+    },
+    {
+      "chain": "A",
+      "seq_id": 91,
+      "residue": "Q",
+      "ca_b_factor": 92.97
+    },
+    {
+      "chain": "A",
+      "seq_id": 92,
+      "residue": "D",
+      "ca_b_factor": 94.16
+    },
+    {
+      "chain": "A",
+      "seq_id": 93,
+      "residue": "A",
+      "ca_b_factor": 95.66
+    },
+    {
+      "chain": "A",
+      "seq_id": 94,
+      "residue": "G",
+      "ca_b_factor": 93.64
+    },
+    {
+      "chain": "A",
+      "seq_id": 95,
+      "residue": "V",
+      "ca_b_factor": 91.65
+    },
+    {
+      "chain": "A",
+      "seq_id": 96,
+      "residue": "Y",
+      "ca_b_factor": 94.21
+    },
+    {
+      "chain": "A",
+      "seq_id": 97,
+      "residue": "R",
+      "ca_b_factor": 87.48
+    },
+    {
+      "chain": "A",
+      "seq_id": 98,
+      "residue": "C",
+      "ca_b_factor": 92.22
+    },
+    {
+      "chain": "A",
+      "seq_id": 99,
+      "residue": "M",
+      "ca_b_factor": 89.26
+    },
+    {
+      "chain": "A",
+      "seq_id": 100,
+      "residue": "I",
+      "ca_b_factor": 92.02
+    },
+    {
+      "chain": "A",
+      "seq_id": 101,
+      "residue": "S",
+      "ca_b_factor": 87.8
+    },
+    {
+      "chain": "A",
+      "seq_id": 102,
+      "residue": "Y",
+      "ca_b_factor": 92.46
+    },
+    {
+      "chain": "A",
+      "seq_id": 103,
+      "residue": "G",
+      "ca_b_factor": 84.28
+    },
+    {
+      "chain": "A",
+      "seq_id": 104,
+      "residue": "G",
+      "ca_b_factor": 84.56
+    },
+    {
+      "chain": "A",
+      "seq_id": 105,
+      "residue": "A",
+      "ca_b_factor": 84.11
+    },
+    {
+      "chain": "A",
+      "seq_id": 106,
+      "residue": "D",
+      "ca_b_factor": 88.89
+    },
+    {
+      "chain": "A",
+      "seq_id": 107,
+      "residue": "Y",
+      "ca_b_factor": 87.64
+    },
+    {
+      "chain": "A",
+      "seq_id": 108,
+      "residue": "K",
+      "ca_b_factor": 91.24
+    },
+    {
+      "chain": "A",
+      "seq_id": 109,
+      "residue": "R",
+      "ca_b_factor": 91.85
+    },
+    {
+      "chain": "A",
+      "seq_id": 110,
+      "residue": "I",
+      "ca_b_factor": 96.89
+    },
+    {
+      "chain": "A",
+      "seq_id": 111,
+      "residue": "T",
+      "ca_b_factor": 96.8
+    },
+    {
+      "chain": "A",
+      "seq_id": 112,
+      "residue": "V",
+      "ca_b_factor": 96.62
+    },
+    {
+      "chain": "A",
+      "seq_id": 113,
+      "residue": "K",
+      "ca_b_factor": 97.47
+    },
+    {
+      "chain": "A",
+      "seq_id": 114,
+      "residue": "V",
+      "ca_b_factor": 94.85
+    },
+    {
+      "chain": "A",
+      "seq_id": 115,
+      "residue": "N",
+      "ca_b_factor": 91.29
+    },
+    {
+      "chain": "A",
+      "seq_id": 116,
+      "residue": "A",
+      "ca_b_factor": 79.76
+    },
+    {
+      "chain": "A",
+      "seq_id": 117,
+      "residue": "L",
+      "ca_b_factor": 69.12
+    },
+    {
+      "chain": "A",
+      "seq_id": 118,
+      "residue": "E",
+      "ca_b_factor": 55.42
+    },
+    {
+      "chain": "B",
+      "seq_id": 1,
+      "residue": "Q",
+      "ca_b_factor": 77.02
+    },
+    {
+      "chain": "B",
+      "seq_id": 2,
+      "residue": "V",
+      "ca_b_factor": 90.32
+    },
+    {
+      "chain": "B",
+      "seq_id": 3,
+      "residue": "Q",
+      "ca_b_factor": 94.52
+    },
+    {
+      "chain": "B",
+      "seq_id": 4,
+      "residue": "L",
+      "ca_b_factor": 95.72
+    },
+    {
+      "chain": "B",
+      "seq_id": 5,
+      "residue": "Q",
+      "ca_b_factor": 97.02
+    },
+    {
+      "chain": "B",
+      "seq_id": 6,
+      "residue": "E",
+      "ca_b_factor": 97.47
+    },
+    {
+      "chain": "B",
+      "seq_id": 7,
+      "residue": "S",
+      "ca_b_factor": 97.56
+    },
+    {
+      "chain": "B",
+      "seq_id": 8,
+      "residue": "G",
+      "ca_b_factor": 97.34
+    },
+    {
+      "chain": "B",
+      "seq_id": 9,
+      "residue": "G",
+      "ca_b_factor": 96.3
+    },
+    {
+      "chain": "B",
+      "seq_id": 10,
+      "residue": "G",
+      "ca_b_factor": 96.46
+    },
+    {
+      "chain": "B",
+      "seq_id": 11,
+      "residue": "L",
+      "ca_b_factor": 97.0
+    },
+    {
+      "chain": "B",
+      "seq_id": 12,
+      "residue": "V",
+      "ca_b_factor": 96.51
+    },
+    {
+      "chain": "B",
+      "seq_id": 13,
+      "residue": "Q",
+      "ca_b_factor": 97.64
+    },
+    {
+      "chain": "B",
+      "seq_id": 14,
+      "residue": "P",
+      "ca_b_factor": 97.88
+    },
+    {
+      "chain": "B",
+      "seq_id": 15,
+      "residue": "G",
+      "ca_b_factor": 97.86
+    },
+    {
+      "chain": "B",
+      "seq_id": 16,
+      "residue": "G",
+      "ca_b_factor": 97.8
+    },
+    {
+      "chain": "B",
+      "seq_id": 17,
+      "residue": "S",
+      "ca_b_factor": 97.74
+    },
+    {
+      "chain": "B",
+      "seq_id": 18,
+      "residue": "L",
+      "ca_b_factor": 97.85
+    },
+    {
+      "chain": "B",
+      "seq_id": 19,
+      "residue": "R",
+      "ca_b_factor": 98.19
+    },
+    {
+      "chain": "B",
+      "seq_id": 20,
+      "residue": "L",
+      "ca_b_factor": 98.48
+    },
+    {
+      "chain": "B",
+      "seq_id": 21,
+      "residue": "S",
+      "ca_b_factor": 98.17
+    },
+    {
+      "chain": "B",
+      "seq_id": 22,
+      "residue": "C",
+      "ca_b_factor": 97.59
+    },
+    {
+      "chain": "B",
+      "seq_id": 23,
+      "residue": "A",
+      "ca_b_factor": 96.33
+    },
+    {
+      "chain": "B",
+      "seq_id": 24,
+      "residue": "A",
+      "ca_b_factor": 92.32
+    },
+    {
+      "chain": "B",
+      "seq_id": 25,
+      "residue": "S",
+      "ca_b_factor": 90.73
+    },
+    {
+      "chain": "B",
+      "seq_id": 26,
+      "residue": "G",
+      "ca_b_factor": 86.7
+    },
+    {
+      "chain": "B",
+      "seq_id": 27,
+      "residue": "K",
+      "ca_b_factor": 82.07
+    },
+    {
+      "chain": "B",
+      "seq_id": 28,
+      "residue": "M",
+      "ca_b_factor": 78.8
+    },
+    {
+      "chain": "B",
+      "seq_id": 29,
+      "residue": "S",
+      "ca_b_factor": 79.43
+    },
+    {
+      "chain": "B",
+      "seq_id": 30,
+      "residue": "S",
+      "ca_b_factor": 81.48
+    },
+    {
+      "chain": "B",
+      "seq_id": 31,
+      "residue": "R",
+      "ca_b_factor": 86.91
+    },
+    {
+      "chain": "B",
+      "seq_id": 32,
+      "residue": "R",
+      "ca_b_factor": 87.04
+    },
+    {
+      "chain": "B",
+      "seq_id": 33,
+      "residue": "C",
+      "ca_b_factor": 92.26
+    },
+    {
+      "chain": "B",
+      "seq_id": 34,
+      "residue": "M",
+      "ca_b_factor": 95.24
+    },
+    {
+      "chain": "B",
+      "seq_id": 35,
+      "residue": "A",
+      "ca_b_factor": 96.08
+    },
+    {
+      "chain": "B",
+      "seq_id": 36,
+      "residue": "W",
+      "ca_b_factor": 97.4
+    },
+    {
+      "chain": "B",
+      "seq_id": 37,
+      "residue": "F",
+      "ca_b_factor": 95.48
+    },
+    {
+      "chain": "B",
+      "seq_id": 38,
+      "residue": "R",
+      "ca_b_factor": 97.46
+    },
+    {
+      "chain": "B",
+      "seq_id": 39,
+      "residue": "Q",
+      "ca_b_factor": 96.26
+    },
+    {
+      "chain": "B",
+      "seq_id": 40,
+      "residue": "A",
+      "ca_b_factor": 94.78
+    },
+    {
+      "chain": "B",
+      "seq_id": 41,
+      "residue": "P",
+      "ca_b_factor": 88.19
+    },
+    {
+      "chain": "B",
+      "seq_id": 42,
+      "residue": "G",
+      "ca_b_factor": 88.19
+    },
+    {
+      "chain": "B",
+      "seq_id": 43,
+      "residue": "K",
+      "ca_b_factor": 91.07
+    },
+    {
+      "chain": "B",
+      "seq_id": 44,
+      "residue": "E",
+      "ca_b_factor": 80.8
+    },
+    {
+      "chain": "B",
+      "seq_id": 45,
+      "residue": "R",
+      "ca_b_factor": 88.22
+    },
+    {
+      "chain": "B",
+      "seq_id": 46,
+      "residue": "E",
+      "ca_b_factor": 92.44
+    },
+    {
+      "chain": "B",
+      "seq_id": 47,
+      "residue": "R",
+      "ca_b_factor": 89.17
+    },
+    {
+      "chain": "B",
+      "seq_id": 48,
+      "residue": "V",
+      "ca_b_factor": 94.9
+    },
+    {
+      "chain": "B",
+      "seq_id": 49,
+      "residue": "A",
+      "ca_b_factor": 96.36
+    },
+    {
+      "chain": "B",
+      "seq_id": 50,
+      "residue": "K",
+      "ca_b_factor": 92.5
+    },
+    {
+      "chain": "B",
+      "seq_id": 51,
+      "residue": "L",
+      "ca_b_factor": 93.18
+    },
+    {
+      "chain": "B",
+      "seq_id": 52,
+      "residue": "L",
+      "ca_b_factor": 90.84
+    },
+    {
+      "chain": "B",
+      "seq_id": 53,
+      "residue": "T",
+      "ca_b_factor": 89.86
+    },
+    {
+      "chain": "B",
+      "seq_id": 54,
+      "residue": "T",
+      "ca_b_factor": 83.83
+    },
+    {
+      "chain": "B",
+      "seq_id": 55,
+      "residue": "S",
+      "ca_b_factor": 86.86
+    },
+    {
+      "chain": "B",
+      "seq_id": 56,
+      "residue": "G",
+      "ca_b_factor": 88.7
+    },
+    {
+      "chain": "B",
+      "seq_id": 57,
+      "residue": "S",
+      "ca_b_factor": 91.3
+    },
+    {
+      "chain": "B",
+      "seq_id": 58,
+      "residue": "T",
+      "ca_b_factor": 94.13
+    },
+    {
+      "chain": "B",
+      "seq_id": 59,
+      "residue": "Y",
+      "ca_b_factor": 92.42
+    },
+    {
+      "chain": "B",
+      "seq_id": 60,
+      "residue": "L",
+      "ca_b_factor": 94.44
+    },
+    {
+      "chain": "B",
+      "seq_id": 61,
+      "residue": "A",
+      "ca_b_factor": 93.34
+    },
+    {
+      "chain": "B",
+      "seq_id": 62,
+      "residue": "D",
+      "ca_b_factor": 93.04
+    },
+    {
+      "chain": "B",
+      "seq_id": 63,
+      "residue": "S",
+      "ca_b_factor": 94.6
+    },
+    {
+      "chain": "B",
+      "seq_id": 64,
+      "residue": "V",
+      "ca_b_factor": 96.96
+    },
+    {
+      "chain": "B",
+      "seq_id": 65,
+      "residue": "K",
+      "ca_b_factor": 95.92
+    },
+    {
+      "chain": "B",
+      "seq_id": 66,
+      "residue": "G",
+      "ca_b_factor": 95.39
+    },
+    {
+      "chain": "B",
+      "seq_id": 67,
+      "residue": "R",
+      "ca_b_factor": 97.96
+    },
+    {
+      "chain": "B",
+      "seq_id": 68,
+      "residue": "F",
+      "ca_b_factor": 97.81
+    },
+    {
+      "chain": "B",
+      "seq_id": 69,
+      "residue": "T",
+      "ca_b_factor": 97.91
+    },
+    {
+      "chain": "B",
+      "seq_id": 70,
+      "residue": "I",
+      "ca_b_factor": 97.32
+    },
+    {
+      "chain": "B",
+      "seq_id": 71,
+      "residue": "S",
+      "ca_b_factor": 97.48
+    },
+    {
+      "chain": "B",
+      "seq_id": 72,
+      "residue": "Q",
+      "ca_b_factor": 94.12
+    },
+    {
+      "chain": "B",
+      "seq_id": 73,
+      "residue": "N",
+      "ca_b_factor": 91.47
+    },
+    {
+      "chain": "B",
+      "seq_id": 74,
+      "residue": "N",
+      "ca_b_factor": 88.41
+    },
+    {
+      "chain": "B",
+      "seq_id": 75,
+      "residue": "A",
+      "ca_b_factor": 87.51
+    },
+    {
+      "chain": "B",
+      "seq_id": 76,
+      "residue": "K",
+      "ca_b_factor": 88.61
+    },
+    {
+      "chain": "B",
+      "seq_id": 77,
+      "residue": "S",
+      "ca_b_factor": 90.67
+    },
+    {
+      "chain": "B",
+      "seq_id": 78,
+      "residue": "T",
+      "ca_b_factor": 95.19
+    },
+    {
+      "chain": "B",
+      "seq_id": 79,
+      "residue": "V",
+      "ca_b_factor": 96.83
+    },
+    {
+      "chain": "B",
+      "seq_id": 80,
+      "residue": "Y",
+      "ca_b_factor": 97.76
+    },
+    {
+      "chain": "B",
+      "seq_id": 81,
+      "residue": "L",
+      "ca_b_factor": 98.31
+    },
+    {
+      "chain": "B",
+      "seq_id": 82,
+      "residue": "Q",
+      "ca_b_factor": 98.46
+    },
+    {
+      "chain": "B",
+      "seq_id": 83,
+      "residue": "M",
+      "ca_b_factor": 98.42
+    },
+    {
+      "chain": "B",
+      "seq_id": 84,
+      "residue": "N",
+      "ca_b_factor": 98.4
+    },
+    {
+      "chain": "B",
+      "seq_id": 85,
+      "residue": "S",
+      "ca_b_factor": 97.81
+    },
+    {
+      "chain": "B",
+      "seq_id": 86,
+      "residue": "L",
+      "ca_b_factor": 97.97
+    },
+    {
+      "chain": "B",
+      "seq_id": 87,
+      "residue": "K",
+      "ca_b_factor": 97.63
+    },
+    {
+      "chain": "B",
+      "seq_id": 88,
+      "residue": "P",
+      "ca_b_factor": 96.82
+    },
+    {
+      "chain": "B",
+      "seq_id": 89,
+      "residue": "E",
+      "ca_b_factor": 95.66
+    },
+    {
+      "chain": "B",
+      "seq_id": 90,
+      "residue": "D",
+      "ca_b_factor": 97.78
+    },
+    {
+      "chain": "B",
+      "seq_id": 91,
+      "residue": "T",
+      "ca_b_factor": 97.76
+    },
+    {
+      "chain": "B",
+      "seq_id": 92,
+      "residue": "A",
+      "ca_b_factor": 98.05
+    },
+    {
+      "chain": "B",
+      "seq_id": 93,
+      "residue": "M",
+      "ca_b_factor": 97.94
+    },
+    {
+      "chain": "B",
+      "seq_id": 94,
+      "residue": "Y",
+      "ca_b_factor": 97.9
+    },
+    {
+      "chain": "B",
+      "seq_id": 95,
+      "residue": "Y",
+      "ca_b_factor": 97.18
+    },
+    {
+      "chain": "B",
+      "seq_id": 96,
+      "residue": "C",
+      "ca_b_factor": 96.16
+    },
+    {
+      "chain": "B",
+      "seq_id": 97,
+      "residue": "A",
+      "ca_b_factor": 95.28
+    },
+    {
+      "chain": "B",
+      "seq_id": 98,
+      "residue": "A",
+      "ca_b_factor": 91.84
+    },
+    {
+      "chain": "B",
+      "seq_id": 99,
+      "residue": "D",
+      "ca_b_factor": 88.65
+    },
+    {
+      "chain": "B",
+      "seq_id": 100,
+      "residue": "S",
+      "ca_b_factor": 79.54
+    },
+    {
+      "chain": "B",
+      "seq_id": 101,
+      "residue": "F",
+      "ca_b_factor": 74.57
+    },
+    {
+      "chain": "B",
+      "seq_id": 102,
+      "residue": "E",
+      "ca_b_factor": 76.5
+    },
+    {
+      "chain": "B",
+      "seq_id": 103,
+      "residue": "D",
+      "ca_b_factor": 79.38
+    },
+    {
+      "chain": "B",
+      "seq_id": 104,
+      "residue": "P",
+      "ca_b_factor": 78.45
+    },
+    {
+      "chain": "B",
+      "seq_id": 105,
+      "residue": "T",
+      "ca_b_factor": 71.65
+    },
+    {
+      "chain": "B",
+      "seq_id": 106,
+      "residue": "C",
+      "ca_b_factor": 84.72
+    },
+    {
+      "chain": "B",
+      "seq_id": 107,
+      "residue": "T",
+      "ca_b_factor": 71.2
+    },
+    {
+      "chain": "B",
+      "seq_id": 108,
+      "residue": "L",
+      "ca_b_factor": 76.15
+    },
+    {
+      "chain": "B",
+      "seq_id": 109,
+      "residue": "V",
+      "ca_b_factor": 83.46
+    },
+    {
+      "chain": "B",
+      "seq_id": 110,
+      "residue": "T",
+      "ca_b_factor": 76.15
+    },
+    {
+      "chain": "B",
+      "seq_id": 111,
+      "residue": "S",
+      "ca_b_factor": 76.26
+    },
+    {
+      "chain": "B",
+      "seq_id": 112,
+      "residue": "S",
+      "ca_b_factor": 67.8
+    },
+    {
+      "chain": "B",
+      "seq_id": 113,
+      "residue": "G",
+      "ca_b_factor": 73.78
+    },
+    {
+      "chain": "B",
+      "seq_id": 114,
+      "residue": "A",
+      "ca_b_factor": 73.33
+    },
+    {
+      "chain": "B",
+      "seq_id": 115,
+      "residue": "F",
+      "ca_b_factor": 76.93
+    },
+    {
+      "chain": "B",
+      "seq_id": 116,
+      "residue": "Q",
+      "ca_b_factor": 85.82
+    },
+    {
+      "chain": "B",
+      "seq_id": 117,
+      "residue": "Y",
+      "ca_b_factor": 90.07
+    },
+    {
+      "chain": "B",
+      "seq_id": 118,
+      "residue": "W",
+      "ca_b_factor": 92.66
+    },
+    {
+      "chain": "B",
+      "seq_id": 119,
+      "residue": "G",
+      "ca_b_factor": 95.67
+    },
+    {
+      "chain": "B",
+      "seq_id": 120,
+      "residue": "Q",
+      "ca_b_factor": 95.19
+    },
+    {
+      "chain": "B",
+      "seq_id": 121,
+      "residue": "G",
+      "ca_b_factor": 97.21
+    },
+    {
+      "chain": "B",
+      "seq_id": 122,
+      "residue": "T",
+      "ca_b_factor": 97.73
+    },
+    {
+      "chain": "B",
+      "seq_id": 123,
+      "residue": "Q",
+      "ca_b_factor": 97.87
+    },
+    {
+      "chain": "B",
+      "seq_id": 124,
+      "residue": "V",
+      "ca_b_factor": 97.97
+    },
+    {
+      "chain": "B",
+      "seq_id": 125,
+      "residue": "T",
+      "ca_b_factor": 97.7
+    },
+    {
+      "chain": "B",
+      "seq_id": 126,
+      "residue": "V",
+      "ca_b_factor": 96.85
+    },
+    {
+      "chain": "B",
+      "seq_id": 127,
+      "residue": "S",
+      "ca_b_factor": 93.67
+    },
+    {
+      "chain": "B",
+      "seq_id": 128,
+      "residue": "S",
+      "ca_b_factor": 85.34
+    }
+  ]
+}

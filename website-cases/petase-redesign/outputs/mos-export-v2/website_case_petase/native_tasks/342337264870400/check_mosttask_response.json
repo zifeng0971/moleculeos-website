@@ -1,0 +1,24 @@
+{
+ "task_id": "342337264870400",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "WT_PETase_seqfitness",
+  "type": "Sequence Fitness Mutation Effect",
+  "task_id": "342337264870400",
+  "started": "2026-10-20 08:13:54",
+  "duration": "8s"
+ },
+ "payload_exact": {
+  "sequence": "GAGAGAMNPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALRQVASLNGTSSSPIYGKVDTARMGVMGWSMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [
+  "/workspace/downloads/sequence_fitness_mutation_effect_342337264870400/sequence_scores.csv"
+ ],
+ "sequence_verification": {
+  "label": "WT268",
+  "length": 268,
+  "sha256": "2eace7d7ed441600082b967d4c1398a9e7c5dbcf5c754178a8cdac97a0b1ac93",
+  "source_file": "analyses/5XG0_chainC_seq.fasta"
+ }
+}

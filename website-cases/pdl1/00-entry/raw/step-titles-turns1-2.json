@@ -1,0 +1,114 @@
+{
+  "submission_at": "2026-10-22T01:40:23.560Z",
+  "observed_at": "2026-10-22T01:42:38.127Z",
+  "groups": [
+    {
+      "expanded": "true",
+      "text": "Worked for 44s"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Execution details2 items"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "File operations"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Run commands2 items"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Run commands"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Tool calls2 items"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Run commands"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Tool calls"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Search sources"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Tool calls"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "true",
+      "text": "Worked for 7s"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "false",
+      "text": "Tool calls"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "false",
+      "text": "Execution details2 items"
+    },
+    {
+      "expanded": "false",
+      "text": "Thinking"
+    },
+    {
+      "expanded": "false",
+      "text": "Run commands"
+    }
+  ]
+}

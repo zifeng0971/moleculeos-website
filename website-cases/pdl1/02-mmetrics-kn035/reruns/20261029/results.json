@@ -1,0 +1,127 @@
+{
+  "case_id": "02-kn035",
+  "run_id": "20261029",
+  "status": "succeeded_with_native_scope_limits",
+  "project_id": "345488380847104",
+  "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+  "observed_utc": "2026-10-29T06:03:51.081615+00:00",
+  "source_kind": "native_MOS_MMetrics_UI_and_tasks",
+  "input_file_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "submitted_prompt_sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94",
+  "same_prompt_bytes": true,
+  "same_structure_bytes": true,
+  "native_tasks": [
+    {
+      "task_id": "345488784917504",
+      "task_name": "autocompute-MMFold_1",
+      "task_type": "MOSTask",
+      "status": "SUCCEED",
+      "started_raw": "2026-10-29 05:57:28",
+      "duration_raw": "1.1min",
+      "role": "automatic (platform auto-compute, not user-launched)",
+      "source_file": "raw/mos-export/kn035_case02/task-ledger.json",
+      "payload_file": "raw/mos-export/kn035_case02/payload/autocompute_345488784917504.payload.json"
+    },
+    {
+      "task_id": "345489060729856",
+      "task_name": "mmetrics-analysis-345488784917504",
+      "task_type": "MOSTask",
+      "status": "SUCCEED",
+      "started_raw": "2026-10-29 05:58:35",
+      "duration_raw": "26s",
+      "role": "automatic (spawned by 345488784917504)",
+      "source_file": "raw/mos-export/kn035_case02/task-ledger.json",
+      "payload_file": "raw/mos-export/kn035_case02/payload/mmetrics_345489060729856.payload.json"
+    }
+  ],
+  "homologs": {
+    "n_entries": 3,
+    "native_record": "raw/mos-export/kn035_case02/raw/mmetrics_345489060729856/record.json",
+    "raw_rows": "raw/homologs-native.json",
+    "ui_cards": "raw/homologs-ui-cards.json",
+    "summary": "homologs-summary.json",
+    "raw": [
+      {
+        "entity_id": 1,
+        "hit_id": "pdb|5JDS|B",
+        "hit_name": "PDB_5JDS",
+        "hit_db": "pdb",
+        "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "hit_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "midline": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "identity_percentage": 1.0,
+        "coverage": 1.0,
+        "e_value": 2.10588e-92,
+        "bit_score": 266.544,
+        "alignment_length": 128,
+        "gaps": 0,
+        "positive": 128,
+        "query_from": 1,
+        "query_to": 128,
+        "hit_from": 3,
+        "hit_to": 130
+      },
+      {
+        "entity_id": 1,
+        "hit_id": "pdb|4DKA|A",
+        "hit_name": "PDB_4DKA",
+        "hit_db": "pdb",
+        "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVT-SSGAFQYWGQGTQVTVSS",
+        "hit_sequence_aligned": "QVQLQESGGGLVQAGGSLRLSCAASGRTSSLYSMGWFRQAPGKEREFVAAISRNGANTYYTDSVKGRFTISRDNAKNTVELQMNSLKPEDTAVYYCAADRF--PTMEVVTIMTNEYDYWGQGTQVTVSS",
+        "midline": "QVQLQESGGGLVQ GGSLRLSCAASG+ SS   M WFRQAPGKERE VA +     +TY  DSVKGRFTIS++NAK+TV LQMNSLKPEDTA+YYCAAD F  PT  +VT  +  + YWGQGTQVTVSS",
+        "identity_percentage": 0.7209,
+        "coverage": 1.0,
+        "e_value": 4.94522e-59,
+        "bit_score": 181.415,
+        "alignment_length": 128,
+        "gaps": 3,
+        "positive": 103,
+        "query_from": 1,
+        "query_to": 128,
+        "hit_from": 1,
+        "hit_to": 127
+      },
+      {
+        "entity_id": 1,
+        "hit_id": "pdb|4DK3|A",
+        "hit_name": "PDB_4DK3",
+        "hit_db": "pdb",
+        "query_sequence_aligned": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVT-SSGAFQYWGQGTQVTVSS",
+        "hit_sequence_aligned": "QVQLQESGGGLVQAGGSLRLSCAASGRTSSLYSMGWFRQAPGKEREFVAAISRNGANTYYTDSVKGRFTISRDNAKNTVELQMNSLKPEDTAVYYCAADRF--PTMEVVTIMTNEYDYWGQGTQVTVSS",
+        "midline": "QVQLQESGGGLVQ GGSLRLSCAASG+ SS   M WFRQAPGKERE VA +     +TY  DSVKGRFTIS++NAK+TV LQMNSLKPEDTA+YYCAAD F  PT  +VT  +  + YWGQGTQVTVSS",
+        "identity_percentage": 0.7209,
+        "coverage": 1.0,
+        "e_value": 5.99254e-59,
+        "bit_score": 181.415,
+        "alignment_length": 128,
+        "gaps": 3,
+        "positive": 103,
+        "query_from": 1,
+        "query_to": 128,
+        "hit_from": 1,
+        "hit_to": 127
+      }
+    ],
+    "query_chain_verified": "B",
+    "native_entity_id": 1
+  },
+  "ui_capture": {
+    "panel": "raw/native-panel.json",
+    "dom": "raw/native-panel-dom.txt",
+    "screenshot": "visuals/native-homologs-overview.jpg",
+    "capture_scope": "All three Homologs cards with direct links and the complete panel DOM at IMGT / 2D. Other tabs were not visually recaptured."
+  },
+  "native_archive": {
+    "file": "raw/kn035_case02.zip",
+    "sha256": "18b787c8acb639120fd6e4965a6bc613a08dfac074f95844e7001dd71e306342",
+    "bytes": 444278,
+    "zip_entries": 19
+  },
+  "limits": [
+    "The input remains a MOS prediction. Native Description calls it a crystal structure at 1.7 Angstrom; preserve that text as native output without treating the input as experimental evidence.",
+    "The UI antigen label and native entity_id=1 disagree with the full 128-residue query sequence, which matches chain B.",
+    "annotations.uniprot=[] and model_tasks.results=[]; Domain and PTM features are absent.",
+    "The UI displays four MutX CSV download links, while the child record has no attached model tasks. Parent autocompute CSV files and the UI DOM are preserved separately.",
+    "Other canonical case-02 modules remain historical observations from 2026-10-21; this update changes Homologs and adds a latest-rerun pointer."
+  ]
+}

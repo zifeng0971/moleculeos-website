@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "title": "Input",
+  "properties": {
+    "sequence": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": null, "description": "Input protein sequence as a single-letter string of standard amino acids. Only ACDEFGHIKLMNPQRSTVWY are accepted. Gaps, unknown residues (X), and ambiguous codes (B/Z/U/O/J) are not supported. Length is capped by the scoring checkpoint's positional-embedding size; longer chains must be scored in segments. Preferred over structure_path."},
+    "structure_path": {"anyOf": [{"type": "string"}, {"type": "null"}], "default": null, "description": "Path or TOS URI to an input protein structure in PDB or mmCIF format. Used only when sequence is not provided. The model extracts standard amino-acid sequences and queries the MSA service automatically."},
+    "custom_output_path": {"type": "string", "default": "", "description": "Resolved output destination. Set by framework - see gateway.source.ApiSource.resolve_output_dest()."}
+  },
+  "additionalProperties": true
+}

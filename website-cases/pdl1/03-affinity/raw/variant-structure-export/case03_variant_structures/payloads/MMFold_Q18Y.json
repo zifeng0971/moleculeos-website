@@ -1,0 +1,21 @@
+{
+  "name": "PDL1_DBL1_03_Q18Y_complex",
+  "dialect": "mmfold",
+  "version": 1,
+  "sequences": [
+    {
+      "protein": {
+        "id": "A",
+        "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+        "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+      }
+    },
+    {
+      "protein": {
+        "id": "B",
+        "sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+        "description": "DBL1_03 designed binder, single mutation B13 Q18Y (author QB13Y), entity/MOS position 18, 124 aa"
+      }
+    }
+  ]
+}

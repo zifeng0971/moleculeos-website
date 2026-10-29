@@ -1,0 +1,1 @@
+本地将独立重算全部结构比较，请优先把所有真实raw CIF/summary confidence与完整payload/ID、候选、mapping打包，不要再扩展或反复调试几何脚本。保留你已有分析供审计。检查Q116M/T105L两任务，完成就收齐，共5个变体全部原始样本。最终zip=/workspace/kn035_case03.zip。ΔΔG证据若无明确单位应写unknown，不把假设当平台声明。

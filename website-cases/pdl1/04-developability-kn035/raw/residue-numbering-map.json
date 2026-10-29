@@ -1,0 +1,1799 @@
+{
+  "coordinate_mapping": [
+    {
+      "mos_chain": "B",
+      "mos_residue": 1,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 1,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 2,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 2,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 3,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 3,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 4,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 4,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 5,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 5,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 6,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 6,
+      "aa": "E"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 7,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 7,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 8,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 8,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 9,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 9,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 10,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 10,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 11,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 11,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 12,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 12,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 13,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 13,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 14,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 14,
+      "aa": "P"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 15,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 15,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 16,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 16,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 17,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 17,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 18,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 18,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 19,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 19,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 20,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 20,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 21,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 21,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 22,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 22,
+      "aa": "C"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 23,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 23,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 24,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 24,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 25,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 25,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 26,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 26,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 27,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 27,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 28,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 28,
+      "aa": "M"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 29,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 29,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 30,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 30,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 31,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 31,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 32,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 32,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 33,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 33,
+      "aa": "C"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 34,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 34,
+      "aa": "M"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 35,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 35,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 36,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 36,
+      "aa": "W"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 37,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 37,
+      "aa": "F"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 38,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 38,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 39,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 39,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 40,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 40,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 41,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 41,
+      "aa": "P"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 42,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 42,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 43,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 43,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 44,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 44,
+      "aa": "E"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 45,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 45,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 46,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 46,
+      "aa": "E"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 47,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 47,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 48,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 48,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 49,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 49,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 50,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 50,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 51,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 51,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 52,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 52,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 53,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 53,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 54,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 54,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 55,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 55,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 56,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 56,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 57,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 57,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 58,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 58,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 59,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 59,
+      "aa": "Y"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 60,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 60,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 61,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 61,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 62,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 62,
+      "aa": "D"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 63,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 63,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 64,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 64,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 65,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 65,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 66,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 66,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 67,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 67,
+      "aa": "R"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 68,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 68,
+      "aa": "F"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 69,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 69,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 70,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 70,
+      "aa": "I"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 71,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 71,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 72,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 72,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 73,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 73,
+      "aa": "N"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 74,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 74,
+      "aa": "N"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 75,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 75,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 76,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 76,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 77,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 77,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 78,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 78,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 79,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 79,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 80,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 80,
+      "aa": "Y"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 81,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 81,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 82,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 82,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 83,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 83,
+      "aa": "M"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 84,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 84,
+      "aa": "N"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 85,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 85,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 86,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 86,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 87,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 87,
+      "aa": "K"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 88,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 88,
+      "aa": "P"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 89,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 89,
+      "aa": "E"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 90,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 90,
+      "aa": "D"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 91,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 91,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 92,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 92,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 93,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 93,
+      "aa": "M"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 94,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 94,
+      "aa": "Y"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 95,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 95,
+      "aa": "Y"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 96,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 96,
+      "aa": "C"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 97,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 97,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 98,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 98,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 99,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 99,
+      "aa": "D"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 100,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 100,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 101,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 101,
+      "aa": "F"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 102,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 102,
+      "aa": "E"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 103,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 103,
+      "aa": "D"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 104,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 104,
+      "aa": "P"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 105,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 105,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 106,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 106,
+      "aa": "C"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 107,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 107,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 108,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 108,
+      "aa": "L"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 109,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 109,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 110,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 110,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 111,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 111,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 112,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 112,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 113,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 113,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 114,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 114,
+      "aa": "A"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 115,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 115,
+      "aa": "F"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 116,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 116,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 117,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 117,
+      "aa": "Y"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 118,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 118,
+      "aa": "W"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 119,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 119,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 120,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 120,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 121,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 121,
+      "aa": "G"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 122,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 122,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 123,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 123,
+      "aa": "Q"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 124,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 124,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 125,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 125,
+      "aa": "T"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 126,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 126,
+      "aa": "V"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 127,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 127,
+      "aa": "S"
+    },
+    {
+      "mos_chain": "B",
+      "mos_residue": 128,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 128,
+      "aa": "S"
+    }
+  ],
+  "sequence_score_mapping": [
+    {
+      "score_chain": "A",
+      "score_position": 1,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 1,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 2,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 2,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 3,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 3,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 4,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 4,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 5,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 5,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 6,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 6,
+      "aa": "E"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 7,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 7,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 8,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 8,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 9,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 9,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 10,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 10,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 11,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 11,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 12,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 12,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 13,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 13,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 14,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 14,
+      "aa": "P"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 15,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 15,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 16,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 16,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 17,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 17,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 18,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 18,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 19,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 19,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 20,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 20,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 21,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 21,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 22,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 22,
+      "aa": "C"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 23,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 23,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 24,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 24,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 25,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 25,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 26,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 26,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 27,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 27,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 28,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 28,
+      "aa": "M"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 29,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 29,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 30,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 30,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 31,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 31,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 32,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 32,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 33,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 33,
+      "aa": "C"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 34,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 34,
+      "aa": "M"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 35,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 35,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 36,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 36,
+      "aa": "W"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 37,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 37,
+      "aa": "F"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 38,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 38,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 39,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 39,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 40,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 40,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 41,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 41,
+      "aa": "P"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 42,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 42,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 43,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 43,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 44,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 44,
+      "aa": "E"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 45,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 45,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 46,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 46,
+      "aa": "E"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 47,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 47,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 48,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 48,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 49,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 49,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 50,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 50,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 51,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 51,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 52,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 52,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 53,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 53,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 54,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 54,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 55,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 55,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 56,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 56,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 57,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 57,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 58,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 58,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 59,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 59,
+      "aa": "Y"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 60,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 60,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 61,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 61,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 62,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 62,
+      "aa": "D"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 63,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 63,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 64,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 64,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 65,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 65,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 66,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 66,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 67,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 67,
+      "aa": "R"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 68,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 68,
+      "aa": "F"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 69,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 69,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 70,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 70,
+      "aa": "I"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 71,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 71,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 72,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 72,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 73,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 73,
+      "aa": "N"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 74,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 74,
+      "aa": "N"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 75,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 75,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 76,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 76,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 77,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 77,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 78,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 78,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 79,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 79,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 80,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 80,
+      "aa": "Y"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 81,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 81,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 82,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 82,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 83,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 83,
+      "aa": "M"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 84,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 84,
+      "aa": "N"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 85,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 85,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 86,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 86,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 87,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 87,
+      "aa": "K"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 88,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 88,
+      "aa": "P"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 89,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 89,
+      "aa": "E"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 90,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 90,
+      "aa": "D"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 91,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 91,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 92,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 92,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 93,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 93,
+      "aa": "M"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 94,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 94,
+      "aa": "Y"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 95,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 95,
+      "aa": "Y"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 96,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 96,
+      "aa": "C"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 97,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 97,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 98,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 98,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 99,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 99,
+      "aa": "D"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 100,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 100,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 101,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 101,
+      "aa": "F"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 102,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 102,
+      "aa": "E"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 103,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 103,
+      "aa": "D"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 104,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 104,
+      "aa": "P"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 105,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 105,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 106,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 106,
+      "aa": "C"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 107,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 107,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 108,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 108,
+      "aa": "L"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 109,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 109,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 110,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 110,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 111,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 111,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 112,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 112,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 113,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 113,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 114,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 114,
+      "aa": "A"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 115,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 115,
+      "aa": "F"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 116,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 116,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 117,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 117,
+      "aa": "Y"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 118,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 118,
+      "aa": "W"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 119,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 119,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 120,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 120,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 121,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 121,
+      "aa": "G"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 122,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 122,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 123,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 123,
+      "aa": "Q"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 124,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 124,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 125,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 125,
+      "aa": "T"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 126,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 126,
+      "aa": "V"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 127,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 127,
+      "aa": "S"
+    },
+    {
+      "score_chain": "A",
+      "score_position": 128,
+      "mmfold1_chain": "B",
+      "mmfold1_label_seq_id": 128,
+      "aa": "S"
+    }
+  ],
+  "all_7680_score_rows_WT_verified": true
+}

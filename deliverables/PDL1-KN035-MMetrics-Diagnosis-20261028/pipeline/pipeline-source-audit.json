@@ -1,0 +1,66 @@
+{
+  "scope": "Read-only source discovery in mos workspace and immediate clearly relevant sibling directories; no network, no secrets read, no source files modified.",
+  "actual_backend_found": false,
+  "workspace_identity": {
+    "package_name": "moleculeos-marketing-site",
+    "source": "/Users/zifengye/Documents/ChatGPT/mos/package.json"
+  },
+  "searched_relevant_locations": [
+    "/Users/zifengye/Documents/ChatGPT/mos/scripts",
+    "/Users/zifengye/Documents/ChatGPT/mos/components",
+    "/Users/zifengye/Documents/ChatGPT/mos/content/manual",
+    "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts",
+    "/Users/zifengye/Documents/ChatGPT/mm (top-level listing and relevant filename search; data/scoring bundles)",
+    "/Users/zifengye/Documents/testagent/scientific_agent_eval_handoff/src and docs (browser adapter, not MOS backend)"
+  ],
+  "contracts_from_local_manual": [
+    {
+      "claim": "Loading a protein into a project auto-triggers MMetrics; local pdb/cif upload, MMFold/DeNovo output, PDB load are listed; antibody-antigen complexes supported.",
+      "source": "content/manual/zh/liu-mmetrics/_overview.mdx",
+      "lines": [
+        3,
+        16
+      ]
+    },
+    {
+      "claim": "MMetrics performs homology retrieval and shows top five results by match confidence; automatic chain/entity-selection logic is NOT documented here.",
+      "source": "content/manual/zh/liu-mmetrics/_overview.mdx",
+      "lines": [
+        29,
+        38
+      ]
+    },
+    {
+      "claim": "Standalone SeqSim Search accepts a target sequence or a chosen protein chain; search launches a distinct task.",
+      "source": "content/manual/zh/si-tong-yuan-dan-bai-sou-suo-seqsimsearch/_overview.mdx",
+      "lines": [
+        3,
+        17
+      ]
+    }
+  ],
+  "presentation_snapshot_caveat": {
+    "source": "scripts/prepare-mmetrics-kn035.py",
+    "lines": [
+      1,
+      5,
+      47,
+      55
+    ],
+    "fact": "This is a homepage snapshot converter. It hardcodes homologs.items=[] at line 51, preserving the historical native empty state.",
+    "meaning": "It cannot identify why live MOS native MMetrics emitted homology=[]. Updating live MOS does not automatically repopulate this static homepage JSON; separate regeneration would be required if the user later wants changed website output.",
+    "do_not_do": "Do not use marketing UI/mock classes as production backend implementation or treat their hardcoded empty array as root cause of native MOS behavior."
+  },
+  "archive_scripts_caveat": {
+    "source": "website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/",
+    "fact": "build_package.py/build_provenance.py/build_tasks.py assemble archive files, copy objects, and normalize historical metadata; they are not the autocompute worker or MMetrics aggregation implementation."
+  },
+  "backend_evidence_still_needed": [
+    "Automatic query selection/dispatch implementation or logs for task342604299285504, including each chain/entity sequence and skipped-module reasons.",
+    "Per-entity A-chain search task/response, if any, linked through project342604060136448/object342604293768192/work342604299084800.",
+    "MMetrics task342604577018880 runtime logs and aggregation/parser/filter code handling mos-blast input objects and annotations.homology.",
+    "Production worker and database release versions, thresholds, retries, errors, and exact execution timestamps/timezone semantics."
+  ],
+  "new_mos_tasks_submitted": false,
+  "network_requests_made": false
+}

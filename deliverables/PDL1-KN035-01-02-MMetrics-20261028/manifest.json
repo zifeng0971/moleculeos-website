@@ -1,0 +1,1455 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-28T15:40:37+07:00",
+  "root_folder": "PDL1-KN035-01-02-MMetrics-20261028",
+  "scope_counts": {
+    "01-structure": {
+      "source_files": 45,
+      "copied_files": 45,
+      "bytes": 2169485
+    },
+    "02-mmetrics-kn035": {
+      "source_files": 127,
+      "copied_files": 127,
+      "bytes": 13241452
+    }
+  },
+  "files": [
+    {
+      "path": "ISSUE-BRIEF.txt",
+      "bytes": 3168,
+      "sha256": "59030d8eb85819a6ccc8e89e4303fb695c297e9784c37240147b0a65d7892346",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "README-FIRST.txt",
+      "bytes": 447,
+      "sha256": "c72685f958f9f2fe355b18ab967981929d1d5676a4fe8badeb69488652a09f6c",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/input.json",
+      "bytes": 899,
+      "sha256": "e046b2907663542e219f2c4bfc2328ae441db262dc7932e5089cd6dc70d80b63",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/input.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_1.pdb",
+      "bytes": 155043,
+      "sha256": "da075e159975107f9a427e33d9b5f56addf8a27c35ec105855d0d4e95b056030",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_1.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_2.cif",
+      "bytes": 154131,
+      "sha256": "f0f940a29129a9d8bc44c7700b7b62cd83a9a69838cbba2d81b549eeb57e712a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_2.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_2.pdb",
+      "bytes": 155043,
+      "sha256": "6df941454c0021d790592b923d9ead4deaeb0dff1b0ad54f60bdbbc539de75ef",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_2.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_3.cif",
+      "bytes": 154131,
+      "sha256": "0359e313c42cca0c4461f0a897dcf7a0cf5e0d7d596d40d20e55b67663b38377",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_3.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_3.pdb",
+      "bytes": 155043,
+      "sha256": "28b0ca69a540bc388d61df00b27ec5e24eaaa0b2146691a4af857c2c4af4f386",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_3.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_4.cif",
+      "bytes": 154131,
+      "sha256": "30c4d00ce70d3f59f95bb048cd8fb066be684bdfb38e001a4ba42cfd752f0e89",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_4.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_4.pdb",
+      "bytes": 155043,
+      "sha256": "31ee445ab571c75d218e84bb756d9f7e20c22c0c75a8fc5d2129d86ba718560c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_4.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_5.cif",
+      "bytes": 154131,
+      "sha256": "75e4147e5386eebbaa172722ab8a96c41186b808569c86fe4ee122480a7f4443",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_5.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/MMFold_5.pdb",
+      "bytes": 155043,
+      "sha256": "9f2d8b457f799aceff57fa494d4b51e5e28092a5d34a972ecc28f14d2e2c664d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_5.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/highlights.json",
+      "bytes": 1118,
+      "sha256": "7d2f9f0b1dcb5f832a1a728c7e3929f292ef5be35eb33bcb0bbfa5678d9f7a8d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/highlights.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/input.fasta",
+      "bytes": 261,
+      "sha256": "654dfb125d36dc3e27c9b36872ab3ea15e55597933e715bf0e406bee1d43fde6",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/input.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/mocha-launch-receipt.txt",
+      "bytes": 14123,
+      "sha256": "1c26039f8fd52a15d5b4ba2626b80598c5a8b5574757684b1914f0e2bd08648e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/mocha-launch-receipt.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-1-derived-contacts.json",
+      "bytes": 9059,
+      "sha256": "40dd7e77f5e4285b26728cb57d8578bec6bbf87163469c3b37053292b9e91b46",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-1-derived-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-1-reference-mapping.json",
+      "bytes": 32295,
+      "sha256": "cf4caaeb1f2dedb4420c5bc1fc3adb408c96c7b7952c45b8af9dacd19cd34916",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-1-reference-mapping.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-1-residue-confidence.json",
+      "bytes": 25293,
+      "sha256": "b3213f29d729be890c5871fd00751bacb312d1f514ed8ec096582907da07a111",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-1-residue-confidence.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-2-derived-contacts.json",
+      "bytes": 8476,
+      "sha256": "4bc7ff8f025756c895dc0aaf95927015ac17c19f253abd2202475da86ff5955c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-2-derived-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-2-reference-mapping.json",
+      "bytes": 32295,
+      "sha256": "cf4caaeb1f2dedb4420c5bc1fc3adb408c96c7b7952c45b8af9dacd19cd34916",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-2-reference-mapping.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-2-residue-confidence.json",
+      "bytes": 25284,
+      "sha256": "4005064ed12d833f8e077b536cf5d77b5ad03e6cd89659b04f2b3d059af09a2d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-2-residue-confidence.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-3-derived-contacts.json",
+      "bytes": 6921,
+      "sha256": "481e65ffa146b94459425a464c2a2be00e78686d1536f625393394140bdc3adb",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-3-derived-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-3-reference-mapping.json",
+      "bytes": 32295,
+      "sha256": "cf4caaeb1f2dedb4420c5bc1fc3adb408c96c7b7952c45b8af9dacd19cd34916",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-3-reference-mapping.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-3-residue-confidence.json",
+      "bytes": 25286,
+      "sha256": "a6d5e80fdcf36b44f67bfc9a235111d1908a84a0920fa1f0f14283b628968240",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-3-residue-confidence.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-4-derived-contacts.json",
+      "bytes": 5362,
+      "sha256": "40f266c8049c336ed204e62993306f72261655afe997344f388e07187e34d5d0",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-4-derived-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-4-reference-mapping.json",
+      "bytes": 32295,
+      "sha256": "cf4caaeb1f2dedb4420c5bc1fc3adb408c96c7b7952c45b8af9dacd19cd34916",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-4-reference-mapping.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-4-residue-confidence.json",
+      "bytes": 25283,
+      "sha256": "158f1f1472237989a7a483aca149049aa4d658725c636b3ce68907d867ca28fb",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-4-residue-confidence.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-5-derived-contacts.json",
+      "bytes": 6911,
+      "sha256": "6f844870586da67dcc88738c7f11efeef3252268fe3e03823e71e1aae8a62bcd",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-5-derived-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-5-reference-mapping.json",
+      "bytes": 32295,
+      "sha256": "cf4caaeb1f2dedb4420c5bc1fc3adb408c96c7b7952c45b8af9dacd19cd34916",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-5-reference-mapping.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/model-5-residue-confidence.json",
+      "bytes": 25285,
+      "sha256": "a33502dcd8a2b3f7ccf6fb0b9552ebde4377b72dcfcae531c65937b04d374b1d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/model-5-residue-confidence.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/mos-initial-snapshot.txt",
+      "bytes": 11759,
+      "sha256": "f3c1d25cc18eaffb67651d372c2accb869e0093df515957e55229486ce807eb9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/mos-initial-snapshot.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/submitted-prompt.txt",
+      "bytes": 627,
+      "sha256": "b95eb96c8a5b09da52ba1e2a416787fc6460e8f6e594e4a1ba0f768cae03b1a7",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/submitted-prompt.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/summary_confidences_sample_1.json",
+      "bytes": 757,
+      "sha256": "002ee6adb2415e8a9909ac07b086e1ceb0a94ca82ba321933df126d10299c6f1",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/summary_confidences_sample_1.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/summary_confidences_sample_2.json",
+      "bytes": 755,
+      "sha256": "3d17cd1670c18e7da2377298b983bc4b9ed12a199542e5d56529eda0302e2ef3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/summary_confidences_sample_2.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/summary_confidences_sample_3.json",
+      "bytes": 753,
+      "sha256": "8f5cef4b47af65bf05838b48b1c7a2a633644ed67a0baf08f701624ea7eefc59",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/summary_confidences_sample_3.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/summary_confidences_sample_4.json",
+      "bytes": 767,
+      "sha256": "a112be7a40a46caf44e24a93a10a4d4c2dfd903d797724ee6c78349e727e22ac",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/summary_confidences_sample_4.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/summary_confidences_sample_5.json",
+      "bytes": 761,
+      "sha256": "ae6ecd88cc2c19e4fc441e1624e02369d296badcacb05a8811c6923df763147a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/summary_confidences_sample_5.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/task-details-succeeded.txt",
+      "bytes": 11700,
+      "sha256": "116aedf11ef0dcae66ee3532ccdbe177c8e6177b0ca56d81d73db850b4462595",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/task-details-succeeded.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/task-details.txt",
+      "bytes": 10201,
+      "sha256": "39681c2e5fbf167ced9341335338d116ffdd10ac500d1643b1e0ac166610c621",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/task-details.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt",
+      "bytes": 9681,
+      "sha256": "0eb3c624f56ffa094cd2b0cd852fe15eff3aec5252a73ba55b6875d785200cd3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/results.json",
+      "bytes": 6213,
+      "sha256": "59a29eb0643929d52f6e16a8b9ccc7b71c4abfc5c595ca58989fe3a2547f816d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/results.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/run-log.md",
+      "bytes": 1186,
+      "sha256": "c0e13032f32078c278148cceb0c39f52eee8b3abd1f4613707068560779e4eac",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/run-log.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/visuals/model-confidence.png",
+      "bytes": 34596,
+      "sha256": "10bc0d65422dd710f9451b11166d319e7df582cb01b5d811236c6ab6d8730aea",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/visuals/model-confidence.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/visuals/predicted-complex.jpg",
+      "bytes": 56980,
+      "sha256": "c5b4025a2bb321c55e96bbba04b058579ec7ed41de9f92d85d726f7ad451e0f5",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/visuals/predicted-complex.jpg",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/visuals/task-pending.jpg",
+      "bytes": 66474,
+      "sha256": "b8c5c209e8e6c2c4577f51e0e1cde7baa34bec39162063ef8853490db8ffbf39",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/visuals/task-pending.jpg",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/01-structure/visuals/task-succeeded.jpg",
+      "bytes": 69369,
+      "sha256": "a77230ce85d045c06277ea2f755b408b40590a23dacca614f448430d84de0d11",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/visuals/task-succeeded.jpg",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/MMETRICS_REPRODUCTION.md",
+      "bytes": 1404,
+      "sha256": "eb8886386db3f8ed7c09127f7b944bd6ab783d7c28cf02b57ed4794221f97bb2",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/MMETRICS_REPRODUCTION.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/REPRODUCTION.md",
+      "bytes": 996,
+      "sha256": "951052511273d2126dae86f97e3b785bb9ff0b8e5f6681803ccc6eff739ffc14",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/REPRODUCTION.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/input.json",
+      "bytes": 7156,
+      "sha256": "8146f30ab23e93e738fad9f880253a4e183777369e6987c1e2cc918ea1753adc",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/input.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/antibody-csv-compact-to-mmfold1.json",
+      "bytes": 75139,
+      "sha256": "75931f5f6955c964faa293729eae27a2b89fcf5112b4431703a3839e5d36d936",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/antibody-csv-compact-to-mmfold1.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/independent-antibody-datasets.json",
+      "bytes": 356103,
+      "sha256": "3f8b77c1173a37779908e632fb4bd1cbe44298161a1ebeaa74c62387260df7df",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/independent-antibody-datasets.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/local/geometric-contacts.json",
+      "bytes": 9708,
+      "sha256": "0e0e2528faeea97b632538896e2bda8b31e27068ac666d015a8b78e6f11f0045",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/local/geometric-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/local/master-residue-numbering-map.json",
+      "bytes": 33657,
+      "sha256": "4cb95d6a33e2542d25ee52eb0f298debe3890d9a4cf9b3d1abdc8c20efec92c2",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/local/master-residue-numbering-map.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/local/master-validation.json",
+      "bytes": 3590,
+      "sha256": "7cb2bd5bf00061ed28d273687c0a9f5cc1212aea9f0ba19980843f529f872408",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/local/master-validation.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/local/solvent-accessibility.json",
+      "bytes": 48028,
+      "sha256": "4618f733fc1b8812d6f78e82d31e3f38b0eefb88b63775fec473b3b2f426f8f6",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/local/solvent-accessibility.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/master-sequences.fasta",
+      "bytes": 284,
+      "sha256": "781d4d5878bdb216f06ccb16638658c53a6fcb9cc039d1a6bf7c95fd6d6e5d51",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/master-sequences.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/README.md",
+      "bytes": 5763,
+      "sha256": "8e43ced69cd4954a5a0493bc54e31e6f02ee442acff9417fa3f6d132ff53b558",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/README.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/antibody/aban_abscn_paradt_status.json",
+      "bytes": 1564,
+      "sha256": "9bd7b4898c5aa15ec311485cab7c5bc72cc3fea28fdfecd32f57975fb8d6e727",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/antibody/aban_abscn_paradt_status.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/cdr_annotations.json",
+      "bytes": 3346,
+      "sha256": "e432721ea78921dc4171925e3b12da40a64f663dc161d757bb10304915b0979d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/cdr_annotations.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/description.json",
+      "bytes": 2404,
+      "sha256": "b2c85dc9231bba7a1dd2ba68152a1064dc7305e7f19aff87d770c72b8c383764",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/description.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/domain.json",
+      "bytes": 272,
+      "sha256": "32a0e64b17f0788e9ed77ced05f428b9d8cfab82fd4ed7a33f91d96fabe6c7e1",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/domain.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/epitope.json",
+      "bytes": 931,
+      "sha256": "f6c23125cf26b982b110509d2491d7fd05bde7714d34afdfa7718906dd3fc1cf",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/epitope.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/features_all.json",
+      "bytes": 3203,
+      "sha256": "d7036c0c103ffd0802635a3025bff15a8c76a3cc779b8f1536ef4cd7f5d2a94c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/features_all.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/homologs.json",
+      "bytes": 172,
+      "sha256": "6ee5b51277f6bfdec91be7be5bc36afee75f4247489e41f028dfa9f95587bb6e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/homologs.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/interaction_network.json",
+      "bytes": 14470,
+      "sha256": "16c331621cbb440ab200a0d24750662dbebf4f2d9ca2647d5d8687af82f6070f",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/interaction_network.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/paratope.json",
+      "bytes": 921,
+      "sha256": "f095959805f91d65d1d31635e22529d9a0914e519936c706464ea81d7c2ec74e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/paratope.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/pdb.json",
+      "bytes": 167,
+      "sha256": "e9642a0c6ad6bdf91e1ae206cacc2bf7686e529974d26db670ec25a41e947743",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/pdb.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/ptm.json",
+      "bytes": 272,
+      "sha256": "ce46f3e61abfb7d01323f241f2c28850482a542fe27aaef16eef853442c4f2ab",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/ptm.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/uniprot.json",
+      "bytes": 171,
+      "sha256": "ffc5fcdb259275809c289749daeafc0b12f49f7e5d8b10822d1d468c7a85a933",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mmetrics/uniprot.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mutx/affinity_compact_numbering.csv",
+      "bytes": 297388,
+      "sha256": "cf7e7d389031f375ec2a2641e01f2bac532a2c3a591b2f9ab438e2a1bfc926d9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mutx/affinity_compact_numbering.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mutx/mutx_manifest.json",
+      "bytes": 4205,
+      "sha256": "20d3202b31f4d6eb66904b0aac2f517cd8322aea9283fae2d2eff7df2443067f",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/mutx/mutx_manifest.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/contact_crosscheck.json",
+      "bytes": 1507,
+      "sha256": "9e3360aa3cba1a392a429a11c0939e7ef98d61d6ace671e93d0de69b3f6ee82c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/contact_crosscheck.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/local_contact_pairs.json",
+      "bytes": 8993,
+      "sha256": "5abe83655fe6322ac44ae329bcc8e60508f8e5d7d5d719a83a0c970b6773549e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/local_contact_pairs.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/numbering_checks.json",
+      "bytes": 537,
+      "sha256": "54893cbeb6e5ee1a0a08b04d56a85ea8ac5be8edd5c9109a3bdd489f78185c03",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/numbering_checks.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/sequence_identity.json",
+      "bytes": 2977,
+      "sha256": "867337b9c07f2cf45f449685e1b64ba7e4e9a5ed7f8d36a3873375c611d62417",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/derived/verification/sequence_identity.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/numbering-map.json",
+      "bytes": 126503,
+      "sha256": "79a38e2bf65d91bd5881801c8d600160fc1da914c52a38364a3c67a783f2343c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/numbering-map.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/provenance.json",
+      "bytes": 15490,
+      "sha256": "4d7dab305f5f35bfdc9f7e7638c1b94f65ecd57e62c585d38f8c0748b6b47471",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/provenance.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/affinity_scores.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/affinity_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/all_sequences.fasta",
+      "bytes": 98182,
+      "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/all_sequences.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/evolutionary_scores.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/evolutionary_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/object_manifest.json",
+      "bytes": 4742,
+      "sha256": "aa1062c003358f5aa07694cf11c4f3b70b3758d777b81d424ac0929f04787259",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/object_manifest.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@all_sequences.fasta",
+      "bytes": 98182,
+      "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@all_sequences.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-diffaffinity@diffaffinity_scores.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-diffaffinity@diffaffinity_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-esm@esm_scores.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-esm@esm_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-ligandmpnn@proteinmpnn_scores.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-ligandmpnn@proteinmpnn_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-msat@msat_scores.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/mos-score-msat@msat_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/original_objects/sequence_info.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_info.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_scores.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/sequence_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/similarity_results.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/similarity_results.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/struct_fitness_scores.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/struct_fitness_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_payload.json",
+      "bytes": 176,
+      "sha256": "e3a1b5ca1d1b3707ec69d092105cf60e75a7a98fd09b3c6bfcd199d3ab17661c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_payload.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_status.txt",
+      "bytes": 434,
+      "sha256": "fbc86c4b63a958044fe01c43a8547bac35b65a26813fba758c58ee0c919e0e78",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604299285504/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json",
+      "bytes": 20632,
+      "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/record.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json",
+      "bytes": 2041,
+      "sha256": "68e824dfd6e5d403799ae83dc17933f54596d6fc452ca3887f7da4397807917b",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_status.txt",
+      "bytes": 295,
+      "sha256": "30807126f69d5d096ace9f5cfb10d9abe9b28c9784ba4432a09cf2d6cc03ade4",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.original.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.original.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.sanitized.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/structure/MMFold_1.sanitized.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_ledger.py",
+      "bytes": 9918,
+      "sha256": "b6e947a9eee2aa055aa2fb2e38fef83538c776c84aa2d4e50423acb50433d7c2",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_ledger.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_numbering.py",
+      "bytes": 4938,
+      "sha256": "cdd03adc98a5a653533b1a9c77a239cfe2e09197ff3107d4cf69e0797fee3c12",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_numbering.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_package.py",
+      "bytes": 10540,
+      "sha256": "3d130da3d5423060ebf62bd251221eea7a7a60b0afa75570c76d1a4a5ea88b9d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_package.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_provenance.py",
+      "bytes": 6585,
+      "sha256": "3f2048d6bd68a2d47b66a333fb6c835021466b11ab0f9d646182ebd7d06d58b9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_provenance.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_tasks.py",
+      "bytes": 7403,
+      "sha256": "e32c8f65c4c50a93375d86b6857288896096b54964b07f5556fe93a55c6d15ea",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_tasks.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_verification.py",
+      "bytes": 6018,
+      "sha256": "8f1ff1d5d5e86c4a6f74c5690f322100533c06f3bf73115101c1ea6fe7a4668d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/build_verification.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/verify_contacts.py",
+      "bytes": 2436,
+      "sha256": "0fe3c6139a3a60c8b7753d157ed5977590f91ac3c78c5005732f52da97c3e2de",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/scripts/verify_contacts.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json",
+      "bytes": 14144,
+      "sha256": "b871350ed88f5bdf62ad29c5d8bba290f7195d4bdc0eb75866543b76dcfaddf5",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02.zip",
+      "bytes": 993565,
+      "sha256": "cbb2460c019c79e8c125a9a6f8ba522d446495c73be737d807723c18a11f504b",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02.zip",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/README.md",
+      "bytes": 4216,
+      "sha256": "4772a90efac61f99b871c4b5d5709b99ec26c7e4a4a14fa833e6a0f4fa49b19e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/README.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/comparison/paradt_vs_native_paratope.json",
+      "bytes": 3445,
+      "sha256": "48e298beca5b24a88b1de55d82c3239d74c884ec186092ee5b1b195a421835c9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/comparison/paradt_vs_native_paratope.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_ablang_heavy_scores.csv",
+      "bytes": 107228,
+      "sha256": "afe3e6d9d1451ffb08672573a888f4fb61c4644292847cf12dc53f17cf27b7dd",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_ablang_heavy_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_ablang_per_residue.csv",
+      "bytes": 4584,
+      "sha256": "63b85324de27ebd387d4545692eb0d26de652d009bd8d3d5851abf3f54fcfea0",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_ablang_per_residue.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_abnativ_heavy.csv",
+      "bytes": 8700,
+      "sha256": "97c1d3fe73a25b90189933382bb56fd22e02259d72dfca1f8b673d34a33126bc",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_abnativ_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_abnumber_heavy.csv",
+      "bytes": 4586,
+      "sha256": "fc38359f2ef71c6f3a31f93b3afbf4aa070d83627c76171ee2424c30a19f6727",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_abnumber_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_paragraph_heavy.csv",
+      "bytes": 3644,
+      "sha256": "a60ebe2341ad935085981b979ac47dc14bace94f73805387b3f20be0a0fb1eb1",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_paragraph_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_summary.json",
+      "bytes": 2591,
+      "sha256": "72a08b8052e70e9c47204daec02dd8350ec8e635ec1b8a768a4a98b41c74e255",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_summary.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_verification.json",
+      "bytes": 612,
+      "sha256": "bb8c451ef8cab48a1e22e5a84881eae477cb20ec560f37014edc88b8d63aff76",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/mapping/mapping_verification.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/scripts/build_supplement.py",
+      "bytes": 15124,
+      "sha256": "f887971319e15c1707e161c0d3aa27cc10ad3a5160cdbd246369d21ee72aa1ba",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/scripts/build_supplement.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/scripts/verify_mapping.py",
+      "bytes": 1744,
+      "sha256": "1b09736a13e3183a0dfd1ff9105d992093de8aa4d6efabc89b10a5faa3bf46e3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/scripts/verify_mapping.py",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "bytes": 4778,
+      "sha256": "994fcf83e978dede7ad373471b149371544897e625e0610d9b74ffaed5a5e7db",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/abnumber_heavy.csv",
+      "bytes": 4023,
+      "sha256": "104920c75790e964adab48f2b9c8f829bca1a28486e342cb625d26786a332454",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/abnumber_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/input_schema.json",
+      "bytes": 1003,
+      "sha256": "f883a56f5dcad3f7f3ef17d535a7502b7a8beba49cdfe9bbd113a9e336df7ca8",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/input_schema.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_payload_actual.json",
+      "bytes": 239,
+      "sha256": "5400d15703516f635125496e6eb50687e6745ed5fa5ed38271c7f9721eec9c6d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_payload_actual.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_status.txt",
+      "bytes": 369,
+      "sha256": "d605aaeb7673ad6f63b4eba4b6b53ac88ca049f928db6b1741b635196deec56e",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/aban_342606092895232/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/ablang_heavy_scores.csv",
+      "bytes": 65774,
+      "sha256": "2f2e04d6a82b25fc9301aedda472ef633bbe54311b093faafe349d6ce0b23c5b",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/ablang_heavy_scores.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/input_schema.json",
+      "bytes": 1087,
+      "sha256": "2bc0524395016dc260571dcd125846812ac7501d811a4b41a520884504d79760",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/input_schema.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_payload_actual.json",
+      "bytes": 236,
+      "sha256": "6c17a572d29d45ebffe6e2175995bf0da4fc4897d2e26b4589cddd748d4cab20",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_payload_actual.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_status.txt",
+      "bytes": 381,
+      "sha256": "b6f19a05dfe7eafeb6e98c5f3ade81007566eebc05a916171b7ca64a92ab8273",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_language_342606094599168/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/abnativ_heavy.csv",
+      "bytes": 8137,
+      "sha256": "40dcd8c14bddd71e9ff161a5676b0c01f68caca30a14dd9753f2a8105ae33f58",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/abnativ_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/input_schema.json",
+      "bytes": 1019,
+      "sha256": "509b40714979387371a710a8584e90bc9706d718bb2cba362dea5e833e0082d2",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/input_schema.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_payload_actual.json",
+      "bytes": 180,
+      "sha256": "eb35ee6b80cf3a39ef1d76ad213116ce549f954a48cf2d2a8c9c3f3d62ebbf70",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_payload_actual.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_status.txt",
+      "bytes": 387,
+      "sha256": "72026f134027a87774920224f82cb618140993e4423c7885337c5640ff2b42b3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/input_schema.json",
+      "bytes": 1478,
+      "sha256": "508ad9761803996b22d46f798b6a4aaf477b200672f2e11cd1920a950fc65ca9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/input_schema.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/paragraph_heavy.csv",
+      "bytes": 3081,
+      "sha256": "fc23351b15b536a70697c5861a46de73d75e9f32ff69a2ad9ba8ffad10532028",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/paragraph_heavy.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_payload_actual.json",
+      "bytes": 354,
+      "sha256": "f2a9940957ec6bd3ed3763dfec4925a2ef1778756fc2db06907e6e1e410d9f37",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_payload_actual.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_status.txt",
+      "bytes": 366,
+      "sha256": "0f1488b968f08a718082699ef045e1f52de06a8bfe2e49375b8a70fba57da2f6",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/tasks/paradt_342606100722688/task_status.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement.zip",
+      "bytes": 99527,
+      "sha256": "7d5dc499914762456fa9eb82b3807b8ee6ebdfb9687a4576b4dddc3b7f4287ff",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement.zip",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-antibody-supplement-session.txt",
+      "bytes": 6244,
+      "sha256": "7329fa42cff7a1f9282f327083693cf8cfe7a72d6a2f28ee2b4496c14340caf4",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-antibody-supplement-session.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXaff.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXaff.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXevo.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXevo.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXseq.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXseq.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXstruct.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/MutXstruct.csv",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/annotations.json",
+      "bytes": 10910,
+      "sha256": "70a9b451b62b6c45a2b03c7cdfe6b77fa59ae79e74f1670a863d2dbffbee9efa",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/annotations.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/complete-scroll-captures.json",
+      "bytes": 1181,
+      "sha256": "e147493e429ad4003cf497d357c2fb99e33b0f69747ac49ca995241947478c3c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/complete-scroll-captures.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/download-manifest.json",
+      "bytes": 977,
+      "sha256": "5577fbfa2f3dcaaf429fe360e2d9e17d7bda9893b44d3ab03fda5a08e84f2aa3",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/download-manifest.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/full-dom.html",
+      "bytes": 200011,
+      "sha256": "a0d50138d0429f839064c07d45fabc54d29fa6859e954b66a720178e92f8f97a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/full-dom.html",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/interaction-plot-1.svg",
+      "bytes": 24138,
+      "sha256": "2d98003d3ccf10d64fda68849eab39f36e6907976a0915e618c4602bef923e79",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/interaction-plot-1.svg",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/interactions.json",
+      "bytes": 3694,
+      "sha256": "add18a25021f292898188c2a0e8a22f85334d6826839d4125e089af539c47dd1",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/interactions.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/layout-and-typography.json",
+      "bytes": 436711,
+      "sha256": "2e550782c024d018171b66c8e0115d9d163327b38b86dc83b3de3742e4027ea6",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/layout-and-typography.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/native-datasets.json",
+      "bytes": 2319450,
+      "sha256": "9cb15e64541731a403fc096571150bdee3bfc5e827aec6246441dcde16517a3d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/native-datasets.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/native-panel-content.json",
+      "bytes": 45068,
+      "sha256": "c3560679be2a18cf76e309e4c9144da67392c4a2505be6147fcb0bb8e3c92cec",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/native-panel-content.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json",
+      "bytes": 211855,
+      "sha256": "5a820c949724775be40d9be1021de110aedaacaf0dce58b7d8ec8ede1da7493f",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/scroll-captures.json",
+      "bytes": 1006,
+      "sha256": "5503c49850a6f808b91e3b7d1b0a5e816b9beb34d85190fe3395c86f4e5e3be9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/scroll-captures.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/verified-native-datasets.json",
+      "bytes": 1171,
+      "sha256": "5bfacd280e3586b11fa953d5218a5269c9c66920b3903cec63e957f01c131296",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/verified-native-datasets.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/residue-numbering-map.json",
+      "bytes": 126504,
+      "sha256": "d45b3f1d2dd1d8acf058fd7979987bd47a54198c1beedc9ff874517935f0be8c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/residue-numbering-map.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/submitted-prompt.txt",
+      "bytes": 1150,
+      "sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/submitted-prompt.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/raw/submitted-supplement-prompt.txt",
+      "bytes": 686,
+      "sha256": "193af1571238aff36efc2d2901876f0da3a1b2a371a6d6f9a98b3e3d1e3336c9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/raw/submitted-supplement-prompt.txt",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/residues-on-mmfold1.json",
+      "bytes": 271605,
+      "sha256": "a1a8cc4d594e225ec032f94ec8d6c8ec7f4d619a8eb242c3a829924e1c874ecf",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/residues-on-mmfold1.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/results.json",
+      "bytes": 19283,
+      "sha256": "fca4fce73f8a82041a80233517f4a39573ae336e774a9904c394fef65d75666c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/results.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/run-log.md",
+      "bytes": 1409,
+      "sha256": "bb61af266a87ddb840701f0355fd2dab6ec9c140f671b5191e7e3ba4a4c22910",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/run-log.md",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-00.png",
+      "bytes": 98963,
+      "sha256": "582d3a041948d061bb023801e15b0ae994f733354563629ea98607ec38ef8e35",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-00.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-01.png",
+      "bytes": 89126,
+      "sha256": "915e50e59bf8f7ddd65af54f1a3afe05bc3d47961451f2613f3425c6c4344e06",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-01.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-02.png",
+      "bytes": 93075,
+      "sha256": "fa332511f1ab51f7c6c4a8ab8d129fbb3db70756ffc9716a77333badf59cad37",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-02.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-03.png",
+      "bytes": 78487,
+      "sha256": "91e17b65b07d680708224f03486c2963c27cd56490b5e1854c2a94a3f82ab266",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-03.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-04.png",
+      "bytes": 68123,
+      "sha256": "8c68b08bb393e01748700ab707cca4b2cfab159aabf00648da84604968e06833",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-04.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-05.png",
+      "bytes": 68123,
+      "sha256": "8c68b08bb393e01748700ab707cca4b2cfab159aabf00648da84604968e06833",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-complete-05.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-initial.png",
+      "bytes": 47790,
+      "sha256": "62589bd146ec8524e770394e370114f35c885251689c8796006e242924b73494",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-initial.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-loaded.png",
+      "bytes": 98907,
+      "sha256": "c00e2612295ed07826f0bedab8b9f7aa5ebe659accf849092c07679d90320da9",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-loaded.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-00.png",
+      "bytes": 88745,
+      "sha256": "9e39dba932e84225931876f9179d7bbc9a2fb946f5d201fb1972dc2e99937a95",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-00.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-01.png",
+      "bytes": 88485,
+      "sha256": "693621ac890fa7e23f7da0e515ba9275e824cfd7c58145ad364400da6174a809",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-01.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-02.png",
+      "bytes": 69168,
+      "sha256": "25a3ef264b65fcbfe63b57b91794982ea409ee9b82ead96a83a75ccf4b4725b2",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-02.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-03.png",
+      "bytes": 68123,
+      "sha256": "8c68b08bb393e01748700ab707cca4b2cfab159aabf00648da84604968e06833",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-03.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-04.png",
+      "bytes": 68123,
+      "sha256": "8c68b08bb393e01748700ab707cca4b2cfab159aabf00648da84604968e06833",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/02-mmetrics-kn035/visuals/native-panel-scroll-04.png",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS-protein-only.pdb",
+      "bytes": 153094,
+      "sha256": "e46e314c23a275ee82e2f1885ed78d78a04eaa702bb490ae006b28c01ad8fe81",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS-protein-only.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS-reference-contacts.json",
+      "bytes": 14641,
+      "sha256": "2187b0fd0c3dcf315a5c0d2d7847cfd2b4acff4b2553311458558c8558f98c9a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS-reference-contacts.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS.cif",
+      "bytes": 438878,
+      "sha256": "e3a5d004be09a985d049521179227b97834376a8fc56f48adf1d916f7521f324",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS.cif",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS.fasta",
+      "bytes": 399,
+      "sha256": "e4f85f5c4be7b0da6cdfa43662de319d2fe8820c56c8bf404b63f487370afe4f",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS.fasta",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS.json",
+      "bytes": 13580,
+      "sha256": "fa19a9ce9340a437d190ffe26049e1f1fa49b971598c72452835a9cef25a2d0c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/5JDS.pdb",
+      "bytes": 364986,
+      "sha256": "38ce354690ea2b70d132a8059e8ab03d66f08e30ad483d24c30f4ccbbca4d271",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/5JDS.pdb",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "archives/website-cases/pdl1/sources/sources.json",
+      "bytes": 4235,
+      "sha256": "6e57944fe89e5786f26cd7645226fb3e704e2276676b544a5865fa42b9b17f2d",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/sources/sources.json",
+      "kind": "original_archive_copy"
+    },
+    {
+      "path": "context/handoff/KN035_NARRATIVE.md",
+      "bytes": 7086,
+      "sha256": "75ecd2103b29dda4b8a07978398c21fa61624090538b01e1fa3be7b86440ec1a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/handoff/KN035_NARRATIVE.md",
+      "kind": "context_copy"
+    },
+    {
+      "path": "context/handoff/KN035_STATUS.json",
+      "bytes": 10278,
+      "sha256": "e96c44aa7240b7cbc646f9f2c3c83555689bad4871c1dced97b1bb5914cd99ac",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/handoff/KN035_STATUS.json",
+      "kind": "context_copy"
+    },
+    {
+      "path": "context/handoff/KN035_STATUS.md",
+      "bytes": 6840,
+      "sha256": "889eaebc51845ec6285fc3dddf8bf81eb53f35395bf0eb3364b44aa95324373b",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/handoff/KN035_STATUS.md",
+      "kind": "context_copy"
+    },
+    {
+      "path": "context/handoff/KN035_VALIDATION.json",
+      "bytes": 762,
+      "sha256": "24179599f7674144b683080a5f684197b287f95d2bbde8b03766342bcb20dd75",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/handoff/KN035_VALIDATION.json",
+      "kind": "context_copy"
+    },
+    {
+      "path": "context/handoff/analysis-requirements.txt",
+      "bytes": 48,
+      "sha256": "1634ce406f6278c0720739b15f85368ce8b1e3d0910d19a05bbfa8e44d128a1a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/handoff/analysis-requirements.txt",
+      "kind": "context_copy"
+    },
+    {
+      "path": "context/manifest.json",
+      "bytes": 233737,
+      "sha256": "455ae3cb54e5ac28e4ef6aa05f92e8a1e8075dd7468fb0004fa69738ab8f072c",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/manifest.json",
+      "kind": "context_copy"
+    },
+    {
+      "path": "diagnostics/case-summary.json",
+      "bytes": 21149,
+      "sha256": "ac26a145b2e5b0fa62f61908ea385225b9024e5324ce1453666893926f05b6c7",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/homolog-audit/homolog_evidence.json",
+      "bytes": 9422,
+      "sha256": "f01a0d79ea6514f5fd65f735745669d27cbcbca5ac0b23e2b3713564f71f3007",
+      "source_path": "/tmp/mos-mmetrics-audit-20261028/homolog_evidence.json",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/homolog-audit/homolog_findings_zh.txt",
+      "bytes": 2673,
+      "sha256": "dc81403f77801c037245e6b0a77e2864d7d3611250dadaee77a840dcd14a7fd3",
+      "source_path": "/tmp/mos-mmetrics-audit-20261028/homolog_findings_zh.txt",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/identifiers.csv",
+      "bytes": 1553,
+      "sha256": "1f97ae3acbb9b4658404bba0951d2225ed8bbad6f1071e04a54803e561943a3b",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/lineage-audit/audit.json",
+      "bytes": 4535,
+      "sha256": "0f0d36a06cd30a71b4fae80fe0a59120aa8fc15125ac9bfd98a649b6ccf8ef99",
+      "source_path": "/tmp/mos-mmetrics-lineage-20261028/audit.json",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/time-and-id-ledger.json",
+      "bytes": 10995,
+      "sha256": "981853d27180b10b8bed16e2bf60d009ad3e42f906854f293cd8393ec4413766",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/timeline-audit/session_observation_excerpts.json",
+      "bytes": 59910,
+      "sha256": "ced2d515b040ac9e0d5988737d3657a3f9c818dd96f550da8889c41fdb77d45b",
+      "source_path": "/tmp/mos-mmetrics-timeline-20261028/session_observation_excerpts.json",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/timeline-audit/timeline.json",
+      "bytes": 19944,
+      "sha256": "65b813d4ab7b3570e288a100f4dec756750206c2f171460e2b294e7ea63f268c",
+      "source_path": "/tmp/mos-mmetrics-timeline-20261028/timeline.json",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/timeline-audit/timeline_notes_zh.txt",
+      "bytes": 1961,
+      "sha256": "75e55bba5d506e5f1d8caac9491df2998c23be59424aed0337ae6058ea97abb3",
+      "source_path": "/tmp/mos-mmetrics-timeline-20261028/timeline_notes_zh.txt",
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "diagnostics/timeline.csv",
+      "bytes": 6630,
+      "sha256": "0a1a9e784f6bc8fa92db1b04645676bf2a6878b23c0c4dfb1ba2dc5f4b6f49b4",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "index.html",
+      "bytes": 125410,
+      "sha256": "67fb7798ef37ec9b17fa06f524042bcaa49f9a331039612aa319483e1b3651a6",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 1971,
+      "sha256": "30d02a3c697172c2ad160bca0bfcd2f2b42b04e45a54ddbf221c7ad9b39bf063",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 515,
+      "sha256": "28ea9e559e7e4190932200fbcdf1ef9ef934cd5e5a5d068fe8d44d3696a45d51",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    },
+    {
+      "path": "website-consumer/components/motion/one-protein-stage.tsx",
+      "bytes": 42359,
+      "sha256": "65bbfee3789ee07828b943570856ba0338f11fb7e33e3ecbb6689e60dc9ff7e7",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/components/motion/one-protein-stage.tsx",
+      "kind": "context_copy"
+    },
+    {
+      "path": "website-consumer/content/kn035-story.json",
+      "bytes": 7788,
+      "sha256": "04458f98d0c54366895cc85792e1de83c187b845efc6412d095df2ba0cf18c81",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/content/kn035-story.json",
+      "kind": "context_copy"
+    },
+    {
+      "path": "website-consumer/content/pdl1-kn035.json",
+      "bytes": 5246,
+      "sha256": "c21c6bafb8b1bf60548d1b96366e7ecc26e82bb110fe73e116ac2281dc4bb253",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/content/pdl1-kn035.json",
+      "kind": "context_copy"
+    },
+    {
+      "path": "website-consumer/scripts/prepare-kn035-story.py",
+      "bytes": 7286,
+      "sha256": "9c3298042d7a24dbab86e8238570db1af1db320653b8c94266556f418930960a",
+      "source_path": "/Users/zifengye/Documents/ChatGPT/mos/scripts/prepare-kn035-story.py",
+      "kind": "context_copy"
+    },
+    {
+      "path": "FILE-INDEX.html",
+      "bytes": 70071,
+      "sha256": "cd43e1286af0770b4f8071dcb68ce685a6923724226653f46bbd3e42ce0d545c",
+      "source_path": null,
+      "kind": "current_local_analysis_or_package_tool"
+    }
+  ],
+  "note": "manifest.json和SHA256SUMS.txt不列入自身hash。SHA256SUMS.txt包括manifest.json。原archive文件按字节复制。"
+}

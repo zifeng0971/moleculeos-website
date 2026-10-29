@@ -1,0 +1,119 @@
+{
+  "structure_file": "/workspace/kn035_case03/inputs/MMFold_1.cif",
+  "total_entities": 2,
+  "entities": [
+    {
+      "entity_id": 1,
+      "chains": [
+        "A"
+      ],
+      "molecule_type": "protein",
+      "residues": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "length": 118
+    },
+    {
+      "entity_id": 2,
+      "chains": [
+        "B"
+      ],
+      "molecule_type": "protein",
+      "residues": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "length": 128,
+      "protein_type": "antibody (VHH)",
+      "annotations": [
+        {
+          "type": "region",
+          "feature": "vh_domain",
+          "note": "VH domain (H chain)",
+          "beg": {
+            "auth_seq_id": 1,
+            "auth_icode": "",
+            "label_seq_id": 1
+          },
+          "end": {
+            "auth_seq_id": 128,
+            "auth_icode": "",
+            "label_seq_id": 128
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR1: GKMSSRRC",
+          "beg": {
+            "auth_seq_id": 26,
+            "auth_icode": "",
+            "label_seq_id": 26
+          },
+          "end": {
+            "auth_seq_id": 33,
+            "auth_icode": "",
+            "label_seq_id": 33
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR2: LLTTSGST",
+          "beg": {
+            "auth_seq_id": 51,
+            "auth_icode": "",
+            "label_seq_id": 51
+          },
+          "end": {
+            "auth_seq_id": 58,
+            "auth_icode": "",
+            "label_seq_id": 58
+          }
+        },
+        {
+          "type": "region",
+          "feature": "cdr_imgt",
+          "note": "VH-CDR3: AADSFEDPTCTLVTSSGAFQY",
+          "beg": {
+            "auth_seq_id": 97,
+            "auth_icode": "",
+            "label_seq_id": 97
+          },
+          "end": {
+            "auth_seq_id": 117,
+            "auth_icode": "",
+            "label_seq_id": 117
+          }
+        }
+      ]
+    }
+  ],
+  "chain_pairs": [
+    {
+      "chain1": "A",
+      "chain2": "B",
+      "contact_type": "protein-protein",
+      "num_contacts": 48
+    }
+  ],
+  "metadata": {
+    "ligand_names": {
+      "ALA": "ALANINE",
+      "ARG": "ARGININE",
+      "ASN": "ASPARAGINE",
+      "ASP": "ASPARTIC ACID",
+      "CYS": "CYSTEINE",
+      "GLN": "GLUTAMINE",
+      "GLU": "GLUTAMIC ACID",
+      "GLY": "GLYCINE",
+      "HIS": "HISTIDINE",
+      "ILE": "ISOLEUCINE",
+      "LEU": "LEUCINE",
+      "LYS": "LYSINE",
+      "MET": "METHIONINE",
+      "PHE": "PHENYLALANINE",
+      "PRO": "PROLINE",
+      "SER": "SERINE",
+      "THR": "THREONINE",
+      "TRP": "TRYPTOPHAN",
+      "TYR": "TYROSINE",
+      "VAL": "VALINE"
+    }
+  }
+}

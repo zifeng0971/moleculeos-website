@@ -1,0 +1,221 @@
+MOS
+BETA
+PDL1-03-Affinity-KN035-20261021
+Z
+Task
+Share
+MMFold_1
+1:A
+1
+MAFTVTVPKD
+11
+LYVVEYGSNM
+21
+TIECKFPVEK
+31
+QLDLAALIVY
+41
+WEMEDKNIIQ
+51
+FVHGEEDLKV
+61
+QHSSYRQRAR
+71
+LLKDQLSLGN
+81
+AALQITDVKL
+91
+QDAGVYRCMI
+101
+SYGGADYKRI
+111
+TVKVNALE
+2:B
+1
+QVQLQESGGG
+11
+LVQPGGSLRL
+21
+SCAASGKMSS
+31
+RRCMAWFRQA
+41
+PGKERERVAK
+51
+LLTTSGSTYL
+61
+ADSVKGRFTI
+71
+SQNNAKSTVY
+81
+LQMNSLKPED
+91
+TAMYYCAADS
+101
+FEDPTCTLVT
+111
+SSGAFQYWGQ
+121
+GTQVTVSS
+Mocha
+MMetrics
+✕
+Mocha
+a23e0e2f-f
+Assistant
+CheckMOSTask
+(342606341129216)
+▸
+CheckMOSTask
+(342606351508480)
+▸
+Thinking
+Q116M succeeded (downloaded). T105L still running.
+▸
+
+Q116M is complete; T105L is still running. Collecting everything now and packaging immediately.
+
+Shell
+(cd /workspace/kn035_case03 && mkdir -p raw/variant…)
+▸
+Thinking
+Q116M is excellent: ipTM 0.918, pLDDT 93.7 — comparable to V109L and WT. 3/5 sam…
+▸
+Shell
+(cd /workspace/kn035_case03 && python3 - <<'PY' imp…)
+▸
+Write
+(/workspace/kn035_case03/REPORT.md)
+▸
+Thinking
+Now package /workspace/kn035_case03.zip including everything. Also include the m…
+▸
+Shell
+(cd /workspace/kn035_case03 && python3 - <<'PY' imp…)
+▸
+Shell
+(cd /workspace && python3 - <<'PY' import zipfile, …)
+▸
+Thinking
+Package created. Let me verify contents listing briefly and also check T105L onc…
+▸
+ListMOSTasks
+▸
+
+T105L finished just after packaging. Collecting it and rebuilding the final zip so all five variants are complete.
+
+DownloadTaskResults
+(342606351508480)
+▸
+Shell
+(cd /workspace/kn035_case03 && mkdir -p raw/variant…)
+▸
+Thinking
+Wait, C33Y best iptm 0.2602 now (earlier by ranking score it was sample_1 with 0…
+▸
+Shell
+(cd /workspace/kn035_case03 && python3 -c " import …)
+▸
+Thinking
+T105L: all 5 samples iptm ~0.90, pLDDT 92.8 — highly consistent. Very good.
+▸
+Edit
+(/workspace/kn035_case03/REPORT.md)
+▸
+Edit
+(/workspace/kn035_case03/REPORT.md)
+▸
+Shell
+(cd /workspace/kn035_case03 && python3 - <<'PY' imp…)
+▸
+Thinking
+Packaged: 117 files, 29 CIFs (25 variant + 1 reference + ... wait 25 variant CIF…
+▸
+Shell
+(cd /workspace && python3 -c " import zipfile z=zip…)
+▸
+
+All five variant predictions are complete and the final package is built.
+
+/workspace/kn035_case03.zip — 117 files, includes 25 raw variant CIFs + 25 confidence JSONs + the MMFold_1 input, all payloads, IDs, candidate tables and mappings, with a SHA-256 manifest.
+
+What the package contains
+
+Object verification. SHA-256 matches the stated value exactly. MOS numbering, label_seq_id and auth_seq_id are identical for all 246 residues (residue_numbering_map.csv). Chains A = PD-L1 (118 aa), B = KN035 VHH (128 aa).
+
+Binding affinity scan. The schema only accepts a structure plus chain_ids, so the loop is necessarily exhaustive: one job returned 4674 rows (246 × 19) and the full original table is kept untouched. Only chain-B rows were used as candidates. The output is byte-identical to this object’s native MMetrics ΔΔG table, so those are one model, not two independent methods. All 4674 rows passed the WT-identity check; no mutant-equals-WT rows existed.
+
+ΔΔG unit is recorded as unknown — neither the schema nor the output header declares one. The direction (negative = predicted stronger binding) is stated as inferred from the table’s internal arithmetic, not from documentation.
+
+Paratope provenance. Labelled native and attributed to case02 project 342604060136448 / task 342604577018880. Case03 produced no paratope output of its own; the local 4.5 Å set reproduces your 17 chain-B residues exactly, which I record as corroboration rather than provenance.
+
+Two rankings, as requested:
+
+All-B: B:A35W (−1.746) leads, but it sits 11.9 Å from PD-L1 and is not a paratope residue — reported as a non-interface hit, not as strengthened binding.
+Interface-priority: B:V109L (−1.651), B:Q116M (−1.494), B:T105L (−1.132) lead among native paratope positions.
+Variant predictions (chain A fixed)
+Variant	Task ID	iPTM	pLDDT	A-aligned outcome
+B:V109L	342605511136256	0.917	93.6	Binding mode preserved (paratope 0.25 Å); faces Met99, Ser101, Ile38
+B:Q116M	342606341129216	0.918	93.7	High-confidence, WT-like complex
+B:T105L	342606351508480	0.901	92.9	All 5/5 samples agree — most reproducible
+B:A35W	342605501072384	0.612	86.5	VHH re-docks 12.8 Å away — not the same interface
+B:C33Y	342605520978944	0.260	82.8	B33–B106 disulfide lost; VHH collapses
+
+Two caveats worth your attention: V109L is confident in only 1 of 5 samples, so its geometry rests on a single model; and C33Y’s favourable ΔΔG is structurally unsupported because the score is blind to the disulfide it would break.
+
+The excluded task 342605442536448 (my transcription error, S128W instead of A35W) was left running and never deleted — it is recorded as SUCCEED/EXCLUDED in the ledger and used nowhere.
+
+Click to enlarge
+Open in file panel
+09:33
+MMFold_1
+Upload
+AI-generated research aid. Experimental validation advised
+Workspace
+downloads
+7
+binding_affinity_mutation_effect_342605020787712
+1
+mmfold_342605501072384
+10
+mmfold_342605511136256
+10
+mmfold_342605520978944
+10
+mmfold_342606341129216
+10
+mmfold_342606351508480
+10
+mostask_342605079286784
+1
+kn035_case03
+13
+inputs
+4
+raw
+9
+reports
+1
+variants
+16
+build_candidates.py
+candidates.json
+compare_variant.py
+iface_rmsd.py
+MANIFEST.sha256
+REPORT.md
+residue_numbering_map.csv
+run_variant_analysis.sh
+task-ledger.json
+protein_data
+1
+protein_342604793074688
+1
+raw
+1
+mmetrics
+2
+kn035_case03_checkpoint.zip
+kn035_case03.zip
+Refresh
+Download

@@ -1,0 +1,121 @@
+{
+  "retrieved_on": "2026-10-20",
+  "time_zone": "Asia/Jakarta",
+  "entries": [
+    {
+      "pdb_id": "5JDS",
+      "title": "Crystal structure of PD-L1 complexed with a nanobody at 1.7 Angstron resolution",
+      "page_url": "https://www.rcsb.org/structure/5JDS",
+      "pdb_doi": "https://doi.org/10.2210/pdb5jds/pdb",
+      "source_kind": "experimental_reference",
+      "resolution_A": [
+        1.7
+      ],
+      "download_urls": {
+        "pdb": "https://files.rcsb.org/download/5JDS.pdb",
+        "cif": "https://files.rcsb.org/download/5JDS.cif",
+        "fasta": "https://www.rcsb.org/fasta/entry/5JDS/display",
+        "json": "https://data.rcsb.org/rest/v1/core/entry/5JDS"
+      },
+      "files": [
+        {
+          "path": "sources/5JDS.cif",
+          "bytes": 438878,
+          "sha256": "e3a5d004be09a985d049521179227b97834376a8fc56f48adf1d916f7521f324"
+        },
+        {
+          "path": "sources/5JDS.fasta",
+          "bytes": 399,
+          "sha256": "e4f85f5c4be7b0da6cdfa43662de319d2fe8820c56c8bf404b63f487370afe4f"
+        },
+        {
+          "path": "sources/5JDS.json",
+          "bytes": 13580,
+          "sha256": "fa19a9ce9340a437d190ffe26049e1f1fa49b971598c72452835a9cef25a2d0c"
+        },
+        {
+          "path": "sources/5JDS.pdb",
+          "bytes": 364986,
+          "sha256": "38ce354690ea2b70d132a8059e8ab03d66f08e30ad483d24c30f4ccbbca4d271"
+        }
+      ]
+    },
+    {
+      "pdb_id": "5GRJ",
+      "title": "Crystal structure of human PD-L1 with monoclonal antibody avelumab",
+      "page_url": "https://www.rcsb.org/structure/5GRJ",
+      "pdb_doi": "https://doi.org/10.2210/pdb5grj/pdb",
+      "source_kind": "experimental_reference",
+      "resolution_A": [
+        3.206
+      ],
+      "download_urls": {
+        "pdb": "https://files.rcsb.org/download/5GRJ.pdb",
+        "cif": "https://files.rcsb.org/download/5GRJ.cif",
+        "fasta": "https://www.rcsb.org/fasta/entry/5GRJ/display",
+        "json": "https://data.rcsb.org/rest/v1/core/entry/5GRJ"
+      },
+      "files": [
+        {
+          "path": "sources/5GRJ.cif",
+          "bytes": 689894,
+          "sha256": "6edea3fabad8936773d5d353b8d0be0227265f1762458837799cd3e4d7c267ff"
+        },
+        {
+          "path": "sources/5GRJ.fasta",
+          "bytes": 653,
+          "sha256": "1b02ff297cb86ee57dbe9bb282b6117f82eb684afb536d3a626a2f8d41ec1a6d"
+        },
+        {
+          "path": "sources/5GRJ.json",
+          "bytes": 11660,
+          "sha256": "deb1f0bb8f7d261b2d376528cf43ca0d7a5c0e2a0e1e7642d64c1f5b5d0439b0"
+        },
+        {
+          "path": "sources/5GRJ.pdb",
+          "bytes": 620703,
+          "sha256": "52956a0558db33bc39e0917387f7c42e8a55e6a1bf9339474c0eb0f7596ddd29"
+        }
+      ]
+    },
+    {
+      "pdb_id": "7XYQ",
+      "title": "Crystal strucutre of PD-L1 and the computationally designed DBL1_03 protein binder",
+      "page_url": "https://www.rcsb.org/structure/7XYQ",
+      "pdb_doi": "https://doi.org/10.2210/pdb7xyq/pdb",
+      "source_kind": "experimental_reference",
+      "resolution_A": [
+        2.85
+      ],
+      "download_urls": {
+        "pdb": "https://files.rcsb.org/download/7XYQ.pdb",
+        "cif": "https://files.rcsb.org/download/7XYQ.cif",
+        "fasta": "https://www.rcsb.org/fasta/entry/7XYQ/display",
+        "json": "https://data.rcsb.org/rest/v1/core/entry/7XYQ"
+      },
+      "files": [
+        {
+          "path": "sources/7XYQ.cif",
+          "bytes": 594286,
+          "sha256": "883c9c5542b2f65b2ae641428aa9f1dc6d4e90e51f6fe8ed71e7f5b780fac8cc"
+        },
+        {
+          "path": "sources/7XYQ.fasta",
+          "bytes": 436,
+          "sha256": "b58557a0a0fa03d96d4285f86f3a1a79bda3250093380e9072346de17662a2a1"
+        },
+        {
+          "path": "sources/7XYQ.json",
+          "bytes": 13926,
+          "sha256": "7b8e8657f72e27995dd99a3e73c33d536ded9f715a657f394fdbb6e83ad469e6"
+        },
+        {
+          "path": "sources/7XYQ.pdb",
+          "bytes": 454896,
+          "sha256": "8b2344045bf360f783b8a6ec83fa362bbab3adb1dc1ce86dff89c783df94811c"
+        }
+      ]
+    }
+  ],
+  "note": "Experimental references are not MOS predictions. Reference contacts are local geometry analysis and do not measure binding affinity."
+}

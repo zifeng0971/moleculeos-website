@@ -1,0 +1,3 @@
+candidate,task_id,seed,model_file,binder_length,plddt_binder_mean,plddt_receptor_mean,interface_plddt_mean,hotspots_engaged_of_6,min_hotspot_dist_A,bsa_total_A2_ppinterface,bsa_per_side_A2_shrake,hbonds,salt_bridges,salt_bridges_charge_validated,same_charge_rejected,non_salt_bridge_rejected,helix_fraction,frac_ala,net_charge_ph7,entropy_bits
+seed111,342254837666816,111,179246416595260_aligned.cif,73,65.9,87.6,65.3,6,2.42,1833.3,887.0,2,10,9,0,1,0.94,0.45,2,2.52
+seed222,342254839784448,222,179246440257279_aligned.cif,66,62.2,88.8,60.2,5,1.87,1214.2,600.8,1,5,5,0,0,0.97,0.11,-3,3.35

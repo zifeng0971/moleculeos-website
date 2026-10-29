@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-10-28T15:40:37+07:00",
+  "id_rows": [
+    [
+      "01 项目",
+      "342242986152960",
+      "https://mos.moleculemind.com/?projectId=342242986152960",
+      "原始项目，线上名称 nn（本聊天已核对）"
+    ],
+    [
+      "01 MMFold 任务",
+      "342253805564928",
+      "PDL1_KN035_VHH_complex",
+      "官网 01 的来源"
+    ],
+    [
+      "01 选用样本",
+      "1",
+      "MMFold_1.cif",
+      "按平台 ranking_score 选取；另四样本完整保留"
+    ],
+    [
+      "02 项目",
+      "342604060136448",
+      "https://mos.moleculemind.com/?projectId=342604060136448",
+      "历史项目名 PDL1-02-MMetrics-KN035-20261021"
+    ],
+    [
+      "02 结构对象 object_id",
+      "342604293768192",
+      "MMFold_1.cif",
+      "不是 task_id"
+    ],
+    [
+      "02 work_id",
+      "342604299084800",
+      "",
+      "不是 task_id"
+    ],
+    [
+      "02 自动前置任务",
+      "342604299285504",
+      "autocompute-MMFold_1",
+      "产生 mos-blast 等7个对象"
+    ],
+    [
+      "02 MMetrics 任务",
+      "342604577018880",
+      "mmetrics-analysis-342604299285504",
+      "输出 record.json"
+    ],
+    [
+      "02 mmetrics_id",
+      "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6",
+      "",
+      "注释记录UUID，不是 task_id"
+    ],
+    [
+      "02 BLAST JSON 对象",
+      "342604574229504",
+      "blast_results.json",
+      "下载名 similarity_results.json；字节相同"
+    ],
+    [
+      "02 BLAST FASTA 对象",
+      "342604574114816",
+      "all_sequences.fasta",
+      "500条序列"
+    ],
+    [
+      "02 后续独立补充任务",
+      "342606092895232",
+      "kn035-AbAn-independent",
+      "Antibody Region Annotation；不属于同源检索链路"
+    ],
+    [
+      "02 后续独立补充任务",
+      "342606094599168",
+      "kn035-AbScN-language-independent",
+      "Antibody Language Scoring；不属于同源检索链路"
+    ],
+    [
+      "02 后续独立补充任务",
+      "342606097245184",
+      "kn035-AbScN-nativeness-independent",
+      "Antibody Nativeness Evaluation；不属于同源检索链路"
+    ],
+    [
+      "02 后续独立补充任务",
+      "342606100722688",
+      "kn035-ParaDt-independent",
+      "Paratope Identification；不属于同源检索链路"
+    ]
+  ],
+  "time_rows": [
+    [
+      "01",
+      "MMFold 创建（UI）",
+      "2026-10-20 9:34:18",
+      "原始 UI 未标时区",
+      "未擅自换算",
+      "Task List Creation Time",
+      "archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt"
+    ],
+    [
+      "01",
+      "MMFold 更新为成功时的更新时间（UI）",
+      "2026-10-20 9:36:23",
+      "原始 UI 未标时区",
+      "未擅自换算",
+      "Task List Update Time；不等同精确 worker finish",
+      "archives/website-cases/pdl1/01-structure/raw/task-list-succeeded.txt"
+    ],
+    [
+      "02",
+      "autocompute-MMFold_1 开始",
+      "2026-10-21 02:20:28",
+      "原status无时区；旧ledger归一化=2026-10-21T02:20:28Z",
+      "2026-10-21T09:20:28+07:00（按旧档UTC声明）",
+      "duration=1.1min；未独立确认后台时区",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    ],
+    [
+      "02",
+      "mmetrics-analysis-342604299285504 开始",
+      "2026-10-21 02:21:36",
+      "原status无时区；旧ledger归一化=2026-10-21T02:21:36Z",
+      "2026-10-21T09:21:36+07:00（按旧档UTC声明）",
+      "duration=3s；未独立确认后台时区",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/task-ledger.json"
+    ],
+    [
+      "02",
+      "前置输出对象 createTime",
+      "1792549294",
+      "Unix 秒（UTC）",
+      "2026-10-21T09:21:34+07:00",
+      "7个输入对象均记录此 createTime",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02/raw/native_task_342604577018880/task_payload.json"
+    ],
+    [
+      "02",
+      "原生 Homologs 面板采集",
+      "2026-10-21T02:23:00.211Z",
+      "captured_at 显式 Z/UTC",
+      "2026-10-21T09:23:00.211+07:00",
+      "这是采集时间，不是任务运行时间",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/native-ui/panel-dom.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbAn-independent",
+      "2026-10-21 02:27:46",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:46Z",
+      "2026-10-21T09:27:46+07:00（按旧档UTC声明）",
+      "task=342606092895232；duration=20s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbScN-language-independent",
+      "2026-10-21 02:27:46",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:46Z",
+      "2026-10-21T09:27:46+07:00（按旧档UTC声明）",
+      "task=342606094599168；duration=3s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-AbScN-nativeness-independent",
+      "2026-10-21 02:27:47",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:47Z",
+      "2026-10-21T09:27:47+07:00（按旧档UTC声明）",
+      "task=342606097245184；duration=3s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 补充",
+      "kn035-ParaDt-independent",
+      "2026-10-21 02:27:48",
+      "原status无时区；旧manifest归一化=2026-10-21T02:27:48Z",
+      "2026-10-21T09:27:48+07:00（按旧档UTC声明）",
+      "task=342606100722688；duration=25s",
+      "archives/website-cases/pdl1/02-mmetrics-kn035/raw/mos-export/kn035_case02_supplement/supplement-manifest.json"
+    ],
+    [
+      "02 操作观察",
+      "提交创建案例 02 项目",
+      "2026-10-21T02:19:28.859Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:28.859+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交创建案例 02 项目",
+      "2026-10-21T02:19:29.625Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:29.625+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "查看新项目导入入口",
+      "2026-10-21T02:19:37.698Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:37.698+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "向案例 02 上传唯一主结构",
+      "2026-10-21T02:19:59.116Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:19:59.116+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "指定主结构的绝对路径",
+      "2026-10-21T02:20:20.494Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:20.494+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "完成主结构导入",
+      "2026-10-21T02:20:26.350Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:26.350+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "核验导入后的链、序列及 MMetrics 状态",
+      "2026-10-21T02:20:40.995Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:40.995+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "打开并记录 KN035 原生 MMetrics 面板",
+      "2026-10-21T02:20:49.331Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:49.331+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "打开并记录 KN035 原生 MMetrics 面板",
+      "2026-10-21T02:20:50.196Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:20:50.196+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交案例 02 的原始结果导出与编号核验请求",
+      "2026-10-21T02:21:45.731Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:21:45.731+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "提交案例 02 的原始结果导出与编号核验请求",
+      "2026-10-21T02:21:46.245Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:21:46.245+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "下载原生完整亲和力评分 CSV",
+      "2026-10-21T02:25:32.259Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:25:32.259+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "下载原生归档并补齐独立抗体分析，保留来源区分",
+      "2026-10-21T02:27:26.513Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:27:26.513+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "保存原生面板首屏并开始重叠采集",
+      "2026-10-21T02:29:13.454Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:29:13.454+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ],
+    [
+      "02 操作观察",
+      "完成面板逐屏截图及对应的真实滚动记录",
+      "2026-10-21T02:29:20.763Z",
+      "原始会话事件显式UTC",
+      "2026-10-21T09:29:20.763+07:00",
+      "动作/观察时刻；不是后台生命周期",
+      "diagnostics/timeline-audit/session_observation_excerpts.json"
+    ]
+  ],
+  "time_policy": "保留原始UI时间。只有显式UTC/Unix epoch或旧档声明UTC时才提供Jakarta显示；旧档声明不等于独立后台时区验证。raw status缺少时区，精确finish/项目创建/上传完成时间未留档时标unknown。文件mtime不作运行时间。"
+}

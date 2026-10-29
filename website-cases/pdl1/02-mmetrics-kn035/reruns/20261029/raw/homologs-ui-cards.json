@@ -1,0 +1,50 @@
+[
+  {
+    "html": "<div class=\"homologCard___S7p8b\"><div class=\"homologLeft___OKvIF\"><span class=\"homologName___hZZ57\" title=\"5JDS\">5JDS</span><span class=\"crystalTag___t5ld_\">Crystal</span></div><div class=\"homologRight___hfERd\"><span class=\"homologIdentity___gcKDo\">100%</span><a class=\"homologRef___s43ab\" href=\"https://www.rcsb.org/structure/5JDS\" target=\"_blank\" rel=\"noreferrer\">Reference</a></div></div>",
+    "links": [
+      {
+        "href": "https://www.rcsb.org/structure/5JDS",
+        "text": "Reference"
+      }
+    ],
+    "text": "5JDS\nCrystal\n100%\nReference",
+    "titles": [
+      {
+        "text": "5JDS",
+        "title": "5JDS"
+      }
+    ]
+  },
+  {
+    "html": "<div class=\"homologCard___S7p8b\"><div class=\"homologLeft___OKvIF\"><span class=\"homologName___hZZ57\" title=\"4DKA\">4DKA</span><span class=\"crystalTag___t5ld_\">Crystal</span></div><div class=\"homologRight___hfERd\"><span class=\"homologIdentity___gcKDo\">72.1%</span><a class=\"homologRef___s43ab\" href=\"https://www.rcsb.org/structure/4DKA\" target=\"_blank\" rel=\"noreferrer\">Reference</a></div></div>",
+    "links": [
+      {
+        "href": "https://www.rcsb.org/structure/4DKA",
+        "text": "Reference"
+      }
+    ],
+    "text": "4DKA\nCrystal\n72.1%\nReference",
+    "titles": [
+      {
+        "text": "4DKA",
+        "title": "4DKA"
+      }
+    ]
+  },
+  {
+    "html": "<div class=\"homologCard___S7p8b\"><div class=\"homologLeft___OKvIF\"><span class=\"homologName___hZZ57\" title=\"4DK3\">4DK3</span><span class=\"crystalTag___t5ld_\">Crystal</span></div><div class=\"homologRight___hfERd\"><span class=\"homologIdentity___gcKDo\">72.1%</span><a class=\"homologRef___s43ab\" href=\"https://www.rcsb.org/structure/4DK3\" target=\"_blank\" rel=\"noreferrer\">Reference</a></div></div>",
+    "links": [
+      {
+        "href": "https://www.rcsb.org/structure/4DK3",
+        "text": "Reference"
+      }
+    ],
+    "text": "4DK3\nCrystal\n72.1%\nReference",
+    "titles": [
+      {
+        "text": "4DK3",
+        "title": "4DK3"
+      }
+    ]
+  }
+]

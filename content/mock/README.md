@@ -94,12 +94,10 @@
 | `validation.cases[5].cycle` | 9 周 | 是 / 待复核 | 研发 | P0 |
 | `validation._note` | 演示数据,上线前必须替换 | 内部元信息 | 研发 | 保留 |
 | `models._demo` | true | 内部元信息 | 研发 | 保留 |
-| `models.models[0].name` | NewOrigin（达尔文） | 是 / 待复核 | 研发 | P0 |
-| `models.models[0].limitation` | 对缺乏同源信息的孤儿蛋白，表征质量会明显下降；跨物种迁移需结合实验数据校准。 | 是 / 待复核 | 研发 | P0 |
-| `models.models[1].name` | MMFold | 是 / 待复核 | 研发 | P0 |
-| `models.models[1].limitation` | 高度柔性区域与无序段的构象预测置信度较低；对依赖辅因子或特定 pH 的构象状态，需结合实验条件判断。 | 是 / 待复核 | 研发 | P0 |
-| `models.models[2].name` | MMDesign | 是 / 待复核 | 研发 | P0 |
-| `models.models[2].limitation` | 生成序列的可表达性与可开发性需逐级实验验证；对超过 200 个氨基酸的从头设计，成功率显著降低。 | 是 / 待复核 | 研发 | P0 |
+| `models.models[0].name` | MMFold | 是 / 待复核 | 研发 | P0 |
+| `models.models[0].limitation` | 高度柔性区域与无序段的构象预测置信度较低；对依赖辅因子或特定 pH 的构象状态，需结合实验条件判断。 | 是 / 待复核 | 研发 | P0 |
+| `models.models[1].name` | MMDesign | 是 / 待复核 | 研发 | P0 |
+| `models.models[1].limitation` | 生成序列的可表达性与可开发性需逐级实验验证；对超过 200 个氨基酸的从头设计，成功率显著降低。 | 是 / 待复核 | 研发 | P0 |
 | `models._note` | 演示数据,上线前必须替换 | 内部元信息 | 研发 | 保留 |
 | `pricing._demo` | true | 内部元信息 | 市场 | 保留 |
 | `pricing.plans[0].name` | 学术版 | 是 / 待复核 | 市场 | P0 |

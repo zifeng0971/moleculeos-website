@@ -1,0 +1,314 @@
+{
+  "case": "Independent website case 03 - Engineer Stronger Binding (variant structure assets)",
+  "system": "Human PD-L1 (chain A) + DBL1_03 designed binder (chain B), PDB 7XYQ entity sequences",
+  "purpose": "Sequence-only MMFold complex prediction for two INDEPENDENT single-mutation binder variants. No experimental coordinates were supplied as input.",
+  "input_sequences": {
+    "antigen_chain_A": {
+      "length": 207,
+      "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+      "source": "PDB 7XYQ entity 1 full sequence (UniProt Q9NZQ7 19-225), unchanged in both jobs"
+    },
+    "binder_chain_B_parental": {
+      "length": 124,
+      "sequence": "GGETGSSIESMKASMIVQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+      "source": "PDB 7XYQ entity 2 (DBL1_03) full sequence",
+      "note": "parental reference; each variant differs by exactly one residue from it"
+    }
+  },
+  "numbering": {
+    "note": "MOS/entity numbering is 1-based over the entity sequence; author numbering of PDB 7XYQ chain B runs -4..119, so author = MOS - 5. Chain A author = MOS + 18 (UniProt 19-225)."
+  },
+  "confidence_vs_affinity": {
+    "statement": "Structural confidence (pLDDT/pTM/ipTM/ranking_score) is reported HERE ONLY and is kept strictly separate from the earlier Binding Affinity Mutation Effect ddG values (task 342254431249408, file case03_complete.zip). pLDDT/pTM measure model self-consistency, not binding energy; no ddG is recomputed or inferred from these structures.",
+    "units": {
+      "plddt": "0-100 (model scale reported as 0-100 here)",
+      "ptm": "0-1",
+      "iptm": "0-1",
+      "ranking_score": "0-1 (MMFold composite)"
+    }
+  },
+  "variants": {
+    "Q18Y": {
+      "label_author_numbering": "Q13Y",
+      "mutation": "Q18Y",
+      "position_MOS": 18,
+      "position_author": "B13",
+      "binder_sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+      "binder_sequence_length": 124,
+      "antigen_sequence": "unchanged (identical to chain A entity sequence above)",
+      "task_id": "342259574002688",
+      "task_type": "MMFold",
+      "task_name": "PDL1_DBL1_03_Q18Y_complex",
+      "status": "succeed",
+      "reported_duration": "2.3 min",
+      "submitted_payload": {
+        "name": "PDL1_DBL1_03_Q18Y_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B13 Q18Y (author QB13Y), entity/MOS position 18, 124 aa"
+            }
+          }
+        ]
+      },
+      "samples": [
+        {
+          "variant": "Q18Y",
+          "task_id": "342259574002688",
+          "sample": 1,
+          "plddt": 87.944,
+          "ptm": 0.8108,
+          "iptm": 0.8214,
+          "ranking_score": 0.8193,
+          "chain_plddt_A_PDL1": 0.8876,
+          "chain_plddt_B_binder": 0.8655,
+          "chain_ptm_A_PDL1": 0.7974,
+          "chain_ptm_B_binder": 0.8762
+        },
+        {
+          "variant": "Q18Y",
+          "task_id": "342259574002688",
+          "sample": 2,
+          "plddt": 87.931,
+          "ptm": 0.8091,
+          "iptm": 0.8202,
+          "ranking_score": 0.818,
+          "chain_plddt_A_PDL1": 0.8873,
+          "chain_plddt_B_binder": 0.8657,
+          "chain_ptm_A_PDL1": 0.7947,
+          "chain_ptm_B_binder": 0.8781
+        },
+        {
+          "variant": "Q18Y",
+          "task_id": "342259574002688",
+          "sample": 3,
+          "plddt": 87.918,
+          "ptm": 0.8092,
+          "iptm": 0.8185,
+          "ranking_score": 0.8166,
+          "chain_plddt_A_PDL1": 0.8872,
+          "chain_plddt_B_binder": 0.8655,
+          "chain_ptm_A_PDL1": 0.7963,
+          "chain_ptm_B_binder": 0.8785
+        },
+        {
+          "variant": "Q18Y",
+          "task_id": "342259574002688",
+          "sample": 4,
+          "plddt": 87.93,
+          "ptm": 0.8093,
+          "iptm": 0.8182,
+          "ranking_score": 0.8164,
+          "chain_plddt_A_PDL1": 0.8874,
+          "chain_plddt_B_binder": 0.8654,
+          "chain_ptm_A_PDL1": 0.7963,
+          "chain_ptm_B_binder": 0.8755
+        },
+        {
+          "variant": "Q18Y",
+          "task_id": "342259574002688",
+          "sample": 5,
+          "plddt": 87.895,
+          "ptm": 0.8076,
+          "iptm": 0.8164,
+          "ranking_score": 0.8146,
+          "chain_plddt_A_PDL1": 0.8869,
+          "chain_plddt_B_binder": 0.8653,
+          "chain_ptm_A_PDL1": 0.7949,
+          "chain_ptm_B_binder": 0.8777
+        }
+      ],
+      "best_sample_by_ranking_score": {
+        "variant": "Q18Y",
+        "task_id": "342259574002688",
+        "sample": 1,
+        "plddt": 87.944,
+        "ptm": 0.8108,
+        "iptm": 0.8214,
+        "ranking_score": 0.8193,
+        "chain_plddt_A_PDL1": 0.8876,
+        "chain_plddt_B_binder": 0.8655,
+        "chain_ptm_A_PDL1": 0.7974,
+        "chain_ptm_B_binder": 0.8762
+      },
+      "plddt_at_mutated_position_from_cif_bfactor": [
+        [
+          "1",
+          93.56
+        ],
+        [
+          "2",
+          93.45
+        ],
+        [
+          "3",
+          93.37
+        ],
+        [
+          "4",
+          93.54
+        ],
+        [
+          "5",
+          93.33
+        ]
+      ],
+      "files": {
+        "cif": "Q18Y/cif/",
+        "confidence_json": "Q18Y/confidence/"
+      }
+    },
+    "V17I": {
+      "label_author_numbering": "V12I",
+      "mutation": "V17I",
+      "position_MOS": 17,
+      "position_author": "B12",
+      "binder_sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+      "binder_sequence_length": 124,
+      "antigen_sequence": "unchanged (identical to chain A entity sequence above)",
+      "task_id": "342259585696768",
+      "task_type": "MMFold",
+      "task_name": "PDL1_DBL1_03_V17I_complex",
+      "status": "succeed",
+      "reported_duration": "2.3 min",
+      "submitted_payload": {
+        "name": "PDL1_DBL1_03_V17I_complex",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+              "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+              "description": "DBL1_03 designed binder, single mutation B12 V17I (author VB12I), entity/MOS position 17, 124 aa"
+            }
+          }
+        ]
+      },
+      "samples": [
+        {
+          "variant": "V17I",
+          "task_id": "342259585696768",
+          "sample": 1,
+          "plddt": 87.173,
+          "ptm": 0.8172,
+          "iptm": 0.776,
+          "ranking_score": 0.7843,
+          "chain_plddt_A_PDL1": 0.8852,
+          "chain_plddt_B_binder": 0.8487,
+          "chain_ptm_A_PDL1": 0.8319,
+          "chain_ptm_B_binder": 0.8676
+        },
+        {
+          "variant": "V17I",
+          "task_id": "342259585696768",
+          "sample": 2,
+          "plddt": 87.174,
+          "ptm": 0.8176,
+          "iptm": 0.7756,
+          "ranking_score": 0.784,
+          "chain_plddt_A_PDL1": 0.8854,
+          "chain_plddt_B_binder": 0.8483,
+          "chain_ptm_A_PDL1": 0.8317,
+          "chain_ptm_B_binder": 0.8669
+        },
+        {
+          "variant": "V17I",
+          "task_id": "342259585696768",
+          "sample": 3,
+          "plddt": 87.149,
+          "ptm": 0.8163,
+          "iptm": 0.7754,
+          "ranking_score": 0.7836,
+          "chain_plddt_A_PDL1": 0.8851,
+          "chain_plddt_B_binder": 0.8483,
+          "chain_ptm_A_PDL1": 0.8311,
+          "chain_ptm_B_binder": 0.8667
+        },
+        {
+          "variant": "V17I",
+          "task_id": "342259585696768",
+          "sample": 4,
+          "plddt": 87.156,
+          "ptm": 0.8167,
+          "iptm": 0.7732,
+          "ranking_score": 0.7819,
+          "chain_plddt_A_PDL1": 0.8853,
+          "chain_plddt_B_binder": 0.848,
+          "chain_ptm_A_PDL1": 0.8314,
+          "chain_ptm_B_binder": 0.8663
+        },
+        {
+          "variant": "V17I",
+          "task_id": "342259585696768",
+          "sample": 5,
+          "plddt": 87.099,
+          "ptm": 0.8152,
+          "iptm": 0.7731,
+          "ranking_score": 0.7815,
+          "chain_plddt_A_PDL1": 0.8844,
+          "chain_plddt_B_binder": 0.848,
+          "chain_ptm_A_PDL1": 0.8297,
+          "chain_ptm_B_binder": 0.8679
+        }
+      ],
+      "best_sample_by_ranking_score": {
+        "variant": "V17I",
+        "task_id": "342259585696768",
+        "sample": 1,
+        "plddt": 87.173,
+        "ptm": 0.8172,
+        "iptm": 0.776,
+        "ranking_score": 0.7843,
+        "chain_plddt_A_PDL1": 0.8852,
+        "chain_plddt_B_binder": 0.8487,
+        "chain_ptm_A_PDL1": 0.8319,
+        "chain_ptm_B_binder": 0.8676
+      },
+      "plddt_at_mutated_position_from_cif_bfactor": [
+        [
+          "1",
+          91.79
+        ],
+        [
+          "2",
+          91.78
+        ],
+        [
+          "3",
+          91.7
+        ],
+        [
+          "4",
+          91.8
+        ],
+        [
+          "5",
+          91.56
+        ]
+      ],
+      "files": {
+        "cif": "V17I/cif/",
+        "confidence_json": "V17I/confidence/"
+      }
+    }
+  }
+}

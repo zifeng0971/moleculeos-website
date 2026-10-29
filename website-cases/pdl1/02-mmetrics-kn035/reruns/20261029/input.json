@@ -1,0 +1,40 @@
+{
+  "case_id": "02-kn035",
+  "run_id": "20261029",
+  "project_id": "345488380847104",
+  "project_name": "PDL1-02-MMetrics-KN035-20261029-Rerun",
+  "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+  "source_project_id": "342604060136448",
+  "source_object_id": "342604293768192",
+  "input_structure": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+  "input_file_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "chain_mapping": {
+    "A": {
+      "mmfold1": "A",
+      "role": "PD-L1",
+      "length": 118
+    },
+    "B": {
+      "mmfold1": "B",
+      "role": "KN035_VHH",
+      "length": 128
+    }
+  },
+  "submitted_prompt_file": "submitted-prompt.txt",
+  "submitted_prompt_sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94",
+  "same_prompt_bytes": true,
+  "same_structure_bytes": true,
+  "workflow": "Re-import identical structure to fresh work in new project, trigger platform native autocompute/MMetrics, then submit original prompt unchanged. No new MMFold prediction.",
+  "user_authorization": [
+    "现在02有同源数据了，请你去mos记录好放进素材里",
+    "开来你需要用相同的prompt重新跑一遍了"
+  ],
+  "created_at_utc": "2026-10-29T05:58:07.528919+00:00",
+  "status": "succeeded",
+  "mos_object_id": "345488780645376",
+  "mos_work_id": "345488784675840",
+  "native_task_ids": [
+    "345488784917504",
+    "345489060729856"
+  ]
+}

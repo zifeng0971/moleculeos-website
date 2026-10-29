@@ -1,0 +1,679 @@
+{
+  "source_kind": "experimental_reference_derived_local_analysis",
+  "pdb_id": "5JDS",
+  "method": "Interchain non-hydrogen ATOM minimum distance <=4.5 A; first/blank altloc; not MOS output; auth chain/residue numbering",
+  "chains": {
+    "B": {
+      "modeled_residue_count": 127,
+      "first_auth_residue": 1,
+      "last_auth_residue": 127
+    },
+    "A": {
+      "modeled_residue_count": 115,
+      "first_auth_residue": 18,
+      "last_auth_residue": 132
+    }
+  },
+  "residue_contact_pairs": [
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 27,
+        "insertion_code": "",
+        "name": "LYS"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 61,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 3.354
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 29,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 61,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 2.637
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 30,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 61,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 2.56
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 32,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 61,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 2.911
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 99,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 2.6
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 100,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 3.117
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 100,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 56,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.562
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 100,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 61,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 3.966
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 100,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 58,
+        "insertion_code": "",
+        "name": "GLU"
+      },
+      "minimum_heavy_atom_distance_A": 2.71
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 101,
+        "insertion_code": "",
+        "name": "PHE"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 56,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.448
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 101,
+        "insertion_code": "",
+        "name": "PHE"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 3.727
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 101,
+        "insertion_code": "",
+        "name": "PHE"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 115,
+        "insertion_code": "",
+        "name": "MET"
+      },
+      "minimum_heavy_atom_distance_A": 3.752
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 102,
+        "insertion_code": "",
+        "name": "GLU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 56,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 2.915
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 102,
+        "insertion_code": "",
+        "name": "GLU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 66,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "minimum_heavy_atom_distance_A": 3.658
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 102,
+        "insertion_code": "",
+        "name": "GLU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 63,
+        "insertion_code": "",
+        "name": "ASN"
+      },
+      "minimum_heavy_atom_distance_A": 4.231
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 103,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 66,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "minimum_heavy_atom_distance_A": 2.973
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 103,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 73,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 3.886
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 104,
+        "insertion_code": "",
+        "name": "PRO"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 66,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "minimum_heavy_atom_distance_A": 3.366
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 104,
+        "insertion_code": "",
+        "name": "PRO"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 68,
+        "insertion_code": "",
+        "name": "VAL"
+      },
+      "minimum_heavy_atom_distance_A": 4.458
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 104,
+        "insertion_code": "",
+        "name": "PRO"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 73,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 3.63
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 105,
+        "insertion_code": "",
+        "name": "THR"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 66,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "minimum_heavy_atom_distance_A": 2.701
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 105,
+        "insertion_code": "",
+        "name": "THR"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 56,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.446
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 105,
+        "insertion_code": "",
+        "name": "THR"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 68,
+        "insertion_code": "",
+        "name": "VAL"
+      },
+      "minimum_heavy_atom_distance_A": 3.955
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 105,
+        "insertion_code": "",
+        "name": "THR"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 54,
+        "insertion_code": "",
+        "name": "ILE"
+      },
+      "minimum_heavy_atom_distance_A": 3.797
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 105,
+        "insertion_code": "",
+        "name": "THR"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 115,
+        "insertion_code": "",
+        "name": "MET"
+      },
+      "minimum_heavy_atom_distance_A": 3.692
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 108,
+        "insertion_code": "",
+        "name": "LEU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 54,
+        "insertion_code": "",
+        "name": "ILE"
+      },
+      "minimum_heavy_atom_distance_A": 3.924
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 108,
+        "insertion_code": "",
+        "name": "LEU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 68,
+        "insertion_code": "",
+        "name": "VAL"
+      },
+      "minimum_heavy_atom_distance_A": 3.534
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 108,
+        "insertion_code": "",
+        "name": "LEU"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 69,
+        "insertion_code": "",
+        "name": "HIS"
+      },
+      "minimum_heavy_atom_distance_A": 4.325
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 109,
+        "insertion_code": "",
+        "name": "VAL"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 54,
+        "insertion_code": "",
+        "name": "ILE"
+      },
+      "minimum_heavy_atom_distance_A": 3.451
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 109,
+        "insertion_code": "",
+        "name": "VAL"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 115,
+        "insertion_code": "",
+        "name": "MET"
+      },
+      "minimum_heavy_atom_distance_A": 3.603
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 111,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 121,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "minimum_heavy_atom_distance_A": 3.372
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 111,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 120,
+        "insertion_code": "",
+        "name": "GLY"
+      },
+      "minimum_heavy_atom_distance_A": 3.923
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 111,
+        "insertion_code": "",
+        "name": "SER"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 119,
+        "insertion_code": "",
+        "name": "GLY"
+      },
+      "minimum_heavy_atom_distance_A": 4.309
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "GLY"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 121,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "minimum_heavy_atom_distance_A": 3.228
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "GLY"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 122,
+        "insertion_code": "",
+        "name": "ASP"
+      },
+      "minimum_heavy_atom_distance_A": 3.674
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "GLY"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 123,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.639
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 114,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 121,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "minimum_heavy_atom_distance_A": 3.79
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 114,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 115,
+        "insertion_code": "",
+        "name": "MET"
+      },
+      "minimum_heavy_atom_distance_A": 4.012
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 114,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 123,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.526
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 114,
+        "insertion_code": "",
+        "name": "ALA"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 4.055
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 115,
+        "insertion_code": "",
+        "name": "PHE"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 123,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 4.177
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 116,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 123,
+        "insertion_code": "",
+        "name": "TYR"
+      },
+      "minimum_heavy_atom_distance_A": 3.091
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 116,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 113,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 3.318
+    },
+    {
+      "chain_1": "B",
+      "residue_1": {
+        "auth_seq_id": 116,
+        "insertion_code": "",
+        "name": "GLN"
+      },
+      "chain_2": "A",
+      "residue_2": {
+        "auth_seq_id": 125,
+        "insertion_code": "",
+        "name": "ARG"
+      },
+      "minimum_heavy_atom_distance_A": 2.574
+    }
+  ]
+}

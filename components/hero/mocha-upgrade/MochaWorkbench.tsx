@@ -164,7 +164,7 @@ export function MochaWorkbench() {
 
   return <div className="agent-demo-slot">
     <div ref={frame} className={`agent-demo agent-demo-live agent-multitask mocha-upgrade mocha-upgrade-root ${active ? 'agent-has-task' : ''}`} aria-label={t('label')}>
-      <div className="agent-demo-top"><span className="agent-brand">MOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{active ? titleFor(active.taskId) : 'Mocha'}</span></div>
+      <div className="agent-demo-top"><span className="agent-brand">MoleculeOS <span className="agent-beta">BETA</span></span><span className="agent-project-title">{active ? titleFor(active.taskId) : 'Mocha'}</span></div>
       <div className="agent-workspace mocha-upgrade-workspace">
         <aside className="agent-run-sidebar" aria-label={t('tasksLabel')}>
           <div className="agent-sidebar-heading"><span>{t('tasksLabel')}</span><button type="button" className="agent-new-task" onClick={() => setActiveId(null)}><Plus size={14}/>{t('newTask')}</button></div>

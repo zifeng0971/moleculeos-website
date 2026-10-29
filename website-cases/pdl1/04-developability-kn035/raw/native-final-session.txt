@@ -1,0 +1,529 @@
+MOS
+BETA
+PDL1-04-Developability-KN035-20261021
+Z
+Task
+Share
+MMFold_1_chain_B
+2:B
+1
+QVQLQESGGG
+11
+LVQPGGSLRL
+21
+SCAASGKMSS
+31
+RRCMAWFRQA
+41
+PGKERERVAK
+51
+LLTTSGSTYL
+61
+ADSVKGRFTI
+71
+SQNNAKSTVY
+81
+LQMNSLKPED
+91
+TAMYYCAADS
+101
+FEDPTCTLVT
+111
+SSGAFQYWGQ
+121
+GTQVTVSS
+Mocha
+MMetrics
+✕
+Mocha
+93ac9be5-c
+Assistant
+Thinking
+Let me start by exploring the environment and understanding what's available.
+▸
+Shell
+(ls -la /workspace/ && echo "---" && ls -la /worksp…)
+▸
+ListAvailableMOSTasks
+▸
+ListMOSObjects
+▸
+Thinking
+Only one object in this project. The task references "案例02项目342604060136448" — a…
+▸
+Shell
+(mkdir -p /workspace/kn035_case04/raw /workspace/kn…)
+▸
+Shell
+(cd /workspace/protein_data/protein_342605181223936…)
+▸
+Thinking
+Sequence length: let me count. Use sequence-toolkit per rules.
+▸
+Shell
+(cat /app/src/mocha/agents/custom_skills/sequence-t…)
+▸
+Thinking
+Let me store the sequence from the CIF. I'll extract it from the CIF file via a …
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Structure is clean: 128 residues, single chain B, label_seq == auth_seq == MOS n…
+▸
+GetMOSTaskSchema
+(Structural Stability Mutation Effect)
+▸
+GetMOSTaskSchema
+(Sequence Fitness Mutation Effect)
+▸
+GetMOSTaskSchema
+(Evolutionary Mutation Effect)
+▸
+GetMOSQuota
+▸
+Thinking
+Quota plenty. Now, structural stability task: pass structure_path = TOS key of c…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Good. Now store sequence in library.
+▸
+Shell
+(cd /workspace/kn035_case04 && python /app/src/moch…)
+▸
+Thinking
+Now launch the three tasks. Before launching, I should state intent? Rules say b…
+▸
+StartMOSTask
+(Structural Stability Mutation Effect)
+▸
+StartMOSTask
+(Sequence Fitness Mutation Effect)
+▸
+StartMOSTask
+(Evolutionary Mutation Effect)
+▸
+Thinking
+I made a serious error in the Evolutionary payload: I typed the sequence wrongly…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' lib…)
+▸
+Thinking
+Confirmed. SeqFitness payload correct, Evolutionary payload wrong (125 aa, missi…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+StartMOSTask
+(MSA-based evolutionary conservation/covariance sat…)
+▸
+Thinking
+Now while tasks run, do the local sequence risk scan and prepare ledger/scripts.…
+▸
+Write
+(/workspace/kn035_case04/scripts/risk_scan.py)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/risk_…)
+▸
+Thinking
+No N-glycosylation sequon. Good — that's a finding: no N-X-S/T.
+▸
+ListMOSTasks
+▸
+Thinking
+Stability and SeqFitness succeeded. Let's download and analyze. AnalyzeMutationS…
+▸
+DownloadTaskResults
+(342605430273024)
+▸
+DownloadTaskResults
+(342605430948864)
+▸
+Shell
+(cd /workspace/downloads && head -3 structural_stab…)
+▸
+Thinking
+2560 rows = 128*20 (including WT->WT). Score direction? For structural stability…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Direction established: WT->WT = 0.0 exactly for all positions (mean 0, median 0)…
+▸
+ListMOSTasks
+▸
+Thinking
+Evolutionary still pending/running (MSA search takes longer). Meanwhile, write t…
+▸
+Shell
+(cd /workspace/kn035_case04 && mkdir -p raw && cp /…)
+▸
+Write
+(/workspace/kn035_case04/scripts/merge_scores.py)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/merge…)
+▸
+Thinking
+Interesting: Q1A has stability delta +1.175 and seqfitness delta -5.37. Position…
+▸
+CheckMOSTask
+(342605471151104)
+▸
+Thinking
+Still running (MSA search). Let me prepare candidate selection logic and documen…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Good, 19 pass with 2 models. Adding evolutionary will trim. Note "87 K R" — wait…
+▸
+Write
+(/workspace/kn035_case04/scripts/select_candidates.…)
+▸
+ListMOSTasks
+▸
+Thinking
+The void (mis-transcribed) evolutionary run succeeded. I must NOT use its output…
+▸
+Shell
+(sleep 45; echo done)
+▸
+CheckMOSTask
+(342605471151104)
+▸
+Shell
+(cd /workspace/kn035_case04 && cp /workspace/downlo…)
+▸
+Thinking
+Evolutionary: WT zero at all 128 positions, wtmax 87, wtmin 2 (2 positions where…
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/merge…)
+▸
+Thinking
+6 candidates — meets "at least 5". But note three are at position 50 (K50S, K50A…
+▸
+Write
+(/workspace/kn035_case04/scripts/annotate_candidate…)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/annot…)
+▸
+Thinking
+Important finding: K50 has relSASA 0.005 (fully buried) and min heavy-atom dista…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Good pool. Position 60 (L60Y, L60I) is in framework 3 (59-95), far from paratope…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+K50 side chain is 3.35 Å from D103 side chain — that's a salt bridge/H-bond (K50…
+▸
+Shell
+(cd /workspace/kn035_case04 && grep -E "^73,N,(D|A|…)
+▸
+Thinking
+Interesting: 73N>D has no flag. Why? Because residue 74 is N (N74 A75 K76), not …
+▸
+Write
+(/workspace/kn035_case04/scripts/select_candidates.…)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/selec…)
+▸
+Thinking
+Only 3 tier B because K50R got capped (2 per position). Total 9, not 10. That's …
+▸
+Shell
+(cd /workspace/kn035_case04 && column -s, -t risk_s…)
+▸
+Shell
+(cd /workspace/kn035_case04 && cat risk_scan_local.…)
+▸
+Thinking
+Note: M28 relSASA 0.343 — exposed Met, oxidation risk; M28 is in CDR1 (protected…
+▸
+Shell
+(mkdir -p /workspace/kn035_case04/schema /workspace…)
+▸
+Thinking
+Now the ledger. Let me build it as JSON via python for accuracy, including statu…
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/write…)
+▸
+Thinking
+candidates_framework_single.csv is now stale (6 rows from earlier filter). candi…
+▸
+Shell
+(cd /workspace/kn035_case04 && rm -f candidates_fra…)
+▸
+Thinking
+Interesting: evolutionary WT is minimum at K27 and C33 — both in CDR1/paratope. …
+▸
+Write
+(/workspace/kn035_case04/report.md)
+▸
+Write
+(/workspace/kn035_case04/cross_eval_case03.md)
+▸
+Steer
+03→04对照输入：完整MutXaff已由浏览器下载并核验。前三个全B单点候选是B:A35W(ddG_pred=-1.7464554)、B:V109L(-1.6510735)、B:A35Y(-1.5832196)，03正在对这三个正确变体做MMFold。请现在用本案例三项原始评分表逐一读取这三个突变的稳定性/序列适配度/进化score及相对WT差值，扫描变体风险位点，生成affinity-candidates-x-developability.csv/json，明确V109在原生Paratope/CDR且不属于可开发性框架区推荐。再追加B:A35F(-1.5236144)、B:V109W(-1.5057821)、B:C33Y(-1.4980912)、B:Q116M(-1.4936166)、B:A97F(-1.4836845)、B:A35S(-1.4654148)、B:Q116K(-1.4106131)的对照；C33Y破坏二硫键必须警示排除。以上ΔΔG单位如工具未明确给出不要替工具断言。请保留原始字串。完成后打包并给真实任务ID。
+Thinking
+The user gives the case03 top-3 affinity candidates plus 7 more for comparison. …
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+All 10 are present in the tables. Interesting:
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Great structural data:
+▸
+Write
+(/workspace/kn035_case04/scripts/cross_eval_case03.…)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/cross…)
+▸
+Thinking
+Mutation format is "B:A35W" — 5 chars: B, :, A, 3, 5, W → mut[2:-1] = "A35". Nee…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Results. A35S consensus 0.000? Let's check: -0.933/5.566 + 1.046/9.065 + 0.541/1…
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+Good. One issue: for C33Y the developability_flags only say "IMGT_CDR" not "PARA…
+▸
+Write
+(/workspace/kn035_case04/cross_eval_case03.md)
+▸
+Steer
+状态更正（不要写错已验证结构）：案例03实际已完成的正确任务变体为A35W、V109L、C33Y，另追加了界面优先Q116M、T105L的MMFold。A35Y只在评分表中，尚无结构；不要说A35Y已结构验证。请在10行对照表补T105L（ddG从亲和力表未同步，保留null等我本地合并），把structure_validation_status写external_case03_pending_verification，最终本地会用真正CIF再核验。
+Thinking
+User corrections:
+▸
+Shell
+(cd /workspace/kn035_case04 && grep -E "^105,T,L," …)
+▸
+Thinking
+T105L: stability -0.049, seq -0.042, evo -0.711, consensus = (-0.0088 -0.0046 -0…
+▸
+Edit
+(/workspace/kn035_case04/scripts/cross_eval_case03.…)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/cross…)
+▸
+Thinking
+Now update cross_eval_case03.md with 11 rows, corrected structure status, and ch…
+▸
+Write
+(/workspace/kn035_case04/cross_eval_case03.md)
+▸
+Thinking
+Now update report.md: section 7 (cross-eval status) and summary bullet 6. Also u…
+▸
+Edit
+(/workspace/kn035_case04/report.md)
+▸
+Thinking
+Also update the report's file list to include the new files. Let me add rows for…
+▸
+Edit
+(/workspace/kn035_case04/scripts/write_ledger.py)
+▸
+Shell
+(cd /workspace/kn035_case04 && python scripts/write…)
+▸
+Thinking
+Now update the report file list to add the two affinity files, and add a note ab…
+▸
+Edit
+(/workspace/kn035_case04/report.md)
+▸
+Thinking
+Now also add an explicit statement in reports that A35Y isn't structurally valid…
+▸
+Write
+(/workspace/kn035_case04/README.md)
+▸
+Shell
+(cd /workspace && rm -f kn035_case04.zip && python …)
+▸
+Shell
+(cd /workspace && python - <<'EOF' import zipfile, …)
+▸
+Thinking
+28 files. The scripts/annotate_candidates.py is now stale (it reads candidates_f…
+▸
+Shell
+(cd /workspace/kn035_case04 && rm -f scripts/annota…)
+▸
+SelectResidues
+(342605181223936)
+▸
+37 residues in Chain B
+Selected 37 residues: B:26,27,28,29,30,31,32,33,51,52,53,54,55,56,57,58,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117
+SelectResidues
+(#ffd93d)
+▸
+4 residues in Chain B
+Selected 4 residues: B:22,33,96,106
+Thinking
+Note the append replaced selection? It says "Selected 4 residues" — append=true …
+▸
+SelectResidues
+(#5ee08b)
+▸
+5 residues in Chain B
+Selected 5 residues: B:5,60,73,75,93
+SelectResidues
+(#f0a33c)
+▸
+2 residues in Chain B
+Selected 2 residues: B:47,50
+ManageAnnotation
+(create)
+▸
+39 residues in Chain B
+IMGT CDR B26-33 / B51-58 / B97-117 plus the four disulfide Cys B22-B96, B33-B106. All excluded from candidate selection.
+ManageAnnotation
+(create)
+▸
+5 residues in Chain B
+Tier A framework candidates away from the paratope (Q5V, L60Y, N73D, A75S, M93V/M93T). Candidates only, not experimentally validated.
+ManageAnnotation
+(create)
+▸
+2 residues in Chain B
+Tier B candidates that pack directly against paratope residues (R47 2.6 A from V109; K50 3.35 A from D103, buried). Highest scores but binding risk.
+Thinking
+Now final verification of deliverables: confirm zip contains updated files, and …
+▸
+Shell
+(cd /workspace/kn035_case04 && python - <<'EOF' imp…)
+▸
+Thinking
+All good. The zip has 29 files (without the removed annotate script).
+▸
+
+已完成。三模型全饱和扫描、9 个框架候选、11 行案例03 对照表和本地风险扫描都已写入交付目录，并重新打包。
+
+交付
+目录：/workspace/kn035_case04/
+压缩包：`
+Click to enlarge
+Open in file panel
+
+`（29 个文件，全部非空）
+
+3D 视图已标注：CDR/二硫键保护位点（红/黄）、Tier A 候选（绿）、Tier B 候选（橙）
+真实任务 ID
+任务	task ID	状态
+Structural Stability Mutation Effect	342605430273024	succeed，payload structure_path 指向链B结构对象
+Sequence Fitness Mutation Effect	342605430948864	succeed，payload 为链B实体序列
+Evolutionary Mutation Effect	342605471151104	succeed（修正版，采用）
+Evolutionary Mutation Effect（误录 125 aa）	342605433852928	作废，输出未使用，已写入 ledger
+方向与单位（有证据，不是假设）
+
+三个模型中 WT 自身得分在 128 个位点全部恰为 0.0；WT 是位点最高分者分别为 68/128（stability）、72/128（seq fitness）、87/128（evo），最小分位点为 0/0/2 → 分数越高越有利，delta = score_mut − 0。三者均为无量纲模型分，不是 kcal/mol ΔΔG、不是表达量或溶解度。
+
+案例03 对照（11 行，ddG 原始字串逐字保留、未断言单位）
+突变	ddG_pred	Stability Δ	Seq-fitness Δ	Evo Δ	判定
+B:A35W	-1.7464554	−4.93	−1.99	−2.24	框架区但结构代价极大（03 已有结构，待本项目核验）
+B:V109L	-1.6510735	−0.04	+0.20	+1.34	原生 paratope/CDR3，不算框架可开发性推荐
+B:A35Y	-1.5832196	−4.14	+0.55	−0.02	结构代价极大；仅评分表，无结构
+B:A35F	-1.5236144	−5.03	−0.43	−1.43	结构代价极大，无结构
+B:V109W	-1.5057821	−2.21	−0.74	+0.49	paratope，非框架推荐
+B:C33Y	-1.4980912	−5.40	+2.59	+3.64	排除：破坏 B33–B106（SG–SG 2.18 Å）
+B:Q116M	-1.4936166	−2.15	−0.73	−3.38	界面优先；并新增暴露 Met 氧化位点
+B:A97F	-1.4836845	−5.11	−4.49	−2.07	全部行最差
+B:A35S	-1.4654148	−0.93	+1.05	+0.54	唯一可进入框架可开发性讨论（有条件）
+B:Q116K	-1.4106131	+0.64	−0.14	+0.07	paratope，非框架推荐
+B:T105L	null（未同步）	−0.05	−0.04	−0.71	界面优先改造，ddG 待您本地合并回填
+
+结构状态字段：全部为 external_case03_pending_verification；案例03 已完成结构仅 A35W/V109L/C33Y/Q116M/T105L，A35Y 未做结构验证，文中未如此表述。
+
+最值得注意的一点：C33Y 的序列（+2.59）与进化（+3.64）模型都给了正分——这两类模型对二硫键完全盲视，只有结构模型（−5.40）抓住了破坏 B33–B106 的代价。同理，A35W/Y/F 的亲和力收益在反向折叠模型上要付 −4 到 −5 的结构代价，因为 A35 埋藏（relSASA 0.017）且紧贴 paratope 的 F115（4.0 Å）。
+
+框架候选（9 个，均未验证结构）
+
+Tier A（距 paratope ≥8 Å）：Q5V、L60Y、M93V、M93T、N73D、A75S；Tier B（紧贴 paratope，结合风险）：K50S、K50A、R47L。K50 完全埋藏并与 CDR3 的 D103 成 3.35 Å 盐桥，R47 属 VHH hallmark 四联体且距 V109 仅 2.63 Å——这两个综合分最高，但风险也最高。
+
+待办
+T105L 的 ddG 回填后重排 11 行表；
+收到案例03 真实 CIF 后，在本项目逐体核验结构并更新 structure_validation_status；
+N84S（脱酰胺热点、表面暴露）本轮未被候选覆盖，若做可开发性改造需单独设计再打分。
+09:31
+MMFold_1_c...
+Upload
+AI-generated research aid. Experimental validation advised
+Workspace
+downloads
+3
+evolutionary_mutation_effect_342605471151104
+1
+sequence_fitness_mutation_effect_342605430948864
+1
+structural_stability_mutation_effect_342605430273024
+1
+kn035_case04
+19
+inputs
+1
+raw
+3
+schema
+3
+scripts
+5
+tasks
+3
+affinity-candidates-x-developability.csv
+affinity-candidates-x-developability.json
+candidates_final.csv
+cross_eval_case03.md
+direction_evidence.json
+mapping_mos_to_MMFold1_chainB.csv
+merged_mutation_delta_table.csv
+README.md
+report.md
+residue_exposure.csv
+risk_scan_local.csv
+structure_verification.json
+task_ledger.json
+wt_baseline.csv
+protein_data
+1
+protein_342605181223936
+1
+kn035_case04.zip
+Download

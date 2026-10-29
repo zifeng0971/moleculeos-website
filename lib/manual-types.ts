@@ -26,3 +26,9 @@ export interface ManualManifest {
   version: number; languages: Record<Locale, { source: string; title: string; groups: ManualGroup[]; assets: ManualAsset[]; pageCount: number }>;
   warnings: string[];
 }
+
+export type ManualNavigationPage = Pick<ManualPage,'id'|'title'|'href'|'groupSlug'|'anchors'|'counterpart'>;
+export type ManualNavigationGroup = Pick<ManualGroup,'title'|'slug'|'overviewAnchors'> & {pages:ManualNavigationPage[]};
+export interface ManualNavigation {
+  languages: Record<Locale,{groups:ManualNavigationGroup[];anchorCounterparts:Record<string,string>}>;
+}

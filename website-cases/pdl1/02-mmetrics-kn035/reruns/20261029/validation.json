@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-29T06:11:15.308009+00:00",
+  "local_time": "2026-10-29T13:11:15.308009+07:00",
+  "status": "passed",
+  "checks": {
+    "prompt_byte_identical_to_original": true,
+    "prompt_sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94",
+    "original_prompt_sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94",
+    "input_structure": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1/01-structure/raw/MMFold_1.cif",
+    "input_structure_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "input_structure_matches_master": true,
+    "imported_structure_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "imported_structure_matches_master": true,
+    "project_id": "345488380847104",
+    "task_observations": [
+      {
+        "task_id": "345488784917504",
+        "status": "SUCCEED",
+        "stage_or_ownership": "automatic (platform auto-compute, not user-launched)",
+        "source_file": "raw/mos-export/kn035_case02/task-ledger.json"
+      },
+      {
+        "task_id": "345489060729856",
+        "status": "SUCCEED",
+        "stage_or_ownership": "automatic (spawned by 345488784917504)",
+        "source_file": "raw/mos-export/kn035_case02/task-ledger.json"
+      }
+    ],
+    "task_count_observed": 2,
+    "native_record": "raw/mos-export/kn035_case02/raw/mmetrics_345489060729856/record.json",
+    "native_record_sha256": "5f9240b89d8bdd4dbce27c7c6104eb4027d705d3463c87e5e9d4846a82c42748",
+    "native_homolog_rows": 3,
+    "native_homologs_empty": false,
+    "extracted_homolog_rows": 3
+  },
+  "failures": [],
+  "incomplete_evidence": [],
+  "scope_limits": [],
+  "new_tasks_submitted_by_this_script": false
+}

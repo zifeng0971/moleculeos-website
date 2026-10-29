@@ -1,0 +1,268 @@
+[
+  {
+    "id": "immunelogicinc",
+    "name": "医铭 / ImmuneLogic（可能为医铭康达）",
+    "status": "missing_verified_logo",
+    "file": null,
+    "notes": [
+      "未找到可验证的正式 logo。英诺嘿呀公司页仅提供普通黑色公司名占位图，未将其冒充正式 logo。需补充官网或原始 logo。"
+    ]
+  },
+  {
+    "id": "gensciences",
+    "name": "晟斯生物",
+    "status": "downloaded_and_cropped",
+    "file": "gensciences.png",
+    "width": 310,
+    "height": 112,
+    "original": "originals/gensciences.png",
+    "source_url": "https://www.gensciences.com/uploadfile/202311/a84135a4dbc26dc.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      0,
+      0,
+      302,
+      104
+    ],
+    "notes": [],
+    "sha256": "75bb4e3b449bbe1b8bfc1ac2f46f8672654bc6224dd3d28e7103fae73026dc47"
+  },
+  {
+    "id": "cofco",
+    "name": "中粮集团",
+    "status": "downloaded_and_cropped",
+    "file": "cofco.png",
+    "width": 1304,
+    "height": 639,
+    "original": "originals/cofco.png",
+    "source_url": "http://www.cofco.com/img/logo_2.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      8,
+      5,
+      1264,
+      596
+    ],
+    "notes": [],
+    "sha256": "1d92bfec701eb8a6e80792eef1c7069d0d5aa25b6a966903674d0bb0bcb0b073"
+  },
+  {
+    "id": "qilu",
+    "name": "齐鲁制药",
+    "status": "downloaded_and_cropped",
+    "file": "qilu.png",
+    "width": 357,
+    "height": 79,
+    "original": "originals/qilu.jpg",
+    "source_url": "https://mma.prnewswire.com/media/2073821/QILU_logo.jpg",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      23,
+      39,
+      374,
+      112
+    ],
+    "notes": [
+      "采用齐鲁制药发布的 PR Newswire 新闻稿配套 logo。"
+    ],
+    "sha256": "38367d8404b0ce96899e54d3b67351ce1f12e34bfc6d700950bdaf8105fba4b3"
+  },
+  {
+    "id": "smmu",
+    "name": "海军军医大学",
+    "status": "downloaded_and_cropped",
+    "file": "smmu.png",
+    "width": 69,
+    "height": 69,
+    "original": "originals/smmu.png",
+    "source_url": "https://www.smmu.edu.cn/_upload/tpl/00/1e/30/template30/images/logo.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      2,
+      5,
+      65,
+      68
+    ],
+    "notes": [
+      "从官网招生页页眉原图中单独裁出校徽，去除右侧招生信息网文字；原图完整保留。"
+    ],
+    "sha256": "72440728339d0ad3aa14cd3e67dac048bc5ccc1bad9aeb4df5708e56b17b6d71"
+  },
+  {
+    "id": "hengrui",
+    "name": "恒瑞医药",
+    "status": "downloaded_and_cropped",
+    "file": "hengrui.png",
+    "width": 299,
+    "height": 151,
+    "original": "originals/hengrui.png",
+    "source_url": "https://www.hengrui.com/images/logo.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      6,
+      23,
+      293,
+      162
+    ],
+    "notes": [],
+    "sha256": "67f2c4a065a71b710229b7e2d91c01fcc6511e1ea4298a9e32b2c4d8dd81a5f2"
+  },
+  {
+    "id": "cspc",
+    "name": "石药集团",
+    "status": "downloaded_and_cropped",
+    "file": "cspc.png",
+    "width": 2401,
+    "height": 513,
+    "original": "originals/cspc.png",
+    "source_url": "https://en.e-cspc.com/data/upload/20220913/63202888ebb9e.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      136,
+      52,
+      2499,
+      527
+    ],
+    "notes": [],
+    "sha256": "cd849e830120a9c8956ade8f22a7c9cb0cdb18985861628c5244d1125042e4e7"
+  },
+  {
+    "id": "genscigroup",
+    "name": "金赛药业",
+    "status": "downloaded_and_cropped",
+    "file": "genscigroup.png",
+    "width": 339,
+    "height": 171,
+    "original": "originals/genscigroup.svg",
+    "source_url": "https://www.genscigroup.com/Public/Uploads/uploadfile/images/20230421/comlogo01.svg",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      0,
+      0,
+      327,
+      159
+    ],
+    "notes": [
+      "同时提供官网 SVG 原始矢量版；PNG 为 SVG 渲染后裁切。"
+    ],
+    "sha256": "31b88ee529b63e70f12372b01a6b096791c0223577c3930a00874d76c6b8525e"
+  },
+  {
+    "id": "cherami",
+    "name": "谢诺投资",
+    "status": "downloaded_and_cropped",
+    "file": "cherami.png",
+    "width": 164,
+    "height": 65,
+    "original": "originals/cherami.png",
+    "source_url": "https://www.ifc-cherami.com/OSS_PATH/img/彩色Logo.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      5,
+      4,
+      163,
+      63
+    ],
+    "notes": [],
+    "sha256": "3b3710384a78da47e7ca8a123f8e5c00ab7de97f86352615d83fc6d1ed9c6ef5"
+  },
+  {
+    "id": "henlius",
+    "name": "复宏汉霖",
+    "status": "downloaded_and_cropped",
+    "file": "henlius.png",
+    "width": 840,
+    "height": 234,
+    "original": "originals/henlius.jpg",
+    "source_url": "https://www.henlius.com/images/logo.jpg",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      4,
+      17,
+      826,
+      233
+    ],
+    "notes": [],
+    "sha256": "21a9cff3a6d987aa786e68bc07696ad5ee62f7857886655393fe84fd76d0ff92"
+  },
+  {
+    "id": "jinhe",
+    "name": "安徽金禾实业",
+    "status": "downloaded_and_cropped",
+    "file": "jinhe.png",
+    "width": 212,
+    "height": 54,
+    "original": "originals/jinhe.jpg",
+    "source_url": "https://www.ajhchem.com/upload/2019-07/156265283278212800.jpg",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      3,
+      27,
+      209,
+      75
+    ],
+    "notes": [
+      "用户已明确确认是安徽金禾实业。"
+    ],
+    "sha256": "e93267d201679278330115e9805389ba754cc1be303dfed9e1d501973ccedfb7"
+  },
+  {
+    "id": "sungening",
+    "name": "祥根生物（官网标识：祥肽生物）",
+    "status": "downloaded_and_cropped",
+    "file": "sungening.png",
+    "width": 196,
+    "height": 59,
+    "original": "originals/sungening.png",
+    "source_url": "http://cdn.myxypt.com/201a9729/26/09/e55850003f4d0c5d8a71ef229a387be2e8bdfec4.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      1,
+      3,
+      191,
+      56
+    ],
+    "notes": [
+      "用户名单写祥根生物；sungening.com 当前官网展示祥肽生物 / SUNGETIDE 品牌，按当前官网收录。"
+    ],
+    "sha256": "815096f0ae9b91de414c6ca2267886eb8ba05803bf63dcc0b51171fef603fe5f"
+  },
+  {
+    "id": "hansoh",
+    "name": "豪森药业",
+    "status": "downloaded_and_cropped",
+    "file": "hansoh.png",
+    "width": 177,
+    "height": 56,
+    "original": "originals/hansoh.png",
+    "source_url": "https://www.hansoh.cn/upload/images/2023/11/21/dec5bfdd68b8404ea78fa2c4f8470ca1.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      0,
+      0,
+      171,
+      50
+    ],
+    "notes": [],
+    "sha256": "b9ab14bc7bc4b8fbf71e460735ac8c8d1bf95bee4149d99bf88be5f0b04b3d41"
+  },
+  {
+    "id": "asymchem",
+    "name": "凯莱英",
+    "status": "downloaded_and_cropped",
+    "file": "asymchem.png",
+    "width": 642,
+    "height": 86,
+    "original": "originals/asymchem.png",
+    "source_url": "https://www.asymchem.com.cn/images/logoNew.png",
+    "retrieved_on": "2026-10-26",
+    "crop_box": [
+      0,
+      0,
+      636,
+      80
+    ],
+    "notes": [],
+    "sha256": "5ec279b15748872e5700fa1803140fc57e8a1864dcb4f6c0611dda3878f3f73a"
+  }
+]

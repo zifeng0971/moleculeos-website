@@ -1,0 +1,398 @@
+{
+  "source_kind": "native_UI_DOM",
+  "items": [
+    {
+      "attributes": {
+        "class": "card___SiRDn cardClickable___jmlKV ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Toggle highlight in 3D viewer"
+      },
+      "text": "CDR3 residues · IMGTB:26-33B:51-58B:97-117"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "H-CDR1 (chain B)"
+      },
+      "text": "B:26-33"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "H-CDR2 (chain B)"
+      },
+      "text": "B:51-58"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "H-CDR3 (chain B)"
+      },
+      "text": "B:97-117"
+    },
+    {
+      "attributes": {
+        "class": "card___SiRDn cardClickable___jmlKV ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Toggle highlight in 3D viewer"
+      },
+      "text": "Paratope18 residues · structureB:LYS27B:SER29B:SER30B:ARG32B:ASP99B:SER100B:PHE101B:GLU102B:ASP103B:PRO104B:THR105B:LEU108B:VAL109B:SER111B:GLY113B:ALA114B:PHE115B:GLN116"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:LYS27"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:SER29"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:SER30"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:ARG32"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:ASP99"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:SER100"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:PHE101"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:GLU102"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:ASP103"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:PRO104"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:THR105"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:LEU108"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:VAL109"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:SER111"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:GLY113"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:ALA114"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:PHE115"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      "text": "B:GLN116"
+    },
+    {
+      "attributes": {
+        "class": "card___SiRDn cardClickable___jmlKV ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Toggle highlight in 3D viewer"
+      },
+      "text": "Epitope19 residues · structureA:ILE38A:TYR40A:GLU42A:ASP45A:ASN47A:GLN50A:VAL52A:HIS53A:ASP57A:VAL60A:ARG97A:MET99A:SER101A:GLY103A:GLY104A:ALA105A:ASP106A:TYR107A:ARG109"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ILE38"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:TYR40"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:GLU42"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ASP45"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ASN47"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:GLN50"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:VAL52"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:HIS53"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ASP57"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:VAL60"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ARG97"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:MET99"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:SER101"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:GLY103"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:GLY104"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ALA105"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ASP106"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:TYR107"
+    },
+    {
+      "attributes": {
+        "class": "restag___MI50j restagActive___tgXVr ",
+        "role": "button",
+        "tabindex": "0",
+        "title": "Epitope on antigen chains A (bound by VHH chain B)"
+      },
+      "text": "A:ARG109"
+    }
+  ],
+  "absent_sections": [
+    "Domain",
+    "PTM",
+    "UniProt Feature",
+    "Antibody Design"
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-29T06:11:15.308009+00:00",
+  "validation_status": "passed",
+  "project_id": "345488380847104",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2177,
+      "sha256": "9dc8189ce9ef75a776e8872750e7724fbe86dcc94da3563db4974de0f5a7c428"
+    },
+    {
+      "path": "homologs-summary.json",
+      "bytes": 2773,
+      "sha256": "e8d8f4f62f812b51066f5cf2af3bd548b562ca310af10afb85cef6c797dfef72"
+    },
+    {
+      "path": "input.json",
+      "bytes": 1489,
+      "sha256": "f115797eafcd1684743f6e9e9b037654fe375eb85d9d13ad1cf67e09126ad389"
+    },
+    {
+      "path": "raw/homologs-native.json",
+      "bytes": 2493,
+      "sha256": "737edccd6a20855d00bc4dae2e558260074ea974af72781def173e40bd1109dc"
+    },
+    {
+      "path": "raw/homologs-ui-cards.json",
+      "bytes": 2079,
+      "sha256": "b8c57f724415956ca482e3c5e524f53a3f7f50bdae739bd0b3945c04bfb17c2c"
+    },
+    {
+      "path": "raw/homologs-ui-dom.json",
+      "bytes": 50590,
+      "sha256": "0b853a1b257c81a9ad2b8646702ac3f95dd5217862469967abce528e70fc8cd9"
+    },
+    {
+      "path": "raw/kn035_case02.zip",
+      "bytes": 444278,
+      "sha256": "18b787c8acb639120fd6e4965a6bc613a08dfac074f95844e7001dd71e306342"
+    },
+    {
+      "path": "raw/mocha-completed-dom.txt",
+      "bytes": 18271,
+      "sha256": "49e8d6e5b5a41ed840dcf62ff77f40c106a70a83530eeb30a96feaf047066a87"
+    },
+    {
+      "path": "raw/mocha-progress-dom.txt",
+      "bytes": 12486,
+      "sha256": "28f57837fa708b60fa211c9b6439bbf388a85767aef8b458ddd5a75b7d838de9"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/README.md",
+      "bytes": 6283,
+      "sha256": "e8e491bcc7748db4d36b51a01e034ab10cee1137209534bafdd7fac8c7581d06"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/build_metadata.py",
+      "bytes": 21404,
+      "sha256": "e51b1c63513d89770ef6af3ec6c8f86602fb46da21cbca8d5e2e754ea2e4f0b2"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/input/MMFold_1.cif",
+      "bytes": 154131,
+      "sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/input/chain_A_PD-L1.fasta",
+      "bytes": 135,
+      "sha256": "ecdecc8e4943ce0aa2ce1254653943d9795d45adf256b528dbc272c2f4d213a8"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/input/chain_B_KN035_VHH.fasta",
+      "bytes": 145,
+      "sha256": "82dc24b56db38483b6725896a6728515e2fd9f20d7f36dc11fbf9e6be307faec"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/make_readme.py",
+      "bytes": 7374,
+      "sha256": "fb940dfbdf09b02c8d6cd30c22428e0a1972d8fe4c70963ca91c85c00a4db685"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/numbering-map.json",
+      "bytes": 68056,
+      "sha256": "137b188955498a794f05d1274c3162fba22dd32f7307afe3ced040ebc4d80696"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/payload/autocompute_345488784917504.payload.json",
+      "bytes": 402,
+      "sha256": "bc9c78a777e8d5037ca27a934e837b958cf14eee4abcf3b2e7d689aaee23ef47"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/payload/mmetrics_345489060729856.payload.json",
+      "bytes": 2420,
+      "sha256": "72e97966903fd0995509ad2b24cb7fdbfd23bc958db76f816fba9981551f4be1"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/provenance.json",
+      "bytes": 8083,
+      "sha256": "6b474299d91f8d4bdc529424a6b645e642b0bc3ca77f6ad5e68dbef1cc8028f2"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/affinity_scores.csv",
+      "bytes": 248333,
+      "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/all_sequences.fasta",
+      "bytes": 98182,
+      "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/evolutionary_scores.csv",
+      "bytes": 99890,
+      "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/sequence_scores.csv",
+      "bytes": 126395,
+      "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/similarity_results.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/autocompute_345488784917504/struct_fitness_scores.csv",
+      "bytes": 126608,
+      "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/raw/mmetrics_345489060729856/record.json",
+      "bytes": 24397,
+      "sha256": "5f9240b89d8bdd4dbce27c7c6104eb4027d705d3463c87e5e9d4846a82c42748"
+    },
+    {
+      "path": "raw/mos-export/kn035_case02/task-ledger.json",
+      "bytes": 6345,
+      "sha256": "af33e367143d4f2cb81d0b726f084b8948a98762400aadcf76d33b81081086aa"
+    },
+    {
+      "path": "raw/native-panel-dom.txt",
+      "bytes": 10291,
+      "sha256": "3ba2211791094da22d7aec151aaf2e37f5c48eed57cd6848d52824b6c91cd50f"
+    },
+    {
+      "path": "raw/native-panel.html",
+      "bytes": 44345,
+      "sha256": "edd07c181a7a895652ab129ce9ccdc912be2c7f0a06ff512210930b4ffd544f9"
+    },
+    {
+      "path": "raw/native-panel.json",
+      "bytes": 56823,
+      "sha256": "dc352cbdfdd21e2f59b991c0de5597fb77ca5c93dccbc0da2811188cb9a6ef48"
+    },
+    {
+      "path": "raw/native-panel.txt",
+      "bytes": 2415,
+      "sha256": "8da7845afdf6635a12ba5f7a6a24d15f74f7154c66fa5c75cb7c7f42aa9d06da"
+    },
+    {
+      "path": "raw/pre-rerun-dom.txt",
+      "bytes": 9880,
+      "sha256": "974b35deaeb3fdcd2f487574fc36b2039e063c5838f26b6f7bb07373650fa9f2"
+    },
+    {
+      "path": "raw/prompt-submitted-dom.txt",
+      "bytes": 7342,
+      "sha256": "14ffea4cc5c9eff5a0faf9d7d2747d97ff4c1e9fe784d79e4db6191b96dbb4fc"
+    },
+    {
+      "path": "results.json",
+      "bytes": 5840,
+      "sha256": "cc2685d9372b2bc7554189ff7f9a0c45d44a5389df60d308801dcb4917c6aec9"
+    },
+    {
+      "path": "scripts/finalize_rerun.py",
+      "bytes": 12449,
+      "sha256": "1887f71acde24207eebbc91448d2712e08d34bd1fe3ad8ecc6cbb5b8db23faac"
+    },
+    {
+      "path": "submitted-prompt.txt",
+      "bytes": 1150,
+      "sha256": "9b02ca7773f4fd5aba14c34cabf80f3d0b24b549060b32b1e30dd0cf69c99f94"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1783,
+      "sha256": "817d8dbd397d13427a94fc8e7ff849b202ca2cb7fb6583f29231d93ecdd7e67b"
+    },
+    {
+      "path": "visuals/before-rerun.jpg",
+      "bytes": 100428,
+      "sha256": "34eabfec0e19c673e4f5baaaf274c8d157f28581acb0fa2c265b390c6184076c"
+    },
+    {
+      "path": "visuals/native-homologs-overview.jpg",
+      "bytes": 93209,
+      "sha256": "f70f5dabd2baca0c060a74d2a7f1644b069f2cc2ef1494878a669ba0445dbd35"
+    },
+    {
+      "path": "visuals/prompt-submitted.jpg",
+      "bytes": 86289,
+      "sha256": "eb589f4ce2182abe57b20fded0b915a1e4f98ddbdc5185b70e3124586411ef89"
+    }
+  ],
+  "file_count": 41,
+  "total_bytes": 3849851,
+  "hash_policy": "manifest.json and SHA256SUMS.txt excluded from own inventory; validation.json included; optional ZIP is outside inventory"
+}

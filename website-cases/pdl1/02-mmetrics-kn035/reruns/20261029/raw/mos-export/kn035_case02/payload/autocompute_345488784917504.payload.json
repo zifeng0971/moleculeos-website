@@ -1,0 +1,13 @@
+{
+  "task_id": "345488784917504",
+  "task_name": "autocompute-MMFold_1",
+  "task_type": "MOSTask",
+  "status_at_capture": "SUCCEED",
+  "duration": "1.1min",
+  "started": "2026-10-29 05:57:28",
+  "input_parameters": {
+    "structure_path": "user_objects/123/330665428816896/345488780645376_MMFold_1.cif",
+    "structure_pathFileId": "345488780645376",
+    "structure_pathFilename": "MMFold_1.cif"
+  }
+}

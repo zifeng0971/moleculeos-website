@@ -1,0 +1,188 @@
+{
+ "case": "kn035_case03",
+ "note": "Full submitted payloads for every MMFold variant task. Chain A is the unmodified 118 aa MMFold_1 PD-L1 sequence in every payload.",
+ "chainA_sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+ "chainA_sha256": "9e9b8a49fd40bdf218b1f38d708f0694a6580875eadf9e0f49a526a332f2161c",
+ "tasks": {
+  "A35W": {
+   "task_id": "342605501072384",
+   "payload_file": "variants/payload_A35W.json",
+   "payload_sha256": "9a3d7f5eec6fcfb8b94ac6738a9fae82859c4b86583741057b6484a13e06bd5e",
+   "payload": {
+    "name": "KN035_c03_variant_A35W",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMWWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      }
+     }
+    ]
+   },
+   "chainB_variant_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMWWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+   "chainB_variant_sha256": "195293ee9f6467e59e19d192ea84d3453a4a584c4fb5d47565e1f0ebf876f3dc",
+   "chainB_length": 128,
+   "n_differences_vs_WT": 1,
+   "differences": [
+    {
+     "position": 35,
+     "wt": "A",
+     "mutant": "W"
+    }
+   ],
+   "chainA_identical_to_WT": true
+  },
+  "V109L": {
+   "task_id": "342605511136256",
+   "payload_file": "variants/payload_V109L.json",
+   "payload_sha256": "e6aad5e048a1afeb5615c87399b6ad910bb3bf0d58ea5e7e74f60397eef9e7ed",
+   "payload": {
+    "name": "KN035_c03_variant_V109L",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLLTSSGAFQYWGQGTQVTVSS"
+      }
+     }
+    ]
+   },
+   "chainB_variant_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLLTSSGAFQYWGQGTQVTVSS",
+   "chainB_variant_sha256": "f4532fcd8194251f1e331b85b6f963424a5e4f66e59f0dfda2d9fc84e8edfa0f",
+   "chainB_length": 128,
+   "n_differences_vs_WT": 1,
+   "differences": [
+    {
+     "position": 109,
+     "wt": "V",
+     "mutant": "L"
+    }
+   ],
+   "chainA_identical_to_WT": true
+  },
+  "C33Y": {
+   "task_id": "342605520978944",
+   "payload_file": "variants/payload_C33Y.json",
+   "payload_sha256": "608be95368d59cab6611dc159f76047cf12b3847b042f271b9289fde97d58b1e",
+   "payload": {
+    "name": "KN035_c03_variant_C33Y",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRYMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      }
+     }
+    ]
+   },
+   "chainB_variant_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRYMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+   "chainB_variant_sha256": "a45a4459b5f4685c19f45af4b0ea2c6f2afab97c43ceb23eb47e4a81f0cfb4e7",
+   "chainB_length": 128,
+   "n_differences_vs_WT": 1,
+   "differences": [
+    {
+     "position": 33,
+     "wt": "C",
+     "mutant": "Y"
+    }
+   ],
+   "chainA_identical_to_WT": true
+  },
+  "Q116M": {
+   "task_id": "342606341129216",
+   "payload_file": "variants/payload_Q116M.json",
+   "payload_sha256": "dd09cedf0db1eb7e786363e4d489fd16a1efffff1fd2593fd41b1e845d7dd8f9",
+   "payload": {
+    "name": "KN035_c03_variant_Q116M",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFMYWGQGTQVTVSS"
+      }
+     }
+    ]
+   },
+   "chainB_variant_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFMYWGQGTQVTVSS",
+   "chainB_variant_sha256": "6dee00ea1e3cf4c4c467471ec58d46e7c76e1d5e3d5fa02602fd6b7ab359f733",
+   "chainB_length": 128,
+   "n_differences_vs_WT": 1,
+   "differences": [
+    {
+     "position": 116,
+     "wt": "Q",
+     "mutant": "M"
+    }
+   ],
+   "chainA_identical_to_WT": true
+  },
+  "T105L": {
+   "task_id": "342606351508480",
+   "payload_file": "variants/payload_T105L.json",
+   "payload_sha256": "f74e4ace1bb76af75a072e53cb2ce8d17f633db0879d14a1265d4e9c185e4185",
+   "payload": {
+    "name": "KN035_c03_variant_T105L",
+    "dialect": "mmfold",
+    "version": 1,
+    "sequences": [
+     {
+      "protein": {
+       "id": "A",
+       "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      }
+     },
+     {
+      "protein": {
+       "id": "B",
+       "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPLCTLVTSSGAFQYWGQGTQVTVSS"
+      }
+     }
+    ]
+   },
+   "chainB_variant_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPLCTLVTSSGAFQYWGQGTQVTVSS",
+   "chainB_variant_sha256": "e262ab29d96cebd54917984c49dc20d00c66808aed32ce0f2ce39e2bffd8adaa",
+   "chainB_length": 128,
+   "n_differences_vs_WT": 1,
+   "differences": [
+    {
+     "position": 105,
+     "wt": "T",
+     "mutant": "L"
+    }
+   ],
+   "chainA_identical_to_WT": true
+  }
+ }
+}

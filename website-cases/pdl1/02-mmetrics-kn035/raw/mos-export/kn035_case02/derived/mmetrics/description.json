@@ -1,0 +1,38 @@
+{
+  "source": "raw/native_task_342604577018880/record.json",
+  "native_field_paths": [
+    "classification.class",
+    "classification.confidence",
+    "classification.reasoning",
+    "classification.description",
+    "protein_metadata.entities[].antibody_fragment"
+  ],
+  "class": "antigen-antibody",
+  "confidence": "high",
+  "reasoning": "The structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.",
+  "description": "This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available.",
+  "entity_roles": [
+    {
+      "entity_id": 1,
+      "chain_id": [
+        "A"
+      ],
+      "role": "antigen / bound target",
+      "evidence": "class=antigen-antibody; epitope annotation is on entity 1; no antibody_fragment tag"
+    },
+    {
+      "entity_id": 2,
+      "chain_id": [
+        "B"
+      ],
+      "role": "antibody fragment (VHH, heavy chain only)",
+      "evidence": "protein_metadata.entities[1].antibody_fragment = 'VHH'"
+    }
+  ],
+  "raw": {
+    "class": "antigen-antibody",
+    "confidence": "high",
+    "reasoning": "The structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.",
+    "description": "This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available."
+  }
+}

@@ -1,0 +1,708 @@
+{
+  "html": "<div class=\"panelBody___IvNbM\"><div class=\"sectionTitle___pxOql\">Description</div><div class=\"card___SiRDn\"><div class=\"rowChips___Om31A\"><span class=\"chip___lZd6_\" style=\"background: rgba(64, 150, 255, 0.133); color: rgb(64, 150, 255);\"><span class=\"dot___NtJsh\" style=\"background: rgb(64, 150, 255);\"></span>Antigen–Antibody</span><span class=\"chip___lZd6_\" style=\"background: rgba(82, 196, 26, 0.133); color: rgb(82, 196, 26);\">confidence: high</span></div><div class=\"desc___UHJPA\">This structure is an antibody fragment (Fab-like VL/VH pair) bound to Lysozyme C, a glycosyl hydrolase 22 family enzyme with bacteriolytic activity. The VL and VH chains form the antigen-binding module, while chain C corresponds to the lysozyme antigen recognized by the antibody. The complex illustrates molecular recognition of a bacterial cell-wall-degrading enzyme by an antibody, with no indication of a biologically relevant small-molecule ligand in the provided summary.</div><div class=\"reasoning___CdAzT\"><span class=\"reasoningLabel___rIfZ0\">Reasoning</span>The structure contains two antibody variable-domain chains, annotated as VL (chain A) and VH (chain B), forming an antibody fragment. Chain C is a separate protein antigen, identified by UniProt annotation as Lysozyme C, and the contact data show direct VL/VH interface with the antigen. Therefore the complex is best classified as antigen-antibody rather than a generic protein-protein complex.</div><div class=\"entities___sVaOI\"><span class=\"ent___gWVv7\"><b>Chain A</b> · protein · VL</span><span class=\"ent___gWVv7\"><b>Chain B</b> · protein · VH</span><span class=\"ent___gWVv7\"><b>Chain C</b> · protein</span></div></div><div class=\"sectionTitle___pxOql\">Homologs</div><div class=\"homologNote___j1eeB\">Searched by antigen sequence similarity</div><div class=\"card___SiRDn\"><span class=\"muted___O7EhN\">No significant homologs found.</span></div><div class=\"bondsHeader___bu2yN\"><span class=\"sectionTitleInline___Uc7kV\">Annotations</span></div><div class=\"schemeBar___ZShhk\"><span class=\"schemeLabel___Ps_W1\">CDR numbering</span><button type=\"button\" class=\"schemeBtn___cMx5S schemeBtnActive___xl3xZ\">IMGT</button><button type=\"button\" class=\"schemeBtn___cMx5S \">Kabat</button><button type=\"button\" class=\"schemeBtn___cMx5S \">Chothia</button></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">Binding Pocket</span><span class=\"annoCount___yWREU\">1 residue · uniprot</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"UniProt P00698 Binding site\" role=\"button\" tabindex=\"0\">C:ASP101</span></div></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">Active Sites</span><span class=\"annoCount___yWREU\">2 residues · uniprot</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"UniProt P00698 Active site\" role=\"button\" tabindex=\"0\">C:GLU35</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"UniProt P00698 Active site\" role=\"button\" tabindex=\"0\">C:ASP52</span></div></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">CDR</span><span class=\"annoCount___yWREU\">6 residues · IMGT</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"L-CDR1 (chain A)\" role=\"button\" tabindex=\"0\">A:27-32</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"L-CDR2 (chain A)\" role=\"button\" tabindex=\"0\">A:50-52</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"L-CDR3 (chain A)\" role=\"button\" tabindex=\"0\">A:89-97</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"H-CDR1 (chain B)\" role=\"button\" tabindex=\"0\">B:26-33</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"H-CDR2 (chain B)\" role=\"button\" tabindex=\"0\">B:51-57</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"H-CDR3 (chain B)\" role=\"button\" tabindex=\"0\">B:96-105</span></div></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">Paratope</span><span class=\"annoCount___yWREU\">47 residues · structure</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:TYR32</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:TYR49</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:TYR50</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:THR53</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:PHE91</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:TRP92</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:SER93</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:SER122</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:GLU123</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:THR126</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:ARG211</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:ASN212</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:GLU213</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VL chain A (binds antigen chains C)\" role=\"button\" tabindex=\"0\">A:CYS214</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:SER17</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:THR30</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:GLY31</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:TYR32</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:TRP52</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:GLY53</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASP54</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:THR57</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:TYR59</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LYS64</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:SER65</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ARG66</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LEU67</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:SER68</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LYS81</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASN83</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:SER84</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ARG99</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASP100</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:TYR101</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ARG102</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:SER159</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASN199</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LYS208</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:VAL209</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASP210</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LYS211</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:LYS212</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:VAL214</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:PRO215</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ARG216</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:ASP217</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Paratope of VH chain B (binds antigen chains C)\" role=\"button\" tabindex=\"0\">B:CYS218</span></div></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">Epitope</span><span class=\"annoCount___yWREU\">46 residues · structure</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:ARG5</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:CYS6</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:GLU7</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:ASP18</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN19</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLY22</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:SER24</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:LEU25</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:THR43</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ARG45</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:ARG68</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLN121</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:ILE124</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:ARG125</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\" role=\"button\" tabindex=\"0\">C:GLY126</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:CYS127</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VL chain A)\nEpitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ARG128</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:VAL2</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:TYR20</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ARG21</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:TYR23</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN27</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:PHE34</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLU35</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:SER36</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN37</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN39</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN44</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN46</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:THR47</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLY49</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLN57</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:LEU75</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASN77</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:LYS96</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:LYS97</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:SER100</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASP101</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLY102</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:LYS116</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:GLY117</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:THR118</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ASP119</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:VAL120</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:ALA122</span><span class=\"restag___MI50j restagActive___tgXVr \" title=\"Epitope on antigen chains C (bound by VH chain B)\" role=\"button\" tabindex=\"0\">C:LEU129</span></div></div><div class=\"card___SiRDn cardClickable___jmlKV \" role=\"button\" tabindex=\"0\" title=\"Toggle highlight in 3D viewer\"><div class=\"annoHead___oktZv\"><span class=\"annoName___ZcRnH\">Domain</span><span class=\"annoCount___yWREU\">1 residue · uniprot</span></div><div class=\"tags___hUCrE\"><span class=\"restag___MI50j restagActive___tgXVr \" title=\"UniProt P00698 Domain: C-type lysozyme\" role=\"button\" tabindex=\"0\">C:1-129</span></div></div><div class=\"bondsHeader___bu2yN\"><span class=\"sectionTitleInline___Uc7kV\">Interaction Network</span><div class=\"viewToggle___TgJar\"><button type=\"button\" class=\"viewBtn___UVCYM viewBtnActive___fE51y\">Table</button><button type=\"button\" class=\"viewBtn___UVCYM \">2D</button></div></div><div class=\"bondGroup___jIpmX\"><div class=\"tableCard___JoHeO\"><div class=\"metricChips___C1z6p\"><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(54, 207, 201);\"></span>H-Bond 10</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(154, 160, 166);\"></span>VdW Contact 61</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(255, 122, 69);\"></span>Salt Bridge 2</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(255, 197, 61);\"></span>π-Cation 1</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(255, 156, 110);\"></span>π-π Stack 4</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(105, 192, 255);\"></span>π-H Bond 1</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(212, 177, 6);\"></span>Disulfide Bond 1</span></div><table class=\"bondsTable___mMGqW\"><thead><tr><th>Type</th><th>Residue A</th><th>Residue B</th><th class=\"num___tFH75\">Dist (Å)</th></tr></thead><tbody><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:SER162</td><td class=\"mono___PKPeQ\">B:PRO170</td><td class=\"num___tFH75 mono___PKPeQ\">2.62</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:ASN138</td><td class=\"mono___PKPeQ\">B:HIS167</td><td class=\"num___tFH75 mono___PKPeQ\">2.73</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:GLU98</td><td class=\"num___tFH75 mono___PKPeQ\">2.80</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:PRO119</td><td class=\"mono___PKPeQ\">B:ARG216</td><td class=\"num___tFH75 mono___PKPeQ\">2.82</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:ASP1</td><td class=\"mono___PKPeQ\">B:SER61</td><td class=\"num___tFH75 mono___PKPeQ\">2.88</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:GLU123</td><td class=\"mono___PKPeQ\">B:LYS211</td><td class=\"num___tFH75 mono___PKPeQ\">2.90</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:TYR36</td><td class=\"mono___PKPeQ\">B:LEU103</td><td class=\"num___tFH75 mono___PKPeQ\">3.05</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:ASN137</td><td class=\"mono___PKPeQ\">B:SER183</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:GLN38</td><td class=\"mono___PKPeQ\">B:GLN39</td><td class=\"num___tFH75 mono___PKPeQ\">3.09</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:SER176</td><td class=\"mono___PKPeQ\">B:SER181</td><td class=\"num___tFH75 mono___PKPeQ\">3.32</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 122, 69);\">Ionic</span></td><td class=\"mono___PKPeQ\">A:GLU123</td><td class=\"mono___PKPeQ\">B:LYS211</td><td class=\"num___tFH75 mono___PKPeQ\">3.09</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 122, 69);\">Ionic</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:GLU98</td><td class=\"num___tFH75 mono___PKPeQ\">3.52</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 197, 61);\">π-Cation</span></td><td class=\"mono___PKPeQ\">A:TYR49</td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"num___tFH75 mono___PKPeQ\">3.89</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(105, 192, 255);\">π-H Bond</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:TRP47</td><td class=\"num___tFH75 mono___PKPeQ\">3.79</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 156, 110);\">π-π Stack</span></td><td class=\"mono___PKPeQ\">A:TYR36</td><td class=\"mono___PKPeQ\">B:TRP106</td><td class=\"num___tFH75 mono___PKPeQ\">5.33</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 156, 110);\">π-π Stack</span></td><td class=\"mono___PKPeQ\">A:PHE135</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">5.68</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 156, 110);\">π-π Stack</span></td><td class=\"mono___PKPeQ\">A:TYR32</td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"num___tFH75 mono___PKPeQ\">5.68</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(255, 156, 110);\">π-π Stack</span></td><td class=\"mono___PKPeQ\">A:PHE98</td><td class=\"mono___PKPeQ\">B:TRP47</td><td class=\"num___tFH75 mono___PKPeQ\">6.36</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(212, 177, 6);\">Salt Bridge</span></td><td class=\"mono___PKPeQ\">A:CYS214</td><td class=\"mono___PKPeQ\">B:CYS218</td><td class=\"num___tFH75 mono___PKPeQ\">2.02</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER162</td><td class=\"mono___PKPeQ\">B:PRO170</td><td class=\"num___tFH75 mono___PKPeQ\">2.62</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASN138</td><td class=\"mono___PKPeQ\">B:HIS167</td><td class=\"num___tFH75 mono___PKPeQ\">2.73</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:GLU98</td><td class=\"num___tFH75 mono___PKPeQ\">2.75</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO119</td><td class=\"mono___PKPeQ\">B:ARG216</td><td class=\"num___tFH75 mono___PKPeQ\">2.82</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER174</td><td class=\"mono___PKPeQ\">B:HIS167</td><td class=\"num___tFH75 mono___PKPeQ\">2.88</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASP1</td><td class=\"mono___PKPeQ\">B:SER61</td><td class=\"num___tFH75 mono___PKPeQ\">2.88</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:CYS214</td><td class=\"mono___PKPeQ\">B:SER131</td><td class=\"num___tFH75 mono___PKPeQ\">2.89</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:GLU123</td><td class=\"mono___PKPeQ\">B:LYS211</td><td class=\"num___tFH75 mono___PKPeQ\">2.90</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:CYS214</td><td class=\"mono___PKPeQ\">B:CYS218</td><td class=\"num___tFH75 mono___PKPeQ\">3.02</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASN137</td><td class=\"mono___PKPeQ\">B:HIS167</td><td class=\"num___tFH75 mono___PKPeQ\">3.02</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR36</td><td class=\"mono___PKPeQ\">B:LEU103</td><td class=\"num___tFH75 mono___PKPeQ\">3.05</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASN137</td><td class=\"mono___PKPeQ\">B:SER183</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:GLN38</td><td class=\"mono___PKPeQ\">B:TYR94</td><td class=\"num___tFH75 mono___PKPeQ\">3.08</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:GLN38</td><td class=\"mono___PKPeQ\">B:GLN39</td><td class=\"num___tFH75 mono___PKPeQ\">3.09</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR49</td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"num___tFH75 mono___PKPeQ\">3.11</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER121</td><td class=\"mono___PKPeQ\">B:PHE125</td><td class=\"num___tFH75 mono___PKPeQ\">3.15</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER43</td><td class=\"mono___PKPeQ\">B:GLY107</td><td class=\"num___tFH75 mono___PKPeQ\">3.17</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TRP163</td><td class=\"mono___PKPeQ\">B:PRO170</td><td class=\"num___tFH75 mono___PKPeQ\">3.20</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:THR94</td><td class=\"mono___PKPeQ\">B:ASP58</td><td class=\"num___tFH75 mono___PKPeQ\">3.21</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE118</td><td class=\"mono___PKPeQ\">B:THR140</td><td class=\"num___tFH75 mono___PKPeQ\">3.27</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASN137</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.31</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO120</td><td class=\"mono___PKPeQ\">B:ARG216</td><td class=\"num___tFH75 mono___PKPeQ\">3.32</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER176</td><td class=\"mono___PKPeQ\">B:SER181</td><td class=\"num___tFH75 mono___PKPeQ\">3.32</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:MET175</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.34</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER174</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.37</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ASN161</td><td class=\"mono___PKPeQ\">B:VAL172</td><td class=\"num___tFH75 mono___PKPeQ\">3.38</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE91</td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"num___tFH75 mono___PKPeQ\">3.38</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:THR180</td><td class=\"mono___PKPeQ\">B:LYS146</td><td class=\"num___tFH75 mono___PKPeQ\">3.40</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER121</td><td class=\"mono___PKPeQ\">B:PRO126</td><td class=\"num___tFH75 mono___PKPeQ\">3.40</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR36</td><td class=\"mono___PKPeQ\">B:TRP106</td><td class=\"num___tFH75 mono___PKPeQ\">3.41</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:GLN124</td><td class=\"mono___PKPeQ\">B:PHE125</td><td class=\"num___tFH75 mono___PKPeQ\">3.43</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE118</td><td class=\"mono___PKPeQ\">B:ALA128</td><td class=\"num___tFH75 mono___PKPeQ\">3.43</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:LEU160</td><td class=\"mono___PKPeQ\">B:GLN174</td><td class=\"num___tFH75 mono___PKPeQ\">3.43</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER131</td><td class=\"mono___PKPeQ\">B:LYS146</td><td class=\"num___tFH75 mono___PKPeQ\">3.43</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:THR164</td><td class=\"mono___PKPeQ\">B:THR168</td><td class=\"num___tFH75 mono___PKPeQ\">3.48</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE91</td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"num___tFH75 mono___PKPeQ\">3.49</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR87</td><td class=\"mono___PKPeQ\">B:LEU45</td><td class=\"num___tFH75 mono___PKPeQ\">3.50</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO44</td><td class=\"mono___PKPeQ\">B:TRP106</td><td class=\"num___tFH75 mono___PKPeQ\">3.51</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO95</td><td class=\"mono___PKPeQ\">B:TRP47</td><td class=\"num___tFH75 mono___PKPeQ\">3.52</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:TRP47</td><td class=\"num___tFH75 mono___PKPeQ\">3.54</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR87</td><td class=\"mono___PKPeQ\">B:GLN39</td><td class=\"num___tFH75 mono___PKPeQ\">3.57</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:TRP52</td><td class=\"num___tFH75 mono___PKPeQ\">3.58</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:ARG96</td><td class=\"mono___PKPeQ\">B:MET50</td><td class=\"num___tFH75 mono___PKPeQ\">3.59</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:GLN89</td><td class=\"mono___PKPeQ\">B:LEU103</td><td class=\"num___tFH75 mono___PKPeQ\">3.60</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE118</td><td class=\"mono___PKPeQ\">B:LEU127</td><td class=\"num___tFH75 mono___PKPeQ\">3.60</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE91</td><td class=\"mono___PKPeQ\">B:GLU98</td><td class=\"num___tFH75 mono___PKPeQ\">3.60</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:LEU46</td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"num___tFH75 mono___PKPeQ\">3.61</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER43</td><td class=\"mono___PKPeQ\">B:GLN108</td><td class=\"num___tFH75 mono___PKPeQ\">3.61</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO95</td><td class=\"mono___PKPeQ\">B:TYR59</td><td class=\"num___tFH75 mono___PKPeQ\">3.63</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR87</td><td class=\"mono___PKPeQ\">B:GLY44</td><td class=\"num___tFH75 mono___PKPeQ\">3.64</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER176</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.67</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE135</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.69</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:LEU46</td><td class=\"mono___PKPeQ\">B:LEU103</td><td class=\"num___tFH75 mono___PKPeQ\">3.71</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:LEU160</td><td class=\"mono___PKPeQ\">B:VAL172</td><td class=\"num___tFH75 mono___PKPeQ\">3.74</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:LEU46</td><td class=\"mono___PKPeQ\">B:ASP104</td><td class=\"num___tFH75 mono___PKPeQ\">3.75</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PRO44</td><td class=\"mono___PKPeQ\">B:LEU45</td><td class=\"num___tFH75 mono___PKPeQ\">3.76</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE98</td><td class=\"mono___PKPeQ\">B:TRP47</td><td class=\"num___tFH75 mono___PKPeQ\">3.78</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:VAL133</td><td class=\"mono___PKPeQ\">B:LEU144</td><td class=\"num___tFH75 mono___PKPeQ\">3.81</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE98</td><td class=\"mono___PKPeQ\">B:VAL37</td><td class=\"num___tFH75 mono___PKPeQ\">3.85</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR32</td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"num___tFH75 mono___PKPeQ\">3.86</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:THR164</td><td class=\"mono___PKPeQ\">B:PHE169</td><td class=\"num___tFH75 mono___PKPeQ\">3.89</td></tr></tbody></table></div></div><div class=\"bondGroup___jIpmX\"><div class=\"tableCard___JoHeO\"><div class=\"metricChips___C1z6p\"><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(54, 207, 201);\"></span>H-Bond 7</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(154, 160, 166);\"></span>VdW Contact 12</span></div><table class=\"bondsTable___mMGqW\"><thead><tr><th>Type</th><th>Residue A</th><th>Residue B</th><th class=\"num___tFH75\">Dist (Å)</th></tr></thead><tbody><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:ASP100</td><td class=\"mono___PKPeQ\">C:SER24</td><td class=\"num___tFH75 mono___PKPeQ\">2.82</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:GLY53</td><td class=\"mono___PKPeQ\">C:GLY117</td><td class=\"num___tFH75 mono___PKPeQ\">2.87</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:ASP100</td><td class=\"mono___PKPeQ\">C:ASN27</td><td class=\"num___tFH75 mono___PKPeQ\">2.96</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"mono___PKPeQ\">C:ASP119</td><td class=\"num___tFH75 mono___PKPeQ\">2.97</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">2.99</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:ASP54</td><td class=\"mono___PKPeQ\">C:GLY117</td><td class=\"num___tFH75 mono___PKPeQ\">3.19</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"mono___PKPeQ\">C:GLY22</td><td class=\"num___tFH75 mono___PKPeQ\">3.20</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ASP100</td><td class=\"mono___PKPeQ\">C:SER24</td><td class=\"num___tFH75 mono___PKPeQ\">2.63</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:GLY53</td><td class=\"mono___PKPeQ\">C:GLY117</td><td class=\"num___tFH75 mono___PKPeQ\">2.87</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ASP100</td><td class=\"mono___PKPeQ\">C:ASN27</td><td class=\"num___tFH75 mono___PKPeQ\">2.96</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"mono___PKPeQ\">C:ASP119</td><td class=\"num___tFH75 mono___PKPeQ\">2.97</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">2.99</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ASP54</td><td class=\"mono___PKPeQ\">C:GLY117</td><td class=\"num___tFH75 mono___PKPeQ\">3.19</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ARG102</td><td class=\"mono___PKPeQ\">C:GLY22</td><td class=\"num___tFH75 mono___PKPeQ\">3.20</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:TYR101</td><td class=\"mono___PKPeQ\">C:VAL120</td><td class=\"num___tFH75 mono___PKPeQ\">3.25</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ASP100</td><td class=\"mono___PKPeQ\">C:GLY22</td><td class=\"num___tFH75 mono___PKPeQ\">3.46</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:ASP54</td><td class=\"mono___PKPeQ\">C:THR118</td><td class=\"num___tFH75 mono___PKPeQ\">3.56</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:TRP52</td><td class=\"mono___PKPeQ\">C:ASP119</td><td class=\"num___tFH75 mono___PKPeQ\">3.66</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">B:GLY31</td><td class=\"mono___PKPeQ\">C:GLY117</td><td class=\"num___tFH75 mono___PKPeQ\">3.66</td></tr></tbody></table></div></div><div class=\"bondGroup___jIpmX\"><div class=\"tableCard___JoHeO\"><div class=\"metricChips___C1z6p\"><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(54, 207, 201);\"></span>H-Bond 4</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(154, 160, 166);\"></span>VdW Contact 9</span><span class=\"metricChip___ZAk5D\"><span class=\"dot___NtJsh\" style=\"background: rgb(105, 192, 255);\"></span>π-H Bond 1</span></div><table class=\"bondsTable___mMGqW\"><thead><tr><th>Type</th><th>Residue A</th><th>Residue B</th><th class=\"num___tFH75\">Dist (Å)</th></tr></thead><tbody><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:TYR50</td><td class=\"mono___PKPeQ\">C:ASP18</td><td class=\"num___tFH75 mono___PKPeQ\">2.86</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:THR53</td><td class=\"mono___PKPeQ\">C:ASN19</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:PHE91</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(54, 207, 201);\">H-Bond</span></td><td class=\"mono___PKPeQ\">A:SER93</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.20</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(105, 192, 255);\">π-H Bond</span></td><td class=\"mono___PKPeQ\">A:TYR32</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.14</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR50</td><td class=\"mono___PKPeQ\">C:ASP18</td><td class=\"num___tFH75 mono___PKPeQ\">2.86</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TRP92</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.00</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:THR53</td><td class=\"mono___PKPeQ\">C:ASN19</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:PHE91</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.07</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:SER93</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.20</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR32</td><td class=\"mono___PKPeQ\">C:GLN121</td><td class=\"num___tFH75 mono___PKPeQ\">3.31</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TRP92</td><td class=\"mono___PKPeQ\">C:ARG125</td><td class=\"num___tFH75 mono___PKPeQ\">3.54</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TYR50</td><td class=\"mono___PKPeQ\">C:ASN19</td><td class=\"num___tFH75 mono___PKPeQ\">3.74</td></tr><tr class=\"bondRowInteractive___LeH4T\"><td><span class=\"typechip___Xojyd\" style=\"background: rgb(154, 160, 166);\">VdW Contact</span></td><td class=\"mono___PKPeQ\">A:TRP92</td><td class=\"mono___PKPeQ\">C:ILE124</td><td class=\"num___tFH75 mono___PKPeQ\">3.86</td></tr></tbody></table></div></div><div class=\"sectionTitle___pxOql\">Mutation Scoring</div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">MutXevo.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">MutXstruct.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">MutXseq.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">MutXaff.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"sectionTitle___pxOql\">Antibody Design</div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">AbScN_heavy..csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">AbScN_light.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">AbAn_heavy.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">AbAn_light.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">ParaDt_heavy.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div><div class=\"fileCard___msYsS\"><div class=\"fileCardLeft___z1lbS\"><div class=\"fileContainer___Iyr8H\"><svg viewBox=\"0 0 40 52\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\" class=\"fileContainerIcon___MrlkE\"><g clip-path=\"url(#file-container_svg__a)\"><path d=\"m26 0 7 7 7 7h-8a6 6 0 0 1-6-6V0Z\" fill=\"#E2E8F0\"></path><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M0 6a6 6 0 0 1 6-6h20v8a6 6 0 0 0 6 6h8v32a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V6Z\" fill=\"#F1F5F9\"></path></g><defs><clipPath id=\"file-container_svg__a\"><path fill=\"#fff\" d=\"M0 0h40v52H0z\"></path></clipPath></defs></svg><span class=\"fileType___c3YSW\" style=\"background-color: rgb(238, 70, 188);\">CSV</span></div><div class=\"fileCardName___lPvNg\">ParaDt_light.csv</div></div><div class=\"fileCardActions___aG7oh\"><span class=\"fileLink___xmSQz\">View</span><span class=\"fileLink___xmSQz\">Download</span></div></div></div>",
+  "tables": [
+    [
+      [
+        "Type",
+        "Residue A",
+        "Residue B",
+        "Dist (Å)"
+      ],
+      [
+        "H-Bond",
+        "A:SER162",
+        "B:PRO170",
+        "2.62"
+      ],
+      [
+        "H-Bond",
+        "A:ASN138",
+        "B:HIS167",
+        "2.73"
+      ],
+      [
+        "H-Bond",
+        "A:ARG96",
+        "B:GLU98",
+        "2.80"
+      ],
+      [
+        "H-Bond",
+        "A:PRO119",
+        "B:ARG216",
+        "2.82"
+      ],
+      [
+        "H-Bond",
+        "A:ASP1",
+        "B:SER61",
+        "2.88"
+      ],
+      [
+        "H-Bond",
+        "A:GLU123",
+        "B:LYS211",
+        "2.90"
+      ],
+      [
+        "H-Bond",
+        "A:TYR36",
+        "B:LEU103",
+        "3.05"
+      ],
+      [
+        "H-Bond",
+        "A:ASN137",
+        "B:SER183",
+        "3.07"
+      ],
+      [
+        "H-Bond",
+        "A:GLN38",
+        "B:GLN39",
+        "3.09"
+      ],
+      [
+        "H-Bond",
+        "A:SER176",
+        "B:SER181",
+        "3.32"
+      ],
+      [
+        "Ionic",
+        "A:GLU123",
+        "B:LYS211",
+        "3.09"
+      ],
+      [
+        "Ionic",
+        "A:ARG96",
+        "B:GLU98",
+        "3.52"
+      ],
+      [
+        "π-Cation",
+        "A:TYR49",
+        "B:ARG102",
+        "3.89"
+      ],
+      [
+        "π-H Bond",
+        "A:ARG96",
+        "B:TRP47",
+        "3.79"
+      ],
+      [
+        "π-π Stack",
+        "A:TYR36",
+        "B:TRP106",
+        "5.33"
+      ],
+      [
+        "π-π Stack",
+        "A:PHE135",
+        "B:PHE169",
+        "5.68"
+      ],
+      [
+        "π-π Stack",
+        "A:TYR32",
+        "B:TYR101",
+        "5.68"
+      ],
+      [
+        "π-π Stack",
+        "A:PHE98",
+        "B:TRP47",
+        "6.36"
+      ],
+      [
+        "Salt Bridge",
+        "A:CYS214",
+        "B:CYS218",
+        "2.02"
+      ],
+      [
+        "VdW Contact",
+        "A:SER162",
+        "B:PRO170",
+        "2.62"
+      ],
+      [
+        "VdW Contact",
+        "A:ASN138",
+        "B:HIS167",
+        "2.73"
+      ],
+      [
+        "VdW Contact",
+        "A:ARG96",
+        "B:GLU98",
+        "2.75"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO119",
+        "B:ARG216",
+        "2.82"
+      ],
+      [
+        "VdW Contact",
+        "A:SER174",
+        "B:HIS167",
+        "2.88"
+      ],
+      [
+        "VdW Contact",
+        "A:ASP1",
+        "B:SER61",
+        "2.88"
+      ],
+      [
+        "VdW Contact",
+        "A:CYS214",
+        "B:SER131",
+        "2.89"
+      ],
+      [
+        "VdW Contact",
+        "A:GLU123",
+        "B:LYS211",
+        "2.90"
+      ],
+      [
+        "VdW Contact",
+        "A:CYS214",
+        "B:CYS218",
+        "3.02"
+      ],
+      [
+        "VdW Contact",
+        "A:ASN137",
+        "B:HIS167",
+        "3.02"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR36",
+        "B:LEU103",
+        "3.05"
+      ],
+      [
+        "VdW Contact",
+        "A:ASN137",
+        "B:SER183",
+        "3.07"
+      ],
+      [
+        "VdW Contact",
+        "A:GLN38",
+        "B:TYR94",
+        "3.08"
+      ],
+      [
+        "VdW Contact",
+        "A:GLN38",
+        "B:GLN39",
+        "3.09"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR49",
+        "B:ARG102",
+        "3.11"
+      ],
+      [
+        "VdW Contact",
+        "A:SER121",
+        "B:PHE125",
+        "3.15"
+      ],
+      [
+        "VdW Contact",
+        "A:SER43",
+        "B:GLY107",
+        "3.17"
+      ],
+      [
+        "VdW Contact",
+        "A:TRP163",
+        "B:PRO170",
+        "3.20"
+      ],
+      [
+        "VdW Contact",
+        "A:THR94",
+        "B:ASP58",
+        "3.21"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE118",
+        "B:THR140",
+        "3.27"
+      ],
+      [
+        "VdW Contact",
+        "A:ASN137",
+        "B:PHE169",
+        "3.31"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO120",
+        "B:ARG216",
+        "3.32"
+      ],
+      [
+        "VdW Contact",
+        "A:SER176",
+        "B:SER181",
+        "3.32"
+      ],
+      [
+        "VdW Contact",
+        "A:MET175",
+        "B:PHE169",
+        "3.34"
+      ],
+      [
+        "VdW Contact",
+        "A:SER174",
+        "B:PHE169",
+        "3.37"
+      ],
+      [
+        "VdW Contact",
+        "A:ASN161",
+        "B:VAL172",
+        "3.38"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE91",
+        "B:TYR101",
+        "3.38"
+      ],
+      [
+        "VdW Contact",
+        "A:THR180",
+        "B:LYS146",
+        "3.40"
+      ],
+      [
+        "VdW Contact",
+        "A:SER121",
+        "B:PRO126",
+        "3.40"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR36",
+        "B:TRP106",
+        "3.41"
+      ],
+      [
+        "VdW Contact",
+        "A:GLN124",
+        "B:PHE125",
+        "3.43"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE118",
+        "B:ALA128",
+        "3.43"
+      ],
+      [
+        "VdW Contact",
+        "A:LEU160",
+        "B:GLN174",
+        "3.43"
+      ],
+      [
+        "VdW Contact",
+        "A:SER131",
+        "B:LYS146",
+        "3.43"
+      ],
+      [
+        "VdW Contact",
+        "A:THR164",
+        "B:THR168",
+        "3.48"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE91",
+        "B:ARG102",
+        "3.49"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR87",
+        "B:LEU45",
+        "3.50"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO44",
+        "B:TRP106",
+        "3.51"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO95",
+        "B:TRP47",
+        "3.52"
+      ],
+      [
+        "VdW Contact",
+        "A:ARG96",
+        "B:TRP47",
+        "3.54"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR87",
+        "B:GLN39",
+        "3.57"
+      ],
+      [
+        "VdW Contact",
+        "A:ARG96",
+        "B:TRP52",
+        "3.58"
+      ],
+      [
+        "VdW Contact",
+        "A:ARG96",
+        "B:MET50",
+        "3.59"
+      ],
+      [
+        "VdW Contact",
+        "A:GLN89",
+        "B:LEU103",
+        "3.60"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE118",
+        "B:LEU127",
+        "3.60"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE91",
+        "B:GLU98",
+        "3.60"
+      ],
+      [
+        "VdW Contact",
+        "A:LEU46",
+        "B:ARG102",
+        "3.61"
+      ],
+      [
+        "VdW Contact",
+        "A:SER43",
+        "B:GLN108",
+        "3.61"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO95",
+        "B:TYR59",
+        "3.63"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR87",
+        "B:GLY44",
+        "3.64"
+      ],
+      [
+        "VdW Contact",
+        "A:SER176",
+        "B:PHE169",
+        "3.67"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE135",
+        "B:PHE169",
+        "3.69"
+      ],
+      [
+        "VdW Contact",
+        "A:LEU46",
+        "B:LEU103",
+        "3.71"
+      ],
+      [
+        "VdW Contact",
+        "A:LEU160",
+        "B:VAL172",
+        "3.74"
+      ],
+      [
+        "VdW Contact",
+        "A:LEU46",
+        "B:ASP104",
+        "3.75"
+      ],
+      [
+        "VdW Contact",
+        "A:PRO44",
+        "B:LEU45",
+        "3.76"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE98",
+        "B:TRP47",
+        "3.78"
+      ],
+      [
+        "VdW Contact",
+        "A:VAL133",
+        "B:LEU144",
+        "3.81"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE98",
+        "B:VAL37",
+        "3.85"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR32",
+        "B:TYR101",
+        "3.86"
+      ],
+      [
+        "VdW Contact",
+        "A:THR164",
+        "B:PHE169",
+        "3.89"
+      ]
+    ],
+    [
+      [
+        "Type",
+        "Residue A",
+        "Residue B",
+        "Dist (Å)"
+      ],
+      [
+        "H-Bond",
+        "B:ASP100",
+        "C:SER24",
+        "2.82"
+      ],
+      [
+        "H-Bond",
+        "B:GLY53",
+        "C:GLY117",
+        "2.87"
+      ],
+      [
+        "H-Bond",
+        "B:ASP100",
+        "C:ASN27",
+        "2.96"
+      ],
+      [
+        "H-Bond",
+        "B:TYR101",
+        "C:ASP119",
+        "2.97"
+      ],
+      [
+        "H-Bond",
+        "B:TYR101",
+        "C:GLN121",
+        "2.99"
+      ],
+      [
+        "H-Bond",
+        "B:ASP54",
+        "C:GLY117",
+        "3.19"
+      ],
+      [
+        "H-Bond",
+        "B:ARG102",
+        "C:GLY22",
+        "3.20"
+      ],
+      [
+        "VdW Contact",
+        "B:ASP100",
+        "C:SER24",
+        "2.63"
+      ],
+      [
+        "VdW Contact",
+        "B:GLY53",
+        "C:GLY117",
+        "2.87"
+      ],
+      [
+        "VdW Contact",
+        "B:ASP100",
+        "C:ASN27",
+        "2.96"
+      ],
+      [
+        "VdW Contact",
+        "B:TYR101",
+        "C:ASP119",
+        "2.97"
+      ],
+      [
+        "VdW Contact",
+        "B:TYR101",
+        "C:GLN121",
+        "2.99"
+      ],
+      [
+        "VdW Contact",
+        "B:ASP54",
+        "C:GLY117",
+        "3.19"
+      ],
+      [
+        "VdW Contact",
+        "B:ARG102",
+        "C:GLY22",
+        "3.20"
+      ],
+      [
+        "VdW Contact",
+        "B:TYR101",
+        "C:VAL120",
+        "3.25"
+      ],
+      [
+        "VdW Contact",
+        "B:ASP100",
+        "C:GLY22",
+        "3.46"
+      ],
+      [
+        "VdW Contact",
+        "B:ASP54",
+        "C:THR118",
+        "3.56"
+      ],
+      [
+        "VdW Contact",
+        "B:TRP52",
+        "C:ASP119",
+        "3.66"
+      ],
+      [
+        "VdW Contact",
+        "B:GLY31",
+        "C:GLY117",
+        "3.66"
+      ]
+    ],
+    [
+      [
+        "Type",
+        "Residue A",
+        "Residue B",
+        "Dist (Å)"
+      ],
+      [
+        "H-Bond",
+        "A:TYR50",
+        "C:ASP18",
+        "2.86"
+      ],
+      [
+        "H-Bond",
+        "A:THR53",
+        "C:ASN19",
+        "3.07"
+      ],
+      [
+        "H-Bond",
+        "A:PHE91",
+        "C:GLN121",
+        "3.07"
+      ],
+      [
+        "H-Bond",
+        "A:SER93",
+        "C:GLN121",
+        "3.20"
+      ],
+      [
+        "π-H Bond",
+        "A:TYR32",
+        "C:GLN121",
+        "3.14"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR50",
+        "C:ASP18",
+        "2.86"
+      ],
+      [
+        "VdW Contact",
+        "A:TRP92",
+        "C:GLN121",
+        "3.00"
+      ],
+      [
+        "VdW Contact",
+        "A:THR53",
+        "C:ASN19",
+        "3.07"
+      ],
+      [
+        "VdW Contact",
+        "A:PHE91",
+        "C:GLN121",
+        "3.07"
+      ],
+      [
+        "VdW Contact",
+        "A:SER93",
+        "C:GLN121",
+        "3.20"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR32",
+        "C:GLN121",
+        "3.31"
+      ],
+      [
+        "VdW Contact",
+        "A:TRP92",
+        "C:ARG125",
+        "3.54"
+      ],
+      [
+        "VdW Contact",
+        "A:TYR50",
+        "C:ASN19",
+        "3.74"
+      ],
+      [
+        "VdW Contact",
+        "A:TRP92",
+        "C:ILE124",
+        "3.86"
+      ]
+    ]
+  ],
+  "text": "DESCRIPTION\nAntigen–Antibody\nconfidence: high\nThis structure is an antibody fragment (Fab-like VL/VH pair) bound to Lysozyme C, a glycosyl hydrolase 22 family enzyme with bacteriolytic activity. The VL and VH chains form the antigen-binding module, while chain C corresponds to the lysozyme antigen recognized by the antibody. The complex illustrates molecular recognition of a bacterial cell-wall-degrading enzyme by an antibody, with no indication of a biologically relevant small-molecule ligand in the provided summary.\nReasoningThe structure contains two antibody variable-domain chains, annotated as VL (chain A) and VH (chain B), forming an antibody fragment. Chain C is a separate protein antigen, identified by UniProt annotation as Lysozyme C, and the contact data show direct VL/VH interface with the antigen. Therefore the complex is best classified as antigen-antibody rather than a generic protein-protein complex.\nChain A · protein · VL\nChain B · protein · VH\nChain C · protein\nHOMOLOGS\nSearched by antigen sequence similarity\nNo significant homologs found.\nANNOTATIONS\nCDR numbering\nIMGT\nKabat\nChothia\nBinding Pocket\n1 residue · uniprot\nC:ASP101\nActive Sites\n2 residues · uniprot\nC:GLU35\nC:ASP52\nCDR\n6 residues · IMGT\nA:27-32\nA:50-52\nA:89-97\nB:26-33\nB:51-57\nB:96-105\nParatope\n47 residues · structure\nA:TYR32\nA:TYR49\nA:TYR50\nA:THR53\nA:PHE91\nA:TRP92\nA:SER93\nA:SER122\nA:GLU123\nA:THR126\nA:ARG211\nA:ASN212\nA:GLU213\nA:CYS214\nB:SER17\nB:THR30\nB:GLY31\nB:TYR32\nB:TRP52\nB:GLY53\nB:ASP54\nB:THR57\nB:TYR59\nB:LYS64\nB:SER65\nB:ARG66\nB:LEU67\nB:SER68\nB:LYS81\nB:ASN83\nB:SER84\nB:ARG99\nB:ASP100\nB:TYR101\nB:ARG102\nB:SER159\nB:ASN199\nB:LYS208\nB:VAL209\nB:ASP210\nB:LYS211\nB:LYS212\nB:VAL214\nB:PRO215\nB:ARG216\nB:ASP217\nB:CYS218\nEpitope\n46 residues · structure\nC:ARG5\nC:CYS6\nC:GLU7\nC:ASP18\nC:ASN19\nC:GLY22\nC:SER24\nC:LEU25\nC:THR43\nC:ARG45\nC:ARG68\nC:GLN121\nC:ILE124\nC:ARG125\nC:GLY126\nC:CYS127\nC:ARG128\nC:VAL2\nC:TYR20\nC:ARG21\nC:TYR23\nC:ASN27\nC:PHE34\nC:GLU35\nC:SER36\nC:ASN37\nC:ASN39\nC:ASN44\nC:ASN46\nC:THR47\nC:GLY49\nC:GLN57\nC:LEU75\nC:ASN77\nC:LYS96\nC:LYS97\nC:SER100\nC:ASP101\nC:GLY102\nC:LYS116\nC:GLY117\nC:THR118\nC:ASP119\nC:VAL120\nC:ALA122\nC:LEU129\nDomain\n1 residue · uniprot\nC:1-129\nINTERACTION NETWORK\nTable\n2D\nH-Bond 10\nVdW Contact 61\nSalt Bridge 2\nπ-Cation 1\nπ-π Stack 4\nπ-H Bond 1\nDisulfide Bond 1\nType\tResidue A\tResidue B\tDist (Å)\nH-Bond\tA:SER162\tB:PRO170\t2.62\nH-Bond\tA:ASN138\tB:HIS167\t2.73\nH-Bond\tA:ARG96\tB:GLU98\t2.80\nH-Bond\tA:PRO119\tB:ARG216\t2.82\nH-Bond\tA:ASP1\tB:SER61\t2.88\nH-Bond\tA:GLU123\tB:LYS211\t2.90\nH-Bond\tA:TYR36\tB:LEU103\t3.05\nH-Bond\tA:ASN137\tB:SER183\t3.07\nH-Bond\tA:GLN38\tB:GLN39\t3.09\nH-Bond\tA:SER176\tB:SER181\t3.32\nIonic\tA:GLU123\tB:LYS211\t3.09\nIonic\tA:ARG96\tB:GLU98\t3.52\nπ-Cation\tA:TYR49\tB:ARG102\t3.89\nπ-H Bond\tA:ARG96\tB:TRP47\t3.79\nπ-π Stack\tA:TYR36\tB:TRP106\t5.33\nπ-π Stack\tA:PHE135\tB:PHE169\t5.68\nπ-π Stack\tA:TYR32\tB:TYR101\t5.68\nπ-π Stack\tA:PHE98\tB:TRP47\t6.36\nSalt Bridge\tA:CYS214\tB:CYS218\t2.02\nVdW Contact\tA:SER162\tB:PRO170\t2.62\nVdW Contact\tA:ASN138\tB:HIS167\t2.73\nVdW Contact\tA:ARG96\tB:GLU98\t2.75\nVdW Contact\tA:PRO119\tB:ARG216\t2.82\nVdW Contact\tA:SER174\tB:HIS167\t2.88\nVdW Contact\tA:ASP1\tB:SER61\t2.88\nVdW Contact\tA:CYS214\tB:SER131\t2.89\nVdW Contact\tA:GLU123\tB:LYS211\t2.90\nVdW Contact\tA:CYS214\tB:CYS218\t3.02\nVdW Contact\tA:ASN137\tB:HIS167\t3.02\nVdW Contact\tA:TYR36\tB:LEU103\t3.05\nVdW Contact\tA:ASN137\tB:SER183\t3.07\nVdW Contact\tA:GLN38\tB:TYR94\t3.08\nVdW Contact\tA:GLN38\tB:GLN39\t3.09\nVdW Contact\tA:TYR49\tB:ARG102\t3.11\nVdW Contact\tA:SER121\tB:PHE125\t3.15\nVdW Contact\tA:SER43\tB:GLY107\t3.17\nVdW Contact\tA:TRP163\tB:PRO170\t3.20\nVdW Contact\tA:THR94\tB:ASP58\t3.21\nVdW Contact\tA:PHE118\tB:THR140\t3.27\nVdW Contact\tA:ASN137\tB:PHE169\t3.31\nVdW Contact\tA:PRO120\tB:ARG216\t3.32\nVdW Contact\tA:SER176\tB:SER181\t3.32\nVdW Contact\tA:MET175\tB:PHE169\t3.34\nVdW Contact\tA:SER174\tB:PHE169\t3.37\nVdW Contact\tA:ASN161\tB:VAL172\t3.38\nVdW Contact\tA:PHE91\tB:TYR101\t3.38\nVdW Contact\tA:THR180\tB:LYS146\t3.40\nVdW Contact\tA:SER121\tB:PRO126\t3.40\nVdW Contact\tA:TYR36\tB:TRP106\t3.41\nVdW Contact\tA:GLN124\tB:PHE125\t3.43\nVdW Contact\tA:PHE118\tB:ALA128\t3.43\nVdW Contact\tA:LEU160\tB:GLN174\t3.43\nVdW Contact\tA:SER131\tB:LYS146\t3.43\nVdW Contact\tA:THR164\tB:THR168\t3.48\nVdW Contact\tA:PHE91\tB:ARG102\t3.49\nVdW Contact\tA:TYR87\tB:LEU45\t3.50\nVdW Contact\tA:PRO44\tB:TRP106\t3.51\nVdW Contact\tA:PRO95\tB:TRP47\t3.52\nVdW Contact\tA:ARG96\tB:TRP47\t3.54\nVdW Contact\tA:TYR87\tB:GLN39\t3.57\nVdW Contact\tA:ARG96\tB:TRP52\t3.58\nVdW Contact\tA:ARG96\tB:MET50\t3.59\nVdW Contact\tA:GLN89\tB:LEU103\t3.60\nVdW Contact\tA:PHE118\tB:LEU127\t3.60\nVdW Contact\tA:PHE91\tB:GLU98\t3.60\nVdW Contact\tA:LEU46\tB:ARG102\t3.61\nVdW Contact\tA:SER43\tB:GLN108\t3.61\nVdW Contact\tA:PRO95\tB:TYR59\t3.63\nVdW Contact\tA:TYR87\tB:GLY44\t3.64\nVdW Contact\tA:SER176\tB:PHE169\t3.67\nVdW Contact\tA:PHE135\tB:PHE169\t3.69\nVdW Contact\tA:LEU46\tB:LEU103\t3.71\nVdW Contact\tA:LEU160\tB:VAL172\t3.74\nVdW Contact\tA:LEU46\tB:ASP104\t3.75\nVdW Contact\tA:PRO44\tB:LEU45\t3.76\nVdW Contact\tA:PHE98\tB:TRP47\t3.78\nVdW Contact\tA:VAL133\tB:LEU144\t3.81\nVdW Contact\tA:PHE98\tB:VAL37\t3.85\nVdW Contact\tA:TYR32\tB:TYR101\t3.86\nVdW Contact\tA:THR164\tB:PHE169\t3.89\nH-Bond 7\nVdW Contact 12\nType\tResidue A\tResidue B\tDist (Å)\nH-Bond\tB:ASP100\tC:SER24\t2.82\nH-Bond\tB:GLY53\tC:GLY117\t2.87\nH-Bond\tB:ASP100\tC:ASN27\t2.96\nH-Bond\tB:TYR101\tC:ASP119\t2.97\nH-Bond\tB:TYR101\tC:GLN121\t2.99\nH-Bond\tB:ASP54\tC:GLY117\t3.19\nH-Bond\tB:ARG102\tC:GLY22\t3.20\nVdW Contact\tB:ASP100\tC:SER24\t2.63\nVdW Contact\tB:GLY53\tC:GLY117\t2.87\nVdW Contact\tB:ASP100\tC:ASN27\t2.96\nVdW Contact\tB:TYR101\tC:ASP119\t2.97\nVdW Contact\tB:TYR101\tC:GLN121\t2.99\nVdW Contact\tB:ASP54\tC:GLY117\t3.19\nVdW Contact\tB:ARG102\tC:GLY22\t3.20\nVdW Contact\tB:TYR101\tC:VAL120\t3.25\nVdW Contact\tB:ASP100\tC:GLY22\t3.46\nVdW Contact\tB:ASP54\tC:THR118\t3.56\nVdW Contact\tB:TRP52\tC:ASP119\t3.66\nVdW Contact\tB:GLY31\tC:GLY117\t3.66\nH-Bond 4\nVdW Contact 9\nπ-H Bond 1\nType\tResidue A\tResidue B\tDist (Å)\nH-Bond\tA:TYR50\tC:ASP18\t2.86\nH-Bond\tA:THR53\tC:ASN19\t3.07\nH-Bond\tA:PHE91\tC:GLN121\t3.07\nH-Bond\tA:SER93\tC:GLN121\t3.20\nπ-H Bond\tA:TYR32\tC:GLN121\t3.14\nVdW Contact\tA:TYR50\tC:ASP18\t2.86\nVdW Contact\tA:TRP92\tC:GLN121\t3.00\nVdW Contact\tA:THR53\tC:ASN19\t3.07\nVdW Contact\tA:PHE91\tC:GLN121\t3.07\nVdW Contact\tA:SER93\tC:GLN121\t3.20\nVdW Contact\tA:TYR32\tC:GLN121\t3.31\nVdW Contact\tA:TRP92\tC:ARG125\t3.54\nVdW Contact\tA:TYR50\tC:ASN19\t3.74\nVdW Contact\tA:TRP92\tC:ILE124\t3.86\nMUTATION SCORING\nCSV\nMutXevo.csv\nView\nDownload\nCSV\nMutXstruct.csv\nView\nDownload\nCSV\nMutXseq.csv\nView\nDownload\nCSV\nMutXaff.csv\nView\nDownload\nANTIBODY DESIGN\nCSV\nAbScN_heavy..csv\nView\nDownload\nCSV\nAbScN_light.csv\nView\nDownload\nCSV\nAbAn_heavy.csv\nView\nDownload\nCSV\nAbAn_light.csv\nView\nDownload\nCSV\nParaDt_heavy.csv\nView\nDownload\nCSV\nParaDt_light.csv\nView\nDownload"
+}

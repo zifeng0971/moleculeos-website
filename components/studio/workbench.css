@@ -1,0 +1,15 @@
+/* Workbench dock under the 3D view (sequence strip ⇄ MMetrics dossier). Tokens come from .ag in agent.css. */
+.ag-dk { position: relative; flex: none; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--side); }
+.ag-dk.is-dossier { flex: none; }
+.ag-dk-grip { position: absolute; left: 0; right: 0; top: -4px; height: 8px; cursor: row-resize; z-index: 3; }
+.ag-dk-grip::after { content: ''; position: absolute; left: 50%; top: 2px; width: 36px; height: 4px; margin-left: -18px; border-radius: 4px; background: var(--line-2); opacity: 0; transition: opacity .15s; }
+.ag-dk-grip:hover::after, .ag-dk.is-dossier:hover .ag-dk-grip::after { opacity: 1; }
+.ag-dk-bar { flex: none; display: flex; gap: 2px; padding: 8px 10px 0; border-bottom: 1px solid var(--line); }
+.ag-dk-bar button { position: relative; display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px; font-size: 12.5px; font-weight: 550; color: var(--faint); border-radius: 6px 6px 0 0; }
+.ag-dk-bar button:hover { color: var(--muted); }
+.ag-dk-bar button.is-on { color: var(--text); }
+.ag-dk-bar button.is-on::after { content: ''; position: absolute; left: 8px; right: 8px; bottom: -1px; height: 2px; border-radius: 2px; background: var(--accent); }
+.ag-dk-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.ag-dk-body { flex: 1; min-height: 0; overflow: hidden; }
+.ag-dk-empty { flex: 1; display: grid; place-items: center; padding: 24px 32px; text-align: center; font-size: 12.5px; line-height: 1.7; color: var(--faint); }
+.ag-dk:not(.is-dossier) .ag-strip { border-top: 0; }

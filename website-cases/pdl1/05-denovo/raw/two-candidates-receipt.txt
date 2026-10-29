@@ -1,0 +1,983 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-05-DeNovo-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: PDL1_seed111_designed_complex
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: D
+- generic: A
+- generic: A
+- generic: A
+- generic: R
+- generic: A
+- generic: A
+- generic: E
+- generic: L
+- generic: E
+- generic: "11"
+- generic: R
+- generic: R
+- generic: C
+- generic: E
+- generic: S
+- generic: L
+- generic: A
+- generic: K
+- generic: I
+- generic: I
+- generic: "21"
+- generic: A
+- generic: E
+- generic: H
+- generic: E
+- generic: A
+- generic: A
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: "31"
+- generic: R
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: S
+- generic: A
+- generic: A
+- generic: D
+- generic: R
+- generic: "41"
+- generic: E
+- generic: A
+- generic: V
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: R
+- generic: Q
+- generic: "51"
+- generic: A
+- generic: R
+- generic: A
+- generic: A
+- generic: A
+- generic: A
+- generic: L
+- generic: R
+- generic: A
+- generic: L
+- generic: "61"
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: E
+- generic: A
+- generic: E
+- generic: A
+- generic: R
+- generic: A
+- generic: "71"
+- generic: L
+- generic: R
+- generic: E
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: E
+- generic: K
+- generic: L
+- generic: "171"
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: R
+- generic: I
+- generic: "N"
+- generic: "181"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: "191"
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: E
+- generic: "N"
+- generic: H
+- generic: "201"
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: E
+- generic: L
+- generic: P
+- generic: "211"
+- generic: L
+- generic: A
+- generic: H
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": d3be78a0-9
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed111 SUCCEED. Download results now.
+- generic: ▸
+- generic: DownloadTaskResults
+- generic "342254837666816": (342254837666816)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent. The run produced:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important findings:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The Kabsch got a wrong rotation (103 Å RMSD after superposition means my impleme…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Odd. Receptor RMSD 2.46 Å (plausible: backbone vs predicted complex). Binder RMS…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: So applying rotran to the receptor gives 207 Å — meaning Bio.PDB's rotran conven…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "So the two files genuinely differ in geometry: receptor RMSD 2.46 Å after superp…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The transform direction was inverted. With the correct direction: receptor RMSD …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/analyze_des…": (cd /workspace/case05 && python package/analyze_des…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Very interesting:"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed111 done. seed222 running, seed333 pending. Now compute deeper metrics for s…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Good data. Fix secondary structure via gemmi's `gemmi.calculate_secondary_struct…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python -c \" import gemmi p…": (cd /workspace/case05 && python -c " import gemmi p…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: phi/psi calc may have failed (calculate_phi may not exist). 0.00 is suspicious. …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' from Bio.…": (cd /workspace/case05 && python - <<'EOF' from Bio.…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The binder is 94% helical: three helices (32, 6, 29 residues) — a long helical h…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed222 still showing RUNNING at 4.2min (status may be stale). seed333 PENDING.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python /app/src/mocha/agen…": (cd /workspace/case05 && python /app/src/mocha/agen…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The interface burial pipeline fails on the poly-Gly backbone (likely because it …
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/bsa_shrake.py": (/workspace/case05/package/bsa_shrake.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && for f in /workspace/downlo…": (cd /workspace/case05 && for f in /workspace/downlo…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The control gives negative BSA — that means SASA(complex) > SASA(H) + SASA(A) wh…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Control: Shrake-Rupley gives 1752 Å² total vs PPInterface 2293 Å² total for avel…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Unchanged. Meanwhile, do more analysis on seed111 and prepare packaging. Also vi…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && cat analysis/seed111/ppi_1…": (cd /workspace/case05 && cat analysis/seed111/ppi_1…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent detail. Per-side BSA: binder 893.7 Å², receptor 939.7 Å² (matching Shr…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still unchanged. I'll package seed111 meanwhile. Let me build the final package …
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/build_bundle.py": (/workspace/case05/package/build_bundle.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/build_bundl…": (cd /workspace/case05 && python package/build_bundl…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "The error: for the design record with 'error' (single chain) — no, here it's rec…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Working. interface_plddt_mean is empty — I should compute it (I computed manuall…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Interface pLDDT 65.3.
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed222 shows RUNNING but duration stuck at 4.2min — likely stale display; seed1…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254839784448": (342254839784448)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still running. I'll continue with what's real: write reports, import the designe…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import cs…": (cd /workspace/case05 && python - <<'EOF' import cs…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "This is a strong result: the designed binder engages 26 PD-L1 residues spanning …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import cs…": (cd /workspace/case05 && python - <<'EOF' import cs…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent: the de novo binder engages 18 of 20 avelumab-footprint residues — a n…"
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/REPORT.md": (/workspace/case05/package/REPORT.md)
+- img "check-circle":
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/README_FINAL.md": (/workspace/case05/package/README_FINAL.md)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now update build_bundle.py to include REPORT.md, README_FINAL.md (as README.md),…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still stuck. Let me now import the designed complex for visualization and zip th…
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/downloads/protein_binder_design_3422548…": (/workspace/downloads/protein_binder_design_3422548…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The design output CIF is already in MOS layout (has _mos_mapping). I should find…
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The task outputs aren't registered as MOS objects. To visualize, I can de-saniti…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: My text-stripping broke the CIF (removed loop header improperly). Better approac…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python -c \" import gemmi b…": (cd /workspace/case05 && python -c " import gemmi b…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "No erase. Approach: rebuild a new document with a new block, copying all categor…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python /app/src/mocha/agen…": (cd /workspace/case05 && python /app/src/mocha/agen…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Both paths refuse. Alternative: rebuild the CIF cleanly with gemmi by constructi…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: PDB written with B-factors preserved, chain A binder (73), chain B receptor (213…
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/case05/PDL1_seed111_designed_complex_cl…": (/workspace/case05/PDL1_seed111_designed_complex_cl…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- generic: GetMOSObject
+- generic "342256800388096": (342256800388096)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "check-circle":
+- generic: ▸
+- generic: SelectResidues
+- generic "#ff9500": (#ff9500)
+- img "check-circle":
+- generic: ▸
+- generic: 73 residues in Chain A
+- generic: "Selected 73 residues: A:1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73"
+- button "Replay selection":
+  - img "reload":
+- button "Add annotation":
+  - img "edit":
+- generic: SelectResidues
+- generic "#ff3b30": (#ff3b30)
+- img "check-circle":
+- generic: ▸
+- generic: 6 residues in Chain B
+- generic: "Selected 6 residues: B:37,39,41,51,96,106"
+- button "Replay selection":
+  - img "reload":
+- button "Add annotation":
+  - img "edit":
+- img "zoom-in":
+- generic: Zoom to Region
+- generic "342256805712896": (342256805712896)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- paragraph: seed222 just completed. Downloading and analyzing it now.
+- generic: DownloadTaskResults
+- generic "342254839784448": (342254839784448)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads/protein_binder_design_3422…": (cd /workspace/downloads/protein_binder_design_3422…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/analyze_des…": (cd /workspace/case05 && python package/analyze_des…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "seed222 results: 66 aa binder, 5/6 hotspots engaged (E58 at 4.72 Å just outside …"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import ge…": (cd /workspace/case05 && python - <<'EOF' import ge…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "seed222: engages R113 via E29 salt bridge (3.8 Å), 5/6 hotspots within 4.5 Å (E5…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed333 still running (8.2 min). Its runtime seems longer. I'll prepare the repo…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import cs…": (cd /workspace/case05 && python - <<'EOF' import cs…)
+- img "check-circle":
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/REPORT.md": (/workspace/case05/package/REPORT.md)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && sed -i 's#epitope_overlap_…": (cd /workspace/case05 && sed -i 's#epitope_overlap_…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Issue: for seed222, \"net_charge_ph7\" = -3 and frac_ala = 0.11 — that's wrong. Th…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' from coll…": (cd /workspace/case05 && python - <<'EOF' from coll…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "seed222: net charge −3 (14 K, 14 E, 4 D, 1 R → pos 15, neg 18). It's a Glu/Lys m…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: seed333 still running. Let me finalize the zip with 2 candidates, then check onc…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05_bundle && find . -type f | so…": (cd /workspace/case05_bundle && find . -type f | so…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "ZIP is at /workspace root: /workspace/case05_pdl1_binder_design_final.zip (515 K…"
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "unordered-list":
+- generic: Todo List
+- img "check-circle":
+- generic: ▸
+- paragraph: Two of three runs finished and are fully processed. The final bundle is at the Workspace root.
+- heading "Download" [level=2]
+- paragraph:
+  - code: /workspace/case05_pdl1_binder_design_final.zip
+  - text: — 515 KB, 36 files, CRC-verified, sha256
+  - code: 3e13ff0813a3b8032614b80db429cf523014a9cbcc252600a737d5e2954e738b
+- img "case05_pdl1_binder_design_final.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- heading "Task status" [level=2]
+- table:
+  - rowgroup:
+    - row "Run Task ID Status Delivered":
+      - columnheader "Run"
+      - columnheader "Task ID"
+      - columnheader "Status"
+      - columnheader "Delivered"
+  - rowgroup:
+    - row "seed111 342254837666816 SUCCEED (4.3 min) output.cif (poly-Gly backbone), aligned.cif (designed complex)":
+      - cell "seed111"
+      - cell "342254837666816":
+        - code: "342254837666816"
+      - cell "SUCCEED (4.3 min)"
+      - cell "output.cif (poly-Gly backbone), aligned.cif (designed complex)":
+        - code: output.cif
+        - text: (poly-Gly backbone),
+        - code: aligned.cif
+        - text: (designed complex)
+    - row "seed222 342254839784448 SUCCEED (8.2 min) output.cif, aligned.cif":
+      - cell "seed222"
+      - cell "342254839784448":
+        - code: "342254839784448"
+      - cell "SUCCEED (8.2 min)"
+      - cell "output.cif, aligned.cif":
+        - code: output.cif
+        - text: ","
+        - code: aligned.cif
+    - row "seed333 342254842782720 still RUNNING (>8 min) nothing yet":
+      - cell "seed333"
+      - cell "342254842782720":
+        - code: "342254842782720"
+      - cell "still RUNNING (>8 min)"
+      - cell "nothing yet"
+- paragraph:
+  - text: "Each run returned two structures, and the distinction you asked for is real:"
+  - code: output.cif
+  - text: has a 73-residue (seed111) or 66-residue (seed222) binder that is
+  - strong: 100% glycine, B-factor 0
+  - text: — a virtual backbone with no sequence.
+  - code: aligned.cif
+  - text: "is the actual design: sequence-designed binder plus re-predicted PD-L1, with pLDDT in the B-factor column."
+- heading "The two de novo designs" [level=2]
+- code: seed111 73 aa DAAARAAELERRCESLAKIIAEHEAALAALRAAAASAADREAVAAAAARQARAAAALRALRARLEAEARALRE seed222 66 aa MGSIEALNNLYKQMGEKAAELKEFAEEAEKKLEETRKKDEEKALELAKEIDKKTSKLFDELKGDNK
+- table:
+  - rowgroup:
+    - row "seed111 seed222":
+      - columnheader
+      - columnheader "seed111"
+      - columnheader "seed222"
+  - rowgroup:
+    - row "Hotspots engaged (≤4.5 Å) 6/6 5/6 (E58 at 4.72 Å)":
+      - cell "Hotspots engaged (≤4.5 Å)"
+      - cell "6/6":
+        - strong: 6/6
+      - cell "5/6 (E58 at 4.72 Å)":
+        - strong: 5/6
+        - text: (E58 at 4.72 Å)
+    - row "Closest hotspot 2.42 Å (R113) 1.87 Å (V68)":
+      - cell "Closest hotspot"
+      - cell "2.42 Å (R113)"
+      - cell "1.87 Å (V68)"
+    - row "Buried area, both sides 1833 Å² 1214 Å²":
+      - cell "Buried area, both sides"
+      - cell "1833 Å²"
+      - cell "1214 Å²"
+    - row "Per side (PPInterface / Shrake cross-check) 894–940 / 887 Å² 585–629 / 601 Å²":
+      - cell "Per side (PPInterface / Shrake cross-check)"
+      - cell "894–940 / 887 Å²"
+      - cell "585–629 / 601 Å²"
+    - row "H-bonds / salt bridges 2 / 10 1 / 5":
+      - cell "H-bonds / salt bridges"
+      - cell "2 / 10"
+      - cell "1 / 5"
+    - row "Binder pLDDT mean, max 65.9, 74.1 62.2, 85.4":
+      - cell "Binder pLDDT mean, max"
+      - cell "65.9, 74.1"
+      - cell "62.2, 85.4"
+    - row "Interface pLDDT 65.3 60.2":
+      - cell "Interface pLDDT"
+      - cell "65.3"
+      - cell "60.2"
+    - row "Avelumab-footprint overlap 18/20 residues (90%) 12/20 (60%)":
+      - cell "Avelumab-footprint overlap"
+      - cell "18/20 residues (90%)":
+        - strong: 18/20 residues (90%)
+      - cell "12/20 (60%)"
+- paragraph:
+  - strong: "Ranking (supported — two candidates):"
+  - text: 1) seed111, 2) seed222. It is a structural-contact-based ordering — hotspots covered, then interface size, then pLDDT. There is no ipTM, pTM, PAE or interface energy in the output, so this is not a confidence ranking, and I have not invented one.
+- heading "The biological result worth your attention" [level=2]
+- paragraph:
+  - text: Both seeds converged on the PD-1/avelumab-competitive face, and both do it by clamping
+  - strong: PD-L1 Arg113
+  - text: — one of your three requested residues and a documented PD-1 contact. seed111 uses Arg8 in a bidentate salt bridge (2.4/3.5 Å); seed222 uses Glu29 (3.8 Å). seed111 alone reproduces 18 of the 20 avelumab-footprint residues. Two independent seeds arriving at the same epitope by different chemistry is a real sign the hotspot prescription is steering the designs, not chance.
+- heading "What limits these as candidates" [level=2]
+- paragraph: "Stated plainly, because it matters more than the headline numbers:"
+- list:
+  - strong: pLDDT 66 and 62 is mediocre
+  - text: for designed proteins; seed111 has no residue above 74, seed222 has only 2% above 80 and dips to 38.2.
+  - strong: No complex-level confidence exists
+  - text: ", so the relative pose is unvalidated."
+  - strong: The interface is the predictor’s proposal, not the diffusion stage’s.
+  - text: The hallucinated poly-Gly backbone sits 6–10 Å from the hotspot atoms with ~103 Å² of burial; the interface only appears after sequence design and re-prediction, where the binder shifts 7.9 Å CA RMSD from its backbone.
+  - strong: "Low-complexity sequences:"
+  - text: seed111 is 45% Ala with an
+  - code: RAAAA
+  - text: repeat (2.52 bits); seed222 is 21% Lys + 21% Glu, net −3, and opens with an
+  - code: MGS
+  - text: cloning-artefact remnant.
+- paragraph: These are computationally plausible epitope-targeted designs worth expressing, not validated binders.
+- paragraph:
+  - text: "The designed complex is loaded in the viewer: binder chain A in orange, the six hotspots on PD-L1 in red."
+  - code: build_bundle.py
+  - text: is re-runnable, so when seed333 clears the queue, one call regenerates the identical bundle with the third candidate included.
+- generic: 09:48
+- generic: PDL1_seed1...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

@@ -1,0 +1,135 @@
+{
+  "retrievedAt": "2026-10-22",
+  "sourcePage": "https://zibmvy2yng.feishu.cn/wiki/JQ8DwuWinioJlfk5SSncm9BRnqf",
+  "rawDirectory": "manual-videos/original-manual-2026-10-22",
+  "clips": [
+    {
+      "reference": "mocha_start conversation.mov",
+      "filename": "original-01.mp4",
+      "caption": {
+        "zh": "开启 Mocha 对话：在项目对话框输入研发目标并发起请求。",
+        "en": "Start a Mocha conversation: enter a research goal in the project chat and submit the request."
+      }
+    },
+    {
+      "reference": "0708MOS首发介绍_xuxin.mp4",
+      "filename": "original-02.mp4",
+      "caption": {
+        "zh": "Mocha 完整流程示例：从输入研究任务到查看分析结果。",
+        "en": "Full Mocha workflow example: from a research request to analysis results."
+      }
+    },
+    {
+      "reference": "Mocha_task.mov",
+      "filename": "original-03.mp4",
+      "caption": {
+        "zh": "查看 Task：打开任务列表并检查各项计算的运行状态。",
+        "en": "Review Task: open the task list and check computation status."
+      }
+    },
+    {
+      "reference": "mocha_results.mov",
+      "filename": "original-04.mp4",
+      "caption": {
+        "zh": "查看 Mocha 结果：阅读任务完成后的分析与输出文件。",
+        "en": "Review Mocha results: read the completed analysis and inspect output files."
+      }
+    },
+    {
+      "reference": "mocha_workspace.mov",
+      "filename": "original-05.mp4",
+      "caption": {
+        "zh": "打开 Workspace：定位对话中生成的结果文件。",
+        "en": "Open Workspace: locate result files generated in the conversation."
+      }
+    },
+    {
+      "reference": "MMetrics_homologous.mov",
+      "filename": "original-06.mp4",
+      "caption": {
+        "zh": "查看同源蛋白：检查匹配结果、序列一致性和 Reference。",
+        "en": "Review homologs: inspect matches, sequence identity, and Reference links."
+      }
+    },
+    {
+      "reference": "MMetrics_annotation_sections.mov",
+      "filename": "original-07.mp4",
+      "caption": {
+        "zh": "区域注释：点选功能区域，在三维结构中高亮；Clear 清除选区。",
+        "en": "Region annotations: select a functional region to highlight it in 3D; use Clear to remove the selection."
+      }
+    },
+    {
+      "reference": "MMetrics_annotation_mutation.mov",
+      "filename": "original-08.mp4",
+      "caption": {
+        "zh": "单残基注释：点选残基，在结构中定位对应位置。",
+        "en": "Single-residue annotations: select a residue to locate its position in the structure."
+      }
+    },
+    {
+      "reference": "MMetrics_annotation_antibody.MP4",
+      "filename": "original-09.mp4",
+      "caption": {
+        "zh": "抗体编号：切换编号方案，核对 CDR 与链的标注。",
+        "en": "Antibody numbering: switch numbering schemes and review CDR and chain annotations."
+      }
+    },
+    {
+      "reference": "MMetrics_interaction.mov",
+      "filename": "original-10.mp4",
+      "caption": {
+        "zh": "互作网络：在 Table 与 2D 视图间切换。",
+        "en": "Interaction network: switch between Table and 2D views."
+      }
+    },
+    {
+      "reference": "MMetrics_smallmolecule2D.mov",
+      "filename": "original-11.mp4",
+      "caption": {
+        "zh": "小分子二维互作：点选连线查看作用类型及距离。",
+        "en": "Small-molecule 2D interactions: select an edge to inspect interaction type and distance."
+      }
+    },
+    {
+      "reference": "MMetrics_smallmolecule2D_2.mov",
+      "filename": "original-12.mp4",
+      "caption": {
+        "zh": "小分子残基互作：点选氨基酸查看相关互作。",
+        "en": "Small-molecule residue interactions: select an amino acid to inspect its contacts."
+      }
+    },
+    {
+      "reference": "MMetrics_table.mov",
+      "filename": "original-13.mp4",
+      "caption": {
+        "zh": "互作表格：点选一条互作，在三维结构中定位原子与残基。",
+        "en": "Interaction table: select a row to locate the atoms and residues in 3D."
+      }
+    },
+    {
+      "reference": "MMetrics_intereaction_antibody_2D.MOV",
+      "filename": "original-14.mp4",
+      "caption": {
+        "zh": "抗体–抗原二维互作：查看界面残基及互作距离。",
+        "en": "Antibody–antigen 2D interactions: inspect interface residues and contact distances."
+      }
+    },
+    {
+      "reference": "MMetrics_intereaction_antibody_table.mov",
+      "filename": "original-15.mp4",
+      "caption": {
+        "zh": "抗体–抗原互作表：核对链、残基、互作类型与距离。",
+        "en": "Antibody–antigen interaction table: check chains, residues, interaction types, and distances."
+      }
+    },
+    {
+      "reference": "MMetrics_mutation scoring_1.mov",
+      "filename": "original-16.mp4",
+      "caption": {
+        "zh": "突变打分：通过 View 预览、Download 下载各维度 CSV 结果。",
+        "en": "Mutation scoring: use View to preview and Download to export CSV results."
+      }
+    }
+  ]
+}

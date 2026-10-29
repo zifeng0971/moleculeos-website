@@ -1,0 +1,19 @@
+{
+  "object_id": "342605515027456",
+  "work_id": "342605519696896",
+  "tos_key": "user_objects/123/330665428816896/342605515027456_MMFold_1_chain_A.cif",
+  "local_path": "/workspace/protein_data/protein_342605519696896/MMFold_1_chain_A.cif",
+  "sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "sha256_matches_user_supplied": true,
+  "chains_verified": [
+    {
+      "chain": "A",
+      "n_residues": 118,
+      "first": 1,
+      "last": 118
+    }
+  ],
+  "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+  "sequence_len": 118,
+  "note": "reused the SAME existing project object; no re-prediction, no re-import, no modification"
+}

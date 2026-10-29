@@ -1,0 +1,80 @@
+{
+  "source_pdb": "7XYQ",
+  "original_deposited_chains": {
+    "A": {
+      "entity": 1,
+      "type": "polymer",
+      "molecule": "PD-L1",
+      "note": "kept, sanitized chain A"
+    },
+    "B": {
+      "entity": 2,
+      "type": "polymer",
+      "molecule": "DBL1_03",
+      "note": "kept, sanitized chain B"
+    },
+    "C": {
+      "entity": 3,
+      "type": "non-polymer",
+      "molecule": "single modelled arginine (R)",
+      "note": "removed before scoring"
+    },
+    "D": {
+      "entity": 4,
+      "type": "water",
+      "molecule": "H2O",
+      "note": "removed before scoring"
+    }
+  },
+  "scored_chains": {
+    "A": {
+      "role": "antigen: human PD-L1 (CD274), IgV+IgC, UniProt 19-225",
+      "modelled_residues": 203,
+      "entity_length": 207,
+      "MOS_numbering": "1-207",
+      "author_numbering": "19-225",
+      "offset_author_minus_MOS": 18,
+      "unmodelled_MOS_positions": [
+        166,
+        167,
+        168,
+        169
+      ],
+      "unmodelled_author_positions": [
+        184,
+        185,
+        186,
+        187
+      ]
+    },
+    "B": {
+      "role": "binder: DBL1_03, de novo designed protein, PDB author numbering -4..119",
+      "modelled_residues": 124,
+      "entity_length": 124,
+      "MOS_numbering": "1-124",
+      "author_numbering": "-4-119",
+      "offset_author_minus_MOS": -5,
+      "unmodelled_MOS_positions": []
+    }
+  },
+  "conversion_rule": "author = MOS + offset. Chain A: author = MOS + 18 (equals UniProt 19-225 numbering). Chain B: author = MOS - 5 (PDB 7XYQ chain B starts at -4).",
+  "selected_candidate_positions_MOS": {
+    "B": [
+      18,
+      55,
+      17,
+      19,
+      30
+    ]
+  },
+  "selected_candidate_positions_author": {
+    "B": [
+      13,
+      50,
+      12,
+      14,
+      25
+    ]
+  },
+  "full_per_residue_table": "mapping/chain_residue_mapping.csv"
+}

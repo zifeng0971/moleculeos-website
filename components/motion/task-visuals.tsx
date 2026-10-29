@@ -30,9 +30,9 @@ const ease = (t: number) => (t < 0.5 ? 4 * t ** 3 : 1 - (-2 * t + 2) ** 3 / 2);
 const window01 = (t: number, a: number, b: number) => clamp((t - a) / (b - a));
 
 // AlphaFold-style confidence bands, chain colours matching the hero workbench, flexibility ramp.
-const PLDDT = ['#0053D6', '#65CBF3', '#FFDB13', '#FF7D45'].map(hex);
-const CHAIN: Record<string, RGB> = { A: hex('#4FC3A1'), B: hex('#F2A541'), C: hex('#A58BFF') };
-const COOL = hex('#4D7CFF'), NEUTRAL = hex('#E8E6F5'), WARM = hex('#FF6B6B'), GLOW = hex('#F08BD0');
+const PLDDT = ['#0053D6', '#93C9EC', '#FFDB13', '#FF7D45'].map(hex);
+const CHAIN: Record<string, RGB> = { A: hex('#A3DDBF'), B: hex('#F2A541'), C: hex('#B9AEF0') };
+const COOL = hex('#4D7CFF'), NEUTRAL = hex('#E8E6F5'), WARM = hex('#FF6B6B'), GLOW = hex('#EFA9C4');
 const flexColor = (f: number) => (f < 0.5 ? mix(COOL, NEUTRAL, f * 2) : mix(NEUTRAL, WARM, (f - 0.5) * 2));
 const band = (flex: number) => (flex < 0.3 ? 0 : flex < 0.5 ? 1 : flex < 0.72 ? 2 : 3);
 
@@ -195,7 +195,8 @@ function stabilityScene(): SceneFn {
   };
 }
 
-const meltPath = (mid: number) => Array.from({ length: 40 }, (_, k) => `${k ? 'L' : 'M'}${k * 4} ${(54 - 46 / (1 + Math.exp((k - mid) / 2.4))).toFixed(1)}`).join(' ');
+// Sampled finely (a point every ~1.6 units) so the sigmoid reads as one smooth curve rather than a polyline.
+export const meltPath = (mid: number) => Array.from({ length: 97 }, (_, i) => { const k = (i * 39) / 96; return `${i ? 'L' : 'M'}${(k * 4).toFixed(1)} ${(54 - 46 / (1 + Math.exp((k - mid) / 2.4))).toFixed(1)}`; }).join(' ');
 
 /* ---------- 4. De novo: a binder denoises out of noise onto the target interface ---------- */
 function deNovoScene(): SceneFn {

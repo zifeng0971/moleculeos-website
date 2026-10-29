@@ -1,0 +1,3650 @@
+{
+  "pdb": "1BVL",
+  "source_kind": "experimental reference from official RCSB mmCIF",
+  "chains": [
+    {
+      "label_chain": "A",
+      "auth_chain": "A",
+      "entity_id": "1",
+      "description": "HULYS11",
+      "entity_sequence": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSSG",
+      "entity_length": 117,
+      "modeled_residues": 116
+    },
+    {
+      "label_chain": "B",
+      "auth_chain": "B",
+      "entity_id": "2",
+      "description": "HULYS11",
+      "entity_sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIKR",
+      "entity_length": 108,
+      "modeled_residues": 108
+    },
+    {
+      "label_chain": "C",
+      "auth_chain": "C",
+      "entity_id": "1",
+      "description": "HULYS11",
+      "entity_sequence": "QVQLQESGPGLVRPSQTLSLTCTVSGFSLTGYGVNWVRQPPGRGLEWIGMIWGDGNTDYNSALKSRVTMLKDTSKNQFSLRLSSVTAADTAVYYCARERDYRLDYWGQGSLVTVSSG",
+      "entity_length": 117,
+      "modeled_residues": 116
+    },
+    {
+      "label_chain": "D",
+      "auth_chain": "D",
+      "entity_id": "2",
+      "description": "HULYS11",
+      "entity_sequence": "DIQMTQSPSSLSASVGDRVTITCRASGNIHNYLAWYQQKPGKAPKLLIYYTTTLADGVPSRFSGSGSGTDYTFTISSLQPEDIATYYCQHFWSTPRTFGQGTKVEIKR",
+      "entity_length": 108,
+      "modeled_residues": 108
+    }
+  ],
+  "residue_mapping": [
+    {
+      "label_chain": "A",
+      "label_seq_id": 1,
+      "auth_chain": "A",
+      "auth_seq_id": "1",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 2,
+      "auth_chain": "A",
+      "auth_seq_id": "2",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 3,
+      "auth_chain": "A",
+      "auth_seq_id": "3",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 4,
+      "auth_chain": "A",
+      "auth_seq_id": "4",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 5,
+      "auth_chain": "A",
+      "auth_seq_id": "5",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 6,
+      "auth_chain": "A",
+      "auth_seq_id": "6",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 7,
+      "auth_chain": "A",
+      "auth_seq_id": "7",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 8,
+      "auth_chain": "A",
+      "auth_seq_id": "8",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 9,
+      "auth_chain": "A",
+      "auth_seq_id": "9",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 10,
+      "auth_chain": "A",
+      "auth_seq_id": "10",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 11,
+      "auth_chain": "A",
+      "auth_seq_id": "11",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 12,
+      "auth_chain": "A",
+      "auth_seq_id": "12",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 13,
+      "auth_chain": "A",
+      "auth_seq_id": "13",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 14,
+      "auth_chain": "A",
+      "auth_seq_id": "14",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 15,
+      "auth_chain": "A",
+      "auth_seq_id": "15",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 16,
+      "auth_chain": "A",
+      "auth_seq_id": "16",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 17,
+      "auth_chain": "A",
+      "auth_seq_id": "17",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 18,
+      "auth_chain": "A",
+      "auth_seq_id": "18",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 19,
+      "auth_chain": "A",
+      "auth_seq_id": "19",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 20,
+      "auth_chain": "A",
+      "auth_seq_id": "20",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 21,
+      "auth_chain": "A",
+      "auth_seq_id": "21",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 22,
+      "auth_chain": "A",
+      "auth_seq_id": "22",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 23,
+      "auth_chain": "A",
+      "auth_seq_id": "23",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 24,
+      "auth_chain": "A",
+      "auth_seq_id": "24",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 25,
+      "auth_chain": "A",
+      "auth_seq_id": "25",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 26,
+      "auth_chain": "A",
+      "auth_seq_id": "26",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 27,
+      "auth_chain": "A",
+      "auth_seq_id": "27",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 28,
+      "auth_chain": "A",
+      "auth_seq_id": "28",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 29,
+      "auth_chain": "A",
+      "auth_seq_id": "29",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 30,
+      "auth_chain": "A",
+      "auth_seq_id": "30",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 31,
+      "auth_chain": "A",
+      "auth_seq_id": "31",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 32,
+      "auth_chain": "A",
+      "auth_seq_id": "32",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 33,
+      "auth_chain": "A",
+      "auth_seq_id": "33",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 34,
+      "auth_chain": "A",
+      "auth_seq_id": "34",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 35,
+      "auth_chain": "A",
+      "auth_seq_id": "35",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 36,
+      "auth_chain": "A",
+      "auth_seq_id": "36",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 37,
+      "auth_chain": "A",
+      "auth_seq_id": "37",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 38,
+      "auth_chain": "A",
+      "auth_seq_id": "38",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 39,
+      "auth_chain": "A",
+      "auth_seq_id": "39",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 40,
+      "auth_chain": "A",
+      "auth_seq_id": "40",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 41,
+      "auth_chain": "A",
+      "auth_seq_id": "41",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 42,
+      "auth_chain": "A",
+      "auth_seq_id": "42",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 43,
+      "auth_chain": "A",
+      "auth_seq_id": "43",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 44,
+      "auth_chain": "A",
+      "auth_seq_id": "44",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 45,
+      "auth_chain": "A",
+      "auth_seq_id": "45",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 46,
+      "auth_chain": "A",
+      "auth_seq_id": "46",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 47,
+      "auth_chain": "A",
+      "auth_seq_id": "47",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 48,
+      "auth_chain": "A",
+      "auth_seq_id": "48",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 49,
+      "auth_chain": "A",
+      "auth_seq_id": "49",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 50,
+      "auth_chain": "A",
+      "auth_seq_id": "50",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 51,
+      "auth_chain": "A",
+      "auth_seq_id": "51",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 52,
+      "auth_chain": "A",
+      "auth_seq_id": "52",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 53,
+      "auth_chain": "A",
+      "auth_seq_id": "53",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 54,
+      "auth_chain": "A",
+      "auth_seq_id": "54",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 55,
+      "auth_chain": "A",
+      "auth_seq_id": "55",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 56,
+      "auth_chain": "A",
+      "auth_seq_id": "56",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 57,
+      "auth_chain": "A",
+      "auth_seq_id": "57",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 58,
+      "auth_chain": "A",
+      "auth_seq_id": "58",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 59,
+      "auth_chain": "A",
+      "auth_seq_id": "59",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 60,
+      "auth_chain": "A",
+      "auth_seq_id": "60",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 61,
+      "auth_chain": "A",
+      "auth_seq_id": "61",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 62,
+      "auth_chain": "A",
+      "auth_seq_id": "62",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 63,
+      "auth_chain": "A",
+      "auth_seq_id": "63",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 64,
+      "auth_chain": "A",
+      "auth_seq_id": "64",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 65,
+      "auth_chain": "A",
+      "auth_seq_id": "65",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 66,
+      "auth_chain": "A",
+      "auth_seq_id": "66",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 67,
+      "auth_chain": "A",
+      "auth_seq_id": "67",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 68,
+      "auth_chain": "A",
+      "auth_seq_id": "68",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 69,
+      "auth_chain": "A",
+      "auth_seq_id": "69",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 70,
+      "auth_chain": "A",
+      "auth_seq_id": "70",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 71,
+      "auth_chain": "A",
+      "auth_seq_id": "71",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 72,
+      "auth_chain": "A",
+      "auth_seq_id": "72",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 73,
+      "auth_chain": "A",
+      "auth_seq_id": "73",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 74,
+      "auth_chain": "A",
+      "auth_seq_id": "74",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 75,
+      "auth_chain": "A",
+      "auth_seq_id": "75",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 76,
+      "auth_chain": "A",
+      "auth_seq_id": "76",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 77,
+      "auth_chain": "A",
+      "auth_seq_id": "77",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 78,
+      "auth_chain": "A",
+      "auth_seq_id": "78",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 79,
+      "auth_chain": "A",
+      "auth_seq_id": "79",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 80,
+      "auth_chain": "A",
+      "auth_seq_id": "80",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 81,
+      "auth_chain": "A",
+      "auth_seq_id": "81",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 82,
+      "auth_chain": "A",
+      "auth_seq_id": "82",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 83,
+      "auth_chain": "A",
+      "auth_seq_id": "83",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 84,
+      "auth_chain": "A",
+      "auth_seq_id": "84",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 85,
+      "auth_chain": "A",
+      "auth_seq_id": "85",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 86,
+      "auth_chain": "A",
+      "auth_seq_id": "86",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 87,
+      "auth_chain": "A",
+      "auth_seq_id": "87",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 88,
+      "auth_chain": "A",
+      "auth_seq_id": "88",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 89,
+      "auth_chain": "A",
+      "auth_seq_id": "89",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 90,
+      "auth_chain": "A",
+      "auth_seq_id": "90",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 91,
+      "auth_chain": "A",
+      "auth_seq_id": "91",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 92,
+      "auth_chain": "A",
+      "auth_seq_id": "92",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 93,
+      "auth_chain": "A",
+      "auth_seq_id": "93",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 94,
+      "auth_chain": "A",
+      "auth_seq_id": "94",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 95,
+      "auth_chain": "A",
+      "auth_seq_id": "95",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 96,
+      "auth_chain": "A",
+      "auth_seq_id": "96",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 97,
+      "auth_chain": "A",
+      "auth_seq_id": "97",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 98,
+      "auth_chain": "A",
+      "auth_seq_id": "98",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 99,
+      "auth_chain": "A",
+      "auth_seq_id": "99",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 100,
+      "auth_chain": "A",
+      "auth_seq_id": "100",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 101,
+      "auth_chain": "A",
+      "auth_seq_id": "101",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 102,
+      "auth_chain": "A",
+      "auth_seq_id": "102",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 103,
+      "auth_chain": "A",
+      "auth_seq_id": "103",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 104,
+      "auth_chain": "A",
+      "auth_seq_id": "104",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 105,
+      "auth_chain": "A",
+      "auth_seq_id": "105",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 106,
+      "auth_chain": "A",
+      "auth_seq_id": "106",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 107,
+      "auth_chain": "A",
+      "auth_seq_id": "107",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 108,
+      "auth_chain": "A",
+      "auth_seq_id": "108",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 109,
+      "auth_chain": "A",
+      "auth_seq_id": "109",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 110,
+      "auth_chain": "A",
+      "auth_seq_id": "110",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 111,
+      "auth_chain": "A",
+      "auth_seq_id": "111",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 112,
+      "auth_chain": "A",
+      "auth_seq_id": "112",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 113,
+      "auth_chain": "A",
+      "auth_seq_id": "113",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 114,
+      "auth_chain": "A",
+      "auth_seq_id": "114",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 115,
+      "auth_chain": "A",
+      "auth_seq_id": "115",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "A",
+      "label_seq_id": 116,
+      "auth_chain": "A",
+      "auth_seq_id": "116",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 1,
+      "auth_chain": "B",
+      "auth_seq_id": "1",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 2,
+      "auth_chain": "B",
+      "auth_seq_id": "2",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 3,
+      "auth_chain": "B",
+      "auth_seq_id": "3",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 4,
+      "auth_chain": "B",
+      "auth_seq_id": "4",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 5,
+      "auth_chain": "B",
+      "auth_seq_id": "5",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 6,
+      "auth_chain": "B",
+      "auth_seq_id": "6",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 7,
+      "auth_chain": "B",
+      "auth_seq_id": "7",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 8,
+      "auth_chain": "B",
+      "auth_seq_id": "8",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 9,
+      "auth_chain": "B",
+      "auth_seq_id": "9",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 10,
+      "auth_chain": "B",
+      "auth_seq_id": "10",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 11,
+      "auth_chain": "B",
+      "auth_seq_id": "11",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 12,
+      "auth_chain": "B",
+      "auth_seq_id": "12",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 13,
+      "auth_chain": "B",
+      "auth_seq_id": "13",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 14,
+      "auth_chain": "B",
+      "auth_seq_id": "14",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 15,
+      "auth_chain": "B",
+      "auth_seq_id": "15",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 16,
+      "auth_chain": "B",
+      "auth_seq_id": "16",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 17,
+      "auth_chain": "B",
+      "auth_seq_id": "17",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 18,
+      "auth_chain": "B",
+      "auth_seq_id": "18",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 19,
+      "auth_chain": "B",
+      "auth_seq_id": "19",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 20,
+      "auth_chain": "B",
+      "auth_seq_id": "20",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 21,
+      "auth_chain": "B",
+      "auth_seq_id": "21",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 22,
+      "auth_chain": "B",
+      "auth_seq_id": "22",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 23,
+      "auth_chain": "B",
+      "auth_seq_id": "23",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 24,
+      "auth_chain": "B",
+      "auth_seq_id": "24",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 25,
+      "auth_chain": "B",
+      "auth_seq_id": "25",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 26,
+      "auth_chain": "B",
+      "auth_seq_id": "26",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 27,
+      "auth_chain": "B",
+      "auth_seq_id": "27",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 28,
+      "auth_chain": "B",
+      "auth_seq_id": "28",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 29,
+      "auth_chain": "B",
+      "auth_seq_id": "29",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 30,
+      "auth_chain": "B",
+      "auth_seq_id": "30",
+      "auth_ins_code": "?",
+      "aa": "H"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 31,
+      "auth_chain": "B",
+      "auth_seq_id": "31",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 32,
+      "auth_chain": "B",
+      "auth_seq_id": "32",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 33,
+      "auth_chain": "B",
+      "auth_seq_id": "33",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 34,
+      "auth_chain": "B",
+      "auth_seq_id": "34",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 35,
+      "auth_chain": "B",
+      "auth_seq_id": "35",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 36,
+      "auth_chain": "B",
+      "auth_seq_id": "36",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 37,
+      "auth_chain": "B",
+      "auth_seq_id": "37",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 38,
+      "auth_chain": "B",
+      "auth_seq_id": "38",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 39,
+      "auth_chain": "B",
+      "auth_seq_id": "39",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 40,
+      "auth_chain": "B",
+      "auth_seq_id": "40",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 41,
+      "auth_chain": "B",
+      "auth_seq_id": "41",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 42,
+      "auth_chain": "B",
+      "auth_seq_id": "42",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 43,
+      "auth_chain": "B",
+      "auth_seq_id": "43",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 44,
+      "auth_chain": "B",
+      "auth_seq_id": "44",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 45,
+      "auth_chain": "B",
+      "auth_seq_id": "45",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 46,
+      "auth_chain": "B",
+      "auth_seq_id": "46",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 47,
+      "auth_chain": "B",
+      "auth_seq_id": "47",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 48,
+      "auth_chain": "B",
+      "auth_seq_id": "48",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 49,
+      "auth_chain": "B",
+      "auth_seq_id": "49",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 50,
+      "auth_chain": "B",
+      "auth_seq_id": "50",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 51,
+      "auth_chain": "B",
+      "auth_seq_id": "51",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 52,
+      "auth_chain": "B",
+      "auth_seq_id": "52",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 53,
+      "auth_chain": "B",
+      "auth_seq_id": "53",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 54,
+      "auth_chain": "B",
+      "auth_seq_id": "54",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 55,
+      "auth_chain": "B",
+      "auth_seq_id": "55",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 56,
+      "auth_chain": "B",
+      "auth_seq_id": "56",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 57,
+      "auth_chain": "B",
+      "auth_seq_id": "57",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 58,
+      "auth_chain": "B",
+      "auth_seq_id": "58",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 59,
+      "auth_chain": "B",
+      "auth_seq_id": "59",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 60,
+      "auth_chain": "B",
+      "auth_seq_id": "60",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 61,
+      "auth_chain": "B",
+      "auth_seq_id": "61",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 62,
+      "auth_chain": "B",
+      "auth_seq_id": "62",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 63,
+      "auth_chain": "B",
+      "auth_seq_id": "63",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 64,
+      "auth_chain": "B",
+      "auth_seq_id": "64",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 65,
+      "auth_chain": "B",
+      "auth_seq_id": "65",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 66,
+      "auth_chain": "B",
+      "auth_seq_id": "66",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 67,
+      "auth_chain": "B",
+      "auth_seq_id": "67",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 68,
+      "auth_chain": "B",
+      "auth_seq_id": "68",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 69,
+      "auth_chain": "B",
+      "auth_seq_id": "69",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 70,
+      "auth_chain": "B",
+      "auth_seq_id": "70",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 71,
+      "auth_chain": "B",
+      "auth_seq_id": "71",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 72,
+      "auth_chain": "B",
+      "auth_seq_id": "72",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 73,
+      "auth_chain": "B",
+      "auth_seq_id": "73",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 74,
+      "auth_chain": "B",
+      "auth_seq_id": "74",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 75,
+      "auth_chain": "B",
+      "auth_seq_id": "75",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 76,
+      "auth_chain": "B",
+      "auth_seq_id": "76",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 77,
+      "auth_chain": "B",
+      "auth_seq_id": "77",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 78,
+      "auth_chain": "B",
+      "auth_seq_id": "78",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 79,
+      "auth_chain": "B",
+      "auth_seq_id": "79",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 80,
+      "auth_chain": "B",
+      "auth_seq_id": "80",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 81,
+      "auth_chain": "B",
+      "auth_seq_id": "81",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 82,
+      "auth_chain": "B",
+      "auth_seq_id": "82",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 83,
+      "auth_chain": "B",
+      "auth_seq_id": "83",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 84,
+      "auth_chain": "B",
+      "auth_seq_id": "84",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 85,
+      "auth_chain": "B",
+      "auth_seq_id": "85",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 86,
+      "auth_chain": "B",
+      "auth_seq_id": "86",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 87,
+      "auth_chain": "B",
+      "auth_seq_id": "87",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 88,
+      "auth_chain": "B",
+      "auth_seq_id": "88",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 89,
+      "auth_chain": "B",
+      "auth_seq_id": "89",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 90,
+      "auth_chain": "B",
+      "auth_seq_id": "90",
+      "auth_ins_code": "?",
+      "aa": "H"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 91,
+      "auth_chain": "B",
+      "auth_seq_id": "91",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 92,
+      "auth_chain": "B",
+      "auth_seq_id": "92",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 93,
+      "auth_chain": "B",
+      "auth_seq_id": "93",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 94,
+      "auth_chain": "B",
+      "auth_seq_id": "94",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 95,
+      "auth_chain": "B",
+      "auth_seq_id": "95",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 96,
+      "auth_chain": "B",
+      "auth_seq_id": "96",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 97,
+      "auth_chain": "B",
+      "auth_seq_id": "97",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 98,
+      "auth_chain": "B",
+      "auth_seq_id": "98",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 99,
+      "auth_chain": "B",
+      "auth_seq_id": "99",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 100,
+      "auth_chain": "B",
+      "auth_seq_id": "100",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 101,
+      "auth_chain": "B",
+      "auth_seq_id": "101",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 102,
+      "auth_chain": "B",
+      "auth_seq_id": "102",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 103,
+      "auth_chain": "B",
+      "auth_seq_id": "103",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 104,
+      "auth_chain": "B",
+      "auth_seq_id": "104",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 105,
+      "auth_chain": "B",
+      "auth_seq_id": "105",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 106,
+      "auth_chain": "B",
+      "auth_seq_id": "106",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 107,
+      "auth_chain": "B",
+      "auth_seq_id": "107",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "B",
+      "label_seq_id": 108,
+      "auth_chain": "B",
+      "auth_seq_id": "108",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 1,
+      "auth_chain": "C",
+      "auth_seq_id": "1",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 2,
+      "auth_chain": "C",
+      "auth_seq_id": "2",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 3,
+      "auth_chain": "C",
+      "auth_seq_id": "3",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 4,
+      "auth_chain": "C",
+      "auth_seq_id": "4",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 5,
+      "auth_chain": "C",
+      "auth_seq_id": "5",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 6,
+      "auth_chain": "C",
+      "auth_seq_id": "6",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 7,
+      "auth_chain": "C",
+      "auth_seq_id": "7",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 8,
+      "auth_chain": "C",
+      "auth_seq_id": "8",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 9,
+      "auth_chain": "C",
+      "auth_seq_id": "9",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 10,
+      "auth_chain": "C",
+      "auth_seq_id": "10",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 11,
+      "auth_chain": "C",
+      "auth_seq_id": "11",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 12,
+      "auth_chain": "C",
+      "auth_seq_id": "12",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 13,
+      "auth_chain": "C",
+      "auth_seq_id": "13",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 14,
+      "auth_chain": "C",
+      "auth_seq_id": "14",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 15,
+      "auth_chain": "C",
+      "auth_seq_id": "15",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 16,
+      "auth_chain": "C",
+      "auth_seq_id": "16",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 17,
+      "auth_chain": "C",
+      "auth_seq_id": "17",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 18,
+      "auth_chain": "C",
+      "auth_seq_id": "18",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 19,
+      "auth_chain": "C",
+      "auth_seq_id": "19",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 20,
+      "auth_chain": "C",
+      "auth_seq_id": "20",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 21,
+      "auth_chain": "C",
+      "auth_seq_id": "21",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 22,
+      "auth_chain": "C",
+      "auth_seq_id": "22",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 23,
+      "auth_chain": "C",
+      "auth_seq_id": "23",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 24,
+      "auth_chain": "C",
+      "auth_seq_id": "24",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 25,
+      "auth_chain": "C",
+      "auth_seq_id": "25",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 26,
+      "auth_chain": "C",
+      "auth_seq_id": "26",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 27,
+      "auth_chain": "C",
+      "auth_seq_id": "27",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 28,
+      "auth_chain": "C",
+      "auth_seq_id": "28",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 29,
+      "auth_chain": "C",
+      "auth_seq_id": "29",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 30,
+      "auth_chain": "C",
+      "auth_seq_id": "30",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 31,
+      "auth_chain": "C",
+      "auth_seq_id": "31",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 32,
+      "auth_chain": "C",
+      "auth_seq_id": "32",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 33,
+      "auth_chain": "C",
+      "auth_seq_id": "33",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 34,
+      "auth_chain": "C",
+      "auth_seq_id": "34",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 35,
+      "auth_chain": "C",
+      "auth_seq_id": "35",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 36,
+      "auth_chain": "C",
+      "auth_seq_id": "36",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 37,
+      "auth_chain": "C",
+      "auth_seq_id": "37",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 38,
+      "auth_chain": "C",
+      "auth_seq_id": "38",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 39,
+      "auth_chain": "C",
+      "auth_seq_id": "39",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 40,
+      "auth_chain": "C",
+      "auth_seq_id": "40",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 41,
+      "auth_chain": "C",
+      "auth_seq_id": "41",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 42,
+      "auth_chain": "C",
+      "auth_seq_id": "42",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 43,
+      "auth_chain": "C",
+      "auth_seq_id": "43",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 44,
+      "auth_chain": "C",
+      "auth_seq_id": "44",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 45,
+      "auth_chain": "C",
+      "auth_seq_id": "45",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 46,
+      "auth_chain": "C",
+      "auth_seq_id": "46",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 47,
+      "auth_chain": "C",
+      "auth_seq_id": "47",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 48,
+      "auth_chain": "C",
+      "auth_seq_id": "48",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 49,
+      "auth_chain": "C",
+      "auth_seq_id": "49",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 50,
+      "auth_chain": "C",
+      "auth_seq_id": "50",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 51,
+      "auth_chain": "C",
+      "auth_seq_id": "51",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 52,
+      "auth_chain": "C",
+      "auth_seq_id": "52",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 53,
+      "auth_chain": "C",
+      "auth_seq_id": "53",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 54,
+      "auth_chain": "C",
+      "auth_seq_id": "54",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 55,
+      "auth_chain": "C",
+      "auth_seq_id": "55",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 56,
+      "auth_chain": "C",
+      "auth_seq_id": "56",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 57,
+      "auth_chain": "C",
+      "auth_seq_id": "57",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 58,
+      "auth_chain": "C",
+      "auth_seq_id": "58",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 59,
+      "auth_chain": "C",
+      "auth_seq_id": "59",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 60,
+      "auth_chain": "C",
+      "auth_seq_id": "60",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 61,
+      "auth_chain": "C",
+      "auth_seq_id": "61",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 62,
+      "auth_chain": "C",
+      "auth_seq_id": "62",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 63,
+      "auth_chain": "C",
+      "auth_seq_id": "63",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 64,
+      "auth_chain": "C",
+      "auth_seq_id": "64",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 65,
+      "auth_chain": "C",
+      "auth_seq_id": "65",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 66,
+      "auth_chain": "C",
+      "auth_seq_id": "66",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 67,
+      "auth_chain": "C",
+      "auth_seq_id": "67",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 68,
+      "auth_chain": "C",
+      "auth_seq_id": "68",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 69,
+      "auth_chain": "C",
+      "auth_seq_id": "69",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 70,
+      "auth_chain": "C",
+      "auth_seq_id": "70",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 71,
+      "auth_chain": "C",
+      "auth_seq_id": "71",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 72,
+      "auth_chain": "C",
+      "auth_seq_id": "72",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 73,
+      "auth_chain": "C",
+      "auth_seq_id": "73",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 74,
+      "auth_chain": "C",
+      "auth_seq_id": "74",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 75,
+      "auth_chain": "C",
+      "auth_seq_id": "75",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 76,
+      "auth_chain": "C",
+      "auth_seq_id": "76",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 77,
+      "auth_chain": "C",
+      "auth_seq_id": "77",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 78,
+      "auth_chain": "C",
+      "auth_seq_id": "78",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 79,
+      "auth_chain": "C",
+      "auth_seq_id": "79",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 80,
+      "auth_chain": "C",
+      "auth_seq_id": "80",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 81,
+      "auth_chain": "C",
+      "auth_seq_id": "81",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 82,
+      "auth_chain": "C",
+      "auth_seq_id": "82",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 83,
+      "auth_chain": "C",
+      "auth_seq_id": "83",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 84,
+      "auth_chain": "C",
+      "auth_seq_id": "84",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 85,
+      "auth_chain": "C",
+      "auth_seq_id": "85",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 86,
+      "auth_chain": "C",
+      "auth_seq_id": "86",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 87,
+      "auth_chain": "C",
+      "auth_seq_id": "87",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 88,
+      "auth_chain": "C",
+      "auth_seq_id": "88",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 89,
+      "auth_chain": "C",
+      "auth_seq_id": "89",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 90,
+      "auth_chain": "C",
+      "auth_seq_id": "90",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 91,
+      "auth_chain": "C",
+      "auth_seq_id": "91",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 92,
+      "auth_chain": "C",
+      "auth_seq_id": "92",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 93,
+      "auth_chain": "C",
+      "auth_seq_id": "93",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 94,
+      "auth_chain": "C",
+      "auth_seq_id": "94",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 95,
+      "auth_chain": "C",
+      "auth_seq_id": "95",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 96,
+      "auth_chain": "C",
+      "auth_seq_id": "96",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 97,
+      "auth_chain": "C",
+      "auth_seq_id": "97",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 98,
+      "auth_chain": "C",
+      "auth_seq_id": "98",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 99,
+      "auth_chain": "C",
+      "auth_seq_id": "99",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 100,
+      "auth_chain": "C",
+      "auth_seq_id": "100",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 101,
+      "auth_chain": "C",
+      "auth_seq_id": "101",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 102,
+      "auth_chain": "C",
+      "auth_seq_id": "102",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 103,
+      "auth_chain": "C",
+      "auth_seq_id": "103",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 104,
+      "auth_chain": "C",
+      "auth_seq_id": "104",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 105,
+      "auth_chain": "C",
+      "auth_seq_id": "105",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 106,
+      "auth_chain": "C",
+      "auth_seq_id": "106",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 107,
+      "auth_chain": "C",
+      "auth_seq_id": "107",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 108,
+      "auth_chain": "C",
+      "auth_seq_id": "108",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 109,
+      "auth_chain": "C",
+      "auth_seq_id": "109",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 110,
+      "auth_chain": "C",
+      "auth_seq_id": "110",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 111,
+      "auth_chain": "C",
+      "auth_seq_id": "111",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 112,
+      "auth_chain": "C",
+      "auth_seq_id": "112",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 113,
+      "auth_chain": "C",
+      "auth_seq_id": "113",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 114,
+      "auth_chain": "C",
+      "auth_seq_id": "114",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 115,
+      "auth_chain": "C",
+      "auth_seq_id": "115",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "C",
+      "label_seq_id": 116,
+      "auth_chain": "C",
+      "auth_seq_id": "116",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 1,
+      "auth_chain": "D",
+      "auth_seq_id": "1",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 2,
+      "auth_chain": "D",
+      "auth_seq_id": "2",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 3,
+      "auth_chain": "D",
+      "auth_seq_id": "3",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 4,
+      "auth_chain": "D",
+      "auth_seq_id": "4",
+      "auth_ins_code": "?",
+      "aa": "M"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 5,
+      "auth_chain": "D",
+      "auth_seq_id": "5",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 6,
+      "auth_chain": "D",
+      "auth_seq_id": "6",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 7,
+      "auth_chain": "D",
+      "auth_seq_id": "7",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 8,
+      "auth_chain": "D",
+      "auth_seq_id": "8",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 9,
+      "auth_chain": "D",
+      "auth_seq_id": "9",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 10,
+      "auth_chain": "D",
+      "auth_seq_id": "10",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 11,
+      "auth_chain": "D",
+      "auth_seq_id": "11",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 12,
+      "auth_chain": "D",
+      "auth_seq_id": "12",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 13,
+      "auth_chain": "D",
+      "auth_seq_id": "13",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 14,
+      "auth_chain": "D",
+      "auth_seq_id": "14",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 15,
+      "auth_chain": "D",
+      "auth_seq_id": "15",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 16,
+      "auth_chain": "D",
+      "auth_seq_id": "16",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 17,
+      "auth_chain": "D",
+      "auth_seq_id": "17",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 18,
+      "auth_chain": "D",
+      "auth_seq_id": "18",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 19,
+      "auth_chain": "D",
+      "auth_seq_id": "19",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 20,
+      "auth_chain": "D",
+      "auth_seq_id": "20",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 21,
+      "auth_chain": "D",
+      "auth_seq_id": "21",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 22,
+      "auth_chain": "D",
+      "auth_seq_id": "22",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 23,
+      "auth_chain": "D",
+      "auth_seq_id": "23",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 24,
+      "auth_chain": "D",
+      "auth_seq_id": "24",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 25,
+      "auth_chain": "D",
+      "auth_seq_id": "25",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 26,
+      "auth_chain": "D",
+      "auth_seq_id": "26",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 27,
+      "auth_chain": "D",
+      "auth_seq_id": "27",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 28,
+      "auth_chain": "D",
+      "auth_seq_id": "28",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 29,
+      "auth_chain": "D",
+      "auth_seq_id": "29",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 30,
+      "auth_chain": "D",
+      "auth_seq_id": "30",
+      "auth_ins_code": "?",
+      "aa": "H"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 31,
+      "auth_chain": "D",
+      "auth_seq_id": "31",
+      "auth_ins_code": "?",
+      "aa": "N"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 32,
+      "auth_chain": "D",
+      "auth_seq_id": "32",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 33,
+      "auth_chain": "D",
+      "auth_seq_id": "33",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 34,
+      "auth_chain": "D",
+      "auth_seq_id": "34",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 35,
+      "auth_chain": "D",
+      "auth_seq_id": "35",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 36,
+      "auth_chain": "D",
+      "auth_seq_id": "36",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 37,
+      "auth_chain": "D",
+      "auth_seq_id": "37",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 38,
+      "auth_chain": "D",
+      "auth_seq_id": "38",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 39,
+      "auth_chain": "D",
+      "auth_seq_id": "39",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 40,
+      "auth_chain": "D",
+      "auth_seq_id": "40",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 41,
+      "auth_chain": "D",
+      "auth_seq_id": "41",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 42,
+      "auth_chain": "D",
+      "auth_seq_id": "42",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 43,
+      "auth_chain": "D",
+      "auth_seq_id": "43",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 44,
+      "auth_chain": "D",
+      "auth_seq_id": "44",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 45,
+      "auth_chain": "D",
+      "auth_seq_id": "45",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 46,
+      "auth_chain": "D",
+      "auth_seq_id": "46",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 47,
+      "auth_chain": "D",
+      "auth_seq_id": "47",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 48,
+      "auth_chain": "D",
+      "auth_seq_id": "48",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 49,
+      "auth_chain": "D",
+      "auth_seq_id": "49",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 50,
+      "auth_chain": "D",
+      "auth_seq_id": "50",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 51,
+      "auth_chain": "D",
+      "auth_seq_id": "51",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 52,
+      "auth_chain": "D",
+      "auth_seq_id": "52",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 53,
+      "auth_chain": "D",
+      "auth_seq_id": "53",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 54,
+      "auth_chain": "D",
+      "auth_seq_id": "54",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 55,
+      "auth_chain": "D",
+      "auth_seq_id": "55",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 56,
+      "auth_chain": "D",
+      "auth_seq_id": "56",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 57,
+      "auth_chain": "D",
+      "auth_seq_id": "57",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 58,
+      "auth_chain": "D",
+      "auth_seq_id": "58",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 59,
+      "auth_chain": "D",
+      "auth_seq_id": "59",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 60,
+      "auth_chain": "D",
+      "auth_seq_id": "60",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 61,
+      "auth_chain": "D",
+      "auth_seq_id": "61",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 62,
+      "auth_chain": "D",
+      "auth_seq_id": "62",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 63,
+      "auth_chain": "D",
+      "auth_seq_id": "63",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 64,
+      "auth_chain": "D",
+      "auth_seq_id": "64",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 65,
+      "auth_chain": "D",
+      "auth_seq_id": "65",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 66,
+      "auth_chain": "D",
+      "auth_seq_id": "66",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 67,
+      "auth_chain": "D",
+      "auth_seq_id": "67",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 68,
+      "auth_chain": "D",
+      "auth_seq_id": "68",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 69,
+      "auth_chain": "D",
+      "auth_seq_id": "69",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 70,
+      "auth_chain": "D",
+      "auth_seq_id": "70",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 71,
+      "auth_chain": "D",
+      "auth_seq_id": "71",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 72,
+      "auth_chain": "D",
+      "auth_seq_id": "72",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 73,
+      "auth_chain": "D",
+      "auth_seq_id": "73",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 74,
+      "auth_chain": "D",
+      "auth_seq_id": "74",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 75,
+      "auth_chain": "D",
+      "auth_seq_id": "75",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 76,
+      "auth_chain": "D",
+      "auth_seq_id": "76",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 77,
+      "auth_chain": "D",
+      "auth_seq_id": "77",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 78,
+      "auth_chain": "D",
+      "auth_seq_id": "78",
+      "auth_ins_code": "?",
+      "aa": "L"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 79,
+      "auth_chain": "D",
+      "auth_seq_id": "79",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 80,
+      "auth_chain": "D",
+      "auth_seq_id": "80",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 81,
+      "auth_chain": "D",
+      "auth_seq_id": "81",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 82,
+      "auth_chain": "D",
+      "auth_seq_id": "82",
+      "auth_ins_code": "?",
+      "aa": "D"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 83,
+      "auth_chain": "D",
+      "auth_seq_id": "83",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 84,
+      "auth_chain": "D",
+      "auth_seq_id": "84",
+      "auth_ins_code": "?",
+      "aa": "A"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 85,
+      "auth_chain": "D",
+      "auth_seq_id": "85",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 86,
+      "auth_chain": "D",
+      "auth_seq_id": "86",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 87,
+      "auth_chain": "D",
+      "auth_seq_id": "87",
+      "auth_ins_code": "?",
+      "aa": "Y"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 88,
+      "auth_chain": "D",
+      "auth_seq_id": "88",
+      "auth_ins_code": "?",
+      "aa": "C"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 89,
+      "auth_chain": "D",
+      "auth_seq_id": "89",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 90,
+      "auth_chain": "D",
+      "auth_seq_id": "90",
+      "auth_ins_code": "?",
+      "aa": "H"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 91,
+      "auth_chain": "D",
+      "auth_seq_id": "91",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 92,
+      "auth_chain": "D",
+      "auth_seq_id": "92",
+      "auth_ins_code": "?",
+      "aa": "W"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 93,
+      "auth_chain": "D",
+      "auth_seq_id": "93",
+      "auth_ins_code": "?",
+      "aa": "S"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 94,
+      "auth_chain": "D",
+      "auth_seq_id": "94",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 95,
+      "auth_chain": "D",
+      "auth_seq_id": "95",
+      "auth_ins_code": "?",
+      "aa": "P"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 96,
+      "auth_chain": "D",
+      "auth_seq_id": "96",
+      "auth_ins_code": "?",
+      "aa": "R"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 97,
+      "auth_chain": "D",
+      "auth_seq_id": "97",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 98,
+      "auth_chain": "D",
+      "auth_seq_id": "98",
+      "auth_ins_code": "?",
+      "aa": "F"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 99,
+      "auth_chain": "D",
+      "auth_seq_id": "99",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 100,
+      "auth_chain": "D",
+      "auth_seq_id": "100",
+      "auth_ins_code": "?",
+      "aa": "Q"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 101,
+      "auth_chain": "D",
+      "auth_seq_id": "101",
+      "auth_ins_code": "?",
+      "aa": "G"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 102,
+      "auth_chain": "D",
+      "auth_seq_id": "102",
+      "auth_ins_code": "?",
+      "aa": "T"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 103,
+      "auth_chain": "D",
+      "auth_seq_id": "103",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 104,
+      "auth_chain": "D",
+      "auth_seq_id": "104",
+      "auth_ins_code": "?",
+      "aa": "V"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 105,
+      "auth_chain": "D",
+      "auth_seq_id": "105",
+      "auth_ins_code": "?",
+      "aa": "E"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 106,
+      "auth_chain": "D",
+      "auth_seq_id": "106",
+      "auth_ins_code": "?",
+      "aa": "I"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 107,
+      "auth_chain": "D",
+      "auth_seq_id": "107",
+      "auth_ins_code": "?",
+      "aa": "K"
+    },
+    {
+      "label_chain": "D",
+      "label_seq_id": 108,
+      "auth_chain": "D",
+      "auth_seq_id": "108",
+      "auth_ins_code": "?",
+      "aa": "R"
+    }
+  ],
+  "ligand_components": {
+    "ALA": "ALANINE",
+    "ARG": "ARGININE",
+    "ASN": "ASPARAGINE",
+    "ASP": "ASPARTIC ACID",
+    "CYS": "CYSTEINE",
+    "GLN": "GLUTAMINE",
+    "GLU": "GLUTAMIC ACID",
+    "GLY": "GLYCINE",
+    "HIS": "HISTIDINE",
+    "ILE": "ISOLEUCINE",
+    "LEU": "LEUCINE",
+    "LYS": "LYSINE",
+    "MET": "METHIONINE",
+    "PHE": "PHENYLALANINE",
+    "PRO": "PROLINE",
+    "SER": "SERINE",
+    "THR": "THREONINE",
+    "TRP": "TRYPTOPHAN",
+    "TYR": "TYROSINE",
+    "VAL": "VALINE"
+  }
+}

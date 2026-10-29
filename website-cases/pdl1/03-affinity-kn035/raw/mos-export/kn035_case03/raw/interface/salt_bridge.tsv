@@ -1,0 +1,5 @@
+chain1	res1	resnum1	atom1	chain2	res2	resnum2	atom2	distance
+A	ARG	97	NH1	B	ASP	99	OD1	3.700
+A	ARG	97	NH1	B	ASP	99	OD2	3.200
+A	ARG	97	NH2	B	ASP	99	OD1	2.400
+A	ARG	97	NH2	B	ASP	99	OD2	3.300

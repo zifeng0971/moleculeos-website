@@ -1,0 +1,602 @@
+- text: MOS
+- generic: BETA
+- generic: PDL1-05-DeNovo-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- generic: Protein
+- button "plus Add New":
+  - img "plus":
+  - generic: Add New
+- img "search":
+- textbox "MoleculeOs"
+- img "caret-down":
+- generic: PD-L1_5GRJ_chainA_target.mos
+- generic: Amino Acid Group
+- generic: No Data
+- button:
+- generic: PD-L1_5GRJ_chainA_target.mos
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: A
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "11"
+- generic: "Y"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: "21"
+- generic: I
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: "31"
+- generic: L
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: "41"
+- generic: E
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: "51"
+- generic: V
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: "61"
+- generic: H
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: "71"
+- generic: L
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: "81"
+- generic: A
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: "91"
+- generic: D
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "101"
+- generic: "Y"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: "111"
+- generic: V
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "121"
+- generic: "N"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: "131"
+- generic: T
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: "141"
+- generic: E
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: "151"
+- generic: T
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: "161"
+- generic: K
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: E
+- generic: K
+- generic: L
+- generic: "171"
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: R
+- generic: I
+- generic: "N"
+- generic: "181"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "Y"
+- generic: C
+- generic: T
+- generic: "191"
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: E
+- generic: "N"
+- generic: H
+- generic: "201"
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: I
+- generic: P
+- generic: E
+- generic: L
+- generic: P
+- generic: "211"
+- generic: L
+- generic: A
+- generic: H
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button:
+- button:
+- button:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": d3be78a0-9
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: Let me check the three tasks once each (or ListMOSTasks snapshot). Then download…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: One running, two pending. The user asks to check each once and retrieve all comp…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254837666816": (342254837666816)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: No output yet. Let me check the other two once each.
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254839784448": (342254839784448)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254842782720": (342254842782720)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Nothing completed. While preparing the package, time passes. Let me build the pa…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && mkdir -p package/target pa…": (cd /workspace/case05 && mkdir -p package/target pa…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now snapshot tasks again — packaging work is done, time has passed.
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still running. The user wants me to process completed outputs in this turn. Sinc…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/README.md": (/workspace/case05/package/README.md)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now write analyze_designs.py — a parser for design outputs. Keep it robust.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /app/src/mocha/agents/custom_skills/interaction…": (cd /app/src/mocha/agents/custom_skills/interaction…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Good. Now write analyze_designs.py that uses these. Keep it dependency-light and…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && mkdir -p tmp_test && pytho…": (cd /workspace/case05 && mkdir -p tmp_test && pytho…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The residues.tsv has per-residue asa/bsa/delta_g — total BSA = sum of bsa for on…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case05/package/analyze_designs.py": (/workspace/case05/package/analyze_designs.py)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Test the script on a fake case: use 5GRJ original (3 chains) — target picked wou…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && mkdir -p tmp_test/in && cp…": (cd /workspace/case05 && mkdir -p tmp_test/in && cp…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Bug: I iterate over residues instead of atoms. Fix min_dist to iterate atoms."
+- generic: ▸
+- img "edit":
+- generic: Edit
+- generic "/workspace/case05/package/analyze_designs.py": (/workspace/case05/package/analyze_designs.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python package/analyze_des…": (cd /workspace/case05 && python package/analyze_des…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: res_a is a single Residue (tres[0]), res_b is a list of residues. Make it handle…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'EOF' import re…": (cd /workspace/case05 && python - <<'EOF' import re…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python -c \" import json;d=…": (cd /workspace/case05 && python -c " import json;d=…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Works. Sanity check: avelumab heavy chain hotspots at 18.8 Å from I54? Earlier I…"
+- generic: ▸
+- paragraph: "The self-test exposed a real numbering hazard: the design outputs may not use sanitized numbering, so hotspots must be located by sequence alignment, not by assumed numbers. Patching that now."
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Mapping works (structure numbering detected as 18-233, hotspots mapped to 54/56/…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import pat…": (cd /workspace/case05 && python - <<'PY' import pat…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now the mapping logic reproduces the avelumab footprint (5 of 6 hotspots engaged…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still running. I'll finish the bundle: update results.json status, add README no…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import jso…": (cd /workspace/case05 && python - <<'PY' import jso…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && python - <<'PY' import zip…": (cd /workspace/case05 && python - <<'PY' import zip…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now, per instruction "process completed outputs in this turn; if still running r…
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342254837666816": (342254837666816)
+- img "check-circle":
+- generic: ▸
+- img "unordered-list":
+- generic: Todo List
+- img "check-circle":
+- generic: ▸
+- generic: Agent
+- generic "Placeholder no-op": (Placeholder no-op)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: That was an accidental/unnecessary call — I shouldn't have done that. It's harml…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case05 && ls -la case05_pdl1_binder_…": (cd /workspace/case05 && ls -la case05_pdl1_binder_…)
+- img "check-circle":
+- generic: ▸
+- paragraph: I checked all three tasks individually this turn. None has produced output yet, so there is nothing to download and no metrics to report. Here is the current state plus the downloadable bundle of everything that is ready.
+- heading "Task status (observed, not inferred)" [level=2]
+- table:
+  - rowgroup:
+    - row "Task Seed Task ID Status Output":
+      - columnheader "Task"
+      - columnheader "Seed"
+      - columnheader "Task ID"
+      - columnheader "Status"
+      - columnheader "Output"
+  - rowgroup:
+    - row "PDL1 de novo binder seed111 111 342254837666816 RUNNING (34 s) none":
+      - cell "PDL1 de novo binder seed111"
+      - cell "111"
+      - cell "342254837666816":
+        - code: "342254837666816"
+      - cell "RUNNING (34 s)"
+      - cell "none"
+    - row "PDL1 de novo binder seed222 222 342254839784448 PENDING (queued) none":
+      - cell "PDL1 de novo binder seed222"
+      - cell "222"
+      - cell "342254839784448":
+        - code: "342254839784448"
+      - cell "PENDING (queued)"
+      - cell "none"
+    - row "PDL1 de novo binder seed333 333 342254842782720 PENDING (queued) none":
+      - cell "PDL1 de novo binder seed333"
+      - cell "333"
+      - cell "342254842782720":
+        - code: "342254842782720"
+      - cell "PENDING (queued)"
+      - cell "none"
+- paragraph:
+  - text: The platform reports seed111 as running with the parameters I sent (
+  - code: contigs A1-213/0 60-100
+  - text: ","
+  - code: hotspot_res A37,A39,A41,A51,A96,A106
+  - text: ","
+  - code: compare_binder=1
+  - text: ","
+  - code: diffusion_steps=50
+  - text: ). No structure, sequence, or score file exists for any run, so I did not call
+  - code: DownloadTaskResults
+  - text: — there is nothing behind it, and I will not fabricate a path or a metric.
+- paragraph:
+  - strong: "Observed task success vs scientific quality:"
+  - text: at this moment there is neither. A task still in the queue says nothing about whether the design will work; RUNNING/PENDING is a scheduling fact only. When outputs land I will report task success (exit status, files delivered, structure parseable) separately from scientific quality (interface confidence, hotspot engagement, designability of the sequence), because a task can exit cleanly while returning a binder that does not touch the intended epitope.
+- heading "Download" [level=2]
+- paragraph:
+  - code: case05_pdl1_binder_inputs.zip
+  - text: — 352 KB, 11 files, CRC-checked, sha256
+  - code: 908035949ee4981be9a982eaa29eef3517e604ce44f87dd3ae30cfea6ea9b96b
+- img "case05_pdl1_binder_inputs.zip"
+- generic: Click to enlarge
+- button "expand-alt Open in file panel":
+  - img "expand-alt":
+  - text: Open in file panel
+- paragraph:
+  - text: If the attachment does not render, the file is at
+  - code: /workspace/case05/case05_pdl1_binder_inputs.zip
+  - text: in the session workspace.
+- heading "Contents" [level=3]
+- table:
+  - rowgroup:
+    - row "File What it is":
+      - columnheader "File"
+      - columnheader "What it is"
+  - rowgroup:
+    - row "target/PD-L1_5GRJ_chainA_target.pdb The exact target, author numbering 18-233, PD-L1 only":
+      - cell "target/PD-L1_5GRJ_chainA_target.pdb":
+        - code: target/PD-L1_5GRJ_chainA_target.pdb
+      - cell "The exact target, author numbering 18-233, PD-L1 only"
+    - row "target/PD-L1_5GRJ_chainA_target.mos.cif The exact file uploaded to MOS (sanitized layout, chain A 1-213)":
+      - cell "target/PD-L1_5GRJ_chainA_target.mos.cif":
+        - code: target/PD-L1_5GRJ_chainA_target.mos.cif
+      - cell "The exact file uploaded to MOS (sanitized layout, chain A 1-213)"
+    - row "target/...mos.cif.mapping Full auth→sanitized residue map, all 213 residues":
+      - cell "target/...mos.cif.mapping":
+        - code: target/...mos.cif.mapping
+      - cell "Full auth→sanitized residue map, all 213 residues"
+    - row "target/5GRJ.cif Unmodified RCSB entry for provenance":
+      - cell "target/5GRJ.cif":
+        - code: target/5GRJ.cif
+      - cell "Unmodified RCSB entry for provenance"
+    - row "verification.txt 16 programmatic checks, all PASS":
+      - cell "verification.txt":
+        - code: verification.txt
+      - cell "16 programmatic checks, all PASS"
+    - row "input.json Target provenance, hotspot map with SASA, exact parameter set":
+      - cell "input.json":
+        - code: input.json
+      - cell "Target provenance, hotspot map with SASA, exact parameter set"
+    - row "task_ids.json Three task IDs, seeds, shared payload":
+      - cell "task_ids.json":
+        - code: task_ids.json
+      - cell "Three task IDs, seeds, shared payload"
+    - row "results.json Current status; metrics/sequences/ranking explicitly null with the reason stated":
+      - cell "results.json":
+        - code: results.json
+      - cell "Current status; metrics/sequences/ranking explicitly null with the reason stated":
+        - text: Current status; metrics/sequences/ranking explicitly
+        - code: "null"
+        - text: with the reason stated
+    - row "analyze_designs.py The metrics harness for the design outputs":
+      - cell "analyze_designs.py":
+        - code: analyze_designs.py
+      - cell "The metrics harness for the design outputs"
+    - row "checksums.sha256 Integrity manifest":
+      - cell "checksums.sha256":
+        - code: checksums.sha256
+      - cell "Integrity manifest"
+- 'heading "What I did instead of idling: validated the analysis harness" [level=2]'
+- paragraph: I built the parser that will process the outputs, and validated it against a ground-truth control rather than trusting it blind. Run on the original 5GRJ complex, where the answer is known, it identifies PD-L1 as the receptor, treats avelumab H and L as binders, and recovers hotspots at I54 3.6 Å, Y56 2.3 Å, E58 2.8 Å, R113 3.2 Å, Y123 3.4 Å from the heavy chain — reproducing the independently computed avelumab footprint. It also returns 2293 Å² buried surface area and 12 H-bonds for the H:A interface.
+- paragraph: "That test caught a real trap: my first version looked up hotspots by residue number and silently returned 12-19 Å distances, because the raw 5GRJ uses author numbering while the design pipeline may renumber its target again. The script now locates all six hotspots by global sequence alignment to the reference and records which structural numbering it detected, so the same code will be correct whether the output is numbered 1-213, 18-233, or anything else. It also classifies each chain as designed sequence or virtual backbone by composition (>90% Gly/Ala = a hallucinated backbone with no sequence design), which is the distinction you asked me to preserve."
+- paragraph:
+  - text: "One thing I will flag rather than paper over: the schema gives me"
+  - code: compare_binder
+  - text: as an on/off switch, not a choice of scoring heads. If the pipeline returns no per-design pLDDT/ipTM or interface energy, the bundle will carry
+  - code: "null"
+  - text: for those fields with the reason stated, and my ranking will rest only on what is actually delivered — hotspot engagement and buried surface area measured from the returned structures. I will label that ranking as structural-contact-based, not as a confidence-ranked design list.
+- generic: 09:41
+- generic: PD-L1_5GRJ...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..." [active]
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised

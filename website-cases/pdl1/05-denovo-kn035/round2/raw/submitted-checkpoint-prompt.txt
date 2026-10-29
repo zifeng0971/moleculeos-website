@@ -1,0 +1,1 @@
+请把已完成seed555的全部真实原始输出和当前输入/ledger打包为/workspace/kn035_case05_round2_checkpoint.zip，便于本地先核验；保留同一输出目录不改首轮，继续等待444/666完成后最终打包round2.zip。请在最终包复制一份实际输入MMFold_1_chain_A.cif，保存CheckMOSTask原文、生效payload和实际各任务用时。仍不需要额外分析。

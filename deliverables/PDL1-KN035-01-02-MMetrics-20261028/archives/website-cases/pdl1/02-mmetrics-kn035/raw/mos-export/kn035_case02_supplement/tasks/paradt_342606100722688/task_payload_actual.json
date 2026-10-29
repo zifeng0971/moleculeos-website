@@ -1,0 +1,8 @@
+{
+  "pdb_path": "tos:mosv2-prod/user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+  "heavy_sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "light_sequence": null,
+  "is_pdb_numbered": false,
+  "pdb_heavy_chain": "B",
+  "pdb_light_chain": "L"
+}

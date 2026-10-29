@@ -14,6 +14,7 @@ import { ManualMediaProcessor } from './manual-media';
 import type { ManualAsset, ManualGroup, ManualManifest, ManualPage } from '../lib/manual-types';
 import type { Locale } from '../lib/site-config';
 import { buildManualSearch } from '../lib/manual-search-index';
+import { syncManualSupplements } from './sync-manual-supplements';
 
 const root = path.resolve(process.env.MANUAL_OUTPUT_ROOT ?? process.cwd());
 const output = path.join(root, 'content/manual');
@@ -278,6 +279,8 @@ async function main() {
   // Validate both input hierarchies before expensive conversion or output writes.
   for(const source of [zh,en]){const zip=new AdmZip(source);const xml=zip.readAsText('word/document.xml');if(!/<w:outlineLvl[^>]*w:val="[01]"/.test(xml)&&!/<w:pStyle/.test(xml))throw new Error(`${source}: 未检测到标题层级，请应用 Word 标题样式，不能仅手动加粗。`);}
   const data={zh:await convert(zh,'zh'),en:await convert(en,'en')};
+  // The closing "Thank you / contact" chapter is left out of the published manual (checked after the fidelity gate, which ran on the full text).
+  for(const lang of ['zh','en'] as const){const closing=new Set(data[lang].groups.filter(g=>['xie-xie','thank-you'].includes(g.slug)&&!g.pages.length).map(g=>g.slug));data[lang].groups=data[lang].groups.filter(g=>!closing.has(g.slug));for(const file of [...data[lang].files.keys()])if([...closing].some(slug=>file.startsWith(`${lang}/${slug}/`)))data[lang].files.delete(file);}
   const pages={zh:data.zh.groups.flatMap(g=>g.pages),en:data.en.groups.flatMap(g=>g.pages)};
   for(const lang of ['zh','en'] as const)pages[lang].forEach((page,i)=>{page.counterpart=pages[lang==='zh'?'en':'zh'][i]?.href;if(!page.counterpart)warnings.push(`${lang}: 缺少对应页，序号 ${i+1}：${page.groupTitle} > ${page.title}`);});
   if(pages.zh.length!==pages.en.length)warnings.unshift(`中英页数不一致：中文 ${pages.zh.length}，英文 ${pages.en.length}。按出现顺序匹配，不进行翻译或补全。`);
@@ -295,6 +298,7 @@ async function main() {
   const gifs=[...data.zh.assets,...data.en.assets].filter(a=>a.originalFilename?.toLowerCase().endsWith('.gif'));
   const originalBytes=gifs.reduce((sum,a)=>sum+(a.originalBytes??0),0);const convertedBytes=gifs.reduce((sum,a)=>sum+(a.convertedBytes??0),0);
   console.log(`GIF 总计：${gifs.length} 个；原始 ${(originalBytes/1048576).toFixed(2)} MiB → ${(convertedBytes/1048576).toFixed(2)} MiB；压缩比 ${(originalBytes/Math.max(1,convertedBytes)).toFixed(2)}:1；静图回退 ${gifs.filter(a=>a.fallbackReason).length} 个。`);
+  await syncManualSupplements(root);
   warnings.forEach(w=>console.warn(w));
 }
 main().catch(error=>{console.error(error);process.exitCode=1;});

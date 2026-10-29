@@ -1,0 +1,23 @@
+{
+  "task_id": "342256501269504",
+  "name": "5GRJ_VL_evolve",
+  "type": "Evolutionary Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:16Z",
+  "duration": "2.0min",
+  "payload": {
+    "sequence": "QSALTQPASVSGSPGQSITISCTGTSSDVGGYNYVSWYQQHPGKAPKLMIYDVSNRPSGVSNRFSGSKSGNTASLTISGLQAEDEADYYCSSYTSSSTRVFGTGTKVTVL"
+  },
+  "chain": "B",
+  "purpose": "MSA conservation/covariance scan, VL",
+  "raw_dir": "evolutionary_mutation_effect_342256501269504",
+  "raw_files": [
+    "evolutionary_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "evolutionary_scores.csv",
+      "bytes": 44676
+    }
+  ]
+}

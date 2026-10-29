@@ -1,0 +1,580 @@
+ID   PETH_PISS1              Reviewed;         290 AA.
+AC   A0A0K8P6T7;
+DT   11-MAY-2016, integrated into UniProtKB/Swiss-Prot.
+DT   11-NOV-2015, sequence version 1.
+DT   02-SEP-2026, entry version 55.
+DE   RecName: Full=Poly(ethylene terephthalate) hydrolase {ECO:0000303|PubMed:26965627, ECO:0000303|PubMed:29235460, ECO:0000303|PubMed:29666242};
+DE            Short=PET hydrolase {ECO:0000303|PubMed:26965627, ECO:0000303|PubMed:29235460, ECO:0000303|PubMed:29666242};
+DE            Short=PETase {ECO:0000303|PubMed:26965627, ECO:0000303|PubMed:29235460, ECO:0000303|PubMed:29666242};
+DE            EC=3.1.1.101 {ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:29235460, ECO:0000269|PubMed:29374183, ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:29666242};
+DE   AltName: Full=PET-digesting enzyme {ECO:0000303|PubMed:29666242};
+DE   Flags: Precursor;
+GN   ORFNames=ISF6_4831 {ECO:0000312|EMBL:GAP38373.1};
+OS   Piscinibacter sakaiensis (Ideonella sakaiensis).
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria;
+OC   Burkholderiales; Sphaerotilaceae; Piscinibacter.
+OX   NCBI_TaxID=1547922;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA], FUNCTION, CATALYTIC
+RP   ACTIVITY, BIOPHYSICOCHEMICAL PROPERTIES, SUBCELLULAR LOCATION, INDUCTION BY
+RP   PET, PATHWAY, AND BIOTECHNOLOGY.
+RC   STRAIN=NBRC 110686 / NCTC 14201 / TISTR 2288 / 201-F6;
+RX   PubMed=26965627; DOI=10.1126/science.aad6359;
+RA   Yoshida S., Hiraga K., Takehana T., Taniguchi I., Yamaji H., Maeda Y.,
+RA   Toyohara K., Miyamoto K., Kimura Y., Oda K.;
+RT   "A bacterium that degrades and assimilates poly(ethylene terephthalate).";
+RL   Science 351:1196-1199(2016).
+RN   [2]
+RP   FUNCTION, AND CATALYTIC ACTIVITY.
+RX   PubMed=32269349; DOI=10.1038/s41586-020-2149-4;
+RA   Tournier V., Topham C.M., Gilles A., David B., Folgoas C., Moya-Leclair E.,
+RA   Kamionka E., Desrousseaux M.L., Texier H., Gavalda S., Cot M., Guemard E.,
+RA   Dalibey M., Nomme J., Cioci G., Barbe S., Chateau M., Andre I.,
+RA   Duquesne S., Marty A.;
+RT   "An engineered PET depolymerase to break down and recycle plastic
+RT   bottles.";
+RL   Nature 580:216-219(2020).
+RN   [3] {ECO:0007744|PDB:5XFY, ECO:0007744|PDB:5XFZ, ECO:0007744|PDB:5XG0, ECO:0007744|PDB:5XH2, ECO:0007744|PDB:5XH3}
+RP   X-RAY CRYSTALLOGRAPHY (1.20 ANGSTROMS) OF 30-290 OF WILD-TYPE AND MUTANTS
+RP   ALA-160 AND GLY-132/ALA-160 IN COMPLEXES WITH PARA-NITROPHENOL AND
+RP   1-(2-HYDROXYETHYL)-4-METHYLTEREPHTHALATE (HEMT), DISULFIDE BOND, FUNCTION,
+RP   CATALYTIC ACTIVITY, AND ACTIVE SITE.
+RX   PubMed=29235460; DOI=10.1038/s41467-017-02255-z;
+RA   Han X., Liu W., Huang J.W., Ma J., Zheng Y., Ko T.P., Xu L., Cheng Y.S.,
+RA   Chen C.C., Guo R.T.;
+RT   "Structural insight into catalytic mechanism of PET hydrolase.";
+RL   Nat. Commun. 8:2106-2106(2017).
+RN   [4] {ECO:0007744|PDB:6ANE}
+RP   X-RAY CRYSTALLOGRAPHY (2.02 ANGSTROMS) OF 29-290, DISULFIDE BOND, AND
+RP   SUBSTRATE DOCKING.
+RX   PubMed=29590588; DOI=10.1016/j.bpj.2018.02.005;
+RA   Fecker T., Galaz-Davison P., Engelberger F., Narui Y., Sotomayor M.,
+RA   Parra L.P., Ramirez-Sarmiento C.A.;
+RT   "Active site flexibility as a hallmark for efficient PET degradation by I.
+RT   sakaiensis PETase.";
+RL   Biophys. J. 114:1302-1312(2018).
+RN   [5] {ECO:0007744|PDB:5YFE}
+RP   X-RAY CRYSTALLOGRAPHY (1.39 ANGSTROMS) OF 27-290, SUBSTRATE DOCKING,
+RP   FUNCTION, CATALYTIC ACTIVITY, BIOPHYSICOCHEMICAL PROPERTIES, ACTIVE SITE,
+RP   MUTAGENESIS OF TYR-87; GLN-119; TRP-159; SER-160; MET-161; TRP-185;
+RP   ASP-206; SER-214 AND HIS-237, AND DISULFIDE BOND.
+RX   PubMed=29603535; DOI=10.1002/cbic.201800097;
+RA   Liu B., He L., Wang L., Li T., Li C., Liu H., Luo Y., Bao R.;
+RT   "Protein crystallography and site-direct mutagenesis analysis of the
+RT   poly(ethylene terephthalate) hydrolase PETase from Ideonella sakaiensis.";
+RL   ChemBioChem 19:1471-1475(2018).
+RN   [6] {ECO:0007744|PDB:5XJH, ECO:0007744|PDB:5YNS}
+RP   X-RAY CRYSTALLOGRAPHY (1.36 ANGSTROMS) OF 34-290 OF WILD-TYPE AND MUTANT
+RP   ALA-280, DISULFIDE BOND, SUBSTRATE DOCKING, FUNCTION, CATALYTIC ACTIVITY,
+RP   SUBUNIT, ACTIVE SITE, AND MUTAGENESIS OF TYR-87; TRP-159; SER-160; TRP-185;
+RP   CYS-203; ASP-206; HIS-237; SER-238; CYS-239; ASN-241 AND ARG-280.
+RX   PubMed=29374183; DOI=10.1038/s41467-018-02881-1;
+RA   Joo S., Cho I.J., Seo H., Son H.F., Sagong H.Y., Shin T.J., Choi S.Y.,
+RA   Lee S.Y., Kim K.J.;
+RT   "Structural insight into molecular mechanism of poly(ethylene
+RT   terephthalate) degradation.";
+RL   Nat. Commun. 9:382-382(2018).
+RN   [7] {ECO:0007744|PDB:6EQD, ECO:0007744|PDB:6EQE, ECO:0007744|PDB:6EQF, ECO:0007744|PDB:6EQG, ECO:0007744|PDB:6EQH}
+RP   X-RAY CRYSTALLOGRAPHY (0.92 ANGSTROMS), SUBSTRATE DOCKING, FUNCTION,
+RP   CATALYTIC ACTIVITY, SUBSTRATE SPECIFICITY, BIOTECHNOLOGY, ACTIVE SITE,
+RP   DISULFIDE BOND, AND MUTAGENESIS OF TRP-159; TRP-185 AND SER-238.
+RC   STRAIN=NBRC 110686 / NCTC 14201 / TISTR 2288 / 201-F6;
+RX   PubMed=29666242; DOI=10.1073/pnas.1718804115;
+RA   Austin H.P., Allen M.D., Donohoe B.S., Rorrer N.A., Kearns F.L.,
+RA   Silveira R.L., Pollard B.C., Dominick G., Duman R., El Omari K.,
+RA   Mykhaylyk V., Wagner A., Michener W.E., Amore A., Skaf M.S., Crowley M.F.,
+RA   Thorne A.W., Johnson C.W., Woodcock H.L., McGeehan J.E., Beckham G.T.;
+RT   "Characterization and engineering of a plastic-degrading aromatic
+RT   polyesterase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 115:E4350-E4357(2018).
+RN   [8] {ECO:0007744|PDB:6IJ3, ECO:0007744|PDB:6IJ4, ECO:0007744|PDB:6IJ5, ECO:0007744|PDB:6IJ6}
+RP   X-RAY CRYSTALLOGRAPHY (1.40 ANGSTROMS) OF 34-290 OF MUTANTS
+RP   ASP-121/HIS-186; GLU-121/HIS-186; ALA-181 AND GLU-121/HIS-186/ALA-280,
+RP   DISULFIDE BOND, PROTEIN ENGINEERING, AND MUTAGENESIS OF SER-121; ASP-186
+RP   AND ARG-280.
+RX   DOI=10.1021/acscatal.9b00568;
+RA   Son H.F., Cho I.J., Joo S., Seo H., Sagong H.Y., Choi S.Y., Lee S.Y.,
+RA   Kim K.J.;
+RT   "Rational Protein Engineering of Thermo-Stable PETase from Ideonella
+RT   sakaiensis for Highly Efficient PET Degradation.";
+RL   ACS Catal. 9:3519-3526(2019).
+RN   [9] {ECO:0007744|PDB:6ILW, ECO:0007744|PDB:6ILX}
+RP   X-RAY CRYSTALLOGRAPHY (1.45 ANGSTROMS) OF 28-290 OF WILD-TYPE AND MUTANT
+RP   PHE-159, FUNCTION, CATALYTIC ACTIVITY, ACTIVITY REGULATION,
+RP   BIOPHYSICOCHEMICAL PROPERTIES, DISULFIDE BOND, AND MUTAGENESIS OF SER-93;
+RP   TRP-159 AND ASN-241.
+RX   PubMed=30502092; DOI=10.1016/j.bbrc.2018.11.148;
+RA   Liu C., Shi C., Zhu S., Wei R., Yin C.C.;
+RT   "Structural and functional characterization of polyethylene terephthalate
+RT   hydrolase from Ideonella sakaiensis.";
+RL   Biochem. Biophys. Res. Commun. 508:289-294(2019).
+RN   [10] {ECO:0007744|PDB:6QGC}
+RP   X-RAY CRYSTALLOGRAPHY (2.00 ANGSTROMS), AND DISULFIDE BOND.
+RX   PubMed=30979881; DOI=10.1038/s41467-019-09326-3;
+RA   Palm G.J., Reisky L., Bottcher D., Muller H., Michels E.A.P., Walczak M.C.,
+RA   Berndt L., Weiss M.S., Bornscheuer U.T., Weber G.;
+RT   "Structure of the plastic-degrading Ideonella sakaiensis MHETase bound to a
+RT   substrate.";
+RL   Nat. Commun. 10:1717-1717(2019).
+CC   -!- FUNCTION: Involved in the degradation and assimilation of the plastic
+CC       poly(ethylene terephthalate) (PET), which allows I.sakaiensis to use
+CC       PET as its major energy and carbon source for growth. Likely acts
+CC       synergistically with MHETase to depolymerize PET (PubMed:26965627).
+CC       Catalyzes the hydrolysis of PET to produce mono(2-hydroxyethyl)
+CC       terephthalate (MHET) as the major product (PubMed:26965627,
+CC       PubMed:29235460, PubMed:29374183, PubMed:29603535, PubMed:29666242,
+CC       PubMed:32269349). Also depolymerizes another semiaromatic polyester,
+CC       poly(ethylene-2,5-furandicarboxylate) (PEF), which is an emerging,
+CC       bioderived PET replacement with improved gas barrier properties
+CC       (PubMed:29666242). In contrast, PETase does not degrade aliphatic
+CC       polyesters such as polylactic acid (PLA) and polybutylene succinate
+CC       (PBS) (PubMed:29666242). Is also able to hydrolyze bis(hydroxyethyl)
+CC       terephthalate (BHET) to yield MHET with no further decomposition, but
+CC       terephthalate (TPA) can also be observed (PubMed:26965627,
+CC       PubMed:29374183, PubMed:29603535). Shows esterase activity towards p-
+CC       nitrophenol-linked aliphatic esters (pNP-aliphatic esters) in vitro
+CC       (PubMed:26965627, PubMed:30502092). {ECO:0000269|PubMed:26965627,
+CC       ECO:0000269|PubMed:29235460, ECO:0000269|PubMed:29374183,
+CC       ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:29666242,
+CC       ECO:0000269|PubMed:30502092, ECO:0000269|PubMed:32269349}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(ethylene terephthalate)(n) + H2O = (ethylene
+CC         terephthalate)(n-1) + 4-[(2-hydroxyethoxy)carbonyl]benzoate + H(+);
+CC         Xref=Rhea:RHEA:49528, Rhea:RHEA-COMP:12420, Rhea:RHEA-COMP:12421,
+CC         ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:131701,
+CC         ChEBI:CHEBI:131704; EC=3.1.1.101;
+CC         Evidence={ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:29235460,
+CC         ECO:0000269|PubMed:29374183, ECO:0000269|PubMed:29603535,
+CC         ECO:0000269|PubMed:29666242, ECO:0000269|PubMed:32269349};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:49529;
+CC         Evidence={ECO:0000269|PubMed:26965627};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(2,5-ethylene furandicarboxylate)(n) + 2 H2O = (2,5-ethylene
+CC         furandicarboxylate)(n-1) + 2,5-dicarboxyfuran + ethylene glycol + 2
+CC         H(+); Xref=Rhea:RHEA:42648, Rhea:RHEA-COMP:14671, Rhea:RHEA-
+CC         COMP:14672, ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:30742,
+CC         ChEBI:CHEBI:83389, ChEBI:CHEBI:140646;
+CC         Evidence={ECO:0000269|PubMed:29666242};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an acetyl ester + H2O = an aliphatic alcohol + acetate + H(+);
+CC         Xref=Rhea:RHEA:12957, ChEBI:CHEBI:2571, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:30089, ChEBI:CHEBI:47622;
+CC         Evidence={ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:30502092};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=a butanoate ester + H2O = an aliphatic alcohol + butanoate +
+CC         H(+); Xref=Rhea:RHEA:47348, ChEBI:CHEBI:2571, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17968, ChEBI:CHEBI:50477;
+CC         Evidence={ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:30502092};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=a hexanoate ester + H2O = an aliphatic alcohol + hexanoate +
+CC         H(+); Xref=Rhea:RHEA:47352, ChEBI:CHEBI:2571, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17120, ChEBI:CHEBI:87656;
+CC         Evidence={ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:30502092};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an octanoate ester + H2O = an aliphatic alcohol + octanoate +
+CC         H(+); Xref=Rhea:RHEA:47356, ChEBI:CHEBI:2571, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:25646, ChEBI:CHEBI:87657;
+CC         Evidence={ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:30502092};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=a dodecanoate ester + H2O = an aliphatic alcohol + dodecanoate
+CC         + H(+); Xref=Rhea:RHEA:47364, ChEBI:CHEBI:2571, ChEBI:CHEBI:15377,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:18262, ChEBI:CHEBI:87659;
+CC         Evidence={ECO:0000269|PubMed:30502092};
+CC   -!- ACTIVITY REGULATION: Salts and glycerol enhance the enzymatic activity
+CC       in vitro towards pNP-esters, while detergents and organic solvents
+CC       reduce the enzymatic activity. {ECO:0000269|PubMed:30502092}.
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=0.431 mM for pNP-acetate {ECO:0000269|PubMed:30502092};
+CC         KM=0.315 mM for pNP-butanoate {ECO:0000269|PubMed:30502092};
+CC         KM=0.053 mM for pNP-hexanoate {ECO:0000269|PubMed:30502092};
+CC         KM=0.048 mM for pNP-octanoate {ECO:0000269|PubMed:30502092};
+CC         KM=2.283 mM for pNP-dodecanoate {ECO:0000269|PubMed:30502092};
+CC         Note=kcat is 1590 sec(-1) for the hydrolysis of pNP-acetate. kcat is
+CC         1353 sec(-1) for the hydrolysis of pNP-butanoate. kcat is 1345
+CC         sec(-1) for the hydrolysis of pNP-hexanoate. kcat is 519 sec(-1) for
+CC         the hydrolysis of pNP-octanoate. kcat is 1531 sec(-1) for the
+CC         hydrolysis of pNP-dodecanoate. {ECO:0000269|PubMed:30502092};
+CC       pH dependence:
+CC         Optimum pH is 9 for PET film hydrolysis (PubMed:26965627). Optimum pH
+CC         is 9 for PET (commercial drinking bottle) hydrolysis. Optimum pH is
+CC         6.5-8.0 for BHET hydrolysis (PubMed:29603535). Optimum pH is 8.0 for
+CC         the hydrolysis of pNP-esters. The enzyme is active at pH 6-10, has an
+CC         optimal pH range of 7-9 and it is rapidly inactivated below pH 7.0 or
+CC         above pH 9.0 (PubMed:30502092). {ECO:0000269|PubMed:26965627,
+CC         ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:30502092};
+CC       Temperature dependence:
+CC         Optimum temperature is 40 degrees Celsius for PET film hydrolysis
+CC         (PubMed:26965627). Optimum temperature is 30 degrees Celsius for PET
+CC         (commercial drinking bottle) hydrolysis and BHET hydrolysis
+CC         (PubMed:29603535). Optimum temperature is 35-45 degrees Celsius for
+CC         the hydrolysis of pNP-esters. Remains active even at 65 degrees
+CC         Celsius (about 60% of maximum activity) (PubMed:30502092).
+CC         {ECO:0000269|PubMed:26965627, ECO:0000269|PubMed:29603535,
+CC         ECO:0000269|PubMed:30502092};
+CC   -!- PATHWAY: Xenobiotic degradation. {ECO:0000305|PubMed:26965627}.
+CC   -!- SUBUNIT: Monomer. {ECO:0000269|PubMed:29374183}.
+CC   -!- SUBCELLULAR LOCATION: Secreted {ECO:0000305|PubMed:26965627}.
+CC   -!- INDUCTION: Highly up-regulated during growth on PET film.
+CC       {ECO:0000269|PubMed:26965627}.
+CC   -!- DOMAIN: PETase retains the ancestral alpha/beta-hydrolase fold but
+CC       exhibits a more open active-site cleft than homologous cutinases.
+CC       {ECO:0000269|PubMed:29666242}.
+CC   -!- BIOTECHNOLOGY: Has potential for application in environmental
+CC       remediation and biological recycling of PET and PEF waste products.
+CC       {ECO:0000305|PubMed:26965627, ECO:0000305|PubMed:29666242}.
+CC   -!- SIMILARITY: Belongs to the AB hydrolase superfamily. {ECO:0000305}.
+CC   -!- WEB RESOURCE: Name=Protein Spotlight; Note=Of plastic and men - Issue
+CC       181 of July 2016;
+CC       URL="https://www.proteinspotlight.org/back_issues/181/";
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; BBYR01000074; GAP38373.1; -; Genomic_DNA.
+DR   RefSeq; WP_054022242.1; NZ_BBYR01000074.1.
+DR   PDB; 5XFY; X-ray; 1.40 A; A=30-290.
+DR   PDB; 5XFZ; X-ray; 1.55 A; A=30-290.
+DR   PDB; 5XG0; X-ray; 1.58 A; A/B/C=30-290.
+DR   PDB; 5XH2; X-ray; 1.20 A; A=30-290.
+DR   PDB; 5XH3; X-ray; 1.30 A; A=30-290.
+DR   PDB; 5XJH; X-ray; 1.54 A; A=34-290.
+DR   PDB; 5YFE; X-ray; 1.39 A; A=27-290.
+DR   PDB; 5YNS; X-ray; 1.36 A; A=34-290.
+DR   PDB; 6ANE; X-ray; 2.02 A; A/B/C=28-290.
+DR   PDB; 6EQD; X-ray; 1.70 A; A/B/C=1-290.
+DR   PDB; 6EQE; X-ray; 0.92 A; A=1-290.
+DR   PDB; 6EQF; X-ray; 1.70 A; A=1-290.
+DR   PDB; 6EQG; X-ray; 1.80 A; A/B/C=1-290.
+DR   PDB; 6EQH; X-ray; 1.58 A; A/B/C=1-290.
+DR   PDB; 6IJ3; X-ray; 1.40 A; A=34-290.
+DR   PDB; 6IJ4; X-ray; 1.86 A; A=34-290.
+DR   PDB; 6IJ5; X-ray; 1.72 A; A=34-290.
+DR   PDB; 6IJ6; X-ray; 1.95 A; A=34-290.
+DR   PDB; 6ILW; X-ray; 1.57 A; A=28-290.
+DR   PDB; 6ILX; X-ray; 1.45 A; A=28-290.
+DR   PDB; 6KUO; X-ray; 1.90 A; A=34-290.
+DR   PDB; 6KUQ; X-ray; 1.91 A; A=34-290.
+DR   PDB; 6KUS; X-ray; 1.80 A; A=34-290.
+DR   PDB; 6KY5; X-ray; 1.63 A; A/B=1-290.
+DR   PDB; 6QGC; X-ray; 2.00 A; A/B/C/D=1-290.
+DR   PDB; 7CQB; X-ray; 1.86 A; A=30-290.
+DR   PDB; 7CY0; X-ray; 1.32 A; A=30-290.
+DR   PDB; 7OSB; X-ray; 1.45 A; A/B/C=1-290.
+DR   PDB; 7QVH; X-ray; 2.24 A; A/B/C=28-290.
+DR   PDB; 7SH6; X-ray; 1.44 A; A=27-290.
+DR   PDB; 7VWN; X-ray; 1.45 A; A=29-290.
+DR   PDB; 7XTW; X-ray; 1.91 A; A=30-290.
+DR   PDB; 8CRU; X-ray; 1.30 A; A=29-290.
+DR   PDB; 8D1D; X-ray; 1.42 A; A/C/E=32-290.
+DR   PDB; 8GU4; X-ray; 1.50 A; A=28-290.
+DR   PDB; 8GU5; X-ray; 2.02 A; A=28-290.
+DR   PDB; 8H5J; X-ray; 1.40 A; A/B=34-290.
+DR   PDB; 8H5K; X-ray; 1.20 A; A=34-290.
+DR   PDB; 8H5L; X-ray; 1.70 A; A/B/E=34-290.
+DR   PDB; 8H5M; X-ray; 1.89 A; A=34-290.
+DR   PDB; 8H5O; X-ray; 2.10 A; A=34-290.
+DR   PDB; 8H83; X-ray; 1.92 A; A/B=2-290.
+DR   PDB; 8J17; X-ray; 1.97 A; A/B/C=28-290.
+DR   PDB; 8J45; X-ray; 1.49 A; A=30-290.
+DR   PDB; 8J5N; X-ray; 2.00 A; A/D=1-290.
+DR   PDB; 8VE9; X-ray; 1.60 A; A=30-290.
+DR   PDB; 8VEK; X-ray; 1.14 A; A=30-290.
+DR   PDB; 8VEL; X-ray; 1.62 A; A=30-290.
+DR   PDB; 8VEM; X-ray; 1.71 A; A=30-290.
+DR   PDB; 9LMS; X-ray; 1.71 A; A=30-290.
+DR   PDB; 9LMT; X-ray; 1.50 A; A=30-290.
+DR   PDB; 9LMU; X-ray; 1.57 A; A=30-290.
+DR   PDB; 9LMV; X-ray; 1.57 A; A=30-290.
+DR   PDB; 9LMW; X-ray; 1.50 A; A=30-290.
+DR   PDB; 9LMX; X-ray; 1.40 A; A=30-290.
+DR   PDB; 9M8H; X-ray; 1.30 A; A=28-290.
+DR   PDB; 9M8I; X-ray; 2.49 A; A/B=28-290.
+DR   AlphaFoldDB; A0A0K8P6T7; -.
+DR   SMR; A0A0K8P6T7; -.
+DR   STRING; 1547922.ISF6_4831; -.
+DR   ESTHER; idesa-peth; Polyesterase-lipase-cutinase.
+DR   KEGG; ag:GAP38373; -.
+DR   OrthoDB; 4269629at2; -.
+DR   BioCyc; MetaCyc:MONOMER-19898; -.
+DR   BRENDA; 3.1.1.101; 14869.
+DR   SABIO-RK; A0A0K8P6T7; -.
+DR   Proteomes; UP000037660; Unassembled WGS sequence.
+DR   GO; GO:0005576; C:extracellular region; IEA:UniProtKB-SubCell.
+DR   GO; GO:0008126; F:acetylesterase activity; EXP:UniProtKB.
+DR   GO; GO:0052689; F:carboxylic ester hydrolase activity; IDA:UniProtKB.
+DR   GO; GO:0042178; P:xenobiotic catabolic process; IDA:UniProtKB.
+DR   FunFam; 3.40.50.1820:FF:000256; Poly(ethylene terephthalate) hydrolase; 1.
+DR   Gene3D; 3.40.50.1820; alpha/beta hydrolase; 1.
+DR   InterPro; IPR029058; AB_hydrolase_fold.
+DR   InterPro; IPR050261; FrsA_esterase.
+DR   InterPro; IPR041127; PET_hydrolase/cutinase-like.
+DR   PANTHER; PTHR22946; DIENELACTONE HYDROLASE DOMAIN-CONTAINING PROTEIN-RELATED; 1.
+DR   PANTHER; PTHR22946:SF9; POLYKETIDE TRANSFERASE AF380; 1.
+DR   Pfam; PF12740; PETase; 1.
+DR   SUPFAM; SSF53474; alpha/beta-Hydrolases; 1.
+DR   PDBsum; 5XFY; -.
+DR   PDBsum; 5XFZ; -.
+DR   PDBsum; 5XG0; -.
+DR   PDBsum; 5XH2; -.
+DR   PDBsum; 5XH3; -.
+DR   PDBsum; 5XJH; -.
+DR   PDBsum; 5YFE; -.
+DR   PDBsum; 5YNS; -.
+DR   PDBsum; 6ANE; -.
+DR   PDBsum; 6EQD; -.
+DR   PDBsum; 6EQE; -.
+DR   PDBsum; 6EQF; -.
+DR   PDBsum; 6EQG; -.
+DR   PDBsum; 6EQH; -.
+DR   PDBsum; 6IJ3; -.
+DR   PDBsum; 6IJ4; -.
+DR   PDBsum; 6IJ5; -.
+DR   PDBsum; 6IJ6; -.
+DR   PDBsum; 6ILW; -.
+DR   PDBsum; 6ILX; -.
+DR   PDBsum; 6KUO; -.
+DR   PDBsum; 6KUQ; -.
+DR   PDBsum; 6KUS; -.
+DR   PDBsum; 6KY5; -.
+DR   PDBsum; 6QGC; -.
+DR   PDBsum; 7CQB; -.
+DR   PDBsum; 7CY0; -.
+DR   PDBsum; 7OSB; -.
+DR   PDBsum; 7QVH; -.
+DR   PDBsum; 7SH6; -.
+DR   PDBsum; 7VWN; -.
+DR   PDBsum; 7XTW; -.
+DR   PDBsum; 8CRU; -.
+DR   PDBsum; 8D1D; -.
+DR   PDBsum; 8GU4; -.
+DR   PDBsum; 8GU5; -.
+DR   PDBsum; 8H5J; -.
+DR   PDBsum; 8H5K; -.
+DR   PDBsum; 8H5L; -.
+DR   PDBsum; 8H5M; -.
+DR   PDBsum; 8H5O; -.
+DR   PDBsum; 8H83; -.
+DR   PDBsum; 8J17; -.
+DR   PDBsum; 8J45; -.
+DR   PDBsum; 8J5N; -.
+DR   PDBsum; 8VE9; -.
+DR   PDBsum; 8VEK; -.
+DR   PDBsum; 8VEL; -.
+DR   PDBsum; 8VEM; -.
+DR   PDBsum; 9LMS; -.
+DR   PDBsum; 9LMT; -.
+DR   PDBsum; 9LMU; -.
+DR   PDBsum; 9LMV; -.
+DR   PDBsum; 9LMW; -.
+DR   PDBsum; 9LMX; -.
+DR   PDBsum; 9M8H; -.
+DR   PDBsum; 9M8I; -.
+PE   1: Evidence at protein level;
+KW   3D-structure; Disulfide bond; Hydrolase; Reference proteome; Secreted;
+KW   Serine esterase; Signal.
+FT   SIGNAL          1..27
+FT                   /evidence="ECO:0000255"
+FT   CHAIN           28..290
+FT                   /note="Poly(ethylene terephthalate) hydrolase"
+FT                   /id="PRO_5005513763"
+FT   ACT_SITE        160
+FT                   /note="Nucleophile"
+FT                   /evidence="ECO:0000305|PubMed:29235460,
+FT                   ECO:0000305|PubMed:29374183, ECO:0000305|PubMed:29603535,
+FT                   ECO:0000305|PubMed:29666242"
+FT   ACT_SITE        206
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000305|PubMed:29235460,
+FT                   ECO:0000305|PubMed:29374183, ECO:0000305|PubMed:29603535,
+FT                   ECO:0000305|PubMed:29666242"
+FT   ACT_SITE        237
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000305|PubMed:29235460,
+FT                   ECO:0000305|PubMed:29374183, ECO:0000305|PubMed:29603535,
+FT                   ECO:0000305|PubMed:29666242"
+FT   BINDING         87
+FT                   /ligand="poly(ethylene terephthalate)"
+FT                   /ligand_id="ChEBI:CHEBI:131701"
+FT                   /evidence="ECO:0000269|PubMed:29235460"
+FT   BINDING         161
+FT                   /ligand="poly(ethylene terephthalate)"
+FT                   /ligand_id="ChEBI:CHEBI:131701"
+FT                   /evidence="ECO:0000269|PubMed:29235460"
+FT   BINDING         185
+FT                   /ligand="poly(ethylene terephthalate)"
+FT                   /ligand_id="ChEBI:CHEBI:131701"
+FT                   /evidence="ECO:0000305|PubMed:29235460,
+FT                   ECO:0000305|PubMed:29666242"
+FT   DISULFID        203..239
+FT                   /evidence="ECO:0000269|PubMed:29235460,
+FT                   ECO:0000269|PubMed:29374183, ECO:0000269|PubMed:29590588,
+FT                   ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:29666242,
+FT                   ECO:0000269|PubMed:30502092, ECO:0000269|PubMed:30979881,
+FT                   ECO:0000269|Ref.8, ECO:0007744|PDB:5XFY,
+FT                   ECO:0007744|PDB:5XJH, ECO:0007744|PDB:5YFE,
+FT                   ECO:0007744|PDB:6ANE, ECO:0007744|PDB:6EQD,
+FT                   ECO:0007744|PDB:6IJ3, ECO:0007744|PDB:6ILW,
+FT                   ECO:0007744|PDB:6QGC"
+FT   DISULFID        273..289
+FT                   /evidence="ECO:0000269|PubMed:29235460,
+FT                   ECO:0000269|PubMed:29374183, ECO:0000269|PubMed:29590588,
+FT                   ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:29666242,
+FT                   ECO:0000269|PubMed:30502092, ECO:0000269|PubMed:30979881,
+FT                   ECO:0000269|Ref.8, ECO:0007744|PDB:5XFY,
+FT                   ECO:0007744|PDB:5XJH, ECO:0007744|PDB:5YFE,
+FT                   ECO:0007744|PDB:6ANE, ECO:0007744|PDB:6EQD,
+FT                   ECO:0007744|PDB:6IJ3, ECO:0007744|PDB:6ILW,
+FT                   ECO:0007744|PDB:6QGC"
+FT   MUTAGEN         87
+FT                   /note="Y->A: Displays increased enzymatic activity on PET
+FT                   bottle. Displays decreased enzymatic activity on PET film
+FT                   and on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         93
+FT                   /note="S->M: Increases activity towards 1-naphthyl
+FT                   butyrate."
+FT                   /evidence="ECO:0000269|PubMed:30502092"
+FT   MUTAGEN         119
+FT                   /note="Q->A: Displays decreased enzymatic activity on PET
+FT                   bottle and on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         121
+FT                   /note="S->E: Displays increased thermostability and
+FT                   increased PET degradation activity by 14-fold at 40 degrees
+FT                   Celsius; when associated with H-186 and A-280."
+FT                   /evidence="ECO:0000269|Ref.8"
+FT   MUTAGEN         159
+FT                   /note="W->A: Displays decreased enzymatic activity on PET
+FT                   film and on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183"
+FT   MUTAGEN         159
+FT                   /note="W->F: Increases activity towards 1-naphthyl
+FT                   butyrate."
+FT                   /evidence="ECO:0000269|PubMed:30502092"
+FT   MUTAGEN         159
+FT                   /note="W->H: Displays increased enzymatic activity on PET
+FT                   bottle and on BHET. Exhibits improved PET and PEF
+FT                   degradation capacity relative to wild-type PETase; when
+FT                   associated with F-238."
+FT                   /evidence="ECO:0000269|PubMed:29603535,
+FT                   ECO:0000269|PubMed:29666242"
+FT   MUTAGEN         160
+FT                   /note="S->A: Loss of enzymatic activity on PET bottle and
+FT                   on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         161
+FT                   /note="M->A: Displays decreased enzymatic activity on PET
+FT                   bottle and on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         185
+FT                   /note="W->A: Exhibits highly impaired PET degradation
+FT                   capacity relative to wild-type PETase. Also displays
+FT                   decreased enzymatic activity on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29603535, ECO:0000269|PubMed:29666242"
+FT   MUTAGEN         186
+FT                   /note="D->H: Displays increased thermostability and
+FT                   increased PET degradation activity by 14-fold at 40 degrees
+FT                   Celsius; when associated with E-121 and A-280."
+FT                   /evidence="ECO:0000269|Ref.8"
+FT   MUTAGEN         203
+FT                   /note="C->A: Displays decreased enzymatic activity on PET
+FT                   film and on BHET; when associated with A-239."
+FT                   /evidence="ECO:0000269|PubMed:29374183"
+FT   MUTAGEN         206
+FT                   /note="D->A: Loss of enzymatic activity on PET bottle and
+FT                   on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         214
+FT                   /note="S->H: Displays increased enzymatic activity on PET
+FT                   bottle."
+FT                   /evidence="ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         237
+FT                   /note="H->A: Loss of enzymatic activity on PET bottle and
+FT                   on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29603535"
+FT   MUTAGEN         238
+FT                   /note="S->F: Displays decreased enzymatic activity on PET
+FT                   film and on BHET. Exhibits improved PET and PEF degradation
+FT                   capacity relative to wild-type PETase; when associated with
+FT                   H-159."
+FT                   /evidence="ECO:0000269|PubMed:29374183,
+FT                   ECO:0000269|PubMed:29666242"
+FT   MUTAGEN         239
+FT                   /note="C->A: Displays decreased enzymatic activity on PET
+FT                   film and on BHET; when associated with A-203."
+FT                   /evidence="ECO:0000269|PubMed:29374183"
+FT   MUTAGEN         241
+FT                   /note="N->A: Displays decreased enzymatic activity on PET
+FT                   film and on BHET."
+FT                   /evidence="ECO:0000269|PubMed:29374183"
+FT   MUTAGEN         241
+FT                   /note="N->F: Increases activity towards 1-naphthyl
+FT                   butyrate."
+FT                   /evidence="ECO:0000269|PubMed:30502092"
+FT   MUTAGEN         280
+FT                   /note="R->A: Displays increased enzymatic activity on PET
+FT                   film. Displays increased thermostability and increased PET
+FT                   degradation activity by 14-fold at 40 degrees Celsius; when
+FT                   associated with E-121 and H-186."
+FT                   /evidence="ECO:0000269|PubMed:29374183, ECO:0000269|Ref.8"
+FT   HELIX           40..44
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          45..47
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          52..56
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          61..72
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          78..84
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           91..93
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   TURN            94..96
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           97..105
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          107..112
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           120..138
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   TURN            144..148
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          149..159
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           161..172
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          178..183
+FT                   /evidence="ECO:0007829|PDB:8H5K"
+FT   STRAND          198..203
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          207..209
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   TURN            211..214
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           215..221
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          227..232
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   TURN            237..240
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           247..262
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           266..268
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   HELIX           269..273
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+FT   STRAND          281..288
+FT                   /evidence="ECO:0007829|PDB:6EQE"
+SQ   SEQUENCE   290 AA;  30247 MW;  8620A766B69749D2 CRC64;
+     MNFPRASRLM QAAVLGGLMA VSAAATAQTN PYARGPNPTA ASLEASAGPF TVRSFTVSRP
+     SGYGAGTVYY PTNAGGTVGA IAIVPGYTAR QSSIKWWGPR LASHGFVVIT IDTNSTLDQP
+     SSRSSQQMAA LRQVASLNGT SSSPIYGKVD TARMGVMGWS MGGGGSLISA ANNPSLKAAA
+     PQAPWDSSTN FSSVTVPTLI FACENDSIAP VNSSALPIYD SMSRNAKQFL EINGGSHSCA
+     NSGNSNQALI GKKGVAWMKR FMDNDTRYST FACENPNSTR VSDFRTANCS
+//

@@ -1,0 +1,5 @@
+chain1	res1	resnum1	atom1	chain2	res2	resnum2	atom2	distance
+A	ASP	45	OD1	B	ARG	47	NE	3.400
+A	GLU	42	OE1	B	ARG	47	NH1	3.600
+A	GLU	42	OE2	B	ARG	47	NH1	3.500
+A	ASP	45	OD1	B	ARG	47	NH2	3.300

@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "mmetrics_id": "6c50d314-aa7e-47a8-97cc-c9a7b3f8fc8a",
+  "protein_metadata": {
+    "entities": [
+      {
+        "entity_id": 1,
+        "entity_type": "protein",
+        "chain_id": [
+          "A"
+        ],
+        "sequence": "NPYARGPNPTAASLEASAGPFTVRSFTVSRPSGYGAGTVYYPTNAGGTVGAIAIVPGYTARQSSIKWWGPRLASHGFVVITIDTNSTLDQPSSRSSQQMAALGQVASLNGTSSSPIYGKVDTARMGVMGWAMGGGGSLISAANNPSLKAAAPQAPWDSSTNFSSVTVPTLIFACENDSIAPVNSSALPIYDSMSRNAKQFLEINGGSHSCANSGNSNQALIGKKGVAWMKRFMDNDTRYSTFACENPNSTRVSDFRTANCS"
+      }
+    ]
+  },
+  "annotations": {
+    "homology": [],
+    "uniprot": [],
+    "pdb": [],
+    "features": []
+  },
+  "classification": {
+    "class": "monomer",
+    "confidence": "medium",
+    "reasoning": "The structure contains a single protein entity with one chain and no other protein, nucleic acid, or small-molecule partners reported. No BLAST or UniProt annotations are available to indicate enzymatic, receptor, or complex-forming function, and the suggested flags indicate neither ligand interaction nor antibody presence. Therefore, the most appropriate classification is a monomer.",
+    "description": "This entry describes a single-chain protein of 261 amino acids. No homologs or functional annotations were provided, so its biological role and organism are not specified. The structure appears to represent an isolated protein chain without a biologically relevant binding partner or non-solvent ligand."
+  },
+  "interactions": {
+    "2d_plot_data": []
+  },
+  "model_tasks": {
+    "results": []
+  }
+}

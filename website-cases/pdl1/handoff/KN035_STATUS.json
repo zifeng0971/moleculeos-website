@@ -1,0 +1,365 @@
+{
+  "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+  "local_time": "2026-10-21T09:45:13.744645+07:00",
+  "modules": [
+    {
+      "case": "02",
+      "module": "Description",
+      "real_data": true,
+      "source": "native_UI_and_MMetrics_task",
+      "entry_count": 1,
+      "mapped_to_MMfold1": true,
+      "limitation": "confidence high is classification confidence, not structure confidence"
+    },
+    {
+      "case": "02",
+      "module": "Homologs",
+      "real_data": true,
+      "source": "native_UI_and_MMetrics_task_rerun_20261029",
+      "entry_count": 3,
+      "mapped_to_MMfold1": null,
+      "limitation": "Three native record/UI entries observed 2026-10-29; ungapped queries equal KN035 chain B128 although native entity_id=1 and UI says antigen. Do not map these as PD-L1 chain A homologs.",
+      "observed_date_local": "2026-10-29",
+      "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+      "results": "02-mmetrics-kn035/reruns/20261029/results.json",
+      "history": [
+        {
+          "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+          "snapshot": {
+            "case": "02",
+            "module": "Homologs",
+            "real_data": true,
+            "source": "native_UI_and_MMetrics_task",
+            "entry_count": 0,
+            "mapped_to_MMfold1": true,
+            "limitation": "Native empty result preserved; separate binder pre-analysis BLAST is not substituted"
+          }
+        }
+      ]
+    },
+    {
+      "case": "02",
+      "module": "Domain",
+      "real_data": false,
+      "source": "native_UI_and_MMetrics_record",
+      "entry_count": 0,
+      "mapped_to_MMfold1": null,
+      "limitation": "Absent/empty in the actual native result; no fabricated entries"
+    },
+    {
+      "case": "02",
+      "module": "PTM",
+      "real_data": false,
+      "source": "native_UI_and_MMetrics_record",
+      "entry_count": 0,
+      "mapped_to_MMfold1": null,
+      "limitation": "Absent/empty in the actual native result; no fabricated entries"
+    },
+    {
+      "case": "02",
+      "module": "UniProt Feature",
+      "real_data": false,
+      "source": "native_UI_and_MMetrics_record",
+      "entry_count": 0,
+      "mapped_to_MMfold1": null,
+      "limitation": "Absent/empty in the actual native result; no fabricated entries"
+    },
+    {
+      "case": "02",
+      "module": "Epitope",
+      "real_data": true,
+      "source": "native_UI_and_MMetrics_task",
+      "entry_count": 19,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "Paratope",
+      "real_data": true,
+      "source": "native_UI_and_MMetrics_task",
+      "entry_count": 18,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "CDR ranges",
+      "real_data": true,
+      "source": "native_MMetrics_task",
+      "entry_count": 9,
+      "mapped_to_MMfold1": true,
+      "limitation": "3 schemes x 3 ranges"
+    },
+    {
+      "case": "02",
+      "module": "Interaction Network",
+      "real_data": true,
+      "source": "native_UI_table_and_SVG",
+      "entry_count": 44,
+      "mapped_to_MMfold1": true,
+      "limitation": "Description 51 contacts differs from 44 typed records; local 5 A contact pairs corroborate 51"
+    },
+    {
+      "case": "02",
+      "module": "MutXevo.csv",
+      "real_data": true,
+      "source": "native_UI_download",
+      "entry_count": 4920,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "MutXstruct.csv",
+      "real_data": true,
+      "source": "native_UI_download",
+      "entry_count": 4920,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "MutXseq.csv",
+      "real_data": true,
+      "source": "native_UI_download",
+      "entry_count": 4920,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "MutXaff.csv",
+      "real_data": true,
+      "source": "native_UI_download",
+      "entry_count": 4674,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "02",
+      "module": "abnumber_heavy.csv",
+      "real_data": true,
+      "source": "independent_MOS_task",
+      "entry_count": 128,
+      "mapped_to_MMfold1": true,
+      "limitation": "Original native panel did not produce these CSVs; supplemental tasks are explicitly separate"
+    },
+    {
+      "case": "02",
+      "module": "ablang_heavy_scores.csv",
+      "real_data": true,
+      "source": "independent_MOS_task",
+      "entry_count": 2560,
+      "mapped_to_MMfold1": true,
+      "limitation": "Original native panel did not produce these CSVs; supplemental tasks are explicitly separate"
+    },
+    {
+      "case": "02",
+      "module": "abnativ_heavy.csv",
+      "real_data": true,
+      "source": "independent_MOS_task",
+      "entry_count": 128,
+      "mapped_to_MMfold1": true,
+      "limitation": "Original native panel did not produce these CSVs; supplemental tasks are explicitly separate"
+    },
+    {
+      "case": "02",
+      "module": "paragraph_heavy.csv",
+      "real_data": true,
+      "source": "independent_MOS_task",
+      "entry_count": 128,
+      "mapped_to_MMfold1": true,
+      "limitation": "Original native panel did not produce these CSVs; supplemental tasks are explicitly separate"
+    },
+    {
+      "case": "02",
+      "module": "Native Antibody Design CSVs",
+      "real_data": false,
+      "source": "not_emitted_by_native_task",
+      "entry_count": 0,
+      "mapped_to_MMfold1": null,
+      "limitation": "Original native task did not emit AbAn/AbScN/ParaDt CSVs; separate real supplemental tasks supply the requested data."
+    },
+    {
+      "case": "02",
+      "module": "Native capture",
+      "real_data": true,
+      "source": "native_UI_screenshots_DOM_SVG",
+      "entry_count": 6,
+      "mapped_to_MMfold1": true,
+      "limitation": "6 overlapping complete screenshots, full DOM, all tooltip/title attributes, style/viewport/DPR/scrollTop; early captures retained as history"
+    },
+    {
+      "case": "03",
+      "module": "Affinity scan",
+      "real_data": true,
+      "source": "MOS_task",
+      "entry_count": 4674,
+      "mapped_to_MMfold1": true,
+      "limitation": "Schema scores A+B; all A substitutions excluded from candidates. Delta score unit unknown"
+    },
+    {
+      "case": "03",
+      "module": "KN035 mutations",
+      "real_data": true,
+      "source": "filtered_MOS_task",
+      "entry_count": 2432,
+      "mapped_to_MMfold1": true,
+      "limitation": ""
+    },
+    {
+      "case": "03",
+      "module": "Variant structures",
+      "real_data": true,
+      "source": "MOS_MMfold_plus_local_sequence_geometry_audit",
+      "entry_count": 25,
+      "mapped_to_MMfold1": true,
+      "limitation": "5 variants x 5 samples; confidence is not affinity; erroneous S128W task excluded"
+    },
+    {
+      "case": "04",
+      "module": "Structural Stability",
+      "real_data": true,
+      "source": "MOS_task",
+      "entry_count": 2560,
+      "mapped_to_MMfold1": true,
+      "limitation": "Dimensionless model fitness; mutant minus same-site WT; generic sequence score chain A maps to master B"
+    },
+    {
+      "case": "04",
+      "module": "Sequence Fitness",
+      "real_data": true,
+      "source": "MOS_task",
+      "entry_count": 2560,
+      "mapped_to_MMfold1": true,
+      "limitation": "Dimensionless model fitness; mutant minus same-site WT; generic sequence score chain A maps to master B"
+    },
+    {
+      "case": "04",
+      "module": "Evolutionary Effect",
+      "real_data": true,
+      "source": "MOS_task",
+      "entry_count": 2560,
+      "mapped_to_MMfold1": true,
+      "limitation": "Dimensionless model fitness; mutant minus same-site WT; generic sequence score chain A maps to master B"
+    },
+    {
+      "case": "04",
+      "module": "Local sequence risk",
+      "real_data": true,
+      "source": "local_analysis",
+      "entry_count": 10,
+      "mapped_to_MMfold1": true,
+      "limitation": "Motif flags, not measured degradation probability"
+    },
+    {
+      "case": "04",
+      "module": "Framework candidates",
+      "real_data": true,
+      "source": "local_screen_of_MOS_scores",
+      "entry_count": 6,
+      "mapped_to_MMfold1": true,
+      "limitation": "Protect union of all 3 CDR schemes, paratope and 4 cysteines; candidates have no new validated structures"
+    },
+    {
+      "case": "04",
+      "module": "Affinity x Developability",
+      "real_data": true,
+      "source": "local_merge_of_MOS_outputs",
+      "entry_count": 11,
+      "mapped_to_MMfold1": true,
+      "limitation": "5 mutation types have sequence-verified predicted structures; all are experimentally unverified"
+    },
+    {
+      "case": "05",
+      "module": "De novo runs",
+      "real_data": true,
+      "source": "MOS_Protein_Binder_Design",
+      "entry_count": 3,
+      "mapped_to_MMfold1": true,
+      "limitation": "Seeds111/222/333; no existing binder input; 60-100 aa design range"
+    },
+    {
+      "case": "05",
+      "module": "Raw complexes",
+      "real_data": true,
+      "source": "MOS_task",
+      "entry_count": 6,
+      "mapped_to_MMfold1": true,
+      "limitation": "3 virtual GLY backbone CIFs + 3 designed-sequence complex CIFs"
+    },
+    {
+      "case": "05",
+      "module": "Hotspots",
+      "real_data": true,
+      "source": "native_epitope_plus_local_SASA",
+      "entry_count": 6,
+      "mapped_to_MMfold1": true,
+      "limitation": "Target-only input retains all 118 residues; output target B maps to master A"
+    },
+    {
+      "case": "05",
+      "module": "Alignment/contact/BSA/rank",
+      "real_data": true,
+      "source": "local_geometry",
+      "entry_count": 3,
+      "mapped_to_MMfold1": true,
+      "limitation": "BSA=(isolated SASA sum-complex SASA)/2; 4.5 A contacts; geometry ranking only"
+    },
+    {
+      "case": "05",
+      "module": "Explicit ipTM / pLDDT / PAE summary",
+      "real_data": false,
+      "source": "not_supplied_by_MOS",
+      "entry_count": 0,
+      "mapped_to_MMfold1": null,
+      "limitation": "No confidence summary supplied. Raw CIF atom-site B values retained without assigning an unverified confidence meaning."
+    }
+  ],
+  "all_tasks_for_used_data_complete": true,
+  "required_native_scope_exceptions": [
+    "Original MMetrics Antibody Design CSVs missing; four independent supplemental tasks supplied instead",
+    "Original 2026-10-21 Domain/PTM absent and UniProt/Homologs empty; 2026-10-29 native Homologs now has three entries with a query-chain/entity mismatch"
+  ],
+  "excluded_tasks": [
+    "342605442536448 (wrong MMFold sequence S128W)",
+    "342605433852928 (mis-transcribed evolutionary sequence)"
+  ],
+  "de_novo_round2": {
+    "observed_local": "2026-10-21T09:57:34.847268+07:00",
+    "status": "three_runs_completed_and_locally_verified",
+    "seeds": [
+      444,
+      555,
+      666
+    ],
+    "task_ids": [
+      "342610715788288",
+      "342610718331904",
+      "342610714428416"
+    ],
+    "results": "05-denovo-kn035/round2/results.json",
+    "comparison": "05-denovo-kn035/round-comparison.json"
+  },
+  "latest_homolog_update": {
+    "run_id": "20261029",
+    "observed_date_local": "2026-10-29",
+    "time_zone": "Asia/Jakarta",
+    "recorded_at_utc": "2026-10-29T06:04:19.840670+00:00",
+    "project_id": "345488380847104",
+    "project_url": "https://mos.moleculemind.com/?projectId=345488380847104",
+    "mos_object_id": "345488780645376",
+    "mos_work_id": "345488784675840",
+    "mmetrics_id": "d8d4e831-5b7a-41bc-868a-93dc27bc3cd5",
+    "task_ids": [
+      "345488784917504",
+      "345489060729856"
+    ],
+    "task_status": "SUCCEED",
+    "results": "02-mmetrics-kn035/reruns/20261029/results.json",
+    "readme": "02-mmetrics-kn035/reruns/20261029/README.md",
+    "scope": "Latest native Homologs observation only; other canonical modules and native_tasks retain their 2026-10-21 snapshot.",
+    "other_module_statuses_retain_original_snapshot": true
+  }
+}

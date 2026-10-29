@@ -1,0 +1,261 @@
+{
+ "input_protein": "../inputs/5XH3.pdb",
+ "input_ligand": "../inputs/5xh3_B_856.sdf",
+ "ligand_comp_id": "856",
+ "ligand_name": "O4-(2-hydroxyethyl) O1-methyl benzene-1,4-dicarboxylate",
+ "ligand_heavy_atoms": 16,
+ "ligand_formula": "C11 H12 O5",
+ "numbering": {
+  "AUTH_to_UNP_offset": 29,
+  "catalytic_triad_UNP": "Ser160 / Asp206 / His237",
+  "catalytic_triad_AUTH": "Ser131 / Asp177 / His208"
+ },
+ "contact_cutoff_A": 4.0,
+ "hbond_screen_A": 3.6,
+ "n_contact_pairs": 69,
+ "n_pocket_residues": 9,
+ "n_polar_contacts_u35": 6,
+ "n_pi_contacts": 1,
+ "ligand_sasa_complex_A2": 88.89,
+ "ligand_sasa_isolated_A2": 417.29,
+ "ligand_buried_sasa_A2": 328.4,
+ "ligand_buried_fraction": 0.787,
+ "ligand_atoms": [
+  {
+   "idx": 1,
+   "name": "C13",
+   "element": "C",
+   "role": "hydroxyethyl_CH2",
+   "degree": 2,
+   "x": -22.941,
+   "y": -9.084,
+   "z": 3.322
+  },
+  {
+   "idx": 2,
+   "name": "C15",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 2,
+   "x": -23.084,
+   "y": -13.371,
+   "z": 5.525
+  },
+  {
+   "idx": 3,
+   "name": "C01",
+   "element": "C",
+   "role": "hydroxyethyl_CH2",
+   "degree": 1,
+   "x": -23.73,
+   "y": -16.712,
+   "z": 10.658
+  },
+  {
+   "idx": 4,
+   "name": "O02",
+   "element": "O",
+   "role": "methoxy_O",
+   "degree": 2,
+   "x": -23.02,
+   "y": -15.874,
+   "z": 9.777
+  },
+  {
+   "idx": 5,
+   "name": "C03",
+   "element": "C",
+   "role": "ester_carbonyl_C",
+   "degree": 3,
+   "x": -23.583,
+   "y": -15.736,
+   "z": 8.503
+  },
+  {
+   "idx": 6,
+   "name": "O04",
+   "element": "O",
+   "role": "carbonyl_O",
+   "degree": 1,
+   "x": -24.627,
+   "y": -16.244,
+   "z": 8.239
+  },
+  {
+   "idx": 7,
+   "name": "C05",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 3,
+   "x": -22.976,
+   "y": -14.689,
+   "z": 7.58
+  },
+  {
+   "idx": 8,
+   "name": "C06",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 2,
+   "x": -21.843,
+   "y": -14.025,
+   "z": 7.996
+  },
+  {
+   "idx": 9,
+   "name": "C07",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 2,
+   "x": -21.292,
+   "y": -13.087,
+   "z": 7.123
+  },
+  {
+   "idx": 10,
+   "name": "C08",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 3,
+   "x": -21.893,
+   "y": -12.766,
+   "z": 5.909
+  },
+  {
+   "idx": 11,
+   "name": "C09",
+   "element": "C",
+   "role": "ester_carbonyl_C",
+   "degree": 3,
+   "x": -21.362,
+   "y": -11.546,
+   "z": 5.132
+  },
+  {
+   "idx": 12,
+   "name": "O10",
+   "element": "O",
+   "role": "carbonyl_O",
+   "degree": 1,
+   "x": -20.289,
+   "y": -11.556,
+   "z": 4.626
+  },
+  {
+   "idx": 13,
+   "name": "O11",
+   "element": "O",
+   "role": "hydroxyethyl_ester_O",
+   "degree": 2,
+   "x": -22.224,
+   "y": -10.446,
+   "z": 4.966
+  },
+  {
+   "idx": 14,
+   "name": "C12",
+   "element": "C",
+   "role": "hydroxyethyl_CH2",
+   "degree": 2,
+   "x": -21.906,
+   "y": -9.224,
+   "z": 4.413
+  },
+  {
+   "idx": 15,
+   "name": "O14",
+   "element": "O",
+   "role": "terminal_hydroxyl_O",
+   "degree": 1,
+   "x": -22.207,
+   "y": -8.686,
+   "z": 2.224
+  },
+  {
+   "idx": 16,
+   "name": "C16",
+   "element": "C",
+   "role": "aromatic_C",
+   "degree": 2,
+   "x": -23.612,
+   "y": -14.348,
+   "z": 6.371
+  }
+ ],
+ "pi_contacts": [
+  {
+   "auth_res": 156,
+   "unp_res": 185,
+   "resname": "TRP",
+   "ring_centroid_dist": 4.98
+  }
+ ],
+ "polar_contacts": [
+  {
+   "auth_res": 58,
+   "unp_res": 87,
+   "resname": "Y",
+   "protein_atom": "O",
+   "protein_element": "O",
+   "ligand_atom": "O14",
+   "ligand_element": "O",
+   "ligand_role": "terminal_hydroxyl_O",
+   "distance": 2.616
+  },
+  {
+   "auth_res": 58,
+   "unp_res": 87,
+   "resname": "Y",
+   "protein_atom": "N",
+   "protein_element": "N",
+   "ligand_atom": "O10",
+   "ligand_element": "O",
+   "ligand_role": "carbonyl_O",
+   "distance": 2.896
+  },
+  {
+   "auth_res": 58,
+   "unp_res": 87,
+   "resname": "Y",
+   "protein_atom": "N",
+   "protein_element": "N",
+   "ligand_atom": "O14",
+   "ligand_element": "O",
+   "ligand_role": "terminal_hydroxyl_O",
+   "distance": 3.352
+  },
+  {
+   "auth_res": 132,
+   "unp_res": 161,
+   "resname": "M",
+   "protein_atom": "N",
+   "protein_element": "N",
+   "ligand_atom": "O10",
+   "ligand_element": "O",
+   "ligand_role": "carbonyl_O",
+   "distance": 2.932
+  },
+  {
+   "auth_res": 156,
+   "unp_res": 185,
+   "resname": "W",
+   "protein_atom": "NE1",
+   "protein_element": "N",
+   "ligand_atom": "O02",
+   "ligand_element": "O",
+   "ligand_role": "methoxy_O",
+   "distance": 3.203
+  },
+  {
+   "auth_res": 208,
+   "unp_res": 237,
+   "resname": "H",
+   "protein_atom": "NE2",
+   "protein_element": "N",
+   "ligand_atom": "O11",
+   "ligand_element": "O",
+   "ligand_role": "hydroxyethyl_ester_O",
+   "distance": 2.865
+  }
+ ]
+}

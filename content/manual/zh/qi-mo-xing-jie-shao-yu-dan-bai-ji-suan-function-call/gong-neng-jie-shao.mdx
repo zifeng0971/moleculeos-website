@@ -8,9 +8,9 @@
 
 -   发起模型运算，按照提示输入
 
-<ManualImage src={"/manual-assets/zh/video/video-57-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/animation-7fd078f02c60fa6e3c5277c61db584c4.mp4"} mp4={"/manual-assets/shared/animation-7fd078f02c60fa6e3c5277c61db584c4.mp4"} poster={"/manual-assets/zh/video/video-57-poster.webp"} />
 
--   查看结果，打开任务结果面板，将结果依次导入MOS项目中。本功能将产生三个PDB结构
+-   查看结果，打开任务结果面板，将结果依次导入MoleculeOS项目中。本功能将产生三个PDB结构
 
 <ManualVideo src={"/manual-assets/zh/video/video-58.webm"} poster={"/manual-assets/zh/video/video-58-poster.webp"} webm={"/manual-assets/zh/video/video-58.webm"} mp4={"/manual-assets/zh/video/video-58.mp4"} external={false} reference={"image81.gif"} />
 
@@ -22,17 +22,27 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-2"><a id="heading_103"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起模型计算
+1. 在项目中导入 PDB/CIF 结构，在 Mocha 中选择 Protein Redesign，指定输入结构。需要局部设计时，填写待设计残基（如 A1 A4 B2 B3）；确认链名与结构编号一致后提交。
+2. 在 Task 中等待任务显示 Succeed，再打开结果面板查看 redesign.fasta。保留输入结构与任务记录，供后续序列比较。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-2-protein-redesign-take2-poster.webp"} caption={"7.2 · 输入与提交"} />
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-2-redesign-results-poster.webp"} caption={"7.2 · 结果查看"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-3-protein-binder-design"><a id="heading_104"></a>3. <strong>Protein Binder Design</strong></h3>
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-jian-jie-3"><a id="heading_105"></a><strong>简介</strong></h4>
 
-<ManualTable html={"<table><tbody><tr><td><p>基于靶点，设计 binder 蛋白（主链结构，或者包括蛋白序列）</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-3\"><a id=\"heading_106\"></a><strong>目标用户</strong></h5><ul><li>合成生物学家：设计结合酶的抑制剂或者稳定剂</li><li>药物研发人员：设计小蛋白药物、遮蔽肽等</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-3\"><a id=\"heading_107\"></a><strong>使用场景</strong></h5><ul><li>通过结合酶的活性位点或变构位点来抑制酶活性</li><li>稳定酶的折叠结构，或在表达过程中防止其聚集</li><li>靶向疾病相关蛋白，作为抗体的替代方案（如病毒或癌症蛋白）</li><li>通过特异性结合将药物或纳米粒子递送至特定组织</li><li>模拟或阻断天然配体以调节受体信号传导</li><li>靶向免疫受体，调节免疫反应</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-3\"><a id=\"heading_108\"></a><strong>输入</strong></h5><ul><li>\"Input Structure\"（必填）：包含目标蛋白质结构的文件，可以包含多个链。</li><li>\"Target Binding\"（必填）：希望结合区域的目标蛋白质残基，例如 \"A5 A8-20\" 表示 A 链的第 5 位残基以及第 8 到第 20 位的残基</li><li>\"Binder Size Min\"（必填）：设计的结合肽的最小长度，例如 15。</li><li>\"Binder Size Max\"（必填）：设计的结合肽的最大长度，例如 30。</li><li>\"Align Binder\"（可选）：启用后，MOS 将预测目标-结合肽复合物，并将其与原始目标蛋白链进行比对</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-3\"><a id=\"heading_109\"></a><strong>输出</strong></h5><ul><li>设计出的结合肽结构，包含重原子的三维坐标以及虚拟氨基酸信息：output.cif</li><li>如果 mosapp_compare_binder==1， 目标蛋白与结合肽的复合物结构，包含有效的结合肽序列：aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
+<ManualTable html={"<table><tbody><tr><td><p>基于靶点，设计 binder 蛋白（主链结构，或者包括蛋白序列）</p><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-mu-biao-yong-hu-3\"><a id=\"heading_106\"></a><strong>目标用户</strong></h5><ul><li>合成生物学家：设计结合酶的抑制剂或者稳定剂</li><li>药物研发人员：设计小蛋白药物、遮蔽肽等</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shi-yong-chang-jing-3\"><a id=\"heading_107\"></a><strong>使用场景</strong></h5><ul><li>通过结合酶的活性位点或变构位点来抑制酶活性</li><li>稳定酶的折叠结构，或在表达过程中防止其聚集</li><li>靶向疾病相关蛋白，作为抗体的替代方案（如病毒或癌症蛋白）</li><li>通过特异性结合将药物或纳米粒子递送至特定组织</li><li>模拟或阻断天然配体以调节受体信号传导</li><li>靶向免疫受体，调节免疫反应</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-ru-3\"><a id=\"heading_108\"></a><strong>输入</strong></h5><ul><li>\"Input Structure\"（必填）：包含目标蛋白质结构的文件，可以包含多个链。</li><li>\"Target Binding\"（必填）：希望结合区域的目标蛋白质残基，例如 \"A5 A8-20\" 表示 A 链的第 5 位残基以及第 8 到第 20 位的残基</li><li>\"Binder Size Min\"（必填）：设计的结合肽的最小长度，例如 15。</li><li>\"Binder Size Max\"（必填）：设计的结合肽的最大长度，例如 30。</li><li>\"Align Binder\"（可选）：启用后，MoleculeOS 将预测目标-结合肽复合物，并将其与原始目标蛋白链进行比对</li></ul><h5 id=\"qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-shu-chu-3\"><a id=\"heading_109\"></a><strong>输出</strong></h5><ul><li>设计出的结合肽结构，包含重原子的三维坐标以及虚拟氨基酸信息：output.cif</li><li>如果 mosapp_compare_binder==1， 目标蛋白与结合肽的复合物结构，包含有效的结合肽序列：aligned.cif</li></ul></td></tr></tbody></table>"} assets={[]} />
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-3"><a id="heading_110"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起模型计算
+1. 导入靶蛋白结构，在 Mocha 中选择 Protein Binder Design，填写 Target Binding 残基范围，以及 Binder Size Min / Max。需要复合物预测与比对时启用 Align Binder。
+2. 提交后在 Task 查看状态。成功后打开 output.cif；启用比对时检查 aligned.cif，将结果导入项目并查看靶点与候选 binder 的空间位置。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-design-poster.webp"} caption={"7.3 · 输入与提交"} />
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-3-binder-output-poster.webp"} caption={"7.3 · 候选输出"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-4-sequence-fitness-mutation-effect"><a id="heading_111"></a>4. <strong>Sequence Fitness Mutation Effect</strong></h3>
 
@@ -42,17 +52,14 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-4"><a id="heading_117"></a><strong>操作步骤</strong></h4>
 
--   发起模型运算，按照提示输入
+1. 在 Mocha 中选择 Sequence Fitness Mutation Effect，输入由标准氨基酸组成的蛋白序列，检查序列后提交。
+2. 任务成功后打开结果面板，预览或下载 CSV；通过 Display Score Heatmap 查看位点和替换氨基酸的分数，结合原始表格筛选候选突变。
 
-<ManualImage src={"/manual-assets/zh/video/video-59-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-input-poster.webp"} caption={"7.4 · 序列输入"} />
 
--   查看结果，打开任务结果面板，点击 Display Score Heatmap，即可看到打分文件。分数越高，表示结果越好。
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-csv-poster.webp"} caption={"7.4 · CSV 查看"} />
 
-<ManualVideo src={"/manual-assets/zh/video/video-60.webm"} poster={"/manual-assets/zh/video/video-60-poster.webp"} webm={"/manual-assets/zh/video/video-60.webm"} mp4={"/manual-assets/zh/video/video-60.mp4"} external={false} reference={"image83.gif"} />
-
-也支持预览，以及直接将结果CSV文件下载到本地
-
-<ManualImage src={"/manual-assets/zh/video/video-61-poster.webp"} width={2040} height={1016} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-4-sequence-fitness-results-poster.webp"} caption={"7.4 · 结果查看"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-5-evolutionary-mutation-effect"><a id="heading_118"></a>5. <strong>Evolutionary Mutation Effect</strong></h3>
 
@@ -62,13 +69,10 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-5"><a id="heading_124"></a><strong>操作步骤</strong></h4>
 
--   发起模型运算，按照提示输入
+1. 在 Mocha 中选择 Evolutionary Mutation Effect，输入蛋白序列并提交。本次成功演示使用 1BRS 的 B 链 barnase 序列，共 110 个残基。
+2. 在 Task 确认 Succeed 后打开结果面板，查看并下载 MutXevo CSV；按位点、替换和模型分数检查候选。
 
-<ManualImage src={"/manual-assets/zh/video/video-62-poster.webp"} width={1952} height={1062} alt={""} />
-
--   查看结果，打开任务结果面板，支持将CSV结果文件直接下载到本地
-
-<ManualImage src={"/manual-assets/zh/video/video-63-poster.webp"} width={2040} height={1016} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-5-evolutionary-success-poster.webp"} caption={"7.5 · 成功运行与 CSV"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-6-structural-stability-mutation-effect"><a id="heading_125"></a>6. <strong>Structural Stability Mutation Effect</strong></h3>
 
@@ -82,17 +86,12 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-6"><a id="heading_131"></a><strong>操作步骤</strong></h4>
 
--   发起模型运算，按照提示输入
+1. 导入所需蛋白结构，在 Mocha 中选择 Structural Stability Mutation Effect，核对结构、链名和待评估位点后提交。
+2. 任务成功后打开结果，查看热图并预览或下载 CSV。比较突变时同时核对分数字段、单位和模型定义，保留原始结果。
 
-<ManualImage src={"/manual-assets/zh/video/video-64-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-6-structural-stability-input-poster.webp"} caption={"7.6 · 结构输入"} />
 
--   查看结果，打开任务结果面板，点击 Display Score Heatmap，即可看到打分文件。分数越高，表示结果越好。
-
-<ManualImage src={"/manual-assets/zh/video/video-65-poster.webp"} width={1952} height={1062} alt={""} />
-
-也支持预览，以及直接将结果CSV文件下载到本地
-
-<ManualImage src={"/manual-assets/zh/video/video-66-poster.webp"} width={1952} height={1062} alt={""} />
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-6-stability-results-poster.webp"} caption={"7.6 · 结果查看"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-7-protein-ligand-affinity-evaluation"><a id="heading_132"></a>7. <strong>Protein-Ligand Affinity Evaluation</strong></h3>
 
@@ -108,7 +107,10 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-7"><a id="heading_139"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起
+1. 准备蛋白受体结构和配体 SDF，在 Mocha 中选择 Protein-Ligand Affinity Evaluation，分别指定蛋白与小分子输入。
+2. 提交并等待任务成功，在结果面板查看输出表格和评分；保留受体、配体与计算条件，便于比较和复核。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-7-protein-ligand-affinity-poster.webp"} caption={"7.7 · 亲和力评估流程"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-8-geometric-pocket-detection"><a id="heading_140"></a>8. <strong>Geometric Pocket Detection</strong></h3>
 
@@ -124,7 +126,10 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-8"><a id="heading_146"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起
+1. 准备仅含蛋白的 5XH3 A 链结构，在 Mocha 中发起几何口袋检测，选择前 3 个口袋并检查口袋位置。
+2. 本次演示在已有 Mocha 环境内继续使用 AutoDock Vina 1.2.7 对配体进行对接：口袋 2、1、8，每个口袋 9 个构象，共 27 个。查看构象文件、口袋边界和原始打分表。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-8-pocket-detection-and-docking-poster.webp"} caption={"7.8 · 口袋检测与 Mocha 内对接"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-9-antibody-humanization-modelling"><a id="heading_147"></a>9. <strong>Antibody Humanization Modelling</strong></h3>
 
@@ -134,7 +139,10 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-9"><a id="heading_149"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起
+1. 在 Mocha 中选择 Antibody Humanization Modelling，按字段分别输入抗体重链和轻链可变区序列，核对链类型后提交。
+2. 任务成功后查看输出 FASTA 中的候选序列，并与输入抗体对比。此演示使用公开 1FDL 的 H 链 VH（1–116）与 L 链 VL（1–107），结果含 10 个候选。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-9-antibody-humanization-poster.webp"} caption={"7.9 · 人源化输入与结果"} />
 
 <h3 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-10-binding-affinity-mutation-scoring"><a id="heading_150"></a>10. <strong>Binding Affinity Mutation Scoring</strong></h3>
 
@@ -144,4 +152,8 @@
 
 <h4 id="qi-mo-xing-jie-shao-yu-dan-bai-ji-suan-function-call-gong-neng-jie-shao-cao-zuo-bu-zhou-10"><a id="heading_152"></a><strong>操作步骤</strong></h4>
 
-通过Mocha发起
+1. 导入包含相互作用链的复合物结构，在 Mocha 中选择 Binding Affinity Mutation Scoring，按功能表单指定链。本次演示使用清理后以 CIF 导入的公开 1BRS 结构，链参数为 A,D。
+2. 任务成功后打开结果面板，查看并下载 MutXaff CSV，逐项核对突变位点、替换、分数字段和单位。
+
+<ManualVideo src={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results.mp4"} mp4={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results.mp4"} poster={"/manual-assets/shared/recordings-2026-10-10/7-10-binding-affinity-clean-results-poster.webp"} caption={"7.10 · 结合突变评分结果"} />
+

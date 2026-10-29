@@ -1,0 +1,10 @@
+pos,wt,mut,mutation,acceptance,tier,stability_delta,seq_fitness_delta,evolutionary_delta,consensus,risk_flags,rel_sasa,nearest_paratope_res,nearest_paratope_dist_A,vhh_hallmark
+60,L,Y,B:L60Y,extended,A_paratope_distal,-0.6741,3.2303,6.3164,0.287,none,0.167,L108,9.93,False
+5,Q,V,B:Q5V,strict,A_paratope_distal,1.1569,1.9142,4.1074,0.276,none,0.478,Q116,11.87,False
+93,M,V,B:M93V,extended,A_paratope_distal,2.251,-0.2345,4.0352,0.26,removes_oxidation_Met,0.226,S111,13.05,False
+73,N,D,B:N73D,extended,A_paratope_distal,-0.7103,4.0442,3.918,0.236,none,0.211,R32,11.32,False
+93,M,T,B:M93T,extended,A_paratope_distal,1.8531,2.9152,-0.8848,0.189,removes_oxidation_Met,0.226,S111,13.05,False
+75,A,S,B:A75S,strict,A_paratope_distal,0.4314,0.8123,1.043,0.09,none,0.603,K27,9.58,False
+50,K,S,B:K50S,strict,B_paratope_adjacent,1.9633,2.1999,3.9902,0.331,none,0.005,D103,3.35,False
+47,R,L,B:R47L,strict,B_paratope_adjacent,1.3527,0.8823,6.4771,0.328,none,0.079,V109,2.63,True
+50,K,A,B:K50A,strict,B_paratope_adjacent,0.2727,1.0559,2.9434,0.153,none,0.005,D103,3.35,False

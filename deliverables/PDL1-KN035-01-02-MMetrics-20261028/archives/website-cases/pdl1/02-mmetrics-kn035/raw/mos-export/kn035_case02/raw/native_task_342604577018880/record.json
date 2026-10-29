@@ -1,0 +1,794 @@
+{
+  "schema_version": "1.0.0",
+  "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6",
+  "protein_metadata": {
+    "entities": [
+      {
+        "entity_id": 1,
+        "entity_type": "protein",
+        "chain_id": [
+          "A"
+        ],
+        "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+      },
+      {
+        "entity_id": 2,
+        "entity_type": "protein",
+        "chain_id": [
+          "B"
+        ],
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+        "antibody_fragment": "VHH"
+      }
+    ]
+  },
+  "annotations": {
+    "homology": [],
+    "uniprot": [],
+    "pdb": [],
+    "features": [
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "IMGT",
+        "range": [
+          [
+            26,
+            33
+          ]
+        ],
+        "evidence": "H-CDR1 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "IMGT",
+        "range": [
+          [
+            51,
+            58
+          ]
+        ],
+        "evidence": "H-CDR2 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "IMGT",
+        "range": [
+          [
+            97,
+            117
+          ]
+        ],
+        "evidence": "H-CDR3 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Kabat",
+        "range": [
+          [
+            31,
+            35
+          ]
+        ],
+        "evidence": "H-CDR1 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Kabat",
+        "range": [
+          [
+            50,
+            66
+          ]
+        ],
+        "evidence": "H-CDR2 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Kabat",
+        "range": [
+          [
+            99,
+            117
+          ]
+        ],
+        "evidence": "H-CDR3 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Chothia",
+        "range": [
+          [
+            26,
+            32
+          ]
+        ],
+        "evidence": "H-CDR1 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Chothia",
+        "range": [
+          [
+            52,
+            57
+          ]
+        ],
+        "evidence": "H-CDR2 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "cdr",
+        "annotation_source": "Chothia",
+        "range": [
+          [
+            99,
+            117
+          ]
+        ],
+        "evidence": "H-CDR3 (chain B)"
+      },
+      {
+        "entity_id": 2,
+        "type": "region",
+        "annotation_type": "paratope",
+        "annotation_source": "structure",
+        "loc": [
+          27,
+          29,
+          30,
+          32,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          108,
+          109,
+          111,
+          113,
+          114,
+          115,
+          116
+        ],
+        "evidence": "Paratope of VHH chain B (binds antigen chains A)"
+      },
+      {
+        "entity_id": 1,
+        "type": "region",
+        "annotation_type": "epitope",
+        "annotation_source": "structure",
+        "loc": [
+          38,
+          40,
+          42,
+          45,
+          47,
+          50,
+          52,
+          53,
+          57,
+          60,
+          97,
+          99,
+          101,
+          103,
+          104,
+          105,
+          106,
+          107,
+          109
+        ],
+        "evidence": "Epitope on antigen chains A (bound by VHH chain B)"
+      }
+    ]
+  },
+  "classification": {
+    "class": "antigen-antibody",
+    "confidence": "high",
+    "reasoning": "The structure contains a 128-residue VHH antibody fragment on chain B and a 118-residue protein antigen on chain A. The suggested interface shows 51 contacts between these chains, consistent with a biologically relevant antigen-antibody complex. No catalytic, nucleic-acid-binding, or receptor-ligand evidence is present.",
+    "description": "This structure is a complex between a single-domain antibody fragment (VHH/nanobody) and its protein antigen. Chain B is annotated as a VHH antibody fragment, while chain A is the bound target protein. The complex is stabilized by a substantial interface between the two chains. No organism or specific function can be assigned from the provided summary because no homology or UniProt annotations were available."
+  },
+  "interactions": {
+    "2d_plot_data": [
+      {
+        "interaction_key": "A:B",
+        "interaction_type": "protein-protein",
+        "partner_a": {
+          "entity_id": 1,
+          "chain_ids": [
+            "A"
+          ]
+        },
+        "partner_b": {
+          "entity_id": 2,
+          "chain_ids": [
+            "B"
+          ]
+        },
+        "meta": {
+          "pdb_id": "342604293768192_MMFOLD_1",
+          "n_contacts": 44
+        },
+        "residues_a": [
+          {
+            "key": "ARG109.A",
+            "name": "ARG",
+            "number": 109,
+            "chain": "A",
+            "property_type": "Basic"
+          },
+          {
+            "key": "GLN50.A",
+            "name": "GLN",
+            "number": 50,
+            "chain": "A",
+            "property_type": "Polar"
+          },
+          {
+            "key": "ASP45.A",
+            "name": "ASP",
+            "number": 45,
+            "chain": "A",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "TYR40.A",
+            "name": "TYR",
+            "number": 40,
+            "chain": "A",
+            "property_type": "Aromatic"
+          },
+          {
+            "key": "ARG97.A",
+            "name": "ARG",
+            "number": 97,
+            "chain": "A",
+            "property_type": "Basic"
+          },
+          {
+            "key": "GLU42.A",
+            "name": "GLU",
+            "number": 42,
+            "chain": "A",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "ILE38.A",
+            "name": "ILE",
+            "number": 38,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "VAL52.A",
+            "name": "VAL",
+            "number": 52,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "ASP57.A",
+            "name": "ASP",
+            "number": 57,
+            "chain": "A",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "VAL60.A",
+            "name": "VAL",
+            "number": 60,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "MET99.A",
+            "name": "MET",
+            "number": 99,
+            "chain": "A",
+            "property_type": "Sulfur"
+          },
+          {
+            "key": "GLY103.A",
+            "name": "GLY",
+            "number": 103,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "GLY104.A",
+            "name": "GLY",
+            "number": 104,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "ALA105.A",
+            "name": "ALA",
+            "number": 105,
+            "chain": "A",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "ASP106.A",
+            "name": "ASP",
+            "number": 106,
+            "chain": "A",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "TYR107.A",
+            "name": "TYR",
+            "number": 107,
+            "chain": "A",
+            "property_type": "Aromatic"
+          }
+        ],
+        "residues_b": [
+          {
+            "key": "GLN116.B",
+            "name": "GLN",
+            "number": 116,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "THR105.B",
+            "name": "THR",
+            "number": 105,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "ARG32.B",
+            "name": "ARG",
+            "number": 32,
+            "chain": "B",
+            "property_type": "Basic"
+          },
+          {
+            "key": "ASP103.B",
+            "name": "ASP",
+            "number": 103,
+            "chain": "B",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "GLU102.B",
+            "name": "GLU",
+            "number": 102,
+            "chain": "B",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "SER29.B",
+            "name": "SER",
+            "number": 29,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "ASP99.B",
+            "name": "ASP",
+            "number": 99,
+            "chain": "B",
+            "property_type": "Acidic"
+          },
+          {
+            "key": "SER100.B",
+            "name": "SER",
+            "number": 100,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "SER30.B",
+            "name": "SER",
+            "number": 30,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "LEU108.B",
+            "name": "LEU",
+            "number": 108,
+            "chain": "B",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "PHE101.B",
+            "name": "PHE",
+            "number": 101,
+            "chain": "B",
+            "property_type": "Aromatic"
+          },
+          {
+            "key": "PRO104.B",
+            "name": "PRO",
+            "number": 104,
+            "chain": "B",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "VAL109.B",
+            "name": "VAL",
+            "number": 109,
+            "chain": "B",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "ALA114.B",
+            "name": "ALA",
+            "number": 114,
+            "chain": "B",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "SER111.B",
+            "name": "SER",
+            "number": 111,
+            "chain": "B",
+            "property_type": "Polar"
+          },
+          {
+            "key": "GLY113.B",
+            "name": "GLY",
+            "number": 113,
+            "chain": "B",
+            "property_type": "Aliphatic"
+          },
+          {
+            "key": "PHE115.B",
+            "name": "PHE",
+            "number": 115,
+            "chain": "B",
+            "property_type": "Aromatic"
+          }
+        ],
+        "interactions": [
+          {
+            "residue_key_a": "ARG109.A",
+            "residue_key_b": "GLN116.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 2.524
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "THR105.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.065
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "ARG32.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.079
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "ASP103.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.25
+          },
+          {
+            "residue_key_a": "TYR40.A",
+            "residue_key_b": "GLU102.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.144
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "SER29.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.169
+          },
+          {
+            "residue_key_a": "ARG97.A",
+            "residue_key_b": "ASP99.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 3.19
+          },
+          {
+            "residue_key_a": "GLU42.A",
+            "residue_key_b": "SER100.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 2.372
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "SER30.B",
+            "type": "HBOND",
+            "category": "H-Bond",
+            "distance": 2.602
+          },
+          {
+            "residue_key_a": "ARG97.A",
+            "residue_key_b": "ASP99.B",
+            "type": "IONIC",
+            "category": "Ionic",
+            "distance": 3.485
+          },
+          {
+            "residue_key_a": "ILE38.A",
+            "residue_key_b": "LEU108.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.491
+          },
+          {
+            "residue_key_a": "TYR40.A",
+            "residue_key_b": "PHE101.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.806
+          },
+          {
+            "residue_key_a": "TYR40.A",
+            "residue_key_b": "GLU102.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.144
+          },
+          {
+            "residue_key_a": "TYR40.A",
+            "residue_key_b": "THR105.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.298
+          },
+          {
+            "residue_key_a": "GLU42.A",
+            "residue_key_b": "SER100.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.035
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "SER29.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.169
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "SER30.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 2.602
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "ARG32.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.079
+          },
+          {
+            "residue_key_a": "ASP45.A",
+            "residue_key_b": "SER100.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.7
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "GLU102.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.478
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "ASP103.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.25
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "PRO104.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.32
+          },
+          {
+            "residue_key_a": "GLN50.A",
+            "residue_key_b": "THR105.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 2.694
+          },
+          {
+            "residue_key_a": "VAL52.A",
+            "residue_key_b": "LEU108.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.285
+          },
+          {
+            "residue_key_a": "ASP57.A",
+            "residue_key_b": "PRO104.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.615
+          },
+          {
+            "residue_key_a": "VAL60.A",
+            "residue_key_b": "GLU102.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.828
+          },
+          {
+            "residue_key_a": "ARG97.A",
+            "residue_key_b": "ASP99.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.142
+          },
+          {
+            "residue_key_a": "ARG97.A",
+            "residue_key_b": "PHE101.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.54
+          },
+          {
+            "residue_key_a": "ARG97.A",
+            "residue_key_b": "GLN116.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.009
+          },
+          {
+            "residue_key_a": "MET99.A",
+            "residue_key_b": "PHE101.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.73
+          },
+          {
+            "residue_key_a": "MET99.A",
+            "residue_key_b": "THR105.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.815
+          },
+          {
+            "residue_key_a": "MET99.A",
+            "residue_key_b": "VAL109.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.465
+          },
+          {
+            "residue_key_a": "MET99.A",
+            "residue_key_b": "ALA114.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.709
+          },
+          {
+            "residue_key_a": "GLY103.A",
+            "residue_key_b": "SER111.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.214
+          },
+          {
+            "residue_key_a": "GLY104.A",
+            "residue_key_b": "SER111.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.604
+          },
+          {
+            "residue_key_a": "ALA105.A",
+            "residue_key_b": "SER111.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.6
+          },
+          {
+            "residue_key_a": "ALA105.A",
+            "residue_key_b": "GLY113.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.25
+          },
+          {
+            "residue_key_a": "ALA105.A",
+            "residue_key_b": "ALA114.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.704
+          },
+          {
+            "residue_key_a": "ASP106.A",
+            "residue_key_b": "GLY113.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.438
+          },
+          {
+            "residue_key_a": "TYR107.A",
+            "residue_key_b": "GLY113.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.435
+          },
+          {
+            "residue_key_a": "TYR107.A",
+            "residue_key_b": "PHE115.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.71
+          },
+          {
+            "residue_key_a": "TYR107.A",
+            "residue_key_b": "GLN116.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.497
+          },
+          {
+            "residue_key_a": "ARG109.A",
+            "residue_key_b": "GLN116.B",
+            "type": "VDW",
+            "category": "VdW Contact",
+            "distance": 3.489
+          },
+          {
+            "residue_key_a": "TYR40.A",
+            "residue_key_b": "PHE101.B",
+            "type": "PIPISTACK",
+            "category": "π-π Stack",
+            "distance": 5.16
+          }
+        ],
+        "metrics": {
+          "hbond_count": 9,
+          "vdw_count": 33,
+          "ionic_count": 1,
+          "pication_count": 0,
+          "pipistack_count": 1,
+          "pihbond_count": 0,
+          "ssbond_count": 0,
+          "halogen_count": 0,
+          "metallic_count": 0,
+          "hydrophobic_count": 0
+        }
+      }
+    ]
+  },
+  "model_tasks": {
+    "results": []
+  }
+}

@@ -1,0 +1,813 @@
+{
+  "source_kind": "local sequence pattern annotation using internal GitLab rule literals; not MOS model output",
+  "source": "sources/developabilityliabilities/source.json",
+  "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "sequence_length": 128,
+  "method": "Python re.finditer per source pattern, matching the scanner non-overlap behavior; even-Cys rule skipped as source does. No source code executed. No source approximate CDR/Fc or Critical escalation adopted.",
+  "numbering": "1-based KN035 domain sequence; positions 1-127 = working structure chain A and original 5JDS auth chain B; terminal S128 has no reference coordinate.",
+  "matches": [
+    {
+      "rule": "脱酰胺-NS",
+      "group": "脱酰胺",
+      "motif": "NS",
+      "start_1based": 84,
+      "end_1based_inclusive": 85,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        84,
+        85
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "脱酰胺-NN",
+      "group": "脱酰胺",
+      "motif": "NN",
+      "start_1based": 73,
+      "end_1based_inclusive": 74,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        73,
+        74
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "脱酰胺-NA",
+      "group": "脱酰胺",
+      "motif": "NA",
+      "start_1based": 74,
+      "end_1based_inclusive": 75,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        74,
+        75
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-M",
+      "group": "氧化",
+      "motif": "M",
+      "start_1based": 28,
+      "end_1based_inclusive": 28,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        28
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-M",
+      "group": "氧化",
+      "motif": "M",
+      "start_1based": 34,
+      "end_1based_inclusive": 34,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        34
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-M",
+      "group": "氧化",
+      "motif": "M",
+      "start_1based": 83,
+      "end_1based_inclusive": 83,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        83
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-M",
+      "group": "氧化",
+      "motif": "M",
+      "start_1based": 93,
+      "end_1based_inclusive": 93,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        93
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-W",
+      "group": "氧化",
+      "motif": "W",
+      "start_1based": 36,
+      "end_1based_inclusive": 36,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        36
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-W",
+      "group": "氧化",
+      "motif": "W",
+      "start_1based": 118,
+      "end_1based_inclusive": 118,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        118
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-C",
+      "group": "氧化",
+      "motif": "C",
+      "start_1based": 22,
+      "end_1based_inclusive": 22,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        22
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-C",
+      "group": "氧化",
+      "motif": "C",
+      "start_1based": 33,
+      "end_1based_inclusive": 33,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        33
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-C",
+      "group": "氧化",
+      "motif": "C",
+      "start_1based": 96,
+      "end_1based_inclusive": 96,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        96
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "氧化-C",
+      "group": "氧化",
+      "motif": "C",
+      "start_1based": 106,
+      "end_1based_inclusive": 106,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        106
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "异构化-DS",
+      "group": "异构化",
+      "motif": "DS",
+      "start_1based": 62,
+      "end_1based_inclusive": 63,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        62,
+        63
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "异构化-DS",
+      "group": "异构化",
+      "motif": "DS",
+      "start_1based": 99,
+      "end_1based_inclusive": 100,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        99,
+        100
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "异构化-DT",
+      "group": "异构化",
+      "motif": "DT",
+      "start_1based": 90,
+      "end_1based_inclusive": 91,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        90,
+        91
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 7,
+      "end_1based_inclusive": 7,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        7
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 17,
+      "end_1based_inclusive": 17,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        17
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 21,
+      "end_1based_inclusive": 21,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        21
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 25,
+      "end_1based_inclusive": 25,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        25
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 29,
+      "end_1based_inclusive": 29,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        29
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 30,
+      "end_1based_inclusive": 30,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        30
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 55,
+      "end_1based_inclusive": 55,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        55
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 57,
+      "end_1based_inclusive": 57,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        57
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 63,
+      "end_1based_inclusive": 63,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        63
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 71,
+      "end_1based_inclusive": 71,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        71
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 77,
+      "end_1based_inclusive": 77,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        77
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 85,
+      "end_1based_inclusive": 85,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        85
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 100,
+      "end_1based_inclusive": 100,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        100
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 111,
+      "end_1based_inclusive": 111,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        111
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 112,
+      "end_1based_inclusive": 112,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        112
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 127,
+      "end_1based_inclusive": 127,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        127
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-S",
+      "group": "糖基化",
+      "motif": "S",
+      "start_1based": 128,
+      "end_1based_inclusive": 128,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": null,
+      "original_5JDS_auth_chain": null,
+      "positions_with_coordinates": [],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 53,
+      "end_1based_inclusive": 53,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        53
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 54,
+      "end_1based_inclusive": 54,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        54
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 58,
+      "end_1based_inclusive": 58,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        58
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 69,
+      "end_1based_inclusive": 69,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        69
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 78,
+      "end_1based_inclusive": 78,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        78
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 91,
+      "end_1based_inclusive": 91,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        91
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 105,
+      "end_1based_inclusive": 105,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        105
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 107,
+      "end_1based_inclusive": 107,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        107
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 110,
+      "end_1based_inclusive": 110,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        110
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 122,
+      "end_1based_inclusive": 122,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        122
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "O-糖基化-T",
+      "group": "糖基化",
+      "motif": "T",
+      "start_1based": 125,
+      "end_1based_inclusive": 125,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        125
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "裂解-DP",
+      "group": "裂解",
+      "motif": "DP",
+      "start_1based": 103,
+      "end_1based_inclusive": 104,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        103,
+        104
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "裂解-TS",
+      "group": "裂解",
+      "motif": "TS",
+      "start_1based": 54,
+      "end_1based_inclusive": 55,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        54,
+        55
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "裂解-TS",
+      "group": "裂解",
+      "motif": "TS",
+      "start_1based": 110,
+      "end_1based_inclusive": 111,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        110,
+        111
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "蛋白水解-TS",
+      "group": "蛋白水解",
+      "motif": "TS",
+      "start_1based": 54,
+      "end_1based_inclusive": 55,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        54,
+        55
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "蛋白水解-TS",
+      "group": "蛋白水解",
+      "motif": "TS",
+      "start_1based": 110,
+      "end_1based_inclusive": 111,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        110,
+        111
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "环化-N端Q",
+      "group": "环化",
+      "motif": "Q",
+      "start_1based": 1,
+      "end_1based_inclusive": 1,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        1
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "羟基化-KG",
+      "group": "羟基化",
+      "motif": "KG",
+      "start_1based": 65,
+      "end_1based_inclusive": 66,
+      "repository_base_risk": "High",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        65,
+        66
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "赖氨酸糖基化-KE",
+      "group": "赖氨酸糖基化",
+      "motif": "KE",
+      "start_1based": 43,
+      "end_1based_inclusive": 44,
+      "repository_base_risk": "Medium",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        43,
+        44
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "糖基化终产物-K",
+      "group": "糖基化终产物",
+      "motif": "K",
+      "start_1based": 27,
+      "end_1based_inclusive": 27,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        27
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "糖基化终产物-K",
+      "group": "糖基化终产物",
+      "motif": "K",
+      "start_1based": 50,
+      "end_1based_inclusive": 50,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        50
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "糖基化终产物-K",
+      "group": "糖基化终产物",
+      "motif": "K",
+      "start_1based": 76,
+      "end_1based_inclusive": 76,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        76
+      ],
+      "rsa": null
+    },
+    {
+      "rule": "糖基化终产物-K",
+      "group": "糖基化终产物",
+      "motif": "K",
+      "start_1based": 87,
+      "end_1based_inclusive": 87,
+      "repository_base_risk": "Low",
+      "modeled_structure_chain": "A",
+      "original_5JDS_auth_chain": "B",
+      "positions_with_coordinates": [
+        87
+      ],
+      "rsa": null
+    }
+  ],
+  "limits": [
+    "Base risk labels reproduced from repository, not independently validated probabilities or measured modifications.",
+    "No RSA computed in this supplemental annotation.",
+    "O-glycosylation single S/T and KG/KE rules are broad screening labels; do not imply observed modification.",
+    "Even Cys count does not prove disulfide pairing. Use existing coordinate-derived disulfides.",
+    "S85N changes NS84-85 to NN84-85, which remains a medium deamidation motif in this library. WT already contains NN73-74.",
+    "No actual solubility, aggregation or stability measurement is supplied by motif counts."
+  ]
+}

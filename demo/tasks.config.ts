@@ -17,7 +17,7 @@ const sequences: DemoSequence[] = [
 ];
 
 const affinitySteps: DemoStep[] = [
-  { type: 'thinking', duration: '12s', text: 'The user gives an antigen sequence plus heavy and light chains. Let me discover the available MOS tasks and read the relevant skills before planning.' },
+  { type: 'thinking', duration: '12s', text: 'The user gives an antigen sequence plus heavy and light chains. Let me discover the available MoleculeOS tasks and read the relevant skills before planning.' },
   { type: 'tool', name: 'ListAvailableMOSTasks', status: 'success' },
   { type: 'tool', name: 'GetMOSTaskSchema', args: 'MMFold', status: 'success' },
   { type: 'tool', name: 'StartMOSTask', args: 'MMFold · 3-chain complex', status: 'success' },
@@ -72,7 +72,7 @@ function compactTask(id: string, titleKey: string, subtitleKey: string, prompt: 
     { type: 'tool', name: tool, args: 'verified three-chain complex', status: 'success' },
     { type: 'text', text: 'The input and structural context are ready for review.' },
     { type: 'result', title: 'Analysis ready', note: 'The requested structural view has been prepared from the supplied static complex.', structure: true },
-    { type: 'summary', title: 'Next step', items: ['Review the structure and continue the full workflow in MOS when you are ready.'] },
+    { type: 'summary', title: 'Next step', items: ['Review the structure and continue the full workflow in MoleculeOS when you are ready.'] },
   ] };
 }
 

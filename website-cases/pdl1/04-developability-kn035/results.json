@@ -1,0 +1,521 @@
+{
+  "case_id": "04-kn035",
+  "status": "scores_and_local_risk_screen_collected",
+  "tasks": [
+    {
+      "task_type": "Structural Stability Mutation Effect",
+      "task_id": "342605430273024",
+      "task_name": "KN035c04_Stability_chainB",
+      "status": "succeed",
+      "duration": "2s",
+      "payload": {
+        "structure_path": "user_objects/123/330665428816896/342605177943040_MMFold_1_chain_B.cif"
+      },
+      "payload_note": "structure_path points at the chain-B derived structure object (as required); no other structure used",
+      "schema": "schema/schema_structural_stability.json",
+      "raw_output": "raw/struct_fitness_scores.csv",
+      "n_rows": 2560,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "score_key": "score",
+      "direction": "higher = more favorable (reverse-folding favorability); WT self-score is exactly 0.0 at all 128 positions",
+      "units": "model-internal unitless score; NOT a kcal/mol ddG and NOT an experimental measurement"
+    },
+    {
+      "task_type": "Sequence Fitness Mutation Effect",
+      "task_id": "342605430948864",
+      "task_name": "KN035c04_SeqFitness",
+      "status": "succeed",
+      "duration": "3s",
+      "payload": {
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      },
+      "payload_note": "sequence payload = entity sequence of chain B (identical to structure sequence, verified length 128)",
+      "schema": "schema/schema_sequence_fitness.json",
+      "raw_output": "raw/sequence_scores.csv",
+      "n_rows": 2560,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "score_key": "score",
+      "direction": "higher = more favorable; WT self-score exactly 0.0 at all 128 positions",
+      "units": "model-internal unitless score; NOT expression level, solubility or ddG"
+    },
+    {
+      "task_type": "Evolutionary Mutation Effect",
+      "task_id": "342605433852928",
+      "task_name": "KN035c04_Evolutionary",
+      "status": "succeed (VOID - not used)",
+      "void_reason": "payload sequence was mis-transcribed to 125 aa (missing K77-S78-T79); output discarded and not used anywhere",
+      "raw_output": null
+    },
+    {
+      "task_type": "Evolutionary Mutation Effect",
+      "task_id": "342605471151104",
+      "task_name": "KN035c04_Evolutionary_v2",
+      "status": "succeed",
+      "duration": "1.2min",
+      "payload": {
+        "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+      },
+      "payload_verification": "sequence read from library FASTA, asserted len==128 before submission",
+      "schema": "schema/schema_evolutionary.json",
+      "raw_output": "raw/evolutionary_scores.csv",
+      "n_rows": 2560,
+      "columns": [
+        "chain",
+        "mutation",
+        "score"
+      ],
+      "score_key": "score",
+      "direction": "higher = more favorable; WT self-score exactly 0.0 at all 128 positions",
+      "units": "model-internal unitless score; conservation/covariance evidence, not a physical energy"
+    }
+  ],
+  "metric_semantics": {
+    "structural_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/struct_fitness_scores.csv",
+      "task_id": "342605430273024",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "B": "B"
+      }
+    },
+    "sequence_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/sequence_scores.csv",
+      "task_id": "342605430948864",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "A": "B"
+      }
+    },
+    "evolutionary_fitness": {
+      "file": "04-developability-kn035/raw/mos-export/kn035_case04/raw/evolutionary_scores.csv",
+      "task_id": "342605471151104",
+      "row_count": 2560,
+      "unit": "dimensionless_model_score",
+      "direction": "higher is more favorable model fitness",
+      "comparison": "mutant score minus WT self-substitution score at same position",
+      "direction_evidence_file": "04-developability-kn035/raw/mos-export/kn035_case04/direction_evidence.json",
+      "source_chain_to_master": {
+        "A": "B"
+      }
+    }
+  },
+  "protected_positions": [
+    22,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+  ],
+  "protected_CDR_scheme": "union of IMGT, Kabat and Chothia",
+  "other_CDR_schemes_available": "case02 native record; each candidate carries membership in all three schemes",
+  "protected_disulfide_pairs": [
+    [
+      22,
+      96
+    ],
+    [
+      33,
+      106
+    ]
+  ],
+  "local_analysis": {
+    "sequence_risks": "raw/local-sequence-risks.json",
+    "risk_flag_count": 10
+  },
+  "framework_candidate_count": 6,
+  "framework_candidates": [
+    {
+      "mutation": "Q5V",
+      "chain": "B",
+      "label_seq_id": 5,
+      "wild_type": "Q",
+      "mutant": "V",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "5",
+        "wt": "Q",
+        "mut": "V",
+        "mutation": "B:Q5V",
+        "acceptance": "strict",
+        "tier": "A_paratope_distal",
+        "stability_delta": "1.1569",
+        "seq_fitness_delta": "1.9142",
+        "evolutionary_delta": "4.1074",
+        "consensus": "0.276",
+        "risk_flags": "none",
+        "rel_sasa": "0.478",
+        "nearest_paratope_res": "Q116",
+        "nearest_paratope_dist_A": "11.87",
+        "vhh_hallmark": "False"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "1.1569222211837769",
+          "value": 1.1569222211837769,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 1.1569222211837769
+        },
+        "sequence_fitness": {
+          "raw": "1.914225459098816",
+          "value": 1.914225459098816,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 1.914225459098816
+        },
+        "evolutionary_fitness": {
+          "raw": "4.107421875",
+          "value": 4.107421875,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 4.107421875
+        }
+      }
+    },
+    {
+      "mutation": "M93V",
+      "chain": "B",
+      "label_seq_id": 93,
+      "wild_type": "M",
+      "mutant": "V",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "93",
+        "wt": "M",
+        "mut": "V",
+        "mutation": "B:M93V",
+        "acceptance": "extended",
+        "tier": "A_paratope_distal",
+        "stability_delta": "2.251",
+        "seq_fitness_delta": "-0.2345",
+        "evolutionary_delta": "4.0352",
+        "consensus": "0.26",
+        "risk_flags": "removes_oxidation_Met",
+        "rel_sasa": "0.226",
+        "nearest_paratope_res": "S111",
+        "nearest_paratope_dist_A": "13.05",
+        "vhh_hallmark": "False"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "2.2510409355163574",
+          "value": 2.2510409355163574,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 2.2510409355163574
+        },
+        "sequence_fitness": {
+          "raw": "-0.23450660705566406",
+          "value": -0.23450660705566406,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.23450660705566406
+        },
+        "evolutionary_fitness": {
+          "raw": "4.03515625",
+          "value": 4.03515625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 4.03515625
+        }
+      }
+    },
+    {
+      "mutation": "N73D",
+      "chain": "B",
+      "label_seq_id": 73,
+      "wild_type": "N",
+      "mutant": "D",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "73",
+        "wt": "N",
+        "mut": "D",
+        "mutation": "B:N73D",
+        "acceptance": "extended",
+        "tier": "A_paratope_distal",
+        "stability_delta": "-0.7103",
+        "seq_fitness_delta": "4.0442",
+        "evolutionary_delta": "3.918",
+        "consensus": "0.236",
+        "risk_flags": "none",
+        "rel_sasa": "0.211",
+        "nearest_paratope_res": "R32",
+        "nearest_paratope_dist_A": "11.32",
+        "vhh_hallmark": "False"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "-0.7102775573730469",
+          "value": -0.7102775573730469,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": -0.7102775573730469
+        },
+        "sequence_fitness": {
+          "raw": "4.044163227081299",
+          "value": 4.044163227081299,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 4.044163227081299
+        },
+        "evolutionary_fitness": {
+          "raw": "3.91796875",
+          "value": 3.91796875,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 3.91796875
+        }
+      }
+    },
+    {
+      "mutation": "M93T",
+      "chain": "B",
+      "label_seq_id": 93,
+      "wild_type": "M",
+      "mutant": "T",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "93",
+        "wt": "M",
+        "mut": "T",
+        "mutation": "B:M93T",
+        "acceptance": "extended",
+        "tier": "A_paratope_distal",
+        "stability_delta": "1.8531",
+        "seq_fitness_delta": "2.9152",
+        "evolutionary_delta": "-0.8848",
+        "consensus": "0.189",
+        "risk_flags": "removes_oxidation_Met",
+        "rel_sasa": "0.226",
+        "nearest_paratope_res": "S111",
+        "nearest_paratope_dist_A": "13.05",
+        "vhh_hallmark": "False"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "1.8530974388122559",
+          "value": 1.8530974388122559,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 1.8530974388122559
+        },
+        "sequence_fitness": {
+          "raw": "2.9152450561523438",
+          "value": 2.9152450561523438,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 2.9152450561523438
+        },
+        "evolutionary_fitness": {
+          "raw": "-0.884765625",
+          "value": -0.884765625,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": -0.884765625
+        }
+      }
+    },
+    {
+      "mutation": "A75S",
+      "chain": "B",
+      "label_seq_id": 75,
+      "wild_type": "A",
+      "mutant": "S",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "75",
+        "wt": "A",
+        "mut": "S",
+        "mutation": "B:A75S",
+        "acceptance": "strict",
+        "tier": "A_paratope_distal",
+        "stability_delta": "0.4314",
+        "seq_fitness_delta": "0.8123",
+        "evolutionary_delta": "1.043",
+        "consensus": "0.09",
+        "risk_flags": "none",
+        "rel_sasa": "0.603",
+        "nearest_paratope_res": "K27",
+        "nearest_paratope_dist_A": "9.58",
+        "vhh_hallmark": "False"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "0.43140995502471924",
+          "value": 0.43140995502471924,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 0.43140995502471924
+        },
+        "sequence_fitness": {
+          "raw": "0.8123055100440979",
+          "value": 0.8123055100440979,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.8123055100440979
+        },
+        "evolutionary_fitness": {
+          "raw": "1.04296875",
+          "value": 1.04296875,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 1.04296875
+        }
+      }
+    },
+    {
+      "mutation": "R47L",
+      "chain": "B",
+      "label_seq_id": 47,
+      "wild_type": "R",
+      "mutant": "L",
+      "framework_definition": "outside the union of native IMGT, Kabat and Chothia CDR ranges",
+      "CDR_membership_by_scheme": {
+        "IMGT": false,
+        "Kabat": false,
+        "Chothia": false
+      },
+      "predicted_structure_available": false,
+      "candidate_only": true,
+      "source_kind": "local_screen_of_MOS_task_outputs",
+      "screen_notes": {
+        "pos": "47",
+        "wt": "R",
+        "mut": "L",
+        "mutation": "B:R47L",
+        "acceptance": "strict",
+        "tier": "B_paratope_adjacent",
+        "stability_delta": "1.3527",
+        "seq_fitness_delta": "0.8823",
+        "evolutionary_delta": "6.4771",
+        "consensus": "0.328",
+        "risk_flags": "none",
+        "rel_sasa": "0.079",
+        "nearest_paratope_res": "V109",
+        "nearest_paratope_dist_A": "2.63",
+        "vhh_hallmark": "True"
+      },
+      "scores": {
+        "structural_fitness": {
+          "raw": "1.3527323007583618",
+          "value": 1.3527323007583618,
+          "source_chain": "B",
+          "delta_vs_WT_at_same_position": 1.3527323007583618
+        },
+        "sequence_fitness": {
+          "raw": "0.8823142051696777",
+          "value": 0.8823142051696777,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 0.8823142051696777
+        },
+        "evolutionary_fitness": {
+          "raw": "6.47705078125",
+          "value": 6.47705078125,
+          "source_chain": "A",
+          "delta_vs_WT_at_same_position": 6.47705078125
+        }
+      }
+    }
+  ],
+  "affinity_candidate_comparison": "affinity-candidates-x-developability.json",
+  "comparison_rows": 11,
+  "limitations": [
+    "Scores are model fitness predictions, not measured stability, expression, or solubility.",
+    "WT self-substitution is the baseline; all WT self scores in these actual outputs are zero.",
+    "Extended candidates may trade one model against another; source screen notes retain this tradeoff.",
+    "Canonical framework candidates protect the union of all three native CDR schemes. L60Y and K50 variants in the MOS-export IMGT-only screen are excluded here because Kabat marks those positions as CDR2.",
+    "No new framework candidate has a validated predicted structure or experiment.",
+    "Local motif flags are heuristic; no reaction rate or clinical risk is inferred."
+  ],
+  "observed_utc": "2026-10-21T02:45:13.744645+00:00",
+  "time_zone": "Asia/Jakarta",
+  "residue_highlights": "residues-on-mmfold1.json",
+  "numbering_contract": "MMFold_1 label_asym_id + label_seq_id; never compact antibody/UniProt/IMGT identifiers"
+}

@@ -1,0 +1,7 @@
+SUCCEED | Antibody Region Annotation | Task ID 342606092895232 | Started 2026-10-21 02:27:46 | Duration 20s
+
+Task name: kn035-AbAn-independent
+Task type: Antibody Region Annotation
+Result: 1 output file, abnumber_heavy.csv
+Captured from CheckMOSTask on 2026-10-21 after the task reached SUCCEED.
+INDEPENDENT TASK - not part of the native MMetrics analysis of MMFold_1.

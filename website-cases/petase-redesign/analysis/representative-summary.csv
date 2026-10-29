@@ -1,0 +1,4 @@
+candidate,mutations_AUTH,pLDDT_native_global,WT_global_CA_RMSD_A,WT_pocket_CA_RMSD_A,rigid_ligand_min_heavy_distance_A,structure_path
+seq_1,W130H;W156Y;D157H;I179V;S209G,97.22090148925781,0.2911006212234497,0.3155215084552765,2.1115856170654297,outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_1_342339232719872/179248463080003_model_sample_1.cif
+seq_2,W130H;W156Y;D157Y;S209G,96.8326644897461,0.28836560249328613,0.2391481101512909,1.665091633796692,outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_2_342339221820416/179248463619830_model_sample_1.cif
+seq_4,W130H;W156Y;D157H;S209G,97.2912368774414,0.2493661493062973,0.24097318947315216,2.151069164276123,outputs/mos-export-v2/website_case_petase/native_tasks/mmfold_seq_4_342339217835008/179248463320004_model_sample_1.cif

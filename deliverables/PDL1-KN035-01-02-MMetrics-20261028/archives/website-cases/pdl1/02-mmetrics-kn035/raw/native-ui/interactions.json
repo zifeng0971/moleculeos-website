@@ -1,0 +1,275 @@
+{
+  "source_kind": "native_UI_DOM",
+  "rows": [
+    [
+      "Type",
+      "Residue A",
+      "Residue B",
+      "Dist (Å)"
+    ],
+    [
+      "H-Bond",
+      "A:GLU42",
+      "B:SER100",
+      "2.37"
+    ],
+    [
+      "H-Bond",
+      "A:ARG109",
+      "B:GLN116",
+      "2.52"
+    ],
+    [
+      "H-Bond",
+      "A:ASP45",
+      "B:SER30",
+      "2.60"
+    ],
+    [
+      "H-Bond",
+      "A:GLN50",
+      "B:THR105",
+      "3.06"
+    ],
+    [
+      "H-Bond",
+      "A:ASP45",
+      "B:ARG32",
+      "3.08"
+    ],
+    [
+      "H-Bond",
+      "A:TYR40",
+      "B:GLU102",
+      "3.14"
+    ],
+    [
+      "H-Bond",
+      "A:ASP45",
+      "B:SER29",
+      "3.17"
+    ],
+    [
+      "H-Bond",
+      "A:ARG97",
+      "B:ASP99",
+      "3.19"
+    ],
+    [
+      "H-Bond",
+      "A:GLN50",
+      "B:ASP103",
+      "3.25"
+    ],
+    [
+      "Ionic",
+      "A:ARG97",
+      "B:ASP99",
+      "3.48"
+    ],
+    [
+      "π-π Stack",
+      "A:TYR40",
+      "B:PHE101",
+      "5.16"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP45",
+      "B:SER30",
+      "2.60"
+    ],
+    [
+      "VdW Contact",
+      "A:GLN50",
+      "B:THR105",
+      "2.69"
+    ],
+    [
+      "VdW Contact",
+      "A:ARG97",
+      "B:GLN116",
+      "3.01"
+    ],
+    [
+      "VdW Contact",
+      "A:GLU42",
+      "B:SER100",
+      "3.04"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP45",
+      "B:ARG32",
+      "3.08"
+    ],
+    [
+      "VdW Contact",
+      "A:ARG97",
+      "B:ASP99",
+      "3.14"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR40",
+      "B:GLU102",
+      "3.14"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP45",
+      "B:SER29",
+      "3.17"
+    ],
+    [
+      "VdW Contact",
+      "A:GLY103",
+      "B:SER111",
+      "3.21"
+    ],
+    [
+      "VdW Contact",
+      "A:GLN50",
+      "B:ASP103",
+      "3.25"
+    ],
+    [
+      "VdW Contact",
+      "A:ALA105",
+      "B:GLY113",
+      "3.25"
+    ],
+    [
+      "VdW Contact",
+      "A:VAL52",
+      "B:LEU108",
+      "3.29"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR40",
+      "B:THR105",
+      "3.30"
+    ],
+    [
+      "VdW Contact",
+      "A:GLN50",
+      "B:PRO104",
+      "3.32"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR107",
+      "B:GLY113",
+      "3.44"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP106",
+      "B:GLY113",
+      "3.44"
+    ],
+    [
+      "VdW Contact",
+      "A:MET99",
+      "B:VAL109",
+      "3.46"
+    ],
+    [
+      "VdW Contact",
+      "A:GLN50",
+      "B:GLU102",
+      "3.48"
+    ],
+    [
+      "VdW Contact",
+      "A:ARG109",
+      "B:GLN116",
+      "3.49"
+    ],
+    [
+      "VdW Contact",
+      "A:ILE38",
+      "B:LEU108",
+      "3.49"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR107",
+      "B:GLN116",
+      "3.50"
+    ],
+    [
+      "VdW Contact",
+      "A:ARG97",
+      "B:PHE101",
+      "3.54"
+    ],
+    [
+      "VdW Contact",
+      "A:ALA105",
+      "B:SER111",
+      "3.60"
+    ],
+    [
+      "VdW Contact",
+      "A:GLY104",
+      "B:SER111",
+      "3.60"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP57",
+      "B:PRO104",
+      "3.62"
+    ],
+    [
+      "VdW Contact",
+      "A:ASP45",
+      "B:SER100",
+      "3.70"
+    ],
+    [
+      "VdW Contact",
+      "A:ALA105",
+      "B:ALA114",
+      "3.70"
+    ],
+    [
+      "VdW Contact",
+      "A:MET99",
+      "B:ALA114",
+      "3.71"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR107",
+      "B:PHE115",
+      "3.71"
+    ],
+    [
+      "VdW Contact",
+      "A:MET99",
+      "B:PHE101",
+      "3.73"
+    ],
+    [
+      "VdW Contact",
+      "A:TYR40",
+      "B:PHE101",
+      "3.81"
+    ],
+    [
+      "VdW Contact",
+      "A:MET99",
+      "B:THR105",
+      "3.81"
+    ],
+    [
+      "VdW Contact",
+      "A:VAL60",
+      "B:GLU102",
+      "3.83"
+    ]
+  ]
+}

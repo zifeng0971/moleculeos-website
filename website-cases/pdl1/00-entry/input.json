@@ -1,0 +1,33 @@
+{
+  "case_id": "00",
+  "target": "Human PD-L1",
+  "binder": "KN035 VHH",
+  "chains": [
+    {
+      "id": "A",
+      "role": "target",
+      "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+      "length": 118
+    },
+    {
+      "id": "B",
+      "role": "binder",
+      "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+      "length": 128
+    }
+  ],
+  "stoichiometry": "1:1",
+  "templates_supplied": false,
+  "prompt": "Predict the complex structure of human PD-L1 (chain A) and the nanobody KN035 (chain B), then tell me which residues form the binding interface.\nA: MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE\nB: QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS",
+  "sequence_source": "../01-structure/input.json",
+  "project_id": "342947812647936",
+  "project_name": "PDL1-00-Natural-Language-Entry-20261022",
+  "task_id": "342948473701376",
+  "status": "completed_with_capture_gaps",
+  "reference_for_local_validation_only": "../sources/5JDS.cif",
+  "submitted_at": "2026-10-22T01:40:23.560Z",
+  "followup_messages": [
+    "continue",
+    "continue"
+  ]
+}

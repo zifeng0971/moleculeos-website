@@ -1,0 +1,348 @@
+{
+  "source": "source.json",
+  "extraction": "AST literal only from backend/services/scanner.py HOTSPOT_RULES",
+  "rules": [
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NG",
+      "motif": "NG",
+      "regex": "NG",
+      "pattern": "NG",
+      "risk": "High",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NS",
+      "motif": "NS",
+      "regex": "NS",
+      "pattern": "NS",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NT",
+      "motif": "NT",
+      "regex": "NT",
+      "pattern": "NT",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NH",
+      "motif": "NH",
+      "regex": "NH",
+      "pattern": "NH",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NN",
+      "motif": "NN",
+      "regex": "NN",
+      "pattern": "NN",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NA",
+      "motif": "NA",
+      "regex": "NA",
+      "pattern": "NA",
+      "risk": "Low",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NE",
+      "motif": "NE",
+      "regex": "NE",
+      "pattern": "NE",
+      "risk": "Low",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "脱酰胺",
+      "rule_name": "脱酰胺-NV",
+      "motif": "NV",
+      "regex": "NV",
+      "pattern": "NV",
+      "risk": "Low",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "氧化",
+      "rule_name": "氧化-M",
+      "motif": "M",
+      "regex": "M",
+      "pattern": "M",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "氧化",
+      "rule_name": "氧化-W",
+      "motif": "W",
+      "regex": "W",
+      "pattern": "W",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "氧化",
+      "rule_name": "氧化-H",
+      "motif": "H",
+      "regex": "H",
+      "pattern": "H",
+      "risk": "Low",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "氧化",
+      "rule_name": "氧化-C",
+      "motif": "C",
+      "regex": "C",
+      "pattern": "C",
+      "risk": "Low",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "异构化",
+      "rule_name": "异构化-DG",
+      "motif": "DG",
+      "regex": "DG",
+      "pattern": "DG",
+      "risk": "High",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "异构化",
+      "rule_name": "异构化-DS",
+      "motif": "DS",
+      "regex": "DS",
+      "pattern": "DS",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "异构化",
+      "rule_name": "异构化-DT",
+      "motif": "DT",
+      "regex": "DT",
+      "pattern": "DT",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "异构化",
+      "rule_name": "异构化-DH",
+      "motif": "DH",
+      "regex": "DH",
+      "pattern": "DH",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "异构化",
+      "rule_name": "异构化-DD",
+      "motif": "DD",
+      "regex": "DD",
+      "pattern": "DD",
+      "risk": "Medium",
+      "category": "化学稳定性"
+    },
+    {
+      "group": "糖基化",
+      "rule_name": "N-糖基化-NXT",
+      "motif": "N-X-T",
+      "regex": "N[^P]T",
+      "pattern": "N[^P]T",
+      "risk": "High",
+      "category": "安全性风险"
+    },
+    {
+      "group": "糖基化",
+      "rule_name": "N-糖基化-NXS",
+      "motif": "N-X-S",
+      "regex": "N[^P]S",
+      "pattern": "N[^P]S",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "糖基化",
+      "rule_name": "O-糖基化-S",
+      "motif": "S",
+      "regex": "S",
+      "pattern": "S",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "糖基化",
+      "rule_name": "O-糖基化-T",
+      "motif": "T",
+      "regex": "T",
+      "pattern": "T",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "游离巯基",
+      "rule_name": "游离巯基-Cys",
+      "motif": "C",
+      "regex": "C",
+      "pattern": "C",
+      "risk": "High",
+      "category": "安全性风险"
+    },
+    {
+      "group": "细胞粘附",
+      "rule_name": "细胞粘附-RGD",
+      "motif": "RGD",
+      "regex": "RGD",
+      "pattern": "RGD",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "细胞粘附",
+      "rule_name": "细胞粘附-LDV",
+      "motif": "LDV",
+      "regex": "LDV",
+      "pattern": "LDV",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "细胞粘附",
+      "rule_name": "细胞粘附-KGD",
+      "motif": "KGD",
+      "regex": "KGD",
+      "pattern": "KGD",
+      "risk": "Medium",
+      "category": "安全性风险"
+    },
+    {
+      "group": "裂解",
+      "rule_name": "裂解-DP",
+      "motif": "DP",
+      "regex": "DP",
+      "pattern": "DP",
+      "risk": "Medium",
+      "category": "结构完整性"
+    },
+    {
+      "group": "裂解",
+      "rule_name": "裂解-DK",
+      "motif": "DK",
+      "regex": "DK",
+      "pattern": "DK",
+      "risk": "Low",
+      "category": "结构完整性"
+    },
+    {
+      "group": "裂解",
+      "rule_name": "裂解-EA",
+      "motif": "EA",
+      "regex": "EA",
+      "pattern": "EA",
+      "risk": "Low",
+      "category": "结构完整性"
+    },
+    {
+      "group": "裂解",
+      "rule_name": "裂解-TS",
+      "motif": "TS",
+      "regex": "TS",
+      "pattern": "TS",
+      "risk": "Low",
+      "category": "结构完整性"
+    },
+    {
+      "group": "蛋白水解",
+      "rule_name": "蛋白水解-TS",
+      "motif": "TS",
+      "regex": "TS",
+      "pattern": "TS",
+      "risk": "Low",
+      "category": "其他风险"
+    },
+    {
+      "group": "蛋白水解",
+      "rule_name": "蛋白水解-NP",
+      "motif": "NP",
+      "regex": "NP",
+      "pattern": "NP",
+      "risk": "Low",
+      "category": "其他风险"
+    },
+    {
+      "group": "环化",
+      "rule_name": "环化-N端Q",
+      "motif": "N端 Q",
+      "regex": "^Q",
+      "pattern": "^Q",
+      "risk": "Low",
+      "category": "其他风险"
+    },
+    {
+      "group": "环化",
+      "rule_name": "环化-N端E",
+      "motif": "N端 E",
+      "regex": "^E",
+      "pattern": "^E",
+      "risk": "Low",
+      "category": "其他风险"
+    },
+    {
+      "group": "羟基化",
+      "rule_name": "羟基化-KG",
+      "motif": "KG",
+      "regex": "KG",
+      "pattern": "KG",
+      "risk": "High",
+      "category": "其他风险"
+    },
+    {
+      "group": "赖氨酸糖基化",
+      "rule_name": "赖氨酸糖基化-KE",
+      "motif": "KE",
+      "regex": "KE",
+      "pattern": "KE",
+      "risk": "Medium",
+      "category": "其他风险"
+    },
+    {
+      "group": "赖氨酸糖基化",
+      "rule_name": "赖氨酸糖基化-KD",
+      "motif": "KD",
+      "regex": "KD",
+      "pattern": "KD",
+      "risk": "Medium",
+      "category": "其他风险"
+    },
+    {
+      "group": "赖氨酸糖基化",
+      "rule_name": "赖氨酸糖基化-KK",
+      "motif": "KK",
+      "regex": "KK",
+      "pattern": "KK",
+      "risk": "Medium",
+      "category": "其他风险"
+    },
+    {
+      "group": "糖基化终产物",
+      "rule_name": "糖基化终产物-K",
+      "motif": "K",
+      "regex": "K",
+      "pattern": "K(?![GEDK])",
+      "risk": "Low",
+      "category": "其他风险"
+    }
+  ]
+}

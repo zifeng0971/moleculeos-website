@@ -1,0 +1,11 @@
+{
+  "source": "local_extraction",
+  "parent": "01-structure/raw/MMFold_1.cif",
+  "parent_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "chain": "A",
+  "length": 118,
+  "method": "Filter mmCIF atom_site and entity/sequence/asym rows by original chain/entity; no atom-coordinate or label/auth-number changes. PDB is auxiliary. CIF is canonical.",
+  "coordinate_equality_verified": true,
+  "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+}

@@ -1,0 +1,51 @@
+{
+  "case_id": "PETase",
+  "canonical_metrics": "analysis/verified-results.json",
+  "raw_export": "outputs/mos-export-v2/website_case_petase",
+  "sources": [
+    "source/5XG0-verified-metadata.json",
+    "source/5XG0.cif",
+    "source/5XG0.fasta",
+    "source/5XG0.metadata.json",
+    "source/5XG0.pdb",
+    "source/5XH3-verified-metadata.json",
+    "source/5XH3.cif",
+    "source/5XH3.fasta",
+    "source/5XH3.metadata.json",
+    "source/5XH3.pdb",
+    "source/5xh3_B_856.sdf",
+    "source/5xh3_clean.pdb",
+    "source/sources.json"
+  ],
+  "screenshots": [
+    "screenshots/historical-mmetrics-partial-output.jpg",
+    "screenshots/mocha-affinity-and-WT-scores.jpg",
+    "screenshots/mocha-final-results.jpg",
+    "screenshots/native-5XH3-mmetrics-final-state.jpg",
+    "screenshots/native-WT-mmetrics-current.jpg",
+    "screenshots/native-affinity-output-csv.jpg",
+    "screenshots/native-affinity-task-details.jpg",
+    "screenshots/native-tasks-succeeded.jpg",
+    "screenshots/representative-seq_1-overlay.jpg",
+    "screenshots/representative-seq_2-overlay.jpg",
+    "screenshots/representative-seq_4-overlay.jpg"
+  ],
+  "source_categories": {
+    "experimental": "source/ RCSB coordinates and sequences",
+    "MOS_native": "outputs/ task results and outputs/native-* UI downloads",
+    "additional_statistics": "analysis/ and raw-export analyses/; coordinate/sequence statistics, not native experimental measurements"
+  },
+  "native_UI_status": "tasks/native-ui-status.json",
+  "representatives": [
+    "seq_4",
+    "seq_2",
+    "seq_1"
+  ],
+  "title": "PETase 底物口袋与局部理性改造",
+  "plots": [
+    "analysis/candidate-comparison.png",
+    "analysis/candidate-comparison.svg"
+  ],
+  "summary": "summary.md",
+  "candidates_table": "analysis/representative-summary.csv"
+}

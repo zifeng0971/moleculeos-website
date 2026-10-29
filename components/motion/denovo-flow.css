@@ -1,0 +1,37 @@
+/* Step 05: shares the step 03 stage (.ak); adds the build-up steps, the design list and the metrics card. */
+.capability-media:has(.an) { background: radial-gradient(ellipse 55% 55% at 36% 50%, rgba(125,243,196,.1), rgba(124,92,255,.1) 55%, transparent 78%), #0a0a10; }
+.an-body { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 8px; animation: ak-in .45s ease both; }
+.an-body > strong { font-size: 12.5px; }
+.an-body > small { color: #8f8f98; font-size: 9.5px; line-height: 1.3; margin-top: auto; }
+.an-steps { display: grid; gap: 14px; margin: 4px 0 0; padding: 0; list-style: none; }
+.an-steps li { display: grid; grid-template-columns: 16px 1fr; gap: 10px; opacity: .45; transition: opacity .5s; }
+.an-steps li[data-state="active"], .an-steps li[data-state="done"] { opacity: 1; }
+.an-steps li > i { width: 12px; height: 12px; margin-top: 3px; border: 1.5px solid #5a5a66; border-radius: 50%; transition: all .4s; }
+.an-steps li[data-state="active"] > i { border-color: #7DF3C4; box-shadow: 0 0 10px #7DF3C4aa; animation: ak-pulse 1.2s ease-in-out infinite; }
+.an-steps li[data-state="done"] > i { border-color: #7DF3C4; background: #7DF3C4; }
+.an-steps b { display: block; font-size: 12px; }
+.an-steps span:not(.an-bar) { display: block; color: #9b9ba3; font-size: 10.5px; line-height: 1.4; }
+.an-hot { display: flex; flex-wrap: wrap; gap: 4px; margin: 6px 0 0; }
+.an-hot em { padding: 1px 7px; border-radius: 999px; background: #6fd3ff22; color: #8fdcff; font: 600 10px ui-monospace, 'SF Mono', monospace; font-style: normal; }
+.an-bar { display: block; height: 3px; margin: 8px 0 6px; border-radius: 3px; background: #ffffff12; overflow: hidden; }
+.an-bar u { display: block; height: 100%; transform-origin: 0 50%; background: linear-gradient(90deg, #8970ee, #7DF3C4); }
+.an-seq { display: block; font: 600 9.5px/1.55 ui-monospace, 'SF Mono', monospace; letter-spacing: .08em; color: #7e7790; overflow-wrap: anywhere; }
+.an-seq b { color: #F08BD0; font-weight: 600; }
+.an-list { display: grid; gap: 4px; }
+.an-list button { display: grid; grid-template-columns: 8px 1fr auto auto; align-items: center; gap: 9px; padding: 7px 10px; border: 1px solid transparent; border-radius: 9px; background: #2a2a34; color: #e9e3ef; text-align: left; transition: background .25s, border-color .25s; }
+.an-list button:hover { background: #31313c; }
+.an-list button[aria-selected=true] { border-color: color-mix(in srgb, var(--dc) 60%, transparent); background: color-mix(in srgb, var(--dc) 12%, #2a2a34); }
+.an-list button > i { width: 8px; height: 8px; border-radius: 50%; background: var(--dc); box-shadow: 0 0 8px var(--dc); }
+.an-list b { display: block; font-size: 11.5px; }
+.an-list button span:not(.an-dots) { color: #9b9ba3; font-size: 10px; }
+.an-dots { display: inline-flex; gap: 3px; }
+.an-dots i { width: 5px; height: 5px; border-radius: 50%; background: #ffffff1f; }
+.an-dots i[data-on] { background: #6FD3FF; box-shadow: 0 0 5px #6FD3FF99; }
+.an-list code { min-width: 28px; text-align: right; color: var(--dc); font-size: 11px; }
+.an-detail { display: grid; gap: 8px; padding: 9px 10px; border-radius: 9px; background: #2a2a34; animation: ak-in .45s ease both; }
+.an-detail dl { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; margin: 0; }
+.an-detail dt { color: #8f8f98; font-size: 9.5px; }
+.an-detail dd { margin: 0; font: 700 14px/1.2 ui-monospace, 'SF Mono', monospace; color: #fff; }
+.an-detail dd small { color: #8f8f98; font-size: 9.5px; font-weight: 400; }
+.an-seq-final { color: color-mix(in srgb, var(--dc) 85%, #fff); max-height: 56px; overflow: hidden; font-size: 9px; line-height: 1.45; }
+@keyframes ak-pulse { 50% { opacity: .45; } }

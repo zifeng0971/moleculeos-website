@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.0.0",
+  "case": "kn035_case02",
+  "generated_utc": "2026-10-21T02:25:57+00:00",
+  "object": {
+    "object_id": "342604293768192",
+    "work_id": "342604299084800",
+    "tos_key": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+    "display_name": "MMFold_1.cif"
+  },
+  "native_tasks": [
+    {
+      "task_id": "342604299285504",
+      "task_name": "autocompute-MMFold_1",
+      "task_type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic pre-analysis, created by the platform when the structure was imported (before MMetrics)",
+      "started": "2026-10-21T02:20:28Z",
+      "duration": "1.1min",
+      "payload_file": "raw/native_task_342604299285504/task_payload.json",
+      "payload_summary": "structure_path = user_objects/123/330665428816896/342604293768192_MMFold_1.cif (fileId 342604293768192)",
+      "status_file": "raw/native_task_342604299285504/task_status.txt",
+      "outputs": [
+        {
+          "file": "raw/native_task_342604299285504/affinity_scores.csv",
+          "bytes": 248333,
+          "sha256": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799"
+        },
+        {
+          "file": "raw/native_task_342604299285504/all_sequences.fasta",
+          "bytes": 98182,
+          "sha256": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3"
+        },
+        {
+          "file": "raw/native_task_342604299285504/evolutionary_scores.csv",
+          "bytes": 99890,
+          "sha256": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad"
+        },
+        {
+          "file": "raw/native_task_342604299285504/sequence_info.fasta",
+          "bytes": 166,
+          "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+        },
+        {
+          "file": "raw/native_task_342604299285504/sequence_scores.csv",
+          "bytes": 126395,
+          "sha256": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7"
+        },
+        {
+          "file": "raw/native_task_342604299285504/similarity_results.json",
+          "bytes": 1882222,
+          "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+        },
+        {
+          "file": "raw/native_task_342604299285504/struct_fitness_scores.csv",
+          "bytes": 126608,
+          "sha256": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab"
+        }
+      ],
+      "output_objects": [
+        {
+          "model_type": "mos-blast",
+          "object_id": "342604574114816",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-blast/all_sequences.fasta",
+          "original_name": "all_sequences.fasta",
+          "downloaded_as": "all_sequences.fasta",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-blast@all_sequences.fasta",
+          "sha256_original_object": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+          "sha256_downloaded_copy": "c87f1871e18320fecad80578675bb7b847a35808846522c2c6ae167f4fe9e9a3",
+          "identical": true,
+          "bytes": 98182
+        },
+        {
+          "model_type": "mos-blast",
+          "object_id": "342604574229504",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-blast/blast_results.json",
+          "original_name": "blast_results.json",
+          "downloaded_as": "similarity_results.json",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-blast@blast_results.json",
+          "sha256_original_object": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+          "sha256_downloaded_copy": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931",
+          "identical": true,
+          "bytes": 1882222
+        },
+        {
+          "model_type": "mos-score-esm",
+          "object_id": "342604574241792",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-esm/esm_scores.csv",
+          "original_name": "esm_scores.csv",
+          "downloaded_as": "sequence_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-esm@esm_scores.csv",
+          "sha256_original_object": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+          "sha256_downloaded_copy": "bb6e34de5d69cf92b89bbe56030eedd61ae4d1c42f40fed293c7db243e5e0ce7",
+          "identical": true,
+          "bytes": 126395
+        },
+        {
+          "model_type": "mos-score-ligandmpnn",
+          "object_id": "342604574258176",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-ligandmpnn/proteinmpnn_scores.csv",
+          "original_name": "proteinmpnn_scores.csv",
+          "downloaded_as": "struct_fitness_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-ligandmpnn@proteinmpnn_scores.csv",
+          "sha256_original_object": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+          "sha256_downloaded_copy": "f14a56f600a98fba64f390f8588bc7d795638db955bb143813e0e301256c03ab",
+          "identical": true,
+          "bytes": 126608
+        },
+        {
+          "model_type": "mos-diffaffinity",
+          "object_id": "342604574270464",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-diffaffinity/diffaffinity_scores.csv",
+          "original_name": "diffaffinity_scores.csv",
+          "downloaded_as": "affinity_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-diffaffinity@diffaffinity_scores.csv",
+          "sha256_original_object": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+          "sha256_downloaded_copy": "713f37c6ad26f710ff1036a5385e4ecb73cde1c62f9bfaed091b67a6feb01799",
+          "identical": true,
+          "bytes": 248333
+        },
+        {
+          "model_type": "mos-score-msat",
+          "object_id": "342604574282752",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/mos-score-msat/msat_scores.csv",
+          "original_name": "msat_scores.csv",
+          "downloaded_as": "evolutionary_scores.csv",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/mos-score-msat@msat_scores.csv",
+          "sha256_original_object": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+          "sha256_downloaded_copy": "7eb048ec7a0d7ee4d49e120f18400042a038494be38a33eb3699d50a2c031dad",
+          "identical": true,
+          "bytes": 99890
+        },
+        {
+          "model_type": "n/a (task-level output)",
+          "object_id": "342604574299136",
+          "tos_key": "user_objects/123/330665428816896/342604299285504/sequence_info.fasta",
+          "original_name": "sequence_info.fasta",
+          "downloaded_as": "sequence_info.fasta",
+          "original_object_copy": "raw/native_task_342604299285504/original_objects/sequence_info.fasta",
+          "sha256_original_object": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+          "sha256_downloaded_copy": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174",
+          "identical": true,
+          "bytes": 166
+        }
+      ],
+      "note": "The seven objects produced here are the direct inputs of the MMetrics task. Their platform download names differ from the model output names; object_manifest.json proves the rename by sha256."
+    },
+    {
+      "task_id": "342604577018880",
+      "task_name": "mmetrics-analysis-342604299285504",
+      "task_type": "MOSTask",
+      "status": "succeed",
+      "role": "native automatic MMetrics analysis of this structure",
+      "started": "2026-10-21T02:21:36Z",
+      "duration": "3s",
+      "mmetrics_id": "caca9ec3-b45d-4c7a-a69d-99cc182aa3f6",
+      "payload_file": "raw/native_task_342604577018880/task_payload.json",
+      "payload_summary": "input_structure = user_objects/123/330665428816896/342604293768192_MMFold_1.cif; autocomp_results = 7 objects of task 342604299285504",
+      "status_file": "raw/native_task_342604577018880/task_status.txt",
+      "outputs": [
+        {
+          "file": "raw/native_task_342604577018880/record.json",
+          "bytes": 20632,
+          "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91"
+        }
+      ],
+      "note": "record.json is the only artifact this task emitted. Everything in derived/mmetrics/ is an extraction from it, not an additional computation."
+    }
+  ],
+  "independent_tasks_run": [],
+  "independent_task_statement": "No MOS task was launched in this session for this case. Nothing in this package is a substitute for an independent run.",
+  "local_analyses": [
+    {
+      "name": "structure and numbering verification",
+      "script": "scripts/build_numbering.py",
+      "output": "numbering-map.json",
+      "what": "gemmi parse of the MOS object: chain IDs, entities, label/auth numbering, insertion codes, altlocs, _mos_mapping loop, sequence cross-checks against _entity_poly, _entity_poly_seq and record.json",
+      "type": "local analysis"
+    },
+    {
+      "name": "interface contact recalculation",
+      "script": "scripts/verify_contacts.py",
+      "output": "derived/verification/contact_crosscheck.json",
+      "what": "all heavy-atom distances between chain A and chain B; recurrence of the 44 native interaction pairs; count of residue pairs <= 5 A",
+      "type": "local analysis"
+    },
+    {
+      "name": "chain identity check against UniProt",
+      "script": "sequence-toolkit fetch-uniprot Q9NZQ7",
+      "output": "derived/verification/sequence_identity.json",
+      "what": "exact substring match of chain A against the human PD-L1 canonical sequence; reading of the native mos-blast top hit for chain B",
+      "type": "local analysis"
+    }
+  ],
+  "artifact_matrix": [
+    {
+      "artifact": "chain IDs, full sequences, label/auth numbering",
+      "native_status": "present",
+      "location": [
+        "numbering-map.json",
+        "provenance.json"
+      ],
+      "note": "read from the structure itself"
+    },
+    {
+      "artifact": "Description / reasoning / entity roles",
+      "native_status": "present",
+      "location": [
+        "derived/mmetrics/description.json"
+      ],
+      "note": "record.json classification block, verbatim"
+    },
+    {
+      "artifact": "Homologs",
+      "native_status": "present but empty",
+      "location": [
+        "derived/mmetrics/homologs.json"
+      ],
+      "note": "annotations.homology = [] in the native record; preserved as an empty result. The separate native mos-blast run on the VHH is archived under raw/native_task_342604299285504/ and is not the same field."
+    },
+    {
+      "artifact": "Paratope",
+      "native_status": "present",
+      "location": [
+        "derived/mmetrics/paratope.json"
+      ],
+      "note": "18 residues, chain B"
+    },
+    {
+      "artifact": "Epitope",
+      "native_status": "present",
+      "location": [
+        "derived/mmetrics/epitope.json"
+      ],
+      "note": "19 residues, chain A"
+    },
+    {
+      "artifact": "Domain",
+      "native_status": "absent",
+      "location": [
+        "derived/mmetrics/domain.json"
+      ],
+      "note": "no domain field in the native record"
+    },
+    {
+      "artifact": "PTM",
+      "native_status": "absent",
+      "location": [
+        "derived/mmetrics/ptm.json"
+      ],
+      "note": "no PTM field in the native record"
+    },
+    {
+      "artifact": "UniProt",
+      "native_status": "present but empty",
+      "location": [
+        "derived/mmetrics/uniprot.json"
+      ],
+      "note": "annotations.uniprot = [] even though chain A is PD-L1"
+    },
+    {
+      "artifact": "PDB cross-reference",
+      "native_status": "present but empty",
+      "location": [
+        "derived/mmetrics/pdb.json"
+      ],
+      "note": "annotations.pdb = []"
+    },
+    {
+      "artifact": "Interaction Network",
+      "native_status": "present",
+      "location": [
+        "derived/mmetrics/interaction_network.json"
+      ],
+      "note": "44 typed interactions with distances plus 2D plot residue lists"
+    },
+    {
+      "artifact": "CDR annotation (AbAn-equivalent)",
+      "native_status": "present as ranges only",
+      "location": [
+        "derived/mmetrics/cdr_annotations.json"
+      ],
+      "note": "IMGT/Kabat/Chothia CDR ranges in sequential numbering; no numbering-position table, no CSV"
+    },
+    {
+      "artifact": "MutX CSVs",
+      "native_status": "present",
+      "location": [
+        "raw/native_task_342604299285504/*.csv",
+        "derived/mutx/mutx_manifest.json"
+      ],
+      "note": "4 tables: mos-score-esm, mos-score-ligandmpnn, mos-score-msat, mos-diffaffinity"
+    },
+    {
+      "artifact": "AbAn heavy CSV",
+      "native_status": "absent",
+      "location": [
+        "derived/antibody/aban_abscn_paradt_status.json"
+      ],
+      "note": "not emitted by the native task; no independent run"
+    },
+    {
+      "artifact": "AbScN heavy CSV",
+      "native_status": "absent",
+      "location": [
+        "derived/antibody/aban_abscn_paradt_status.json"
+      ],
+      "note": "not emitted by the native task; no independent run"
+    },
+    {
+      "artifact": "ParaDt heavy CSV",
+      "native_status": "absent",
+      "location": [
+        "derived/antibody/aban_abscn_paradt_status.json"
+      ],
+      "note": "native paratope exists only as a residue list, not as a CSV; no independent run"
+    },
+    {
+      "artifact": "compact numbering mapping",
+      "native_status": "present (derived)",
+      "location": [
+        "derived/mutx/affinity_compact_numbering.csv",
+        "derived/mutx/mutx_manifest.json"
+      ],
+      "note": "decoded from the native diffaffinity mutstr column; MMfold1 numbering is identical to MOS numbering"
+    }
+  ],
+  "overall_status": {
+    "native_mmetrics_task": "succeed",
+    "anything_still_computing": false,
+    "requested_but_unavailable": [
+      "Domain",
+      "PTM",
+      "AbAn heavy CSV",
+      "AbScN heavy CSV",
+      "ParaDt heavy CSV"
+    ]
+  }
+}

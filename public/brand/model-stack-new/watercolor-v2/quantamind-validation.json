@@ -1,0 +1,35 @@
+{
+  "size": [
+    1200,
+    750
+  ],
+  "mode": "RGBA",
+  "alpha_range": [
+    0,
+    255
+  ],
+  "alpha_bbox": [
+    211,
+    185,
+    988,
+    605
+  ],
+  "fully_transparent_pixels": 782083,
+  "safe_region": [
+    72,
+    135,
+    1128,
+    615
+  ],
+  "outside_safe_region_alpha_zero": true,
+  "original_size": [
+    1586,
+    992
+  ],
+  "source_sha256": "7b2970c554287d5b889856b287ef9a50bf906409f7cf18fa7051781fab4938ea",
+  "style_references": [
+    "mmfold.webp",
+    "moleculeos.webp"
+  ],
+  "same_style_prefix": true
+}

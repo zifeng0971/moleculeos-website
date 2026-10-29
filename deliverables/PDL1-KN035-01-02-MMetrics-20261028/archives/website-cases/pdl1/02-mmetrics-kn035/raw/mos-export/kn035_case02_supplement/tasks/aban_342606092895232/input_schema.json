@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "title": "Input",
+  "properties": {
+    "schemes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Schemes",
+      "default": [
+        "imgt",
+        "kabat",
+        "chothia"
+      ],
+      "description": "List of the numbering schemes to use."
+    },
+    "heavy_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Heavy Sequence",
+      "default": null,
+      "description": "Heavy sequence"
+    },
+    "light_sequence": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Light Sequence",
+      "default": null,
+      "description": "Light sequence"
+    },
+    "custom_output_path": {
+      "type": "string",
+      "title": "Custom Output Path",
+      "default": "",
+      "description": "Resolved output destination. Set by framework."
+    }
+  }
+}

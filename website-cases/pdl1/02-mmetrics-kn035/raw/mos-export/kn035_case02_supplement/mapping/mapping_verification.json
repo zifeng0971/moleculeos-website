@@ -1,0 +1,27 @@
+{
+  "mapping_abnumber_heavy.csv": {
+    "rows": 128,
+    "contiguous_labels": true,
+    "aa_matches_structure": true
+  },
+  "mapping_abnativ_heavy.csv": {
+    "rows": 128,
+    "contiguous_labels": true,
+    "aa_matches_structure": true
+  },
+  "mapping_paragraph_heavy.csv": {
+    "rows": 128,
+    "contiguous_labels": true,
+    "aa_matches_structure": true
+  },
+  "mapping_ablang_heavy_scores.csv": {
+    "rows": 2560,
+    "all_chain_map_H_to_B": true,
+    "labels_1_to_128": true,
+    "all_wildtypes_match": true
+  },
+  "mapping_ablang_per_residue.csv": {
+    "rows": 128,
+    "aa_matches_structure": true
+  }
+}

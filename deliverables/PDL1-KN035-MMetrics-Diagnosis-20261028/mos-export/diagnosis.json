@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0.0",
+  "case": "kn035 homolog diagnosis",
+  "generated_utc": "2026-10-28T08:46:23+00:00",
+  "mode": "read-only diagnosis; no StartMOSTask call, no model re-run, no modification of structure, tasks, annotations or previous archives",
+  "scope": {
+    "project_id_user_supplied": "342604060136448",
+    "project_id_verifiable_with_available_tools": false,
+    "project_id_note": "The object/work/TOS identifiers were supplied by the user and match the focused structure; the project id itself is not exposed by any read-only tool available to this session, so it is recorded as user-supplied and not independently verified.",
+    "object_id": "342604293768192",
+    "work_id": "342604299084800",
+    "tos_key": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+    "structure_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+    "chains": {
+      "A": "PD-L1 118 aa",
+      "B": "KN035 VHH 128 aa"
+    }
+  },
+  "proven": [
+    {
+      "id": "P1",
+      "statement": "The only sequence search present in this pipeline used chain B (128 aa) as its single query.",
+      "evidence": "503 alignments, 500 unique PDB hits, 1 unique query sequence; general.query_sequence equals chain B exactly. See evidence/blast_query_analysis.json and evidence/raw/similarity_results.mos-blast.json."
+    },
+    {
+      "id": "P2",
+      "statement": "Chain A never appears as a query in any available artifact.",
+      "evidence": "evidence/raw/sequence_info.fasta contains only 'heavy_sequence' (chain B) and 'light_sequence' = None. No chain-A sequence occurs in the blast output as query_sequence_full. any_query_is_chain_A = false."
+    },
+    {
+      "id": "P3",
+      "statement": "All 500 hits are PDB immunoglobulin-family chains; none is a PD-L1 sequence.",
+      "evidence": "hit_db = {pdb}, reference = RCSB; identity 53.7%-100%, E-value 2.1e-92 to 3.4e-36; top hit pdb|5JDS|B at 100%; targeted search for five PD-L1 motifs in every hit_sequence_full returned zero matches."
+    },
+    {
+      "id": "P4",
+      "statement": "The native MMetrics record contains empty homology, UniProt and PDB annotation lists and no linked model-task results.",
+      "evidence": "record.json: annotations.homology=[], annotations.uniprot=[], annotations.pdb=[], model_tasks.results=[]; annotation keys are exactly ['homology','uniprot','pdb','features']."
+    },
+    {
+      "id": "P5",
+      "statement": "The MMetrics task had no chain selector, query sequence, database or threshold of its own.",
+      "evidence": "task_342604577018880_payload.json has exactly two keys: input_structure and autocomp_results (seven objects from task 342604299285504)."
+    },
+    {
+      "id": "P6",
+      "statement": "No failed or skipped antigen-search task exists, and no antigen-search task exists at all.",
+      "evidence": "evidence/task_board_snapshot.txt: six tasks, all SUCCEED; the only native ones are autocompute-MMFold_1 and mmetrics-analysis-342604299285504."
+    },
+    {
+      "id": "P7",
+      "statement": "MMetrics consumed exactly the autocompute outputs that were created two seconds before it started.",
+      "evidence": "evidence/timestamps.json: object createTime 2026-10-21T02:21:34Z; MMetrics start 2026-10-21T02:21:36Z."
+    }
+  ],
+  "ruled_out": [
+    {
+      "id": "R1",
+      "claim": "'The pipeline searched the PD-L1 antigen and found no significant homologs.'",
+      "verdict": "not supported by any evidence available here",
+      "reason": "No chain-A query exists in any artifact. The statement can be true only if the antigen search happened server-side and left no trace; nothing in the payloads, objects or task board shows it."
+    },
+    {
+      "id": "R2",
+      "claim": "'The 503 BLAST alignments are PD-L1 homology evidence.'",
+      "verdict": "false",
+      "reason": "Every alignment has chain B as query and an immunoglobulin-family PDB chain as hit; no PD-L1 motif occurs in any hit sequence. These alignments say nothing about chain A."
+    },
+    {
+      "id": "R3",
+      "claim": "A task failed or was skipped.",
+      "verdict": "false",
+      "reason": "All six project tasks are SUCCEED; no failed/skipped/queued entry exists."
+    }
+  ],
+  "most_likely": [
+    {
+      "id": "M1",
+      "statement": "Chain routing: the autocompute sequence-search step submits the antibody heavy chain (B) as the BLAST query and never submits the antigen chain (A).",
+      "confidence": "high for the observed run (directly evidenced that only B was searched); the routing rule itself is inferred, because the service code is not readable here.",
+      "supporting": [
+        "sequence_info.fasta assigns B as heavy_sequence and leaves light_sequence empty",
+        "the single query in the blast JSON is B",
+        "the autocompute payload contains no chain selector, so role assignment happens inside the service"
+      ],
+      "tension": "The UI wording the user reports ('Searched by antigen sequence similarity') describes an antigen query, which contradicts the executed query set."
+    },
+    {
+      "id": "M2",
+      "statement": "Because the homology annotation is assembled from antigen-oriented search results, a B-only search leaves annotations.homology empty.",
+      "confidence": "medium",
+      "supporting": [
+        "the UI wording ties the field to the antigen",
+        "the field is empty while a large B-chain result set exists",
+        "uniprot and pdb annotations are empty at the same time, which points at an annotation stage that produced nothing rather than at a filtering step on one hit list"
+      ]
+    },
+    {
+      "id": "M3",
+      "statement": "Alternative: MMetrics assembles annotations.homology only from non-immunoglobulin hits and/or from model_tasks.results, both of which are empty here.",
+      "confidence": "medium; not distinguishable from M2 with available evidence",
+      "supporting": [
+        "model_tasks.results = [] in the record",
+        "all 500 hits are immunoglobulin-family, so any immunoglobulin-depleting filter would return zero",
+        "the record's own description says 'no homology or UniProt annotations were available'"
+      ]
+    }
+  ],
+  "missing_evidence": [
+    "No source code or configuration for mos-blast, mos-autocomp-analysis or the MMetrics postprocessing is present in this sandbox; the services are remote and only their OpenAPI descriptions were reachable. The exact query-selection and annotations.homology assembly/filter code could not be read.",
+    "No task logs, stderr/stdout, or intermediate query manifest are exposed by CheckMOSTask or any other read-only tool.",
+    "No record of how chain roles were assigned inside autocompute (antibody vs antigen) is stored anywhere the session can read.",
+    "The UI string 'Searched by antigen sequence similarity / No significant homologs found' is user-reported; the session cannot read the UI.",
+    "It is unknown whether MMetrics issues its own antigen search independently of autocompute; the payload contains no such parameter, but server-side behaviour cannot be observed.",
+    "The project id cannot be verified with available tools."
+  ],
+  "why_the_null_result_is_suspicious": {
+    "statement": "A genuine chain-A query against PDB would be expected to return PD-L1 structures, so an empty antigen-homology field is more consistent with 'the antigen was never queried (or its result was never ingested)' than with 'the antigen was searched and nothing was found'.",
+    "status": "domain-knowledge inference only; NOT measured in this session because running the A-chain search would require a new task, which the user forbade.",
+    "counterpoint": "The B search itself hit the 500-hit cap (max_seq default 500, exactly 500 unique hits) with a permissive E-value ceiling, so the search configuration is permissive, not restrictive."
+  },
+  "sequence_homology_tool": {
+    "task_display_name": "Sequence Homology Search",
+    "input_schema_file": "tooling/sequence_homology_search_schema.json",
+    "can_query_chain_A_explicitly": true,
+    "how": [
+      "provide sequence = the 118-aa chain A sequence, OR",
+      "provide pdb_path = the MMFold_1 TOS key together with chain_id = 'A' (the schema states the chain sequence is extracted and used as query; sequence takes priority if both are given)"
+    ],
+    "parameters": {
+      "local": {
+        "type": "boolean",
+        "default": true,
+        "description": "Local search flag"
+      },
+      "max_seq": {
+        "type": "integer",
+        "default": 500,
+        "description": "Maximum number of hits"
+      },
+      "chain_id": "required when pdb_path is provided",
+      "pdb_path": "PDB/mmCIF; sequence of chain_id used as query",
+      "sequence": "explicit query; takes priority over pdb_path+chain_id",
+      "custom_output_path": "framework-resolved output destination"
+    },
+    "returned_fields_observed_in_mos_blast_output": [
+      "hit_id",
+      "hit_name",
+      "display_name",
+      "hit_desc",
+      "hit_db",
+      "reference",
+      "hit_len",
+      "hsp_id",
+      "query_sequence_full",
+      "query_sequence_aligned",
+      "query_sequence_print",
+      "hit_sequence_full",
+      "hit_sequence_aligned",
+      "hit_sequence_print",
+      "midline",
+      "midline_print",
+      "identity",
+      "identity_percentage",
+      "positive",
+      "gaps",
+      "score",
+      "bit_score",
+      "e_value",
+      "query_from",
+      "query_to",
+      "hit_from",
+      "hit_to",
+      "links.web_link",
+      "links.download_link"
+    ],
+    "summary_block_fields": [
+      "query_sequence",
+      "score_max",
+      "score_min",
+      "e_value_max",
+      "e_value_min",
+      "bit_score_max",
+      "bit_score_min",
+      "identity_percentage_max",
+      "identity_percentage_min",
+      "references"
+    ],
+    "schema_note": "The tool schema declares only inputs. Output fields listed above are those actually observed in the native mos-blast file, whose structure (data[] + general{}) matches this tool's output shape."
+  },
+  "next_steps": [
+    {
+      "step": 1,
+      "action": "Run Sequence Homology Search with sequence = chain A (118 aa), max_seq 500, default local flag, purely as a control.",
+      "purpose": "Distinguish 'antigen never queried' from 'antigen queried with no hits'.",
+      "requires_user_approval": true,
+      "expected_if_routing_bug": ">0 PD-L1/PDB hits, proving the null field is a routing/assembly problem",
+      "expected_if_true_null": "No hits, which would make the empty field correct and shift the explanation to database/threshold choice"
+    },
+    {
+      "step": 2,
+      "action": "Report the finding to the MOS platform with task IDs 342604299285504 and 342604577018880, asking for the chain-role assignment log of the autocompute search step.",
+      "purpose": "Convert the routing hypothesis into a confirmed root cause.",
+      "requires_user_approval": false
+    },
+    {
+      "step": 3,
+      "action": "If a fix ships, re-run MMetrics on an unchanged copy of the structure and compare annotations.homology before/after.",
+      "purpose": "Verify the fix without altering this archived run.",
+      "requires_user_approval": true
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6969,
+      "sha256": "7150aa3de2b68a11b0392f9731e24c8759cc1907ebbc1f62ec0b6e1fec531b5c"
+    },
+    {
+      "path": "evidence/blast_query_analysis.json",
+      "bytes": 1659,
+      "sha256": "2b9be947c9c47ef2929b37d559c47b1ea3b1c391dd3d291858e6a4d81d4c7555"
+    },
+    {
+      "path": "evidence/record_annotations_excerpt.json",
+      "bytes": 1576,
+      "sha256": "aa3e29fc150f9ce99d5676cc84018a750092781aad21e89853e6a9a591d52e55"
+    },
+    {
+      "path": "evidence/task_342604299285504_payload.json",
+      "bytes": 176,
+      "sha256": "e3a1b5ca1d1b3707ec69d092105cf60e75a7a98fd09b3c6bfcd199d3ab17661c"
+    },
+    {
+      "path": "evidence/task_342604299285504_status.txt",
+      "bytes": 736,
+      "sha256": "bb609f5b7b8cb85c74b0496f3c753646a988db12b7a3c49b1b0a095d488c53e5"
+    },
+    {
+      "path": "evidence/task_342604577018880_payload.json",
+      "bytes": 2041,
+      "sha256": "68e824dfd6e5d403799ae83dc17933f54596d6fc452ca3887f7da4397807917b"
+    },
+    {
+      "path": "evidence/task_342604577018880_status.txt",
+      "bytes": 750,
+      "sha256": "73a868bf9571e7a0cbbae94cd1b80645bf499ead31df3de509db7f9882227f37"
+    },
+    {
+      "path": "evidence/task_board_snapshot.txt",
+      "bytes": 1687,
+      "sha256": "a610e378cacabf20d2bb2df90417f1a5f78e8ca6cbb0fe91c1b07ea60a531cac"
+    },
+    {
+      "path": "evidence/timestamps.json",
+      "bytes": 1499,
+      "sha256": "fe44246033f8b63122296a5d6c2133a41ee2680a366678ebe9731f2188737ba5"
+    },
+    {
+      "path": "evidence/raw/record.json",
+      "bytes": 20632,
+      "sha256": "1f31bc111bdbd444726522012d67084bb24aca564ea367368d4bc055a6558b91"
+    },
+    {
+      "path": "evidence/raw/sequence_info.fasta",
+      "bytes": 166,
+      "sha256": "c6dafcd3275539ead8007e7d445b14fbc9084e9aa47dbaf8319d07a4a146c174"
+    },
+    {
+      "path": "evidence/raw/similarity_results.mos-blast.json",
+      "bytes": 1882222,
+      "sha256": "b5fb39d92702e348141d4b1b787d994026e4469459ac631494cafcf7e6f78931"
+    },
+    {
+      "path": "scripts/build_diagnosis.py",
+      "bytes": 13367,
+      "sha256": "d47cee90b735ca300269bffd741307aea885b05f842d7e13c4dd4a07f8b6fb20"
+    },
+    {
+      "path": "scripts/diagnose.py",
+      "bytes": 3630,
+      "sha256": "166f0831b21e39b312c377ebca1e07fa31a9a061dc3e7ccc3bf60bb421649314"
+    },
+    {
+      "path": "source_review/access_probe.txt",
+      "bytes": 1682,
+      "sha256": "40e9ed9e8d864cbc1be884120fb550f89e2a7f7d1d0dbe2ab0feaebe15494ef9"
+    },
+    {
+      "path": "source_review/grep_results.txt",
+      "bytes": 6512,
+      "sha256": "aa6a7235409fa466db1660bae51bd51e04ecfb825c61f7f64890179faf884436"
+    },
+    {
+      "path": "tooling/sequence_homology_search_schema.json",
+      "bytes": 1754,
+      "sha256": "80a1f92af176a6846485c74841dba88e3fe4b02705b46606642233fd5b9472df"
+    }
+  ]
+}

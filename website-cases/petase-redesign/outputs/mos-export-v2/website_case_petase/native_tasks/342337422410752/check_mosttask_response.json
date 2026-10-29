@@ -1,0 +1,22 @@
+{
+ "task_id": "342337422410752",
+ "check_mosttask_response": {
+  "status": "SUCCEED",
+  "task_name": "PETase_5xh3_HEMT_affinity_rerun",
+  "type": "Protein-Ligand Affinity Evaluation",
+  "task_id": "342337422410752",
+  "started": "2026-10-20 08:14:32",
+  "duration": "38s"
+ },
+ "payload_exact": {
+  "model_name": "sipobe",
+  "batch_size": 1,
+  "ngpu": 0,
+  "target_file": "tos:mosv2-prod/user_objects/123/330665428816896/sanitized/179248399086985_5xh3_clean.cif",
+  "reference_file": "tos:mosv2-prod/user_objects/0/329502077678592/338706328146944_5xh3_B_856 (1).sdf"
+ },
+ "payload_fields_not_exposed": [],
+ "downloaded_files": [
+  "/workspace/downloads/protein_ligand_affinity_evaluation_342337422410752/predicted_sipobe_scores.csv"
+ ]
+}

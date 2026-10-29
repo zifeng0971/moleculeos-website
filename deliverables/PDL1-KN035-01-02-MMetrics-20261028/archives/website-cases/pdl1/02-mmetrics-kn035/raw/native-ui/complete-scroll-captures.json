@@ -1,0 +1,62 @@
+[
+  {
+    "file": "visuals/native-complete-00.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 0,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-complete-01.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 463.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-complete-02.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 927,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-complete-03.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1390.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-complete-04.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1794.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-complete-05.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1794.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  }
+]

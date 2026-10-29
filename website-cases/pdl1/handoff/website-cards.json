@@ -1,0 +1,1760 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-20T14:03:10.152770+07:00",
+  "time_zone": "Asia/Jakarta",
+  "workspace_root": "/Users/zifengye/Documents/ChatGPT/mos",
+  "asset_base": "/Users/zifengye/Documents/ChatGPT/mos/website-cases/pdl1",
+  "path_convention": "All asset paths are relative to asset_base. Use top-level audited results for display, raw exports for provenance.",
+  "cards": [
+    {
+      "id": "01",
+      "title": "Understand the Interaction",
+      "module": "MMFold",
+      "case": "PD-L1 + KN035 VHH",
+      "status": "succeeded",
+      "description": "从两条序列预测复合物，选择平台排名最高的样本，展示真实结合界面和预测置信度。",
+      "core_result": "最佳样本 ipTM 0.918，整体 pLDDT 93.71；相对 5JDS 的 242 个匹配 Cα RMSD 为 1.05 Å。",
+      "key_metrics": [
+        {
+          "label": "ipTM",
+          "value": 0.9182515740394592,
+          "unit": "0–1",
+          "source_kind": "MOS confidence JSON",
+          "note": ""
+        },
+        {
+          "label": "Global pLDDT",
+          "value": 93.71290588378906,
+          "unit": "0–100",
+          "source_kind": "MOS confidence JSON",
+          "note": ""
+        },
+        {
+          "label": "Complex CA RMSD vs 5JDS",
+          "value": 1.0545397656943167,
+          "unit": "Å",
+          "source_kind": "local alignment of MOS prediction and experimental reference",
+          "note": "242 matched CA atoms; one least-squares fit over both chains"
+        },
+        {
+          "label": "Sampled structures",
+          "value": 5,
+          "unit": "models",
+          "source_kind": "MOS task outputs",
+          "note": ""
+        }
+      ],
+      "assets": [
+        {
+          "path": "01-structure/raw/MMFold_1.cif",
+          "kind": "hero_structure",
+          "source_kind": "MOS prediction"
+        },
+        {
+          "path": "01-structure/raw/input.fasta",
+          "kind": "input_sequences",
+          "source_kind": "submitted input"
+        },
+        {
+          "path": "01-structure/raw/summary_confidences_sample_1.json",
+          "kind": "confidence",
+          "source_kind": "MOS output"
+        },
+        {
+          "path": "01-structure/raw/highlights.json",
+          "kind": "highlights",
+          "source_kind": "verified derived analysis"
+        },
+        {
+          "path": "01-structure/raw/model-1-derived-contacts.json",
+          "kind": "contacts",
+          "source_kind": "geometry of MOS prediction"
+        },
+        {
+          "path": "01-structure/visuals/predicted-complex.jpg",
+          "kind": "screenshot",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "01-structure/visuals/model-confidence.png",
+          "kind": "chart",
+          "source_kind": "local plot of MOS scores"
+        },
+        {
+          "path": "sources/5JDS.cif",
+          "kind": "reference_structure",
+          "source_kind": "experimental reference"
+        }
+      ],
+      "visualization": "两条链靠近形成复合物；随后显示 B 链 CDR3，再高亮界面与三个 PD-L1 热点；置信度数字随数据出现。",
+      "highlights": {
+        "prediction_target_chain": "A",
+        "prediction_binder_chain": "B",
+        "prediction_target_hotspots": [
+          38,
+          40,
+          97
+        ],
+        "original_pdl1_auth_hotspots": [
+          54,
+          56,
+          113
+        ],
+        "binder_cdr3": [
+          97,
+          117
+        ],
+        "mapping": "01-structure/raw/model-1-reference-mapping.json"
+      },
+      "limits": [
+        "PAE 未交付。",
+        "五个样本的 ipTM 不同；样本 1 依据平台 ranking_score 选择。",
+        "置信度与参考 RMSD 不表示实测结合亲和力。"
+      ],
+      "input": "01-structure/input.json",
+      "results": "01-structure/results.json",
+      "run_log": "01-structure/run-log.md",
+      "reference_sources": [
+        "sources/5JDS.cif"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Decode Molecular Intelligence",
+      "module": "MMetrics native UI + supplemental explicit analyses",
+      "case": "PD-L1 + avelumab VH/VL (5GRJ)",
+      "status": "native_ui_collected_with_documented_scope_limits",
+      "description": "复现实际原生 MMetrics：复合物描述、注释高亮、链间交互网络、突变评分和抗体设计文件。",
+      "core_result": "原生面板与十份 CSV 已取得；43 个 Paratope 位点、38 个 Epitope 位点、71 条链间交互记录；三份原生矩阵各8,341个非同义替换，VH/VL亲和力评分4,294条。",
+      "key_metrics": [
+        {
+          "label": "Native Paratope annotations",
+          "value": 43,
+          "unit": "residues",
+          "source_kind": "native MMetrics",
+          "note": ""
+        },
+        {
+          "label": "Native Epitope annotations",
+          "value": 38,
+          "unit": "residues",
+          "source_kind": "native MMetrics",
+          "note": ""
+        },
+        {
+          "label": "Interaction records",
+          "value": 71,
+          "unit": "typed records",
+          "source_kind": "native MMetrics tables",
+          "note": "38 A:C + 22 A:B + 11 B:C; types can repeat a residue pair"
+        },
+        {
+          "label": "Nonself rows per native matrix",
+          "value": 8341,
+          "unit": "substitutions",
+          "source_kind": "audited native MMetrics CSV",
+          "note": "8780 rows include 439 WT→WT"
+        },
+        {
+          "label": "Native antibody affinity rows",
+          "value": 4294,
+          "unit": "substitutions",
+          "source_kind": "native MutXaff.csv",
+          "note": "VH/VL only; 226 modeled residues x 19"
+        },
+        {
+          "label": "VH2 humanness",
+          "value": 0.83598256,
+          "unit": "model score",
+          "source_kind": "native AbScN_heavy..csv",
+          "note": ""
+        },
+        {
+          "label": "VL2 humanness",
+          "value": 0.94844085,
+          "unit": "model score",
+          "source_kind": "native AbScN_light.csv",
+          "note": ""
+        }
+      ],
+      "assets": [
+        {
+          "path": "02-mmetrics/raw/mos-export/case02_complete/00_structure/5GRJ_mos_sanitized.cif",
+          "kind": "hero_structure",
+          "source_kind": "experimental reference sanitized by MOS"
+        },
+        {
+          "path": "02-mmetrics/MMETRICS_REPRODUCTION.md",
+          "kind": "native_reproduction_guide",
+          "source_kind": "actual UI observation"
+        },
+        {
+          "path": "02-mmetrics/native-ui-capture.json",
+          "kind": "capture_index",
+          "source_kind": "actual UI observation"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/verified-native-summary.json",
+          "kind": "native_summary",
+          "source_kind": "audited native UI exports"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/native-datasets.json",
+          "kind": "native_complete_datasets",
+          "source_kind": "ten native CSVs converted without score changes"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/annotations.json",
+          "kind": "native_annotations",
+          "source_kind": "native UI text, tooltip and style"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/interactions.json",
+          "kind": "native_interactions",
+          "source_kind": "native UI tables"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/verified-antibody-csv-numbering.json",
+          "kind": "native_numbering",
+          "source_kind": "audited native CSV to original atom-site mapping"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/interaction-plot-1.svg",
+          "kind": "native_interaction_AC",
+          "source_kind": "rendered native SVG"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/interaction-plot-2.svg",
+          "kind": "native_interaction_AB",
+          "source_kind": "rendered native SVG"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/interaction-plot-3.svg",
+          "kind": "native_interaction_BC",
+          "source_kind": "rendered native SVG"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/layout-and-typography.json",
+          "kind": "native_layout",
+          "source_kind": "actual DOM geometry and computed styles"
+        },
+        {
+          "path": "02-mmetrics/raw/native-ui/file-view-layout.json",
+          "kind": "native_CSV_layout",
+          "source_kind": "actual DOM geometry and computed styles"
+        },
+        {
+          "path": "02-mmetrics/visuals/native-final-overview.jpg",
+          "kind": "native_UI_overview",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "02-mmetrics/visuals/native-paratope-selected.jpg",
+          "kind": "native_UI_selection",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "02-mmetrics/visuals/native-affinity-sorted.jpg",
+          "kind": "native_UI_sort",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "02-mmetrics/visuals/native-pagination-options.jpg",
+          "kind": "native_UI_pagination",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "02-mmetrics/raw/mos-export/case02_complete/02_homologs/homology_summary.json",
+          "kind": "supplemental_homologs",
+          "source_kind": "earlier explicit MOS search, native UI shows empty"
+        },
+        {
+          "path": "02-mmetrics/raw/mos-export/case02_complete/04_liabilities/liability_sites.json",
+          "kind": "supplemental_risks",
+          "source_kind": "earlier built-in motif analysis, not standalone native panel"
+        },
+        {
+          "path": "02-mmetrics/raw/mos-export/case02_complete/06_mutations/recommended_mutations.csv",
+          "kind": "supplemental_recommendations",
+          "source_kind": "earlier heuristic analysis, not standalone native panel"
+        }
+      ],
+      "visualization": "按实际纵向模块顺序呈现：Description → Homologs空结果 → Annotations群组选中 → Interaction 2D/Table → CSV View/排序/分页。完整复现细节见 MMETRICS_REPRODUCTION.md。",
+      "highlights": {
+        "mos_chain_roles": {
+          "A": "VH",
+          "B": "VL",
+          "C": "PD-L1"
+        },
+        "original_auth_chain_roles": {
+          "H": "VH",
+          "L": "VL",
+          "A": "PD-L1"
+        },
+        "native_annotation_data": "02-mmetrics/raw/native-ui/annotations.json",
+        "native_CDR_regions": {
+          "heavy": {
+            "imgt": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33
+                ],
+                "numbering": [
+                  "H27",
+                  "H28",
+                  "H29",
+                  "H30",
+                  "H35",
+                  "H36",
+                  "H37",
+                  "H38"
+                ],
+                "sequence": "GFTFSSYI"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57,
+                  58
+                ],
+                "numbering": [
+                  "H56",
+                  "H57",
+                  "H58",
+                  "H59",
+                  "H62",
+                  "H63",
+                  "H64",
+                  "H65"
+                ],
+                "sequence": "IYPSGGIT"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  97,
+                  98,
+                  99,
+                  100,
+                  101,
+                  102,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  108,
+                  109
+                ],
+                "numbering": [
+                  "H105",
+                  "H106",
+                  "H107",
+                  "H108",
+                  "H109",
+                  "H110",
+                  "H111",
+                  "H112",
+                  "H113",
+                  "H114",
+                  "H115",
+                  "H116",
+                  "H117"
+                ],
+                "sequence": "ARIKLGTVTTVDY"
+              }
+            ],
+            "kabat": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  31,
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "numbering": [
+                  "H31",
+                  "H32",
+                  "H33",
+                  "H34",
+                  "H35"
+                ],
+                "sequence": "SYIMM"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  50,
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57,
+                  58,
+                  59,
+                  60,
+                  61,
+                  62,
+                  63,
+                  64,
+                  65,
+                  66
+                ],
+                "numbering": [
+                  "H50",
+                  "H51",
+                  "H52",
+                  "H52A",
+                  "H53",
+                  "H54",
+                  "H55",
+                  "H56",
+                  "H57",
+                  "H58",
+                  "H59",
+                  "H60",
+                  "H61",
+                  "H62",
+                  "H63",
+                  "H64",
+                  "H65"
+                ],
+                "sequence": "SIYPSGGITFYADTVKG"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  99,
+                  100,
+                  101,
+                  102,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  108,
+                  109
+                ],
+                "numbering": [
+                  "H95",
+                  "H96",
+                  "H97",
+                  "H98",
+                  "H99",
+                  "H100",
+                  "H100A",
+                  "H100B",
+                  "H100C",
+                  "H101",
+                  "H102"
+                ],
+                "sequence": "IKLGTVTTVDY"
+              }
+            ],
+            "chothia": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32
+                ],
+                "numbering": [
+                  "H26",
+                  "H27",
+                  "H28",
+                  "H29",
+                  "H30",
+                  "H31",
+                  "H32"
+                ],
+                "sequence": "GFTFSSY"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57
+                ],
+                "numbering": [
+                  "H52",
+                  "H52A",
+                  "H53",
+                  "H54",
+                  "H55",
+                  "H56"
+                ],
+                "sequence": "YPSGGI"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  99,
+                  100,
+                  101,
+                  102,
+                  103,
+                  104,
+                  105,
+                  106,
+                  107,
+                  108,
+                  109
+                ],
+                "numbering": [
+                  "H95",
+                  "H96",
+                  "H97",
+                  "H98",
+                  "H99",
+                  "H100",
+                  "H100A",
+                  "H100B",
+                  "H100C",
+                  "H101",
+                  "H102"
+                ],
+                "sequence": "IKLGTVTTVDY"
+              }
+            ]
+          },
+          "light": {
+            "imgt": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33
+                ],
+                "numbering": [
+                  "L27",
+                  "L28",
+                  "L29",
+                  "L30",
+                  "L31",
+                  "L35",
+                  "L36",
+                  "L37",
+                  "L38"
+                ],
+                "sequence": "SSDVGGYNY"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  51,
+                  52,
+                  53
+                ],
+                "numbering": [
+                  "L56",
+                  "L57",
+                  "L65"
+                ],
+                "sequence": "DVS"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  90,
+                  91,
+                  92,
+                  93,
+                  94,
+                  95,
+                  96,
+                  97,
+                  98,
+                  99
+                ],
+                "numbering": [
+                  "L105",
+                  "L106",
+                  "L107",
+                  "L108",
+                  "L109",
+                  "L113",
+                  "L114",
+                  "L115",
+                  "L116",
+                  "L117"
+                ],
+                "sequence": "SSYTSSSTRV"
+              }
+            ],
+            "kabat": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "numbering": [
+                  "L24",
+                  "L25",
+                  "L26",
+                  "L27",
+                  "L27A",
+                  "L27B",
+                  "L27C",
+                  "L28",
+                  "L29",
+                  "L30",
+                  "L31",
+                  "L32",
+                  "L33",
+                  "L34"
+                ],
+                "sequence": "TGTSSDVGGYNYVS"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57
+                ],
+                "numbering": [
+                  "L50",
+                  "L51",
+                  "L52",
+                  "L53",
+                  "L54",
+                  "L55",
+                  "L56"
+                ],
+                "sequence": "DVSNRPS"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  90,
+                  91,
+                  92,
+                  93,
+                  94,
+                  95,
+                  96,
+                  97,
+                  98,
+                  99
+                ],
+                "numbering": [
+                  "L89",
+                  "L90",
+                  "L91",
+                  "L92",
+                  "L93",
+                  "L94",
+                  "L95",
+                  "L95A",
+                  "L96",
+                  "L97"
+                ],
+                "sequence": "SSYTSSSTRV"
+              }
+            ],
+            "chothia": [
+              {
+                "region": "CDR1",
+                "csv_indices": [
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35
+                ],
+                "numbering": [
+                  "L24",
+                  "L25",
+                  "L26",
+                  "L27",
+                  "L28",
+                  "L29",
+                  "L30",
+                  "L30A",
+                  "L30B",
+                  "L30C",
+                  "L31",
+                  "L32",
+                  "L33",
+                  "L34"
+                ],
+                "sequence": "TGTSSDVGGYNYVS"
+              },
+              {
+                "region": "CDR2",
+                "csv_indices": [
+                  51,
+                  52,
+                  53,
+                  54,
+                  55,
+                  56,
+                  57
+                ],
+                "numbering": [
+                  "L50",
+                  "L51",
+                  "L52",
+                  "L53",
+                  "L54",
+                  "L55",
+                  "L56"
+                ],
+                "sequence": "DVSNRPS"
+              },
+              {
+                "region": "CDR3",
+                "csv_indices": [
+                  90,
+                  91,
+                  92,
+                  93,
+                  94,
+                  95,
+                  96,
+                  97,
+                  98,
+                  99
+                ],
+                "numbering": [
+                  "L89",
+                  "L90",
+                  "L91",
+                  "L92",
+                  "L93",
+                  "L94",
+                  "L95",
+                  "L95A",
+                  "L96",
+                  "L97"
+                ],
+                "sequence": "SSYTSSSTRV"
+              }
+            ]
+          }
+        },
+        "native_CSV_mapping": "02-mmetrics/raw/native-ui/verified-antibody-csv-numbering.json",
+        "original_mapping": "02-mmetrics/raw/verified-residue-numbering.json"
+      },
+      "limits": [
+        "原生共有六个纵向区块；未出现独立 Risk Sites/Recommended Mutations，补充数据需另标来源。",
+        "原生 Homologs 为空，不可用独立检索结果替换后仍声称是原生显示。",
+        "轻链CSV紧凑序号1对应结构B2；原生矩阵439个位点与先前完整实体451个位点的独立任务不同。",
+        "原生自动任务最终状态未在当前列表中暴露；有原生界面和十份实际下载结果，但未虚构任务状态。",
+        "UniProt Feature C:ARG221 与 C→S tooltip身份不一致，且不在晶体坐标中；避免用于科学主张。",
+        "模型分数和注释不是实验证实的亲和力、修饰或人源性百分比。"
+      ],
+      "input": "02-mmetrics/input.json",
+      "results": "02-mmetrics/results.json",
+      "run_log": "02-mmetrics/run-log.md",
+      "reference_sources": [
+        "sources/5GRJ.cif"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Engineer Stronger Binding",
+      "module": "Binding Affinity Mutation Scoring",
+      "case": "PD-L1 + DBL1_03 (7XYQ)",
+      "status": "succeeded",
+      "description": "扫描现有 Binder 的单点突变，依据真实预测 ΔΔG 排序，并保留靶点序列。",
+      "core_result": "Binder 链扫描 2,356 个突变，最佳模型候选 Q18Y 的预测结合 ΔΔG 为 −2.45 kcal/mol；此处 18 是实体/MOS 序列编号，对应原始作者 B13。 两种代表变体另完成独立 MMFold，分别提供5个结构与置信度文件。",
+      "key_metrics": [
+        {
+          "label": "Binder substitutions",
+          "value": 2356,
+          "unit": "substitutions",
+          "source_kind": "MOS output",
+          "note": ""
+        },
+        {
+          "label": "Q18Y predicted ΔΔG",
+          "value": -2.4513278,
+          "unit": "kcal/mol",
+          "source_kind": "MOS affinity prediction",
+          "note": "Relative to WT; lower is more favorable; not measured Kd"
+        },
+        {
+          "label": "Scored substitutions across both chains",
+          "value": 6213,
+          "unit": "substitutions",
+          "source_kind": "MOS output",
+          "note": ""
+        },
+        {
+          "label": "Q18Y structure ipTM",
+          "value": 0.821414589881897,
+          "unit": "0–1",
+          "source_kind": "MOS MMFold confidence JSON",
+          "note": "Five samples, best selected by ranking_score; separate from affinity ΔΔG"
+        },
+        {
+          "label": "V17I structure ipTM",
+          "value": 0.776024580001831,
+          "unit": "0–1",
+          "source_kind": "MOS MMFold confidence JSON",
+          "note": "Five samples, best selected by ranking_score; separate from affinity ΔΔG"
+        }
+      ],
+      "assets": [
+        {
+          "path": "03-affinity/raw/mos-export/case03_complete/inputs/7XYQ_PDL1_DBL1_03_MOSsanitized.cif",
+          "kind": "baseline_structure",
+          "source_kind": "experimental reference sanitized by MOS"
+        },
+        {
+          "path": "03-affinity/raw/MutXaff.csv",
+          "kind": "raw_mutation_scores",
+          "source_kind": "MOS output"
+        },
+        {
+          "path": "03-affinity/raw/binder-ranked-candidates.json",
+          "kind": "ranked_candidates",
+          "source_kind": "audited MOS scores"
+        },
+        {
+          "path": "03-affinity/raw/baseline-and-top10.fasta",
+          "kind": "candidate_sequences",
+          "source_kind": "verified single substitutions"
+        },
+        {
+          "path": "03-affinity/raw/residue-numbering-map.json",
+          "kind": "numbering",
+          "source_kind": "original RCSB atom-site mapping"
+        },
+        {
+          "path": "03-affinity/visuals/top-binder-mutations.png",
+          "kind": "chart",
+          "source_kind": "local plot of MOS scores"
+        },
+        {
+          "path": "03-affinity/visuals/reference-complex.jpg",
+          "kind": "screenshot",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246519899289_model_sample_1.cif",
+          "kind": "candidate_structure",
+          "source_kind": "MOS MMFold variant prediction"
+        },
+        {
+          "path": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_1.json",
+          "kind": "candidate_confidence",
+          "source_kind": "MOS MMFold output"
+        },
+        {
+          "path": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520081974_model_sample_1.cif",
+          "kind": "candidate_structure",
+          "source_kind": "MOS MMFold variant prediction"
+        },
+        {
+          "path": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_1.json",
+          "kind": "candidate_confidence",
+          "source_kind": "MOS MMFold output"
+        }
+      ],
+      "visualization": "Baseline → 一处突变 → 候选列表。展示 WT 相对 ΔΔG=0 与单点预测，不生成未经模拟的多点性能轨迹。模型排名与界面位置分开展示。",
+      "highlights": {
+        "binder_MOS_chain": "B",
+        "best_MOS_position": 18,
+        "best_original_auth_position": 13,
+        "direct_interface_alternative_MOS_position": 17,
+        "direct_interface_alternative_original_auth_position": 12,
+        "mapping": "03-affinity/raw/residue-numbering-map.json"
+      },
+      "limits": [
+        "没有绝对 ΔG/Kd 或实测亲和力。",
+        "不能叠加单点收益得到组合突变结论。",
+        "多数排名靠前位置并非直接界面接触；Q18Y 在界面边缘，V17I 是额外的接触位点候选。",
+        "变体 MMFold 只验证输出结构与结构置信度，不重新测量亲和力或证明 ΔΔG。"
+      ],
+      "candidate_structure_validation": {
+        "status": "both_succeeded",
+        "method": "Two sequence-only MMFold jobs; five samples each; every coordinate residue verified against the exact submitted mutant sequences; best sample selected by ranking_score.",
+        "variants": [
+          {
+            "variant": "Q18Y",
+            "original_author_position": 13,
+            "task_id": "342259574002688",
+            "status": "succeeded",
+            "antigen_sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+            "binder_sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+            "best_sample": 1,
+            "best_structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246519899289_model_sample_1.cif",
+            "best_confidence": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_1.json",
+            "best_iptm": 0.821414589881897,
+            "best_global_plddt": 87.94413757324219,
+            "samples": [
+              {
+                "sample": 1,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246519899289_model_sample_1.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_1.json",
+                "plddt": 87.94413757324219,
+                "ptm": 0.8108291625976562,
+                "iptm": 0.821414589881897,
+                "chain_ptm": [
+                  0.797391951084137,
+                  0.87617427110672
+                ],
+                "chain_iptm": [
+                  0.821414589881897,
+                  0.821414589881897
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.821414589881897
+                  ],
+                  [
+                    0.821414589881897,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8876091837882996,
+                  0.8655028343200684
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8794413805007935
+                  ],
+                  [
+                    0.8794413805007935,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.8192974925041199,
+                "mutant_residue_CA_b_factor": 96.28,
+                "structure_sha256": "40d06fd9e529160f6fc3ce109efa83e738f65f973e32e72114f7805e588ff2ec"
+              },
+              {
+                "sample": 2,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520009403_model_sample_2.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_2.json",
+                "plddt": 87.93145751953125,
+                "ptm": 0.8091196417808533,
+                "iptm": 0.8201618790626526,
+                "chain_ptm": [
+                  0.7946944832801819,
+                  0.878140926361084
+                ],
+                "chain_iptm": [
+                  0.8201618790626526,
+                  0.8201618790626526
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.8201618790626526
+                  ],
+                  [
+                    0.8201618790626526,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8872933983802795,
+                  0.8656983971595764
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8793145418167114
+                  ],
+                  [
+                    0.8793145418167114,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.8179534673690796,
+                "mutant_residue_CA_b_factor": 96.25,
+                "structure_sha256": "aaf526f56be58f5ef6acbacdf3ae3ab8b4c0039b1cb6d7ad1c5ac5d41d295782"
+              },
+              {
+                "sample": 3,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520233187_model_sample_3.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_3.json",
+                "plddt": 87.91755676269531,
+                "ptm": 0.8092062473297119,
+                "iptm": 0.8184607625007629,
+                "chain_ptm": [
+                  0.796328604221344,
+                  0.8784611225128174
+                ],
+                "chain_iptm": [
+                  0.8184607625007629,
+                  0.8184607625007629
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.8184607625007629
+                  ],
+                  [
+                    0.8184607625007629,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8871768116950989,
+                  0.8655211925506592
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8791755437850952
+                  ],
+                  [
+                    0.8791755437850952,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.8166099190711975,
+                "mutant_residue_CA_b_factor": 96.23,
+                "structure_sha256": "c9468e8741a3541aa72d4577cdce85a7b3713a9e860eb853160bdc2cf13961ec"
+              },
+              {
+                "sample": 4,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520338048_model_sample_4.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_4.json",
+                "plddt": 87.92984771728516,
+                "ptm": 0.8093056082725525,
+                "iptm": 0.8181858658790588,
+                "chain_ptm": [
+                  0.7962658405303955,
+                  0.8755359053611755
+                ],
+                "chain_iptm": [
+                  0.8181858658790588,
+                  0.8181858658790588
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.8181858658790588
+                  ],
+                  [
+                    0.8181858658790588,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8874289989471436,
+                  0.865423321723938
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8792984485626221
+                  ],
+                  [
+                    0.8792984485626221,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.8164098262786865,
+                "mutant_residue_CA_b_factor": 96.24,
+                "structure_sha256": "fe42b054aff8b987758f1826698a628529549d9d3e0ac9567a7409b3d4f12164"
+              },
+              {
+                "sample": 5,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/cif/179246520113773_model_sample_5.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/Q18Y/confidence/summary_confidences_sample_5.json",
+                "plddt": 87.8953628540039,
+                "ptm": 0.8075908422470093,
+                "iptm": 0.8163885474205017,
+                "chain_ptm": [
+                  0.7948981523513794,
+                  0.8776650428771973
+                ],
+                "chain_iptm": [
+                  0.8163885474205017,
+                  0.8163885474205017
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.8163885474205017
+                  ],
+                  [
+                    0.8163885474205017,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8869498372077942,
+                  0.8653078079223633
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8789536356925964
+                  ],
+                  [
+                    0.8789536356925964,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.8146290183067322,
+                "mutant_residue_CA_b_factor": 96.2,
+                "structure_sha256": "93659db34551daa9ae285908719e526fab2bb8a2acc4ceec9dad96786022d02b"
+              }
+            ],
+            "payload": {
+              "name": "PDL1_DBL1_03_Q18Y_complex",
+              "dialect": "mmfold",
+              "version": 1,
+              "sequences": [
+                {
+                  "protein": {
+                    "id": "A",
+                    "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+                    "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+                  }
+                },
+                {
+                  "protein": {
+                    "id": "B",
+                    "sequence": "GGETGSSIESMKASMIVYQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+                    "description": "DBL1_03 designed binder, single mutation B13 Q18Y (author QB13Y), entity/MOS position 18, 124 aa"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "variant": "V17I",
+            "original_author_position": 12,
+            "task_id": "342259585696768",
+            "status": "succeeded",
+            "antigen_sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+            "binder_sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+            "best_sample": 1,
+            "best_structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520081974_model_sample_1.cif",
+            "best_confidence": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_1.json",
+            "best_iptm": 0.776024580001831,
+            "best_global_plddt": 87.17306518554688,
+            "samples": [
+              {
+                "sample": 1,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520081974_model_sample_1.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_1.json",
+                "plddt": 87.17306518554688,
+                "ptm": 0.8171707391738892,
+                "iptm": 0.776024580001831,
+                "chain_ptm": [
+                  0.8319292068481445,
+                  0.8675724864006042
+                ],
+                "chain_iptm": [
+                  0.776024580001831,
+                  0.776024580001831
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.776024580001831
+                  ],
+                  [
+                    0.776024580001831,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8851877450942993,
+                  0.8487182855606079
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.871730625629425
+                  ],
+                  [
+                    0.871730625629425,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.7842538356781006,
+                "mutant_residue_CA_b_factor": 93.8,
+                "structure_sha256": "a190202684fc1422ef0e00c14b3109aa15f5f30855a947c46d7bc5079bbd62a0"
+              },
+              {
+                "sample": 2,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520193986_model_sample_2.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_2.json",
+                "plddt": 87.1742935180664,
+                "ptm": 0.8176165223121643,
+                "iptm": 0.7756140232086182,
+                "chain_ptm": [
+                  0.8317345976829529,
+                  0.8668950796127319
+                ],
+                "chain_iptm": [
+                  0.7756140232086182,
+                  0.7756140232086182
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.7756140232086182
+                  ],
+                  [
+                    0.7756140232086182,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8854389786720276,
+                  0.8483225107192993
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8717429637908936
+                  ],
+                  [
+                    0.8717429637908936,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.7840145230293274,
+                "mutant_residue_CA_b_factor": 93.77,
+                "structure_sha256": "2f2e2dd8e76e0bba0a1f5bec74af1cd25e9dd47b04a645a5cb7e863156a72690"
+              },
+              {
+                "sample": 3,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520421979_model_sample_3.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_3.json",
+                "plddt": 87.14888763427734,
+                "ptm": 0.816347062587738,
+                "iptm": 0.775378942489624,
+                "chain_ptm": [
+                  0.8311319351196289,
+                  0.8666509985923767
+                ],
+                "chain_iptm": [
+                  0.775378942489624,
+                  0.775378942489624
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.775378942489624
+                  ],
+                  [
+                    0.775378942489624,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8850725293159485,
+                  0.8482603430747986
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8714888691902161
+                  ],
+                  [
+                    0.8714888691902161,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.7835725545883179,
+                "mutant_residue_CA_b_factor": 93.73,
+                "structure_sha256": "4e93fc8dff985126967b3206b24e9cfea36959243b25c2259025c1923da4acf1"
+              },
+              {
+                "sample": 4,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520539642_model_sample_4.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_4.json",
+                "plddt": 87.15618896484375,
+                "ptm": 0.8166832327842712,
+                "iptm": 0.7732416987419128,
+                "chain_ptm": [
+                  0.8314047455787659,
+                  0.8663478493690491
+                ],
+                "chain_iptm": [
+                  0.7732416987419128,
+                  0.7732416987419128
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.7732416987419128
+                  ],
+                  [
+                    0.7732416987419128,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8853320479393005,
+                  0.8480144739151001
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8715618848800659
+                  ],
+                  [
+                    0.8715618848800659,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.7819300293922424,
+                "mutant_residue_CA_b_factor": 93.81,
+                "structure_sha256": "51ce67ac7176dc30a3a96ff9d32b45173c478cbc1ef3bad64f2807d645b8517c"
+              },
+              {
+                "sample": 5,
+                "structure": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/cif/179246520307120_model_sample_5.cif",
+                "confidence_file": "03-affinity/raw/variant-structure-export/case03_variant_structures/V17I/confidence/summary_confidences_sample_5.json",
+                "plddt": 87.0993881225586,
+                "ptm": 0.8152196407318115,
+                "iptm": 0.7730579972267151,
+                "chain_ptm": [
+                  0.829669177532196,
+                  0.8679108619689941
+                ],
+                "chain_iptm": [
+                  0.7730579972267151,
+                  0.7730579972267151
+                ],
+                "chain_pair_iptm": [
+                  [
+                    0.0,
+                    0.7730579972267151
+                  ],
+                  [
+                    0.7730579972267151,
+                    0.0
+                  ]
+                ],
+                "chain_plddt": [
+                  0.8844442963600159,
+                  0.847993016242981
+                ],
+                "chain_pair_plddt": [
+                  [
+                    0.0,
+                    0.8709938526153564
+                  ],
+                  [
+                    0.8709938526153564,
+                    0.0
+                  ]
+                ],
+                "ranking_score": 0.7814903259277344,
+                "mutant_residue_CA_b_factor": 93.64,
+                "structure_sha256": "665d69d12331493739c6e82f673fa152c65700060ad362655a710c876b78b65d"
+              }
+            ],
+            "payload": {
+              "name": "PDL1_DBL1_03_V17I_complex",
+              "dialect": "mmfold",
+              "version": 1,
+              "sequences": [
+                {
+                  "protein": {
+                    "id": "A",
+                    "sequence": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELV",
+                    "description": "Human PD-L1 (CD274) IgV+IgC, PDB 7XYQ entity 1, UniProt 19-225, unchanged 207 aa entity sequence"
+                  }
+                },
+                {
+                  "protein": {
+                    "id": "B",
+                    "sequence": "GGETGSSIESMKASMIIQQILCQLETGIDQQKANDVIEGNIDVEDKKVQLYCECILKQFHILDKNNVFKPQGIKAVMELLIDENSVKQLVSDCSTISEENPHLKASKLMQCISKYKTWKSFDFL",
+                    "description": "DBL1_03 designed binder, single mutation B12 V17I (author VB12I), entity/MOS position 17, 124 aa"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "limitations": [
+          "Structure confidence is separate from affinity ddG and does not establish improved affinity.",
+          "No absolute binding energy, experimental Kd, MD relaxation or joint-mutation evaluation was performed.",
+          "Do not compare predicted variant pLDDT against the experimental baseline, which has crystallographic B factors rather than pLDDT."
+        ]
+      },
+      "input": "03-affinity/input.json",
+      "results": "03-affinity/results.json",
+      "run_log": "03-affinity/run-log.md",
+      "reference_sources": [
+        "sources/7XYQ.cif"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Design for Developability",
+      "module": "Structural / sequence / evolutionary fitness + liability screening",
+      "case": "PD-L1-binding KN035 VHH (5JDS)",
+      "status": "succeeded_with_supported_metric_limits",
+      "description": "在保护 CDR、二硫键和关键界面位点的条件下筛选框架突变，并展示模型评分与序列性质的取舍。",
+      "core_result": "75 个框架位点、1,425 个非同义替换形成 7 个审阅候选；M34L 将 Met 数量从 4 降到 3，R19S 的理论 pI 从 9.01 降到 8.76。",
+      "key_metrics": [
+        {
+          "label": "Framework positions screened",
+          "value": 75,
+          "unit": "positions",
+          "source_kind": "MOS structural scan input",
+          "note": ""
+        },
+        {
+          "label": "Screened nonself substitutions",
+          "value": 1425,
+          "unit": "substitutions",
+          "source_kind": "MOS output / protected-position filter",
+          "note": ""
+        },
+        {
+          "label": "Curated single-mutant shortlist",
+          "value": 7,
+          "unit": "candidates",
+          "source_kind": "heuristic review of MOS scores",
+          "note": ""
+        },
+        {
+          "label": "M34L methionine count",
+          "value": {
+            "WT": 4,
+            "M34L": 3
+          },
+          "unit": "residues",
+          "source_kind": "verified sequence property",
+          "note": ""
+        },
+        {
+          "label": "R19S theoretical pI",
+          "value": {
+            "WT": 9.01,
+            "R19S": 8.76
+          },
+          "unit": "pH units",
+          "source_kind": "BioPython sequence calculation",
+          "note": ""
+        }
+      ],
+      "assets": [
+        {
+          "path": "04-developability/raw/mos-export/case04_pkg/inputs/5JDS_complex_renum.pdb",
+          "kind": "hero_structure",
+          "source_kind": "experimental reference, renumbered"
+        },
+        {
+          "path": "04-developability/raw/verified-single-mutant-shortlist.fasta",
+          "kind": "candidate_sequences",
+          "source_kind": "verified WT plus seven single mutants; no combined variant"
+        },
+        {
+          "path": "04-developability/raw/mos-export/case04_pkg/results/top_candidates.csv",
+          "kind": "candidate_scores",
+          "source_kind": "MOS scores / heuristic shortlist"
+        },
+        {
+          "path": "04-developability/raw/mos-export/case04_pkg/results/sequence_liabilities.json",
+          "kind": "sequence_risks",
+          "source_kind": "built-in motif and property calculations"
+        },
+        {
+          "path": "04-developability/raw/verified-residue-mapping.json",
+          "kind": "numbering",
+          "source_kind": "verified original RCSB atom-site map"
+        },
+        {
+          "path": "04-developability/visuals/candidate-score-tradeoffs.png",
+          "kind": "chart",
+          "source_kind": "local plot of actual MOS scores"
+        },
+        {
+          "path": "04-developability/visuals/candidate-residues.jpg",
+          "kind": "screenshot",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "04-developability/supplementary-risk-materials.md",
+          "kind": "supplementary_guide",
+          "source_kind": "internal GitLab reference / local motif annotation; not MOS output"
+        },
+        {
+          "path": "04-developability/raw/supplementary-liability-matches.json",
+          "kind": "supplementary_risk_sites",
+          "source_kind": "internal GitLab reference / local motif annotation; not MOS output"
+        },
+        {
+          "path": "04-developability/raw/supplementary-liability-matches.csv",
+          "kind": "supplementary_risk_table",
+          "source_kind": "internal GitLab reference / local motif annotation; not MOS output"
+        },
+        {
+          "path": "sources/developabilityliabilities/rules.json",
+          "kind": "supplementary_rule_catalogue",
+          "source_kind": "internal GitLab reference / local motif annotation; not MOS output"
+        },
+        {
+          "path": "sources/developabilityliabilities/source.json",
+          "kind": "supplementary_provenance",
+          "source_kind": "internal GitLab reference / local motif annotation; not MOS output"
+        }
+      ],
+      "visualization": "先显示受保护的 CDR/二硫键，再高亮允许修改的框架。以分列评分图和序列性质对比替代没有数据支撑的溶解性/聚集风险雷达图。",
+      "highlights": {
+        "renumbered_VHH_chain": "A",
+        "renumbered_PDL1_chain": "B",
+        "CDRs": {
+          "CDR1": [
+            26,
+            33
+          ],
+          "CDR2": [
+            51,
+            58
+          ],
+          "CDR3": [
+            97,
+            117
+          ]
+        },
+        "disulfides": [
+          [
+            22,
+            96
+          ],
+          [
+            33,
+            106
+          ]
+        ],
+        "candidate_domain_positions": [
+          19,
+          24,
+          34,
+          48,
+          61,
+          85,
+          87
+        ],
+        "original_VHH_auth_chain": "B",
+        "mapping": "04-developability/raw/verified-residue-mapping.json"
+      },
+      "limits": [
+        "未提供溶解性、聚集风险、Tm、表达量或 humanness 预测。",
+        "结构/序列/进化分数为模型任意单位，不是物理稳定性 ΔΔG。",
+        "Met 数量、理论 pI 与 motif 数量不是实验性能。",
+        "S85N 把 NS 换成 NN；仅指定 N[SGHT] motif 数量变为零，不能说消除了脱酰胺风险。",
+        "七突变组合仅留在原始归档中，无联合模拟，不用于官网候选成绩。",
+        "补充库含38条规则、12组；S85N 的 NS→NN 仍命中该库脱酰胺关注规则。固定 CDR/Fc 划分及偶数 Cys 无风险假设未采用；本补充没有 RSA。"
+      ],
+      "supplementary_liability_source": {
+        "source_kind": "internal GitLab rule reference and local motif matches; separate from MOS outputs",
+        "provenance": "sources/developabilityliabilities/source.json",
+        "rules": "sources/developabilityliabilities/rules.json",
+        "matches": "04-developability/raw/supplementary-liability-matches.json",
+        "guide": "04-developability/supplementary-risk-materials.md",
+        "rule_count": 38,
+        "group_count": 12,
+        "S85N_note": "NS84-85 becomes NN84-85; both are Medium motifs in this library. No claim of deamidation elimination."
+      },
+      "input": "04-developability/input.json",
+      "results": "04-developability/results.json",
+      "run_log": "04-developability/run-log.md",
+      "reference_sources": [
+        "sources/5JDS.cif"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Invent New Binders",
+      "module": "Protein Binder Design / De Novo",
+      "case": "Three new binders against human PD-L1 extracellular structure",
+      "status": "succeeded_with_quality_limits",
+      "description": "对统一 PD-L1 结合面使用三个独立种子生成新骨架、序列与预测复合物，展示候选多样性和置信度。",
+      "core_result": "三个独立设计均成功；得到 73、66、95 aa 新序列。95 aa 的 seed333 在返回结构中覆盖六个预设热点，其 Binder Cα 平均 pLDDT 为 82.60。",
+      "key_metrics": [
+        {
+          "label": "Completed independent designs",
+          "value": 3,
+          "unit": "designs",
+          "source_kind": "MOS task status",
+          "note": ""
+        },
+        {
+          "label": "Binder lengths",
+          "value": {
+            "seed111": 73,
+            "seed222": 66,
+            "seed333": 95
+          },
+          "unit": "aa",
+          "source_kind": "MOS aligned.cif sequences",
+          "note": ""
+        },
+        {
+          "label": "seed333 binder CA-mean pLDDT",
+          "value": 82.59842105263156,
+          "unit": "0–100",
+          "source_kind": "local averaging of MOS prediction B factors",
+          "note": "Explicit CA averaging, not the different all-atom mean in raw Mocha report"
+        },
+        {
+          "label": "seed333 hotspots within 4.5 Å",
+          "value": 6,
+          "unit": "of 6",
+          "source_kind": "geometry of MOS prediction",
+          "note": ""
+        }
+      ],
+      "assets": [
+        {
+          "path": "05-denovo/raw/direct-task-exports/seed333/raw/aligned.cif",
+          "kind": "hero_structure",
+          "source_kind": "MOS designed sequence + predicted complex"
+        },
+        {
+          "path": "05-denovo/raw/seed333-designed-complex.pdb",
+          "kind": "hero_structure_PDB",
+          "source_kind": "format conversion of MOS output"
+        },
+        {
+          "path": "05-denovo/raw/designed-binders.fasta",
+          "kind": "candidate_sequences",
+          "source_kind": "verified MOS output"
+        },
+        {
+          "path": "05-denovo/raw/seed333-verified-analysis.json",
+          "kind": "candidate_metrics_and_highlights",
+          "source_kind": "local audit of MOS output"
+        },
+        {
+          "path": "05-denovo/raw/seed111-verified-analysis.json",
+          "kind": "candidate_metrics",
+          "source_kind": "local audit of MOS output"
+        },
+        {
+          "path": "05-denovo/raw/seed222-verified-analysis.json",
+          "kind": "candidate_metrics",
+          "source_kind": "local audit of MOS output"
+        },
+        {
+          "path": "05-denovo/visuals/candidate-comparison.png",
+          "kind": "chart",
+          "source_kind": "local plot of actual output"
+        },
+        {
+          "path": "05-denovo/visuals/seed333-designed-complex.jpg",
+          "kind": "screenshot",
+          "source_kind": "MOS UI"
+        },
+        {
+          "path": "05-denovo/raw/mos-export/case05/target/PD-L1_5GRJ_chainA_target.mos.cif",
+          "kind": "target_input",
+          "source_kind": "experimental reference, target only"
+        }
+      ],
+      "visualization": "固定靶点，依次呈现三种真实 Binder；切换候选时保留相同热点，显示长度与实际置信度。可用 seed333 作首屏视觉、seed111 展示更大几何界面。",
+      "highlights": {
+        "output_binder_chain": "A",
+        "output_target_chain": "B",
+        "output_target_hotspots": [
+          37,
+          39,
+          41,
+          51,
+          96,
+          106
+        ],
+        "original_target_auth_hotspots": [
+          54,
+          56,
+          58,
+          68,
+          113,
+          123
+        ],
+        "seed333_ionic_examples": {
+          "binder_E84": "target R96 (original R113)",
+          "binder_R88": "target E41 (original E58)"
+        },
+        "mapping_and_distances": "05-denovo/raw/seed333-verified-analysis.json"
+      },
+      "limits": [
+        "没有 ipTM、pTM、PAE、Kd 或实验验证。",
+        "seed111/222 的 Binder 置信度较低；三种序列有不同程度的组成偏倚。",
+        "seed333 有两组链间重原子距离小于 2 Å，需几何松弛与进一步验证。",
+        "output.cif 中的 poly-Gly 和 B-factor 0/1 是骨架占位，不能用作最终序列或置信度。",
+        "热点覆盖和局部埋藏面积不是实验结合证据；排序不是亲和力排名。"
+      ],
+      "input": "05-denovo/input.json",
+      "results": "05-denovo/results.json",
+      "run_log": "05-denovo/run-log.md",
+      "reference_sources": [
+        "sources/5GRJ.cif"
+      ]
+    }
+  ]
+}

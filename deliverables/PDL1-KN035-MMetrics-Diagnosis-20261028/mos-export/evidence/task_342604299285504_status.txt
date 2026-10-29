@@ -1,0 +1,20 @@
+CheckMOSTask(342604299285504) — re-read 2026-10-28T08:44:5xZ
+
+[SUCCEED] autocompute-MMFold_1
+Type:     MOSTask
+Task ID:  342604299285504
+Started:  2026-10-21 02:20:28
+Duration: 1.1min
+
+Input parameters (verbatim):
+{
+  "structure_path": "user_objects/123/330665428816896/342604293768192_MMFold_1.cif",
+  "structure_pathFileId": "342604293768192",
+  "structure_pathFilename": "MMFold_1.cif"
+}
+
+Outputs (7 files): all_sequences.fasta, similarity_results.json, sequence_scores.csv,
+struct_fitness_scores.csv, affinity_scores.csv, evolutionary_scores.csv, sequence_info.fasta
+
+Note: the payload names no chain. There is no chain selector, no query sequence and no
+antigen/antibody parameter — chain roles are decided inside the service.

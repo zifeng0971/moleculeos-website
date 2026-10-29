@@ -1,0 +1,9 @@
+source_id	mutation	output_id
+kn035_vhh_wt	K87R	kn035_K87R
+kn035_vhh_wt	V48I	kn035_V48I
+kn035_vhh_wt	A24V	kn035_A24V
+kn035_vhh_wt	M34L	kn035_M34L
+kn035_vhh_wt	A61S	kn035_A61S
+kn035_vhh_wt	R19S	kn035_R19S
+kn035_vhh_wt	S85N	kn035_S85N
+kn035_vhh_wt	K87R_V48I_A24V_M34L_A61S_R19S_S85N	kn035_v1_combined

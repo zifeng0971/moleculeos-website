@@ -1,0 +1,501 @@
+hit_id,hit_db,description,hit_len,alignment_length,identical_residues,identity_percent_derived,identity_percent_reported,positives,gaps,e_value,bit_score,query_coverage_percent,query_from,query_to,web_link
+pdb|4NKI|H,pdb,"Chain H, Fab light chain [Homo sapiens]",232,120,120,100.0,1.0,120,0,7.92149e-85,249.98,100.0,1,120,https://www.rcsb.org/structure/4NKI
+pdb|5GRJ|H,pdb,"Chain H, avelumab H chain [Homo sapiens]",120,120,120,100.0,1.0,120,0,1.37605e-84,245.358,100.0,1,120,https://www.rcsb.org/structure/5GRJ
+pdb|4OGX|H,pdb,"Chain H, DX-2930 HEAVY CHAIN [Homo sapiens]",225,122,105,86.1,0.860655737704918,108,2,5.09116e-69,209.92,100.0,1,120,https://www.rcsb.org/structure/4OGX
+pdb|7LSB|B,pdb,"Chain B, B1 Fab heavy chain [Homo sapiens]",218,120,105,87.5,0.875,107,5,1.01021e-68,208.764,100.0,1,120,https://www.rcsb.org/structure/7LSB
+pdb|6SS5|HHH,pdb,"Chain HHH, Fab C0020187 heavy chain (IgG1) [Homo sapiens]",233,120,101,84.2,0.8416666666666667,108,0,1.68441e-67,206.068,100.0,1,120,https://www.rcsb.org/structure/6SS5
+pdb|9W7J|B,pdb,"Chain B, 10D5 Heavy Chain [Homo sapiens]",120,120,101,84.2,0.8416666666666667,107,0,7.14395e-69,205.682,100.0,1,120,https://www.rcsb.org/structure/9W7J
+pdb|8TFT|H,pdb,"Chain H, O-13-1 IgG1 Fab heavy chain [Homo sapiens]",227,122,104,85.2,0.8524590163934426,108,2,2.35728e-67,205.682,100.0,1,120,https://www.rcsb.org/structure/8TFT
+pdb|8CYH|H,pdb,"Chain H, A12 antibody heavy chain [Homo sapiens]",222,120,102,85.0,0.85,107,1,2.98426e-67,205.297,100.0,1,120,https://www.rcsb.org/structure/8CYH
+pdb|5I19|H,pdb,"Chain H, FAB HEAVY CHAIN [Homo sapiens]",228,120,102,85.0,0.85,108,1,3.93511e-67,205.297,100.0,1,120,https://www.rcsb.org/structure/5I19
+pdb|6UTA|A,pdb,"Chain A, Z004 iGL Fab heavy chain [Homo sapiens]",234,122,103,84.4,0.8442622950819673,108,2,5.24074e-67,204.912,100.0,1,120,https://www.rcsb.org/structure/6UTA
+pdb|8CXC|H,pdb,"Chain H, 3F2 Antibody heavy chain [Mus musculus]",218,120,102,85.0,0.85,107,1,4.44448e-67,204.527,100.0,1,120,https://www.rcsb.org/structure/8CXC
+pdb|8RP8|A,pdb,"Chain A, K2 Fab heavy chain [Homo sapiens]",223,120,102,85.0,0.85,107,4,5.0376e-67,204.527,100.0,1,120,https://www.rcsb.org/structure/8RP8
+pdb|6TXZ|H,pdb,"Chain H, Fab H [Homo sapiens]",229,120,102,85.0,0.85,107,3,7.01369e-67,204.527,100.0,1,120,https://www.rcsb.org/structure/6TXZ
+pdb|8CZ8|B,pdb,"Chain B, scFv of A12 anti-mesothelin antibody [Homo sapiens]",242,120,102,85.0,0.85,107,1,1.35291e-66,204.142,100.0,1,120,https://www.rcsb.org/structure/8CZ8
+pdb|7Y6K|E,pdb,"Chain E, Bispecific anitybody (scFv and light chain of the antibody) [Homo sapiens]",478,119,101,84.9,0.8487394957983193,106,1,9.7662e-64,204.142,100.0,1,118,https://www.rcsb.org/structure/7Y6K
+pdb|5CUS|H,pdb,"Chain H, IgG H chain [Homo sapiens]",221,120,102,85.0,0.85,106,2,1.09756e-66,203.756,100.0,1,120,https://www.rcsb.org/structure/5CUS
+pdb|8AS0|B,pdb,"Chain B, D12 antibody heavy chain, Fab fragment [Homo sapiens]",225,120,103,85.8,0.8583333333333333,106,2,1.32939e-66,203.756,100.0,1,120,https://www.rcsb.org/structure/8AS0
+pdb|5TSJ|1,pdb,"Chain 1, Human heavy chain domain antibody [Homo sapiens]",149,120,102,85.0,0.85,107,2,1.76147e-67,203.371,100.0,1,120,https://www.rcsb.org/structure/5TSJ
+pdb|5WHJ|H,pdb,"Chain H, DX-2507 Fab heavy chain [Homo sapiens]",219,120,102,85.0,0.85,106,4,1.21401e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/5WHJ
+pdb|9XY4|D,pdb,"Chain D, MEDI3622 Fab Light Chain [Homo sapiens]",216,120,103,85.8,0.8583333333333333,106,1,1.23166e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/9XY4
+pdb|9O58|D,pdb,"Chain D, MEDI3622 Fab Heavy Chain [Homo sapiens]",221,120,103,85.8,0.8583333333333333,106,1,1.47446e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/9O58
+pdb|6GHG|A,pdb,"Chain A, Fab heavy chain [Homo sapiens]",218,120,102,85.0,0.85,107,5,1.47985e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/6GHG
+pdb|9O54|D,pdb,"Chain D, MEDI3622 Fab Heavy Chain [Homo sapiens]",223,120,103,85.8,0.8583333333333333,106,1,1.57041e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/9O54
+pdb|7S0C|H,pdb,"Chain H, N-612-017 Fab Heavy Chain [Homo sapiens]",230,123,102,82.9,0.8292682926829268,108,3,1.79275e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/7S0C
+pdb|3UX9|B,pdb,"Chain B, ScFv antibody [Homo sapiens]",256,121,103,85.1,0.8512396694214877,109,3,4.93252e-66,203.371,100.0,1,120,https://www.rcsb.org/structure/3UX9
+pdb|3HI5|H,pdb,"Chain H, Heavy chain of Fab fragment of AL-57 against alpha L I domain [Homo sapiens]",220,120,100,83.3,0.8333333333333334,105,0,2.18833e-66,202.986,100.0,1,120,https://www.rcsb.org/structure/3HI5
+pdb|35UH|A,pdb,"Chain A, TFPI-23-Fab Heavy chain [Homo sapiens]",223,120,98,81.7,0.8166666666666667,108,0,2.27738e-66,202.986,100.0,1,120,https://www.rcsb.org/structure/35UH
+pdb|2VXS|H,pdb,"Chain H, FAB FRAGMENT [Homo sapiens]",225,120,103,85.8,0.8583333333333333,107,2,2.79557e-66,202.986,100.0,1,120,https://www.rcsb.org/structure/2VXS
+pdb|7CZR|H,pdb,"Chain H, IG c542_heavy_IGHV3-53_IGHD3-10_IGHJ6,IGH@ protein [Homo sapiens]",445,120,102,85.0,0.85,105,5,1.23901e-63,202.986,100.0,1,120,https://www.rcsb.org/structure/7CZR
+pdb|3ZHK|A,pdb,"Chain A, MG2X1 SCAFFOLD ANTIBODY [Homo sapiens]",127,120,102,85.0,0.85,106,1,1.47107e-67,202.601,100.0,1,120,https://www.rcsb.org/structure/3ZHK
+pdb|5BK5|B,pdb,"Chain B, germline antibody, heavy chain [Homo sapiens]",224,121,102,84.3,0.8429752066115702,106,1,3.40811e-66,202.601,100.0,1,120,https://www.rcsb.org/structure/5BK5
+pdb|8XSE|H,pdb,"Chain H, IMCAS-123 H chain [Homo sapiens]",226,123,101,82.1,0.8211382113821138,109,3,3.75005e-66,202.601,100.0,1,120,https://www.rcsb.org/structure/8XSE
+pdb|4OQT|H,pdb,"Chain H, Heavy Chain of Li81 Fab, VH3-23 [Homo sapiens]",235,120,102,85.0,0.85,104,2,4.08147e-66,202.601,100.0,1,120,https://www.rcsb.org/structure/4OQT
+pdb|6KTR|A,pdb,"Chain A, G1A8-Fab-HC [Homo sapiens]",233,120,101,84.2,0.8416666666666667,107,1,4.27751e-66,202.601,100.0,1,120,https://www.rcsb.org/structure/6KTR
+pdb|5HHV|H,pdb,"Chain H, CAT-2000 FAB heavy chain [Homo sapiens]",237,120,103,85.8,0.8583333333333333,107,2,5.06135e-66,202.601,100.0,1,120,https://www.rcsb.org/structure/5HHV
+pdb|6J6Y|B,pdb,"Chain B, Fab Heavy chain [synthetic construct]",249,120,102,85.0,0.85,106,2,9.12396e-66,202.216,100.0,1,120,https://www.rcsb.org/structure/6J6Y
+pdb|7YUE|A,pdb,"Chain A, Single chain variable Fragment [Homo sapiens]",253,118,100,84.7,0.847457627118644,103,4,1.06579e-65,202.216,100.0,1,118,https://www.rcsb.org/structure/7YUE
+pdb|6SC5|B,pdb,"Chain B, Single domain antibody [synthetic construct]",120,120,100,83.3,0.8333333333333334,104,0,2.69858e-67,201.83,100.0,1,120,https://www.rcsb.org/structure/6SC5
+pdb|7KMI|A,pdb,"Chain A, LY-CoV481 Fab heavy chain [Homo sapiens]",220,120,103,85.8,0.8583333333333333,106,4,5.91837e-66,201.83,100.0,1,120,https://www.rcsb.org/structure/7KMI
+pdb|9MI6|H,pdb,"Chain H, nipocalimab Fab heavy chain [Homo sapiens]",220,120,101,84.2,0.8416666666666667,106,4,5.91837e-66,201.83,100.0,1,120,https://www.rcsb.org/structure/9MI6
+pdb|5FV2|A,pdb,"Chain A, VH DOMAIN ANTIBODY [Homo sapiens]",116,120,100,83.3,0.8333333333333334,105,4,2.56081e-67,201.445,100.0,1,120,https://www.rcsb.org/structure/5FV2
+pdb|6II8|G,pdb,"Chain G, Heavy chain of L4B-18 Fab [Homo sapiens]",223,125,103,82.4,0.824,110,5,1.06373e-65,201.445,100.0,1,120,https://www.rcsb.org/structure/6II8
+pdb|23VF|B,pdb,"Chain B, MG1124 Heavy Chain [Homo sapiens]",231,121,101,83.5,0.8347107438016529,104,1,1.39656e-65,201.445,100.0,1,120,https://www.rcsb.org/structure/23VF
+pdb|8DY2|A,pdb,"Chain A, spFv GLK1 LH [Homo sapiens]",252,120,101,84.2,0.8416666666666667,107,1,2.73053e-65,201.445,100.0,1,120,https://www.rcsb.org/structure/8DY2
+pdb|6AZM|B,pdb,"Chain B, germline antibody, heavy chain [Homo sapiens]",225,125,102,81.6,0.816,107,5,1.42484e-65,201.06,100.0,1,120,https://www.rcsb.org/structure/6AZM
+pdb|8ZHD|F,pdb,"Chain F, Heavy chain of R1-26 Fab [Homo sapiens]",243,120,98,81.7,0.8166666666666667,106,0,2.18734e-65,201.06,100.0,1,120,https://www.rcsb.org/structure/8ZHD
+pdb|8ZHG|H,pdb,"Chain H, Heavy chain of R1-26 Fab [Homo sapiens]",139,120,98,81.7,0.8166666666666667,106,0,1.13907e-66,200.675,100.0,1,120,https://www.rcsb.org/structure/8ZHG
+pdb|8P2E|A,pdb,"Chain A, B1 fab light [Homo sapiens]",223,120,101,84.2,0.8416666666666667,105,2,1.62918e-65,200.675,100.0,1,120,https://www.rcsb.org/structure/8P2E
+pdb|7MZI|H,pdb,"Chain H, WCSL 129 heavy chain [Homo sapiens]",224,120,99,82.5,0.825,106,3,1.66283e-65,200.675,100.0,1,120,https://www.rcsb.org/structure/7MZI
+pdb|4QHU|B,pdb,"Chain B, Fab6785 heavy chain [Homo sapiens]",224,120,100,83.3,0.8333333333333334,106,5,2.06911e-65,200.675,100.0,1,120,https://www.rcsb.org/structure/4QHU
+pdb|9Q7Y|D,pdb,"Chain D, MEDI3622 Fab Heavy Chain [Homo sapiens]",118,119,102,85.7,0.8571428571428571,105,1,9.86062e-67,200.29,100.0,1,119,https://www.rcsb.org/structure/9Q7Y
+pdb|7CJ2|C,pdb,"Chain C, Fab(Heavy chain) [Homo sapiens]",222,120,101,84.2,0.8416666666666667,105,5,2.41812e-65,200.29,100.0,1,120,https://www.rcsb.org/structure/7CJ2
+pdb|7S0E|H,pdb,"Chain H, N-612-004 Fab heavy chain [Homo sapiens]",228,121,101,83.5,0.8347107438016529,106,1,2.98232e-65,200.29,100.0,1,120,https://www.rcsb.org/structure/7S0E
+pdb|7S0B|A,pdb,"Chain A, N-612-056 Fab Heavy Chain [Homo sapiens]",228,121,102,84.3,0.8429752066115702,106,1,4.71926e-65,199.904,100.0,1,120,https://www.rcsb.org/structure/7S0B
+pdb|9VSO|G,pdb,"Chain G, Q2L_Fab_heavy chain [Homo sapiens]",244,120,101,84.2,0.8416666666666667,104,4,7.66281e-65,199.904,100.0,1,120,https://www.rcsb.org/structure/9VSO
+pdb|3KR3|H,pdb,"Chain H, antibody-Fab (heavy chain) [Homo sapiens]",251,122,102,83.6,0.8360655737704918,106,2,9.19008e-65,199.904,100.0,1,120,https://www.rcsb.org/structure/3KR3
+pdb|9ZBW|G,pdb,"Chain G, Antibody HB148 Fab Heavy Chain [Homo sapiens]",221,120,102,85.0,0.85,106,2,6.6924e-65,199.134,100.0,1,120,https://www.rcsb.org/structure/9ZBW
+pdb|3SKJ|H,pdb,"Chain H, Antibody, heavy chain [Homo sapiens]",231,128,101,78.9,0.7890625,104,8,8.65927e-65,199.134,100.0,1,120,https://www.rcsb.org/structure/3SKJ
+pdb|7D85|B,pdb,"Chain B, Anti-ErbB3 Fab heavy chain [Homo sapiens]",228,121,98,81.0,0.8099173553719008,105,1,1.03646e-64,199.134,100.0,1,120,https://www.rcsb.org/structure/7D85
+pdb|8IA6|A,pdb,"Chain A, scFv antibody [Homo sapiens]",252,118,100,84.7,0.847457627118644,103,4,1.65303e-64,199.134,100.0,1,118,https://www.rcsb.org/structure/8IA6
+pdb|7LK9|A,pdb,"Chain A, COV107-23 heavy chain [Homo sapiens]",220,120,104,86.7,0.8666666666666667,107,3,9.82547e-65,198.749,100.0,1,120,https://www.rcsb.org/structure/7LK9
+pdb|7R40|D,pdb,"Chain D, 87G7 heavy chain variable region [Homo sapiens]",227,120,98,81.7,0.8166666666666667,106,0,1.0845e-64,198.749,100.0,1,120,https://www.rcsb.org/structure/7R40
+pdb|7S0D|H,pdb,"Chain H, N-612-014 Fab Heavy Chain [Homo sapiens]",228,121,101,83.5,0.8347107438016529,106,1,1.3181e-64,198.749,100.0,1,120,https://www.rcsb.org/structure/7S0D
+pdb|7F3Q|C,pdb,"Chain C, Heavy chain of A5-10 Fab [Homo sapiens]",227,127,102,80.3,0.8031496062992126,106,7,1.37922e-64,198.749,100.0,1,120,https://www.rcsb.org/structure/7F3Q
+pdb|8DY0|A,pdb,"Chain A, spFv GLK1 HL [Homo sapiens]",252,118,99,83.9,0.8389830508474576,105,1,2.58576e-64,198.749,100.0,1,118,https://www.rcsb.org/structure/8DY0
+pdb|8H3B|A,pdb,"Chain A, Single Chain Variable Fragment [Homo sapiens]",253,118,98,83.1,0.8305084745762712,102,4,2.9088e-64,198.749,100.0,1,118,https://www.rcsb.org/structure/8H3B
+pdb|7Y6K|J,pdb,"Chain J, Heavy chain from K202.B antibody [Homo sapiens]",454,127,99,78.0,0.7795275590551181,104,7,5.45684e-62,198.749,100.0,1,120,https://www.rcsb.org/structure/7Y6K
+pdb|8YEG|A,pdb,"Chain A, heavy chain of F5-187 [Homo sapiens]",122,122,99,81.1,0.8114754098360656,107,2,6.63543e-66,198.364,100.0,1,120,https://www.rcsb.org/structure/8YEG
+pdb|8WNP|B,pdb,"Chain B, VH Chains [Homo sapiens]",224,120,100,83.3,0.8333333333333334,106,5,1.47964e-64,198.364,100.0,1,120,https://www.rcsb.org/structure/8WNP
+pdb|7S4S|H,pdb,"Chain H, CoV11 heavy chain [Homo sapiens]",221,120,100,83.3,0.8333333333333334,105,2,1.55275e-64,198.364,100.0,1,120,https://www.rcsb.org/structure/7S4S
+pdb|9DZF|H,pdb,"Chain H, XX16 - Heavy chain [Mus musculus]",228,125,100,80.0,0.8,105,5,1.73213e-64,198.364,100.0,1,120,https://www.rcsb.org/structure/9DZF
+pdb|7KQK|A,pdb,"Chain A, Heavy chain of Fab fragment [Homo sapiens]",230,127,100,78.7,0.7874015748031497,106,7,1.94682e-64,198.364,100.0,1,120,https://www.rcsb.org/structure/7KQK
+pdb|5CSZ|A,pdb,"Chain A, GANTENERUMAB FAB FRAGMENT HEAVY CHAIN [Homo sapiens]",228,126,101,80.2,0.8015873015873016,107,6,1.99649e-64,198.364,100.0,1,120,https://www.rcsb.org/structure/5CSZ
+pdb|8C8P|H,pdb,"Chain H, Heavy-chain-only antibody 10D12 [Mus musculus]",371,121,99,81.8,0.8181818181818182,106,2,1.19487e-62,198.364,100.0,1,120,https://www.rcsb.org/structure/8C8P
+pdb|8Y0Y|D,pdb,"Chain D, 123-316 scDb [Homo sapiens]",542,121,99,81.8,0.8181818181818182,107,3,5.99987e-61,198.364,100.0,1,118,https://www.rcsb.org/structure/8Y0Y
+pdb|7DUN|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",223,122,99,81.1,0.8114754098360656,107,2,2.22042e-64,197.978,100.0,1,120,https://www.rcsb.org/structure/7DUN
+pdb|7DHA|C,pdb,"Chain C, Heavy Chain [Homo sapiens]",234,122,99,81.1,0.8114754098360656,107,2,2.59639e-64,197.978,100.0,1,120,https://www.rcsb.org/structure/7DHA
+pdb|8DY1|C,pdb,"Chain C, scFv CAT2200 LH [Homo sapiens]",255,120,102,85.0,0.85,106,2,5.0503e-64,197.978,100.0,1,120,https://www.rcsb.org/structure/8DY1
+pdb|9V5N|A,pdb,"Chain A, scFv antibody [Homo sapiens]",253,118,99,83.9,0.8389830508474576,103,4,5.65941e-64,197.978,100.0,1,118,https://www.rcsb.org/structure/9V5N
+pdb|9ZBX|H,pdb,"Chain H, Antibody HB148-M4 Fab Heavy Chain [Homo sapiens]",221,120,101,84.2,0.8416666666666667,104,2,3.12533e-64,197.593,100.0,1,120,https://www.rcsb.org/structure/9ZBX
+pdb|8JEL|A,pdb,"Chain A, antibody heavy chain [Homo sapiens]",222,120,98,81.7,0.8166666666666667,105,1,3.26004e-64,197.593,100.0,1,120,https://www.rcsb.org/structure/8JEL
+pdb|8JEP|A,pdb,"Chain A, antibody heavy chain [Homo sapiens]",228,120,98,81.7,0.8166666666666667,105,1,3.93063e-64,197.593,100.0,1,120,https://www.rcsb.org/structure/8JEP
+pdb|4TSA|H,pdb,"Chain H, FAb Heavy Chain [Homo sapiens]",222,120,100,83.3,0.8333333333333334,107,3,5.56922e-64,196.823,100.0,1,120,https://www.rcsb.org/structure/4TSA
+pdb|4K94|H,pdb,"Chain H, Fab19 light chain [Homo sapiens]",220,120,97,80.8,0.8083333333333333,102,3,5.5863e-64,196.823,100.0,1,120,https://www.rcsb.org/structure/4K94
+pdb|4TSC|H,pdb,"Chain H, FAb Heavy Chain [Homo sapiens]",222,120,100,83.3,0.8333333333333334,107,3,6.01198e-64,196.823,100.0,1,120,https://www.rcsb.org/structure/4TSC
+pdb|4QCI|B,pdb,"Chain B, anti-PDGF-BB antibody - Heavy chain [Homo sapiens]",223,120,98,81.7,0.8166666666666667,103,0,6.55094e-64,196.823,100.0,1,120,https://www.rcsb.org/structure/4QCI
+pdb|7CJF|A,pdb,"Chain A, antibody heavy chain [Homo sapiens]",228,120,100,83.3,0.8333333333333334,106,2,8.17271e-64,196.823,100.0,1,120,https://www.rcsb.org/structure/7CJF
+pdb|8H73|D,pdb,"Chain D, Single Chain Variable Fragment [Homo sapiens]",253,118,99,83.9,0.8389830508474576,102,4,1.77946e-63,196.823,100.0,1,118,https://www.rcsb.org/structure/8H73
+pdb|7CZQ|H,pdb,"Chain H, IG c642_heavy_IGHV3-53_IGHD1-26_IGHJ6,Chain H of P2B-1A10,Immunoglobulin gamma-1 heavy chain [Homo sapiens]",451,122,101,82.8,0.8278688524590164,106,3,3.40198e-61,196.823,100.0,1,120,https://www.rcsb.org/structure/7CZQ
+pdb|8EK5|E,pdb,"Chain E, 10LH single chain fragment variable (scFv) [Homo sapiens]",464,120,98,81.7,0.8166666666666667,104,1,4.14088e-61,196.823,100.0,1,120,https://www.rcsb.org/structure/8EK5
+pdb|1VHP|A,pdb,"Chain A, VH-P8 [Homo sapiens]",117,120,99,82.5,0.825,105,3,2.59472e-65,196.438,100.0,1,120,https://www.rcsb.org/structure/1VHP
+pdb|7TN9|M,pdb,"Chain M, REGN3479 heavy chain [Mus musculus]",217,120,99,82.5,0.825,105,2,6.90626e-64,196.438,100.0,1,120,https://www.rcsb.org/structure/7TN9
+pdb|5F3H|A,pdb,"Chain A, humanized RK35 antibody heavy chain [Mus musculus]",221,120,98,81.7,0.8166666666666667,103,4,8.44944e-64,196.438,100.0,1,120,https://www.rcsb.org/structure/5F3H
+pdb|8RTX|B,pdb,"Chain B, Anti-IC Fab fragment B12 heavy chain [Mus musculus]",227,120,99,82.5,0.825,105,2,8.55239e-64,196.438,100.0,1,120,https://www.rcsb.org/structure/8RTX
+pdb|6HHC|H,pdb,"Chain H, FXIA ANTIBODY FAB HEAVY CHAIN [Homo sapiens]",227,120,100,83.3,0.8333333333333334,102,0,9.03259e-64,196.438,100.0,1,120,https://www.rcsb.org/structure/6HHC
+pdb|5D70|H,pdb,"Chain H, Immunglobulin G1 Fab fragment, heavy chain [Homo sapiens]",236,120,101,84.2,0.8416666666666667,106,5,1.16759e-63,196.438,100.0,1,120,https://www.rcsb.org/structure/5D70
+pdb|4Y5X|A,pdb,"Chain A, diabody 310 VL domain [Homo sapiens]",136,124,98,79.0,0.7903225806451613,105,4,7.35772e-65,196.052,100.0,1,120,https://www.rcsb.org/structure/4Y5X
+pdb|4K9E|H,pdb,"Chain H, heavy chain [Mus musculus]",221,120,96,80.0,0.8,102,3,1.16003e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/4K9E
+pdb|8HN7|B,pdb,"Chain B, Heavy chain of monoclonal antibody 3C11 [Homo sapiens]",221,120,94,78.3,0.7833333333333333,105,0,1.18567e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/8HN7
+pdb|3KYK|H,pdb,"Chain H, Heavy Chain Li33 IgG1 [Homo sapiens]",227,120,101,84.2,0.8416666666666667,104,1,1.42921e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/3KYK
+pdb|3TNN|A,pdb,"Chain A, Fab heavy chain of ADCC and non-neutralizing anti-HIV-1 antibody N5-i5 [Homo sapiens]",226,121,100,82.6,0.8264462809917356,108,3,1.43166e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/3TNN
+pdb|6SRV|HHH,pdb,"Chain HHH, Fab C0021144 heavy chain (IgG1) [Homo sapiens]",233,120,97,80.8,0.8083333333333333,105,0,1.46096e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/6SRV
+pdb|2QQN|H,pdb,"Chain H, Antibody heavy chain [Homo sapiens]",230,123,99,80.5,0.8048780487804879,104,3,1.46904e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/2QQN
+pdb|7E5S|R,pdb,"Chain R, HB27 heavy chain [Homo sapiens]",223,120,95,79.2,0.7916666666666666,104,0,1.4706e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/7E5S
+pdb|7C01|C,pdb,"Chain C, CB6 heavy chain [Homo sapiens]",233,120,100,83.3,0.8333333333333334,105,1,1.59435e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/7C01
+pdb|3KYM|B,pdb,"Chain B, Heavy Chain Li33 IgG2 [Homo sapiens]",227,120,101,84.2,0.8416666666666667,104,1,1.66541e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/3KYM
+pdb|4ZFF|A,pdb,"Chain A, Fragment antigen binding (Fab) 5A12 Heavy chain [Homo sapiens]",228,120,95,79.2,0.7916666666666666,102,0,1.7179e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/4ZFF
+pdb|3NH7|H,pdb,"Chain H, Antibody fragment Fab AbD1556, heavy chain [Homo sapiens]",234,120,96,80.0,0.8,104,0,1.77497e-63,196.052,100.0,1,120,https://www.rcsb.org/structure/3NH7
+pdb|8JSB|A,pdb,"Chain A, single chain variable fragment [Homo sapiens]",253,118,97,82.2,0.8220338983050848,102,4,3.42423e-63,196.052,100.0,1,118,https://www.rcsb.org/structure/8JSB
+pdb|7YVG|I,pdb,"Chain I, TH132 Fab heavy chain [Homo sapiens]",118,120,100,83.3,0.8333333333333334,105,2,7.11386e-65,195.667,100.0,1,120,https://www.rcsb.org/structure/7YVG
+pdb|8R9W|D,pdb,"Chain D, 22C10 antibody heavy chain [Homo sapiens]",121,121,98,81.0,0.8099173553719008,106,2,7.25645e-65,195.667,100.0,1,119,https://www.rcsb.org/structure/8R9W
+pdb|7NP1|H,pdb,"Chain H, Immunoglobulin gamma-1 heavy chain [Homo sapiens]",224,122,100,82.0,0.819672131147541,108,3,1.76789e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/7NP1
+pdb|12QD|A,pdb,"Chain A, CM12.1 Fab heavy chain [Macaca mulatta]",221,120,98,81.7,0.8166666666666667,104,1,1.79605e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/12QD
+pdb|8AHN|H,pdb,"Chain H, Fab SNV-42 heavy chain [Homo sapiens]",223,120,96,80.0,0.8,102,0,1.84993e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/8AHN
+pdb|2FJF|B,pdb,"Chain B, Heavy Chain of a VEGF binding Antibody [Homo sapiens]",227,120,95,79.2,0.7916666666666666,102,0,2.02734e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/2FJF
+pdb|9DPE|H,pdb,"Chain H, Human IgG1 Fragment Antibody Heavy Chain [Homo sapiens]",233,122,98,80.3,0.8032786885245902,104,2,2.11791e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/9DPE
+pdb|7WOG|A,pdb,"Chain A, 553-49 VH [Homo sapiens]",228,122,99,81.1,0.8114754098360656,105,2,2.1374e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/7WOG
+pdb|9KUR|G,pdb,"Chain G, 400Fab Heavy chain [Homo sapiens]",235,130,100,76.9,0.7692307692307693,104,10,2.32768e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/9KUR
+pdb|5I1E|H,pdb,"Chain H, FAB HEAVY CHAIN [Homo sapiens]",227,120,99,82.5,0.825,106,2,2.38833e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/5I1E
+pdb|9B82|H,pdb,"Chain H, COVA2-15 antibody heavy chain [Homo sapiens]",232,130,102,78.5,0.7846153846153846,108,11,2.44562e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/9B82
+pdb|5FGB|C,pdb,"Chain C, Anti-HCV E2 Fab HC84-1 heavy chain [Homo sapiens]",269,127,98,77.2,0.7716535433070866,107,7,6.44655e-63,195.667,100.0,1,120,https://www.rcsb.org/structure/5FGB
+pdb|9DMS|F,pdb,"Chain F, Fab6 heavy chain [Homo sapiens]",290,124,97,78.2,0.782258064516129,104,4,1.50127e-62,195.667,100.0,1,120,https://www.rcsb.org/structure/9DMS
+pdb|9KVE|E,pdb,"Chain E, The heavy chain of 4A5 [Macaca mulatta]",123,123,95,77.2,0.7723577235772358,105,3,1.05229e-64,195.282,100.0,1,120,https://www.rcsb.org/structure/9KVE
+pdb|8F0I|C,pdb,"Chain C, COVA309-22 heavy chain [Homo sapiens]",223,121,100,82.6,0.8264462809917356,107,2,2.35265e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/8F0I
+pdb|5VYF|B,pdb,"Chain B, Antibody Fab heavy chain [Mus musculus]",220,120,98,81.7,0.8166666666666667,104,5,2.52428e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/5VYF
+pdb|6FOE|A,pdb,"Chain A, Fab BaxB01 heavy chain [Homo sapiens]",225,120,100,83.3,0.8333333333333334,105,2,2.64423e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/6FOE
+pdb|3KDM|B,pdb,"Chain B, Immunoglobulin heavy chain [Homo sapiens]",225,121,100,82.6,0.8264462809917356,105,2,2.76235e-63,195.282,99.2,2,120,https://www.rcsb.org/structure/3KDM
+pdb|6XDG|B,pdb,"Chain B, REGN10933 antibody Fab fragment heavy chain [Homo sapiens]",226,120,94,78.3,0.7833333333333333,105,0,2.88079e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/6XDG
+pdb|7KFY|H,pdb,"Chain H, heavy chain of human antibody C1A-F10 Fab [Homo sapiens]",225,120,100,83.3,0.8333333333333334,106,2,3.01467e-63,195.282,100.0,1,119,https://www.rcsb.org/structure/7KFY
+pdb|7KFV|C,pdb,"Chain C, Heavy chain of antibody C1A-B12 Fab [Homo sapiens]",225,120,100,83.3,0.8333333333333334,106,2,3.14934e-63,195.282,100.0,1,119,https://www.rcsb.org/structure/7KFV
+pdb|9R2E|A,pdb,"Chain A, ARGX-121 Fab fragment heavy chain [Homo sapiens]",244,122,98,80.3,0.8032786885245902,106,6,4.79912e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/9R2E
+pdb|3BN9|D,pdb,"Chain D, E2 Fab Heavy Chain [Homo sapiens]",257,128,98,76.6,0.765625,108,8,7.51541e-63,195.282,100.0,1,120,https://www.rcsb.org/structure/3BN9
+pdb|9IB1|H,pdb,"Chain H, Heavy chain of antibody MO176-117 [Homo sapiens]",448,120,102,85.0,0.85,105,2,1.1385e-60,195.282,100.0,1,120,https://www.rcsb.org/structure/9IB1
+pdb|4UU9|A,pdb,"Chain A, MEDI7814 [Homo sapiens]",123,123,100,81.3,0.8130081300813008,106,4,1.29613e-64,194.897,100.0,1,119,https://www.rcsb.org/structure/4UU9
+pdb|9UHH|A,pdb,"Chain A, BA5_12_H [Homo sapiens]",119,120,98,81.7,0.8166666666666667,105,1,1.43451e-64,194.897,100.0,1,120,https://www.rcsb.org/structure/9UHH
+pdb|9Q8L|H,pdb,"Chain H, Heavy chain of huIgG1-Fab [Mus musculus]",218,120,99,82.5,0.825,104,5,3.04919e-63,194.897,100.0,1,120,https://www.rcsb.org/structure/9Q8L
+pdb|9JQV|C,pdb,"Chain C, SD12 heavy chain [Homo sapiens]",223,121,99,81.8,0.8181818181818182,105,1,3.05809e-63,194.897,100.0,1,120,https://www.rcsb.org/structure/9JQV
+pdb|9MML|H,pdb,"Chain H, 1A6 heavy chain [Homo sapiens]",223,120,99,82.5,0.825,103,1,3.60273e-63,194.897,100.0,1,120,https://www.rcsb.org/structure/9MML
+pdb|9ARU|D,pdb,"Chain D, COVA2-15 heavy chain variable region [Homo sapiens]",129,130,102,78.5,0.7846153846153846,108,11,2.11575e-64,194.512,100.0,1,120,https://www.rcsb.org/structure/9ARU
+pdb|2VYR|E,pdb,"Chain E, Human Single Domain Antibody [Homo sapiens]",153,124,97,78.2,0.782258064516129,102,4,5.42912e-64,194.512,100.0,1,120,https://www.rcsb.org/structure/2VYR
+pdb|3GJE|B,pdb,"Chain B, Fab Heavy Chain [Homo sapiens]",220,120,100,83.3,0.8333333333333334,104,1,5.48419e-63,194.512,100.0,1,120,https://www.rcsb.org/structure/3GJE
+pdb|7ENF|P,pdb,"Chain P, Heavy chain of Fab30 [Homo sapiens]",230,123,98,79.7,0.7967479674796748,104,3,5.56899e-63,194.512,100.0,1,120,https://www.rcsb.org/structure/7ENF
+pdb|8E7M|H,pdb,"Chain H, 05B04 Heavy Chain [Homo sapiens]",227,121,98,81.0,0.8099173553719008,103,1,5.59966e-63,194.512,100.0,1,120,https://www.rcsb.org/structure/8E7M
+pdb|7UIH|F,pdb,"Chain F, Fab 8 HC CDRs [Homo sapiens]",229,120,97,80.8,0.8083333333333333,102,1,5.89252e-63,194.512,100.0,1,120,https://www.rcsb.org/structure/7UIH
+pdb|8WNU|B,pdb,"Chain B, VH [Homo sapiens]",225,120,98,81.7,0.8166666666666667,105,4,6.40671e-63,194.512,100.0,1,120,https://www.rcsb.org/structure/8WNU
+pdb|6G8R|A,pdb,"Chain A, single-chain variable fragment [Homo sapiens]",250,118,98,83.1,0.8305084745762712,102,1,9.83101e-63,194.512,100.0,1,118,https://www.rcsb.org/structure/6G8R
+pdb|9DVQ|G,pdb,"Chain G, SUMO-I3 [Lama glama]",240,123,96,78.0,0.7804878048780488,104,3,1.01702e-62,194.512,100.0,1,120,https://www.rcsb.org/structure/9DVQ
+pdb|13BR|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",242,123,101,82.1,0.8211382113821138,106,4,1.05776e-62,194.512,100.0,1,120,https://www.rcsb.org/structure/13BR
+pdb|8DY5|A,pdb,"Chain A, spFv CAT2200 LH [Homo sapiens]",251,120,101,84.2,0.8416666666666667,105,2,1.08187e-62,194.512,100.0,1,120,https://www.rcsb.org/structure/8DY5
+pdb|7KQB|H,pdb,"Chain H, Fab 5A6 heavy chain [Homo sapiens]",449,120,96,80.0,0.8,104,1,2.44087e-60,194.512,100.0,1,120,https://www.rcsb.org/structure/7KQB
+pdb|3ZHL|A,pdb,"Chain A, MG8-14 SCAFFOLD ANTIBODY [Homo sapiens]",127,120,100,83.3,0.8333333333333334,103,1,3.21334e-64,194.126,100.0,1,120,https://www.rcsb.org/structure/3ZHL
+pdb|1IGM|H,pdb,"Chain H, IGM-KAPPA POT FV (HEAVY CHAIN) [Homo sapiens]",129,121,95,78.5,0.7851239669421488,105,1,3.28083e-64,194.126,100.0,1,120,https://www.rcsb.org/structure/1IGM
+pdb|7WSL|H,pdb,"Chain H, heavy chain [Homo sapiens]",228,120,98,81.7,0.8166666666666667,102,4,7.18604e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/7WSL
+pdb|1NL0|H,pdb,"Chain H, anti-factor IX antibody, 10C12, chain H [Homo sapiens]",224,119,92,77.3,0.773109243697479,102,0,7.39732e-63,194.126,99.2,2,120,https://www.rcsb.org/structure/1NL0
+pdb|2V7N|B,pdb,"Chain B, IMMUNOGLOBULIN HEAVY CHAIN [synthetic construct]",229,120,98,81.7,0.8166666666666667,104,1,8.08853e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/2V7N
+pdb|9WWH|A,pdb,"Chain A, Tozorakimab-Heavy chain [Homo sapiens]",228,126,100,79.4,0.7936507936507936,103,6,8.10351e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/9WWH
+pdb|6XCM|H,pdb,"Chain H, C105 Fab Heavy Chain [Homo sapiens]",230,120,100,83.3,0.8333333333333334,106,2,8.25167e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/6XCM
+pdb|8OZ3|A,pdb,"Chain A, Single chain Fv [Homo sapiens]",230,120,97,80.8,0.8083333333333333,103,2,8.62016e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/8OZ3
+pdb|6XCA|H,pdb,"Chain H, C105 Heavy Chain [Homo sapiens]",230,120,100,83.3,0.8333333333333334,106,2,8.90729e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/6XCA
+pdb|9FQO|A,pdb,"Chain A, C0083 Fab heavy chain [Homo sapiens]",226,120,99,82.5,0.825,104,2,9.37399e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/9FQO
+pdb|7ND3|H,pdb,"Chain H, COVOX-40 heavy chain [Homo sapiens]",237,120,99,82.5,0.825,102,1,9.79781e-63,194.126,100.0,1,120,https://www.rcsb.org/structure/7ND3
+pdb|7TR4|L,pdb,"Chain L, Heavy chain [Homo sapiens]",220,120,100,83.3,0.8333333333333334,104,1,8.87019e-63,193.741,100.0,1,120,https://www.rcsb.org/structure/7TR4
+pdb|8EPA|H,pdb,"Chain H, REGN7257 Fab heavy chain [Mus musculus]",220,121,94,77.7,0.7768595041322314,103,1,1.01131e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/8EPA
+pdb|7D0C|G,pdb,"Chain G, Heavy chain of P5A-3A1 [Homo sapiens]",219,120,101,84.2,0.8416666666666667,105,3,1.02409e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/7D0C
+pdb|9X05|D,pdb,"Chain D, Tozorakimab-H chain [Homo sapiens]",227,126,100,79.4,0.7936507936507936,103,6,1.03237e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/9X05
+pdb|9PWN|H,pdb,"Chain H, Fab Heavy Chain [Homo sapiens]",221,124,100,80.6,0.8064516129032258,106,6,1.1262e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/9PWN
+pdb|6CR1|H,pdb,"Chain H, Heavy chain of adalimumab EFab (VH-IgE CH2) [Homo sapiens]",231,121,94,77.7,0.7768595041322314,106,1,1.19394e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/6CR1
+pdb|4NYL|A,pdb,"Chain A, Adalimumab Heavy Chain [Homo sapiens]",230,121,94,77.7,0.7768595041322314,106,1,1.30546e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/4NYL
+pdb|4P59|H,pdb,"Chain H, MOR09825 Fab fragment heavy chain [Homo sapiens]",238,120,98,81.7,0.8166666666666667,103,3,1.43273e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/4P59
+pdb|9OFO|H,pdb,"Chain H, DH1533 FAB heavy chain [Homo sapiens]",239,127,98,77.2,0.7716535433070866,106,7,1.7025e-62,193.741,100.0,1,120,https://www.rcsb.org/structure/9OFO
+pdb|9NSD|C,pdb,"Chain C, Nanobody D7 [Vicugna pacos]",126,120,93,77.5,0.775,101,0,7.56398e-64,193.356,100.0,1,120,https://www.rcsb.org/structure/9NSD
+pdb|7CHO|B,pdb,"Chain B, antibody P5A-1D2 heavy chain [Homo sapiens]",222,122,99,81.1,0.8114754098360656,107,3,1.227e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/7CHO
+pdb|2GCY|B,pdb,"Chain B, huC25 fab fragment heavy chain [Mus musculus]",218,120,94,78.3,0.7833333333333333,103,2,1.24874e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/2GCY
+pdb|5OCC|H,pdb,"Chain H, 6G08 Fab heavy chain [Homo sapiens]",222,121,99,81.8,0.8181818181818182,103,1,1.29589e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/5OCC
+pdb|7DPM|A,pdb,"Chain A, heavy chain of MW06 [Homo sapiens]",230,127,99,78.0,0.7795275590551181,104,7,1.93427e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/7DPM
+pdb|8V13|H,pdb,"Chain H, Centi-SNX-B03 Fab heavy chain [Homo sapiens]",230,120,96,80.0,0.8,107,2,2.04283e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/8V13
+pdb|5DR5|H,pdb,"Chain H, AbD09097 Fab heavy chain [Homo sapiens]",248,120,97,80.8,0.8083333333333333,104,5,3.10619e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/5DR5
+pdb|7ARN|H,pdb,"Chain H, Antibody Fab Fragment Heavy Chain [Homo sapiens]",262,120,96,80.0,0.8,103,1,4.10607e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/7ARN
+pdb|6W7S|H,pdb,"Chain H, 2G10 (Fab heavy chain) [Homo sapiens]",255,124,96,77.4,0.7741935483870968,103,4,4.46944e-62,193.356,100.0,1,120,https://www.rcsb.org/structure/6W7S
+pdb|7YVM|C,pdb,"Chain C, TH281 Fab heavy chain [Homo sapiens]",118,120,99,82.5,0.825,104,2,6.38205e-64,192.971,100.0,1,120,https://www.rcsb.org/structure/7YVM
+pdb|3UPC|A,pdb,"Chain A, heavy chain variable domain [Homo sapiens]",113,117,97,82.9,0.8290598290598291,102,4,6.62369e-64,192.971,98.3,3,119,https://www.rcsb.org/structure/3UPC
+pdb|6GV4|H,pdb,"Chain H, AT12-015 antibody variable heavy [Homo sapiens]",121,121,99,81.8,0.8181818181818182,105,3,7.84328e-64,192.971,100.0,1,119,https://www.rcsb.org/structure/6GV4
+pdb|6YAX|HHH,pdb,"Chain HHH, 5C05 F(ab) heavy chain [Homo sapiens]",218,120,97,80.8,0.8083333333333333,101,3,1.73324e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/6YAX
+pdb|8ZUA|A,pdb,"Chain A, A138 heavy chain [Homo sapiens]",218,120,92,76.7,0.7666666666666667,103,0,1.85069e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/8ZUA
+pdb|4TTD|C,pdb,"Chain C, FAb Heavy Chain [Homo sapiens]",222,120,98,81.7,0.8166666666666667,106,3,1.89955e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/4TTD
+pdb|6WJL|F,pdb,"Chain F, D3 Fab Heavy chain [Homo sapiens]",220,120,95,79.2,0.7916666666666666,103,1,1.96956e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/6WJL
+pdb|7UL1|H,pdb,"Chain H, Heavy chain of EH3 [Homo sapiens]",221,120,99,82.5,0.825,103,2,2.00966e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/7UL1
+pdb|6E63|B,pdb,"Chain B, TB31F Fab heavy chain [Homo sapiens]",222,120,96,80.0,0.8,103,1,2.28726e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/6E63
+pdb|9SBB|H,pdb,"Chain H, TAU-2310 Fab Heavy Chain [Homo sapiens]",229,123,97,78.9,0.7886178861788617,104,3,2.35902e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/9SBB
+pdb|7N3G|H,pdb,"Chain H, C098 Fab Heavy Chain [Homo sapiens]",230,120,99,82.5,0.825,105,2,2.56943e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/7N3G
+pdb|4JFZ|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",235,120,94,78.3,0.7833333333333333,101,0,2.6864e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/4JFZ
+pdb|7JMO|H,pdb,"Chain H, COVA2-04 heavy chain [Homo sapiens]",227,120,98,81.7,0.8166666666666667,105,2,2.69961e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/7JMO
+pdb|7XEG|C,pdb,"Chain C, CB6-092-Fab heavy chain [Homo sapiens]",233,120,98,81.7,0.8166666666666667,103,1,2.72709e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/7XEG
+pdb|6WGJ|A,pdb,"Chain A, Dupilumab Fab heavy chain [Homo sapiens]",234,125,97,77.6,0.776,103,5,2.90578e-62,192.971,100.0,1,120,https://www.rcsb.org/structure/6WGJ
+pdb|8YZ6|D,pdb,"Chain D, Fab heavy chain of JH-8B [Homo sapiens]",119,120,98,81.7,0.8166666666666667,105,2,9.67515e-64,192.586,100.0,1,120,https://www.rcsb.org/structure/8YZ6
+pdb|4PGJ|A,pdb,"Chain A, Human heavy chain domain antibody [Homo sapiens]",121,121,98,81.0,0.8099173553719008,102,1,1.16411e-63,192.586,100.0,1,120,https://www.rcsb.org/structure/4PGJ
+pdb|7CYH|E,pdb,"Chain E, Heavy chain of HB27 [Homo sapiens]",119,119,94,79.0,0.7899159663865546,103,0,1.16586e-63,192.586,99.2,2,120,https://www.rcsb.org/structure/7CYH
+pdb|9B7S|H,pdb,"Chain H, Fab3-2 heavy chain [Homo sapiens]",138,129,99,76.7,0.7674418604651163,106,9,2.08308e-63,192.586,100.0,1,120,https://www.rcsb.org/structure/9B7S
+pdb|7PQY|B,pdb,"Chain B, FI-3A Fab heavy chain [Homo sapiens]",222,122,99,81.1,0.8114754098360656,107,7,2.84588e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/7PQY
+pdb|7KFW|C,pdb,"Chain C, heavy chain of antibody C1A-B3 Fab [Homo sapiens]",225,120,98,81.7,0.8166666666666667,106,2,3.22712e-62,192.586,100.0,1,119,https://www.rcsb.org/structure/7KFW
+pdb|7WNB|H,pdb,"Chain H, Fab Heavy chain [Homo sapiens]",230,120,99,82.5,0.825,105,3,3.3394e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/7WNB
+pdb|9PIW|A,pdb,"Chain A, Heavy chain [Homo sapiens]",226,125,96,76.8,0.768,105,5,3.63243e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/9PIW
+pdb|7JKB|A,pdb,"Chain A, Anti-lysozyme [Homo sapiens]",226,120,96,80.0,0.8,100,0,3.67232e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/7JKB
+pdb|4JG1|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",234,121,95,78.5,0.7851239669421488,102,1,3.98821e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/4JG1
+pdb|7CHC|A,pdb,"Chain A, BD-368-2 Fab H [Homo sapiens]",230,125,97,77.6,0.776,106,5,4.10944e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/7CHC
+pdb|4JG0|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",236,121,95,78.5,0.7851239669421488,102,1,4.19427e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/4JG0
+pdb|6WG8|A,pdb,"Chain A, Dupilumab Fab heavy chain [Homo sapiens]",234,125,97,77.6,0.776,103,5,4.35224e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/6WG8
+pdb|6WGK|A,pdb,"Chain A, Dupilumab Fab heavy chain [Homo sapiens]",235,125,97,77.6,0.776,103,5,4.5868e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/6WGK
+pdb|7CHY|H,pdb,"Chain H, heavy chain of antibody binding fragment of IgG26 [Homo sapiens]",234,120,94,78.3,0.7833333333333333,102,0,4.69791e-62,192.586,100.0,1,120,https://www.rcsb.org/structure/7CHY
+pdb|6DSI|A,pdb,"Chain A, Anti-TN-C scFv [Homo sapiens]",242,118,97,82.2,0.8220338983050848,102,1,4.71802e-62,192.586,100.0,1,118,https://www.rcsb.org/structure/6DSI
+pdb|2UZI|H,pdb,"Chain H, ANTI-RAS FV HEAVY CHAIN [Homo sapiens]",114,119,96,80.7,0.8067226890756303,102,5,1.27814e-63,192.2,100.0,1,119,https://www.rcsb.org/structure/2UZI
+pdb|4Y5V|A,pdb,"Chain A, diabody 305 VH domain [Homo sapiens]",130,120,94,78.3,0.7833333333333333,104,2,2.49369e-63,192.2,100.0,1,120,https://www.rcsb.org/structure/4Y5V
+pdb|8WO4|B,pdb,"Chain B, VH [Homo sapiens]",228,120,98,81.7,0.8166666666666667,103,1,4.35705e-62,192.2,100.0,1,120,https://www.rcsb.org/structure/8WO4
+pdb|4HIX|H,pdb,"Chain H, Humanized 3D6 Fab heavy chain [synthetic construct]",227,119,95,79.8,0.7983193277310925,105,1,4.71225e-62,192.2,99.2,2,120,https://www.rcsb.org/structure/4HIX
+pdb|7KFX|H,pdb,"Chain H, heavy chain of human antibody C1A-C2 Fab [Homo sapiens]",225,120,98,81.7,0.8166666666666667,105,2,4.88756e-62,192.2,100.0,1,119,https://www.rcsb.org/structure/7KFX
+pdb|8GH4|H,pdb,"Chain H, Antibody heavy chain [Homo sapiens]",225,120,94,78.3,0.7833333333333333,102,1,4.94124e-62,192.2,100.0,1,120,https://www.rcsb.org/structure/8GH4
+pdb|7DZY|H,pdb,"Chain H, Fab Heavy chain of enhancing antibody 2490 [Homo sapiens]",225,124,96,77.4,0.7741935483870968,104,4,5.10585e-62,192.2,100.0,1,120,https://www.rcsb.org/structure/7DZY
+pdb|7T0Z|H,pdb,"Chain H, Fab175 IgG1 heavy chain [Homo sapiens]",245,124,98,79.0,0.7903225806451613,103,4,8.08426e-62,192.2,100.0,1,120,https://www.rcsb.org/structure/7T0Z
+pdb|5GS3|A,pdb,"Chain A, diabody protein [Homo sapiens]",248,120,98,81.7,0.8166666666666667,103,1,9.98136e-62,192.2,100.0,1,120,https://www.rcsb.org/structure/5GS3
+pdb|6ORO|D,pdb,"Chain D, Ab874NHP antibody Fab heavy chain [Macaca mulatta]",254,123,96,78.0,0.7804878048780488,104,3,1.22217e-61,192.2,100.0,1,120,https://www.rcsb.org/structure/6ORO
+pdb|5GS1|B,pdb,"Chain B, heavy chain [Homo sapiens]",124,120,98,81.7,0.8166666666666667,103,1,2.26802e-63,191.815,100.0,1,120,https://www.rcsb.org/structure/5GS1
+pdb|5DMJ|B,pdb,"Chain B, 3H65-5 domain antibody (dAb) [Homo sapiens]",121,120,97,80.8,0.8083333333333333,102,4,2.2729e-63,191.815,100.0,1,120,https://www.rcsb.org/structure/5DMJ
+pdb|3ZHD|A,pdb,"Chain A, MG8-4 SCAFFOLD ANTIBODY [Homo sapiens]",127,120,100,83.3,0.8333333333333334,103,1,2.97754e-63,191.815,100.0,1,120,https://www.rcsb.org/structure/3ZHD
+pdb|7N0R|C,pdb,"Chain C, Single-domain antibody C2 [Lama glama]",134,121,95,78.5,0.7851239669421488,102,1,3.73277e-63,191.815,100.0,1,120,https://www.rcsb.org/structure/7N0R
+pdb|5VEB|H,pdb,"Chain H, anti-CDH6 Fab heavy chain [Homo sapiens]",225,120,100,83.3,0.8333333333333334,105,2,5.33389e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/5VEB
+pdb|6O3A|B,pdb,"Chain B, Antibody F7.B Fab, Heavy chain [Homo sapiens]",218,120,96,80.0,0.8,102,0,5.5198e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/6O3A
+pdb|8GV0|A,pdb,"Chain A, Anti-factor IXa IgG fab heavy chain [Homo sapiens]",227,123,99,80.5,0.8048780487804879,104,4,6.12452e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/8GV0
+pdb|8GUZ|A,pdb,"Chain A, Anti-factor IXa IgG fab heavy chain [Homo sapiens]",227,123,99,80.5,0.8048780487804879,104,4,6.39802e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/8GUZ
+pdb|5GS1|C,pdb,"Chain C, diabody [Homo sapiens]",232,120,98,81.7,0.8166666666666667,103,1,6.91309e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/5GS1
+pdb|7CU5|A,pdb,"Chain A, camrelizumab-scFv [Homo sapiens]",230,120,95,79.2,0.7916666666666666,104,4,7.65805e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/7CU5
+pdb|8XI6|D,pdb,"Chain D, MO11 heavy chain [Homo sapiens]",232,125,95,76.0,0.76,104,5,7.88094e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/8XI6
+pdb|4JFX|B,pdb,"Chain B, Fab heavy chain [Homo sapiens]",235,120,94,78.3,0.7833333333333333,101,0,8.09214e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/4JFX
+pdb|8TNJ|D,pdb,"Chain D, B.8 Fab heavy chain [Homo sapiens]",232,121,95,78.5,0.7851239669421488,103,1,8.14337e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/8TNJ
+pdb|8VGP|H,pdb,"Chain H, Fab 5A12.6DS heavy chain [Homo sapiens]",236,120,93,77.5,0.775,100,0,8.16333e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/8VGP
+pdb|9YRQ|F,pdb,"Chain F, REGN9933 Fab Heavy Chain [Homo sapiens]",239,123,96,78.0,0.7804878048780488,104,3,8.75321e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/9YRQ
+pdb|9XA0|A,pdb,"Chain A, S2L20 heavy chain [Homo sapiens]",235,122,96,78.7,0.7868852459016393,105,2,9.63659e-62,191.815,100.0,1,120,https://www.rcsb.org/structure/9XA0
+pdb|8DY4|A,pdb,"Chain A, spFv CAT2200 HL [Homo sapiens]",252,118,99,83.9,0.8389830508474576,103,2,1.34074e-61,191.815,100.0,1,118,https://www.rcsb.org/structure/8DY4
+pdb|7TLZ|B,pdb,"Chain B, S2L20 Fab heavy chain [Homo sapiens]",122,122,96,78.7,0.7868852459016393,104,2,3.44568e-63,191.43,100.0,1,120,https://www.rcsb.org/structure/7TLZ
+pdb|1IEH|A,pdb,"Chain A, BRUC.D4.4 [Lama glama]",135,120,93,77.5,0.775,103,3,4.64539e-63,191.43,100.0,1,120,https://www.rcsb.org/structure/1IEH
+pdb|3WD5|H,pdb,"Chain H, Adalimumab Heavy Chain [Homo sapiens]",219,121,93,76.9,0.768595041322314,105,1,6.85637e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/3WD5
+pdb|7ZF3|A,pdb,"Chain A, Omi-3 heavy chain [Homo sapiens]",223,120,99,82.5,0.825,102,2,7.26913e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/7ZF3
+pdb|8VWW|B,pdb,"Chain B, ADI-46152 Fab Heavy Chain [Homo sapiens]",228,123,97,78.9,0.7886178861788617,105,4,8.57573e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/8VWW
+pdb|4TSB|H,pdb,"Chain H, FAb Heavy Chain [Homo sapiens]",222,120,99,82.5,0.825,105,3,8.67328e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/4TSB
+pdb|8QH0|H,pdb,"Chain H, Cv2.3194 Heavy chain [Homo sapiens]",229,120,98,81.7,0.8166666666666667,104,3,9.44275e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/8QH0
+pdb|9DSC|A,pdb,"Chain A, 241_2F04-A95a, Heavy chain [Homo sapiens]",227,124,98,79.0,0.7903225806451613,104,4,9.58408e-62,191.43,100.0,1,120,https://www.rcsb.org/structure/9DSC
+pdb|5TRU|H,pdb,"Chain H, Ipilimumab Fab heavy chain [Homo sapiens]",225,120,95,79.2,0.7916666666666666,103,2,1.02725e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/5TRU
+pdb|3SO3|C,pdb,"Chain C, A11 FAB heavy chain [Homo sapiens]",228,126,97,77.0,0.7698412698412699,106,7,1.04387e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/3SO3
+pdb|8TBQ|A,pdb,"Chain A, SNS-101 Fab heavy chain [Homo sapiens]",229,122,95,77.9,0.7786885245901639,102,2,1.10027e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/8TBQ
+pdb|6JC2|H,pdb,"Chain H, ipilimumab fab heavy chain [Homo sapiens]",230,120,95,79.2,0.7916666666666666,103,2,1.21145e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/6JC2
+pdb|8UDZ|C,pdb,"Chain C, LTBP-49247 Fab Heavy Chain [Homo sapiens]",233,121,93,76.9,0.768595041322314,103,1,1.29956e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/8UDZ
+pdb|7TZG|A,pdb,"Chain A, scFvF7 [Homo sapiens]",248,120,96,80.0,0.8,103,2,1.54417e-61,191.43,100.0,1,118,https://www.rcsb.org/structure/7TZG
+pdb|7TZH|A,pdb,"Chain A, scFvF7 [Homo sapiens]",247,120,96,80.0,0.8,103,2,1.63486e-61,191.43,100.0,1,118,https://www.rcsb.org/structure/7TZH
+pdb|9LSH|D,pdb,"Chain D, Diabody (CitS VH-TLR3 VL) [synthetic construct]",256,120,98,81.7,0.8166666666666667,103,1,1.96387e-61,191.43,100.0,1,120,https://www.rcsb.org/structure/9LSH
+pdb|5GRV|L,pdb,"Chain L, homo-specific diabody heavy chain [Homo sapiens]",124,120,98,81.7,0.8166666666666667,103,1,4.428e-63,191.045,100.0,1,120,https://www.rcsb.org/structure/5GRV
+pdb|7MXP|G,pdb,"Chain G, LP5 Fab Heavy Chain [Homo sapiens]",119,120,96,80.0,0.8,102,1,4.4937e-63,191.045,100.0,1,120,https://www.rcsb.org/structure/7MXP
+pdb|7CWT|E,pdb,"Chain E, Heavy chain Fab of HB27 [Homo sapiens]",118,118,93,78.8,0.788135593220339,102,0,4.90987e-63,191.045,99.2,2,119,https://www.rcsb.org/structure/7CWT
+pdb|6HKG|C,pdb,"Chain C, FISW84 Fab Fragment Heavy Chain [Homo sapiens]",194,122,95,77.9,0.7786885245901639,106,2,5.46579e-62,191.045,100.0,1,120,https://www.rcsb.org/structure/6HKG
+pdb|9VL2|C,pdb,"Chain C, heavy chain of Fab-10C8 [Homo sapiens]",220,120,94,78.3,0.7833333333333333,105,1,9.29402e-62,191.045,100.0,1,120,https://www.rcsb.org/structure/9VL2
+pdb|7K8N|A,pdb,"Chain A, C102 Fab Heavy Chain [Homo sapiens]",218,120,100,83.3,0.8333333333333334,104,3,9.95833e-62,191.045,100.0,1,120,https://www.rcsb.org/structure/7K8N
+pdb|6HJP|G,pdb,"Chain G, Heavy chain of FISW84 Fab Fragment [Homo sapiens]",216,122,95,77.9,0.7786885245901639,106,2,1.05533e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/6HJP
+pdb|7QF0|H,pdb,"Chain H, CV2.2325 heavy chain [Homo sapiens]",229,120,99,82.5,0.825,103,3,1.2407e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/7QF0
+pdb|5IFJ|A,pdb,"Chain A, 1E01 Fab fragment heavy chain [Homo sapiens]",227,123,100,81.3,0.8130081300813008,105,3,1.24563e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/5IFJ
+pdb|8CWK|A,pdb,"Chain A, Heavy chain of Fab arm of antibody 4G1-C2 [Homo sapiens]",232,121,97,80.2,0.8016528925619835,101,1,1.34566e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/8CWK
+pdb|7EY0|H,pdb,"Chain H, BD-813H [Homo sapiens]",223,120,98,81.7,0.8166666666666667,103,2,1.40004e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/7EY0
+pdb|7XCZ|D,pdb,"Chain D, BA7054 fab [Homo sapiens]",224,121,95,78.5,0.7851239669421488,102,1,1.42828e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/7XCZ
+pdb|8CWJ|J,pdb,"Chain J, Heavy chain of 4C12-B12 antibody Fab [Homo sapiens]",230,120,96,80.0,0.8,101,1,1.44272e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/8CWJ
+pdb|9DQ3|H,pdb,"Chain H, mipi.4 heavy chain [Homo sapiens]",229,120,94,78.3,0.7833333333333333,103,2,1.46153e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/9DQ3
+pdb|7K8M|A,pdb,"Chain A, C102 Fab Heavy Chain [Homo sapiens]",229,120,100,83.3,0.8333333333333334,104,3,1.5102e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/7K8M
+pdb|5C7X|H,pdb,"Chain H, Immunglobulin G1 Fab fragment, heavy chain [Homo sapiens]",238,122,100,82.0,0.819672131147541,106,7,1.72601e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/5C7X
+pdb|7W7Q|A,pdb,"Chain A, 1F11S antibody [Mus musculus]",243,119,96,80.7,0.8067226890756303,100,1,2.09898e-61,191.045,100.0,1,118,https://www.rcsb.org/structure/7W7Q
+pdb|5GRW|A,pdb,"Chain A, homo-specific diabody protein [Homo sapiens]",249,120,98,81.7,0.8166666666666667,103,1,2.54386e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/5GRW
+pdb|2KH2|B,pdb,"Chain B, scFv [Mus musculus]",254,120,96,80.0,0.8,103,1,2.76894e-61,191.045,100.0,1,120,https://www.rcsb.org/structure/2KH2
+pdb|7ZCE|E,pdb,"Chain E, scFv76 single chain fragment [Homo sapiens]",264,118,97,82.2,0.8220338983050848,100,2,4.44051e-61,191.045,100.0,1,118,https://www.rcsb.org/structure/7ZCE
+pdb|9OST|O,pdb,"Chain O, Heavy chain of FISW84 Fab [Homo sapiens]",122,122,95,77.9,0.7786885245901639,106,2,5.89772e-63,190.66,100.0,1,120,https://www.rcsb.org/structure/9OST
+pdb|7JVA|H,pdb,"Chain H, S2A4 Fab heavy chain [Homo sapiens]",119,120,94,78.3,0.7833333333333333,104,1,5.91152e-63,190.66,100.0,1,120,https://www.rcsb.org/structure/7JVA
+pdb|7XDK|D,pdb,"Chain D, BA7054 fab [Homo sapiens]",121,121,95,78.5,0.7851239669421488,102,1,7.26977e-63,190.66,100.0,1,120,https://www.rcsb.org/structure/7XDK
+pdb|6HKG|A,pdb,"Chain A, FISW84 Fab Fragment Heavy Chain [Homo sapiens]",217,122,95,77.9,0.7786885245901639,106,2,1.20117e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/6HKG
+pdb|11OQ|H,pdb,"Chain H, Omi32 germline heavy chain [Homo sapiens]",217,120,95,79.2,0.7916666666666666,102,4,1.22771e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/11OQ
+pdb|7CHS|H,pdb,"Chain H, antibody P22A-1D1 heavy chain [Homo sapiens]",217,120,98,81.7,0.8166666666666667,104,3,1.47833e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7CHS
+pdb|11OO|H,pdb,"Chain H, Omi32 germline heavy chain [Homo sapiens]",219,120,95,79.2,0.7916666666666666,102,4,1.48939e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/11OO
+pdb|8XJ0|B,pdb,"Chain B, Adalimumab Fab Heavy chain [Homo sapiens]",225,121,93,76.9,0.768595041322314,105,1,1.55575e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/8XJ0
+pdb|7NC0|H,pdb,"Chain H, A33 Fab heavy chain [Homo sapiens]",217,120,95,79.2,0.7916666666666666,102,3,1.5785e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7NC0
+pdb|5TLK|D,pdb,"Chain D, H2191 HEAVY CHAIN [synthetic construct]",226,119,95,79.8,0.7983193277310925,102,3,1.58704e-61,190.66,99.2,2,120,https://www.rcsb.org/structure/5TLK
+pdb|7NFA|C,pdb,"Chain C, A33 Fab heavy chain [Homo sapiens]",228,120,95,79.2,0.7916666666666666,102,3,1.70639e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7NFA
+pdb|7JVC|C,pdb,"Chain C, S2A4 Fab heavy chain [Homo sapiens]",228,120,94,78.3,0.7833333333333333,104,1,1.72512e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7JVC
+pdb|9NIY|H,pdb,"Chain H, Fab1393 heavy chain [Homo sapiens]",226,123,96,78.0,0.7804878048780488,106,3,1.78963e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/9NIY
+pdb|5VL7|H,pdb,"Chain H, Fab33 heavy chain [Homo sapiens]",228,121,96,79.3,0.7933884297520661,103,1,1.80215e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/5VL7
+pdb|6O23|A,pdb,"Chain A, Fab heavy chain [Homo sapiens]",227,124,96,77.4,0.7741935483870968,105,4,1.82557e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/6O23
+pdb|8EOO|E,pdb,"Chain E, WRAIR-2063 antibody Fab heavy chain [Homo sapiens]",227,124,96,77.4,0.7741935483870968,104,4,2.01412e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/8EOO
+pdb|8K3C|C,pdb,"Chain C, Heavy chain of 41-6 Fab fragments [Homo sapiens]",238,131,98,74.8,0.7480916030534351,105,11,2.34297e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/8K3C
+pdb|8WPW|C,pdb,"Chain C, CB6 fab mutant heavy chain [Homo sapiens]",231,120,97,80.8,0.8083333333333333,102,1,2.43169e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/8WPW
+pdb|7JMP|H,pdb,"Chain H, COVA2-39 heavy chain [Homo sapiens]",232,124,96,77.4,0.7741935483870968,104,5,2.61929e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7JMP
+pdb|7MJJ|D,pdb,"Chain D, Fab ab1 Heavy Chain [synthetic construct]",244,120,101,84.2,0.8416666666666667,104,3,2.72066e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/7MJJ
+pdb|9NRC|H,pdb,"Chain H, REGN7999 Fab heavy chain [Homo sapiens]",240,124,96,77.4,0.7741935483870968,105,4,3.16566e-61,190.66,100.0,1,120,https://www.rcsb.org/structure/9NRC
+pdb|5XJ3|A,pdb,"Chain A, ipilimumab-VH [Homo sapiens]",118,120,95,79.2,0.7916666666666666,103,2,9.79929e-63,190.274,100.0,1,120,https://www.rcsb.org/structure/5XJ3
+pdb|7OBF|A,pdb,"Chain A, HEL4 [Homo sapiens]",125,120,96,80.0,0.8,100,0,1.14892e-62,190.274,100.0,1,120,https://www.rcsb.org/structure/7OBF
+pdb|11OL|H,pdb,"Chain H, Omi32 heavy chain [Homo sapiens]",217,120,95,79.2,0.7916666666666666,101,4,1.66715e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/11OL
+pdb|7E88|A,pdb,"Chain A, BD-515 Fab Heavy Chain [Homo sapiens]",221,120,100,83.3,0.8333333333333334,104,4,1.92897e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/7E88
+pdb|7ZFE|F,pdb,"Chain F, Omi-32 heavy chain [Homo sapiens]",221,120,95,79.2,0.7916666666666666,101,4,2.03727e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/7ZFE
+pdb|7KMH|A,pdb,"Chain A, LY-CoV488 Fab heavy chain [Homo sapiens]",219,120,98,81.7,0.8166666666666667,103,5,2.06709e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/7KMH
+pdb|8FAS|A,pdb,"Chain A, Ky230 Antibody, heavy chain [Mus musculus]",223,120,93,77.5,0.775,101,0,2.21509e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/8FAS
+pdb|6XC2|H,pdb,"Chain H, CC12.1 heavy chain [Homo sapiens]",220,120,99,82.5,0.825,103,3,2.25185e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/6XC2
+pdb|9ZT7|A,pdb,"Chain A, COV2-2509 Fab-Heavy chain [Homo sapiens]",224,121,94,77.7,0.7768595041322314,104,1,2.30963e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/9ZT7
+pdb|5GZN|C,pdb,"Chain C, Antibody Heavy chain [Homo sapiens]",228,127,96,75.6,0.7559055118110236,105,7,2.44675e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/5GZN
+pdb|6XC4|H,pdb,"Chain H, CC12.3 heavy chain [Homo sapiens]",220,120,99,82.5,0.825,104,3,2.51181e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/6XC4
+pdb|2NZ9|D,pdb,"Chain D, AR2 monoclonal antibody [Homo sapiens]",224,120,91,75.8,0.7583333333333333,103,2,2.7809e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/2NZ9
+pdb|8Y2K|B,pdb,"Chain B, QX006N-Fab-HC [Homo sapiens]",230,120,96,80.0,0.8,101,1,2.90193e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/8Y2K
+pdb|6M58|C,pdb,"Chain C, Heavy chain of the SL335 antibody fab [Homo sapiens]",230,120,92,76.7,0.7666666666666667,102,0,2.90193e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/6M58
+pdb|9NWU|A,pdb,"Chain A, Diabody [Homo sapiens]",229,120,95,79.2,0.7916666666666666,100,3,3.07112e-61,190.274,100.0,1,120,https://www.rcsb.org/structure/9NWU
+pdb|8YZK|C,pdb,"Chain C, scFv [Homo sapiens]",288,120,95,79.2,0.7916666666666666,102,1,1.89536e-60,190.274,100.0,1,120,https://www.rcsb.org/structure/8YZK
+pdb|7N8H|C,pdb,"Chain C, S2L20 Fab Heavy Chain variable region [Homo sapiens]",121,121,95,78.5,0.7851239669421488,103,2,1.24432e-62,189.889,100.0,1,119,https://www.rcsb.org/structure/7N8H
+pdb|9N7Q|D,pdb,"Chain D, ST15 Heavy Chain Fab [Homo sapiens]",123,123,99,80.5,0.8048780487804879,105,3,1.31245e-62,189.889,100.0,1,120,https://www.rcsb.org/structure/9N7Q
+pdb|9M5D|A,pdb,"Chain A, n501 [Homo sapiens]",120,120,98,81.7,0.8166666666666667,106,0,1.46802e-62,189.889,100.0,1,120,https://www.rcsb.org/structure/9M5D
+pdb|8R1D|D,pdb,"Chain D, SD1-3 Fab Heavy Chain [Homo sapiens]",121,121,97,80.2,0.8016528925619835,101,1,1.48302e-62,189.889,100.0,1,120,https://www.rcsb.org/structure/8R1D
+pdb|7BPK|C,pdb,"Chain C, Z3L1 Heavy chain [Homo sapiens]",127,127,96,75.6,0.7559055118110236,105,7,1.77908e-62,189.889,100.0,1,120,https://www.rcsb.org/structure/7BPK
+pdb|8CWV|H,pdb,"Chain H, CC12.1 Fab heavy chain [Homo sapiens]",220,120,99,82.5,0.825,103,3,2.89513e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8CWV
+pdb|8QRG|H,pdb,"Chain H, XBB-2 heavy chain [Homo sapiens]",223,120,95,79.2,0.7916666666666666,106,2,2.91065e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8QRG
+pdb|8B9V|H,pdb,"Chain H, Lu AF82422 Fab heavy chain [Homo sapiens]",217,120,97,80.8,0.8083333333333333,101,4,2.97498e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8B9V
+pdb|7KS9|H,pdb,"Chain H, 910-30 Fab heavy chain [Homo sapiens]",221,121,101,83.5,0.8347107438016529,104,8,3.15375e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7KS9
+pdb|9NJ4|H,pdb,"Chain H, Fab1437 heavy chain [Homo sapiens]",225,122,97,79.5,0.7950819672131147,103,2,3.19896e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/9NJ4
+pdb|9MMV|H,pdb,"Chain H, 1D4 heavy chain [Homo sapiens]",218,120,96,80.0,0.8,101,6,3.20579e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/9MMV
+pdb|7NX6|A,pdb,"Chain A, COVOX-222 Fab Heavy chain [Homo sapiens]",224,120,98,81.7,0.8166666666666667,102,1,3.31195e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7NX6
+pdb|8C67|A,pdb,"Chain A, antibody 25 heavy chain [Homo sapiens]",229,123,97,78.9,0.7886178861788617,102,3,3.5011e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8C67
+pdb|7MXL|H,pdb,"Chain H, REGN5714 antibody Fab fragment heavy chain [Homo sapiens]",224,120,95,79.2,0.7916666666666666,103,1,3.73476e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7MXL
+pdb|7LY3|D,pdb,"Chain D, S2M28 Fab Heavy Chain [Homo sapiens]",221,120,96,80.0,0.8,103,1,3.7561e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7LY3
+pdb|7T72|H,pdb,"Chain H, Antibody heavy chain [Homo sapiens]",232,122,96,78.7,0.7868852459016393,101,3,3.79661e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7T72
+pdb|5VEB|A,pdb,"Chain A, anti-CDH6 Fab heavy chain [Homo sapiens]",225,120,99,82.5,0.825,104,2,3.9367e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/5VEB
+pdb|8CRB|A,pdb,"Chain A, Heavy chain [Homo sapiens]",227,127,97,76.4,0.7637795275590551,107,7,3.96411e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8CRB
+pdb|8DXT|H,pdb,"Chain H, Heavy chain of Fab arm of antibody GAR12 [Homo sapiens]",234,123,96,78.0,0.7804878048780488,104,3,4.03602e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8DXT
+pdb|6CYF|D,pdb,"Chain D, IgG1 antibody, heavy chain fragment [Homo sapiens]",227,124,97,78.2,0.782258064516129,103,4,4.09613e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/6CYF
+pdb|7KLG|H,pdb,"Chain H, Fab 15033 heavy chain [Homo sapiens]",225,120,95,79.2,0.7916666666666666,99,0,4.20332e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7KLG
+pdb|5VIG|A,pdb,"Chain A, Fab heavy chain [Homo sapiens]",232,120,91,75.8,0.7583333333333333,103,0,4.32807e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/5VIG
+pdb|7YXU|H,pdb,"Chain H, heavy chain of Fab [Homo sapiens]",228,121,101,83.5,0.8347107438016529,106,1,4.60955e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/7YXU
+pdb|6XQ4|C,pdb,"Chain C, antibody S8V2-47 heavy chain [Homo sapiens]",233,122,98,80.3,0.8032786885245902,104,4,4.76456e-61,189.889,100.0,1,119,https://www.rcsb.org/structure/6XQ4
+pdb|8DN6|C,pdb,"Chain C, fabtc2_HC [synthetic construct]",239,120,94,78.3,0.7833333333333333,100,0,5.78308e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/8DN6
+pdb|4NNP|H,pdb,"Chain H, Heavy chain of antagonistic fab fragment [Homo sapiens]",238,128,95,74.2,0.7421875,103,8,6.05534e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/4NNP
+pdb|9LSI|C,pdb,"Chain C, Diabody (CitS VH-TLR3 VL) [synthetic construct]",256,120,97,80.8,0.8083333333333333,102,1,9.75274e-61,189.889,100.0,1,120,https://www.rcsb.org/structure/9LSI
+pdb|3AUV|A,pdb,"Chain A, sc-dsFv derived from the G6-Fab [Homo sapiens]",276,118,92,78.0,0.7796610169491526,99,0,1.70199e-60,189.889,100.0,1,118,https://www.rcsb.org/structure/3AUV
+pdb|1OHQ|A,pdb,"Chain A, IMMUNOGLOBULIN [Homo sapiens]",120,120,96,80.0,0.8,100,0,1.55078e-62,189.504,100.0,1,120,https://www.rcsb.org/structure/1OHQ
+pdb|5VZX|E,pdb,"Chain E, Crenezumab Fab heavy chain [Homo sapiens]",220,120,95,79.2,0.7916666666666666,103,8,3.93113e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/5VZX
+pdb|5V2A|H,pdb,"Chain H, Heavy chain of H7.167 antibody [Homo sapiens]",220,120,94,78.3,0.7833333333333333,103,1,4.19744e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/5V2A
+pdb|7S5P|H,pdb,"Chain H, CS23 Heavy chain [Homo sapiens]",221,122,100,82.0,0.819672131147541,104,6,4.23569e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/7S5P
+pdb|1MHP|H,pdb,"Chain H, Fab fragment, heavy chain [Mus musculus]",219,120,97,80.8,0.8083333333333333,102,2,4.53933e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/1MHP
+pdb|7CHP|H,pdb,"Chain H, antibody P5A-3C8 heavy chain [Homo sapiens]",220,120,98,81.7,0.8166666666666667,103,3,4.58079e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/7CHP
+pdb|5XHV|H,pdb,"Chain H, S40 heavy chain [Homo sapiens]",229,120,93,77.5,0.775,101,0,4.96543e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/5XHV
+pdb|9JS4|B,pdb,"Chain B, Heavy chain of 8G3 [Homo sapiens]",222,120,95,79.2,0.7916666666666666,101,1,4.98044e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/9JS4
+pdb|6JJP|A,pdb,"Chain A, Heavy chain of MW11-h317 [Homo sapiens]",220,120,94,78.3,0.7833333333333333,103,3,5.16571e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/6JJP
+pdb|6WRP|H,pdb,"Chain H, PI3-E12 Fab Heavy Chain [Homo sapiens]",232,126,93,73.8,0.7380952380952381,105,6,5.56347e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/6WRP
+pdb|6U8D|H,pdb,"Chain H, Heavy chain of Fab HCV2 [Homo sapiens]",233,122,97,79.5,0.7950819672131147,102,2,6.39782e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/6U8D
+pdb|6TUL|HHH,pdb,"Chain HHH, Fab C0021177 heavy chain (IgG1) [Homo sapiens]",233,120,93,77.5,0.775,101,0,6.39782e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/6TUL
+pdb|6SS0|HHH,pdb,"Chain HHH, Fab C0021181 heavy chain (IgG1) [Homo sapiens]",233,120,94,78.3,0.7833333333333333,103,0,6.46804e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/6SS0
+pdb|8G4M|D,pdb,"Chain D, antibody heavy chain [Homo sapiens]",236,124,95,76.6,0.7661290322580645,105,4,7.24418e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/8G4M
+pdb|4RRP|G,pdb,"Chain G, Fab antibody, heavy chain [Homo sapiens]",238,120,95,79.2,0.7916666666666666,100,1,7.69859e-61,189.504,100.0,1,120,https://www.rcsb.org/structure/4RRP
+pdb|11ZW|H,pdb,"Chain H, PD3 Fab fragment heavy chain [Mus musculus]",261,120,91,75.8,0.7583333333333333,100,0,1.62134e-60,189.504,100.0,1,120,https://www.rcsb.org/structure/11ZW
+pdb|5CWS|B,pdb,"Chain B, sAB-158 Fab Heavy Chain [Homo sapiens]",266,123,95,77.2,0.7723577235772358,103,3,2.00634e-60,189.504,100.0,1,120,https://www.rcsb.org/structure/5CWS
+pdb|8JKH|H,pdb,"Chain H, the heavy chain of antibody 4B8 [Homo sapiens]",117,120,98,81.7,0.8166666666666667,104,3,2.04526e-62,189.119,100.0,1,120,https://www.rcsb.org/structure/8JKH
+pdb|7Q0A|Y,pdb,"Chain Y, FI3A fab heavy chain [Homo sapiens]",116,119,97,81.5,0.8151260504201681,104,3,2.28444e-62,189.119,100.0,1,119,https://www.rcsb.org/structure/7Q0A
+pdb|8DWW|H,pdb,"Chain H, 506.A08 heavy chain [Homo sapiens]",119,119,95,79.8,0.7983193277310925,100,0,2.43342e-62,189.119,100.0,1,119,https://www.rcsb.org/structure/8DWW
+pdb|7WT7|H,pdb,"Chain H, Heavy chain of Fab 9A8 [Homo sapiens]",122,119,95,79.8,0.7983193277310925,102,1,3.124e-62,189.119,99.2,2,120,https://www.rcsb.org/structure/7WT7
+pdb|8CAF|B,pdb,"Chain B, Fab Heavy Chain [Homo sapiens]",223,123,96,78.0,0.7804878048780488,102,3,5.79226e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/8CAF
+pdb|2WUB|H,pdb,"Chain H, FAB FRAGMENT FAB40.DELTATRP HEAVY CHAIN [Homo sapiens]",224,120,93,77.5,0.775,100,3,6.03915e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/2WUB
+pdb|1DEE|B,pdb,"Chain B, IGM RF 2A2 [Homo sapiens]",223,121,94,77.7,0.7768595041322314,102,1,6.05094e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/1DEE
+pdb|7SWO|H,pdb,"Chain H, C98C7 Fab heavy chain [Homo sapiens]",222,120,99,82.5,0.825,104,3,6.54434e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/7SWO
+pdb|7BZ5|H,pdb,"Chain H, Heavy chain of B38 [Homo sapiens]",222,120,98,81.7,0.8166666666666667,102,5,6.54434e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/7BZ5
+pdb|8R9Z|H,pdb,"Chain H, 46E6 antibody heavy chain [Homo sapiens]",219,121,95,78.5,0.7851239669421488,104,1,6.87527e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/8R9Z
+pdb|7SI2|E,pdb,"Chain E, 10-28 Heavy Chain [Homo sapiens]",226,120,93,77.5,0.775,101,0,7.08585e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/7SI2
+pdb|7DC8|B,pdb,"Chain B, Switch Ab Fab heavy chain [Homo sapiens]",230,122,97,79.5,0.7950819672131147,105,2,7.1044e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/7DC8
+pdb|3G6A|B,pdb,"Chain B, CNTO607 Fab Heavy chain [Homo sapiens]",229,123,98,79.7,0.7967479674796748,103,4,8.57157e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/3G6A
+pdb|7RQQ|H,pdb,"Chain H, F10 Heavy Chain [Homo sapiens]",227,119,93,78.2,0.7815126050420168,101,0,8.60742e-61,189.119,99.2,2,120,https://www.rcsb.org/structure/7RQQ
+pdb|6D0X|A,pdb,"Chain A, Antibody, heavy chain [Homo sapiens]",227,124,94,75.8,0.7580645161290323,105,4,8.60742e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/6D0X
+pdb|7KE1|A,pdb,"Chain A, Immunoglobulin gamma, heavy chain Fd fragment [Homo sapiens]",235,122,93,76.2,0.7622950819672131,103,2,9.13119e-61,189.119,100.0,1,120,https://www.rcsb.org/structure/7KE1
+pdb|8TNT|E,pdb,"Chain E, 769C2 heavy chain [Homo sapiens]",232,120,92,76.7,0.7666666666666667,102,0,1.05944e-60,189.119,100.0,1,120,https://www.rcsb.org/structure/8TNT
+pdb|9FGR|E,pdb,"Chain E, scFv76-77 single chain fragment [Homo sapiens]",265,118,96,81.4,0.8135593220338984,100,2,2.12548e-60,189.119,100.0,1,118,https://www.rcsb.org/structure/9FGR
+pdb|8XPS|B,pdb,"Chain B, single-domain antibody n425 [Homo sapiens]",119,120,100,83.3,0.8333333333333334,103,1,3.16623e-62,188.734,100.0,1,120,https://www.rcsb.org/structure/8XPS
+pdb|9Z18|H,pdb,"Chain H, Antibody N6-2 Heavy Chain [Homo sapiens]",121,121,96,79.3,0.7933884297520661,102,1,3.97971e-62,188.734,100.0,1,120,https://www.rcsb.org/structure/9Z18
+pdb|9G5Z|C,pdb,"Chain C, Nanobody 11 [Lama glama]",124,120,95,79.2,0.7916666666666666,103,3,4.78407e-62,188.734,100.0,1,120,https://www.rcsb.org/structure/9G5Z
+pdb|9N5Z|A,pdb,"Chain A, heavy chain antibody Fab AMB38599 [Homo sapiens]",126,126,94,74.6,0.746031746031746,104,6,4.82959e-62,188.734,100.0,1,120,https://www.rcsb.org/structure/9N5Z
+pdb|9E6K|H,pdb,"Chain H, heavy chain of monoclonal antibody C12 [Homo sapiens]",216,120,100,83.3,0.8333333333333334,101,7,8.05519e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/9E6K
+pdb|7CHB|H,pdb,"Chain H, BD-236 Fab heavy chain [Homo sapiens]",223,120,98,81.7,0.8166666666666667,102,2,8.12643e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/7CHB
+pdb|3K2U|H,pdb,"Chain H, Antibody, Fab fragment, Heavy Chain [Homo sapiens]",225,120,94,78.3,0.7833333333333333,100,2,8.93035e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/3K2U
+pdb|7CDJ|H,pdb,"Chain H, antibody P2C-1A3 heavy chain [Homo sapiens]",218,120,93,77.5,0.775,101,1,8.95282e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/7CDJ
+pdb|8GX9|H,pdb,"Chain H, heavy chain of P2C-1F11 [Homo sapiens]",216,120,98,81.7,0.8166666666666667,104,3,8.98521e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/8GX9
+pdb|8GSI|B,pdb,"Chain B, heavy chain [Homo sapiens]",225,121,97,80.2,0.8016528925619835,103,9,9.96089e-61,188.734,100.0,1,120,https://www.rcsb.org/structure/8GSI
+pdb|1HEZ|B,pdb,"Chain B, HEAVY CHAIN OF IG [Homo sapiens]",224,121,94,77.7,0.7768595041322314,102,1,1.04265e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/1HEZ
+pdb|7U2E|H,pdb,"Chain H, ADI-55688 heavy chain [Homo sapiens]",227,124,95,76.6,0.7661290322580645,105,4,1.0477e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/7U2E
+pdb|8YBY|A,pdb,"Chain A, THSC20.HVTR26 (Fab26) - Heavy Chain [Homo sapiens]",231,129,98,76.0,0.7596899224806202,107,11,1.07342e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/8YBY
+pdb|9NEY|C,pdb,"Chain C, Heavy Chain [Homo sapiens]",223,126,94,74.6,0.746031746031746,103,6,1.07952e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/9NEY
+pdb|7XNF|H,pdb,"Chain H, P2C-1F11 Heavy Chain [Homo sapiens]",227,120,98,81.7,0.8166666666666667,104,3,1.14334e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/7XNF
+pdb|7U2D|H,pdb,"Chain H, ADG20 heavy chain [Homo sapiens]",227,124,95,76.6,0.7661290322580645,105,4,1.2075e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/7U2D
+pdb|3EOT|H,pdb,"Chain H, FAB FRAGMENT, HEAVY CHAIN [Mus musculus]",226,120,97,80.8,0.8083333333333333,102,2,1.22328e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/3EOT
+pdb|6XQ2|C,pdb,"Chain C, antibody S8V2-37 heavy chain [Homo sapiens]",233,121,94,77.7,0.7768595041322314,104,2,1.49906e-60,188.734,100.0,1,119,https://www.rcsb.org/structure/6XQ2
+pdb|5X8M|B,pdb,"Chain B, durvalumab heavy chain [Homo sapiens]",235,122,95,77.9,0.7786885245901639,103,3,1.54191e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/5X8M
+pdb|7Z0X|H,pdb,"Chain H, THSC20.HVTR26 Fab heavy chain [Homo sapiens]",237,129,98,76.0,0.7596899224806202,107,11,1.55156e-60,188.734,100.0,1,120,https://www.rcsb.org/structure/7Z0X
+pdb|8J1T|H,pdb,"Chain H, 8-9D heavy chain [Homo sapiens]",115,118,96,81.4,0.8135593220338984,101,3,3.87131e-62,188.348,99.2,2,119,https://www.rcsb.org/structure/8J1T
+pdb|1T2J|A,pdb,"Chain A, M12-Variable Heavy domain [Homo sapiens]",116,120,96,80.0,0.8,103,4,4.60968e-62,188.348,100.0,1,120,https://www.rcsb.org/structure/1T2J
+pdb|5N88|A,pdb,"Chain A, VH59 antibody [Homo sapiens]",126,126,98,77.8,0.7777777777777778,104,7,5.27244e-62,188.348,100.0,1,119,https://www.rcsb.org/structure/5N88
+pdb|7DV4|B,pdb,"Chain B, 4003-1(VH) [Homo sapiens]",120,120,94,78.3,0.7833333333333333,102,1,5.29735e-62,188.348,100.0,1,120,https://www.rcsb.org/structure/7DV4
+pdb|7CDI|H,pdb,"Chain H, antibody P2C-1F11 heavy chain [Homo sapiens]",217,120,98,81.7,0.8166666666666667,104,3,9.89588e-61,188.348,100.0,1,120,https://www.rcsb.org/structure/7CDI
+pdb|7M6D|H,pdb,"Chain H, BG4-25 Fab Heavy Chain [Homo sapiens]",224,120,95,79.2,0.7916666666666666,102,2,1.20172e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7M6D
+pdb|9B2C|H,pdb,"Chain H, PD33 Fab heavy chain [Mus sp.]",222,120,93,77.5,0.775,103,1,1.20647e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/9B2C
+pdb|9DS1|H,pdb,"Chain H, 241_2F04, Heavy chain [Homo sapiens]",226,122,96,78.7,0.7868852459016393,102,4,1.26402e-60,188.348,100.0,1,118,https://www.rcsb.org/structure/9DS1
+pdb|7E5Y|C,pdb,"Chain C, 2B11 Fab Heavy chain [Homo sapiens]",221,120,98,81.7,0.8166666666666667,103,2,1.30486e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7E5Y
+pdb|6DKJ|A,pdb,"Chain A, Fab heavy chain [Homo sapiens]",223,120,92,76.7,0.7666666666666667,102,0,1.34307e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/6DKJ
+pdb|12ES|D,pdb,"Chain D, Heavy chain of the BCMA-targeted Fab arm of linvoseltamab [Homo sapiens]",227,125,92,73.6,0.736,106,5,1.36161e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/12ES
+pdb|2QR0|B,pdb,"Chain B, Fab-Fragment Heavy Chain [Homo sapiens]",221,120,97,80.8,0.8083333333333333,102,2,1.42402e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/2QR0
+pdb|1TZI|B,pdb,"Chain B, Fab YADS2 Heavy Chain [Mus musculus]",222,120,91,75.8,0.7583333333333333,97,0,1.45264e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/1TZI
+pdb|8EEE|A,pdb,"Chain A, rhMZ104-D antibody heavy chain [Macaca mulatta]",228,127,95,74.8,0.7480314960629921,103,7,1.51552e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/8EEE
+pdb|8CMA|H,pdb,"Chain H, BA.4/5-35 heavy chain [Homo sapiens]",223,120,96,80.0,0.8,102,2,1.53115e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/8CMA
+pdb|9DBO|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",224,126,98,77.8,0.7777777777777778,103,9,1.59633e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/9DBO
+pdb|7SU0|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",229,119,94,79.0,0.7899159663865546,101,2,1.63241e-60,188.348,99.2,2,120,https://www.rcsb.org/structure/7SU0
+pdb|6SRX|HHH,pdb,"Chain HHH, Fab C0021158 heavy chain (IgG1) [Homo sapiens]",233,122,96,78.7,0.7868852459016393,104,4,1.70886e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/6SRX
+pdb|7B3O|H,pdb,"Chain H, Heavy Chain of Fab Fragment [Homo sapiens]",228,120,96,80.0,0.8,102,4,1.70893e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7B3O
+pdb|7CHZ|H,pdb,"Chain H, heavy chain of antibody binding fragment of IgG26A [Homo sapiens]",227,120,92,76.7,0.7666666666666667,99,0,1.73135e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7CHZ
+pdb|3G6J|F,pdb,"Chain F, Fab heavy chain [Homo sapiens]",226,123,94,76.4,0.7642276422764228,102,3,1.75401e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/3G6J
+pdb|9NW6|E,pdb,"Chain E, CA147v24 heavy chain [Homo sapiens]",234,122,96,78.7,0.7868852459016393,104,2,1.90162e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/9NW6
+pdb|8R8D|E,pdb,"Chain E, Garadacimab heavy chain variable region [Homo sapiens]",234,130,101,77.7,0.7769230769230769,107,11,1.98648e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/8R8D
+pdb|7KX4|B,pdb,"Chain B, ADI-36121 Fab heavy chain [Homo sapiens]",230,120,96,80.0,0.8,103,2,2.00437e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7KX4
+pdb|7WOP|B,pdb,"Chain B, 16L9 [Homo sapiens]",247,122,98,80.3,0.8032786885245902,105,3,2.72691e-60,188.348,100.0,1,120,https://www.rcsb.org/structure/7WOP
+pdb|9Q69|A,pdb,"Chain A, RP.047 Heavy Chain [Mus musculus]",117,118,94,79.7,0.7966101694915254,102,1,5.79842e-62,187.963,100.0,1,118,https://www.rcsb.org/structure/9Q69
+pdb|5XJ4|H,pdb,"Chain H, durvalumab-VH [Homo sapiens]",121,122,95,77.9,0.7786885245901639,103,3,6.59117e-62,187.963,100.0,1,120,https://www.rcsb.org/structure/5XJ4
+pdb|9L6C|A,pdb,"Chain A, Heavy chain of Fab ConD-852 [Homo sapiens]",123,123,96,78.0,0.7804878048780488,103,3,7.84276e-62,187.963,100.0,1,120,https://www.rcsb.org/structure/9L6C
+pdb|8GOU|H,pdb,"Chain H, TH003 Fab heavy chain [Homo sapiens]",120,120,94,78.3,0.7833333333333333,102,0,8.58316e-62,187.963,100.0,1,120,https://www.rcsb.org/structure/8GOU
+pdb|9N4F|H,pdb,"Chain H, Variable domain of the heavy chain of 240-14-IgA_2F02 Fab [Homo sapiens]",125,126,99,78.6,0.7857142857142857,107,7,9.64463e-62,187.963,100.0,1,120,https://www.rcsb.org/structure/9N4F
+pdb|5BO1|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",219,120,96,80.0,0.8,100,4,1.47708e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/5BO1
+pdb|7BEJ|H,pdb,"Chain H, COVOX-158 heavy chain [Homo sapiens]",222,120,98,81.7,0.8166666666666667,104,3,1.67426e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/7BEJ
+pdb|7KKH|B,pdb,"Chain B, P1A4 Fab Heavy Chain [Homo sapiens]",221,120,96,80.0,0.8,100,2,1.67754e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/7KKH
+pdb|5J3D|A,pdb,"Chain A, 14N4 heavy chain [Homo sapiens]",224,123,98,79.7,0.7967479674796748,105,5,1.68592e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/5J3D
+pdb|6AYZ|B,pdb,"Chain B, Fab Heavy Chain [Homo sapiens]",224,120,96,80.0,0.8,101,3,1.74207e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/6AYZ
+pdb|2R0K|H,pdb,"Chain H, antibody heavy chain of Fab58, Fab portion only [Homo sapiens]",225,120,93,77.5,0.775,101,3,1.77692e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/2R0K
+pdb|8X0X|G,pdb,"Chain G, Heavy chain of JE-5C Fab [Homo sapiens]",221,120,98,81.7,0.8166666666666667,102,2,1.79116e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/8X0X
+pdb|7F7H|A,pdb,"Chain A, Heavy chain of A8-1 Fab [Homo sapiens]",218,120,97,80.8,0.8083333333333333,103,3,1.92346e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/7F7H
+pdb|9AVO|B,pdb,"Chain B, Fab Heavy Chain [Homo sapiens]",228,120,96,80.0,0.8,101,3,2.10291e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/9AVO
+pdb|7SU1|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",229,119,94,79.0,0.7899159663865546,101,2,2.14472e-60,187.963,99.2,2,120,https://www.rcsb.org/structure/7SU1
+pdb|7K8O|H,pdb,"Chain H, C002 Fab Heavy Chain [Homo sapiens]",236,124,95,76.6,0.7661290322580645,102,4,2.48657e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/7K8O
+pdb|8VIA|H,pdb,"Chain H, PVI.V5-4 heavy chain [Homo sapiens]",236,124,95,76.6,0.7661290322580645,101,5,2.62603e-60,187.963,100.0,1,119,https://www.rcsb.org/structure/8VIA
+pdb|8GPY|C,pdb,"Chain C, scFv [Homo sapiens]",232,120,94,78.3,0.7833333333333333,102,0,2.65042e-60,187.963,100.0,1,120,https://www.rcsb.org/structure/8GPY
+pdb|7Q9G|E,pdb,"Chain E, COVOX-222 heavy chain [Homo sapiens]",119,120,98,81.7,0.8166666666666667,102,1,8.68533e-62,187.578,100.0,1,120,https://www.rcsb.org/structure/7Q9G
+pdb|9LBS|D,pdb,"Chain D, Heavy chain of ConBA-998 [Homo sapiens]",118,120,98,81.7,0.8166666666666667,102,2,1.13109e-61,187.578,100.0,1,120,https://www.rcsb.org/structure/9LBS
+pdb|9B7P|H,pdb,"Chain H, Fab2-6 heavy chain [Homo sapiens]",127,128,97,75.8,0.7578125,105,10,1.13519e-61,187.578,99.2,2,120,https://www.rcsb.org/structure/9B7P
+pdb|5DWU|H,pdb,"Chain H, Fab - Heavy Chain [Homo sapiens]",222,120,96,80.0,0.8,100,3,2.32342e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/5DWU
+pdb|6B70|C,pdb,"Chain C, FAB H11-E heavy chain [synthetic construct]",218,118,93,78.8,0.788135593220339,99,1,2.36716e-60,187.578,100.0,1,118,https://www.rcsb.org/structure/6B70
+pdb|4XXD|B,pdb,"Chain B, Fab Heavy Chain [Homo sapiens]",223,120,95,79.2,0.7916666666666666,100,8,2.36999e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/4XXD
+pdb|9CF6|H,pdb,"Chain H, Fab eOD-CL02.1 heavy chain [Homo sapiens]",221,120,94,78.3,0.7833333333333333,100,2,2.45868e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/9CF6
+pdb|7WO4|D,pdb,"Chain D, mAb15 VH [Homo sapiens]",225,120,92,76.7,0.7666666666666667,104,1,2.69085e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/7WO4
+pdb|8HC2|H,pdb,"Chain H, Heavy chain of YB9-258 Fab [Homo sapiens]",220,120,95,79.2,0.7916666666666666,103,4,2.74781e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/8HC2
+pdb|8VTP|A,pdb,"Chain A, S1CE VARIANT OF FAB-EPR-1 heavy chain [Homo sapiens]",224,118,93,78.8,0.788135593220339,98,3,2.81679e-60,187.578,100.0,1,118,https://www.rcsb.org/structure/8VTP
+pdb|7MZF|H,pdb,"Chain H, PDI 37 heavy chain [Homo sapiens]",224,120,97,80.8,0.8083333333333333,103,3,2.84772e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/7MZF
+pdb|8VUA|A,pdb,"Chain A, S1CE1 VARIANT OF FAB-EPR-1 heavy chain [Homo sapiens]",224,118,93,78.8,0.788135593220339,98,3,2.87899e-60,187.578,100.0,1,118,https://www.rcsb.org/structure/8VUA
+pdb|5UOE|H,pdb,"Chain H, FAB Heavy chain with engineered elbow [Homo sapiens]",229,118,93,78.8,0.788135593220339,99,1,2.91162e-60,187.578,100.0,1,118,https://www.rcsb.org/structure/5UOE
+pdb|6PZW|F,pdb,"Chain F, NA-22 fragment antigen binding heavy chain [Homo sapiens]",227,124,94,75.8,0.7580645161290323,104,4,2.92419e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/6PZW
+pdb|8UWZ|A,pdb,"Chain A, Raamsizumab heavy chain [Homo sapiens]",228,120,94,78.3,0.7833333333333333,100,0,2.94997e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/8UWZ
+pdb|9L1S|C,pdb,"Chain C, Pertuzumab Fab heavy chain [Homo sapiens]",227,120,93,77.5,0.775,100,1,3.05474e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/9L1S
+pdb|8VUC|A,pdb,"Chain A, S1CE2 VARIANT OF FAB-EPR-1 heavy chain [Homo sapiens]",224,118,93,78.8,0.788135593220339,98,3,3.07395e-60,187.578,100.0,1,118,https://www.rcsb.org/structure/8VUC
+pdb|3HR5|B,pdb,"Chain B, Fab h47H4 heavy chain [Mus musculus]",226,120,95,79.2,0.7916666666666666,100,3,3.16315e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/3HR5
+pdb|8HPV|E,pdb,"Chain E, fab L5.34 [Homo sapiens]",225,123,97,78.9,0.7886178861788617,101,4,3.23976e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/8HPV
+pdb|6PZH|B,pdb,"Chain B, NA-22 Fab heavy chain [Homo sapiens]",234,124,94,75.8,0.7580645161290323,104,4,3.35439e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/6PZH
+pdb|6PHC|A,pdb,"Chain A, Antibody Fab, Heavy Chain [Homo sapiens]",228,125,92,73.6,0.736,104,5,3.39985e-60,187.578,100.0,1,120,https://www.rcsb.org/structure/6PHC
+pdb|9SFX|H,pdb,"Chain H, Heavy-chain of anti-IL-17A antibody XAB5 Fv (crystallization aid) [Homo sapiens]",122,120,93,77.5,0.775,103,4,1.45061e-61,187.193,100.0,1,120,https://www.rcsb.org/structure/9SFX
+pdb|8YZ5|G,pdb,"Chain G, Fab heavy chain of JE-5C [Homo sapiens]",119,120,98,81.7,0.8166666666666667,102,2,1.62294e-61,187.193,100.0,1,120,https://www.rcsb.org/structure/8YZ5
+pdb|9O8S|G,pdb,"Chain G, NI04359_d30_240 Fab heavy chain [Homo sapiens]",130,130,96,73.8,0.7384615384615385,105,10,2.04775e-61,187.193,100.0,1,120,https://www.rcsb.org/structure/9O8S
+pdb|7WBZ|H,pdb,"Chain H, heavy chain [Homo sapiens]",222,120,98,81.7,0.8166666666666667,102,3,3.25965e-60,187.193,100.0,1,120,https://www.rcsb.org/structure/7WBZ
+pdb|7VNG|H,pdb,"Chain H, S11 Fab heavy chain [Homo sapiens]",221,123,96,78.0,0.7804878048780488,103,3,3.44947e-60,187.193,100.0,1,120,https://www.rcsb.org/structure/7VNG
+pdb|2R0L|H,pdb,"Chain H, antibody heavy chain, Fab portion only [synthetic construct]",220,120,95,79.2,0.7916666666666666,101,3,3.5326e-60,187.193,100.0,1,120,https://www.rcsb.org/structure/2R0L
+pdb|7CWL|G,pdb,"Chain G, Fab P17 heavy chain [Homo sapiens]",120,118,93,78.8,0.788135593220339,99,1,2.20439e-61,186.808,98.3,3,120,https://www.rcsb.org/structure/7CWL
+pdb|8K19|A,pdb,"Chain A, ZCP3B4 heavy chain [Homo sapiens]",119,120,93,77.5,0.775,101,1,3.03257e-61,186.422,100.0,1,120,https://www.rcsb.org/structure/8K19
+pdb|8BCZ|E,pdb,"Chain E, EY6A heavy chain [Homo sapiens]",121,122,97,79.5,0.7950819672131147,103,3,3.16296e-61,186.422,100.0,1,120,https://www.rcsb.org/structure/8BCZ
+pdb|9B7R|H,pdb,"Chain H, Fab3-1 heavy chain [Homo sapiens]",128,128,96,75.0,0.75,104,8,3.91636e-61,186.422,100.0,1,120,https://www.rcsb.org/structure/9B7R
+pdb|9VQ6|A,pdb,"Chain A, IL-6 Nanobody (NB) [Camelus dromedarius]",132,120,96,80.0,0.8,103,4,4.03537e-61,186.422,100.0,1,119,https://www.rcsb.org/structure/9VQ6
+pdb|9G7K|C,pdb,"Chain C, Nanobody 12 [Lama glama]",136,131,97,74.0,0.7404580152671756,103,12,5.35112e-61,186.422,100.0,1,120,https://www.rcsb.org/structure/9G7K
+pdb|2VH5|H,pdb,"Chain H, ANTI-RAS FV HEAVY CHAIN [Homo sapiens]",114,119,94,79.0,0.7899159663865546,100,5,3.47597e-61,186.037,100.0,1,119,https://www.rcsb.org/structure/2VH5
+pdb|9Z12|H,pdb,"Chain H, Antibody B3-1 Heavy Chain [Homo sapiens]",121,121,93,76.9,0.768595041322314,103,1,4.11535e-61,186.037,100.0,1,120,https://www.rcsb.org/structure/9Z12
+pdb|9XGX|A,pdb,"Chain A, Heavy chain of SR-23 Fab [Homo sapiens]",117,122,98,80.3,0.8032786885245902,105,7,4.176e-61,186.037,100.0,1,120,https://www.rcsb.org/structure/9XGX
+pdb|7LY0|H,pdb,"Chain H, S2M28 Fab Heavy Chain variable region [Homo sapiens]",117,118,94,79.7,0.7966101694915254,101,1,4.41142e-61,186.037,99.2,2,119,https://www.rcsb.org/structure/7LY0
+pdb|8EQF|H,pdb,"Chain H, Fab heavy chain [Homo sapiens]",123,123,94,76.4,0.7642276422764228,101,3,4.8429e-61,186.037,100.0,1,120,https://www.rcsb.org/structure/8EQF
+pdb|4Y5Y|A,pdb,"Chain A, diabody 330 VH domain [Homo sapiens]",130,120,90,75.0,0.75,102,2,5.86705e-61,186.037,100.0,1,120,https://www.rcsb.org/structure/4Y5Y
+pdb|5NBD|C,pdb,"Chain C, Nanobody [Lama glama]",123,123,93,75.6,0.7560975609756098,101,3,5.58498e-61,185.652,100.0,1,120,https://www.rcsb.org/structure/5NBD
+pdb|9Z3Q|B,pdb,"Chain B, MLKH10 Heavy chain FV [Mus musculus]",121,121,90,74.4,0.743801652892562,105,1,6.04104e-61,185.652,100.0,1,120,https://www.rcsb.org/structure/9Z3Q
+pdb|8ZNZ|D,pdb,"Chain D, HB0038 Fab heavy chain [Homo sapiens]",124,124,91,73.4,0.7338709677419355,100,5,6.09198e-61,185.652,100.0,1,119,https://www.rcsb.org/structure/8ZNZ
+pdb|8A1E|D,pdb,"Chain D, Fab 17C7 heavy chain variable domain [Homo sapiens]",119,120,92,76.7,0.7666666666666667,101,1,6.32338e-61,185.652,100.0,1,120,https://www.rcsb.org/structure/8A1E
+pdb|1OL0|A,pdb,"Chain A, IMMUNOGLOBULIN G [Homo sapiens]",121,121,93,76.9,0.768595041322314,103,1,6.74126e-61,185.652,100.0,1,120,https://www.rcsb.org/structure/1OL0
+pdb|9B6O|H,pdb,"Chain H, Fab1-2 heavy chain [Homo sapiens]",120,120,92,76.7,0.7666666666666667,100,1,8.13023e-61,185.267,100.0,1,120,https://www.rcsb.org/structure/9B6O
+pdb|7PNM|G,pdb,"Chain G, 46C12 antibody heavy chain [Homo sapiens]",121,121,92,76.0,0.7603305785123967,102,1,9.36762e-61,185.267,100.0,1,120,https://www.rcsb.org/structure/7PNM
+pdb|7LXW|H,pdb,"Chain H, S2X333 Fab Heavy Chain variable region [Homo sapiens]",121,121,92,76.0,0.7603305785123967,103,4,1.03394e-60,185.267,99.2,2,118,https://www.rcsb.org/structure/7LXW
+pdb|9Q7C|D,pdb,"Chain D, RP.052 Heavy Chain [Mus musculus]",119,119,95,79.8,0.7983193277310925,104,1,1.08229e-60,184.882,100.0,1,118,https://www.rcsb.org/structure/9Q7C
+pdb|8HC7|H,pdb,"Chain H, Heavy chain variable region of YB9-258 [Homo sapiens]",115,119,94,79.0,0.7899159663865546,102,4,1.09855e-60,184.882,100.0,1,119,https://www.rcsb.org/structure/8HC7
+pdb|7WVM|A,pdb,"Chain A, Heavy Chain of Cemiplimab [Homo sapiens]",117,120,95,79.2,0.7916666666666666,103,3,1.17091e-60,184.882,100.0,1,120,https://www.rcsb.org/structure/7WVM
+pdb|9KVD|A,pdb,"Chain A, The heavy chain of 4C11 [Macaca mulatta]",123,123,90,73.2,0.7317073170731707,103,3,1.29941e-60,184.882,100.0,1,120,https://www.rcsb.org/structure/9KVD
+pdb|7WHZ|B,pdb,"Chain B, XMA04 heavy chain variable domain [Homo sapiens]",124,124,90,72.6,0.7258064516129032,101,4,1.37147e-60,184.882,100.0,1,120,https://www.rcsb.org/structure/7WHZ
+pdb|9OSU|H,pdb,"Chain H, Heavy chain of Fab from human antibody HB315 [Homo sapiens]",127,127,95,74.8,0.7480314960629921,102,7,1.64839e-60,184.882,100.0,1,120,https://www.rcsb.org/structure/9OSU
+pdb|9B7Q|1,pdb,"Chain 1, Fab2-7 heavy chain [Homo sapiens]",131,131,94,71.8,0.7175572519083969,104,13,1.73578e-60,184.882,100.0,1,118,https://www.rcsb.org/structure/9B7Q
+pdb|1FVC|B,pdb,"Chain B, IGG1-KAPPA 4D5 FV (HEAVY CHAIN) [Homo sapiens]",120,120,91,75.8,0.7583333333333333,98,0,1.69521e-60,184.496,100.0,1,120,https://www.rcsb.org/structure/1FVC
+pdb|6DZL|G,pdb,"Chain G, Fv domain of ADI-15878 Fab heavy chain [Homo sapiens]",121,121,93,76.9,0.768595041322314,101,2,1.9108e-60,184.496,100.0,1,119,https://www.rcsb.org/structure/6DZL
+pdb|7XIC|E,pdb,"Chain E, heavy chain of STS165 [Homo sapiens]",129,128,94,73.4,0.734375,104,8,2.21275e-60,184.496,100.0,1,120,https://www.rcsb.org/structure/7XIC
+pdb|4RAV|A,pdb,"Chain A, single-chain Fv, VH [Homo sapiens]",126,118,93,78.8,0.788135593220339,99,5,2.26736e-60,184.496,100.0,1,118,https://www.rcsb.org/structure/4RAV
+pdb|6J7W|A,pdb,"Chain A, UniAb [Homo sapiens]",118,119,95,79.8,0.7983193277310925,101,1,2.30897e-60,184.111,100.0,1,119,https://www.rcsb.org/structure/6J7W
+pdb|7WHI|G,pdb,"Chain G, Bn03_nano2 [Homo sapiens]",120,121,95,78.5,0.7851239669421488,101,2,2.38163e-60,184.111,100.0,1,120,https://www.rcsb.org/structure/7WHI
+pdb|6WDS|H,pdb,"Chain H, EV68-159 heavy chain [Homo sapiens]",118,120,94,78.3,0.7833333333333333,105,2,2.6628e-60,184.111,100.0,1,120,https://www.rcsb.org/structure/6WDS
+pdb|7WS0|E,pdb,"Chain E, 510A5 heavy chain [Homo sapiens]",125,123,92,74.8,0.7479674796747967,102,3,3.0179e-60,184.111,100.0,1,120,https://www.rcsb.org/structure/7WS0
+pdb|9UHG|I,pdb,"Chain I, BA5-12-CDR1-H [Homo sapiens]",119,120,90,75.0,0.75,101,1,2.93619e-60,183.726,100.0,1,120,https://www.rcsb.org/structure/9UHG
+pdb|9L6C|D,pdb,"Chain D, Heavy chain of Fab P2C-1F11 [Homo sapiens]",115,118,96,81.4,0.8135593220338984,102,3,3.51361e-60,183.726,99.2,2,119,https://www.rcsb.org/structure/9L6C

@@ -1,0 +1,23 @@
+{
+  "task_id": "342256486130688",
+  "name": "5GRJ_VH_seqfitness",
+  "type": "Sequence Fitness Mutation Effect",
+  "status": "succeeded",
+  "submitted_utc": "2026-10-20T02:45:12Z",
+  "duration": "3s",
+  "payload": {
+    "sequence": "EVQLLESGGGLVQPGGSLRLSCAASGFTFSSYIMMWVRQAPGKGLEWVSSIYPSGGITFYADTVKGRFTISRDNSKNTLYLQMNSLRAEDTAVYYCARIKLGTVTTVDYWGQGTLVTVSS"
+  },
+  "chain": "A",
+  "purpose": "deep sequence-model mutation scan, VH",
+  "raw_dir": "sequence_fitness_mutation_effect_342256486130688",
+  "raw_files": [
+    "sequence_scores.csv"
+  ],
+  "raw_files_copied": [
+    {
+      "file": "sequence_scores.csv",
+      "bytes": 61352
+    }
+  ]
+}

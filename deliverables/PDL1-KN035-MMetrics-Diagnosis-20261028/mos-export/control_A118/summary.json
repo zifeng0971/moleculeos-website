@@ -1,0 +1,190 @@
+{
+  "task": {
+    "task_id": "345176768607232",
+    "task_name": "diag_PDL1_A118_20261028",
+    "task_type": "Sequence Homology Search",
+    "status": "succeed",
+    "started_raw": "2026-10-28 08:47:52",
+    "duration": "3s"
+  },
+  "query": {
+    "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+    "length": 118,
+    "source": "chain A of MMFold_1, provided explicitly as `sequence`"
+  },
+  "query_verification": {
+    "general_query_sequence_equals_input": true,
+    "general_query_length": 118,
+    "unique_query_sequences_in_alignments": 1,
+    "every_alignment_query_equals_input": true,
+    "any_alignment_query_equals_chain_B": false
+  },
+  "counts": {
+    "n_alignments": 473,
+    "n_unique_hits": 457,
+    "n_fasta_records": 457,
+    "n_unique_fasta_ids": 457,
+    "n_hits_with_multiple_hsps": 16
+  },
+  "by_database": {
+    "pdb": {
+      "n_alignments": 239,
+      "n_unique_hits": 233,
+      "identity_percentage_max": 1.0,
+      "e_value_min": 5.20957e-85,
+      "n_e_value_below_1e-5": 63
+    },
+    "sp": {
+      "n_alignments": 234,
+      "n_unique_hits": 224,
+      "identity_percentage_max": 1.0,
+      "e_value_min": 8.75398e-81,
+      "n_e_value_below_1e-5": 17
+    }
+  },
+  "hit_db_meaning": {
+    "pdb": "RCSB PDB chains",
+    "sp": "UniProtKB/Swiss-Prot entries (reference 'UniProt')"
+  },
+  "identity_and_evalue_range": {
+    "identity_percentage_min": 0.1834862385321101,
+    "identity_percentage_max": 1.0,
+    "e_value_min": 5.20957e-85,
+    "e_value_max": 9.84716,
+    "n_e_value_below_1e-5": 80,
+    "n_e_value_below_1e-3": 120
+  },
+  "top5": [
+    {
+      "hit_id": "pdb|5JDS|A",
+      "hit_name": "5JDS_A",
+      "hit_db": "pdb",
+      "reference": "RCSB",
+      "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "hit_len": 124,
+      "hsp_id": 0,
+      "identity_count": 118,
+      "identity_percentage": 1.0,
+      "identity_scale": "fraction 0-1 as returned by the tool (not percent 0-100)",
+      "e_value": 5.20957e-85,
+      "bit_score": 246.514,
+      "score": 628.0,
+      "query_from": 1,
+      "query_to": 118,
+      "query_coverage_residues": 118,
+      "query_coverage_fraction": 1.0,
+      "hit_from": 1,
+      "hit_to": 118,
+      "links": {
+        "web_link": "https://www.rcsb.org/structure/5JDS",
+        "download_link": "https://files.rcsb.org/download/5JDS.pdb"
+      }
+    },
+    {
+      "hit_id": "pdb|6VQN|A",
+      "hit_name": "6VQN_A",
+      "hit_db": "pdb",
+      "reference": "RCSB",
+      "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|6VQN|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|6VQN|C Chain C, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|C Chain C, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|E Chain E, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|G Chain G, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|I Chain I, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UX5|K Chain K, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UXO|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UXP|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UXP|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UXQ|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|7UXQ|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "hit_len": 129,
+      "hsp_id": 0,
+      "identity_count": 116,
+      "identity_percentage": 1.0,
+      "identity_scale": "fraction 0-1 as returned by the tool (not percent 0-100)",
+      "e_value": 1.23162e-83,
+      "bit_score": 243.047,
+      "score": 619.0,
+      "query_from": 1,
+      "query_to": 116,
+      "query_coverage_residues": 116,
+      "query_coverage_fraction": 0.9831,
+      "hit_from": 1,
+      "hit_to": 116,
+      "links": {
+        "web_link": "https://www.rcsb.org/structure/6VQN",
+        "download_link": "https://files.rcsb.org/download/6VQN.pdb"
+      }
+    },
+    {
+      "hit_id": "pdb|8RPB|P",
+      "hit_name": "8RPB_P",
+      "hit_db": "pdb",
+      "reference": "RCSB",
+      "description": "Chain P, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "hit_len": 125,
+      "hsp_id": 0,
+      "identity_count": 116,
+      "identity_percentage": 1.0,
+      "identity_scale": "fraction 0-1 as returned by the tool (not percent 0-100)",
+      "e_value": 1.69127e-83,
+      "bit_score": 242.662,
+      "score": 618.0,
+      "query_from": 1,
+      "query_to": 116,
+      "query_coverage_residues": 116,
+      "query_coverage_fraction": 0.9831,
+      "hit_from": 1,
+      "hit_to": 116,
+      "links": {
+        "web_link": "https://www.rcsb.org/structure/8RPB",
+        "download_link": "https://files.rcsb.org/download/8RPB.pdb"
+      }
+    },
+    {
+      "hit_id": "pdb|6NM7|A",
+      "hit_name": "6NM7_A",
+      "hit_db": "pdb",
+      "reference": "RCSB",
+      "description": "Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|6NM7|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|6NM8|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|6NM8|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|9IJT|A Chain A, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|9IJT|B Chain B, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|9IJT|C Chain C, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|9IJT|D Chain D, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "hit_len": 129,
+      "hsp_id": 0,
+      "identity_count": 115,
+      "identity_percentage": 0.9913793103448276,
+      "identity_scale": "fraction 0-1 as returned by the tool (not percent 0-100)",
+      "e_value": 4.59752e-83,
+      "bit_score": 241.891,
+      "score": 616.0,
+      "query_from": 1,
+      "query_to": 116,
+      "query_coverage_residues": 116,
+      "query_coverage_fraction": 0.9831,
+      "hit_from": 1,
+      "hit_to": 116,
+      "links": {
+        "web_link": "https://www.rcsb.org/structure/6NM7",
+        "download_link": "https://files.rcsb.org/download/6NM7.pdb"
+      }
+    },
+    {
+      "hit_id": "pdb|5IUS|C",
+      "hit_name": "5IUS_C",
+      "hit_db": "pdb",
+      "reference": "RCSB",
+      "description": "Chain C, Programmed cell death 1 ligand 1 [Homo sapiens] >pdb|5IUS|D Chain D, Programmed cell death 1 ligand 1 [Homo sapiens]",
+      "hit_len": 225,
+      "hsp_id": 0,
+      "identity_count": 116,
+      "identity_percentage": 1.0,
+      "identity_scale": "fraction 0-1 as returned by the tool (not percent 0-100)",
+      "e_value": 6.21143e-83,
+      "bit_score": 244.973,
+      "score": 624.0,
+      "query_from": 1,
+      "query_to": 116,
+      "query_coverage_residues": 116,
+      "query_coverage_fraction": 0.9831,
+      "hit_from": 1,
+      "hit_to": 116,
+      "links": {
+        "web_link": "https://www.rcsb.org/structure/5IUS",
+        "download_link": "https://files.rcsb.org/download/5IUS.pdb"
+      }
+    }
+  ],
+  "uniprot_top_hit_note": "sp|Q9NZQ7.1 aligns query residues 2-116 to UniProt positions 18-132 (115/115 identical). Query residue 1 (Met) and residues 117-118 (LE) are unaligned, which reproduces the earlier independent sequence check of chain A.",
+  "generated_utc": "2026-10-28T08:49:21+00:00",
+  "raw_files": {
+    "similarity_results.json": "40e3cea779a3ec9da098caac71ca4791cd1f2a5e1941f83922c9db140b7905ea",
+    "all_sequences.fasta": "2e7f51b815697d3b6c23e5b1b539780422986f3ffd3a4e8a3e672e65096ca6e2"
+  }
+}

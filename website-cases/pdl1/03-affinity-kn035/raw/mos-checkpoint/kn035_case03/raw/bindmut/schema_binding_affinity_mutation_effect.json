@@ -1,0 +1,17 @@
+{
+  "task_type": "Binding Affinity Mutation Effect",
+  "schema_observed_at": "2026-10-21T02:23Z",
+  "type": "object",
+  "title": "Input",
+  "required": ["input_structure", "chain_ids"],
+  "properties": {
+    "chain_ids": {"type": "string", "title": "Chain Ids", "description": "Comma-separated chain IDs to include in the affinity calculation. At least one valid chain ID is required. Example: 'A,B'."},
+    "input_structure": {"type": "string", "title": "Input Structure", "description": "TOS URI to the input protein structure in PDB or mmCIF format. The model uses this structure to compute binding affinity scores."},
+    "custom_output_path": {"type": "string", "title": "Custom Output Path", "default": "", "description": "Resolved output destination. Set by framework — see gateway.source.ApiSource.resolve_output_dest()."}
+  },
+  "notes": [
+    "Schema accepts NO mutation list and NO per-residue or per-chain restriction: the scan is exhaustive over all mutable positions of the supplied chains.",
+    "Consequence: the submitted job inevitably returns both chains A and B (4674 rows = 246 residues x 19 substitutions); the full table is retained as raw output and only chain-B rows are treated as candidates.",
+    "Schema documents no direction, no unit, and no score scale for the output ddG_pred column."
+  ]
+}

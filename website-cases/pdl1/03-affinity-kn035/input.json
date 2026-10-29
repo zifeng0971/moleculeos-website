@@ -1,0 +1,245 @@
+{
+  "case_id": "03-kn035",
+  "project_id": "342604683428864",
+  "project_url": "https://mos.moleculemind.com/?projectId=342604683428864",
+  "mos_object_id": "342604788900864",
+  "mos_work_id": "342604793074688",
+  "master": "01-structure/raw/MMFold_1.cif",
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "input_file": "01-structure/raw/MMFold_1.cif",
+  "input_file_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "chain_mapping": {
+    "A": {
+      "mmfold1": "A",
+      "role": "PD-L1",
+      "length": 118
+    },
+    "B": {
+      "mmfold1": "B",
+      "role": "KN035_VHH",
+      "length": 128
+    }
+  },
+  "submitted_prompts": {
+    "submitted-resume-prompt.txt": "继续：现在请CheckMOSTask Q116M/T105L 的真实状态并下载，立即打包/workspace/kn035_case03.zip（若未完成也要包括前三个已完成变体的全部原始CIF与confidence、输入payload、ID和当前状态）。不要只回复等待，不要继续调试分析脚本。",
+    "submitted-steer-prompt.txt": "补充已观察的案例02原生结果：Paratope= B27,29,30,32,99,100,101,102,103,104,105,108,109,111,113,114,115,116；IMGT CDR=B26-33,51-58,97-117；Epitope=A38,40,42,45,47,50,52,53,57,60,97,99,101,103,104,105,106,107,109。请更新native标记/来源为案例02项目342604060136448，原生MMetrics任务342604577018880。最终须分别给全B排名与界面优先排名，不要把远离界面的A35W单独讲成界面变强。不要取消/删除已启动任务；错误payload任务明确排除，并保留真实ledger。请先立即打包当前结果到/workspace/kn035_case03_checkpoint.zip，即使变体仍running也写实际状态；完成后另出最终包。",
+    "submitted-finalize-prompt.txt": "本地将独立重算全部结构比较，请优先把所有真实raw CIF/summary confidence与完整payload/ID、候选、mapping打包，不要再扩展或反复调试几何脚本。保留你已有分析供审计。检查Q116M/T105L两任务，完成就收齐，共5个变体全部原始样本。最终zip=/workspace/kn035_case03.zip。ΔΔG证据若无明确单位应写unknown，不把假设当平台声明。",
+    "submitted-prompt.txt": "案例03：只用本项目已导入MMFold_1.cif（原始sha256 d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317，A=PD-L1 118aa，B=KN035 VHH128aa）。不使用任何旧结构、不改变已有项目。先核验本对象完整序列、链ID、MOS编号↔原始label_seq_id逐残基映射并保存对象ID、tos路径、hash。读取Binding Affinity Mutation Effect实际schema后运行，链A,B相互作用，PD-L1不突变，只在B评分/筛选；若工具必然输出两链扫描，保留原表但只把B当候选。保存完整MutXaff CSV全部行、schema、实际提交payload、task ID、方向与单位来源，ΔΔG仅预测值。优先关注原生MMetrics Paratope及邻域，若未出结果明确标为未核验；本地4.5A接触B29,30,32,99,100,101,102,103,104,105,108,109,111,113,114,115,116仅作为local geometry参考不可伪称原生。排名至少10个B单点候选，排除突变为WT，核验WT身份；对前3个独立候选运行MMFold（输入为原始A序列不变+单点变体B序列），这是变体预测，不得重做主结构。保存所有CIF和confidence JSON/ipTM/pLDDT，变体序列、完整payload和任务ID、与主结构按A对齐比较，突变点面对的A残基。结果目录/workspace/kn035_case03/，含inputs、raw、candidates.json、task-ledger.json、编号映射，完成后打包/workspace/kn035_case03.zip供Workspace下载；未完成如实保留状态，不用其他任务替代。"
+  },
+  "residue_mapping_file": "raw/residue-numbering-map.json",
+  "task_payloads": [
+    {
+      "purpose": "binding affinity mutation scan on the WT complex",
+      "task_type": "Binding Affinity Mutation Effect",
+      "task_id": "342605020787712",
+      "task_name": "KN035_c03_bindmut_WT_complex",
+      "status": "SUCCEED",
+      "duration_s": 37,
+      "submitted_payload": {
+        "input_structure": "user_objects/123/330665428816896/342604788900864_MMFold_1.cif",
+        "chain_ids": "A,B"
+      },
+      "output": "raw/bindmut/affinity_scores.csv",
+      "output_rows": 4674,
+      "note": "Schema has no mutation-list input, so the scan is exhaustive over both chains: 246 residues x 19 substitutions. Full original table kept unchanged; only chain-B rows used as candidates.",
+      "cross_check": "Output is byte-identical (md5 ddcc858ceb28d60271bf00a2d1e8cd1b) to the native MMetrics autocompute diffaffinity scores for the same object, so this task and the native MMetrics DDG are one and the same model, not two independent methods."
+    },
+    {
+      "purpose": "variant structure prediction - candidate 1",
+      "task_type": "MMFold",
+      "task_id": "342605501072384",
+      "task_name": "KN035_c03_var_A35W",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_A35W.json",
+      "submitted_payload_sha256_pending": null,
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "A35W single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "note": "Variant prediction only. Not a re-do of the main complex.",
+      "duration_s": 210,
+      "raw_dir": "raw/variants/A35W",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_A35W",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMWWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_A35W.json"
+    },
+    {
+      "purpose": "variant structure prediction - candidate 2",
+      "task_type": "MMFold",
+      "task_id": "342605511136256",
+      "task_name": "KN035_c03_var_V109L",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_V109L.json",
+      "chain_A": "original 118 aa, unchanged (verified)",
+      "chain_B": "V109L single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "duration_s": 192,
+      "raw_dir": "raw/variants/V109L",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_V109L",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLLTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_V109L.json"
+    },
+    {
+      "purpose": "variant structure prediction - candidate 3",
+      "task_type": "MMFold",
+      "task_id": "342605520978944",
+      "task_name": "KN035_c03_var_C33Y",
+      "status": "SUCCEED",
+      "submitted_payload_file": "variants/payload_C33Y.json",
+      "chain_A": "original 118 aa, unchanged (verified)",
+      "chain_B": "C33Y single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "caveat": "B33 is a disulfide-forming cysteine (SG-SG 2.18 A to B106) in MMFold_1; this variant is predicted on request of the rank order but is chemically a disulfide-ablating variant.",
+      "duration_s": 198,
+      "raw_dir": "raw/variants/C33Y",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_C33Y",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRYMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_C33Y.json"
+    },
+    {
+      "purpose": "VOIDED erroneous submission - must not be used",
+      "task_type": "MMFold",
+      "task_id": "342605442536448",
+      "task_name": "KN035_c03_var_A35W",
+      "status": "SUCCEED (task ran) / EXCLUDED FROM ALL ANALYSIS",
+      "reason": "Payload transcribed by hand contained the WT residue at position 35 (no A35W change) and instead substituted the C-terminal S128W. Verified by diff against the library sequence. Superseded by task 342605501072384. Results, if any, are excluded from all analysis.",
+      "verified_diff_vs_WT": [
+        {
+          "position": 128,
+          "wt": "S",
+          "submitted": "W"
+        }
+      ],
+      "exclusion_reason": "Payload carried the WT residue at position 35 and instead substituted C-terminal S128W. Results exist on the platform but are excluded; the task was neither cancelled nor deleted.",
+      "superseded_by": "342605501072384"
+    },
+    {
+      "purpose": "variant structure prediction - interface-priority candidate 2",
+      "task_type": "MMFold",
+      "task_id": "342606341129216",
+      "task_name": "KN035_c03_var_Q116M",
+      "status": "SUCCEED",
+      "duration_s": 120,
+      "submitted_payload_file": "variants/payload_Q116M.json",
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "Q116M single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "raw_dir": "raw/variants/Q116M",
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_Q116M",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFMYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_Q116M.json"
+    },
+    {
+      "purpose": "variant structure prediction - interface-priority candidate 3",
+      "task_type": "MMFold",
+      "task_id": "342606351508480",
+      "task_name": "KN035_c03_var_T105L",
+      "status": "SUCCEED",
+      "duration_s_at_packaging": 80,
+      "submitted_payload_file": "variants/payload_T105L.json",
+      "chain_A": "original 118 aa, unchanged (verified identical to MMFold_1 chain A)",
+      "chain_B": "T105L single substitution on 128 aa WT",
+      "variant_sequence_verified": true,
+      "raw_dir": "raw/variants/T105L",
+      "duration_s": 228,
+      "n_samples": 5,
+      "n_confidence_json": 5,
+      "actual_submitted_payload": {
+        "name": "KN035_c03_variant_T105L",
+        "dialect": "mmfold",
+        "version": 1,
+        "sequences": [
+          {
+            "protein": {
+              "id": "A",
+              "sequence": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE"
+            }
+          },
+          {
+            "protein": {
+              "id": "B",
+              "sequence": "QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPLCTLVTSSGAFQYWGQGTQVTVSS"
+            }
+          }
+        ]
+      },
+      "actual_submitted_payload_source": "03-affinity-kn035/raw/mos-export/kn035_case03/variants/payload_T105L.json"
+    }
+  ],
+  "chain_scoring_limit": "Task schema only accepts chain_ids A,B and exhaustively scores both chains; retain complete 4674 rows, select only B128*19=2432 candidates. A remains WT in every variant input."
+}

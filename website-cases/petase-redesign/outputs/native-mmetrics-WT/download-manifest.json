@@ -1,0 +1,42 @@
+{
+  "origin": "MOS native page Download controls via Chrome Computer Use",
+  "captured_utc": "2026-10-20T08:49:55.685653+00:00",
+  "files": [
+    {
+      "file": "outputs/native-mmetrics-WT/MutXevo.csv",
+      "download_name": "MutXevo (3).csv",
+      "bytes": 111307,
+      "sha256": "b280a3cab68382f6d46f24f162d56dc1db70cca3cc0cab52d3286221765c0938",
+      "data_rows": 5360,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-WT/MutXstruct.csv",
+      "download_name": "MutXstruct (1).csv",
+      "bytes": 140282,
+      "sha256": "7a9b7f1c5580b68b3426ed6d4f84aa6ec2353b2dcf32a4bd66771c2978138971",
+      "data_rows": 5360,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    },
+    {
+      "file": "outputs/native-mmetrics-WT/MutXseq.csv",
+      "download_name": "MutXseq (1).csv",
+      "bytes": 140098,
+      "sha256": "8c2833162b49401b739625acbf0d91424735eb09517d26c7f29c0617da515fa8",
+      "data_rows": 5360,
+      "header": [
+        "chain",
+        "mutation",
+        "score"
+      ]
+    }
+  ]
+}

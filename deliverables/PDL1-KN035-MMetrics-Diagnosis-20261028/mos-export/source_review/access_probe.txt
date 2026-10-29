@@ -1,0 +1,47 @@
+# Source/config access probe (read-only), 2026-10-28T08:44:59Z
+
+## A. Directories under /workspace (depth<=3)
+/workspace
+/workspace/.mocha
+/workspace/.mocha/seq_lib
+/workspace/downloads
+/workspace/kn035_case02
+/workspace/kn035_case02/derived
+/workspace/kn035_case02/derived/antibody
+/workspace/kn035_case02/derived/mmetrics
+/workspace/kn035_case02/derived/mutx
+/workspace/kn035_case02/derived/verification
+/workspace/kn035_case02/raw
+/workspace/kn035_case02/raw/native_task_342604299285504
+/workspace/kn035_case02/raw/native_task_342604577018880
+/workspace/kn035_case02/raw/structure
+/workspace/kn035_case02/scripts
+/workspace/kn035_case02_supplement
+/workspace/kn035_case02_supplement/comparison
+/workspace/kn035_case02_supplement/mapping
+/workspace/kn035_case02_supplement/scripts
+/workspace/kn035_case02_supplement/tasks
+/workspace/kn035_case02_supplement/tasks/aban_342606092895232
+/workspace/kn035_case02_supplement/tasks/abscn_language_342606094599168
+/workspace/kn035_case02_supplement/tasks/abscn_nativeness_342606097245184
+/workspace/kn035_case02_supplement/tasks/paradt_342606100722688
+/workspace/kn035_homolog_diagnosis_20261028
+/workspace/kn035_homolog_diagnosis_20261028/evidence
+/workspace/kn035_homolog_diagnosis_20261028/scripts
+/workspace/kn035_homolog_diagnosis_20261028/source_review
+/workspace/kn035_homolog_diagnosis_20261028/tooling
+/workspace/protein_data
+/workspace/protein_data/protein_342604299084800
+
+## B. Files under /workspace/.mocha (if any)
+total 4
+drwxr-xr-x 2 root root 4096 Oct 21 02:24 seq_lib
+
+## C. Local python packages matching mos/mocha/metrics
+mos False
+mocha False
+mmetrics False
+autocompute False
+abnumber True
+ablang False
+abnativ False

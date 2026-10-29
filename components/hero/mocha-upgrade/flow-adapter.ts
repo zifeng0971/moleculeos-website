@@ -150,7 +150,7 @@ export function buildMochaFlow(task: DemoTask, title: string): MochaFlowConfig {
   const setupRow = row('thinking', 'Understand the request and prepare a plan', setup);
   const clarifyRow = row('hitl', 'Confirm mutation scope', clarify);
   const mmfoldRow = row('mostask', 'Predict and inspect the complex', mmfold, 'MMFold');
-  const scoringRow = row('mostask', 'Run mutation scoring and verification', scoring, 'MOS Tasks');
+  const scoringRow = row('mostask', 'Run mutation scoring and verification', scoring, 'MoleculeOS Tasks');
   const viewerRow = row('viewer', 'Results and structure ready', results, '3D Viewer');
   const todos = [
     { status: 'loading' as const, text: 'Verify antigen, heavy-chain and light-chain inputs' },

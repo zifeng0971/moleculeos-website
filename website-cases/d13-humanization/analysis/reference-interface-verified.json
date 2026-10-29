@@ -1,0 +1,223 @@
+{
+  "source_kind": "independent local geometry on public experimental reference; not MOS model prediction",
+  "input_sha256": "2f634d7f3d7e53edd4676afa6f782c9a1194e1d0373959fdaa5f0f605ef8d91c",
+  "contact_cutoff_A": 4.5,
+  "residue_counts": {
+    "H": {
+      "variable_contact_residues": 10,
+      "constant_contact_residues": 0
+    },
+    "L": {
+      "variable_contact_residues": 7,
+      "constant_contact_residues": 0
+    }
+  },
+  "contacts": [
+    {
+      "auth_chain": "H",
+      "sequence_position": 30,
+      "auth_seq_id": 30,
+      "insertion": "",
+      "resname": "THR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 4.191688537597656
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 31,
+      "auth_seq_id": 31,
+      "insertion": "",
+      "resname": "GLY",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.6627700328826904
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 32,
+      "auth_seq_id": 32,
+      "insertion": "",
+      "resname": "TYR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.877626419067383
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 52,
+      "auth_seq_id": 52,
+      "insertion": "",
+      "resname": "TRP",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.661550283432007
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 53,
+      "auth_seq_id": 53,
+      "insertion": "",
+      "resname": "GLY",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 2.8706915378570557
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 54,
+      "auth_seq_id": 54,
+      "insertion": "",
+      "resname": "ASP",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.195420026779175
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 99,
+      "auth_seq_id": 99,
+      "insertion": "",
+      "resname": "ARG",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 4.164012908935547
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 100,
+      "auth_seq_id": 100,
+      "insertion": "",
+      "resname": "ASP",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 2.6307573318481445
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 101,
+      "auth_seq_id": 101,
+      "insertion": "",
+      "resname": "TYR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 2.9663021564483643
+    },
+    {
+      "auth_chain": "H",
+      "sequence_position": 102,
+      "auth_seq_id": 102,
+      "insertion": "",
+      "resname": "ARG",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.2015790939331055
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 32,
+      "auth_seq_id": 32,
+      "insertion": "",
+      "resname": "TYR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.3114709854125977
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 49,
+      "auth_seq_id": 49,
+      "insertion": "",
+      "resname": "TYR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.894132614135742
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 50,
+      "auth_seq_id": 50,
+      "insertion": "",
+      "resname": "TYR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 2.858476400375366
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 53,
+      "auth_seq_id": 53,
+      "insertion": "",
+      "resname": "THR",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.0679333209991455
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 91,
+      "auth_seq_id": 91,
+      "insertion": "",
+      "resname": "PHE",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.070364475250244
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 92,
+      "auth_seq_id": 92,
+      "insertion": "",
+      "resname": "TRP",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 2.999202013015747
+    },
+    {
+      "auth_chain": "L",
+      "sequence_position": 93,
+      "auth_seq_id": 93,
+      "insertion": "",
+      "resname": "SER",
+      "domain": "variable",
+      "min_heavy_atom_distance_to_lysozyme_A": 3.2038557529449463
+    }
+  ],
+  "sasa_method": "Biopython ShrakeRupley; probe=1.4 A; 960 points/atom; solvent/hetero removed; both antibody chains treated together",
+  "raw_areas": {
+    "full_antibody": {
+      "total": 19792.399694833883,
+      "by_chain": {
+        "L": 9739.581815491032,
+        "H": 10052.81787934285
+      }
+    },
+    "fv_antibody": {
+      "total": 10147.247991752174,
+      "by_chain": {
+        "L": 4860.72316524484,
+        "H": 5286.524826507334
+      }
+    },
+    "antigen": {
+      "total": 6521.861956510758,
+      "by_chain": {
+        "Y": 6521.861956510758
+      }
+    },
+    "full_complex": {
+      "total": 25090.513456087247,
+      "by_chain": {
+        "L": 9497.937077123543,
+        "H": 9706.661402486272,
+        "Y": 5885.914976477432
+      }
+    },
+    "fv_complex": {
+      "total": 15445.361753005538,
+      "by_chain": {
+        "L": 4619.078426877352,
+        "H": 4940.368349650754,
+        "Y": 5885.914976477432
+      }
+    }
+  },
+  "interfaces": {
+    "Fab": {
+      "antibody_side_burial_A2": 587.8012152240681,
+      "antigen_side_burial_A2": 635.9469800333263,
+      "both_side_sum_A2": 1223.7481952573944,
+      "mean_per_side_A2": 611.8740976286972
+    },
+    "Fv": {
+      "antibody_side_burial_A2": 587.8012152240681,
+      "antigen_side_burial_A2": 635.9469800333263,
+      "both_side_sum_A2": 1223.7481952573944,
+      "mean_per_side_A2": 611.8740976286972
+    }
+  }
+}

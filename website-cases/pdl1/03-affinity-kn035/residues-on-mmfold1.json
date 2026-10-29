@@ -1,0 +1,1483 @@
+{
+  "schema_version": "1.0",
+  "master": "01-structure/raw/MMFold_1.cif",
+  "master_sha256": "d32305d7574f2013471f1c5844c24f7e47473e03f580201b5241218044822317",
+  "numbering": "MMFold_1 label_asym_id + label_seq_id",
+  "mapping_verified": true,
+  "residues": [
+    {
+      "chain": "B",
+      "label_seq_id": 1,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 2,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 3,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 4,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 5,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 6,
+      "aa": "E",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 7,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 8,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 9,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 10,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 11,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 12,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 13,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 14,
+      "aa": "P",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 15,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 16,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 17,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 18,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 19,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 20,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 21,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 22,
+      "aa": "C",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 23,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 24,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 25,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 26,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 27,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 28,
+      "aa": "M",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 29,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 30,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 31,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 32,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 33,
+      "aa": "C",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 34,
+      "aa": "M",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 36,
+      "aa": "W",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 37,
+      "aa": "F",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 38,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 39,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 40,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 41,
+      "aa": "P",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 42,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 43,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 44,
+      "aa": "E",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 45,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 46,
+      "aa": "E",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 47,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 48,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 49,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 50,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 51,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 52,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 53,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 54,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 55,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 56,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 57,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 58,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 59,
+      "aa": "Y",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 60,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 61,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 62,
+      "aa": "D",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 63,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 64,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 65,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 66,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 67,
+      "aa": "R",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 68,
+      "aa": "F",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 69,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 70,
+      "aa": "I",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 71,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 72,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 73,
+      "aa": "N",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 74,
+      "aa": "N",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 75,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 76,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 77,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 78,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 79,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 80,
+      "aa": "Y",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 81,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 82,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 83,
+      "aa": "M",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 84,
+      "aa": "N",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 85,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 86,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 87,
+      "aa": "K",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 88,
+      "aa": "P",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 89,
+      "aa": "E",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 90,
+      "aa": "D",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 91,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 92,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 93,
+      "aa": "M",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 94,
+      "aa": "Y",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 95,
+      "aa": "Y",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 96,
+      "aa": "C",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 97,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 98,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 99,
+      "aa": "D",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 100,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 101,
+      "aa": "F",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 102,
+      "aa": "E",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 103,
+      "aa": "D",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 104,
+      "aa": "P",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 105,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 106,
+      "aa": "C",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 107,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 108,
+      "aa": "L",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 110,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 111,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 112,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 113,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 114,
+      "aa": "A",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 115,
+      "aa": "F",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 117,
+      "aa": "Y",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 118,
+      "aa": "W",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 119,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 120,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 121,
+      "aa": "G",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 122,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 123,
+      "aa": "Q",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 124,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 125,
+      "aa": "T",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 126,
+      "aa": "V",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 127,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 128,
+      "aa": "S",
+      "group": "scored_mutation_position",
+      "source_kind": "MOS_task_output"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "A35W",
+      "ddG_pred_raw": "-1.7464554"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "V109L",
+      "ddG_pred_raw": "-1.6510735"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "A35Y",
+      "ddG_pred_raw": "-1.5832196"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "A35F",
+      "ddG_pred_raw": "-1.5236144"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "V109W",
+      "ddG_pred_raw": "-1.5057821"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 33,
+      "aa": "C",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "C33Y",
+      "ddG_pred_raw": "-1.4980912"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116M",
+      "ddG_pred_raw": "-1.4936166"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 97,
+      "aa": "A",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "A97F",
+      "ddG_pred_raw": "-1.4836845"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "A35S",
+      "ddG_pred_raw": "-1.4654148"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116K",
+      "ddG_pred_raw": "-1.4106131"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "V109L",
+      "ddG_pred_raw": "-1.6510735"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "V109W",
+      "ddG_pred_raw": "-1.5057821"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116M",
+      "ddG_pred_raw": "-1.4936166"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116K",
+      "ddG_pred_raw": "-1.4106131"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116L",
+      "ddG_pred_raw": "-1.4014784"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116C",
+      "ddG_pred_raw": "-1.3289425"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116E",
+      "ddG_pred_raw": "-1.2501823"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116V",
+      "ddG_pred_raw": "-1.2034042"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116D",
+      "ddG_pred_raw": "-1.17819"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "affinity_candidate",
+      "source_kind": "MOS_task_output",
+      "mutation": "Q116W",
+      "ddG_pred_raw": "-1.1747804"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 27,
+      "aa": "K",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 29,
+      "aa": "S",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 30,
+      "aa": "S",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 32,
+      "aa": "R",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 99,
+      "aa": "D",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 100,
+      "aa": "S",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 101,
+      "aa": "F",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 102,
+      "aa": "E",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 103,
+      "aa": "D",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 104,
+      "aa": "P",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 105,
+      "aa": "T",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 108,
+      "aa": "L",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 111,
+      "aa": "S",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 113,
+      "aa": "G",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 114,
+      "aa": "A",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 115,
+      "aa": "F",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "native_paratope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 42,
+      "aa": "E",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 45,
+      "aa": "D",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 47,
+      "aa": "N",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 53,
+      "aa": "H",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 57,
+      "aa": "D",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 60,
+      "aa": "V",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 103,
+      "aa": "G",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 104,
+      "aa": "G",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 105,
+      "aa": "A",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 106,
+      "aa": "D",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 109,
+      "aa": "R",
+      "group": "native_epitope",
+      "source_kind": "native_MMetrics_annotation"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 35,
+      "aa": "A",
+      "group": "MMFold_predicted_mutation",
+      "mutation": "A35W",
+      "source_kind": "MOS_variant_prediction"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 109,
+      "aa": "V",
+      "group": "MMFold_predicted_mutation",
+      "mutation": "V109L",
+      "source_kind": "MOS_variant_prediction"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "minimum_heavy_atom_distance_A": 4.263396739959717,
+      "group": "facing_variant_mutation",
+      "mutation": "V109L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "minimum_heavy_atom_distance_A": 3.5435609817504883,
+      "group": "facing_variant_mutation",
+      "mutation": "V109L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 101,
+      "aa": "S",
+      "minimum_heavy_atom_distance_A": 3.5821733474731445,
+      "group": "facing_variant_mutation",
+      "mutation": "V109L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 33,
+      "aa": "C",
+      "group": "MMFold_predicted_mutation",
+      "mutation": "C33Y",
+      "source_kind": "MOS_variant_prediction"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 116,
+      "aa": "Q",
+      "group": "MMFold_predicted_mutation",
+      "mutation": "Q116M",
+      "source_kind": "MOS_variant_prediction"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 97,
+      "aa": "R",
+      "minimum_heavy_atom_distance_A": 3.408365488052368,
+      "group": "facing_variant_mutation",
+      "mutation": "Q116M",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 107,
+      "aa": "Y",
+      "minimum_heavy_atom_distance_A": 3.4240643978118896,
+      "group": "facing_variant_mutation",
+      "mutation": "Q116M",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 109,
+      "aa": "R",
+      "minimum_heavy_atom_distance_A": 3.0558910369873047,
+      "group": "facing_variant_mutation",
+      "mutation": "Q116M",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "B",
+      "label_seq_id": 105,
+      "aa": "T",
+      "group": "MMFold_predicted_mutation",
+      "mutation": "T105L",
+      "source_kind": "MOS_variant_prediction"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 38,
+      "aa": "I",
+      "minimum_heavy_atom_distance_A": 3.0635993480682373,
+      "group": "facing_variant_mutation",
+      "mutation": "T105L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 40,
+      "aa": "Y",
+      "minimum_heavy_atom_distance_A": 3.3393027782440186,
+      "group": "facing_variant_mutation",
+      "mutation": "T105L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 50,
+      "aa": "Q",
+      "minimum_heavy_atom_distance_A": 3.8772175312042236,
+      "group": "facing_variant_mutation",
+      "mutation": "T105L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 52,
+      "aa": "V",
+      "minimum_heavy_atom_distance_A": 3.714682102203369,
+      "group": "facing_variant_mutation",
+      "mutation": "T105L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    },
+    {
+      "chain": "A",
+      "label_seq_id": 99,
+      "aa": "M",
+      "minimum_heavy_atom_distance_A": 4.321638107299805,
+      "group": "facing_variant_mutation",
+      "mutation": "T105L",
+      "source_kind": "local_geometry_of_MOS_variant"
+    }
+  ]
+}

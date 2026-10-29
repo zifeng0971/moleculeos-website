@@ -1,0 +1,1046 @@
+- text: MOS
+- generic: BETA
+- generic: PETase-Redesign-20261020
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: candidate_seq_1_model_sample1
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: "N"
+- generic: P
+- generic: "Y"
+- generic: A
+- generic: R
+- generic: G
+- generic: P
+- generic: "N"
+- generic: P
+- generic: T
+- generic: "11"
+- generic: A
+- generic: A
+- generic: S
+- generic: L
+- generic: E
+- generic: A
+- generic: S
+- generic: A
+- generic: G
+- generic: P
+- generic: "21"
+- generic: F
+- generic: T
+- generic: V
+- generic: R
+- generic: S
+- generic: F
+- generic: T
+- generic: V
+- generic: S
+- generic: R
+- generic: "31"
+- generic: P
+- generic: S
+- generic: G
+- generic: "Y"
+- generic: G
+- generic: A
+- generic: G
+- generic: T
+- generic: V
+- generic: "Y"
+- generic: "41"
+- generic: "Y"
+- generic: P
+- generic: T
+- generic: "N"
+- generic: A
+- generic: G
+- generic: G
+- generic: T
+- generic: V
+- generic: G
+- generic: "51"
+- generic: A
+- generic: I
+- generic: A
+- generic: I
+- generic: V
+- generic: P
+- generic: G
+- generic: "Y"
+- generic: T
+- generic: A
+- generic: "61"
+- generic: R
+- generic: Q
+- generic: S
+- generic: S
+- generic: I
+- generic: K
+- generic: W
+- generic: W
+- generic: G
+- generic: P
+- generic: "71"
+- generic: R
+- generic: L
+- generic: A
+- generic: S
+- generic: H
+- generic: G
+- generic: F
+- generic: V
+- generic: V
+- generic: I
+- generic: "81"
+- generic: T
+- generic: I
+- generic: D
+- generic: T
+- generic: "N"
+- generic: S
+- generic: T
+- generic: L
+- generic: D
+- generic: Q
+- generic: "91"
+- generic: P
+- generic: S
+- generic: S
+- generic: R
+- generic: S
+- generic: S
+- generic: Q
+- generic: Q
+- generic: M
+- generic: A
+- generic: "101"
+- generic: A
+- generic: L
+- generic: R
+- generic: Q
+- generic: V
+- generic: A
+- generic: S
+- generic: L
+- generic: "N"
+- generic: G
+- generic: "111"
+- generic: T
+- generic: S
+- generic: S
+- generic: S
+- generic: P
+- generic: I
+- generic: "Y"
+- generic: G
+- generic: K
+- generic: V
+- generic: "121"
+- generic: D
+- generic: T
+- generic: A
+- generic: R
+- generic: M
+- generic: G
+- generic: V
+- generic: M
+- generic: G
+- generic: H
+- generic: "131"
+- generic: S
+- generic: M
+- generic: G
+- generic: G
+- generic: G
+- generic: G
+- generic: S
+- generic: L
+- generic: I
+- generic: S
+- generic: "141"
+- generic: A
+- generic: A
+- generic: "N"
+- generic: "N"
+- generic: P
+- generic: S
+- generic: L
+- generic: K
+- generic: A
+- generic: A
+- generic: "151"
+- generic: A
+- generic: P
+- generic: Q
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: H
+- generic: S
+- generic: S
+- generic: T
+- generic: "161"
+- generic: "N"
+- generic: F
+- generic: S
+- generic: S
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: T
+- generic: L
+- generic: "171"
+- generic: I
+- generic: F
+- generic: A
+- generic: C
+- generic: E
+- generic: "N"
+- generic: D
+- generic: S
+- generic: V
+- generic: A
+- generic: "181"
+- generic: P
+- generic: V
+- generic: "N"
+- generic: S
+- generic: S
+- generic: A
+- generic: L
+- generic: P
+- generic: I
+- generic: "Y"
+- generic: "191"
+- generic: D
+- generic: S
+- generic: M
+- generic: S
+- generic: R
+- generic: "N"
+- generic: A
+- generic: K
+- generic: Q
+- generic: F
+- generic: "201"
+- generic: L
+- generic: E
+- generic: I
+- generic: "N"
+- generic: G
+- generic: G
+- generic: S
+- generic: H
+- generic: G
+- generic: C
+- generic: "211"
+- generic: A
+- generic: "N"
+- generic: S
+- generic: G
+- generic: "N"
+- generic: S
+- generic: "N"
+- generic: Q
+- generic: A
+- generic: L
+- generic: "221"
+- generic: I
+- generic: G
+- generic: K
+- generic: K
+- generic: G
+- generic: V
+- generic: A
+- generic: W
+- generic: M
+- generic: K
+- generic: "231"
+- generic: R
+- generic: F
+- generic: M
+- generic: D
+- generic: "N"
+- generic: D
+- generic: T
+- generic: R
+- generic: "Y"
+- generic: S
+- generic: "241"
+- generic: T
+- generic: F
+- generic: A
+- generic: C
+- generic: E
+- generic: "N"
+- generic: P
+- generic: "N"
+- generic: S
+- generic: T
+- generic: "251"
+- generic: R
+- generic: V
+- generic: S
+- generic: D
+- generic: F
+- generic: R
+- generic: T
+- generic: A
+- generic: "N"
+- generic: C
+- generic: "261"
+- generic: S
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": b7bf4c4b-4
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: You
+- generic: 请继续刚才未完成的Protein Redesign提交以及候选MMFold/结构比较，不要停在最后一次Shell错误。必须实际尝试注册Protein Redesign并保存精确payload、task ID/返回错误；模板若为你构造的WT+移植HEMT而非原始5XG0，必须标明由5XG0与5XH3衍生、任何侧链坐标替换/调整、编号映射，不可冒充实验WT复合物。用于三类WT评分的输入应保持原始5XG0链C。若配体感知模板导入不兼容，可在原始WT纯蛋白主链上仅开放同样五个位点做局部Protein Redesign（保存调整理由）。成功后生成全部10个候选，挑选2-3代表通过原生MMFold并导出，最后打包website_case_petase.zip。请先生成checkpoint ZIP再继续长计算供我们保留现有亲和力和三项WT结果。
+- generic: 15:20
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: "Important: the MOS sanitized layout of the model is chain D (protein 1..261) and…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p logs…": (cd /workspace/website_case_petase && mkdir -p logs…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'PY' import zipfile, p…": (cd /workspace && python - <<'PY' import zipfile, p…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Checkpoint saved at /workspace/website_case_petase_checkpoint.zip.
+- generic: ▸
+- generic: StartMOSTask
+- generic "Local ligand-aware redesign of wild-type PETase ar…": (Local ligand-aware redesign of wild-type PETase ar…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Launched: task 342338944422912."
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/write_selection_rat…": (/workspace/website_case_petase/write_selection_rat…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python write_…": (cd /workspace/website_case_petase && python write_…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Redesign task pending. Meanwhile, let me write the task ledger and prepare the M…
+- generic: ▸
+- img "global":
+- generic: Web Search
+- generic "Austin 2018 PNAS PETase 5XH3 R103G S131A HEMT crys…": (Austin 2018 PNAS PETase 5XH3 R103G S131A HEMT crys…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Very useful literature grounding:"
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342338944422912": (342338944422912)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Running. While waiting, let me write the task ledger and results JSON skeleton w…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/write_ledger.py": (/workspace/website_case_petase/write_ledger.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python write_…": (cd /workspace/website_case_petase && python write_…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342338944422912": (342338944422912)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p nati…": (cd /workspace/website_case_petase && mkdir -p nati…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: 10 designs, 261 aa each. Now verify that only positions 130,156,157,179,209 chan…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The redesign worked and respected scope (only 5 positions; no out-of-scope chang…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "MMFold structure prediction for redesign candidate…": (MMFold structure prediction for redesign candidate…)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "MMFold structure prediction for redesign candidate…": (MMFold structure prediction for redesign candidate…)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "MMFold structure prediction for redesign candidate…": (MMFold structure prediction for redesign candidate…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Three MMFold tasks launched. While they run, let me:"
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/analyses/compare_mo…": (/workspace/website_case_petase/analyses/compare_mo…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "MMFold pending. While waiting, let me do useful work:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Important observation: the design's substitutions are mostly disfavored by seq/e…"
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339217835008": (342339217835008)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still pending. Let me use the time productively: write the analysis markdown doc…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Hmm, ligand atom roles: C13 hydroxyethyl_CH2 (degree 2, bonded to O14 and C12) ✓…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Roles are now correct. But the polar contact labels in the CSV use old role name…
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still pending ("waiting, not queued"). MMFold may take a while. Meanwhile, write…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/analyses/01_ligand_…": (/workspace/website_case_petase/analyses/01_ligand_…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: MMFold tasks remain in "waiting (not queued)" state. Possibly GPUs are busy. I'l…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls -la /workspace/downloads/protein_redesign_34233…": (ls -la /workspace/downloads/protein_redesign_34233…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Only FASTA, no probabilities. Document that the registered task returns sequence…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Pocket deviations all < 1 Å; W185 (AUTH156) deviates 0.94 Å — consistent with th…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/report.md": (/workspace/website_case_petase/report.md)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still pending. They were started ~10 minutes ago? Actually started 08:21:51 and …
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/write_results.py": (/workspace/website_case_petase/write_results.py)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python write_…": (cd /workspace/website_case_petase && python write_…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339217835008": (342339217835008)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still pending/waiting (not queued). This suggests the MMFold service is busy or …
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/logs/run_log.md": (/workspace/website_case_petase/logs/run_log.md)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now running (1.6 min). Good. Let me prepare the viewer annotations while waiting…
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/website_case_petase/package.py": (/workspace/website_case_petase/package.py)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339217835008": (342339217835008)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Still running. Let me use the time for a genuinely useful analysis that doesn't …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "close-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Still running. I'll wait a bit by doing a final useful check: verify that the WT…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/structures && py…": (cd /workspace/website_case_petase/structures && py…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339221820416": (342339221820416)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "MMFold seq_2 done: 5 model samples + confidence JSONs."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "ls /workspace/downloads/mmfold_342339221820416/ &&…": (ls /workspace/downloads/mmfold_342339221820416/ &&…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339217835008": (342339217835008)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p nati…": (cd /workspace/website_case_petase && mkdir -p nati…)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342339232719872": (342339232719872)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && mkdir -p nati…": (cd /workspace/website_case_petase && mkdir -p nati…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Excellent results. All three models: global CA RMSD vs 5XG0 ~0.25-0.29 Å, pocket…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase/analyses && pyth…": (cd /workspace/website_case_petase/analyses && pyth…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Clear results:"
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/native_tasks/mmfold…": (/workspace/website_case_petase/native_tasks/mmfold…)
+- img "close-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "/workspace/website_case_petase/native_tasks/mmfold…": (/workspace/website_case_petase/native_tasks/mmfold…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The MMFold output CIFs are already MOS structures — they were probably auto-regi…
+- generic: ▸
+- generic: ListMOSObjects
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: MMFold outputs are not registered as objects in this project. The import guard m…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && grep -c \"_mos…": (cd /workspace/website_case_petase && grep -c "_mos…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Confirmed: MMFold output CIFs carry `_mos_mapping`, hence the guard. These are a…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && for s in \"seq…": (cd /workspace/website_case_petase && for s in "seq…)
+- img "close-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The sanitizer also detects and refuses. So the only route is mos_object with an …
+- generic: ▸
+- generic: GetMOSObject
+- generic "342339708015616": (342339708015616)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: The MMFold model IS a MOS object (ID 342339708015616), and GetMOSObject returns …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && for d in nati…": (cd /workspace/website_case_petase && for d in nati…)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "342339708015616": (342339708015616)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "342339721073664": (342339721073664)
+- img "check-circle":
+- generic: ▸
+- img "import":
+- generic: Import Structure
+- generic "342339706594304": (342339706594304)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All three candidates imported into the viewer. WT and 5XH3 already imported.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python -c \" i…": (cd /workspace/website_case_petase && python -c " i…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: No per-residue pLDDT in summary; but the model mmCIF likely stores B-factors as …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Per-residue pLDDT (B-factor) is in the range 96.7-98.8 at designed sites — high …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && cat >> report…": (cd /workspace/website_case_petase && cat >> report…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Wait: I claimed \"three of them fold to within 0.25-0.29 A\" and \"pLDDT 96.83-97.2…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python -c \" i…": (cd /workspace/website_case_petase && python -c " i…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now update the ledger to include redesign + mmfold tasks and their outputs, plus…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && python - <<'P…": (cd /workspace/website_case_petase && python - <<'P…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Now final housekeeping:"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && find . -type …": (cd /workspace/website_case_petase && find . -type …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/website_case_petase && cat >> report…": (cd /workspace/website_case_petase && cat >> report…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Packaged: /workspace/website_case_petase.zip (1.89 MB, 123 files)."
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && python - <<'PY' import zipfile z=…": (cd /workspace && python - <<'PY' import zipfile z=…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Everything is in place. Let me do one last thing for the user's native screensho…
+- generic: ▸
+- paragraph: "All computation is finished and packaged. Summary of what actually ran:"
+- heading "MOS tasks (exact payloads in task-ledger.json)" [level=2]:
+  - text: MOS tasks (exact payloads in
+  - code: task-ledger.json
+  - text: )
+- table:
+  - rowgroup:
+    - row "role ID result":
+      - columnheader "role"
+      - columnheader "ID"
+      - columnheader "result"
+  - rowgroup:
+    - row "Affinity re-run (manual example) 342337422410752 −4.310292 — identical to native task 338706466620416, all four components matching":
+      - cell "Affinity re-run (manual example)"
+      - cell "342337422410752"
+      - cell "−4.310292 — identical to native task 338706466620416, all four components matching":
+        - strong: −4.310292
+        - text: — identical to native task 338706466620416, all four components matching
+    - row "Sequence Fitness (WT) 342337264870400 5360 rows":
+      - cell "Sequence Fitness (WT)"
+      - cell "342337264870400"
+      - cell "5360 rows"
+    - row "Evolutionary (WT) 342337268093952 5360 rows":
+      - cell "Evolutionary (WT)"
+      - cell "342337268093952"
+      - cell "5360 rows"
+    - row "Structural Stability (WT) 342337277858816 5360 rows":
+      - cell "Structural Stability (WT)"
+      - cell "342337277858816"
+      - cell "5360 rows"
+    - row "Protein Redesign 342338944422912 10 designs, 35 s":
+      - cell "Protein Redesign"
+      - cell "342338944422912"
+      - cell "10 designs, 35 s"
+    - row "MMFold × 3 342339217835008 / 342339221820416 / 342339232719872 5 samples + confidence each":
+      - cell "MMFold × 3"
+      - cell "342339217835008 / 342339221820416 / 342339232719872"
+      - cell "5 samples + confidence each"
+- paragraph:
+  - text: "Manual files were rebuilt and hash-verified before use: protein 156500 B"
+  - code: aa9ddaea…12853c
+  - text: ", ligand 2191 B"
+  - code: 44c9ea73…443e9
+  - text: . My first base64 decode had transcription slips (2190 B); it was repaired against the deposited atom block and re-checked until byte-exact. The affinity task used our registered 1931-atom
+  - code: 5xh3_clean
+  - text: object plus the manual SDF at its original TOS path, since SDF import is blocked here (reproduced on three SDFs, recorded in
+  - code: task-ledger.json
+  - text: ).
+- heading "Science" [level=2]
+- paragraph:
+  - text: 5XH3 is
+  - strong: not
+  - text: "WT: SEQADV maps ALA A 131 → UNP SER 160, so it is the nucleophile knock-out (S160A) plus the packing fix R103G. All WT work used 5XG0 chain C. Numbering was derived, not assumed:"
+  - code: UNP = AUTH + 29
+  - text: ","
+  - code: CONSTRUCT = AUTH + 7
+  - text: (tag excluded from selection).
+- paragraph:
+  - text: Ligand 856 = HEMT, 16 heavy atoms,
+  - code: COC(=O)c1ccc(C(=O)OCCO)cc1
+  - text: ; nine first-shell residues, 78.7 % burial. The scissile carbonyl O10 is held by the Tyr58/Met132 backbone amides (2.90/2.93 Å — the oxyanion hole), the ester O11 by His208 NE2 (2.87 Å), the ring stacked by Trp156 (4.98 Å centroid) and packed by Trp130/Ile179. WT Ser131 OG lands 2.51 Å from ester carbon C09.
+- paragraph:
+  - text: Five local positions opened (AUTH 130, 156, 157, 179, 209); 15 refusals documented with distances. The redesign template is a
+  - strong: constructed model
+  - text: ", not an experimental complex: 5XH3 conformation with AUTH 103/131 reverted from 5XG0, because transferring the ligand onto deposited WT gives a 0.86 Å clash with the Trp185 rotamer. All 10 designs changed only those five positions; catalytic triad, oxyanion amides and both disulfides are intact in every design and every model."
+- heading "Honest caveats" [level=2]
+- list:
+  - listitem: seq_4 is the only representative whose designed side chains clear the crystallographic ligand (2.59 Å); seq_2 (Y156 CE1···O02 1.67 Å) and seq_1 (2.20 Å) have short contacts — a rigid-transfer caution, not a measured penalty.
+  - listitem: S209G is strongly disfavoured by the evolutionary model (−6.94); W156Y is driven only by structure fitness. Single-mutant scores are reported separately and never summed.
+  - listitem: No affinity, kcat or degradation claim is made for any design.
+  - text: No MOS Superimpose task exists here (gemmi used, labelled);
+  - code: AnalyzeMutationScores
+  - text: wrapper failed on the evolutionary task though its CSV was complete and used.
+- heading "Files" [level=2]
+- list:
+  - text: "Package:"
+  - code: /workspace/website_case_petase.zip
+  - text: (1.8 MB, 123 files, integrity OK)
+  - text: "Checkpoint snapshot:"
+  - code: /workspace/website_case_petase_checkpoint.zip
+  - text: Report
+  - code: report.md
+  - text: ","
+  - code: results.json
+  - text: ","
+  - code: task-ledger.json
+  - text: ","
+  - code: logs/run_log.md
+  - text: ","
+  - code: logs/README_numbering.md
+  - text: ","
+  - code: analyses/redesign_site_selection.csv
+- paragraph: Viewer now holds WT chain C, 5XH3/HEMT complex, the WT+HEMT template and the three candidate models; I left no selections active on your structures.
+- generic: 15:25
+- generic: candidate_...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised
+- separator "调整 Mocha 与文件面板宽度"
+- complementary "File viewer":
+  - generic "Workspace"
+  - button "Refresh Workspace":
+    - img "reload":
+  - button "Close file panel":
+    - img "close":
+  - tree:
+    - treeitem "folder-open downloads 9" [expanded]:
+      - img "folder-open":
+      - generic: downloads
+      - generic: "9"
+    - treeitem "folder evolutionary_mutation_effect_342337268093952 1":
+      - img "folder":
+      - generic: evolutionary_mutation_effect_342337268093952
+      - generic: "1"
+    - treeitem "folder mmfold_342339217835008 10":
+      - img "folder":
+      - generic: mmfold_342339217835008
+      - generic: "10"
+    - treeitem "folder mmfold_342339221820416 10":
+      - img "folder":
+      - generic: mmfold_342339221820416
+      - generic: "10"
+    - treeitem "folder mmfold_342339232719872 10":
+      - img "folder":
+      - generic: mmfold_342339232719872
+      - generic: "10"
+    - treeitem "folder protein_ligand_affinity_evaluation_338706466620416 1":
+      - img "folder":
+      - generic: protein_ligand_affinity_evaluation_338706466620416
+      - generic: "1"
+    - treeitem "folder protein_ligand_affinity_evaluation_342337422410752 1":
+      - img "folder":
+      - generic: protein_ligand_affinity_evaluation_342337422410752
+      - generic: "1"
+    - treeitem "folder protein_redesign_342338944422912 1":
+      - img "folder":
+      - generic: protein_redesign_342338944422912
+      - generic: "1"
+    - treeitem "folder sequence_fitness_mutation_effect_342337264870400 1":
+      - img "folder":
+      - generic: sequence_fitness_mutation_effect_342337264870400
+      - generic: "1"
+    - treeitem "folder structural_stability_mutation_effect_342337277858816 1":
+      - img "folder":
+      - generic: structural_stability_mutation_effect_342337277858816
+      - generic: "1"
+    - treeitem "folder-open protein_data 2" [expanded]:
+      - img "folder-open":
+      - generic: protein_data
+      - generic: "2"
+    - treeitem "folder protein_342337095291904 1":
+      - img "folder":
+      - generic: protein_342337095291904
+      - generic: "1"
+    - treeitem "folder protein_342338541151232 1":
+      - img "folder":
+      - generic: protein_342338541151232
+      - generic: "1"
+    - treeitem "folder-open website_case_petase 13" [expanded]:
+      - img "folder-open":
+      - generic: website_case_petase
+      - generic: "13"
+    - treeitem "folder analyses 32":
+      - img "folder":
+      - generic: analyses
+      - generic: "32"
+    - treeitem "folder inputs 23":
+      - img "folder":
+      - generic: inputs
+      - generic: "23"
+    - treeitem "folder logs 2":
+      - img "folder":
+      - generic: logs
+      - generic: "2"
+    - treeitem "folder native_tasks 9":
+      - img "folder":
+      - generic: native_tasks
+      - generic: "9"
+    - treeitem "folder structures 10":
+      - img "folder":
+      - generic: structures
+      - generic: "10"
+    - treeitem "file candidate_selection.py download candidate_selection.py":
+      - img "file":
+      - generic: candidate_selection.py
+      - button "download candidate_selection.py":
+        - img "download":
+    - treeitem "file package.py download package.py":
+      - img "file":
+      - generic: package.py
+      - button "download package.py":
+        - img "download":
+    - treeitem "file report.md download report.md":
+      - img "file":
+      - generic: report.md
+      - button "download report.md":
+        - img "download":
+    - treeitem "file results.json download results.json":
+      - img "file":
+      - generic: results.json
+      - button "download results.json":
+        - img "download":
+    - treeitem "file task-ledger.json download task-ledger.json":
+      - img "file":
+      - generic: task-ledger.json
+      - button "download task-ledger.json":
+        - img "download":
+    - treeitem "file write_ledger.py download write_ledger.py":
+      - img "file":
+      - generic: write_ledger.py
+      - button "download write_ledger.py":
+        - img "download":
+    - treeitem "file write_results.py download write_results.py":
+      - img "file":
+      - generic: write_results.py
+      - button "download write_results.py":
+        - img "download":
+    - treeitem "file write_selection_rationale.py download write_selection_rationale.py":
+      - img "file":
+      - generic: write_selection_rationale.py
+      - button "download write_selection_rationale.py":
+        - img "download":
+    - treeitem "file website_case_petase_checkpoint.zip download website_case_petase_checkpoint.zip":
+      - img "file":
+      - generic: website_case_petase_checkpoint.zip
+      - button "download website_case_petase_checkpoint.zip":
+        - img "download":
+    - treeitem "file website_case_petase.zip download website_case_petase.zip":
+      - img "file":
+      - generic: website_case_petase.zip
+      - button "download website_case_petase.zip" [active]:
+        - img "download":
+- tooltip "Refresh"
+- tooltip "Download"

@@ -1,0 +1,189 @@
+Assistant
+Thinking
+Round 2. Steps:
+▸
+Shell
+(cd /workspace && mkdir -p kn035_case05_round2/{inp…)
+▸
+GetMOSQuota
+▸
+StartMOSTask
+(Round2 de novo binder design on the ORIGINAL proje…)
+▸
+StartMOSTask
+(Round2 de novo binder design on the ORIGINAL proje…)
+▸
+StartMOSTask
+(Round2 de novo binder design on the ORIGINAL proje…)
+▸
+Thinking
+Now build the input checkpoint zip with schema, payloads, input hash/mapping, le…
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && python - <<'E…)
+▸
+
+第二轮 3 个任务已真实提交（复用原对象，主结构未重算，首轮未动）。
+
+Task ID
+
+kn035_c05_round2_seed444 → 342610714428416
+kn035_c05_round2_seed555 → 342610715788288
+kn035_c05_round2_seed666 → 342610718331904
+
+输入核验：sha256 8303fd10…b38253e 与您给的一致；链 A、118 aa、1–118。payload 由首轮 payload_seed111.json 程序化复制，断言除 random_seed 外所有字段逐字相同（contigs="A1-118/0 60-100"、hotspot_res="A45,A40,A97,A107,A105,A38"、compare_binder=1、未设 diffusion_steps）。
+
+输入包（schema 原文、3 份 payload、输入对象记录、118 行 B→A 映射、ledger）：
+
+Click to enlarge
+Open in file panel
+
+开始按 ≤45 秒间隔等待。
+
+Shell
+(sleep 44 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+CheckMOSTask
+(342610715788288)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+Thinking
+The ListMOSTasks view seems cached (same durations). CheckMOSTask for 444 and 66…
+▸
+CheckMOSTask
+(342610714428416)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610715788288)
+▸
+CheckMOSTask
+(342610714428416)
+▸
+Thinking
+seed555 succeed, downloaded automatically. seed444 running.
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && mkdir -p outp…)
+▸
+Shell
+(sleep 40 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610714428416)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+Steer
+请把已完成seed555的全部真实原始输出和当前输入/ledger打包为/workspace/kn035_case05_round2_checkpoint.zip，便于本地先核验；保留同一输出目录不改首轮，继续等待444/666完成后最终打包round2.zip。请在最终包复制一份实际输入MMFold_1_chain_A.cif，保存CheckMOSTask原文、生效payload和实际各任务用时。仍不需要额外分析。
+Thinking
+Build round2 checkpoint with seed555 outputs + inputs + ledger + CheckMOSTask ra…
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && cat > tasks/c…)
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && cp /workspace…)
+▸
+
+Round2 checkpoint 已生成（含 seed555 全部原始 CIF、FASTA、manifest、输入 cif 副本与 sha256、ledger）：
+
+Click to enlarge
+Open in file panel
+
+seed555（task 342610715788288，3.6 min，binder 72 aa）已完成归档；seed444 运行中，seed666 仍排队。首轮目录与文件未改动。
+
+Shell
+(sleep 44 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610714428416)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && mkdir -p outp…)
+▸
+Shell
+(sleep 44 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(sleep 45 && date -u +%H:%M:%SZ)
+▸
+ListMOSTasks
+▸
+CheckMOSTask
+(342610718331904)
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && mkdir -p outp…)
+▸
+Shell
+(cd /workspace/kn035_case05_round2 && python - <<'E…)
+▸
+
+第二轮 3 个 de novo 任务全部 succeed，最终包已生成。
+
+Click to enlarge
+Open in file panel
+任务与用时（平台实际记录）
+seed	task ID	状态	用时	binder	真实设计序列（输出链 A）
+444	342610714428416	succeed	6.5 min	79 aa	AAELAEIEEQIAAIAERIAELEAEAAALRARLERDTDLAPEERARLEARVAALEQSAAIE…（全文见 FASTA）
+555	342610715788288	succeed	3.6 min	72 aa	MMNEEEAEEMAAKAREYAALLAAGAPVAELEAEARRLREEAKKADESKAAFLESLARGLE
+666	342610718331904	succeed	9.5 min	89 aa	AAEGAARAAALRRQAAEAAAAEQRQVEVGAEKFLRIAAGELSDEESIEIYDKYEDSLPDIRAVLAADAAKLAAFDAAVARIEALKAARK
+
+无失败、无 429、无 budget_exceeded。
+
+包内内容（27 项，189 KB，完整性 OK，无空文件）
+inputs/MMFold_1_chain_A.cif — 实际提交输入的副本，sha256 8303fd10…b38253e，与您给的值重算一致；同目录 input_object_record.json 记录 object ID / TOS key / 链与序列核验。
+inputs/output_chainB_to_main_chainA_mapping.csv — 118 行，输出链 B（PD-L1）↔ 主结构链 A 恒等映射；binder 链无主结构对应物，未映射。
+schema/protein_binder_design_schema.json — 原样复制；payloads/payload_seed{444,555,666}.json — 由首轮 payload 程序化复制，断言仅 random_seed 不同；各任务生效 payload 见 tasks/check_seed*_success_*.txt 的平台回显（TOS 前缀为 tos:mosv2-prod/，其余字段一致）。
+outputs/seed*/ — 每个种子两个原始 CIF（*_output.cif 全 GLY 虚拟骨架、*_aligned.cif 真实序列复合物）、SHA256SUMS.txt、manifest.json、sequences.fasta（骨架与真实序列分开标注）。
+tasks/ — 3 份 CheckMOSTask 原文 + ledger（提交时间、状态、平台用时、等待时长记录）。
+
+置信度：三个任务均只返回两个 CIF，无 ipTM / pLDDT / PAE / score 文件，明确记为缺失，未估算。
+
+本包按要求不含几何分析；SASA、热点距离、Cα RMSD、接触重合留给本地独立复算。首轮目录 /workspace/kn035_case05/ 与其 zip 全程未改动。
+
+09:56

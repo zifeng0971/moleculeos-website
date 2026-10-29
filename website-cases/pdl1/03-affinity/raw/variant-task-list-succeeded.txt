@@ -1,0 +1,754 @@
+- text: MOS
+- generic: BETA
+- generic: nn
+- img "down":
+- generic: Z
+- button "Task":
+  - generic: Task
+- button "Share":
+  - generic: Share
+- button "mail":
+  - img "mail":
+- button "bell":
+  - img "bell":
+  - superscript
+- button "Setting":
+  - img "setting":
+- button:
+- generic: 7XYQ_PDL1_DBL1_03_clean
+- generic: "1:"
+- generic: A
+- generic: "1"
+- generic: F
+- generic: T
+- generic: V
+- generic: T
+- generic: V
+- generic: P
+- generic: K
+- generic: D
+- generic: L
+- generic: "Y"
+- generic: "11"
+- generic: V
+- generic: V
+- generic: E
+- generic: "Y"
+- generic: G
+- generic: S
+- generic: "N"
+- generic: M
+- generic: T
+- generic: I
+- generic: "21"
+- generic: E
+- generic: C
+- generic: K
+- generic: F
+- generic: P
+- generic: V
+- generic: E
+- generic: K
+- generic: Q
+- generic: L
+- generic: "31"
+- generic: D
+- generic: L
+- generic: A
+- generic: A
+- generic: L
+- generic: I
+- generic: V
+- generic: "Y"
+- generic: W
+- generic: E
+- generic: "41"
+- generic: M
+- generic: E
+- generic: D
+- generic: K
+- generic: "N"
+- generic: I
+- generic: I
+- generic: Q
+- generic: F
+- generic: V
+- generic: "51"
+- generic: H
+- generic: G
+- generic: E
+- generic: E
+- generic: D
+- generic: L
+- generic: K
+- generic: V
+- generic: Q
+- generic: H
+- generic: "61"
+- generic: S
+- generic: S
+- generic: "Y"
+- generic: R
+- generic: Q
+- generic: R
+- generic: A
+- generic: R
+- generic: L
+- generic: L
+- generic: "71"
+- generic: K
+- generic: D
+- generic: Q
+- generic: L
+- generic: S
+- generic: L
+- generic: G
+- generic: "N"
+- generic: A
+- generic: A
+- generic: "81"
+- generic: L
+- generic: Q
+- generic: I
+- generic: T
+- generic: D
+- generic: V
+- generic: K
+- generic: L
+- generic: Q
+- generic: D
+- generic: "91"
+- generic: A
+- generic: G
+- generic: V
+- generic: "Y"
+- generic: R
+- generic: C
+- generic: M
+- generic: I
+- generic: S
+- generic: "Y"
+- generic: "101"
+- generic: G
+- generic: G
+- generic: A
+- generic: D
+- generic: "Y"
+- generic: K
+- generic: R
+- generic: I
+- generic: T
+- generic: V
+- generic: "111"
+- generic: K
+- generic: V
+- generic: "N"
+- generic: A
+- generic: P
+- generic: "Y"
+- generic: "N"
+- generic: K
+- generic: I
+- generic: "N"
+- generic: "121"
+- generic: Q
+- generic: R
+- generic: I
+- generic: L
+- generic: V
+- generic: V
+- generic: D
+- generic: P
+- generic: V
+- generic: T
+- generic: "131"
+- generic: S
+- generic: E
+- generic: H
+- generic: E
+- generic: L
+- generic: T
+- generic: C
+- generic: Q
+- generic: A
+- generic: E
+- generic: "141"
+- generic: G
+- generic: "Y"
+- generic: P
+- generic: K
+- generic: A
+- generic: E
+- generic: V
+- generic: I
+- generic: W
+- generic: T
+- generic: "151"
+- generic: S
+- generic: S
+- generic: D
+- generic: H
+- generic: Q
+- generic: V
+- generic: L
+- generic: S
+- generic: G
+- generic: K
+- generic: "161"
+- generic: T
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: S
+- generic: K
+- generic: R
+- generic: E
+- generic: E
+- generic: "171"
+- generic: K
+- generic: L
+- generic: F
+- generic: "N"
+- generic: V
+- generic: T
+- generic: S
+- generic: T
+- generic: L
+- generic: R
+- generic: "181"
+- generic: I
+- generic: "N"
+- generic: T
+- generic: T
+- generic: T
+- generic: "N"
+- generic: E
+- generic: I
+- generic: F
+- generic: "Y"
+- generic: "191"
+- generic: C
+- generic: T
+- generic: F
+- generic: R
+- generic: R
+- generic: L
+- generic: D
+- generic: P
+- generic: E
+- generic: E
+- generic: "201"
+- generic: "N"
+- generic: H
+- generic: T
+- generic: A
+- generic: E
+- generic: L
+- generic: V
+- generic: "2:"
+- generic: B
+- generic: "1"
+- generic: G
+- generic: G
+- generic: E
+- generic: T
+- generic: G
+- generic: S
+- generic: S
+- generic: I
+- generic: E
+- generic: S
+- generic: "11"
+- generic: M
+- generic: K
+- generic: A
+- generic: S
+- generic: M
+- generic: I
+- generic: V
+- generic: Q
+- generic: Q
+- generic: I
+- generic: "21"
+- generic: L
+- generic: C
+- generic: Q
+- generic: L
+- generic: E
+- generic: T
+- generic: G
+- generic: I
+- generic: D
+- generic: Q
+- generic: "31"
+- generic: Q
+- generic: K
+- generic: A
+- generic: "N"
+- generic: D
+- generic: V
+- generic: I
+- generic: E
+- generic: G
+- generic: "N"
+- generic: "41"
+- generic: I
+- generic: D
+- generic: V
+- generic: E
+- generic: D
+- generic: K
+- generic: K
+- generic: V
+- generic: Q
+- generic: L
+- generic: "51"
+- generic: "Y"
+- generic: C
+- generic: E
+- generic: C
+- generic: I
+- generic: L
+- generic: K
+- generic: Q
+- generic: F
+- generic: H
+- generic: "61"
+- generic: I
+- generic: L
+- generic: D
+- generic: K
+- generic: "N"
+- generic: "N"
+- generic: V
+- generic: F
+- generic: K
+- generic: P
+- generic: "71"
+- generic: Q
+- generic: G
+- generic: I
+- generic: K
+- generic: A
+- generic: V
+- generic: M
+- generic: E
+- generic: L
+- generic: L
+- generic: "81"
+- generic: I
+- generic: D
+- generic: E
+- generic: "N"
+- generic: S
+- generic: V
+- generic: K
+- generic: Q
+- generic: L
+- generic: V
+- generic: "91"
+- generic: S
+- generic: D
+- generic: C
+- generic: S
+- generic: T
+- generic: I
+- generic: S
+- generic: E
+- generic: E
+- generic: "N"
+- generic: "101"
+- generic: P
+- generic: H
+- generic: L
+- generic: K
+- generic: A
+- generic: S
+- generic: K
+- generic: L
+- generic: M
+- generic: Q
+- generic: "111"
+- generic: C
+- generic: I
+- generic: S
+- generic: K
+- generic: "Y"
+- generic: K
+- generic: T
+- generic: W
+- generic: K
+- generic: S
+- generic: "121"
+- generic: F
+- generic: D
+- generic: F
+- generic: L
+- button "zoom-in":
+  - img "zoom-in":
+- button "zoom-out":
+  - img "zoom-out":
+- button:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button [disabled]:
+- button:
+- button:
+- button:
+- button "Mocha":
+  - text: Mocha
+- button "MMetrics":
+  - text: MMetrics
+- button "关闭": ✕
+- generic: Mocha
+- button "Copy session ID": 41d29f05-6
+- button "Copy session ID":
+  - img "copy":
+- button "Workspace":
+  - img "folder-open":
+- button "history":
+  - img "history":
+- button "plus-circle":
+  - img "plus-circle":
+- generic: Assistant
+- img "bulb":
+- generic: Thinking
+- generic: Need to launch two MMFold complex predictions, sequence-only inputs.
+- generic: ▸
+- generic: GetMOSTaskSchema
+- generic "MMFold": (MMFold)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && sed -n 1,60p /app/src/moch…": (cd /workspace/case03 && sed -n 1,60p /app/src/moch…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "MMFold payload: name, sequences[{protein:{id,sequence,description}}], dialect \"m…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "grep -n \"^###\\|^## \" /app/src/mocha/agents/custom_…": (grep -n "^###\|^## " /app/src/mocha/agents/custom_…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sed -n 169,260p /app/src/mocha/agents/custom_skill…": (sed -n 169,260p /app/src/mocha/agents/custom_skill…)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && T=/app/src/mocha/agents/cu…": (cd /workspace/case03 && T=/app/src/mocha/agents/cu…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both mutants single point, verified.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03 && mkdir -p variant_structure…": (cd /workspace/case03 && mkdir -p variant_structure…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Verify: Q18Y → position 18 (1-based) in \"GGETGSSIESMKASMIVQQ...\" index 17 = Q → …"
+- generic: ▸
+- generic: GetMOSQuota
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Sequence-only MMFold complex prediction for human …": (Sequence-only MMFold complex prediction for human …)
+- img "check-circle":
+- generic: ▸
+- generic: StartMOSTask
+- generic "Sequence-only MMFold complex prediction for human …": (Sequence-only MMFold complex prediction for human …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both launched. Now wait — like before, one bounded wait then check. MMFold took …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03/variant_structures && python …": (cd /workspace/case03/variant_structures && python …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "sleep 200; echo waited": (sleep 200; echo waited)
+- img "check-circle":
+- generic: ▸
+- generic: ListMOSTasks
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342259574002688": (342259574002688)
+- img "check-circle":
+- generic: ▸
+- generic: CheckMOSTask
+- generic "342259585696768": (342259585696768)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && for d in mmfold_3422595…": (cd /workspace/downloads && for d in mmfold_3422595…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Both succeeded, 5 samples each with confidence JSONs.
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/downloads && md5sum mmfold_342259574…": (cd /workspace/downloads && md5sum mmfold_342259574…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: All 10 CIFs are distinct (5 per task), both chains complete (207/124), mutation …
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03/variant_structures && python …": (cd /workspace/case03/variant_structures && python …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Now write variant_results.json with task IDs, exact payloads, sequences, per-sam…
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03/variant_structures && python …": (cd /workspace/case03/variant_structures && python …)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03/variant_structures && python …": (cd /workspace/case03/variant_structures && python …)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: "Oops: 'binder_chain_B_parental' uses seqs['7XYQ_B_Q18Y'] which is the mutated on…"
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace/case03/variant_structures && python …": (cd /workspace/case03/variant_structures && python …)
+- img "check-circle":
+- generic: ▸
+- img "edit":
+- generic: Write
+- generic "/workspace/case03/variant_structures/README.md": (/workspace/case03/variant_structures/README.md)
+- img "check-circle":
+- generic: ▸
+- img "code":
+- generic: Shell
+- generic "cd /workspace && rm -rf /workspace/.stage_var && m…": (cd /workspace && rm -rf /workspace/.stage_var && m…)
+- img "check-circle":
+- generic: ▸
+- img "bulb":
+- generic: Thinking
+- generic: Done. Report.
+- generic: ▸
+- paragraph:
+  - text: Both MMFold jobs finished successfully and the package is at
+  - strong:
+    - code: /workspace/case03_variant_structures.zip
+  - text: (581 KB, 26 files, integrity-tested).
+- heading "Tasks" [level=2]
+- table:
+  - rowgroup:
+    - row "Variant Mutation MMFold task ID Status Duration":
+      - columnheader "Variant"
+      - columnheader "Mutation"
+      - columnheader "MMFold task ID"
+      - columnheader "Status"
+      - columnheader "Duration"
+  - rowgroup:
+    - row "Q13Y (author) Q18Y (MOS/entity) 342259574002688 succeed 2.3 min":
+      - cell "Q13Y (author)"
+      - cell "Q18Y (MOS/entity)"
+      - cell "342259574002688"
+      - cell "succeed"
+      - cell "2.3 min"
+    - row "V12I (author) V17I (MOS/entity) 342259585696768 succeed 2.3 min":
+      - cell "V12I (author)"
+      - cell "V17I (MOS/entity)"
+      - cell "342259585696768"
+      - cell "succeed"
+      - cell "2.3 min"
+- paragraph:
+  - text: Exact payload per job (both
+  - code: "dialect: mmfold"
+  - text: ","
+  - code: "version: 1"
+  - text: ", no"
+  - code: templates
+  - text: ", no"
+  - code: modelSeeds
+  - text: "→ platform default):"
+- list:
+  - text: chain A — PD-L1 entity 1 of 7XYQ, 207 aa (UniProt 19–225),
+  - strong: identical in both jobs
+  - text: "chain B — DBL1_03 entity 2, 124 aa, differing from the parental sequence at exactly one position each. I re-verified this by diffing against the parental record:"
+  - code: "[(18, Q→Y)]"
+  - text: and
+  - code: "[(17, V→I)]"
+  - text: ", single substitution, no other changes. The two variants are independent — no double mutant exists anywhere in the package."
+- paragraph: Both predicted complexes contain the full 207-residue antigen and 124-residue binder, and the mutation is present in the modelled chain B (checked in the CIF sequence, not just assumed).
+- heading "Structural confidence (kept separate from affinity)" [level=2]
+- paragraph:
+  - text: Best sample per job by MMFold
+  - code: ranking_score
+  - text: ":"
+- table:
+  - rowgroup:
+    - row "Variant pLDDT pTM ipTM ranking_score pLDDT at mutated residue":
+      - columnheader "Variant"
+      - columnheader "pLDDT"
+      - columnheader "pTM"
+      - columnheader "ipTM"
+      - columnheader "ranking_score"
+      - columnheader "pLDDT at mutated residue"
+  - rowgroup:
+    - row "Q18Y (Q13Y) 87.94 0.811 0.821 0.819 93.6":
+      - cell "Q18Y (Q13Y)"
+      - cell "87.94"
+      - cell "0.811"
+      - cell "0.821"
+      - cell "0.819"
+      - cell "93.6"
+    - row "V17I (V12I) 87.17 0.817 0.776 0.784 91.8":
+      - cell "V17I (V12I)"
+      - cell "87.17"
+      - cell "0.817"
+      - cell "0.776"
+      - cell "0.784"
+      - cell "91.8"
+- paragraph:
+  - text: Both complexes model with confident folds and a confidently predicted interface, and within each job the five diffusion samples are near-identical (ranking_score spread < 0.005), so the model is not proposing an alternative binding mode. Q18Y models with the more confident interface (ipTM 0.82 vs 0.78) — a statement about model self-consistency only. I did not convert these into any energy, and no ddG is included here; the affinity results remain where they were, in
+  - code: case03_complete.zip
+  - text: .
+- heading "Package contents" [level=2]
+- paragraph:
+  - code: case03_variant_structures/
+- list:
+  - code: variant_sequences.fasta
+  - text: — exact submitted sequences, headers carry mutation + both numbering systems
+  - code: payloads/MMFold_Q18Y.json
+  - text: ","
+  - code: payloads/MMFold_V17I.json
+  - text: — exact submitted payloads
+  - code: Q18Y/cif/
+  - text: and
+  - code: V17I/cif/
+  - text: — 5 predicted CIF models each
+  - code: Q18Y/confidence/
+  - text: ","
+  - code: V17I/confidence/
+  - text: — 5
+  - code: summary_confidences_sample_*.json
+  - text: each
+  - code: confidence_summary.csv
+  - text: — all 10 samples with pLDDT, pTM, ipTM, ranking_score, per-chain pLDDT and pTM
+  - code: variant_results.json
+  - text: — task IDs, payloads, sequences, numbering rules, per-sample confidence, local confidence at the mutated position, and an explicit confidence-vs-affinity separation statement
+  - code: README.md
+  - text: ","
+  - code: PACKAGE_MANIFEST.json
+  - text: — index with per-file size and SHA-256
+- paragraph: "Caveat worth keeping in view: these are unrefined single-sequence predictions with no MD or experimental support, and pTM/ipTM are confidence metrics, not affinity."
+- generic: 10:01
+- generic: 7XYQ_PDL1_...
+- textbox "Paste a FASTA sequence, upload a PDB file, or ask me anything..."
+- button "upload Upload":
+  - img "upload":
+  - generic: Upload
+- button [disabled]:
+- generic: AI-generated research aid. Experimental validation advised
+- dialog:
+  - button "Close":
+    - generic "Close":
+      - img "close":
+  - text: Task List
+  - button "reload":
+    - img "reload":
+  - table:
+    - rowgroup:
+      - row "name status filter type filter Creation Time Update Time actions":
+        - columnheader "name"
+        - columnheader "status filter":
+          - generic: status
+          - button "filter":
+            - img "filter":
+        - columnheader "type filter":
+          - generic: type
+          - button "filter":
+            - img "filter":
+        - columnheader "Creation Time":
+          - generic: Creation Time
+        - columnheader "Update Time":
+          - generic: Update Time
+        - columnheader "actions"
+    - rowgroup:
+      - row "PDL1_DBL1_03_V17I_complex Succeed Structure Prediction with MMFold 2026-10-20 9:57:49 2026-10-20 10:00:06 profile delete":
+        - cell "PDL1_DBL1_03_V17I_complex"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Structure Prediction with MMFold"
+        - cell "2026-10-20 9:57:49"
+        - cell "2026-10-20 10:00:06"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "PDL1_DBL1_03_Q18Y_complex Succeed Structure Prediction with MMFold 2026-10-20 9:57:46 2026-10-20 10:00:04 profile delete":
+        - cell "PDL1_DBL1_03_Q18Y_complex"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Structure Prediction with MMFold"
+        - cell "2026-10-20 9:57:46"
+        - cell "2026-10-20 10:00:04"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "PDL1_DBL1_03_affinity_scan Succeed Binding Affinity Mutation Scoring 2026-10-20 9:36:51 2026-10-20 9:38:01 profile delete":
+        - cell "PDL1_DBL1_03_affinity_scan"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Binding Affinity Mutation Scoring"
+        - cell "2026-10-20 9:36:51"
+        - cell "2026-10-20 9:38:01"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+      - row "PDL1_KN035_VHH_complex Succeed Structure Prediction with MMFold 2026-10-20 9:34:18 2026-10-20 9:36:23 profile delete":
+        - cell "PDL1_KN035_VHH_complex"
+        - cell "Succeed":
+          - generic: Succeed
+        - cell "Structure Prediction with MMFold"
+        - cell "2026-10-20 9:34:18"
+        - cell "2026-10-20 9:36:23"
+        - cell "profile delete":
+          - button "profile":
+            - img "profile":
+          - button "delete":
+            - img "delete":
+  - list:
+    - listitem "Previous Page":
+      - button "left" [disabled]:
+        - img "left":
+    - listitem "1":
+      - generic: "1"
+    - listitem "Next Page":
+      - button "right" [disabled]:
+        - img "right":

@@ -1,0 +1,52 @@
+[
+  {
+    "file": "visuals/native-panel-scroll-00.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 451,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-panel-scroll-01.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 451,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-panel-scroll-02.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1092.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-panel-scroll-03.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1734.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  },
+  {
+    "file": "visuals/native-panel-scroll-04.png",
+    "devicePixelRatio": 2,
+    "scrollHeight": 2394,
+    "scrollTop": 1794.5,
+    "viewport": {
+      "height": 713,
+      "width": 1470
+    }
+  }
+]

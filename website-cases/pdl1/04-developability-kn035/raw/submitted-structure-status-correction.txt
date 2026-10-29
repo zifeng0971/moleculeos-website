@@ -1,0 +1,1 @@
+状态更正（不要写错已验证结构）：案例03实际已完成的正确任务变体为A35W、V109L、C33Y，另追加了界面优先Q116M、T105L的MMFold。A35Y只在评分表中，尚无结构；不要说A35Y已结构验证。请在10行对照表补T105L（ddG从亲和力表未同步，保留null等我本地合并），把structure_validation_status写external_case03_pending_verification，最终本地会用真正CIF再核验。

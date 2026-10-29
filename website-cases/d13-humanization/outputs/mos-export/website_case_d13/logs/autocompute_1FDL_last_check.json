@@ -1,0 +1,14 @@
+{
+ "tool": "CheckMOSTask",
+ "task_id": "342335703909376",
+ "observed_utc": "2026-10-20T08:23:08.329998Z",
+ "response_status": "RUNNING",
+ "reported_duration": "0s",
+ "started": "2026-10-20 08:07:33",
+ "input_parameters": {
+  "structure_path": "user_objects/123/330665428816896/sanitized/179248364988141_1FDL.cif",
+  "structure_pathFileId": "342335694263296",
+  "structure_pathFilename": "1FDL.cif"
+ },
+ "note": "Native MOS auto-compute (MMetrics) task triggered by ImportStructure(1FDL). Still RUNNING when the structural comparison finished; no output files were retrievable at that time."
+}

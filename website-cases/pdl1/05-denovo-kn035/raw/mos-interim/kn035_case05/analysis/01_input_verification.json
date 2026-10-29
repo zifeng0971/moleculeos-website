@@ -1,0 +1,127 @@
+{
+  "input_file": "/workspace/protein_data/protein_342605519696896/MMFold_1_chain_A.cif",
+  "input_file_size_bytes": 77125,
+  "input_file_sha256": "8303fd1077893b07cb6ab679f5fa0db8753ba6a1f0039d05089c5a786b38253e",
+  "cif_data_block": "342254287430656_model_sample_1",
+  "n_models": 1,
+  "chains_in_file": [
+    {
+      "chain": "A",
+      "n_residues": 118,
+      "first_res": 1,
+      "last_res": 118
+    }
+  ],
+  "n_chains": 1,
+  "n_unique_label_seq_ids": 118,
+  "label_seq_id_range": [
+    1,
+    118
+  ],
+  "mapping_identity_label_vs_auth": true,
+  "auth_asym_values": [
+    "A"
+  ],
+  "residues_with_multiple_auth_ids": [],
+  "seq_from_atoms": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+  "seq_from_atoms_len": 118,
+  "seq_entity_poly": "MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE",
+  "seq_match_entity_poly": true,
+  "sasa_params": {
+    "algorithm": "Shrake-Rupley",
+    "n_points": 960,
+    "probe_radius_A": 1.4
+  },
+  "sasa_total_A2": 6836.56,
+  "sum_per_residue_sasa": 6836.54,
+  "hotspots_identity_numbering": [
+    {
+      "requested_number": 45,
+      "mos_number": 45,
+      "residue": "ASP",
+      "sasa_A2": 135.5,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 40,
+      "mos_number": 40,
+      "residue": "TYR",
+      "sasa_A2": 58.85,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 97,
+      "mos_number": 97,
+      "residue": "ARG",
+      "sasa_A2": 67.67,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 107,
+      "mos_number": 107,
+      "residue": "TYR",
+      "sasa_A2": 98.36,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 105,
+      "mos_number": 105,
+      "residue": "ALA",
+      "sasa_A2": 62.99,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 38,
+      "mos_number": 38,
+      "residue": "ILE",
+      "sasa_A2": 63.65,
+      "passes_20A2": true
+    }
+  ],
+  "hotspots_shift_minus17_hypothesis": [
+    {
+      "requested_number": 45,
+      "mos_number": 28,
+      "residue": "VAL",
+      "sasa_A2": 34.8,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 40,
+      "mos_number": 23,
+      "residue": "GLU",
+      "sasa_A2": 45.64,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 97,
+      "mos_number": 80,
+      "residue": "ASN",
+      "sasa_A2": 2.96,
+      "passes_20A2": false
+    },
+    {
+      "requested_number": 107,
+      "mos_number": 90,
+      "residue": "LEU",
+      "sasa_A2": 79.62,
+      "passes_20A2": true
+    },
+    {
+      "requested_number": 105,
+      "mos_number": 88,
+      "residue": "VAL",
+      "sasa_A2": 0.1,
+      "passes_20A2": false
+    },
+    {
+      "requested_number": 38,
+      "mos_number": 21,
+      "residue": "THR",
+      "sasa_A2": 46.23,
+      "passes_20A2": true
+    }
+  ],
+  "n_residues_sasa_lt_5A2": 26,
+  "median_residue_sasa": 49.01
+}
