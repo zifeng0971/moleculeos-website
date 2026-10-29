@@ -22,8 +22,8 @@ export function HomePosition() {
     const measure = () => {
       anchors.splice(0).forEach(el => el.remove());
       sections.forEach((el, index) => {
-        // The first screen and the case cards are left alone: no snapping there.
-        if (index === 0 || el.querySelector('[data-nav-section="validation"]')) { el.dataset.snap = 'none'; return; }
+        // The first section snaps through its own two screens (.hero-screen, .hero-demo-screen).
+        if (index === 0) { el.dataset.snap = 'none'; return; }
         const tall = el.offsetHeight > innerHeight * 0.96;
         el.dataset.snap = tall ? 'start' : 'center';
         if (!tall || el.querySelector('.wf-row, .model-stack-snaps, .op-step')) return;

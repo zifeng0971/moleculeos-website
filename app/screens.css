@@ -1,0 +1,109 @@
+/* Homepage screen layer (loaded last). One clear subject per screen; wheel scrolling settles on each screen. */
+
+/* ---------- Screen snapping (desktop, motion allowed; toggled by HomePosition) ---------- */
+html.home-snap { scroll-snap-type: y mandatory; scroll-padding-top: var(--nav-h); }
+/* scroll-padding already clears the nav; the older 100px margin would stop every screen 100px early. */
+html.home-snap [data-home-section] { scroll-margin-top: 0; }
+html.home-snap .hero-screen,
+html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: always; }
+
+/* ---------- Screen 1: headline only ---------- */
+.hero-composition,
+.hero-composition:is(*) { padding: 0 !important; gap: 0 !important; max-width: none !important; }
+.hero-screen {
+  display: flex; align-items: center; justify-content: center;
+  /* Extra room at the bottom: the workbench lies flat there on the first screen. */
+  width: 100%; min-height: calc(100svh - var(--nav-h)); padding: 0 22px 31vh;
+}
+/* Four clear levels: quiet eyebrow → headline → light lead → one action. Small text is light and dimmer; only the headline carries weight. */
+/* Eyebrow capsule: the wordmark and tagline in white, split by a hairline divider. */
+.hero-pill {
+  display: inline-flex !important; align-items: center; gap: 10px !important;
+  margin-bottom: 28px !important; padding: 6px 16px !important; border-radius: 999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important; background: rgba(255, 255, 255, 0.035) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+  -webkit-backdrop-filter: blur(12px) !important; backdrop-filter: blur(12px) !important;
+  font-size: 14px !important; font-weight: 400 !important; letter-spacing: 0.04em !important; color: rgba(245, 245, 247, 0.5) !important;
+}
+/* Same weight as the tagline; the name is set apart by colour and open tracking only. */
+.hero-pill-brand { font-size: 14px; font-weight: 400; letter-spacing: 0.08em; color: #f5f5f7; }
+.hero-pill-brand b { font-weight: inherit; }
+.hero-pill-tag { position: relative; padding-left: 11px; color: #f5f5f7; }
+.hero-pill-tag::before { content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 12px; transform: translateY(-50%); background: rgba(255, 255, 255, 0.18); }
+.hero-title { font-size: clamp(40px, 4.8vw, 68px) !important; font-weight: 600 !important; line-height: 1.12 !important; letter-spacing: -0.02em !important; }
+.hero-title[data-locale='zh'] { letter-spacing: 0.01em !important; line-height: 1.22 !important; }
+.hero-title-line-a { color: #f5f5f7 !important; }
+/* A softer three-stop gradient (sky → lilac → rose) instead of the five-colour pipeline key. */
+.hero-title-line-b, .hero-title-line-b.hero-enter { background: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important; }
+.hero-description {
+  margin-top: 24px !important; max-width: 32em !important;
+  font-size: clamp(17px, 1.3vw, 19px) !important; font-weight: 300; line-height: 1.65 !important; letter-spacing: 0.02em;
+  color: rgba(245, 245, 247, 0.62) !important;
+}
+/* The residue field fades its own grid around the copy (ProteinField residueTip), so the dark overlay is off:
+   it would dim pulses near the centre more than those at the edges. */
+.hero-vignette { display: none !important; }
+.hero-cta { margin-top: 40px; display: flex; justify-content: center; }
+/* Brand-violet button: the label alone, centred (the shared CTA's arrow is hidden here). */
+.hero-cta a {
+  position: relative; justify-content: center; min-height: 46px; min-width: 148px; padding: 0 36px; border-radius: 999px;
+  background: #6F69C7 !important; color: #fff !important; font-size: 15px; font-weight: 500; letter-spacing: 0.04em;
+  transition: background 0.25s var(--ease-apple), transform 0.25s var(--ease-apple);
+}
+.hero-cta a:hover { background: #7C76D2 !important; }
+.hero-cta a:active { transform: scale(0.98); }
+.hero-cta a svg { display: none; }
+
+/* ---------- Screen 2: the workbench on its own ---------- */
+.hero-demo-screen {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; min-height: calc(100svh - var(--nav-h)); padding: 24px 22px;
+}
+/* Every software UI on the homepage is 16:10 (1280×800). The workbench is sized to fit one screen,
+   since a taller screen would add a stray snap stop at its end. */
+@media (min-width: 1024px) {
+  .hero-demo-screen .agent-demo-slot {
+    width: min(100%, 1280px, calc((100svh - var(--nav-h) - 64px) * 1.6));
+    max-width: none; height: auto; aspect-ratio: 1280 / 800;
+  }
+}
+.hero-demo-screen .agent-demo-slot { max-height: calc(100svh - var(--nav-h) - 48px); }
+
+/* ---------- "从理解到设计": one step per screen ---------- */
+/* A step taller than the visible area (96vh vs 100vh minus the nav) lets the page drift inside it; exactly one screen makes each wheel move land on the next step. */
+@media (min-width: 1024px) {
+  /* one-protein.css loads after this file, so the selector needs the extra class to win. */
+  .op-layout .op-steps > .op-step { min-height: calc(100svh - var(--nav-h)); }
+  /* The section's bottom edge is itself a stop; with no bottom padding it coincides with the last step. */
+  html.home-snap .op-section { padding-bottom: 0; }
+
+  /* First screen of the section = title + the 16:10 UI stage. The stage height leaves room for the title block
+     above it (--op-head) and caps where the column width would take over. */
+  section.op-section { --op-head: 344px; --op-stage-h: min(calc(100svh - var(--nav-h) - var(--op-head)), 540px); padding-top: 56px; }
+  .op-section .op-layout { margin-top: 32px; }
+  .op-section .op-stage-col {
+    height: auto; min-height: 0;
+    /* Pinned at the vertical centre of the screen, level with each step's text. */
+    top: calc(var(--nav-h) + (100svh - var(--nav-h) - var(--op-stage-h)) / 2);
+  }
+  .op-section .op-media { width: min(100%, calc(var(--op-stage-h) * 1.6)); height: auto; aspect-ratio: 1280 / 800; margin-left: auto; }
+}
+
+/* ---------- Header bar ---------- */
+/* 80% black behind the blur, with a permanent 0.5px divider (10% white) along the bottom. */
+.gnav .gnav-bg { background: rgba(0, 0, 0, 0.8); border-bottom: 0.5px solid rgba(255, 255, 255, 0.1); }
+.gnav[data-open='true'] .gnav-bg { background: #000; border-bottom-color: transparent; }
+
+/* ---------- Header wordmark ---------- */
+/* Open the MoleculeOS wordmark's tracking (the Logo component sets tracking-tight). */
+.gnav-inner > a:first-child > span { letter-spacing: 0.06em; }
+
+/* ---------- Workbench: flat under the copy on screen 1, upright on screen 2 ---------- */
+/* The outer layer scales from its top and carries the perspective, with the eye above the workbench (looking down at a mat on
+   the floor); the inner plane tilts about its bottom edge, so the far (top) edge recedes and narrows. */
+.hero-demo-screen .hero-demo-stage { perspective: none; }
+/* The copy always paints above the flat-lying workbench. */
+.hero-screen { position: relative; z-index: 2; }
+.hero-demo-screen .hero-demo-tilt { transform-origin: 50% 0%; perspective: 900px; perspective-origin: 50% -60%; }
+.hero-demo-screen .hero-demo-plane { position: relative; transform-origin: 50% 100%; transform-style: preserve-3d; }
+.hero-demo-screen .hero-demo-squash { transform-origin: 50% 100%; }

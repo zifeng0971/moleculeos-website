@@ -1,6 +1,7 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { LocateFixed } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import mochaIcon from './vendor/src/assets/mocha/icon-mocha.svg';
@@ -21,6 +22,9 @@ type Props = {
   locale: string;
   done: boolean;
   onHoverResidue: (residue: string | null) => void;
+  /** Run the table guide (auto demo) for this result; false once it has run this visit. */
+  guide?: boolean;
+  onGuideEnd?: () => void;
 };
 
 export type LocalChatMessage = {
@@ -29,10 +33,51 @@ export type LocalChatMessage = {
   content: string;
 };
 
-export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, stage, locale, done, onHoverResidue }: Props) {
+// Table guide timing: wait after the result appears, then light this many residues for this long each; the guide counts as
+// done after its demo plus a grace period, or at the visitor's first own hover.
+const GUIDE_DELAY = 1000, GUIDE_STEPS = 3, GUIDE_STEP_MS = 1200, GUIDE_GRACE = 6000;
+
+export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, stage, locale, done, onHoverResidue, guide = false, onGuideEnd }: Props) {
   const t = useTranslations('agentDemo');
   const task = ENTRY_TASKS.find(item => item.id === taskId);
   const isEntry = taskId === 'structure';
+  // Interface-table guide: once the finished result shows, light the first few PD-L1 residues one by one (each also lights
+  // up in the 3D structure). The demo stops as soon as the visitor enters the table, clicks or scrolls the conversation.
+  const pairsRef = useRef<HTMLDivElement>(null);
+  const [demoCell, setDemoCell] = useState<string | null>(null);
+  const [hovered, setHovered] = useState(false);
+  const showGuide = guide && done && isEntry;
+  const onGuideEndRef = useRef(onGuideEnd); onGuideEndRef.current = onGuideEnd;
+  const hoverRef = useRef(onHoverResidue); hoverRef.current = onHoverResidue;
+  useEffect(() => {
+    const table = pairsRef.current;
+    if (!showGuide || !table) return;
+    const timers: number[] = [];
+    let stopped = false;
+    const stop = () => {
+      if (stopped) return;
+      stopped = true; timers.forEach(window.clearTimeout); setDemoCell(null); hoverRef.current(null);
+      timers.push(window.setTimeout(() => onGuideEndRef.current?.(), GUIDE_GRACE));
+    };
+    const feed = table.closest<HTMLElement>('.mocha-case-feed');
+    timers.push(window.setTimeout(() => {
+      // Bring the table into the conversation's view (layout offsets: the workbench may be transformed).
+      if (feed) { let top = -12; for (let node: HTMLElement | null = table; node && node !== feed; node = node.offsetParent as HTMLElement | null) top += node.offsetTop; feed.scrollTo({ top, behavior: 'smooth' }); }
+      DEMO_PAIRS.slice(0, GUIDE_STEPS).forEach((pair, i) => timers.push(window.setTimeout(() => {
+        if (stopped) return;
+        setDemoCell(pair.a); hoverRef.current(pair.aResidue);
+      }, 500 + i * GUIDE_STEP_MS)));
+      timers.push(window.setTimeout(stop, 500 + GUIDE_STEPS * GUIDE_STEP_MS));
+    }, GUIDE_DELAY));
+    table.addEventListener('pointerenter', stop);
+    feed?.addEventListener('wheel', stop, { passive: true }); feed?.addEventListener('pointerdown', stop);
+    return () => { timers.forEach(window.clearTimeout); table.removeEventListener('pointerenter', stop); feed?.removeEventListener('wheel', stop); feed?.removeEventListener('pointerdown', stop); };
+  }, [showGuide]);
+  // A real hover ends the guide right away.
+  const userHover = (residue: string | null) => {
+    onHoverResidue(residue);
+    if (residue && !hovered) { setHovered(true); onGuideEndRef.current?.(); }
+  };
   const en = locale === 'en';
   const labels = useMemo(() => isEntry
     ? DEMO_PHASES.map(item => locale === 'en' ? item.titleEn : item.titleZh)
@@ -100,9 +145,9 @@ export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, st
       {isEntry && <>
         <div className="mocha-case-table-scroll"><table><thead><tr><th>sample</th><th>ipTM</th><th>pTM</th><th>pLDDT</th><th/></tr></thead><tbody>{DEMO_SAMPLES.map(sample => <tr key={sample.n} data-selected={sample.selected || undefined}><td>{sample.n}</td><td>{sample.iptm.toFixed(2)}</td><td>{sample.ptm.toFixed(2)}</td><td>{sample.plddt.toFixed(1)}</td><td>{sample.selected ? (en ? 'selected' : '采用') : ''}</td></tr>)}</tbody></table></div>
         <ReportBody result={interfaceResult}/>
-        <div className="mocha-case-table-scroll"><table><thead><tr><th>PD-L1 (A)</th><th>KN035 (B)</th><th>{en ? 'contact' : '相互作用'}</th></tr></thead><tbody>{DEMO_PAIRS.map(pair => <tr key={pair.a}>
-          <td tabIndex={0} onMouseEnter={() => onHoverResidue(pair.aResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => onHoverResidue(pair.aResidue)} onBlur={() => onHoverResidue(null)}>{pair.a}</td>
-          <td tabIndex={0} onMouseEnter={() => onHoverResidue(pair.bResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => onHoverResidue(pair.bResidue)} onBlur={() => onHoverResidue(null)}>{pair.b}</td>
+        <div ref={pairsRef} className="mocha-case-table-scroll mocha-case-pairs"><table><thead><tr><th>PD-L1 (A)</th><th>KN035 (B)</th><th>{en ? 'contact' : '相互作用'}</th></tr></thead><tbody>{DEMO_PAIRS.map(pair => <tr key={pair.a}>
+          <td tabIndex={0} data-demo={demoCell === pair.a || undefined} onMouseEnter={() => userHover(pair.aResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => userHover(pair.aResidue)} onBlur={() => onHoverResidue(null)}>{pair.a}<LocateFixed className="mocha-case-locate" size={11} aria-hidden="true"/></td>
+          <td tabIndex={0} onMouseEnter={() => userHover(pair.bResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => userHover(pair.bResidue)} onBlur={() => onHoverResidue(null)}>{pair.b}<LocateFixed className="mocha-case-locate" size={11} aria-hidden="true"/></td>
           <td>{kinds[pair.kind as keyof typeof kinds]}</td></tr>)}</tbody></table></div></>}
     </div>}
     {messages.map(message => message.role === 'user' ? (

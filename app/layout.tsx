@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import './visual.css';
 import './calm.css';
+import './screens.css';
 
 export const metadata: Metadata = {
   title: { default: 'MoleculeOS — 分子之心蛋白质设计平台', template: '%s | MoleculeOS' },

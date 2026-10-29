@@ -52,7 +52,8 @@
 .mocha-structure-legend i { width:.45rem; height:.45rem; border-radius:50%; }
 .mocha-structure-viewport { position:relative; flex:1; min-height:0; overflow:hidden; touch-action:none; }
 .mocha-structure-viewport>canvas { position:absolute; inset:0; width:100%; height:100%; }.mocha-structure-viewport>img { object-fit:contain; background:#1e1e1e; }
-.mocha-structure-toolbar { position:absolute; right:.5rem; top:.5rem; z-index:4; display:grid; gap:.125rem; max-height:calc(100% - 1rem); overflow-y:auto; padding:.25rem; border-radius:.375rem; background:#090909; scrollbar-width:thin; }
+/* Vertically centred on the right edge of the 3D viewer. */
+.mocha-structure-toolbar { position:absolute; right:.5rem; top:50%; transform:translateY(-50%); z-index:4; display:grid; gap:.125rem; max-height:calc(100% - 1rem); overflow-y:auto; padding:.25rem; border-radius:.375rem; background:#090909; scrollbar-width:thin; }
 .mocha-structure-toolbar button { display:grid; place-items:center; min-width:2.5rem; min-height:2.5rem; color:#ddd; border-radius:.25rem; }
 .mocha-structure-toolbar button:hover,.mocha-structure-toolbar button[aria-pressed=true] { color:#c3afff; background:#313038; }
 .mocha-structure-hidden { position:absolute; inset:0; z-index:3; display:grid; place-items:center; background:#1e1e1e; color:#aaa; }
@@ -66,7 +67,7 @@
 .mocha-case-grid.has-structure .mocha-case-chat > * { max-width:none; }
 .mocha-case-chat-head { display:flex; align-items:center; gap:.5rem; flex:0 0 3rem; padding:0 .875rem; border-bottom:1px solid var(--case-line); background:var(--case-surface); }
 .mocha-case-chat-head strong { font-size:.875rem; }
-.mocha-case-feed { flex:1; min-height:0; overflow:auto; padding:1rem .875rem; scrollbar-width:thin; scrollbar-color:#505050 transparent; }
+.mocha-case-feed { position:relative; flex:1; min-height:0; overflow:auto; padding:1rem .875rem; scrollbar-width:thin; scrollbar-color:#505050 transparent; }
 .mocha-case-feed.is-idle { display:flex; align-items:center; justify-content:center; }
 .mocha-case-flow { width:100%; min-width:0; }
 .mocha-case-user-block { display:flex; justify-content:flex-end; min-width:0; margin-bottom:.75rem; }
@@ -120,10 +121,8 @@
 .mocha-case-composer-bottom button.is-ready::after { animation-delay:1.2s; }
 .mocha-case-composer-bottom button.is-ready:hover { transform:scale(1.08); animation-play-state:paused; }
 .mocha-case-composer-bottom button:disabled { cursor:not-allowed; opacity:.6; animation:none; }
-.mocha-case-cta-hint { padding:.28rem .7rem; border-radius:999px; color:#e2d9ff; font-size:.75rem; font-weight:600; background:rgba(124,92,255,.16); border:1px solid rgba(167,123,255,.35); animation:mocha-case-hint 2.4s ease-in-out infinite; }
 @keyframes mocha-case-ring { 0% { transform:scale(1); opacity:.9; } 100% { transform:scale(1.9); opacity:0; } }
 @keyframes mocha-case-nudge { 0%,100% { transform:translateX(0); } 50% { transform:translateX(2px); } }
-@keyframes mocha-case-hint { 0%,100% { opacity:.75; transform:translateX(0); } 50% { opacity:1; transform:translateX(-3px); } }
 .mocha-case-workbench button:focus-visible,.mocha-case-workbench a:focus-visible,.mocha-case-workbench summary:focus-visible,.mocha-case-table-scroll tr:focus-visible { outline:2px solid #a48df4; outline-offset:2px; }
 .mocha-case-composer textarea:focus,.mocha-case-composer textarea:focus-visible { outline:0; box-shadow:none; }
 @keyframes mocha-case-spin { to { transform:rotate(360deg); } }@keyframes mocha-case-breathe { 50% { box-shadow:0 0 0 .35rem rgba(120,94,219,.23); } }
@@ -146,3 +145,60 @@
 .mocha-case-result tr[data-selected] td { color: #1d9e6c; font-weight: 600; }
 .mocha-case-result td[tabindex] { cursor: default; }
 .mocha-case-result td[tabindex]:hover, .mocha-case-result td[tabindex]:focus-visible { background: rgba(165,138,238,.14); outline: none; }
+
+/* Mocha welcome (initial state, Figma 1652:8057): title + four module cards. Sizes track the panel width (container units). */
+.mocha-case-feed.is-welcome { display:flex; align-items:center; justify-content:center; container-type:inline-size; }
+.mocha-welcome { display:flex; flex-direction:column; align-items:center; gap:24px; width:100%; }
+.mocha-welcome-head { display:flex; align-items:center; gap:12px; }
+.mocha-welcome-mark { display:grid; place-items:center; flex:none; width:30px; height:30px; overflow:clip; }
+.mocha-welcome-head h3 { margin:0; max-width:none; font:700 clamp(20px, 5.2cqi, 32px)/28px var(--font-display); color:#f9f9f9; letter-spacing:0; white-space:nowrap; }
+.mocha-welcome-modules { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:8px; width:100%; margin:0; padding:0; list-style:none; }
+@container (max-width: 420px) { .mocha-welcome-modules { grid-template-columns:minmax(0, 1fr); } }
+.mocha-welcome-modules li { display:flex; flex-direction:column; gap:4px; min-height:84px; padding:8px; border-radius:8px; background:rgba(255,255,255,.05); }
+.mocha-welcome-module-title { display:flex; align-items:center; gap:4px; margin:0; font-size:12px; font-weight:500; line-height:1.5; color:#fff; white-space:nowrap; }
+.mocha-welcome-module-title img { flex:none; }
+.mocha-welcome-module-body { margin:0; padding-left:20px; text-wrap:wrap; font-size:10px; font-weight:300; line-height:1.5; color:rgba(255,255,255,.65); }
+
+/* Pre-run "发送并运行" pill (replaces the hint capsule + oversized round send): brand violet with a soft inner gradient and glow,
+   two staggered breathing rings, a paper plane that takes off and lands in step with them, and a short shake on the idle nudge. */
+.mocha-case-composer-bottom button.mocha-case-run {
+  display:inline-flex; align-items:center; gap:.4rem; width:auto; height:2.25rem; padding:0 1.1rem; border-radius:999px; isolation:isolate;
+  color:#fff; font-size:.8125rem; font-weight:600; letter-spacing:.03em;
+  background:linear-gradient(135deg, #8a84e6 0%, #6F69C7 55%, #5d57b6 100%);
+  box-shadow:0 6px 20px -4px rgba(111,105,199,.7), 0 0 0 1px rgba(190,186,255,.35) inset, 0 1px 0 rgba(255,255,255,.28) inset;
+  transition:filter .25s, transform .2s;
+}
+.mocha-case-composer-bottom button.mocha-case-run svg { flex:none; animation:mocha-case-run-plane 2.4s ease-in-out infinite; }
+.mocha-case-composer-bottom button.mocha-case-run:hover svg { animation-play-state:paused; }
+.mocha-case-composer-bottom button.mocha-case-run::before,
+.mocha-case-composer-bottom button.mocha-case-run::after {
+  content:''; position:absolute; inset:0; z-index:-1; border-radius:inherit; pointer-events:none;
+  animation:mocha-case-run-breathe 2.4s ease-out infinite;
+}
+.mocha-case-composer-bottom button.mocha-case-run::after { animation-delay:1.2s; }
+.mocha-case-composer-bottom button.mocha-case-run:hover { filter:brightness(1.12); }
+.mocha-case-composer-bottom button.mocha-case-run:hover::before,
+.mocha-case-composer-bottom button.mocha-case-run:hover::after { animation-play-state:paused; }
+.mocha-case-composer-bottom button.mocha-case-run:active { transform:scale(.97); }
+.mocha-case-composer-bottom button.mocha-case-run.is-nudging { animation:mocha-case-run-shake .6s cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes mocha-case-run-breathe { 0% { box-shadow:0 0 0 0 rgba(150,143,240,.6), 0 0 12px 1px rgba(150,143,240,.3); } 100% { box-shadow:0 0 0 .65rem rgba(150,143,240,0), 0 0 12px 1px rgba(150,143,240,0); } }
+/* Rest, lift off up-right and fade, reappear low-left, glide back in. */
+@keyframes mocha-case-run-plane { 0%, 45% { transform:translate(0, 0); opacity:1; } 62% { transform:translate(7px, -7px) scale(.85); opacity:0; } 63% { transform:translate(-6px, 6px) scale(.85); opacity:0; } 80%, 100% { transform:translate(0, 0); opacity:1; } }
+@keyframes mocha-case-run-shake { 10%,90% { transform:translateX(-1px); } 20%,80% { transform:translateX(2px); } 30%,50%,70% { transform:translateX(-4px); } 40%,60% { transform:translateX(4px); } }
+@media (prefers-reduced-motion: reduce) { .mocha-case-composer-bottom button.mocha-case-run, .mocha-case-composer-bottom button.mocha-case-run svg, .mocha-case-composer-bottom button.mocha-case-run::before, .mocha-case-composer-bottom button.mocha-case-run::after { animation:none; } }
+
+/* Restart: an icon in Mocha's header (any time after a run starts) and, once the result is in, a "↻ 重新运行" pill in place of
+   send. The pill stays still (is-quiet) until the table guide has run, then breathes like the run button. */
+.mocha-case-restart { display:grid; place-items:center; width:1.75rem; height:1.75rem; margin-left:auto; border-radius:.375rem; color:#b9b9c0; transition:color .2s, background .2s; }
+.mocha-case-restart:hover { color:#fff; background:#313038; }
+.mocha-case-restart svg, .mocha-case-composer-bottom button.mocha-case-run.is-restart svg { transition:transform .45s cubic-bezier(.2,.8,.2,1); }
+.mocha-case-restart:hover svg, .mocha-case-composer-bottom button.mocha-case-run.is-restart:hover svg { transform:rotate(-180deg); }
+.mocha-case-composer-bottom button.mocha-case-run.is-restart svg { animation:none; }
+.mocha-case-composer-bottom button.mocha-case-run.is-quiet::before, .mocha-case-composer-bottom button.mocha-case-run.is-quiet::after { animation:none; }
+
+/* Interface-residue table: residue cells read as interactive (violet wash, left rule, locate icon) on hover, focus and while
+   the auto demo lights them. */
+.mocha-case-result .mocha-case-pairs td[tabindex] { position:relative; cursor:pointer; white-space:nowrap; transition:background .25s, box-shadow .25s, color .25s; }
+.mocha-case-result .mocha-case-pairs td[tabindex]:hover, .mocha-case-result .mocha-case-pairs td[tabindex]:focus-visible, .mocha-case-result .mocha-case-pairs td[data-demo] { background:rgba(111,105,199,.24); box-shadow:inset 2px 0 0 #8f89e6; color:#fff; outline:none; }
+.mocha-case-locate { display:inline-block; margin-left:.35rem; vertical-align:-1px; color:#b9b4f2; opacity:0; transition:opacity .2s; }
+.mocha-case-pairs td[tabindex]:hover .mocha-case-locate, .mocha-case-pairs td[tabindex]:focus-visible .mocha-case-locate, .mocha-case-pairs td[data-demo] .mocha-case-locate { opacity:1; }

@@ -4,10 +4,11 @@ import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { Bell, ChevronDown, FileCode2, Mail, Plus, Send, Settings, X } from 'lucide-react';
+import { Bell, ChevronDown, FileCode2, Mail, Plus, RotateCcw, Send, Settings, X } from 'lucide-react';
 import mochaIcon from './vendor/src/assets/mocha/icon-mocha.svg';
 import { MochaIdle } from './vendor/src/components/mocha/MochaIdle/MochaIdle';
 import { MochaCaseFlow, type LocalChatMessage } from './MochaCaseFlow';
+import { MochaWelcome } from './MochaWelcome';
 import { ATTACHED_STRUCTURE_NAME, DEMO_TOTAL_MS, ENTRY_TASKS, PRESET_PROMPT, phaseAt } from './demoScript';
 import { DEMO_SEQUENCES } from './demoSequences';
 import './vendor-tokens.css';
@@ -44,9 +45,12 @@ const initialRun: TaskRun = {
   messages: [],
 };
 const copy = {
-  zh: { tasks: '任务', tasksBtn: 'Task', projects: 'Project Lists', createProject: 'Create Project', projectName: '项目名称', confirm: '创建', newTask: '新建任务', send: '发送', placeholder: 'Paste a FASTA sequence, upload a PDB file, or ask me anything…', attached: '已附加结构文件；点击查看 FASTA 序列', runHint: '点击发送，开始运行', completeReply: '如需使用 Mocha 的完整分析能力，请前往 MoleculeOS 平台体验。' },
-  en: { tasks: 'Tasks', tasksBtn: 'Task', projects: 'Project Lists', createProject: 'Create Project', projectName: 'Project name', confirm: 'Create', newTask: 'New task', send: 'Send', placeholder: 'Paste a FASTA sequence, upload a PDB file, or ask me anything…', attached: 'Structure attached; click to inspect FASTA sequences', runHint: 'Send to run the task', completeReply: 'For Mocha’s full analysis capabilities, please continue in the MoleculeOS platform.' },
+  zh: { tasks: '任务', tasksBtn: 'Task', projects: 'Project Lists', createProject: 'Create Project', projectName: '项目名称', confirm: '创建', newTask: '新建任务', send: '发送', placeholder: 'Paste a FASTA sequence, upload a PDB file, or ask me anything…', attached: '已附加结构文件；点击查看 FASTA 序列', runHint: '点击发送，开始运行', runLabel: '发送并运行', restart: '重新运行', restartTitle: '重新开始', completeReply: '如需使用 Mocha 的完整分析能力，请前往 MoleculeOS 平台体验。' },
+  en: { tasks: 'Tasks', tasksBtn: 'Task', projects: 'Project Lists', createProject: 'Create Project', projectName: 'Project name', confirm: 'Create', newTask: 'New task', send: 'Send', placeholder: 'Paste a FASTA sequence, upload a PDB file, or ask me anything…', attached: 'Structure attached; click to inspect FASTA sequences', runHint: 'Send to run the task', runLabel: 'Send and run', restart: 'Run again', restartTitle: 'Start over', completeReply: 'For Mocha’s full analysis capabilities, please continue in the MoleculeOS platform.' },
 } as const;
+
+// Idle nudge for the run button: first after 8 s without interaction, again every 8 s, at most three times.
+const NUDGE_IDLE = 8000, NUDGE_MAX = 3;
 
 export function MochaCaseWorkbench() {
   const locale = useLocale();
@@ -71,6 +75,11 @@ export function MochaCaseWorkbench() {
   const [foreground, setForeground] = useState(true);
   const [hoverResidue, setHoverResidue] = useState<string | null>(null);
   const active = runs.find(run => run.id === activeId) ?? null;
+  // Before the first send the composer shows one pill button, "发送并运行", with a breathing ring.
+  const preRun = !!active && active.elapsed < 0 && !!active.draft.trim();
+  const [nudging, setNudging] = useState(false);
+  // The table guide (auto demo) runs once per visit; the restart pill starts breathing only after it.
+  const [guided, setGuided] = useState(false);
   const stage = phaseAt(active?.elapsed ?? -1);
   const hasRunning = runs.some(run => run.elapsed >= 0 && run.elapsed < DEMO_TOTAL_MS);
   const hasStarted = Boolean(active && active.elapsed >= 0);
@@ -82,6 +91,24 @@ export function MochaCaseWorkbench() {
     const ordinal = runs.filter(item => item.taskId === run.taskId && item.id <= run.id).length;
     return runs.some(item => item.taskId === run.taskId && item.id !== run.id) ? `${titleFor(run.taskId)} · ${ordinal}` : titleFor(run.taskId);
   };
+
+  // Idle nudge: with the workbench on screen and no pointer, wheel or key activity over it for NUDGE_IDLE ms, the run button
+  // gives one short shake (plus a vibration on devices that support it). At most NUDGE_MAX times, then it stays quiet.
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!preRun || !visible || !foreground || !root || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let last = performance.now(), count = 0, stop = 0;
+    const reset = () => { last = performance.now(); };
+    const events = ['pointermove', 'pointerdown', 'wheel', 'keydown'] as const;
+    events.forEach(name => root.addEventListener(name, reset, { passive: true }));
+    const timer = window.setInterval(() => {
+      if (count >= NUDGE_MAX || performance.now() - last < NUDGE_IDLE) return;
+      count++; last = performance.now();
+      setNudging(true); stop = window.setTimeout(() => setNudging(false), 600);
+      try { navigator.vibrate?.(30); } catch { /* not supported, or no user activation yet */ }
+    }, 500);
+    return () => { window.clearInterval(timer); window.clearTimeout(stop); events.forEach(name => root.removeEventListener(name, reset)); setNudging(false); };
+  }, [preRun, visible, foreground]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -119,8 +146,11 @@ export function MochaCaseWorkbench() {
     if (!hasStarted) return;
     const feed = feedRef.current;
     if (!feed) return;
-    const result = stage.index >= 5 ? feed.querySelector('.mocha-case-result') : null;
-    const top = result ? result.getBoundingClientRect().top - feed.getBoundingClientRect().top + feed.scrollTop : feed.scrollHeight;
+    // Land on the result's first heading ("预测的复合物"). Layout offsets, not client rects: the workbench may be scaled and
+    // tilted (the hero's flat-lying first screen), which would shrink a rect-based distance.
+    const result = stage.index >= 5 ? feed.querySelector<HTMLElement>('.mocha-case-result :is(h2, h3), .mocha-case-result') : null;
+    let top = feed.scrollHeight;
+    if (result) { top = -8; for (let node: HTMLElement | null = result; node && node !== feed; node = node.offsetParent as HTMLElement | null) top += node.offsetTop; }
     feed.scrollTo({ top, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   }, [active?.messages.length, activeId, hasStarted, stage.index]);
 
@@ -130,6 +160,14 @@ export function MochaCaseWorkbench() {
     textarea.style.height = 'auto';
     textarea.style.height = `${Math.min(200, Math.max(76, textarea.scrollHeight))}px`;
   }, [active?.draft, activeId, hasStructure]);
+
+  // Back to the run's starting point (prompt in the composer, nothing run yet); other runs and projects are untouched.
+  function restart() {
+    if (!active) return;
+    setHoverResidue(null);
+    updateActive(run => ({ ...run, elapsed: -1, draft: run.submittedPrompt, messages: [], structureReady: run.origin === 'preset' }));
+    feedRef.current?.scrollTo({ top: 0 });
+  }
 
   function updateActive(change: (run: TaskRun) => TaskRun) {
     if (activeId === null) return;
@@ -223,14 +261,20 @@ export function MochaCaseWorkbench() {
           {hasStructure && active && seen && <Structure key={active.id} title={titleFor(active.taskId)} phase={stage.phase} phaseProgress={stage.progress} running={visible && foreground} hoverResidue={hoverResidue}/>}
         </div>
         <section className="mocha-case-chat" aria-label="Mocha conversation">
-          <header className="mocha-case-chat-head"><Image src={mochaIcon} alt="" width={22} height={26} style={{ width: 22, height: 26 }}/><strong>Mocha</strong></header>
-          <div className={`mocha-case-feed${!active ? ' is-idle' : ''}`} ref={feedRef} aria-live="polite">
-            {!active ? <MochaIdle banner={t('intro')} prompt={t('welcomeTitle')} sectionLabel={t('samples')} items={idleItems} onSelect={createTask}/> : active.elapsed < 0 ? null : <MochaCaseFlow taskId={active.taskId} taskTitle={titleFor(active.taskId)} submittedPrompt={active.submittedPrompt} messages={active.messages} stage={stage} locale={locale} done={done} onHoverResidue={setHoverResidue}/>} 
+          <header className="mocha-case-chat-head"><Image src={mochaIcon} alt="" width={22} height={26} style={{ width: 22, height: 26 }}/><strong>Mocha</strong>
+            {hasStarted && <button type="button" className="mocha-case-restart" title={text.restartTitle} aria-label={text.restartTitle} onClick={restart}><RotateCcw size={15}/></button>}
+          </header>
+          <div className={`mocha-case-feed${!active ? ' is-idle' : active.elapsed < 0 ? ' is-welcome' : ''}`} ref={feedRef} aria-live="polite">
+            {!active ? <MochaIdle banner={t('intro')} prompt={t('welcomeTitle')} sectionLabel={t('samples')} items={idleItems} onSelect={createTask}/> : active.elapsed < 0 ? <MochaWelcome/> : <MochaCaseFlow taskId={active.taskId} taskTitle={titleFor(active.taskId)} submittedPrompt={active.submittedPrompt} messages={active.messages} stage={stage} locale={locale} done={done} onHoverResidue={setHoverResidue} guide={!guided} onGuideEnd={() => setGuided(true)}/>} 
           </div>
           <div className="mocha-case-composer-zone"><div className="mocha-case-composer">
             {active && active.elapsed < 0 && <details className="mocha-case-attachment"><summary title={text.attached}><FileCode2 size={14}/><span>{ATTACHED_STRUCTURE_NAME}</span><X size={13} aria-hidden="true"/></summary><div className="mocha-case-fasta">{DEMO_SEQUENCES.map(item => <div key={item.chain}><strong>{item.name} · chain {item.chain} · {item.sequence.length} aa</strong><code>{item.sequence}</code></div>)}</div></details>}
             <textarea ref={textareaRef} aria-label={text.placeholder} placeholder={text.placeholder} value={active?.draft ?? ''} onChange={event => updateActive(run => ({ ...run, draft: event.target.value }))} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); submit(); } }} disabled={!active} rows={5}/>
-            <div className="mocha-case-composer-bottom">{active && active.elapsed < 0 && active.draft.trim() ? <span className="mocha-case-cta-hint">{text.runHint}</span> : <span/>}<button type="button" className={active?.draft.trim() ? 'is-ready' : ''} aria-label={text.send} onClick={submit} disabled={!active?.draft.trim()}><Send size={16}/></button></div>
+            <div className="mocha-case-composer-bottom">{preRun
+              ? <button type="button" className={`mocha-case-run${nudging ? ' is-nudging' : ''}`} title={text.runHint} onClick={submit}>{text.runLabel}<Send size={14} aria-hidden="true"/></button>
+              : done && !active?.draft.trim()
+              ? <button type="button" className={`mocha-case-run is-restart${guided ? '' : ' is-quiet'}`} title={text.restartTitle} onClick={restart}><RotateCcw size={14} aria-hidden="true"/>{text.restart}</button>
+              : <button type="button" className={active?.draft.trim() ? 'is-ready' : ''} aria-label={text.send} onClick={submit} disabled={!active?.draft.trim()}><Send size={16}/></button>}</div>
           </div></div>
         </section>
       </div>
