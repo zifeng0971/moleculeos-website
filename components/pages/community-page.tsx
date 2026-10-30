@@ -48,7 +48,7 @@ export function CommunityPage() {
       </section>
 
       <section className="cm-block">
-        <Reveal><h2 className="cm-head">{ui('sectionFollow')}</h2></Reveal>
+        <Reveal><h2 id="follow" className="cm-head">{ui('sectionFollow')}</h2></Reveal>
         <div className="cm-channels">{(['cn', 'global'] as const).map(group => <Reveal key={group}>
           <div className="cm-channel-group">
             <p className="cm-group">{ui(group === 'cn' ? 'groupCn' : 'groupGlobal')}</p>

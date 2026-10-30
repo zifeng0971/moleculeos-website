@@ -6,6 +6,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { afterHeroEntrance } from '@/lib/after-hero-entrance';
 import { preloadStructure } from '@/lib/structure-cache';
+import { isLite } from '@/lib/perf-tier';
 import { localizeHref, type Locale } from '@/lib/site-config';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { Reveal } from '@/components/motion/reveal';
@@ -32,7 +33,7 @@ export function OneProteinSection({ locale }: { locale: Locale }) {
   const items = s.raw('items') as Record<(typeof ORDER)[number], { title: string; lead: string; body: string; verdict?: string; note?: string }>;
   const layout = useRef<HTMLDivElement>(null);
   const steps = useRef<(HTMLElement | null)[]>([]);
-  const [active, setActive] = useState(0), [armed, setArmed] = useState(false);
+  const [active, setActive] = useState(0), [armed, setArmed] = useState(false), [warm, setWarm] = useState(false);
 
   // Fetch Mol* and the structure while the browser is idle, so the stage doesn't wait when it scrolls in.
   useEffect(() => afterHeroEntrance(() => {
@@ -41,6 +42,14 @@ export function OneProteinSection({ locale }: { locale: Locale }) {
     void import('@/components/motion/one-protein-stage');
     void import('@/components/motion/one-protein-mm');
   }), []);
+  // Build the stage's viewer while the visitor reads the first screen: created on the way down, its WebGL setup
+  // (~150ms) would land in the middle of the scroll to the second screen. Off screen it stays paused.
+  useEffect(() => {
+    if (isLite()) return;
+    let cancelWarm = () => {};
+    const timer = window.setTimeout(() => { cancelWarm = afterHeroEntrance(() => setWarm(true)); }, 1200);
+    return () => { window.clearTimeout(timer); cancelWarm(); };
+  }, []);
 
   useEffect(() => {
     const near = new IntersectionObserver(([entry]) => setArmed(entry.isIntersecting), { rootMargin: '70% 0px 70% 0px' });
@@ -61,13 +70,16 @@ export function OneProteinSection({ locale }: { locale: Locale }) {
 
   return <section className="op-section" data-nav-section="platform">
     <div className="site-container">
-      <Reveal><SectionHeading eyebrow={s('eyebrow')} title={s('title')} /></Reveal>
-      <Reveal delay={0.05}><div className="vegf-case">
-        <span className="vegf-case-start">{s('case.start')}</span>
-      </div></Reveal>
+      {/* The heading stays pinned above the stage and the steps, so the section reads as one screen. */}
+      <div className="op-head">
+        <Reveal><SectionHeading eyebrow={s('eyebrow')} title={s('title')} /></Reveal>
+        <Reveal delay={0.05}><div className="vegf-case">
+          <span className="vegf-case-start">{s('case.start')}</span>
+        </div></Reveal>
+      </div>
       <div ref={layout} className="op-layout">
         <div className="op-stage-col" style={{ '--accent': ACCENT[ORDER[active]], '--accent-c': `rgb(${ACCENT[ORDER[active]]})` } as CSSProperties}>
-          <div className="op-media"><OneProtein armed={armed} step={active} locale={locale} /></div>
+          <div className="op-media"><OneProtein armed={armed || warm} step={active} locale={locale} /></div>
         </div>
         <div className="op-steps">
           {ORDER.map((id, i) => <article key={id} ref={node => { steps.current[i] = node; }} className="op-step" data-step={i} data-on={i === active || undefined} style={{ '--accent': ACCENT[id] } as CSSProperties}>

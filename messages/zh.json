@@ -96,6 +96,8 @@
       "imageAlt": "MoleculeOS 蛋白质设计工作台静态界面占位图"
     },
     "trust": {
+      "eyebrow": "实证结果",
+      "partnersEyebrow": "客户合作",
       "label": "和这些团队一起做真实项目",
       "targets": "真实临床靶点",
       "successCondition": "覆盖 18 个不同靶点的 19 项设计任务，18 项获得实验验证的结合分子。每项任务仅测试 9–50 条候选，成功率达 94.7%。",
@@ -516,10 +518,10 @@
       "label": "首页区块定位",
       "labels": [
         "首页",
-        "能做什么",
+        "能力",
         "模型",
         "案例",
-        "使用方式",
+        "使用",
         "实证",
         "开始"
       ]
@@ -633,7 +635,7 @@
     "title": "选择适合的方案",
     "description": "免费层每月刷新、长期可用。所有计算按 MCU 计量，一个单位，一个价格。",
     "billing": {
-      "standard": "常规",
+      "standard": "常规版",
       "edu": "教育版",
       "eduNote": "面向高校与科研机构"
     },
@@ -784,7 +786,8 @@
     "doneBody": "我们会安排专员尽快与你联系。",
     "again": "再提交一条",
     "submit": "提交",
-    "privacy": "这些信息只用于这次沟通。"
+    "privacy": "这些信息只用于这次沟通。",
+    "emailInvalid": "请输入有效的邮箱地址"
   },
   "platformPage": {
     "eyebrow": "PLATFORM · 研发任务",
@@ -1455,6 +1458,8 @@
       "exampleLabel": "对话示例",
       "example": "predict the structure of sequence use MOS model MSDQDHSMDEMTAVVKIEKGVGGNNGGNGNGGGAFSQARSSSTGSSSSTGGGGQESQP",
       "toolsLabel": "当前可用的 MCP tools",
+      "expand": "查看配置与工具",
+      "collapse": "收起",
       "tools": [
         {"name": "create_structure_prediction_task", "desc": "蛋白质 / DNA / RNA / 配体复合物的三维结构预测（MMFold）"},
         {"name": "create_protein_binder_design_task", "desc": "基于靶点结构设计结合蛋白骨架"},

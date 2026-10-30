@@ -35,16 +35,20 @@ export type LocalChatMessage = {
 
 // Table guide timing: wait after the result appears, then light this many residues for this long each; the guide counts as
 // done after its demo plus a grace period, or at the visitor's first own hover.
-const GUIDE_DELAY = 1000, GUIDE_STEPS = 3, GUIDE_STEP_MS = 1200, GUIDE_GRACE = 6000;
+const GUIDE_DELAY = 1000, GUIDE_STEPS = 3, GUIDE_STEP_MS = 1500, GUIDE_GRACE = 6000, GUIDE_OUTRO_MS = 2600;
 
 export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, stage, locale, done, onHoverResidue, guide = false, onGuideEnd }: Props) {
   const t = useTranslations('agentDemo');
   const task = ENTRY_TASKS.find(item => item.id === taskId);
   const isEntry = taskId === 'structure';
-  // Interface-table guide: once the finished result shows, light the first few PD-L1 residues one by one (each also lights
-  // up in the 3D structure). The demo stops as soon as the visitor enters the table, clicks or scrolls the conversation.
+  const en = locale === 'en';
+  // Interface-table guide: once the finished result shows, a violet ghost cursor with a narrating bubble moves over the
+  // first few PD-L1 residues one by one (each also lights up in the 3D structure), then invites the visitor to try, and
+  // fades. It all stops as soon as the visitor enters the table, clicks or scrolls the conversation.
+  const resultRef = useRef<HTMLDivElement>(null);
   const pairsRef = useRef<HTMLDivElement>(null);
   const [demoCell, setDemoCell] = useState<string | null>(null);
+  const [ghost, setGhost] = useState<{ x: number; y: number; label: string; out?: boolean } | null>(null);
   const [hovered, setHovered] = useState(false);
   const showGuide = guide && done && isEntry;
   const onGuideEndRef = useRef(onGuideEnd); onGuideEndRef.current = onGuideEnd;
@@ -56,29 +60,50 @@ export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, st
     let stopped = false;
     const stop = () => {
       if (stopped) return;
-      stopped = true; timers.forEach(window.clearTimeout); setDemoCell(null); hoverRef.current(null);
+      stopped = true; timers.forEach(window.clearTimeout); setDemoCell(null); hoverRef.current(null); setGhost(null);
       timers.push(window.setTimeout(() => onGuideEndRef.current?.(), GUIDE_GRACE));
     };
     const feed = table.closest<HTMLElement>('.mocha-case-feed');
+    // Ghost position over a PD-L1 cell, in the result block's layout coordinates (the workbench may be transformed).
+    const at = (i: number) => {
+      const cell = table.querySelectorAll<HTMLElement>('tbody tr')[i]?.children[0] as HTMLElement | undefined, box = resultRef.current;
+      if (!cell || !box) return null;
+      let x = cell.offsetWidth * 0.55, y = cell.offsetHeight * 0.6;
+      for (let node: HTMLElement | null = cell; node && node !== box; node = node.offsetParent as HTMLElement | null) { x += node.offsetLeft - (node === table ? table.scrollLeft : 0); y += node.offsetTop; }
+      return { x, y };
+    };
+    const locate = (a: string) => en ? `Locating ${a} · highlighted in the 3D structure` : `定位 ${a} · 左侧 3D 结构同步高亮`;
     timers.push(window.setTimeout(() => {
       // Bring the table into the conversation's view (layout offsets: the workbench may be transformed).
       if (feed) { let top = -12; for (let node: HTMLElement | null = table; node && node !== feed; node = node.offsetParent as HTMLElement | null) top += node.offsetTop; feed.scrollTo({ top, behavior: 'smooth' }); }
+      // Enter from just below-right of the first cell, then glide cell to cell.
+      const first = at(0);
+      if (first) setGhost({ x: first.x + 40, y: first.y + 46, label: locate(DEMO_PAIRS[0].a), out: true });
       DEMO_PAIRS.slice(0, GUIDE_STEPS).forEach((pair, i) => timers.push(window.setTimeout(() => {
         if (stopped) return;
-        setDemoCell(pair.a); hoverRef.current(pair.aResidue);
+        const p = at(i);
+        if (p) setGhost({ ...p, label: locate(pair.a) });
+        timers.push(window.setTimeout(() => { if (!stopped) { setDemoCell(pair.a); hoverRef.current(pair.aResidue); } }, 600));
       }, 500 + i * GUIDE_STEP_MS)));
-      timers.push(window.setTimeout(stop, 500 + GUIDE_STEPS * GUIDE_STEP_MS));
+      // Outro: let go of the residue, invite the visitor to try, then fade out.
+      const end = 500 + GUIDE_STEPS * GUIDE_STEP_MS;
+      timers.push(window.setTimeout(() => {
+        if (stopped) return;
+        setDemoCell(null); hoverRef.current(null);
+        setGhost(g => g && { ...g, label: en ? 'Hover any residue to see where it sits in the structure' : '移到任意残基，查看它在结构中的位置' });
+      }, end));
+      timers.push(window.setTimeout(() => { if (!stopped) setGhost(g => g && { ...g, out: true }); }, end + GUIDE_OUTRO_MS));
+      timers.push(window.setTimeout(stop, end + GUIDE_OUTRO_MS + 400));
     }, GUIDE_DELAY));
     table.addEventListener('pointerenter', stop);
     feed?.addEventListener('wheel', stop, { passive: true }); feed?.addEventListener('pointerdown', stop);
     return () => { timers.forEach(window.clearTimeout); table.removeEventListener('pointerenter', stop); feed?.removeEventListener('wheel', stop); feed?.removeEventListener('pointerdown', stop); };
-  }, [showGuide]);
+  }, [showGuide, en]);
   // A real hover ends the guide right away.
   const userHover = (residue: string | null) => {
     onHoverResidue(residue);
     if (residue && !hovered) { setHovered(true); onGuideEndRef.current?.(); }
   };
-  const en = locale === 'en';
   const labels = useMemo(() => isEntry
     ? DEMO_PHASES.map(item => locale === 'en' ? item.titleEn : item.titleZh)
     : [
@@ -141,14 +166,18 @@ export function MochaCaseFlow({ taskId, taskTitle, submittedPrompt, messages, st
       })}
     </div>
     {stage.index >= 2 && stage.index < 5 && <div className="mocha-case-assistant-message"><ChatBubble variant="assistant">{task?.steps.find(step => step.type === 'text')?.text ?? taskTitle}</ChatBubble></div>}
-    {stage.index >= 5 && <div className="mocha-case-result"><ReportBody result={result}/>
+    {stage.index >= 5 && <div ref={resultRef} className="mocha-case-result"><ReportBody result={result}/>
       {isEntry && <>
         <div className="mocha-case-table-scroll"><table><thead><tr><th>sample</th><th>ipTM</th><th>pTM</th><th>pLDDT</th><th/></tr></thead><tbody>{DEMO_SAMPLES.map(sample => <tr key={sample.n} data-selected={sample.selected || undefined}><td>{sample.n}</td><td>{sample.iptm.toFixed(2)}</td><td>{sample.ptm.toFixed(2)}</td><td>{sample.plddt.toFixed(1)}</td><td>{sample.selected ? (en ? 'selected' : '采用') : ''}</td></tr>)}</tbody></table></div>
         <ReportBody result={interfaceResult}/>
         <div ref={pairsRef} className="mocha-case-table-scroll mocha-case-pairs"><table><thead><tr><th>PD-L1 (A)</th><th>KN035 (B)</th><th>{en ? 'contact' : '相互作用'}</th></tr></thead><tbody>{DEMO_PAIRS.map(pair => <tr key={pair.a}>
           <td tabIndex={0} data-demo={demoCell === pair.a || undefined} onMouseEnter={() => userHover(pair.aResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => userHover(pair.aResidue)} onBlur={() => onHoverResidue(null)}>{pair.a}<LocateFixed className="mocha-case-locate" size={11} aria-hidden="true"/></td>
           <td tabIndex={0} onMouseEnter={() => userHover(pair.bResidue)} onMouseLeave={() => onHoverResidue(null)} onFocus={() => userHover(pair.bResidue)} onBlur={() => onHoverResidue(null)}>{pair.b}<LocateFixed className="mocha-case-locate" size={11} aria-hidden="true"/></td>
-          <td>{kinds[pair.kind as keyof typeof kinds]}</td></tr>)}</tbody></table></div></>}
+          <td>{kinds[pair.kind as keyof typeof kinds]}</td></tr>)}</tbody></table></div>
+        {ghost && <div className="mocha-ghost" data-out={ghost.out || undefined} style={{ transform: `translate(${ghost.x}px, ${ghost.y}px)` }} aria-hidden="true">
+          <svg width="20" height="22" viewBox="0 0 20 22"><path d="M2.5 1.8 17 9.2l-6.3 1.7-2.9 6.2Z" fill="#7E78DA" stroke="#fff" strokeWidth="1.6" strokeLinejoin="round"/></svg>
+          <span>{ghost.label}</span>
+        </div>}</>}
     </div>}
     {messages.map(message => message.role === 'user' ? (
       <div className="mocha-case-user-block mocha-case-followup" key={message.id}>

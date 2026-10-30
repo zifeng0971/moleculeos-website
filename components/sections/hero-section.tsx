@@ -7,7 +7,6 @@ import { SITE_CONFIG, type Locale } from '@/lib/site-config';
 import { AgentDemo } from '@/components/hero/AgentDemo';
 import { ProteinField } from '@/components/motion/protein-field';
 import { Flow, Phrases } from '@/components/ui/phrase-title';
-import { CTAButton } from '@/components/ui/cta-button';
 
 const delay = (seconds: number) => ({ '--enter-delay': `${seconds.toFixed(2)}s` }) as CSSProperties;
 
@@ -36,8 +35,9 @@ export function HeroSection({ locale }: { locale: Locale }) {
     const settle = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => { raf = requestAnimationFrame(correct); }); };
     const correct = () => {
       const cards = document.querySelector('.hero-demo-squash .mocha-welcome-modules')?.getBoundingClientRect();
-      if (!cards || lift.get() > 0.01 || tries++ > 10) return;
-      const off = innerHeight - CARDS_CLEAR - cards.bottom;
+      if (!cards || lift.get() > 0 || tries++ > 10) return;
+      // Measured against the page top (scroll position 0), so a check made while the last few pixels of a scroll are still running agrees.
+      const off = innerHeight - CARDS_CLEAR - (cards.bottom + scrollY);
       if (Math.abs(off) > 1) { setFlatY(current => current + off); settle(); }
     };
     const fit = () => {
@@ -49,8 +49,9 @@ export function HeroSection({ locale }: { locale: Locale }) {
       settle();
     };
     fit(); addEventListener('resize', fit);
-    // Back at the very top (e.g. after a restored scroll position skipped the first fit), check again.
-    const unsubscribe = lift.on('change', value => { if (value < 0.005) { tries = 0; settle(); } });
+    // Back at the very top (e.g. after a restored scroll position skipped the first fit), check again. Only once fully there: measured
+    // a few pixels short, the workbench is still slightly tilted and the correction would nudge it, then snap it back.
+    const unsubscribe = lift.on('change', value => { if (value === 0) { tries = 0; settle(); } });
     // The copy settles after its entrance animation; re-check then.
     const late = window.setTimeout(() => { tries = 0; correct(); }, 1600);
     return () => { removeEventListener('resize', fit); unsubscribe(); cancelAnimationFrame(raf); window.clearTimeout(late); };
@@ -85,7 +86,8 @@ export function HeroSection({ locale }: { locale: Locale }) {
             ))}
           </h1>
           <p className="hero-description hero-enter" style={delay(0.46)}><Flow text={t('description')} /></p>
-          <div className="hero-cta hero-enter" style={delay(0.58)}><CTAButton locale={locale} /></div>
+          {/* Start button hidden for now; restore this line (styles stay in app/screens.css under .hero-cta) to bring it back.
+          <div className="hero-cta hero-enter" style={delay(0.58)}><CTAButton locale={locale} /></div> */}
         </motion.div>
         </div>
         <div className="hero-demo-screen">

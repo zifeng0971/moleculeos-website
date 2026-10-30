@@ -7,6 +7,7 @@ export const SITE_CONFIG = {
     { key: 'pricing', href: '/pricing' },
     { key: 'platform', href: '/platform' },
     { key: 'docs', href: '/help' },
+    { key: 'contact', href: '/contact' },
     { key: 'community', href: '/community' },
   ],
   platformMenu: {

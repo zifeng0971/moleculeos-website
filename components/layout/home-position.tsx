@@ -26,7 +26,7 @@ export function HomePosition() {
         if (index === 0) { el.dataset.snap = 'none'; return; }
         const tall = el.offsetHeight > innerHeight * 0.96;
         el.dataset.snap = tall ? 'start' : 'center';
-        if (!tall || el.querySelector('.wf-row, .model-stack-snaps, .op-step')) return;
+        if (!tall || el.querySelector('.wf-row, .model-stack-snaps, .case-snaps, .op-step')) return;
         const pages = Math.ceil(el.offsetHeight / innerHeight), step = (el.offsetHeight - innerHeight) / Math.max(1, pages - 1);
         for (let i = 1; i < pages; i++) {
           const anchor = document.createElement('span');

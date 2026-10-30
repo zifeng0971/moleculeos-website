@@ -21,9 +21,11 @@ import { setSubtreeVisibility } from 'molstar/lib/mol-plugin/behavior/static/sta
 import { now } from 'molstar/lib/mol-util/now';
 import { frameMonitor, isLite, onLite } from '@/lib/perf-tier';
 import { inTurn, preloadStructure } from '@/lib/structure-cache';
-export type ViewerOptions = { src: string; label: string; /** Create every chain hidden, so the first painted frame is empty and the scene can build it up. */ startHidden?: boolean; chains?: { auth: string; color: string; /** Colour by B-factor as a pLDDT confidence scale (AlphaFold bands) instead of a uniform colour. */ plddt?: boolean; type?: 'cartoon' | 'gaussian-surface' | 'molecular-surface'; alpha?: number }[]; camera?: Partial<Camera.Snapshot>; showcase?: boolean; /** Extra room around the structure when framing (1 = tight). */ fit?: number; /** The part of the canvas (px, from its top-left) that plays the stage: framings are composed for it, and the canvas around it is extra room the molecule can grow into. */ frame?: () => Box | undefined };
+export type ViewerOptions = { src: string; label: string; /** Create every chain hidden, so the first painted frame is empty and the scene can build it up. */ startHidden?: boolean; chains?: { auth: string; color: string; /** Colour by B-factor as a pLDDT confidence scale (AlphaFold bands) instead of a uniform colour. */ plddt?: boolean; type?: 'cartoon' | 'gaussian-surface' | 'molecular-surface'; alpha?: number }[]; camera?: Partial<Camera.Snapshot>; showcase?: boolean; /** With `showcase`: keep Mol*'s default lighting (no extra occlusion or outline), the look of the workbench viewer. */ plain?: boolean; /** Extra room around the structure when framing (1 = tight). */ fit?: number; /** The part of the canvas (px, from its top-left) that plays the stage: framings are composed for it, and the canvas around it is extra room the molecule can grow into. */ frame?: () => Box | undefined };
 type Box = { left: number; top: number; width: number; height: number };
 // AlphaFold confidence bands. The theme reverses its scale, so the list runs high → low confidence.
+// Lifts the axes gizmo (px) clear of the drag/zoom hint in the viewport's bottom-left corner.
+const AXES_LIFT = 34;
 const PLDDT_COLOR = { domain: [50, 100] as [number, number], list: { kind: 'interpolate' as const, colors: [Color(0x2F6BFF), Color(0x65CBF3), Color(0xFFDB13), Color(0xFF7D45)] } };
 export type SiteGroup = { labels: readonly string[]; color: string };
 export type ViewerController = Awaited<ReturnType<typeof buildViewer>>;
@@ -46,7 +48,7 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
     await plugin.init(); signal.throwIfAborted();
     if (!plugin.initViewer(canvas, container)) throw new Error('WebGL unavailable');
     await plugin.canvas3dInitialized; signal.throwIfAborted(); progress(1);
-    plugin.canvas3d!.setProps({ transparentBackground: true, camera: { helper: { axes: { name: 'on', params: { ...PD.getDefaultValues(CameraHelperParams).axes.params, scale: 0.25 } } } } });
+    plugin.canvas3d!.setProps({ transparentBackground: true, camera: { helper: { axes: { name: 'on', params: { ...PD.getDefaultValues(CameraHelperParams).axes.params, scale: 0.25, locationOffsetY: AXES_LIFT } } } } });
     if (options?.showcase) {
       // Mol* clamps how far the camera may sit from the target using the bounding sphere of what is *visible*. The stages
       // hide chains while they build up, which collapsed that sphere and dragged the camera in close (the "way too zoomed"
@@ -54,7 +56,8 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
       plugin.canvas3d!.setProps({ trackball: { autoAdjustMinMaxDistance: { name: 'off', params: {} }, minDistance: 4, maxDistance: 2000 } });
       // Ambient occlusion + outline give the cartoon depth and a crisp silhouette on the transparent stage.
       const post = PD.getDefaultValues(PostprocessingParams);
-      plugin.canvas3d!.setProps({ camera: { helper: { axes: { name: 'off', params: {} } } }, postprocessing: { ...post,
+      if (options.plain) plugin.canvas3d!.setProps({ camera: { helper: { axes: { name: 'off', params: {} } } } });
+      else plugin.canvas3d!.setProps({ camera: { helper: { axes: { name: 'off', params: {} } } }, postprocessing: { ...post,
         occlusion: { name: 'on', params: { ...PD.getDefaultValues(SsaoParams), samples: isLite() ? 12 : 32, radius: 5, bias: 0.8 } },
         outline: { name: 'on', params: { ...PD.getDefaultValues(OutlineParams), scale: 0.8, threshold: 0.4, color: Color(0x0B0817) } } } });
     }
@@ -184,6 +187,9 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
     const ease = (x: number) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
     const stopTween = () => { cancelAnimationFrame(tween); tween = 0; };
     container.addEventListener('pointerdown', stopTween); container.addEventListener('wheel', stopTween, { passive: true });
+    // Mol* puts the near clipping plane at (distance − focus radius): framing a small region up close sliced open whatever lay
+    // between it and the camera. A focus radius of at least the distance keeps the near plane at the camera (Mol*'s minNear).
+    const deep = (to: Partial<Camera.Snapshot>) => to.position && to.target && to.radius !== undefined ? { ...to, radius: Math.max(to.radius, Vec3.distance(to.position, to.target)) } : to;
     function tweenTo(to: Partial<Camera.Snapshot>, ms: number) {
       stopTween();
       const cam = plugin.canvas3d!.camera;
@@ -250,7 +256,7 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
       },
       select(labels: string[]) { const manager = plugin.managers.interactivity.lociSelects; manager.deselectAll(); labels.forEach(label => { const loci = valid(label); if (loci) manager.select({ loci }); }); },
       focus(label: string) { const loci = valid(label); if (loci) { autoFit = false; pivot = undefined; plugin.managers.camera.focusLoci(loci, { durationMs: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 300 }); message('selected'); } else message('missing'); },
-      focusRegion(labels: string[], pad = 6, roll?: number, fixed = false, shift = 0, yaw = 0, ms = 500, into?: { left: number; top: number; width: number; height: number }, look?: { dir: readonly number[]; up: readonly number[] }) {
+      focusRegion(labels: string[], pad = 6, roll?: number, fixed = false, shift = 0, yaw = 0, ms = 500, into?: { left: number; top: number; width: number; height: number }, look?: { dir: readonly number[]; up: readonly number[] }, rise = 0) {
         autoFit = false; pivot = undefined;
         // The framing distance depends on the viewport's aspect ratio, so make sure the viewport is current first.
         plugin.canvas3d!.handleResize();
@@ -315,7 +321,7 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
           const focus = camera.getFocus(aim, radius * wanted / probed, up, dir, initialCamera);
           if (dir && up && focus.position && focus.target) { focus.position = Vec3.scaleAndAdd(Vec3(), focus.target, dir, -Vec3.distance(focus.position, focus.target)); focus.up = up; }
           framed = Vec3.distance(focus.position!, focus.target!);
-          tweenTo(focus, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : ms);
+          tweenTo(deep(focus), matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : ms);
           return;
         }
         // A stage that is hidden or still being laid out would give a nonsense framing; the caller frames again once it has size.
@@ -335,8 +341,14 @@ async function buildViewer(canvas: HTMLCanvasElement, container: HTMLDivElement,
             Vec3.scaleAndAdd(focus.target, focus.target, right, -dx / scale); Vec3.scaleAndAdd(focus.target, focus.target, lift, dy / scale);
             focus.position = Vec3.scaleAndAdd(Vec3(), focus.target, forward, -distance);
           }
+          // `rise`: lifts the molecule on screen by that fraction of the framed extent (the camera slides down, keeping its direction).
+          if (rise && focus.position && focus.target && focus.up) {
+            const forward = Vec3.normalize(Vec3(), Vec3.sub(Vec3(), focus.target, focus.position)), right = Vec3.normalize(Vec3(), Vec3.cross(Vec3(), forward, focus.up)), lift = Vec3.cross(Vec3(), right, forward);
+            const by = -(radius + pad) * k * 0.78 * rise;
+            focus.target = Vec3.scaleAndAdd(Vec3(), focus.target, lift, by); focus.position = Vec3.scaleAndAdd(Vec3(), focus.position, lift, by);
+          }
           if (focus.position && focus.target) framed = Vec3.distance(focus.position, focus.target);
-          tweenTo(focus, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : ms); return; }
+          tweenTo(deep(focus), matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : ms); return; }
         framing = { center, distance: radius + pad };
         if (container.clientWidth < 40 || container.clientHeight < 40) return; // hidden or collapsed: `refit` applies it once there is room
         camera.setState(camera.getFocus(center, radius + pad, up, dir), matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 500);

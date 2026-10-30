@@ -4,7 +4,7 @@ import { Fragment, useCallback, useEffect, useRef, useState, type CSSProperties 
 import Link from 'next/link';
 import { useInView } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { ArrowUpRight, BookOpen, Code2, PlugZap } from 'lucide-react';
+import { ArrowUpRight, BookOpen, ChevronDown, Code2, PlugZap } from 'lucide-react';
 import { localizeHref, type Locale } from '@/lib/site-config';
 import { DocsSearch } from '@/components/docs/docs-search';
 import { ProteinField } from '@/components/motion/protein-field';
@@ -92,6 +92,7 @@ function Prompt({ label, text }: { label: string; text: string }) {
 export function HelpCenter({ locale, initial }: { locale: Locale; initial?: string }) {
   const t = useTranslations('helpCenter');
   const docs = useTranslations('docsPage');
+  const [mcpOpen, setMcpOpen] = useState(false); // the MCP setup, example and tools fold under the card
   const mm = useTranslations('mmetricsDemo');
   const cases = t.raw('cases') as Case[];
   const [view, setView] = useState<View>(ALIAS[initial ?? ''] ?? 'guide');
@@ -145,7 +146,6 @@ export function HelpCenter({ locale, initial }: { locale: Locale; initial?: stri
           <p className="eyebrow eyebrow-solid">{t('eyebrow')}</p>
           <h1 className="px-title hc-title"><Phrases text={t('title')} /></h1>
           <p className="hc-lead"><Flow text={t('lead')} /></p>
-          <div className="hc-search"><DocsSearch locale={locale} /></div>
         </Reveal>
       </div>
     </section>
@@ -155,7 +155,10 @@ export function HelpCenter({ locale, initial }: { locale: Locale; initial?: stri
         <div className="hc-switch" role="tablist" aria-label={t('eyebrow')}>
           {VIEWS.map(v => <button key={v} role="tab" aria-selected={view === v} data-active={view === v || undefined} onClick={() => go(v)}>{labels[v]}</button>)}
         </div>
-        <Link href={localizeHref('/help/manual', locale)} className="hc-switch-out"><BookOpen size={14} aria-hidden="true" />{t('more.manual')}<ArrowUpRight size={13} aria-hidden="true" /></Link>
+        {/* Search shares the tab row (the full manual is linked further down the page). */}
+        <div className="hc-switch-tools">
+          <div className="hc-search"><DocsSearch locale={locale} /></div>
+        </div>
       </div>
     </div>
 
@@ -187,40 +190,43 @@ export function HelpCenter({ locale, initial }: { locale: Locale; initial?: stri
       </div>}
 
       {view === 'stories' && <section className="hc-stories">
-        <header className="hc-view-head"><h2><Phrases text={t('stories.title')} /></h2><p><Flow text={t('stories.lead')} /></p></header>
-        <HelpStories locale={locale} mm={<div className="hc-demo"><div className="wf-mm"><MosScale label={{ expand: mm('expand'), collapse: mm('collapse') }}><MMetricsDemo locale={locale} autoLoad /></MosScale></div></div>} />
+        <HelpStories locale={locale} label={t('stories.lead')} mm={<div className="hc-demo"><div className="wf-mm"><MosScale label={{ expand: mm('expand'), collapse: mm('collapse') }}><MMetricsDemo locale={locale} autoLoad /></MosScale></div></div>} />
       </section>}
 
       {view === 'dev' && <Reveal><div className="hc-dev">{(['api', 'mcp'] as const).map(k => <section key={k} id={k} className="hc-dev-card">
         <span className="hc-dev-icon">{k === 'api' ? <Code2 size={20} aria-hidden="true" /> : <PlugZap size={20} aria-hidden="true" />}</span>
         {k === 'api' && <span className="hc-badge">{t('soon')}</span>}
         <h2><Phrases text={t(`${k}.title`)} /></h2><p><Flow text={t(`${k}.lead`)} /></p><em><Flow text={t(`${k}.body`)} /></em>
-        {k === 'mcp' && <div className="hc-mcp">
+        {k === 'mcp' && <div className="hc-mcp-fold" data-open={mcpOpen || undefined}><div className="hc-mcp" id="mcp-setup" inert={!mcpOpen || undefined}>
           <h3>{t('mcp.configLabel')}</h3>
           <pre>{MCP_CONFIG}</pre>
           <h3>{t('mcp.exampleLabel')}</h3>
           <pre>{t('mcp.example')}</pre>
           <h3>{t('mcp.toolsLabel')}</h3>
           <dl>{(t.raw('mcp.tools') as { name: string; desc: string }[]).map(tool => <div key={tool.name}><dt>{tool.name}</dt><dd>{tool.desc}</dd></div>)}</dl>
-        </div>}
+        </div></div>}
+        {k === 'mcp' && <button type="button" className="hc-mcp-toggle" aria-expanded={mcpOpen} aria-controls="mcp-setup" onClick={() => setMcpOpen(o => !o)}>{t(mcpOpen ? 'mcp.collapse' : 'mcp.expand')}<ChevronDown size={14} aria-hidden="true" /></button>}
       </section>)}</div></Reveal>}
 
-      {view === 'faq' && <Reveal><section className="hc-faq">
-        <header className="hc-view-head"><h2><Phrases text={t('faq.title')} /></h2><p><Flow text={t('faq.lead')} /></p></header>
-        <Accordion type="single" collapsible defaultValue="group-0" className="help-faq help-faq-groups">{(t.raw('faq.groups') as { title: string; items: number[] }[]).map((group, g) => <AccordionItem key={g} value={'group-' + g}>
-          <AccordionTrigger><span className="help-faq-group-title">{group.title}</span></AccordionTrigger>
-          <AccordionContent><Accordion type="single" collapsible className="help-faq help-faq-inner">{group.items.map(i => { const faq = (docs.raw('faqs') as string[][])[i]; return <AccordionItem key={i} value={'faq-' + i}><AccordionTrigger>{faq[0]}</AccordionTrigger><AccordionContent className="whitespace-pre-line">{faq[1]}</AccordionContent></AccordionItem>; })}</Accordion></AccordionContent>
-        </AccordionItem>)}</Accordion>
-      </section></Reveal>}
+      {view === 'faq' && <Reveal><Faq t={t} docs={docs} /></Reveal>}
     </div>
 
-    <section className="hc-more">
-      <div className="site-container">
-        <h2>{t('more.title')}</h2>
-        <div className="hc-more-grid">
-          <Link href={localizeHref('/help/manual', locale)} className="hc-more-card group"><BookOpen size={18} aria-hidden="true" /><strong>{t('more.manual')}</strong><span>{t('more.manualBody')}</span><ArrowUpRight size={15} className="hc-more-go" aria-hidden="true" /></Link>
-        </div>
-      </div>
-    </section>
   </div>;
+}
+
+/** FAQ: the groups as a list on the left (like the user stories picker), the chosen group's questions as one accordion on the right. */
+function Faq({ t, docs }: { t: ReturnType<typeof useTranslations>; docs: ReturnType<typeof useTranslations> }) {
+  const groups = t.raw('faq.groups') as { title: string; items: number[] }[];
+  const faqs = docs.raw('faqs') as string[][];
+  const [g, setG] = useState(0);
+  return <section className="hc-faq hs-layout">
+    <div className="hs-aside"><p className="hc-index-title">{t('faq.lead')}</p>
+      <div className="hs-picker" role="tablist" aria-orientation="vertical">{groups.map((group, i) => <button key={i} role="tab" aria-selected={g === i} data-active={g === i || undefined} onClick={() => setG(i)}>
+        <i>{String(i + 1).padStart(2, '0')}</i><strong>{group.title}</strong>
+      </button>)}</div>
+    </div>
+    <Accordion key={g} type="single" collapsible defaultValue={'faq-' + groups[g].items[0]} className="help-faq hc-faq-list" role="tabpanel">{groups[g].items.map(i => <AccordionItem key={i} value={'faq-' + i}>
+      <AccordionTrigger>{faqs[i][0]}</AccordionTrigger><AccordionContent className="whitespace-pre-line">{faqs[i][1]}</AccordionContent>
+    </AccordionItem>)}</Accordion>
+  </section>;
 }

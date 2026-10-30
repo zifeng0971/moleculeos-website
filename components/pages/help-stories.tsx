@@ -145,7 +145,7 @@ const HUE: Record<StoryKey, string> = { glp: MODULE.design, cldn: MODULE.affinit
  * User stories: a list to choose one (a sticky column at the side on wide screens, a swipeable row on narrow ones),
  * then that story alone in one reading column, ending with a way into the next story so nobody has to scroll back up.
  */
-export function HelpStories({ locale, mm }: { locale: Locale; mm: ReactNode }) {
+export function HelpStories({ locale, mm, label }: { locale: Locale; mm: ReactNode; label?: string }) {
   const [tab, setTab] = useState<StoryKey>('glp');
   const top = useRef<HTMLDivElement>(null);
   const t = STORIES[locale], c = CASES[locale];
@@ -162,9 +162,11 @@ export function HelpStories({ locale, mm }: { locale: Locale; mm: ReactNode }) {
   };
   return <div className="hs" style={{ '--h': HUE[tab] } as CSSProperties}>
     <div className="hs-layout">
+      {/* The list's label, set like the core-features index label ("一条研发流程，七个入口"). */}
+      <div className="hs-aside">{label && <p className="hc-index-title">{label}</p>}
       <div className="hs-picker" role="tablist" aria-orientation="vertical">{stories.map((x, i) => <button key={x.k} role="tab" aria-selected={tab === x.k} data-active={tab === x.k || undefined} style={{ '--h': HUE[x.k] } as CSSProperties} onClick={() => choose(x.k)}>
         <i>{String(i + 1).padStart(2, '0')}</i><strong>{x.label}</strong><span>{x.title}</span>
-      </button>)}</div>
+      </button>)}</div></div>
       <div ref={top} className="hs-main">
         <div className="hs-panel" key={tab} role="tabpanel">{tab === 'mm' ? <Mm locale={locale}>{mm}</Mm> : tab === 'glp' ? <Glp locale={locale} /> : tab === 'cldn' ? <Cldn locale={locale} /> : <CaseView s={c[tab]} />}</div>
         <button className="hs-next" style={{ '--h': HUE[next.k] } as CSSProperties} onClick={() => choose(next.k)}>

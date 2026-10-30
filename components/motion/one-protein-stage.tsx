@@ -31,7 +31,8 @@ import './one-protein.css';
 
 const MMOverlay = dynamic(() => import('./one-protein-mm'), { ssr: false });
 
-const C = { target: '#7DF3C4', binder: '#F08BD0', epitope: '#FFD166', paratope: '#FFFFFF', mutation: '#FF6FC2', candidate: '#FFD166', lock: '#FFFFFF' };
+// PD-L1 and KN035 in the workbench's colours (MochaStructurePane), so the complex looks the same on screens 2 and 3.
+const C = { target: '#18bba1', binder: '#a58aee', epitope: '#FFD166', paratope: '#FFFFFF', mutation: '#FF6FC2', candidate: '#FFD166', lock: '#FFFFFF' };
 const DESIGN_COLORS = ['#FFB86B', '#B8A4FF', '#6FD3FF'];
 const SEQ_A = 'MAFTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNALE';
 const SEQ_B = 'QVQLQESGGGLVQPGGSLRLSCAASGKMSSRRCMAWFRQAPGKERERVAKLLTTSGSTYLADSVKGRFTISQNNAKSTVYLQMNSLKPEDTAMYYCAADSFEDPTCTLVTSSGAFQYWGQGTQVTVSS';
@@ -125,6 +126,8 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
   const [result, setResult] = useState(false), [fold, setFold] = useState(false);
   // Per-step selections that cycle on their own and can be clicked.
   const [mut, setMut] = useState(0), [design, setDesign] = useState(0), [manual, setManual] = useState(0), [held, setHeld] = useState(-1);
+  // The reset button replays the current step from its first frame: `replay` reruns its scene, `fresh` clears what is on stage first.
+  const [replay, setReplay] = useState(0), fresh = useRef(false);
   const [tags, setTags] = useState<Tag[]>([]), [tagsOn, setTagsOn] = useState(false);
   const [mmMount, setMmMount] = useState(false), [mmOn, setMmOn] = useState(false), [mmHole, setMmHole] = useState<{ left: number; top: number; width: number; height: number } | null>(null);
   const [interaction, setInteraction] = useState<(typeof interactionMeasurements.interactions)[number] | null>(null);
@@ -170,7 +173,7 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     const pointer = () => { touched.current = true; };
     el.addEventListener('pointerdown', pointer); el.addEventListener('wheel', pointer, { passive: true });
     void createViewer(canvas.current!, el, () => {}, () => {}, () => {}, abort.signal, undefined, {
-      src: story.master.file, label: 'PD-L1 + KN035 · MMFold_1', showcase: true, startHidden: true,
+      src: story.master.file, label: 'PD-L1 + KN035 · MMFold_1', showcase: true, plain: true, startHidden: true,
       frame: () => { const v = vpRef.current; return v ? { left: v.x, top: v.y, width: v.sw, height: v.sh } : undefined; },
       chains: [{ auth: 'A', color: C.target }, { auth: 'B', color: C.binder }, ...denovo.designs.map((d, i) => ({ auth: d.chain, color: DESIGN_COLORS[i] }))],
     }).then(value => {
@@ -321,18 +324,34 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     setInteraction(null); viewer.current?.select([]);
   }, [step]);
 
+  // Leaving the screen while on step 01 (back up to screen 2) rewinds the intro, so coming back down replays it from its first frame.
+  // Any other step met again on the way back up from screen 4 also starts from its first frame (its first candidate, the scene
+  // rebuilt), as the reset button does.
+  const away = useRef(false);
+  useEffect(() => {
+    if (!onScreen) { away.current = true; if (step === 0 && played.current) { played.current = false; fresh.current = true; } return; }
+    if (!away.current) return;
+    away.current = false;
+    if (step !== 0) { setHeld(-1); setInteraction(null); if (step === 2) setMut(0); if (step === 4) setDesign(0); fresh.current = true; setReplay(r => r + 1); }
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- runs on visibility changes only
+  }, [onScreen]);
+
   // Step scenes. Each run is cancelled by the next (run.n), so fast scrolling never leaves a stale scene behind.
   useEffect(() => {
     const v = viewer.current, f = forge.current;
     if (!v || !f || !ready) return;
     setZoomed(false);
     const token = ++run.n, alive = () => run.n === token;
+    if (fresh.current) { fresh.current = false; f.clear(); v.showChains([]); v.showSites([]); shown.chains = []; shown.swarms = []; shown.sig = ''; setTags([]); setTagsOn(false); lastStep.current = -1; }
     const settleIntro = () => { setStage('docked'); setNa(SEQ_A.length); setNb(SEQ_B.length); setFold(true); played.current = true; };
     const reset = () => { setTyped(''); setNa(0); setNb(0); setStage('compose'); setResult(false); setFold(false); f.clear(); v.showChains([]); v.showSites([]); shown.chains = []; shown.swarms = []; shown.sig = ''; setTags([]); setTagsOn(false); };
     // Same length and (symmetric) easing as the viewport's clip/mask transition in one-protein.css, so the molecule and its frame move as one.
     const glide = 1100;
     const cand = affinity.candidates[mut], d = denovo.designs[design];
-    const focus = (labels: string[], pad: number, shift = 0, yaw = YAW) => (ms: number) => { touched.current = false; v.focusRegion(labels, pad, 90, true, shift, yaw, ms); };
+    // Step 03's close-ups keep 14 Å around the mutation and the residues it faces, the same margin as step 04's.
+    // V109L's sits low in the stage (most of the complex lies below its site), so its view is lifted.
+    const RISE = [0.2];
+    const focus = (labels: string[], pad: number, shift = 0, yaw = YAW, rise = 0) => (ms: number) => { touched.current = false; v.focusRegion(labels, pad, 90, true, shift, yaw, ms, undefined, undefined, rise); };
     // Each carousel item is approached from a slightly different side, so the camera visibly travels instead of only zooming.
     const swing = (i: number) => YAW + ([-16, 0, 16][i % 3]);
     const tag = (id: string, text: string, at: number[], color: string, dir?: 'up' | 'down'): Tag => ({ id, text, at, color, dir });
@@ -348,7 +367,7 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
       })(),
       (() => {
         const m: Group = { labels: [`B:${cand.pos}`], color: C.mutation }, fc: Group = { labels: A(cand.facing), color: C.epitope };
-        return { chains: ['A', 'B'], sites: [m, fc], swarms: [pair(m, ca('B', [cand.pos])), pair(fc, ca('A', cand.facing))], cam: focus([...m.labels, ...fc.labels], 12, 0, swing(mut)), overview: focus(labelsAll, 6),
+        return { chains: ['A', 'B'], sites: [m, fc], swarms: [pair(m, ca('B', [cand.pos])), pair(fc, ca('A', cand.facing))], cam: focus([...m.labels, ...fc.labels], 14, 0, swing(mut), RISE[mut] ?? 0), overview: focus(labelsAll, 6),
           tags: [tag('m', `KN035·${cand.wt}${cand.pos}${cand.mut}`, ca('B', [cand.pos]), C.mutation, 'up'), tag('f', `${t.tag.faces} ${cand.facing.slice(0, 4).join(' · ')}`, mean(ca('A', cand.facing)), C.epitope, 'down')] };
       })(),
       (() => {
@@ -445,7 +464,7 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     return () => { run.n++; f.clear(); };
   // `run` and `shown` are stable; the scenes are keyed to readiness, visibility, step and the active selection.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, onScreen, step, mut, design, locale]);
+  }, [ready, onScreen, step, mut, design, locale, replay]);
 
   // Auto-cycle the selection of the current step until the viewer picks one themselves: from then on the choice stays put, so it can be read at leisure.
   useEffect(() => { setHeld(-1); }, [step]);
@@ -454,10 +473,19 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     if (!ready || !onScreen || reduced() || zoomed || held === step) return;
     if (step !== 2 && step !== 4) return;
     const next = () => step === 2 ? setMut(i => (i + 1) % affinity.candidates.length) : setDesign(i => (i + 1) % denovo.designs.length);
-    const timer = setInterval(next, step === 4 ? 7000 : 4200);
+    // Step 05 holds each design 5.5s (was 7s, which felt like a stall); step 03 4.2s.
+    const timer = setInterval(next, step === 4 ? 5500 : 4200);
     return () => clearInterval(timer);
-  }, [ready, onScreen, step, manual, zoomed, held]);
+  }, [ready, onScreen, step, manual, zoomed, held, replay]);
   const pick = (setter: (i: number) => void, i: number) => { setter(i); setHeld(step); setManual(m => m + 1); };
+  // Back to the step's first frame: its first item, auto-cycling again, the intro typed afresh in step 01, the MMetrics panel remounted in step 02.
+  const restart = () => {
+    touched.current = false; setZoomed(false); setHeld(-1); setInteraction(null);
+    if (step === 0) played.current = false;
+    if (step === 2) setMut(0);
+    if (step === 4) setDesign(0);
+    fresh.current = true; setReplay(r => r + 1);
+  };
 
   const best = dev.cross.find(r => r.mutation === 'V109L'), c = affinity.candidates[mut], d = denovo.designs[design];
   const fmt = (n: number) => `${n > 0 ? '+' : n < 0 ? '−' : ''}${Math.abs(n).toFixed(2)}`;
@@ -485,7 +513,7 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     </div>
 
     {mmMount && mmHole && <div className="op-mm-back" data-on={mmOn || undefined} style={{ left: mmHole.left, top: mmHole.top, width: mmHole.width, height: mmHole.height }} />}
-    {mmMount && <div className="op-mm" data-on={mmOn || undefined}><MMOverlay onHover={hover} onSelect={select} onHole={setMmHole} onInteraction={focusInteraction} /></div>}
+    {mmMount && <div className="op-mm" data-on={mmOn || undefined}><MMOverlay key={replay} onHover={hover} onSelect={select} onHole={setMmHole} onInteraction={focusInteraction} /></div>}
 
     <div className="pf-agent mocha-upgrade-root" data-stage={stage} hidden={played.current && step > 0 ? true : undefined}>
       <header><Image src={mochaIcon} alt="" width={16} height={19} style={{ width: 16, height: 19 }} /><strong>Mocha</strong></header>
@@ -507,7 +535,7 @@ export default function OneProteinStage({ step, locale, onReady, onFail }: { ste
     {vp && ready && <div className="op-zoom" title={t.zoomHint.replace('⌘', modKey())}>
       <button type="button" aria-label={t.zoomIn} onClick={() => zoomBy(0.75, 220)}><ZoomIn size={15} /></button>
       <button type="button" aria-label={t.zoomOut} onClick={() => zoomBy(1 / 0.75, 220)}><ZoomOut size={15} /></button>
-      <button type="button" aria-label={t.zoomReset} onClick={() => { setZoomed(false); camRef.current?.(700); }}><RotateCcw size={14} /></button>
+      <button type="button" aria-label={t.zoomReset} onClick={restart}><RotateCcw size={14} /></button>
     </div>}
 
     {step === 2 && <div className="op-hud" key="h2">

@@ -55,8 +55,8 @@ export function MochaStructurePane({ title, phase, phaseProgress, running, hover
         src: STRUCTURE,
         label: TITLE,
         chains: CHAINS.map(chain => ({ auth: chain.auth, color: chain.color })),
-        // Fill the pane: the complex is two small domains, so the bounding sphere can be framed tightly.
-        fit: 0.7,
+        // Nearly fill the pane. Tighter (0.7) let the spinning complex pass the pane's edges and run under its toolbar.
+        fit: 0.9,
       }).then(instance => {
         if (abort.signal.aborted) { instance.dispose(); return; }
         controller = instance;

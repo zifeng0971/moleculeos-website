@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { useLocale } from 'next-intl';
 
 // PD-L1 and the KN035 nanobody: the complex the homepage follows through the capability story
 // (sequences from public/demo/kn035-pdl1-story.cif, chains A and B).
@@ -16,12 +15,6 @@ const residueAt = (index: number) => {
   return { chain: CHAINS[0].name, number: 1 };
 };
 const ALPHABET = 'ACDEFGHIKLMNPQRSTVWY';
-const NAMES: Record<string, [string, string]> = {
-  A: ['丙氨酸', 'Alanine'], R: ['精氨酸', 'Arginine'], N: ['天冬酰胺', 'Asparagine'], D: ['天冬氨酸', 'Aspartate'], C: ['半胱氨酸', 'Cysteine'],
-  Q: ['谷氨酰胺', 'Glutamine'], E: ['谷氨酸', 'Glutamate'], G: ['甘氨酸', 'Glycine'], H: ['组氨酸', 'Histidine'], I: ['异亮氨酸', 'Isoleucine'],
-  L: ['亮氨酸', 'Leucine'], K: ['赖氨酸', 'Lysine'], M: ['甲硫氨酸', 'Methionine'], F: ['苯丙氨酸', 'Phenylalanine'], P: ['脯氨酸', 'Proline'],
-  S: ['丝氨酸', 'Serine'], T: ['苏氨酸', 'Threonine'], W: ['色氨酸', 'Tryptophan'], Y: ['酪氨酸', 'Tyrosine'], V: ['缬氨酸', 'Valine'],
-};
 
 // Residue classes drive the highlight colour, by chemistry: hydrophobic (lilac), polar (sky), positive (rose), negative (sage).
 // Brighter and more saturated than the page palette on purpose: these are light-emitting glyphs on black, not surfaces.
@@ -33,14 +26,22 @@ const RADIUS = 210;
 // Hero only: with the pointer idle (or off the page) the spotlight glides round the copy on a slow ellipse,
 // smaller and softer than the pointer's, to draw the eye to the text without competing with it.
 const ORBIT_IDLE = 3500, ORBIT_PERIOD = 24000, ORBIT_RADIUS = 140, ORBIT_STRENGTH = 0.6;
+// Dim margin around the lines under the headline: full dim within LINE_PAD px of the text, back to full light LINE_FADE px later.
+const LINE_PAD = 4, LINE_FADE = 22;
+// Hero pulses keep this far (px) from the copy, the workbench and the screen edges.
+const RUN_CLEAR = 56;
+// How far below the description's bottom edge the orbiting glow passes.
+const ORBIT_BELOW = 56;
 
 type Box = { x: number; y: number; w: number; h: number };
 // A pulse; with residueTip it picks out one residue (label = offset in its run) and carries that residue's name pill.
 type Reader = { row: number; col: number; length: number; start: number; label?: number; pill?: Box; hovered?: boolean };
 type Ripple = { x: number; y: number; start: number; lobes: { k: number; a: number; ph: number }[] };
 
-// A pulse advances one residue per PULSE_STEP ms (slow enough to follow by eye).
-const PULSE_STEP = 45;
+// A pulse advances one residue per PULSE_STEP ms (slow enough to follow by eye); the hero's (HERO_PULSE_STEP) are slower still.
+const PULSE_STEP = 45, HERO_PULSE_STEP = 68;
+// With residue pills (the hero), a new pulse every PULSE_BEAT ms on average (±25%), leaving a quiet spell after each.
+const PULSE_BEAT = 9000;
 // How long (in pulse steps) a pulse's residue pill lingers after the pulse itself has gone, so it can be clicked.
 const LABEL_HOLD = 32;
 const PILL_H = 26;
@@ -76,7 +77,6 @@ const rippleWave = (dist: number, age: number) => {
  */
 export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip = false, residueHref, residueAction }: { className?: string; calmSelector?: string; fadeWidthSelector?: string; fadeHeightSelector?: string; fieldBottomSelector?: string; residueTip?: boolean; residueHref?: string; residueAction?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const lang: 0 | 1 = useLocale() === 'en' ? 1 : 0;
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext('2d');
@@ -98,20 +98,21 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
     const eased = { x: -9999, y: -9999 };
     const readers: Reader[] = [];
     const ripples: Ripple[] = [];
-    let nextReader = 0;
+    const step = residueTip ? HERO_PULSE_STEP : PULSE_STEP;
+    let nextReader = 0, retryAt = 0, quarter = Math.floor(Math.random() * 4);
     let lastFrame = 0, speed = 0;
     // Calm zone over the hero copy: highlights dim there so the headline and CTAs stay legible.
     const calm = { x: 0, y: 0, rx: 1, ry: 1 };
     let keepOut: { x0: number; y0: number; x1: number; y1: number }[] = [], visibleBottom = 0;
     // The dim zone for spotlight light: a flat ellipse over the headline (the fade area × 1.25 / 1.35; the whole copy block
     // when no fade selectors are given). Light eases back in from 0.9 to 1.25 of it; the orbit rides at 1.2.
-    const orbit = { x: 0, y: 0, rx: 0, ry: 0 };
+    const orbit = { x: 0, y: 0, rx: 0, ry: 0, down: 0 };
     // The grid's fade behind the copy: an ellipse as wide as fadeWidthSelector's text and as tall as fadeHeightSelector's box
     // (centred on it), else the copy block.
     const fadeArea = { x: 0, y: 0, rx: 0, ry: 0 };
     // The other lines of copy (eyebrow, lead, button) each get a soft elliptical dim zone for spotlight light, so the orbit can
     // pass near them without lighting letters behind their text.
-    let lineZones: { x: number; y: number; rx: number; ry: number }[] = [];
+    let lineZones: { x: number; y: number; hw: number; hh: number }[] = [];
     const measureCalm = () => {
       const copy = canvas.parentElement?.querySelector<HTMLElement>(calmSelector);
       const host = canvas.getBoundingClientRect();
@@ -147,8 +148,11 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
           // Text extent (a Range) for lines of text, the box for the button row.
           const range = document.createRange(); range.selectNodeContents(el);
           const b = range.getBoundingClientRect().width ? range.getBoundingClientRect() : el.getBoundingClientRect();
-          return { x: b.left - host.left + b.width / 2, y: b.top - host.top + b.height / 2, rx: b.width / 2 + 64, ry: b.height / 2 + 20 };
-        }).filter(z => z.rx > 64 && z.ry > 20);
+          return { x: b.left - host.left + b.width / 2, y: b.top - host.top + b.height / 2, hw: b.width / 2, hh: b.height / 2 };
+        }).filter(z => z.hw > 0 && z.hh > 0);
+        // The orbit's lower half runs ORBIT_BELOW px under the lowest line (the description) rather than across it.
+        const lowest = Math.max(0, ...lineZones.map(z => z.y + z.hh));
+        orbit.down = Math.max(orbit.ry * 1.2, lowest - orbit.y + ORBIT_BELOW);
       }
     };
 
@@ -182,12 +186,12 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       baseAlpha = new Float32Array(count); heat = new Float32Array(count); pulse = new Float32Array(count); mutatedUntil = new Float64Array(count);
       measureCalm();
       // With residue pills (the hero), the grid itself fades out in a flat ellipse behind the copy (fadeArea), in place of a
-      // dark overlay that would also dim pulses unevenly: 50% across the inner 40%, easing to nothing at the ellipse's edge.
+      // dark overlay that would also dim pulses unevenly: 35% across the inner 40%, easing to nothing at the ellipse's edge.
       const fade = (x: number, y: number) => {
         if (!residueTip || !fadeArea.rx) return 0;
         const q = Math.hypot((x - fadeArea.x) / fadeArea.rx, (y - fadeArea.y) / fadeArea.ry);
         const t = Math.max(0, Math.min(1, (q - 0.4) / 0.6));
-        return 0.5 * (1 - t * t * (3 - 2 * t));
+        return 0.35 * (1 - t * t * (3 - 2 * t));
       };
       for (let i = 0; i < count; i++) {
         const h = Math.sin(i * 12.9898) * 43758.5453;
@@ -230,10 +234,11 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       } catch { worker = null; }
     }
 
-    // Where the orbiting spotlight is at time t (clockwise, starting top-left).
+    // Where the orbiting spotlight is at time t (clockwise, starting top-left). The lower half is deeper, passing under the description.
     const orbitAt = (t: number) => {
       const a = -2.4 + (t / ORBIT_PERIOD) * Math.PI * 2;
-      return { x: orbit.x + orbit.rx * 1.2 * Math.cos(a), y: orbit.y + orbit.ry * 1.2 * Math.sin(a) };
+      const sin = Math.sin(a);
+      return { x: orbit.x + orbit.rx * 1.2 * Math.cos(a), y: orbit.y + (sin > 0 ? orbit.down || orbit.ry * 1.2 : orbit.ry * 1.2) * sin };
     };
     const orbiting = (now: number) => residueTip && orbit.rx > 0 && (pointer.x < -9000 || now - lastMove > ORBIT_IDLE);
     const draw = (now: number) => {
@@ -305,16 +310,22 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       }
 
       // Sequencing read-heads: pulses sweep along random rows (dimmed behind the copy like everything else).
-      if (now > nextReader && rows > 0) {
-        const reader = residueTip ? spawnLabelled() : spawn();
-        // With residue pills, pulses come about every 2.6–3.6 s, so one residue can be read before the next appears.
-        if (reader) { readers.push(reader); nextReader = now + (residueTip ? 2600 + Math.random() * 1000 : 900 + Math.random() * 1400); }
-        else nextReader = now + 200; // no room for a pill right now: try again shortly
+      if (now > nextReader && now > retryAt && rows > 0) {
+        const reader = residueTip ? spawnLabelled(quarter) : spawn();
+        // With residue pills, pulses keep a loose beat (every PULSE_BEAT ms, ±25%) counted from when each was due, so a
+        // pulse that had to wait for room doesn't push the rest back; and they take turns round the screen's four quarters.
+        if (reader) {
+          readers.push(reader);
+          if (residueTip) { nextReader = Math.max(nextReader + PULSE_BEAT * (0.75 + Math.random() * 0.5), now + PULSE_BEAT * 0.6); quarter = (quarter + 1) % 4; }
+          else nextReader = now + 900 + Math.random() * 1400;
+        }
+        else if (residueTip) retryAt = now + 150; // no room right now: the beat stays due, try again shortly
+        else nextReader = now + 200;
       }
       for (let n = readers.length - 1; n >= 0; n--) {
         const reader = readers[n];
         if (reader.hovered) reader.start += dt; // a hovered pill (and its pulse) holds still until the pointer leaves
-        const head = (now - reader.start) / PULSE_STEP;
+        const head = (now - reader.start) / step;
         if (head > reader.length + 24 + (reader.label !== undefined ? LABEL_HOLD : 0)) { readers.splice(n, 1); continue; }
         for (let j = 0; j < reader.length; j++) {
           const behind = head - j;
@@ -332,13 +343,17 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
         const mutating = mutatedUntil[i] > now;
         const zx = (x + CELL_W / 2 - calm.x) / calm.rx, zy = (y + CELL_H / 2 - calm.y) / calm.ry;
         // Behind the copy the lit residues almost vanish, so the headline never competes with them.
-        // In the hero one elliptical zone dims light over the headline (easing out from 0.9 to 1.25 of its radii, so
-        // light can ring the text); elsewhere a wide ellipse.
+        // In the hero one elliptical zone dims light over the headline (easing out from 0.6 to 0.85 of the orbit's radii, so
+        // just the headline itself, and light can ring the text); elsewhere a wide ellipse.
         const cx = x + CELL_W / 2, cy = y + CELL_H / 2;
-        let near = residueTip ? Math.max(0, Math.min(1, (Math.hypot((cx - orbit.x) / orbit.rx, (cy - orbit.y) / orbit.ry) - 0.9) / 0.35)) : 1;
-        // ...and behind each other line, eased out from its ellipse's edge to 1.7× its size.
-        if (residueTip) for (const z of lineZones) near = Math.min(near, Math.max(0, Math.min(1, (Math.hypot((cx - z.x) / z.rx, (cy - z.y) / z.ry) - 1) / 0.7)));
-        const damp = residueTip ? 0.06 + 0.94 * near * near * (3 - 2 * near) : Math.min(1, 0.06 + 0.94 * (zx * zx + zy * zy));
+        let near = residueTip ? Math.max(0, Math.min(1, (Math.hypot((cx - orbit.x) / orbit.rx, (cy - orbit.y) / orbit.ry) - 0.6) / 0.25)) : 1;
+        // ...and behind each other line: a tight rounded box that hugs the text, fully dim within LINE_PAD px of it
+        // and easing back over LINE_FADE px.
+        if (residueTip) for (const z of lineZones) {
+          const d = Math.hypot(Math.max(0, Math.abs(cx - z.x) - z.hw), Math.max(0, Math.abs(cy - z.y) - z.hh));
+          near = Math.min(near, Math.max(0, Math.min(1, (d - LINE_PAD) / LINE_FADE)));
+        }
+        const damp = residueTip ? 0.3 + 0.7 * near * near * (3 - 2 * near) : Math.min(1, 0.06 + 0.94 * (zx * zx + zy * zy));
         // Pointer, ripple and (off the hero) pulse light is dimmed near the copy; hero pulse light is not.
         const h = Math.max(hs * damp, hp);
         if (!mutating && letters[i] !== original[i]) letters[i] = original[i];
@@ -364,30 +379,46 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
     const PILL_PAD = 10, PILL_GAP = 8, PILL_DOT = 6;
     const describe = (i: number) => {
       const residue = letters[i], at = residueAt(seqIndex[i]);
-      return { residue, chain: at.chain, number: at.number, head: `${at.chain} · ${residue}${at.number}`, tail: NAMES[residue]?.[lang] ?? residue, color: CLASS_COLORS[classOf(residue)] };
+      return { residue, chain: at.chain, number: at.number, head: `${at.chain} · ${residue}${at.number}`, tail: '', color: CLASS_COLORS[classOf(residue)] };
     };
     const pillWidth = (head: string, tail: string, action = false) => {
       ctx.font = TIP_FONT;
-      const base = PILL_PAD + PILL_DOT + PILL_GAP + ctx.measureText(head).width + PILL_GAP + ctx.measureText(tail).width + PILL_PAD;
+      const base = PILL_PAD + PILL_DOT + PILL_GAP + ctx.measureText(head).width + (tail ? PILL_GAP + ctx.measureText(tail).width : 0) + PILL_PAD;
       return action && residueAction ? base + PILL_GAP + ctx.measureText(`${residueAction} ↗`).width : base;
     };
-    const clearOf = (b: Box, others: Box[]) => b.x >= 8 && b.x + b.w <= width - 8 && b.y >= 8 && b.y + b.h <= visibleBottom - 8
+    const clearOf = (b: Box, others: Box[], m = 8) => b.x >= m && b.x + b.w <= width - m && b.y >= m && b.y + b.h <= visibleBottom - m
       && [...keepOut.map(k => ({ x: k.x0, y: k.y0, w: k.x1 - k.x0, h: k.y1 - k.y0 })), ...others]
-        .every(o => b.x + b.w + 8 < o.x || b.x > o.x + o.w + 8 || b.y + b.h + 8 < o.y || b.y > o.y + o.h + 8);
+        .every(o => b.x + b.w + m < o.x || b.x > o.x + o.w + m || b.y + b.h + m < o.y || b.y > o.y + o.h + m);
     const spawn = (): Reader => ({ row: Math.floor(Math.random() * rows), col: Math.floor(Math.random() * cols * 0.6), length: 18 + Math.floor(Math.random() * 30), start: performance.now() });
+    // A pulse starting in one quarter of the visible field (0 top-left, 1 top-right, 2 bottom-right, 3 bottom-left; clockwise).
+    const spawnIn = (q: number): Reader => {
+      const shown = Math.max(1, Math.floor(visibleBottom / CELL_H)), half = Math.floor(shown / 2), top = q < 2;
+      const row = (top ? 0 : half) + Math.floor(Math.random() * (top ? half : shown - half));
+      // A run starts anywhere in its quarter's half of the screen; it is then cut short of whatever is ahead of it.
+      const left = q === 0 || q === 3, span = cols / 2;
+      const col = Math.floor((left ? 0 : span) + Math.random() * span);
+      return { row, col, length: 18 + Math.floor(Math.random() * 30), start: performance.now() };
+    };
     // A pulse whose run avoids the copy and whose picked residue has room for its pill (with the action, so hovering never pushes it into the copy)
     // above or below the row, clear of the copy, the screen edges and the other pills. Tries a few pulses, else none.
-    const spawnLabelled = (): Reader | undefined => {
+    const spawnLabelled = (q: number): Reader | undefined => {
       const others = readers.flatMap(r => r.pill ? [r.pill] : []);
-      for (let attempt = 0; attempt < 16; attempt++) {
-        const reader = spawn(), run = Math.min(reader.length, cols - reader.col), mid = Math.floor(run * (0.4 + Math.random() * 0.2));
-        // The whole run stays clear of the copy, so the pulse never passes behind text, and clear of the orbiting spotlight
+      // Most tries in this pulse's quarter; if it has no room (the copy or the orbiting light is there), the opposite one, then the rest.
+      for (let attempt = 0; attempt < 40; attempt++) {
+        const reader = spawnIn((q + [0, 2, 1, 3][Math.floor(attempt / 10)]) % 4);
+        // The run stops RUN_CLEAR px short of whatever is ahead of it in its row (the copy, the workbench, the right edge).
+        let free = 0;
+        while (free < reader.length && clearOf({ x: (reader.col + free) * CELL_W, y: reader.row * CELL_H, w: CELL_W, h: CELL_H }, [], RUN_CLEAR)) free++;
+        reader.length = free;
+        if (reader.length < 12) continue;
+        const run = reader.length, mid = Math.floor(run * (0.4 + Math.random() * 0.2));
+        // The whole run stays RUN_CLEAR px clear of the copy, the workbench and the screen edges, so the pulse never passes behind or close to them, and clear of the orbiting spotlight
         // for the pulse's whole life (sampled every 400 ms), so the two lights never overlap.
-        const life = (reader.length + 24 + LABEL_HOLD) * PULSE_STEP;
+        const life = (reader.length + 24 + LABEL_HOLD) * step;
         const path = Array.from({ length: Math.ceil(life / 400) + 1 }, (_, k) => orbitAt(reader.start + k * 400));
         const offOrbit = (b: Box) => orbit.rx === 0 || path.every(o => Math.hypot(Math.max(b.x - o.x, 0, o.x - b.x - b.w), Math.max(b.y - o.y, 0, o.y - b.y - b.h)) > ORBIT_RADIUS + 40);
         const runBox = { x: reader.col * CELL_W, y: reader.row * CELL_H, w: run * CELL_W, h: CELL_H };
-        if (!clearOf(runBox, []) || !offOrbit(runBox)) continue;
+        if (!clearOf(runBox, [], RUN_CLEAR) || !offOrbit(runBox)) continue;
         for (let d = 0; d < run; d++) {
           const label = mid + (d % 2 ? -1 : 1) * Math.ceil(d / 2);
           if (label < 0 || label >= run) continue;
@@ -406,7 +437,7 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       ctx.globalAlpha = 0.9 * alpha; ctx.strokeStyle = color; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.roundRect(c * CELL_W - 1.5, r * CELL_H + 1.5, CELL_W + 3, CELL_H - 3, 4); ctx.stroke();
     };
-    // "KN035 · Y52" in white, then the amino-acid name in grey, with a chemistry-coloured dot; hovered, the action in violet.
+    // "KN035 · Y52" in white (the amino-acid name, when given, in grey), with a chemistry-coloured dot; hovered, the action in violet.
     const pill = (i: number, x: number, y: number, alpha: number, hovered = false) => {
       const { head, tail, color } = describe(i), w = pillWidth(head, tail, hovered);
       const wHead = ctx.measureText(head).width, wTail = ctx.measureText(tail).width;
@@ -418,13 +449,13 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
       let tx = x + PILL_PAD + PILL_DOT + PILL_GAP;
       ctx.fillStyle = '#f5f5f7'; ctx.fillText(head, tx, y + PILL_H / 2 + 0.5); tx += wHead + PILL_GAP;
-      ctx.fillStyle = 'rgba(245, 245, 247, 0.55)'; ctx.fillText(tail, tx, y + PILL_H / 2 + 0.5); tx += wTail + PILL_GAP;
+      if (tail) { ctx.fillStyle = 'rgba(245, 245, 247, 0.55)'; ctx.fillText(tail, tx, y + PILL_H / 2 + 0.5); tx += wTail + PILL_GAP; }
       if (hovered && residueAction) { ctx.fillStyle = '#b9b4f2'; ctx.fillText(`${residueAction} ↗`, tx, y + PILL_H / 2 + 0.5); }
       ctx.globalAlpha = 1;
     };
     const inside = (b: Box, x: number, y: number) => x >= b.x && x <= b.x + b.w && y >= b.y && y <= b.y + b.h;
     // The pulse pill under (x, y): the pill itself or the ringed residue it names.
-    const pillAt = (x: number, y: number) => readers.find(r => r.pill && r.label !== undefined && (performance.now() - r.start) / PULSE_STEP >= r.label
+    const pillAt = (x: number, y: number) => readers.find(r => r.pill && r.label !== undefined && (performance.now() - r.start) / step >= r.label
       && (inside(r.pill, x, y) || inside({ x: (r.col + r.label) * CELL_W - 2, y: r.row * CELL_H, w: CELL_W + 4, h: CELL_H }, x, y)));
     const drawTips = (now: number) => {
       const hovered = pointer.x > -9000 ? pillAt(pointer.x, pointer.y) : undefined;
@@ -433,11 +464,13 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       for (const r of readers) {
         if (!r.pill || r.label === undefined) continue;
         // The pill appears as the pulse reaches its residue, stays while the pulse runs on, and fades after it has gone.
-        const since = (now - r.start) / PULSE_STEP - r.label, end = r.length + 24 - r.label;
+        const since = (now - r.start) / step - r.label, end = r.length + 24 - r.label;
         const alpha = r.hovered ? 1 : Math.max(0, Math.min(1, since / 4, (end + LABEL_HOLD - since) / 16));
         if (since < 0 || alpha <= 0) continue;
         const i = r.row * cols + r.col + r.label;
-        ring(r.col + r.label, r.row, describe(i).color, alpha);
+        // The ring around the residue goes out with the pulse's glow there (24 steps after the head passes); the pill lingers.
+        const ringAlpha = r.hovered ? 1 : Math.max(0, Math.min(alpha, (24 - since) / 8));
+        if (ringAlpha > 0) ring(r.col + r.label, r.row, describe(i).color, ringAlpha);
         pill(i, r.pill.x, r.pill.y, alpha * (r.hovered ? 1 : 0.92), r.hovered);
       }
       // The pointer's own pill, when it is over the field but not over a pulse's pill or the copy.
@@ -509,6 +542,6 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       window.removeEventListener('pointermove', onPointer); window.removeEventListener('pointerdown', onClick); document.documentElement.removeEventListener('pointerleave', onLeave); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('click', onOpen);
       if (canvas.parentElement) canvas.parentElement.style.cursor = '';
     };
-  }, [calmSelector, fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip, residueHref, residueAction, lang]);
+  }, [calmSelector, fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip, residueHref, residueAction]);
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />;
 }

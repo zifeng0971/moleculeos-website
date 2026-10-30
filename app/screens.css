@@ -2,6 +2,11 @@
 
 /* ---------- Screen snapping (desktop, motion allowed; toggled by HomePosition) ---------- */
 html.home-snap { scroll-snap-type: y mandatory; scroll-padding-top: var(--nav-h); }
+/* Snapping ends the moment the homepage content leaves the page. The home-snap class itself is removed only in an effect cleanup,
+   after the next page has painted; until then the footer (a snap area while it is set) was the next page's only stop, so
+   leaving the homepage glided straight to the bottom of the new page. */
+html.home-snap:not(:has([data-home-section])) { scroll-snap-type: none !important; }
+html.home-snap:not(:has([data-home-section])) footer { scroll-snap-align: none !important; }
 /* scroll-padding already clears the nav; the older 100px margin would stop every screen 100px early. */
 html.home-snap [data-home-section] { scroll-margin-top: 0; }
 html.home-snap .hero-screen,
@@ -13,13 +18,13 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .hero-screen {
   display: flex; align-items: center; justify-content: center;
   /* Extra room at the bottom: the workbench lies flat there on the first screen. */
-  width: 100%; min-height: calc(100svh - var(--nav-h)); padding: 0 22px 31vh;
+  width: 100%; min-height: calc(100svh - var(--nav-h)); padding: 0 22px 28vh;
 }
 /* Four clear levels: quiet eyebrow → headline → light lead → one action. Small text is light and dimmer; only the headline carries weight. */
 /* Eyebrow capsule: the wordmark and tagline in white, split by a hairline divider. */
 .hero-pill {
   display: inline-flex !important; align-items: center; gap: 10px !important;
-  margin-bottom: 28px !important; padding: 6px 16px !important; border-radius: 999px !important;
+  margin-bottom: 32px !important; padding: 6px 16px !important; border-radius: 999px !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important; background: rgba(255, 255, 255, 0.035) !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
   -webkit-backdrop-filter: blur(12px) !important; backdrop-filter: blur(12px) !important;
@@ -30,15 +35,15 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .hero-pill-brand b { font-weight: inherit; }
 .hero-pill-tag { position: relative; padding-left: 11px; color: #f5f5f7; }
 .hero-pill-tag::before { content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 12px; transform: translateY(-50%); background: rgba(255, 255, 255, 0.18); }
-.hero-title { font-size: clamp(40px, 4.8vw, 68px) !important; font-weight: 600 !important; line-height: 1.12 !important; letter-spacing: -0.02em !important; }
-.hero-title[data-locale='zh'] { letter-spacing: 0.01em !important; line-height: 1.22 !important; }
+.hero-title { font-size: clamp(40px, 4.8vw, 68px) !important; font-weight: 400 !important; line-height: 1.12 !important; letter-spacing: -0.02em !important; }
+.hero-title[data-locale='zh'] { letter-spacing: 0 !important; line-height: 1.16 !important; }
 .hero-title-line-a { color: #f5f5f7 !important; }
 /* A softer three-stop gradient (sky → lilac → rose) instead of the five-colour pipeline key. */
 .hero-title-line-b, .hero-title-line-b.hero-enter { background: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important; }
 .hero-description {
-  margin-top: 24px !important; max-width: 32em !important;
+  margin-top: 32px !important; max-width: 32em !important;
   font-size: clamp(17px, 1.3vw, 19px) !important; font-weight: 300; line-height: 1.65 !important; letter-spacing: 0.02em;
-  color: rgba(245, 245, 247, 0.62) !important;
+  color: rgba(245, 245, 247, 0.56) !important;
 }
 /* The residue field fades its own grid around the copy (ProteinField residueTip), so the dark overlay is off:
    it would dim pulses near the centre more than those at the edges. */
@@ -70,24 +75,637 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .hero-demo-screen .agent-demo-slot { max-height: calc(100svh - var(--nav-h) - 48px); }
 
 /* ---------- "从理解到设计": one step per screen ---------- */
-/* A step taller than the visible area (96vh vs 100vh minus the nav) lets the page drift inside it; exactly one screen makes each wheel move land on the next step. */
+/* Each step is exactly the space under the pinned heading, so each wheel move lands on the next step. */
 @media (min-width: 1024px) {
-  /* one-protein.css loads after this file, so the selector needs the extra class to win. */
-  .op-layout .op-steps > .op-step { min-height: calc(100svh - var(--nav-h)); }
   /* The section's bottom edge is itself a stop; with no bottom padding it coincides with the last step. */
   html.home-snap .op-section { padding-bottom: 0; }
 
-  /* First screen of the section = title + the 16:10 UI stage. The stage height leaves room for the title block
-     above it (--op-head) and caps where the column width would take over. */
-  section.op-section { --op-head: 344px; --op-stage-h: min(calc(100svh - var(--nav-h) - var(--op-head)), 540px); padding-top: 56px; }
-  .op-section .op-layout { margin-top: 32px; }
+  /* One screen for the whole section: the heading (--op-head tall) stays pinned under the nav, the 16:10 stage is pinned in the
+     space below it, and the steps change in that same space, one per wheel move. */
+  section.op-section { --op-head: 236px; --op-room: calc(100svh - var(--nav-h) - var(--op-head)); --op-stage-h: min(calc(var(--op-room) - 24px), 540px); padding-top: 0; }
+  /* No backdrop, so a zoomed-in molecule can pass behind the heading; the step that has scrolled up under it is hidden instead (below). */
+  .op-section .op-head { position: sticky; top: var(--nav-h); z-index: 4; height: var(--op-head); padding-top: 40px; }
+  .op-section .op-layout { margin-top: 0; }
+  /* one-protein.css loads after this file, so the selector needs the extra class to win. */
+  .op-layout .op-steps > .op-step { min-height: var(--op-room); }
+  /* Each step lands at the top of the space under the heading (the nav is already cleared by scroll-padding). */
+  html.home-snap .op-section .op-step { scroll-snap-align: start; scroll-margin-top: var(--op-head); }
   .op-section .op-stage-col {
     height: auto; min-height: 0;
-    /* Pinned at the vertical centre of the screen, level with each step's text. */
-    top: calc(var(--nav-h) + (100svh - var(--nav-h) - var(--op-stage-h)) / 2);
+    /* Pinned at the vertical centre of the space under the heading, level with each step's text. */
+    top: calc(var(--nav-h) + var(--op-head) + (var(--op-room) - var(--op-stage-h)) / 2);
   }
   .op-section .op-media { width: min(100%, calc(var(--op-stage-h) * 1.6)); height: auto; aspect-ratio: 1280 / 800; margin-left: auto; }
 }
+
+/* ---------- "从理解到设计" heading: the same light register as screen 1, a step below its headline ---------- */
+/* Quiet eyebrow (small, regular, open tracking) → a Regular headline → a light lead, on a tight 12 / 16px rhythm. */
+/* The eyebrow wears the hero's second-line gradient (sky → lilac → rose), sized to the text so all three stops show.
+   The clip needs !important: calm.css resets every eyebrow with an !important background shorthand. */
+.op-head .eyebrow {
+  width: fit-content; margin-bottom: 12px; font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+.op-head .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+.op-head .vegf-case { margin-top: 16px; }
+.op-head .vegf-case-start { font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+
+/* ---------- "从理解到设计" steps: text column ---------- */
+/* Set in from the stage and narrower, ending at the container edge. */
+.op-section .op-step .wf-text { margin-left: 40px; max-width: 400px; }
+/* Progress strip in one light grey instead of the five module hues; the current step's segment is lit. */
+/* Hairline segments (1px, square ends) instead of 3px rounded bars, a little longer and further apart. */
+.op-section .op-strip { gap: 4px; }
+.op-section .op-strip i { width: 16px; height: 1px; border-radius: 0; background: #C7C7CC; opacity: 0.22; }
+.op-section .op-strip i[data-on] { opacity: 1; }
+/* The step number and module name in the same grey, set like screen 4's layer kickers: the display face with tabular numerals
+   (no monospace), 11px Regular with open tracking. */
+.op-section .op-step .wf-kicker > span:not(.op-strip), .op-section .op-step .wf-kicker em {
+  font: 400 11px/1.4 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC;
+}
+/* A step below the section heading (40px Regular): smaller and Regular, so the heading stays the lead. */
+.op-section .op-step .wf-text h3 { margin-top: 12px; font: 400 clamp(24px, 2vw, 28px)/1.3 var(--font-display); letter-spacing: 0; }
+/* These titles are reworded through the copy editor (content/collab-overrides.json), which puts the new wording in the first
+   word box and leaves the original line break behind: an empty extra line, and a title that can only break mid-word.
+   So: no leftover break, and lines end only at punctuation. */
+.op-section .op-step .wf-text h3 br { display: none; }
+.op-section .op-step .wf-text h3 .w { display: inline; }
+.op-section .op-step .wf-text h3 { word-break: keep-all; }
+/* Balanced, so a lead that runs just past one line splits into two even lines instead of leaving a word on its own. */
+/* Same type as the heading's lead line (14px Light, 56% white), so the two subtitles on this screen match. */
+.op-section .op-step .wf-lead { margin-top: 14px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); text-wrap: balance; }
+/* The description: smaller than the lead (14px, 56% white) and greyer, at 40% white. Light (300), not 250:
+   PingFang has no weight between Thin and Light, and 250 would draw as Thin. */
+.op-section .op-step .wf-body { margin-top: 32px; font-size: 12px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+
+/* Descriptions and the footnote are set as ordinary Chinese body text: lines may break between any two characters (never
+   before closing punctuation) and are justified, so every full line is the column's width. Whole-word wrapping (the .w
+   boxes from Flow) left lines ending anywhere from 350 to 395px of a 397px column. `pretty` keeps a last line from
+   holding a single character. */
+.op-section .op-step :is(.wf-body, .wf-note) { text-wrap: pretty; text-align: justify; line-break: strict; }
+.op-section .op-step :is(.wf-body, .wf-note) .w { display: inline; }
+
+/* Step 05's footnote sits below the description (12px Light, 40% white): smaller and a little dimmer, as wide as the
+   description, with the contact button under it, left-aligned. */
+.op-section .op-step .wf-foot { flex-direction: column; align-items: flex-start; gap: 16px; }
+.op-section .op-step .wf-foot .wf-note { align-self: stretch; font-size: 11px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.34); }
+/* An outline button, label only. */
+.op-section .op-step .wf-contact {
+  height: 32px; padding: 0 16px; border: 1px solid rgba(245, 245, 247, 0.32); background: transparent;
+  color: #f5f5f7; font-size: 13px; font-weight: 400; letter-spacing: 0.02em;
+  transition: border-color 0.2s, background 0.2s;
+}
+.op-section .op-step .wf-contact:hover { transform: none; opacity: 1; border-color: rgba(245, 245, 247, 0.6); background: rgba(245, 245, 247, 0.06); }
+.op-section .op-step .wf-contact svg { display: none; }
+
+/* ---------- "从理解到设计" stage ---------- */
+/* No glow behind the molecule and no frame around it: the canvas already spans the viewport, and is no longer masked to
+   the stage box (which cut a zoomed-in molecule off in hard lines) or faded at its sides. !important: the mask's size and
+   position are set inline, and one-protein.css (loaded later) sets the fade. */
+.op-section .op-media { background: none; }
+.op-section .op .pf-view { -webkit-mask-image: none !important; mask-image: none !important; }
+/* Nor a dark backing behind the bottom-left info panel (candidates, scores). */
+.op-section .op-hud::before { content: none; }
+/* The step 02 MMetrics panel on screen 2's blue-grey scale (surface #1F1F26 → cards #272730 → chips #31313B, lines
+   #3A3A46) instead of mmetrics.css's neutral greys, which read warm. Step 01's Mocha box already uses it. */
+.op-section :is(.op-mm-back, .op-mm .mm-sequence, .op-mm .mm-panel) { background: #1F1F26; }
+.op-section .op-mm .mm-secnav { background: linear-gradient(#1F1F26 70%, rgba(31, 31, 38, 0)); }
+.op-section .op-mm :is(.mm-sequence-name, .mm-description-card, .mm-homolog, .mm-annotation, .mm-net, .mm-file, .mm-liab, .mm-sug, .mm-seg, .mm-type-filter button) { background: #272730; border-color: #3A3A46; }
+.op-section .op-mm :is(.mm-tags span, .mm-liab em, .mm-tabs button[aria-selected=true]) { background: #31313B; }
+.op-section .op-mm :is(.mm-chips button, .mm-sug-change code) { background: #1F1F26; border-color: #454552; }
+.op-section .op-mm :is(.mm-structures span, .mm-scheme button) { border-color: #3A3A46; }
+.op-section .op-mm .mm-chain-chips button:not([style]) { background: #3A3A46; }
+.op-section .op-mm .mm-panel-scroll .mm-reasoning { border-top-color: #3A3A46; }
+.op-section .op-mm .mm-toolbar { background: rgba(9, 9, 9, 0.3); }
+.op-section .op-mm .mm-toolbar-divider { border-top-color: #3A3A46; }
+/* The interaction network chart: its plate at card level, the distance pills a step darker. */
+.op-section .op-mm .mm-native-net { background: #272730; }
+.op-section .op-mm .mm-net-dist-bg { fill: #1F1F26; }
+/* The zoom controls beside it: the panel colour at 50%, small radius, no border and no frosted glass. */
+.op-section .op .op-zoom { border: 0; border-radius: 6px; background: rgba(31, 31, 38, 0.5); -webkit-backdrop-filter: none; backdrop-filter: none; }
+.op-section .op .op-zoom button { border-radius: 4px; }
+
+/* Step 01's "structure predicted" result: no card, set straight on the page like the info panel of steps 03 and 05.
+   A small caption with its tick, then the two figures as label-over-number pairs split by a hairline; Light figures in
+   tabular numerals. A soft dark halo keeps it legible where the molecule passes behind. */
+.op-section .op .pf-result {
+  gap: 10px; min-width: 0; padding: 0; border: 0; border-radius: 0; background: none;
+  -webkit-backdrop-filter: none; backdrop-filter: none; text-shadow: 0 1px 10px #000, 0 0 3px #000;
+}
+.op-section .op .pf-result strong { gap: 6px; font-size: 12px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
+.op-section .op .pf-result strong svg { width: 12px; height: 12px; }
+.op-section .op .pf-result dl div + div { margin-left: 24px; padding-left: 24px; border-left: 0.5px solid rgba(245, 245, 247, 0.16); }
+.op-section .op .pf-result dt { font-size: 10px; letter-spacing: 0.08em; color: rgba(245, 245, 247, 0.4); }
+.op-section .op .pf-result dd { margin-top: 4px; font: 300 26px/1 var(--font-display); letter-spacing: -0.01em; font-variant-numeric: tabular-nums; color: #f5f5f7; }
+
+/* The info panels of steps 03–05 on the same scale as step 01's result: the display face with tabular numerals throughout
+   (no Arial, no monospace, no bold), a 12px caption at 56% white, 11px rows with #C7C7CC labels and 56% values, 10px small
+   labels at 40%, 0.5px hairlines, and a tighter rhythm. */
+.op-section .op-hud {
+  gap: 6px; width: min(300px, calc(100% - 36px)); color: #C7C7CC;
+  font: 400 11px/1.5 var(--font-display); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; text-shadow: 0 1px 10px #000, 0 0 3px #000;
+}
+.op-section .op-hud-wide { width: min(520px, calc(100% - 36px)); }
+.op-section .op-hud p { gap: 8px; }
+.op-section .op-hud p i { width: 6px; height: 6px; }
+.op-section .op-hud p b { font-weight: 400; color: #C7C7CC; }
+.op-section .op-hud p span { font: 300 11px/1.5 var(--font-display); letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.op-section .op-hud-sum { padding-top: 2px; font: 400 10px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.op-section .op-hud-cap { font-size: 12px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
+.op-section .op-hud-title { gap: 6px; font-size: 10px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+/* Tabs: small and quiet, the current one in white over a 1px line in its colour. */
+.op-section .op-chips { gap: 16px; margin-bottom: 2px; }
+.op-section .op-chips button { padding: 0 0 3px; border-bottom-width: 1px; font: 400 11px/1.4 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+.op-section .op-chips button[data-on] { color: #f5f5f7; }
+/* Step 04's table: no row lines and no highlight behind the recommended row (its "推荐" tag marks it). */
+.op-section .op-hud table { margin-top: 2px; font-size: 11px; }
+.op-section .op-hud th { padding: 0 6px 6px; font: 400 10px/1.3 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+.op-section .op-hud td { padding: 4px 6px; border-top: 0; font: 300 11px/1.4 var(--font-display); letter-spacing: 0.02em; }
+.op-section .op-hud :is(th, td):first-child { padding-left: 0; }
+.op-section .op-hud :is(th, td):last-child { padding-right: 0; }
+.op-section .op-hud td b { font-weight: 400; color: #f5f5f7; }
+.op-section .op-hud td em { margin-left: 6px; font: 400 10px var(--font-display); }
+.op-section .op-hud td[data-tone="flat"] { color: rgba(245, 245, 247, 0.56); }
+.op-section .op-hud tr[data-best] td { background: none; }
+
+/* Zoom controls: one fixed place for every step (they used to move into the MMetrics viewport in step 02), stacked
+   vertically 6px off the right edge of the step 02 MMetrics panel (which ends 27px inside the stage box), centred on the
+   stage's height, well clear of the step text.
+   94px = 3 × 28px buttons + 2 × 2px gaps + 2 × 3px padding (no border). */
+.op-section .op .op-zoom, .op-section .op[data-hole] .op-zoom { flex-direction: column; top: calc(50% - 47px); bottom: auto; left: calc(100% - 21px); right: auto; }
+
+/* Nor a glass card behind the current step's text (it appeared once the molecule reached the text column). */
+.op-section .op-step .wf-text::before { content: none; }
+/* Only the current step shows: with the heading's backdrop gone, the dimmed previous step would sit beside the heading. */
+.op-section .op-step:not([data-on]) { opacity: 0; }
+/* And a step's text fades out by position as it scrolls up into the heading's area (the view timeline's top is inset by the
+   nav and the heading), so it never passes beside the heading while it is still the current step. */
+@supports (animation-timeline: view()) {
+  @media (min-width: 1024px) {
+    .op-section .op-step .wf-text {
+      animation: op-step-exit linear both; animation-timeline: view(y calc(var(--nav-h) + var(--op-head)) 0px); animation-range: exit 0% exit 45%;
+    }
+  }
+}
+@keyframes op-step-exit { to { opacity: 0; } }
+
+/* ---------- Screen 4 "系统体系" (model stack) ---------- */
+/* The same 1280px measure as screens 2–3 (the workbench and the "从理解到设计" heading and steps), instead of 1120px. */
+@media (min-width: 1024px) {
+  [data-home-section] .model-stack .site-container { max-width: 1280px; }
+}
+/* The pinned run snaps only at its own four points, each of which holds: its start (the stack still closed, MMFold alone, so a
+   quick flick from screen 3 rests there) and the three layers. The section box itself is not a snap area: being taller than
+   the screen, any position inside it counted as a valid stop, so the page could settle at its very end before screen 5. */
+html.home-snap [data-home-section]:has(.model-stack-snaps) { scroll-snap-align: none; }
+.model-stack-snaps::before { content: ''; position: absolute; top: 0; left: 0; width: 1px; height: 1px; scroll-snap-align: start; }
+html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll-snap-stop: always; }
+/* Heading in screen 3's register: the gradient eyebrow, a Regular title, a Light lead. */
+[data-home-section] .model-stack-copy .eyebrow {
+  width: fit-content; margin-bottom: 12px; font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+[data-home-section] .model-stack-copy .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+/* Two lines, not three: the copy breaks the title twice ("构建可编程 / 生命科学时代的 / 基础设施"); the second break is dropped. */
+[data-home-section] .model-stack-copy .section-title br:nth-of-type(2) { display: none; }
+[data-home-section] .model-stack-copy .section-copy { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+
+/* The layer list: aligned with the heading (no indent), each item a kicker (number + the plate's name), a Regular title and
+   a Light body, as on screen 3's steps. The current item's kicker and a 1px rail at the heading's left edge take its plate's colour
+   (--tone: MoleculeOS apricot, MMDesign sage, MMFold sky); the others stay grey. */
+[data-home-section] .model-stack-steps { margin-top: 36px; gap: 4px; }
+[data-home-section] .model-stack-steps li { padding: 12px 0 12px 16px; border-radius: 0; opacity: 1; background: none; }
+[data-home-section] .model-stack-steps li::before {
+  display: block; left: 0; top: 14px; bottom: 14px; width: 1px; border-radius: 0; box-shadow: none; background: var(--tone);
+}
+[data-home-section] .model-stack-steps p.model-stack-kicker {
+  display: flex; align-items: baseline; gap: 10px; max-height: none; opacity: 1; overflow: visible; margin: 0 0 6px;
+  font: 400 11px/1.4 var(--font-display); letter-spacing: 0.08em; white-space: normal; color: rgba(245, 245, 247, 0.4); transition: color 0.5s ease;
+}
+[data-home-section] .model-stack-kicker span { font-variant-numeric: tabular-nums; }
+[data-home-section] .model-stack-kicker em { font-style: normal; }
+[data-home-section] .model-stack-steps li[data-active] .model-stack-kicker { color: var(--tone); }
+[data-home-section] .model-stack-steps h3 { margin-top: 0; font-size: 22px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: rgba(245, 245, 247, 0.4); transition: color 0.5s ease; }
+[data-home-section] .model-stack-steps li[data-active] h3 { color: #f5f5f7; }
+[data-home-section] .model-stack-steps p:not(.model-stack-kicker) { font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .model-stack-steps li[data-active] p:not(.model-stack-kicker) { margin-top: 8px; }
+/* Plates stack up one at a time: a plate not yet reached waits above the pile, transparent, and drops into place. */
+[data-home-section] .model-plate { transition: opacity 0.6s var(--ease-apple), translate 0.8s var(--ease-out-expo), border-color 0.6s, box-shadow 0.6s; }
+[data-home-section] .model-plate:not([data-shown]) { opacity: 0; translate: 0 0 160px; pointer-events: none; }
+
+/* ---------- Screen 5 "案例" (validation) ---------- */
+/* One screen tall, so it is a single centred stop: the shared section padding (15vh top and bottom) left it 72px over, which
+   added a stray stop 20px in. */
+@media (min-width: 1024px) {
+  [data-home-section] .home-section-pad[data-nav-section="validation"] { padding-block: 88px !important; }
+  /* Pinned (data-pinned): one screen per case. The content stays put under the nav while the page scrolls through the cases'
+     stops, one each, a screen apart; after the last, the next scroll moves on to screen 6. Only these stops snap (the tall
+     section box itself would count every position inside it as a valid stop). */
+  [data-home-section] .home-section-pad[data-nav-section="validation"][data-pinned] {
+    position: relative; height: calc(var(--case-n) * (100svh - var(--nav-h))); padding-block: 0 !important;
+  }
+  [data-home-section] [data-nav-section="validation"][data-pinned] > .site-container {
+    position: sticky; top: var(--nav-h); height: calc(100svh - var(--nav-h)); display: flex; flex-direction: column; justify-content: center;
+  }
+  .case-snaps { position: absolute; inset: 0; pointer-events: none; }
+  .case-snaps span { position: absolute; left: 0; width: 1px; height: 1px; }
+  html.home-snap .case-snaps span { scroll-snap-align: start; scroll-snap-stop: always; }
+  html.home-snap [data-home-section]:has(.case-snaps) { scroll-snap-align: none; }
+}
+/* Heading in screens 3–4's register, kept centred: the gradient eyebrow, a Regular title, a Light lead. */
+[data-home-section] [data-nav-section="validation"] .eyebrow {
+  width: fit-content; margin: 0 auto 12px; font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+[data-home-section] [data-nav-section="validation"] .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+/* The comma in "从计算设计，到实验验证" is drawn as a gap (.pause); here the two clauses run together. */
+[data-home-section] [data-nav-section="validation"] .section-title .pause { width: 0; }
+[data-home-section] [data-nav-section="validation"] .section-title + p { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+
+/* ---------- Screen 5: the case explorer, in screens 3–4's language ---------- */
+/* No boxes, glows, big radii or pills. The index is a list on a 1px rail (the current case's rail in its colour, filling while
+   the explorer plays on its own); the stage is open type: a quiet caption, a Light figure, a hairline-topped chart, Light body
+   text and plain-text tags. Case colours are softened (85%) and kept to small accents. Same 1280px measure as screens 2–4. */
+@media (min-width: 1024px) {
+  [data-home-section] [data-nav-section="validation"] .site-container { max-width: 1280px; }
+  [data-home-section] [data-nav-section="validation"] .case-explorer { max-width: none; grid-template-columns: minmax(0, 4.4fr) minmax(0, 7.6fr); gap: 56px; }
+}
+[data-home-section] [data-nav-section="validation"] .case-index { gap: 0; }
+[data-home-section] [data-nav-section="validation"] .case-index-item { grid-template-columns: 1fr auto; gap: 16px; padding: 16px 0 16px 20px; border: 0; border-radius: 0; background: none; }
+[data-home-section] [data-nav-section="validation"] .case-index-item:hover { background: none; }
+[data-home-section] [data-nav-section="validation"] .case-index-dot { display: none; }
+[data-home-section] [data-nav-section="validation"] .case-index-hl { inset: 0; border: 0; border-radius: 0 !important; background: none; box-shadow: none; }
+[data-home-section] [data-nav-section="validation"] .case-index-bar { display: block; left: 0; top: 16px; bottom: 16px; width: 1px; border-radius: 0; background: rgba(245, 245, 247, 0.12); }
+[data-home-section] [data-nav-section="validation"] .case-index-bar i { border-radius: 0; background: rgba(var(--c), 0.85); box-shadow: none; }
+[data-home-section] [data-nav-section="validation"] .case-index-text { gap: 4px; }
+[data-home-section] [data-nav-section="validation"] .case-index-text strong { font-size: 17px; font-weight: 400; letter-spacing: 0.01em; color: rgba(245, 245, 247, 0.4); }
+[data-home-section] [data-nav-section="validation"] .case-index-item:hover .case-index-text strong { color: rgba(245, 245, 247, 0.72); }
+[data-home-section] [data-nav-section="validation"] .case-index-item[aria-selected="true"] .case-index-text strong { color: #f5f5f7; }
+[data-home-section] [data-nav-section="validation"] .case-index-text small { font-size: 11px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.32); }
+[data-home-section] [data-nav-section="validation"] .case-index-figure { font: 300 20px/1 var(--font-display); letter-spacing: 0; color: rgba(245, 245, 247, 0.4); }
+[data-home-section] [data-nav-section="validation"] .case-index-figure i { font-weight: 300; }
+/* The current case's figure in the colour of its rail. */
+[data-home-section] [data-nav-section="validation"] .case-index-item[aria-selected="true"] .case-index-figure { color: rgba(var(--c), 0.85); }
+/* The stage on a translucent panel (the panel colour at 50%, as the zoom controls and step 01's result), small radius, no border:
+   the selected case reads as the content of the panel the index drives. */
+[data-home-section] [data-nav-section="validation"] .case-stage { overflow: visible; padding: 32px 36px; border: 0; border-radius: 8px; background: rgba(31, 31, 38, 0.5); }
+/* Sized by every case laid out invisibly in one cell (so its height never changes); the case on show sits over it. */
+[data-home-section] [data-nav-section="validation"] .case-stage-sizer { display: grid; visibility: hidden; pointer-events: none; }
+[data-home-section] [data-nav-section="validation"] .case-stage-sizer > * { grid-area: 1 / 1; }
+[data-home-section] [data-nav-section="validation"] .case-stage-sizer :is(.cs-dots i, .cs-bar u i) { animation: none; }
+[data-home-section] [data-nav-section="validation"] .case-stage-live { position: absolute; inset: 32px 36px; height: auto; }
+[data-home-section] [data-nav-section="validation"] .cs-head { gap: 12px; }
+[data-home-section] [data-nav-section="validation"] .cs-head strong { font-size: 12px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] [data-nav-section="validation"] .cs-head small { padding: 0; border: 0; border-radius: 0; background: none; font-size: 11px; letter-spacing: 0.06em; color: rgba(var(--c), 0.85); }
+[data-home-section] [data-nav-section="validation"] .cs-hero { margin-top: 20px; }
+[data-home-section] [data-nav-section="validation"] .case-stage-figure { font: 200 clamp(56px, 5vw, 72px)/1 var(--font-display); letter-spacing: -0.02em; background: none; color: #f5f5f7; -webkit-text-fill-color: currentColor; filter: none; }
+[data-home-section] [data-nav-section="validation"] .case-stage-figure span { font-weight: 300; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] [data-nav-section="validation"] .case-stage-result { margin-top: 16px; font: 300 18px/1.6 var(--font-display); letter-spacing: 0.01em; color: rgba(245, 245, 247, 0.86); }
+[data-home-section] [data-nav-section="validation"] .cs-chart { margin-top: 28px; padding: 16px 0 0; border: 0; border-top: 0.5px solid rgba(245, 245, 247, 0.12); border-radius: 0; background: none; }
+[data-home-section] [data-nav-section="validation"] .cs-dots { gap: 6px; }
+[data-home-section] [data-nav-section="validation"] .cs-dots i { width: 8px; height: 8px; border-width: 1px; border-color: rgba(245, 245, 247, 0.2); }
+[data-home-section] [data-nav-section="validation"] .cs-dots i[data-hit] { background: rgba(var(--c), 0.85) !important; }
+[data-home-section] [data-nav-section="validation"] .cs-bars { gap: 12px; }
+[data-home-section] [data-nav-section="validation"] .cs-bar { grid-template-columns: 56px 1fr 64px; font-size: 11px; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+[data-home-section] [data-nav-section="validation"] .cs-bar u { height: 2px; border-radius: 0; background: rgba(245, 245, 247, 0.1); }
+[data-home-section] [data-nav-section="validation"] .cs-bar u i { border-radius: 0; background: rgba(245, 245, 247, 0.32) !important; }
+[data-home-section] [data-nav-section="validation"] .cs-bar u i[data-top] { background: rgba(var(--c), 0.85) !important; }
+[data-home-section] [data-nav-section="validation"] .cs-bar b { font: 300 13px var(--font-display); font-variant-numeric: tabular-nums; color: #f5f5f7; }
+[data-home-section] [data-nav-section="validation"] .cs-chart-row { margin-top: 12px; font-size: 11px; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+[data-home-section] [data-nav-section="validation"] .cs-chart-row b { font-weight: 400; color: rgba(var(--c), 0.85); }
+[data-home-section] [data-nav-section="validation"] .case-stage-text { margin-top: 24px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] [data-nav-section="validation"] .case-stage-foot { gap: 6px 20px; padding-top: 24px; }
+[data-home-section] [data-nav-section="validation"] .case-chip { padding: 0; border: 0; border-radius: 0; background: none; font-size: 11px; font-weight: 400; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+
+/* ---------- Screen 6 "使用方式" (enterprise access) ---------- */
+/* Heading in screens 3–5's register, kept centred: the gradient eyebrow and a Regular title. */
+[data-home-section] .enterprise .enterprise-access-head .eyebrow {
+  width: fit-content; margin: 0 auto 12px; font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+[data-home-section] .enterprise .enterprise-access-head .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+
+/* The three ways in: cards in the panel language of screen 5 (the panel colour at 50%, 8px radius, no border), and their three
+   sketches in one identical frame: the same 168px box filling the card's width, the same dark plate, hairline and 6px radius
+   (the helix used to float frameless, the API terminal sat shorter than the browser). */
+[data-home-section] .enterprise .access-card { border: 0; border-radius: 8px; background: rgba(31, 31, 38, 0.5); }
+[data-home-section] .enterprise .access-card:hover { background: rgba(31, 31, 38, 0.75); }
+[data-home-section] .enterprise .access-card .access-visual { height: 168px; margin: 0 0 16px; place-items: stretch; }
+[data-home-section] .enterprise :is(.sk-browser, .sk-code, .sk-helix) {
+  box-sizing: border-box; width: 100%; height: 100%; border: 0.5px solid rgba(245, 245, 247, 0.1); border-radius: 6px; background: #0E0E12; box-shadow: none;
+}
+[data-home-section] .enterprise .sk-browser { display: flex; flex-direction: column; }
+[data-home-section] .enterprise .sk-browser .sk-body { flex: 1; }
+[data-home-section] .enterprise .sk-code { align-content: center; }
+[data-home-section] .enterprise .sk-helix { display: block; padding: 12px 8px; overflow: hidden; }
+/* The icon row tucks under its sketch; the title and description stand apart below it, set like screen 4's layer list (22px Regular
+   white, 14px Light at 56%), with room after them. The arrow sits in the card's bottom-right corner. */
+[data-home-section] .enterprise .access-card { padding: 24px 24px 72px; }
+[data-home-section] .enterprise .access-card .access-visual { margin-bottom: 4px; }
+[data-home-section] .enterprise .access-card strong { margin-top: 28px; font-size: 22px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: #f5f5f7; }
+[data-home-section] .enterprise .access-card .access-desc { margin-top: 2px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+/* Set as body text: breaks between any two characters (never before punctuation), instead of whole-word wrapping that dropped
+   "无需安装" to a new line and left "配齐，" ending short. Left-aligned, not justified: a line ending before "MoleculeOS" (which
+   cannot be split) was stretched letter-spaced. */
+[data-home-section] .enterprise .access-card .access-desc { text-wrap: pretty; line-break: strict; }
+[data-home-section] .enterprise .access-card .access-desc .w { display: inline; }
+/* The corner arrow in the brand violet of the site's buttons (#6F69C7, as "开始设计" and Mocha's "发送并运行"; #7C76D2 on hover, as theirs). */
+[data-home-section] .enterprise .access-card .access-go { right: 24px; bottom: 24px; color: #6F69C7; }
+[data-home-section] .enterprise .access-card:hover .access-go { color: #7C76D2; }
+
+/* ---------- Screen 7: proof band ---------- */
+/* The partner logo strip without the black fade at its two ends: the logos run full and crisp to the edges of the measure. */
+[data-home-section] .proof-band .partner-marquee { -webkit-mask-image: none; mask-image: none; }
+/* A gradient eyebrow over the figures ("实证结果"), then the figures large and as thin as the face goes (80px, 100)
+   and everything under them like those titles' lead lines (14px Light at 56% white); the source line a step quieter. */
+[data-home-section] .proof-band .proof-eyebrow {
+  width: fit-content; margin: 0 auto 20px; font-size: 13px; font-weight: 400; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+[data-home-section] .proof-band .proof-stat .stat-value { font: 100 clamp(56px, 5.6vw, 80px)/1.05 var(--font-display); letter-spacing: -0.01em; }
+[data-home-section] .proof-band .proof-stat + .proof-stat { border-left-width: 0.5px; }
+[data-home-section] .proof-band .proof-stat-label { margin-top: 12px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .proof-band .proof-condition { margin-top: 28px; font-size: 14px; font-weight: 300; line-height: 1.7; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+/* On one line on wide screens (it was capped at 62ch and broke after "每项任务"). */
+@media (min-width: 1024px) { [data-home-section] .proof-band .proof-condition { max-width: none; white-space: nowrap; } }
+[data-home-section] .proof-band .proof-source { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+/* The report link's arrow in the brand violet, like the cards' arrows on screen 6. */
+[data-home-section] .proof-band .proof-source a svg { color: #6F69C7; transition: color 0.2s; }
+[data-home-section] .proof-band .proof-source a:hover svg { color: #7C76D2; }
+
+/* Partners and feedback, one block under the gradient "客户合作" eyebrow (the two grey labels are hidden), set further below the
+   figures. The logo strip runs the full window width; logos are light monochrome marks at 78% (full on hover) on the
+   translucent panel grey, 6px radius: grey and inverted, then screened onto the tile, so their detail survives and a logo's
+   own white backing turns black, which the screen blend drops. (Solid white silhouettes lost too much detail.) */
+[data-home-section] .proof-band .proof-partners { margin-top: 80px; }
+[data-home-section] .proof-band .proof-partners-label, [data-home-section] .proof-band .proof-voices-label { display: none; }
+[data-home-section] .proof-band .partner-marquee { margin: 0 calc(50% - 50vw); }
+/* 100vw counts a visible scrollbar on some systems: clip sideways so the strip never adds a horizontal scroll. */
+[data-home-section] .proof-band { overflow-x: clip; }
+[data-home-section] .proof-band .partner-track li { padding: 0 6px; }
+[data-home-section] .proof-band .partner-logo { width: 156px; height: 60px; padding: 14px 22px; border-radius: 6px; background: rgba(31, 31, 38, 0.5); box-shadow: none; }
+[data-home-section] .proof-band .partner-logo img { filter: grayscale(1) invert(1) contrast(1.15); mix-blend-mode: screen; opacity: 0.78; transition: opacity 0.3s; }
+[data-home-section] .proof-band .partner-logo:hover img { opacity: 1; }
+/* Feedback: one quote at a time, centred, under a lilac mark; hairline segments below show and pick the current quote. A new quote
+   rolls up from below into place; the one leaving vanishes at once (no fades). */
+[data-home-section] .proof-band .proof-voices { margin-top: 48px; }
+[data-home-section] .proof-band .voice-carousel { display: grid; justify-items: center; max-width: 720px; margin: 0 auto; text-align: center; }
+[data-home-section] .proof-band .proof-voice-mark { display: block; height: 28px; font: 200 48px/1 var(--font-display); background: none; color: #bcb2f4; -webkit-text-fill-color: currentColor; }
+[data-home-section] .proof-band .voice-stage { display: grid; width: 100%; margin-top: 8px; overflow: hidden; }
+[data-home-section] .proof-band .voice-quote {
+  grid-area: 1 / 1; align-self: center; margin: 0; font-size: 20px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em;
+  color: rgba(245, 245, 247, 0.72); text-wrap: balance; visibility: hidden;
+}
+[data-home-section] .proof-band .voice-quote[data-on] { visibility: visible; animation: voice-roll 0.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+@keyframes voice-roll { from { transform: translateY(100%); } to { transform: none; } }
+[data-home-section] .proof-band .voice-quote em { font-style: normal; font-weight: 400; background: none; color: #f5f5f7; -webkit-text-fill-color: currentColor; }
+[data-home-section] .proof-band .voice-strip { display: flex; gap: 6px; margin-top: 28px; }
+[data-home-section] .proof-band .voice-strip button { padding: 8px 0; background: none; border: 0; cursor: pointer; }
+[data-home-section] .proof-band .voice-strip i { position: relative; display: block; width: 24px; height: 1px; background: rgba(245, 245, 247, 0.22); overflow: hidden; }
+[data-home-section] .proof-band .voice-strip i[data-on] { background: #bcb2f4; }
+@media (prefers-reduced-motion: reduce) { [data-home-section] .proof-band .voice-quote[data-on] { animation: none; } }
+
+/* ---------- Closing screen "把您的构想带进 MoleculeOS" ---------- */
+/* Title and lead exactly as screen 1's headline and description; the buttons further below (56px), "开始设计" as screen 1's brand
+   violet pill, "联系我们" an outline pill of the same size, both without arrows. */
+[data-home-section] .final-cta .section-title { font-size: clamp(40px, 4.8vw, 68px); font-weight: 300; line-height: 1.16; letter-spacing: 0; }
+/* The comma in "把您的构想，带进 MoleculeOS" is drawn as a gap (.pause); here the two clauses run together, as on screen 5. */
+[data-home-section] .final-cta .section-title .pause { width: 0; }
+[data-home-section] .final-cta .section-copy { margin-top: 24px; font-size: clamp(17px, 1.3vw, 19px); font-weight: 200; line-height: 1.65; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .final-cta .final-copy > :last-child { margin-top: 56px; }
+[data-home-section] .final-cta .final-copy a {
+  justify-content: center; min-height: 46px; min-width: 148px; padding: 0 36px; border-radius: 999px;
+  font-size: 15px; font-weight: 500; letter-spacing: 0.04em; transition: background 0.25s var(--ease-apple), border-color 0.25s, transform 0.25s var(--ease-apple);
+}
+[data-home-section] .final-cta .final-copy a svg { display: none; }
+[data-home-section] .final-cta .final-copy a:first-child { border: 0; background: #6F69C7 !important; color: #fff !important; }
+[data-home-section] .final-cta .final-copy a:first-child:hover { background: #7C76D2 !important; }
+/* One crisp 1px border only: the shared secondary button also draws a 1px inset ring, and the two side by side read as a blurred edge. */
+[data-home-section] .final-cta .final-copy a + a, [data-home-section] .final-cta .final-copy a + a:hover { box-shadow: none !important; }
+[data-home-section] .final-cta .final-copy a + a { border: 1px solid rgba(245, 245, 247, 0.36); background: transparent !important; color: #f5f5f7 !important; }
+[data-home-section] .final-cta .final-copy a + a:hover { border-color: rgba(245, 245, 247, 0.64); }
+[data-home-section] .final-cta .final-copy a:active { transform: scale(0.98); }
+
+/* ---------- Screens 5 onward: one wheel move, one screen ---------- */
+/* Every section shorter than a screen (HomePosition marks them data-snap="center") fills exactly the area under the nav with
+   its content centred, so each stop shows that section alone, and each stop holds so a flick cannot skip one. */
+@media (min-width: 1024px) {
+  html.home-snap [data-home-section][data-snap="center"] {
+    display: flex; flex-direction: column; justify-content: center; min-height: calc(100svh - var(--nav-h)); scroll-snap-stop: always;
+  }
+  html.home-snap [data-home-section][data-snap="center"] > * { width: 100%; }
+}
+
+/* ---------- Side position nav ---------- */
+/* The hover label is plain text beside the dot: no pill, backing, border or blur. */
+.home-position-tooltip {
+  right: calc(100% + 10px); padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none;
+  -webkit-backdrop-filter: none; backdrop-filter: none; font-size: 12px; font-weight: 400; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.72);
+}
+
+/* ---------- Footer ---------- */
+/* A bluish-violet near-black (#0D0D12) instead of neutral #0b0b0c; no divider lines; the wordmark exactly as the header's (24px mark,
+   16px text, open tracking); the legal line further down, with follow icons (grey-white) at its right end. On the homepage the
+   footer takes the same 1280px measure as the content. */
+.gfooter { background: #0D0D12; }
+.gfooter-brand { border-bottom: 0; }
+.gfooter-brand > a img { width: 24px; height: 24px; }
+.gfooter-brand > a span { font-size: 16px; letter-spacing: 0.06em; color: #f5f5f7; }
+.gfooter-legal { align-items: center; padding-top: 56px; border-top: 0; }
+.gfooter-social { display: flex; align-items: center; gap: 18px; }
+.gfooter-social a { display: grid; place-items: center; color: rgba(245, 245, 247, 0.6); transition: color 0.2s; }
+.gfooter-social a:hover { color: #f5f5f7; }
+@media (min-width: 1024px) {
+  body:has([data-home-section]) .gfooter-inner { max-width: 1280px; padding-inline: 0; }
+}
+
+/* ---------- Subpage headings (定价, 模型体系, 帮助中心, 联系我们, 社区) ---------- */
+/* Every page's top heading in the format of the homepage's section headings (screen 3 onward): a 13px gradient eyebrow, a 40px
+   Regular title, a 14px Light lead at 56% white, on a 12 / 16px rhythm. Three page structures carry it: .page-hero-title
+   (pricing, contact, community), the help center's .hc-title and the platform's .pm-head. */
+:is(.eyebrow:has(+ :is(.page-hero-title, .hc-title)), .pm-head .pm-eyebrow) {
+  width: fit-content; margin-bottom: 12px !important; font-size: 13px; font-weight: 400; line-height: 20px; letter-spacing: 0.08em;
+  background-image: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important;
+  color: transparent !important; -webkit-text-fill-color: transparent;
+}
+:is(.page-hero-title, .hc-title, .pm-head h1) {
+  margin-top: 0 !important; font-size: clamp(30px, 2.8vw, 40px) !important; font-weight: 400 !important; line-height: 1.18 !important; letter-spacing: 0 !important;
+}
+/* The same height on every page: the help center and the platform page take the pricing page's top padding (page-hero's
+   clamp), so all five headings start at the same distance below the nav at any window height. */
+.hc-hero, .site-container.pm { padding-top: clamp(96px, 16vh, 168px); }
+/* A comma in these titles is drawn as a gap (.pause); here the clauses run together, as on the homepage. */
+:is(.page-hero-title, .hc-title, .pm-head h1) .pause { width: 0; }
+:is(.page-hero-lead, .hc-lead, .pm-lead) {
+  margin-top: 16px !important; font-size: 14px !important; font-weight: 300 !important; line-height: 1.6 !important; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56) !important;
+}
+
+/* ---------- Pricing: switch and plan cards ---------- */
+/* The switch and the cards sit higher (less space under the heading). The switch is a quiet track in the translucent panel
+   grey, the current option on the input-box grey; no white pill. Cards in the panel style of the homepage's screens 5–6 (the
+   panel colour at 50%, 8px radius, no border or colour frame, Pro included), type on the homepage's scale (22px Regular names,
+   Thin prices, Light lines, the display face for numbers), and one button style for all four: an outline pill, no arrow. */
+.page-hero:has(+ .pr) { padding-bottom: 40px; }
+.pr-billing { gap: 8px; margin-bottom: 20px; }
+.pr-billing .hc-switch { padding: 3px; background: rgba(31, 31, 38, 0.5); }
+.pr-billing .hc-switch button { padding: 6px 18px; font-size: 13px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
+.pr-billing .hc-switch button:hover { color: #f5f5f7; }
+.pr-billing .hc-switch button[data-active] { color: #f5f5f7; background: #31313B; }
+.pr-billing p { font-size: 12px; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.pr-plan, .pr-plan[data-plan='team'] { padding: 28px 24px 24px; border-radius: 8px; background: rgba(31, 31, 38, 0.5); box-shadow: none; }
+.pr-plan[data-plan='pro']::before { display: none; }
+.pr-plan h2 { gap: 10px; font-size: 22px; font-weight: 400; letter-spacing: 0; }
+.pr-plan h2 em { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 400; letter-spacing: 0.04em; color: #bcb2f4; background: rgba(111, 105, 199, 0.18); }
+.pr-plan header p { margin-top: 6px; font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-price { margin-top: 28px; }
+.pr-price strong { font: 200 48px/1 var(--font-display); letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+.pr-price[data-text] strong { font-size: 32px; font-weight: 300; letter-spacing: 0; }
+.pr-price span { font-size: 13px; font-weight: 300; color: rgba(245, 245, 247, 0.56); }
+.pr-meter { gap: 2px; margin-top: 28px; }
+.pr-meter i { height: 6px; border-radius: 1px; }
+.pr-mcu { margin-top: 12px; font: 400 12px/1.5 var(--font-display); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; color: rgba(245, 245, 247, 0.4); }
+.pr-mcu b { font-size: 14px; font-weight: 400; color: #f5f5f7; }
+.pr-plan ul { margin: 24px 0 28px; gap: 8px; }
+.pr-plan li { font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.pr-cta { min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; color: #f5f5f7; background: transparent; box-shadow: none; border: 1px solid rgba(245, 245, 247, 0.36); transition: background 0.25s, border-color 0.25s; }
+.pr-cta:hover { background: transparent; border-color: rgba(245, 245, 247, 0.64); }
+
+/* ---------- Pricing: two screens ---------- */
+/* Screen 1 is the heading with the plans; screen 2 (.pr-more) the details. On wide screens with motion allowed the page snaps
+   between the two (each stop holds), then to the footer at the end. Screen 2 fills the area under the nav, content centred. */
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  html:has(.pr-more) { scroll-snap-type: y mandatory; scroll-padding-top: var(--nav-h); }
+  .page-hero:has(+ .pr) { scroll-snap-align: start; scroll-snap-stop: always; }
+  html:has(.pr-more) footer { scroll-snap-align: end; }
+  .pr-more { scroll-snap-align: start; scroll-snap-stop: always; min-height: calc(100svh - var(--nav-h)); display: flex; flex-direction: column; justify-content: center; }
+  .pr:has(.pr-more) { padding-bottom: 0; }
+}
+.pr-more { padding-block: 48px; }
+/* Screen 2 on the homepage scale. Specs: a figure row like screen 7's (Thin figures, Light labels, hairlines between). */
+.pr-more .pr-specs { margin-top: 0; border-top: 0; }
+.pr-more .pr-specs > div { padding: 4px 24px; border-bottom: 0; }
+.pr-more .pr-specs > div:first-child { padding-left: 0; }
+.pr-more .pr-specs > div + div { border-left: 0.5px solid rgba(245, 245, 247, 0.12); }
+.pr-more .pr-specs dt, .pr-more .pr-specs > div:first-child dt { font: 200 clamp(32px, 3vw, 44px)/1.05 var(--font-display); letter-spacing: -0.01em; font-variant-numeric: tabular-nums; color: #f5f5f7; }
+.pr-more .pr-specs dd { margin-top: 10px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+/* Per-model cost: a section heading (40px Regular title, Light lead) and quiet rows on hairlines. */
+.pr-more .pr-models { margin-top: 64px; }
+.pr-more .pr-models-head { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+.pr-more .pr-models-lead { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-more .pr-model-list { margin-top: 28px; border-top: 0.5px solid rgba(245, 245, 247, 0.12); }
+.pr-more .pr-model-list li { padding: 12px 0; border-bottom: 0.5px solid rgba(245, 245, 247, 0.08); }
+.pr-more .pr-model-name { gap: 12px; font: 400 15px/1.4 var(--font-display); letter-spacing: 0.01em; color: #f5f5f7; }
+.pr-more .pr-model-name i { width: 6px; height: 6px; }
+.pr-more .pr-model-fn { font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-more .pr-model-bar { height: 2px; border-radius: 0; background: rgba(245, 245, 247, 0.08); }
+.pr-more .pr-model-bar b { border-radius: 0; background: rgba(var(--m), 0.85); }
+.pr-more .pr-model-time { font: 300 14px/1 var(--font-display); font-variant-numeric: tabular-nums; color: #f5f5f7; }
+.pr-more .pr-model-time small { font: 400 11px/1 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+.pr-more .pr-foot { margin-top: 24px; font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.pr-more .pr-foot a { color: rgba(245, 245, 247, 0.72); }
+
+/* ---------- Platform (模型体系) ---------- */
+/* Laid out like the homepage: the heading, then 核心模型 close under it so the first screen shows MMFold whole (smaller plate,
+   tighter row). Section titles 40px Regular with Light leads; model names 22px Regular with a small round key; Light body text;
+   specs as Light labels with Regular figures on 0.5px hairlines; the engineering table and MoleculeOS points the same; the CTA
+   the homepage's outline pill without an arrow. */
+.site-container.pm #models.pm-section { margin-top: 56px; }
+.site-container.pm h2 { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
+.site-container.pm .pm-sub { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-engines { margin-top: 32px; border-top: 0.5px solid rgba(245, 245, 247, 0.16); }
+.site-container.pm .pm-engine { padding: 28px 0 32px; border-bottom: 0.5px solid rgba(245, 245, 247, 0.1); }
+.site-container.pm .pm-engine h3 { gap: 12px; font-size: 22px; font-weight: 400; letter-spacing: 0; }
+.site-container.pm .pm-engine h3::before { width: 6px; height: 6px; border-radius: 50%; }
+.site-container.pm .pm-engine-kind { margin-top: 6px; padding-left: 18px; font-size: 13px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-art { max-width: 280px; margin-top: 20px; }
+.site-container.pm .pm-engine-body { font-size: 14px; font-weight: 300; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.site-container.pm .pm-stats { margin-top: 20px; }
+.site-container.pm .pm-stats div { padding: 11px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.1); font-size: 14px; }
+.site-container.pm .pm-stats dt { font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-stats dd { font-weight: 400; color: #f5f5f7; }
+.site-container.pm .pm-note { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.site-container.pm .pm-report { font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.site-container.pm .pm-skills { margin-top: 32px; border-top: 0.5px solid rgba(245, 245, 247, 0.16); }
+.site-container.pm .pm-skill { padding: 22px 0; border-bottom: 0.5px solid rgba(245, 245, 247, 0.1); }
+.site-container.pm .pm-skill small { font-size: 11px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.site-container.pm .pm-skill h3 { margin-top: 6px; font-size: 17px; font-weight: 400; }
+.site-container.pm .pm-skill p { font-size: 14px; font-weight: 300; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-skill em { font-size: 14px; font-weight: 300; line-height: 1.65; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.86); }
+/* MoleculeOS closes the page like the sections above: its title on one line across the top with its lead under it (as every
+   section heading), then one row with the plate on the left and the points and button on the right, centred together. Both
+   columns' wrappers step aside (display: contents) so their pieces can be placed on one grid. */
+.site-container.pm .pm-os { padding-top: 0; row-gap: 0; align-items: center; border-top: 0; }
+.site-container.pm .pm-os > div { display: contents; }
+.site-container.pm .pm-os h2 { grid-column: 1 / -1; grid-row: 1; }
+/* The rule sits under the lead, as under 核心模型 (32px below it), not above the title. */
+.site-container.pm .pm-os p.pm-sub { grid-column: 1 / -1; grid-row: 2; max-width: none; margin-top: 16px; padding-bottom: 32px; border-bottom: 0.5px solid rgba(245, 245, 247, 0.16); }
+.site-container.pm .pm-os > div:first-child > :not(h2) { grid-column: 1; grid-row: 3 / span 2; margin-top: 40px; }
+.site-container.pm .pm-os .pm-art { max-width: 320px; margin: 0 0 0 -8px; }
+.site-container.pm .pm-os-points { grid-column: 2; grid-row: 3; align-self: end; margin-top: 40px; }
+.site-container.pm .pm-os-points li:first-child { border-top: 0; }
+.site-container.pm .pm-cta { grid-column: 2; grid-row: 4; align-self: start; margin-top: 28px; }
+.site-container.pm .pm-os-points li { padding: 12px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.1); font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.site-container.pm .pm-cta a { justify-content: center; min-height: 46px; min-width: 148px; padding: 0 36px; border-radius: 999px; border: 1px solid rgba(245, 245, 247, 0.36); background: transparent !important; box-shadow: none !important; color: #f5f5f7 !important; font-size: 15px; font-weight: 500; letter-spacing: 0.04em; }
+.site-container.pm .pm-cta a:hover { border-color: rgba(245, 245, 247, 0.64); }
+.site-container.pm .pm-cta a svg { display: none; }
+
+/* ---------- Help center: tab row ---------- */
+/* The tabs as the pricing switch (a quiet track in the translucent panel grey, the current tab on the input-box grey), and the
+   search moved out of the hero into the same row as a compact pill beside the full-manual link. */
+.hc-switch-row .hc-switch { gap: 2px; padding: 3px; background: rgba(31, 31, 38, 0.5); }
+.hc-switch-row .hc-switch button { padding: 6px 18px; font-size: 13px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
+.hc-switch-row .hc-switch button:hover { color: #f5f5f7; }
+.hc-switch-row .hc-switch button[data-active] { color: #f5f5f7; background: #31313B; }
+.hc-switch-tools { display: flex; align-items: center; gap: 24px; min-width: 0; }
+.hc-switch-tools .hc-search { width: 260px; max-width: none; margin: 0; }
+.hc-switch-tools .docs-search-trigger {
+  width: 100%; height: 34px; padding: 0 14px; gap: 8px; border: 0; border-radius: 999px; background: rgba(31, 31, 38, 0.5); box-shadow: none;
+  font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); transition: background 0.2s, color 0.2s;
+}
+.hc-switch-tools .docs-search-trigger:hover { background: rgba(49, 49, 59, 0.7); color: #f5f5f7; }
+/* No key hint; the placeholder small and quiet. */
+.hc-switch-tools .docs-search-trigger kbd { display: none; }
+.hc-switch-tools .hc-switch-out { font-size: 13px; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-switch-tools .hc-switch-out:hover { color: #f5f5f7; }
+@media (max-width: 899px) { .hc-switch-tools .hc-search { display: none; } }
+
+/* ---------- Help center: case text (核心功能 and 用户案例) ---------- */
+/* Set like the homepage's screen 3 steps: a small kicker (number in light grey, tags dim, the display face, open tracking), a
+   28px Regular title, a 14px Light lead at 56%, and Light body text. The body is 13px at 56% rather than screen 3's 12px at 40%:
+   these are long, step-by-step instructions. Sub-steps (用户案例) get 20px Regular headings and 0.5px rules. */
+.hc-case .hc-kicker, .hs-head .hc-kicker { gap: 4px 12px; margin-bottom: 12px; }
+:is(.hc-case, .hs-head) .hc-kicker span { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC; }
+:is(.hc-case, .hs-head) .hc-kicker em { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.hc-case h2, .hs-head h2 { font-size: 28px; font-weight: 400; line-height: 1.3; letter-spacing: 0; }
+.hc-case .hc-case-lead, .hs-head .hc-sub { margin-top: 14px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-case-figure { margin: 32px 0; }
+.hc-case-figure figcaption { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.hc-case-text { gap: 14px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-case-text strong { font-weight: 400; color: #f5f5f7; }
+.hc-case-text .hc-path-label { font-size: 11px; font-weight: 400; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.hc-case-text .hc-steps li { font-size: 13px; }
+.hs-step { padding: 36px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.12); }
+.hs-step-no { margin-bottom: 10px; font: 400 11px/1 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC; }
+.hs-step h3 { font-size: 20px; font-weight: 400; line-height: 1.35; letter-spacing: 0; }
+.hs-tags em { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.hs-step-body > p { margin-top: 12px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+/* The story list sits under its label, like the core-features index: the sticky block is now the label and list together. */
+@media (min-width: 1100px) {
+  .hs-aside { position: sticky; top: calc(var(--nav-h) + 60px + 28px); align-self: start; }
+  .hs-aside .hs-picker { position: static; }
+}
+.hs-intro { margin-top: 16px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+/* Data tiles: Light labels over Thin figures (as the homepage's figures), on 0.5px rules; the cards in the panel style. */
+.hs-tile, .hs-design .hs-tile { border-top-width: 0.5px; }
+.hs-tile span { font-size: 11px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
+.hs-tile strong { font: 200 28px/1.2 var(--font-display); letter-spacing: 0; font-variant-numeric: tabular-nums; color: #f5f5f7; }
+.hs-tile small { font-size: 12px; font-weight: 300; color: rgba(245, 245, 247, 0.4); }
+:is(.hs-anchor, .hs-variant, .hs-find, .hs-acc, .hs-quad, .hs-grid, .hs-mmflow li) { border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; }
 
 /* ---------- Header bar ---------- */
 /* 80% black behind the blur, with a permanent 0.5px divider (10% white) along the bottom. */
@@ -107,3 +725,241 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .hero-demo-screen .hero-demo-tilt { transform-origin: 50% 0%; perspective: 900px; perspective-origin: 50% -60%; }
 .hero-demo-screen .hero-demo-plane { position: relative; transform-origin: 50% 100%; transform-style: preserve-3d; }
 .hero-demo-screen .hero-demo-squash { transform-origin: 50% 100%; }
+
+/* ---------- Workbench surface colour (screens 1 and 2) ---------- */
+/* The shell, its top bar and its panels share one blue-tinted dark surface instead of the neutral #1e1e1e. */
+.hero-demo-screen .agent-demo-live { --product-bg: #1F1F26; --product-chrome: #1F1F26; }
+.hero-demo-screen .mocha-case-workbench { --case-surface: #1F1F26; }
+.hero-demo-screen .mocha-structure-viewport > img,
+.hero-demo-screen .mocha-structure-hidden { background: #1F1F26; }
+/* The input box sits a step lighter on that surface. */
+.hero-demo-screen .mocha-case-composer { background: #31313B; }
+/* Hairline dividers (0.5px): under the top bar, between the structure and Mocha columns, under each panel header, and the table grid. */
+.hero-demo-screen .mocha-case-top { border-bottom-width: 0.5px; }
+.hero-demo-screen .mocha-case-grid.has-structure .mocha-case-structure { border-right-width: 0.5px; border-bottom-width: 0.5px; }
+.hero-demo-screen .mocha-structure-heading,
+.hero-demo-screen .mocha-case-chat-head { border-bottom-width: 0.5px; }
+.hero-demo-screen .mocha-case-table-scroll :is(th, td) { border-width: 0.5px; }
+/* Mocha's four module cards: the input box colour at 50% opacity. */
+.hero-demo-screen .mocha-welcome-modules li { background: rgba(49, 49, 59, 0.5); }
+/* Mocha's input box: shorter, and lifted clear of the panel's bottom edge. */
+.hero-demo-screen .mocha-case-composer-zone { padding-bottom: 1rem; }
+.hero-demo-screen .mocha-case-composer textarea { min-height: 3rem; }
+/* Mocha's run output on the same blue-grey scale (#1F1F26 surface → #31313B input) instead of neutral greys, which read warm here. */
+.hero-demo-screen .mocha-case-step,
+.hero-demo-screen .mocha-case-result { background: #272730; border-color: #3A3A46; }
+.hero-demo-screen .mocha-case-thinking { border-color: #454552; }
+.hero-demo-screen .mocha-case-score-progress { background: #3A3A46; }
+.hero-demo-screen .mocha-case-table-scroll th { background: #2D2D37; }
+.hero-demo-screen .mocha-case-table-scroll :is(th, td) { border-color: #3A3A46; }
+/* The 3D structure toolbar: its #090909 backing at 30% opacity, so the structure shows through. */
+.hero-demo-screen .mocha-structure-toolbar { background: rgba(9, 9, 9, 0.3); }
+
+/* ---------- Help center: developer tab — same panels and type scale as the case pages ---------- */
+.hc-dev { gap: 16px; align-items: start; }
+/* Both cards share one height when the MCP setup is folded; opening it lets the MCP card grow on its own. */
+.hc-dev-card { display: flex !important; flex-direction: column; min-height: 320px; }
+.hc-dev-card { gap: 0 !important; padding: 28px 28px 32px !important; border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; box-shadow: none !important; }
+.hc-dev-icon { width: 32px !important; height: 32px !important; margin-bottom: 20px !important; border-radius: 6px !important; color: #C7C7CC !important; background: rgba(255, 255, 255, 0.05) !important; }
+.hc-dev-icon svg { width: 16px; height: 16px; }
+.hc-dev-card .hc-badge { position: absolute; right: 28px; top: 30px; padding: 2px 10px !important; border-radius: 999px; font-size: 11px !important; font-weight: 400 !important; letter-spacing: .04em; color: #bcb2f4 !important; background: rgba(111, 105, 199, 0.16) !important; box-shadow: none !important; }
+.hc-dev-card h2 { font-size: 24px !important; font-weight: 400 !important; line-height: 1.25; letter-spacing: 0; color: #F5F5F7; }
+.hc-dev-card p { margin-top: 12px; font-size: 14px !important; font-weight: 300; line-height: 1.7 !important; color: rgba(245, 245, 247, 0.56) !important; }
+.hc-dev-card em { margin-top: 10px !important; font-size: 13px !important; font-weight: 300; line-height: 1.7; color: rgba(245, 245, 247, 0.4) !important; }
+.hc-mcp { gap: 8px !important; margin-top: 24px !important; padding-top: 20px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
+.hc-mcp h3 { margin-top: 12px !important; font-family: var(--font-display, inherit); font-size: 11px !important; font-weight: 400 !important; letter-spacing: .08em; text-transform: uppercase; color: #C7C7CC !important; }
+.hc-mcp h3:first-child { margin-top: 0 !important; }
+.hc-mcp pre { padding: 12px 14px !important; border-radius: 6px !important; font-size: 12px !important; line-height: 1.6 !important; color: rgba(245, 245, 247, 0.8) !important; background: #1F1F26 !important; box-shadow: none !important; border: 0 !important; }
+.hc-mcp dl { gap: 0 !important; }
+.hc-mcp dl > div { padding: 10px 0; border-top: 0.5px solid rgba(255, 255, 255, 0.08); }
+.hc-mcp dt { font-size: 12px !important; color: rgba(245, 245, 247, 0.8) !important; }
+.hc-mcp dd { margin-top: 2px; font-size: 13px !important; font-weight: 300; line-height: 1.6; color: rgba(245, 245, 247, 0.48) !important; }
+
+/* ---------- Help center: FAQ — groups on the left like the user stories picker, one accordion of questions on the right ---------- */
+.hc-faq.hs-layout { max-width: none; }
+.hc-faq-list { margin-top: 0 !important; max-width: 760px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
+.hc-faq-list > [data-state] { border-bottom: 0.5px solid rgba(255, 255, 255, 0.1) !important; border-color: rgba(255, 255, 255, 0.1) !important; }
+.hc-faq-list button { min-height: 0 !important; padding: 20px 0 !important; font-size: 16px !important; font-weight: 400 !important; line-height: 1.5; color: rgba(245, 245, 247, 0.72); transition: color .2s; }
+.hc-faq-list button:hover, .hc-faq-list button[data-state="open"] { color: #F5F5F7; }
+.hc-faq-list button svg { width: 14px; height: 14px; color: rgba(245, 245, 247, 0.4); }
+.hc-faq-list [role="region"] > div { padding: 0 40px 22px 0 !important; font-size: 13px; font-weight: 300; line-height: 1.8 !important; color: rgba(245, 245, 247, 0.56); }
+.hc-faq-list h3 { display: block; width: 100%; max-width: none !important; }
+.hc-faq-list button { width: 100% !important; }
+
+/* ---------- Contact: a compact, borderless form that fits on one screen; submit stays grey until the required fields are filled ---------- */
+.contact-panel { max-width: 640px !important; padding: 28px 32px 24px !important; border: 0 !important; border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; box-shadow: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.contact-panel::before, .contact-panel::after { display: none !important; }
+.contact-form { gap: 16px 20px !important; }
+.contact-form label { font-size: 12px !important; font-weight: 400 !important; line-height: 18px; color: rgba(245, 245, 247, 0.56); }
+.contact-form label > span { color: #bcb2f4 !important; }
+.contact-form :is(input, select, textarea) { margin-top: 6px !important; min-height: 0 !important; height: 40px; padding: 0 14px !important; border: 0 !important; border-radius: 6px !important; font-size: 14px !important; font-weight: 400; color: #F5F5F7; background-color: rgba(255, 255, 255, 0.05) !important; box-shadow: inset 0 0 0 1px transparent; transition: box-shadow .2s, background-color .2s; }
+.contact-form :is(input, select, textarea):hover { background-color: rgba(255, 255, 255, 0.07) !important; }
+.contact-form :is(input, select, textarea):focus { box-shadow: inset 0 0 0 1px rgba(124, 118, 210, 0.7); }
+.contact-form select { appearance: none; -webkit-appearance: none; padding-right: 36px !important; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(245,245,247,0.4)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important; background-repeat: no-repeat !important; background-position: right 14px center !important; }
+.contact-form select:invalid { color: rgba(245, 245, 247, 0.4); }
+.contact-form option { color: #F5F5F7; background: #1F1F26; }
+.contact-form textarea { height: 88px; padding: 10px 14px !important; line-height: 1.6; resize: none; }
+.contact-actions { display: grid; justify-items: center; gap: 12px; margin-top: 4px; }
+.contact-actions p { margin-top: 0 !important; font-size: 12px !important; font-weight: 300; color: rgba(245, 245, 247, 0.4) !important; text-align: center; }
+.contact-submit { width: min(280px, 100%); height: 40px !important; min-height: 0 !important; border-radius: 999px !important; font-size: 14px !important; font-weight: 400 !important; color: #fff !important; background: #6F69C7 !important; box-shadow: none !important; transition: background-color .2s, color .2s; }
+.contact-submit:hover:not(:disabled) { background: #7C76D2 !important; }
+.contact-submit:disabled:not(.contact-sending) { opacity: 1 !important; cursor: not-allowed; color: rgba(245, 245, 247, 0.32) !important; background: rgba(255, 255, 255, 0.08) !important; }
+.contact-submit .contact-spinner { border-color: rgba(255, 255, 255, 0.25); border-top-color: #fff; }
+/* Pull the form up under the heading so the whole page sits on one screen. */
+.page-hero:has(+ section .contact-panel) { padding-bottom: 56px !important; }
+section:has(> .site-container > .contact-panel) { padding-top: 0 !important; padding-bottom: 72px !important; }
+.contact-actions p:empty { display: none; }
+
+.hc-mcp-fold { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s cubic-bezier(.2, .7, .2, 1); }
+.hc-mcp-fold[data-open] { grid-template-rows: 1fr; }
+.hc-mcp-fold > .hc-mcp { min-height: 0; overflow: hidden; margin-top: 0 !important; padding-top: 0; border-top: 0; opacity: 0; transition: opacity .3s; }
+.hc-mcp-fold[data-open] > .hc-mcp { margin-top: 24px !important; padding-top: 20px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); opacity: 1; }
+.hc-mcp-toggle { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; margin-top: auto; padding-top: 24px; font-size: 13px; font-weight: 400; color: #7C76D2; transition: color .2s; }
+.hc-mcp-fold[data-open] + .hc-mcp-toggle { padding-top: 16px; }
+.hc-mcp-toggle:hover { color: #9a95e0; }
+.hc-mcp-toggle svg { transition: transform .3s; }
+.hc-mcp-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+/* ---------- Help center: core features — every surface on the 8px card radius, no outlines ---------- */
+.hc-index button { border-radius: 8px !important; }
+.hc-index button[data-active] { background: rgba(31, 31, 38, 0.5) !important; }
+.hc-index-manual, .hc-detail-nav { border-top-width: 0.5px !important; }
+.hc-frame { border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; box-shadow: none !important; }
+.hc-frame figcaption { border-top: 0 !important; }
+.hc-thumbs button { border-radius: 6px !important; box-shadow: none !important; opacity: 0.4; }
+.hc-thumbs button:hover { opacity: 0.75; }
+.hc-thumbs button:focus:not(:focus-visible) { outline: none; }
+.hc-thumbs button[data-active] { opacity: 1; box-shadow: 0 0 0 1px rgba(var(--c), 0.8) !important; }
+/* Numbers here use the homepage's display face, not the monospace. */
+.hc-frame figcaption > span, .hc-frame figcaption > span small { font-family: var(--font-display) !important; font-weight: 400 !important; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
+.hc-steps li > span { font: 400 12px/1 var(--font-display) !important; font-variant-numeric: tabular-nums; }
+:is(.hs-picker, .hc-index button) i { font: 400 12px/1 var(--font-display) !important; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; }
+.hc-prompt { border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; box-shadow: none !important; }
+/* The example-command card spans the full case column like the screenshot above it; the prose keeps its reading width. */
+.hc-case-text { max-width: none !important; }
+.hc-case-text > :not(.hc-prompt) { max-width: 680px; }
+
+/* ---------- Site-wide card shape: 8px radius for cards and product windows, 6px for tiles inside them, no outlines ---------- */
+:is(.cm-feature, .cm-program, .hs-next, .hs-conclusion, .help-panel, .access-card, .access-panel, .hc-card, .hc-more-card, .hc-case, .hc-block, .hc-mini, .case-card, .interactive-card, .hc-flow-box, .hc-demo, .hs-grid, .hs-quad, .hs-acc, .hs-find, .case-stage, .case-index-item) {
+  border-radius: 8px !important; border: 0 !important; box-shadow: none !important;
+}
+:is(.cm-feature, .cm-program, .hs-next, .hs-conclusion, .help-panel, .access-card, .access-panel, .hc-card, .hc-more-card, .case-stage) { background: rgba(31, 31, 38, 0.5) !important; }
+:is(.cm-feature, .cm-program, .hs-next, .help-panel, .access-card, .access-panel, .hc-card, .hc-more-card):hover { background: rgba(31, 31, 38, 0.8) !important; }
+.case-index-hl { border-radius: 8px !important; border: 0 !important; box-shadow: none !important; background: none !important; }
+:is(.model-plate, .model-stack-steps li, .agent-demo-slot, .agent-demo, .mm-demo, .demo-edge > .agent-demo-slot, .hs-shot img) { border-radius: 8px !important; }
+:is(.hs-tile, .hs-anchor, .hs-variant, .hs-mmflow li, .hs-takeaway, .cs-chart, .hc-soon-body) { border-radius: 6px !important; border: 0 !important; box-shadow: none !important; }
+:is(.op-section, [data-home-section]) .mm-demo.op-mm-demo { border-radius: 8px !important; }
+/* Contact: some life — a slow colour glow behind the panel, violet focus, required marks that settle once filled, a button that lights up when ready. */
+.contact-panel { position: relative; isolation: isolate; overflow: visible !important; }
+.contact-panel::after { content: '' !important; display: block !important; position: absolute; left: 10%; right: 10%; top: -12%; height: 70%; z-index: -1; background: radial-gradient(50% 50% at 30% 50%, rgba(156, 205, 240, 0.16), transparent 70%), radial-gradient(50% 50% at 70% 50%, rgba(188, 178, 244, 0.2), transparent 70%); filter: blur(48px); opacity: .7; transition: opacity .6s; animation: contact-drift 14s ease-in-out infinite alternate; pointer-events: none; }
+.contact-panel:focus-within::after { opacity: 1; }
+@keyframes contact-drift { to { transform: translateX(6%) scale(1.08); } }
+.contact-form label { transition: color .2s; }
+.contact-form label:focus-within { color: #bcb2f4; }
+.contact-form label > span { display: inline-block; margin-left: 3px; transition: opacity .3s, transform .3s; }
+.contact-form label:has(> :is(input, select):required:valid) > span { opacity: 0; transform: scale(.4); }
+.contact-form :is(input, textarea) { caret-color: #bcb2f4; }
+.contact-form :is(input, select, textarea):focus { background-color: rgba(111, 105, 199, 0.10) !important; box-shadow: inset 0 0 0 1px rgba(124, 118, 210, 0.75), 0 0 0 4px rgba(111, 105, 199, 0.12); }
+.contact-form [aria-invalid] { box-shadow: inset 0 0 0 1px rgba(230, 140, 160, 0.7) !important; }
+.contact-hint { display: block; margin-top: 6px; font-style: normal; font-size: 12px; font-weight: 300; color: #e6a3b4; animation: contact-rise .3s ease-out both; }
+.contact-submit { position: relative; overflow: hidden; }
+.contact-submit:enabled { animation: contact-ready .6s cubic-bezier(.2, .7, .2, 1); box-shadow: 0 8px 28px -10px rgba(111, 105, 199, 0.8) !important; }
+.contact-submit:enabled::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, 0.22) 50%, transparent 70%) -100% 0 / 200% 100% no-repeat; animation: contact-shine 3.2s ease-in-out 0.6s infinite; pointer-events: none; }
+.contact-submit:hover:not(:disabled) { transform: translateY(-1px); }
+@keyframes contact-ready { 0% { transform: scale(.96); } 60% { transform: scale(1.03); } 100% { transform: scale(1); } }
+@keyframes contact-shine { 0%, 60% { background-position: -100% 0; } 100% { background-position: 200% 0; } }
+@media (prefers-reduced-motion: reduce) { .contact-panel::after, .contact-submit, .contact-submit::after { animation: none !important; } }
+
+/* ---------- Community: the site's type scale and panels, plus a little life (live pulse, drifting glow, rows that respond) ---------- */
+.cm .cm-block { padding-top: clamp(64px, 9vh, 96px); }
+.cm .cm-block:first-child { padding-top: 0; }
+.cm .cm-head { margin-bottom: 20px; font: 400 clamp(24px, 2.2vw, 28px)/1.25 var(--font-display); letter-spacing: 0; color: #F5F5F7; }
+
+/* Feishu: the one open channel */
+.cm .cm-feature { position: relative; isolation: isolate; overflow: hidden; gap: 48px; padding: clamp(28px, 3.4vw, 44px) !important; transition: background .4s, transform .4s cubic-bezier(.2, .7, .2, 1); }
+.cm .cm-feature::before { content: ''; position: absolute; z-index: -1; width: 70%; height: 140%; left: -10%; top: -60%; background: radial-gradient(40% 40% at 35% 55%, rgba(156, 205, 240, 0.14), transparent 70%), radial-gradient(40% 40% at 65% 45%, rgba(188, 178, 244, 0.16), transparent 70%), radial-gradient(30% 30% at 55% 70%, rgba(230, 179, 205, 0.10), transparent 70%); filter: blur(30px); animation: cm-drift 16s ease-in-out infinite alternate; pointer-events: none; }
+.cm .cm-feature:hover::before { animation-duration: 8s; }
+@keyframes cm-drift { to { transform: translate(18%, 12%) rotate(8deg) scale(1.1); } }
+.cm .cm-live { gap: 10px; font: 400 12px/1.4 var(--font-display); letter-spacing: 0.06em; color: #9be3c4; }
+.cm .cm-live i { width: 6px; height: 6px; background: #5fd3a8; box-shadow: 0 0 10px rgba(95, 211, 168, 0.8); }
+.cm .cm-live i::after { inset: -5px; border-color: rgba(95, 211, 168, 0.6); }
+.cm .cm-feature h3 { margin-top: 16px; font: 400 clamp(30px, 3vw, 40px)/1.18 var(--font-display); letter-spacing: 0; color: #F5F5F7; }
+.cm .cm-feature-main > p:not(.cm-live) { margin-top: 14px; max-width: 28em; font-size: 14px; font-weight: 300; line-height: 1.8; color: rgba(245, 245, 247, 0.56); }
+.cm .cm-cta { gap: 6px; margin-top: 28px; min-height: 0; height: 40px; padding: 0 22px; font-size: 14px; font-weight: 400; color: #fff; background: #6F69C7 !important; box-shadow: 0 8px 28px -12px rgba(111, 105, 199, 0.9); transition: background-color .2s, transform .3s cubic-bezier(.2, .7, .2, 1); }
+.cm .cm-cta svg { display: none; }
+.cm .cm-feature:hover .cm-cta { background: #7C76D2 !important; transform: translateY(-1px); }
+.cm .cm-feature-list { counter-reset: cm; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
+.cm .cm-feature-list li { counter-increment: cm; display: flex; align-items: baseline; gap: 16px; padding: 16px 0; border-bottom: 0.5px solid rgba(255, 255, 255, 0.1); font-size: 15px; font-weight: 400; color: rgba(245, 245, 247, 0.86); transition: transform .45s cubic-bezier(.2, .7, .2, 1), color .3s; }
+.cm .cm-feature-list li::before { content: counter(cm, decimal-leading-zero); font: 400 11px/1 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC; }
+.cm .cm-feature-list li::after { content: ''; width: 5px; height: 5px; margin-left: auto; align-self: center; border-radius: 50%; background: #9ccdf0; opacity: .7; }
+.cm .cm-feature-list li:nth-child(2)::after { background: #bcb2f4; }
+.cm .cm-feature-list li:nth-child(3)::after { background: #e6b3cd; }
+.cm .cm-feature:hover .cm-feature-list li { transform: translateX(4px); color: #F5F5F7; }
+.cm .cm-feature:hover .cm-feature-list li:nth-child(2) { transition-delay: .05s; }
+.cm .cm-feature:hover .cm-feature-list li:nth-child(3) { transition-delay: .1s; }
+
+/* Programs in preparation */
+.cm .cm-programs { gap: 16px; }
+.cm .cm-program { padding: 28px !important; transition: background .3s, transform .4s cubic-bezier(.2, .7, .2, 1); }
+.cm .cm-program:hover { transform: translateY(-2px); }
+.cm .cm-soon { padding: 2px 10px; font: 400 11px/1.6 var(--font-display); letter-spacing: 0.04em; color: #bcb2f4; background: rgba(111, 105, 199, 0.16); }
+.cm .cm-program h3 { margin-top: 20px; font: 400 20px/1.3 var(--font-display); color: #F5F5F7; }
+.cm .cm-program p { margin-top: 8px; font-size: 13px; font-weight: 300; line-height: 1.8; color: rgba(245, 245, 247, 0.56); }
+
+/* Public channels */
+.cm .cm-channels { gap: 40px 64px; }
+.cm .cm-group { padding-bottom: 12px; font: 400 11px/1.4 var(--font-display); letter-spacing: 0.08em; color: #C7C7CC; border-bottom: 0.5px solid rgba(255, 255, 255, 0.14); }
+.cm .cm-channel-group li { padding: 18px 0; border-bottom: 0.5px solid rgba(255, 255, 255, 0.1); }
+.cm .cm-channel-group li > a { padding: 0; border-bottom: 0; }
+.cm .cm-channel-group strong { font: 400 15px/1.4 var(--font-display); color: #F5F5F7; transition: color .2s; }
+.cm .cm-channel-group span { margin-top: 4px; font-size: 13px; font-weight: 300; line-height: 1.6; color: rgba(245, 245, 247, 0.48); }
+.cm .cm-channel-group em { font: 400 11px/1.6 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
+.cm .cm-channel-group li > a em { font-size: 15px; color: #7C76D2; transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
+.cm .cm-channel-group li > a:hover strong { text-decoration: none; color: #bcb2f4; }
+.cm .cm-channel-group li > a:hover em { transform: translate(2px, -2px); }
+
+/* Closing row */
+.cm .cm-contact { margin-top: clamp(72px, 10vh, 112px); padding-top: 32px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
+.cm .cm-contact h2 { font: 400 20px/1.3 var(--font-display); color: #F5F5F7; }
+.cm .cm-contact p { margin-top: 6px; font-size: 13px; font-weight: 300; color: rgba(245, 245, 247, 0.56); }
+.cm .cm-contact a { height: 40px; min-height: 0; padding: 0 22px; border: 1px solid rgba(245, 245, 247, 0.36) !important; border-radius: 999px; font-size: 14px; font-weight: 400; color: #F5F5F7; background: transparent !important; box-shadow: none !important; transition: border-color .2s, background-color .2s; }
+.cm .cm-contact a:hover { border-color: rgba(245, 245, 247, 0.6) !important; background: rgba(255, 255, 255, 0.04) !important; }
+.cm .cm-contact a svg { display: none; }
+@media (prefers-reduced-motion: reduce) { .cm .cm-feature::before { animation: none; } }
+html.home-snap { scrollbar-gutter: stable; } /* pausing scroll after layer 03 (model-stack-section) hides the scrollbar; keep its room so nothing shifts */
+/* English screen 3 heading: the second line of the title stays whole, and the lead wraps to the title's width (it adds nothing to
+   the heading's width, it only fills it). */
+:lang(en) .op-head { width: fit-content; max-width: 100%; }
+:lang(en) .op-head .section-title { max-width: none; }
+:lang(en) .op-head .vegf-case { contain: inline-size; }
+
+/* ---------- Contact, lighter and livelier: a faintly tinted panel, underline fields that light up in the brand gradient, request
+   types as colour chips, and a progress line along the top that fills as the required fields are done. ---------- */
+.contact-panel { background: linear-gradient(160deg, rgba(156, 205, 240, 0.07), rgba(188, 178, 244, 0.05) 45%, rgba(230, 179, 205, 0.05)), rgba(31, 31, 38, 0.35) !important; padding-top: 32px !important; }
+.contact-progress { position: absolute; left: 0; top: 0; height: 2px; width: calc(var(--p) * 100%); border-radius: 8px 0 0 0; background: linear-gradient(90deg, #9ccdf0, #bcb2f4, #e6b3cd); background-size: 640px 100%; box-shadow: 0 0 12px rgba(188, 178, 244, 0.6); transition: width .6s cubic-bezier(.2, .7, .2, 1); }
+.contact-form { gap: 20px 28px !important; }
+.contact-form :is(input, textarea) { margin-top: 2px !important; height: 36px; padding: 0 !important; border-radius: 0 !important; background-color: transparent !important; background-image: linear-gradient(90deg, #9ccdf0, #bcb2f4, #e6b3cd) !important; background-repeat: no-repeat !important; background-position: 0 100% !important; background-size: 0% 1px !important; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.14) !important; transition: background-size .5s cubic-bezier(.2, .7, .2, 1), box-shadow .3s !important; }
+.contact-form :is(input, textarea):hover { background-color: transparent !important; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.28) !important; }
+.contact-form :is(input, textarea):focus { background-color: transparent !important; background-size: 100% 1px !important; box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.14) !important; }
+.contact-form textarea { height: 60px; padding: 8px 0 !important; }
+.contact-form [aria-invalid] { box-shadow: inset 0 -1px 0 rgba(230, 140, 160, 0.9) !important; background-size: 0% 1px !important; }
+
+/* Request type chips */
+.contact-chips { min-width: 0; margin: 0; padding: 0; border: 0; }
+.contact-chips legend { margin-bottom: 10px; padding: 0; font-size: 12px; font-weight: 400; line-height: 18px; color: rgba(245, 245, 247, 0.56); transition: color .2s; }
+.contact-chips legend > span { display: inline-block; margin-left: 3px; color: #bcb2f4; transition: opacity .3s, transform .3s; }
+.contact-chips:has(:checked) legend > span { opacity: 0; transform: scale(.4); }
+.contact-chips:focus-within legend { color: #bcb2f4; }
+.contact-chips > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.contact-form .contact-chips label { position: relative; display: inline-flex; color: inherit; cursor: pointer; }
+.contact-form .contact-chips input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0 !important; padding: 0 !important; opacity: 0; cursor: pointer; }
+.contact-chips i { display: inline-flex; align-items: center; height: 30px; padding: 0 14px; border-radius: 999px; font-style: normal; font-size: 13px; font-weight: 400; white-space: nowrap; color: rgba(245, 245, 247, 0.72); background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px transparent; transition: color .2s, background-color .25s, box-shadow .25s, transform .3s cubic-bezier(.2, .7, .2, 1); }
+.contact-chips label:hover i { color: #F5F5F7; background: rgba(var(--h), 0.12); }
+.contact-chips input:focus-visible + i { box-shadow: inset 0 0 0 1px rgba(var(--h), 0.6); }
+.contact-chips input:checked + i { color: #fff; background: rgba(var(--h), 0.22); box-shadow: inset 0 0 0 1px rgba(var(--h), 0.55), 0 0 18px -4px rgba(var(--h), 0.6); animation: contact-chip .4s cubic-bezier(.2, .7, .2, 1); }
+@keyframes contact-chip { 50% { transform: scale(1.06); } }
+
+/* A violet gradient on the ready button */
+.contact-submit:enabled { background: linear-gradient(100deg, #6F69C7, #8B7FE0) !important; }
+.contact-submit:hover:not(:disabled) { background: linear-gradient(100deg, #7C76D2, #988DEA) !important; }
+@media (prefers-reduced-motion: reduce) { .contact-progress, .contact-chips i { transition: none; animation: none !important; } }

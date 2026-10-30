@@ -68,9 +68,14 @@ function words(text: string, seg: Segmenter): string[] {
     if (joinNext && items.length) { items[items.length - 1] += piece; joinNext = false; return; }
     items.push(piece);
   };
-  for (const [token, cjk, space] of Array.from(text.matchAll(TOKEN), m => [m[0], m[1], m[2]] as const)) {
-    if (space) { items.push(token); continue; }
-    if (cjk) { for (const word of cjkWords(token, seg)) push(word); continue; }
+  for (const [whole, cjk, space] of Array.from(text.matchAll(TOKEN), m => [m[0], m[1], m[2]] as const)) {
+    // A preposition ending a Chinese run binds to the word after the space too ("将 MoleculeOS"): the space becomes a no-break space.
+    if (space) { if (items.length && LEAD.test(items[items.length - 1])) { items[items.length - 1] += ' '; joinNext = true; } else items.push(whole); continue; }
+    if (cjk) { for (const word of cjkWords(whole, seg)) push(word); continue; }
+    // Closing punctuation in front of a Latin run ("、VHH") belongs to the word before it, or it would start a line.
+    let token = whole;
+    const closing = /^[、，。；：！？）》」』”’,.;:!?)\]]+(?=\S)/.exec(token)?.[0];
+    if (closing && items.length && !/^\s+$/.test(items[items.length - 1]) && !joinNext) { items[items.length - 1] += closing; token = token.slice(closing.length); }
     // A non-CJK token: opening brackets lead the next word; anything else (Latin, digits, closing marks) is a word of its own,
     // except bare punctuation, which joins the word before it.
     if (OPENING.test(token)) { push(token); joinNext = true; continue; }

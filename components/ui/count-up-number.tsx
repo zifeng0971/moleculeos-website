@@ -5,12 +5,13 @@ import { useInView, useReducedMotion } from 'framer-motion';
 
 export function CountUpNumber({ to, suffix = '' }: { to: number; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.5 });
+  // Not once: leaving the screen resets the figure, so it counts up again each time it comes into view.
+  const inView = useInView(ref, { amount: 0.5 });
   const reduceMotion = useReducedMotion();
   const [value, setValue] = useState(reduceMotion ? to : 0);
 
   useEffect(() => {
-    if (!inView) return;
+    if (!inView) { if (!reduceMotion) setValue(0); return; }
     if (reduceMotion) { setValue(to); return; }
     const start = performance.now();
     let frame = 0;
@@ -30,11 +31,12 @@ export function CountUpNumber({ to, suffix = '' }: { to: number; suffix?: string
 /** Animates every number in a string ("94.7%", "9–50", "18"), keeping its decimals, dashes and suffixes. */
 export function CountUpText({ text }: { text: string }) {
   const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, amount: 0.5 });
+  // Not once: leaving the screen resets the figure, so it counts up again each time it comes into view.
+  const inView = useInView(ref, { amount: 0.5 });
   const reduceMotion = useReducedMotion();
   const [progress, setProgress] = useState(reduceMotion ? 1 : 0);
   useEffect(() => {
-    if (!inView) return;
+    if (!inView) { if (!reduceMotion) setProgress(0); return; }
     if (reduceMotion) { setProgress(1); return; }
     const start = performance.now();
     let frame = 0;

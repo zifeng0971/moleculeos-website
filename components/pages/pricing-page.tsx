@@ -2,7 +2,6 @@
 
 import { useState, type CSSProperties } from 'react';
 import Link from 'next/link';
-import { ArrowUpRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { SITE_CONFIG, localizeHref, type Locale } from '@/lib/site-config';
 import { MODULE } from '@/lib/palette';
@@ -52,11 +51,13 @@ export function PricingPage({ locale }: { locale: Locale }) {
             </div>
             <p className="pr-mcu">{team ? <span>{plan.mcuNote}</span> : <><b>{plan.mcu}</b> {t('mcuUnit')}<span> · {plan.mcuNote}</span></>}</p>
             <ul>{plan.features.map(f => <li key={f}><Flow text={f} /></li>)}</ul>
-            <Link href={href} target={team ? undefined : '_blank'} rel={team ? undefined : 'noreferrer'} className={plan.id === 'pro' ? 'pr-cta pr-cta-primary' : 'pr-cta'}>{plan.cta}<ArrowUpRight size={15} aria-hidden="true" /></Link>
+            <Link href={href} target={team ? undefined : '_blank'} rel={team ? undefined : 'noreferrer'} className={plan.id === 'pro' ? 'pr-cta pr-cta-primary' : 'pr-cta'}>{plan.cta}</Link>
           </article>
         </Reveal>;
       })}</div>
 
+      {/* Second screen: the plan details (specs, per-model cost, footnote); the page snaps between it and the plans above. */}
+      <section className="pr-more">
       <Reveal><dl className="pr-specs">{specs.map(s => <div key={s.label}><dt>{s.value}</dt><dd><Flow text={s.label} /></dd></div>)}</dl></Reveal>
       <section className="pr-models">
         <Reveal><h2 className="pr-models-head">{t('models.title')}</h2><p className="pr-models-lead"><Flow text={t('models.lead')} /></p></Reveal>
@@ -69,6 +70,7 @@ export function PricingPage({ locale }: { locale: Locale }) {
         </li>)}</ul></Reveal>
       </section>
       <p className="pr-foot">{t('footnote')} <Link href={localizeHref('/help/faq', locale)}>{t('moreQuestions')} →</Link></p>
+      </section>
     </div>
   </>;
 }

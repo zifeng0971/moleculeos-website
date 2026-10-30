@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import { useReducedMotion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Reveal, staggerDelay } from '@/components/motion/reveal';
@@ -40,6 +42,7 @@ export function TrustSection({ embedded = false }: { embedded?: boolean }) {
   return (
     <section className="proof-band" data-nav-section={embedded ? undefined : 'validation'}>
       <div className="site-container">
+        <Reveal><p className="eyebrow proof-eyebrow">{t('eyebrow')}</p></Reveal>
         <div className="proof-stats">
           {items.map((item, index) => <Reveal key={item.label} delay={staggerDelay(index, items.length)} className="proof-stat">
             <p className="stat-value"><CountUpText text={item.value}/></p>
@@ -50,7 +53,9 @@ export function TrustSection({ embedded = false }: { embedded?: boolean }) {
         <Reveal><p className="proof-condition"><Flow text={condition} /></p>
           <p className="proof-source">{t('source')} <a href={REPORT_URL} target="_blank" rel="noopener noreferrer">{t('reportLabel')}<ArrowUpRight size={14} aria-hidden="true" /></a></p></Reveal>
         <Reveal className="proof-partners">
-          <p>{t('label')}</p>
+          {/* Partners and their feedback read as one block under one eyebrow; the two old labels stay in the copy, hidden on the homepage. */}
+          <p className="eyebrow proof-eyebrow proof-partners-eyebrow">{t('partnersEyebrow')}</p>
+          <p className="proof-partners-label">{t('label')}</p>
           {/* Partners drift by slowly, logos only; the loop pauses under the pointer. Only the first set is read out. */}
           <div className="partner-marquee">
             <ul className="partner-track">
@@ -63,15 +68,48 @@ export function TrustSection({ embedded = false }: { embedded?: boolean }) {
         {/* Customer feedback: four short quotes under the partner logos, the key phrase of each lit up. */}
         <div className="proof-voices">
           <Reveal><p className="proof-voices-label">{t('feedback.label')}</p></Reveal>
-          <ul>
-            {feedback.map((quote, index) => <Reveal key={quote.hl} delay={staggerDelay(index, feedback.length)} className="proof-voice">
-              <li>
-                <p>“<Flow text={quote.pre} /><em><Flow text={quote.hl} /></em><Flow text={quote.post} />”</p>
-              </li>
-            </Reveal>)}
-          </ul>
+          <Reveal><VoiceCarousel items={feedback} /></Reveal>
         </div>
       </div>
     </section>
   );
+}
+
+// How long each quote stays while the feedback plays on its own (ms).
+const VOICE_HOLD = 5000;
+
+/**
+ * Customer feedback, one quote at a time: centred and larger, each new one rolling up from below, with a row of hairline segments
+ * (the current one lit) to pick one. All quotes share one grid cell, so the block keeps the height of the longest. Pauses
+ * under the pointer and off screen.
+ */
+function VoiceCarousel({ items }: { items: { pre: string; hl: string; post: string }[] }) {
+  const reduce = useReducedMotion();
+  const root = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0), [inView, setInView] = useState(false), [hovered, setHovered] = useState(false);
+  useEffect(() => {
+    // Each time it comes into view it starts again from the first quote.
+    const observer = new IntersectionObserver(([entry]) => { setInView(entry.isIntersecting); if (entry.isIntersecting) setActive(0); }, { threshold: 0.5 });
+    observer.observe(root.current!);
+    return () => observer.disconnect();
+  }, []);
+  const playing = !reduce && inView && !hovered;
+  useEffect(() => {
+    if (!playing) return;
+    const timer = window.setTimeout(() => setActive(i => (i + 1) % items.length), VOICE_HOLD);
+    return () => window.clearTimeout(timer);
+  }, [playing, active, items.length]);
+  return <div ref={root} className="voice-carousel" onPointerEnter={() => setHovered(true)} onPointerLeave={() => setHovered(false)}>
+    <span className="proof-voice-mark" aria-hidden="true">“</span>
+    <div className="voice-stage" aria-live="polite">
+      {items.map((quote, i) => <p key={quote.hl} className="voice-quote" data-on={i === active || undefined} aria-hidden={i !== active || undefined}>
+        <Flow text={quote.pre} /><em><Flow text={quote.hl} /></em><Flow text={quote.post} />
+      </p>)}
+    </div>
+    <div className="voice-strip" role="tablist">
+      {items.map((quote, i) => <button key={quote.hl} type="button" role="tab" aria-selected={i === active} aria-label={`${i + 1} / ${items.length}`} onClick={() => setActive(i)}>
+        <i data-on={i === active || undefined} />
+      </button>)}
+    </div>
+  </div>;
 }

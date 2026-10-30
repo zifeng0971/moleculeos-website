@@ -113,6 +113,12 @@ export function MochaCaseWorkbench() {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       setVisible(entry.isIntersecting);
+      // Gone from the screen (past screen 2, or back above screen 1's flat view): back to the preset welcome state, so every
+      // return starts from the first frame (the structure stays loaded; only the task state resets).
+      if (!entry.isIntersecting) {
+        setRuns([initialRun]); setActiveId(0); setProject(PRESET_PROJECT); setProjects([PRESET_PROJECT, EMPTY_PROJECT]);
+        setTaskOpen(false); setProjOpen(false); setCreating(false); setProjName(''); setGuided(false); setHoverResidue(null);
+      }
       if (entry.isIntersecting) setSeen(true);
     }, { threshold: 0.08 });
     if (rootRef.current) observer.observe(rootRef.current);
@@ -158,7 +164,7 @@ export function MochaCaseWorkbench() {
     const textarea = textareaRef.current;
     if (!textarea) return;
     textarea.style.height = 'auto';
-    textarea.style.height = `${Math.min(200, Math.max(76, textarea.scrollHeight))}px`;
+    textarea.style.height = `${Math.min(200, Math.max(48, textarea.scrollHeight))}px`;
   }, [active?.draft, activeId, hasStructure]);
 
   // Back to the run's starting point (prompt in the composer, nothing run yet); other runs and projects are untouched.
@@ -269,7 +275,7 @@ export function MochaCaseWorkbench() {
           </div>
           <div className="mocha-case-composer-zone"><div className="mocha-case-composer">
             {active && active.elapsed < 0 && <details className="mocha-case-attachment"><summary title={text.attached}><FileCode2 size={14}/><span>{ATTACHED_STRUCTURE_NAME}</span><X size={13} aria-hidden="true"/></summary><div className="mocha-case-fasta">{DEMO_SEQUENCES.map(item => <div key={item.chain}><strong>{item.name} · chain {item.chain} · {item.sequence.length} aa</strong><code>{item.sequence}</code></div>)}</div></details>}
-            <textarea ref={textareaRef} aria-label={text.placeholder} placeholder={text.placeholder} value={active?.draft ?? ''} onChange={event => updateActive(run => ({ ...run, draft: event.target.value }))} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); submit(); } }} disabled={!active} rows={5}/>
+            <textarea ref={textareaRef} aria-label={text.placeholder} placeholder={text.placeholder} value={active?.draft ?? ''} onChange={event => updateActive(run => ({ ...run, draft: event.target.value }))} onKeyDown={event => { if (event.key === 'Enter' && !event.shiftKey && !event.nativeEvent.isComposing) { event.preventDefault(); submit(); } }} disabled={!active} rows={2}/>
             <div className="mocha-case-composer-bottom">{preRun
               ? <button type="button" className={`mocha-case-run${nudging ? ' is-nudging' : ''}`} title={text.runHint} onClick={submit}>{text.runLabel}<Send size={14} aria-hidden="true"/></button>
               : done && !active?.draft.trim()

@@ -96,6 +96,8 @@
       "imageAlt": "Static placeholder of the MoleculeOS protein design workspace"
     },
     "trust": {
+      "eyebrow": "Proven results",
+      "partnersEyebrow": "Customers",
       "label": "Working on real programs with these teams",
       "targets": "Clinical targets",
       "successCondition": "Across 19 design tasks covering 18 distinct targets, 18 produced experimentally validated binders. Each task tested only 9–50 candidates, for a 94.7% success rate.",
@@ -797,7 +799,8 @@
     "doneBody": "A specialist will be in touch with you soon.",
     "again": "Send another",
     "submit": "Submit request",
-    "privacy": "By submitting, you agree that we may process this information for this conversation."
+    "privacy": "By submitting, you agree that we may process this information for this conversation.",
+    "emailInvalid": "Enter a valid email address"
   },
   "platformPage": {
     "eyebrow": "PLATFORM · R&D TASK",
@@ -1752,6 +1755,8 @@
       "exampleLabel": "Example prompt",
       "example": "predict the structure of sequence use MOS model MSDQDHSMDEMTAVVKIEKGVGGNNGGNGNGGGAFSQARSSSTGSSSSTGGGGQESQP",
       "toolsLabel": "Available MCP tools",
+      "expand": "View setup and tools",
+      "collapse": "Hide",
       "tools": [
         {"name": "create_structure_prediction_task", "desc": "3D structure prediction for protein, DNA, RNA and ligand assemblies (MMFold)"},
         {"name": "create_protein_binder_design_task", "desc": "Design binder backbones for a target structure"},
