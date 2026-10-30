@@ -67,6 +67,7 @@ export function applyOverrides(messages: AbstractIntlMessages, entries: Record<s
   const root: Record<string, unknown> = { ...messages };
   for (const [path, entry] of edits) {
     const parts = path.split('.');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- walks an arbitrary JSON message tree
     let cur: any = root;
     let ok = true;
     for (let i = 0; i < parts.length - 1 && ok; i++) {
@@ -110,6 +111,7 @@ export function tagSharedMessages(messages: AbstractIntlMessages, keys: string[]
   const root: Record<string, unknown> = { ...messages };
   keys.forEach((path, index) => {
     const parts = path.split('.');
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- walks an arbitrary JSON message tree
     let cur: any = root;
     for (let i = 0; i < parts.length - 1; i++) {
       const next = cur?.[parts[i]];

@@ -56,7 +56,7 @@ const EN: Record<string, string> = {"刚刚": "just now","加载中…": "Loadin
 /** The panel speaks the language of the page being edited. */
 const makeTr = (locale: string) => (zh: string) => (locale === 'zh' ? zh : EN[zh] ?? zh);
 type Tr = ReturnType<typeof makeTr>;
-const ago = (at: number, tr: Tr, locale: string) => { const m = Math.round((Date.now() - at) / 60000); const n = m < 60 ? m : m < 1440 ? Math.round(m / 60) : Math.round(m / 1440); const unit = tr(m < 60 ? '分钟前' : m < 1440 ? '小时前' : '天前'); return m < 1 ? tr('刚刚') : locale === 'zh' ? `${n} ${unit}` : `${n}${unit}`; }; (at: number) => { const m = Math.round((Date.now() - at) / 60000); return m < 1 ? '刚刚' : m < 60 ? `${m} 分钟前` : m < 1440 ? `${Math.round(m / 60)} 小时前` : `${Math.round(m / 1440)} 天前`; };
+const ago = (at: number, tr: Tr, locale: string) => { const m = Math.round((Date.now() - at) / 60000); const n = m < 60 ? m : m < 1440 ? Math.round(m / 60) : Math.round(m / 1440); const unit = tr(m < 60 ? '分钟前' : m < 1440 ? '小时前' : '天前'); return m < 1 ? tr('刚刚') : locale === 'zh' ? `${n} ${unit}` : `${n}${unit}`; };
 function HistoryList({ versions, onRestore, label, tr, locale }: { versions: Version[] | null; onRestore(v: Version): void; label?(key: string): string; tr: Tr; locale: string }) {
   if (!versions) return <p className="hint">{tr('加载中…')}</p>;
   if (!versions.length) return <p className="hint">{tr('还没有历史记录。')}</p>;
