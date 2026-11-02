@@ -73,9 +73,10 @@ const rippleWave = (dist: number, age: number) => {
  * Residues brighten and take their chemistry colour around the pointer (no idle drift, no flicker),
  * while sequencing read-heads sweep pulses along random rows. With residueTip every pulse picks out one residue and
  * shows its name pill; hovering a pill holds it, clicking it opens residueHref (sign in / sign up to design from it).
+ * residuePills={false} keeps the residueTip pulses (beat, placement, glow) but draws no pills and takes no clicks.
  * Pauses off-screen; static under reduced motion.
  */
-export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip = false, residueHref, residueAction }: { className?: string; calmSelector?: string; fadeWidthSelector?: string; fadeHeightSelector?: string; fieldBottomSelector?: string; residueTip?: boolean; residueHref?: string; residueAction?: string }) {
+export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip = false, residuePills = true, residueHref, residueAction }: { className?: string; calmSelector?: string; fadeWidthSelector?: string; fadeHeightSelector?: string; fieldBottomSelector?: string; residueTip?: boolean; residuePills?: boolean; residueHref?: string; residueAction?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -370,7 +371,7 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
         heat[i] = hs * 0.92; pulse[i] = hp * 0.92;
       }
       ctx.globalAlpha = 1;
-      if (residueTip) drawTips(now);
+      if (residueTip && residuePills) drawTips(now);
     };
 
     // Residue pills name a residue (chain, position, amino acid). Every pulse carries one; the pointer
@@ -534,7 +535,7 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
     };
     const onVisibility = () => { if (!document.hidden) kick(); };
     if (!reduce && finePointer) { window.addEventListener('pointermove', onPointer, { passive: true }); window.addEventListener('pointerdown', onClick, { passive: true }); document.documentElement.addEventListener('pointerleave', onLeave); }
-    if (residueTip && !reduce) window.addEventListener('click', onOpen);
+    if (residueTip && residuePills && !reduce) window.addEventListener('click', onOpen);
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
       cancelAnimationFrame(frame); resizeObserver.disconnect(); intersection.disconnect();
@@ -542,6 +543,6 @@ export function ProteinField({ className, calmSelector = '.hero-copy', fadeWidth
       window.removeEventListener('pointermove', onPointer); window.removeEventListener('pointerdown', onClick); document.documentElement.removeEventListener('pointerleave', onLeave); document.removeEventListener('visibilitychange', onVisibility); window.removeEventListener('click', onOpen);
       if (canvas.parentElement) canvas.parentElement.style.cursor = '';
     };
-  }, [calmSelector, fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip, residueHref, residueAction]);
+  }, [calmSelector, fadeWidthSelector, fadeHeightSelector, fieldBottomSelector, residueTip, residuePills, residueHref, residueAction]);
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />;
 }

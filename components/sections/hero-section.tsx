@@ -65,7 +65,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
 
   return (
     <section ref={sectionRef} className="hero-section relative overflow-clip" data-nav-section="platform">
-      <ProteinField className="hero-canvas" fieldBottomSelector=".hero-demo-tilt" fadeWidthSelector=".hero-title-line-a" fadeHeightSelector=".hero-title" residueTip residueHref={SITE_CONFIG.platformUrl} residueAction={common('start')} />
+      <ProteinField className="hero-canvas" fieldBottomSelector=".hero-demo-tilt" fadeWidthSelector=".hero-title-line-a" fadeHeightSelector=".hero-title" residueTip residuePills={false} residueHref={SITE_CONFIG.platformUrl} residueAction={common('start')} />
       <div className="hero-vignette" aria-hidden="true" />
       <div className="hero-composition site-container relative">
         {/* Two screens: the headline alone first, then the workbench on its own. Each is a snap stop. */}

@@ -35,15 +35,15 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .hero-pill-brand b { font-weight: inherit; }
 .hero-pill-tag { position: relative; padding-left: 11px; color: #f5f5f7; }
 .hero-pill-tag::before { content: ''; position: absolute; left: 0; top: 50%; width: 1px; height: 12px; transform: translateY(-50%); background: rgba(255, 255, 255, 0.18); }
-.hero-title { font-size: clamp(40px, 4.8vw, 68px) !important; font-weight: 400 !important; line-height: 1.12 !important; letter-spacing: -0.02em !important; }
+.hero-title { font-size: clamp(40px, 4.8vw, 68px) !important; font-weight: 500 !important; line-height: 1.12 !important; letter-spacing: -0.02em !important; }
 .hero-title[data-locale='zh'] { letter-spacing: 0 !important; line-height: 1.16 !important; }
 .hero-title-line-a { color: #f5f5f7 !important; }
 /* A softer three-stop gradient (sky → lilac → rose) instead of the five-colour pipeline key. */
 .hero-title-line-b, .hero-title-line-b.hero-enter { background: linear-gradient(100deg, #9ccdf0 0%, #bcb2f4 48%, #e6b3cd 100%) !important; -webkit-background-clip: text !important; background-clip: text !important; }
 .hero-description {
   margin-top: 32px !important; max-width: 32em !important;
-  font-size: clamp(17px, 1.3vw, 19px) !important; font-weight: 300; line-height: 1.65 !important; letter-spacing: 0.02em;
-  color: rgba(245, 245, 247, 0.56) !important;
+  font-size: clamp(17px, 1.3vw, 19px) !important; font-weight: 400; line-height: 1.65 !important; letter-spacing: 0.02em;
+  color: rgba(245, 245, 247, 0.72) !important;
 }
 /* The residue field fades its own grid around the copy (ProteinField residueTip), so the dark overlay is off:
    it would dim pulses near the centre more than those at the edges. */
@@ -109,7 +109,7 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 }
 .op-head .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
 .op-head .vegf-case { margin-top: 16px; }
-.op-head .vegf-case-start { font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.op-head .vegf-case-start { font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 
 /* ---------- "从理解到设计" steps: text column ---------- */
 /* Set in from the stage and narrower, ending at the container edge. */
@@ -134,10 +134,10 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .op-section .op-step .wf-text h3 { word-break: keep-all; }
 /* Balanced, so a lead that runs just past one line splits into two even lines instead of leaving a word on its own. */
 /* Same type as the heading's lead line (14px Light, 56% white), so the two subtitles on this screen match. */
-.op-section .op-step .wf-lead { margin-top: 14px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); text-wrap: balance; }
+.op-section .op-step .wf-lead { margin-top: 14px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); text-wrap: balance; }
 /* The description: smaller than the lead (14px, 56% white) and greyer, at 40% white. Light (300), not 250:
    PingFang has no weight between Thin and Light, and 250 would draw as Thin. */
-.op-section .op-step .wf-body { margin-top: 32px; font-size: 12px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.op-section .op-step .wf-body { margin-top: 32px; font-size: 12px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
 
 /* Descriptions and the footnote are set as ordinary Chinese body text: lines may break between any two characters (never
    before closing punctuation) and are justified, so every full line is the column's width. Whole-word wrapping (the .w
@@ -149,7 +149,7 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 /* Step 05's footnote sits below the description (12px Light, 40% white): smaller and a little dimmer, as wide as the
    description, with the contact button under it, left-aligned. */
 .op-section .op-step .wf-foot { flex-direction: column; align-items: flex-start; gap: 16px; }
-.op-section .op-step .wf-foot .wf-note { align-self: stretch; font-size: 11px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.34); }
+.op-section .op-step .wf-foot .wf-note { align-self: stretch; font-size: 11px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.48); }
 /* An outline button, label only. */
 .op-section .op-step .wf-contact {
   height: 32px; padding: 0 16px; border: 1px solid rgba(245, 245, 247, 0.32); background: transparent;
@@ -210,7 +210,7 @@ html.home-snap .hero-demo-screen { scroll-snap-align: start; scroll-snap-stop: a
 .op-section .op-hud p { gap: 8px; }
 .op-section .op-hud p i { width: 6px; height: 6px; }
 .op-section .op-hud p b { font-weight: 400; color: #C7C7CC; }
-.op-section .op-hud p span { font: 300 11px/1.5 var(--font-display); letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.op-section .op-hud p span { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .op-section .op-hud-sum { padding-top: 2px; font: 400 10px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 .op-section .op-hud-cap { font-size: 12px; font-weight: 400; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.56); }
 .op-section .op-hud-title { gap: 6px; font-size: 10px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
@@ -270,7 +270,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 [data-home-section] .model-stack-copy .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
 /* Two lines, not three: the copy breaks the title twice ("构建可编程 / 生命科学时代的 / 基础设施"); the second break is dropped. */
 [data-home-section] .model-stack-copy .section-title br:nth-of-type(2) { display: none; }
-[data-home-section] .model-stack-copy .section-copy { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .model-stack-copy .section-copy { margin-top: 16px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 
 /* The layer list: aligned with the heading (no indent), each item a kicker (number + the plate's name), a Regular title and
    a Light body, as on screen 3's steps. The current item's kicker and a 1px rail at the heading's left edge take its plate's colour
@@ -289,7 +289,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 [data-home-section] .model-stack-steps li[data-active] .model-stack-kicker { color: var(--tone); }
 [data-home-section] .model-stack-steps h3 { margin-top: 0; font-size: 22px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: rgba(245, 245, 247, 0.4); transition: color 0.5s ease; }
 [data-home-section] .model-stack-steps li[data-active] h3 { color: #f5f5f7; }
-[data-home-section] .model-stack-steps p:not(.model-stack-kicker) { font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .model-stack-steps p:not(.model-stack-kicker) { font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 [data-home-section] .model-stack-steps li[data-active] p:not(.model-stack-kicker) { margin-top: 8px; }
 /* Plates stack up one at a time: a plate not yet reached waits above the pile, transparent, and drops into place. */
 [data-home-section] .model-plate { transition: opacity 0.6s var(--ease-apple), translate 0.8s var(--ease-out-expo), border-color 0.6s, box-shadow 0.6s; }
@@ -323,7 +323,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 [data-home-section] [data-nav-section="validation"] .section-title { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
 /* The comma in "从计算设计，到实验验证" is drawn as a gap (.pause); here the two clauses run together. */
 [data-home-section] [data-nav-section="validation"] .section-title .pause { width: 0; }
-[data-home-section] [data-nav-section="validation"] .section-title + p { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] [data-nav-section="validation"] .section-title + p { margin-top: 16px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 
 /* ---------- Screen 5: the case explorer, in screens 3–4's language ---------- */
 /* No boxes, glows, big radii or pills. The index is a list on a 1px rail (the current case's rail in its colour, filling while
@@ -376,7 +376,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 [data-home-section] [data-nav-section="validation"] .cs-bar b { font: 300 13px var(--font-display); font-variant-numeric: tabular-nums; color: #f5f5f7; }
 [data-home-section] [data-nav-section="validation"] .cs-chart-row { margin-top: 12px; font-size: 11px; letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
 [data-home-section] [data-nav-section="validation"] .cs-chart-row b { font-weight: 400; color: rgba(var(--c), 0.85); }
-[data-home-section] [data-nav-section="validation"] .case-stage-text { margin-top: 24px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] [data-nav-section="validation"] .case-stage-text { margin-top: 24px; font-size: 13px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 [data-home-section] [data-nav-section="validation"] .case-stage-foot { gap: 6px 20px; padding-top: 24px; }
 [data-home-section] [data-nav-section="validation"] .case-chip { padding: 0; border: 0; border-radius: 0; background: none; font-size: 11px; font-weight: 400; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 
@@ -407,7 +407,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 [data-home-section] .enterprise .access-card { padding: 24px 24px 72px; }
 [data-home-section] .enterprise .access-card .access-visual { margin-bottom: 4px; }
 [data-home-section] .enterprise .access-card strong { margin-top: 28px; font-size: 22px; font-weight: 400; line-height: 1.3; letter-spacing: 0; color: #f5f5f7; }
-[data-home-section] .enterprise .access-card .access-desc { margin-top: 2px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+[data-home-section] .enterprise .access-card .access-desc { margin-top: 2px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 /* Set as body text: breaks between any two characters (never before punctuation), instead of whole-word wrapping that dropped
    "无需安装" to a new line and left "配齐，" ending short. Left-aligned, not justified: a line ending before "MoleculeOS" (which
    cannot be split) was stretched letter-spaced. */
@@ -429,11 +429,11 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 }
 [data-home-section] .proof-band .proof-stat .stat-value { font: 100 clamp(56px, 5.6vw, 80px)/1.05 var(--font-display); letter-spacing: -0.01em; }
 [data-home-section] .proof-band .proof-stat + .proof-stat { border-left-width: 0.5px; }
-[data-home-section] .proof-band .proof-stat-label { margin-top: 12px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
-[data-home-section] .proof-band .proof-condition { margin-top: 28px; font-size: 14px; font-weight: 300; line-height: 1.7; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+[data-home-section] .proof-band .proof-stat-label { margin-top: 12px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+[data-home-section] .proof-band .proof-condition { margin-top: 28px; font-size: 14px; font-weight: 400; line-height: 1.7; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.84); }
 /* On one line on wide screens (it was capped at 62ch and broke after "每项任务"). */
 @media (min-width: 1024px) { [data-home-section] .proof-band .proof-condition { max-width: none; white-space: nowrap; } }
-[data-home-section] .proof-band .proof-source { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+[data-home-section] .proof-band .proof-source { font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
 /* The report link's arrow in the brand violet, like the cards' arrows on screen 6. */
 [data-home-section] .proof-band .proof-source a svg { color: #6F69C7; transition: color 0.2s; }
 [data-home-section] .proof-band .proof-source a:hover svg { color: #7C76D2; }
@@ -542,7 +542,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 /* A comma in these titles is drawn as a gap (.pause); here the clauses run together, as on the homepage. */
 :is(.page-hero-title, .hc-title, .pm-head h1) .pause { width: 0; }
 :is(.page-hero-lead, .hc-lead, .pm-lead) {
-  margin-top: 16px !important; font-size: 14px !important; font-weight: 300 !important; line-height: 1.6 !important; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56) !important;
+  margin-top: 16px !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.6 !important; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72) !important;
 }
 
 /* ---------- Pricing: switch and plan cards ---------- */
@@ -561,7 +561,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .pr-plan[data-plan='pro']::before { display: none; }
 .pr-plan h2 { gap: 10px; font-size: 22px; font-weight: 400; letter-spacing: 0; }
 .pr-plan h2 em { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 400; letter-spacing: 0.04em; color: #bcb2f4; background: rgba(111, 105, 199, 0.18); }
-.pr-plan header p { margin-top: 6px; font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-plan header p { margin-top: 6px; font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .pr-price { margin-top: 28px; }
 .pr-price strong { font: 200 48px/1 var(--font-display); letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
 .pr-price[data-text] strong { font-size: 32px; font-weight: 300; letter-spacing: 0; }
@@ -571,7 +571,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .pr-mcu { margin-top: 12px; font: 400 12px/1.5 var(--font-display); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; color: rgba(245, 245, 247, 0.4); }
 .pr-mcu b { font-size: 14px; font-weight: 400; color: #f5f5f7; }
 .pr-plan ul { margin: 24px 0 28px; gap: 8px; }
-.pr-plan li { font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.pr-plan li { font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.84); }
 .pr-cta { min-height: 44px; border-radius: 999px; font-size: 14px; font-weight: 500; letter-spacing: 0.04em; color: #f5f5f7; background: transparent; box-shadow: none; border: 1px solid rgba(245, 245, 247, 0.36); transition: background 0.25s, border-color 0.25s; }
 .pr-cta:hover { background: transparent; border-color: rgba(245, 245, 247, 0.64); }
 
@@ -592,21 +592,21 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .pr-more .pr-specs > div:first-child { padding-left: 0; }
 .pr-more .pr-specs > div + div { border-left: 0.5px solid rgba(245, 245, 247, 0.12); }
 .pr-more .pr-specs dt, .pr-more .pr-specs > div:first-child dt { font: 200 clamp(32px, 3vw, 44px)/1.05 var(--font-display); letter-spacing: -0.01em; font-variant-numeric: tabular-nums; color: #f5f5f7; }
-.pr-more .pr-specs dd { margin-top: 10px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-more .pr-specs dd { margin-top: 10px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 /* Per-model cost: a section heading (40px Regular title, Light lead) and quiet rows on hairlines. */
 .pr-more .pr-models { margin-top: 64px; }
 .pr-more .pr-models-head { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
-.pr-more .pr-models-lead { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-more .pr-models-lead { margin-top: 16px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .pr-more .pr-model-list { margin-top: 28px; border-top: 0.5px solid rgba(245, 245, 247, 0.12); }
 .pr-more .pr-model-list li { padding: 12px 0; border-bottom: 0.5px solid rgba(245, 245, 247, 0.08); }
 .pr-more .pr-model-name { gap: 12px; font: 400 15px/1.4 var(--font-display); letter-spacing: 0.01em; color: #f5f5f7; }
 .pr-more .pr-model-name i { width: 6px; height: 6px; }
-.pr-more .pr-model-fn { font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.pr-more .pr-model-fn { font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .pr-more .pr-model-bar { height: 2px; border-radius: 0; background: rgba(245, 245, 247, 0.08); }
 .pr-more .pr-model-bar b { border-radius: 0; background: rgba(var(--m), 0.85); }
 .pr-more .pr-model-time { font: 300 14px/1 var(--font-display); font-variant-numeric: tabular-nums; color: #f5f5f7; }
 .pr-more .pr-model-time small { font: 400 11px/1 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
-.pr-more .pr-foot { margin-top: 24px; font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.pr-more .pr-foot { margin-top: 24px; font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
 .pr-more .pr-foot a { color: rgba(245, 245, 247, 0.72); }
 
 /* ---------- Platform (模型体系) ---------- */
@@ -616,25 +616,25 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
    the homepage's outline pill without an arrow. */
 .site-container.pm #models.pm-section { margin-top: 56px; }
 .site-container.pm h2 { font-size: clamp(30px, 2.8vw, 40px); font-weight: 400; line-height: 1.18; letter-spacing: 0; }
-.site-container.pm .pm-sub { margin-top: 16px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-sub { margin-top: 16px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .site-container.pm .pm-engines { margin-top: 32px; border-top: 0.5px solid rgba(245, 245, 247, 0.16); }
 .site-container.pm .pm-engine { padding: 28px 0 32px; border-bottom: 0.5px solid rgba(245, 245, 247, 0.1); }
 .site-container.pm .pm-engine h3 { gap: 12px; font-size: 22px; font-weight: 400; letter-spacing: 0; }
 .site-container.pm .pm-engine h3::before { width: 6px; height: 6px; border-radius: 50%; }
-.site-container.pm .pm-engine-kind { margin-top: 6px; padding-left: 18px; font-size: 13px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-engine-kind { margin-top: 6px; padding-left: 18px; font-size: 13px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .site-container.pm .pm-art { max-width: 280px; margin-top: 20px; }
-.site-container.pm .pm-engine-body { font-size: 14px; font-weight: 300; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.site-container.pm .pm-engine-body { font-size: 14px; font-weight: 400; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.84); }
 .site-container.pm .pm-stats { margin-top: 20px; }
 .site-container.pm .pm-stats div { padding: 11px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.1); font-size: 14px; }
 .site-container.pm .pm-stats dt { font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
 .site-container.pm .pm-stats dd { font-weight: 400; color: #f5f5f7; }
-.site-container.pm .pm-note { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
+.site-container.pm .pm-note { font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
 .site-container.pm .pm-report { font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .site-container.pm .pm-skills { margin-top: 32px; border-top: 0.5px solid rgba(245, 245, 247, 0.16); }
 .site-container.pm .pm-skill { padding: 22px 0; border-bottom: 0.5px solid rgba(245, 245, 247, 0.1); }
 .site-container.pm .pm-skill small { font-size: 11px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 .site-container.pm .pm-skill h3 { margin-top: 6px; font-size: 17px; font-weight: 400; }
-.site-container.pm .pm-skill p { font-size: 14px; font-weight: 300; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.site-container.pm .pm-skill p { font-size: 14px; font-weight: 400; line-height: 1.75; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .site-container.pm .pm-skill em { font-size: 14px; font-weight: 300; line-height: 1.65; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.86); }
 /* MoleculeOS closes the page like the sections above: its title on one line across the top with its lead under it (as every
    section heading), then one row with the plate on the left and the points and button on the right, centred together. Both
@@ -649,7 +649,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .site-container.pm .pm-os-points { grid-column: 2; grid-row: 3; align-self: end; margin-top: 40px; }
 .site-container.pm .pm-os-points li:first-child { border-top: 0; }
 .site-container.pm .pm-cta { grid-column: 2; grid-row: 4; align-self: start; margin-top: 28px; }
-.site-container.pm .pm-os-points li { padding: 12px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.1); font-size: 14px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.site-container.pm .pm-os-points li { padding: 12px 0; border-top: 0.5px solid rgba(245, 245, 247, 0.1); font-size: 14px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.84); }
 .site-container.pm .pm-cta a { justify-content: center; min-height: 46px; min-width: 148px; padding: 0 36px; border-radius: 999px; border: 1px solid rgba(245, 245, 247, 0.36); background: transparent !important; box-shadow: none !important; color: #f5f5f7 !important; font-size: 15px; font-weight: 500; letter-spacing: 0.04em; }
 .site-container.pm .pm-cta a:hover { border-color: rgba(245, 245, 247, 0.64); }
 .site-container.pm .pm-cta a svg { display: none; }
@@ -682,10 +682,10 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 :is(.hc-case, .hs-head) .hc-kicker span { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC; }
 :is(.hc-case, .hs-head) .hc-kicker em { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 .hc-case h2, .hs-head h2 { font-size: 28px; font-weight: 400; line-height: 1.3; letter-spacing: 0; }
-.hc-case .hc-case-lead, .hs-head .hc-sub { margin-top: 14px; font-size: 14px; font-weight: 300; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-case .hc-case-lead, .hs-head .hc-sub { margin-top: 14px; font-size: 14px; font-weight: 400; line-height: 1.6; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .hc-case-figure { margin: 32px 0; }
-.hc-case-figure figcaption { font-size: 12px; font-weight: 300; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.4); }
-.hc-case-text { gap: 14px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-case-figure figcaption { font-size: 12px; font-weight: 400; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hc-case-text { gap: 14px; font-size: 13px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 .hc-case-text strong { font-weight: 400; color: #f5f5f7; }
 .hc-case-text .hc-path-label { font-size: 11px; font-weight: 400; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 .hc-case-text .hc-steps li { font-size: 13px; }
@@ -693,18 +693,18 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .hs-step-no { margin-bottom: 10px; font: 400 11px/1 var(--font-display); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #C7C7CC; }
 .hs-step h3 { font-size: 20px; font-weight: 400; line-height: 1.35; letter-spacing: 0; }
 .hs-tags em { font: 400 11px/1.5 var(--font-display); letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
-.hs-step-body > p { margin-top: 12px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.56); }
+.hs-step-body > p { margin-top: 12px; font-size: 13px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
 /* The story list sits under its label, like the core-features index: the sticky block is now the label and list together. */
 @media (min-width: 1100px) {
   .hs-aside { position: sticky; top: calc(var(--nav-h) + 60px + 28px); align-self: start; }
   .hs-aside .hs-picker { position: static; }
 }
-.hs-intro { margin-top: 16px; font-size: 13px; font-weight: 300; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.72); }
+.hs-intro { margin-top: 16px; font-size: 13px; font-weight: 400; line-height: 1.8; letter-spacing: 0.02em; color: rgba(245, 245, 247, 0.84); }
 /* Data tiles: Light labels over Thin figures (as the homepage's figures), on 0.5px rules; the cards in the panel style. */
 .hs-tile, .hs-design .hs-tile { border-top-width: 0.5px; }
 .hs-tile span { font-size: 11px; letter-spacing: 0.06em; color: rgba(245, 245, 247, 0.4); }
 .hs-tile strong { font: 200 28px/1.2 var(--font-display); letter-spacing: 0; font-variant-numeric: tabular-nums; color: #f5f5f7; }
-.hs-tile small { font-size: 12px; font-weight: 300; color: rgba(245, 245, 247, 0.4); }
+.hs-tile small { font-size: 12px; font-weight: 400; color: rgba(245, 245, 247, 0.56); }
 :is(.hs-anchor, .hs-variant, .hs-find, .hs-acc, .hs-quad, .hs-grid, .hs-mmflow li) { border-radius: 8px !important; background: rgba(31, 31, 38, 0.5) !important; }
 
 /* ---------- Header bar ---------- */
@@ -764,8 +764,8 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .hc-dev-icon svg { width: 16px; height: 16px; }
 .hc-dev-card .hc-badge { position: absolute; right: 28px; top: 30px; padding: 2px 10px !important; border-radius: 999px; font-size: 11px !important; font-weight: 400 !important; letter-spacing: .04em; color: #bcb2f4 !important; background: rgba(111, 105, 199, 0.16) !important; box-shadow: none !important; }
 .hc-dev-card h2 { font-size: 24px !important; font-weight: 400 !important; line-height: 1.25; letter-spacing: 0; color: #F5F5F7; }
-.hc-dev-card p { margin-top: 12px; font-size: 14px !important; font-weight: 300; line-height: 1.7 !important; color: rgba(245, 245, 247, 0.56) !important; }
-.hc-dev-card em { margin-top: 10px !important; font-size: 13px !important; font-weight: 300; line-height: 1.7; color: rgba(245, 245, 247, 0.4) !important; }
+.hc-dev-card p { margin-top: 12px; font-size: 14px !important; font-weight: 400; line-height: 1.7 !important; color: rgba(245, 245, 247, 0.72) !important; }
+.hc-dev-card em { margin-top: 10px !important; font-size: 13px !important; font-weight: 400; line-height: 1.7; color: rgba(245, 245, 247, 0.56) !important; }
 .hc-mcp { gap: 8px !important; margin-top: 24px !important; padding-top: 20px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
 .hc-mcp h3 { margin-top: 12px !important; font-family: var(--font-display, inherit); font-size: 11px !important; font-weight: 400 !important; letter-spacing: .08em; text-transform: uppercase; color: #C7C7CC !important; }
 .hc-mcp h3:first-child { margin-top: 0 !important; }
@@ -773,7 +773,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .hc-mcp dl { gap: 0 !important; }
 .hc-mcp dl > div { padding: 10px 0; border-top: 0.5px solid rgba(255, 255, 255, 0.08); }
 .hc-mcp dt { font-size: 12px !important; color: rgba(245, 245, 247, 0.8) !important; }
-.hc-mcp dd { margin-top: 2px; font-size: 13px !important; font-weight: 300; line-height: 1.6; color: rgba(245, 245, 247, 0.48) !important; }
+.hc-mcp dd { margin-top: 2px; font-size: 13px !important; font-weight: 400; line-height: 1.6; color: rgba(245, 245, 247, 0.64) !important; }
 
 /* ---------- Help center: FAQ — groups on the left like the user stories picker, one accordion of questions on the right ---------- */
 .hc-faq.hs-layout { max-width: none; }
@@ -782,7 +782,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .hc-faq-list button { min-height: 0 !important; padding: 20px 0 !important; font-size: 16px !important; font-weight: 400 !important; line-height: 1.5; color: rgba(245, 245, 247, 0.72); transition: color .2s; }
 .hc-faq-list button:hover, .hc-faq-list button[data-state="open"] { color: #F5F5F7; }
 .hc-faq-list button svg { width: 14px; height: 14px; color: rgba(245, 245, 247, 0.4); }
-.hc-faq-list [role="region"] > div { padding: 0 40px 22px 0 !important; font-size: 13px; font-weight: 300; line-height: 1.8 !important; color: rgba(245, 245, 247, 0.56); }
+.hc-faq-list [role="region"] > div { padding: 0 40px 22px 0 !important; font-size: 13px; font-weight: 400; line-height: 1.8 !important; color: rgba(245, 245, 247, 0.72); }
 .hc-faq-list h3 { display: block; width: 100%; max-width: none !important; }
 .hc-faq-list button { width: 100% !important; }
 
@@ -800,7 +800,7 @@ html.home-snap :is(.model-stack-snaps::before, .model-stack-snaps span) { scroll
 .contact-form option { color: #F5F5F7; background: #1F1F26; }
 .contact-form textarea { height: 88px; padding: 10px 14px !important; line-height: 1.6; resize: none; }
 .contact-actions { display: grid; justify-items: center; gap: 12px; margin-top: 4px; }
-.contact-actions p { margin-top: 0 !important; font-size: 12px !important; font-weight: 300; color: rgba(245, 245, 247, 0.4) !important; text-align: center; }
+.contact-actions p { margin-top: 0 !important; font-size: 12px !important; font-weight: 400; color: rgba(245, 245, 247, 0.56) !important; text-align: center; }
 .contact-submit { width: min(280px, 100%); height: 40px !important; min-height: 0 !important; border-radius: 999px !important; font-size: 14px !important; font-weight: 400 !important; color: #fff !important; background: #6F69C7 !important; box-shadow: none !important; transition: background-color .2s, color .2s; }
 .contact-submit:hover:not(:disabled) { background: #7C76D2 !important; }
 .contact-submit:disabled:not(.contact-sending) { opacity: 1 !important; cursor: not-allowed; color: rgba(245, 245, 247, 0.32) !important; background: rgba(255, 255, 255, 0.08) !important; }
@@ -884,7 +884,7 @@ section:has(> .site-container > .contact-panel) { padding-top: 0 !important; pad
 .cm .cm-live i { width: 6px; height: 6px; background: #5fd3a8; box-shadow: 0 0 10px rgba(95, 211, 168, 0.8); }
 .cm .cm-live i::after { inset: -5px; border-color: rgba(95, 211, 168, 0.6); }
 .cm .cm-feature h3 { margin-top: 16px; font: 400 clamp(30px, 3vw, 40px)/1.18 var(--font-display); letter-spacing: 0; color: #F5F5F7; }
-.cm .cm-feature-main > p:not(.cm-live) { margin-top: 14px; max-width: 28em; font-size: 14px; font-weight: 300; line-height: 1.8; color: rgba(245, 245, 247, 0.56); }
+.cm .cm-feature-main > p:not(.cm-live) { margin-top: 14px; max-width: 28em; font-size: 14px; font-weight: 400; line-height: 1.8; color: rgba(245, 245, 247, 0.72); }
 .cm .cm-cta { gap: 6px; margin-top: 28px; min-height: 0; height: 40px; padding: 0 22px; font-size: 14px; font-weight: 400; color: #fff; background: #6F69C7 !important; box-shadow: 0 8px 28px -12px rgba(111, 105, 199, 0.9); transition: background-color .2s, transform .3s cubic-bezier(.2, .7, .2, 1); }
 .cm .cm-cta svg { display: none; }
 .cm .cm-feature:hover .cm-cta { background: #7C76D2 !important; transform: translateY(-1px); }
@@ -904,7 +904,7 @@ section:has(> .site-container > .contact-panel) { padding-top: 0 !important; pad
 .cm .cm-program:hover { transform: translateY(-2px); }
 .cm .cm-soon { padding: 2px 10px; font: 400 11px/1.6 var(--font-display); letter-spacing: 0.04em; color: #bcb2f4; background: rgba(111, 105, 199, 0.16); }
 .cm .cm-program h3 { margin-top: 20px; font: 400 20px/1.3 var(--font-display); color: #F5F5F7; }
-.cm .cm-program p { margin-top: 8px; font-size: 13px; font-weight: 300; line-height: 1.8; color: rgba(245, 245, 247, 0.56); }
+.cm .cm-program p { margin-top: 8px; font-size: 13px; font-weight: 400; line-height: 1.8; color: rgba(245, 245, 247, 0.72); }
 
 /* Public channels */
 .cm .cm-channels { gap: 40px 64px; }
@@ -912,7 +912,7 @@ section:has(> .site-container > .contact-panel) { padding-top: 0 !important; pad
 .cm .cm-channel-group li { padding: 18px 0; border-bottom: 0.5px solid rgba(255, 255, 255, 0.1); }
 .cm .cm-channel-group li > a { padding: 0; border-bottom: 0; }
 .cm .cm-channel-group strong { font: 400 15px/1.4 var(--font-display); color: #F5F5F7; transition: color .2s; }
-.cm .cm-channel-group span { margin-top: 4px; font-size: 13px; font-weight: 300; line-height: 1.6; color: rgba(245, 245, 247, 0.48); }
+.cm .cm-channel-group span { margin-top: 4px; font-size: 13px; font-weight: 400; line-height: 1.6; color: rgba(245, 245, 247, 0.64); }
 .cm .cm-channel-group em { font: 400 11px/1.6 var(--font-display); letter-spacing: 0.04em; color: rgba(245, 245, 247, 0.4); }
 .cm .cm-channel-group li > a em { font-size: 15px; color: #7C76D2; transition: transform .3s cubic-bezier(.2, .7, .2, 1); }
 .cm .cm-channel-group li > a:hover strong { text-decoration: none; color: #bcb2f4; }
@@ -921,7 +921,7 @@ section:has(> .site-container > .contact-panel) { padding-top: 0 !important; pad
 /* Closing row */
 .cm .cm-contact { margin-top: clamp(72px, 10vh, 112px); padding-top: 32px; border-top: 0.5px solid rgba(255, 255, 255, 0.1); }
 .cm .cm-contact h2 { font: 400 20px/1.3 var(--font-display); color: #F5F5F7; }
-.cm .cm-contact p { margin-top: 6px; font-size: 13px; font-weight: 300; color: rgba(245, 245, 247, 0.56); }
+.cm .cm-contact p { margin-top: 6px; font-size: 13px; font-weight: 400; color: rgba(245, 245, 247, 0.72); }
 .cm .cm-contact a { height: 40px; min-height: 0; padding: 0 22px; border: 1px solid rgba(245, 245, 247, 0.36) !important; border-radius: 999px; font-size: 14px; font-weight: 400; color: #F5F5F7; background: transparent !important; box-shadow: none !important; transition: border-color .2s, background-color .2s; }
 .cm .cm-contact a:hover { border-color: rgba(245, 245, 247, 0.6) !important; background: rgba(255, 255, 255, 0.04) !important; }
 .cm .cm-contact a svg { display: none; }
